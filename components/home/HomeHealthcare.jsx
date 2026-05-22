@@ -1,8 +1,11 @@
 import React from 'react';
 import { Check } from 'lucide-react';
 
-const HomeHealthcare = () => {
-  const features = [
+const HomeHealthcare = ({
+  label = "DOCTOR ON CALL | NURSING | PHYSIO AT HOME",
+  title = "When coming to the clinic is not the right answer.",
+  description = "Our home healthcare team brings DHA-licensed doctors, registered nurses and qualified physiotherapists to your door across JVC, JVT, Al Barsha South, Sports City and all of Dubai. Same protocols. Same accountability. Faster access.",
+  features = [
     "Doctor on Call 24/7",
     "Physiotherapy at Home",
     "Lab Collection",
@@ -11,8 +14,11 @@ const HomeHealthcare = () => {
     "IV Drip Therapy",
     "Vaccinations",
     "Elderly Care"
-  ];
-
+  ],
+  button1Text = "Request a Home Visit",
+  button2Text = "Learn More",
+  footer = "Typical response time within JVC: 30 to 60 minutes"
+}) => {
   return (
     <section className="bg-white py-24">
       <div className="max-w-[1440px] mx-auto px-6 md:px-12">
@@ -28,15 +34,15 @@ const HomeHealthcare = () => {
           <div className="space-y-8 lg:pl-12">
             <div className="space-y-4">
               <span className="text-[13px] font-sans tracking-[0.1em] text-[#C9A961] uppercase block">
-                DOCTOR ON CALL | NURSING | PHYSIO AT HOME
+                {label}
               </span>
               <h2 className="text-[42px] font-serif font-medium text-[#1A1A1A] leading-[1.2]">
-                When coming to the clinic is not the right answer.
+                {title}
               </h2>
             </div>
 
             <p className="text-[16px] text-[#6B6B6B] font-sans leading-relaxed">
-              Our home healthcare team brings DHA-licensed doctors, registered nurses and qualified physiotherapists to your door across JVC, JVT, Al Barsha South, Sports City and all of Dubai. Same protocols. Same accountability. Faster access.
+              {description}
             </p>
 
             <div className="grid grid-cols-2 gap-y-4 gap-x-8">
@@ -50,15 +56,15 @@ const HomeHealthcare = () => {
 
             <div className="flex flex-col sm:flex-row items-center gap-4 pt-4">
               <button className="w-full sm:w-auto px-8 py-4 bg-[#184C3A] text-white rounded-lg font-sans font-bold text-[16px] hover:bg-[#123a2c] transition-all">
-                Request a Home Visit
+                {button1Text}
               </button>
               <button className="w-full sm:w-auto px-8 py-4 bg-white border border-[#184C3A] text-[#184C3A] rounded-lg font-sans font-bold text-[16px] hover:bg-[#F6F1EA] transition-all">
-                Learn More
+                {button2Text}
               </button>
             </div>
 
             <p className="text-[14px] text-[#6B6B6B] font-sans italic">
-              Typical response time within JVC: 30 to 60 minutes
+              {footer}
             </p>
           </div>
         </div>

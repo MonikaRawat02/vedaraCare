@@ -1,48 +1,50 @@
 import React from 'react';
 import { User, Globe, Award, ShieldCheck } from 'lucide-react';
 
-const doctors = [
-  {
-    name: "Dr. Priya Sharma",
-    qualification: "BAMS, MD (Ayurveda)",
-    role: "Ayurvedic Physician",
-    experience: "15+ years experience",
-    languages: "English, Hindi, Arabic",
-    image: "https://images.unsplash.com/photo-1559839734-2b71f1e3c7e3?q=80&w=2070&auto=format&fit=crop"
-  },
-  {
-    name: "Dr. Ahmed Al-Mansoori",
-    qualification: "DPT, MSc",
-    role: "Physiotherapist",
-    experience: "12+ years experience",
-    languages: "English, Arabic, Urdu",
-    image: "https://images.unsplash.com/photo-1622253692010-333f2da6031d?q=80&w=2070&auto=format&fit=crop"
-  },
-  {
-    name: "Dr. Sarah Khan",
-    qualification: "MBBS, MD (Dermatology)",
-    role: "Dermatologist",
-    experience: "10+ years experience",
-    languages: "English, Arabic, Hindi",
-    image: "https://images.unsplash.com/photo-1594824476967-48c8b964273f?q=80&w=2070&auto=format&fit=crop"
-  }
-];
-
-const Experts = () => {
+const Experts = ({
+  title = "Meet Our DHA-Licensed Experts",
+  subtitle = "Experienced healthcare professionals dedicated to your wellbeing",
+  items = [
+    {
+      name: "Dr. Priya Sharma",
+      qualification: "BAMS, MD (Ayurveda)",
+      role: "Ayurvedic Physician",
+      experience: "15+ years experience",
+      languages: "English, Hindi, Arabic",
+      image: "https://images.unsplash.com/photo-1559839734-2b71f1e3c7e3?q=80&w=2070&auto=format&fit=crop"
+    },
+    {
+      name: "Dr. Ahmed Al-Mansoori",
+      qualification: "DPT, MSc",
+      role: "Physiotherapist",
+      experience: "12+ years experience",
+      languages: "English, Arabic, Urdu",
+      image: "https://images.unsplash.com/photo-1622253692010-333f2da6031d?q=80&w=2070&auto=format&fit=crop"
+    },
+    {
+      name: "Dr. Sarah Khan",
+      qualification: "MBBS, MD (Dermatology)",
+      role: "Dermatologist",
+      experience: "10+ years experience",
+      languages: "English, Arabic, Hindi",
+      image: "https://images.unsplash.com/photo-1594824476967-48c8b964273f?q=80&w=2070&auto=format&fit=crop"
+    }
+  ]
+}) => {
   return (
     <section id="experts" className="py-20 bg-white">
       <div className="container mx-auto px-4 ">
         <div className="text-center mb-12">
           <h2 className="text-5xl font-serif text-[#184C3A] mb-4">
-            Meet Our DHA-Licensed Experts
+            {title}
           </h2>
           <p className="text-lg text-[#5a5a5a] max-w-2xl mx-auto mb-12">
-            Experienced healthcare professionals dedicated to your wellbeing
+            {subtitle}
           </p>
         </div>
 
         <div className="grid grid-cols-1 md:grid-cols-3 gap-8 mb-12">
-          {doctors.map((doc, index) => (
+          {items.map((doc, index) => (
             <div key={index} data-slot="card" className="bg-white rounded-2xl border border-gray-100 overflow-hidden shadow-sm hover:shadow-xl transition-all duration-300 flex flex-col gap-6 group">
               {/* Image Container */}
               <div className="relative h-80 overflow-hidden">

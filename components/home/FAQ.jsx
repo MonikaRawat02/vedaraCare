@@ -1,7 +1,7 @@
 import React, { useState } from 'react';
 import { Plus, Minus, MessageCircle } from 'lucide-react';
 
-const faqs = [
+const defaultFaqs = [
   {
     question: "Is Vedara Care Polyclinic DHA-licensed?",
     answer: "Yes, Vedara Care Polyclinic is fully licensed by the Dubai Health Authority (DHA License XXXXX). Every practicing doctor holds an individual DHA professional license, displayed on each doctor page."
@@ -44,31 +44,38 @@ const faqs = [
   }
 ];
 
-const FAQ = () => {
+const FAQ = ({ 
+  bgColor = "bg-white",
+  label = "QUESTIONS, ANSWERED", 
+  title = "Everything patients ask before their first visit.",
+  description = "Short, honest answers from our clinical team. Cannot find what you are looking for? WhatsApp us, usually answered in under 15 minutes.",
+  faqs = [],
+  buttonText = "Ask a Question"
+}) => {
   const [openIndex, setOpenIndex] = useState(null);
 
   return (
-    <section className="bg-white py-24">
+    <section className={`${bgColor} py-24`}>
       <div className="max-w-[1440px] mx-auto px-6 md:px-12">
         <div className="grid lg:grid-cols-[40%_60%] gap-12">
           {/* Left Side: Header Content */}
           <div className="space-y-6">
             
               <span className="text-[13px] font-sans tracking-[0.1em] text-[#C9A961] uppercase block">
-                QUESTIONS, ANSWERED
+                {label}
               </span>
               <h2 className="text-[42px] font-serif font-medium text-[#1A1A1A] leading-[1.2] max-w-[420px]">
-                Everything patients ask before their first visit.
+                {title}
               </h2>
             
             
             <p className="text-[16px] text-[#6B6B6B] font-sans leading-relaxed max-w-[420px]">
-              Short, honest answers from our clinical team. Cannot find what you are looking for? WhatsApp us, usually answered in under 15 minutes.
+              {description}
             </p>
 
             <button className="inline-flex items-center gap-2 px-7 py-3.5 bg-[#4A7C59] text-white rounded-lg hover:bg-[#3d664a] transition-colors font-sans font-semibold text-[16px]">
               <MessageCircle size={18} />
-              Ask a Question
+              {buttonText}
             </button>
           </div>
 

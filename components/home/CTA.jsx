@@ -1,39 +1,47 @@
 import React from 'react';
 import { MessageCircle, Calendar } from 'lucide-react';
 
-const CTA = () => {
+const CTA = ({
+  bgColor = "bg-[#FAF8EF]",
+  label = "READY WHEN YOU ARE",
+  title = "Book a consultation, or just ask a question.",
+  description = "Most patients reach us on WhatsApp. It is the fastest way to check availability, ask about insurance, or send a photo of your concern for our team to review.",
+  button1Text = "Book a Consultation",
+  button2Text = "Chat on WhatsApp",
+  subtext = "Typical reply time under 15 minutes during clinic hours"
+}) => {
   return (
-    <section className="bg-[#FAF8EF] py-24 px-6">
+    <section className={`${bgColor} py-24 px-6`}>
       <div className="max-w-[1440px] mx-auto">
         <div className="max-w-3xl mx-auto text-center space-y-6">
           {/* Header Content */}
           <div className="space-y-6">
             <span className="text-[13px] font-sans tracking-[0.1em] text-[#C9A961] uppercase block">
-              READY WHEN YOU ARE
+              {label}
             </span>
             <h2 className="text-[42px] font-serif font-medium text-[#1A1A1A] leading-[1.2]">
-              Book a consultation, or just ask a question.
+              {title}
             </h2>
             <p className="text-[18px] text-[#1A1A1A] font-sans leading-relaxed max-w-2xl mx-auto">
-              Most patients reach us on WhatsApp. It is the fastest way to check availability, ask about insurance, or send a photo of your concern for our team to review.
+              {description}
             </p>
           </div>
 
           {/* Action Buttons */}
           <div className="flex flex-col sm:flex-row items-center justify-center gap-4 pt-4">
             <button className="w-full sm:w-auto inline-flex items-center justify-center gap-2 px-8 py-4 bg-[#184C3A] text-white rounded-lg hover:bg-[#123a2c] transition-all font-sans font-bold text-[16px]">
-              Book a Consultation
+              {button1Text}
             </button>
             
             <button className="w-full sm:w-auto inline-flex items-center justify-center gap-2 px-7 py-3.5 bg-[#4A7C59] text-white rounded-lg hover:bg-[#3d664a] transition-all font-sans font-semibold text-[16px]">
               <MessageCircle size={20} />
-              Chat on WhatsApp
+              {button2Text}
             </button>
           </div>
 
           {/* Subtext */}
           <p className="text-[14px] text-[#6B6B6B] font-sans pt-2">
-            Typical reply time under 15 minutes during clinic hours
+            {subtext}
           </p>
         </div>
       </div>
