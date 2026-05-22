@@ -22,49 +22,51 @@ const reviews = [
   }
 ];
 
-const Reviews = () => {
+const Reviews = ({ doctor }) => {
+  const doctorName = doctor?.firstName || 'Dr. Nair';
+
   return (
-    <section className="bg-[#1F4538] py-24 px-6 relative overflow-hidden">
+    <section className="py-24 px-6 relative overflow-hidden" style={{ backgroundColor: 'rgb(31, 69, 56)' }}>
       <div className="max-w-[1170px] mx-auto">
         <div className="text-center mb-16">
-          <span className="text-[13px] font-sans tracking-[0.2em] text-[#C9A961] uppercase block mb-4">
+          <span className="text-[13px] font-sans tracking-[0.2em] uppercase block mb-4" style={{ color: 'rgb(201, 169, 97)' }}>
             What Patients Say
           </span>
-          <h2 className="text-[32px] md:text-[42px] font-serif font-medium text-white leading-[1.2] mb-6">
+          <h2 style={{ fontFamily: 'Fraunces, Georgia, serif', fontSize: 'clamp(32px, 3vw, 42px)', fontWeight: '500', color: 'rgb(255, 255, 255)', lineHeight: '1.2', marginBottom: '24px' }}>
             Verified outcomes, in patients' own words.
           </h2>
-          <p className="text-[16px] md:text-[18px] font-sans text-white/90 max-w-3xl mx-auto leading-relaxed">
-            These are Google reviews from patients personally treated by Dr. Nair at our JVC clinic. Displayed in full, never edited.
+          <p style={{ fontSize: 'clamp(16px, 2vw, 18px)', fontFamily: 'sans-serif', color: 'rgba(255, 255, 255, 0.9)', maxWidth: '3xl', margin: '0 auto', lineHeight: '1.6' }}>
+            These are Google reviews from patients personally treated by {doctorName} at our JVC clinic. Displayed in full, never edited.
           </p>
         </div>
 
         <div className="grid grid-cols-1 md:grid-cols-3 gap-8 mb-16">
           {reviews.map((review, index) => (
-            <div key={index} className="bg-white rounded-xl p-8 flex flex-col shadow-lg relative h-full">
+            <div key={index} className="bg-white rounded-[8px] p-8 flex flex-col shadow-lg relative h-full" style={{ borderRadius: '8px' }}>
               <div className="flex gap-1 mb-6">
                 {[...Array(5)].map((_, i) => (
-                  <Star key={i} size={16} className="fill-[#C9A961] text-[#C9A961]" />
+                  <Star key={i} size={16} style={{ fill: 'rgb(201, 169, 97)', color: 'rgb(201, 169, 97)' }} />
                 ))}
               </div>
               
-              <h3 className="text-[19px] font-serif italic font-medium text-[#1A1A1A] leading-[1.35] mb-4">
+              <h3 style={{ fontFamily: 'Fraunces, Georgia, serif', fontSize: '19px', fontWeight: '500', fontStyle: 'italic', color: 'rgb(26, 26, 26)', lineHeight: '1.35', marginBottom: '16px' }}>
                 "{review.quote}"
               </h3>
               
-              <p className="text-[14px] text-[#4A4A4A] font-sans leading-[1.75] mb-8 flex-grow">
+              <p className="text-[14px] font-sans leading-[1.75] mb-8 flex-grow" style={{ color: 'rgb(74, 74, 74)' }}>
                 {review.content}
               </p>
               
-              <div className="mt-auto pt-4 border-t border-gray-100 flex justify-between items-center">
+              <div className="mt-auto pt-4 border-t flex justify-between items-center" style={{ borderColor: 'rgb(245, 245, 245)' }}>
                 <div className="space-y-0.5">
-                  <p className="font-sans font-bold text-[15px] text-[#1A1A1A]">
+                  <p className="font-sans font-bold text-[15px]" style={{ color: 'rgb(26, 26, 26)' }}>
                     {review.author}
                   </p>
-                  <p className="text-[12px] text-[#888888] font-sans">
+                  <p className="text-[12px] font-sans" style={{ color: 'rgb(136, 136, 136)' }}>
                     {review.details}
                   </p>
                 </div>
-                <div className="w-6 h-6 bg-[#4285F4] rounded-full flex items-center justify-center text-white text-[10px] font-bold">
+                <div className="w-6 h-6 rounded-full flex items-center justify-center text-white text-[10px] font-bold" style={{ backgroundColor: '#4285F4' }}>
                   G
                 </div>
               </div>
@@ -75,22 +77,28 @@ const Reviews = () => {
         {/* Stats Row */}
         <div className="flex flex-wrap justify-center items-center gap-12 md:gap-24 mb-16">
           <div className="text-center">
-            <h4 className="text-[48px] font-serif font-medium text-[#C9A961] leading-none mb-2">4.9</h4>
-            <p className="text-[13px] text-white/70 font-sans  tracking-widest">stars on Google</p>
+            <h4 style={{ fontFamily: 'Fraunces, Georgia, serif', fontSize: '48px', fontWeight: '500', color: 'rgb(201, 169, 97)', lineHeight: '1', marginBottom: '8px' }}>4.9</h4>
+            <p className="text-[13px] font-sans tracking-widest" style={{ color: 'rgba(255, 255, 255, 0.7)' }}>stars on Google</p>
           </div>
           <div className="text-center">
-            <h4 className="text-[48px] font-serif font-medium text-[#C9A961] leading-none mb-2">42</h4>
-            <p className="text-[13px] text-white/70 font-sans  tracking-widest">reviews mentioning Dr. Nair</p>
+            <h4 style={{ fontFamily: 'Fraunces, Georgia, serif', fontSize: '48px', fontWeight: '500', color: 'rgb(201, 169, 97)', lineHeight: '1', marginBottom: '8px' }}>42</h4>
+            <p className="text-[13px] font-sans tracking-widest" style={{ color: 'rgba(255, 255, 255, 0.7)' }}>reviews mentioning {doctorName}</p>
           </div>
           <div className="text-center">
-            <h4 className="text-[48px] font-serif font-medium text-[#C9A961] leading-none mb-2">97%</h4>
-            <p className="text-[13px] text-white/70 font-sans  tracking-widest">would recommend her</p>
+            <h4 style={{ fontFamily: 'Fraunces, Georgia, serif', fontSize: '48px', fontWeight: '500', color: 'rgb(201, 169, 97)', lineHeight: '1', marginBottom: '8px' }}>97%</h4>
+            <p className="text-[13px] font-sans tracking-widest" style={{ color: 'rgba(255, 255, 255, 0.7)' }}>would recommend her</p>
           </div>
         </div>
 
         <div className="text-center">
-          <button className="inline-flex items-center px-8 py-3.5 border border-[#C9A961] text-[#C9A961] font-sans font-bold text-[14px] rounded-md hover:bg-[#C9A961] hover:text-white transition-all duration-300">
-            Read All Reviews for Dr. Nair
+          <button className="inline-flex items-center px-8 py-3.5 border text-[14px] font-sans font-bold rounded-md hover:opacity-90 transition-all duration-300" style={{ borderColor: 'rgb(201, 169, 97)', color: 'rgb(201, 169, 97)' }} onMouseEnter={(e) => {
+            e.currentTarget.style.backgroundColor = 'rgb(201, 169, 97)';
+            e.currentTarget.style.color = 'rgb(255, 255, 255)';
+          }} onMouseLeave={(e) => {
+            e.currentTarget.style.backgroundColor = 'transparent';
+            e.currentTarget.style.color = 'rgb(201, 169, 97)';
+          }}>
+            Read All Reviews for {doctorName}
           </button>
         </div>
       </div>

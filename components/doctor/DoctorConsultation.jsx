@@ -1,14 +1,15 @@
 import React from 'react';
+import Link from 'next/link';
 
 const DoctorConsultation = ({ doctor }) => {
   return (
-    <section className="bg-[#F6F1EA] py-24">
+    <section className="py-24" style={{ backgroundColor: 'rgb(250, 246, 239)' }}>
       <div className="max-w-[1280px] mx-auto px-6">
         <div className="text-center mb-16">
-          <span className="text-[13px] font-sans font-semibold tracking-[0.1em] text-[#C9A961] uppercase block mb-4">
+          <span className="text-[13px] font-sans font-semibold tracking-[0.1em] uppercase block mb-4" style={{ color: 'rgb(201, 169, 97)' }}>
             YOUR FIRST VISIT
           </span>
-          <h2 className="text-[42px] font-serif font-medium text-[#1A1A1A] leading-[1.2]">
+          <h2 style={{ fontFamily: 'Fraunces, Georgia, serif', fontSize: '42px', fontWeight: '500', color: 'rgb(26, 26, 26)', lineHeight: '1.2' }}>
             A consultation with {doctor.firstName} is unlike any you have had.
           </h2>
         </div>
@@ -16,13 +17,13 @@ const DoctorConsultation = ({ doctor }) => {
         <div className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-4 gap-8">
           {doctor.consultationSteps.map((step, index) => (
             <div key={index} className="relative">
-              <div className="text-[64px] font-serif text-[#C9A961]/20 font-medium mb-4">
+              <div className="text-[64px] font-serif font-medium mb-4" style={{ color: 'rgba(201, 169, 97, 0.2)' }}>
                 {String(index + 1).padStart(2, '0')}
               </div>
-              <h3 className="text-[18px] font-serif font-medium text-[#1A1A1A] mb-4">
+              <h3 style={{ fontFamily: 'Fraunces, Georgia, serif', fontSize: '18px', fontWeight: '500', color: 'rgb(26, 26, 26)', marginBottom: '16px' }}>
                 {step.title}
               </h3>
-              <p className="text-[14px] font-sans text-[#4A4A4A] leading-relaxed">
+              <p className="text-[14px] font-sans leading-relaxed" style={{ color: 'rgb(74, 74, 74)' }}>
                 {step.description}
               </p>
             </div>
@@ -30,8 +31,8 @@ const DoctorConsultation = ({ doctor }) => {
         </div>
 
         <div className="mt-16 text-center">
-          <p className="text-[13px] font-sans text-[#6B6B6B]">
-            First consultation: 45 to 60 minutes • From AED 350 • Insurance direct-billing available
+          <p className="text-[13px] font-sans" style={{ color: 'rgb(107, 107, 107)' }}>
+            First consultation: 45 to 60 minutes • From AED 350 • Insurance direct-billing available • <Link href="/treatments/panchakarma-dubai" className="hover:opacity-70 transition-opacity" style={{ color: 'rgb(201, 169, 97)' }}>Panchakarma</Link> programmes available
           </p>
         </div>
       </div>

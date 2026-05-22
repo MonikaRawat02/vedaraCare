@@ -4,12 +4,19 @@ import DoctorProfileSummary from './DoctorProfileSummary';
 import DoctorCredentials from './DoctorCredentials';
 import DoctorSpecialties from './DoctorSpecialties';
 import DoctorConsultation from './DoctorConsultation';
+import Reviews from '../home/Reviews';
+import DoctorLanguagesSchedule from './DoctorLanguagesSchedule';
+import DoctorFAQ from './DoctorFAQ';
+import DoctorLocation from './DoctorLocation';
+import DoctorCTA from './DoctorCTA';
+import DoctorOtherPractitioners from './DoctorOtherPractitioners';
+import DoctorArticles from './DoctorArticles';
 
 const defaultDoctorData = {
   name: 'Dr. Priya Nair',
   firstName: 'Dr. Nair',
   title: 'BAMS, MD (Ayurveda) — Classical Ayurveda Specialist',
-  image: '/images/doctor-priya.jpg',
+  image: 'https://images.unsplash.com/photo-1594824476967-48c8b964273f?w=720&h=900&fit=crop&auto=format',
   bio: 'Dr. Nair leads the Ayurveda department at Vedara Care Polyclinic in Jumeirah Village Circle. With over fifteen years of clinical practice — including eight years in Kerala’s leading Ayurvedic hospitals and seven years serving Dubai patients — she is known for treating chronic conditions where conventional care has plateaued. Her approach is precise, evidence-aware, and unhurried.',
   specialties: 'Chronic pain, PCOS, migraine, hair loss, stress & anxiety',
   fee: 'From AED 350 (consultation)',
@@ -99,6 +106,13 @@ const DoctorPage = ({ doctorData = defaultDoctorData }) => {
       <DoctorCredentials doctor={doctorData} />
       <DoctorSpecialties doctor={doctorData} />
       <DoctorConsultation doctor={doctorData} />
+      <Reviews doctor={doctorData} />
+      <DoctorLanguagesSchedule doctor={doctorData} />
+      <DoctorFAQ doctor={doctorData} />
+      <DoctorLocation doctor={doctorData} />
+      <DoctorCTA doctor={doctorData} />
+      <DoctorOtherPractitioners />
+      <DoctorArticles doctor={doctorData} />
     </>
   );
 };
