@@ -2,6 +2,41 @@ import React from 'react';
 import Head from 'next/head';
 import Link from 'next/link';
 
+const practitioners = [
+  {
+    name: 'Dr. Priya Nair',
+    specialty: 'Senior Ayurvedic Physician',
+    focus: 'Chronic Pain, PCOS, Migraine',
+    image: 'https://images.unsplash.com/photo-1594824476967-48c8b964273f?w=480&h=360&fit=crop&auto=format',
+    alt: 'Dr. Priya Nair',
+    slug: 'dr-priya-nair-ayurveda'
+  },
+  {
+    name: 'Dr. Meera Krishnan',
+    specialty: 'Senior Ayurvedic Physician',
+    focus: 'Panchakarma & Detox',
+    image: 'https://images.unsplash.com/photo-1614608682850-e0d6ed316d47?w=480&h=360&fit=crop&auto=format',
+    alt: 'Dr. Meera Krishnan',
+    slug: 'dr-meera-krishnan-ayurveda'
+  },
+  {
+    name: 'Dr. James Okafor',
+    specialty: 'Lead Physiotherapist',
+    focus: 'Sports Rehabilitation',
+    image: 'https://images.unsplash.com/photo-1612349317150-e413f6a5b16d?w=480&h=360&fit=crop&auto=format',
+    alt: 'Dr. James Okafor',
+    slug: 'dr-james-okafor-physiotherapy'
+  },
+  {
+    name: 'Dr. Layla Al Rashid',
+    specialty: 'Consultant Dermatologist',
+    focus: 'Integrative Dermatology',
+    image: 'https://images.unsplash.com/photo-1559839734-2b71ea197ec2?w=480&h=360&fit=crop&auto=format',
+    alt: 'Dr. Layla Al Rashid',
+    slug: 'dr-layla-al-rashid-dermatology'
+  }
+];
+
 export default function DoctorsPage() {
   return (
     <>
@@ -10,40 +45,48 @@ export default function DoctorsPage() {
         <meta name="description" content="Meet our team of DHA-licensed doctors at Vedara Care Polyclinic in JVC, Dubai. Ayurveda, physiotherapy, dermatology, and wellness specialists." />
       </Head>
 
-      <section className="bg-[#F6F1EA] py-24">
+      <section className="py-24" style={{ backgroundColor: 'rgb(240, 233, 221)' }}>
         <div className="max-w-[1280px] mx-auto px-6">
           <div className="text-center mb-16">
-            <span className="text-[13px] font-sans font-semibold tracking-[0.1em] text-[#C9A961] uppercase block mb-4">
+            <span className="text-[13px] font-sans font-semibold tracking-[0.1em] uppercase block mb-4" style={{ color: 'rgb(201, 169, 97)' }}>
               OUR TEAM
             </span>
-            <h1 className="text-[48px] font-serif font-medium text-[#1A1A1A] leading-[1.2] mb-6">
+            <h1 style={{ fontFamily: 'Fraunces, Georgia, serif', fontSize: 'clamp(32px, 4vw, 48px)', fontWeight: '500', color: 'rgb(26, 26, 26)', lineHeight: '1.2', marginBottom: '24px' }}>
               Meet Our Doctors
             </h1>
-            <p className="text-[16px] font-sans text-[#6B6B6B] max-w-2xl mx-auto">
+            <p className="text-[16px] font-sans max-w-2xl mx-auto" style={{ color: 'rgb(107, 107, 107)' }}>
               DHA-licensed healthcare professionals with years of experience in their specialties.
             </p>
           </div>
 
-          <div className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-8">
-            <Link
-              href="/doctors/dr-priya-nair-ayurveda"
-              className="bg-white p-8 rounded-lg border border-[#E5E5E5] hover:shadow-lg transition-all duration-300 group"
-            >
-              <div className="w-full h-64 bg-[#F6F1EA] rounded-lg mb-6 flex items-center justify-center">
-                <div className="text-center">
-                  <div className="w-24 h-24 bg-[#C9A961]/20 rounded-full mx-auto mb-4"></div>
-                  <p className="text-[14px] font-sans text-[#6B6B6B]">Doctor Image</p>
+          <div className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-5">
+            {practitioners.map((doc, index) => (
+              <Link
+                key={index}
+                href={`/doctors/${doc.slug}`}
+                className="rounded-[8px] overflow-hidden cursor-pointer group"
+                style={{ background: 'rgb(255, 255, 255)', border: '1px solid rgb(229, 223, 211)' }}
+              >
+                <div className="overflow-hidden" style={{ aspectRatio: '4 / 3', background: 'rgb(228, 216, 200)' }}>
+                  <img
+                    src={doc.image}
+                    alt={doc.alt}
+                    className="w-full h-full object-cover transition-transform duration-500 group-hover:scale-105"
+                  />
                 </div>
-              </div>
-              <h3 className="text-[22px] font-serif font-medium text-[#1A1A1A] mb-2">Dr. Priya Nair</h3>
-              <p className="text-[14px] font-sans text-[#C9A961] mb-4">BAMS, MD (Ayurveda)</p>
-              <p className="text-[14px] font-sans text-[#4A4A4A] leading-relaxed mb-4">
-                Classical Ayurveda specialist with 15+ years experience treating chronic pain, PCOS, migraine, and stress-related disorders.
-              </p>
-              <span className="text-[#184C3A] font-sans font-medium text-[14px] group-hover:underline">
-                View Profile →
-              </span>
-            </Link>
+                <div className="p-5">
+                  <p className="font-semibold text-[16px] mb-1" style={{ fontFamily: 'Fraunces, Georgia, serif', color: 'rgb(26, 26, 26)' }}>
+                    {doc.name}
+                  </p>
+                  <p className="text-[13px] mb-0.5" style={{ color: 'rgb(31, 69, 56)' }}>
+                    {doc.specialty}
+                  </p>
+                  <p className="text-[13px]" style={{ color: 'rgb(107, 107, 107)' }}>
+                    {doc.focus}
+                  </p>
+                </div>
+              </Link>
+            ))}
           </div>
         </div>
       </section>
