@@ -1,18 +1,19 @@
 import Head from 'next/head';
 import Link from 'next/link';
 import { MessageCircle, Phone } from 'lucide-react';
-import Hero from '../components/Hero';
-import Services from '../components/Services';
-import Experts from '../components/Experts';
-import WhyVedara from '../components/WhyVedara';
-import HomeHealthcare from '../components/HomeHealthcare';
-import About from '../components/About';
-import Conditions from '../components/Conditions';
-import Journal from '../components/Journal';
-import FAQ from '../components/FAQ';
-import Location from '../components/Location';
-import Insights from '../components/Insights';
-import CTA from '../components/CTA';
+import Hero from '../components/home/Hero';
+import Services from '../components/home/Services';
+import Experts from '../components/home/Experts';
+import WhyVedara from '../components/home/WhyVedara';
+import Reviews from '../components/home/Reviews';
+import HomeHealthcare from '../components/home/HomeHealthcare';
+import About from '../components/home/About';
+import Conditions from '../components/home/Conditions';
+import Journal from '../components/home/Journal';
+import FAQ from '../components/home/FAQ';
+import Location from '../components/home/Location';
+import Insights from '../components/home/Insights';
+import CTA from '../components/home/CTA';
 
 export default function Home() {
   return (
@@ -28,6 +29,7 @@ export default function Home() {
       <Conditions />
       <Experts />
       <WhyVedara />
+      <Reviews />
       <HomeHealthcare />
       <Insights />
       <Location />
