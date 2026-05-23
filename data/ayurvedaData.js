@@ -6,7 +6,7 @@ export const ayurvedaHero = {
   label: "Ayurveda Clinic in Jumeirah Village Circle, Dubai",
   title: "Classical Ayurveda,\npractised in the heart of JVC.",
   description: "A DHA-licensed Ayurveda clinic in Jumeirah Village Circle, Dubai. BAMS-qualified Ayurvedic physicians offering authentic Panchakarma, Abhyanga, Shirodhara and personalised dosha-based treatment for chronic conditions, stress, and long-term wellbeing.",
-  image: "ayurveda-clinic-jvc-hero.webp",
+  image: "https://images.unsplash.com/photo-1600334089648-b0d9d3028eb2?q=80&w=2070&auto=format&fit=crop",
   alt: "BAMS-qualified Ayurvedic doctor performing pulse diagnosis (Nadi Pariksha) on a patient at Vedara Care Ayurveda clinic in JVC, Dubai",
   primaryCTA: "Book an Ayurvedic Consultation",
   secondaryCTA: "Chat on WhatsApp",
@@ -25,7 +25,7 @@ export const ayurvedaHero = {
 export const ayurvedaIntro = {
   bgColor: "bg-white",
   label: "About Our Ayurveda Practice",
-  title: "Ayurveda is the world's oldest continuously practised system of medicine.",
+  title: "Ayurveda is the world's oldest continuously practised system of medicine. At our JVC clinic, it is also our most rigorous.",
   blockquote: "Our Ayurveda department at Vedara Care Polyclinic in Jumeirah Village Circle, Dubai is led by BAMS-qualified Ayurvedic physicians registered with the Dubai Health Authority. We practise classical Ayurveda - pulse-based diagnosis, dosha analysis, herbal medicines, and Panchakarma - alongside modern diagnostics. Our patients come to us for chronic back pain, PCOS, hair loss, migraine, stress, and metabolic conditions where conventional care has not given lasting answers.",
   footer: "Medically reviewed by Dr. Priya Menon, BAMS, MD (Ayurveda) · DHA License XXXXX · Last updated May 2026"
 };
@@ -112,7 +112,7 @@ export const ayurvedaPhysician = {
   name: "Dr. Priya Menon",
   qualification: "BAMS · MD (Ayurveda) · DHA Licensed",
   description: "Dr. Menon has practised classical Ayurveda for 17 years, with clinical training at the Government Ayurveda College, Thiruvananthapuram, and over nine years in Dubai. At Vedara Care she leads our Ayurveda department, with a focus on chronic conditions where conventional care has plateaued - particularly PCOS, chronic pain, and migraine. Patients describe her consultations as the longest and most thorough they have had in Dubai.",
-  image: "dr-priya-menon-ayurvedic-physician-jvc.webp",
+  image: "https://images.unsplash.com/photo-1594824476967-48c8b964273f?w=720&h=900&fit=crop&auto=format",
   alt: "Dr. Priya Menon, BAMS-qualified Ayurvedic physician and DHA-licensed doctor at Vedara Care Polyclinic, JVC Dubai",
   stats: [
     { value: "15+", label: "Years of Practice" },
@@ -464,4 +464,244 @@ export const ayurvedaCTA = {
   button1Text: "Book an Ayurveda Consultation",
   button2Text: "Chat on WhatsApp",
   subtext: "First consultation from AED [price] · Typical WhatsApp reply under 15 minutes"
+};
+
+export const dubaiHubHero = {
+  breadcrumb: [
+    { label: "Home", href: "/" },
+    { label: "Ayurveda in Dubai", active: true }
+  ],
+  label: "A GUIDE TO AYURVEDIC TREATMENT IN DUBAI",
+  title: "Authentic Ayurveda in\nDubai — what it is, who it\nis for, and where to find\nit.",
+  description: "A definitive guide to Ayurvedic treatment in Dubai, written by the DHA-licensed Ayurvedic team at Vedara Care Polyclinic. Covering treatments, conditions, doctors, costs, insurance, and how to choose the right Ayurveda clinic for your specific needs.",
+  image: "https://images.unsplash.com/photo-1544161515-4ab6ce6db874?q=80&w=2070&auto=format&fit=crop",
+  alt: "Ayurvedic oils and traditional copper vessels for authentic treatment in Dubai",
+  primaryCTA: "Book an Ayurvedic Consultation",
+  secondaryCTA: "Read the Guide",
+  trustSignals: [
+    "DHA-Licensed Ayurveda Practice",
+    "BAMS-Qualified Physicians",
+    "5,000+ Patients Across Dubai",
+    "Authentic Classical Treatments"
+  ],
+  floatingCard: {
+    title: "EST. DUBAI",
+    subtitle: "5,000+ Patients Treated"
+  }
+};
+
+export const dubaiHubIntro = {
+  bgColor: "bg-white",
+  label: "THE QUICK ANSWER",
+  title: "Ayurveda in Dubai, in one paragraph.",
+  blockquote: "Ayurvedic treatment is officially recognised and regulated in Dubai by the Dubai Health Authority (DHA), which licenses both Ayurvedic clinics and individual physicians. Authentic Ayurveda in Dubai is practised by BAMS-qualified doctors (a 5.5-year medical degree from India) and uses classical methods — pulse diagnosis, dosha assessment, Panchakarma detoxification, and constitution-based herbal medicines — to treat chronic conditions like back pain, PCOS, migraine, stress, and hair loss. Costs typically range from AED 200 to AED 800 per session, with some insurance plans offering partial coverage.",
+  footer: "Medically reviewed by Dr. Priya Menon, BAMS, MD (Ayurveda), DHA-Licensed · Last updated May 2026"
+};
+
+export const dubaiHubTherapies = {
+  label: "TREATMENTS",
+  title: "The classical Ayurvedic therapies practised in Dubai.",
+  description: "These eight treatments form the foundation of authentic Ayurvedic care. At Vedara Care, every one is prescribed by a BAMS-qualified physician — not offered as a walk-in service.",
+  items: [
+    {
+      title: "Panchakarma",
+      description: "The classical five-action detoxification programme. Doctor-supervised over 7, 14, or 21 days.",
+      duration: "7-21 days",
+      bestFor: "From AED 3,500",
+      image: "panchakarma-room-jvc-dubai.webp",
+      link: "/treatments/panchakarma-dubai/"
+    },
+    {
+      title: "Abhyanga",
+      description: "Full-body warm medicated oil massage prescribed for circulation, sleep, and dosha balance.",
+      duration: "60-90 min",
+      bestFor: "From AED 280",
+      image: "abhyanga-massage-jvc-dubai.webp",
+      link: "/treatments/abhyanga-dubai/"
+    },
+    {
+      title: "Shirodhara",
+      description: "Continuous warm oil stream over the forehead. Profoundly calming for the nervous system.",
+      duration: "45-60 min",
+      bestFor: "From AED 320",
+      image: "shirodhara-treatment-jvc.webp",
+      link: "/treatments/shirodhara-dubai/"
+    },
+    {
+      title: "Kativasti",
+      description: "Warm medicated oil held over the lower back. Targeted, lasting relief for spinal conditions.",
+      duration: "45 min",
+      bestFor: "From AED 260",
+      image: "kativasti-back-pain-jvc.webp",
+      link: "/treatments/kativasti-dubai/"
+    },
+    {
+      title: "Njavarakizhi",
+      description: "Massage using medicated rice boluses cooked in herbal milk. Deep tissue nourishment.",
+      duration: "60-75 min",
+      bestFor: "From AED 350",
+      image: "njavarakizhi-treatment-vedara-jvc.webp",
+      link: "/treatments/njavarakizhi-dubai/"
+    },
+    {
+      title: "Nasya",
+      description: "Medicated oils administered through the nasal passage for sinus and head conditions.",
+      duration: "30-45 min",
+      bestFor: "From AED 220",
+      image: "nasya-dubai.webp",
+      link: "/treatments/nasya-dubai/"
+    },
+    {
+      title: "Basti",
+      description: "Medicated enema therapy. Considered the most important of the five Panchakarma actions.",
+      duration: "Course-based",
+      bestFor: "From AED 300",
+      image: "basti-dubai.webp",
+      link: "/treatments/basti-dubai/"
+    },
+    {
+      title: "Udvartana",
+      description: "Vigorous herbal powder massage supporting fat metabolism and lymphatic circulation.",
+      duration: "45-60 min",
+      bestFor: "From AED 290",
+      image: "udvartana-dubai.webp",
+      link: "/treatments/udvartana-dubai/"
+    }
+  ]
+};
+
+export const dubaiHubReviews = {
+  bgColor: "bg-[#F0E9DD]",
+  label: "PATIENT STORIES",
+  title: "Outcomes Across Dubai.",
+  description: "",
+  buttonText: "Read All Reviews",
+  items: [
+    {
+      quote: "After three years of back pain, finally a long-term answer.",
+      content: "Sarah K. · Chronic Back Pain · 21-Day Panchakarma · Dubai Marina · March 2026",
+      author: "Sarah K.",
+      details: "Verified Google Review"
+    },
+    {
+      quote: "My cycle came back in the second month. I had stopped believing it would.",
+      content: "Aisha M. · PCOS · 6-Month Programme · Arabian Ranches · February 2026",
+      author: "Aisha M.",
+      details: "Verified Google Review"
+    },
+    {
+      quote: "The home Abhyanga sessions changed my postnatal recovery completely.",
+      content: "Priya R. · Postnatal Care · Home Healthcare · Palm Jumeirah · January 2026",
+      author: "Priya R.",
+      details: "Verified Google Review"
+    }
+  ],
+  stats: [
+    { value: "4.9", label: "Stars on Google" },
+    { value: "240+", label: "Verified Reviews" },
+    { value: "96%", label: "Would Recommend" }
+  ]
+};
+
+export const dubaiHubFAQ = {
+  bgColor: "bg-[#FAF8F1]",
+  label: "AYURVEDA IN DUBAI",
+  title: "The most asked questions about Ayurvedic treatment in Dubai.",
+  description: "Honest answers from our DHA-licensed clinical team. WhatsApp us if yours is not here.",
+  buttonText: "Ask the Ayurvedic Team",
+  faqs: [
+    {
+      question: "Is Ayurvedic treatment legal and regulated in Dubai?",
+      answer: "Yes. Ayurveda is officially recognised and regulated by the Dubai Health Authority (DHA), which licenses both Ayurvedic clinics and individual physicians. Ayurvedic medicines used in licensed clinics must meet UAE health authority standards. Always check that any clinic you visit holds a current DHA Healthcare Facility License with Ayurveda specifically listed as a specialty."
+    },
+    {
+      question: "How do I find a real Ayurvedic doctor in Dubai?",
+      answer: "A real Ayurvedic doctor (physician) in Dubai must hold a BAMS (Bachelor of Ayurvedic Medicine and Surgery) degree and a valid DHA Professional License. You can verify any doctor's license on the DHA website or by asking the clinic for their license number."
+    },
+    {
+      question: "What is the difference between Ayurvedic massage and Ayurvedic treatment?",
+      answer: "Ayurvedic massage (often found in spas) is for relaxation. Ayurvedic treatment (only in clinics) is medical. It is prescribed by a doctor after a diagnostic consultation to treat a specific condition, using therapeutic oils and methods like Panchakarma."
+    },
+    {
+      question: "How much does Ayurvedic treatment cost in Dubai?",
+      answer: "Consultations typically range from AED 300 to AED 500. Individual therapies start from AED 250, while comprehensive Panchakarma programmes can range from AED 3,000 to AED 10,000 depending on duration and complexity."
+    },
+    {
+      question: "Does insurance cover Ayurveda in Dubai?",
+      answer: "Many premium insurance plans in Dubai now offer coverage for 'Alternative Medicine' which includes Ayurveda, provided it is at a DHA-licensed clinic. Coverage usually ranges from 50% to 100% depending on your plan."
+    },
+    {
+      question: "How long does Ayurvedic treatment take to show results?",
+      answer: "For acute issues, you may feel relief in 1-3 sessions. For chronic conditions like PCOS or long-term back pain, a structured programme of 3-6 months is usually required to see lasting changes."
+    },
+    {
+      question: "What conditions does Ayurveda treat best?",
+      answer: "Ayurveda is exceptionally strong in managing chronic musculoskeletal pain, hormonal imbalances (PCOS), stress-related disorders, skin conditions, and digestive issues."
+    },
+    {
+      question: "Are Ayurvedic medicines safe?",
+      answer: "Yes, when prescribed by a qualified BAMS physician. In Dubai, all Ayurvedic medicines used in clinics are regulated and must be free from harmful heavy metals or contaminants."
+    },
+    {
+      question: "Can I take Ayurvedic treatment alongside my conventional medication?",
+      answer: "Yes. In fact, we often practice integrative medicine. Our doctors will review your current prescriptions to ensure there are no contraindications between your Ayurvedic and conventional treatments."
+    },
+    {
+      question: "What is Panchakarma, and is it the same as detox?",
+      answer: "Panchakarma is a deep, five-step medical detoxification and rejuvenation process. It is much more intensive than a standard 'detox' and must be performed under strict medical supervision."
+    },
+    {
+      question: "Where is the best Ayurvedic clinic located in Dubai?",
+      answer: "The best clinic for you is one that is DHA-licensed, employs BAMS-qualified doctors, and has a track record of clinical outcomes. Vedara Care in JVC is one such leading facility."
+    },
+    {
+      question: "How do I start with Ayurvedic treatment in Dubai?",
+      answer: "The first step is always a 60-minute diagnostic consultation. During this, the doctor will assess your constitution (Prakriti) and current imbalances (Vikriti) to create a personalised treatment plan."
+    }
+  ]
+};
+
+export const dubaiHubCTA = {
+  bgColor: "bg-[#FAF8EF]",
+  label: "READY TO BEGIN?",
+  title: "Start with a consultation. Decide everything else from there.",
+  description: "An Ayurvedic consultation is a diagnostic conversation, not a sales pitch. You will leave knowing exactly what is going on and what we recommend — and whether to proceed is entirely your decision.",
+  button1Text: "Book a Consultation",
+  button2Text: "Chat on WhatsApp",
+  subtext: "First consultations from AED 350 · Typical WhatsApp reply under 15 minutes"
+};
+
+export const dubaiHubJournal = {
+  label: "RELATED READING",
+  title: "More from the Vedara Care clinical team.",
+  linkText: "Explore the Journal",
+  articles: [
+    {
+      category: "AYURVEDA",
+      title: "What Panchakarma actually does, and what it does not",
+      description: "Dr. Priya Nair · 6 min read",
+      author: "Dr. Priya Nair",
+      readTime: "6 min read",
+      image: "panchakarma-article",
+      link: "/blog/what-is-panchakarma/"
+    },
+    {
+      category: "DUBAI HEALTHCARE",
+      title: "Is Ayurveda covered by insurance in Dubai? A 2026 guide",
+      description: "Vedara Care Team · 5 min read",
+      author: "Vedara Care Team",
+      readTime: "5 min read",
+      image: "insurance-article",
+      link: "/blog/ayurveda-insurance-dubai-guide/"
+    },
+    {
+      category: "WOMEN'S HEALTH",
+      title: "PCOS in Dubai: why expat women are turning to Ayurveda",
+      description: "Dr. Anjali Menon · 8 min read",
+      author: "Dr. Anjali Menon",
+      readTime: "8 min read",
+      image: "pcos-article",
+      link: "/blog/pcos-ayurveda-dubai-expat-women/"
+    }
+  ]
 };
