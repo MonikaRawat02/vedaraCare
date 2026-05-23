@@ -84,25 +84,25 @@ export const kativastiOils = {
       name: "Mahanarayana Taila",
       description: "Heavy Vata pacification, deep penetration",
       content: "The most-prescribed oil for Kativasti at our JVC clinic. A heavy, deeply warming sesame-based preparation medicated with classical herbs including Bala, Ashwagandha, and Dashamoola. Used for chronic mechanical back pain, age-related degeneration, post-exertional lumbar pain, and Vata-pattern stiffness. Provides both immediate warmth and sustained anti-inflammatory action.",
-      indication: "Typically prescribed for: chronic back pain, lumbar stiffness, post-exertional pain"
+      indication: " chronic back pain, lumbar stiffness, post-exertional pain"
     },
     {
       name: "Sahacharadi Taila",
       description: "Targeted for nerve-related lumbar pain",
       content: "A specialised preparation with Sahachara (Barleria prionitis) and supporting herbs, particularly effective for nerve-involvement pain patterns including sciatica, radiculopathy, and disc-related radiating pain. Often the oil of choice when pain radiates down the leg.",
-      indication: "Typically prescribed for: sciatica, radiating leg pain, disc-related pain"
+      indication: " sciatica, radiating leg pain, disc-related pain"
     },
     {
       name: "Pinda Taila",
       description: "Cooling, preparation used for inflammatory back conditions, post-acute injury phases, and Pitta-pattern lumbar pain where the area feels hot, throbbing, or inflamed rather than cold and stiff. Less commonly used than the warming oils but essential for the right pathology.",
       content: "A cooling preparation used for inflammatory back conditions, post-acute injury phases, and Pitta-pattern lumbar pain where the area feels hot, throbbing, or inflamed rather than cold and stiff. Less commonly used than the warming oils but essential for the right pathology.",
-      indication: "Typically prescribed for: inflammatory back pain, recent injury recovery, Pitta-pattern conditions"
+      indication: " inflammatory back pain, recent injury recovery, Pitta-pattern conditions"
     },
     {
       name: "Murivenna",
       description: "Specifically for sports injuries and acute trauma",
       content: "A traditional Kerala preparation specifically used for acute and subacute musculoskeletal injuries — sprains, strains, post-traumatic stiffness, and sports-related lumbar injuries. Often used in shorter Kativasti courses (5-7 sessions) for acute recovery rather than long courses for chronic conditions.",
-      indication: "Typically prescribed for: sports injuries, acute trauma recovery, sprains"
+      indication: " sports injuries, acute trauma recovery, sprains"
     }
   ],
   footer: "Your doctor will select the appropriate oil after clinical assessment. Oils are sometimes changed mid-course based on clinical response. All oils used at Vedara Care are sourced from classical Ayurvedic pharmacies in Kerala with documented quality testing."
@@ -113,44 +113,43 @@ export const kativastiApplications = {
   label: "CLINICAL APPLICATIONS",
   title: "What Kativasti actually treats — and how it integrates with conventional care.",
   description: "Kativasti is most effective for mechanical and chronic lumbar pain. Honest guidance on what it does and what it does not.",
-  applications: [
-    {
-      category: "PRIMARY APPLICATIONS",
-      items: [
-        "Chronic mechanical lower back pain — Typical course: 7-14 sessions over 2-4 weeks",
-        "Sciatica (lumbar nerve root) — Typical course: 14 sessions over 4-6 weeks with Sahacharadi",
-        "Lumbar disc herniation (non-surgical) — Typical course: 14 sessions over 6 weeks (often post-surgical)",
-        "Spondylosis (degenerative) — Typical course: 14 sessions, often repeated annually",
-        "Paraspinal muscle spasm — Typical course: 7 sessions",
-        "Sacralisation / lumbarisation — Typical course: 7 sessions",
-        "Post-lumbar spinal surgery stiffness — Typical course: 14 sessions (as part of Sutika Paricharya)"
-      ]
-    },
-    {
-      category: "WHEN IT LIMITS",
-      items: [
-        "Refer Ayurvedic doctors at our JVC clinic refer you to the right specialist when Ayurveda is not appropriate.",
-        "Acute fractures with surgical urgency (refer to orthopedic surgeon)",
-        "Cauda equina syndrome (medical emergency — imaging and hospital)",
-        "Suspected spinal infections (antibiotics first)",
-        "Pregnancy (wait until postpartum — Kativasti contraindicated in pregnancy)",
-        "Open wounds or active infections over the lumbar spine (heal first)"
-      ]
-    }
+  primaryApplications: [
+    "Chronic mechanical lower back pain — Typical course: 7-14 sessions over 2-4 weeks",
+    "Sciatica (lumbar nerve root pain) — Typical course: 14 sessions over 4-6 weeks with Sahacharadi",
+    "Lumbar disc bulge (non-surgical) — Typical course: 14-21 sessions over 6-10 weeks",
+    "Spondylosis (degenerative changes) — Typical course: 14 sessions, often repeated annually",
+    "Sacroiliac joint dysfunction — Typical course: 7-10 sessions",
+    "Post-exercise lumbar stiffness — Typical course: 5-7 sessions",
+    "Postpartum back pain — Typical course: 7-14 sessions (as part of Sutika Paricharya)",
+    "Lumbar muscle spasm (chronic) — Typical course: 5-7 sessions"
   ],
-  footer: "We collaborate with your existing specialists — orthopedists, physiotherapists, or neurosurgeons when needed. Vedara Kativasti does not replace conventional diagnostics — not as a replacement for conventional diagnostics."
+  honestLimits: {
+    description: "Real Ayurvedic doctors at our JVC clinic refer you to the right specialist when Kativasti is not appropriate.",
+    items: [
+      "Acute disc herniation with neurological signs (refer to orthopaedic surgeon first)",
+      "Cauda equina symptoms (medical emergency — go to hospital)",
+      "Suspected spinal infection or tumour (requires imaging and conventional workup first)",
+      "Recent spinal surgery (post-surgical clearance required)",
+      "Pregnancy (different Ayurvedic protocols apply)",
+      "Open skin lesions or active infections over the lumbar region (resolve first)"
+    ]
+  },
+  footer: "We coordinate with your existing orthopaedic specialist, physiotherapist, or pain consultant when needed. Kativasti is often most effective as part of an integrated plan — not as a replacement for conventional diagnosis."
 };
 
 export const kativastiIntegration = {
-  bgColor: "bg-[#FAF6EF]",
+  bgColor: "bg-[#F5F1E8]",
   label: "INTEGRATED CARE AT VEDARA",
   title: "Why our back pain patients often combine Kativasti with physiotherapy.",
-  description: "For chronic mechanical back pain, the strongest outcomes at our Vedara Care JVC clinic come from combining Kativasti with structured physiotherapy. The two therapies complement each other: Ayurveda addresses biomechanics, postural patterns, and dosha imbalance; physiotherapy addresses biomechanics, postural patterns, and motor control.",
-  image: "https://images.unsplash.com/photo-1600334089648-b0d9d3028eb2?w=600&h=450&fit=crop&auto=format",
+  paragraphs: [
+    "For chronic mechanical back pain, the strongest outcomes at our Vedara Care JVC clinic come from combining Kativasti with structured physiotherapy. The two therapies work on different mechanisms — Kativasti addresses tissue quality, inflammation, and Vata imbalance; physiotherapy addresses biomechanics, postural patterns, and motor control.",
+    "Our Ayurvedic doctors and physiotherapists share treatment notes for joint patients. A typical integrated plan combines 2-3 Kativasti sessions per week with 2 physiotherapy sessions per week for 4-6 weeks — booked at the same clinic, often on alternating days."
+  ],
+  image: "https://images.unsplash.com/photo-1731597076108-f3bbe268162f?w=600",
   features: [
     "Joint clinical assessment with both teams at first visit",
-    "Coordinated 6-week protocol",
-    "Physiotherapy understands Ayurvedic restrictions (e.g., no heavy exertion on Kativasti days)",
+    "Coordinated 4-6 week protocol",
+    "Physiotherapist understands Ayurvedic restrictions (e.g., no heavy exertion on Kativasti days)",
     "Ayurvedic doctor adjusts oils based on physiotherapy progress"
   ],
   button1Text: "Book Joint Consultation",
@@ -165,45 +164,47 @@ export const kativastiPrograms = {
     {
       name: "Acute / Short Course",
       price: "From AED 2,850",
-      duration: "7 Sessions (1-2 weeks)",
+      duration: "5-7 sessions over 1-2 weeks",
       features: [
-        "Kativasti x 7 sessions",
-        "Pre-session clinical assessment",
-        "Doctor selected oil for your condition",
+        "Initial doctor assessment",
+        "5-7 Kativasti sessions",
+        "Doctor-selected oil for your condition",
         "Lifestyle and posture guidance",
-        "2-week WhatsApp support",
-        "Better for acute pain, post-surgery recovery"
+        "2-week follow-up support"
       ],
+      bestFor: "Acute lumbar pain, post-injury recovery, sports-related strains, post-exertional stiffness",
       buttonText: "Enquire on WhatsApp"
     },
     {
       name: "Chronic Pain Course",
       price: "From AED 5,400",
-      duration: "14 Sessions (4-6 weeks)",
+      duration: "14 sessions over 4-6 weeks",
       featured: true,
       features: [
-        "Comprehensive initial assessment",
-        "Kativasti x 14 sessions",
-        "Oral Ayurvedic medicines included",
-        "Coordinated with physiotherapy (optional)",
-        "Dose and frequency adjusted as needed",
-        "Best for: chronic mechanical back pain, sciatica, spondylosis, lumbar disc issues"
+        "Comprehensive doctor assessment",
+        "14 Kativasti sessions with adjusted oil mid-course if needed",
+        "Combined Ayurvedic internal medicines",
+        "Optional physiotherapy integration (additional cost)",
+        "Mid-course and end-of-course reviews",
+        "8-week follow-up protocol"
       ],
+      bestFor: "Chronic mechanical back pain, sciatica, spondylosis, persistent lumbar stiffness",
       buttonText: "Enquire on WhatsApp"
     },
     {
       name: "Integrated Spine Care",
       price: "From AED 8,900",
-      duration: "14 Days + Physiotherapy",
+      duration: "14-21 days · Multi-therapy",
       features: [
         "Joint Ayurveda + physiotherapy assessment",
-        "Kativasti x 14 sessions",
-        "1:1 physiotherapy sessions included",
+        "14 Kativasti sessions plus weekly Abhyanga",
+        "8-10 physiotherapy sessions",
         "Internal Ayurvedic medicines included",
-        "Follow-up wean-up support",
-        "Referral link with our orthopedic consultant",
-        "Best for: lumbar disc issues, chronic pain syndromes, spinal degeneration, post-surgical recovery"
+        "Comprehensive lifestyle and ergonomic guidance",
+        "12-week follow-up support",
+        "Optional: imaging review with our orthopaedic consultant"
       ],
+      bestFor: "Lumbar disc issues, chronic pain unresponsive to single-modality care, post-surgical rehabilitation, integrated long-term spine care",
       buttonText: "Enquire on WhatsApp"
     }
   ],

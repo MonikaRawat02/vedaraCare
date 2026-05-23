@@ -9,55 +9,61 @@ const TreatmentPrograms = ({
   footer = ""
 }) => {
   return (
-    <section className={`${bgColor} py-24 px-6 relative overflow-hidden`}>
-      <div className="max-w-[1280px] mx-auto">
+    <section className={`${bgColor} py-24 px-6`}>
+      <div className="max-w-7xl mx-auto">
         <div className="text-center mb-16">
-          <p className="text-[13px] font-sans font-semibold tracking-[0.15em] text-[#C9A961] uppercase block mb-4">
+          <div className="text-[#C8975F] text-sm font-semibold tracking-wider mb-3">
             {label}
-          </p>
+          </div>
           
-          <h2 className="text-[clamp(1.7rem,2.8vw,2.5rem)] font-serif font-normal text-[#1A1A1A] leading-[1.2]">
+          <h2 className="text-4xl text-[#1A1A1A]" style={{ fontFamily: 'var(--font-serif)' }}>
             {title}
           </h2>
         </div>
 
-        <div className="grid md:grid-cols-3 gap-6 max-w-[1100px] mx-auto">
+        <div className="grid md:grid-cols-3 gap-8">
           {programs.map((program, index) => (
             <div 
               key={index} 
-              className={`relative p-8 rounded-[8px] border ${program.featured ? 'border-[#C9A961] bg-[#FAF6EF] scale-105 z-10' : 'border-[#E5E5E5] bg-[#FAF6EF]'}`}
+              className={`bg-[#FAF7F2] p-8 rounded-lg relative ${program.featured ? 'ring-2 ring-[#C8975F]' : ''}`}
             >
               {program.featured && (
-                <div className="absolute -top-4 left-1/2 -translate-x-1/2 bg-[#C9A961] text-white text-[11px] font-sans font-semibold px-4 py-1 rounded-full">
-                  Best Course for Chronic Pain
+                <div className="absolute -top-3 left-1/2 -translate-x-1/2 bg-[#C8975F] text-white px-4 py-1 rounded-full text-xs font-semibold whitespace-nowrap">
+                  Most Common for Chronic Pain
                 </div>
               )}
               
-              <h3 className="text-[20px] font-serif font-medium mb-2" style={{ color: 'rgb(31, 69, 56)' }}>
+              <h3 className="text-2xl font-semibold text-[#1A1A1A] mb-2">
                 {program.name}
               </h3>
               
-              <p className="text-[24px] font-serif font-medium mb-1" style={{ color: 'rgb(31, 69, 56)' }}>
+              <div className="text-3xl text-[#1A5D4D] mb-2" style={{ fontFamily: 'var(--font-serif)' }}>
                 {program.price}
-              </p>
+              </div>
               
-              <p className="text-[13px] font-sans mb-6" style={{ color: 'rgb(107, 107, 107)' }}>
+              <div className="text-sm text-[#C8975F] mb-6">
                 {program.duration}
-              </p>
+              </div>
               
-              <div className="space-y-3 mb-8">
+              <div className="space-y-2 mb-6">
                 {program.features.map((feature, featureIndex) => (
-                  <div key={featureIndex} className="flex items-start gap-2">
-                    <Check size={14} className="text-[#C9A961] shrink-0 mt-0.5" />
-                    <p className="text-[13px] font-sans leading-[1.5]" style={{ color: 'rgb(74, 74, 74)' }}>
+                  <div key={featureIndex} className="flex items-start gap-2 text-sm">
+                    <Check className="w-4 h-4 text-[#C8975F] mt-0.5 shrink-0" />
+                    <span className="text-gray-700">
                       {feature}
-                    </p>
+                    </span>
                   </div>
                 ))}
               </div>
               
-              <button className="w-full inline-flex items-center justify-center gap-2 px-4 py-3 bg-[#4A7C59] text-white rounded-md hover:opacity-90 transition-all text-[13px] font-sans font-medium">
-                <MessageCircle size={14} />
+              {program.bestFor && (
+                <div className="text-sm text-gray-600 mb-6">
+                  <span className="font-semibold">Best for:</span> {program.bestFor}
+                </div>
+              )}
+              
+              <button className="inline-flex items-center justify-center gap-2 whitespace-nowrap rounded-md text-sm font-medium transition-all disabled:pointer-events-none disabled:opacity-50 [&_svg]:pointer-events-none [&_svg:not([class*='size-'])]:size-4 shrink-0 [&_svg]:shrink-0 outline-none focus-visible:border-ring focus-visible:ring-ring/50 focus-visible:ring-[3px] aria-invalid:ring-destructive/20 dark:aria-invalid:ring-destructive/40 aria-invalid:border-destructive h-9 px-4 py-2 has-[>svg]:px-3 w-full bg-[#25D366] hover:bg-[#20BD5A] text-white">
+                <MessageCircle className="w-4 h-4" />
                 {program.buttonText}
               </button>
             </div>

@@ -6,51 +6,71 @@ const TreatmentApplications = ({
   label = "CLINICAL APPLICATIONS",
   title = "What Kativasti actually treats — and how it integrates with conventional care.",
   description = "",
-  applications = [],
+  primaryApplications = [],
+  honestLimits = {
+    title: "",
+    description: "",
+    items: []
+  },
   footer = ""
 }) => {
   return (
     <section className={`${bgColor} py-24 px-6 relative overflow-hidden`}>
-      <div className="max-w-[1280px] mx-auto">
+      <div className="max-w-7xl mx-auto">
         <div className="text-center mb-16">
-          <p className="text-[13px] font-sans font-semibold tracking-[0.15em] text-[#C9A961] uppercase block mb-4">
+          <div className="text-[#C8975F] text-sm font-semibold tracking-wider mb-3">
             {label}
-          </p>
-          
-          <h2 className="text-[clamp(1.7rem,2.8vw,2.5rem)] font-serif font-normal text-[#1A1A1A] leading-[1.2] mb-6">
+          </div>
+          <h2 className="text-4xl text-[#1A1A1A] mb-4" style={{ fontFamily: 'var(--font-serif)' }}>
             {title}
           </h2>
-          
           {description && (
-            <p className="text-[16px] font-sans text-[#4A4A4A] max-w-2xl mx-auto">
+            <p className="text-gray-600 max-w-2xl mx-auto">
               {description}
             </p>
           )}
         </div>
 
-        <div className="grid md:grid-cols-2 gap-12 max-w-[1100px] mx-auto">
-          {applications.map((section, index) => (
-            <div key={index} className="space-y-6">
-              <h3 className="text-[13px] font-sans font-semibold tracking-[0.15em] text-[#C9A961] uppercase">
-                {section.category}
-              </h3>
-              
-              <div className="space-y-4">
-                {section.items.map((item, itemIndex) => (
-                  <div key={itemIndex} className="flex items-start gap-3">
-                    <Check size={16} className="text-[#C9A961] shrink-0 mt-1" />
-                    <p className="text-[15px] font-sans leading-[1.6] text-[#4A4A4A]">
-                      {item}
-                    </p>
-                  </div>
-                ))}
-              </div>
+        <div className="grid lg:grid-cols-2 gap-12">
+          {/* Primary Applications */}
+          <div>
+            <div className="text-[#C8975F] text-sm font-semibold tracking-wider mb-4">
+              PRIMARY APPLICATIONS
             </div>
-          ))}
+            <div className="space-y-3">
+              {primaryApplications.map((item, index) => (
+                <div key={index} className="flex items-start gap-3">
+                  <Check className="w-5 h-5 text-[#C8975F] mt-0.5 shrink-0" />
+                  <span className="text-gray-700">
+                    {item}
+                  </span>
+                </div>
+              ))}
+            </div>
+          </div>
+
+          {/* Honest Limits */}
+          <div>
+            <div className="text-[#C8975F] text-sm font-semibold tracking-wider mb-4">
+              HONEST LIMITS
+            </div>
+            {honestLimits.description && (
+              <p className="text-lg mb-6 text-gray-700">
+                {honestLimits.description}
+              </p>
+            )}
+            <div className="space-y-3">
+              {honestLimits.items.map((item, index) => (
+                <div key={index} className="text-gray-600 pl-4 border-l-2 border-gray-300">
+                  {item}
+                </div>
+              ))}
+            </div>
+          </div>
         </div>
 
         {footer && (
-          <p className="mt-16 text-[14px] text-[#6B6B6B] font-sans text-center max-w-3xl mx-auto">
+          <p className="text-center text-gray-600 max-w-3xl mx-auto mt-12">
             {footer}
           </p>
         )}
