@@ -1,6 +1,6 @@
 import React from 'react';
 
-const articles = [
+const defaultArticles = [
   {
     category: "AYURVEDA",
     title: "What Panchakarma actually does and what it does not",
@@ -27,21 +27,26 @@ const articles = [
   }
 ];
 
-const Journal = () => {
+const Journal = ({
+  label = "VEDARA JOURNAL",
+  title = "Reading worth your time.",
+  articles = defaultArticles,
+  linkText = "Explore the journal"
+}) => {
   return (
     <section className="bg-white py-24">
       <div className="max-w-[1280px] mx-auto px-6">
         <div className="flex justify-between items-end mb-12">
           <div className="space-y-4">
             <span className="text-[13px] font-sans tracking-[0.1em] text-[#C9A961] uppercase block">
-              VEDARA JOURNAL
+              {label}
             </span>
             <h2 className="text-[42px] font-serif font-medium text-[#1A1A1A] leading-[1.2]">
-              Reading worth your time.
+              {title}
             </h2>
           </div>
           <button className="text-[#C9A961] font-sans font-medium text-[15px] hover:underline mb-2">
-            Explore the journal
+            {linkText}
           </button>
         </div>
 

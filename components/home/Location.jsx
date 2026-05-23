@@ -1,9 +1,38 @@
 import React from 'react';
 import { MapPin, Phone, Clock, Navigation } from 'lucide-react';
 
-const Location = () => {
+const Location = ({
+  bgColor = "bg-[#FAF8EF]",
+  label = "FIND US IN JVC",
+  title = "Right next to Circle Mall. Two minutes from FIVE Jumeirah Village.",
+  mapCard = {
+    title: "Vedara Care Polyclinic",
+    subtitle: "JVC, Dubai",
+    linkText: "Get Directions"
+  },
+  address = {
+    label: "Address",
+    street: "[Full Street Address]",
+    area: "Jumeirah Village Circle",
+    city: "Dubai, UAE"
+  },
+  contact = {
+    label: "Contact",
+    phone: "+971 4 XXX XXXX",
+    whatsapp: "+971 5X XXX XXXX",
+    email: "hello@vedaracare.ae"
+  },
+  hours = {
+    label: "Hours",
+    weekdays: "Mon - Sat: 9 AM to 9 PM",
+    sunday: "Sun: 10 AM to 7 PM"
+  },
+  parkingText = "Free covered parking available for patients",
+  tags = ["5 min from JSS School", "3 min from FIVE JVC", "Next to Circle Mall"],
+  buttonText = "Book Your Visit"
+}) => {
   return (
-    <section className="bg-[#FAF8EF] py-24 px-6">
+    <section className={`${bgColor} py-24 px-6`}>
       <div className="max-w-[1440px] mx-auto">
         <div className="grid lg:grid-cols-2 gap-12 items-center">
           {/* Map Content */}
@@ -13,12 +42,12 @@ const Location = () => {
             {/* Location Card Overlay */}
             <div className="absolute bottom-8 left-8 bg-white p-6 rounded-2xl shadow-xl border border-gray-100 max-w-[280px] space-y-3">
               <div className="space-y-1">
-                <h4 className="text-[16px] font-serif font-bold text-[#1A1A1A]">Vedara Care Polyclinic</h4>
-                <p className="text-[13px] text-[#6B6B6B] font-sans">JVC, Dubai</p>
+                <h4 className="text-[16px] font-serif font-bold text-[#1A1A1A]">{mapCard.title}</h4>
+                <p className="text-[13px] text-[#6B6B6B] font-sans">{mapCard.subtitle}</p>
               </div>
               <button className="text-[#C9A961] font-sans font-bold text-[14px] flex items-center gap-2 hover:underline">
                 <Navigation size={14} />
-                Get Directions
+                {mapCard.linkText}
               </button>
             </div>
           </div>
@@ -27,10 +56,10 @@ const Location = () => {
           <div className="lg:pl-12 space-y-10">
             <div className="space-y-4">
               <span className="text-[13px] font-sans tracking-[0.1em] text-[#C9A961] uppercase block">
-                FIND US IN JVC
+                {label}
               </span>
               <h2 className="text-[42px] font-serif font-medium text-[#1A1A1A] leading-[1.2]">
-                Right next to Circle Mall. Two minutes from FIVE Jumeirah Village.
+                {title}
               </h2>
             </div>
 
@@ -41,11 +70,11 @@ const Location = () => {
                   <MapPin size={20} className="text-[#184C3A]" />
                 </div>
                 <div className="space-y-1">
-                  <h4 className="text-[16px] font-sans font-bold text-[#1A1A1A]">Address</h4>
+                  <h4 className="text-[16px] font-sans font-bold text-[#1A1A1A]">{address.label}</h4>
                   <p className="text-[15px] text-[#6B6B6B] font-sans leading-relaxed">
-                    [Full Street Address]<br />
-                    Jumeirah Village Circle<br />
-                    Dubai, UAE
+                    {address.street}<br />
+                    {address.area}<br />
+                    {address.city}
                   </p>
                 </div>
               </div>
@@ -56,11 +85,11 @@ const Location = () => {
                   <Phone size={20} className="text-[#184C3A]" />
                 </div>
                 <div className="space-y-1">
-                  <h4 className="text-[16px] font-sans font-bold text-[#1A1A1A]">Contact</h4>
+                  <h4 className="text-[16px] font-sans font-bold text-[#1A1A1A]">{contact.label}</h4>
                   <p className="text-[15px] text-[#6B6B6B] font-sans leading-relaxed">
-                    Phone: +971 4 XXX XXXX<br />
-                    WhatsApp: +971 5X XXX XXXX<br />
-                    Email: hello@vedaracare.ae
+                    Phone: {contact.phone}<br />
+                    WhatsApp: {contact.whatsapp}<br />
+                    Email: {contact.email}
                   </p>
                 </div>
               </div>
@@ -71,10 +100,10 @@ const Location = () => {
                   <Clock size={20} className="text-[#184C3A]" />
                 </div>
                 <div className="space-y-1">
-                  <h4 className="text-[16px] font-sans font-bold text-[#1A1A1A]">Hours</h4>
+                  <h4 className="text-[16px] font-sans font-bold text-[#1A1A1A]">{hours.label}</h4>
                   <p className="text-[15px] text-[#6B6B6B] font-sans leading-relaxed">
-                    Mon - Sat: 9 AM to 9 PM<br />
-                    Sun: 10 AM to 7 PM
+                    {hours.weekdays}<br />
+                    {hours.sunday}
                   </p>
                 </div>
               </div>
@@ -82,11 +111,11 @@ const Location = () => {
 
             <div className="space-y-6 pt-4">
               <p className="text-[14px] text-[#6B6B6B] font-sans">
-                Free covered parking available for patients
+                {parkingText}
               </p>
               
               <div className="flex flex-wrap gap-3">
-                {["5 min from JSS School", "3 min from FIVE JVC", "Next to Circle Mall"].map((tag, i) => (
+                {tags.map((tag, i) => (
                   <span key={i} className="px-4 py-2 bg-white rounded-full text-[13px] text-[#6B6B6B] font-sans shadow-sm border border-gray-100 flex items-center gap-2">
                     <span className="w-1.5 h-1.5 rounded-full bg-[#C9A961]" />
                     {tag}
@@ -95,7 +124,7 @@ const Location = () => {
               </div>
 
               <button className="px-10 py-4 bg-[#184C3A] text-white rounded-lg font-sans font-bold text-[16px] hover:bg-[#123a2c] transition-all shadow-md">
-                Book Your Visit
+                {buttonText}
               </button>
             </div>
           </div>
