@@ -55,28 +55,28 @@ const Reviews = ({
             <div key={index} className="bg-white rounded-xl p-8 flex flex-col shadow-lg relative h-full">
               <div className="flex gap-1 mb-6">
                 {[...Array(5)].map((_, i) => (
-                  <Star key={i} size={16} className="fill-[#C9A961] text-[#C9A961]" />
+                  <Star key={i} size={16} style={{ fill: 'rgb(201, 169, 97)', color: 'rgb(201, 169, 97)' }} />
                 ))}
               </div>
               
-              <h3 className="text-[19px] font-serif italic font-medium text-[#1A1A1A] leading-[1.35] mb-4">
+              <h3 style={{ fontFamily: 'Fraunces, Georgia, serif', fontSize: '19px', fontWeight: '500', fontStyle: 'italic', color: 'rgb(26, 26, 26)', lineHeight: '1.35', marginBottom: '16px' }}>
                 "{review.quote}"
               </h3>
               
-              <p className="text-[14px] text-[#4A4A4A] font-sans leading-[1.75] mb-8 flex-grow">
+              <p className="text-[14px] font-sans leading-[1.75] mb-8 flex-grow" style={{ color: 'rgb(74, 74, 74)' }}>
                 {review.content}
               </p>
               
-              <div className="mt-auto pt-4 border-t border-gray-100 flex justify-between items-center">
+              <div className="mt-auto pt-4 border-t flex justify-between items-center" style={{ borderColor: 'rgb(245, 245, 245)' }}>
                 <div className="space-y-0.5">
-                  <p className="font-sans font-bold text-[15px] text-[#1A1A1A]">
+                  <p className="font-sans font-bold text-[15px]" style={{ color: 'rgb(26, 26, 26)' }}>
                     {review.author}
                   </p>
-                  <p className="text-[12px] text-[#888888] font-sans">
+                  <p className="text-[12px] font-sans" style={{ color: 'rgb(136, 136, 136)' }}>
                     {review.details}
                   </p>
                 </div>
-                <div className="w-6 h-6 bg-[#4285F4] rounded-full flex items-center justify-center text-white text-[10px] font-bold">
+                <div className="w-6 h-6 rounded-full flex items-center justify-center text-white text-[10px] font-bold" style={{ backgroundColor: '#4285F4' }}>
                   G
                 </div>
               </div>
