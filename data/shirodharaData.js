@@ -329,7 +329,11 @@ export const shirodharaFinalCTA = {
     "Same-gender therapists",
     " Free clinic parking",
     " Walking distance from Circle Mall"
-  ]
+  ],
+  button1BgColor: "#C5A572",
+  button1TextColor: "#FFFFFF",
+  button2BorderColor: "#62ca85ff",
+  button2TextColor: "#6cebcbff"
 };
 
 export const shirodharaRelatedPages = {
