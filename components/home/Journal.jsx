@@ -28,13 +28,14 @@ const defaultArticles = [
 ];
 
 const Journal = ({
+  bgColor = "bg-white",
   label = "VEDARA JOURNAL",
   title = "Reading worth your time.",
   articles = defaultArticles,
   linkText = "Explore the journal"
 }) => {
   return (
-    <section className="bg-white py-24">
+    <section className={`${bgColor} py-24`}>
       <div className="max-w-[1280px] mx-auto px-6">
         <div className="flex justify-between items-end mb-12">
           <div className="space-y-4">

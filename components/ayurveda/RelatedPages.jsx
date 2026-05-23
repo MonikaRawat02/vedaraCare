@@ -8,8 +8,12 @@ const RelatedPages = ({
   title = "Related pages.",
   linkText = "Browse all Ayurvedic treatments",
   linkHref = "/ayurveda-dubai/",
-  pages = []
+  pages = [],
+  columns = 4,
+  showUrl = false
 }) => {
+  const gridCols = columns === 3 ? 'lg:grid-cols-3' : 'lg:grid-cols-4';
+
   return (
     <section className="py-20" style={{ background: 'rgb(245, 240, 232)' }}>
       <div className="max-w-7xl mx-auto px-6">
@@ -45,7 +49,7 @@ const RelatedPages = ({
           </Link>
         </div>
 
-        <div className="grid sm:grid-cols-2 lg:grid-cols-4 gap-4">
+        <div className={`grid sm:grid-cols-2 ${gridCols} gap-4`}>
           {pages.map((page, index) => (
             <Link
               key={index}
@@ -65,13 +69,22 @@ const RelatedPages = ({
               >
                 {page.description}
               </p>
-              <span 
-                className="text-xs flex items-center gap-1 font-medium"
-                style={{ color: 'rgb(184, 145, 90)' }}
-              >
-                Read more
-                <ArrowRight size={11} />
-              </span>
+              {showUrl ? (
+                <span 
+                  className="text-[11px] flex items-center gap-1 font-medium mt-2"
+                  style={{ color: 'rgb(184, 145, 90)', opacity: 0.8 }}
+                >
+                  {page.href}
+                </span>
+              ) : (
+                <span 
+                  className="text-xs flex items-center gap-1 font-medium"
+                  style={{ color: 'rgb(184, 145, 90)' }}
+                >
+                  Read more
+                  <ArrowRight size={11} />
+                </span>
+              )}
             </Link>
           ))}
         </div>
