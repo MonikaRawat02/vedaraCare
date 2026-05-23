@@ -7,7 +7,7 @@ import DoctorConsultation from './DoctorConsultation';
 import Reviews from '../home/Reviews';
 import DoctorLanguagesSchedule from './DoctorLanguagesSchedule';
 import DoctorFAQ from './DoctorFAQ';
-import DoctorLocation from './DoctorLocation';
+import TreatmentLocation from '../ayurveda/TreatmentLocation';
 import DoctorCTA from './DoctorCTA';
 import DoctorOtherPractitioners from './DoctorOtherPractitioners';
 import DoctorArticles from './DoctorArticles';
@@ -25,7 +25,7 @@ const DoctorPage = ({ doctorData = drPriyaNair }) => {
       <Reviews doctor={doctorData} />
       <DoctorLanguagesSchedule doctor={doctorData} />
       <DoctorFAQ doctor={doctorData} />
-      <DoctorLocation doctor={doctorData} />
+      <TreatmentLocation {...doctorData.location} />
       <DoctorCTA doctor={doctorData} />
       <DoctorOtherPractitioners />
       <DoctorArticles doctor={doctorData} />

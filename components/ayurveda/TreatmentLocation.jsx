@@ -1,5 +1,5 @@
 import React from 'react';
-import { MapPin, Phone, Clock } from 'lucide-react';
+import { MapPin, Phone, Clock, CircleCheckBig } from 'lucide-react';
 import Link from 'next/link';
 
 const TreatmentLocation = ({
@@ -89,15 +89,34 @@ const TreatmentLocation = ({
             </div>
 
             {/* Nearby Landmarks */}
-            <div className="bg-white p-6 rounded-lg mb-8">
-              <div className="font-semibold text-[#1A1A1A] mb-2">
-                Nearby Landmarks
-              </div>
-              <div className="text-sm text-gray-700 space-y-1">
+            <div 
+              className="p-4 rounded-[8px] mb-8" 
+              style={{ 
+                background: 'rgb(240, 233, 221)', 
+                border: '1px solid rgb(229, 223, 211)' 
+              }}
+            >
+              <p 
+                className="text-[13px] font-semibold mb-3" 
+                style={{ color: 'rgb(26, 26, 26)' }}
+              >
+                Nearby landmarks
+              </p>
+              <ul className="flex flex-col gap-2">
                 {landmarks.map((landmark, index) => (
-                  <div key={index}>• {landmark}</div>
+                  <li 
+                    key={index} 
+                    className="flex items-center gap-2 text-[13px]" 
+                    style={{ color: 'rgb(107, 107, 107)' }}
+                  >
+                    <CircleCheckBig 
+                      size={12} 
+                      style={{ color: 'rgb(201, 169, 97)' }}
+                    />
+                    {landmark}
+                  </li>
                 ))}
-              </div>
+              </ul>
             </div>
 
             <p className="text-sm text-gray-600 mb-6">

@@ -19,7 +19,7 @@ export const kativastiHero = {
     title: "TARGETED, NOT GENERAL.",
     subtitle: "The entire treatment focuses on a 6-inch region of your lower back. The precision is the point."
   },
-  image: ""
+  image: "https://images.unsplash.com/photo-1596178060671-7a80dc8059ea?w=800"
 };
 
 
