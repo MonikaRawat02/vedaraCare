@@ -620,47 +620,47 @@ export const dubaiHubFaqs = {
     },
     {
       question: "How do I find a real Ayurvedic doctor in Dubai?",
-      answer: "A real Ayurvedic doctor (physician) in Dubai must hold a BAMS (Bachelor of Ayurvedic Medicine and Surgery) degree and a valid DHA Professional License. You can verify any doctor's license on the DHA website or by asking the clinic for their license number."
+      answer: "Look for three things: a DHA Professional License number (format DHA-P-XXXXXXX), BAMS qualifications (Bachelor of Ayurvedic Medicine and Surgery — a 5.5-year medical degree), and a consultation that takes 45 to 60 minutes. Genuine Ayurvedic physicians display all of this on their public profiles."
     },
     {
       question: "What is the difference between Ayurvedic massage and Ayurvedic treatment?",
-      answer: "Ayurvedic massage (often found in spas) is for relaxation. Ayurvedic treatment (only in clinics) is medical. It is prescribed by a doctor after a diagnostic consultation to treat a specific condition, using therapeutic oils and methods like Panchakarma."
+      answer: "A spa offering Ayurvedic massage without a doctor consultation is offering wellness, not medicine. Real Ayurvedic treatment in Dubai begins with a consultation by a BAMS-qualified physician, includes dosha assessment, and prescribes specific therapies and herbal medicines for your condition. The therapies look similar; the clinical rigour behind them is completely different."
     },
     {
       question: "How much does Ayurvedic treatment cost in Dubai?",
-      answer: "Consultations typically range from AED 300 to AED 500. Individual therapies start from AED 250, while comprehensive Panchakarma programmes can range from AED 3,000 to AED 10,000 depending on duration and complexity."
+      answer: "A first consultation typically costs AED 200 to AED 800. Individual therapy sessions range from AED 250 to AED 800. Panchakarma programmes range from AED 3,500 (7-day) to AED 15,000+ (21-day intensive). At Vedara Care, first consultations start at AED 350. Full pricing is shared in writing before any treatment begins."
     },
     {
       question: "Does insurance cover Ayurveda in Dubai?",
-      answer: "Many premium insurance plans in Dubai now offer coverage for 'Alternative Medicine' which includes Ayurveda, provided it is at a DHA-licensed clinic. Coverage usually ranges from 50% to 100% depending on your plan."
+      answer: "Some Dubai insurance plans cover Ayurveda — most commonly Daman, AXA, Now Health, and certain Allianz tiers. Coverage varies enormously by plan. Vedara Care is a direct-billing partner with seven major insurers. Send a photo of your insurance card on WhatsApp before booking and our team will confirm your exact coverage."
     },
     {
       question: "How long does Ayurvedic treatment take to show results?",
-      answer: "For acute issues, you may feel relief in 1-3 sessions. For chronic conditions like PCOS or long-term back pain, a structured programme of 3-6 months is usually required to see lasting changes."
+      answer: "Most patients notice initial changes within 2 to 4 weeks. Chronic conditions like PCOS, migraine, or stubborn back pain typically need 3 to 6 months for substantial change. Panchakarma detox programmes (7 to 21 days) often show immediate symptomatic relief, with deeper effects continuing for months. Real Ayurvedic doctors will give you a realistic timeline at consultation — not promises of instant cures."
     },
     {
       question: "What conditions does Ayurveda treat best?",
-      answer: "Ayurveda is exceptionally strong in managing chronic musculoskeletal pain, hormonal imbalances (PCOS), stress-related disorders, skin conditions, and digestive issues."
+      answer: "Ayurveda is most effective for chronic conditions where lifestyle, stress, diet, and constitution play significant roles — chronic back pain, sciatica, PCOS, irregular cycles, postnatal recovery, migraine, hair loss, stress, insomnia, IBS, weight management, and certain skin conditions. It is not a substitute for emergency care, surgery, antibiotics, or acute psychiatric treatment."
     },
     {
       question: "Are Ayurvedic medicines safe?",
-      answer: "Yes, when prescribed by a qualified BAMS physician. In Dubai, all Ayurvedic medicines used in clinics are regulated and must be free from harmful heavy metals or contaminants."
+      answer: "Yes, when prescribed by a qualified physician and sourced from regulated pharmacies. Authentic Ayurvedic medicines used in DHA-licensed Dubai clinics come from classical pharmacies in Kerala and Maharashtra with documented batch testing. Risk arises only with unregulated supplements bought online or with medicines prescribed without proper consultation. Your Ayurvedic doctor should always review any other medications you take."
     },
     {
       question: "Can I take Ayurvedic treatment alongside my conventional medication?",
-      answer: "Yes. In fact, we often practice integrative medicine. Our doctors will review your current prescriptions to ensure there are no contraindications between your Ayurvedic and conventional treatments."
+      answer: "In most cases, yes. Most Ayurvedic medicines are compatible with conventional treatment, and the best Dubai patients often see both an Ayurvedic doctor and a conventional specialist for the same condition — especially for chronic pain, hormonal conditions, and diabetes. Your Ayurvedic physician will review all current medications and coordinate with your other doctors when needed."
     },
     {
       question: "What is Panchakarma, and is it the same as detox?",
-      answer: "Panchakarma is a deep, five-step medical detoxification and rejuvenation process. It is much more intensive than a standard 'detox' and must be performed under strict medical supervision."
+      answer: "Panchakarma is the classical five-action Ayurvedic detoxification protocol, supervised by a doctor over 7, 14, or 21 days. It is much more rigorous than commercial detox packages — involving preparation phases, main therapies (Virechana, Basti, Nasya, Vamana, Raktamokshana, prescribed selectively), and structured recovery. Not everyone needs Panchakarma. Your doctor will tell you if it is appropriate for your case."
     },
     {
       question: "Where is the best Ayurvedic clinic located in Dubai?",
-      answer: "The best clinic for you is one that is DHA-licensed, employs BAMS-qualified doctors, and has a track record of clinical outcomes. Vedara Care in JVC is one such leading facility."
+      answer: "Dubai's main DHA-licensed Ayurvedic clinics are spread across the city — including JVC, Karama, Al Nahda, Jumeirah, Al Barsha, JLT, and Mirdif. Choose based on three factors: convenience (a clinic close to home means you actually attend follow-ups), doctor quality (BAMS qualifications, DHA license, real experience), and clinic accreditation (DHA Healthcare Facility License). Vedara Care is located in Jumeirah Village Circle (JVC), with home healthcare available across Dubai."
     },
     {
       question: "How do I start with Ayurvedic treatment in Dubai?",
-      answer: "The first step is always a 60-minute diagnostic consultation. During this, the doctor will assess your constitution (Prakriti) and current imbalances (Vikriti) to create a personalised treatment plan."
+      answer: "Begin with a consultation, not a treatment. A first Ayurvedic consultation is a diagnostic conversation — your doctor will assess your dosha, review your symptoms, and recommend a treatment plan. You decide whether to proceed. At Vedara Care, you can book a consultation using any Book a Consultation button on this page, on WhatsApp at +971 XX XXX XXXX, or by calling +971 4 XXX XXXX."
     }
   ]
 };

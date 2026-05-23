@@ -3,7 +3,7 @@ import AyurvedaHero from '../../components/ayurveda/AyurvedaHero';
 import AyurvedaIntro from '../../components/ayurveda/AyurvedaIntro';
 import TreatmentPrograms from '../../components/ayurveda/TreatmentPrograms';
 import TreatmentLocation from '../../components/ayurveda/TreatmentLocation';
-import Reviews from '../../components/home/Reviews';
+import Reviews from '../../components/ayurveda/TreatmentReviews';
 import RelatedPages from '../../components/ayurveda/RelatedPages';
 import FAQ from '../../components/home/FAQ';
 import CTA from '../../components/home/CTA';

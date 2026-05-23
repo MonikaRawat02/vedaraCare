@@ -77,39 +77,39 @@ export const panchakarmaJVCFaqs = {
     },
     {
       question: "Do you have parking for Panchakarma patients?",
-      answer: "Yes. We have three dedicated, reserved parking spots for patients undergoing Panchakarma programmes, plus general patient parking. You will not have to search for parking before your sessions."
+      answer: "Yes. Three covered parking spots are reserved specifically for patients during their Panchakarma programme. The clinic also has additional general patient parking available. JVC residents typically drive in 8-10 minutes door-to-door."
     },
     {
       question: "How does Panchakarma at your JVC clinic compare to other Dubai Ayurveda clinics?",
-      answer: "We focus on clinical authenticity and local convenience. While many clinics offer 'wellness detox', we provide DHA-licensed medical Panchakarma supervised by BAMS doctors. Our JVC location is specifically designed for residents of New Dubai who want authentic care without the commute to older parts of the city."
+      answer: "We focus on classical Kerala-protocol Panchakarma with daily doctor supervision, private treatment rooms, and same-gender therapists. We do not offer \"weekend Panchakarma\" or spa-style packages. For a full comparison of how to choose a Panchakarma clinic in Dubai, read our Panchakarma in Dubai guide."
     },
     {
       question: "Can I do Panchakarma at your JVC clinic while continuing to work?",
-      answer: "Yes. Many of our JVC patients work from home or in nearby areas like Media City or Marina. We offer early morning sessions (from 8 AM) and evening sessions to accommodate professional schedules. However, we do recommend a reduced workload during the 'Pradhana Karma' (main detox) phase."
+      answer: "The 7-day Reset is generally manageable with light work commitments. The 14-day Classical Panchakarma is doable with 5-7 days of work leave in Week 2. The 21-day Intensive realistically requires 10-14+ days of leave. For JVC residents whose offices are in Internet City, Media City, or DIFC, the short commute to our clinic makes balancing work much more feasible."
     },
     {
       question: "How much does Panchakarma cost at your JVC clinic?",
-      answer: "Our 7-day programmes start from AED 4,500, 14-day from AED 8,500, and 21-day intensive from AED 12,500. This includes all doctor consultations, daily therapies, internal medicines, and post-programme follow-up. We provide a full written quote after your initial assessment."
+      answer: "Our programmes start from AED 4,500 for the 7-day Reset, AED 8,900 for the 14-day Classical, and AED 14,500 for the 21-day Intensive. All inclusive of consultations, therapies, medicines, oils, dietary plans, and follow-up support. Final pricing is confirmed in writing after your initial consultation."
     },
     {
       question: "Do you accept insurance for Panchakarma at the JVC clinic?",
-      answer: "Coverage depends on your specific plan. We are direct-billing partners with several major insurers. Some premium plans cover the consultation and part of the therapy cost under 'Alternative Medicine'. Our team can check your coverage once you provide your insurance details."
+      answer: "We are direct-billing partners with Daman, AXA, Allianz, Oman Insurance, Now Health, Bupa, and MetLife. Panchakarma coverage varies by plan — most often partially covered through Daman, AXA, and Now Health premium tiers. WhatsApp us a photo of your insurance card before booking and we will confirm your coverage in writing."
     },
     {
       question: "Do you serve patients from JVT, Al Barsha South, Dubai Sports City, and Motor City?",
-      answer: "Absolutely. Due to our location on the edge of JVC, we are the closest DHA-licensed Ayurveda clinic for residents of JVT (5 mins), Al Barsha South (8 mins), Sports City (10 mins), and Motor City (12 mins)."
+      answer: "Yes. Most of our Panchakarma patients live in JVC, but we regularly treat patients from Jumeirah Village Triangle (JVT), Al Barsha South, Dubai Sports City, Motor City, Arjan, and Dubai Hills. For these patients, the JVC location is within a 10-20 minute drive — much closer than the Karama or Al Nahda Ayurveda clinics."
     },
     {
       question: "Are female patients always treated by female therapists?",
-      answer: "Yes, strictly. At Vedara Care, we maintain the highest standards of clinical ethics and traditional protocol. Female patients are always treated by experienced female Ayurvedic therapists, and male patients by male therapists."
+      answer: "Yes. Every Panchakarma therapy at our JVC clinic is performed by a therapist of your same gender. We schedule appointments specifically to ensure same-gender therapist availability. This is non-negotiable for our clinical protocols."
     },
     {
       question: "Can children or elderly patients do Panchakarma at your JVC clinic?",
-      answer: "Panchakarma is highly effective for seniors but is rarely performed on children under 12. Our BAMS doctors perform a rigorous assessment for all patients over 65 to ensure the programme intensity is safely modified to their vitality levels."
+      answer: "We offer modified Ayurvedic protocols for paediatric patients (above age 12) and elderly patients with appropriate clinical assessment — but classical Panchakarma is typically not the right protocol for either group. Your doctor will assess and recommend an appropriate Ayurvedic programme at consultation."
     },
     {
       question: "How do I book Panchakarma at your JVC clinic?",
-      answer: "The process begins with a 60-minute diagnostic consultation. You can book this online via our website, call us at +971 4 XXX XXXX, or WhatsApp us for the fastest response."
+      answer: "Booking always begins with a consultation, not a direct package purchase. Tap \"Book a Panchakarma Consultation\" anywhere on this page for live calendar availability, WhatsApp us at +971 XX XXX XXXX for the fastest response (typically under 15 minutes during clinic hours), or call us at +971 XX XXX XXXX. Walk-in consultation slots are sometimes available with prior WhatsApp coordination."
     }
   ]
 };
