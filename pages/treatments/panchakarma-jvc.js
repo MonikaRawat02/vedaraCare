@@ -5,6 +5,8 @@ import TreatmentPrograms from '../../components/ayurveda/TreatmentPrograms';
 import TreatmentLocation from '../../components/ayurveda/TreatmentLocation';
 import Reviews from '../../components/ayurveda/TreatmentReviews';
 import RelatedPages from '../../components/ayurveda/RelatedPages';
+import PanchakarmaTimeline from '../../components/ayurveda/PanchakarmaTimeline';
+import PanchakarmaBenefits from '../../components/ayurveda/PanchakarmaBenefits';
 import FAQ from '../../components/home/FAQ';
 import CTA from '../../components/home/CTA';
 import { 
@@ -15,7 +17,9 @@ import {
   panchakarmaJVCFaqs,
   panchakarmaJVCLocation,
   panchakarmaJVCCTA,
-  panchakarmaJVCRelatedPages
+  panchakarmaJVCRelatedPages,
+  panchakarmaJVCTimeline,
+  panchakarmaJVCBenefits
 } from '../../data/treatmentData';
 
 const PanchakarmaJVC = () => {
@@ -65,7 +69,9 @@ const PanchakarmaJVC = () => {
 
       <AyurvedaHero {...panchakarmaJVCHero} />
       <AyurvedaIntro {...panchakarmaJVCIntro} />
+      <PanchakarmaBenefits {...panchakarmaJVCBenefits} />
       <TreatmentPrograms {...panchakarmaJVCPrograms} />
+      <PanchakarmaTimeline {...panchakarmaJVCTimeline} />
       <Reviews {...panchakarmaJVCReviews} />
       <FAQ {...panchakarmaJVCFaqs} />
       <TreatmentLocation {...panchakarmaJVCLocation} />

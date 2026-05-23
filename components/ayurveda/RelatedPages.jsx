@@ -3,50 +3,88 @@ import Link from 'next/link';
 import { ArrowRight } from 'lucide-react';
 
 const RelatedPages = ({
-  bgColor = "bg-[#FAF7F2]",
+  bgColor = "bg-[#F5F0E8]",
   label = "EXPLORE FURTHER",
   title = "Related pages.",
-  linkText = "Browse all Ayurveda treatments →",
-  linkHref = "/treatments",
-  pages = []
+  linkText = "Browse all Ayurvedic treatments",
+  linkHref = "/ayurveda-dubai/",
+  pages = [],
+  columns = 4,
+  showUrl = false
 }) => {
+  const gridCols = columns === 3 ? 'lg:grid-cols-3' : 'lg:grid-cols-4';
+
   return (
-    <section className={`${bgColor} py-24 px-6 relative overflow-hidden`}>
-      <div className="max-w-[1280px] mx-auto">
-        <div className="flex flex-col md:flex-row justify-between items-start md:items-end mb-12 gap-4">
-          <div className="space-y-4">
-            <div className="text-[#C9A961] text-[13px] font-sans font-semibold tracking-[0.12em] uppercase">
+    <section className="py-20" style={{ background: 'rgb(245, 240, 232)' }}>
+      <div className="max-w-7xl mx-auto px-6">
+        <div className="flex items-end justify-between mb-10">
+          <div>
+            <p 
+              className="text-xs font-semibold tracking-[0.18em] uppercase mb-4"
+              style={{ color: 'rgb(184, 145, 90)', fontFamily: '"DM Sans", sans-serif' }}
+            >
               {label}
-            </div>
-            <h2 className="text-[42px] font-serif font-medium text-[#1A1A1A] leading-[1.2]">
+            </p>
+            <h2 
+              className=""
+              style={{ 
+                fontFamily: 'Fraunces, serif', 
+                fontWeight: '500', 
+                fontSize: 'clamp(1.5rem, 3vw, 2.1rem)', 
+                color: 'rgb(28, 28, 26)', 
+                lineHeight: '1.25' 
+              }}
+            >
               {title}
             </h2>
           </div>
           
           <Link 
             href={linkHref}
-            className="text-[#C9A961] hover:underline text-[15px] font-sans font-medium mb-2"
+            className="hidden sm:flex items-center gap-1 text-sm"
+            style={{ color: 'rgb(184, 145, 90)' }}
           >
             {linkText}
+            <ArrowRight size={13} />
           </Link>
         </div>
 
-        <div className="grid md:grid-cols-3 gap-6">
+        <div className={`grid sm:grid-cols-2 ${gridCols} gap-4`}>
           {pages.map((page, index) => (
             <Link
               key={index}
               href={page.href}
-              className="bg-white p-8 rounded-[8px] hover:shadow-lg transition-all duration-300 group flex flex-col h-full"
+              className="rounded-xl p-6 flex flex-col gap-3 transition-transform hover:scale-[1.02]"
+              style={{ background: 'rgb(255, 255, 255)' }}
             >
-              <h3 className="text-[20px] font-serif font-semibold text-[#1A1A1A] mb-4 group-hover:text-[#184C3A] transition-colors flex items-center justify-between">
+              <h3 
+                className="text-sm font-medium"
+                style={{ fontFamily: 'Fraunces, serif', color: 'rgb(28, 28, 26)' }}
+              >
                 {page.title}
               </h3>
-              <p className="text-[14.5px] text-[#6B6B6B] font-sans leading-relaxed mb-8 flex-1">
+              <p 
+                className="text-xs leading-relaxed flex-1"
+                style={{ color: 'rgb(107, 99, 89)' }}
+              >
                 {page.description}
               </p>
-              <div className="text-[13px] text-[#C9A961] font-sans font-medium opacity-60 group-hover:opacity-100 transition-opacity">
-                {page.href}
-              </div>
+              {showUrl ? (
+                <span 
+                  className="text-[11px] flex items-center gap-1 font-medium mt-2"
+                  style={{ color: 'rgb(184, 145, 90)', opacity: 0.8 }}
+                >
+                  {page.href}
+                </span>
+              ) : (
+                <span 
+                  className="text-xs flex items-center gap-1 font-medium"
+                  style={{ color: 'rgb(184, 145, 90)' }}
+                >
+                  Read more
+                  <ArrowRight size={11} />
+                </span>
+              )}
             </Link>
           ))}
         </div>
