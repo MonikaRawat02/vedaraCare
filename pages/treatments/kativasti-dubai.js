@@ -1,5 +1,5 @@
 import Head from 'next/head';
-import TreatmentHero from '../../components/ayurveda/TreatmentHero';
+import AyurvedaHero from '../../components/ayurveda/AyurvedaHero';
 import AyurvedaIntro from '../../components/ayurveda/AyurvedaIntro';
 import TreatmentMechanism from '../../components/ayurveda/TreatmentMechanism';
 import TreatmentProtocol from '../../components/ayurveda/TreatmentProtocol';
@@ -10,7 +10,7 @@ import TreatmentPrograms from '../../components/ayurveda/TreatmentPrograms';
 import FinalCTA from '../../components/ayurveda/FinalCTA';
 import RelatedPages from '../../components/ayurveda/RelatedPages';
 import TreatmentLocation from '../../components/ayurveda/TreatmentLocation';
-import Reviews from '../../components/home/Reviews';
+import TreatmentReviews from '../../components/ayurveda/TreatmentReviews';
 import FAQ from '../../components/home/FAQ';
 import { 
   kativastiHero, 
@@ -29,33 +29,200 @@ import {
 } from '../../data/treatmentData';
 
 const KativastiDubai = () => {
+  const currentDate = new Date().toISOString();
+  
   const schemaMarkup = [
     {
       "@context": "https://schema.org",
-      "@type": ["MedicalWebPage", "MedicalProcedure"],
-      "name": "Kativasti in Dubai | Ayurvedic Treatment for Lower Back Pain",
+      "@type": "MedicalProcedure",
+      "@id": "https://vedaracare.ae/treatments/kativasti-dubai/#procedure",
+      "name": "Kativasti",
+      "alternateName": ["Kati Vasti", "Kati Basti", "Lumbar Oil Reservoir Therapy", "Ayurvedic Lower Back Therapy"],
+      "description": "Kativasti is a classical Ayurvedic localised therapy in which warm medicated oil is contained over the lumbar spine in a custom-shaped wheat-flour dough reservoir for 30 to 45 minutes per session. Used for chronic mechanical lower back pain, sciatica, lumbar disc conditions, and spinal stiffness. Performed at Vedara Care Polyclinic in Jumeirah Village Circle, Dubai.",
       "url": "https://vedaracare.ae/treatments/kativasti-dubai/",
-      "description": "Kativasti — classical Ayurvedic oil therapy for lower back pain, sciatica, and lumbar disc conditions at our DHA-licensed clinic in JVC, Dubai.",
-      "medicalSpecialty": "Ayurveda",
-      "about": {
-        "@type": "MedicalTherapy",
-        "name": "Kativasti"
-      },
+      "image": "https://vedaracare.ae/images/kativasti-dubai-hero.jpg",
+      "procedureType": "Ayurveda",
+      "bodyLocation": "Lumbar spine",
+      "preparation": "BAMS doctor clinical assessment including pain scoring, range of motion, and palpation. Selection of appropriate medicated oil based on condition.",
+      "followup": "5-10 minute gentle lumbar massage after oil removal. 5-minute rest period. Avoid showering for 3 hours. Avoid cold environments and heavy exertion for the rest of the day.",
+      "indication": [
+        {"@type": "MedicalIndication", "name": "Chronic mechanical lower back pain"},
+        {"@type": "MedicalIndication", "name": "Sciatica"},
+        {"@type": "MedicalIndication", "name": "Lumbar disc bulge (non-surgical)"},
+        {"@type": "MedicalIndication", "name": "Spondylosis"},
+        {"@type": "MedicalIndication", "name": "Sacroiliac joint dysfunction"},
+        {"@type": "MedicalIndication", "name": "Post-exercise lumbar stiffness"},
+        {"@type": "MedicalIndication", "name": "Postpartum back pain"},
+        {"@type": "MedicalIndication", "name": "Chronic lumbar muscle spasm"}
+      ],
+      "contraindication": [
+        {"@type": "MedicalContraindication", "name": "Acute disc herniation with neurological signs"},
+        {"@type": "MedicalContraindication", "name": "Cauda equina symptoms"},
+        {"@type": "MedicalContraindication", "name": "Suspected spinal infection or tumour"},
+        {"@type": "MedicalContraindication", "name": "Recent spinal surgery without clearance"},
+        {"@type": "MedicalContraindication", "name": "Pregnancy"},
+        {"@type": "MedicalContraindication", "name": "Open skin lesions over lumbar region"}
+      ],
+      "sameAs": "https://en.wikipedia.org/wiki/Panchakarma",
+      "performer": {"@id": "https://vedaracare.ae/#organization"}
+    },
+    {
+      "@context": "https://schema.org",
+      "@type": "Service",
+      "name": "Kativasti Programmes at Vedara Care",
+      "provider": {"@id": "https://vedaracare.ae/#organization"},
+      "areaServed": [
+        {"@type": "City", "name": "Dubai"},
+        {"@type": "Place", "name": "United Arab Emirates"}
+      ],
+      "serviceType": "Ayurvedic Lumbar Therapy",
+      "hasOfferCatalog": {
+        "@type": "OfferCatalog",
+        "name": "Kativasti Programmes",
+        "itemListElement": [
+          {
+            "@type": "Offer",
+            "name": "Kativasti Acute / Short Course (5-7 sessions)",
+            "priceCurrency": "AED",
+            "price": "2850",
+            "description": "Short course for acute lumbar pain or post-injury recovery"
+          },
+          {
+            "@type": "Offer",
+            "name": "Kativasti Chronic Pain Course (14 sessions)",
+            "priceCurrency": "AED",
+            "price": "5400",
+            "description": "Standard course for chronic mechanical back pain over 4-6 weeks"
+          },
+          {
+            "@type": "Offer",
+            "name": "Integrated Spine Care Programme",
+            "priceCurrency": "AED",
+            "price": "8900",
+            "description": "Combined Kativasti, Abhyanga, and physiotherapy programme for complex spine conditions"
+          }
+        ]
+      }
+    },
+    {
+      "@context": "https://schema.org",
+      "@type": "MedicalWebPage",
+      "name": "Kativasti Treatment in Dubai",
+      "url": "https://vedaracare.ae/treatments/kativasti-dubai/",
+      "about": {"@id": "https://vedaracare.ae/treatments/kativasti-dubai/#procedure"},
       "audience": {"@type": "PatientAudience"},
-      "lastReviewed": "2026-05-22",
+      "lastReviewed": currentDate,
       "reviewedBy": {
         "@type": "Physician",
         "name": "Dr. Priya Nair",
         "hasCredential": "DHA-Licensed BAMS, MD (Ayurveda)"
-      }
+      },
+      "primaryImageOfPage": "https://vedaracare.ae/images/kativasti-dubai-hero.jpg"
+    },
+    {
+      "@context": "https://schema.org",
+      "@type": "Article",
+      "headline": "Kativasti Treatment in Dubai — A Complete Clinical Guide",
+      "image": "https://vedaracare.ae/images/kativasti-dubai-hero.jpg",
+      "datePublished": "2026-05-01",
+      "dateModified": currentDate,
+      "author": {
+        "@type": "Physician",
+        "name": "Dr. Priya Nair",
+        "url": "https://vedaracare.ae/doctors/dr-priya-nair/"
+      },
+      "publisher": {
+        "@type": "Organization",
+        "name": "Vedara Care Polyclinic",
+        "logo": {"@type": "ImageObject", "url": "https://vedaracare.ae/logo.png"}
+      },
+      "mainEntityOfPage": "https://vedaracare.ae/treatments/kativasti-dubai/"
+    },
+    {
+      "@context": "https://schema.org",
+      "@type": "Organization",
+      "@id": "https://vedaracare.ae/#organization",
+      "name": "Vedara Care Polyclinic",
+      "url": "https://vedaracare.ae/",
+      "logo": "https://vedaracare.ae/logo.png"
     },
     {
       "@context": "https://schema.org",
       "@type": "BreadcrumbList",
       "itemListElement": [
         {"@type": "ListItem", "position": 1, "name": "Home", "item": "https://vedaracare.ae/"},
-        {"@type": "ListItem", "position": 2, "name": "Ayurvedic Treatment in Dubai", "item": "https://vedaracare.ae/ayurveda-clinic-jvc/"},
-        {"@type": "ListItem", "position": 3, "name": "Kativasti in Dubai", "item": "https://vedaracare.ae/treatments/kativasti-dubai/"}
+        {"@type": "ListItem", "position": 2, "name": "Ayurvedic Treatment in Dubai", "item": "https://vedaracare.ae/ayurveda-dubai/"},
+        {"@type": "ListItem", "position": 3, "name": "Kativasti Treatment in Dubai", "item": "https://vedaracare.ae/treatments/kativasti-dubai/"}
+      ]
+    },
+    {
+      "@context": "https://schema.org",
+      "@type": "FAQPage",
+      "mainEntity": [
+        {
+          "@type": "Question",
+          "name": "What is Kativasti in simple terms?",
+          "acceptedAnswer": {
+            "@type": "Answer",
+            "text": "Kativasti is a targeted Ayurvedic therapy for chronic lower back pain in which warm medicated oil is contained over the lumbar spine in a custom dough ring for 30 to 45 minutes per session. The continuous warmth and the medicated oil work together to relieve pain, reduce inflammation, and improve tissue quality in the lumbar region. It is one of the most clinically validated Ayurvedic treatments for mechanical back pain."
+          }
+        },
+        {
+          "@type": "Question",
+          "name": "How long does a Kativasti session take?",
+          "acceptedAnswer": {
+            "@type": "Answer",
+            "text": "A single Kativasti session takes 30 to 45 minutes of actual treatment time, plus 10 minutes of preparation and 15 minutes of post-session rest. Total clinic time is approximately 75 to 90 minutes including changing, brief consultation, and recovery period."
+          }
+        },
+        {
+          "@type": "Question",
+          "name": "How much does Kativasti cost in Dubai?",
+          "acceptedAnswer": {
+            "@type": "Answer",
+            "text": "At Vedara Care, single-session Kativasti starts from AED 450. A 7-session course starts from AED 2,850 (10-15% per-session discount). A 14-session chronic pain course starts from AED 5,400 (15-20% per-session discount). An integrated spine care programme combining Kativasti, Abhyanga, and physiotherapy starts from AED 8,900. Across Dubai, authentic Kativasti typically ranges from AED 350 to AED 700 per session."
+          }
+        },
+        {
+          "@type": "Question",
+          "name": "Does Kativasti actually work for back pain?",
+          "acceptedAnswer": {
+            "@type": "Answer",
+            "text": "For mechanical chronic back pain, yes — most patients report significant pain reduction within 4-6 sessions, with maximum benefit typically achieved over 14 sessions. Published research and clinical studies on Kativasti for lumbar pain have documented reductions in pain scores (VAS), improvements in lumbar range of motion, and quality-of-life improvements comparable to or better than NSAID-only approaches. It is less effective for nerve compression conditions like severe disc herniation with neurological signs — those typically need conventional workup first."
+          }
+        },
+        {
+          "@type": "Question",
+          "name": "How many Kativasti sessions do I need?",
+          "acceptedAnswer": {
+            "@type": "Answer",
+            "text": "For acute strains and post-exertional pain, 5-7 sessions over 1-2 weeks is usually sufficient. For chronic mechanical back pain, 14 sessions over 4-6 weeks is the standard protocol. For sciatica or disc-related conditions, 14-21 sessions over 6-10 weeks. Most patients benefit from session frequency of 2-3 per week rather than daily."
+          }
+        },
+        {
+          "@type": "Question",
+          "name": "What oil will be used in my Kativasti?",
+          "acceptedAnswer": {
+            "@type": "Answer",
+            "text": "Oil selection depends on your specific condition. Common options at Vedara Care include Mahanarayana Taila (for chronic mechanical pain — the most-prescribed), Sahacharadi Taila (for sciatica and nerve-related pain), Pinda Taila (for inflammatory back pain), and Murivenna (for sports injuries and acute trauma). Your doctor will explain the selection after assessment."
+          }
+        },
+        {
+          "@type": "Question",
+          "name": "Can I combine Kativasti with physiotherapy?",
+          "acceptedAnswer": {
+            "@type": "Answer",
+            "text": "Yes, and we strongly recommend it for chronic pain. At Vedara Care, our Ayurvedic doctors and physiotherapists work jointly for back pain patients. A typical integrated plan combines 2-3 Kativasti sessions per week with 2 physiotherapy sessions per week. We schedule the two therapies so they support rather than conflict — for example, no heavy physiotherapy on Kativasti days."
+          }
+        },
+        {
+          "@type": "Question",
+          "name": "Is Kativasti safe during pregnancy?",
+          "acceptedAnswer": {
+            "@type": "Answer",
+            "text": "Classical Kativasti is not performed during pregnancy. The position and the sustained heat over the lower back are not recommended for pregnant patients. For pregnancy-related back pain, we offer modified Ayurvedic protocols including gentle Abhyanga and specific positional therapies. Postpartum Kativasti is offered after the standard 45-day recovery period."
+          }
+        }
       ]
     }
   ];
@@ -63,16 +230,20 @@ const KativastiDubai = () => {
   return (
     <>
       <Head>
-        <title>Kativasti in Dubai | Ayurvedic Lower Back Pain Treatment | Vedara Care</title>
-        <meta name="description" content="Kativasti — classical Ayurvedic oil therapy for lower back pain, sciatica, and lumbar disc conditions at our DHA-licensed clinic in JVC, Dubai. Book today." />
+        <title>Kativasti Treatment in Dubai | Ayurveda for Back Pain | Vedara Care</title>
+        <meta name="description" content="Authentic Kativasti at our DHA-licensed Dubai clinic — targeted warm-oil therapy for chronic back pain, sciatica &amp; lumbar disc issues. Integrated with physiotherapy." />
+        <meta name="robots" content="index, follow, max-image-preview:large" />
         
         {/* Open Graph */}
-        <meta property="og:title" content="Kativasti in Dubai | Ayurvedic Treatment | Vedara Care" />
-        <meta property="og:description" content="Classical Kativasti therapy for lower back pain, sciatica, and lumbar disc issues at our JVC Ayurveda clinic." />
+        <meta property="og:title" content="Kativasti in Dubai — Targeted Ayurvedic Treatment for Chronic Back Pain" />
+        <meta property="og:description" content="Doctor-prescribed Kativasti at our DHA-licensed JVC clinic. For chronic back pain, sciatica, and lumbar disc conditions. Integrated with physiotherapy." />
         <meta property="og:image" content="https://vedaracare.ae/og-images/kativasti-dubai.jpg" />
         <meta property="og:url" content="https://vedaracare.ae/treatments/kativasti-dubai/" />
-        <meta property="og:type" content="website" />
+        <meta property="og:type" content="article" />
         <meta property="og:locale" content="en_AE" />
+        <meta property="article:published_time" content="2026-05-01" />
+        <meta property="article:modified_time" content={currentDate} />
+        <meta property="article:author" content="Dr. Priya Nair" />
         
         {/* Twitter */}
         <meta name="twitter:card" content="summary_large_image" />
@@ -93,7 +264,7 @@ const KativastiDubai = () => {
         ))}
       </Head>
 
-      <TreatmentHero {...kativastiHero} />
+      <AyurvedaHero {...kativastiHero} imageContainerClassName={kativastiHero.imageContainerClassName} />
       <AyurvedaIntro {...kativastiIntro} />
       <TreatmentMechanism {...kativastiMechanism} />
       <TreatmentProtocol {...kativastiProtocol} />
@@ -102,7 +273,7 @@ const KativastiDubai = () => {
       <TreatmentIntegration {...kativastiIntegration} />
       <TreatmentPrograms {...kativastiPrograms} />
       
-      <Reviews {...kativastiReviews} />
+      <TreatmentReviews {...kativastiReviews} />
       <FAQ {...kativastiFaqs} />
       <TreatmentLocation {...kativastiTreatmentLocation} />
       <FinalCTA {...kativastiFinalCTA} />

@@ -27,24 +27,17 @@ const TreatmentProtocol = ({
 
         <div className="max-w-[900px] mx-auto space-y-8">
           {phases.map((phase, index) => (
-            <div key={index} className="relative pl-12">
-              {/* Time indicator */}
-              <div className="absolute left-0 top-0 flex flex-col items-center">
-                <div className="w-10 h-10 rounded-full flex items-center justify-center text-[11px] font-sans font-semibold" 
-                     style={{ backgroundColor: 'rgb(250, 246, 239)', color: 'rgb(201, 169, 97)' }}>
+            <div key={index} className="flex gap-6 border-l-4 border-[#C8975F] pl-8 py-4">
+              <div className="flex-shrink-0">
+                <div className="text-[#C8975F] font-semibold text-sm mb-1">
                   {phase.time}
                 </div>
-                {index < phases.length - 1 && (
-                  <div className="w-0.5 flex-1 mt-2" style={{ backgroundColor: 'rgb(229, 223, 211)' }}></div>
-                )}
               </div>
-
-              {/* Content */}
-              <div className="pb-4">
-                <h3 className="text-[18px] font-serif font-medium text-[#1A1A1A] mb-3">
+              <div>
+                <h3 className="text-xl font-semibold text-[#1A1A1A] mb-2">
                   {phase.title}
                 </h3>
-                <p className="text-[15px] font-sans leading-[1.7] text-[#4A4A4A]">
+                <p className="text-gray-700 leading-relaxed">
                   {phase.content}
                 </p>
               </div>
