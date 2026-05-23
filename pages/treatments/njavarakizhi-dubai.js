@@ -328,10 +328,11 @@ const NjavarakizhiDubai = () => {
       
       {/* 
       <TreatmentProtocol {...njavarakizhiProtocol} />Section 3 - Mechanism with Image 3 */}
-      <TreatmentProtocol {...njavarakizhiProtocol} />
+      <TreatmentMechanism {...njavarakizhiMechanism} />
       
       {/* Section 4 - Protocol with Image 4 */}
-     <TreatmentMechanism {...njavarakizhiMechanism} />
+     <TreatmentProtocol {...njavarakizhiProtocol} />
+      
       
       {/* Section 5 - Oils/Kashayams with Image 5 */}
       <TreatmentOils {...njavarakizhiOils} />

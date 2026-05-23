@@ -10,8 +10,11 @@ const TreatmentApplications = ({
   honestLimits = {},
   whereItExcels = [],
   honestLimitsList = [],
+  honestLimitsDescription = "",
   honestNote = "",
-  footer = ""
+  footer = "",
+  strongIndicationsLabel = "STRONG INDICATIONS",
+  complementaryUseLabel = "COMPLEMENTARY USE"
 }) => {
   const isNewFormat = whereItExcels && whereItExcels.length > 0;
 
@@ -63,7 +66,7 @@ const TreatmentApplications = ({
             fontFamily: '"DM Sans", sans-serif' 
           }}
         >
-          WHERE IT EXCELS
+          {strongIndicationsLabel}
         </p>
         <div className="space-y-0">
           {whereItExcels.map((item, index) => (
@@ -104,23 +107,30 @@ const TreatmentApplications = ({
             fontFamily: '"DM Sans", sans-serif' 
           }}
         >
-          HONEST LIMITS
+          {complementaryUseLabel}
         </p>
         <p 
           className="text-sm mb-4"
           style={{ color: 'rgb(74, 67, 60)' }}
         >
-          Real Ayurvedic doctors at our JVC clinic recommend something else when Njavarakizhi is not appropriate.
+          {honestLimitsDescription || "Real Ayurvedic doctors at our JVC clinic recommend something else when this treatment is not appropriate."}
         </p>
         <div className="space-y-0 flex-1">
           {honestLimitsList.map((item, index) => (
             <div key={index} className="py-3 border-b border-[rgb(237,232,222)]">
               <div className="flex items-start gap-3">
-                <X 
-                  size={13} 
-                  className="mt-0.5 shrink-0"
-                  style={{ color: 'rgb(157, 148, 139)' }}
-                />
+                {complementaryUseLabel === "HONEST LIMITS" ? (
+                  <X 
+                    size={13} 
+                    className="mt-0.5 shrink-0"
+                    style={{ color: 'rgb(157, 148, 139)' }}
+                  />
+                ) : (
+                  <div 
+                    className="mt-2 shrink-0 w-1.5 h-1.5 rounded-full"
+                    style={{ backgroundColor: 'rgb(74, 67, 60)' }}
+                  />
+                )}
                 <div>
                   <p 
                     className="text-sm"
