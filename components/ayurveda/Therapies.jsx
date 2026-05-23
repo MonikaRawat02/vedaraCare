@@ -51,9 +51,15 @@ const Therapies = ({ label, title, description, items }) => {
                   <span className="font-medium text-[#1A1A1A]">{item.duration}</span>
                   <span> · Best for: {item.bestFor}</span>
                 </p>
-                <button className="text-[12px] font-sans font-medium text-[#C9A961] flex items-center gap-1 hover:underline">
-                  Learn more →
-                </button>
+                {item.link ? (
+                  <a href={item.link} className="text-[12px] font-sans font-medium text-[#C9A961] flex items-center gap-1 hover:underline">
+                    Learn more →
+                  </a>
+                ) : (
+                  <button className="text-[12px] font-sans font-medium text-[#C9A961] flex items-center gap-1 hover:underline">
+                    Learn more →
+                  </button>
+                )}
               </div>
             </div>
           ))}

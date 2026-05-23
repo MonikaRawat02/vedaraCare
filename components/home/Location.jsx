@@ -37,7 +37,15 @@ const Location = ({
         <div className="grid lg:grid-cols-2 gap-12 items-center">
           {/* Map Content */}
           <div className="relative aspect-square bg-[#F6F1EA] rounded-[2rem] overflow-hidden shadow-sm flex items-center justify-center text-[#A1A1A1] font-sans">
-            <span className="text-sm">Map with Vedara Care Pin</span>
+            {mapCard.image ? (
+              <img 
+                src={mapCard.image.startsWith('http') || mapCard.image.startsWith('/') ? mapCard.image : `/images/${mapCard.image}`} 
+                alt={mapCard.alt || "Map location"} 
+                className="w-full h-full object-cover"
+              />
+            ) : (
+              <span className="text-sm">Map with Vedara Care Pin</span>
+            )}
             
             {/* Location Card Overlay */}
             <div className="absolute bottom-8 left-8 bg-white p-6 rounded-2xl shadow-xl border border-gray-100 max-w-[280px] space-y-3">

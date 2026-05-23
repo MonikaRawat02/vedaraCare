@@ -7,6 +7,8 @@ const AyurvedaHero = ({
   label = "",
   title = "",
   description = "",
+  image = "https://images.unsplash.com/photo-1600334089648-b0d9d3028eb2?q=80&w=2070&auto=format&fit=crop",
+  alt = "Ayurvedic Treatment",
   primaryCTA = "",
   secondaryCTA = "",
   trustSignals = [],
@@ -76,8 +78,8 @@ const AyurvedaHero = ({
             <div className="relative order-1 lg:order-2">
               <div className="relative aspect-[4/5] rounded-[12px] overflow-hidden shadow-2xl max-h-[628px]">
                 <img 
-                  src="https://images.unsplash.com/photo-1600334089648-b0d9d3028eb2?q=80&w=2070&auto=format&fit=crop" 
-                  alt="Ayurvedic Treatment" 
+                  src={image.startsWith('http') ? image : `/images/${image}`} 
+                  alt={alt} 
                   className="w-full h-full object-cover"
                 />
               </div>

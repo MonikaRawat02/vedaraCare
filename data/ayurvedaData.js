@@ -6,6 +6,8 @@ export const ayurvedaHero = {
   label: "Ayurveda Clinic in Jumeirah Village Circle, Dubai",
   title: "Classical Ayurveda,\npractised in the heart of JVC.",
   description: "A DHA-licensed Ayurveda clinic in Jumeirah Village Circle, Dubai. BAMS-qualified Ayurvedic physicians offering authentic Panchakarma, Abhyanga, Shirodhara and personalised dosha-based treatment for chronic conditions, stress, and long-term wellbeing.",
+  image: "ayurveda-clinic-jvc-hero.webp",
+  alt: "BAMS-qualified Ayurvedic doctor performing pulse diagnosis (Nadi Pariksha) on a patient at Vedara Care Ayurveda clinic in JVC, Dubai",
   primaryCTA: "Book an Ayurvedic Consultation",
   secondaryCTA: "Chat on WhatsApp",
   trustSignals: [
@@ -23,7 +25,7 @@ export const ayurvedaHero = {
 export const ayurvedaIntro = {
   bgColor: "bg-white",
   label: "About Our Ayurveda Practice",
-  title: "Ayurveda is the world's oldest continuously practised system of medicine. At our JVC clinic, it is also our most rigorous.",
+  title: "Ayurveda is the world's oldest continuously practised system of medicine.",
   blockquote: "Our Ayurveda department at Vedara Care Polyclinic in Jumeirah Village Circle, Dubai is led by BAMS-qualified Ayurvedic physicians registered with the Dubai Health Authority. We practise classical Ayurveda - pulse-based diagnosis, dosha analysis, herbal medicines, and Panchakarma - alongside modern diagnostics. Our patients come to us for chronic back pain, PCOS, hair loss, migraine, stress, and metabolic conditions where conventional care has not given lasting answers.",
   footer: "Medically reviewed by Dr. Priya Menon, BAMS, MD (Ayurveda) · DHA License XXXXX · Last updated May 2026"
 };
@@ -37,49 +39,70 @@ export const ayurvedaTherapies = {
       title: "Panchakarma",
       description: "The classical five-action detoxification programme. Doctor-supervised over 7, 14, or 21 days at our JVC clinic.",
       duration: "7-21 days",
-      bestFor: "chronic conditions, detox, deep reset"
+      bestFor: "chronic conditions, detox, deep reset",
+      image: "panchakarma-room-jvc-dubai.webp",
+      alt: "Panchakarma detox treatment icon — Ayurveda clinic JVC",
+      link: "/treatments/panchakarma-dubai/"
     },
     {
       title: "Abhyanga",
       description: "Full-body warm medicated oil massage performed by trained therapists, prescribed for circulation, sleep, and dosha balance.",
       duration: "60-90 min",
-      bestFor: "stress, fatigue, joint stiffness"
+      bestFor: "stress, fatigue, joint stiffness",
+      image: "abhyanga-massage-jvc-dubai.webp",
+      alt: "Abhyanga warm oil massage at Vedara Care Ayurveda clinic in Jumeirah Village Circle, Dubai",
+      link: "/treatments/abhyanga-dubai/"
     },
     {
       title: "Shirodhara",
       description: "A continuous gentle stream of warm medicated oil poured over the forehead. Profoundly calming for the nervous system.",
       duration: "45-60 min",
-      bestFor: "anxiety, insomnia, migraine"
+      bestFor: "anxiety, insomnia, migraine",
+      image: "shirodhara-treatment-jvc.webp",
+      alt: "Shirodhara therapy with continuous oil stream at our Ayurveda clinic in JVC, Dubai",
+      link: "/treatments/shirodhara-dubai/"
     },
     {
       title: "Kativasti",
       description: "A reservoir of warm medicated oil held over the lower back using a dough ring. Targeted, lasting relief.",
       duration: "45 min",
-      bestFor: "chronic lower back pain, sciatica"
+      bestFor: "chronic lower back pain, sciatica",
+      image: "kativasti-back-pain-jvc.webp",
+      alt: "Kativasti treatment for chronic back pain at Vedara Care Polyclinic, JVC Dubai",
+      link: "/treatments/kativasti-dubai/"
     },
     {
       title: "Njavarakizhi",
       description: "Massage using medicated rice boluses cooked in herbal milk. Nourishing, strengthening, restorative.",
       duration: "60-75 min",
-      bestFor: "muscle wasting, post-illness recovery, neurological recovery"
+      bestFor: "muscle wasting, post-illness recovery, neurological recovery",
+      image: "njavarakizhi-treatment-vedara-jvc.webp",
+      alt: "Njavarakizhi massage with medicated rice boluses, Vedara Care Ayurveda, Dubai",
+      link: "/treatments/njavarakizhi-dubai/"
     },
     {
       title: "Nasya",
       description: "Medicated oil or herbal preparations administered through the nasal passage to address head and sinus conditions.",
       duration: "30-45 min",
-      bestFor: "chronic sinusitis, migraine, hair loss"
+      bestFor: "chronic sinusitis, migraine, hair loss",
+      alt: "Nasya nasal therapy treatment at our JVC Ayurveda clinic",
+      link: "/treatments/nasya-dubai/"
     },
     {
       title: "Basti",
       description: "Medicated enema therapy considered the most important of the five Panchakarma actions. Strictly doctor-prescribed.",
       duration: "Course-based",
-      bestFor: "chronic pain, neurological conditions, IBS"
+      bestFor: "chronic pain, neurological conditions, IBS",
+      alt: "Doctor-supervised Basti treatment room at Vedara Care, Jumeirah Village Circle",
+      link: "/treatments/basti-dubai/"
     },
     {
       title: "Udvartana",
       description: "Vigorous herbal powder massage that supports fat metabolism and lymphatic drainage.",
       duration: "45-60 min",
-      bestFor: "weight management, cellulite, lymphatic stagnation"
+      bestFor: "weight management, cellulite, lymphatic stagnation",
+      alt: "Udvartana herbal powder massage for weight management at Vedara Care Ayurveda Dubai",
+      link: "/treatments/udvartana-dubai/"
     }
   ]
 };
@@ -89,7 +112,8 @@ export const ayurvedaPhysician = {
   name: "Dr. Priya Menon",
   qualification: "BAMS · MD (Ayurveda) · DHA Licensed",
   description: "Dr. Menon has practised classical Ayurveda for 17 years, with clinical training at the Government Ayurveda College, Thiruvananthapuram, and over nine years in Dubai. At Vedara Care she leads our Ayurveda department, with a focus on chronic conditions where conventional care has plateaued - particularly PCOS, chronic pain, and migraine. Patients describe her consultations as the longest and most thorough they have had in Dubai.",
-  image: "/images/doctor-priya.jpg",
+  image: "dr-priya-menon-ayurvedic-physician-jvc.webp",
+  alt: "Dr. Priya Menon, BAMS-qualified Ayurvedic physician and DHA-licensed doctor at Vedara Care Polyclinic, JVC Dubai",
   stats: [
     { value: "15+", label: "Years of Practice" },
     { value: "5,000+", label: "Patients Treated" },
@@ -97,7 +121,8 @@ export const ayurvedaPhysician = {
   ],
   languages: "Speaks English · Hindi · Malayalam · Arabic",
   button1Text: "Book with Dr. Menon",
-  button2Text: "View Full Profile"
+  button2Text: "View Full Profile",
+  profileLink: "/doctors/dr-priya-menon-ayurveda/"
 };
 
 export const ayurvedaFaqs = {
@@ -169,7 +194,8 @@ export const ayurvedaJournal = {
       description: "Understanding the ancient detox protocol and separating fact from marketing claims.",
       author: "Dr. Priya Menon",
       readTime: "6 min read",
-      image: "panchakarma-article"
+      image: "panchakarma-article",
+      link: "/blog/what-is-panchakarma/"
     },
     {
       category: "WOMENS HEALTH",
@@ -177,7 +203,8 @@ export const ayurvedaJournal = {
       description: "How traditional medicine addresses hormonal imbalance when Western approaches stall.",
       author: "Dr. Priya Menon",
       readTime: "8 min read",
-      image: "pcos-article"
+      image: "pcos-article",
+      link: "/blog/pcos-ayurveda-dubai-expat-women/"
     },
     {
       category: "CHRONIC PAIN",
@@ -185,7 +212,8 @@ export const ayurvedaJournal = {
       description: "Setting realistic expectations for recovery timelines across common conditions.",
       author: "Dr. Priya Menon",
       readTime: "7 min read",
-      image: "physio-article"
+      image: "physio-article",
+      link: "/blog/ayurveda-chronic-back-pain-expectations/"
     }
   ]
 };
@@ -196,118 +224,136 @@ export const ayurvedaConditions = {
   label: "AYURVEDA FOR CHRONIC CONDITIONS",
   title: "When modern medicine manages, Ayurveda often resolves.",
   description: "These are the conditions JVC residents most commonly come to our Ayurveda clinic for. Each is treated through a personalised dosha-based plan, not a protocol off a shelf.",
-  categories: ["Pain and Movement", "Women's Health", "Metabolic and Lifestyle"],
+  categories: ["Pain and Movement", "Womens Health and Hormonal", "Metabolic and Lifestyle"],
   items: [
     // Pain and Movement
     {
       title: "Chronic Back Pain",
       category: "Pain and Movement",
       description: "Kativasti + internal medicines + lifestyle correction",
-      programme: "Typical programme: 14-21 days"
+      programme: "Typical programme: 14-21 days",
+      link: "/conditions/back-pain-treatment-jvc/"
     },
     {
       title: "Sciatica",
       category: "Pain and Movement",
       description: "Kativasti + Basti + classical herbs",
-      programme: "Typical programme: 21-28 days"
+      programme: "Typical programme: 21-28 days",
+      link: "/conditions/sciatica-treatment-jvc/"
     },
     {
       title: "Frozen Shoulder",
       category: "Pain and Movement",
       description: "Abhyanga + Patra Pinda Sweda + internal medicines",
-      programme: "Typical programme: 14-21 days"
+      programme: "Typical programme: 14-21 days",
+      link: "/conditions/frozen-shoulder-treatment-jvc/"
     },
     {
       title: "Knee Pain (Osteoarthritis)",
       category: "Pain and Movement",
       description: "Janu Vasti + herbal medicines",
-      programme: "Typical programme: 14-21 days"
+      programme: "Typical programme: 14-21 days",
+      link: "/conditions/knee-pain-treatment-jvc/"
     },
     {
       title: "Cervical Spondylosis",
       category: "Pain and Movement",
       description: "Greeva Vasti + Nasya + internal medicines",
-      programme: "Typical programme: 14-21 days"
+      programme: "Typical programme: 14-21 days",
+      link: "/conditions/cervical-spondylosis-treatment-jvc/"
     },
     {
       title: "Arthritis (Amavata)",
       category: "Pain and Movement",
       description: "Panchakarma + classical formulations",
-      programme: "Typical programme: 21-28 days"
+      programme: "Typical programme: 21-28 days",
+      link: "/conditions/arthritis-treatment-jvc/"
     },
     // Women's Health
     {
       title: "PCOS / PCOD",
-      category: "Women's Health",
+      category: "Womens Health and Hormonal",
       description: "Virechana + Basti + herbal medicines + diet",
-      programme: "Typical programme: 3-6 months"
+      programme: "Typical programme: 3-6 months",
+      link: "/conditions/pcos-ayurveda-dubai/"
     },
     {
       title: "Irregular Cycles",
-      category: "Women's Health",
+      category: "Womens Health and Hormonal",
       description: "Doshic correction + herbs",
-      programme: "Typical programme: 3-4 months"
+      programme: "Typical programme: 3-4 months",
+      link: "/conditions/irregular-cycles-ayurveda-dubai/"
     },
     {
       title: "Postnatal Recovery",
-      category: "Women's Health",
+      category: "Womens Health and Hormonal",
       description: "Sutika Paricharya (classical postpartum care)",
-      programme: "Typical programme: 45 days"
+      programme: "Typical programme: 45 days",
+      link: "/conditions/postnatal-care-ayurveda-dubai/"
     },
     {
       title: "Thyroid (Hypothyroid)",
-      category: "Women's Health",
+      category: "Womens Health and Hormonal",
       description: "Internal medicines + Nasya + diet",
-      programme: "Typical programme: 3-6 months"
+      programme: "Typical programme: 3-6 months",
+      link: "/conditions/thyroid-ayurveda-dubai/"
     },
     {
       title: "Menopausal Symptoms",
-      category: "Women's Health",
+      category: "Womens Health and Hormonal",
       description: "Herbal support + Shirodhara",
-      programme: "Typical programme: 2-3 months"
+      programme: "Typical programme: 2-3 months",
+      link: "/conditions/menopausal-symptoms-ayurveda-dubai/"
     },
     {
       title: "Endometriosis Support",
-      category: "Women's Health",
+      category: "Womens Health and Hormonal",
       description: "Detox + uterine tonics + diet",
-      programme: "Typical programme: 3-6 months"
+      programme: "Typical programme: 3-6 months",
+      link: "/conditions/endometriosis-ayurveda-dubai/"
     },
     // Metabolic and Lifestyle
     {
       title: "Stress and Anxiety",
       category: "Metabolic and Lifestyle",
       description: "Shirodhara + Medhya herbs",
-      programme: "Typical programme: 4-8 weeks"
+      programme: "Typical programme: 4-8 weeks",
+      link: "/conditions/stress-anxiety-ayurveda-dubai/"
     },
     {
       title: "Insomnia",
       category: "Metabolic and Lifestyle",
       description: "Shirodhara + lifestyle correction",
-      programme: "Typical programme: 4-6 weeks"
+      programme: "Typical programme: 4-6 weeks",
+      link: "/conditions/insomnia-ayurveda-dubai/"
     },
     {
       title: "Migraine",
       category: "Metabolic and Lifestyle",
       description: "Nasya + Shirodhara + internal medicines",
-      programme: "Typical programme: 2-3 months"
+      programme: "Typical programme: 2-3 months",
+      link: "/conditions/migraine-ayurveda-dubai/"
     },
     {
       title: "Hair Loss",
       category: "Metabolic and Lifestyle",
       description: "Nasya + medicated oils + internal support",
-      programme: "Typical programme: 3-6 months"
+      programme: "Typical programme: 3-6 months",
+      link: "/conditions/hair-loss-ayurveda-dubai/"
     },
     {
       title: "Diabetes Support",
       category: "Metabolic and Lifestyle",
       description: "Panchakarma + Madhumeha herbs (alongside endocrinologist)",
-      programme: "Typical programme: 3-6 months"
+      programme: "Typical programme: 3-6 months",
+      link: "/conditions/diabetes-ayurveda-dubai/"
     },
     {
       title: "Weight Management",
       category: "Metabolic and Lifestyle",
       description: "Udvartana + Virechana + lifestyle programme",
-      programme: "Typical programme: 2-4 months"
+      programme: "Typical programme: 2-4 months",
+      link: "/conditions/weight-management-ayurveda-dubai/"
     }
   ],
   footer: "Browse all 30+ conditions →"
@@ -353,7 +399,8 @@ export const ayurvedaReviews = {
       quote: "After three years of back pain, finally a long-term answer.",
       content: "I had seen four different specialists before coming to Vedara Care. The Ayurvedic physician spent almost an hour with me on the first visit, longer than any consultation I had ever had in Dubai. The 21-day Panchakarma programme was challenging but the results have held for eight months.",
       author: "Sarah K.",
-      details: "Chronic Back Pain · 21-Day Panchakarma"
+      details: "Chronic Back Pain · 21-Day Panchakarma",
+      alt: "Verified patient outcome — Ayurvedic back pain treatment at Vedara Care JVC"
     },
     {
       quote: "My cycle came back in the second month. I had stopped believing it would.",
@@ -378,11 +425,14 @@ export const ayurvedaReviews = {
 export const ayurvedaLocation = {
   bgColor: "bg-[#F0E9DD]",
   label: "VISIT OUR JVC AYURVEDA CLINIC",
-  title: "[Full Address], Jumeirah Village Circle, Dubai",
+  title: "Visit our JVC Ayurveda clinic.",
+  subtitle: "Vedara Care Polyclinic, Jumeirah Village Circle, Dubai",
   mapCard: {
     title: "Vedara Care Polyclinic",
     subtitle: "JVC, Dubai",
-    linkText: "Get Directions"
+    linkText: "Get Directions",
+    image: "vedara-care-ayurveda-clinic-interior-jvc.webp",
+    alt: "Vedara Care Ayurveda clinic location in Jumeirah Village Circle, Dubai — next to Circle Mall"
   },
   address: {
     label: "Address",
@@ -409,7 +459,7 @@ export const ayurvedaLocation = {
 export const ayurvedaCTA = {
   bgColor: "bg-[#FAF8EF]",
   label: "READY TO START?",
-  title: "Begin with a consultation. Decide everything else from there.",
+  title: "Begin with a consultation.",
   description: "An Ayurvedic consultation is not a commitment to a treatment plan — it is a diagnostic conversation. You will leave knowing what is actually going on and what we recommend. Whether you choose to proceed is entirely up to you.",
   button1Text: "Book an Ayurveda Consultation",
   button2Text: "Chat on WhatsApp",
