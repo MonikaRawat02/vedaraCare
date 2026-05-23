@@ -470,7 +470,7 @@ export const ayurvedaCTA = {
 export const dubaiHubHero = {
   breadcrumb: [
     { label: "Home", href: "/" },
-    { label: "Ayurveda in Dubai", active: true }
+    { label: "Ayurvedic Treatment in Dubai", active: true }
   ],
   label: "A GUIDE TO AYURVEDIC TREATMENT IN DUBAI",
   title: "Authentic Ayurveda in\nDubai — what it is, who it\nis for, and where to find\nit.",
@@ -509,7 +509,7 @@ export const dubaiHubTherapies = {
     {
       title: "Panchakarma",
       description: "The classical five-action detoxification programme. Doctor-supervised over 7, 14, or 21 days.",
-      duration: "7-21 days",
+      duration: "Duration: 7-21 days",
       bestFor: "From AED 3,500",
       image: "panchakarma-room-jvc-dubai.webp",
       link: "/treatments/panchakarma-dubai/"
@@ -517,7 +517,7 @@ export const dubaiHubTherapies = {
     {
       title: "Abhyanga",
       description: "Full-body warm medicated oil massage prescribed for circulation, sleep, and dosha balance.",
-      duration: "60-90 min",
+      duration: "Duration: 60-90 min",
       bestFor: "From AED 280",
       image: "abhyanga-massage-jvc-dubai.webp",
       link: "/treatments/abhyanga-dubai/"
@@ -525,7 +525,7 @@ export const dubaiHubTherapies = {
     {
       title: "Shirodhara",
       description: "Continuous warm oil stream over the forehead. Profoundly calming for the nervous system.",
-      duration: "45-60 min",
+      duration: "Duration: 45-60 min",
       bestFor: "From AED 320",
       image: "shirodhara-treatment-jvc.webp",
       link: "/treatments/shirodhara-dubai/"
@@ -533,7 +533,7 @@ export const dubaiHubTherapies = {
     {
       title: "Kativasti",
       description: "Warm medicated oil held over the lower back. Targeted, lasting relief for spinal conditions.",
-      duration: "45 min",
+      duration: "Duration: 45 min",
       bestFor: "From AED 260",
       image: "kativasti-back-pain-jvc.webp",
       link: "/treatments/kativasti-dubai/"
@@ -541,7 +541,7 @@ export const dubaiHubTherapies = {
     {
       title: "Njavarakizhi",
       description: "Massage using medicated rice boluses cooked in herbal milk. Deep tissue nourishment.",
-      duration: "60-75 min",
+      duration: "Duration: 60-75 min",
       bestFor: "From AED 350",
       image: "njavarakizhi-treatment-vedara-jvc.webp",
       link: "/treatments/njavarakizhi-dubai/"
@@ -549,7 +549,7 @@ export const dubaiHubTherapies = {
     {
       title: "Nasya",
       description: "Medicated oils administered through the nasal passage for sinus and head conditions.",
-      duration: "30-45 min",
+      duration: "Duration: 30-45 min",
       bestFor: "From AED 220",
       image: "nasya-dubai.webp",
       link: "/treatments/nasya-dubai/"
@@ -557,7 +557,7 @@ export const dubaiHubTherapies = {
     {
       title: "Basti",
       description: "Medicated enema therapy. Considered the most important of the five Panchakarma actions.",
-      duration: "Course-based",
+      duration: "Duration: Course-based",
       bestFor: "From AED 300",
       image: "basti-dubai.webp",
       link: "/treatments/basti-dubai/"
@@ -565,7 +565,7 @@ export const dubaiHubTherapies = {
     {
       title: "Udvartana",
       description: "Vigorous herbal powder massage supporting fat metabolism and lymphatic circulation.",
-      duration: "45-60 min",
+      duration: "Duration: 45-60 min",
       bestFor: "From AED 290",
       image: "udvartana-dubai.webp",
       link: "/treatments/udvartana-dubai/"
@@ -574,7 +574,7 @@ export const dubaiHubTherapies = {
 };
 
 export const dubaiHubReviews = {
-  bgColor: "bg-[#FAF8F1]",
+  bgColor: "bg-[#FAF6EF]",
   cardBgColor: "bg-white",
   label: "PATIENT STORIES",
   title: "Outcomes Across Dubai.",
@@ -608,7 +608,7 @@ export const dubaiHubReviews = {
 };
 
 export const dubaiHubFaqs = {
-  bgColor: "bg-[#F0E9DD]",
+  bgColor: "bg-[#FAF6EF]",
   label: "AYURVEDA IN DUBAI",
   title: "The most asked questions about Ayurvedic treatment in Dubai.",
   description: "Honest answers from our DHA-licensed clinical team. WhatsApp us if yours is not here.",
@@ -669,10 +669,112 @@ export const dubaiHubCTA = {
   bgColor: "bg-[#FAF8EF]",
   label: "READY TO BEGIN?",
   title: "Start with a consultation. Decide everything else from there.",
-  description: "An Ayurvedic consultation is a diagnostic conversation, not a sales pitch. You will leave knowing exactly what is going on and what we recommend — and whether to proceed is entirely your decision.",
+  description: "An Ayurvedic consultation is not a commitment to a treatment plan — it is a diagnostic conversation. You will leave knowing what is actually going on and what we recommend. Whether you choose to proceed is entirely up to you.",
   button1Text: "Book a Consultation",
   button2Text: "Chat on WhatsApp",
   subtext: "First consultations from AED 350 · Typical WhatsApp reply under 15 minutes"
+};
+
+export const dubaiHubBasics = {
+  bgColor: "bg-[#FAF6EF]",
+  label: "THE BASICS",
+  title: "A 5,000-year-old medical system, practised seriously in modern Dubai.",
+  content: [
+    "Ayurveda is the world's oldest continuously practised system of medicine — originating in India over 5,000 years ago and codified in classical Sanskrit texts including the Charaka Samhita and Sushruta Samhita.",
+    "Where conventional Western medicine focuses on diagnosing and treating disease, Ayurveda focuses on the person — your individual constitution (prakriti), your current imbalance (vikriti), and the lifestyle, dietary, and environmental factors driving your symptoms. A skilled Ayurvedic doctor in Dubai will spend 45 to 60 minutes understanding all of this before recommending any treatment.",
+    "What Ayurveda is not, however, is a spa service. Authentic Ayurvedic treatment in Dubai is medical — prescribed by a DHA-licensed BAMS physician after diagnostic assessment, using regulated herbal medicines and classical therapies. If you are offered \"Ayurvedic massage\" without a doctor consultation, you are being sold wellness, not medicine."
+  ],
+  quote: "Ayurveda treats the cause. Modern medicine often manages the symptom. The best Dubai patients use both.",
+  image: "https://images.unsplash.com/photo-1512290923902-8a9f81dc236c?w=800",
+  imageLeft: true
+};
+
+export const dubaiHubApplications = {
+  label: "CLINICAL APPLICATIONS",
+  title: "What Ayurveda actually treats well — and what it does not.",
+  description: "Honest clinical guidance. Ayurveda is powerful for chronic conditions where lifestyle, stress, and constitution drive symptoms. It is not a substitute for surgery, emergency care, or acute infection management.",
+  strongOutcomes: [
+    "Chronic back pain and sciatica",
+    "PCOS and hormonal imbalance",
+    "Migraine and chronic headache",
+    "Hair loss (Khalitya)",
+    "Postnatal recovery (Sutika Paricharya)",
+    "Stress, anxiety, and chronic insomnia",
+    "Knee pain and osteoarthritis",
+    "Frozen shoulder and cervical spondylosis",
+    "IBS and chronic digestive issues",
+    "Thyroid disorders (alongside endocrinology)",
+    "Type 2 diabetes support",
+    "Skin conditions including eczema and psoriasis"
+  ],
+  referralCases: [
+    "Acute infections requiring antibiotics",
+    "Emergency conditions (cardiac, stroke, trauma)",
+    "Surgical conditions (we will refer to your surgeon)",
+    "Severe psychiatric conditions",
+    "Cancers (we may support alongside oncology, never replace it)"
+  ]
+};
+
+export const dubaiHubGuidance = {
+  label: "PRACTICAL GUIDANCE",
+  title: "How to choose a real Ayurvedic clinic in Dubai.",
+  checklist: [
+    {
+      title: "Is the clinic DHA-licensed for Ayurveda specifically?",
+      description: "A DHA Healthcare Facility License with Ayurveda listed as a specialty is non-negotiable. Ask for the license number. Verify it on the DHA Sheryan portal. Vedara Care operates under DHA License XXXXX with Ayurveda explicitly licensed."
+    },
+    {
+      title: "Are individual Ayurvedic doctors DHA-licensed?",
+      description: "The Dubai Health Authority licenses Ayurvedic physicians individually (DHA-P-XXXXXXX format). Real clinics display each doctor's DHA license number publicly. If you cannot find a license number on a doctor's profile, that is your answer."
+    },
+    {
+      title: "Do the doctors hold BAMS qualifications?",
+      description: "BAMS (Bachelor of Ayurvedic Medicine and Surgery) is a 5.5-year medical degree from recognised Indian universities. Many also hold MD (Ayurveda) postgraduate specialisations. A wellness practitioner or therapist is not the same as a BAMS-qualified physician."
+    },
+    {
+      title: "Does the first consultation actually take time?",
+      description: "Authentic Ayurvedic consultations in Dubai take 45 to 60 minutes. They include pulse diagnosis, dosha assessment, full history-taking, and a written treatment plan. A 10-minute consultation is a sales pitch, not a diagnosis."
+    },
+    {
+      title: "Are the herbal medicines sourced from documented pharmacies?",
+      description: "Quality Ayurvedic medicines come from classical pharmacies in Kerala and Maharashtra with documented batch testing — not unbranded combinations. Ask where the clinic sources its medicines and request proof of regulation."
+    },
+    {
+      title: "Is the clinic transparent about pricing?",
+      description: "Trustworthy clinics publish indicative pricing online and provide written quotes before treatment. Anyone who refuses to share pricing until you are evaluated is selling commitment, not care."
+    }
+  ],
+  buttonText: "Verify Vedara Care's DHA License",
+  buttonLink: "#"
+};
+
+export const dubaiHubLocationDetails = {
+  label: "LOCATION",
+  title: "Patients come to us from across Dubai.",
+  description: "Our clinic is located in Jumeirah Village Circle, but our patients live across Dubai. For some, home healthcare is the better option.",
+  inClinicNeighborhoods: [
+    "Jumeirah Village Circle (JVC)",
+    "Jumeirah Village Triangle (JVT)",
+    "Al Barsha South",
+    "Dubai Sports City",
+    "Motor City",
+    "Arjan",
+    "Dubai Hills Estate",
+    "The Greens",
+    "Damac Hills"
+  ],
+  homeHealthcareNeighborhoods: [
+    "Downtown Dubai",
+    "Dubai Marina",
+    "Palm Jumeirah",
+    "Business Bay",
+    "Mirdif",
+    "Al Khawaneej",
+    "Jumeirah",
+    "Mira and Reem",
+    "All Dubai neighbourhoods"
+  ]
 };
 
 export const dubaiHubJournal = {
@@ -683,7 +785,7 @@ export const dubaiHubJournal = {
     {
       category: "AYURVEDA",
       title: "What Panchakarma actually does, and what it does not",
-      description: "Dr. Priya Nair · 6 min read",
+      description: "",
       author: "Dr. Priya Nair",
       readTime: "6 min read",
       image: "panchakarma-article",
@@ -692,7 +794,7 @@ export const dubaiHubJournal = {
     {
       category: "DUBAI HEALTHCARE",
       title: "Is Ayurveda covered by insurance in Dubai? A 2026 guide",
-      description: "Vedara Care Team · 5 min read",
+      description: "",
       author: "Vedara Care Team",
       readTime: "5 min read",
       image: "insurance-article",
@@ -701,11 +803,34 @@ export const dubaiHubJournal = {
     {
       category: "WOMEN'S HEALTH",
       title: "PCOS in Dubai: why expat women are turning to Ayurveda",
-      description: "Dr. Anjali Menon · 8 min read",
+      description: "",
       author: "Dr. Anjali Menon",
       readTime: "8 min read",
       image: "pcos-article",
       link: "/blog/pcos-ayurveda-dubai-expat-women/"
     }
   ]
+};
+
+export const dubaiHubNextSteps = {
+  label: "NEXT STEPS",
+  title: "Where would you like to go next?",
+  pages: [
+    {
+      title: "Visit Our JVC Clinic",
+      description: "DHA-licensed Ayurveda department in Jumeirah Village Circle. Meet our doctors, see our treatments, and book a consultation.",
+      href: "/ayurveda-clinic-jvc/"
+    },
+    {
+      title: "Browse Treatments by Condition",
+      description: "Find Ayurvedic treatment approaches for your specific condition — back pain, PCOS, migraine, hair loss, and 25+ more.",
+      href: "/conditions/"
+    },
+    {
+      title: "Ayurveda at Home Across Dubai",
+      description: "Selected Ayurvedic services delivered to your home anywhere in Dubai by our DHA-licensed home healthcare team.",
+      href: "/home-healthcare-jvc/"
+    }
+  ],
+  linkText: "Browse all Ayurvedic treatments →"
 };

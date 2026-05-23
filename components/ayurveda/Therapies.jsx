@@ -2,7 +2,7 @@ import React from 'react';
 import { Zap, Sparkles, Droplets, Shield, Leaf, Wind, Activity, Flame } from 'lucide-react';
 
 const Therapies = ({ 
-  bgColor = "bg-[#F0E9DD]", 
+  bgColor = "bg-white", 
   cardBgColor = "bg-white",
   label, 
   title, 

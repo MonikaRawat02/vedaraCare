@@ -43,10 +43,10 @@ const Reviews = ({
           <span className="text-[13px] font-sans tracking-[0.2em] text-[#C9A961] uppercase block mb-4">
             {label}
           </span>
-          <h2 className={`text-[32px] md:text-[42px] font-serif font-medium leading-[1.2] mb-6 ${isDarkBg ? 'text-white' : 'text-[#1A1A1A]'}`}>
+          <h2 className={`text-[32px] md:text-[42px] font-serif font-medium leading-[1.2] mb-6 ${isDarkBg ? 'text-white' : 'text-white'}`}>
             {title}
           </h2>
-          <p className={`text-[16px] md:text-[18px] font-sans max-w-3xl mx-auto leading-relaxed ${isDarkBg ? 'text-white/90' : 'text-[#4A4A4A]'}`}>
+          <p className={`text-[16px] md:text-[18px] font-sans max-w-3xl mx-auto leading-relaxed ${isDarkBg ? 'text-white/90' : 'text-[#F5F1E8]'}`}>
             {description}
           </p>
         </div>
@@ -90,7 +90,7 @@ const Reviews = ({
           {stats.map((stat, index) => (
             <div key={index} className="text-center">
               <h4 className="text-[48px] font-serif font-medium text-[#C9A961] leading-none mb-2">{stat.value}</h4>
-              <p className={`text-[13px] font-sans tracking-widest ${isDarkBg ? 'text-white/70' : 'text-[#4A4A4A]/70'}`}>{stat.label}</p>
+              <p className={`text-[13px] font-sans tracking-widest ${isDarkBg ? 'text-white/70' : 'text-white'}`}>{stat.label}</p>
             </div>
           ))}
         </div>
