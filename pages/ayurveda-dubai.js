@@ -1,6 +1,13 @@
 import Head from 'next/head';
 import AyurvedaHero from '../components/ayurveda/AyurvedaHero';
 import AyurvedaIntro from '../components/ayurveda/AyurvedaIntro';
+import TreatmentMechanism from '../components/ayurveda/TreatmentMechanism';
+import ClinicalApplications from '../components/ayurveda/ClinicalApplications';
+import PracticalGuidance from '../components/ayurveda/PracticalGuidance';
+import HubLocation from '../components/ayurveda/HubLocation';
+import NextSteps from '../components/ayurveda/NextSteps';
+import AboutVedara from '../components/ayurveda/AboutVedara';
+import PricingSection from '../components/ayurveda/PricingSection';
 import Therapies from '../components/ayurveda/Therapies';
 import Reviews from '../components/home/Reviews';
 import FAQ from '../components/home/FAQ';
@@ -9,9 +16,14 @@ import Journal from '../components/home/Journal';
 import { 
   dubaiHubHero, 
   dubaiHubIntro,
+  dubaiHubBasics,
+  dubaiHubApplications,
+  dubaiHubGuidance,
+  dubaiHubLocationDetails,
+  dubaiHubNextSteps,
   dubaiHubTherapies,
   dubaiHubReviews,
-  dubaiHubFAQ,
+  dubaiHubFaqs,
   dubaiHubCTA,
   dubaiHubJournal
 } from '../data/ayurvedaData';
@@ -40,6 +52,18 @@ const AyurvedaDubai = () => {
         {"@type": "ListItem", "position": 1, "name": "Home", "item": "https://vedaracare.ae/"},
         {"@type": "ListItem", "position": 2, "name": "Ayurveda in Dubai", "item": "https://vedaracare.ae/ayurveda-dubai/"}
       ]
+    },
+    {
+      "@context": "https://schema.org",
+      "@type": "FAQPage",
+      "mainEntity": dubaiHubFaqs.faqs.map(faq => ({
+        "@type": "Question",
+        "name": faq.question,
+        "acceptedAnswer": {
+          "@type": "Answer",
+          "text": faq.answer
+        }
+      }))
     }
   ];
 
@@ -81,9 +105,16 @@ const AyurvedaDubai = () => {
 
       <AyurvedaHero {...dubaiHubHero} />
       <AyurvedaIntro {...dubaiHubIntro} />
+       <TreatmentMechanism {...dubaiHubBasics} />
       <Therapies {...dubaiHubTherapies} />
+      <ClinicalApplications {...dubaiHubApplications} />
+      <PracticalGuidance {...dubaiHubGuidance} />
+      <PricingSection />
+       <AboutVedara />
+       <HubLocation {...dubaiHubLocationDetails} />
       <Reviews {...dubaiHubReviews} />
-      <FAQ {...dubaiHubFAQ} />
+      <FAQ {...dubaiHubFaqs} />
+      <NextSteps {...dubaiHubNextSteps} />
       <CTA {...dubaiHubCTA} />
       <Journal {...dubaiHubJournal} />
     </>
