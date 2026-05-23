@@ -8,12 +8,7 @@ const nextConfig = {
       {
         source: '/ayurveda',
         destination: '/ayurveda-clinic-jvc/',
-        permanent: true,
-      },
-      {
-        source: '/ayurveda-dubai',
-        destination: '/ayurveda-clinic-jvc/',
-        permanent: true,
+        permanent: false,
       },
     ];
   },
