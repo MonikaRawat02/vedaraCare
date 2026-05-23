@@ -1,47 +1,77 @@
 import React from 'react';
 import Link from 'next/link';
+import { ArrowRight } from 'lucide-react';
 
 const RelatedPages = ({
-  bgColor = "bg-[#FAF7F2]",
+  bgColor = "bg-[#F5F0E8]",
   label = "EXPLORE FURTHER",
   title = "Related pages.",
-  linkText = "Browse all Ayurvedic treatments →",
+  linkText = "Browse all Ayurvedic treatments",
+  linkHref = "/ayurveda-dubai/",
   pages = []
 }) => {
   return (
-    <section className={`${bgColor} py-20 px-6 relative overflow-hidden`}>
-      <div className="max-w-7xl mx-auto">
-        <div className="flex justify-between items-end mb-12">
+    <section className="py-20" style={{ background: 'rgb(245, 240, 232)' }}>
+      <div className="max-w-7xl mx-auto px-6">
+        <div className="flex items-end justify-between mb-10">
           <div>
-            <div className="text-[#C8975F] text-sm font-semibold tracking-wider mb-2">
+            <p 
+              className="text-xs font-semibold tracking-[0.18em] uppercase mb-4"
+              style={{ color: 'rgb(184, 145, 90)', fontFamily: '"DM Sans", sans-serif' }}
+            >
               {label}
-            </div>
-            <h2 className="text-3xl text-[#1A1A1A]" style={{ fontFamily: 'Fraunces, Georgia, serif' }}>
+            </p>
+            <h2 
+              className=""
+              style={{ 
+                fontFamily: 'Fraunces, serif', 
+                fontWeight: '500', 
+                fontSize: 'clamp(1.5rem, 3vw, 2.1rem)', 
+                color: 'rgb(28, 28, 26)', 
+                lineHeight: '1.25' 
+              }}
+            >
               {title}
             </h2>
           </div>
           
           <Link 
-            href="/treatments"
-            className="text-[#1A5D4D] hover:underline text-sm"
+            href={linkHref}
+            className="hidden sm:flex items-center gap-1 text-sm"
+            style={{ color: 'rgb(184, 145, 90)' }}
           >
             {linkText}
+            <ArrowRight size={13} />
           </Link>
         </div>
 
-        <div className="grid md:grid-cols-2 lg:grid-cols-4 gap-6">
+        <div className="grid sm:grid-cols-2 lg:grid-cols-4 gap-4">
           {pages.map((page, index) => (
             <Link
               key={index}
               href={page.href}
-              className="bg-white p-6 rounded-lg hover:shadow-lg transition-shadow group"
+              className="rounded-xl p-6 flex flex-col gap-3 transition-transform hover:scale-[1.02]"
+              style={{ background: 'rgb(255, 255, 255)' }}
             >
-              <h3 className="text-lg font-semibold text-[#1A1A1A] mb-2 group-hover:text-[#1A5D4D]">
+              <h3 
+                className="text-sm font-medium"
+                style={{ fontFamily: 'Fraunces, serif', color: 'rgb(28, 28, 26)' }}
+              >
                 {page.title}
               </h3>
-              <p className="text-sm text-gray-600 leading-relaxed">
+              <p 
+                className="text-xs leading-relaxed flex-1"
+                style={{ color: 'rgb(107, 99, 89)' }}
+              >
                 {page.description}
               </p>
+              <span 
+                className="text-xs flex items-center gap-1 font-medium"
+                style={{ color: 'rgb(184, 145, 90)' }}
+              >
+                Read more
+                <ArrowRight size={11} />
+              </span>
             </Link>
           ))}
         </div>
