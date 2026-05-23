@@ -1,60 +1,53 @@
 import React from 'react';
 
 const TreatmentMechanism = ({
-  bgColor = "bg-white",
-  label = "",
-  title = "",
-  description = "",
+  bgColor = "bg-[#F5F1E8]",
+  label = "PRECISION OIL THERAPY",
+  title = "A therapy designed for one anatomical region, performed exactly as classical texts prescribed.",
+  content = [],
   quote = "",
-  image = "",
-  content = []
+  image = ""
 }) => {
   return (
     <section className={`${bgColor} py-24 px-6 relative overflow-hidden`}>
-      <div className="max-w-[1280px] mx-auto">
-        <div className="grid lg:grid-cols-[55%_45%] gap-14 items-start">
-          {/* Text Content */}
-          <div className="space-y-6 order-2 lg:order-1">
-            <p className="text-[13px] font-sans font-semibold tracking-[0.15em] text-[#C9A961] uppercase block">
-              {label}
-            </p>
-            
-            <h2 className="text-[clamp(1.7rem,2.8vw,2.5rem)] font-serif font-normal text-[#1A1A1A] leading-[1.2]">
-              {title}
-            </h2>
-            
-            <p className="text-[16px] font-sans leading-[1.75] text-[#4A4A4A]">
-              {description}
-            </p>
+      <div className="max-w-7xl mx-auto">
+        
+        {/* Text Header - Centered */}
+        <div className="text-center mb-16">
+          <div className="text-[#C8975F] text-sm font-semibold tracking-wider mb-3">
+            {label}
+          </div>
+          <h2 className="text-4xl text-[#1A1A1A]" style={{ fontFamily: 'var(--font-serif)' }}>
+            {title}
+          </h2>
+        </div>
 
-            <div className="space-y-4">
-              {content.map((paragraph, index) => (
-                <p key={index} className="text-[16px] font-sans leading-[1.75] text-[#4A4A4A]">
-                  {paragraph}
-                </p>
-              ))}
-            </div>
+        {/* Content + Image */}
+        <div className="flex flex-col lg:flex-row gap-12 items-start">
+          {/* Text Content */}
+          <div className="lg:w-[55%] space-y-6 text-gray-700 leading-relaxed">
+            {content.map((paragraph, index) => (
+              <p key={index}>{paragraph}</p>
+            ))}
 
             {/* Quote */}
             {quote && (
-              <blockquote className="mt-8 text-[18px] leading-[1.8] text-[#1A1A1A] text-left border-l-[3px] border-[#C9A961] pl-[28px]">
+              <blockquote className="text-2xl italic text-[#C8975F] border-l-4 border-[#C8975F] pl-6 my-8" style={{ fontFamily: 'var(--font-serif)' }}>
                 {quote}
               </blockquote>
             )}
           </div>
 
           {/* Image */}
-          <div className="order-1 lg:order-2">
-            <div className="relative rounded-[12px] overflow-hidden shadow-lg">
-              <img 
-                src={image || "https://images.unsplash.com/photo-1571019613454-1cb2f99b2d8b?w=600&h=450&fit=crop&auto=format"} 
-                alt="Ayurvedic Treatment Mechanism" 
-                className="w-full h-full object-cover"
-                style={{ aspectRatio: '4 / 3' }}
-              />
-            </div>
+          <div className="lg:w-[45%]">
+            <img 
+              src={image || "https://images.unsplash.com/photo-1664549760921-2198b054a592?w=600"} 
+              alt="Therapist preparing Kativasti treatment" 
+              className="w-full h-[400px] object-cover rounded-xl shadow-lg"
+            />
           </div>
         </div>
+
       </div>
     </section>
   );

@@ -17,7 +17,8 @@ export const ayurvedaHero = {
   floatingCard: {
     title: "Led by BAMS-qualified physicians",
     subtitle: "DHA Licensed · 15+ years average experience"
-  }
+  },
+  image: "https://images.unsplash.com/photo-1600334089648-b0d9d3028eb2?q=80&w=2070&auto=format&fit=crop"
 };
 
 export const ayurvedaIntro = {

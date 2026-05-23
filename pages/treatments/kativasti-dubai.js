@@ -1,5 +1,5 @@
 import Head from 'next/head';
-import TreatmentHero from '../../components/ayurveda/TreatmentHero';
+import AyurvedaHero from '../../components/ayurveda/AyurvedaHero';
 import AyurvedaIntro from '../../components/ayurveda/AyurvedaIntro';
 import TreatmentMechanism from '../../components/ayurveda/TreatmentMechanism';
 import TreatmentProtocol from '../../components/ayurveda/TreatmentProtocol';
@@ -10,7 +10,7 @@ import TreatmentPrograms from '../../components/ayurveda/TreatmentPrograms';
 import FinalCTA from '../../components/ayurveda/FinalCTA';
 import RelatedPages from '../../components/ayurveda/RelatedPages';
 import TreatmentLocation from '../../components/ayurveda/TreatmentLocation';
-import Reviews from '../../components/home/Reviews';
+import TreatmentReviews from '../../components/ayurveda/TreatmentReviews';
 import FAQ from '../../components/home/FAQ';
 import { 
   kativastiHero, 
@@ -93,7 +93,7 @@ const KativastiDubai = () => {
         ))}
       </Head>
 
-      <TreatmentHero {...kativastiHero} />
+      <AyurvedaHero {...kativastiHero} imageContainerClassName={kativastiHero.imageContainerClassName} />
       <AyurvedaIntro {...kativastiIntro} />
       <TreatmentMechanism {...kativastiMechanism} />
       <TreatmentProtocol {...kativastiProtocol} />
@@ -102,7 +102,7 @@ const KativastiDubai = () => {
       <TreatmentIntegration {...kativastiIntegration} />
       <TreatmentPrograms {...kativastiPrograms} />
       
-      <Reviews {...kativastiReviews} />
+      <TreatmentReviews {...kativastiReviews} />
       <FAQ {...kativastiFaqs} />
       <TreatmentLocation {...kativastiTreatmentLocation} />
       <FinalCTA {...kativastiFinalCTA} />

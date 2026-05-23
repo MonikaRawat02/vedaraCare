@@ -16,14 +16,15 @@ export const kativastiHero = {
     "From AED 450 per session"
   ],
   floatingCard: {
-    title: "Kativasti, not generic.",
-    subtitle: "The entire treatment focuses on a 6-inch region of your lower back. The doctor prescribes at the point."
+    title: "TARGETED, NOT GENERAL.",
+    subtitle: "The entire treatment focuses on a 6-inch region of your lower back. The precision is the point."
   },
-  image: "https://images.unsplash.com/photo-1544161515-4ab6ce6db87?w=720&h=900&fit=crop&auto=format"
+  image: ""
 };
 
+
 export const kativastiIntro = {
-  bgColor: "bg-[#FAF6EF]",
+  bgColor: "bg-[#FFFFFF]",
   label: "THE QUICK ANSWER",
   title: "Kativasti in Dubai, in one paragraph.",
   blockquote: "Kativasti (कटिवस्ति) is a classical Ayurvedic therapy in which warm medicated oil is contained over the lumbar spine using a custom-shaped wheat-flour dough reservoir, held in place for 30 to 45 minutes per session. At Vedara Care Polyclinic in Jumeirah Village Circle, Dubai, Kativasti is doctor-prescribed by BAMS-qualified physicians for chronic lower back pain, sciatica, lumbar disc issues, and spinal stiffness — typically as a 7 or 14-session course alongside internal Ayurvedic medicines and integrated physiotherapy. Sessions start from AED 450.",
@@ -31,16 +32,16 @@ export const kativastiIntro = {
 };
 
 export const kativastiMechanism = {
-  bgColor: "bg-white",
+  bgColor: "bg-[#F5F1E8]",
   label: "PRECISION OIL THERAPY",
   title: "A therapy designed for one anatomical region, performed exactly as classical texts prescribed.",
-  description: "The Sanskrit word Kativasti combines \"kati\" (lower back, lumbar region) and \"vasti\" (reservoir, container). The therapy is described in detail in the Sushruta Samhita and Sahasrayoga Sneha (oleation) treatment for Vata-pattern lower back disorders — chronic pain, stiffness, sciatica, and degenerative spine conditions.",
-  quote: "Most therapies brush across the area of concern. Kativasti sits on it for forty-five minutes.",
-  image: "https://images.unsplash.com/photo-1571019613454-1cb2f99b2d8b?w=600&h=450&fit=crop&auto=format",
   content: [
-    "The mechanics are simple but precise. A ring is built around the lower spine using kneaded wheat-flour dough — typically about 4 inches tall and 6 inches in diameter. Warm medicated oil is poured into this reservoir. The oil is held at a controlled temperature for 30 to 45 minutes, with the therapist replacing the cooled oil with fresh warm oil approximately every 10 minutes.",
+    "The Sanskrit word Kativasti combines \"kati\" (lower back, lumbar region) and \"vasti\" (reservoir, container). The therapy is described in detail in the Sushruta Samhita and Sahasrayoga as a localised Sneha (oleation) treatment for Vata-pattern lower back disorders — chronic pain, stiffness, sciatica, and degenerative spine conditions.",
+    "The mechanics are simple but precise. A ring is built around the lower spine using kneaded wheat-flour dough — typically about 4 inches tall and 6 inches in diameter. Warm medicated oil is poured into the reservoir to fill it. The oil is held at a controlled temperature for the entire 30 to 45-minute session, with the therapist replacing the cooled oil with fresh warm oil approximately every 10 minutes.",
     "The therapy works through three mechanisms. First, sustained warmth penetrates deeper into the lumbar tissues than any handheld massage technique. Second, the medicated oil — selected for your specific condition — is absorbed directly through the skin into the lumbar fascia, paraspinal muscles, and surrounding connective tissue. Third, the prolonged contact time allows for therapeutic effects that quick massage cannot achieve."
-  ]
+  ],
+  quote: "Most therapies brush across the area of concern. Kativasti sits on it for forty-five minutes.",
+  image: "https://images.unsplash.com/photo-1664549760921-2198b054a592?w=600"
 };
 
 export const kativastiProtocol = {
