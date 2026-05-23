@@ -28,6 +28,78 @@ export const ayurvedaIntro = {
   footer: "Medically reviewed by Dr. Priya Menon, BAMS, MD (Ayurveda) · DHA License XXXXX · Last updated May 2026"
 };
 
+export const ayurvedaTherapies = {
+  label: "AUTHENTIC TREATMENTS",
+  title: "Eight classical therapies. Practised the way they were meant to be.",
+  description: "Every treatment at our JVC Ayurveda clinic is prescribed by a BAMS-qualified physician after dosha consultation. We do not offer Ayurveda as massage. We offer it as medicine.",
+  items: [
+    {
+      title: "Panchakarma",
+      description: "The classical five-action detoxification programme. Doctor-supervised over 7, 14, or 21 days at our JVC clinic.",
+      duration: "7-21 days",
+      bestFor: "chronic conditions, detox, deep reset"
+    },
+    {
+      title: "Abhyanga",
+      description: "Full-body warm medicated oil massage performed by trained therapists, prescribed for circulation, sleep, and dosha balance.",
+      duration: "60-90 min",
+      bestFor: "stress, fatigue, joint stiffness"
+    },
+    {
+      title: "Shirodhara",
+      description: "A continuous gentle stream of warm medicated oil poured over the forehead. Profoundly calming for the nervous system.",
+      duration: "45-60 min",
+      bestFor: "anxiety, insomnia, migraine"
+    },
+    {
+      title: "Kativasti",
+      description: "A reservoir of warm medicated oil held over the lower back using a dough ring. Targeted, lasting relief.",
+      duration: "45 min",
+      bestFor: "chronic lower back pain, sciatica"
+    },
+    {
+      title: "Njavarakizhi",
+      description: "Massage using medicated rice boluses cooked in herbal milk. Nourishing, strengthening, restorative.",
+      duration: "60-75 min",
+      bestFor: "muscle wasting, post-illness recovery, neurological recovery"
+    },
+    {
+      title: "Nasya",
+      description: "Medicated oil or herbal preparations administered through the nasal passage to address head and sinus conditions.",
+      duration: "30-45 min",
+      bestFor: "chronic sinusitis, migraine, hair loss"
+    },
+    {
+      title: "Basti",
+      description: "Medicated enema therapy considered the most important of the five Panchakarma actions. Strictly doctor-prescribed.",
+      duration: "Course-based",
+      bestFor: "chronic pain, neurological conditions, IBS"
+    },
+    {
+      title: "Udvartana",
+      description: "Vigorous herbal powder massage that supports fat metabolism and lymphatic drainage.",
+      duration: "45-60 min",
+      bestFor: "weight management, cellulite, lymphatic stagnation"
+    }
+  ]
+};
+
+export const ayurvedaPhysician = {
+  label: "YOUR AYURVEDIC PHYSICIAN",
+  name: "Dr. Priya Menon",
+  qualification: "BAMS · MD (Ayurveda) · DHA Licensed",
+  description: "Dr. Menon has practised classical Ayurveda for 17 years, with clinical training at the Government Ayurveda College, Thiruvananthapuram, and over nine years in Dubai. At Vedara Care she leads our Ayurveda department, with a focus on chronic conditions where conventional care has plateaued - particularly PCOS, chronic pain, and migraine. Patients describe her consultations as the longest and most thorough they have had in Dubai.",
+  image: "/images/doctor-priya.jpg",
+  stats: [
+    { value: "15+", label: "Years of Practice" },
+    { value: "5,000+", label: "Patients Treated" },
+    { value: "DHA #XXXXX", label: "License Number" }
+  ],
+  languages: "Speaks English · Hindi · Malayalam · Arabic",
+  button1Text: "Book with Dr. Menon",
+  button2Text: "View Full Profile"
+};
+
 export const ayurvedaFaqs = {
   bgColor: "bg-[#FAF8F1]",
   label: "AYURVEDA QUESTIONS",
@@ -41,47 +113,47 @@ export const ayurvedaFaqs = {
     },
     {
       question: "Are Ayurvedic doctors at Vedara Care properly qualified?",
-      answer: "All our Ayurvedic physicians hold a BAMS (Bachelor of Ayurvedic Medicine and Surgery) — a 5.5-year medical degree from recognised Indian universities. Many also hold MD (Ayurveda) postgraduate specialisations and DHA professional licenses."
+      answer: "All our Ayurvedic physicians hold a BAMS (Bachelor of Ayurvedic Medicine and Surgery), a 5.5-year medical degree from recognised Indian universities. Many also hold MD (Ayurveda) postgraduate specialisations and DHA professional licenses. Their qualifications, license numbers, and clinical experience are published on each doctor profile."
     },
     {
       question: "What conditions does Ayurveda actually work for?",
-      answer: "Ayurveda is effective for chronic conditions such as back pain, PCOS, hormonal imbalances, stress, insomnia, and metabolic disorders where conventional medicine may only manage symptoms."
+      answer: "Ayurveda is most effective for chronic conditions where lifestyle, diet, stress, and constitutional factors play a major role: chronic back pain, sciatica, frozen shoulder, PCOS, irregular cycles, postnatal recovery, migraine, hair loss, stress, insomnia, IBS, and metabolic conditions. It is not a substitute for emergency or surgical care, and we will tell you honestly when conventional medicine is the right first step."
     },
     {
       question: "How long does Ayurveda treatment take to show results?",
-      answer: "While some relief can be felt early, lasting results for chronic issues typically require 3 to 6 months of consistent treatment and lifestyle changes."
+      answer: "Most patients notice initial changes within 2 to 4 weeks. Chronic conditions like PCOS or migraine typically need 3 to 6 months for substantial change. Panchakarma detox programmes (7 to 21 days) often show immediate symptomatic relief, with deeper effects continuing over the following months. Your doctor will give you a realistic timeline at consultation."
     },
     {
       question: "What is Panchakarma and do I need it?",
-      answer: "Panchakarma is a comprehensive detoxification process. Whether you need it depends on your specific dosha imbalance and health goals, determined during your initial consultation."
+      answer: "Panchakarma is the classical five-action Ayurvedic detoxification programme. It involves preparation (oleation, sudation), main therapies (Virechana, Basti, Nasya, Vamana, Raktamokshana - your doctor selects what is appropriate), and post-treatment recovery. We offer 7-day, 14-day, and 21-day programmes at our JVC clinic. Whether you need Panchakarma is a clinical decision - not every patient does."
     },
     {
       question: "Are the herbal medicines safe?",
-      answer: "Yes, our medicines are sourced from reputable manufacturers and are prescribed by qualified doctors after a thorough assessment of your health and current medications."
+      answer: "Yes, when prescribed properly. Our herbal medicines come from classical Ayurvedic pharmacies in Kerala and Maharashtra with documented quality testing. Every prescription is dosed to your constitution and reviewed against any other medications you are taking. We do not use over-the-counter combinations."
     },
     {
       question: "Can I do Ayurveda alongside my current medication?",
-      answer: "Yes, in many cases Ayurveda can complement Western medicine. Our doctors will review your health story to ensure a safe and integrated approach."
+      answer: "In most cases, yes. We work alongside your existing doctors and medications, not against them. Our physicians review every medication you take before prescribing Ayurvedic treatment, and we coordinate with your specialists when needed, especially for diabetes, thyroid, and cardiovascular conditions."
     },
     {
       question: "How much does Ayurveda cost in Dubai?",
-      answer: "Consultation and treatment costs vary. We provide a transparent price list during your visit, and many treatments are accessible for long-term care."
+      answer: "First consultations at our JVC clinic start from AED [price]. Individual treatments (Abhyanga, Shirodhara, Kativasti) range from AED [price] to AED [price] per session. Panchakarma programmes range from AED [price] (7-day) to AED [price] (21-day). All pricing is confirmed in writing before any treatment begins."
     },
     {
       question: "Does insurance cover Ayurveda in Dubai?",
-      answer: "Coverage depends on your specific insurance provider and plan. We can assist in checking your benefits during your first visit."
+      answer: "Some insurance plans cover Ayurveda, others do not. We are direct-billing partners with Daman, AXA, Allianz, Oman Insurance, Now Health, Bupa, and MetLife, but Ayurveda coverage varies plan by plan. Send us a photo of your insurance card on WhatsApp and we will confirm your specific coverage before you book."
     },
     {
       question: "Do you offer male and female therapists?",
-      answer: "Yes, we have dedicated male and female therapists to ensure your comfort during treatments like Abhyanga and Shirodhara."
+      answer: "Yes. Treatments are always performed by a therapist of the same gender as the patient unless you specifically request otherwise. Female therapists are available for female patients and male therapists for male patients across all therapies."
     },
     {
       question: "Where exactly is your Ayurveda clinic in JVC?",
-      answer: "We are located in Jumeirah Village Circle, Dubai, near Circle Mall and FIVE JVC. You can find our exact location on the map below."
+      answer: "Our clinic is located at [full address] in Jumeirah Village Circle, Dubai, next to Circle Mall, three minutes from FIVE Jumeirah Village Hotel, and five minutes from JSS Private School. Free covered parking is available for patients."
     },
     {
       question: "How do I book an Ayurveda consultation?",
-      answer: "You can book directly through our website, via WhatsApp, or by calling our clinic."
+      answer: "Three ways: tap Book a Consultation anywhere on this page for live calendar availability, WhatsApp us at [number] for the fastest response (usually under 15 minutes during clinic hours), or call us at [number] to speak with our team."
     }
   ]
 };
@@ -116,6 +188,129 @@ export const ayurvedaJournal = {
       image: "physio-article"
     }
   ]
+};
+
+export const ayurvedaConditions = {
+  bgColor: "bg-white",
+  cardBgColor: "bg-[#F6F1EA]",
+  label: "AYURVEDA FOR CHRONIC CONDITIONS",
+  title: "When modern medicine manages, Ayurveda often resolves.",
+  description: "These are the conditions JVC residents most commonly come to our Ayurveda clinic for. Each is treated through a personalised dosha-based plan, not a protocol off a shelf.",
+  categories: ["Pain and Movement", "Women's Health", "Metabolic and Lifestyle"],
+  items: [
+    // Pain and Movement
+    {
+      title: "Chronic Back Pain",
+      category: "Pain and Movement",
+      description: "Kativasti + internal medicines + lifestyle correction",
+      programme: "Typical programme: 14-21 days"
+    },
+    {
+      title: "Sciatica",
+      category: "Pain and Movement",
+      description: "Kativasti + Basti + classical herbs",
+      programme: "Typical programme: 21-28 days"
+    },
+    {
+      title: "Frozen Shoulder",
+      category: "Pain and Movement",
+      description: "Abhyanga + Patra Pinda Sweda + internal medicines",
+      programme: "Typical programme: 14-21 days"
+    },
+    {
+      title: "Knee Pain (Osteoarthritis)",
+      category: "Pain and Movement",
+      description: "Janu Vasti + herbal medicines",
+      programme: "Typical programme: 14-21 days"
+    },
+    {
+      title: "Cervical Spondylosis",
+      category: "Pain and Movement",
+      description: "Greeva Vasti + Nasya + internal medicines",
+      programme: "Typical programme: 14-21 days"
+    },
+    {
+      title: "Arthritis (Amavata)",
+      category: "Pain and Movement",
+      description: "Panchakarma + classical formulations",
+      programme: "Typical programme: 21-28 days"
+    },
+    // Women's Health
+    {
+      title: "PCOS / PCOD",
+      category: "Women's Health",
+      description: "Virechana + Basti + herbal medicines + diet",
+      programme: "Typical programme: 3-6 months"
+    },
+    {
+      title: "Irregular Cycles",
+      category: "Women's Health",
+      description: "Doshic correction + herbs",
+      programme: "Typical programme: 3-4 months"
+    },
+    {
+      title: "Postnatal Recovery",
+      category: "Women's Health",
+      description: "Sutika Paricharya (classical postpartum care)",
+      programme: "Typical programme: 45 days"
+    },
+    {
+      title: "Thyroid (Hypothyroid)",
+      category: "Women's Health",
+      description: "Internal medicines + Nasya + diet",
+      programme: "Typical programme: 3-6 months"
+    },
+    {
+      title: "Menopausal Symptoms",
+      category: "Women's Health",
+      description: "Herbal support + Shirodhara",
+      programme: "Typical programme: 2-3 months"
+    },
+    {
+      title: "Endometriosis Support",
+      category: "Women's Health",
+      description: "Detox + uterine tonics + diet",
+      programme: "Typical programme: 3-6 months"
+    },
+    // Metabolic and Lifestyle
+    {
+      title: "Stress and Anxiety",
+      category: "Metabolic and Lifestyle",
+      description: "Shirodhara + Medhya herbs",
+      programme: "Typical programme: 4-8 weeks"
+    },
+    {
+      title: "Insomnia",
+      category: "Metabolic and Lifestyle",
+      description: "Shirodhara + lifestyle correction",
+      programme: "Typical programme: 4-6 weeks"
+    },
+    {
+      title: "Migraine",
+      category: "Metabolic and Lifestyle",
+      description: "Nasya + Shirodhara + internal medicines",
+      programme: "Typical programme: 2-3 months"
+    },
+    {
+      title: "Hair Loss",
+      category: "Metabolic and Lifestyle",
+      description: "Nasya + medicated oils + internal support",
+      programme: "Typical programme: 3-6 months"
+    },
+    {
+      title: "Diabetes Support",
+      category: "Metabolic and Lifestyle",
+      description: "Panchakarma + Madhumeha herbs (alongside endocrinologist)",
+      programme: "Typical programme: 3-6 months"
+    },
+    {
+      title: "Weight Management",
+      category: "Metabolic and Lifestyle",
+      description: "Udvartana + Virechana + lifestyle programme",
+      programme: "Typical programme: 2-4 months"
+    }
+  ],
+  footer: "Browse all 30+ conditions →"
 };
 
 export const ayurvedaWhy = {

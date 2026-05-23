@@ -1,12 +1,15 @@
 import Head from 'next/head';
 import AyurvedaHero from '../components/ayurveda/AyurvedaHero';
 import AyurvedaIntro from '../components/ayurveda/AyurvedaIntro';
+import Therapies from '../components/ayurveda/Therapies';
+import Physician from '../components/ayurveda/Physician';
 import FAQ from '../components/home/FAQ';
 import Location from '../components/home/Location';
 import CTA from '../components/home/CTA';
 import Journal from '../components/home/Journal';
 import WhyVedara from '../components/home/WhyVedara';
 import Reviews from '../components/home/Reviews';
+import Conditions from '../components/home/Conditions';
 import { 
   ayurvedaFaqs, 
   ayurvedaJournal, 
@@ -15,7 +18,10 @@ import {
   ayurvedaLocation, 
   ayurvedaCTA,
   ayurvedaWhy,
-  ayurvedaReviews
+  ayurvedaReviews,
+  ayurvedaConditions,
+  ayurvedaTherapies,
+  ayurvedaPhysician
 } from '../data/ayurvedaData';
 
 const AyurvedaClinicJVC = () => {
@@ -157,8 +163,8 @@ const AyurvedaClinicJVC = () => {
   return (
     <>
       <Head>
-        <title>Ayurveda Clinic in JVC, Dubai | DHA-Licensed | Vedara Care</title>
-        <meta name="description" content="DHA-licensed Ayurveda clinic in Jumeirah Village Circle, Dubai. BAMS-qualified doctors offering authentic Panchakarma, Abhyanga, Shirodhara & dosha-based care. Book today." />
+        <title>Ayurveda Clinic in JVC, Dubai | Vedara Care</title>
+        <meta name="description" content="Authentic Ayurveda clinic in Jumeirah Village Circle, Dubai. DHA-licensed Ayurvedic doctors offering Panchakarma, PCOS treatment, and chronic pain management." />
         
         {/* Open Graph */}
         <meta property="og:title" content="Ayurveda Clinic in JVC, Dubai | Vedara Care Polyclinic" />
@@ -189,6 +195,13 @@ const AyurvedaClinicJVC = () => {
 
       <AyurvedaHero {...ayurvedaHero} />
       <AyurvedaIntro {...ayurvedaIntro} />
+      
+      <Therapies {...ayurvedaTherapies} />
+      
+      
+      <Conditions {...ayurvedaConditions} />
+
+        <Physician {...ayurvedaPhysician} />
       
       <WhyVedara {...ayurvedaWhy} />
       
