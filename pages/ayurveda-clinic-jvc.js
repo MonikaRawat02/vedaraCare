@@ -195,9 +195,7 @@ const AyurvedaClinicJVC = () => {
       
       
       <Conditions {...ayurvedaConditions} />
-
-        <Physician {...ayurvedaPhysician} />
-      
+      <Physician {...ayurvedaPhysician} />
       <DoctorConsultation {...ayurvedaConsultationData} />
       
       <WhyVedara {...ayurvedaWhy} />
@@ -213,11 +211,8 @@ const AyurvedaClinicJVC = () => {
       </section>
       
       <FAQ {...ayurvedaFaqs} />
-
       <Location {...ayurvedaLocation} />
-
       <CTA {...ayurvedaCTA} />
-
       <Journal {...ayurvedaJournal} />
     </>
   );
