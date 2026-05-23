@@ -44,7 +44,7 @@ export const njavarakizhiMechanism = {
 };
 
 export const njavarakizhiProtocol = {
-  bgColor: "bg-[#FAF6EF]",
+  bgColor: "bg-[#FFFFFF]",
   label: "THE TREATMENT PROTOCOL",
   title: "Seventy-five minutes, four phases, and rice that has been cooking since before you arrived.",
   description: "The classical Njavarakizhi protocol followed at our JVC clinic. The preparation takes longer than the therapy itself.",
@@ -75,43 +75,44 @@ export const njavarakizhiProtocol = {
 
 export const njavarakizhiOils = {
   bgColor: "bg-[#FAF6EF]",
-  label: "CONDITION-SPECIFIC KASHAYAMS",
+  label: "CLINICAL VARIATIONS",
   title: "The same therapy with different herbs delivers different outcomes.",
-  description: "The herbal decoction (kashayam) used to cook the rice is medicine. Same rice, different kashayam = different clinical results.",
+  description: "The kashayam (herbal decoction) used to cook the rice and to dip the boluses is selected after consultation based on your specific clinical need.",
   oils: [
     {
       name: "Dashamoola-Based Kashayam",
-      description: "For general debility and muscle weakness",
-      content: "The most commonly prescribed kashayam for Njavarakizhi. Uses the classical Dashamula (ten roots) formulation along with supporting herbs. Used for general muscle wasting, post-illness recovery, sarcopenia, and fatigue recovery. Provides deep nourishment to the musculoskeletal system.",
-      indication: "muscle wasting, post-illness recovery, sarcopenia, general debility"
+      description: "Anti-inflammatory and tissue-restorative",
+      content: "The most commonly used herbal preparation, based on Dashamoola — the classical 'ten-root' formulation. Used as the base for general Njavarakizhi protocols, particularly for rheumatoid conditions, post-illness recovery in adults, and muscle weakness without specific neurological involvement. Provides anti-inflammatory action alongside the nutritive rice.",
+      indication: "Rheumatoid conditions, Post-illness recovery, General muscle weakness"
     },
     {
       name: "Bala-Based Kashayam",
-      description: "For neurological rehabilitation",
-      content: "A specialised kashayam with Bala (Sida cordifolia) as the main ingredient, particularly effective for neurological conditions — paralysis, Bell's palsy, post-stroke rehabilitation, and nerve-related weakness. Often the kashayam of choice when the primary indication is neurological rather than muscular.",
-      indication: "paralysis, Bell's palsy, post-stroke rehabilitation, neurological conditions"
+      description: "Specifically for muscle strength and Vata-related wasting",
+      content: "Bala (Sida cordifolia) is the classical herb for muscular strength and rejuvenation. This variation is used for progressive muscle wasting, age-related sarcopenia, post-prolonged-immobilisation muscle loss, and certain muscular dystrophies as supportive care. Often the choice for elderly patients with frailty.",
+      indication: "Muscle wasting, Frailty, Post-immobilisation recovery"
     },
     {
       name: "Mahanarayana-Adjunct Kashayam",
-      description: "For rheumatoid and joint conditions",
-      content: "A combination approach using Mahanarayana Taila as the preparatory Abhyanga oil and a rheumatoid-specific kashayam for the rice. Used for rheumatoid arthritis, joint stiffness with muscle wasting, and chronic inflammatory joint conditions. Provides both joint pain relief and muscle nourishment.",
-      indication: "rheumatoid arthritis, chronic joint inflammation, musculoskeletal degeneration"
+      description: "Neurological recovery support",
+      content: "A specialised preparation used in protocols for post-stroke rehabilitation, certain forms of paralysis (Pakshaghata in Ayurvedic terminology), and post-Bell's-palsy recovery. Combined with internal Ayurvedic medicines and physiotherapy in our integrated neurological recovery programmes. Always in coordination with conventional neurology care.",
+      indication: "Post-stroke rehabilitation, Facial paralysis recovery, Neurological recovery"
     },
     {
       name: "Postnatal Sutika-Specific Kashayam",
-      description: "For postpartum recovery",
-      content: "A specialised kashayam for postpartum women (Sutika Paricharya) with uterine tonics, lactation-supporting herbs, and general restoratives. Used for postpartum muscle weakness, fatigue, and rebuilding after childbirth. Typically part of a broader 45-day postpartum care protocol.",
-      indication: "postpartum recovery, postnatal weakness, Sutika Paricharya"
+      description: "For new mothers in classical 45-day care",
+      content: "Within the classical Sutika Paricharya (postnatal Ayurvedic care) protocols, Njavarakizhi is sometimes prescribed in the third or fourth week postpartum for new mothers experiencing significant post-delivery weakness, particularly after caesarean recovery or prolonged labour. The herbal milk is specifically formulated for postpartum tissue restoration.",
+      indication: "Postpartum recovery, Post-caesarean rehabilitation, Postnatal weakness"
     }
   ],
-  footer: "Your doctor will select the appropriate kashayam after clinical assessment. Kashayams are sometimes changed mid-course based on clinical response."
-};
+  footer: "Your doctor will select the appropriate herbal preparation after clinical assessment. The Njavara rice and herbs used at Vedara Care are sourced from authenticated Kerala suppliers with documented quality testing."};
 
 export const njavarakizhiApplications = {
   bgColor: "bg-white",
   label: "CLINICAL APPLICATIONS",
   title: "Where Njavarakizhi delivers — and where it does not.",
   description: "Njavarakizhi has narrower clinical applications than most Ayurvedic massages. When used appropriately, the outcomes are remarkable; when used as a general treatment, it is no more effective than simpler therapies.",
+  strongIndicationsLabel: "WHERE IT EXCELS",
+  complementaryUseLabel: "HONEST LIMITS",
   whereItExcels: [
     {
       title: "Progressive muscle wasting",
@@ -413,30 +414,31 @@ export const njavarakizhiFinalCTA = {
 };
 
 export const njavarakizhiRelatedPages = {
-  bgColor: "bg-[#FAF7F2]",
+  bgColor: "bg-[#F5F0E8]",
   label: "EXPLORE FURTHER",
   title: "Related pages.",
-  linkText: "Browse all Ayurvedic treatments →",
+  linkText: "Browse all Ayurvedic treatments",
+  linkHref: "/ayurveda-dubai/",
   pages: [
     {
-      title: "Abhyanga Massage in Dubai →",
-      description: "For general wellness, relaxation, or routine care — Abhyanga is our most frequently prescribed massage. Njavarakizhi is for specific indications; Abhyanga is for everyone.",
-      href: "/treatments/abhyanga-dubai"
+      title: "Abhyanga Massage in Dubai",
+      description: "For general wellbeing, relaxation, and dosha balance — the most widely applicable Ayurvedic massage. Often combined with Njavarakizhi.",
+      href: "/treatments/abhyanga-dubai/"
     },
     {
-      title: "Home Healthcare in Dubai →",
-      description: "Specialised Njavarakizhi therapies delivered to your home across Dubai. Particularly recommended for elderly and post-illness patients who cannot easily travel.",
-      href: "/home-healthcare-dubai"
+      title: "Home Healthcare in Dubai",
+      description: "Specialised Ayurvedic therapies delivered to your home across Dubai. Particularly relevant for elderly and post-illness patients.",
+      href: "/home-healthcare-dubai/"
     },
     {
-      title: "Panchakarma in Dubai →",
-      description: "For severe chronic conditions, Njavarakizhi is sometimes included as part of a 21-30 day Panchakarma protocol.",
-      href: "/treatments/panchakarma-dubai"
+      title: "Panchakarma in Dubai",
+      description: "For complex chronic conditions, Njavarakizhi is sometimes included as part of a 14–21 day classical Panchakarma protocol.",
+      href: "/treatments/panchakarma-dubai/"
     },
     {
-      title: "Compare All Ayurvedic Massages →",
-      description: "Not sure if Njavarakizhi is right for you? Compare with Abhyanga, Shirodhara, and other therapies first.",
-      href: "/treatments/ayurvedic-massage-dubai"
+      title: "Compare All Ayurvedic Massages",
+      description: "Not sure if Njavarakizhi is right for you? Compare with Abhyanga, Shirodhara, Kativasti, and Udvartana.",
+      href: "/treatments/ayurvedic-massage-jvc/"
     }
   ]
 };

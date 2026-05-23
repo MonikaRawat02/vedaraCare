@@ -203,12 +203,14 @@ export const panchakarmaJVCLocation = {
    bgColor: "bg-[#FAF6EF]",
    label: "EXPLORE FURTHER",
    title: "Related pages.",
-   linkText: "Browse all Ayurveda treatments →",
+   linkText: "Browse all Ayurveda treatments",
+   columns: 3,
+   showUrl: true,
    pages: [
      {
        title: "Read the Full Panchakarma Guide →",
        description: "The complete educational guide to Panchakarma in Dubai. The five actions, three phases, costs across Dubai, and how to choose a clinic.",
-       href: "/treatments/panchakarma-jvc"
+       href: "/treatments/panchakarma-dubai/"
      },
      {
        title: "Our Ayurveda Clinic in JVC →",
@@ -222,6 +224,85 @@ export const panchakarmaJVCLocation = {
      }
    ]
  };
+
+export const panchakarmaJVCTimeline = {
+  bgColor: "bg-[#F5F0E8]",
+  label: "THE PRACTICAL REALITY",
+  title: "What 14 days of Panchakarma actually looks like for a JVC resident.",
+  subtitle: "The honest, practical version. Not the brochure version.",
+  phases: [
+    {
+      label: "Days 1-5",
+      title: "Week 1 — Purvakarma (Preparation)",
+      items: [
+        "Initial doctor consultation",
+        "Daily 3-hour visits at clinic",
+        "Light meals, no alcohol, no caffeine",
+        "Snehapana (medicated ghee at home each morning)",
+        "Daily Abhyanga and Swedana at clinic",
+        "Reduced workload helpful, not essential"
+      ]
+    },
+    {
+      label: "Days 6-11",
+      title: "Week 2 — Pradhanakarma (Main Therapy)",
+      items: [
+        "4-5 hour daily visits at clinic",
+        "Main Panchakarma actions begin",
+        "Mandatory rest periods at home",
+        "Prescribed kitchari diet only",
+        "Strongly recommended to take leave",
+        "No driving on Virechana day"
+      ]
+    },
+    {
+      label: "Days 12-14 at clinic, then 7 days at home",
+      title: "Recovery — Paschatkarma",
+      items: [
+        "2-3 hour daily visits taper off",
+        "Samsarjana Krama graduated diet",
+        "Rasayana rejuvenation medicines",
+        "Resume work gradually after Day 14",
+        "Home protocol for 7 more days",
+        "Follow-up check at Day 21 and Week 8"
+      ]
+    }
+  ],
+  footerNote: "Honest note: the 14-day Classical Panchakarma is doable for most working JVC residents with 7 days of leave taken in Week 2. The 21-day intensive realistically requires 14+ days of leave. We will plan timing with you at consultation."
+};
+
+export const panchakarmaJVCBenefits = {
+  bgColor: "bg-[#F5F0E8]",
+  label: "WHY VEDARA CARE JVC",
+  title: "Five reasons our JVC neighbours start their Panchakarma here.",
+  benefits: [
+    {
+      icon: "MapPin",
+      title: "Daily access without the drive",
+      description: "Panchakarma means 7 to 21 consecutive days at the clinic for 3 to 5 hours daily. For JVC residents, that means 8-10 minutes door-to-door — not a daily 45-minute commute from Karama or Al Nahda. Doable matters."
+    },
+    {
+      icon: "Car",
+      title: "Free patient parking",
+      description: "Three covered parking spots are reserved for Panchakarma patients during your programme. You arrive, you park, you walk in. No paid parking, no walking from Circle Mall, no Careem each day."
+    },
+    {
+      icon: "Users",
+      title: "Same-gender therapists, always",
+      description: "Every Panchakarma therapy at our JVC clinic is performed by a therapist of your same gender. Female patients, female therapists. Male patients, male therapists. No exceptions, no awkward conversations."
+    },
+    {
+      icon: "DoorOpen",
+      title: "Private treatment rooms only",
+      description: "Five private Panchakarma treatment rooms with traditional Kerala-style wooden droni tables. No shared spaces, no curtained-off areas. You change, treat, rest, and leave with full privacy."
+    },
+    {
+      icon: "CheckCircle",
+      title: "We coordinate with your specialists",
+      description: "Our doctors work with your Dubai endocrinologist, cardiologist, or rheumatologist — sharing protocols and timing where needed. JVC and Al Barsha are full of medical specialists; we make sure your care integrates rather than competes."
+    }
+  ]
+};
  
  export const kativastiHero = {
   breadcrumb: [
