@@ -11,7 +11,7 @@ import {
   dubaiHubIntro,
   dubaiHubTherapies,
   dubaiHubReviews,
-  dubaiHubFAQ,
+  dubaiHubFaqs,
   dubaiHubCTA,
   dubaiHubJournal
 } from '../data/ayurvedaData';
@@ -40,6 +40,18 @@ const AyurvedaDubai = () => {
         {"@type": "ListItem", "position": 1, "name": "Home", "item": "https://vedaracare.ae/"},
         {"@type": "ListItem", "position": 2, "name": "Ayurveda in Dubai", "item": "https://vedaracare.ae/ayurveda-dubai/"}
       ]
+    },
+    {
+      "@context": "https://schema.org",
+      "@type": "FAQPage",
+      "mainEntity": dubaiHubFaqs.faqs.map(faq => ({
+        "@type": "Question",
+        "name": faq.question,
+        "acceptedAnswer": {
+          "@type": "Answer",
+          "text": faq.answer
+        }
+      }))
     }
   ];
 
@@ -83,7 +95,7 @@ const AyurvedaDubai = () => {
       <AyurvedaIntro {...dubaiHubIntro} />
       <Therapies {...dubaiHubTherapies} />
       <Reviews {...dubaiHubReviews} />
-      <FAQ {...dubaiHubFAQ} />
+      <FAQ {...dubaiHubFaqs} />
       <CTA {...dubaiHubCTA} />
       <Journal {...dubaiHubJournal} />
     </>
