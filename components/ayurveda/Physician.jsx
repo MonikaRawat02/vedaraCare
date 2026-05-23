@@ -1,6 +1,6 @@
 import React from 'react';
 
-const Physician = ({ label, name, qualification, description, image, stats, languages, button1Text, button2Text }) => {
+const Physician = ({ label, name, qualification, description, image, alt, stats, languages, button1Text, button2Text, profileLink }) => {
   return (
     <section className="bg-[#184C3A] py-24 px-6 text-white overflow-hidden">
       <div className="max-w-[1280px] mx-auto">
@@ -8,8 +8,8 @@ const Physician = ({ label, name, qualification, description, image, stats, lang
           {/* Image Side */}
           <div className="relative rounded-[12px] overflow-hidden aspect-[4/5] max-h-[583px] shadow-2xl">
             <img 
-              src={image} 
-              alt={name} 
+              src={image.startsWith('http') || image.startsWith('/') ? image : `/images/${image}`} 
+              alt={alt || name} 
               className="w-full h-full object-cover"
             />
           </div>
@@ -50,9 +50,15 @@ const Physician = ({ label, name, qualification, description, image, stats, lang
               <button className="px-8 py-3 bg-[#C9A961] text-[#1A1A1A] rounded-full font-sans font-medium text-[15px] hover:bg-[#B89850] transition-all">
                 {button1Text}
               </button>
-              <button className="px-8 py-3 bg-transparent border border-white/30 text-white rounded-full font-sans font-medium text-[15px] hover:bg-white/10 transition-all">
-                {button2Text}
-              </button>
+              {profileLink ? (
+                <a href={profileLink} className="px-8 py-3 bg-transparent border border-white/30 text-white rounded-full font-sans font-medium text-[15px] hover:bg-white/10 transition-all">
+                  {button2Text}
+                </a>
+              ) : (
+                <button className="px-8 py-3 bg-transparent border border-white/30 text-white rounded-full font-sans font-medium text-[15px] hover:bg-white/10 transition-all">
+                  {button2Text}
+                </button>
+              )}
             </div>
           </div>
         </div>

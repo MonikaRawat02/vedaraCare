@@ -53,32 +53,46 @@ const Conditions = ({
 
         {/* Conditions Grid */}
         <div className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-4 gap-4 mb-8">
-          {filteredConditions.map((item, index) => (
-            <div 
-              key={index}
-              className={`${cardBgColor} p-6 rounded-lg border border-[#E5E5E5] hover:shadow-lg transition-all duration-300 cursor-pointer flex flex-col h-full group`}
-            >
-              <div className="flex-1">
-                <span className="text-[13px] font-sans font-medium text-[#C9A961] block mb-3">
-                  {item.sub}
-                </span>
-                <h3 className="text-[20px] font-serif font-medium text-[#1A1A1A] leading-tight mb-3">
-                  {item.title}
-                </h3>
-                <p className="text-[15px] text-[#4A4A4A] font-sans leading-relaxed">
-                  {item.description}
-                </p>
-                {item.programme && (
-                  <p className="text-[13px] text-[#C9A961] font-sans font-medium mt-4">
-                    {item.programme}
+          {filteredConditions.map((item, index) => {
+            const CardContent = (
+              <>
+                <div className="flex-1">
+                  <span className="text-[13px] font-sans font-medium text-[#C9A961] block mb-3">
+                    {item.sub}
+                  </span>
+                  <h3 className="text-[20px] font-serif font-medium text-[#1A1A1A] leading-tight mb-3">
+                    {item.title}
+                  </h3>
+                  <p className="text-[15px] text-[#4A4A4A] font-sans leading-relaxed">
+                    {item.description}
                   </p>
-                )}
+                  {item.programme && (
+                    <p className="text-[13px] text-[#C9A961] font-sans font-medium mt-4">
+                      {item.programme}
+                    </p>
+                  )}
+                </div>
+                <div className="pt-6">
+                  <ArrowRight size={18} className="text-[#184C3A] group-hover:translate-x-1 transition-transform duration-300" />
+                </div>
+              </>
+            );
+
+            const cardClasses = `${cardBgColor} p-6 rounded-lg border border-[#E5E5E5] hover:shadow-lg transition-all duration-300 cursor-pointer flex flex-col h-full group`;
+
+            return item.link ? (
+              <a key={index} href={item.link} className={cardClasses}>
+                {CardContent}
+              </a>
+            ) : (
+              <div 
+                key={index}
+                className={cardClasses}
+              >
+                {CardContent}
               </div>
-              <div className="pt-6">
-                <ArrowRight size={18} className="text-[#184C3A] group-hover:translate-x-1 transition-transform duration-300" />
-              </div>
-            </div>
-          ))}
+            );
+          })}
         </div>
 
         <div className="text-center mt-16">

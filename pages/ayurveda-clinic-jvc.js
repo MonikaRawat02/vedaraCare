@@ -3,6 +3,7 @@ import AyurvedaHero from '../components/ayurveda/AyurvedaHero';
 import AyurvedaIntro from '../components/ayurveda/AyurvedaIntro';
 import Therapies from '../components/ayurveda/Therapies';
 import Physician from '../components/ayurveda/Physician';
+import DoctorConsultation from '../components/doctor/DoctorConsultation';
 import FAQ from '../components/home/FAQ';
 import Location from '../components/home/Location';
 import CTA from '../components/home/CTA';
@@ -23,6 +24,7 @@ import {
   ayurvedaTherapies,
   ayurvedaPhysician
 } from '../data/ayurvedaData';
+import { ayurvedaConsultationData } from '../data/doctorData';
 
 const AyurvedaClinicJVC = () => {
   const schemaMarkup = [
@@ -100,9 +102,9 @@ const AyurvedaClinicJVC = () => {
     {
       "@context": "https://schema.org",
       "@type": "Physician",
-      "name": "Dr. [Full Name]",
-      "image": "https://vedaracare.ae/doctors/dr-name.jpg",
-      "url": "https://vedaracare.ae/doctors/dr-name-ayurveda/",
+      "name": "Dr. Priya Menon",
+      "image": "https://vedaracare.ae/doctors/dr-priya-menon-ayurvedic-physician-jvc.webp",
+      "url": "https://vedaracare.ae/doctors/dr-priya-menon-ayurveda/",
       "medicalSpecialty": "Ayurveda",
       "hasCredential": [
         {"@type":"EducationalOccupationalCredential","name":"BAMS","credentialCategory":"degree"},
@@ -120,10 +122,10 @@ const AyurvedaClinicJVC = () => {
       "url": "https://vedaracare.ae/ayurveda-clinic-jvc/",
       "about": {"@type":"MedicalTherapy","name":"Ayurveda"},
       "audience": {"@type":"PatientAudience"},
-      "lastReviewed": "2026-05-22",
+      "lastReviewed": "2026-05-23",
       "reviewedBy": {
         "@type": "Physician",
-        "name": "Dr. [Lead Ayurvedic Physician]",
+        "name": "Dr. Priya Menon",
         "hasCredential": "DHA-Licensed BAMS, MD (Ayurveda)"
       },
       "primaryImageOfPage": "https://vedaracare.ae/images/ayurveda-clinic-jvc-hero.jpg"
@@ -139,33 +141,26 @@ const AyurvedaClinicJVC = () => {
     {
       "@context": "https://schema.org",
       "@type": "FAQPage",
-      "mainEntity": [
-        {
-          "@type": "Question",
-          "name": "Is Ayurveda recognised and licensed in Dubai?",
-          "acceptedAnswer": {
-            "@type": "Answer",
-            "text": "Yes. Ayurveda is officially recognised by the Dubai Health Authority (DHA), which licenses both Ayurvedic clinics and individual Ayurvedic physicians. Every Ayurvedic doctor at Vedara Care Polyclinic holds an individual DHA professional license, displayed on their profile. Our clinic operates under DHA Healthcare Facility License XXXXX."
-          }
-        },
-        {
-          "@type": "Question",
-          "name": "Are Ayurvedic doctors at Vedara Care properly qualified?",
-          "acceptedAnswer": {
-            "@type": "Answer",
-            "text": "All our Ayurvedic physicians hold a BAMS (Bachelor of Ayurvedic Medicine and Surgery) — a 5.5-year medical degree from recognised Indian universities. Many also hold MD (Ayurveda) postgraduate specialisations and DHA professional licenses."
-          }
+      "mainEntity": ayurvedaFaqs.faqs.map(faq => ({
+        "@type": "Question",
+        "name": faq.question,
+        "acceptedAnswer": {
+          "@type": "Answer",
+          "text": faq.answer
         }
-      ]
+      }))
     }
   ];
 
   return (
     <>
       <Head>
-        <title>Ayurveda Clinic in JVC, Dubai | Vedara Care</title>
-        <meta name="description" content="Authentic Ayurveda clinic in Jumeirah Village Circle, Dubai. DHA-licensed Ayurvedic doctors offering Panchakarma, PCOS treatment, and chronic pain management." />
+        <title>Ayurveda Clinic in JVC, Dubai | DHA-Licensed | Vedara Care</title>
+        <meta name="description" content="DHA-licensed Ayurveda clinic in Jumeirah Village Circle, Dubai. BAMS-qualified doctors offering authentic Panchakarma, Abhyanga, Shirodhara & dosha-based care. Book today." />
         
+        {/* Robots Directives */}
+        <meta name="robots" content="index, follow, max-image-preview:large" />
+
         {/* Open Graph */}
         <meta property="og:title" content="Ayurveda Clinic in JVC, Dubai | Vedara Care Polyclinic" />
         <meta property="og:description" content="DHA-licensed Ayurveda clinic in Jumeirah Village Circle. BAMS-qualified doctors. Authentic Panchakarma, Abhyanga, Shirodhara." />
@@ -177,7 +172,7 @@ const AyurvedaClinicJVC = () => {
         {/* Twitter */}
         <meta name="twitter:card" content="summary_large_image" />
         
-        {/* Canonical & Hreflang */}
+        {/* Canonical & Language Tags */}
         <link rel="canonical" href="https://vedaracare.ae/ayurveda-clinic-jvc/" />
         <link rel="alternate" hreflang="en-AE" href="https://vedaracare.ae/ayurveda-clinic-jvc/" />
         <link rel="alternate" hreflang="ar-AE" href="https://vedaracare.ae/ar/ayurveda-clinic-jvc/" />
@@ -203,9 +198,19 @@ const AyurvedaClinicJVC = () => {
 
         <Physician {...ayurvedaPhysician} />
       
+      <DoctorConsultation {...ayurvedaConsultationData} />
+      
       <WhyVedara {...ayurvedaWhy} />
       
       <Reviews {...ayurvedaReviews} />
+      
+      <section className="py-20 bg-white">
+        <div className="max-w-[1280px] mx-auto px-6">
+          <h2 className="text-[42px] font-serif font-medium text-[#1A1A1A] leading-[1.2] text-center">
+            What Ayurveda actually costs in Dubai.
+          </h2>
+        </div>
+      </section>
       
       <FAQ {...ayurvedaFaqs} />
 
