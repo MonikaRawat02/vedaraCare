@@ -211,7 +211,7 @@ export const kativastiPrograms = {
   footer: "Insurance direct-billing available with seven major insurers — coverage for Ayurvedic care varies by plan. WhatsApp us your card before booking to confirm."
 };
 export const kativastiReviews = {
-  bgColor: "bg-[#184C3A]",
+  bgColor: "bg-[#1A5D4D]",
   label: "PATIENT STORIES",
   title: "Kativasti outcomes from our JVC clinic.",
   items: [
