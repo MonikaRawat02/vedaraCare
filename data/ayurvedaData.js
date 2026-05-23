@@ -459,7 +459,7 @@ export const ayurvedaLocation = {
 export const ayurvedaCTA = {
   bgColor: "bg-[#FAF8EF]",
   label: "READY TO START?",
-  title: "Begin with a consultation.",
+  title: "Begin with a consultation. Decide everything else from there.",
   description: "An Ayurvedic consultation is not a commitment to a treatment plan — it is a diagnostic conversation. You will leave knowing what is actually going on and what we recommend. Whether you choose to proceed is entirely up to you.",
   button1Text: "Book an Ayurveda Consultation",
   button2Text: "Chat on WhatsApp",
@@ -499,6 +499,8 @@ export const dubaiHubIntro = {
 };
 
 export const dubaiHubTherapies = {
+  bgColor: "bg-white",
+  cardBgColor: "bg-white",
   label: "TREATMENTS",
   title: "The classical Ayurvedic therapies practised in Dubai.",
   description: "These eight treatments form the foundation of authentic Ayurvedic care. At Vedara Care, every one is prescribed by a BAMS-qualified physician — not offered as a walk-in service.",
@@ -571,7 +573,8 @@ export const dubaiHubTherapies = {
 };
 
 export const dubaiHubReviews = {
-  bgColor: "bg-[#F0E9DD]",
+  bgColor: "bg-[#FAF8F1]",
+  cardBgColor: "bg-white",
   label: "PATIENT STORIES",
   title: "Outcomes Across Dubai.",
   description: "",
@@ -603,8 +606,8 @@ export const dubaiHubReviews = {
   ]
 };
 
-export const dubaiHubFAQ = {
-  bgColor: "bg-[#FAF8F1]",
+export const dubaiHubFaqs = {
+  bgColor: "bg-[#F0E9DD]",
   label: "AYURVEDA IN DUBAI",
   title: "The most asked questions about Ayurvedic treatment in Dubai.",
   description: "Honest answers from our DHA-licensed clinical team. WhatsApp us if yours is not here.",

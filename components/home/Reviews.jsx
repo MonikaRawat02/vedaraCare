@@ -3,6 +3,7 @@ import { Star } from 'lucide-react';
 
 const Reviews = ({
   bgColor = "bg-[#1F4538]",
+  cardBgColor = "bg-white",
   label = "What Patients Say",
   title = "Verified outcomes, in patients' own words.",
   description = "These are Google reviews from patients personally treated by Dr. Nair at our JVC clinic. Displayed in full, never edited.",
@@ -52,7 +53,7 @@ const Reviews = ({
 
         <div className="grid grid-cols-1 md:grid-cols-3 gap-8 mb-16">
           {items.map((review, index) => (
-            <div key={index} className="bg-white rounded-xl p-8 flex flex-col shadow-lg relative h-full">
+            <div key={index} className={`${cardBgColor} rounded-xl p-8 flex flex-col shadow-lg relative h-full`}>
               <div className="flex gap-1 mb-6">
                 {[...Array(5)].map((_, i) => (
                   <Star key={i} size={16} style={{ fill: 'rgb(201, 169, 97)', color: 'rgb(201, 169, 97)' }} />

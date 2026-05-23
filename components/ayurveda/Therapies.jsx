@@ -1,7 +1,14 @@
 import React from 'react';
 import { Zap, Sparkles, Droplets, Shield, Leaf, Wind, Activity, Flame } from 'lucide-react';
 
-const Therapies = ({ label, title, description, items }) => {
+const Therapies = ({ 
+  bgColor = "bg-[#F0E9DD]", 
+  cardBgColor = "bg-white",
+  label, 
+  title, 
+  description, 
+  items 
+}) => {
   const getIcon = (index) => {
     const icons = [
       <Zap size={20} className="text-[#C9A961]" />,
@@ -17,7 +24,7 @@ const Therapies = ({ label, title, description, items }) => {
   };
 
   return (
-    <section className="bg-[#F0E9DD] py-24 px-6">
+    <section className={`${bgColor} py-24 px-6`}>
       <div className="max-w-[1280px] mx-auto">
         <div className="text-center mb-14 space-y-0">
           <p className="text-[13px] font-sans font-semibold tracking-[0.15em] text-[#C9A961] uppercase">
@@ -33,7 +40,7 @@ const Therapies = ({ label, title, description, items }) => {
 
         <div className="grid grid-cols-2 lg:grid-cols-4 gap-4">
           {items.map((item, index) => (
-            <div key={index} className="bg-white p-6 rounded-[8px] border border-[#E5E5E5] hover:border-[#C9A961] transition-all duration-200 flex flex-col h-full group">
+            <div key={index} className={`${cardBgColor} p-6 rounded-[8px] border border-[#E5E5E5] hover:border-[#C9A961] transition-all duration-200 flex flex-col h-full group`}>
               <div className="w-10 h-10 rounded-full flex items-center justify-center bg-[#C9A961]/10 mb-6 group-hover:bg-[#C9A961]/20 transition-colors">
                 {getIcon(index)}
               </div>
