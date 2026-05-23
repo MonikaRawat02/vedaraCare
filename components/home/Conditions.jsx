@@ -1,101 +1,41 @@
 import React, { useState } from 'react';
 import { ArrowRight } from 'lucide-react';
 
-const categories = [
-  "All", "Pain", "Womens Health", "Skin and Hair", "Metabolic", "Mental Wellness"
-];
-
-const conditions = [
-  {
-    title: "Chronic Back Pain",
-    category: "Pain",
-    description: "Integrated treatment combining manual therapy and Ayurvedic protocols",
-    sub: "Ayurveda and Physio"
-  },
-  {
-    title: "PCOS",
-    category: "Womens Health",
-    description: "Hormonal balance through traditional Ayurvedic medicine",
-    sub: "Ayurveda"
-  },
-  {
-    title: "Hair Loss",
-    category: "Skin and Hair",
-    description: "Combined approach for hair restoration and scalp health",
-    sub: "Dermatology and Ayurveda"
-  },
-  {
-    title: "Neck and Shoulder Pain",
-    category: "Pain",
-    description: "Manual therapy and targeted rehabilitation",
-    sub: "Physio"
-  },
-  {
-    title: "Sports Injuries",
-    category: "Pain",
-    description: "Evidence-based sports injury rehabilitation",
-    sub: "Physio"
-  },
-  {
-    title: "Acne and Scars",
-    category: "Skin and Hair",
-    description: "Medical-grade acne treatment and scar reduction",
-    sub: "Dermatology"
-  },
-  {
-    title: "Frozen Shoulder",
-    category: "Pain",
-    description: "Combined manual therapy and Ayurvedic treatment",
-    sub: "Physio and Ayurveda"
-  },
-  {
-    title: "Stress and Anxiety",
-    category: "Mental Wellness",
-    description: "Holistic stress management programs",
-    sub: "Ayurveda and Wellness"
-  },
-  {
-    title: "Migraine",
-    category: "Pain",
-    description: "Root cause treatment through Ayurvedic protocols",
-    sub: "Ayurveda"
-  },
-  {
-    title: "Knee Pain",
-    category: "Pain",
-    description: "Integrated approach to joint health",
-    sub: "Physio and Ayurveda"
-  },
-  {
-    title: "Weight Management",
-    category: "Metabolic",
-    description: "Personalized weight loss programs",
-    sub: "Wellness and Ayurveda"
-  },
-  {
-    title: "Postnatal Recovery",
-    category: "Womens Health",
-    description: "Comprehensive postpartum care at clinic or home",
-    sub: "Ayurveda and Home Healthcare"
-  }
-];
-
-const Conditions = () => {
+const Conditions = ({
+  label = "From Symptom to Solution",
+  title = "Conditions our JVC patients come to us for",
+  categories = ["All", "Pain", "Womens Health", "Skin and Hair", "Metabolic", "Mental Wellness"],
+  items = [
+    { title: "Chronic Back Pain", category: "Pain", description: "Integrated treatment combining manual therapy and Ayurvedic protocols", sub: "Ayurveda and Physio" },
+    { title: "PCOS", category: "Womens Health", description: "Hormonal balance through traditional Ayurvedic medicine", sub: "Ayurveda" },
+    { title: "Hair Loss", category: "Skin and Hair", description: "Combined approach for hair restoration and scalp health", sub: "Dermatology and Ayurveda" },
+    { title: "Neck and Shoulder Pain", category: "Pain", description: "Manual therapy and targeted rehabilitation", sub: "Physio" },
+    { title: "Sports Injuries", category: "Pain", description: "Evidence-based sports injury rehabilitation", sub: "Physio" },
+    { title: "Acne and Scars", category: "Skin and Hair", description: "Medical-grade acne treatment and scar reduction", sub: "Dermatology" },
+    { title: "Frozen Shoulder", category: "Pain", description: "Combined manual therapy and Ayurvedic treatment", sub: "Physio and Ayurveda" },
+    { title: "Stress and Anxiety", category: "Mental Wellness", description: "Holistic stress management programs", sub: "Ayurveda and Wellness" },
+    { title: "Migraine", category: "Pain", description: "Root cause treatment through Ayurvedic protocols", sub: "Ayurveda" },
+    { title: "Knee Pain", category: "Pain", description: "Integrated approach to joint health", sub: "Physio and Ayurveda" },
+    { title: "Weight Management", category: "Metabolic", description: "Personalized weight loss programs", sub: "Wellness and Ayurveda" },
+    { title: "Postnatal Recovery", category: "Womens Health", description: "Comprehensive postpartum care at clinic or home", sub: "Ayurveda and Home Healthcare" }
+  ],
+  footer = "Explore all 30+ conditions we treat"
+}) => {
   const [activeCategory, setActiveCategory] = useState("All");
 
   const filteredConditions = activeCategory === "All" 
-    ? conditions 
-    : conditions.filter(c => c.category === activeCategory);
+    ? items 
+    : items.filter(c => c.category === activeCategory);
 
   return (
     <section className="bg-[#F6F1EA] py-24">
       <div className="max-w-[1280px] mx-auto px-6">
         <div className="text-center mb-12">
           <span className="text-[13px] font-sans font-semibold tracking-[0.1em] text-[#C9A961] uppercase block mb-4">
-            From Symptom to Solution
+            {label}
           </span>
           <h2 className="text-[42px] font-serif font-medium text-[#1A1A1A] leading-[1.2] mb-12">
-            Conditions our JVC patients come to us for
+            {title}
           </h2>
 
           {/* Filter Categories */}
@@ -143,7 +83,7 @@ const Conditions = () => {
 
         <div className="text-center mt-16">
           <p className="text-[#C9A961] font-sans font-medium text-[14px] cursor-pointer hover:underline">
-            Explore all 30+ conditions we treat
+            {footer}
           </p>
         </div>
       </div>

@@ -1,6 +1,4 @@
 import Head from 'next/head';
-import Link from 'next/link';
-import { MessageCircle, Phone } from 'lucide-react';
 import Hero from '../components/home/Hero';
 import Services from '../components/home/Services';
 import Experts from '../components/home/Experts';
@@ -14,6 +12,22 @@ import FAQ from '../components/home/FAQ';
 import Location from '../components/home/Location';
 import Insights from '../components/home/Insights';
 import CTA from '../components/home/CTA';
+import { 
+  homeFaqs, 
+  homeArticles, 
+  homeJournal, 
+  homeLocation, 
+  homeCTA,
+  homeHero,
+  homeServices,
+  homeAbout,
+  homeConditions,
+  homeExperts,
+  homeWhyVedara,
+  homeReviews,
+  homeHealthcare,
+  homeInsights
+} from '../data/homeData';
 
 export default function Home() {
   return (
@@ -22,20 +36,19 @@ export default function Home() {
         <title>Vedara Care | Holistic Healthcare in JVC, Dubai</title>
         <meta name="description" content="DHA-licensed healthcare clinic in JVC Dubai offering Ayurveda, physiotherapy, dermatology, home healthcare, and wellness treatments." />
       </Head>
-
-      <Hero />
-      <Services />
-      <About />
-      <Conditions />
-      <Experts />
-      <WhyVedara />
-      <Reviews />
-      <HomeHealthcare />
-      <Insights />
-      <Location />
-      <Journal />
-      <FAQ />
-      <CTA />
+      <Hero {...homeHero} />
+      <Services {...homeServices} />
+      <About {...homeAbout} />
+      <Conditions {...homeConditions} />
+      <Experts {...homeExperts} />
+      <WhyVedara {...homeWhyVedara} />
+      <Reviews {...homeReviews} />
+      <HomeHealthcare {...homeHealthcare} />
+      <Insights {...homeInsights} />
+      <Location {...homeLocation} />
+      <Journal {...homeJournal} />
+      <FAQ {...homeFaqs} />
+      <CTA {...homeCTA} />
     </>
   );
 }

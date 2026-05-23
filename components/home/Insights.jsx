@@ -1,44 +1,46 @@
 import React from 'react';
 import { Check } from 'lucide-react';
 
-const insightCards = [
-  {
-    category: "Ayurveda",
-    title: "Ayurveda for PCOS: A Natural Approach to Hormonal Balance",
-    readTime: "5 min read"
-  },
-  {
-    category: "Physiotherapy",
-    title: "Best Treatments for Back Pain in Dubai: What Actually Works",
-    readTime: "7 min read"
-  },
-  {
-    category: "Physiotherapy",
-    title: "Physiotherapy vs Chiropractic: Which is Right for You?",
-    readTime: "6 min read"
-  },
-  {
-    category: "Dermatology",
-    title: "Hair Loss Causes in Dubai's Climate: Expert Insights",
-    readTime: "5 min read"
-  }
-];
-
-const Insights = () => {
+const Insights = ({
+  title = "Dubai Health & Wellness Insights",
+  subtitle = "Expert health advice and insights for Dubai residents",
+  items = [
+    {
+      category: "Ayurveda",
+      title: "Ayurveda for PCOS: A Natural Approach to Hormonal Balance",
+      readTime: "5 min read"
+    },
+    {
+      category: "Physiotherapy",
+      title: "Best Treatments for Back Pain in Dubai: What Actually Works",
+      readTime: "7 min read"
+    },
+    {
+      category: "Physiotherapy",
+      title: "Physiotherapy vs Chiropractic: Which is Right for You?",
+      readTime: "6 min read"
+    },
+    {
+      category: "Dermatology",
+      title: "Hair Loss Causes in Dubai's Climate: Expert Insights",
+      readTime: "5 min read"
+    }
+  ]
+}) => {
   return (
     <section className="bg-white py-20 px-6">
       <div className="max-w-[1440px] mx-auto">
         <div className="text-center mb-16 space-y-4">
           <h2 className="text-[42px] font-serif font-medium text-[#184C3A] leading-[1.2]">
-            Dubai Health & Wellness Insights
+            {title}
           </h2>
           <p className="text-[18px] text-[#5A5A5A] font-sans max-w-2xl mx-auto">
-            Expert health advice and insights for Dubai residents
+            {subtitle}
           </p>
         </div>
 
         <div className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-4 gap-8">
-          {insightCards.map((card, index) => (
+          {items.map((card, index) => (
             <div 
               key={index} 
               data-slot="card"
