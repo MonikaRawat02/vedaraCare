@@ -69,9 +69,10 @@ const FAQ = ({
               </h2>
             
             
-            <p className="text-[16px] text-[#6B6B6B] font-sans leading-relaxed max-w-[420px]">
-              {description}
-            </p>
+            <p 
+              className="text-[16px] text-[#6B6B6B] font-sans leading-relaxed max-w-[420px]"
+              dangerouslySetInnerHTML={{ __html: description }}
+            />
 
             <button className="inline-flex items-center gap-2 px-7 py-3.5 bg-[#4A7C59] text-white rounded-lg hover:bg-[#3d664a] transition-colors font-sans font-semibold text-[16px]">
               <MessageCircle size={18} />
@@ -96,9 +97,10 @@ const FAQ = ({
                 </button>
                 
                 <div className={`overflow-hidden transition-all duration-300 ease-in-out ${openIndex === index ? 'max-h-40 mt-4' : 'max-h-0'}`}>
-                  <p className="text-[16px] text-[#6B6B6B] font-sans leading-relaxed">
-                    {faq.answer}
-                  </p>
+                  <p 
+                    className="text-[16px] text-[#6B6B6B] font-sans leading-relaxed"
+                    dangerouslySetInnerHTML={{ __html: faq.answer }}
+                  />
                 </div>
               </div>
             ))}

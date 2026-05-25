@@ -474,9 +474,9 @@ export const dubaiHubHero = {
   ],
   label: "A GUIDE TO AYURVEDIC TREATMENT IN DUBAI",
   title: "Authentic Ayurveda in\nDubai — what it is, who it\nis for, and where to find\nit.",
-  description: "A definitive guide to Ayurvedic treatment in Dubai, written by the DHA-licensed Ayurvedic team at Vedara Care Polyclinic. Covering treatments, conditions, doctors, costs, insurance, and how to choose the right Ayurveda clinic for your specific needs.",
-  image: "https://images.unsplash.com/photo-1544161515-4ab6ce6db874?q=80&w=2070&auto=format&fit=crop",
-  alt: "Ayurvedic oils and traditional copper vessels for authentic treatment in Dubai",
+  description: "A definitive guide to Ayurvedic treatment in Dubai, written by the DHA-licensed Ayurvedic team at Vedara Care Polyclinic. Covering treatments, costs, insurance, and how to choose the right Ayurveda clinic for your specific needs.",
+  image: "ayurveda-dubai-hero.webp",
+  alt: "Ayurvedic doctor selecting herbal medicines at a DHA-licensed Ayurveda clinic in Dubai",
   primaryCTA: "Book an Ayurvedic Consultation",
   secondaryCTA: "Read the Guide",
   trustSignals: [
@@ -512,6 +512,7 @@ export const dubaiHubTherapies = {
       duration: "Duration: 7-21 days",
       bestFor: "From AED 3,500",
       image: "panchakarma-room-jvc-dubai.webp",
+      alt: "Panchakarma treatment icon",
       link: "/treatments/panchakarma-dubai/"
     },
     {
@@ -520,6 +521,7 @@ export const dubaiHubTherapies = {
       duration: "Duration: 60-90 min",
       bestFor: "From AED 280",
       image: "abhyanga-massage-jvc-dubai.webp",
+      alt: "Abhyanga treatment icon",
       link: "/treatments/abhyanga-dubai/"
     },
     {
@@ -528,6 +530,7 @@ export const dubaiHubTherapies = {
       duration: "Duration: 45-60 min",
       bestFor: "From AED 320",
       image: "shirodhara-treatment-jvc.webp",
+      alt: "Shirodhara treatment icon",
       link: "/treatments/shirodhara-dubai/"
     },
     {
@@ -536,6 +539,7 @@ export const dubaiHubTherapies = {
       duration: "Duration: 45 min",
       bestFor: "From AED 260",
       image: "kativasti-back-pain-jvc.webp",
+      alt: "Kativasti treatment icon",
       link: "/treatments/kativasti-dubai/"
     },
     {
@@ -544,6 +548,7 @@ export const dubaiHubTherapies = {
       duration: "Duration: 60-75 min",
       bestFor: "From AED 350",
       image: "njavarakizhi-treatment-vedara-jvc.webp",
+      alt: "Njavarakizhi treatment icon",
       link: "/treatments/njavarakizhi-dubai/"
     },
     {
@@ -552,6 +557,7 @@ export const dubaiHubTherapies = {
       duration: "Duration: 30-45 min",
       bestFor: "From AED 220",
       image: "nasya-dubai.webp",
+      alt: "Nasya treatment icon",
       link: "/treatments/nasya-dubai/"
     },
     {
@@ -560,6 +566,7 @@ export const dubaiHubTherapies = {
       duration: "Duration: Course-based",
       bestFor: "From AED 300",
       image: "basti-dubai.webp",
+      alt: "Basti treatment icon",
       link: "/treatments/basti-dubai/"
     },
     {
@@ -568,6 +575,7 @@ export const dubaiHubTherapies = {
       duration: "Duration: 45-60 min",
       bestFor: "From AED 290",
       image: "udvartana-dubai.webp",
+      alt: "Udvartana treatment icon",
       link: "/treatments/udvartana-dubai/"
     }
   ]
@@ -577,7 +585,7 @@ export const dubaiHubReviews = {
   bgColor: "bg-[#FAF6EF]",
   cardBgColor: "bg-white",
   label: "PATIENT STORIES",
-  title: "Outcomes Across Dubai.",
+  title: "Patient outcomes from across Dubai.",
   description: "",
   buttonText: "Read All Reviews",
   items: [
@@ -585,19 +593,22 @@ export const dubaiHubReviews = {
       quote: "After three years of back pain, finally a long-term answer.",
       content: "Sarah K. · Chronic Back Pain · 21-Day Panchakarma · Dubai Marina · March 2026",
       author: "Sarah K.",
-      details: "Verified Google Review"
+      details: "Verified Google Review",
+      alt: "Verified patient outcome — Ayurvedic treatment in Dubai"
     },
     {
       quote: "My cycle came back in the second month. I had stopped believing it would.",
       content: "Aisha M. · PCOS · 6-Month Programme · Arabian Ranches · February 2026",
       author: "Aisha M.",
-      details: "Verified Google Review"
+      details: "Verified Google Review",
+      alt: "Verified patient outcome — Ayurvedic treatment in Dubai"
     },
     {
       quote: "The home Abhyanga sessions changed my postnatal recovery completely.",
       content: "Priya R. · Postnatal Care · Home Healthcare · Palm Jumeirah · January 2026",
       author: "Priya R.",
-      details: "Verified Google Review"
+      details: "Verified Google Review",
+      alt: "Verified patient outcome — Ayurvedic treatment in Dubai"
     }
   ],
   stats: [
@@ -611,7 +622,7 @@ export const dubaiHubFaqs = {
   bgColor: "bg-[#FAF6EF]",
   label: "AYURVEDA IN DUBAI",
   title: "The most asked questions about Ayurvedic treatment in Dubai.",
-  description: "Honest answers from our DHA-licensed clinical team. WhatsApp us if yours is not here.",
+  description: "Honest answers from our DHA-licensed clinical team. For JVC-specific practical details, see our <a href=\"/treatments/panchakarma-jvc/\" class=\"text-[#C9A961] hover:underline\">Panchakarma in JVC guide</a>.",
   buttonText: "Ask the Ayurvedic Team",
   faqs: [
     {
@@ -685,7 +696,8 @@ export const dubaiHubBasics = {
     "What Ayurveda is not, however, is a spa service. Authentic Ayurvedic treatment in Dubai is medical — prescribed by a DHA-licensed BAMS physician after diagnostic assessment, using regulated herbal medicines and classical therapies. If you are offered \"Ayurvedic massage\" without a doctor consultation, you are being sold wellness, not medicine."
   ],
   quote: "Ayurveda treats the cause. Modern medicine often manages the symptom. The best Dubai patients use both.",
-  image: "https://images.unsplash.com/photo-1512290923902-8a9f81dc236c?w=800",
+  image: "ayurvedic-text-manuscript-classical.webp",
+  alt: "Classical Ayurvedic palm-leaf manuscript representing 5000-year tradition of Ayurveda in Dubai",
   imageLeft: true
 };
 
@@ -721,27 +733,27 @@ export const dubaiHubGuidance = {
   title: "How to choose a real Ayurvedic clinic in Dubai.",
   checklist: [
     {
-      title: "Is the clinic DHA-licensed for Ayurveda specifically?",
+      title: "1. Is the clinic DHA-licensed for Ayurveda specifically?",
       description: "A DHA Healthcare Facility License with Ayurveda listed as a specialty is non-negotiable. Ask for the license number. Verify it on the DHA Sheryan portal. Vedara Care operates under DHA License XXXXX with Ayurveda explicitly licensed."
     },
     {
-      title: "Are individual Ayurvedic doctors DHA-licensed?",
+      title: "2. Are individual Ayurvedic doctors DHA-licensed?",
       description: "The Dubai Health Authority licenses Ayurvedic physicians individually (DHA-P-XXXXXXX format). Real clinics display each doctor's DHA license number publicly. If you cannot find a license number on a doctor's profile, that is your answer."
     },
     {
-      title: "Do the doctors hold BAMS qualifications?",
+      title: "3. Do the doctors hold BAMS qualifications?",
       description: "BAMS (Bachelor of Ayurvedic Medicine and Surgery) is a 5.5-year medical degree from recognised Indian universities. Many also hold MD (Ayurveda) postgraduate specialisations. A wellness practitioner or therapist is not the same as a BAMS-qualified physician."
     },
     {
-      title: "Does the first consultation actually take time?",
+      title: "4. Does the first consultation actually take time?",
       description: "Authentic Ayurvedic consultations in Dubai take 45 to 60 minutes. They include pulse diagnosis, dosha assessment, full history-taking, and a written treatment plan. A 10-minute consultation is a sales pitch, not a diagnosis."
     },
     {
-      title: "Are the herbal medicines sourced from documented pharmacies?",
+      title: "5. Are the herbal medicines sourced from documented pharmacies?",
       description: "Quality Ayurvedic medicines come from classical pharmacies in Kerala and Maharashtra with documented batch testing — not unbranded combinations. Ask where the clinic sources its medicines and request proof of regulation."
     },
     {
-      title: "Is the clinic transparent about pricing?",
+      title: "6. Is the clinic transparent about pricing?",
       description: "Trustworthy clinics publish indicative pricing online and provide written quotes before treatment. Anyone who refuses to share pricing until you are evaluated is selling commitment, not care."
     }
   ],
@@ -774,12 +786,14 @@ export const dubaiHubLocationDetails = {
     "Jumeirah",
     "Mira and Reem",
     "All Dubai neighbourhoods"
-  ]
+  ],
+  image: "dubai-map-ayurveda-areas-served.webp",
+  alt: "Map of Dubai showing Ayurveda clinic location in Jumeirah Village Circle and areas served"
 };
 
 export const dubaiHubJournal = {
   label: "RELATED READING",
-  title: "More from the Vedara Care clinical team.",
+  title: "Where would you like to go next?",
   linkText: "Explore the Journal",
   articles: [
     {
@@ -798,39 +812,48 @@ export const dubaiHubJournal = {
       author: "Vedara Care Team",
       readTime: "5 min read",
       image: "insurance-article",
-      link: "/blog/ayurveda-insurance-dubai-guide/"
+      link: "/blog/ayurveda-insurance-dubai/"
     },
     {
-      category: "WOMEN'S HEALTH",
-      title: "PCOS in Dubai: why expat women are turning to Ayurveda",
+      category: "PRACTICE",
+      title: "How we choose our herbal medicines",
       description: "",
-      author: "Dr. Anjali Menon",
-      readTime: "8 min read",
-      image: "pcos-article",
-      link: "/blog/pcos-ayurveda-dubai-expat-women/"
+      author: "Vedara Care Team",
+      readTime: "4 min read",
+      image: "medicine-article",
+      link: "/blog/ayurvedic-medicine-quality-dubai/"
     }
   ]
 };
 
 export const dubaiHubNextSteps = {
+  bgColor: "bg-white",
   label: "NEXT STEPS",
   title: "Where would you like to go next?",
   pages: [
     {
       title: "Visit Our JVC Clinic",
-      description: "DHA-licensed Ayurveda department in Jumeirah Village Circle. Meet our doctors, see our treatments, and book a consultation.",
-      href: "/ayurveda-clinic-jvc/"
+      description: "Classical Ayurveda in the heart of Jumeirah Village Circle.",
+      linkText: "View Clinic Details",
+      href: "/ayurveda-clinic-jvc/",
+      image: "vedara-care-ayurveda-clinic-jvc-dubai.webp",
+      alt: "Vedara Care Polyclinic interior, DHA-licensed Ayurveda clinic in JVC Dubai"
     },
     {
       title: "Browse Treatments by Condition",
-      description: "Find Ayurvedic treatment approaches for your specific condition — back pain, PCOS, migraine, hair loss, and 25+ more.",
-      href: "/conditions/"
+      description: "From PCOS to chronic pain, see how we address your specific health concerns.",
+      linkText: "View Conditions",
+      href: "/conditions/",
+      image: "ayurveda-medicines-classical-pharmacy.webp",
+      alt: "Ayurvedic doctor selecting herbal medicines at a DHA-licensed Ayurveda clinic in Dubai"
     },
     {
       title: "Ayurveda at Home Across Dubai",
-      description: "Selected Ayurvedic services delivered to your home anywhere in Dubai by our DHA-licensed home healthcare team.",
-      href: "/home-healthcare-jvc/"
+      description: "We bring classical therapies to Downtown, Marina, Palm Jumeirah, and more.",
+      linkText: "Home Care Details",
+      href: "/home-healthcare-dubai/",
+      image: "dubai-map-ayurveda-areas-served.webp",
+      alt: "Map of Dubai showing Ayurveda clinic location in Jumeirah Village Circle and areas served"
     }
-  ],
-  linkText: "Browse all Ayurvedic treatments →"
+  ]
 };
