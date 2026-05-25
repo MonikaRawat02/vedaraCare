@@ -1,79 +1,80 @@
 import React from 'react';
-import { Check } from 'lucide-react';
 
 const TreatmentProtocol = ({
-  bgColor = "bg-[#FAF8F3]",
-  label = "A TYPICAL PROTOCOL",
+  bgColor = "bg-white",
+  label = "THE TREATMENT PROTOCOL",
   title = "",
-  subtitle = "",
-  steps = [],
+  description = "",
+  phases = [],
   footer = ""
 }) => {
   return (
     <section className={`${bgColor} py-24 px-6`}>
-      <div className="max-w-[1400px] mx-auto">
-        <div className="text-center space-y-4 mb-16">
-          <div className="text-sm tracking-wider text-[#C9A961] uppercase font-sans">
+      <div className="max-w-5xl mx-auto">
+        <div className="text-center mb-16">
+          <div 
+            className="text-sm font-semibold tracking-wider mb-3"
+            style={{ color: 'rgb(200, 151, 95)' }}
+          >
             {label}
           </div>
-          <h2 className="text-4xl font-serif text-[#1A1A1A] leading-tight  mx-auto">
+          <h2 
+            className="text-4xl mb-4"
+            style={{ fontFamily: 'Georgia, serif', color: 'rgb(26, 26, 26)' }}
+          >
             {title}
           </h2>
-          {subtitle && (
-            <p className="text-[#717182] max-w-[720px] mx-auto text-base leading-relaxed">
-              {subtitle}
+          {description && (
+            <p 
+              className="max-w-2xl mx-auto"
+              style={{ color: 'rgb(107, 114, 128)' }}
+            >
+              {description}
             </p>
           )}
         </div>
 
         <div className="space-y-8">
-          {steps.map((step, index) => (
-            <div key={index} className="bg-white p-8 rounded-xl shadow-sm flex flex-col md:flex-row gap-6 items-start relative">
-              {/* Week Number Circle */}
-              <div className="flex-shrink-0 w-12 h-12 rounded-full bg-[#C9A961]/80 text-white flex items-center justify-center font-serif text-2xl font-medium">
-                {index + 1}
+          {phases.map((phase, index) => (
+            <div 
+              key={index} 
+              className="flex gap-6 border-l-4 pl-8 py-4"
+              style={{ borderColor: 'rgb(200, 151, 95)' }}
+            >
+              <div className="flex-shrink-0">
+                <div 
+                  className="font-semibold text-sm mb-1"
+                  style={{ color: 'rgb(200, 151, 95)' }}
+                >
+                  {phase.time}
+                </div>
               </div>
 
-              <div className="flex-grow pt-1">
-                <div className="mb-4">
-                  <div className="text-sm font-medium text-[#C9A961] uppercase tracking-widest mb-1">
-                    {step.week}
-                  </div>
-                  <h3 className="text-2xl font-serif text-[#1A1A1A]">
-                    {step.title}
-                  </h3>
-                </div>
-
-                <ul className="space-y-2 mb-4">
-                  {step.items.map((item, itemIdx) => (
-                    <li key={itemIdx} className="flex items-start gap-2 text-sm text-gray-700">
-                      <Check className="w-5 h-5 text-[#C9A961] mt-0.5 shrink-0" />
-                      <span>{item}</span>
-                    </li>
-                  ))}
-                </ul>
-
-                {step.expected && (
-                  <div className="bg-[#FAF8F3] p-4 rounded-lg">
-                    <div className="text-sm font-medium text-[#1A1A1A] mb-1">
-                      {step.expected.split(':')[0]}:
-                    </div>
-                    <div className="text-sm text-gray-700 leading-relaxed">
-                      {step.expected.split(':').slice(1).join(':').trim()}
-                    </div>
-                  </div>
-                )}
+              <div>
+                <h3 
+                  className="text-xl font-semibold mb-2"
+                  style={{ color: 'rgb(26, 26, 26)' }}
+                >
+                  {phase.title}
+                </h3>
+                <p 
+                  className="leading-relaxed"
+                  style={{ color: 'rgb(75, 85, 99)' }}
+                >
+                  {phase.content}
+                </p>
               </div>
             </div>
           ))}
         </div>
 
         {footer && (
-          <div className="mt-12 text-center">
-            <p className="text-sm text-[#888888] max-w-[800px] mx-auto leading-relaxed">
-              {footer}
-            </p>
-          </div>
+          <p 
+            className="text-center text-sm mt-12"
+            style={{ color: 'rgb(107, 114, 128)' }}
+          >
+            {footer}
+          </p>
         )}
       </div>
     </section>
