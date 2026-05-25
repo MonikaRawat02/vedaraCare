@@ -365,7 +365,7 @@ export const abhyangaFaqs = {
 };
 
 export const abhyangaTreatmentLocation = {
-  bgColor: "bg-[#FFFFFF]",
+  bgColor: "bg-[#F5F1E8]",
   label: "VISIT US",
   title: "Where Abhyanga happens at Vedara Care.",
   address: "Vedara Care Polyclinic<br/>Jumeirah Village Circle (JVC), Dubai, UAE",
@@ -380,7 +380,7 @@ export const abhyangaTreatmentLocation = {
 };
 
 export const abhyangaFinalCTA = {
-  bgColor: "bg-[#F5F2EC]",
+  bgColor: "bg-[#FFFFFF]",
   label: "READY?",
   title: ["Begin with a brief consultation.",
     <br/>,
