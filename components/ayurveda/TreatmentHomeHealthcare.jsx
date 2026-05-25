@@ -1,5 +1,5 @@
 import React from 'react';
-import { Check, ArrowRight } from 'lucide-react';
+import { Check } from 'lucide-react';
 import Link from 'next/link';
 
 const TreatmentHomeHealthcare = ({
@@ -10,137 +10,117 @@ const TreatmentHomeHealthcare = ({
   quote = "",
   features = [],
   priceText = "",
+  priceNote = "",
+  footer = "",
   image = "",
   imageAlt = ""
 }) => {
   return (
-    <section className={`${bgColor} py-24`} style={{ backgroundColor: 'rgb(245, 240, 232)' }}>
-      <div className="max-w-7xl mx-auto px-6">
+    <section className="bg-card py-24 px-6 ">
+      <div className="max-w-7xl mx-auto">
         <div className="text-center mb-14">
           <p 
-            className="text-xs font-semibold tracking-[0.18em] uppercase mb-4"
+            className="text-xs font-medium uppercase tracking-widest mb-4"
             style={{ 
-              color: 'rgb(184, 145, 90)', 
-              fontFamily: '"DM Sans", sans-serif' 
+              color: 'rgb(184, 144, 30)', 
+              letterSpacing: '0.16em' 
             }}
           >
             {label}
           </p>
           <h2 
-            className="mb-4"
+            className="text-3xl md:text-4xl mb-4"
             style={{ 
-              fontFamily: 'Fraunces, serif', 
-              fontWeight: '500', 
-              fontSize: 'clamp(1.5rem, 3vw, 2.1rem)', 
-              color: 'rgb(28, 28, 26)', 
-              lineHeight: '1.25' 
+              fontFamily: 'Fraunces, Georgia, serif', 
+              fontWeight: 500 
             }}
           >
             {title}
           </h2>
           {description && (
             <p 
-              className="text-sm leading-relaxed"
-              style={{ 
-                color: 'rgb(107, 99, 89)', 
-                maxWidth: '580px', 
-                margin: '0px auto' 
-              }}
+              className="text-muted-foreground max-w-[720px] mx-auto text-sm"
+              style={{ lineHeight: 1.75 }}
             >
               {description}
             </p>
           )}
         </div>
 
-        <div 
-          className="grid lg:grid-cols-[60fr_40fr] gap-12 lg:gap-16 items-center"
-        >
+        <div className="grid grid-cols-1 lg:grid-cols-[60fr_40fr] gap-14 lg:gap-20 items-center">
           <div>
             {quote && (
               <p 
-                className="text-base leading-[1.85] mb-5"
-                style={{ 
-                  color: 'rgb(74, 67, 60)', 
-                  fontStyle: 'italic' 
-                }}
+                className="text-base text-foreground mb-6"
+                style={{ lineHeight: 1.85 }}
               >
-                "{quote}"
+                {quote}
               </p>
             )}
             
-            <p 
-              className="text-sm leading-[1.85] mb-8"
-              style={{ color: 'rgb(90, 82, 72)' }}
-            >
-              Our home Njavarakizhi service brings two trained therapists, freshly cooked Njavara rice (prepared at the clinic and transported warm in insulated containers), the herbal milk vessel, oils, and all required equipment. The therapy is performed in your home with the same clinical protocol as the clinic version.
-            </p>
-            
-            <ul className="space-y-3 mb-7">
+            <ul className="space-y-3.5 mb-8">
               {features.map((feature, index) => (
                 <li 
                   key={index} 
-                  className="flex items-start gap-2.5 text-sm"
-                  style={{ color: 'rgb(74, 67, 60)' }}
+                  className="flex items-start gap-3 text-sm"
                 >
                   <Check 
-                    size={13} 
-                    className="mt-0.5 shrink-0"
-                    style={{ color: 'rgb(184, 145, 90)' }}
+                    width={15} 
+                    height={15}
+                    className="flex-shrink-0 mt-0.5"
+                    style={{ color: 'rgb(184, 144, 30)' }}
                   />
-                  {feature}
+                  <span>{feature}</span>
                 </li>
               ))}
             </ul>
             
             {priceText && (
-              <div 
-                className="inline-block px-5 py-3 rounded-lg mb-7 text-sm font-medium"
-                style={{ 
-                  background: 'rgb(42, 67, 64)', 
-                  color: 'rgb(245, 240, 232)' 
-                }}
-              >
-                {priceText}
+              <div className="bg-muted rounded-lg px-5 py-4 mb-7">
+                <p className="text-sm font-medium text-foreground">
+                  {priceText}
+                </p>
+                {priceNote && (
+                  <p className="text-xs text-muted-foreground mt-1">
+                    {priceNote}
+                  </p>
+                )}
               </div>
             )}
             
-            <div className="flex flex-wrap gap-3">
+            {footer && (
+              <p 
+                className="text-sm text-muted-foreground mb-8"
+                style={{ lineHeight: 1.8 }}
+              >
+                {footer}
+              </p>
+            )}
+            
+            <div className="flex flex-col sm:flex-row gap-3">
               <Link 
                 href="/book/"
-                className="inline-flex items-center gap-2 px-6 py-3.5 rounded-full font-medium text-sm transition-transform hover:scale-[1.02] active:scale-100"
-                style={{ 
-                  background: 'rgb(42, 67, 64)', 
-                  color: 'rgb(245, 240, 232)' 
-                }}
+                className="px-6 py-3.5 text-sm font-medium text-white text-center rounded-md transition-opacity hover:opacity-90"
+                style={{ backgroundColor: 'rgb(26, 21, 16)' }}
               >
-                Check Home Njavarakizhi Availability
+                Book Home Abhyanga
               </Link>
               <Link 
                 href="/home-healthcare-dubai/"
-                className="inline-flex items-center gap-2 px-5 py-3 rounded-full text-sm font-medium transition-opacity hover:opacity-80"
-                style={{ 
-                  border: '1px solid rgb(42, 67, 64)', 
-                  color: 'rgb(42, 67, 64)' 
-                }}
+                className="px-6 py-3.5 text-sm font-medium text-center rounded-md border border-border hover:bg-muted transition-colors"
               >
-                Home Healthcare
-                <ArrowRight size={14} />
+                Read about Home Healthcare
               </Link>
             </div>
           </div>
           
           {image && (
-            <div 
-              className="rounded-2xl overflow-hidden"
-              style={{ 
-                background: 'rgb(196, 184, 154)', 
-                aspectRatio: '4 / 5' 
-              }}
-            >
+            <div className="rounded-xl overflow-hidden bg-muted" style={{ minHeight: 440 }}>
               <img 
                 src={image} 
                 alt={imageAlt || "Home healthcare service"}
                 className="w-full h-full object-cover"
+                style={{ minHeight: 440 }}
               />
             </div>
           )}
