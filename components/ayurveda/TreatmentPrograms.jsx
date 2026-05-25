@@ -37,11 +37,8 @@ const TreatmentPrograms = ({
               }}
             >
               {program.featured && (
-                <div 
-                  className="absolute -top-3 left-1/2 -translate-x-1/2 px-4 py-1 rounded-full text-xs font-medium text-white whitespace-nowrap" 
-                  style={{ backgroundColor: 'rgb(201, 169, 97)' }}
-                >
-                  {program.badge || "Most Common"}
+                <div className="absolute -top-4 left-1/2 -translate-x-1/2 bg-[#C5A572] text-white px-4 py-1 rounded-md text-[10px] font-bold uppercase tracking-widest whitespace-nowrap">
+                  {program.featuredLabel || "Most Common"}
                 </div>
               )}
               

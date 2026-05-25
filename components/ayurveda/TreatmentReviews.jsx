@@ -3,24 +3,33 @@ import { Star } from 'lucide-react';
 
 const TreatmentReviews = ({
   bgColor = "bg-[#2A4340]",
+  cardBgColor = "rgba(255, 255, 255, 0.05)",
+  isDarkText = false,
   label = "PATIENT STORIES",
   title = "Kativasti outcomes from our JVC clinic.",
+  description = null,
   items = [],
   stats = [],
   buttonText = ""
 }) => {
-  const isLightBackground = bgColor.includes('#F7F3EC') || bgColor.includes('#FFFFFF') || bgColor.includes('white') || bgColor.includes('#FAF8F5');
+  // Determine if cards are solid white or light, requiring dark text
+  const isWhiteCard = cardBgColor === 'bg-white' || cardBgColor === 'white' || cardBgColor === '#FFFFFF';
   
   return (
     <section className={`${bgColor} py-24 px-6 relative overflow-hidden`}>
       <div className="max-w-[1170px] mx-auto">
         <div className="text-center mb-16">
-          <span className="text-[13px] font-sans tracking-[0.2em] uppercase block mb-4" style={{ color: isLightBackground ? 'rgb(184, 144, 30)' : 'rgb(201, 169, 97)' }}>
+          <span className="text-[13px] font-sans tracking-[0.2em] uppercase block mb-4" style={{ color: '#C9A961' }}>
             {label}
           </span>
-          <h2 className="text-[32px] md:text-[42px] font-serif font-medium leading-[1.2] mb-6" style={{ color: isLightBackground ? 'rgb(0, 0, 0)' : 'rgb(245, 240, 232)' }}>
+          <h2 className="text-[32px] md:text-[42px] font-serif font-medium leading-[1.2] mb-6" style={{ color: isDarkText ? '#1A1A1A' : '#F5F0E8' }}>
             {title}
           </h2>
+          {description && (
+            <p className="text-[17px] font-sans max-w-2xl mx-auto leading-relaxed" style={{ color: isDarkText ? '#6B6B6B' : 'rgba(245, 240, 232, 0.8)' }}>
+              {description}
+            </p>
+          )}
         </div>
 
         {/* Reviews Grid */}
@@ -28,15 +37,18 @@ const TreatmentReviews = ({
           {items.map((review, index) => (
             <div 
               key={index} 
-              className="rounded-xl p-8 flex flex-col relative h-full"
-              style={{ backgroundColor: isLightBackground ? 'rgb(255, 255, 255)' : 'rgba(255, 255, 255, 0.05)' }}
+              className={`rounded-xl p-8 flex flex-col relative h-full ${cardBgColor.startsWith('bg-') ? cardBgColor : ''}`}
+              style={{ 
+                backgroundColor: cardBgColor.startsWith('bg-') ? undefined : cardBgColor,
+                border: isDarkText ? '1px solid rgba(26, 26, 26, 0.1)' : '1px solid rgba(245, 240, 232, 0.2)'
+              }}
             >
               <div className="flex gap-1 mb-6">
                 {[...Array(5)].map((_, i) => (
                   <Star 
                     key={i} 
                     size={16} 
-                    style={{ fill: 'rgb(184, 145, 90)', color: 'rgb(184, 145, 90)' }} 
+                    style={{ fill: '#C9A961', color: '#C9A961' }} 
                   />
                 ))}
               </div>
@@ -46,7 +58,7 @@ const TreatmentReviews = ({
                 fontSize: '19px', 
                 fontWeight: '500', 
                 fontStyle: 'italic', 
-                color: isLightBackground ? 'rgb(0, 0, 0)' : 'rgb(245, 240, 232)', 
+                color: (isDarkText || isWhiteCard) ? '#1A1A1A' : '#F5F0E8', 
                 lineHeight: '1.35', 
                 marginBottom: '16px' 
               }}>
@@ -54,17 +66,17 @@ const TreatmentReviews = ({
               </h3>
               
               {review.content && (
-                <p className="text-[14px] font-sans leading-[1.75] mb-8 flex-grow" style={{ color: isLightBackground ? 'rgba(0, 0, 0, 0.7)' : 'rgba(245, 240, 232, 0.7)' }}>
+                <p className="text-[14px] font-sans leading-[1.75] mb-8 flex-grow" style={{ color: (isDarkText || isWhiteCard) ? '#4A4A4A' : 'rgba(245, 240, 232, 0.7)' }}>
                   {review.content}
                 </p>
               )}
               
               <div className="mt-auto pt-4">
                 <div className="space-y-0.5">
-                  <p className="font-sans font-bold text-[15px]" style={{ color: isLightBackground ? 'rgb(0, 0, 0)' : 'rgb(245, 240, 232)' }}>
+                  <p className="font-sans font-bold text-[15px]" style={{ color: (isDarkText || isWhiteCard) ? '#1A1A1A' : '#F5F0E8' }}>
                     {review.author}
                   </p>
-                  <p className="text-[12px] font-sans" style={{ color: isLightBackground ? 'rgba(0, 0, 0, 0.6)' : 'rgba(245, 240, 232, 0.6)' }}>
+                  <p className="text-[12px] font-sans" style={{ color: (isDarkText || isWhiteCard) ? '#6B6B6B' : 'rgba(245, 240, 232, 0.6)' }}>
                     {review.details}
                   </p>
                 </div>
@@ -78,8 +90,8 @@ const TreatmentReviews = ({
           <div className="flex flex-wrap justify-center items-center gap-12 md:gap-24 mb-16">
             {stats.map((stat, index) => (
               <div key={index} className="text-center">
-                <h4 className="text-[48px] font-serif font-medium leading-none mb-2" style={{ color: isLightBackground ? 'rgb(184, 144, 30)' : 'rgb(201, 169, 97)' }}>{stat.value}</h4>
-                <p className="text-[13px] font-sans tracking-widest" style={{ color: isLightBackground ? 'rgba(0, 0, 0, 0.7)' : 'rgba(245, 240, 232, 0.7)' }}>{stat.label}</p>
+                <h4 className="text-[48px] font-serif font-medium leading-none mb-2" style={{ color: '#C9A961' }}>{stat.value}</h4>
+                <p className="text-[13px] font-sans tracking-widest uppercase" style={{ color: isDarkText ? '#6B6B6B' : 'rgba(245, 240, 232, 0.7)' }}>{stat.label}</p>
               </div>
             ))}
           </div>
@@ -88,11 +100,7 @@ const TreatmentReviews = ({
         {buttonText && (
           <div className="text-center">
             <button 
-              className="inline-flex items-center px-8 py-3.5 border rounded-md hover:opacity-80 transition-all duration-300"
-              style={{ 
-                borderColor: isLightBackground ? 'rgb(184, 144, 30)' : 'rgb(184, 145, 90)', 
-                color: isLightBackground ? 'rgb(184, 144, 30)' : 'rgb(184, 145, 90)' 
-              }}
+              className="inline-flex items-center px-8 py-3.5 border border-[#C9A961] text-[#C9A961] font-sans font-bold text-[14px] rounded-md hover:bg-[#C9A961] hover:text-white transition-all duration-300"
             >
               {buttonText}
             </button>

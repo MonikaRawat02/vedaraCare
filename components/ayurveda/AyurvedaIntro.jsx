@@ -23,9 +23,10 @@ const AyurvedaIntro = ({
             {blockquote}
           </blockquote>
 
-          <p className="mt-8 text-[13px] text-[#6B6B6B] font-sans ">
-            {footer}
-          </p>
+          <p 
+            className="mt-8 text-[13px] text-[#6B6B6B] font-sans"
+            dangerouslySetInnerHTML={{ __html: footer }}
+          />
         </div>
       </div>
     </section>

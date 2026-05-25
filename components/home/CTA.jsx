@@ -8,7 +8,9 @@ const CTA = ({
   description = "Most patients reach us on WhatsApp. It is the fastest way to check availability, ask about insurance, or send a photo of your concern for our team to review.",
   button1Text = "Book a Consultation",
   button2Text = "Chat on WhatsApp",
-  subtext = "Typical reply time under 15 minutes during clinic hours"
+  subtext = "Typical reply time under 15 minutes during clinic hours",
+  button1Class = "bg-[#184C3A] text-white hover:bg-[#123a2c]",
+  button2Class = "bg-[#4A7C59] text-white hover:bg-[#3d664a]"
 }) => {
   return (
     <section className={`${bgColor} py-24 px-6`}>
@@ -22,18 +24,19 @@ const CTA = ({
             <h2 className="text-[42px] font-serif font-medium text-[#1A1A1A] leading-[1.2]">
               {title}
             </h2>
-            <p className="text-[18px] text-[#1A1A1A] font-sans leading-relaxed max-w-2xl mx-auto">
-              {description}
-            </p>
+            <p 
+              className="text-[18px] text-[#1A1A1A] font-sans leading-relaxed max-w-2xl mx-auto"
+              dangerouslySetInnerHTML={{ __html: description }}
+            />
           </div>
 
           {/* Action Buttons */}
           <div className="flex flex-col sm:flex-row items-center justify-center gap-4 pt-4">
-            <button className="w-full sm:w-auto inline-flex items-center justify-center gap-2 px-8 py-4 bg-[#184C3A] text-white rounded-lg hover:bg-[#123a2c] transition-all font-sans font-bold text-[16px]">
+            <button className={`w-full sm:w-auto inline-flex items-center justify-center gap-2 px-8 py-4 ${button1Class} rounded-lg transition-all font-sans font-bold text-[16px]`}>
               {button1Text}
             </button>
             
-            <button className="w-full sm:w-auto inline-flex items-center justify-center gap-2 px-7 py-3.5 bg-[#4A7C59] text-white rounded-lg hover:bg-[#3d664a] transition-all font-sans font-semibold text-[16px]">
+            <button className={`w-full sm:w-auto inline-flex items-center justify-center gap-2 px-7 py-3.5 ${button2Class} rounded-lg transition-all font-sans font-semibold text-[16px]`}>
               <MessageCircle size={20} />
               {button2Text}
             </button>
