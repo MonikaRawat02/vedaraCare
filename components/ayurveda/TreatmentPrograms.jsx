@@ -28,8 +28,8 @@ const TreatmentPrograms = ({
               className={`bg-white p-8 rounded-xl relative border border-gray-200 ${program.featured ? 'ring-2 ring-[#C5A572] border-[#C5A572]' : ''} flex flex-col h-full`}
             >
               {program.featured && (
-                <div className="absolute -top-4 left-1/2 -translate-x-1/2 bg-[#C5A572] text-white px-4 py-1 rounded-md text-xs font-semibold whitespace-nowrap">
-                  Most Common
+                <div className="absolute -top-4 left-1/2 -translate-x-1/2 bg-[#C5A572] text-white px-4 py-1 rounded-md text-[10px] font-bold uppercase tracking-widest whitespace-nowrap">
+                  {program.featuredLabel || "Most Common"}
                 </div>
               )}
               
