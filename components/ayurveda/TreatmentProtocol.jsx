@@ -1,54 +1,79 @@
 import React from 'react';
+import { Check } from 'lucide-react';
 
 const TreatmentProtocol = ({
-  bgColor = "bg-[#FAF6EF]",
-  label = "",
+  bgColor = "bg-[#FAF8F3]",
+  label = "A TYPICAL PROTOCOL",
   title = "",
-  description = "",
-  phases = [],
+  subtitle = "",
+  steps = [],
   footer = ""
 }) => {
   return (
-    <section className={`${bgColor} py-24 px-6 relative overflow-hidden`}>
-      <div className="max-w-[1280px] mx-auto">
-        <div className="text-center mb-16">
-          <p className="text-[13px] font-sans font-semibold tracking-[0.15em] text-[#C9A961] uppercase block mb-4">
+    <section className={`${bgColor} py-24 px-6`}>
+      <div className="max-w-[1400px] mx-auto">
+        <div className="text-center space-y-4 mb-16">
+          <div className="text-sm tracking-wider text-[#C9A961] uppercase font-sans">
             {label}
-          </p>
-          
-          <h2 className="text-[clamp(1.7rem,2.8vw,2.5rem)] font-serif font-normal text-[#1A1A1A] leading-[1.2] mb-6">
+          </div>
+          <h2 className="text-4xl font-serif text-[#1A1A1A] leading-tight  mx-auto">
             {title}
           </h2>
-          
-          <p className="text-[16px] font-sans text-[#4A4A4A] max-w-2xl mx-auto">
-            {description}
-          </p>
+          {subtitle && (
+            <p className="text-[#717182] max-w-[720px] mx-auto text-base leading-relaxed">
+              {subtitle}
+            </p>
+          )}
         </div>
 
-        <div className="max-w-[900px] mx-auto space-y-8">
-          {phases.map((phase, index) => (
-            <div key={index} className="flex gap-6 border-l-4 border-[#C8975F] pl-8 py-4">
-              <div className="flex-shrink-0">
-                <div className="text-[#C8975F] font-semibold text-sm mb-1">
-                  {phase.time}
-                </div>
+        <div className="space-y-8">
+          {steps.map((step, index) => (
+            <div key={index} className="bg-white p-8 rounded-xl shadow-sm flex flex-col md:flex-row gap-6 items-start relative">
+              {/* Week Number Circle */}
+              <div className="flex-shrink-0 w-12 h-12 rounded-full bg-[#C9A961]/80 text-white flex items-center justify-center font-serif text-2xl font-medium">
+                {index + 1}
               </div>
-              <div>
-                <h3 className="text-xl font-semibold text-[#1A1A1A] mb-2">
-                  {phase.title}
-                </h3>
-                <p className="text-gray-700 leading-relaxed">
-                  {phase.content}
-                </p>
+
+              <div className="flex-grow pt-1">
+                <div className="mb-4">
+                  <div className="text-sm font-medium text-[#C9A961] uppercase tracking-widest mb-1">
+                    {step.week}
+                  </div>
+                  <h3 className="text-2xl font-serif text-[#1A1A1A]">
+                    {step.title}
+                  </h3>
+                </div>
+
+                <ul className="space-y-2 mb-4">
+                  {step.items.map((item, itemIdx) => (
+                    <li key={itemIdx} className="flex items-start gap-2 text-sm text-gray-700">
+                      <Check className="w-5 h-5 text-[#C9A961] mt-0.5 shrink-0" />
+                      <span>{item}</span>
+                    </li>
+                  ))}
+                </ul>
+
+                {step.expected && (
+                  <div className="bg-[#FAF8F3] p-4 rounded-lg">
+                    <div className="text-sm font-medium text-[#1A1A1A] mb-1">
+                      {step.expected.split(':')[0]}:
+                    </div>
+                    <div className="text-sm text-gray-700 leading-relaxed">
+                      {step.expected.split(':').slice(1).join(':').trim()}
+                    </div>
+                  </div>
+                )}
               </div>
             </div>
           ))}
         </div>
 
         {footer && (
-          <p className="mt-12 text-[13px] text-[#6B6B6B] font-sans text-center max-w-2xl mx-auto">
-            {footer}
-          </p>
+          <div className="mt-12 text-center">
+            <p className="text-sm text-[#888888] max-w-[800px] mx-auto leading-relaxed">
+              {footer}
+            </p>
+          </div>
         )}
       </div>
     </section>

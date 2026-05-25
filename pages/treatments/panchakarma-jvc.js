@@ -199,7 +199,7 @@ const PanchakarmaJVC = () => {
       <PanchakarmaBenefits {...panchakarmaJVCBenefits} />
       <TreatmentPrograms {...panchakarmaJVCPrograms} />
       <PanchakarmaTimeline {...panchakarmaJVCTimeline} />
-      <Reviews {...panchakarmaJVCReviews} isDarkText={true} />
+      <Reviews {...panchakarmaJVCReviews} isDarkText={false} />
       <FAQ {...panchakarmaJVCFaqs} />
       <TreatmentLocation {...panchakarmaJVCLocation} />
       <CTA {...panchakarmaJVCCTA} />
