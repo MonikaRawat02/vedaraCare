@@ -126,9 +126,10 @@ const TreatmentApplications = ({
                     style={{ color: 'rgb(157, 148, 139)' }}
                   />
                 ) : (
-                  <div 
-                    className="mt-2 shrink-0 w-1.5 h-1.5 rounded-full"
-                    style={{ backgroundColor: 'rgb(74, 67, 60)' }}
+                  <Check 
+                    size={13} 
+                    className="mt-0.5 shrink-0"
+                    style={{ color: 'rgb(184, 145, 90)' }}
                   />
                 )}
                 <div>

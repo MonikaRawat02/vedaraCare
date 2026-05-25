@@ -85,12 +85,14 @@ const TreatmentBenefits = ({
         </div>
 
         {footer && (
-          <p 
-            className="text-xs text-center mt-10"
-            style={{ color: 'rgb(107, 99, 89)' }}
-          >
-            {footer}
-          </p>
+          <div className="mt-10">
+            <p 
+              className="text-center max-w-2xl mx-auto leading-relaxed"
+              style={{ color: 'rgb(107, 114, 128)' }}
+            >
+              {footer}
+            </p>
+          </div>
         )}
       </div>
     </section>

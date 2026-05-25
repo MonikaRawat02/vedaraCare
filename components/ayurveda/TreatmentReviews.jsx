@@ -38,7 +38,10 @@ const TreatmentReviews = ({
             <div 
               key={index} 
               className={`rounded-xl p-8 flex flex-col relative h-full ${cardBgColor.startsWith('bg-') ? cardBgColor : ''}`}
-              style={{ backgroundColor: cardBgColor.startsWith('bg-') ? undefined : cardBgColor }}
+              style={{ 
+                backgroundColor: cardBgColor.startsWith('bg-') ? undefined : cardBgColor,
+                border: isDarkText ? '1px solid rgba(26, 26, 26, 0.1)' : '1px solid rgba(245, 240, 232, 0.2)'
+              }}
             >
               <div className="flex gap-1 mb-6">
                 {[...Array(5)].map((_, i) => (

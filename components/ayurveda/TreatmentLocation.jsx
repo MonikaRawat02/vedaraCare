@@ -9,11 +9,48 @@ const TreatmentLocation = ({
   address = "",
   phone = "",
   email = "",
+  whatsapp = "",
   hours = "",
   landmarks = [],
   description = "",
   buttonText = ""
 }) => {
+  const renderHours = () => {
+    if (typeof hours === 'string') {
+      return hours.split('<br/>').map((line, index) => (
+        <React.Fragment key={index}>
+          {line}
+          {index < hours.split('<br/>').length - 1 && <br />}
+        </React.Fragment>
+      ));
+    }
+    if (typeof hours === 'object') {
+      return (
+        <div className="grid grid-cols-2 gap-2">
+          {hours.monday && (
+        <div className="flex justify-between">
+          <span className="text-gray-700">Monday - Friday</span>
+          <span className="text-gray-700">{hours.monday}</span>
+        </div>
+      )}
+      {hours.saturday && (
+        <div className="flex justify-between">
+          <span className="text-gray-700">Saturday</span>
+          <span className="text-gray-700">{hours.saturday}</span>
+        </div>
+      )}
+      {hours.sunday && (
+        <div className="flex justify-between">
+          <span className="text-gray-700">Sunday</span>
+          <span className="text-gray-700">{hours.sunday}</span>
+        </div>
+      )}
+    </div>
+      );
+    }
+    return null;
+  };
+
   return (
     <section className={`${bgColor} py-24 px-6 relative overflow-hidden`}>
       <div className="max-w-7xl mx-auto">
@@ -63,8 +100,18 @@ const TreatmentLocation = ({
                   </div>
                   <div className="text-gray-700">
                     {phone}
-                    <br />
-                    {email}
+                    {whatsapp && (
+                      <>
+                        <br />
+                        WhatsApp: {whatsapp}
+                      </>
+                    )}
+                    {email && (
+                      <>
+                        <br />
+                        {email}
+                      </>
+                    )}
                   </div>
                 </div>
               </div>
@@ -77,12 +124,7 @@ const TreatmentLocation = ({
                     Hours
                   </div>
                   <div className="text-gray-700">
-                    {hours.split('<br/>').map((line, index) => (
-                      <React.Fragment key={index}>
-                        {line}
-                        {index < hours.split('<br/>').length - 1 && <br />}
-                      </React.Fragment>
-                    ))}
+                    {renderHours()}
                   </div>
                 </div>
               </div>
