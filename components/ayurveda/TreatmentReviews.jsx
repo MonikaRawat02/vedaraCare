@@ -3,8 +3,11 @@ import { Star } from 'lucide-react';
 
 const TreatmentReviews = ({
   bgColor = "bg-[#2A4340]",
+  cardBgColor = "rgba(255, 255, 255, 0.05)",
+  isDarkText = false,
   label = "PATIENT STORIES",
   title = "Kativasti outcomes from our JVC clinic.",
+  description = null,
   items = [],
   stats = [],
   buttonText = ""
@@ -19,6 +22,11 @@ const TreatmentReviews = ({
           <h2 className="text-[32px] md:text-[42px] font-serif font-medium leading-[1.2] mb-6" style={{ color: 'rgb(245, 240, 232)' }}>
             {title}
           </h2>
+          {description && (
+            <p className="text-[17px] font-sans max-w-2xl mx-auto leading-relaxed" style={{ color: 'rgba(245, 240, 232, 0.8)' }}>
+              {description}
+            </p>
+          )}
         </div>
 
         {/* Reviews Grid */}
@@ -26,8 +34,8 @@ const TreatmentReviews = ({
           {items.map((review, index) => (
             <div 
               key={index} 
-              className="rounded-xl p-8 flex flex-col relative h-full"
-              style={{ backgroundColor: 'rgba(255, 255, 255, 0.05)' }}
+              className={`rounded-xl p-8 flex flex-col relative h-full ${cardBgColor.startsWith('bg-') ? cardBgColor : ''}`}
+              style={{ backgroundColor: cardBgColor.startsWith('bg-') ? undefined : cardBgColor }}
             >
               <div className="flex gap-1 mb-6">
                 {[...Array(5)].map((_, i) => (
@@ -44,7 +52,7 @@ const TreatmentReviews = ({
                 fontSize: '19px', 
                 fontWeight: '500', 
                 fontStyle: 'italic', 
-                color: 'rgb(245, 240, 232)', 
+                color: isDarkText ? '#1A1A1A' : 'rgb(245, 240, 232)', 
                 lineHeight: '1.35', 
                 marginBottom: '16px' 
               }}>
@@ -59,10 +67,10 @@ const TreatmentReviews = ({
               
               <div className="mt-auto pt-4">
                 <div className="space-y-0.5">
-                  <p className="font-sans font-bold text-[15px]" style={{ color: 'rgb(245, 240, 232)' }}>
+                  <p className="font-sans font-bold text-[15px]" style={{ color: isDarkText ? '#1A1A1A' : 'rgb(245, 240, 232)' }}>
                     {review.author}
                   </p>
-                  <p className="text-[12px] font-sans" style={{ color: 'rgba(245, 240, 232, 0.6)' }}>
+                  <p className="text-[12px] font-sans" style={{ color: isDarkText ? '#6B6B6B' : 'rgba(245, 240, 232, 0.6)' }}>
                     {review.details}
                   </p>
                 </div>

@@ -22,9 +22,10 @@ const CTA = ({
             <h2 className="text-[42px] font-serif font-medium text-[#1A1A1A] leading-[1.2]">
               {title}
             </h2>
-            <p className="text-[18px] text-[#1A1A1A] font-sans leading-relaxed max-w-2xl mx-auto">
-              {description}
-            </p>
+            <p 
+              className="text-[18px] text-[#1A1A1A] font-sans leading-relaxed max-w-2xl mx-auto"
+              dangerouslySetInnerHTML={{ __html: description }}
+            />
           </div>
 
           {/* Action Buttons */}

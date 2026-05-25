@@ -19,7 +19,8 @@ export const panchakarmaJVCHero = {
     title: "5 MIN FROM JSS SCHOOL · 3 MIN FROM FIVE HOTEL",
     subtitle: "Convenient daily access for the 7-21 day programme."
   },
-  image: "https://images.unsplash.com/photo-1600334089648-b0d9d3028eb2?q=80&w=2070&auto=format&fit=crop"
+  image: "https://images.unsplash.com/photo-1600334089648-b0d9d3028eb2?q=80&w=2070&auto=format&fit=crop",
+  alt: "Vedara Care Panchakarma clinic entrance in Jumeirah Village Circle, Dubai near Circle Mall"
 };
 
 export const panchakarmaJVCIntro = {
@@ -27,7 +28,7 @@ export const panchakarmaJVCIntro = {
   label: "THE QUICK ANSWER",
   title: "Panchakarma in JVC, in one paragraph.",
   blockquote: "Vedara Care Polyclinic offers DHA-licensed, doctor-supervised classical Panchakarma at our clinic in Jumeirah Village Circle (JVC), Dubai — next to Circle Mall and three minutes from FIVE Jumeirah Village Hotel. We deliver 7-day, 14-day, and 21-day classical Panchakarma programmes prescribed and supervised by BAMS-qualified Ayurvedic physicians. Programmes start from AED 4,500 and treat chronic back pain, PCOS, stress, migraine, and constitutional reset. Free patient parking, daily clinic access for residents of JVC, JVT, Al Barsha South, Dubai Sports City, and Motor City.",
-  footer: "Medically reviewed by Dr. Priya Sharma, BAMS, MD (Ayurveda), DHA-Licensed · Last updated May 2026"
+  footer: "Medically reviewed by Dr. Priya Sharma, BAMS, MD (Ayurveda), DHA-Licensed · Read our <a href=\"/treatments/panchakarma-dubai/\" class=\"text-[#C9A961] hover:underline\">Panchakarma in Dubai guide</a> · Last updated May 2026"
 };
 
 export const panchakarmaJVCReviews = {
@@ -40,19 +41,19 @@ export const panchakarmaJVCReviews = {
   items: [
     {
       quote: "Eight minutes from my JVC apartment. That made the 14-day programme actually possible.",
-      content: "I had tried Panchakarma before but the drive always made it stressful. Being in JVC meant I could do the daily sessions and be back at my desk or with my kids in fifteen minutes. The results for my back pain have been life-changing.",
+      content: "",
       author: "Sarah K.",
       details: "Chronic Back Pain · 14-Day Programme · JVC District 12 · March 2026"
     },
     {
       quote: "My PCOS finally has an answer. Walking distance from FIVE Hotel where I live.",
-      content: "The convenience of having a DHA-licensed Ayurveda clinic right here in JVC is incredible. Dr. Priya is thorough and the treatments are authentic. Six months after my 21-day detox, my symptoms are still under control.",
+      content: "",
       author: "Aisha M.",
       details: "PCOS · 14-Day Programme · JVC District 10 · February 2026"
     },
     {
       quote: "I tried Panchakarma in Karama once. The drive killed it. JVC location changed everything.",
-      content: "For a 7-day reset, you need to be relaxed. Spending an hour in traffic each way defeats the purpose. This JVC clinic is professional, clean, and right on my doorstep in JVT.",
+      content: "",
       author: "Rohan D.",
       details: "Stress Reset · 7-Day Programme · JVT · January 2026"
     }
@@ -68,7 +69,7 @@ export const panchakarmaJVCFaqs = {
   bgColor: "bg-white",
   label: "JVC PANCHAKARMA QUESTIONS",
   title: "What JVC residents ask before booking.",
-  description: "For the educational deep-dive, our Panchakarma Dubai guide covers the protocol in full. Below are the practical, local questions our JVC patients ask first.",
+  description: "For the educational deep-dive, our <a href=\"/treatments/panchakarma-dubai/\" class=\"text-[#C9A961] hover:underline\">Panchakarma Dubai guide</a> covers the protocol in full. Below are the practical, local questions our JVC patients ask first.",
   buttonText: "Ask the Team",
   faqs: [
     {
@@ -81,7 +82,7 @@ export const panchakarmaJVCFaqs = {
     },
     {
       question: "How does Panchakarma at your JVC clinic compare to other Dubai Ayurveda clinics?",
-      answer: "We focus on classical Kerala-protocol Panchakarma with daily doctor supervision, private treatment rooms, and same-gender therapists. We do not offer \"weekend Panchakarma\" or spa-style packages. For a full comparison of how to choose a Panchakarma clinic in Dubai, read our Panchakarma in Dubai guide."
+      answer: "We focus on classical Kerala-protocol Panchakarma with daily doctor supervision, private treatment rooms, and same-gender therapists. We do not offer \"weekend Panchakarma\" or spa-style packages. For a full comparison of how to choose a Panchakarma clinic in Dubai, read our <a href=\"/treatments/panchakarma-dubai/\" class=\"text-[#C9A961] hover:underline\">Panchakarma in Dubai guide</a>."
     },
     {
       question: "Can I do Panchakarma at your JVC clinic while continuing to work?",
@@ -132,14 +133,15 @@ export const panchakarmaJVCLocation = {
   ],
   description: "Panchakarma sessions are typically scheduled 9:00 AM to 1:00 PM. Evening slots available on request.",
   buttonText: "Book Your Visit",
-  parkingText: "Three reserved Panchakarma patient parking spots + general patient parking"
+  parkingText: "Three reserved Panchakarma patient parking spots + general patient parking",
+  mapAlt: "Vedara Care Panchakarma clinic location in JVC Dubai next to Circle Mall"
  };
  
  export const panchakarmaJVCCTA = {
    bgColor: "bg-white",
    label: "READY TO BEGIN?",
    title: "Panchakarma in JVC starts with a consultation.",
-   description: "We do not sell Panchakarma packages over WhatsApp. Every programme begins with a 45-60 minute consultation where your doctor assesses whether Panchakarma is the right protocol for you, what specific actions to use, and what length your case calls for. For full educational background, see our Panchakarma in Dubai guide.",
+   description: "We do not sell Panchakarma packages over WhatsApp. Every programme begins with a 45-60 minute consultation where your doctor assesses whether Panchakarma is the right protocol for you, what specific actions to use, and what length your case calls for. For full educational background, see our <a href=\"/treatments/panchakarma-dubai/\" class=\"text-[#C9A961] hover:underline\">Panchakarma in Dubai guide</a>.",
    button1Text: "Book a Consultation",
    button2Text: "Chat on WhatsApp",
    subtext: "First consultations from AED 450 · Typical WhatsApp reply under 15 minutes"
@@ -210,7 +212,7 @@ export const panchakarmaJVCLocation = {
      {
        title: "Read the Full Panchakarma Guide →",
        description: "The complete educational guide to Panchakarma in Dubai. The five actions, three phases, costs across Dubai, and how to choose a clinic.",
-       href: "/treatments/panchakarma-dubai/"
+       href: "/treatments/panchakarma-dubai"
      },
      {
        title: "Our Ayurveda Clinic in JVC →",
