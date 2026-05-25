@@ -39,7 +39,7 @@ const PcosAyurvedaDubai = () => {
     <>
       <Head>
         <title>Ayurveda for PCOS in Dubai | Female Doctors | Vedara Care JVC</title>
-        <meta name="description" content="DHA-licensed Ayurvedic treatment for PCOS in Dubai by female BAMS doctors — Panchakarma, herbal medicine, dietary protocols. 6-month programme. From AED 1,500." />
+        <meta name="description" content="DHA-licensed Ayurvedic treatment for PCOS in Dubai by female BAMS doctors — Panchakarma, herbal medicine, dietary protocols. 6-month programme. From AED 450." />
         <meta name="robots" content="index, follow, max-image-preview:large" />
         
         {/* Open Graph */}
@@ -162,21 +162,21 @@ const PcosAyurvedaDubai = () => {
                   "@type": "Offer",
                   "name": "PCOS Initial Assessment",
                   "priceCurrency": "AED",
-                  "price": "1500",
+                  "price": "450",
                   "description": "60-minute consultation with female Ayurvedic physician, phenotype classification, written treatment plan"
                 },
                 {
                   "@type": "Offer",
                   "name": "Standard 6-Month PCOS Programme",
                   "priceCurrency": "AED",
-                  "price": "12500",
+                  "price": "18500",
                   "description": "Comprehensive 6-month Ayurvedic PCOS treatment with Panchakarma, herbal medicines, dietary and lifestyle protocols"
                 },
                 {
                   "@type": "Offer",
                   "name": "Comprehensive PCOS + Fertility Programme",
                   "priceCurrency": "AED",
-                  "price": "18500",
+                  "price": "24500",
                   "description": "Extended 6-9 month programme for women trying to conceive, coordinated with fertility specialists"
                 }
               ]
