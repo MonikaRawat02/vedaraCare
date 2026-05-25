@@ -270,6 +270,7 @@ export const abhyangaHomeHealthcare = {
 
 export const abhyangaReviews = {
   bgColor: "bg-[#F7F3EC]",
+  isDarkText: true,
   label: "PATIENT OUTCOMES",
   title: "Abhyanga outcomes at Vedara Care.",
   items: [

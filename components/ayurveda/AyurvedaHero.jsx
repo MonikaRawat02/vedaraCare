@@ -85,7 +85,7 @@ const AyurvedaHero = ({
               </div>
               {/* Floating Card */}
               <div className="absolute bottom-5 left-5 bg-white shadow-xl rounded-[8px] px-5 py-4 max-w-[270px] border border-gray-50 z-10">
-                <p className="text-[14px] font-sans font-medium text-[#1A1A1A] mb-0.5">
+                <p className="text-[12px] font-sans font-medium text-[#C9A961] mb-0.5">
                   {floatingCard.title}
                 </p>
                 <p className="text-[12px] text-[#5a5a5a] font-sans leading-snug">

@@ -248,6 +248,7 @@ export const pcosBoundaries = {
 
 export const pcosReviews = {
   bgColor: "bg-[#FAF8F5]",
+  isDarkText: true,
   label: "PATIENT OUTCOMES",
   title: "Real PCOS outcomes from our JVC clinic.",
   items: [

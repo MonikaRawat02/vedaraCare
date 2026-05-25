@@ -1,43 +1,66 @@
 import React from 'react';
 
 const TreatmentProtocol = ({
-  bgColor = "bg-[#FAF6EF]",
-  label = "",
+  bgColor = "bg-white",
+  label = "THE TREATMENT PROTOCOL",
   title = "",
   description = "",
   phases = [],
   footer = ""
 }) => {
   return (
-    <section className={`${bgColor} py-24 px-6 relative overflow-hidden`}>
-      <div className="max-w-[1280px] mx-auto">
+    <section className={`${bgColor} py-24 px-6`}>
+      <div className="max-w-5xl mx-auto">
         <div className="text-center mb-16">
-          <p className="text-[13px] font-sans font-semibold tracking-[0.15em] text-[#C9A961] uppercase block mb-4">
+          <div 
+            className="text-sm font-semibold tracking-wider mb-3"
+            style={{ color: 'rgb(200, 151, 95)' }}
+          >
             {label}
-          </p>
-          
-          <h2 className="text-[clamp(1.7rem,2.8vw,2.5rem)] font-serif font-normal text-[#1A1A1A] leading-[1.2] mb-6">
+          </div>
+          <h2 
+            className="text-4xl mb-4"
+            style={{ fontFamily: 'Georgia, serif', color: 'rgb(26, 26, 26)' }}
+          >
             {title}
           </h2>
-          
-          <p className="text-[16px] font-sans text-[#4A4A4A] max-w-2xl mx-auto">
-            {description}
-          </p>
+          {description && (
+            <p 
+              className="max-w-2xl mx-auto"
+              style={{ color: 'rgb(107, 114, 128)' }}
+            >
+              {description}
+            </p>
+          )}
         </div>
 
-        <div className="max-w-[900px] mx-auto space-y-8">
+        <div className="space-y-8">
           {phases.map((phase, index) => (
-            <div key={index} className="flex gap-6 border-l-4 border-[#C8975F] pl-8 py-4">
+            <div 
+              key={index} 
+              className="flex gap-6 border-l-4 pl-8 py-4"
+              style={{ borderColor: 'rgb(200, 151, 95)' }}
+            >
               <div className="flex-shrink-0">
-                <div className="text-[#C8975F] font-semibold text-sm mb-1">
+                <div 
+                  className="font-semibold text-sm mb-1"
+                  style={{ color: 'rgb(200, 151, 95)' }}
+                >
                   {phase.time}
                 </div>
               </div>
+
               <div>
-                <h3 className="text-xl font-semibold text-[#1A1A1A] mb-2">
+                <h3 
+                  className="text-xl font-semibold mb-2"
+                  style={{ color: 'rgb(26, 26, 26)' }}
+                >
                   {phase.title}
                 </h3>
-                <p className="text-gray-700 leading-relaxed">
+                <p 
+                  className="leading-relaxed"
+                  style={{ color: 'rgb(75, 85, 99)' }}
+                >
                   {phase.content}
                 </p>
               </div>
@@ -46,7 +69,10 @@ const TreatmentProtocol = ({
         </div>
 
         {footer && (
-          <p className="mt-12 text-[13px] text-[#6B6B6B] font-sans text-center max-w-2xl mx-auto">
+          <p 
+            className="text-center text-sm mt-12"
+            style={{ color: 'rgb(107, 114, 128)' }}
+          >
             {footer}
           </p>
         )}
