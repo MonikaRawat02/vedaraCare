@@ -121,43 +121,89 @@ export const pcosBenefits = {
 
 
 export const pcosProtocol = {
-  bgColor: "bg-[#FFFFFF]",
+  bgColor: "bg-white",
   label: "WHAT TO EXPECT",
   title: "What six months of PCOS treatment at Vedara Care actually looks like.",
-  description: "A representative protocol. Your specific plan varies based on phenotype, symptom severity, and life context — but this gives you a realistic picture of the commitment and what unfolds.",
-  phases: [
+  subtitle: "A representative protocol. Your specific plan varies based on phenotype, symptom severity, and life context — but this gives you a realistic picture of the commitment and what unfolds.",
+  steps: [
     {
-      time: "MONTH 1",
+      week: "MONTH 1",
       title: "Assessment & Foundation",
-      content: "Your programme begins with a 60-90 minute consultation with a female BAMS doctor. We review your existing diagnoses, ultrasound reports, and hormone panels. We assess your dosha, phenotype, current symptoms, lifestyle, and goals. You receive your initial written treatment plan including herbal prescriptions, basic dietary guidelines, and lifestyle recommendations."
+      items: [
+        "Initial 60-minute consultation with female Ayurvedic physician",
+        "Review of existing diagnoses, ultrasounds, hormone panels, current medications",
+        "Pulse diagnosis, dosha assessment, phenotype classification",
+        "Cycle history mapping and symptom baseline",
+        "Initial herbal medicine protocol begins",
+        "Dietary plan introduced gradually",
+        "Weekly Abhyanga (3-4 sessions) for foundational Vata pacification"
+      ],
+      expected: "Clear phenotype diagnosis, baseline tracking established, initial medicines well-tolerated, first dietary adjustments adopted"
     },
     {
-      time: "MONTH 2",
+      week: "MONTH 2",
       title: "Panchakarma Cleansing",
-      content: "For most phenotypes (especially A and B), Month 2 includes Panchakarma therapy — typically Virechana (therapeutic purgation) as the primary procedure, preceded by preparatory Abhyanga and Snehana (oleation) therapies. Panchakarma is performed only at our JVC clinic and requires 5-10 days of dedicated time."
+      items: [
+        "7-14 day Panchakarma programme (timing planned around your cycle)",
+        "Pre-Panchakarma preparation (Snehapana, Abhyanga, Swedana)",
+        "Virechana as primary action; selective Basti where indicated",
+        "Structured Paschatkarma (recovery) with specific dietary protocol",
+        "Resumption of monthly herbal medicines with adjusted dosing post-Panchakarma"
+      ],
+      expected: "Significant initial shifts often visible — improved digestion, better sleep, some cycle regulation. Patients commonly describe feeling \"lighter\" or \"clearer\""
     },
     {
-      time: "MONTH 3",
+      week: "MONTH 3",
       title: "Active Treatment Phase",
-      content: "With the foundation set, we enter the active treatment phase. Your herbal protocol is adjusted based on your response to Panchakarma. We focus on cycle regulation, insulin sensitivity, and symptom-specific treatment (acne, hirsutism, hair loss). You have a follow-up consultation every 2-4 weeks to monitor progress."
+      items: [
+        "Mid-programme doctor review with updated assessment",
+        "Refined herbal medicine protocol",
+        "Dietary plan deepened based on response",
+        "Specific lifestyle protocols added (sleep optimisation, stress regulation)",
+        "Weekly or fortnightly Shirodhara if stress is a major factor",
+        "First cycle data review (typically 2-3 cycles since starting)"
+      ],
+      expected: "Meaningful change typically visible — cycle regulation improving, acne and skin texture changes, energy improvements, sometimes weight changes"
     },
     {
-      time: "MONTH 4",
+      week: "MONTH 4",
       title: "Consolidation",
-      content: "By Month 4, most patients begin to see measurable changes — more regular cycles, improved energy, reduced sugar cravings, better sleep. We consolidate these gains, adjust herbal dosages, and begin to transition you toward more sustainable, less intensive protocols. Fertility-focused patients receive additional support at this stage if desired."
+      items: [
+        "Continued herbal medicines with phenotype-specific adjustments",
+        "Continued dietary protocol with cultural integration",
+        "Possible second short Panchakarma (5-7 days) for complex phenotypes",
+        "Ongoing symptom and cycle tracking",
+        "Lab work review (if you bring updated hormone panels)"
+      ],
+      expected: "Cycle regularity often substantially improved, insulin resistance markers may show change on bloodwork, symptomatic improvements consolidating"
     },
     {
-      time: "MONTH 5",
+      week: "MONTH 5",
       title: "Refinement",
-      content: "We refine your protocol based on how you're responding to treatment. Some patients need more focus on metabolic health; others need more focus on stress or fertility. We may add supportive therapies like Abhyanga or Shirodhara as needed. You learn to recognize your own body's signals to maintain progress independently."
+      items: [
+        "Personalised medicine protocol approaching maintenance dose",
+        "Dietary plan transitioning to long-term sustainable version",
+        "Stress and sleep protocols becoming habit rather than effort",
+        "Discussion of fertility timing if applicable",
+        "Plan for life beyond the active programme"
+      ],
+      expected: "Most symptomatic improvements stable, cycle pattern often near-regular, lifestyle changes becoming natural"
     },
     {
-      time: "MONTH 6",
+      week: "MONTH 6",
       title: "Discharge & Long-Term Plan",
-      content: "Your final month includes a comprehensive review of your progress, a discharge consultation, and a long-term maintenance plan. Most patients transition to a simplified herbal protocol, ongoing dietary guidelines, and quarterly check-ins. For many women, this is the point they've been waiting for — feeling like themselves again, with regular cycles and fewer PCOS symptoms."
+      items: [
+        "Final comprehensive review",
+        "Transition to maintenance protocol",
+        "Home herbal protocol (3-month maintenance course)",
+        "Lifestyle and dietary plan documented for long-term",
+        "3-month and 6-month follow-up appointments scheduled",
+        "Annual return visits recommended for many patients"
+      ],
+      expected: "Substantial sustained improvement, clear home maintenance protocol, return to gynaecology with documented improvements for joint review"
     }
   ],
-  footer: "Every patient's journey is different. Some need a shorter programme; some need a longer programme; some need to add fertility-specific protocols. Your female doctor will recommend the right timeline for you at your initial consultation."
+  footer: "This is a representative 6-month programme. Some patients need 4 months, others need 9. Some need a second Panchakarma in month 4 or 5. Some need ongoing support beyond 6 months. Your plan is documented and updated at each monthly review — never a static package."
 };
 
 export const pcosSymptoms = {
