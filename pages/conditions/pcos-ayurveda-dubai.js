@@ -4,7 +4,7 @@ import AyurvedaIntro from '../../components/ayurveda/AyurvedaIntro';
 import TreatmentMechanism from '../../components/ayurveda/TreatmentMechanism';
 import ConditionPhenotypes from '../../components/ayurveda/ConditionPhenotypes';
 import TreatmentBenefits from '../../components/ayurveda/TreatmentBenefits';
-import TreatmentProtocol from '../../components/ayurveda/TreatmentProtocol';
+import TreatmentProtocol from '../../components/ayurveda/Protocols';
 import ConditionSymptoms from '../../components/ayurveda/ConditionSymptoms';
 import ConditionFertility from '../../components/ayurveda/ConditionFertility';
 import ConditionBoundaries from '../../components/ayurveda/ConditionBoundaries';

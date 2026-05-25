@@ -397,7 +397,7 @@ export const abhyangaFinalCTA = {
 };
 
 export const abhyangaRelatedPages = {
-  bgColor: "bg-[#EDE7D9]",
+  bgColor: "bg-[#F5F0E8]",
   label: "EXPLORE FURTHER",
   title: "Related pages.",
   linkText: "Browse all Ayurvedic treatments",
