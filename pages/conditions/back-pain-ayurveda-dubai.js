@@ -12,7 +12,7 @@ import RelatedPages from '../../components/ayurveda/RelatedPages';
 import TreatmentPrograms from '../../components/ayurveda/TreatmentPrograms';
 import BackPainConditions from '../../components/ayurveda/BackPainConditions';
 import ClinicalBoundaries from '../../components/ayurveda/ClinicalBoundaries';
-import TreatmentProtocol from '../../components/ayurveda/TreatmentProtocol';
+import TreatmentProtocol from '../../components/ayurveda/Protocols';
 
 import {
   ayurvedicBackPainHero,
