@@ -3,6 +3,7 @@ import { Check } from 'lucide-react';
 
 const TreatmentPrograms = ({
   bgColor = "bg-white",
+  cardBg = "rgb(250, 248, 245)",
   label = "",
   title = "",
   description = "",
@@ -32,7 +33,7 @@ const TreatmentPrograms = ({
               key={index} 
               className="p-8 rounded-lg relative"
               style={{ 
-                backgroundColor: 'rgb(250, 248, 245)', 
+                backgroundColor: cardBg, 
                 border: program.featured ? '2px solid rgb(201, 169, 97)' : 'none' 
               }}
             >
