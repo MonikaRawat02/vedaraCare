@@ -1,45 +1,48 @@
 import React from 'react';
 
 const TherapyGrid = ({
-  bgColor = "bg-white",
-  label = "THE TREATMENTS WE USE",
+  bgColor = "bg-[#FAF8F3]",
+  label = "THE SPECIFIC TREATMENTS",
   title = "",
   subtitle = "",
   items = []
 }) => {
+  const firstRow = items.slice(0, 3);
+  const secondRow = items.slice(3);
+  
   return (
     <section className={`${bgColor} py-24 px-6`}>
-      <div className="max-w-[1400px] mx-auto">
-        <div className="text-center space-y-4 mb-16">
-          <div className="text-sm tracking-wider text-[#C9A961] uppercase">
+      <div className="max-w-7xl mx-auto">
+        <div className="text-center mb-12">
+          <div className="text-xs tracking-wider text-[#B8860B] mb-3 uppercase">
             {label}
           </div>
-          <h2 className="text-4xl font-serif text-[#1A1A1A]">
+          <h2 className="text-4xl mb-4" style={{ fontFamily: 'Fraunces, serif' }}>
             {title}
           </h2>
           {subtitle && (
-            <p className="text-[#6B6B6B] max-w-[720px] mx-auto text-base">
+            <p className="text-muted-foreground max-w-3xl mx-auto">
               {subtitle}
             </p>
           )}
         </div>
 
-        <div className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-4 gap-6">
-          {items.map((item, index) => (
-            <div key={index} className="bg-[#FAF8F3] rounded-lg p-8 hover:shadow-lg transition-shadow">
-              <h3 className="text-2xl mb-2 text-[#C9A961] font-serif">
+        <div className="grid md:grid-cols-3 gap-6 mb-6">
+          {firstRow.map((item, index) => (
+            <div key={index} className="bg-white rounded-lg p-7 shadow-sm border-t-4 border-[#B8860B]">
+              <h3 className="text-xl text-[#B8860B] mb-2" style={{ fontFamily: 'Georgia, serif' }}>
                 {item.title}
               </h3>
-              <div className="text-sm italic text-gray-600 mb-4">
+              <p className="text-sm mb-3">
                 {item.subtitle}
-              </div>
-              <p className="text-sm text-gray-700 leading-relaxed mb-4">
+              </p>
+              <p className="text-sm leading-relaxed text-muted-foreground mb-4">
                 {item.description}
               </p>
               {item.link && (
                 <a 
                   href={item.link} 
-                  className="text-sm text-[#C9A961] hover:underline inline-flex items-center"
+                  className="text-[#B8860B] text-sm hover:underline"
                 >
                   {item.linkText || "Read more"} →
                 </a>
@@ -47,6 +50,32 @@ const TherapyGrid = ({
             </div>
           ))}
         </div>
+
+        {secondRow.length > 0 && (
+          <div className="grid md:grid-cols-2 gap-6 max-w-5xl mx-auto">
+            {secondRow.map((item, index) => (
+              <div key={index} className="bg-white rounded-lg p-7 shadow-sm border-t-4 border-[#B8860B]">
+                <h3 className="text-xl text-[#B8860B] mb-2" style={{ fontFamily: 'Georgia, serif' }}>
+                  {item.title}
+                </h3>
+                <p className="text-sm mb-3">
+                  {item.subtitle}
+                </p>
+                <p className="text-sm leading-relaxed text-muted-foreground mb-4">
+                  {item.description}
+                </p>
+                {item.link && (
+                  <a 
+                    href={item.link} 
+                    className="text-[#B8860B] text-sm hover:underline"
+                  >
+                    {item.linkText || "Read more"} →
+                  </a>
+                )}
+              </div>
+            ))}
+          </div>
+        )}
       </div>
     </section>
   );
