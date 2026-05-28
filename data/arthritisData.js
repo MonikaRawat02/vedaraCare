@@ -151,31 +151,31 @@ export const arthritisFaqs = {
     },
     {
       question: "Can Ayurveda cure arthritis?",
-      answer: "In classical Ayurveda, 'cure' (Sadhya) depends on the stage and type of arthritis. Early-stage osteoarthritis and frozen shoulder often resolve completely. For chronic inflammatory conditions like RA, the goal is 'Yapya' — maintaining a symptom-free state and preventing progression through ongoing internal medicine and periodic cleansing, allowing patients to lead a normal life."
+      answer: "No — and any clinic that promises this is being dishonest. Osteoarthritis is a progressive degenerative condition; Ayurvedic treatment can substantially slow progression and manage symptoms but not reverse joint degeneration. Rheumatoid arthritis and other autoimmune arthritis are chronic diseases requiring ongoing management. What sustained Ayurvedic treatment can produce: meaningful pain reduction, function improvement, slowed progression for OA, fewer flares for inflammatory arthritis, reduced medication needs in some cases, and improved quality of life."
     },
     {
       question: "Will Ayurvedic treatment delay my knee replacement surgery?",
-      answer: "In many cases of moderate osteoarthritis, a structured Ayurvedic protocol combined with physiotherapy can improve joint function and manage pain sufficiently to delay surgery for several years. However, for bone-on-bone Grade IV osteoarthritis, surgery remains the definitive treatment, and we focus on pre-surgical optimization."
+      answer: "Often, yes — particularly for moderate osteoarthritis without severe structural changes on X-ray. Many of our knee OA patients at the JVC clinic significantly delay or sometimes avoid joint replacement through 4-6 month programmes combining Janu Vasti, internal medicines, and physiotherapy. The decision about timing of joint replacement remains your orthopaedic surgeon's; we provide the symptom and function improvement that supports deferring surgery when clinically appropriate."
     },
     {
       question: "How is Ayurvedic treatment different for RA vs osteoarthritis?",
-      answer: "The treatments are fundamentally different. For osteoarthritis (degenerative), we focus on nourishment, oil-pooling (Snehana), and joint-strengthening. For Rheumatoid Arthritis (inflammatory), we focus on deep systemic cleansing (Panchakarma), internal anti-inflammatory medicines, and avoiding heavy oils during active flares."
+      answer: "Fundamentally different. Rheumatoid arthritis is autoimmune disease requiring conventional DMARDs (methotrexate, leflunomide) and often biologics — these are disease-modifying and essential. Ayurvedic treatment for RA is supportive — pain modulation, joint protection, adjunctive immune balance, quality of life. We never recommend stopping RA medications. Osteoarthritis is degenerative; Ayurvedic treatment can be primary therapy for many patients, particularly with strong localised joint therapies and physiotherapy integration."
     },
     {
       question: "Can I do Ayurvedic treatment while on methotrexate or biologics?",
-      answer: "Yes, but with coordination. We do not stop your conventional medications. Our Ayurvedic physicians design supportive protocols that work alongside your DMARDs or biologics to manage symptoms and improve quality of life, while carefully avoiding contraindications."
+      answer: "Yes. Many of our rheumatoid arthritis and ankylosing spondylitis patients are on methotrexate, hydroxychloroquine, biologics (adalimumab, etanercept, infliximab, tocilizumab), or JAK inhibitors. Ayurvedic treatment is compatible. We do not adjust your immunosuppressive medications — that is your rheumatologist's decision based on disease activity, ESR/CRP, and clinical response. We coordinate throughout the programme."
     },
     {
       question: "How much does Ayurvedic arthritis treatment cost in Dubai?",
-      answer: "Initial consultations are AED 350. Structured 3-9 month programmes vary based on the required therapies. A typical 7-session course of localized therapy starts from AED 2,200. We provide a full cost breakdown after your first assessment."
+      answer: "At Vedara Care, initial assessment starts from AED [price]. A standard 4-6 month arthritis programme starts from AED [price]. A comprehensive integrated programme starts from AED [price]. Across Dubai, comprehensive Ayurvedic arthritis programmes typically range from AED 8,000 to AED 25,000. Knee replacement surgery in Dubai typically costs AED 40,000-80,000 — for OA patients potentially delaying or avoiding surgery, the Ayurvedic programme often pays for itself many times over."
     },
     {
       question: "How quickly will I feel improvement?",
-      answer: "For pain management, many patients feel relief within the first 2 weeks. However, for disease-modifying outcomes in chronic arthritis, we typically look for meaningful functional changes at the 3-month and 6-month marks."
+      answer: "Most osteoarthritis patients feel meaningful pain reduction within the first 4-5 sessions of localised therapy (typically 2-3 weeks). For frozen shoulder, range of motion often improves visibly by week 2-3. For rheumatoid arthritis, the supportive effects accumulate over 8-12 weeks. For inflammatory arthritis flares, expect supportive symptom relief but not rapid disease modification."
     },
     {
       question: "Where exactly is your arthritis clinic in Dubai?",
-      answer: "We are located in Jumeirah Village Circle (JVC), right next to Circle Mall. We have dedicated parking for patients and are easily accessible from Al Khail Road and Hessa Street."
+      answer: "Our clinic is at [full address] in Jumeirah Village Circle (JVC), Dubai — next to Circle Mall, three minutes from FIVE Jumeirah Village Hotel, and five minutes from JSS Private School. Free patient parking is available. Patients travel to us from across Dubai including JVC, JVT, Al Barsha South, Dubai Sports City, Motor City, Arjan, Dubai Hills, Marina, Downtown, Palm Jumeirah, and Mirdif. For elderly patients with mobility limitations, we also offer home services for some sessions."
     }
   ]
 };

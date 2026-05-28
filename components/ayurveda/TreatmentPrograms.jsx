@@ -79,15 +79,24 @@ const TreatmentPrograms = ({
                 </div>
               )}
 
-              {/* WhatsApp Button */}
-              <a
-                href={whatsappUrl}
-                target="_blank"
-                rel="noopener noreferrer"
-                className="w-full bg-[#25D366] hover:bg-[#20BD5A] text-white text-sm font-semibold py-3 px-6 rounded-lg text-center transition-colors"
-              >
-                Enquire on WhatsApp
-              </a>
+              {/* Dynamic Button or WhatsApp Button */}
+              {program.buttonText ? (
+                <button
+                  className="w-full text-white text-sm font-semibold py-3 px-6 rounded-lg text-center transition-colors"
+                  style={{ backgroundColor: program.buttonColor || '#1F4538' }}
+                >
+                  {program.buttonText}
+                </button>
+              ) : (
+                <a
+                  href={whatsappUrl}
+                  target="_blank"
+                  rel="noopener noreferrer"
+                  className="w-full bg-[#25D366] hover:bg-[#20BD5A] text-white text-sm font-semibold py-3 px-6 rounded-lg text-center transition-colors"
+                >
+                  Enquire on WhatsApp
+                </a>
+              )}
             </div>
           ))}
         </div>
