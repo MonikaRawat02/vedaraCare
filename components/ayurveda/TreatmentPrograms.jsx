@@ -8,7 +8,8 @@ const TreatmentPrograms = ({
   title = "",
   description = "",
   programs = [],
-  footer = ""
+  footer = "",
+  whatsappUrl = "https://wa.me/971500000000" // Default WhatsApp URL
 }) => {
   return (
     <section className={`${bgColor} py-24`}>
@@ -31,7 +32,7 @@ const TreatmentPrograms = ({
           {programs.map((program, index) => (
             <div 
               key={index} 
-              className="p-8 rounded-lg relative"
+              className="p-8 rounded-lg relative flex flex-col"
               style={{ 
                 backgroundColor: cardBg, 
                 border: program.featured ? '2px solid rgb(201, 169, 97)' : 'none' 
@@ -55,7 +56,7 @@ const TreatmentPrograms = ({
                 {program.duration}
               </div>
               
-              <ul className="space-y-3 mb-6">
+              <ul className="space-y-3 mb-6 flex-grow">
                 {program.features.map((feature, i) => (
                   <li key={i} className="flex items-start gap-2 text-sm">
                     <Check className="w-4 h-4 mt-0.5 flex-shrink-0" style={{ color: 'rgb(201, 169, 97)' }} />
@@ -68,7 +69,7 @@ const TreatmentPrograms = ({
               
               {program.bestFor && (
                 <div 
-                  className="pt-6 border-t text-sm" 
+                  className="pt-6 border-t text-sm mb-6" 
                   style={{ borderColor: 'rgb(201, 169, 97)' }}
                 >
                   <span className="font-medium">Best for:</span>
@@ -77,6 +78,16 @@ const TreatmentPrograms = ({
                   </p>
                 </div>
               )}
+
+              {/* WhatsApp Button */}
+              <a
+                href={whatsappUrl}
+                target="_blank"
+                rel="noopener noreferrer"
+                className="w-full bg-[#25D366] hover:bg-[#20BD5A] text-white text-sm font-semibold py-3 px-6 rounded-lg text-center transition-colors"
+              >
+                Enquire on WhatsApp
+              </a>
             </div>
           ))}
         </div>
