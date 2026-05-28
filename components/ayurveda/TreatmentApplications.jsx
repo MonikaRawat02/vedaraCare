@@ -1,10 +1,10 @@
 import React from 'react';
-import { Check, X } from 'lucide-react';
+import { Check, X, Info } from 'lucide-react';
 
 const TreatmentApplications = ({
   bgColor = "bg-white",
   label = "CLINICAL APPLICATIONS",
-  title = "What Kativasti actually treats — and how it integrates with conventional care.",
+  title = "",
   description = "",
   primaryApplications = [],
   honestLimits = {},
@@ -14,9 +14,11 @@ const TreatmentApplications = ({
   honestNote = "",
   footer = "",
   strongIndicationsLabel = "STRONG INDICATIONS",
-  complementaryUseLabel = "COMPLEMENTARY USE"
+  complementaryUseLabel = "COMPLEMENTARY USE",
+  applications = []
 }) => {
   const isNewFormat = whereItExcels && whereItExcels.length > 0;
+  const isApplicationsFormat = applications && applications.length > 0;
 
   const renderOldFormat = () => (
     <div className="grid lg:grid-cols-2 gap-12">
@@ -170,67 +172,92 @@ const TreatmentApplications = ({
     </div>
   );
 
+  const renderApplicationsFormat = () => (
+    <div className="grid md:grid-cols-2 lg:grid-cols-3 gap-6">
+      {applications.map((item, index) => (
+        <div 
+          key={index} 
+          className="bg-white rounded-xl p-8 shadow-sm hover:shadow-md transition-shadow border border-[rgb(237,232,222)]"
+        >
+          <div className="flex items-center gap-2 mb-3">
+            {item.suitable === true && (
+              <Check 
+                size={18}
+                style={{ color: 'rgb(184, 145, 90)' }}
+              />
+            )}
+            {item.suitable === "partial" && (
+              <Info 
+                size={18}
+                style={{ color: 'rgb(184, 145, 90)' }}
+              />
+            )}
+            {item.suitable === false && (
+              <X 
+                size={18}
+                style={{ color: 'rgb(157, 148, 139)' }}
+              />
+            )}
+            <h3 className="text-lg font-semibold" style={{ color: 'rgb(28, 28, 26)', fontFamily: 'DM Sans, sans-serif' }}>
+              {item.title}
+            </h3>
+          </div>
+          {item.subtitle && (
+            <p className="text-sm mb-3" style={{ color: 'rgb(107, 99, 89)' }}>
+              {item.subtitle}
+            </p>
+          )}
+          <p className="text-sm leading-relaxed" style={{ color: 'rgb(74, 67, 60)' }}>
+            {item.description}
+          </p>
+        </div>
+      ))}
+    </div>
+  );
+
   return (
-    <section className={`${bgColor} py-24 px-6 relative overflow-hidden`} style={{ backgroundColor: isNewFormat ? 'rgb(255, 255, 255)' : undefined }}>
+    <section className={`${bgColor} py-24 px-6 relative overflow-hidden`}>
       <div className="max-w-7xl mx-auto">
         <div className="text-center mb-16">
-          {isNewFormat ? (
-            <>
-              <p 
-                className="text-xs font-semibold tracking-[0.18em] uppercase mb-4"
-                style={{ 
-                  color: 'rgb(184, 145, 90)', 
-                  fontFamily: '"DM Sans", sans-serif' 
-                }}
-              >
-                {label}
-              </p>
-              <h2 
-                className=""
-                style={{ 
-                  fontFamily: 'Fraunces, serif', 
-                  fontWeight: '500', 
-                  fontSize: 'clamp(1.5rem, 3vw, 2.1rem)', 
-                  color: 'rgb(28, 28, 26)', 
-                  lineHeight: '1.25' 
-                }}
-              >
-                {title}
-              </h2>
-              {description && (
-                <p 
-                  className="text-sm leading-relaxed"
-                  style={{ 
-                    color: 'rgb(107, 99, 89)', 
-                    maxWidth: '580px', 
-                    margin: '0px auto' 
-                  }}
-                >
-                  {description}
-                </p>
-              )}
-            </>
-          ) : (
-            <>
-              <div className="text-[#C8975F] text-sm font-semibold tracking-wider mb-3">
-                {label}
-              </div>
-              <h2 className="text-4xl text-[#1A1A1A] mb-4" style={{ fontFamily: 'var(--font-serif)' }}>
-                {title}
-              </h2>
-              {description && (
-                <p className="text-gray-600 max-w-2xl mx-auto">
-                  {description}
-                </p>
-              )}
-            </>
+          <p 
+            className="text-xs font-semibold tracking-[0.18em] uppercase mb-4"
+            style={{ 
+              color: 'rgb(184, 145, 90)', 
+              fontFamily: '"DM Sans", sans-serif' 
+            }}
+          >
+            {label}
+          </p>
+          <h2 
+            className=""
+            style={{ 
+              fontFamily: 'Fraunces, serif', 
+              fontWeight: '500', 
+              fontSize: 'clamp(1.5rem, 3vw, 2.1rem)', 
+              color: 'rgb(28, 28, 26)', 
+              lineHeight: '1.25' 
+            }}
+          >
+            {title}
+          </h2>
+          {description && (
+            <p 
+              className="text-sm leading-relaxed"
+              style={{ 
+                color: 'rgb(107, 99, 89)', 
+                maxWidth: '580px', 
+                margin: '0px auto' 
+              }}
+            >
+              {description}
+            </p>
           )}
         </div>
 
-        {isNewFormat ? renderNewFormat() : renderOldFormat()}
+        {isApplicationsFormat ? renderApplicationsFormat() : (isNewFormat ? renderNewFormat() : renderOldFormat())}
 
         {footer && (
-          <p className="text-center text-gray-600 max-w-3xl mx-auto mt-12">
+          <p className="text-center max-w-3xl mx-auto mt-12" style={{ color: 'rgb(74, 67, 60)' }}>
             {footer}
           </p>
         )}
