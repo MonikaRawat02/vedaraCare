@@ -228,83 +228,83 @@ export const migraineFaqs = {
   faqs: [
     {
       question: "Does Ayurvedic treatment actually work for migraine?",
-      answer: "For most migraine subtypes, yes — when treatment is a structured 4-6 month medical programme. Across our 280+ migraine patients at the JVC clinic, episodic migraine patients typically see 40-70% reduction in migraine days over 6 months. Chronic migraine patients typically see 25-50% reduction. This is not a cure — migraine remains a lifelong condition — but meaningful sustained reduction is realistic."
+      answer: "For most migraine subtypes, yes — when treatment is a structured 4-6 month medical programme, not a single therapy or supplement. Across our 280+ migraine patients at the JVC clinic, episodic migraine patients typically see 40-70% reduction in migraine days over 6 months. Chronic migraine patients typically see 25-50% reduction. Menstrual migraine often responds particularly well. This is not a \"cure\"— migraine remains a lifelong neurological condition — but meaningful, sustained reduction in frequency and severity is realistic."
     },
     {
       question: "Can Ayurveda cure migraine?",
-      answer: "While 'cure' is a complex term in chronic neurological disease, our goal is long-term remission and significant reduction in attack frequency, allowing patients to live a normal life."
+      answer: "No. Migraine is a primary neurological disease with strong genetic components. We will not promise a cure, and any clinic that does is being dishonest. What sustained Ayurvedic treatment can produce: substantial reduction in migraine frequency, reduction in attack severity, reduction in acute medication use, improvement in attack management, and improvement in quality of life between attacks. For many patients, this is genuinely life-changing — but it is not a cure."
     },
     {
       question: "How long does Ayurvedic migraine treatment take?",
-      answer: "Programmes typically run for 6 to 12 months, depending on whether the migraine is episodic or chronic."
+      answer: "A standard programme runs 6 months for most patients. Episodic migraine with moderate frequency often shows substantial improvement by month 3-4. Chronic migraine typically needs the full 6 months and sometimes extension to 9-12 months. Medication overuse headache requires longer programmes including withdrawal support. Sustained outcomes require continued maintenance protocols beyond the active programme."
     },
     {
       question: "How is Ayurvedic migraine treatment different from preventive medications?",
-      answer: "Preventives often suppress the nervous system; Ayurveda aims to address the underlying physiological imbalances (doshas) and triggers that cause the system to overreact."
+      answer: "Preventive medications (propranolol, topiramate, amitriptyline, CGRP inhibitors, etc.) work pharmacologically to reduce migraine frequency. Ayurvedic treatment addresses the underlying nervous-system and Pitta-Vata patterns through Shirodhara, Nasya, internal medicines, and trigger management. They are not competing approaches — they work on different mechanisms. Many of our most successful patients use both. The goal is integrated care, not \"natural alternative\" positioning."
     },
     {
       question: "Can I do Ayurvedic treatment while on migraine preventives?",
-      answer: "Yes. We work alongside your existing medications and coordinate with your neurologist."
+      answer: "Yes. The vast majority of our migraine patients are on preventive medications — propranolol, topiramate, candesartan, amitriptyline, CGRP inhibitors (Aimovig, Ajovy, Emgality, Vyepti), Botox preventive, or others. Ayurvedic treatment is compatible with all of these. We never ask you to stop preventive medication. After documented frequency reduction, your neurologist may consider medication adjustments — that decision is always theirs, never ours."
     },
     {
       question: "Will Ayurvedic herbs interact with my migraine medications?",
-      answer: "Our BAMS-qualified physicians are trained to identify potential interactions and ensure Ayurvedic protocols are safe alongside conventional treatments."
+      answer: "Most Ayurvedic herbs used at our JVC clinic for migraine are compatible with common migraine medications. Specific attention is paid to interactions with serotonergic medications (triptans, SSRIs) and beta-blockers. Your full medication list is reviewed at consultation. We err strongly on the side of caution and communicate with your neurologist or prescribing physician when needed."
     },
     {
       question: "How much does Ayurvedic migraine treatment cost in Dubai?",
-      answer: "Initial assessments are AED 350. Full programmes vary based on severity; we provide a complete cost breakdown after your first assessment."
+      answer: "At Vedara Care, initial assessment starts from AED [price]. A standard 6-month migraine programme starts from AED [price]. A comprehensive chronic migraine programme starts from AED [price]. Across Dubai, comprehensive Ayurvedic migraine programmes typically range from AED 12,000 to AED 35,000. Many patients find this comparable to or less than the annual cost of CGRP inhibitors or Botox preventive therapy."
     },
     {
       question: "Will I have to stop my triptans?",
-      answer: "No. Triptans remain a valid acute treatment. Our goal is to reduce your *need* for them over time by reducing attack frequency."
+      answer: "No. Triptans, gepants, NSAIDs, and other acute medications remain available throughout the programme. We do not ask you to \"tough out\" attacks. The goal is reducing attack frequency so that acute medication use naturally decreases. For patients with medication overuse headache — where acute medication use itself perpetuates the condition — withdrawal is supervised by your neurologist with Ayurvedic supportive care during the withdrawal period."
     },
     {
       question: "What about CGRP inhibitors? Should I switch to Ayurveda?",
-      answer: "CGRP inhibitors are effective for many. Ayurveda can be a supportive adjunctive therapy alongside them or an alternative if they are not suitable for you."
+      answer: "CGRP inhibitors (Aimovig, Ajovy, Emgality, Vyepti) represent a significant therapeutic advance for many migraine patients. For patients responding well to them, we recommend continuation. For patients who started CGRP inhibitors and want to address underlying patterns, Ayurvedic treatment complements them. For patients considering CGRP inhibitors but exploring alternatives first, the conversation depends on your specific subtype, frequency, and previous treatment history."
     },
     {
       question: "What does Shirodhara feel like?",
-      answer: "It is a deeply relaxing therapy where warm medicated oil is poured rhythmically over the forehead, calming the nervous system and reducing neuro-inflammation."
+      answer: "Shirodhara involves lying still on a wooden droni table while warm medicated oil flows from a copper vessel suspended above your forehead, in a continuous gentle stream for 35 minutes. Most patients describe the first 5-10 minutes as ordinary calm, then a particular kind of slowed consciousness that is unlike anything else. The therapy is widely considered one of the most pleasant medical treatments in the entire Ayurvedic system. For migraine specifically, many patients describe it as \"the first time my head has felt clear in years.\""
     },
     {
       question: "Will Nasya hurt? Is it tolerable?",
-      answer: "Nasya involves administering medicated drops into the nostrils. While it can be a slightly intense sensation for a few minutes, it is well-tolerated and highly effective for head conditions."
+      answer: "Nasya is the most clinically important treatment for migraine in classical Ayurveda — and yes, it requires some tolerance for the first session or two. The procedure involves medicated oil drops administered through each nostril while you are reclined. The first session can feel mildly uncomfortable as the oil reaches the back of the throat. By session 3-4, most patients describe it as easily tolerable. Side effects are minor — slight nasal congestion or sneezing for an hour or two. The clinical benefit for migraine substantially outweighs the brief discomfort."
     },
     {
       question: "What dietary changes will I need to make?",
-      answer: "We focus on a Pitta-pacifying diet, identifying and removing personal triggers like aged cheese, MSG, or specific caffeine patterns."
+      answer: "The dietary protocol is dosha-specific and trigger-aware. General principles for most migraine patients: identify and avoid your specific triggers (often aged cheese, processed meats, MSG, certain wines, chocolate for some patients), reduce inflammatory foods, regulate caffeine carefully (sometimes maintenance helps; sometimes withdrawal helps — depends on pattern), maintain consistent meal timing (skipping meals is a major trigger), and reduce Pitta-aggravating foods for most migraine subtypes. Implemented gradually with attention to sustainability."
     },
     {
       question: "Can pregnant women have Ayurvedic migraine treatment?",
-      answer: "We offer modified, safe protocols for pregnant and lactating women, focusing on gentle external therapies and dietary management."
+      answer: "Modified Ayurvedic protocols are available during pregnancy. Active Panchakarma and aggressive Nasya are typically not performed. Shirodhara with appropriate oils, gentle Abhyanga, and pregnancy-safe herbal medicines are available. For menstrual migraine that improves with pregnancy (common), preventive treatment may be paused. For migraine that worsens with pregnancy (less common), specialised pregnancy-safe protocols are designed with obstetric coordination."
     },
     {
       question: "Can children and teenagers have Ayurvedic migraine treatment?",
-      answer: "Yes, we provide age-appropriate, gentle Ayurvedic care for younger patients suffering from migraine."
+      answer: "Yes, with modified protocols. Paediatric migraine is increasingly recognised. For adolescents (typically 12+) with parental consultation and often alongside paediatric neurology, modified Ayurvedic programmes are available — shorter Shirodhara sessions, gentler Nasya, age-appropriate herbal doses, and family-coordinated trigger management. For younger children with migraine, the focus is on lifestyle, sleep, and trigger management rather than directed treatment programmes."
     },
     {
       question: "What about menstrual migraine specifically?",
-      answer: "We use cycle-specific protocols that address the hormonal shifts triggering these attacks, often with very high success rates."
+      answer: "Menstrual migraine has specific Ayurvedic protocols recognising the hormonal pattern. Treatment integrates with general migraine therapy but adds cycle-specific timing — preventive intensification in the days before expected migraine onset, hormonal-pattern dietary modifications, and where applicable, integrated treatment with PCOS or other hormonal patterns. For women on hormonal contraception with migraine, your specific situation is reviewed carefully — combined hormonal contraception with migraine with aura has cardiovascular implications that affect treatment selection."
     },
     {
       question: "Does this work for vestibular migraine?",
-      answer: "Yes. Vestibular migraine (vertigo/dizziness) responds well to specific Vata-pacifying Ayurvedic protocols."
+      answer: "Vestibular migraine — migraine with prominent vertigo, balance issues, or motion sensitivity — responds to modified Ayurvedic protocols. Treatment is typically gentler and slower-paced than for other subtypes. Shirodhara is often reduced in duration initially. Vestibular-specific Ayurvedic medicines and vertigo-focused protocols are added. Coordination with neurology and sometimes ENT is essential — vestibular migraine is frequently misdiagnosed as inner ear disorders for years."
     },
     {
       question: "Where exactly is your migraine clinic in Dubai?",
-      answer: "We are located in Jumeirah Village Circle (JVC), right next to Circle Mall, with dedicated rooms for Shirodhara and Nasya."
+      answer: "Our clinic is at [full address] in Jumeirah Village Circle (JVC), Dubai — next to Circle Mall, three minutes from FIVE Jumeirah Village Hotel, and five minutes from JSS Private School. Free patient parking is available. Patients travel to us from across Dubai including JVC, JVT, Al Barsha South, Dubai Sports City, Motor City, Arjan, Dubai Hills, Marina, Downtown, Palm Jumeirah, and Mirdif."
     },
     {
       question: "Do you coordinate with Dubai neurologists?",
-      answer: "Yes, we regularly coordinate with several leading neurology practices across Dubai to ensure integrated care."
+      answer: "Yes. We work with several Dubai neurology practices for joint migraine patients — including practices at Cleveland Clinic, Mediclinic Parkview, NMC, and various consultant neurologists. If you do not currently have a neurologist and your migraine warrants evaluation, we can recommend appropriate referrals. We do not work in competition with neurology — we coordinate care."
     },
     {
       question: "Does insurance cover Ayurvedic migraine treatment?",
-      answer: "Many premium insurance plans in Dubai cover Ayurveda. We offer direct billing with seven major insurers; contact us to verify your specific coverage."
+      answer: "Migraine is recognised as a medical condition for insurance purposes, which often supports coverage. Some plans cover Ayurvedic treatment for migraine, particularly when there is documented neurological diagnosis and previous medication trials. We are direct-billing partners with seven major insurers — Daman, AXA, Allianz, Oman Insurance, Now Health, Bupa, MetLife. WhatsApp us your insurance card photo before booking and we will confirm coverage."
     },
     {
       question: "How do I start?",
-      answer: "The first step is a 60-minute comprehensive assessment with one of our Ayurvedic physicians to identify your migraine subtype and design your plan."
+      answer: "Always with a thorough assessment. Tap \"Book a Migraine Consultation\" on this page, WhatsApp us at [number], or call [number]. Please bring (or send before consultation): your migraine diary if you keep one, most recent neurologist notes, any MRI/imaging reports, current medication list (preventive and acute), and a list of treatments you have previously tried with response notes. The 60-minute consultation at our JVC clinic includes comprehensive history, subtype identification, and a written treatment plan with realistic expectations."
     }
   ]
 };
