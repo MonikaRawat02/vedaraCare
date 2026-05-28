@@ -15,7 +15,7 @@ const RelatedPages = ({
   const gridCols = columns === 3 ? 'lg:grid-cols-3' : 'lg:grid-cols-4';
 
   return (
-    <section className="py-20" style={{ background: 'rgb(245, 240, 232)' }}>
+    <section className={`py-20 ${bgColor}`}>
       <div className="max-w-7xl mx-auto px-6">
         <div className="flex items-end justify-between mb-10">
           <div>
@@ -92,5 +92,4 @@ const RelatedPages = ({
     </section>
   );
 };
-
 export default RelatedPages;
