@@ -28,32 +28,41 @@ const ClinicalBoundaries = ({
         </div>
 
         <div className="grid lg:grid-cols-2 gap-12">
-          {/* Left Card - Urgent Care */}
-          <div className="bg-red-50 p-8 rounded-xl border-2 border-red-200">
-            <div className="text-sm font-sans font-semibold tracking-wider text-red-500 uppercase mb-4">
+          {/* Left Card */}
+          <div className={`${leftCard.bgColor || 'bg-red-50'} p-8 rounded-xl border-2 ${leftCard.borderColor || 'border-red-200'}`}>
+            <div className={`text-sm font-sans font-semibold tracking-wider uppercase mb-4 ${leftCard.labelColor || 'text-red-500'}`}>
               {leftCard.label}
             </div>
+            
+            {leftCard.alertBox && (
+              <div className={`${leftCard.alertBg || 'bg-red-100'} p-4 rounded-lg mb-6 border-l-4 ${leftCard.alertBorder || 'border-red-500'}`}>
+                <p className={`text-sm ${leftCard.alertTextColor || 'text-red-900'} font-sans leading-relaxed`}>
+                  {leftCard.alertBox}
+                </p>
+              </div>
+            )}
+
             <div className="text-lg font-sans font-medium text-[#1A1A1A] mb-8 leading-relaxed">
               {leftCard.title}
             </div>
             <ul className="space-y-4 mb-8">
               {leftCard.items.map((item, index) => (
                 <li key={index} className="flex items-start gap-3 text-sm text-gray-700 font-sans">
-                  <span className="w-1.5 h-1.5 rounded-full bg-red-500 mt-2 shrink-0" />
+                  <span className={`w-1.5 h-1.5 rounded-full mt-2 shrink-0 ${leftCard.bulletColor || 'bg-red-500'}`} />
                   <span>{item}</span>
                 </li>
               ))}
             </ul>
             {leftCard.footer && (
-              <p className="text-sm text-gray-500 font-sans leading-relaxed pt-6 border-t border-red-100">
+              <p className="text-sm text-gray-500 font-sans leading-relaxed pt-6 border-t border-gray-100">
                 {leftCard.footer}
               </p>
             )}
           </div>
 
-          {/* Right Card - Combined Care */}
-          <div className="bg-[#FAF8F3] p-8 rounded-xl border-2 border-[#C9A961]/30">
-            <div className="text-sm font-sans font-semibold tracking-wider text-[#C9A961] uppercase mb-4">
+          {/* Right Card */}
+          <div className={`${rightCard.bgColor || 'bg-[#FAF8F3]'} p-8 rounded-xl border-2 ${rightCard.borderColor || 'border-[#C9A961]/30'}`}>
+            <div className={`text-sm font-sans font-semibold tracking-wider uppercase mb-4 ${rightCard.labelColor || 'text-[#C9A961]'}`}>
               {rightCard.label}
             </div>
             <div className="text-lg font-sans font-medium text-[#1A1A1A] mb-8 leading-relaxed">
@@ -62,8 +71,8 @@ const ClinicalBoundaries = ({
             <ul className="space-y-5">
               {rightCard.items.map((item, index) => (
                 <li key={index} className="flex items-start gap-4 text-sm text-gray-700 font-sans">
-                  <Check className="w-5 h-5 text-[#C9A961] mt-0.5 shrink-0" />
-                  <span>{item.text}</span>
+                  <Check className={`w-5 h-5 mt-0.5 shrink-0 ${rightCard.checkColor || 'text-[#C9A961]'}`} />
+                  <span>{item.text || item}</span>
                 </li>
               ))}
             </ul>

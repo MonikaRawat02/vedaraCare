@@ -19,7 +19,7 @@ const AyurvedaIntro = ({
             {title}
           </h2>
           
-          <blockquote className="text-[18px] leading-[1.8] text-[#1A1A1A] text-left border-l-[3px] border-[#C9A961] pl-[28px] mb-8">
+          <blockquote className="text-[18px] leading-[1.8] text-gray-700 text-left border-l-[3px] border-[#C5A572] pl-[28px] mb-8">
             {blockquote}
           </blockquote>
 

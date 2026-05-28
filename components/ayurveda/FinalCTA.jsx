@@ -12,7 +12,8 @@ const FinalCTA = ({
   button1BgColor = "rgb(31, 69, 56)",
   button1TextColor = "rgb(255, 255, 255)",
   button2BorderColor = "rgb(37, 211, 102)",
-  button2TextColor = "rgb(37, 211, 102)"
+  button2TextColor = "rgb(37, 211, 102)",
+  alertBox = ""
 }) => {
   return (
     <section className={`${bgColor} py-24 px-6 relative overflow-hidden`}>
@@ -47,6 +48,14 @@ const FinalCTA = ({
         <p className="text-sm text-gray-600">
           {bullets.join(' · ')}
         </p>
+
+        {alertBox && (
+          <div className="mt-8 p-6 bg-red-50 border border-red-100 rounded-lg">
+            <p className="text-sm text-red-800 leading-relaxed">
+              {alertBox}
+            </p>
+          </div>
+        )}
       </div>
     </section>
   );
