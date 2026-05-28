@@ -13,8 +13,8 @@ export const stressAnxietyHero = {
     title: "WE DO NOT ASK YOU TO MEDITATE YOUR WAY OUT OF THIS.",
     subtitle: "Wellness culture often blames patients for not 'managing' their stress. Chronic anxiety is a clinical condition. We treat it as one."
   },
-  image: "https://images.unsplash.com/photo-1600334089648-b0d9d3028eb2?q=80&w=2070&auto=format&fit=crop",
-  alt: "Ayurvedic Shirodhara treatment for stress and anxiety at Vedara Care JVC clinic Dubai"
+  image: "/images/stress-anxiety-ayurveda-dubai-hero.webp",
+  alt: "Quiet restoration imagery for Ayurvedic stress and anxiety treatment at Vedara Care JVC Dubai"
 };
 
 export const stressAnxietyIntro = {
@@ -36,14 +36,16 @@ export const stressAnxietyMechanism = {
     "Ayurvedic treatment addresses all three — but addresses them as the distinct conditions they are. The 6-month programme for chronic stress is different from the programme for panic disorder. Identifying which pattern is primary is the first step at our JVC clinic."
   ],
   quote: "The patients who get the most relief from our programmes are also the ones who were treated as having a real condition, not a personality problem.",
-  image: "https://images.unsplash.com/photo-1544367567-0f2fcb009e0b?q=80&w=2040&auto=format&fit=crop",
-  imageLeft: false
+  image: "/images/anxiety-consultation-vedara-jvc.webp",
+  imageLeft: false,
+  alt: "Ayurvedic doctor in attentive consultation with stress and anxiety patient at Vedara Care JVC"
 };
 
 export const stressAnxietyPatterns = {
   label: "PATTERN MATTERS",
   title: "Five distinct patterns — different treatment for each.",
   description: "The single biggest mistake in alternative medicine for mental health is treating \"stress and anxiety\" as one condition with one solution. At our JVC clinic, your specific pattern determines your treatment.",
+  alt: "Five clinical patterns of stress and anxiety assessed at our JVC Ayurveda clinic Dubai",
   types: [
     {
       title: "Chronic Stress (Cortisol-Dominant)",
@@ -84,15 +86,15 @@ export const stressAnxietyPositioning = {
   title: "Ayurvedic treatment is one component of integrated mental health care — not a replacement for the others.",
   cards: [
     {
-      title: "1. If You Are on Antidepressants or Anxiolytics",
+      title: "If You Are on Antidepressants or Anxiolytics",
       content: "Many of our stress and anxiety patients are on SSRIs (sertraline, escitalopram), SNRIs, benzodiazepines, or beta-blockers — prescribed by their psychiatrist or GP. Ayurvedic treatment is compatible with these medications. We never ask you to stop them. Medication changes are made by your prescribing physician based on bloodwork and clinical progress, never based on Ayurvedic recommendations. We coordinate with your prescriber throughout."
     },
     {
-      title: "2. If You Are in Therapy",
+      title: "If You Are in Therapy",
       content: "Therapy — particularly CBT, DBT, trauma-informed therapy, or psychoanalysis — addresses cognitive patterns, beliefs, and emotional processing that Ayurveda cannot directly access. Many of our most successful patients combine Ayurvedic nervous-system restoration with ongoing therapy. The two approaches work on different mechanisms — Ayurveda on the biological substrate, therapy on the cognitive and emotional layer."
     },
     {
-      title: "3. If You Have Not Yet Engaged Either",
+      title: "If You Have Not Yet Engaged Either",
       content: "For mild-to-moderate chronic stress and anxiety without trauma history, structured Ayurvedic treatment alone is often sufficient. For moderate-to-severe anxiety, panic disorder, OCD, PTSD, or trauma-related patterns, we will recommend you also engage with a psychiatrist or therapist. Mental health is one of the few areas where doing only one thing is rarely the strongest path."
     }
   ],
@@ -182,6 +184,7 @@ export const stressAnxietyReviews = {
   title: "Real stress & anxiety outcomes.",
   isDarkText: false,
   cardBgColor: "rgba(255, 255, 255, 0.05)",
+  alt: "Verified patient outcome from Ayurvedic stress and anxiety treatment at Vedara Care JVC Dubai",
   items: [
     {
       quote: "I had not slept through the night for eighteen months. After the Shirodhara course in month two, I sleep seven hours. Everything else is slowly following.",
@@ -214,7 +217,7 @@ export const stressAnxietyPrograms = {
   description: "Indicative pricing for our three most-common programmes. Final pricing depends on pattern, severity, and protocol intensity confirmed at consultation.",
   programs: [
     {
-      name: "INITIAL ASSESSMENT",
+      name: "Initial Assessment",
       price: "From AED 450",
       duration: "1 session · 60 minutes at our JVC clinic",
       features: [
@@ -226,10 +229,11 @@ export const stressAnxietyPrograms = {
         "Full programme pricing in writing"
       ],
       bestFor: "First step for every stress and anxiety patient — required before any treatment programme",
-      buttonText: "Book Assessment"
+      buttonText: "Book Programme",
+      buttonColor: "#1F4538"
     },
     {
-      name: "STANDARD 3-MONTH STRESS PROGRAMME",
+      name: "Standard 3-month Stress Programme",
       price: "From AED 8,500",
       duration: "3 months · ~20-25 visits to our JVC clinic",
       featured: true,
@@ -244,10 +248,11 @@ export const stressAnxietyPrograms = {
         "3-month follow-up after programme"
       ],
       bestFor: "Chronic stress, mild-to-moderate anxiety, burnout, sleep-anxiety patterns. Many patients complete treatment with this programme.",
-      buttonText: "Book Programme"
+      buttonText: "Book Programme",
+      buttonColor: "#1F4538"
     },
     {
-      name: "COMPREHENSIVE 6-MONTH ANXIETY PROGRAMME",
+      name: "Comprehensive 6-month Anxiety Programme",
       price: "From AED 15,000",
       duration: "6 months · ~30-40 visits",
       features: [
@@ -259,7 +264,8 @@ export const stressAnxietyPrograms = {
         "Comprehensive 6-month follow-up"
       ],
       bestFor: "Generalised anxiety disorder, post-trauma stress patterns, complex anxiety with concurrent psychiatric care",
-      buttonText: "Book Programme"
+      buttonText: "Book Programme",
+      buttonColor: "#1F4538"
     }
   ],
   footer: "Insurance direct-billing available with seven major insurers. Mental health coverage in Dubai insurance is increasing. WhatsApp us your insurance card before booking to confirm coverage."
@@ -273,85 +279,206 @@ export const stressAnxietyFaqs = {
   faqs: [
     {
       question: "Does Ayurvedic treatment actually work for anxiety?",
-      answer: "Yes, when treated as a biological nervous-system condition rather than a lifestyle problem. Our clinical data from JVC shows significant improvement in GAD-7 scores for patients completing 3-6 month programmes."
+      answer: "For chronic stress, burnout, and mild-to-moderate generalised anxiety: yes, substantially, particularly when treatment is a structured 3–6 month programme rather than supplements alone. For severe anxiety, panic disorder, or trauma-related anxiety: Ayurveda is supportive but typically not sufficient alone — psychiatry and therapy are often needed. The honest answer is that Ayurveda works for the nervous-system substrate of anxiety, but does not always replace medication or therapy for the cognitive and emotional layers."
     },
     {
       question: "How long does Ayurvedic stress and anxiety treatment take?",
-      answer: "Most patients see sleep improvement within 2-4 weeks. Meaningful shifts in baseline anxiety typically take 8-16 weeks of consistent treatment."
+      answer: "Most chronic stress and mild-to-moderate anxiety patients complete a 3-month programme with substantial improvement. Patients with generalised anxiety disorder, burnout with deeper recovery needs, or post-trauma patterns typically need 6 months. Patients with severe or long-standing anxiety may need 9–12 months. Sleep usually improves first — within 2–4 weeks. Baseline anxiety reduction typically takes 8–16 weeks of consistent treatment."
     },
     {
       question: "How is Ayurvedic treatment different from medication?",
-      answer: "Psychiatric medications often target neurotransmitters directly. Ayurveda aims to regulate the entire autonomic nervous system and address the physiological 'substrate' of the stress response."
+      answer: "SSRIs and other psychiatric medications work pharmacologically on neurotransmitter systems and provide reliable symptom reduction for many patients. Ayurvedic treatment works on the broader nervous-system substrate through Shirodhara, internal medicines, sleep regulation, and lifestyle modification. They are not competing approaches — they address different aspects of the same condition. Many of our most successful patients use both strategically. We never ask you to stop your medications; we work alongside your psychiatrist."
     },
     {
       question: "Can I do Ayurveda while on antidepressants?",
-      answer: "Yes. We work alongside your psychiatrist and never ask you to change your medications without their supervision."
+      answer: "Yes. Many of our stress and anxiety patients are on SSRIs, SNRIs, or other psychiatric medications. Ayurvedic treatment is compatible. Medication changes are decisions made by your psychiatrist based on bloodwork and clinical progress — never based on Ayurvedic treatment. Some patients eventually reduce or discontinue medications under their psychiatrist's supervision after sustained Ayurvedic treatment; others continue medications long-term. Both paths work."
     },
     {
       question: "Will Ayurvedic herbs interact with my psychiatric medications?",
-      answer: "Our physicians are trained to identify interactions. We select formulations that are safe alongside SSRIs and other common medications."
+      answer: "Most Ayurvedic herbs used at our JVC clinic for stress and anxiety are compatible with common psychiatric medications. At consultation, your full medication list is reviewed and herbs are selected with attention to interactions. We err strongly on the side of caution — when in doubt, we communicate with your psychiatrist before prescribing."
     },
     {
       question: "How much does Ayurvedic stress and anxiety treatment cost in Dubai?",
-      answer: "Initial assessments are AED 450. Full programmes vary based on severity; we provide a complete cost breakdown after your first assessment."
+      answer: "At Vedara Care, initial assessment starts from AED 450. A standard 3-month programme starts from AED 8,500. A comprehensive 6-month anxiety programme starts from AED 15,000. Across Dubai, comprehensive Ayurvedic mental health programmes typically range from AED 6,000 to AED 25,000 depending on length and intensity. We are direct-billing partners with seven major insurers."
     },
     {
       question: "Is Shirodhara essential? Is it scary?",
-      answer: "It is the foundational therapy for these conditions. It is not scary — most patients find it the most relaxing experience they have ever had, often falling asleep during sessions."
+      answer: "For chronic stress and anxiety, Shirodhara is the most clinically effective Ayurvedic therapy — and yes, it is central to most of our programmes. It is not scary. The therapy involves lying still while warm medicated oil is poured rhythmically across your forehead for 35 minutes. Most patients describe the first few minutes as ordinary calm, then a particular kind of slowed consciousness that is unlike anything else. It is widely considered one of the most pleasant medical treatments in the entire system."
     },
     {
       question: "What if I cannot sit still — my anxiety makes me restless?",
-      answer: "We understand. We start with shorter sessions or Abhyanga first to ground the system before moving to full Shirodhara if needed."
+      answer: "This is a common worry. Most patients with anxiety find that the structure of Shirodhara — being attended to, in a quiet room, with warm oil — produces unusual restfulness even in highly anxious states. For the first session, we may use a slightly shorter protocol (25 minutes instead of 35) to build tolerance. By session 3–4, most patients are comfortable with the full duration. The exception is patients with severe trauma history — for whom we modify protocols and coordinate with their therapist."
     },
     {
       question: "Do I have to sit and meditate?",
-      answer: "No. While we may suggest breathwork (Pranayama), our treatment is medical and therapeutic, not a meditation course."
+      answer: "No. We do not prescribe meditation as a treatment, though we support it for patients who already practise. For most patients with chronic stress and anxiety, being told to meditate is unhelpful — the nervous system needs restoration before it can sustain meditation practice. The protocols we prescribe (Shirodhara, Abhyanga, sleep regulation, dietary changes, daily rhythm) are passive in the sense that they are done to you or are practical adjustments rather than mental disciplines."
     },
     {
       question: "What is the dietary protocol?",
-      answer: "We focus on warm, grounding, regular meals that stabilise blood sugar and calm the Vata dosha, reducing stimulants and inflammatory foods."
+      answer: "The dietary protocol is dosha-specific and gentle in its implementation. General principles: regular meal timing, warm cooked foods over cold raw foods (for Vata pacification), reduced caffeine (particularly after noon), reduced alcohol, reduced sugar, and specific Vata-pacifying or Pitta-cooling food principles depending on your pattern. Implemented gradually over the first 4–6 weeks."
     },
     {
       question: "Will I have to give up coffee or alcohol?",
-      answer: "We suggest reduction, particularly during the active phase, but we focus on sustainable shifts rather than absolute bans."
+      answer: "For most patients, moderation rather than elimination. Coffee: typically reduced to one cup in the morning rather than throughout the day. Alcohol: typically reduced to occasional social use rather than daily decompression — and the patient often loses the urge to use alcohol as decompression as the underlying anxiety improves. Complete elimination is rarely required. Sustainable adjustments matter more than restrictive perfection."
     },
     {
       question: "How does sleep improve so quickly?",
-      answer: "Shirodhara has a direct effect on the autonomic nervous system, moving the body from 'fight or flight' (sympathetic) to 'rest and digest' (parasympathetic) mode."
+      answer: "Sleep improvement in the first 2–4 weeks of Ayurvedic stress treatment is one of the most reliable clinical findings at our JVC clinic. The combination of Shirodhara (parasympathetic activation), Abhyanga (Vata pacification), sleep-supporting herbs (Jatamansi, Tagara, Brahmi), and consistent daily rhythm regulation directly addresses the most common sleep dysfunctions in chronic anxiety."
     },
     {
       question: "Can children and teenagers have Ayurvedic anxiety treatment?",
-      answer: "Yes, we offer gentle, age-appropriate protocols for students and younger patients."
+      answer: "Yes, with modified protocols. For adolescents (typically 14+) with parental consultation and often alongside their paediatric psychiatrist or therapist, modified Ayurvedic programmes are available — gentler herbal doses, shorter Shirodhara sessions (15–20 minutes initially), strong emphasis on sleep regulation and daily rhythm."
     },
     {
       question: "What if I have had trauma in my past?",
-      answer: "We coordinate with trauma therapists. Ayurveda helps restore the nervous system's capacity to engage with therapy."
+      answer: "Trauma-informed care matters enormously here. We coordinate with trauma-informed therapists where appropriate. For patients with significant trauma history, we modify protocols — Shirodhara may be delivered with extra attention to safety and consent, body therapies are introduced gradually, and we never proceed without your full comfort. Ayurveda alone is rarely sufficient for processed trauma — combined with trauma-informed therapy, it can be deeply supportive."
     },
     {
       question: "How does this work for postpartum anxiety?",
-      answer: "We have specific restorative protocols for new mothers that are safe during breastfeeding."
+      answer: "Postpartum anxiety — including postpartum panic, hypervigilance, and sleep-deprivation-related anxiety — is one of our most-treated patterns. Classical Sutika Paricharya (45-day postnatal Ayurvedic care) specifically addresses postpartum nervous-system restoration. Beyond the immediate postpartum period, we offer integrated programmes for postnatal anxiety, always alongside postnatal mental health screening with your GP or psychiatrist."
     },
     {
       question: "What if my anxiety is mainly about work?",
-      answer: "We address the physiological response to work stress and help you build a more resilient daily rhythm."
+      answer: "Work-related chronic stress and burnout are among the most common patterns we treat at our JVC clinic — many of our patients work in finance, executive roles, tech, and healthcare. The treatment addresses the nervous-system effects of work demands, not the work demands themselves. Many patients also benefit from therapy for the cognitive and behavioural patterns around work — particularly perfectionism, boundary issues, and overwork patterns."
     },
     {
       question: "Where exactly is your stress and anxiety clinic in Dubai?",
-      answer: "We are in Jumeirah Village Circle (JVC), next to Circle Mall, with a quiet, medical environment designed for relaxation."
+      answer: "Our clinic is at 207 Circle Mall, Jumeirah Village Circle (JVC), Dubai — next to Circle Mall, three minutes from FIVE Jumeirah Village Hotel, and five minutes from JSS Private School. Free patient parking is available. Patients travel to us from across Dubai including JVC, JVT, Al Barsha South, Dubai Sports City, Motor City, Arjan, Dubai Hills, Marina, Downtown, Palm Jumeirah, and Mirdif."
     },
     {
       question: "Do you have female doctors for anxiety consultations?",
-      answer: "Yes, female doctors are available and often preferred for mental health consultations."
+      answer: "Yes. Many patients — particularly women dealing with postpartum anxiety, perimenopausal anxiety, or trauma-related anxiety — specifically prefer female doctors. We have female BAMS-qualified physicians available at the JVC clinic and you can request a female doctor when booking."
     },
     {
       question: "Does insurance cover Ayurvedic mental health treatment in Dubai?",
-      answer: "Coverage varies. We offer direct billing with major insurers; contact us to verify your specific plan."
+      answer: "Mental health coverage in Dubai insurance is increasing but remains inconsistent. Some plans cover Ayurvedic treatment when there is a clear medical indication. We are direct-billing partners with seven major insurers. WhatsApp us your insurance card photo and we will confirm coverage before booking."
     },
     {
       question: "How do I start?",
-      answer: "Book a 60-minute comprehensive assessment to identify your pattern and design your treatment programme."
+      answer: "Always with an honest consultation. Tap \"Book an Anxiety & Stress Consultation\" on this page, WhatsApp us at +971 4 XXX XXXX, or call +971 4 XXX XXXX. If you are currently in mental health crisis, please contact emergency services (999) or the UAE Crisis Helpline (800 4673) first — Ayurvedic treatment is not for crisis care. For chronic ongoing patterns, the 60-minute consultation includes thorough history, pattern identification, and a written treatment plan with realistic expectations."
     }
   ]
+};
+
+export const stressAnxietyTimelineData = {
+  label: "WHAT TO EXPECT",
+  title: "What three to six months of Ayurvedic stress and anxiety treatment at our JVC clinic looks like.",
+  description: "A representative protocol for chronic stress with secondary generalised anxiety. Your specific plan varies based on pattern, severity, and concurrent psychiatric or therapeutic care.",
+  months: [
+    {
+      month: "Month 1",
+      title: "Assessment & Foundation",
+      id: "1",
+      points: [
+        "60-minute consultation with BAMS-qualified physician at our JVC clinic",
+        "Detailed history including stress patterns, anxiety, sleep, and current medications",
+        "Pulse diagnosis, dosha assessment, and pattern classification",
+        "Coordination with your psychiatrist or therapist (with consent) if applicable",
+        "Initial herbal medicine protocol begins; sleep and daily rhythm baseline established",
+        "First Shirodhara session at end of month; weekly Abhyanga sessions begin"
+      ],
+      outcome: "Expected outcomes: Clear pattern diagnosis, baseline established, treatment plan signed off, initial sleep improvement often visible."
+    },
+    {
+      month: "Month 2",
+      title: "Intensive Shirodhara & Active Treatment",
+      id: "2",
+      points: [
+        "7-14 session Shirodhara course (typically 2-3 sessions per week)",
+        "Continued weekly Abhyanga",
+        "Refined herbal protocol based on initial response",
+        "Sleep protocol fully implemented; dietary changes deepened",
+        "Daily rhythm protocols established; mid-month doctor review"
+      ],
+      outcome: "Expected outcomes: Substantial sleep improvement for most patients, reduced baseline reactivity, improved daily energy regulation."
+    },
+    {
+      month: "Month 3",
+      title: "Continued Active Treatment",
+      id: "3",
+      points: [
+        "Mid-programme comprehensive review; refined herbal medicines based on response",
+        "Maintenance Shirodhara (weekly or fortnightly); continued Abhyanga",
+        "Lifestyle protocols becoming sustained habits",
+        "Coordination with psychiatrist if medication adjustments are being considered"
+      ],
+      outcome: "Expected outcomes: For chronic stress patients, often substantial improvement — programme may complete here. For anxiety and burnout, continued work needed."
+    },
+    {
+      month: "Month 4",
+      title: "Consolidation",
+      id: "4",
+      points: [
+        "Reduced clinic visits (every 2 weeks)",
+        "Possible introduction of short Panchakarma (5-7 days) for deep restoration",
+        "Continued internal medicines; long-term lifestyle plan finalising"
+      ],
+      outcome: "Expected outcomes: Continued improvement, lifestyle changes feeling natural, possible population medication review with your prescriber."
+    },
+    {
+      month: "Month 5",
+      title: "Refinement",
+      id: "5",
+      points: [
+        "Maintenance doses of herbal medicines; visits every 2-3 weeks",
+        "Stress and sleep stable for most patients",
+        "Long-term plan documented"
+      ],
+      outcome: "Expected outcomes: Baseline anxiety visibly reduced, sleep stable, daily functioning meaningfully improved."
+    },
+    {
+      month: "Month 6",
+      title: "Discharge & Long-Term Plan",
+      id: "6",
+      points: [
+        "Final comprehensive review; transition to maintenance protocol",
+        "3-month home herbal course; long-term lifestyle and rhythm plan documented",
+        "3-month, 6-month, and 12-month follow-up appointments scheduled",
+        "Coordinated handover summary to psychiatrist or therapist if applicable"
+      ],
+      outcome: "Expected outcomes: Substantial sustained improvement, clear maintenance protocol, ongoing care plan with appropriate other providers."
+    }
+  ],
+  footer: "Many chronic stress patients complete the programme at month 3 with sustained improvement. Patients with generalised anxiety, burnout, or post-trauma patterns typically need the full 6 months. Patients with severe or long-standing anxiety may need 9-12 months. Your plan is reassessed monthly and adjusted based on response."
+};
+
+export const stressAnxietySleepSectionData = {
+  label: "THE FOUNDATIONAL TREATMENT",
+  title: "For most patients, sleep changes first. Everything else changes more slowly.",
+  content: [
+    "If you have chronic stress or anxiety, you almost certainly have disturbed sleep. The two are biologically linked — poor sleep increases anxiety and chronic stress hormones; chronic anxiety disrupts sleep. The cycle is well-established and is what makes the condition so persistent.",
+    "At our JVC clinic, we treat sleep as the foundation — not as a separate condition to address later. The reason is clinical: when sleep improves, the entire nervous-system context for healing changes. Cortisol patterns normalise. Cognitive function returns. The capacity to make other changes (dietary, lifestyle, behavioural) increases.",
+    "Most of our patients see meaningful sleep improvement within 2-4 weeks of starting treatment. This is the fastest-changing aspect of stress and anxiety treatment, and it is what gives patients the felt sense that the programme is working — which sustains their adherence to the longer-changing aspects."
+  ],
+  subheading: "Why Shirodhara Specifically Helps Sleep",
+  subheadingContent: "Shirodhara has measurable effects on the parasympathetic nervous system, melatonin signalling, and sleep architecture. Most patients describe sleep changes after 3-5 sessions — often the first nights of deep sleep in months or years. This is not placebo and is not 'relaxation.' It is a clinical effect on the nervous-system substrate of sleep.",
+  linkText: "Read about Shirodhara",
+  linkHref: "/treatments/shirodhara-dubai/",
+  image: "/images/shirodhara-anxiety-treatment-vedara-jvc.webp",
+  alt: "Restoration and sleep imagery for Ayurvedic anxiety treatment at Vedara Care JVC"
+};
+
+export const stressAnxietyVisitSectionData = {
+  label: "VISIT US",
+  title: "Where stress and anxiety treatment happens at Vedara Care.",
+  location: {
+    name: "Circle Mall, JVC",
+    area: "Jumeirah Village Circle, Dubai"
+  },
+  address: {
+    line1: "207 Circle Mall, JVC",
+    line2: "Jumeirah Village Circle, Dubai, UAE"
+  },
+  phone: "+971 4 XXX XXXX",
+  hours: [
+    { label: "Mon - Sat", time: "9:00am - 8:00pm" },
+    { label: "Sun", time: "10:00am - 4:00pm" }
+  ],
+  description: "Our JVC clinic has private treatment rooms designed for nervous-system restoration — gentle lighting, sound insulation, temperature-controlled comfort. We allow extended time for consultations and never rush mental health appointments. Female doctors available on request. Walking distance from Circle Mall, easy access from JVC Districts 10, 11, 12, 13, JVT, and Al Barsha South.",
+  button1Text: "Book an Anxiety & Stress Consultation",
+  button2Text: "WhatsApp Us",
+  alt: "Vedara Care stress and anxiety clinic location in Jumeirah Village Circle Dubai near Circle Mall",
+  image: "/images/restorative-environment-vedara-jvc.webp"
 };
 
 export const stressAnxietyLocation = {
@@ -409,7 +536,7 @@ export const stressAnxietyRelatedPages = {
     {
       title: "Our Ayurveda Clinic in JVC →",
       description: "The full picture of our Ayurveda department, doctors, and clinic conditions so you feel at home.",
-      href: "/about-us/jvc-clinic/"
+      href: "/ayurveda-clinic-jvc/"
     }
   ]
 };

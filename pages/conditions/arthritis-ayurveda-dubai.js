@@ -16,7 +16,6 @@ import {
   arthritisPillars,
   arthritisFaqs,
   arthritisCTA,
-  arthritisRelatedPages
 } from '../../data/arthritisData';
 
 const AyurvedaArthritis = () => {
@@ -193,7 +192,6 @@ const AyurvedaArthritis = () => {
       ]
     }
   ];
-
   return (
     <>
       <Head>
@@ -221,7 +219,6 @@ const AyurvedaArthritis = () => {
           dangerouslySetInnerHTML={{ __html: JSON.stringify(schemaMarkup) }}
         />
       </Head>
-
       <main>
         <AyurvedaHero {...arthritisHero} />
         
@@ -232,9 +229,7 @@ const AyurvedaArthritis = () => {
         />
         <ClinicalBoundaries 
           {...arthritisBoundaries}
-          bgColor="bg-white"
-        />
-
+          bgColor="bg-white"/>
         <ArthritisPillars 
           {...arthritisPillars}
           bgColor="bg-[#F5F1E8]"
