@@ -379,34 +379,9 @@ const WeightLossAyurvedaDubai = () => {
             </p>
           </div>
           
-          <div className="grid md:grid-cols-3 gap-8 mb-8">
-            {weightLossPhenotypes.phenotypes.slice(0, 3).map((phenotype, index) => (
+          <div className="grid md:grid-cols-3 gap-8">
+            {weightLossPhenotypes.phenotypes.map((phenotype, index) => (
               <div key={index} className="bg-white p-8 rounded-xl">
-                <div className="text-6xl mb-4" style={{ fontFamily: "Georgia, serif", color: "rgb(201, 169, 97)" }}>
-                  {phenotype.letter}
-                </div>
-                <h3 className="text-xl mb-2" style={{ fontFamily: "Georgia, serif", fontWeight: 500 }}>
-                  {phenotype.title}
-                </h3>
-                <p className="text-sm italic mb-4" style={{ color: "rgb(201, 169, 97)" }}>
-                  {phenotype.subtitle}
-                </p>
-                <p className="mb-4 leading-relaxed" style={{ color: "rgb(107, 114, 128)" }}>
-                  {phenotype.content}
-                </p>
-                <div className="text-sm">
-                  <span style={{ color: "rgb(201, 169, 97)" }}>Ayurvedic emphasis for this pattern:</span>
-                  <span className="ml-2" style={{ color: "rgb(107, 114, 128)" }}>
-                    {phenotype.ayurvedicEmphasis}
-                  </span>
-                </div>
-              </div>
-            ))}
-          </div>
-          
-          <div className="grid md:grid-cols-2 gap-8 max-w-4xl mx-auto">
-            {weightLossPhenotypes.phenotypes.slice(3).map((phenotype, index) => (
-              <div key={index + 3} className="bg-white p-8 rounded-xl">
                 <div className="text-6xl mb-4" style={{ fontFamily: "Georgia, serif", color: "rgb(201, 169, 97)" }}>
                   {phenotype.letter}
                 </div>
@@ -782,7 +757,7 @@ const WeightLossAyurvedaDubai = () => {
       <FAQ {...weightLossFaqs} />
 
       {/* Section 13: Treatment Location */}
-      <section className="bg-white px-6 md:px-24 py-24">
+      <section className={`px-6 md:px-24 py-24 ${weightLossTreatmentLocation.bgColor}`}>
         <div className="max-w-7xl mx-auto">
           <div className="grid md:grid-cols-2 gap-12">
             <div>
