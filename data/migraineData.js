@@ -91,11 +91,11 @@ export const migraineBoundaries = {
       "Headache that wakes you from sleep regularly",
       "Suspected secondary headache (post-trauma, post-procedure, with systemic symptoms)"
     ],
-    footer: "Real Ayurvedic doctors at our JVC clinic refer to neurology for diagnostic workup and never treat undiagnosed headache as migraine without proper evaluation."
+    footer: ""
   },
   rightCard: {
     label: "COMBINED CARE",
-    bgColor: "bg-[#FAF8F3]",
+    bgColor: "bg-white",
     borderColor: "border-[#C9A961]/20",
     labelColor: "text-[#C9A961]",
     checkColor: "text-[#10B981]",
@@ -109,22 +109,24 @@ export const migraineBoundaries = {
       { text: "You have chronic migraine and want to reduce medication burden", icon: "check" }
     ]
   },
-  footer: "We work with several Dubai neurology practices and can recommend appropriate referrals if you do not currently have a neurologist."
+  footer: "Real Ayurvedic doctors at our JVC clinic refer to neurology for diagnostic workup and never treat undiagnosed headache as migraine without proper evaluation. We work with several Dubai neurology practices and can recommend appropriate referrals if you do not currently have a neurologist."
 };
 
 export const migraineLocation = {
   title: "Where migraine treatment happens at Vedara Care.",
   description: "Our JVC clinic has dedicated Shirodhara treatment rooms with controlled lighting (important for migraine patients with light sensitivity), sound-insulated quiet environment, and Nasya treatment positions. Walking distance from Circle Mall, easy access from JVC Districts 10, 11, 12, 13, JVT, and Al Barsha South. Female doctors available on request.",
-  address: "Vedara Care Polyclinic\nJumeirah Village Circle (JVC)\nDubai, United Arab Emirates",
-  contact: "+971 XX XXX XXXX\ninfo@vedaracare.ae",
-  hours: "Saturday - Thursday: 9:00 AM - 9:00 PM\nFriday: 2:00 PM - 8:00 PM",
+  address: "Vedara Care Polyclinic<br/>District 13, Jumeirah Village Circle<br/>Dubai, United Arab Emirates",
+  phone: "+971 XX XXX XXXX",
+  email: "info@vedaracare.ae",
+  hours: "Saturday - Thursday: 9:00 AM - 8:00 PM<br/>Friday: 2:00 PM - 8:00 PM",
   landmarks: [
     "Next to Circle Mall",
     "2 minutes from FIVE Jumeirah Village Hotel",
     "5 minutes from JSS Private School",
     "Easy access from JVC, JVT, Al Barsha South, Sports City, Motor City"
   ],
-  image: "https://images.unsplash.com/photo-1519494026892-80bbd2d6fd0d?q=80&w=2053&auto=format&fit=crop"
+  image: "https://images.unsplash.com/photo-1519494026892-80bbd2d6fd0d?q=80&w=2053&auto=format&fit=crop",
+  buttonText: "Book a Migraine Consultation"
 };
 
 export const migraineReviews = {
@@ -134,19 +136,19 @@ export const migraineReviews = {
   cardBgColor: "bg-[#FAF7F2]",
   items: [
     {
-      quote: "Twelve migraine days a month for fifteen years. Six months at Vedara alongside my neurologist — down to three migraine days a month.",
+      quote: "Twelve migraine days a month for fifteen years. Six months at Vedara alongside my neurologist — down to three migraine days a month. My neurologist agreed to a topiramate dose reduction.",
       content: "",
       author: "Sarah K.",
       details: "Episodic Migraine · 6-Month Programme · JVC District 12 · February 2026"
     },
     {
-      quote: "My menstrual migraines were so bad I lost two days every cycle. Five months at Vedara — the cycle migraines are gone.",
+      quote: "My menstrual migraines were so bad I lost two days every cycle. Five months at Vedara — the cycle migraines are gone, the occasional non-menstrual ones are mild.",
       content: "",
       author: "Priya R.",
       details: "Menstrual Migraine · 5-Month Programme · Al Barsha South · January 2026"
     },
     {
-      quote: "Daily headache for six years on three medications. The medication overuse withdrawal was hard.",
+      quote: "Daily headache for six years on three medications. The medication overuse withdrawal was hard. Twelve months later, I have migraine 7-9 days a month — and I am off two of the three medications.",
       content: "",
       author: "Rohan D.",
       details: "Chronic Migraine with MOH · 12-Month Integrated Programme · Dubai Marina · March 2026"
@@ -170,6 +172,7 @@ export const migrainePrograms = {
       name: "Migraine Initial Assessment",
       price: "From AED [price]",
       duration: "1 session, 60 minutes at our JVC clinic",
+      hideButton: true, // Simply remove this field to show the button again
       features: [
         "Comprehensive consultation with BAMS-qualified physician",
         "Detailed migraine history and trigger pattern review",
@@ -188,6 +191,7 @@ export const migrainePrograms = {
       price: "From AED [price]",
       duration: "6 months · ~30-40 visits to our JVC clinic",
       featured: true,
+      hideButton: true,
       featuredLabel: "Most Common Migraine Programme",
       features: [
         "All Initial Assessment components",
@@ -205,6 +209,7 @@ export const migrainePrograms = {
       name: "Comprehensive Chronic Migraine Programme",
       price: "From AED [price]",
       duration: "9-12 months · ~50-65 visits",
+      hideButton: true,
       features: [
         "All Standard Programme components",
         "Extended Shirodhara protocols (often 21-30 sessions total)",
