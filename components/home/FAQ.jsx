@@ -64,13 +64,13 @@ const FAQ = ({
               <span className="text-[13px] font-sans tracking-[0.1em] text-[#C9A961] uppercase block">
                 {label}
               </span>
-              <h2 className="text-[42px] font-serif font-medium text-[#1A1A1A] leading-[1.2] max-w-[420px]">
+              <h2 className="text-[42px] font-serif font-medium text-[#1A1A1A] leading-[1.2] ">
                 {title}
               </h2>
             
             
             <p 
-              className="text-[16px] text-[#6B6B6B] font-sans leading-relaxed max-w-[420px]"
+              className="text-[16px] text-[#6B6B6B] font-sans leading-relaxed "
               dangerouslySetInnerHTML={{ __html: description }}
             />
 
@@ -81,7 +81,7 @@ const FAQ = ({
           </div>
 
           {/* Right Side: Accordion */}
-          <div className="divide-y divide-gray-200">
+          <div className="divide-y divide-gray-200 lg:max-h-[650px] lg:overflow-y-auto lg:pr-8 pr-0 [scrollbar-width:none] [-ms-overflow-style:none] [&::-webkit-scrollbar]:hidden">
             {faqs.map((faq, index) => (
               <div key={index} className="py-6 first:pt-0">
                 <button 

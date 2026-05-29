@@ -239,7 +239,7 @@ const AyurvedaMigraine = () => {
         <AyurvedaIntro {...migraineIntro} bgColor="bg-white" />
   <TreatmentMechanism 
           {...migraineMechanism}
-          bgColor="bg-[#FAF8F3]"
+          bgColor="bg-[#F5F1EB]"
         />
         <ArthritisTypes 
           {...migrainePatterns}
@@ -270,7 +270,7 @@ const AyurvedaMigraine = () => {
         />
  <ClinicalBoundaries 
           {...migraineBoundaries}
-          bgColor="bg-[#FAF8F3]"
+          bgColor="bg-[#FAF7F2]"
         />
         <TreatmentReviews 
           {...migraineReviews}
@@ -281,10 +281,11 @@ const AyurvedaMigraine = () => {
           {...migrainePrograms}
           bgColor="bg-white"
         />
-         <FAQ {...migraineFaqs} />
+         <FAQ {...migraineFaqs} 
+         bgColor="bg-[#F5F1EB]"/>
        <FinalCTA 
           {...migraineCTA}
-          bgColor="bg-[#FAF8F3]"
+          bgColor="bg-[#FAF7F2]"
         />
 
         <TreatmentLocation 
@@ -293,7 +294,7 @@ const AyurvedaMigraine = () => {
         />
         <RelatedPages 
           {...migraineRelatedPages}
-          bgColor="bg-[#FAF8F3]"
+          bgColor="bg-[#F5F1EB]"
         />
       </main>
     </>
