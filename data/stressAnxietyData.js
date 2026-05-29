@@ -42,7 +42,7 @@ export const stressAnxietyMechanism = {
 };
 
 export const stressAnxietyPatterns = {
-  label: "PATTERN MATTERS",
+  label: "Pattern Identification",
   title: "Five distinct patterns — different treatment for each.",
   description: "The single biggest mistake in alternative medicine for mental health is treating \"stress and anxiety\" as one condition with one solution. At our JVC clinic, your specific pattern determines your treatment.",
   alt: "Five clinical patterns of stress and anxiety assessed at our JVC Ayurveda clinic Dubai",

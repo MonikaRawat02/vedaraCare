@@ -84,7 +84,7 @@ export const arthritisTypesData = {
 export const arthritisBoundaries = {
   label: "A FUNDAMENTAL DISTINCTION",
   title: "Inflammatory vs degenerative arthritis — completely different treatment philosophy.",
-  subtitle: "Confusing these categories — treating rheumatoid arthritis as if it were osteoarthritis or vice versa — produces poor outcomes and sometimes harm. The first step at our JVC clinic is confirming which category your arthritis falls into.",
+  subtitle: "",
   leftCard: {
     label: "AUTOIMMUNE DISEASE",
     title: "Inflammatory Arthritis",
@@ -97,7 +97,7 @@ export const arthritisBoundaries = {
       "Goal is supportive care — pain modulation, joint protection, quality of life, adjunctive immune balance",
       "What we explicitly do not do — recommend stopping methotrexate, biologics, or other DMARDs"
     ],
-    footer: "Vedara Care will not start treatment for inflammatory arthritis without conventional clearance."
+    footer: ""
   },
   rightCard: {
     label: "WEAR-AND-TEAR",
@@ -112,7 +112,7 @@ export const arthritisBoundaries = {
       { text: "Orthopaedic coordination essential — for advanced disease and surgical decisions", icon: "check" }
     ]
   },
-  footer: "Authentic Ayurvedic doctors in Dubai will tell you honestly when modern medicine is the right first step."
+  footer: "Confusing these categories — treating rheumatoid arthritis as if it were osteoarthritis or vice versa — produces poor outcomes and sometimes harm. The first step at our JVC clinic is confirming which category your arthritis falls into."
 };
 
 export const arthritisPillars = {
@@ -144,6 +144,7 @@ export const arthritisFaqs = {
   title: "What patients ask before starting Ayurvedic arthritis treatment.",
   description: "For specific joint treatments (Kativasti for back), see the treatment pages. For back-specific arthritis, see our <a href=\"/conditions/back-pain-ayurveda-dubai/\" class=\"text-[#C9A961] hover:underline\">back pain page</a>.",
   buttonText: "Ask the Clinical Team",
+  bgColor: "bg-[#F9F7F3]",
   faqs: [
     {
       question: "Does Ayurvedic treatment actually work for arthritis?",
@@ -186,7 +187,8 @@ export const arthritisCTA = {
   description: "If you have been managing arthritis with general \"anti-inflammatory\" approaches that do not address your specific type, the first useful step is a 60-minute consultation that takes your specific condition seriously. We confirm your arthritis type, examine your specific joints, review your current treatments, and design a 4-9 month programme tailored to whether you have osteoarthritis, rheumatoid arthritis, gout, ankylosing spondylitis, frozen shoulder, or another specific pattern. We coordinate with your rheumatologist or orthopaedic specialist throughout.",
   button1Text: "Book an Arthritis Consultation",
   button2Text: "Chat on WhatsApp",
-  subtext: "Initial consultation from AED 350 · Walking distance from Circle Mall, JVC · Integrated Ayurveda + physiotherapy · Home services available · Insurance direct-billing"
+  subtext: "Initial consultation from AED 350 · Walking distance from Circle Mall, JVC · Integrated Ayurveda + physiotherapy · Home services available · Insurance direct-billing",
+   bgColor: "bg-[#F5F1E8]",
 };
 
 export const arthritisRelatedPages = {
