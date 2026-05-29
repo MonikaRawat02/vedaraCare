@@ -35,7 +35,7 @@ const TreatmentPrograms = ({
               className="p-8 rounded-lg relative flex flex-col"
               style={{ 
                 backgroundColor: cardBg, 
-                border: program.featured ? '2px solid rgb(201, 169, 97)' : 'none' 
+                border: program.featured ? '2px solid rgb(201, 169, 97)' : '1px solid rgb(201, 169, 97)' 
               }}
             >
               {program.featured && (

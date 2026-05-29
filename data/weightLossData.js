@@ -446,7 +446,7 @@ export const weightLossFaqs = {
 };
 
 export const weightLossTreatmentLocation = {
-  bgColor: "bg-[#F7F3EC]",
+  bgColor: "bg-[#F8FAF3]",
   label: "WHERE WE TREAT",
   title: "Where weight loss treatment happens at Vedara Care.",
   address: "Vedara Care Polyclinic, Building X, Jumeirah Village Circle (JVC), Dubai — next to Circle Mall, near FIVE Jumeirah Village",
@@ -492,6 +492,7 @@ export const weightLossFinalCTA = {
 };
 
 export const weightLossRelatedPages = {
+  bgColor: "bg-[#F8FAF3]",
   label: "EXPLORE FURTHER",
   title: "Related pages.",
   linkText: "Browse all Ayurvedic treatments",
