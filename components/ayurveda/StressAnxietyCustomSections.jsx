@@ -9,7 +9,7 @@ export const StressAnxietyTimeline = ({
   footer = ""
 }) => {
   return (
-    <section className="bg-[#F5F0E8] py-24 px-8" style={{ fontFamily: "'DM Sans', sans-serif" }}>
+    <section className="bg-[#EAE3D5] py-24 px-8" style={{ fontFamily: "'DM Sans', sans-serif" }}>
       <div className="max-w-7xl mx-auto">
         <div className="text-center mb-14">
           <p className="text-xs tracking-[0.18em] uppercase font-medium mb-3 text-[#B8915A]">
@@ -140,7 +140,7 @@ export const StressAnxietyVisitSection = ({
     <section className="bg-white py-24 px-8 border-t border-[#F5F0E8]" style={{ fontFamily: "'DM Sans', sans-serif" }}>
       <div className="max-w-7xl mx-auto grid md:grid-cols-2 gap-16 items-center">
         <div className="relative">
-          <div className="bg-[#F5F0E8] rounded-xl w-full aspect-[4/3] flex items-center justify-center">
+          <div className="bg-[#F6F1E9] rounded-xl w-full aspect-[4/3] flex items-center justify-center">
              <div className="text-center">
                 <div className="w-12 h-12 rounded-full bg-white flex items-center justify-center mx-auto mb-4 shadow-sm">
                   <div className="w-3 h-3 rounded-full bg-[#B8915A]"></div>
@@ -188,7 +188,7 @@ export const StressAnxietyVisitSection = ({
             </div>
           </div>
 
-          <div className="bg-[#FAF8F3] border border-[#F5F0E8] rounded-lg p-6 mb-10">
+          <div className="bg-[#F6F1E9] border border-[#F5F0E8] rounded-lg p-6 mb-10">
              <p className="leading-relaxed text-[#4A4A4A]" style={{ fontSize: '14px', fontWeight: 400 }}>
               {description}
              </p>

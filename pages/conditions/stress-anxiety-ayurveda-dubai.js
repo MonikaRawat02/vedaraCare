@@ -319,7 +319,7 @@ const AyurvedaStressAnxiety = () => {
         <ArthritisTypes 
           {...stressAnxietyPatterns}
           bgColor="bg-white"
-          cardBg="bg-[#FAF7F2]"
+          cardBg="bg-[#F6F1E9]"
         />
         <PositioningStatement 
           {...stressAnxietyPositioning}
@@ -329,8 +329,10 @@ const AyurvedaStressAnxiety = () => {
         <ArthritisPillars 
           {...stressAnxietyPillars}
           bgColor="bg-white"
+          cardBg="bg-[#F6F1E9]"
         />
-        <StressAnxietyTimeline {...stressAnxietyTimelineData} />
+        <StressAnxietyTimeline {...stressAnxietyTimelineData}
+         />
 
         <StressAnxietySleepSection {...stressAnxietySleepSectionData} />
 
@@ -349,7 +351,9 @@ const AyurvedaStressAnxiety = () => {
           {...stressAnxietyPrograms}
           bgColor="bg-white"
         />
-        <FAQ {...stressAnxietyFaqs} />
+        <FAQ {...stressAnxietyFaqs} 
+        bgColor="bg-[#EAE3D5]"
+        />
 
         <StressAnxietyVisitSection {...stressAnxietyVisitSectionData} />
         <FinalCTA 
