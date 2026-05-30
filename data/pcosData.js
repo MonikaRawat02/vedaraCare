@@ -471,7 +471,7 @@ export const pcosTreatmentLocation = {
 };
 
 export const pcosFinalCTA = {
-  bgColor: "bg-[#FFFFFF]",
+  bgColor: "bg-[#FAF8F5]",
   label: "READY?",
   title: ["Begin with the consultation you have not had before.",
   ],
