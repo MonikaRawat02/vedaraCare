@@ -43,6 +43,7 @@ export const weightLossMechanism1 = {
   ],
   quote: "The clinic that promises you the fastest weight loss is usually the one whose patients are the heaviest two years later",
   image: "https://images.unsplash.com/photo-1760562535428-c79df1baf2cb?crop=entropy&cs=tinysrgb&fit=max&fm=jpg&w=800",
+  
   pillars: [
     {
       number: "1",
