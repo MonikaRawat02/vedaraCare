@@ -41,9 +41,8 @@ const TreatmentHomeHealthcare = ({
             <p 
               className="text-muted-foreground max-w-[720px] mx-auto text-sm"
               style={{ lineHeight: 1.75 }}
-            >
-              {description}
-            </p>
+              dangerouslySetInnerHTML={{ __html: description }}
+            />
           )}
         </div>
 
@@ -53,9 +52,8 @@ const TreatmentHomeHealthcare = ({
               <p 
                 className="text-base text-foreground mb-6"
                 style={{ lineHeight: 1.85 }}
-              >
-                {quote}
-              </p>
+                dangerouslySetInnerHTML={{ __html: quote }}
+              />
             )}
             
             <ul className="space-y-3.5 mb-8">
@@ -92,9 +90,8 @@ const TreatmentHomeHealthcare = ({
               <p 
                 className="text-sm text-muted-foreground mb-8"
                 style={{ lineHeight: 1.8 }}
-              >
-                {footer}
-              </p>
+                dangerouslySetInnerHTML={{ __html: footer }}
+              />
             )}
             
             <div className="flex flex-col sm:flex-row gap-3">

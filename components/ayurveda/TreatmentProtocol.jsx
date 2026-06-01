@@ -15,7 +15,7 @@ const TreatmentProtocol = ({
           <div className="text-xs tracking-wider text-[#B8860B] mb-3 uppercase">{label}</div>
           <h2 className="text-4xl mb-4" style={{ fontFamily: 'Georgia, serif' }}>{title}</h2>
           {description && (
-            <p className="text-muted-foreground max-w-3xl mx-auto">{description}</p>
+            <p className="text-muted-foreground max-w-3xl mx-auto" dangerouslySetInnerHTML={{ __html: description }} />
           )}
         </div>
 
@@ -29,7 +29,7 @@ const TreatmentProtocol = ({
                 <h4 className="text-lg mb-3">{phase.title}</h4>
                 {/* Support for the old format with "content" */}
                 {phase.content && (
-                  <p className="text-sm leading-relaxed text-muted-foreground mb-4">{phase.content}</p>
+                  <p className="text-sm leading-relaxed text-muted-foreground mb-4" dangerouslySetInnerHTML={{ __html: phase.content }} />
                 )}
                 {/* Support for the new format with "items" and "expected" */}
                 {phase.items && (
@@ -53,7 +53,7 @@ const TreatmentProtocol = ({
         </div>
 
         {footer && (
-          <p className="text-center text-sm mt-12 text-muted-foreground">{footer}</p>
+          <p className="text-center text-sm mt-12 text-muted-foreground" dangerouslySetInnerHTML={{ __html: footer }} />
         )}
       </div>
     </section>
