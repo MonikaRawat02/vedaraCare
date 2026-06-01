@@ -89,9 +89,9 @@ const TreatmentOils = ({
                 <p 
                   className="text-sm leading-[1.85] mb-5"
                   style={{ color: 'rgb(74, 67, 60)' }}
-                >
-                  {oil.content}
-                </p>
+                  dangerouslySetInnerHTML={{ __html: oil.content }}
+                />
+
                 <p 
                   className="text-xs font-semibold uppercase tracking-wider mb-2"
                   style={{ color: 'rgb(184, 145, 90)' }}

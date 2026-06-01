@@ -1,7 +1,7 @@
 export const abhyangaHero = {
   breadcrumb: [
     { label: "Home", href: "/" },
-    { label: "Ayurvedic Treatment in Dubai", href: "/ayurveda-clinic-jvc" },
+    { label: "Ayurvedic Treatment in Dubai", href: "/ayurveda-dubai/" },
     { label: "Abhyanga Massage in Dubai", active: true }
   ],
   label: "ABHYANGA OIL MASSAGE IN DUBAI • DHA-LICENSED",
@@ -78,7 +78,7 @@ export const abhyangaProtocol = {
     {
       time: "70-80 MIN",
       title: "Phase 6 — Marma Stimulation",
-      content: "The therapists work on specific marma points — the 107 vital energy points described in Ayurvedic and martial arts traditions. Particular focus on stress-relief marma at the temples, sternum, and palms. This phase is what makes Abhyanga therapeutic rather than recreational.  "
+      content: "The therapists work on specific marma points — the 107 vital energy points described in Ayurvedic and martial arts traditions. Particular focus on <a href='/conditions/stress-anxiety-ayurveda-dubai/' class='text-[#C9A961] hover:underline transition-colors'>stress-relief</a> marma at the temples, sternum, and palms. This phase is what makes Abhyanga therapeutic rather than recreational.  "
     },
     {
       time: "80-90 MIN",
@@ -96,7 +96,7 @@ export const abhyangaOils = {
     {
       name: "Vata ",
       description: "COLD, DRY, IRREGULAR",
-      content: "Patients with predominant Vata imbalance — anxiety, insomnia, dry skin, joint cracking, irregular digestion — receive heavy, warming, deeply penetrating oils. Sesame oil is the foundation, medicated with classical preparations like Mahanarayana taila or Dhanvantaram taila. Pressure is slower, longer, deeper. The objective is grounding.",
+      content: "Patients with predominant Vata imbalance — <a href='/conditions/stress-anxiety-ayurveda-dubai/' class='text-[#C9A961] hover:underline transition-colors'>anxiety, insomnia</a>, dry skin, joint cracking, irregular digestion — receive heavy, warming, deeply penetrating oils. Sesame oil is the foundation, medicated with classical preparations like Mahanarayana taila or Dhanvantaram taila. Pressure is slower, longer, deeper. The objective is grounding.",
       indication: "Anxiety, Insomnia, Joint stiffness"
     },
     {
@@ -126,11 +126,11 @@ export const abhyangaApplications = {
   whereItExcels: [
     {
       title: "Chronic stress and burnout",
-    
+      href: "/conditions/stress-anxiety-ayurveda-dubai/"
     },
     {
       title: "Insomnia and disturbed sleep",
-     
+      href: "/conditions/stress-anxiety-ayurveda-dubai/"
     },
     {
       title: "General joint stiffness (without acute pathology)",
@@ -138,7 +138,7 @@ export const abhyangaApplications = {
     },
     {
       title: "Anxiety (alongside conventional care)",
-      
+      href: "/conditions/stress-anxiety-ayurveda-dubai/"
     },
     {
       title: "Daily fatigue and low energy",
@@ -160,19 +160,19 @@ export const abhyangaApplications = {
   honestLimitsList: [
     {
       title: "Chronic back pain (with Kativasti, internal medicines)",
-     
+      href: "/conditions/back-pain-ayurveda-dubai/"
     },
     {
       title: "Frozen shoulder (with Patra Pinda Sweda, Nasya)",
-     
+      href: "/conditions/frozen-shoulder-ayurveda-dubai/"
     },
     {
       title: "Migraine (with Shirodhara, Nasya)",
-      
+      href: "/conditions/migraine-ayurveda-dubai/"
     },
     {
       title: "PCOS (within Panchakarma protocols)",
-      
+      href: "/conditions/pcos-ayurveda-dubai/"
     },
     {
       title: "Arthritis (with internal medicines, lifestyle protocol)",
@@ -180,7 +180,7 @@ export const abhyangaApplications = {
     },
     {
       title: "Postnatal recovery (45-day Sutika Paricharya)",
-      
+      href: "/conditions/postnatal-care-ayurveda-dubai/"
     },
     {
       title: "Cervical spondylosis (with Greeva Vasti, Nasya)",
@@ -227,7 +227,7 @@ export const abhyangaPrograms = {
         "Mid-course doctor review (Session 4)",
         "4-week home self-Abhyanga protocol"
       ],
-      bestFor: "Chronic stress, insomnia, dosha rebalancing, regular wellbeing",
+      bestFor: "<a href='/conditions/stress-anxiety-ayurveda-dubai/' class='text-[#C9A961] hover:underline transition-colors'>Chronic stress, insomnia</a>, dosha rebalancing, regular wellbeing",
       buttonText: "Enquire on WhatsApp"
     },
     {
@@ -265,7 +265,7 @@ export const abhyangaHomeHealthcare = {
   ],
   priceText: "Home Abhyanga: From AED 550 per session",
   priceNote: "Slightly higher than in-clinic to cover travel and setup",
-  footer: "Most often requested for postnatal mothers (the classical 45-day Sutika Paricharya protocol), elderly patients with limited mobility, busy executives who genuinely cannot commit to 90-minute clinic visits, or as part of recovery care."
+  footer: "Most often requested for <a href='/conditions/postnatal-care-ayurveda-dubai/' class='text-[#C9A961] hover:underline transition-colors'>postnatal mothers</a> (the classical 45-day Sutika Paricharya protocol), elderly patients with limited mobility, busy executives who genuinely cannot commit to 90-minute clinic visits, or as part of recovery care."
 };
 
 export const abhyangaReviews = {
@@ -302,7 +302,7 @@ export const abhyangaFaqs = {
   bgColor: "bg-white",
   label: "ABHYANGA QUESTIONS",
   title: "What patients ask before their first Abhyanga.",
-  description: "For a comparison with other Ayurvedic massages, see our category guide.",
+  description: "For a comparison with other Ayurvedic massages, see our category guide: <a href='/treatments/ayurvedic-massage-jvc/' class='text-[#C9A961] hover:underline transition-colors'>Compare All Ayurvedic Massages</a>.",
 
 
   buttonText: "Ask the Team",
@@ -325,11 +325,11 @@ export const abhyangaFaqs = {
     },
     {
       question: "How many Abhyanga sessions do I need?",
-      answer: "For general wellbeing, relaxation, or first-time Ayurveda, one to three sessions is enough. For dosha rebalancing or chronic stress, 7 sessions over 3–4 weeks is the standard protocol. For specific conditions like chronic insomnia or back pain alongside internal medicines, 14 sessions over 6–10 weeks is typical. Your doctor will recommend the right course at consultation."
+      answer: "For general wellbeing, relaxation, or first-time Ayurveda, one to three sessions is enough. For dosha rebalancing or <a href='/conditions/stress-anxiety-ayurveda-dubai/' class='text-[#C9A961] hover:underline transition-colors'>chronic stress</a>, 7 sessions over 3–4 weeks is the standard protocol. For specific conditions like <a href='/conditions/stress-anxiety-ayurveda-dubai/' class='text-[#C9A961] hover:underline transition-colors'>chronic insomnia</a> or <a href='/conditions/back-pain-ayurveda-dubai/' class='text-[#C9A961] hover:underline transition-colors'>back pain</a> alongside internal medicines, 14 sessions over 6–10 weeks is typical. Your doctor will recommend the right course at consultation."
     },
     {
       question: "Will I feel different after one session?",
-      answer: "Most patients feel a distinct shift after a single session — deeper sleep that night, slower mental tempo, slight muscle soreness on Day 2 (similar to gentle exercise), and a softer skin feel for several days. Therapeutic effects (sleep quality, anxiety reduction, joint stiffness improvement) typically require a course, not a session."
+      answer: "Most patients feel a distinct shift after a single session — deeper sleep that night, slower mental tempo, slight muscle soreness on Day 2 (similar to gentle exercise), and a softer skin feel for several days. Therapeutic effects (<a href='/conditions/stress-anxiety-ayurveda-dubai/' class='text-[#C9A961] hover:underline transition-colors'>sleep quality, anxiety reduction</a>, joint stiffness improvement) typically require a course, not a session."
     },
     {
       question: "What should I wear and bring?",
