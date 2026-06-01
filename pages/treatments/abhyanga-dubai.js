@@ -69,6 +69,132 @@ const AbhyangaDubai = () => {
     },
     {
       "@context": "https://schema.org",
+      "@type": "MedicalProcedure",
+      "name": "Swedana",
+      "sameAs": "https://en.wikipedia.org/wiki/Swedana",
+      "description": "Ayurvedic medicated steam therapy used after Abhyanga"
+    },
+    {
+      "@context": "https://schema.org",
+      "@type": "MedicalTherapy",
+      "name": "Ayurveda",
+      "sameAs": "https://en.wikipedia.org/wiki/Ayurveda",
+      "description": "Traditional Indian system of medicine"
+    },
+    {
+      "@context": "https://schema.org",
+      "@type": "MedicalProcedure",
+      "name": "Sutika Paricharya",
+      "description": "Ayurvedic postnatal care protocol"
+    },
+    {
+      "@context": "https://schema.org",
+      "@type": "MedicalEntity",
+      "name": "Vata",
+      "alternateName": ["Vata dosha"],
+      "description": "One of the three Ayurvedic doshas in Ayurveda"
+    },
+    {
+      "@context": "https://schema.org",
+      "@type": "MedicalEntity",
+      "name": "Pitta",
+      "alternateName": ["Pitta dosha"],
+      "description": "One of the three Ayurvedic doshas in Ayurveda"
+    },
+    {
+      "@context": "https://schema.org",
+      "@type": "MedicalEntity",
+      "name": "Kapha",
+      "alternateName": ["Kapha dosha"],
+      "description": "One of the three Ayurvedic doshas in Ayurveda"
+    },
+    {
+      "@context": "https://schema.org",
+      "@type": "MedicalSubstance",
+      "name": "Mahanarayana taila"
+    },
+    {
+      "@context": "https://schema.org",
+      "@type": "MedicalSubstance",
+      "name": "Dhanvantaram taila"
+    },
+    {
+      "@context": "https://schema.org",
+      "@type": "MedicalSubstance",
+      "name": "Chandanadi taila"
+    },
+    {
+      "@context": "https://schema.org",
+      "@type": "MedicalSubstance",
+      "name": "Pinda taila"
+    },
+    {
+      "@context": "https://schema.org",
+      "@type": "MedicalSubstance",
+      "name": "Murchita taila"
+    },
+    {
+      "@context": "https://schema.org",
+      "@type": "Substance",
+      "name": "Sesame oil"
+    },
+    {
+      "@context": "https://schema.org",
+      "@type": "Substance",
+      "name": "Coconut oil"
+    },
+    {
+      "@context": "https://schema.org",
+      "@type": "Substance",
+      "name": "Mustard oil"
+    },
+    {
+      "@context": "https://schema.org",
+      "@type": "Book",
+      "name": "Charaka Samhita",
+      "description": "Classical Ayurvedic text"
+    },
+    {
+      "@context": "https://schema.org",
+      "@type": "Book",
+      "name": "Ashtanga Hridayam",
+      "description": "Classical Ayurvedic text"
+    },
+    {
+      "@context": "https://schema.org",
+      "@type": "Place",
+      "name": "Kerala",
+      "description": "Region in India where the technique originates"
+    },
+    {
+      "@context": "https://schema.org",
+      "@type": "Place",
+      "name": "Jumeirah Village Circle",
+      "description": "Location of the clinic"
+    },
+    {
+      "@context": "https://schema.org",
+      "@type": "EducationalCredential",
+      "name": "BAMS",
+      "description": "Bachelor of Ayurvedic Medicine and Surgery"
+    },
+    {
+      "@context": "https://schema.org",
+      "@type": "MedicalCondition",
+      "name": "Stress"
+    },
+    {
+      "@context": "https://schema.org",
+      "@type": "MedicalCondition",
+      "name": "Insomnia"
+    },
+    {
+      "@context": "https://schema.org",
+      "@type": "MedicalCondition",
+      "name": "Back pain"
+    },
+    {
+      "@context": "https://schema.org",
       "@type": "Service",
       "name": "Abhyanga Programmes at Vedara Care",
       "provider": {"@id": "https://vedaracare.ae/#organization"},

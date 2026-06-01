@@ -80,12 +80,22 @@ const TreatmentApplications = ({
                   style={{ color: 'rgb(184, 145, 90)' }}
                 />
                 <div>
-                  <p 
-                    className="text-sm font-medium"
-                    style={{ color: 'rgb(28, 28, 26)' }}
-                  >
-                    {item.title}
-                  </p>
+                  {item.href ? (
+                    <a 
+                      href={item.href} 
+                      className="text-sm font-medium hover:underline transition-colors"
+                      style={{ color: 'rgb(28, 28, 26)' }}
+                    >
+                      {item.title}
+                    </a>
+                  ) : (
+                    <p 
+                      className="text-sm font-medium"
+                      style={{ color: 'rgb(28, 28, 26)' }}
+                    >
+                      {item.title}
+                    </p>
+                  )}
                   {item.subtitle && (
                     <p 
                       className="text-xs mt-1"
@@ -135,12 +145,22 @@ const TreatmentApplications = ({
                   />
                 )}
                 <div>
-                  <p 
-                    className="text-sm"
-                    style={{ color: 'rgb(74, 67, 60)' }}
-                  >
-                    {item.title}
-                  </p>
+                  {item.href ? (
+                    <a 
+                      href={item.href} 
+                      className="text-sm hover:underline transition-colors"
+                      style={{ color: 'rgb(74, 67, 60)' }}
+                    >
+                      {item.title}
+                    </a>
+                  ) : (
+                    <p 
+                      className="text-sm"
+                      style={{ color: 'rgb(74, 67, 60)' }}
+                    >
+                      {item.title}
+                    </p>
+                  )}
                   {item.subtitle && (
                     <p 
                       className="text-xs mt-1"
