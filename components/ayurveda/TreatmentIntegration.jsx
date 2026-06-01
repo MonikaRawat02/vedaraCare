@@ -1,5 +1,6 @@
 import React from 'react';
 import { Check } from 'lucide-react';
+import Link from 'next/link';
 
 const TreatmentIntegration = ({
   bgColor = "bg-[#F5F1E8]",
@@ -9,7 +10,8 @@ const TreatmentIntegration = ({
   image = "",
   features = [],
   button1Text = "",
-  button2Text = ""
+  button2Text = "",
+  button2Link = ""
 }) => {
   return (
     <section className={`${bgColor} py-24 px-6 relative overflow-hidden`}>
@@ -47,9 +49,14 @@ const TreatmentIntegration = ({
               <button className="inline-flex items-center justify-center gap-2 whitespace-nowrap rounded-md text-sm font-medium transition-all disabled:pointer-events-none disabled:opacity-50 h-9 px-4 py-2 bg-[#1A5D4D] hover:bg-[#154935] text-white">
                 {button1Text}
               </button>
-              <button className="inline-flex items-center justify-center gap-2 whitespace-nowrap rounded-md text-sm font-medium transition-all disabled:pointer-events-none disabled:opacity-50 h-9 px-4 py-2 border bg-background hover:text-accent-foreground border-gray-300 text-gray-700 hover:bg-gray-100">
-                {button2Text}
-              </button>
+              {button2Link && button2Text && (
+                <Link 
+                  href={button2Link}
+                  className="inline-flex items-center justify-center gap-2 whitespace-nowrap rounded-md text-sm font-medium transition-all h-9 px-4 py-2 border bg-background hover:text-accent-foreground border-gray-300 text-gray-700 hover:bg-gray-100"
+                >
+                  {button2Text}
+                </Link>
+              )}
             </div>
           </div>
 

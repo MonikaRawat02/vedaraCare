@@ -201,16 +201,14 @@ const AyurvedaThyroid = () => {
     {
       "@context": "https://schema.org",
       "@type": "FAQPage",
-      "mainEntity": [
-        {
-          "@type": "Question",
-          "name": "Can Ayurveda cure my thyroid condition?",
-          "acceptedAnswer": {
-            "@type": "Answer",
-            "text": "No — and any clinic that promises this is dangerous. Hypothyroidism, Hashimoto's, Graves', and most thyroid conditions are chronic conditions requiring ongoing management. Ayurvedic treatment can substantially support the autoimmune component in Hashimoto's, reduce antibody levels, improve residual symptoms, address related conditions, and improve quality of life. It does not cure thyroid disease, restore destroyed thyroid tissue, or replace medication."
-          }
-        }
-      ]
+      "mainEntity": thyroidFaqs.faqs.map(faq => ({
+                    "@type": "Question",
+                    "name": faq.question,
+                    "acceptedAnswer": {
+                      "@type": "Answer",
+                      "text": faq.answer
+                    }
+                  }))
     }
   ];
 

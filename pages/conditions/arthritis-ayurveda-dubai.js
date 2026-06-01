@@ -180,16 +180,14 @@ const AyurvedaArthritis = () => {
     {
       "@context": "https://schema.org",
       "@type": "FAQPage",
-      "mainEntity": [
-        {
-          "@type": "Question",
-          "name": "Does Ayurvedic treatment actually work for arthritis?",
-          "acceptedAnswer": {
-            "@type": "Answer",
-            "text": "For osteoarthritis: yes, substantially. Most of our knee, hip, and spine osteoarthritis patients at the JVC clinic see 50-70% reduction in pain and meaningful function improvement over 6 months. For rheumatoid arthritis and other inflammatory arthritis: Ayurvedic treatment is supportive — providing meaningful symptom relief and quality-of-life improvement but never replacing immunosuppressive medications. For frozen shoulder: outcomes are particularly strong."
-          }
+      "mainEntity": arthritisFaqs.faqs.map(faq => ({
+        "@type": "Question",
+        "name": faq.question,
+        "acceptedAnswer": {
+          "@type": "Answer",
+          "text": faq.answer
         }
-      ]
+      }))
     }
   ];
   return (

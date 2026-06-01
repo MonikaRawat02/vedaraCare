@@ -18,7 +18,6 @@ import {
   ayurvedicBackPainHero,
   ayurvedicBackPainIntro,
   ayurvedicBackPainAssessment,
-  ayurvedicBackPainVsSpa,
   ayurvedicBackPainMechanism,
   ayurvedicBackPainTherapies,
   ayurvedicBackPainBoundaries,
@@ -59,6 +58,11 @@ const AyurvedicBackPain = () => {
         {"@type": "MedicalProcedure", "name": "Kativasti", "url": "https://vedaracare.ae/treatments/kativasti-dubai/"},
         {"@type": "MedicalProcedure", "name": "Abhyanga", "url": "https://vedaracare.ae/treatments/abhyanga-dubai/"},
         {"@type": "MedicalProcedure", "name": "Panchakarma", "url": "https://vedaracare.ae/treatments/panchakarma-dubai/"},
+        {"@type": "MedicalProcedure", "name": "Greeva Vasti", "url": "https://vedaracare.ae/treatments/greeva-vasti-dubai/"},
+        {"@type": "MedicalProcedure", "name": "Basti", "url": "https://vedaracare.ae/treatments/basti-dubai/"},
+        {"@type": "MedicalProcedure", "name": "Patra Pinda Sweda", "url": "https://vedaracare.ae/treatments/patra-pinda-sweda-dubai/"},
+        {"@type": "MedicalProcedure", "name": "Njavarakizhi", "url": "https://vedaracare.ae/treatments/njavarakizhi-dubai/"},
+        {"@type": "MedicalProcedure", "name": "Sutika Paricharya", "url": "https://vedaracare.ae/conditions/postnatal-care-ayurveda-dubai/"},
         {"@type": "MedicalTherapy", "name": "Physiotherapy", "url": "https://vedaracare.ae/physiotherapy-jvc/"},
         {"@type": "MedicalTherapy", "name": "Internal Ayurvedic Medicines"}
       ],
@@ -69,7 +73,19 @@ const AyurvedicBackPain = () => {
         {"@type": "MedicalRiskFactor", "name": "Aging and degeneration"},
         {"@type": "MedicalRiskFactor", "name": "Previous spinal injury"},
         {"@type": "MedicalRiskFactor", "name": "Pregnancy and postpartum"}
-      ]
+      ],
+      "differentialDiagnosis": [
+        {"@type": "MedicalCondition", "name": "Sciatica", "url": "https://vedaracare.ae/conditions/back-pain-ayurveda-dubai/#sciatica"},
+        {"@type": "MedicalCondition", "name": "Lumbar Disc Bulge", "url": "https://vedaracare.ae/conditions/back-pain-ayurveda-dubai/#disc-bulge"},
+        {"@type": "MedicalCondition", "name": "Spondylosis", "url": "https://vedaracare.ae/conditions/back-pain-ayurveda-dubai/#spondylosis"},
+        {"@type": "MedicalCondition", "name": "Postpartum Back Pain", "url": "https://vedaracare.ae/conditions/back-pain-ayurveda-dubai/#postpartum"},
+        {"@type": "MedicalCondition", "name": "Cervical Pain (Greeva Shoola)", "url": "https://vedaracare.ae/conditions/back-pain-ayurveda-dubai/#cervical"}
+      ],
+      "epidemiology": {
+        "@type": "EpidemiologicalStudy",
+        "description": "Chronic back pain is the leading cause of disability globally and one of the most common conditions treated in Ayurvedic practice"
+      },
+      "naturalProgression": "Without treatment, chronic mechanical back pain often progresses to reduced mobility, muscle atrophy, and compensatory postural issues. Early intervention with appropriate Ayurvedic protocols can prevent progression and restore function."
     },
     {
       "@context": "https://schema.org",
@@ -160,16 +176,212 @@ const AyurvedicBackPain = () => {
     {
       "@context": "https://schema.org",
       "@type": "FAQPage",
-      "mainEntity": [
-        {
-          "@type": "Question",
-          "name": "Does Ayurvedic treatment actually work for back pain?",
-          "acceptedAnswer": {
-            "@type": "Answer",
-            "text": "Yes — for the right type of back pain, with the right protocol, prescribed by a qualified physician. Published research and clinical experience consistently show that authentic Ayurvedic treatment is effective for chronic mechanical back pain, sciatica without severe neurological compromise, spondylosis, and postpartum back pain."
-          }
+      "mainEntity": ayurvedicBackPainFaqs.faqs.map(faq => ({
+        "@type": "Question",
+        "name": faq.question,
+        "acceptedAnswer": {
+          "@type": "Answer",
+          "text": faq.answer
         }
+      }))
+    },
+    {
+      "@context": "https://schema.org",
+      "@type": "MedicalCondition",
+      "@id": "https://vedaracare.ae/conditions/back-pain-ayurveda-dubai/#sciatica",
+      "name": "Sciatica",
+      "alternateName": ["Lumbar Radiculopathy", "Sciatic Nerve Pain"],
+      "code": {"@type": "MedicalCode", "code": "M54.3", "codingSystem": "ICD-10"},
+      "description": "Pain radiating from the lower back down one or both legs, typically caused by nerve root compression",
+      "isRelatedTo": {"@id": "https://vedaracare.ae/conditions/back-pain-ayurveda-dubai/#condition"}
+    },
+    {
+      "@context": "https://schema.org",
+      "@type": "MedicalCondition",
+      "@id": "https://vedaracare.ae/conditions/back-pain-ayurveda-dubai/#disc-bulge",
+      "name": "Lumbar Disc Bulge",
+      "alternateName": ["Herniated Disc", "Slipped Disc", "Disc Herniation"],
+      "code": {"@type": "MedicalCode", "code": "M51.2", "codingSystem": "ICD-10"},
+      "description": "Pain from disc displacement causing nerve compression in the lumbar spine",
+      "isRelatedTo": {"@id": "https://vedaracare.ae/conditions/back-pain-ayurveda-dubai/#condition"}
+    },
+    {
+      "@context": "https://schema.org",
+      "@type": "MedicalCondition",
+      "@id": "https://vedaracare.ae/conditions/back-pain-ayurveda-dubai/#spondylosis",
+      "name": "Spondylosis",
+      "alternateName": ["Degenerative Joint Disease", "Spinal Osteoarthritis"],
+      "code": {"@type": "MedicalCode", "code": "M47", "codingSystem": "ICD-10"},
+      "description": "Age-related wear-and-tear changes in the spine with chronic stiffness and intermittent acute episodes",
+      "isRelatedTo": {"@id": "https://vedaracare.ae/conditions/back-pain-ayurveda-dubai/#condition"}
+    },
+    {
+      "@context": "https://schema.org",
+      "@type": "MedicalCondition",
+      "@id": "https://vedaracare.ae/conditions/back-pain-ayurveda-dubai/#postpartum",
+      "name": "Postpartum Back Pain",
+      "alternateName": ["Postnatal Back Pain", "Post-Caesarean Back Pain"],
+      "description": "Back pain following childbirth, particularly common after caesarean delivery, prolonged labour, or epidural analgesia",
+      "isRelatedTo": {"@id": "https://vedaracare.ae/conditions/back-pain-ayurveda-dubai/#condition"},
+      "possibleTreatment": [
+        {"@type": "MedicalProcedure", "name": "Sutika Paricharya", "url": "https://vedaracare.ae/conditions/postnatal-care-ayurveda-dubai/"}
       ]
+    },
+    {
+      "@context": "https://schema.org",
+      "@type": "MedicalCondition",
+      "@id": "https://vedaracare.ae/conditions/back-pain-ayurveda-dubai/#cervical",
+      "name": "Cervical Pain",
+      "alternateName": ["Neck Pain", "Upper Back Pain", "Greeva Shoola"],
+      "code": {"@type": "MedicalCode", "code": "M54.2", "codingSystem": "ICD-10"},
+      "description": "Pain affecting the neck and upper back, often related to posture, screen time, or sedentary work patterns",
+      "isRelatedTo": {"@id": "https://vedaracare.ae/conditions/back-pain-ayurveda-dubai/#condition"},
+      "possibleTreatment": [
+        {"@type": "MedicalProcedure", "name": "Greeva Vasti", "url": "https://vedaracare.ae/treatments/greeva-vasti-dubai/"}
+      ]
+    },
+    {
+      "@context": "https://schema.org",
+      "@type": "MedicalEntity",
+      "@id": "https://vedaracare.ae/conditions/back-pain-ayurveda-dubai/#vata-dosha",
+      "name": "Vata Dosha",
+      "description": "In Ayurvedic medicine, Vata dosha governs movement and is the primary dosha involved in back pain conditions. Imbalance in Vata leads to pain, stiffness, degeneration, and neurological symptoms.",
+      "alternateName": ["Vata", "Wind Dosha"],
+      "sameAs": "https://en.wikipedia.org/wiki/Dosha"
+    },
+    {
+      "@context": "https://schema.org",
+      "@type": "MedicalSubstance",
+      "@id": "https://vedaracare.ae/conditions/back-pain-ayurveda-dubai/#mahanarayana-taila",
+      "name": "Mahanarayana Taila",
+      "description": "Classical Ayurvedic medicated oil used in Kativasti and Abhyanga for back pain treatment, containing over 50 herbs known for anti-inflammatory and analgesic properties",
+      "alternateName": ["Mahanarayan Oil"],
+      "isRelatedTo": [
+        {"@type": "MedicalProcedure", "name": "Kativasti"},
+        {"@type": "MedicalProcedure", "name": "Abhyanga"}
+      ]
+    },
+    {
+      "@context": "https://schema.org",
+      "@type": "MedicalSubstance",
+      "@id": "https://vedaracare.ae/conditions/back-pain-ayurveda-dubai/#sahacharadi-taila",
+      "name": "Sahacharadi Taila",
+      "description": "Specialized Ayurvedic medicated oil particularly effective for sciatica and nerve-related back pain conditions",
+      "isRelatedTo": [
+        {"@type": "MedicalProcedure", "name": "Kativasti"},
+        {"@type": "MedicalCondition", "name": "Sciatica"}
+      ]
+    },
+    {
+      "@context": "https://schema.org",
+      "@type": "Plant",
+      "@id": "https://vedaracare.ae/conditions/back-pain-ayurveda-dubai/#rasna",
+      "name": "Rasna",
+      "alternateName": ["Pluchea lanceolata", "Indian Camphorweed"],
+      "description": "Classical Ayurvedic herb used in back pain treatment for its anti-inflammatory and Vata-pacifying properties"
+    },
+    {
+      "@context": "https://schema.org",
+      "@type": "Plant",
+      "@id": "https://vedaracare.ae/conditions/back-pain-ayurveda-dubai/#guggulu",
+      "name": "Guggulu",
+      "alternateName": ["Commiphora mukul", "Indian Bdellium Tree"],
+      "description": "Resin used extensively in Ayurvedic back pain formulations (Yogaraja Guggulu, Mahayograj Guggulu) for its potent anti-inflammatory and tissue-healing properties",
+      "sameAs": "https://en.wikipedia.org/wiki/Commiphora_wightii"
+    },
+    {
+      "@context": "https://schema.org",
+      "@type": "Book",
+      "@id": "https://vedaracare.ae/conditions/back-pain-ayurveda-dubai/#sushruta-samhita",
+      "name": "Sushruta Samhita",
+      "description": "Ancient Sanskrit text on medicine and surgery, one of the foundational texts of Ayurveda that describes back pain classifications and treatments",
+      "author": {"@type": "Person", "name": "Sushruta"},
+      "genre": "Medical Text",
+      "sameAs": "https://en.wikipedia.org/wiki/Sushruta_Samhita"
+    },
+    {
+      "@context": "https://schema.org",
+      "@type": "Book",
+      "@id": "https://vedaracare.ae/conditions/back-pain-ayurveda-dubai/#ashtanga-hridayam",
+      "name": "Ashtanga Hridayam",
+      "description": "Classical Ayurvedic medical text that provides detailed protocols for treating Vata disorders including back pain",
+      "author": {"@type": "Person", "name": "Vagbhata"},
+      "genre": "Medical Text",
+      "sameAs": "https://en.wikipedia.org/wiki/Ashtanga_Hridayam"
+    },
+    {
+      "@context": "https://schema.org",
+      "@type": "MedicalClinic",
+      "@id": "https://vedaracare.ae/#organization",
+      "name": "Vedara Care Polyclinic",
+      "url": "https://vedaracare.ae/",
+      "medicalSpecialty": ["Ayurveda", "Physiotherapy", "Dermatology"],
+      "address": {
+        "@type": "PostalAddress",
+        "streetAddress": "Building 23, District 12",
+        "addressLocality": "Jumeirah Village Circle",
+        "addressRegion": "Dubai",
+        "addressCountry": "AE"
+      },
+      "hasCredential": {
+        "@type": "EducationalOccupationalCredential",
+        "credentialCategory": "License",
+        "name": "DHA Healthcare Facility License",
+        "identifier": "[DHA License Number]"
+      }
+    },
+    {
+      "@context": "https://schema.org",
+      "@type": "Place",
+      "@id": "https://vedaracare.ae/conditions/back-pain-ayurveda-dubai/#jvc",
+      "name": "Jumeirah Village Circle",
+      "alternateName": ["JVC"],
+      "description": "Residential community in Dubai where Vedara Care Polyclinic is located, next to Circle Mall",
+      "containedInPlace": {
+        "@type": "City",
+        "name": "Dubai",
+        "containedInPlace": {
+          "@type": "Country",
+          "name": "United Arab Emirates"
+        }
+      }
+    },
+    {
+      "@context": "https://schema.org",
+      "@type": "EducationalOccupationalCredential",
+      "@id": "https://vedaracare.ae/conditions/back-pain-ayurveda-dubai/#bams",
+      "name": "BAMS",
+      "alternateName": ["Bachelor of Ayurvedic Medicine and Surgery"],
+      "description": "Undergraduate professional degree in Ayurvedic medicine required for Ayurvedic physicians at Vedara Care",
+      "recognizedBy": {"@type": "Organization", "name": "Dubai Health Authority"}
+    },
+    {
+      "@context": "https://schema.org",
+      "@type": "EducationalOccupationalCredential",
+      "@id": "https://vedaracare.ae/conditions/back-pain-ayurveda-dubai/#dpt",
+      "name": "DPT",
+      "alternateName": ["Doctor of Physiotherapy"],
+      "description": "Professional doctoral degree in physiotherapy required for physiotherapists at Vedara Care",
+      "recognizedBy": {"@type": "Organization", "name": "Dubai Health Authority"}
+    },
+    {
+      "@context": "https://schema.org",
+      "@type": "MedicalSpecialty",
+      "@id": "https://vedaracare.ae/conditions/back-pain-ayurveda-dubai/#physiotherapy-specialty",
+      "name": "Physiotherapy",
+      "alternateName": ["Physical Therapy", "DPT"],
+      "description": "Healthcare specialty focused on movement, function, and rehabilitation, integrated with Ayurveda for back pain treatment at Vedara Care",
+      "sameAs": "https://en.wikipedia.org/wiki/Physiotherapy"
+    },
+    {
+      "@context": "https://schema.org",
+      "@type": "MedicalProcedure",
+      "@id": "https://vedaracare.ae/conditions/back-pain-ayurveda-dubai/#sutika-paricharya",
+      "name": "Sutika Paricharya",
+      "description": "Classical 45-day postnatal Ayurvedic care protocol specifically addressing postpartum musculoskeletal recovery including back pain",
+      "alternateName": ["Postnatal Ayurvedic Care", "Sukhu Programme"],
+      "procedureType": "Ayurveda",
+      "url": "https://vedaracare.ae/conditions/postnatal-care-ayurveda-dubai/"
     }
   ];
 
