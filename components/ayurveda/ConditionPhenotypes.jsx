@@ -35,7 +35,7 @@ const ConditionPhenotypes = ({
                 {phenotype.title}
               </h3>
               <p className="text-[11px] uppercase tracking-widest mb-4 text-muted-foreground">
-                {phenotype.description}
+                {phenotype.subtitle}
               </p>
               <p className="text-sm text-muted-foreground mb-5" style={{ lineHeight: 1.85 }}>
                 {phenotype.content}
