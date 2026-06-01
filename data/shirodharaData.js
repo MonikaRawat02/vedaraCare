@@ -1,12 +1,12 @@
 export const shirodharaHero = {
   breadcrumb: [
     { label: "Home", href: "/" },
-    { label: "Ayurvedic Treatment in Dubai", href: "/ayurveda-clinic-jvc" },
+    { label: "Ayurvedic Treatment in Dubai", href: "/ayurveda-dubai/" },
     { label: "Shirodhara in Dubai", active: true }
   ],
   label: "SHIRODHARA OIL THERAPY IN DUBAI • DHA-LICENSED",
   title: "Warm oil. A copper vessel. Forty-five minutes of stillness on the forehead.",
-  description: "Classical Shirodhara — the continuous warm medicated oil stream poured rhythmically across the forehead. Doctor-prescribed at our DHA-licensed clinic in JVC, Dubai, for chronic stress, insomnia, anxiety, and migraine.",
+  description: "Classical Shirodhara — the continuous warm medicated oil stream poured rhythmically across the forehead. Doctor-prescribed at our DHA-licensed clinic in JVC, Dubai, for <a href='/conditions/stress-anxiety-ayurveda-dubai/' class=' hover:underline transition-colors'>chronic stress, insomnia, anxiety</a>, and <a href='/conditions/migraine-ayurveda-dubai/' class='hover:underline transition-colors'>migraine</a>.",
   primaryCTA: "Book a Shirodhara Consultation",
   secondaryCTA: "Chat on WhatsApp",
   trustSignals: ["Traditional Copper Dhara Vessel", "Doctor-Prescribed Medicated Oils", "Same-Gender Therapists Always", "From AED 450 per session"],
@@ -21,7 +21,7 @@ export const shirodharaIntro = {
   bgColor: "bg-white",
   label: "THE QUICK ANSWER",
   title: "Shirodhara in Dubai, in one paragraph.",
-  blockquote: "Shirodhara (शिरोधारा) is the classical Ayurvedic therapy in which a continuous stream of warm medicated oil is poured rhythmically across the forehead — specifically targeting the Ajna marma point above and between the eyebrows — for 30 to 60 minutes. At Vedara Care Polyclinic in Jumeirah Village Circle, Dubai, Shirodhara is doctor-prescribed by BAMS-qualified physicians for chronic insomnia, anxiety, migraine, ADHD support, and stress-related disorders. Sessions start from AED 450 and are often most powerful when delivered as a 7 to 14-session course.",
+  blockquote: "Shirodhara (शिरोधारा) is the classical Ayurvedic therapy in which a continuous stream of warm medicated oil is poured rhythmically across the forehead — specifically targeting the Ajna marma point above and between the eyebrows — for 30 to 60 minutes. At Vedara Care Polyclinic in Jumeirah Village Circle, Dubai, Shirodhara is doctor-prescribed by BAMS-qualified physicians for <a href='/conditions/stress-anxiety-ayurveda-dubai/' class=' hover:underline transition-colors'>chronic insomnia, anxiety</a>, <a href='/conditions/migraine-ayurveda-dubai/' class=' hover:underline transition-colors'>migraine</a>, ADHD support, and stress-related disorders. Sessions start from AED 450 and are often most powerful when delivered as a 7 to 14-session course.",
   footer: "Medically reviewed by Dr. Priya Sharma, BAMS, MD (Ayurveda), DHA-Licensed · Last updated May 2026"
 };
 
@@ -47,7 +47,7 @@ export const shirodharaProtocol = {
     {
       time: "0-15",
       title: "Phase 1 — Preparation & Brief Abhyanga",
-      content: "You change into a cotton wrap and lie on a heated wooden droni. The therapist begins with a brief 10-minute head, neck, and shoulder Abhyanga using a small amount of the same medicated oil that will be used for the dhara. This warm-up serves two purposes: it relaxes the cervical and trapezius musculature so the head can rest fully still during the dhara, and it brings the body into a parasympathetic state before the main therapy begins. The copper dhara vessel is suspended above the forehead at the precise height described in classical texts (about four finger-widths above the third eye)."
+      content: "You change into a cotton wrap and lie on a heated wooden droni. The therapist begins with a brief 10-minute head, neck, and shoulder <a href='/treatments/abhyanga-dubai/' class='text-[#C9A961] hover:underline transition-colors'>Abhyanga</a> using a small amount of the same medicated oil that will be used for the dhara. This warm-up serves two purposes: it relaxes the cervical and trapezius musculature so the head can rest fully still during the dhara, and it brings the body into a parasympathetic state before the main therapy begins. The copper dhara vessel is suspended above the forehead at the precise height described in classical texts (about four finger-widths above the third eye)."
     },
     {
       time: "15-50",
@@ -72,19 +72,19 @@ export const shirodharaOils = {
     {
       name: "Brahmi Taila",
       description: "Cognitive and nerve support",
-      content: "A sesame oil base medicated with Brahmi (Bacopa monnieri), one of Ayurveda's most researched nervine herbs. Used for chronic anxiety, ADHD support, cognitive overload, and stress affecting concentration. Recent research has documented Brahmi's effects on memory and stress hormone regulation.",
+      content: "A sesame oil base medicated with Brahmi (Bacopa monnieri), one of Ayurveda's most researched nervine herbs. Used for <a href='/conditions/stress-anxiety-ayurveda-dubai/' class='text-[#C9A961] hover:underline transition-colors'>chronic anxiety</a>, ADHD support, cognitive overload, and stress affecting concentration. Recent research has documented Brahmi's effects on memory and stress hormone regulation.",
       indication: "anxiety, ADHD support, cognitive overload"
     },
     {
       name: "Ksheerabala Taila",
       description: "Vata pacification for severe insomnia",
-      content: "A specialised oil prepared with Bala (Sida cordifolia) and milk, used for severe insomnia, restless sleep, chronic tension headaches, and Vata-pattern nervous system depletion. Often the first choice for executive burnout and chronic stress.",
+      content: "A specialised oil prepared with Bala (Sida cordifolia) and milk, used for <a href='/conditions/stress-anxiety-ayurveda-dubai/' class='text-[#C9A961] hover:underline transition-colors'>severe insomnia, restless sleep</a>, chronic tension headaches, and Vata-pattern nervous system depletion. Often the first choice for executive burnout and <a href='/conditions/stress-anxiety-ayurveda-dubai/' class='text-[#C9A961] hover:underline transition-colors'>chronic stress</a>.",
       indication: "insomnia, chronic stress, tension headache"
     },
     {
       name: "Chandanadi Taila",
       description: "Cooling for Pitta-pattern conditions",
-      content: "A cooling sandalwood-based preparation used for migraine, heat-pattern insomnia, irritability, and stress-related skin conditions. Patients with Pitta imbalance — typically high-achievers with hot, sharp, intense stress patterns — respond particularly well to this oil.",
+      content: "A cooling sandalwood-based preparation used for <a href='/conditions/migraine-ayurveda-dubai/' class='text-[#C9A961] hover:underline transition-colors'>migraine</a>, heat-pattern insomnia, irritability, and stress-related skin conditions. Patients with Pitta imbalance — typically high-achievers with hot, sharp, intense stress patterns — respond particularly well to this oil.",
       indication: "migraine, irritability, Pitta-pattern stress"
     },
     {
@@ -96,7 +96,7 @@ export const shirodharaOils = {
     {
       name: "Buttermilk (Takradhara)",
       description: "A variant — fermented buttermilk instead of oil",
-      content: "A specific Shirodhara variant in which medicated fermented buttermilk replaces oil. Used for specific Pitta-Vata combination conditions including chronic migraine, psoriasis, certain hair loss patterns, and chronic insomnia where oil-based Shirodhara is contraindicated.",
+      content: "A specific Shirodhara variant in which medicated fermented buttermilk replaces oil. Used for specific Pitta-Vata combination conditions including <a href='/conditions/migraine-ayurveda-dubai/' class='text-[#C9A961] hover:underline transition-colors'>chronic migraine</a>, psoriasis, certain <a href='/conditions/hair-loss-ayurveda-dubai/' class='text-[#C9A961] hover:underline transition-colors'>hair loss</a> patterns, and <a href='/conditions/stress-anxiety-ayurveda-dubai/' class='text-[#C9A961] hover:underline transition-colors'>chronic insomnia</a> where oil-based Shirodhara is contraindicated.",
       indication: "chronic migraine, hair loss, certain skin conditions"
     }
   ],
@@ -114,19 +114,23 @@ export const shirodharaApplications = {
   whereItExcels: [
     {
       title: "Chronic insomnia",
-      subtitle: "Typical protocol: 7-14 sessions over 2-4 weeks"
+      subtitle: "Typical protocol: 7-14 sessions over 2-4 weeks",
+      href: "/conditions/stress-anxiety-ayurveda-dubai/"
     },
     {
       title: "Anxiety disorders",
-      subtitle: "Typical protocol: 14 sessions over 4-6 weeks (alongside conventional care)"
+      subtitle: "Typical protocol: 14 sessions over 4-6 weeks (alongside conventional care)",
+      href: "/conditions/stress-anxiety-ayurveda-dubai/"
     },
     {
       title: "Chronic migraine",
-      subtitle: "Typical protocol: 14-21 sessions over 6-10 weeks"
+      subtitle: "Typical protocol: 14-21 sessions over 6-10 weeks",
+      href: "/conditions/migraine-ayurveda-dubai/"
     },
     {
       title: "Stress and burnout",
-      subtitle: "Typical protocol: 7 sessions over 3-4 weeks"
+      subtitle: "Typical protocol: 7 sessions over 3-4 weeks",
+      href: "/conditions/stress-anxiety-ayurveda-dubai/"
     },
     {
       title: "PTSD support",
@@ -142,7 +146,8 @@ export const shirodharaApplications = {
     },
     {
       title: "Hair loss (Khalitya)",
-      subtitle: "Typical protocol: 14-21 sessions with Takradhara variant"
+      subtitle: "Typical protocol: 14-21 sessions with Takradhara variant",
+      href: "/conditions/hair-loss-ayurveda-dubai/"
     }
   ],
   honestLimitsList: [
@@ -156,7 +161,8 @@ export const shirodharaApplications = {
     },
     {
       title: "Postnatal mood disorders (alongside conventional support)",
-      subtitle: ""
+      subtitle: "",
+      href: "/conditions/postnatal-care-ayurveda-dubai/"
     },
     {
       title: "Pre-menstrual mood symptoms",
@@ -191,7 +197,7 @@ export const shirodharaPrograms = {
         "10-minute recovery period",
         "Aftercare guidance provided"
       ],
-      bestFor: "First-time experience, occasional therapy, mild stress reset",
+      bestFor: "First-time experience, occasional therapy, <a href='/conditions/stress-anxiety-ayurveda-dubai/' class='text-[#C9A961] hover:underline transition-colors'>mild stress</a> reset",
       buttonText: "Enquire on WhatsApp"
     },
     {
@@ -206,7 +212,7 @@ export const shirodharaPrograms = {
         "Sleep and stress tracking through the course",
         "4-week home maintenance protocol"
       ],
-      bestFor: "Chronic stress, mild insomnia, anxiety, general nervous system reset",
+      bestFor: "<a href='/conditions/stress-anxiety-ayurveda-dubai/' class='text-[#C9A961] hover:underline transition-colors'>Chronic stress, mild insomnia, anxiety</a>, general nervous system reset",
       buttonText: "Enquire on WhatsApp",
       featured: true
     },
@@ -222,7 +228,7 @@ export const shirodharaPrograms = {
         "Two doctor reviews (Sessions 5 and 10)",
         "8-week integrated home and dietary protocol"
       ],
-      bestFor: "Chronic migraine, severe insomnia, chronic anxiety, hair loss, integrated treatment",
+      bestFor: "<a href='/conditions/migraine-ayurveda-dubai/' class='text-[#C9A961] hover:underline transition-colors'>Chronic migraine</a>, <a href='/conditions/stress-anxiety-ayurveda-dubai/' class='text-[#C9A961] hover:underline transition-colors'>severe insomnia, chronic anxiety</a>, <a href='/conditions/hair-loss-ayurveda-dubai/' class='text-[#C9A961] hover:underline transition-colors'>hair loss</a>, integrated treatment",
       buttonText: "Enquire on WhatsApp"
     }
   ],
@@ -262,12 +268,12 @@ export const shirodharaFaqs = {
   bgColor: "bg-[#F9F6F1]",
   label: "SHIRODHARA QUESTIONS",
   title: "What patients ask before their first Shirodhara.",
-  description: "For comparison with other Ayurvedic treatments, see our category guide. For Abhyanga (often combined with Shirodhara), see the Abhyanga page.",
+  description: "For comparison with other Ayurvedic treatments, see our category guide: <a href='/treatments/ayurvedic-massage-jvc/' class='text-[#C9A961] hover:underline transition-colors'>Compare All Ayurvedic Massages</a>. For <a href='/treatments/abhyanga-dubai/' class='text-[#C9A961] hover:underline transition-colors'>Abhyanga</a> (often combined with Shirodhara), see the Abhyanga page.",
   buttonText: "Ask the Team",
   faqs: [
     {
       question: "What is Shirodhara in simple terms?",
-      answer: "Shirodhara is the classical Ayurvedic therapy in which a continuous stream of warm medicated oil is poured rhythmically across the forehead for 30 to 60 minutes. The therapy is performed while you lie on a wooden table, with the oil flowing from a copper vessel suspended above your head. It is one of the most clinically researched Ayurvedic therapies and is used for stress, insomnia, anxiety, migraine, and related nervous-system conditions."
+      answer: "Shirodhara is the classical Ayurvedic therapy in which a continuous stream of warm medicated oil is poured rhythmically across the forehead for 30 to 60 minutes. The therapy is performed while you lie on a wooden table, with the oil flowing from a copper vessel suspended above your head. It is one of the most clinically researched Ayurvedic therapies and is used for <a href='/conditions/stress-anxiety-ayurveda-dubai/' class='text-[#C9A961] hover:underline transition-colors'>stress, insomnia, anxiety</a>, <a href='/conditions/migraine-ayurveda-dubai/' class='text-[#C9A961] hover:underline transition-colors'>migraine</a>, and related nervous-system conditions."
     },
     {
       question: "What does Shirodhara feel like?",
@@ -283,15 +289,15 @@ export const shirodharaFaqs = {
     },
     {
       question: "How many Shirodhara sessions do I need to see results?",
-      answer: "For chronic conditions like insomnia or anxiety, expect 7 to 14 sessions over 3 to 6 weeks. For severe migraine or chronic stress, 14 to 21 sessions over 6 to 10 weeks. For mild stress or one-off therapy, 1 to 3 sessions can be meaningful. The key variable is session frequency — typically 2 to 3 days apart, not consecutive days."
+      answer: "For chronic conditions like <a href='/conditions/stress-anxiety-ayurveda-dubai/' class='text-[#C9A961] hover:underline transition-colors'>insomnia or anxiety</a>, expect 7 to 14 sessions over 3 to 6 weeks. For severe <a href='/conditions/migraine-ayurveda-dubai/' class='text-[#C9A961] hover:underline transition-colors'>migraine</a> or <a href='/conditions/stress-anxiety-ayurveda-dubai/' class='text-[#C9A961] hover:underline transition-colors'>chronic stress</a>, 14 to 21 sessions over 6 to 10 weeks. For mild stress or one-off therapy, 1 to 3 sessions can be meaningful. The key variable is session frequency — typically 2 to 3 days apart, not consecutive days."
     },
     {
       question: "What oil will be used in my Shirodhara?",
-      answer: "The oil is selected for your specific dosha and condition. Common options at Vedara Care include Brahmi Taila (for anxiety and cognitive overload), Ksheerabala Taila (for insomnia and tension), Chandanadi Taila (cooling, for migraine and Pitta-pattern stress), Mahanarayana Taila (for heavy Vata disorders), and Takradhara (a buttermilk-based variant for specific Pitta-Vata conditions). Your doctor will explain the selection at consultation."
+      answer: "The oil is selected for your specific dosha and condition. Common options at Vedara Care include Brahmi Taila (for <a href='/conditions/stress-anxiety-ayurveda-dubai/' class='text-[#C9A961] hover:underline transition-colors'>anxiety</a> and cognitive overload), Ksheerabala Taila (for <a href='/conditions/stress-anxiety-ayurveda-dubai/' class='text-[#C9A961] hover:underline transition-colors'>insomnia</a> and tension), Chandanadi Taila (cooling, for <a href='/conditions/migraine-ayurveda-dubai/' class='text-[#C9A961] hover:underline transition-colors'>migraine</a> and Pitta-pattern stress), Mahanarayana Taila (for heavy Vata disorders), and Takradhara (a buttermilk-based variant for specific Pitta-Vata conditions). Your doctor will explain the selection at consultation."
     },
     {
       question: "Is Shirodhara safe during pregnancy?",
-      answer: "Modified Shirodhara is generally safe and beneficial from the second trimester onwards, performed by a therapist trained in prenatal protocols, with lighter oils and gentler positioning. Classical Shirodhara is not performed in the first trimester. Postnatal Shirodhara is one of our most-requested services for new mothers — particularly for postnatal mood disorders and insomnia."
+      answer: "Modified Shirodhara is generally safe and beneficial from the second trimester onwards, performed by a therapist trained in prenatal protocols, with lighter oils and gentler positioning. Classical Shirodhara is not performed in the first trimester. Postnatal Shirodhara is one of our most-requested services for new mothers — particularly for <a href='/conditions/postnatal-care-ayurveda-dubai/' class='text-[#C9A961] hover:underline transition-colors'>postnatal mood disorders</a> and <a href='/conditions/stress-anxiety-ayurveda-dubai/' class='text-[#C9A961] hover:underline transition-colors'>insomnia</a>."
     },
     {
       question: "Can I drive home after Shirodhara?",
@@ -351,13 +357,13 @@ export const shirodharaRelatedPages = {
       title: "Conditions Shirodhara Treats",
       description: "Insomnia, migraine, anxiety, and chronic stress. See full condition pages for treatment protocols and timelines.",
       image: "https://images.unsplash.com/photo-1559839734-2b71ea197ec2?w=600",
-      href: "/ayurveda-clinic-jvc/"
+      href: "/conditions/stress-anxiety-ayurveda-dubai/"
     },
     {
       title: "Home Healthcare in Dubai",
       description: "Home Shirodhara is available for postnatal and elderly patients across Dubai through our home healthcare team.",
       image: "https://images.unsplash.com/photo-1540553016828-71405107a6e3?w=600",
-      href: "/treatments/panchakarma-dubai/"
+      href: "/home-healthcare-dubai/"
     },
     {
       title: "Compare All Ayurvedic Massages",
