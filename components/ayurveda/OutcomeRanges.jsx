@@ -2,6 +2,8 @@ import React from 'react';
 
 const OutcomeRanges = ({
   bgColor = "bg-[#F5F1EB]",
+  headerBgColor = "bg-[#030213]",
+  headerTextColor = "text-white",
   label = "REALISTIC EXPECTATIONS",
   title = "Honest outcome ranges based on migraine subtype.",
   description = "Different migraine subtypes respond differently to Ayurvedic treatment. These ranges are based on our 280+ migraine patients at the JVC clinic with documented migraine diaries before and after 6-month programmes.",
@@ -27,7 +29,7 @@ const OutcomeRanges = ({
         <div className="overflow-x-auto">
           <table className="w-full bg-white rounded-lg overflow-hidden">
             <thead>
-              <tr className="bg-[#030213] text-white">
+              <tr className={`${headerBgColor} ${headerTextColor}`}>
                 {tableHeaders.map((header, index) => (
                   <th key={index} className="px-6 py-4 text-left text-[14px] font-bold tracking-wider ">
                     {header}
