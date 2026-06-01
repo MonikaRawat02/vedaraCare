@@ -55,7 +55,7 @@ export const ayurvedicBackPainAssessment = {
       title: "Lumbar Disc Bulge or Herniation",
       description: "Pain from disc displacement causing nerve compression. When neurological signs are absent or mild, Ayurvedic treatment combined with physiotherapy often produces meaningful long-term outcomes. Severe cases with neurological deficit require conventional workup first.",
       approach: "Combined Kativasti, Panchakarma, integrated physiotherapy",
-      link: "/treatments/panchakarma-jvc/",
+      link: "/treatments/panchakarma-dubai/",
       linkText: "Read more about Panchakarma for chronic conditions"
     },
     {
@@ -150,7 +150,7 @@ export const ayurvedicBackPainTherapies = {
       title: "Panchakarma",
       subtitle: "For complex or long-standing conditions",
       description: "For severely chronic back pain, multi-region pain involving systemic Vata imbalance, or back pain unresponsive to other treatment, classical Panchakarma over 14-21 days addresses the systemic root. Combines the above therapies with Virechana or Basti as the main Pradhanakarma actions.",
-      link: "/treatments/panchakarma-jvc/",
+      link: "/treatments/panchakarma-dubai/",
       linkText: "Read about Panchakarma"
     }
   ]
@@ -477,7 +477,7 @@ export const ayurvedicBackPainRelatedPages = {
     {
       title: "Panchakarma in Dubai →",
       description: "For severe or long-standing back pain, classical Panchakarma addresses systemic Vata imbalance. 7, 14, and 21 day programmes.",
-      href: "/treatments/panchakarma-jvc/",
+      href: "//treatments/panchakarma-dubai",
       linkText: "Learn more →"
     }
   ]

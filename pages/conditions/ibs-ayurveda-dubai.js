@@ -33,7 +33,7 @@ const AyurvedaIbsDubai = () => {
       "@type": "MedicalCondition",
       "@id": "https://vedaracare.ae/conditions/ibs-ayurveda-dubai/#condition",
       "name": "Irritable Bowel Syndrome",
-      "alternateName": ["IBS", "Grahani Roga", "Functional Bowel Disorder", "Spastic Colon"],
+      "alternateName": ["IBS", "Grahani Roga", "Functional Bowel Disorder", "Spastic Colon", "Sangrahani"],
       "code": [
         {"@type": "MedicalCode", "code": "K58", "codingSystem": "ICD-10"},
         {"@type": "MedicalCode", "code": "K58.0", "codingSystem": "ICD-10"},
@@ -138,6 +138,23 @@ const AyurvedaIbsDubai = () => {
       ],
       "possibleTreatment": [
         {"@type": "MedicalProcedure", "name": "Panchakarma"},
+        {"@type": "MedicalTherapy", "name": "Pippali-based formulations"}
+      ]
+    },
+    {
+      "@context": "https://schema.org",
+      "@type": "MedicalCondition",
+      "name": "SIBO-Related IBS",
+      "alternateName": ["SIBO-IBS", "Ajeerna or Ama-Grahani patterns"],
+      "code": {"@type": "MedicalCode", "code": "K58.9", "codingSystem": "ICD-10"},
+      "signOrSymptom": [
+        {"@type": "MedicalSymptom", "name": "Bloating"},
+        {"@type": "MedicalSymptom", "name": "Abdominal distension"},
+        {"@type": "MedicalSymptom", "name": "Changes after carbohydrate-containing meals"}
+      ],
+      "possibleTreatment": [
+        {"@type": "MedicalProcedure", "name": "Panchakarma"},
+        {"@type": "MedicalTherapy", "name": "Vidanga"},
         {"@type": "MedicalTherapy", "name": "Pippali-based formulations"}
       ]
     },

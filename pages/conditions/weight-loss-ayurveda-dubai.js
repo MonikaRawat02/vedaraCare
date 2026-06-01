@@ -359,7 +359,8 @@ const WeightLossAyurvedaDubai = () => {
       <AyurvedaIntro {...weightLossIntro} />
 
       {/* Section 3: Why most approaches fail */}
-      <TreatmentMechanism {...weightLossMechanism2} />
+      <TreatmentMechanism {...weightLossMechanism2} 
+      bgColor='bg-[#FAF8F3]'/>
 
       {/* Section 4: GLP-1 Section */}
       <TreatmentOils {...weightLossOils} />
