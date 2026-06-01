@@ -88,7 +88,7 @@ export const pcosBenefits = {
   benefitGroups: [
     {
       title: "Panchakarma Cleansing",
-      description: "The classical detoxification protocol that addresses insulin resistance, lipid metabolism, and hormonal clearance. For PCOS, Virechana (medicated purgation targeting liver and Pitta) is the most-prescribed action, often followed by selective Basti (medicated enema). Typically performed once during the programme — usually in month 2 — over 7-14 days. Sets up everything that follows.",
+      description: "The classical detoxification protocol that addresses insulin resistance, lipid metabolism, and hormonal clearance. For PCOS, Virechana (medicated purgation targeting liver and Pitta) is the most-prescribed action, often followed by selective Basti (medicated enema). Typically performed once during the programme — usually in month 2 — over 7-14 days. Learn more in our <a href=\"/treatments/panchakarma-dubai/\" class=\"text-[#C9A961] hover:underline transition-colors\">Panchakarma guide</a>.",
       benefits: [
         
       ]

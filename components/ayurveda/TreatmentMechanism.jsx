@@ -34,9 +34,10 @@ const TreatmentMechanism = ({
             {/* Text Content */}
             <div className={`lg:w-[55%] space-y-6 text-gray-700 leading-relaxed ${imageLeft ? 'lg:order-2' : 'lg:order-1'}`}>
               {content.map((paragraph, index) => (
-                <p key={index}>
-                  {paragraph}
-                </p>
+                <p 
+                  key={index}
+                  dangerouslySetInnerHTML={{ __html: paragraph }}
+                />
               ))}
 
               {/* Quote */}

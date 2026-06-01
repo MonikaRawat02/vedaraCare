@@ -43,14 +43,15 @@ const ClassicalTherapies = ({
                       </h3>
                     </div>
 
-                    <p className="text-[16px] leading-[1.75] text-[#5A5A5A] font-sans">
-                      {item.description}
-                    </p>
+                    <p 
+                      className="text-[16px] leading-[1.75] text-[#5A5A5A] font-sans"
+                      dangerouslySetInnerHTML={{ __html: item.description }}
+                    />
 
                     <div className="space-y-2 pt-2">
                       <p className="text-[13px] text-[#6B6B6B] font-sans">
                         <span className="font-semibold text-[#1A1A1A] uppercase tracking-wider text-[11px] mr-2">Typical use:</span> 
-                        {item.typicalUse}
+                        <span dangerouslySetInnerHTML={{ __html: item.typicalUse }} />
                       </p>
                       <p className="text-[13px] text-[#6B6B6B] font-sans">
                         <span className="font-semibold text-[#1A1A1A] uppercase tracking-wider text-[11px] mr-2">Duration:</span> 

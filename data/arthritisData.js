@@ -142,7 +142,7 @@ export const arthritisPillars = {
 export const arthritisFaqs = {
   label: "ARTHRITIS QUESTIONS",
   title: "What patients ask before starting Ayurvedic arthritis treatment.",
-  description: "For specific joint treatments (Kativasti for back), see the treatment pages. For back-specific arthritis, see our <a href=\"/conditions/back-pain-ayurveda-dubai/\" class=\"text-[#C9A961] hover:underline\">back pain page</a>.",
+  description: "For specific joint treatments (Kativasti for back), see the treatment pages. For back-specific arthritis, see our <a href=\"/conditions/back-pain-ayurveda-dubai/\" class=\"text-[#C9A961] hover:underline transition-colors\">back pain page</a>.",
   buttonText: "Ask the Clinical Team",
   bgColor: "bg-[#F9F7F3]",
   faqs: [

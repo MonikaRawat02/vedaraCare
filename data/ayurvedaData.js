@@ -43,7 +43,8 @@ export const ayurvedaTherapies = {
       bestFor: "chronic conditions, detox, deep reset",
       image: "panchakarma-room-jvc-dubai.webp",
       alt: "Panchakarma detox treatment icon — Ayurveda clinic JVC",
-      link: "/treatments/panchakarma-dubai/"
+      link: "/treatments/panchakarma-dubai/",
+      linkText: "Read the Panchakarma guide"
     },
     {
       title: "Abhyanga",
@@ -622,7 +623,7 @@ export const dubaiHubFaqs = {
   bgColor: "bg-[#FAF6EF]",
   label: "AYURVEDA IN DUBAI",
   title: "The most asked questions about Ayurvedic treatment in Dubai.",
-  description: "Honest answers from our DHA-licensed clinical team. For JVC-specific practical details, see our <a href=\"/treatments/panchakarma-jvc/\" class=\"text-[#C9A961] hover:underline\">Panchakarma in JVC guide</a>.",
+  description: "Honest answers from our DHA-licensed clinical team. For JVC-specific practical details, see our <a href=\"/treatments/panchakarma-jvc/\" class=\"text-[#C9A961] hover:underline transition-colors\">Panchakarma in JVC guide</a>.",
   buttonText: "Ask the Ayurvedic Team",
   faqs: [
     {

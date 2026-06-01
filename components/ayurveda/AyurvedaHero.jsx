@@ -50,9 +50,10 @@ const AyurvedaHero = ({
                 </h1>
               </div>
               
-              <p className="text-[18px] font-sans leading-[1.75] text-[#4A4A4A] max-w-[540px]">
-                {description}
-              </p>
+              <p 
+                className="text-[18px] font-sans leading-[1.75] text-[#4A4A4A] max-w-[540px]"
+                dangerouslySetInnerHTML={{ __html: description }}
+              />
 
               <div className="flex flex-wrap gap-3 pt-2">
                 <button className="inline-flex items-center gap-2 px-8 py-4 bg-[#1F4538] text-white rounded-md hover:bg-[#184C3A] transition-all text-[15px] font-sans font-bold shadow-lg">

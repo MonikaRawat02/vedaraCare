@@ -15,15 +15,18 @@ const DoctorProfileSummary = ({ doctor }) => {
           </div>
 
           <div className="border-l-2 border-[#C9A961] pl-8">
-            <p className="text-[16px] font-sans text-[#4A4A4A] leading-relaxed mb-6">
-              {doctor.summaryParagraph1}
-            </p>
-            <p className="text-[16px] font-sans text-[#4A4A4A] leading-relaxed mb-6">
-              {doctor.summaryParagraph2}
-            </p>
-            <p className="text-[16px] font-sans text-[#4A4A4A] leading-relaxed">
-              {doctor.summaryParagraph3}
-            </p>
+            <p 
+              className="text-[16px] font-sans text-[#4A4A4A] leading-relaxed mb-6"
+              dangerouslySetInnerHTML={{ __html: doctor.summaryParagraph1 }}
+            />
+            <p 
+              className="text-[16px] font-sans text-[#4A4A4A] leading-relaxed mb-6"
+              dangerouslySetInnerHTML={{ __html: doctor.summaryParagraph2 }}
+            />
+            <p 
+              className="text-[16px] font-sans text-[#4A4A4A] leading-relaxed"
+              dangerouslySetInnerHTML={{ __html: doctor.summaryParagraph3 }}
+            />
           </div>
 
           <div className="mt-12 text-center">
