@@ -347,7 +347,10 @@ const AbhyangaDubai = () => {
       <TreatmentApplications {...abhyangaApplications} />
       
       {/* Section 7 - Protocols with TreatmentPrograms */}
-      <TreatmentPrograms {...abhyangaPrograms} />
+      <TreatmentPrograms {...abhyangaPrograms}
+      buttonBg="#C9A55B"
+      buttonText="Book Assessment"
+      />
       
       {/* Section 8 - Home Healthcare with new UI */}
       <TreatmentHomeHealthcare {...abhyangaHomeHealthcare} />

@@ -1,0 +1,90 @@
+import React from 'react';
+import { MapPin, Phone, Clock } from 'lucide-react';
+import Link from 'next/link';
+
+const TreatmentLocationCustom = ({
+  bgColor = 'bg-white',
+  label = 'VISIT US',
+  title = 'Where IBS treatment happens at Vedara Care.',
+  address1 = 'Vedara Care Polyclinic',
+  address2 = '[Full Address], Jumeirah Village Circle (JVC)<br />Dubai, United Arab Emirates',
+  addressNote = 'Next to Circle Mall · 3 min from FIVE Jumeirah Village Hotel',
+  clinicHours = [
+    { label: 'Sunday - Thursday', time: '9:00 AM - 8:00 PM' },
+    { label: 'Friday', time: '2:00 PM - 8:00 PM' },
+    { label: 'Saturday', time: '9:00 AM - 6:00 PM' }
+  ],
+  contactPhone = '+971 XX XXX XXXX',
+  contactEmail = 'info@vedaracare.ae',
+  description = 'Our JVC clinic schedules extended consultations for IBS patients — typically 60 minutes for initial, 30 minutes for follow-ups. We allow time to discuss symptoms patients have often stopped mentioning to other clinicians. Walking distance from Circle Mall, easy access from JVC Districts 10, 11, 12, 13, JVT, and Al Barsha South. Female doctors available on request.',
+  buttonText = 'Book an IBS Consultation',
+  buttonHref = '/book'
+}) => {
+  return (
+    <section className={`${bgColor} py-12 md:py-24 px-4 md:px-8`}>
+      <div className="max-w-7xl mx-auto">
+        <div className="grid md:grid-cols-2 gap-8 md:gap-12">
+          <div className="space-y-6">
+            <div className="text-[#C9A55B] text-xs font-medium tracking-wider uppercase">
+              {label}
+            </div>
+            <h2 className="text-2xl md:text-4xl font-medium">
+              {title}
+            </h2>
+            <div className="space-y-4">
+              <div className="flex items-start gap-3">
+                <MapPin className="size-5 text-[#C9A55B] mt-1 shrink-0" />
+                <div>
+                  <p className="font-medium">{address1}</p>
+                  <p className="text-sm text-muted-foreground" dangerouslySetInnerHTML={{ __html: address2 }} />
+                  <p className="text-xs text-[#C9A55B] mt-1">
+                    {addressNote}
+                  </p>
+                </div>
+              </div>
+              <div className="flex items-start gap-3">
+                <Clock className="size-5 text-[#C9A55B] mt-1 shrink-0" />
+                <div>
+                  <p className="font-medium">Clinic Hours</p>
+                  <div className="text-sm text-muted-foreground space-y-1 mt-1">
+                    {clinicHours.map((item, index) => (
+                      <p key={index}>{item.label}: {item.time}</p>
+                    ))}
+                  </div>
+                </div>
+              </div>
+              <div className="flex items-start gap-3">
+                <Phone className="size-5 text-[#C9A55B] mt-1 shrink-0" />
+                <div>
+                  <p className="font-medium">Contact</p>
+                  <p className="text-sm text-muted-foreground">{contactPhone}</p>
+                  <p className="text-sm text-muted-foreground">{contactEmail}</p>
+                </div>
+              </div>
+            </div>
+            <div className="pt-4">
+              <p className="text-xs text-muted-foreground mb-4">
+                {description}
+              </p>
+              <Link
+                href={buttonHref}
+                className="inline-flex items-center justify-center gap-2 whitespace-nowrap rounded-md text-sm font-medium transition-all disabled:pointer-events-none disabled:opacity-50 [&_svg]:pointer-events-none [&_svg:not([class*='size-'])]:size-4 shrink-0 [&_svg]:shrink-0 outline-none focus-visible:border-ring focus-visible:ring-ring/50 focus-visible:ring-[3px] aria-invalid:ring-destructive/20 dark:aria-invalid:ring-destructive/40 aria-invalid:border-destructive text-primary-foreground h-9 px-4 py-2 has-[>svg]:px-3 bg-[#C9A55B] hover:bg-[#B89440]"
+              >
+                {buttonText}
+              </Link>
+            </div>
+          </div>
+          <div className="bg-[#F5F3EE] rounded-xl p-8 flex items-center justify-center aspect-square">
+            <div className="text-center text-muted-foreground">
+              <MapPin className="size-16 mx-auto mb-4 text-[#C9A55B]" />
+              <p className="text-sm">Interactive map would be embedded here</p>
+              <p className="text-xs mt-2">Google Maps / Location Preview</p>
+            </div>
+          </div>
+        </div>
+      </div>
+    </section>
+  );
+};
+
+export default TreatmentLocationCustom;
