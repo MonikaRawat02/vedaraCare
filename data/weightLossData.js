@@ -33,7 +33,7 @@ export const weightLossIntro = {
 };
 
 export const weightLossMechanism1 = {
-  bgColor: "bg-[#F5F0E8]",
+  bgColor: "bg-[#FAF8F3]",
   label: "AN HONEST OBSERVATION",
   title:"Why most weight loss approaches in Dubai produce short-term results and long-term frustration.",
   content: [
