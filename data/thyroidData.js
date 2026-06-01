@@ -31,40 +31,49 @@ export const thyroidIntro = {
   footer: "Medically reviewed by Dr. Priya Menon, BAMS, MD (Ayurveda), DHA-Licensed · Last updated May 2026"
 };
 
-export const thyroidMechanism = {
+export const thyroidHonestOpening = {
   label: "AN HONEST OPENING",
   title: "What we will and will not do for your thyroid condition.",
-  content: [
-    "The clinic that promises to cure your thyroid condition is the clinic that will have you flee from it. Real Ayurvedic care for thyroid is supportive, integrative, and explicit about what it can and cannot do — exactly like this page."
-  ],
-  image: "https://images.unsplash.com/photo-1579684385127-1ef15d508118?q=80&w=2080&auto=format&fit=crop",
-  imageLeft: false,
-  weWillNot: {
+  leftCard: {
+    label: "EXPLICIT BOUNDARIES",
     title: "We will not",
+    titleClass: "text-2xl font-serif",
+    bgColor: "bg-white",
+    borderColor: "border-gray-100",
+    labelColor: "text-[#E63946]",
+    useWarningIcon: true,
+    iconColor: "text-[#E63946]",
     items: [
-      "Ask you to stop or reduce levothyroxine, carbimazole, methimazole, or any thyroid medication.",
-      "Claim Ayurveda can \"cure\" Hashimoto's, Graves', or any thyroid conditions.",
-      "Promise normalisation of thyroid bloodwork through Ayurveda alone.",
-      "Replace your endocrinologist or recommend you discontinue endocrinology care.",
-      "Adjust your medication doses (only your endocrinologist does that, based on bloodwork).",
-      "Promise specific antibody reductions or T4/T3 changes as marketing claims.",
-      "Treat newly diagnosed thyroid conditions before endocrinology workup is complete.",
-      "Manage thyroid emergencies (thyroid storm, severe hypothyroidism, thyroid cancer)."
+      "Ask you to stop or reduce levothyroxine, carbimazole, methimazole, or any thyroid medication",
+      "Claim Ayurveda can \"cure\" Hashimoto's, Graves', or any thyroid condition",
+      "Promise normalisation of thyroid bloodwork through Ayurveda alone",
+      "Replace your endocrinologist or recommend you discontinue endocrinology care",
+      "Adjust your medication doses (only your endocrinologist does that, based on bloodwork)",
+      "Promise specific antibody reductions or T4/T3 changes as marketing claims",
+      "Treat newly diagnosed thyroid conditions before endocrinology workup is complete",
+      "Manage thyroid emergencies (thyroid storm, severe hypothyroidism, thyroid cancer)"
     ]
   },
-  weWill: {
+  rightCard: {
+    label: "SUPPORTIVE ROLE",
     title: "We will",
+    titleClass: "text-2xl font-serif",
+    bgColor: "bg-white",
+    borderColor: "border-[#C9A961]/20",
+    labelColor: "text-[#C9A961]",
+    checkColor: "text-[#C9A961]",
     items: [
-      "Coordinate with your endocrinologist throughout the programme.",
-      "Address autoimmune patterns in Hashimoto's through structured Ayurvedic protocols.",
-      "Treat the constitutional and metabolic patterns affecting how you feel on thyroid medication.",
-      "Address residual symptoms (fatigue, weight, hair loss, mood) where bloodwork is \"normal\" but you feel unwell.",
-      "Provide structured support if your endocrinologist considers medication dose adjustment based on improving bloodwork.",
-      "Manage concurrent conditions — PCOS, weight, hair loss, mood, IBS — that frequently co-exist with thyroid.",
-      "Support fertility for thyroid-related infertility, alongside fertility specialists.",
-      "Be honest about what is realistic for your specific thyroid condition and stage."
+      "Coordinate with your endocrinologist throughout the programme",
+      "Address autoimmune patterns in Hashimoto's through structured Ayurvedic protocols",
+      "Treat the constitutional and metabolic patterns affecting how you feel on thyroid medication",
+      "Address residual symptoms (fatigue, weight, hair loss, mood) when bloodwork is \"normal\" but you feel unwell",
+      "Provide structured support if your endocrinologist considers medication dose adjustment based on improving bloodwork",
+      "Manage concurrent conditions — PCOS, weight, hair loss, mood, IBS — that frequently co-exist with thyroid",
+      "Support fertility for thyroid-related infertility alongside fertility specialists",
+      "Be honest about what is realistic for your specific thyroid condition and stage"
     ]
-  }
+  },
+  footer: "\"The clinic that promises to cure your thyroid condition is the clinic that will harm you. Run from it. Real Ayurvedic care for thyroid is supportive, integrative, and explicit about what it can and cannot do — exactly like this page.\""
 };
 
 export const thyroidPatterns = {
@@ -236,6 +245,8 @@ footer: "This is a representative 6-9 month protocol. Hashimoto's typically bene
 };
 
 export const thyroidOutcomeRanges = {
+  headerBgColor: "bg-[#F5F5DC]",
+  headerTextColor: "text-[#1A1A1A]",
   label: "REALISTIC EXPECTATIONS",
   title: "Honest outcomes based on thyroid condition and adherence.",
   description: "These ranges are based on our 320+ thyroid patients at the JVC clinic with documented bloodwork before and after structured programmes. We measure what changes — and we are explicit about what does not.",
@@ -245,7 +256,7 @@ export const thyroidOutcomeRanges = {
       subtype: "Hashimoto's Hypothyroid",
       days: "30-60% antibody reduction typical; TSH stable/lower on existing levothyroxine",
       severity: "Substantial improvement in residual symptoms (fatigue, weight, hair, mood)",
-      medication: "Levothyroxine continued; some patients may need dose adjustment under endocrinology supervision"
+      medication: "Levothyroxine continued; some patients may need dose adjustment under endocrinologist supervision"
     },
     {
       subtype: "Subclinical Hypothyroid",
@@ -295,17 +306,19 @@ export const thyroidBoundaries = {
     bgColor: "bg-white",
     borderColor: "border-gray-100",
     labelColor: "text-[#E63946]",
-    bulletColor: "bg-[#E63946]",
-    alertBox: "Important: Symptoms of severe hypothyroidism (extreme lethargy, hypothermia, confusion) or thyrotoxicosis (uncontrolled pulse, fever, agitation) require emergency evaluation. Call 999 or go to A&E immediately.",
+    titleClass: "text-2xl font-serif",
+    useWarningIcon: true,
+    iconColor: "text-[#E63946]",
+    alertBox: "Important: Symptoms of severe hypothyroidism (severe lethargy, hypothermia, confusion) or thyroid storm (severe tachycardia, fever, agitation) require emergency evaluation. Call 999 or go to A&E immediately.",
     alertBg: "bg-[#FEF2F2]",
     alertBorder: "border-[#E63946]",
     alertTextColor: "text-[#991B1B]",
-    title: "Endocrinology evaluation required:",
+    title: "",
     items: [
       "Newly suspected thyroid condition without endocrinology workup (TSH, T4, T3, antibodies, often ultrasound needed first)",
-      "Significantly abnormal bloodwork (TSH above 50 or undetectable) without endocrinology input",
+      "Significantly abnormal bloodwork (TSH above 10 or undetectable) without endocrinologist input",
       "New thyroid nodules without imaging assessment",
-      "Pregnancy with thyroid disease requires high-end obstetrics coordination",
+      "Pregnancy with thyroid disease requires high-risk obstetric coordination",
       "Suspected thyroid cancer (rapidly growing nodule, voice changes, lymph nodes)",
       "Cardiac symptoms with thyroid disease (atrial fibrillation, severe palpitations)"
     ],
@@ -316,16 +329,17 @@ export const thyroidBoundaries = {
     bgColor: "bg-white",
     borderColor: "border-[#C9A961]/20",
     labelColor: "text-[#C9A961]",
-    checkColor: "text-[#10B981]",
-    title: "When Ayurveda works alongside endocrinology:",
+    titleClass: "text-2xl font-serif",
+    checkColor: "text-[#C9A961]",
+    title: "",
     items: [
       { text: "You have a confirmed thyroid diagnosis from endocrinology", icon: "check" },
       { text: "You are on stable thyroid medication with regular monitoring", icon: "check" },
-      { text: "Your endocrinologist is aware of and supportive of adjunctive Ayurveda treatment", icon: "check" },
+      { text: "Your endocrinologist is aware of and supportive of adjunctive Ayurvedic treatment", icon: "check" },
       { text: "You have recent bloodwork (TSH, T4, T3, antibodies where relevant) within the last 3 months", icon: "check" },
-      { text: "You are looking for support for residual symptoms, not replacement of medication", icon: "check" }
+      { text: "You are looking for supportive care for residual symptoms, not replacement of medication", icon: "check" }
     ],
-    bestPractice: "Best practice: We require written consent to coordinate with your endocrinologist. We ensure bloodwork levels, medication adjustments, and treatment protocols are integrated seamlessly."
+    bestPractice: "We request written consent to coordinate with your endocrinologist. This ensures bloodwork trends, medication adjustments, and treatment protocols are integrated seamlessly."
   },
   footer: ""
 };
@@ -337,52 +351,49 @@ export const thyroidFaqs = {
   faqs: [
     {
       question: "Can I stop my thyroid medication if I do Ayurvedic treatment?",
-      answer: "No. Ayurvedic treatment for thyroid is supportive-integrative care, not a replacement for medication. For Hashimoto's and overt hypothyroidism, levothyroxine replaces a hormone your body no longer produces sufficiently. Stopping it is dangerous. The goal of Ayurveda is to address underlying patterns and symptoms that medication doesn't reach. Any adjustment to medication doses is made only by your endocrinologist based on your improving bloodwork."
+      answer: "No. Never. Ayurvedic treatment for thyroid is supportive — never replacement. Levothyroxine in hypothyroidism is hormone replacement therapy. Stopping it can cause serious complications. Carbimazole/methimazole in hyperthyroidism prevents thyroid storm. Only your endocrinologist can adjust your thyroid medication, based on bloodwork trends — never us, never you."
     },
     {
       question: "How long does Ayurvedic thyroid treatment take?",
-      answer: "A standard programme runs 6 to 9 months for most thyroid patients. Autoimmune conditions like Hashimoto's typically benefit from the full 9-month programme to consolidate improvements in antibody levels and metabolic function. Subclinical patterns or mild cases may see substantial improvement by month 4-6."
+      answer: "6-9 months for most patients. Hashimoto's typically benefits from the full 9 months. Subclinical hypothyroidism and uncomplicated hypothyroidism may see meaningful results in 6 months. Graves' and complex cases often require extended programmes. This is not a quick fix — it is constitutional medicine addressing root patterns."
     },
     {
       question: "Will my thyroid antibodies go to zero?",
-      answer: "While we often see a 30-60% reduction in thyroid antibody levels (anti-TPO and anti-Tg) over a 9-month programme, they rarely go to zero. Hashimoto's is a chronic autoimmune condition. The goal is to reduce the immune attack on the thyroid, slow disease progression, and improve how you feel, rather than seeking an absolute zero antibody count."
+      answer: "Unlikely. Most Hashimoto's patients see 30-60% reduction in antibody levels over 9 months — documented on bloodwork. Complete elimination of antibodies is rare. The goal is meaningful reduction, slowed progression, and symptom improvement — not \"cure\"."
     },
     {
       question: "Do I need to bring my endocrinologist's permission?",
-      answer: "We strongly recommend that your endocrinologist is aware of your adjunctive Ayurvedic treatment. We work alongside conventional care and are happy to coordinate with your specialist. Most Dubai endocrinologists are supportive of integrative approaches that focus on diet, lifestyle, and supportive herbal protocols."
+      answer: "Not permission, but coordination. We request written consent to communicate with your endocrinologist. This ensures bloodwork trends, medication adjustments, and treatment protocols are integrated. Most endocrinologists support adjunctive Ayurvedic care when positioned honestly as supportive treatment."
     },
     {
       question: "What bloodwork do I need before starting?",
-      answer: "We require your most recent TSH, Free T4, and Free T3 levels. For Hashimoto's, we also need anti-TPO and anti-Tg antibody levels. If you have had a thyroid ultrasound, please bring the report. All bloodwork should be from the last 3 months. No treatment is designed without reviewing your data first."
+      answer: "Most recent TSH, free T4, free T3, and antibodies (anti-TPO, anti-Tg for Hashimoto's; TSI for Graves'). Ideally within the last 3 months. If your bloodwork is older or incomplete, we coordinate the necessary tests before designing your treatment plan."
     },
     {
       question: "Can Ayurveda help if my TSH is normal but I still feel unwell?",
-      answer: "Yes. This is one of the most common reasons patients seek our care. \"Normal\" bloodwork doesn't always mean optimal function. We address the metabolic, digestive, and constitutional factors that cause residual fatigue, weight issues, and brain fog despite having \"in-range\" TSH levels."
+      answer: "This is exactly where Ayurvedic treatment excels. Many hypothyroid patients on levothyroxine have TSH \"in range\" but persistent fatigue, weight issues, hair loss, brain fog, mood changes. Ayurveda addresses the metabolic and constitutional patterns affecting how you feel on the medication — patterns bloodwork alone does not capture."
     },
     {
       question: "Is Panchakarma safe for thyroid patients?",
-      answer: "Yes, when performed by qualified physicians with experience in thyroid conditions. Our Panchakarma protocols are modified and stage-appropriate. We carefully coordinate the timing of your thyroid medication during the cleansing phase to ensure stability."
+      answer: "For most thyroid patients on stable medication, yes — with careful protocol design. We coordinate Panchakarma timing around your levothyroxine dosing. Contraindicated in active hyperthyroidism, post-thyroidectomy first year, severe hypothyroidism with TSH >50, and thyroid emergencies. Your stage determines whether Panchakarma is appropriate."
     },
     {
       question: "How much does Ayurvedic thyroid treatment cost in Dubai?",
-      answer: "Initial thyroid assessment at our JVC clinic starts from AED 350. The cost of a structured 6 to 9-month programme depends on the intensity of the protocol and whether Panchakarma is included. We provide a full transparent pricing breakdown after your initial consultation."
+      answer: "Initial consultation: AED 350. Full 6-9 month programme including consultations, internal medicines, Panchakarma (if appropriate), and follow-up: typically AED 12,000-18,000 depending on condition complexity and protocol. Bloodwork costs are separate (done through your usual lab or endocrinologist). We provide detailed cost breakdown at initial consultation."
     }
   ]
 };
 
 export const thyroidCTA = {
-  label: "READY?",
+  bgColor: "bg-[#FAF8EF]",
+  label: "READY WHEN YOU ARE",
   title: "Ready to explore supportive Ayurvedic care for your thyroid condition?",
-  description: "Book a comprehensive thyroid consultation at our JVC clinic. Bring your recent bloodwork. We will identify your specific thyroid pattern, review your history, and design a 6 to 9-month programme tailored to your needs.",
+  description: "Book a comprehensive thyroid consultation at our JVC clinic. Bring your recent bloodwork.",
   button1Text: "Book Your Consultation",
   button2Text: "Chat on WhatsApp",
-  bullets: [
-    "Initial consultation from AED 350",
-    "Walking distance from Circle Mall, JVC",
-    "Coordinated with your endocrinologist",
-    "Insurance direct-billing",
-    "Free clinic parking"
-  ]
+  subtext: "Circle Mall, Jumeirah Village Circle (JVC), Dubai · DHA-Licensed · Open Sat-Thu 9am-8pm",
+  button1Class: "bg-[#184C3A] text-white hover:bg-[#123a2c]",
+  button2Class: "bg-[#4A7C59] text-white hover:bg-[#3d664a]"
 };
 
 export const thyroidLocation = {

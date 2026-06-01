@@ -1,5 +1,5 @@
 import React from 'react';
-import { Check } from 'lucide-react';
+import { Check, AlertTriangle } from 'lucide-react';
 
 const ClinicalBoundaries = ({
   bgColor = "bg-white",
@@ -42,13 +42,17 @@ const ClinicalBoundaries = ({
               </div>
             )}
 
-            <div className="text-lg font-sans font-medium text-[#1A1A1A] mb-8 leading-relaxed">
+            <div className={`${leftCard.titleClass || 'text-lg font-sans font-medium'} text-[#1A1A1A] mb-8 leading-relaxed`}>
               {leftCard.title}
             </div>
             <ul className="space-y-4 mb-8">
               {leftCard.items.map((item, index) => (
                 <li key={index} className="flex items-start gap-3 text-sm text-gray-700 font-sans">
-                  <span className={`w-1.5 h-1.5 rounded-full mt-2 shrink-0 ${leftCard.bulletColor || 'bg-red-500'}`} />
+                  {leftCard.useWarningIcon ? (
+                    <AlertTriangle className={`w-4 h-4 mt-0.5 shrink-0 ${leftCard.iconColor || 'text-red-500'}`} />
+                  ) : (
+                    <span className={`w-1.5 h-1.5 rounded-full mt-2 shrink-0 ${leftCard.bulletColor || 'bg-red-500'}`} />
+                  )}
                   <span>{item}</span>
                 </li>
               ))}
@@ -65,17 +69,25 @@ const ClinicalBoundaries = ({
             <div className={`text-sm font-sans font-semibold tracking-wider uppercase mb-4 ${rightCard.labelColor || 'text-[#C9A961]'}`}>
               {rightCard.label}
             </div>
-            <div className="text-lg font-sans font-medium text-[#1A1A1A] mb-8 leading-relaxed">
+            <div className={`${rightCard.titleClass || 'text-lg font-sans font-medium'} text-[#1A1A1A] mb-8 leading-relaxed`}>
               {rightCard.title}
             </div>
             <ul className="space-y-5">
               {rightCard.items.map((item, index) => (
-                <li key={index} className="flex items-start gap-4 text-sm text-gray-700 font-sans">
+                <li key={index} className="flex items-start gap-4 text-sm text-gray-700 font-sans leading-relaxed">
                   <Check className={`w-5 h-5 mt-0.5 shrink-0 ${rightCard.checkColor || 'text-[#C9A961]'}`} />
                   <span>{item.text || item}</span>
                 </li>
               ))}
             </ul>
+
+            {rightCard.bestPractice && (
+              <div className="mt-8 p-6 bg-[#F2F2E2] rounded-lg border border-[#C9A961]/20">
+                <p className="text-[14px] text-gray-700 leading-relaxed font-sans">
+                  <span className="font-bold">Best practice:</span> {rightCard.bestPractice}
+                </p>
+              </div>
+            )}
           </div>
         </div>
 

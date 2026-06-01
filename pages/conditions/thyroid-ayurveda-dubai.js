@@ -7,14 +7,14 @@ import ArthritisPillars from '../../components/ayurveda/ArthritisPillars';
 import ClinicalBoundaries from '../../components/ayurveda/ClinicalBoundaries';
 import TreatmentProtocol from '../../components/ayurveda/Protocols';
 import OutcomeRanges from '../../components/ayurveda/OutcomeRanges';
-import FinalCTA from '../../components/ayurveda/FinalCTA';
+import CTA from '../../components/home/CTA';
 import FAQ from '../../components/home/FAQ';
 
 
 import {
   thyroidHero,
   thyroidIntro,
-  thyroidMechanism,
+  thyroidHonestOpening,
   thyroidPatterns,
   thyroidHashimoto,
   thyroidPillars,
@@ -34,60 +34,182 @@ const AyurvedaThyroid = () => {
       "@type": "MedicalCondition",
       "@id": "https://vedaracare.ae/conditions/thyroid-ayurveda-dubai/#condition",
       "name": "Thyroid Disorders",
-      "alternateName": ["Hypothyroidism", "Hashimoto's Thyroiditis", "Graves' Disease", "Galaganda", "Gandamala"],
+      "alternateName": [
+        "Thyroid Disease",
+        "Hashimoto's Thyroiditis",
+        "Hypothyroidism",
+        "Hyperthyroidism",
+        "Galaganda",
+        "Gandamala"
+      ],
       "code": [
-        {"@type": "MedicalCode", "code": "E03.9", "codingSystem": "ICD-10"},
-        {"@type": "MedicalCode", "code": "E06.3", "codingSystem": "ICD-10"},
-        {"@type": "MedicalCode", "code": "E05.0", "codingSystem": "ICD-10"}
+        { "@type": "MedicalCode", "code": "E03", "codingSystem": "ICD-10" },
+        { "@type": "MedicalCode", "code": "E06.3", "codingSystem": "ICD-10" },
+        { "@type": "MedicalCode", "code": "E05", "codingSystem": "ICD-10" }
       ],
       "associatedAnatomy": [
-        {"@type": "AnatomicalStructure", "name": "Thyroid gland"},
-        {"@type": "AnatomicalStructure", "name": "Endocrine system"}
+        { "@type": "AnatomicalStructure", "name": "Thyroid gland" },
+        { "@type": "AnatomicalStructure", "name": "Endocrine system" },
+        { "@type": "AnatomicalStructure", "name": "Hypothalamic-pituitary-thyroid axis" }
       ],
       "signOrSymptom": [
-        {"@type": "MedicalSymptom", "name": "Fatigue"},
-        {"@type": "MedicalSymptom", "name": "Weight gain"},
-        {"@type": "MedicalSymptom", "name": "Hair loss"},
-        {"@type": "MedicalSymptom", "name": "Cold intolerance"},
-        {"@type": "MedicalSymptom", "name": "Brain fog"},
-        {"@type": "MedicalSymptom", "name": "Mood changes"},
-        {"@type": "MedicalSymptom", "name": "Constipation"},
-        {"@type": "MedicalSymptom", "name": "Dry skin"}
+        { "@type": "MedicalSymptom", "name": "Fatigue" },
+        { "@type": "MedicalSymptom", "name": "Weight gain" },
+        { "@type": "MedicalSymptom", "name": "Hair loss" },
+        { "@type": "MedicalSymptom", "name": "Cold intolerance" },
+        { "@type": "MedicalSymptom", "name": "Brain fog" },
+        { "@type": "MedicalSymptom", "name": "Mood changes" },
+        { "@type": "MedicalSymptom", "name": "Constipation" },
+        { "@type": "MedicalSymptom", "name": "Dry skin" }
       ],
       "possibleTreatment": [
-        {"@type": "MedicalProcedure", "name": "Panchakarma", "url": "https://vedaracare.ae/treatments/panchakarma-jvc/"},
-        {"@type": "MedicalProcedure", "name": "Virechana"},
-        {"@type": "MedicalProcedure", "name": "Vasti"},
-        {"@type": "MedicalTherapy", "name": "Kanchanara Guggulu"},
-        {"@type": "MedicalTherapy", "name": "Varunadi Kashayam"},
-        {"@type": "MedicalTherapy", "name": "Ayurvedic thyroid medicines"}
+        {
+          "@type": "MedicalProcedure",
+          "name": "Panchakarma",
+          "url": "https://vedaracare.ae/treatments/panchakarma-dubai/"
+        },
+        { "@type": "MedicalProcedure", "name": "Virechana" },
+        { "@type": "MedicalProcedure", "name": "Vasti" },
+        { "@type": "MedicalTherapy", "name": "Kanchanara Guggulu" },
+        { "@type": "MedicalTherapy", "name": "Varunadi Kashayam" },
+        { "@type": "MedicalTherapy", "name": "Ayurvedic thyroid medicines" }
+      ],
+      "riskFactor": [
+        { "@type": "MedicalRiskFactor", "name": "Female sex" },
+        { "@type": "MedicalRiskFactor", "name": "Family history of thyroid disease" },
+        { "@type": "MedicalRiskFactor", "name": "Autoimmune disease history" },
+        { "@type": "MedicalRiskFactor", "name": "Postpartum period" },
+        { "@type": "MedicalRiskFactor", "name": "Iodine deficiency or excess" },
+        { "@type": "MedicalRiskFactor", "name": "Radiation exposure" }
+      ]
+    },
+    {
+      "@context": "https://schema.org",
+      "@type": "MedicalCondition",
+      "name": "Hashimoto's Thyroiditis",
+      "alternateName": ["Autoimmune Hypothyroidism", "Chronic Lymphocytic Thyroiditis"],
+      "code": { "@type": "MedicalCode", "code": "E06.3", "codingSystem": "ICD-10" },
+      "signOrSymptom": [
+        { "@type": "MedicalSymptom", "name": "Elevated TSH" },
+        { "@type": "MedicalSymptom", "name": "Low free T4" },
+        { "@type": "MedicalSymptom", "name": "Elevated anti-TPO antibodies" },
+        { "@type": "MedicalSymptom", "name": "Elevated anti-Tg antibodies" }
+      ],
+      "possibleTreatment": [
+        { "@type": "MedicalTherapy", "name": "Levothyroxine (conventional)" },
+        { "@type": "MedicalTherapy", "name": "Adjunctive Ayurvedic treatment" },
+        { "@type": "MedicalTherapy", "name": "Kanchanara Guggulu" }
       ]
     },
     {
       "@context": "https://schema.org",
       "@type": "MedicalWebPage",
       "@id": "https://vedaracare.ae/conditions/thyroid-ayurveda-dubai/#webpage",
-      "name": "Ayurveda for Thyroid in Dubai | JVC Clinic | Vedara Care",
+      "name": "Ayurveda for Thyroid in Dubai",
       "url": "https://vedaracare.ae/conditions/thyroid-ayurveda-dubai/",
-      "about": {"@id": "https://vedaracare.ae/conditions/thyroid-ayurveda-dubai/#condition"},
+      "about": { "@id": "https://vedaracare.ae/conditions/thyroid-ayurveda-dubai/#condition" },
       "audience": {
         "@type": "PatientAudience",
-        "geographicArea": {"@type": "Place", "name": "Dubai, United Arab Emirates"}
+        "geographicArea": { "@type": "Place", "name": "Dubai, United Arab Emirates" }
       },
       "lastReviewed": "2026-05-30",
       "reviewedBy": {
         "@type": "Physician",
         "name": "Dr. Priya Menon",
         "hasCredential": "DHA-Licensed BAMS, MD (Ayurveda)"
+      },
+      "primaryImageOfPage": "https://vedaracare.ae/images/thyroid-ayurveda-dubai-hero.jpg"
+    },
+    {
+      "@context": "https://schema.org",
+      "@type": "Service",
+      "name": "Ayurvedic Thyroid Treatment Programmes",
+      "provider": { "@id": "https://vedaracare.ae/#organization" },
+      "areaServed": [
+        { "@type": "Place", "name": "Jumeirah Village Circle" },
+        { "@type": "Place", "name": "Jumeirah Village Triangle" },
+        { "@type": "Place", "name": "Al Barsha South" },
+        { "@type": "Place", "name": "Dubai Sports City" },
+        { "@type": "Place", "name": "Motor City" },
+        { "@type": "Place", "name": "Arjan" },
+        { "@type": "Place", "name": "Dubai Hills Estate" },
+        { "@type": "City", "name": "Dubai" },
+        { "@type": "Place", "name": "United Arab Emirates" }
+      ],
+      "serviceType": "Adjunctive Ayurvedic Treatment for Thyroid Disorders",
+      "hasOfferCatalog": {
+        "@type": "OfferCatalog",
+        "name": "Thyroid Programmes",
+        "itemListElement": [
+          {
+            "@type": "Offer",
+            "name": "Thyroid Initial Assessment",
+            "priceCurrency": "AED",
+            "price": "350",
+            "description": "60-75 minute consultation with BAMS physician, bloodwork review, condition classification, endocrinologist coordination plan"
+          },
+          {
+            "@type": "Offer",
+            "name": "Standard 6-Month Thyroid Programme",
+            "priceCurrency": "AED",
+            "price": "0",
+            "description": "Six-month structured Ayurvedic adjunctive thyroid treatment alongside endocrinology"
+          },
+          {
+            "@type": "Offer",
+            "name": "Comprehensive 9-Month Hashimoto's Programme",
+            "priceCurrency": "AED",
+            "price": "0",
+            "description": "Nine-month programme for Hashimoto's thyroiditis with antibody monitoring and integrated endocrinology coordination"
+          }
+        ]
       }
+    },
+    {
+      "@context": "https://schema.org",
+      "@type": "Article",
+      "headline": "Ayurveda for Thyroid in Dubai — A Complete Clinical Guide",
+      "image": "https://vedaracare.ae/images/thyroid-ayurveda-dubai-hero.jpg",
+      "datePublished": "2026-05-30",
+      "dateModified": "2026-05-30",
+      "author": {
+        "@type": "Physician",
+        "name": "Dr. Priya Menon",
+        "url": "https://vedaracare.ae/doctors/dr-priya-menon-ayurveda/"
+      },
+      "publisher": {
+        "@type": "Organization",
+        "name": "Vedara Care Polyclinic",
+        "logo": { "@type": "ImageObject", "url": "https://vedaracare.ae/logo.png" }
+      },
+      "mainEntityOfPage": "https://vedaracare.ae/conditions/thyroid-ayurveda-dubai/"
     },
     {
       "@context": "https://schema.org",
       "@type": "BreadcrumbList",
       "itemListElement": [
-        {"@type": "ListItem", "position": 1, "name": "Home", "item": "https://vedaracare.ae/"},
-        {"@type": "ListItem", "position": 2, "name": "Conditions", "item": "https://vedaracare.ae/conditions/"},
-        {"@type": "ListItem", "position": 3, "name": "Ayurveda for Thyroid in Dubai", "item": "https://vedaracare.ae/conditions/thyroid-ayurveda-dubai/"}
+        { "@type": "ListItem", "position": 1, "name": "Home", "item": "https://vedaracare.ae/" },
+        { "@type": "ListItem", "position": 2, "name": "Conditions", "item": "https://vedaracare.ae/conditions/" },
+        {
+          "@type": "ListItem",
+          "position": 3,
+          "name": "Ayurveda for Thyroid in Dubai",
+          "item": "https://vedaracare.ae/conditions/thyroid-ayurveda-dubai/"
+        }
+      ]
+    },
+    {
+      "@context": "https://schema.org",
+      "@type": "FAQPage",
+      "mainEntity": [
+        {
+          "@type": "Question",
+          "name": "Can Ayurveda cure my thyroid condition?",
+          "acceptedAnswer": {
+            "@type": "Answer",
+            "text": "No — and any clinic that promises this is dangerous. Hypothyroidism, Hashimoto's, Graves', and most thyroid conditions are chronic conditions requiring ongoing management. Ayurvedic treatment can substantially support the autoimmune component in Hashimoto's, reduce antibody levels, improve residual symptoms, address related conditions, and improve quality of life. It does not cure thyroid disease, restore destroyed thyroid tissue, or replace medication."
+          }
+        }
       ]
     }
   ];
@@ -95,10 +217,49 @@ const AyurvedaThyroid = () => {
   return (
     <>
       <Head>
-        <title>Ayurveda for Thyroid in Dubai | Hashimoto's & Hypothyroid | Vedara Care</title>
-        <meta name="description" content="DHA-licensed Ayurvedic thyroid treatment in Dubai. Integrative 6-9 month programmes for Hashimoto's, hypothyroidism & Graves' disease. Coordinated with endocrinology." />
+        <title>Ayurveda for Thyroid in Dubai | JVC Clinic | Vedara Care</title>
+        <meta
+          name="description"
+          content="DHA-licensed Ayurvedic thyroid treatment at our JVC clinic, Dubai — adjunctive care for Hashimoto's, hypothyroid, Graves'. Always alongside your endocrinologist. Never replacement of medication."
+        />
         <link rel="canonical" href="https://vedaracare.ae/conditions/thyroid-ayurveda-dubai/" />
-        
+        <link
+          rel="alternate"
+          hreflang="en-AE"
+          href="https://vedaracare.ae/conditions/thyroid-ayurveda-dubai/"
+        />
+        <link
+          rel="alternate"
+          hreflang="ar-AE"
+          href="https://vedaracare.ae/ar/conditions/thyroid-ayurveda-dubai/"
+        />
+        <link
+          rel="alternate"
+          hreflang="x-default"
+          href="https://vedaracare.ae/conditions/thyroid-ayurveda-dubai/"
+        />
+
+        <meta
+          property="og:title"
+          content="Ayurveda for Thyroid in Dubai — Adjunctive Treatment at Our JVC Clinic"
+        />
+        <meta
+          property="og:description"
+          content="DHA-licensed Ayurvedic thyroid treatment at our Jumeirah Village Circle clinic. Adjunctive care for Hashimoto's, hypothyroid, Graves' — alongside endocrinology, never replacement of medication."
+        />
+        <meta
+          property="og:image"
+          content="https://vedaracare.ae/og-images/thyroid-ayurveda-dubai.jpg"
+        />
+        <meta property="og:url" content="https://vedaracare.ae/conditions/thyroid-ayurveda-dubai/" />
+        <meta property="og:type" content="article" />
+        <meta property="og:locale" content="en_AE" />
+        <meta property="article:published_time" content="2026-05-30T09:00:00Z" />
+        <meta property="article:modified_time" content="2026-05-30T09:00:00Z" />
+        <meta property="article:author" content="Dr. Priya Menon" />
+        <meta name="twitter:card" content="summary_large_image" />
+        <meta name="robots" content="index, follow, max-image-preview:large" />
+
         <script
           type="application/ld+json"
           dangerouslySetInnerHTML={{ __html: JSON.stringify(schemaMarkup) }}
@@ -112,28 +273,9 @@ const AyurvedaThyroid = () => {
         
         <AyurvedaIntro {...thyroidIntro} />
 
-        {/* Honest Opening - Using ClinicalBoundaries for the two-column list */}
+        {/* Honest Opening */}
         <ClinicalBoundaries 
-          label="AN HONEST OPENING"
-          title="What we will and will not do for your thyroid condition."
-          
-          leftCard={{
-            label: "We will not",
-            items: thyroidMechanism.weWillNot.items,
-            bgColor: "bg-white",
-            borderColor: "border-gray-100",
-            labelColor: "text-[#E63946]",
-            bulletColor: "bg-[#E63946]"
-          }}
-          rightCard={{
-            label: "We will",
-            items: thyroidMechanism.weWill.items,
-            bgColor: "bg-white",
-            borderColor: "border-[#C9A961]/20",
-            labelColor: "text-[#C9A961]",
-            checkColor: "text-[#10B981]"
-          }}
-          footer={thyroidMechanism.content[0]}
+          {...thyroidHonestOpening}
           bgColor="bg-[#F5F1EB]"
         />
 
@@ -157,12 +299,11 @@ const AyurvedaThyroid = () => {
         <TreatmentProtocol 
           {...thyroidProtocol}
           bgColor="bg-[#F4F0E8]"
-          
         />
 
         <OutcomeRanges 
           {...thyroidOutcomeRanges}
-          bgColor="bg-[#F5F1EB]"
+          bgColor="bg-white"
         />
 
         <ClinicalBoundaries 
@@ -175,9 +316,8 @@ const AyurvedaThyroid = () => {
           bgColor="bg-white"
         />
 
-        <FinalCTA 
-          {...thyroidCTA}
-          bgColor="bg-[#FAF7F2]"
+        <CTA 
+          {...thyroidCTA} 
         />
       </main>
     </>
