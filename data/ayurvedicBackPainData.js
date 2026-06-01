@@ -260,6 +260,7 @@ export const ayurvedicBackPainIntegration = {
   ],
   button1Text: "Book Joint Consultation",
   button2Text: "Read about Physiotherapy in JVC",
+  button2Link: "/physiotherapy-jvc/",
   image: "https://images.unsplash.com/photo-1544161515-4ab6ce6db874?q=80&w=2070&auto=format&fit=crop",
   alt: "Ayurvedic doctor and physiotherapist reviewing back pain case notes together at Vedara Care JVC"
 };
@@ -384,15 +385,15 @@ export const ayurvedicBackPainFaqs = {
     },
     {
       question: "Is Kativasti the only Ayurvedic treatment for back pain?",
-      answer: "No. Kativasti is the most-prescribed Ayurvedic therapy for lumbar back pain, but the protocol typically includes Abhyanga, internal Ayurvedic medicines, dietary regulation, and where appropriate, Panchakarma. For cervical back pain (upper back, neck), the equivalent of Kativasti is Greeva Vasti. Your doctor selects the combination based on diagnosis."
+      answer: 'No. Kativasti is the most-prescribed Ayurvedic therapy for lumbar back pain, but the protocol typically includes <a href="/treatments/abhyanga-dubai/" class="text-[#184C3A] hover:underline font-medium">Abhyanga</a>, internal Ayurvedic medicines, dietary regulation, and where appropriate, <a href="/treatments/panchakarma-dubai/" class="text-[#184C3A] hover:underline font-medium">Panchakarma</a>. For cervical back pain (upper back, neck), the equivalent of Kativasti is Greeva Vasti. Your doctor selects the combination based on diagnosis.'
     },
     {
       question: "How quickly will I feel relief?",
-      answer: "Most patients feel some relief within the first 2-3 Kativasti sessions — typically reduced muscle tension and improved flexibility for several hours after each session. Sustained pain reduction usually requires 4-6 sessions (about 2-3 weeks). Maximum benefit accumulates over the full 6-week programme. We will not promise instant cures — Ayurvedic treatment for chronic pain works through accumulation, not single dramatic interventions."
+      answer: 'Most patients feel some relief within the first 2-3 <a href="/treatments/kativasti-dubai/" class="text-[#184C3A] hover:underline font-medium">Kativasti</a> sessions — typically reduced muscle tension and improved flexibility for several hours after each session. Sustained pain reduction usually requires 4-6 sessions (about 2-3 weeks). Maximum benefit accumulates over the full 6-week programme. We will not promise instant cures — Ayurvedic treatment for chronic pain works through accumulation, not single dramatic interventions.'
     },
     {
       question: "Can pregnant women receive Ayurvedic back pain treatment?",
-      answer: "For back pain during pregnancy (after the first trimester), modified Ayurvedic protocols are available — including gentle Abhyanga, specific positional therapies, and Ayurvedic medicines safe in pregnancy. Classical Kativasti is not performed during pregnancy because of the position and sustained heat. For postpartum back pain, the classical 45-day Sutika Paricharya protocol is one of the most effective Ayurvedic programmes in the entire system."
+      answer: 'For back pain during pregnancy (after the first trimester), modified Ayurvedic protocols are available — including gentle Abhyanga, specific positional therapies, and Ayurvedic medicines safe in pregnancy. Classical Kativasti is not performed during pregnancy because of the position and sustained heat. For postpartum back pain, the classical 45-day <a href="/conditions/postnatal-care-ayurveda-dubai/" class="text-[#184C3A] hover:underline font-medium">Sutika Paricharya</a> protocol is one of the most effective Ayurvedic programmes in the entire system.'
     },
     {
       question: "What if my back pain is mainly muscle spasm, not structural?",

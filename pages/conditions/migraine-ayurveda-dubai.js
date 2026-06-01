@@ -192,16 +192,14 @@ const AyurvedaMigraine = () => {
     {
       "@context": "https://schema.org",
       "@type": "FAQPage",
-      "mainEntity": [
-        {
-          "@type": "Question",
-          "name": "Does Ayurvedic treatment actually work for migraine?",
-          "acceptedAnswer": {
-            "@type": "Answer",
-            "text": "For most migraine subtypes, yes — when treatment is a structured 4-6 month medical programme. Across our 280+ migraine patients at the JVC clinic, episodic migraine patients typically see 40-70% reduction in migraine days over 6 months. Chronic migraine patients typically see 25-50% reduction. This is not a cure — migraine remains a lifelong condition — but meaningful sustained reduction is realistic."
-          }
-        }
-      ]
+      "mainEntity": migraineFaqs.faqs.map(faq => ({
+              "@type": "Question",
+              "name": faq.question,
+              "acceptedAnswer": {
+                "@type": "Answer",
+                "text": faq.answer
+              }
+            }))
     }
   ];
 
