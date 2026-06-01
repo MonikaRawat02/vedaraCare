@@ -646,7 +646,7 @@ export const kativastiRelatedPages = {
     {
       title: "Chronic Back Pain in Dubai →",
       description: "The full condition guide — symptoms, diagnosis, treatment options, when to see a doctor, and integrated treatment approaches.",
-      href: "/conditions/back-pain-ayurveda-dubai"
+      href: "/conditions/back-pain-ayurveda-dubai/"
     },
     {
       title: "Physiotherapy in JVC →",

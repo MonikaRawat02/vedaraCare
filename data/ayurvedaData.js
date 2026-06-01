@@ -234,7 +234,7 @@ export const ayurvedaConditions = {
       category: "Pain and Movement",
       description: "Kativasti + internal medicines + lifestyle correction",
       programme: "Typical programme: 14-21 days",
-      link: "/conditions/back-pain-treatment-jvc/"
+      link: "/conditions/back-pain-ayurveda-dubai/"
     },
     {
       title: "Sciatica",

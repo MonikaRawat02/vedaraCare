@@ -158,7 +158,8 @@ export const njavarakizhiApplications = {
     },
     {
       title: "Chronic back pain",
-      subtitle: "Kativasti is more focused"
+      subtitle: "Kativasti is more focused",
+      href: "/conditions/back-pain-ayurveda-dubai/"
     },
     {
       title: "Weight management",
