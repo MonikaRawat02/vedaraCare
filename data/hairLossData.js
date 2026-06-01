@@ -473,22 +473,22 @@ export const hairLossRelatedPages = {
     {
       title: 'Shirodhara in Dubai',
       description: 'The continuous warm oil therapy frequently used in hair loss protocols, particularly for stress-driven and hormonal patterns.',
-      href: '/treatments/panchakarma-dubai/'
+      href: '/treatments/shirodhara-dubai'
     },
     {
       title: 'Ayurveda for PCOS in Dubai',
       description: 'For women whose hair loss is part of PCOS — the underlying hormonal pattern needs addressing alongside the hair-specific protocol.',
-      href: '/ayurveda-clinic-jvc/'
+      href: '/conditions/pcos-ayurveda-dubai'
     },
     {
       title: 'Panchakarma in Dubai',
       description: 'For severe or long-standing hair loss, classical Panchakarma addresses the systemic root patterns. 7, 14, and 21-day programmes.',
-      href: '/treatments/shirodhara-dubai/'
+      href: '/treatments/panchakarma-dubai/'
     },
     {
       title: 'Our Ayurveda Clinic in JVC',
       description: 'The full picture of our Ayurveda department, doctors, treatments, and other conditions we treat at our JVC clinic.',
-      href: '/treatments/abhyanga-dubai/'
+      href: '/ayurveda-clinic-jvc'
     },
     
   ]

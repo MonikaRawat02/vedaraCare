@@ -544,7 +544,7 @@ export const migraineRelatedPages = {
     {
       title: "Ayurveda for Stress & Anxiety in Dubai →",
       description: "For migraine patients with prominent stress and anxiety components — often co-existing — the conditions are treated together.",
-      href: "/conditions/pcos-ayurveda-dubai/" // Placeholder as stress page wasn't found in LS
+      href: "/conditions/stress-anxiety-ayurveda-dubai#webpage" // Placeholder as stress page wasn't found in LS
     },
     {
       title: "Ayurveda for PCOS in Dubai →",
@@ -554,7 +554,7 @@ export const migraineRelatedPages = {
     {
       title: "Panchakarma in Dubai →",
       description: "For chronic migraine or treatment-resistant patterns, classical Panchakarma addresses systemic root patterns over 14-21 days.",
-      href: "/treatments/panchakarma-jvc/"
+      href: "/treatments/panchakarma-dubai/"
     }
   ]
 };
