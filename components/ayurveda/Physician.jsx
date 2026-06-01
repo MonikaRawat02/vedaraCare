@@ -28,9 +28,10 @@ const Physician = ({ label, name, qualification, description, image, alt, stats,
               </p>
             </div>
 
-            <p className="text-[17px] font-sans leading-[1.7] text-white/80 max-w-[480px]">
-              {description}
-            </p>
+            <p 
+              className="text-[17px] font-sans leading-[1.7] text-white/80 max-w-[480px]"
+              dangerouslySetInnerHTML={{ __html: description }}
+            />
 
             {/* Stats Row */}
             <div className="grid grid-cols-3 gap-4 pt-2 border-t border-white/10">

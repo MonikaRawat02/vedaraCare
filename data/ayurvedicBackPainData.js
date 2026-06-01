@@ -477,7 +477,7 @@ export const ayurvedicBackPainRelatedPages = {
     {
       title: "Panchakarma in Dubai →",
       description: "For severe or long-standing back pain, classical Panchakarma addresses systemic Vata imbalance. 7, 14, and 21 day programmes.",
-      href: "//treatments/panchakarma-dubai",
+      href: "/treatments/panchakarma-dubai/",
       linkText: "Learn more →"
     }
   ]

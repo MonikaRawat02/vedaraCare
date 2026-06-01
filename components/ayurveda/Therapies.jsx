@@ -60,11 +60,11 @@ const Therapies = ({
                 </p>
                 {item.link ? (
                   <a href={item.link} className="text-[12px] font-sans font-medium text-[#C9A961] flex items-center gap-1 hover:underline">
-                    Learn more →
+                    {item.linkText || 'Learn more'} →
                   </a>
                 ) : (
                   <button className="text-[12px] font-sans font-medium text-[#C9A961] flex items-center gap-1 hover:underline">
-                    Learn more →
+                    {item.linkText || 'Learn more'} →
                   </button>
                 )}
               </div>

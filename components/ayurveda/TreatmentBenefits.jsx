@@ -60,9 +60,8 @@ const TreatmentBenefits = ({
               <p 
                 className="text-sm leading-[1.85] mb-5 flex-1"
                 style={{ color: 'rgb(74, 67, 60)' }}
-              >
-                {group.description}
-              </p>
+                dangerouslySetInnerHTML={{ __html: group.description }}
+              />
               
               <ul className="space-y-2">
                 {group.benefits.map((benefit, benefitIndex) => (

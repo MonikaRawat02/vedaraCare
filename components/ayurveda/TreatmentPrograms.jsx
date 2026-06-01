@@ -62,9 +62,10 @@ const TreatmentPrograms = ({
                 {program.features.map((feature, i) => (
                   <li key={i} className="flex items-start gap-2 text-sm">
                     <Check className="w-4 h-4 mt-0.5 flex-shrink-0" style={{ color: 'rgb(201, 169, 97)' }} />
-                    <span style={{ color: 'rgb(28, 28, 26)' }}>
-                      {feature}
-                    </span>
+                    <span 
+                      style={{ color: 'rgb(28, 28, 26)' }}
+                      dangerouslySetInnerHTML={{ __html: feature }}
+                    />
                   </li>
                 ))}
               </ul>
@@ -75,9 +76,11 @@ const TreatmentPrograms = ({
                   style={{ borderColor: 'rgb(201, 169, 97)' }}
                 >
                   <span className="font-medium">Best for:</span>
-                  <p className="mt-1" style={{ color: 'rgb(107, 114, 128)' }}>
-                    {program.bestFor}
-                  </p>
+                  <p 
+                    className="mt-1" 
+                    style={{ color: 'rgb(107, 114, 128)' }}
+                    dangerouslySetInnerHTML={{ __html: program.bestFor }}
+                  />
                 </div>
               )}
 

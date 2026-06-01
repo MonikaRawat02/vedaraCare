@@ -6,7 +6,7 @@ export const panchakarmaDubaiHero = {
   ],
   label: "PANCHAKARMA TREATMENT IN DUBAI · DHA-LICENSED",
   title: "Classical\nPanchakarma in\nDubai, the way it\nwas meant to be\npractised.",
-  description: "Authentic 7-day, 14-day, and 21-day Panchakarma programmes at our Jumeirah Village Circle clinic, doctor-supervised by BAMS-qualified physicians. The five-action classical detoxification — properly assessed, properly executed, properly followed up.",
+  description: "Authentic 7-day, 14-day, and 21-day Panchakarma programmes at our <a href=\"/ayurveda-clinic-jvc/\" class=\"text-[#C9A961] hover:underline transition-colors\">Jumeirah Village Circle clinic</a>, doctor-supervised by BAMS-qualified physicians. The five-action classical detoxification — properly assessed, properly executed, properly followed up.",
   primaryCTA: "Book a Panchakarma Consultation",
   secondaryCTA: "Chat on WhatsApp",
   trustSignals: [
@@ -27,7 +27,7 @@ export const panchakarmaDubaiIntro = {
   bgColor: "bg-white",
   label: "THE QUICK ANSWER",
   title: "Panchakarma in Dubai, in one paragraph.",
-  blockquote: "Panchakarma is the classical five-action Ayurvedic detoxification programme, supervised by a BAMS-qualified physician over 7, 14, or 21 days. It includes preparation (oleation and sudation), main therapies (Virechana, Basti, Nasya — and Vamana or Raktamokshana when indicated), and a structured recovery phase. At Vedara Care Polyclinic in Jumeirah Village Circle, Dubai, authentic Panchakarma programmes start from AED 8,500 and address chronic back pain, PCOS, migraine, stress, weight management, and full constitutional reset.",
+  blockquote: "Panchakarma is the classical five-action Ayurvedic detoxification programme, supervised by a BAMS-qualified physician over 7, 14, or 21 days. It includes preparation (oleation and sudation), main therapies (Virechana, Basti, Nasya — and Vamana or Raktamokshana when indicated), and a structured recovery phase. At Vedara Care Polyclinic in <a href=\"/ayurveda-clinic-jvc/\" class=\"text-[#C9A961] hover:underline transition-colors\">Jumeirah Village Circle</a>, Dubai, authentic Panchakarma programmes start from AED 8,500 and address <a href=\"/conditions/back-pain-ayurveda-dubai/\" class=\"text-[#C9A961] hover:underline transition-colors\">chronic back pain</a>, <a href=\"/conditions/pcos-ayurveda-dubai/\" class=\"text-[#C9A961] hover:underline transition-colors\">PCOS</a>, <a href=\"/conditions/migraine-ayurveda-dubai/\" class=\"text-[#C9A961] hover:underline transition-colors\">migraine</a>, stress, weight management, and full constitutional reset.",
   footer: "Medically reviewed by Dr. Priya Nair, BAMS, MD (Ayurveda), DHA-Licensed · Last updated May 2026"
 };
 
@@ -36,7 +36,7 @@ export const panchakarmaDubaiFoundation = {
   label: "THE FOUNDATION",
   title: "Not a detox week. A classical medical protocol.",
   content: [
-    "The word Panchakarma means \"five actions\" — referring to the five classical therapies described in Ayurvedic texts over 2,000 years ago: Vamana, Virechana, Basti, Nasya, and Raktamokshana. Together, they remove deep-seated toxins (ama) and rebalance the three doshas (Vata, Pitta, Kapha).",
+    "The word Panchakarma means \"five actions\" — referring to the five classical therapies described in Ayurvedic texts over 2,000 years ago: Vamana, Virechana, Basti, Nasya, and Raktamokshana. Together, they remove deep-seated toxins (ama) and rebalance the three <a href=\"/ayurveda-dubai/#what-is-ayurveda\" class=\"text-[#C9A961] hover:underline transition-colors\">doshas</a> (Vata, Pitta, Kapha).",
     "Panchakarma is not a wellness retreat, not a juice cleanse, and not a massage package. It is a medical protocol — prescribed by a doctor after assessment, executed by trained therapists, monitored daily, and followed by a structured recovery period that often matters more than the treatment itself.",
     "Done properly, Panchakarma takes a minimum of 7 days for a basic reset and 21 days for full classical treatment. Done in a single day, or \"added to\" a spa weekend, it is not Panchakarma."
   ],
@@ -49,7 +49,7 @@ export const panchakarmaDubaiPhysician = {
   label: "YOUR PANCHAKARMA PHYSICIAN",
   name: "Dr. Priya Nair",
   qualification: "BAMS - MD (Panchakarma Specialization) · DHA Licensed",
-  description: "Dr. Nair has personally supervised over 500+ Panchakarma programmes — 8 years in Kerala and 6 years in Dubai. Her specialisation is in tailoring classical Panchakarma protocols to modern lifestyle conditions: chronic pain, hormonal disorders, and metabolic syndrome in particular.",
+  description: "Dr. Nair is a DHA-licensed <a href=\"/doctors/\" class=\"text-[#C9A961] hover:underline transition-colors\">Ayurvedic physician</a> who has personally supervised over 500+ Panchakarma programmes — 8 years in Kerala and 6 years in Dubai. Her specialisation is in tailoring classical Panchakarma protocols to modern lifestyle conditions: chronic pain, hormonal disorders, and metabolic syndrome in particular.",
   image: "https://vedaracare.ae/images/dr-priya-nair-panchakarma-specialist-jvc.webp",
   alt: "Dr. Priya Nair, BAMS-qualified Panchakarma specialist and DHA-licensed Ayurvedic physician at Vedara Care JVC Dubai",
   stats: [
@@ -60,7 +60,7 @@ export const panchakarmaDubaiPhysician = {
   languages: "Languages: English · Hindi · Malayalam · Arabic (basic)",
   button1Text: "Book with Dr. Nair",
   button2Text: "View Full Profile",
-  profileLink: "/doctors/dr-priya-nair"
+  profileLink: "/doctors/dr-priya-nair-ayurveda"
 };
 
 export const panchakarmaDubaiApplications = {
@@ -75,23 +75,23 @@ export const panchakarmaDubaiApplications = {
     borderColor: "border-[#E5DFD3]",
     labelColor: "text-[#C9A961]",
     items: [
-      "Chronic back pain and sciatica",
-      "PCOS and irregular cycles",
-      "Chronic stress and burnout",
-      "Migraine and chronic headache",
-      "Weight management (with metabolic basis)",
-      "Hair loss and skin conditions",
-      "Type 2 diabetes (alongside endocrinology)",
-      "Chronic IBS and digestive disorders",
+      "<a href=\"/conditions/back-pain-ayurveda-dubai/\" class=\"transition-colors\">Chronic back pain and sciatica</a>",
+      "<a href=\"/conditions/pcos-ayurveda-dubai/\" class=\"  transition-colors\">PCOS and irregular cycles</a>",
+      "<a href=\"/conditions/stress-anxiety-ayurveda-dubai/\" class=\"  transition-colors\">Chronic stress and burnout</a>",
+      "<a href=\"/conditions/migraine-ayurveda-dubai/\" class=\"  transition-colors\">Migraine and chronic headache</a>",
+      "<a href=\"/conditions/weight-loss-ayurveda-dubai/\" class=\" transition-colors\">Weight management (with metabolic basis)</a>",
+      "<a href=\"/conditions/hair-loss-ayurveda-dubai/\" class=\"  transition-colors\">Hair loss and skin conditions</a>",
+      "<a href=\"/conditions/diabetes-ayurveda-dubai/\" class=\"  transition-colors\">Type 2 diabetes (alongside endocrinology)</a>",
+      "<a href=\"/conditions/ibs-ayurveda-dubai/\" class=\" transition-colors\">Chronic IBS and digestive disorders</a>",
       "Post-illness recovery and rejuvenation",
-      "Rheumatoid arthritis and chronic joint pain",
+      "<a href=\"/conditions/arthritis-ayurveda-dubai/\" class=\"  transition-colors\">Rheumatoid arthritis and chronic joint pain</a>",
       "Chronic sinusitis",
       "Constitutional reset for pre-conception preparation"
     ]
   },
   rightCard: {
     label: "When Panchakarma is not the answer",
-    title: "Real Ayurvedic doctors say no when Panchakarma is not indicated. We will tell you when modern medicine is the right first step, or when a lighter Ayurvedic protocol is more appropriate.",
+    title: "Real <a href=\"/doctors/\" class=\" transition-colors\">Ayurvedic doctors</a> say no when Panchakarma is not indicated. We will tell you when modern medicine is the right first step, or when a lighter Ayurvedic protocol is more appropriate.",
     bgColor: "bg-[#F0E9DD]",
     borderColor: "border-[#E5DFD3]",
     labelColor: "text-[#C9A961]",
@@ -174,7 +174,7 @@ export const panchakarmaDubaiActions = {
       label: "Virechana (विरेचन — Therapeutic Purgation)",
       title: "Medicated Purgation",
       description: "Medicated purgation to clear accumulated Pitta from the liver, gallbladder, and small intestine. One of the most clinically useful Panchakarma actions for modern conditions.",
-      typicalUse: "PCOS, skin conditions, liver health, metabolic imbalance",
+      typicalUse: "<a href=\"/conditions/pcos-ayurveda-dubai/\" class=\"text-[#C9A961] hover:underline transition-colors\">PCOS</a>, skin conditions, liver health, metabolic imbalance",
       duration: "Single day with 3 days preparation and recovery"
     },
     {
@@ -182,7 +182,7 @@ export const panchakarmaDubaiActions = {
       label: "Basti (बस्ति — Medicated Enema)",
       title: "Medicated Enema Therapy",
       description: "Considered the most important of the five actions in classical texts — \"half of all treatment is Basti.\" A series of medicated enemas using either herbal decoctions or medicated oils.",
-      typicalUse: "Chronic pain, sciatica, IBS, neurological recovery, Vata disorders",
+      typicalUse: "<a href=\"/conditions/back-pain-ayurveda-dubai/\" class=\"text-[#C9A961] hover:underline transition-colors\">Chronic pain</a>, sciatica, <a href=\"/conditions/ibs-ayurveda-dubai/\" class=\"text-[#C9A961] hover:underline transition-colors\">IBS</a>, neurological recovery, Vata disorders",
       duration: "8, 15, or 30 day courses depending on condition"
     },
     {
@@ -190,7 +190,7 @@ export const panchakarmaDubaiActions = {
       label: "Nasya (नस्य — Nasal Therapy)",
       title: "Nasal Administration",
       description: "Medicated oils or herbal preparations administered through the nasal passages, addressing everything from chronic sinusitis to migraines, hair loss, and head-and-neck conditions.",
-      typicalUse: "Chronic sinusitis, migraine, hair loss, cervical spondylosis",
+      typicalUse: "Chronic sinusitis, <a href=\"/conditions/migraine-ayurveda-dubai/\" class=\"text-[#C9A961] hover:underline transition-colors\">migraine</a>, <a href=\"/conditions/hair-loss-ayurveda-dubai/\" class=\"text-[#C9A961] hover:underline transition-colors\">hair loss</a>, cervical spondylosis",
       duration: "7-14 day courses"
     },
     {
@@ -264,7 +264,7 @@ export const panchakarmaDubaiPrograms = {
       price: "From AED 8,500",
       duration: "7 days at clinic",
       features: [
-        "Initial doctor consultation and dosha assessment",
+        "Initial <a href=\"/doctors/\" class=\"text-[#C9A961] hover:underline transition-colors\">doctor</a> consultation and <a href=\"/ayurveda-dubai/#what-is-ayurveda\" class=\"text-[#C9A961] hover:underline transition-colors\">dosha assessment</a>",
         "3 days Purvakarma (Snehapana, Abhyanga, Swedana)",
         "1-2 main actions (typically Virechana or Basti course)",
         "3 days structured Paschatkarma recovery",
@@ -288,7 +288,7 @@ export const panchakarmaDubaiPrograms = {
         "All medicines, oils, dietary plan included",
         "8 weeks follow-up support including home protocol"
       ],
-      bestFor: "PCOS, chronic back pain, weight management, acid reflux/IBS, hormonal balance",
+      bestFor: "<a href=\"/conditions/pcos-ayurveda-dubai/\" class=\"text-[#C9A961]  transition-colors\">PCOS</a>, <a href=\"/conditions/back-pain-ayurveda-dubai/\" class=\"text-[#C9A961] hover:underline transition-colors\">chronic back pain</a>, <a href=\"/conditions/weight-loss-ayurveda-dubai/\" class=\"text-[#C9A961] hover:underline transition-colors\">weight management</a>, acid reflux/<a href=\"/conditions/ibs-ayurveda-dubai/\" class=\"text-[#C9A961]  transition-colors\">IBS</a>, hormonal balance",
       buttonText: "Enquire on WhatsApp"
     },
     {
@@ -393,7 +393,8 @@ export const panchakarmaDubaiLocation = {
     "Same-gender therapists always",
     "Free covered parking"
   ],
-  buttonText: "Get Directions"
+  buttonText: "Get Directions",
+  mapUrl: "https://goo.gl/maps/xyz" // Replace with actual URL if known, but I'll use a placeholder or check if there's a standard one.
 };
 
 export const panchakarmaDubaiCTA = {

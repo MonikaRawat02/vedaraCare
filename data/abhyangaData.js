@@ -26,7 +26,7 @@ export const abhyangaIntro = {
   bgColor: "bg-[#FFFFFF]",
   label: "THE QUICK ANSWER",
   title: "Abhyanga in Dubai, in one paragraph.",
-  blockquote: "Abhyanga (अभ्यङ्ग) is the classical full-body Ayurvedic oil massage — a 60 to 90-minute therapy in which warm dosha-specific medicated oils are applied head-to-toe in synchronized strokes by two trained therapists. At Vedara Care Polyclinic in Jumeirah Village Circle, Dubai, Abhyanga is doctor-prescribed by BAMS-qualified physicians after dosha assessment, performed on traditional wooden droni tables, and used both as a standalone weekly therapy and as the foundation of Panchakarma protocols. Sessions start from AED 450.",
+  blockquote: "Abhyanga (अभ्यङ्ग) is the classical full-body Ayurvedic oil massage — a 60 to 90-minute therapy in which warm dosha-specific medicated oils are applied head-to-toe in synchronized strokes by two trained therapists. At Vedara Care Polyclinic in Jumeirah Village Circle, Dubai, Abhyanga is doctor-prescribed by BAMS-qualified physicians after dosha assessment, performed on traditional wooden droni tables, and used both as a standalone weekly therapy and as the foundation of <a href=\"/treatments/panchakarma-dubai/\" class=\"text-[#C9A961] hover:underline transition-colors\">Panchakarma</a> protocols. Sessions start from AED 450.",
   footer: "Medically reviewed by Dr. Priya Menon, BAMS, MD (Ayurveda), DHA-Licensed · Last updated May 2026"
 };
 

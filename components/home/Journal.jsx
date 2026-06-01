@@ -53,7 +53,11 @@ const Journal = ({
 
         <div className="grid grid-cols-1 md:grid-cols-3 gap-8">
           {articles.map((article, index) => (
-            <div key={index} className="group cursor-pointer">
+            <a 
+              key={index} 
+              href={article.slug ? `/blog/${article.slug}` : '#'} 
+              className="group cursor-pointer"
+            >
               {/* Image Placeholder */}
               <div className="aspect-[4/3] bg-gradient-to-br from-[#F6F1EA] to-[#FAF8EF] rounded-2xl flex items-center justify-center text-[#A1A1A1] font-sans text-sm overflow-hidden mb-6">
                 <div className="group-hover:scale-105 transition-transform duration-500 ease-out">
@@ -78,7 +82,7 @@ const Journal = ({
                   <span>{article.readTime}</span>
                 </div>
               </div>
-            </div>
+            </a>
           ))}
         </div>
       </div>
