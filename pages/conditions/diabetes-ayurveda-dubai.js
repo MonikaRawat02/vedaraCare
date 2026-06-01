@@ -4,10 +4,11 @@ import AyurvedaIntro from '../../components/ayurveda/AyurvedaIntro';
 import TreatmentProtocol from '../../components/ayurveda/TreatmentProtocol';
 import TreatmentReviews from '../../components/ayurveda/TreatmentReviews';
 import TreatmentPrograms from '../../components/ayurveda/TreatmentPrograms';
-import TreatmentLocation from '../../components/ayurveda/TreatmentLocation';
 import FinalCTA from '../../components/ayurveda/FinalCTA';
 import RelatedPages from '../../components/ayurveda/RelatedPages';
 import ConditionBoundaries from '../../components/ayurveda/ConditionBoundaries';
+import ArthritisPillars from '../../components/ayurveda/ArthritisPillars';
+import TreatmentLocationCustom from '../../components/ayurveda/TreatmentLocationCustom';
 
 import {
   diabetesHero,
@@ -23,7 +24,9 @@ import {
   diabetesFaqs,
   diabetesTreatmentLocation,
   diabetesFinalCTA,
-  diabetesRelatedPages
+  diabetesRelatedPages,
+  diabetesArthritisPillars,
+  diabetesTreatmentLocationCustom
 } from '../../data/diabetesData';
 
 const DiabetesAyurvedaDubai = () => {
@@ -436,99 +439,12 @@ const DiabetesAyurvedaDubai = () => {
       </section>
 
       {/* Section 5: Ayurvedic diabetes treatment has four pillars */}
-      <section className="px-6 md:px-24 py-24" style={{ backgroundColor: '  #FAF6EF' }}>
-        <div className="max-w-7xl mx-auto">
-          <div className="text-center mb-16">
-            <div className="uppercase tracking-wider text-sm mb-4" style={{ color: "rgb(201, 169, 97)" }}>
-              {diabetesOils.label}
-            </div>
-            <h2 className="text-4xl" style={{ fontFamily: "Georgia, serif", fontWeight: 500 }}>
-              {diabetesOils.title}
-            </h2>
-          </div>
-          
-          <div className="grid md:grid-cols-4 gap-8">
-            {diabetesOils.pills.map((pillar, index) => (
-              <div 
-                key={index} 
-                className="p-8 rounded-xl border-t-4 flex flex-col gap-6 space-y-4"
-                style={{ 
-                  backgroundColor: "rgb(255, 255, 255)", 
-                  borderColor: "rgb(201, 169, 97)" 
-                }}
-              >
-                <div 
-                  className="text-4xl" 
-                  style={{ fontFamily: "Georgia, serif", color: "rgb(201, 169, 97)" }}
-                >
-                  {index + 1}
-                </div>
-                <h3 className="text-xl font-medium" style={{ fontFamily: "Georgia, serif" }}>
-                  {pillar.title}
-                </h3>
-                <p className="leading-relaxed" style={{ color: "rgb(107, 114, 128)" }}>
-                  {pillar.description}
-                </p>
-              </div>
-            ))}
-          </div>
-          
-          <p className="text-center mt-12 max-w-3xl mx-auto" style={{ color: 'rgb(107, 114, 128)' }}>
-            {diabetesOils.footer}
-          </p>
-        </div>
-      </section>
+      <ArthritisPillars {...diabetesArthritisPillars} />
 
       {/* Section 6: What six months of Ayurvedic diabetes treatment at our JVC clinic looks like */}
       <TreatmentProtocol {...diabetesProtocol} />
 
       {/* Section 7: Honest outcomes based on stage and adherence */}
-      <section className="px-4 py-24" style={{ backgroundColor: 'rgb(250, 248, 243)' }}>
-        <div className="max-w-6xl mx-auto">
-          <div className="text-center mb-16 space-y-4">
-            <div className="text-sm tracking-wider uppercase font-medium" style={{ color: 'rgb(201, 169, 97)' }}>
-              {diabetesSymptoms.label}
-            </div>
-            <h2 className="text-4xl" style={{ fontFamily: 'Georgia, serif', fontWeight: 500 }}>
-              {diabetesSymptoms.title}
-            </h2>
-            <p className="text-lg max-w-3xl mx-auto" style={{ color: 'rgb(107, 114, 128)' }}>
-              {diabetesSymptoms.description}
-            </p>
-          </div>
-          
-          <div className="bg-white rounded-xl overflow-hidden shadow-lg">
-            <div className="overflow-x-auto">
-              <table className="w-full">
-                <thead style={{ backgroundColor: 'rgb(45, 95, 79)', color: 'white' }}>
-                  <tr>
-                    {diabetesSymptoms.tableHeaders.map((header, index) => (
-                      <th key={index} className="px-6 py-4 text-left font-medium">
-                        {header}
-                      </th>
-                    ))}
-                  </tr>
-                </thead>
-                <tbody className="divide-y divide-gray-200">
-                  {diabetesSymptoms.tableRows.map((row, index) => (
-                    <tr key={index} style={{ backgroundColor: index % 2 === 1 ? 'rgb(249, 249, 249)' : 'white' }}>
-                      <td className="px-6 py-4 font-medium">{row.stage}</td>
-                      <td className="px-6 py-4" style={{ color: 'rgb(107, 114, 128)' }}>{row.hba1c}</td>
-                      <td className="px-6 py-4" style={{ color: 'rgb(107, 114, 128)' }}>{row.other}</td>
-                      <td className="px-6 py-4" style={{ color: 'rgb(107, 114, 128)' }}>{row.medication}</td>
-                    </tr>
-                  ))}
-                </tbody>
-              </table>
-            </div>
-          </div>
-          
-          <p className="text-center mt-8 max-w-3xl mx-auto" style={{ color: 'rgb(107, 114, 128)' }}>
-            {diabetesSymptoms.footer}
-          </p>
-        </div>
-      </section>
-
       {/* Section 8: For diabetes complications, Ayurvedic adjunctive care is often most valuable */}
       <section className="bg-white py-24 px-4">
         <div className="max-w-7xl mx-auto">
@@ -894,71 +810,7 @@ const DiabetesAyurvedaDubai = () => {
      
 
       {/* Section 13: Treatment Location */}
-      <section className={`px-6 md:px-24 py-24 ${diabetesTreatmentLocation.bgColor}`}>
-        <div className="max-w-7xl mx-auto">
-          <div className="grid md:grid-cols-2 gap-12">
-            <div>
-              <div className="uppercase tracking-wider text-sm mb-4" style={{ color: 'rgb(201, 169, 97)' }}>VISIT US</div>
-              <h2 className="text-4xl mb-8" style={{ fontFamily: 'Georgia, serif', fontWeight: 500 }}>
-                Where diabetes treatment happens at Vedara Care.
-              </h2>
-              
-              <div className="space-y-6 mb-8">
-                <div>
-                  <div className="font-medium mb-2">Address</div>
-                  <p style={{ color: 'rgb(107, 114, 128)' }}>
-                    
-                    Jumeirah Village Circle (JVC), Dubai <br />
-                    Next to Circle Mall,JVC <br />
-                   Walking distance from FIVE Jumeirah Village Hotel
-                  </p>
-                </div>
-                
-                <div>
-                  <div className="font-medium mb-2">Contact</div>
-                  <p style={{ color: 'rgb(107, 114, 128)' }}>
-                    Phone: +971 XX XXX XXXX<br />
-                    WhatsApp: +971 XX XXX XXXX<br />
-                    Email:  info@vedaracare.ae
-                  </p>
-                </div>
-                
-                <div>
-                  <div className="font-medium mb-2">Hours</div>
-                  <div className="space-y-1 text-sm" style={{ color: 'rgb(107, 114, 128)' }}>
-                    <div className="flex justify-between">
-                      <span>Sunday - Thursday</span>
-                      <span>9:00 AM - 8:00 PM</span>
-                    </div>
-                    <div className="flex justify-between">
-                      <span>Friday</span>
-                      <span> 2:00 PM - 8:00 PM</span>
-                    </div>
-                    <div className="flex justify-between">
-                      <span>Saturday</span>
-                      <span>10:00 AM - 6:00 PM</span>
-                    </div>
-                  </div>
-                </div>
-              </div>
-
-              <p className="text-sm mb-6" style={{ color: 'rgb(107, 114, 128)' }}>
-               Our JVC clinic coordinates with most major Dubai endocrinology practices. Glucose monitoring equipment on-site for clinic visits. Comfortable consultation rooms with privacy for detailed health reviews. Walking distance from Circle Mall, easy access from JVC Districts 10, 11, 12, 13, JVT, and Al Barsha South.
-
-
-              </p>
-              
-              <button className="px-8 py-4 text-white rounded-lg hover:opacity-90 transition-opacity" style={{ backgroundColor: 'rgb(45, 95, 79)' }}>
-                Book a Diabetes Consultation
-              </button>
-            </div>
-            
-            <div className="bg-gray-200 rounded-xl overflow-hidden h-[500px] flex items-center justify-center">
-              <span style={{ color: 'rgb(107, 114, 128)' }}>Map Placeholder</span>
-            </div>
-          </div>
-        </div>
-      </section>
+      <TreatmentLocationCustom {...diabetesTreatmentLocationCustom} />
 
 
 

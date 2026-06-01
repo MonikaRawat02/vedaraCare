@@ -344,7 +344,11 @@ const NjavarakizhiDubai = () => {
       <TreatmentBenefits {...njavarakizhiBenefits} />
       
       {/* Section 8 - Protocols with TreatmentPrograms */}
-      <TreatmentPrograms {...njavarakizhiPrograms} />
+      <TreatmentPrograms {...njavarakizhiPrograms} 
+     
+      buttonBg="#C9A55B"
+      buttonText="Book Assessment"
+      />
       
       {/* Section 9 - Home Healthcare with new UI */}
       <TreatmentHomeHealthcare {...njavarakizhiHomeHealthcare} />

@@ -20,7 +20,7 @@ export const diabetesHero = {
     title: "WE DO NOT ASK YOU TO STOP YOUR MEDICATION.",
     subtitle: "Medication adjustments are made by your endocrinologist based on bloodwork improvements. We support those improvements through Ayurvedic treatment."
   },
-  image: "",
+  image: "https://images.unsplash.com/photo-1758691462353-36b215702253?crop=entropy&cs=tinysrgb&fit=max&fm=jpg&ixid=M3w3Nzg4Nzd8MHwxfHNlYXJjaHw0fHxkb2N0b3IlMjBwYXRpZW50JTIwY29uc3VsdGF0aW9uJTIwbWVkaWNhbCUyMGNsaW5pY2FsfGVufDF8fHx8MTc3OTgwNTg5OHww&ixlib=rb-4.1.0&q=80&w=1080",
   altText: "Ayurvedic doctor reviewing HbA1c bloodwork with diabetes patient at Vedara Care JVC clinic Dubai"
 };
 
@@ -140,6 +140,49 @@ export const diabetesOils = {
     }
   ],
   footer: "The strongest HbA1c reductions in our patient outcomes come from those who implement all four pillars consistently for 6 months alongside their conventional medications. Herbs alone or Panchakarma alone produce only partial results."
+};
+
+export const diabetesArthritisPillars = {
+  bgColor: "bg-[#FAF6EF]",
+  cardBg: "bg-white",
+  label: "THE TREATMENT APPROACH",
+  title: "Ayurvedic diabetes treatment has four pillars.",
+  description: "The strongest HbA1c reductions in our patient outcomes come from those who implement all four pillars consistently for 6 months alongside their conventional medications. Herbs alone or Panchakarma alone produce only partial results.",
+  pillars: [
+    {
+      title: "Panchakarma Cleansing",
+      description: "For prediabetes, newly diagnosed type 2, and most patients with established type 2 diabetes who do not have contraindications, classical Panchakarma — typically Virechana (medicated purgation) — addresses the insulin resistance, inflammation, and metabolic patterns underlying the condition. Performed once or twice during the programme, typically 7-14 days each time."
+    },
+    {
+      title: "Pattern-Specific Herbal Medicines",
+      description: "Specific Ayurvedic medicines for diabetes — selected for your dosha pattern, stage, and existing medications. Core formulations include Guduchi (Tinospora cordifolia), Methika (Fenugreek), Karela (Bitter melon), Vijaysar (Pterocarpus marsupium), Saptarangi, and combinations like Madhumehari Churna and Asanadi Kashayam."  },
+    {
+      title: "Individualised Dietary Regulation",
+      description: "The single most powerful pillar for many patients. A specific eating protocol designed around your dosha pattern, your current diabetic stage, your cultural food preferences (Indian, Arabic, Filipino, Western), and your real life in Dubai. Far more sophisticated than 'avoid sugar and white rice.'"  },
+    {
+      title: "Lifestyle, Sleep & Movement Protocols",
+      description: "Diabetes is profoundly responsive to sleep quality, stress regulation, and movement patterns. Our programmes include specific protocols for sleep optimisation, stress regulation (often including Shirodhara), movement prescription appropriate to your fitness and complications status.."
+    }
+  ]
+};
+
+export const diabetesTreatmentLocationCustom = {
+  bgColor: "bg-[#F5F1E8]",
+  label: "VISIT US",
+  title: "Where diabetes treatment happens at Vedara Care.",
+  address1: "Vedara Care Polyclinic",
+  address2: "Jumeirah Village Circle (JVC), Dubai <br /> Next to Circle Mall,JVC",
+  addressNote: "Walking distance from FIVE Jumeirah Village Hotel",
+  clinicHours: [
+    { label: "Sunday - Thursday", time: "9:00 AM - 8:00 PM" },
+    { label: "Friday", time: "2:00 PM - 8:00 PM" },
+    { label: "Saturday", time: "10:00 AM - 6:00 PM" }
+  ],
+  contactPhone: "+971 XX XXX XXXX",
+  contactEmail: "info@vedaracare.ae",
+  description: "Our JVC clinic coordinates with most major Dubai endocrinology practices. Glucose monitoring equipment on-site for clinic visits. Comfortable consultation rooms with privacy for detailed health reviews. Walking distance from Circle Mall, easy access from JVC Districts 10, 11, 12, 13, JVT, and Al Barsha South.",
+  buttonText: "Book a Diabetes Consultation",
+  buttonHref: "/book"
 };
 
 export const diabetesApplications = {
