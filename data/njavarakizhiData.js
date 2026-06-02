@@ -131,7 +131,7 @@ export const njavarakizhiApplications = {
       subtitle: "Typical course: 14 sessions"
     },
     {
-      title: "<a href=\"/conditions/arthritis-ayurveda-dubai/\">Rheumatoid arthritis</a> (with internal Ayurvedic medicines and conventional care)",
+      title: "<a href=\"/conditions/arthritis-ayurveda-dubai/\">Rheumatoid arthritis and Arthritis</a> (with internal Ayurvedic medicines and conventional care)",
       subtitle: "Typical course: 14–21 sessions"
     },
     {

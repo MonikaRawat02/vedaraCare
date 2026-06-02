@@ -4,6 +4,7 @@ import AyurvedaIntro from '../../components/ayurveda/AyurvedaIntro';
 import ClinicalBoundaries from '../../components/ayurveda/ClinicalBoundaries';
 import ArthritisTypes from '../../components/ayurveda/ArthritisTypes';
 import ArthritisPillars from '../../components/ayurveda/ArthritisPillars';
+import RelatedPages from '../../components/ayurveda/RelatedPages';
 import FAQ from '../../components/home/FAQ';
 import CTA from '../../components/home/CTA';
 
@@ -16,6 +17,7 @@ import {
   arthritisPillars,
   arthritisFaqs,
   arthritisCTA,
+  arthritisRelatedPages,
 } from '../../data/arthritisData';
 
 const AyurvedaArthritis = () => {
@@ -100,7 +102,7 @@ const AyurvedaArthritis = () => {
       "lastReviewed": "2026-05-28",
       "reviewedBy": {
         "@type": "Physician",
-        "name": "Dr. [Lead Ayurvedic Physician]",
+        "name": "Dr. Priya Menon",
         "hasCredential": "DHA-Licensed BAMS, MD (Ayurveda)"
       },
       "primaryImageOfPage": "https://vedaracare.ae/images/arthritis-ayurveda-dubai-hero.webp"
@@ -159,8 +161,8 @@ const AyurvedaArthritis = () => {
       "dateModified": "2026-05-28",
       "author": {
         "@type": "Physician",
-        "name": "Dr. [Lead Ayurvedic Physician]",
-        "url": "https://vedaracare.ae/doctors/dr-[name]-ayurveda/"
+        "name": "Dr. Priya Menon",
+        "url": "https://vedaracare.ae/doctors/dr-priya-menon-ayurveda/"
       },
       "publisher": {
         "@type": "Organization",
@@ -219,7 +221,7 @@ const AyurvedaArthritis = () => {
         <meta property="og:locale" content="en_AE" />
         <meta property="article:published_time" content="2026-05-28T09:00:00Z" />
         <meta property="article:modified_time" content="2026-05-28T09:00:00Z" />
-        <meta property="article:author" content="Dr. [Lead Ayurvedic Physician Name]" />
+        <meta property="article:author" content="Dr. Priya Menon" />
         <meta name="twitter:card" content="summary_large_image" />
         <meta name="robots" content="index, follow, max-image-preview:large" />
 
@@ -248,6 +250,10 @@ const AyurvedaArthritis = () => {
 
         <CTA {...arthritisCTA} />
 
+        <RelatedPages 
+          {...arthritisRelatedPages}
+          bgColor="bg-white"
+        />
       </main>
     </>
   );

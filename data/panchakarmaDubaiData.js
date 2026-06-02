@@ -85,7 +85,7 @@ export const panchakarmaDubaiApplications = {
       "<a href=\"/conditions/ibs-ayurveda-dubai/\" class=\" transition-colors\">Chronic IBS and digestive disorders</a>",
       "<a href=\"/conditions/thyroid-ayurveda-dubai/\" class=\" transition-colors\">Thyroid conditions (alongside endocrinology)</a>",
       "Post-illness recovery and rejuvenation",
-      "<a href=\"/conditions/arthritis-ayurveda-dubai/\" class=\"  transition-colors\">Rheumatoid arthritis and chronic joint pain</a>",
+      "<a href=\"/conditions/arthritis-ayurveda-dubai/\" class=\"  transition-colors\">Arthritis, Rheumatoid arthritis and chronic joint pain</a>",
       "Chronic sinusitis",
       "Constitutional reset for pre-conception preparation"
     ]
