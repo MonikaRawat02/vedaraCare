@@ -642,7 +642,8 @@ export const kativastiRelatedPages = {
   bgColor: "bg-[#FAF7F2]",
   label: "EXPLORE FURTHER",
   title: "Related pages.",
-  linkText: "<a href='/ayurveda-dubai/' class='text-[#C9A961] hover:underline'>Browse all Ayurvedic treatments</a> →",
+  linkText: "Browse all Ayurvedic treatments →",
+  linkHref: "/ayurveda-dubai/",
   pages: [
     {
       title: "Chronic Back Pain in Dubai →",
