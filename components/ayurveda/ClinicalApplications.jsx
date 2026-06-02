@@ -15,15 +15,9 @@ const ClinicalApplications = ({
     <section className={`${bgColor} py-24 px-6`}>
       <div className="max-w-[1280px] mx-auto">
         <div className="text-center mb-14 space-y-3">
-          <span className="text-[13px] font-sans font-semibold tracking-[0.12em] text-[#C9A961] uppercase block mb-4">
-            {label}
-          </span>
-          <h2 className="text-[clamp(24px,3.5vw,42px)] font-serif font-medium text-[#1A1A1A] leading-[1.2]">
-            {title}
-          </h2>
-          <p className="text-[17px] text-[#6B6B6B] font-sans max-w-[700px] mx-auto leading-relaxed">
-            {description}
-          </p>
+          <span className="text-[13px] font-sans font-semibold tracking-[0.12em] text-[#C9A961] uppercase block mb-4" dangerouslySetInnerHTML={{ __html: label }} />
+          <h2 className="text-[clamp(24px,3.5vw,42px)] font-serif font-medium text-[#1A1A1A] leading-[1.2]" dangerouslySetInnerHTML={{ __html: title }} />
+          <p className="text-[17px] text-[#6B6B6B] font-sans max-w-[700px] mx-auto leading-relaxed" dangerouslySetInnerHTML={{ __html: description }} />
         </div>
 
         <div className="grid lg:grid-cols-2 gap-8">
@@ -36,7 +30,7 @@ const ClinicalApplications = ({
               {strongOutcomes.map((item, index) => (
                 <li key={index} className="flex items-start gap-4 text-[14.5px] text-[#1A1A1A] font-sans">
                   <Check className="w-5 h-5 text-[#1A1A1A] mt-0.5 shrink-0" />
-                  <span>{item}</span>
+                  <span dangerouslySetInnerHTML={{ __html: item }} />
                 </li>
               ))}
             </ul>
@@ -47,20 +41,16 @@ const ClinicalApplications = ({
             <p className="text-[13px] font-sans font-semibold tracking-[0.12em] text-[#C9A961] uppercase mb-4">
               WHERE WE WILL REFER YOU
             </p>
-            <p className="text-[16.5px] font-sans text-[#1A1A1A] mb-6 leading-[1.7]">
-              {referralNote}
-            </p>
+            <p className="text-[16.5px] font-sans text-[#1A1A1A] mb-6 leading-[1.7]" dangerouslySetInnerHTML={{ __html: referralNote }} />
             <ul className="space-y-4 mb-10">
               {referralCases.map((item, index) => (
                 <li key={index} className="flex items-start gap-4 text-[14.5px] text-[#1A1A1A] font-sans">
                   <Info className="w-5 h-5 text-[#1A1A1A] mt-0.5 shrink-0" />
-                  <span>{item}</span>
+                  <span dangerouslySetInnerHTML={{ __html: item }} />
                 </li>
               ))}
             </ul>
-            <p className="text-[13px] text-[#888888] font-sans leading-[1.7] border-t border-[#F5F5F5] pt-6 mt-8">
-              {footerNote}
-            </p>
+            <p className="text-[13px] text-[#888888] font-sans leading-[1.7] border-t border-[#F5F5F5] pt-6 mt-8" dangerouslySetInnerHTML={{ __html: footerNote }} />
           </div>
         </div>
       </div>

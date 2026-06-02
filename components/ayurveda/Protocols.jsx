@@ -13,16 +13,10 @@ const TreatmentProtocol = ({
     <section className={`${bgColor} py-24 px-6`}>
       <div className="max-w-[1400px] mx-auto">
         <div className="text-center space-y-4 mb-16">
-          <div className="text-sm tracking-wider text-[#C9A961] uppercase font-sans">
-            {label}
-          </div>
-          <h2 className="text-4xl font-serif text-[#1A1A1A] leading-tight  mx-auto">
-            {title}
-          </h2>
+          <div className="text-sm tracking-wider text-[#C9A961] uppercase font-sans" dangerouslySetInnerHTML={{ __html: label }} />
+          <h2 className="text-4xl font-serif text-[#1A1A1A] leading-tight mx-auto" dangerouslySetInnerHTML={{ __html: title }} />
           {subtitle && (
-            <p className="text-[#717182] max-w-[720px] mx-auto text-base leading-relaxed">
-              {subtitle}
-            </p>
+            <p className="text-[#717182] max-w-[720px] mx-auto text-base leading-relaxed" dangerouslySetInnerHTML={{ __html: subtitle }} />
           )}
         </div>
 
@@ -36,31 +30,23 @@ const TreatmentProtocol = ({
 
               <div className="flex-grow pt-1">
                 <div className="mb-4">
-                  <div className="text-sm font-medium text-[#C9A961] uppercase tracking-widest mb-1">
-                    {step.week}
-                  </div>
-                  <h3 className="text-2xl font-serif text-[#1A1A1A]">
-                    {step.title}
-                  </h3>
+                  <div className="text-sm font-medium text-[#C9A961] uppercase tracking-widest mb-1" dangerouslySetInnerHTML={{ __html: step.week }} />
+                  <h3 className="text-2xl font-serif text-[#1A1A1A]" dangerouslySetInnerHTML={{ __html: step.title }} />
                 </div>
 
                 <ul className="space-y-2 mb-4">
                   {step.items.map((item, itemIdx) => (
                     <li key={itemIdx} className="flex items-start gap-2 text-sm text-gray-700">
                       <Check className="w-5 h-5 text-[#C9A961] mt-0.5 shrink-0" />
-                      <span>{item}</span>
+                      <span dangerouslySetInnerHTML={{ __html: item }} />
                     </li>
                   ))}
                 </ul>
 
                 {step.expected && (
                   <div className="bg-[#FAF8F3] p-4 rounded-lg">
-                    <div className="text-sm font-medium text-[#1A1A1A] mb-1">
-                      {step.expected.split(':')[0]}:
-                    </div>
-                    <div className="text-sm text-gray-700 leading-relaxed">
-                      {step.expected.split(':').slice(1).join(':').trim()}
-                    </div>
+                    <div className="text-sm font-medium text-[#1A1A1A] mb-1" dangerouslySetInnerHTML={{ __html: step.expected.split(':')[0] + ":" }} />
+                    <div className="text-sm text-gray-700 leading-relaxed" dangerouslySetInnerHTML={{ __html: step.expected.split(':').slice(1).join(':').trim() }} />
                   </div>
                 )}
               </div>
@@ -70,9 +56,7 @@ const TreatmentProtocol = ({
 
         {footer && (
           <div className="mt-12 text-center">
-            <p className="text-sm text-[#888888] max-w-[800px] mx-auto leading-relaxed">
-              {footer}
-            </p>
+            <p className="text-sm text-[#888888] max-w-[800px] mx-auto leading-relaxed" dangerouslySetInnerHTML={{ __html: footer }} />
           </div>
         )}
       </div>

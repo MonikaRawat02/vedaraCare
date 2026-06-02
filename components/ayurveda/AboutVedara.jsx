@@ -21,26 +21,16 @@ const AboutVedara = ({
         <div className="grid lg:grid-cols-[60fr_40fr] gap-12 lg:gap-20 items-center">
           <div className="space-y-10">
             <div className="space-y-6">
-              <p className="text-[13px] font-sans font-semibold tracking-[0.12em] text-[#C9A961] uppercase">
-                {label}
-              </p>
-              <h2 className="text-[clamp(28px,4vw,48px)] font-serif font-medium leading-[1.1] text-white">
-                {title}
-              </h2>
-              <p className="text-[16px] leading-[1.7] text-white/80 font-sans max-w-[600px]">
-                {description}
-              </p>
+              <p className="text-[13px] font-sans font-semibold tracking-[0.12em] text-[#C9A961] uppercase" dangerouslySetInnerHTML={{ __html: label }} />
+              <h2 className="text-[clamp(28px,4vw,48px)] font-serif font-medium leading-[1.1] text-white" dangerouslySetInnerHTML={{ __html: title }} />
+              <p className="text-[16px] leading-[1.7] text-white/80 font-sans max-w-[600px]" dangerouslySetInnerHTML={{ __html: description }} />
             </div>
 
             <div className="grid grid-cols-3 gap-4 pt-4 border-t border-white/10">
               {stats.map((stat, index) => (
                 <div key={index} className="space-y-1">
-                  <p className="text-[24px] font-serif font-semibold text-[#C9A961]">
-                    {stat.value}
-                  </p>
-                  <p className="text-[11px] font-sans text-white/60  tracking-wider leading-tight">
-                    {stat.label}
-                  </p>
+                  <p className="text-[24px] font-serif font-semibold text-[#C9A961]" dangerouslySetInnerHTML={{ __html: stat.value }} />
+                  <p className="text-[11px] font-sans text-white/60 tracking-wider leading-tight" dangerouslySetInnerHTML={{ __html: stat.label }} />
                 </div>
               ))}
             </div>
@@ -50,13 +40,13 @@ const AboutVedara = ({
                 href="/ayurveda-clinic-jvc"
                 className="bg-[#C9A961] text-[#184C3A] px-8 py-4 rounded-[4px] font-sans font-semibold text-[14px] hover:bg-[#B89850] transition-colors"
               >
-                {primaryCTA} →
+                <span dangerouslySetInnerHTML={{ __html: primaryCTA + " →" }} />
               </Link>
               <Link
                 href="/doctors"
                 className="border border-white/20 text-white px-8 py-4 rounded-[4px] font-sans font-semibold text-[14px] hover:bg-white/5 transition-colors"
               >
-                {secondaryCTA}
+                <span dangerouslySetInnerHTML={{ __html: secondaryCTA }} />
               </Link>
             </div>
           </div>
