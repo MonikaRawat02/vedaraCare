@@ -31,9 +31,8 @@ const ArthritisPillars = ({
               </div>
               
               <div className="space-y-4 flex-1">
-                <h3 className="text-xl font-sans font-medium text-[#1A1A1A] leading-tight">
-                  {pillar.title}
-                </h3>
+                <h3 className="text-xl font-sans font-medium text-[#1A1A1A] leading-tight" dangerouslySetInnerHTML={{ __html: pillar.title }} />
+
                 <div 
                   className="text-sm text-[#4A4A4A] font-sans leading-relaxed"
                   dangerouslySetInnerHTML={{ __html: pillar.description }}

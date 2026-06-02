@@ -20,8 +20,8 @@ export const ayurvedaIbsHero = {
     title: 'WE LISTEN BEFORE WE DIAGNOSE.',
     subtitle: 'First consultation is 60 minutes. Most of it is you describing what you actually experience — including symptoms most patients have stopped mentioning to other clinicians.'
   },
-  image: 'https://images.unsplash.com/photo-1631217873436-b0fa88e71f0a?crop=entropy&cs=tinysrgb&fit=max&fm=jpg&ixid=M3w3Nzg4Nzd8MHwxfHNlYXJjaHwxfHxBeXVydmVkaWMlMjBkb2N0b3IlMjBjb25zdWx0YXRpb24lMjBwYXRpZW50JTIwbGlzdGVuaW5nJTIwbWVkaWNhbHxlbnwxfHx8fDE3ODAxMTY5MTd8MA&ixlib=rb-4.1.0&q=80&w=1080',
-  altText: 'Ayurvedic doctor in attentive IBS consultation with patient at Vedara Care JVC clinic Dubai'
+  image: '/images/ibs-ayurveda-dubai-hero.webp',
+  alt: 'Ayurvedic doctor in attentive IBS consultation with patient at Vedara Care JVC clinic Dubai'
 };
 
 export const ayurvedaIbsIntro = {
@@ -82,8 +82,9 @@ export const ayurvedaIbsMechanism1 = {
     'Modern research increasingly aligns with these classical observations. The brain-gut axis, the role of gut motility, the microbiome\'s involvement, post-infectious IBS, SIBO, and the connection between gut function and mental health — all are areas where Ayurvedic frameworks anticipated modern findings by millennia. This is not coincidence. It is the result of millennia of careful clinical observation of a real biological condition.',
     'Authentic Ayurvedic treatment at our JVC clinic uses this classical framework, combined with modern understanding, to address IBS as the serious clinical condition it is — not as a psychological problem requiring patient management.'
   ],
-  image: 'https://images.unsplash.com/photo-1514733670139-4d87a1941d55?crop=entropy&cs=tinysrgb&fit=max&fm=jpg&ixid=M3w3Nzg4Nzd8MHwxfHNlYXJjaHwxfHxBeXVydmVkaWMlMjBtZWRpY2luZSUyMGhlcmJzJTIwbmF0dXJhbCUyMHRyZWF0bWVudCUyMHdlbGxuZXNzfGVufDF8fHx8MTc4MDExNjkxOHww&ixlib=rb-4.1.0&q=80&w=1080',
-   quote: 'The first useful step for many IBS patients is being treated as if they have an actual condition. Everything else follows from there.',
+  image: '/images/ibs-consultation-vedara-jvc.webp',
+  alt: 'Classical Ayurvedic texts and modern IBS clinical references at Vedara Care JVC',
+  quote: 'The first useful step for many IBS patients is being treated as if they have an actual condition. Everything else follows from there.',
   imageLeft: false
 };
 
@@ -93,10 +94,11 @@ export const ayurvedaIbsMechanism2 = {
   title: 'Ayurvedic IBS treatment has four pillars.',
   content: [
     'In classical Ayurveda, IBS (Grahani Roga) is fundamentally a disorder of Agni (digestive fire) — not just "stress" or "anxiety." When Agni is weak, undigested food becomes Ama (toxins), which accumulates in the GI tract, disrupting normal function.',
-    'Authentic Ayurvedic treatment for IBS addresses all four pillars: Agni restoration to rebuild digestive strength; Ama clearance through Panchakarma to remove accumulated toxins; subtype-specific internal medicines tailored to your dosha and pattern; and dietary regulation plus brain-gut protocols (Shirodhara, Abhyanga) to address the stress component without dismissing your symptoms as "just psychological."',
+    'Authentic Ayurvedic treatment for IBS addresses all four pillars: Agni restoration to rebuild digestive strength; Ama clearance through Panchakarma to remove accumulated toxins; subtype-specific internal medicines tailored to your dosha pattern; and dietary regulation plus brain-gut protocols (Shirodhara, Abhyanga) to address the stress component without dismissing your symptoms as "just psychological."',
     'The honest position: Ayurvedic treatment works substantially for most IBS subtypes when delivered as a structured 3–6 month medical programme, not just herbal supplements or dietary advice alone.'
   ],
-  image: 'https://images.unsplash.com/photo-1492552296703-4ec0a2fb3715?crop=entropy&cs=tinysrgb&fit=max&fm=jpg&q=80&w=1080',
+  image: '/images/gut-health-ayurveda-vedara-jvc.webp',
+  alt: 'Doctor in respectful listening conversation with IBS patient at Vedara Care JVC',
   quote: 'Your IBS symptoms are real. So is the treatment.',
   imageLeft: true
 };
@@ -111,8 +113,8 @@ export const ayurvedaIbsPillars = {
       title: "Agni Restoration (Digestive Fire)",
       description: "The foundational concept in Ayurvedic gut treatment. Agni is the digestive fire — the capacity of the gut to process food properly. Most IBS patients have disordered Agni — either weak (mandagni, causing slow digestion and bloating), erratic (vishamagni, causing irregular bowel patterns), or sharp (tikshnagni, causing rapid transit and diarrhoea). Treatment includes specific herbs (Pippali, Trikatu, Chitrakadi Vati), dietary timing protocols, and lifestyle factors that restore proper Agni function. Without this foundation, other treatments produce only partial results."    },
     {
-      title: "Ama Clearance and Panchakarma",
-      description: "Ama refers to incompletely digested metabolic byproducts that accumulate when Agni is impaired and contribute to gut symptoms, inflammation, and systemic effects. For IBS, classical Panchakarma — typically Virechana for IBS-D and IBS with bloating, Basti for IBS-C and Vata-pattern presentations — addresses accumulated Ama and resets gut function. Typically performed once during the programme, in month 2. For SIBO-related IBS, Panchakarma is coordinated with any antimicrobial treatment your gastroenterologist may have prescribed."
+      title: "Ama Clearance and <a href=\"/treatments/panchakarma-dubai/\" class=\"doctor-specialty-link\">Panchakarma</a>",
+      description: "Ama refers to incompletely digested metabolic byproducts that accumulate when Agni is impaired and contribute to gut symptoms, inflammation, and systemic effects. For IBS, classical <a href=\"/treatments/panchakarma-dubai/\" class=\"doctor-specialty-link\">Panchakarma</a> — typically Virechana for IBS-D and IBS with bloating, Basti for IBS-C and Vata-pattern presentations — addresses accumulated Ama and resets gut function. Typically performed once during the programme, in month 2. For SIBO-related IBS, <a href=\"/treatments/panchakarma-dubai/\" class=\"doctor-specialty-link\">Panchakarma</a> is coordinated with any antimicrobial treatment your gastroenterologist may have prescribed."
     },
     {
       title: "Subtype-Specific Internal Medicines",
@@ -273,7 +275,7 @@ export const ayurvedaIbsFaqs = {
   bgColor: 'bg-[#F5F3EE] ',
   label: 'IBS QUESTIONS',
   title: 'What patients ask before starting Ayurvedic IBS treatment.',
-  description: 'For brain-gut axis specifically, see our stress and anxiety page. For specific treatments, see Panchakarma.',
+  description: 'For brain-gut axis specifically, <a href="/conditions/stress-anxiety-ayurveda-dubai/" class="doctor-specialty-link">Read about Stress & Anxiety Ayurveda</a>. For specific treatments, <a href="/treatments/panchakarma-dubai/" class="doctor-specialty-link">Read about Panchakarma</a>.',
   buttonText: 'Ask the Clinical Team',
   faqs: [
     {
@@ -298,7 +300,7 @@ export const ayurvedaIbsFaqs = {
     
     {
       question: 'What if my IBS is worse with stress?',
-      answer: 'Stress-responsive IBS is common — and we treat it as a real biological pattern, not a personality issue. Brain-gut axis protocols are integrated into your IBS treatment, including Shirodhara for patients with significant anxiety-gut component, specific nervine herbs (Brahmi, Jatamansi), and sleep regulation. Patients with prominent anxiety-IBS overlap often benefit from combined IBS and stress treatment in one integrated programme.'  },
+      answer: 'Stress-responsive IBS is common — and we treat it as a real biological pattern, not a personality issue. Brain-gut axis protocols are integrated into your IBS treatment, including Shirodhara for patients with significant anxiety-gut component, specific nervine herbs (Brahmi, Jatamansi), and sleep regulation. Patients with prominent anxiety-IBS overlap often benefit from combined IBS and <a href="/conditions/stress-anxiety-ayurveda-dubai/" class="doctor-specialty-link">stress treatment</a> in one integrated programme.'  },
     {
       question: 'Where exactly is your IBS clinic in Dubai?',
       answer: 'Our clinic is at [full address] in Jumeirah Village Circle (JVC), Dubai — next to Circle Mall, three minutes from FIVE Jumeirah Village Hotel, and five minutes from JSS Private School. Free patient parking is available. Patients travel to us from across Dubai including JVC, JVT, Al Barsha South, Dubai Sports City, Motor City, Arjan, Dubai Hills, Marina, Downtown, Palm Jumeirah, and Mirdif.'  },
@@ -343,7 +345,8 @@ export const ayurvedaIbsTreatmentLocationCustom = {
   contactEmail: 'info@vedaracare.ae',
   description: 'Our JVC clinic schedules extended consultations for IBS patients — typically 60 minutes for initial, 30 minutes for follow-ups. We allow time to discuss symptoms patients have often stopped mentioning to other clinicians. Walking distance from Circle Mall, easy access from JVC Districts 10, 11, 12, 13, JVT, and Al Barsha South. Female doctors available on request.',
   buttonText: 'Book an IBS Consultation',
-  buttonHref: '/book'
+  buttonHref: '/book',
+  mapAlt: 'Vedara Care IBS clinic location in Jumeirah Village Circle Dubai near Circle Mall'
 };
 
 export const ayurvedaIbsFinalCTA = {
