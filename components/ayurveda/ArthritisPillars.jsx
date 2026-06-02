@@ -34,9 +34,10 @@ const ArthritisPillars = ({
                 <h3 className="text-xl font-sans font-medium text-[#1A1A1A] leading-tight">
                   {pillar.title}
                 </h3>
-                <p className="text-sm text-[#4A4A4A] font-sans leading-relaxed">
-                  {pillar.description}
-                </p>
+                <div 
+                  className="text-sm text-[#4A4A4A] font-sans leading-relaxed"
+                  dangerouslySetInnerHTML={{ __html: pillar.description }}
+                />
               </div>
             </div>
           ))}
@@ -44,9 +45,10 @@ const ArthritisPillars = ({
 
         {description && (
           <div className="max-w-3xl mx-auto text-center pt-4">
-            <p className="text-center text-[#6B6B6B] text-base font-sans leading-relaxed">
-              {description}
-            </p>
+            <div 
+              className="text-center text-[#6B6B6B] text-base font-sans leading-relaxed"
+              dangerouslySetInnerHTML={{ __html: description }}
+            />
           </div>
         )}
       </div>
