@@ -429,8 +429,8 @@ const DiabetesAyurvedaDubai = () => {
             
             <div>
               <img 
-                src="https://images.unsplash.com/photo-1758691461957-474a7686e388?crop=entropy&cs=tinysrgb&fit=max&fm=jpg&ixid=M3w3Nzg4Nzd8MHwxfHNlYXJjaHwxfHxkb2N0b3IlMjBwYXRpZW50JTIwY29uc3VsdGF0aW9uJTIwbWVkaWNhbCUyMGNsaW5pY2FsfGVufDF8fHx8MTc3OTgwNTg5OHww&ixlib=rb-4.1.0&q=80&w=1080" 
-                alt="Doctor consulting with patient" 
+                src={diabetesMechanism2.image} 
+                alt={diabetesMechanism2.alt} 
                 className="rounded-xl w-full h-auto object-cover shadow-lg" 
               />
             </div>
@@ -495,8 +495,8 @@ const DiabetesAyurvedaDubai = () => {
 
             <div>
               <img 
-                src="https://images.unsplash.com/photo-1758654859934-2a03792260a0?crop=entropy&cs=tinysrgb&fit=max&fm=jpg&ixid=M3w3Nzg4Nzd8MHwxfHNlYXJjaHw1fHxkb2N0b3IlMjBwYXRpZW50JTIwY29uc3VsdGF0aW9uJTIwbWVkaWNhbCUyMGNsaW5pY2FsfGVufDF8fHx8MTc3OTgwNTg5OHww&ixlib=rb-4.1.0&q=80&w=1080" 
-                alt="Doctor examining patient foot" 
+                src="/images/padabhyanga-diabetic-foot-care-jvc.webp" 
+                alt="Ayurvedic doctor performing diabetic foot examination at Vedara Care JVC Dubai" 
                 className="rounded-xl w-full h-auto object-cover shadow-lg" 
               />
             </div>
