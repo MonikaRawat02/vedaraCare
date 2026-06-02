@@ -47,7 +47,7 @@ const WeightLossAyurvedaDubai = () => {
         {/* Open Graph */}
         <meta property="og:title" content="Ayurveda for Weight Loss in Dubai — Honest, Pattern-Specific Treatment at Our JVC Clinic" />
         <meta property="og:description" content="DHA-licensed Ayurvedic weight loss treatment at our Jumeirah Village Circle clinic. Five metabolic patterns identified. 4-6 month medical programmes. No transformations marketing." />
-        <meta property="og:image" content="https://vedaracare.ae/og-images/weight-loss-ayurveda-dubai.jpg" />
+        <meta property="og:image" content="https://vedaracare.ae/images/weight-loss-ayurveda-dubai-hero.webp" />
         <meta property="og:url" content="https://vedaracare.ae/conditions/weight-loss-ayurveda-dubai/" />
         <meta property="og:type" content="article" />
         <meta property="og:locale" content="en_AE" />
@@ -736,8 +736,8 @@ const WeightLossAyurvedaDubai = () => {
             
             <div>
               <img 
-                src="https://images.unsplash.com/photo-1667586745834-1d077ec9fe73?crop=entropy&cs=tinysrgb&fit=max&fm=jpg&w=800" 
-                alt="Sustainable healthy living" 
+                src={weightLossSymptoms.image} 
+                alt={weightLossSymptoms.alt} 
                 className="rounded-xl w-full h-auto object-cover shadow-lg" 
               />
             </div>

@@ -79,7 +79,7 @@ const AyurvedaHero = ({
             <div className="relative order-1 lg:order-2">
               <div className="relative aspect-[4/5] rounded-[12px] overflow-hidden shadow-2xl max-h-[628px]">
                 <img 
-                  src={image.startsWith('http') ? image : `/images/${image}`} 
+                  src={image.startsWith('http') || image.startsWith('/') ? image : `/images/${image}`} 
                   alt={alt} 
                   className="w-full h-full object-cover"
                 />

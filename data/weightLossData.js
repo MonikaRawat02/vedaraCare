@@ -20,7 +20,8 @@ export const weightLossHero = {
     title: "WE DO NOT WEIGH YOU AT EVERY VISIT.",
     subtitle: "Weight loss consultation at our JVC clinic begins with lab review, pattern identification, and honest expectations."
   },
-  image: "https://images.unsplash.com/photo-1726109072690-946a27ce4f07?crop=entropy&cs=tinysrgb&fit=max&fm=jpg&w=800",
+  image: "/images/weight-loss-ayurveda-dubai-hero.webp",
+  alt: "Ayurvedic doctor in weight loss consultation reviewing lab results with patient at Vedara Care JVC Dubai",
   altText: "Ayurvedic doctor in weight loss consultation reviewing lab results with patient at Vedara Care JVC Dubai"
 };
 
@@ -42,7 +43,6 @@ export const weightLossMechanism1 = {
     "\"Authentic Ayurvedic weight loss treatment works because it addresses upstream patterns over enough time for the body to actually adapt. Panchakarma cleansing resets metabolic patterns. Internal medicines correct dosha-specific imbalances. Dietary regulation addresses the eating patterns producing the problem. Lifestyle modification addresses sleep, stress, and movement systematically. This requires 4-6 months minimum. There are no Ayurvedic shortcuts — anyone selling them is selling you the same problem in a different package.\""
   ],
   quote: "The clinic that promises you the fastest weight loss is usually the one whose patients are the heaviest two years later",
-  image: "https://images.unsplash.com/photo-1760562535428-c79df1baf2cb?crop=entropy&cs=tinysrgb&fit=max&fm=jpg&w=800",
   
   pillars: [
     {
@@ -83,7 +83,10 @@ export const weightLossMechanism2 = {
     "What works is a structured 4-6 month medical programme at a DHA-licensed clinic — pattern identification, Panchakarma, herbal medicines, dietary correction, and lifestyle protocols. This is not a '30-day detox' or a 'fat burner' — it's authentic Ayurvedic treatment."
   ],
   quote: "If your weight loss solution came in a box or a subscription, it's not treatment — it's marketing.",
-  image: "https://images.unsplash.com/photo-1545840716-c82e9eec6930?crop=entropy&cs=tinysrgb&fit=max&fm=jpg&ixid=M3w3Nzg4Nzd8MHwxfHNlYXJjaHwzfHxheXVydmVkaWMlMjBtZWRpY2luZSUyMGhlcmJzJTIwb2lsJTIwcHJlcGFyYXRpb258ZW58MXx8fHwxNzc5ODA0MzE3fDA&ixlib=rb-4.1.0&q=80&w=1080",
+  // image: "https://images.unsplash.com/photo-1545840716-c82e9eec6930?crop=entropy&cs=tinysrgb&fit=max&fm=jpg&ixid=M3w3Nzg4Nzd8MHwxfHNlYXJjaHwzfHxheXVydmVkaWMlMjBtZWRpY2luZSUyMGhlcmJzJTIwb2lsJTIwcHJlcGFyYXRpb258ZW58MXx8fHwxNzc5ODA0MzE3fDA&ixlib=rb-4.1.0&q=80&w=1080",
+  image: "/images/panchakarma-weight-loss-treatment-room-jvc.webp",
+  alt: "Sustainable healthy lifestyle imagery — Ayurvedic weight loss approach in Dubai",
+  
   imageLeft: false,
   imageHeight: "h-[500px]"
 };
@@ -256,6 +259,8 @@ export const weightLossSymptoms = {
   label: "REALISTIC EXPECTATIONS",
   title: "What weight loss is realistic — and why we resist promising specific numbers.",
   description: "Different weight gain patterns respond at different rates and to different degrees. Realistic expectations prevent the frustration that comes from unmet promises.",
+  image: "/images/udvartana-herbal-powder-massage-vedara-jvc.webp",
+  alt: "Sustained healthy living for Ayurvedic weight loss patients in Dubai",
   symptoms: [
     {
       title: "Kapha-Predominant Weight Gain",
@@ -472,6 +477,7 @@ export const weightLossTreatmentLocation = {
   ],
   description: "Our JVC clinic has dedicated Panchakarma rooms with traditional positioning, Udvartana treatment areas, private consultation rooms, and body composition assessment equipment. Female doctors and therapists available on request. Walking distance from Circle Mall, easy access from JVC Districts 10, 11, 12, 13, JVT, and Al Barsha South.",
   buttonText: "Book a Weight Loss Consultation",
+  mapAlt: "Vedara Care weight loss clinic location in Jumeirah Village Circle Dubai near Circle Mall",
   directions: "From Sheikh Mohammed Bin Zayed Road: Take Exit 27 for JVC, follow signs for Circle Mall. From Al Khail Road: Take JVC exit, follow signs for Circle Mall. Our clinic is next to Circle Mall with free patient parking."
 };
 
