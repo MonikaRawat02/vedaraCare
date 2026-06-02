@@ -29,9 +29,7 @@ const TreatmentIntegration = ({
           {/* Text Content */}
           <div className="lg:w-[60%]">
             {paragraphs.map((paragraph, index) => (
-              <p key={index} className={`text-gray-700 leading-relaxed ${index === 0 ? 'text-lg mb-6' : 'mb-8'}`}>
-                {paragraph}
-              </p>
+              <p key={index} className={`text-gray-700 leading-relaxed ${index === 0 ? 'text-lg mb-6' : 'mb-8'}`} dangerouslySetInnerHTML={{ __html: paragraph }} />
             ))}
 
             <div className="space-y-3 mb-8">

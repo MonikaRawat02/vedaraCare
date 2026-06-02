@@ -98,7 +98,9 @@ const PcosAyurvedaDubai = () => {
               {"@type": "MedicalProcedure", "name": "Shirodhara", "url": "https://vedaracare.ae/treatments/shirodhara-dubai/"},
               {"@type": "MedicalTherapy", "name": "Ayurvedic herbal medicines"},
               {"@type": "MedicalTherapy", "name": "Dietary regulation"},
-              {"@type": "MedicalTherapy", "name": "Lifestyle modification"}
+              {"@type": "MedicalTherapy", "name": "Lifestyle modification"},
+              {"@type": "MedicalProcedure", "name": "IUI"},
+              {"@type": "MedicalProcedure", "name": "IVF"}
             ],
             "riskFactor": [
               {"@type": "MedicalRiskFactor", "name": "Family history of PCOS"},
@@ -110,6 +112,104 @@ const PcosAyurvedaDubai = () => {
             ],
             "epidemiology": "Affects approximately 1 in 7 women of reproductive age globally, with higher prevalence in South Asian and Middle Eastern populations including Dubai residents."
           })
+        }}
+      />
+
+      {/* Additional Semantic Entities */}
+      <script
+        type="application/ld+json"
+        dangerouslySetInnerHTML={{
+          __html: JSON.stringify([
+            {
+              "@context": "https://schema.org",
+              "@type": "MedicalCondition",
+              "name": "Phenotype A (Rotterdam) PCOS",
+              "alternateName": ["Classic PCOS"]
+            },
+            {
+              "@context": "https://schema.org",
+              "@type": "MedicalCondition",
+              "name": "Phenotype B (Rotterdam) PCOS",
+              "alternateName": ["Ovulatory PCOS"]
+            },
+            {
+              "@context": "https://schema.org",
+              "@type": "MedicalCondition",
+              "name": "Phenotype C (Rotterdam) PCOS",
+              "alternateName": ["Non-Hyperandrogenic PCOS"]
+            },
+            {
+              "@context": "https://schema.org",
+              "@type": "MedicalCondition",
+              "name": "Phenotype D (Rotterdam) PCOS",
+              "alternateName": ["Mild PCOS"]
+            },
+            {
+              "@context": "https://schema.org",
+              "@type": "MedicalCondition",
+              "name": "Hyperandrogenism"
+            },
+            {
+              "@context": "https://schema.org",
+              "@type": "MedicalGuideline",
+              "name": "Rotterdam criteria"
+            },
+            {
+              "@context": "https://schema.org",
+              "@type": "Substance",
+              "name": "Shatavari"
+            },
+            {
+              "@context": "https://schema.org",
+              "@type": "Substance",
+              "name": "Ashoka"
+            },
+            {
+              "@context": "https://schema.org",
+              "@type": "Substance",
+              "name": "Guduchi"
+            },
+            {
+              "@context": "https://schema.org",
+              "@type": "Substance",
+              "name": "Kanchanara Guggulu"
+            },
+            {
+              "@context": "https://schema.org",
+              "@type": "Substance",
+              "name": "Metformin"
+            },
+            {
+              "@context": "https://schema.org",
+              "@type": "Substance",
+              "name": "Oral contraceptives"
+            },
+            {
+              "@context": "https://schema.org",
+              "@type": "Substance",
+              "name": "Spironolactone"
+            },
+            {
+              "@context": "https://schema.org",
+              "@type": "Organization",
+              "name": "Dubai Health Authority"
+            },
+            {
+              "@context": "https://schema.org",
+              "@type": "Place",
+              "name": "Jumeirah Village Circle"
+            },
+            {
+              "@context": "https://schema.org",
+              "@type": "EducationalCredential",
+              "name": "BAMS"
+            },
+            {
+              "@context": "https://schema.org",
+              "@type": "EducationalCredential",
+              "name": "MD (Ayurveda)"
+            }
+          ])
         }}
       />
 

@@ -26,9 +26,7 @@ const TreatmentReviews = ({
             {title}
           </h2>
           {description && (
-            <p className="text-[17px] font-sans max-w-2xl mx-auto leading-relaxed" style={{ color: isDarkText ? '#6B6B6B' : 'rgba(245, 240, 232, 0.8)' }}>
-              {description}
-            </p>
+            <p className="text-[17px] font-sans max-w-2xl mx-auto leading-relaxed" style={{ color: isDarkText ? '#6B6B6B' : 'rgba(245, 240, 232, 0.8)' }} dangerouslySetInnerHTML={{ __html: description }} />
           )}
         </div>
 
@@ -61,24 +59,16 @@ const TreatmentReviews = ({
                 color: (isDarkText || isWhiteCard) ? '#1A1A1A' : '#F5F0E8', 
                 lineHeight: '1.35', 
                 marginBottom: '16px' 
-              }}>
-                "{review.quote}"
-              </h3>
+              }} dangerouslySetInnerHTML={{ __html: `"${review.quote}"` }} />
               
               {review.content && (
-                <p className="text-[14px] font-sans leading-[1.75] mb-8 flex-grow" style={{ color: (isDarkText || isWhiteCard) ? '#4A4A4A' : 'rgba(245, 240, 232, 0.7)' }}>
-                  {review.content}
-                </p>
+                <p className="text-[14px] font-sans leading-[1.75] mb-8 flex-grow" style={{ color: (isDarkText || isWhiteCard) ? '#4A4A4A' : 'rgba(245, 240, 232, 0.7)' }} dangerouslySetInnerHTML={{ __html: review.content }} />
               )}
               
               <div className="mt-auto pt-4">
                 <div className="space-y-0.5">
-                  <p className="font-sans font-bold text-[15px]" style={{ color: (isDarkText || isWhiteCard) ? '#1A1A1A' : '#F5F0E8' }}>
-                    {review.author}
-                  </p>
-                  <p className="text-[12px] font-sans" style={{ color: (isDarkText || isWhiteCard) ? '#6B6B6B' : 'rgba(245, 240, 232, 0.6)' }}>
-                    {review.details}
-                  </p>
+                  <p className="font-sans font-bold text-[15px]" style={{ color: (isDarkText || isWhiteCard) ? '#1A1A1A' : '#F5F0E8' }} dangerouslySetInnerHTML={{ __html: review.author }} />
+                  <p className="text-[12px] font-sans" style={{ color: (isDarkText || isWhiteCard) ? '#6B6B6B' : 'rgba(245, 240, 232, 0.6)' }} dangerouslySetInnerHTML={{ __html: review.details }} />
                 </div>
               </div>
             </div>

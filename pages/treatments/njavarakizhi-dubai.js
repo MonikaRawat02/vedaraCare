@@ -49,12 +49,12 @@ const NjavarakizhiDubai = () => {
       "followup": "10-15 minute recovery period on the droni. Residual rice and milk left on skin for several hours. Avoid showering for 2 hours. Remain in warm environment for the rest of the day.",
       "indication": [
         {"@type": "MedicalIndication", "name": "Muscle wasting"},
-        {"@type": "MedicalIndication", "name": "Post-illness convalescence"},
-        {"@type": "MedicalIndication", "name": "Post-COVID recovery"},
         {"@type": "MedicalIndication", "name": "Sarcopenia"},
+        {"@type": "MedicalIndication", "name": "Sciatica"},
         {"@type": "MedicalIndication", "name": "Post-stroke rehabilitation"},
         {"@type": "MedicalIndication", "name": "Bell's palsy"},
         {"@type": "MedicalIndication", "name": "Rheumatoid arthritis"},
+        {"@type": "MedicalIndication", "name": "Pakshaghata"},
         {"@type": "MedicalIndication", "name": "Postpartum weakness"},
         {"@type": "MedicalIndication", "name": "Post-immobilisation muscle recovery"}
       ],
@@ -66,6 +66,74 @@ const NjavarakizhiDubai = () => {
       ],
       "sameAs": "https://en.wikipedia.org/wiki/Panchakarma",
       "performer": {"@id": "https://vedaracare.ae/#organization"}
+    },
+    {
+      "@context": "https://schema.org",
+      "@type": "MedicalProcedure",
+      "name": "Shashtika Shali Pinda Sweda"
+    },
+    {
+      "@context": "https://schema.org",
+      "@type": "MedicalTherapy",
+      "name": "Ayurveda",
+      "sameAs": "https://en.wikipedia.org/wiki/Ayurveda"
+    },
+    {
+      "@context": "https://schema.org",
+      "@type": "Substance",
+      "name": "Njavara rice",
+      "alternateName": "Shashtika Shali"
+    },
+    {
+      "@context": "https://schema.org",
+      "@type": "Substance",
+      "name": "Dashamoola"
+    },
+    {
+      "@context": "https://schema.org",
+      "@type": "Substance",
+      "name": "Bala",
+      "alternateName": "Sida cordifolia"
+    },
+    {
+      "@context": "https://schema.org",
+      "@type": "MedicalSubstance",
+      "name": "Mahanarayana Taila"
+    },
+    {
+      "@context": "https://schema.org",
+      "@type": "Book",
+      "name": "Sushruta Samhita"
+    },
+    {
+      "@context": "https://schema.org",
+      "@type": "Book",
+      "name": "Charaka Samhita"
+    },
+    {
+      "@context": "https://schema.org",
+      "@type": "Place",
+      "name": "Kerala"
+    },
+    {
+      "@context": "https://schema.org",
+      "@type": "MedicalProcedure",
+      "name": "Sutika Paricharya"
+    },
+    {
+      "@context": "https://schema.org",
+      "@type": "MedicalProcedure",
+      "name": "Abhyanga"
+    },
+    {
+      "@context": "https://schema.org",
+      "@type": "Place",
+      "name": "Jumeirah Village Circle"
+    },
+    {
+      "@context": "https://schema.org",
+      "@type": "EducationalCredential",
+      "name": "BAMS"
     },
     {
       "@context": "https://schema.org",
@@ -166,120 +234,14 @@ const NjavarakizhiDubai = () => {
     {
       "@context": "https://schema.org",
       "@type": "FAQPage",
-      "mainEntity": [
-        {
-          "@type": "Question",
-          "name": "What is Njavarakizhi in simple terms?",
-          "acceptedAnswer": {
-            "@type": "Answer",
-            "text": "Njavarakizhi (also spelled Navarakizhi) is a specialised Ayurvedic therapy in which small cloth boluses filled with Njavara rice cooked in herbal medicated milk are used to massage the body in synchronised strokes for 60 to 75 minutes. The rice provides nutritive support, the warm milk delivers herbal medicines through the skin, and the sustained moist heat penetrates deeply. It is classically used for muscle wasting, post-illness recovery, and neurological rehabilitation rather than general relaxation."
-          }
-        },
-        {
-          "@type": "Question",
-          "name": "Is Njavarakizhi the same as Navarakizhi?",
-          "acceptedAnswer": {
-            "@type": "Answer",
-            "text": "Yes. Njavarakizhi and Navarakizhi are alternate transliterations of the same Malayalam word — both refer to the same therapy. The Sanskrit clinical name is Shashtika Shali Pinda Sweda. The variations exist because of different ways of writing the Malayalam 'ഞ' sound in English."
-          }
-        },
-        {
-          "@type": "Question",
-          "name": "What is 'Njavara rice' and why does it matter?",
-          "acceptedAnswer": {
-            "@type": "Answer",
-            "text": "Njavara is a specific variety of rice (Shashtika Shali in Sanskrit) that matures in 60 days, hence the name 'shashtika' meaning sixty. It is cultivated primarily in Kerala and has been used in Ayurvedic medicine for over 2,000 years. The rice contains specific amino acid profiles and trace minerals that ordinary rice does not — which is why authentic Njavarakizhi requires this specific variety, not substitutes."
-          }
-        },
-        {
-          "@type": "Question",
-          "name": "How long does a Njavarakizhi session take?",
-          "acceptedAnswer": {
-            "@type": "Answer",
-            "text": "A complete Njavarakizhi at Vedara Care runs 60 to 75 minutes of main therapy, preceded by 15 minutes of preparatory Abhyanga and followed by 10–15 minutes of recovery time. Total clinic time is approximately 90 to 105 minutes. Note that the rice and milk preparation takes 90 minutes before your arrival — which is why Njavarakizhi requires advance booking, not walk-in scheduling."
-          }
-        },
-        {
-          "@type": "Question",
-          "name": "How much does Njavarakizhi cost in Dubai?",
-          "acceptedAnswer": {
-            "@type": "Answer",
-            "text": "At Vedara Care, single-session Njavarakizhi starts from AED 480 — higher than Abhyanga or Shirodhara because of the cost of authentic Njavara rice and the longer preparation. A 7-session trial course starts from AED 2,950. A 14-session clinical restorative course starts from AED 5,600. A 21–30 session intensive programme starts from AED 7,800. Across Dubai, authentic Njavarakizhi typically ranges from AED 500 to AED 900 per session."
-          }
-        },
-        {
-          "@type": "Question",
-          "name": "Who is Njavarakizhi actually for?",
-          "acceptedAnswer": {
-            "@type": "Answer",
-            "text": "Njavarakizhi is most clinically appropriate for: patients recovering from severe or prolonged illness (post-dengue, post-COVID, post-hospitalisation), elderly patients with sarcopenia or frailty, patients in neurological rehabilitation (post-stroke, Bell's palsy, certain paralysis conditions), patients with rheumatoid conditions, and certain postpartum protocols. It is not the right therapy for general relaxation, stress, or insomnia — Abhyanga or Shirodhara are better choices for those."
-          }
-        },
-        {
-          "@type": "Question",
-          "name": "How is Njavarakizhi different from Abhyanga?",
-          "acceptedAnswer": {
-            "@type": "Answer",
-            "text": "Abhyanga uses warm medicated oil applied with hands; Njavarakizhi uses warm rice boluses dipped in medicated milk. Abhyanga primarily detoxifies, relaxes, and balances doshas; Njavarakizhi primarily nourishes, restores, and rebuilds tissues. Abhyanga is appropriate for nearly all adults; Njavarakizhi has specific clinical indications. Abhyanga is typically prescribed for general wellbeing; Njavarakizhi is typically prescribed for specific recovery or restoration needs."
-          }
-        },
-        {
-          "@type": "Question",
-          "name": "How many Njavarakizhi sessions do I need?",
-          "acceptedAnswer": {
-            "@type": "Answer",
-            "text": "For mild convalescence or first-time experience, a 7-session course over 2–3 weeks is typical. For meaningful clinical recovery (post-illness, sarcopenia, rheumatoid conditions), 14 sessions over 4–6 weeks is the standard protocol. For complex neurological recovery or severe muscle wasting, 21–30 sessions over 8–12 weeks is often needed, sometimes repeated annually. Session frequency is typically 2–3 per week."
-          }
-        },
-        {
-          "@type": "Question",
-          "name": "Will I feel results after one session?",
-          "acceptedAnswer": {
-            "@type": "Answer",
-            "text": "Most patients feel a particular kind of warmth and relaxation after a single session — but the therapeutic benefits of Njavarakizhi accumulate over the course. Significant changes in muscle bulk, energy, and recovery typically require the full 14-session course. This is not a therapy where one session 'fixes' something — it is a therapy where consistent dosing over weeks produces measurable change."
-          }
-        },
-        {
-          "@type": "Question",
-          "name": "Can elderly patients have Njavarakizhi?",
-          "acceptedAnswer": {
-            "@type": "Answer",
-            "text": "Yes — elderly patients are one of the primary groups who benefit most from Njavarakizhi. We routinely offer it for patients in their 70s, 80s, and beyond, particularly for sarcopenia and post-illness recovery. For very elderly or frail patients, we modify the protocol — shorter sessions (45 minutes instead of 60), lighter pressure, and often delivered as home service to reduce travel stress."
-          }
-        },
-        {
-          "@type": "Question",
-          "name": "Can I have Njavarakizhi during pregnancy?",
-          "acceptedAnswer": {
-            "@type": "Answer",
-            "text": "Classical Njavarakizhi is not performed during pregnancy because of the sustained moist heat and the body positions required. For pregnancy-related muscle weakness or fatigue, we offer modified Ayurvedic protocols. Postnatal Njavarakizhi is offered after the standard recovery period and is one of the protocols within classical Sutika Paricharya for specific postpartum cases."
-          }
-        },
-        {
-          "@type": "Question",
-          "name": "Where exactly is your Njavarakizhi clinic in Dubai?",
-          "acceptedAnswer": {
-            "@type": "Answer",
-            "text": "Our clinic is in Jumeirah Village Circle (JVC), Dubai — next to Circle Mall, three minutes from FIVE Jumeirah Village Hotel, and five minutes from JSS Private School. Free patient parking is available. We also offer home Njavarakizhi service across Dubai — particularly common for elderly and post-illness patients in JVC, JVT, Al Barsha, Dubai Marina, Downtown, and Palm Jumeirah."
-          }
-        },
-        {
-          "@type": "Question",
-          "name": "Do you offer home Njavarakizhi in Dubai?",
-          "acceptedAnswer": {
-            "@type": "Answer",
-            "text": "Yes. Home Njavarakizhi is one of our most-requested specialised services for elderly patients, post-illness convalescents, and post-stroke rehabilitation patients. Two trained therapists travel to your home with freshly prepared Njavara rice (cooked at the clinic and transported warm), the herbal milk vessel, and all required equipment. Pricing is higher than in-clinic to cover preparation and travel, but for many patients home delivery is what makes the full course actually possible."
-          }
-        },
-        {
-          "@type": "Question",
-          "name": "How do I book Njavarakizhi at your clinic?",
-          "acceptedAnswer": {
-            "@type": "Answer",
-            "text": "Njavarakizhi requires advance booking — typically at least 24 hours notice, ideally 48 hours, because of the rice and milk preparation required. For first-time patients, booking begins with a consultation where the doctor confirms Njavarakizhi is the right therapy and selects the appropriate kashayam. Existing patients can rebook directly with the required advance notice. Tap 'Book a Njavarakizhi Consultation' on this page, WhatsApp us at +971 50 000 0000, or call +971 4 000 0000."
-          }
+      "mainEntity": njavarakizhiFaqs.faqs.map((faq) => ({
+        "@type": "Question",
+        "name": faq.question,
+        "acceptedAnswer": {
+          "@type": "Answer",
+          "text": faq.answer
         }
-      ]
+      }))
     }
   ];
   

@@ -52,16 +52,15 @@ const DoctorHero = ({ doctor }) => {
               <p className="mb-5" style={{ fontFamily: 'Fraunces, Georgia, serif', fontSize: '21px', fontStyle: 'italic', color: 'rgb(201, 169, 97)', fontWeight: '400' }}>
                 {doctor.title}
               </p>
-              <p className="leading-[1.8]" style={{ fontSize: '17px', color: 'rgb(107, 107, 107)', maxWidth: '480px' }}>
-                Dr. Nair leads the Ayurveda department at Vedara Care Polyclinic in Jumeirah Village Circle. With over fifteen years of clinical practice — including eight years in Kerala's leading Ayurvedic hospitals and seven years serving Dubai patients — she is known for treating chronic conditions where conventional care has plateaued. Her approach is precise, evidence-aware, and unhurried.
-              </p>
+              <p className="leading-[1.8]" style={{ fontSize: '17px', color: 'rgb(107, 107, 107)', maxWidth: '480px' }} dangerouslySetInnerHTML={{ __html: doctor.bio }} />
+
             </div>
 
             <div className="flex flex-wrap gap-3">
               <Link
                 href="/book"
                 className="inline-flex items-center justify-center gap-2 px-7 py-3.5 rounded text-[14px] font-medium transition-opacity hover:opacity-90 active:scale-[0.98]"
-                style={{ background: 'rgb(31, 69, 56)', color: 'rgb(255, 255, 255)' }}
+                style={{ background: 'rgb(31, 69, 56) !important', color: 'rgb(255, 255, 255) !important' }}
               >
                 <svg xmlns="http://www.w3.org/2000/svg" width="15" height="15" viewBox="0 0 24 24" fill="none" stroke="currentColor" strokeWidth="2" strokeLinecap="round" strokeLinejoin="round">
                   <path d="M8 2v4"></path>
@@ -74,7 +73,7 @@ const DoctorHero = ({ doctor }) => {
               <a
                 href="https://wa.me/971XXXXXXXX"
                 className="inline-flex items-center justify-center gap-2 px-7 py-3.5 rounded text-[14px] font-medium transition-opacity hover:opacity-90 active:scale-[0.98]"
-                style={{ background: 'rgb(74, 124, 89)', color: 'rgb(255, 255, 255)' }}
+                style={{ background: 'rgb(74, 124, 89) !important', color: 'rgb(255, 255, 255) !important' }}
                 target="_blank"
                 rel="noopener noreferrer"
               >

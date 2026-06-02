@@ -30,9 +30,7 @@ const TreatmentApplications = ({
           {primaryApplications.map((item, index) => (
             <div key={index} className="flex items-start gap-3">
               <Check className="w-5 h-5 text-[#C8975F] mt-0.5 shrink-0" />
-              <span className="text-gray-700">
-                {item}
-              </span>
+              <span className="text-gray-700" dangerouslySetInnerHTML={{ __html: item }} />
             </div>
           ))}
         </div>
@@ -43,15 +41,11 @@ const TreatmentApplications = ({
           HONEST LIMITS
         </div>
         {honestLimits.description && (
-          <p className="text-lg mb-6 text-gray-700">
-            {honestLimits.description}
-          </p>
+          <p className="text-lg mb-6 text-gray-700" dangerouslySetInnerHTML={{ __html: honestLimits.description }} />
         )}
         <div className="space-y-3">
           {honestLimits.items && honestLimits.items.map((item, index) => (
-            <div key={index} className="text-gray-600 pl-4 border-l-2 border-gray-300">
-              {item}
-            </div>
+            <div key={index} className="text-gray-600 pl-4 border-l-2 border-gray-300" dangerouslySetInnerHTML={{ __html: item }} />
           ))}
         </div>
       </div>
@@ -85,24 +79,21 @@ const TreatmentApplications = ({
                       href={item.href} 
                       className="text-sm font-medium hover:underline transition-colors"
                       style={{ color: 'rgb(28, 28, 26)' }}
-                    >
-                      {item.title}
-                    </a>
+                      dangerouslySetInnerHTML={{ __html: item.title }}
+                    />
                   ) : (
                     <p 
                       className="text-sm font-medium"
                       style={{ color: 'rgb(28, 28, 26)' }}
-                    >
-                      {item.title}
-                    </p>
+                      dangerouslySetInnerHTML={{ __html: item.title }}
+                    />
                   )}
                   {item.subtitle && (
                     <p 
                       className="text-xs mt-1"
                       style={{ color: 'rgb(107, 99, 89)' }}
-                    >
-                      {item.subtitle}
-                    </p>
+                      dangerouslySetInnerHTML={{ __html: item.subtitle }}
+                    />
                   )}
                 </div>
               </div>
@@ -150,24 +141,21 @@ const TreatmentApplications = ({
                       href={item.href} 
                       className="text-sm hover:underline transition-colors"
                       style={{ color: 'rgb(74, 67, 60)' }}
-                    >
-                      {item.title}
-                    </a>
+                      dangerouslySetInnerHTML={{ __html: item.title }}
+                    />
                   ) : (
                     <p 
                       className="text-sm"
                       style={{ color: 'rgb(74, 67, 60)' }}
-                    >
-                      {item.title}
-                    </p>
+                      dangerouslySetInnerHTML={{ __html: item.title }}
+                    />
                   )}
                   {item.subtitle && (
                     <p 
                       className="text-xs mt-1"
                       style={{ color: 'rgb(107, 99, 89)' }}
-                    >
-                      {item.subtitle}
-                    </p>
+                      dangerouslySetInnerHTML={{ __html: item.subtitle }}
+                    />
                   )}
                 </div>
               </div>
@@ -218,18 +206,12 @@ const TreatmentApplications = ({
                 style={{ color: 'rgb(157, 148, 139)' }}
               />
             )}
-            <h3 className="text-lg font-semibold" style={{ color: 'rgb(28, 28, 26)', fontFamily: 'DM Sans, sans-serif' }}>
-              {item.title}
-            </h3>
+            <h3 className="text-lg font-semibold" style={{ color: 'rgb(28, 28, 26)', fontFamily: 'DM Sans, sans-serif' }} dangerouslySetInnerHTML={{ __html: item.title }} />
           </div>
           {item.subtitle && (
-            <p className="text-sm mb-3" style={{ color: 'rgb(107, 99, 89)' }}>
-              {item.subtitle}
-            </p>
+            <p className="text-sm mb-3" style={{ color: 'rgb(107, 99, 89)' }} dangerouslySetInnerHTML={{ __html: item.subtitle }} />
           )}
-          <p className="text-sm leading-relaxed" style={{ color: 'rgb(74, 67, 60)' }}>
-            {item.description}
-          </p>
+          <p className="text-sm leading-relaxed" style={{ color: 'rgb(74, 67, 60)' }} dangerouslySetInnerHTML={{ __html: item.description }} />
         </div>
       ))}
     </div>
@@ -268,18 +250,15 @@ const TreatmentApplications = ({
                 maxWidth: '580px', 
                 margin: '0px auto' 
               }}
-            >
-              {description}
-            </p>
+              dangerouslySetInnerHTML={{ __html: description }}
+            />
           )}
         </div>
 
         {isApplicationsFormat ? renderApplicationsFormat() : (isNewFormat ? renderNewFormat() : renderOldFormat())}
 
         {footer && (
-          <p className="text-center max-w-3xl mx-auto mt-12" style={{ color: 'rgb(74, 67, 60)' }}>
-            {footer}
-          </p>
+          <p className="text-center max-w-3xl mx-auto mt-12" style={{ color: 'rgb(74, 67, 60)' }} dangerouslySetInnerHTML={{ __html: footer }} />
         )}
       </div>
     </section>

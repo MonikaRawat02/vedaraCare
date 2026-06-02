@@ -25,3 +25,24 @@ body {
 h1, h2, h3, h4, h5, h6 {
   font-family: var(--font-serif);
 }
+
+/* Style regular links in content, not buttons */
+/* p a, 
+h1 a, 
+h2 a, 
+h3 a, 
+li a {
+  color: #184C3A;
+  text-decoration: none;
+  transition: color 0.2s;
+}
+
+a:hover {
+  color: #123a2c;
+}
+
+.doctor-specialty-link {
+  color: #C9A961;
+  text-decoration: underline;
+  cursor: pointer;
+} */
