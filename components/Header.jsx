@@ -78,6 +78,7 @@ const Header = () => {
             <Link 
               href="/book" 
               className="hidden lg:inline-flex px-[28px] py-[14px] bg-[#1F4538] text-white rounded-md hover:bg-[#184C3A] transition-all text-[16px] font-sans font-semibold shadow-sm"
+              style={{ backgroundColor: '#1F4538 !important', color: 'white !important' }}
             >
               Book Appointment
             </Link>

@@ -30,9 +30,7 @@ const TreatmentApplications = ({
           {primaryApplications.map((item, index) => (
             <div key={index} className="flex items-start gap-3">
               <Check className="w-5 h-5 text-[#C8975F] mt-0.5 shrink-0" />
-              <span className="text-gray-700">
-                {item}
-              </span>
+              <span className="text-gray-700" dangerouslySetInnerHTML={{ __html: item }} />
             </div>
           ))}
         </div>
@@ -43,15 +41,11 @@ const TreatmentApplications = ({
           HONEST LIMITS
         </div>
         {honestLimits.description && (
-          <p className="text-lg mb-6 text-gray-700">
-            {honestLimits.description}
-          </p>
+          <p className="text-lg mb-6 text-gray-700" dangerouslySetInnerHTML={{ __html: honestLimits.description }} />
         )}
         <div className="space-y-3">
           {honestLimits.items && honestLimits.items.map((item, index) => (
-            <div key={index} className="text-gray-600 pl-4 border-l-2 border-gray-300">
-              {item}
-            </div>
+            <div key={index} className="text-gray-600 pl-4 border-l-2 border-gray-300" dangerouslySetInnerHTML={{ __html: item }} />
           ))}
         </div>
       </div>
