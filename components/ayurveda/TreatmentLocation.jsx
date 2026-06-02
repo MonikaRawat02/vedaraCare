@@ -12,6 +12,8 @@ const TreatmentLocation = ({
   whatsapp = "",
   hours = "",
   landmarks = [],
+  image = "",
+  alt = "Clinic location",
   description = "",
   buttonText = "",
   mapImage = "",
@@ -57,12 +59,12 @@ const TreatmentLocation = ({
     <section className={`${bgColor} py-24 px-6 relative overflow-hidden`}>
       <div className="max-w-7xl mx-auto">
         <div className="grid lg:grid-cols-2 gap-12">
-          {/* Map / Location Image */}
-          <div className="h-[400px] bg-gray-300 rounded-xl overflow-hidden">
-            {mapImage ? (
+          {/* Map / Image */}
+          <div className="h-[400px] bg-gray-300 rounded-xl overflow-hidden relative">
+            {image ? (
               <img 
-                src={mapImage} 
-                alt={mapAlt} 
+                src={image.startsWith('http') ? image : `/images/${image}`} 
+                alt={alt} 
                 className="w-full h-full object-cover"
               />
             ) : (

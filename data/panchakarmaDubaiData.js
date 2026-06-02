@@ -83,6 +83,7 @@ export const panchakarmaDubaiApplications = {
       "<a href=\"/conditions/hair-loss-ayurveda-dubai/\" class=\"  transition-colors\">Hair loss and skin conditions</a>",
       "<a href=\"/conditions/diabetes-ayurveda-dubai/\" class=\"  transition-colors\">Type 2 diabetes (alongside endocrinology)</a>",
       "<a href=\"/conditions/ibs-ayurveda-dubai/\" class=\" transition-colors\">Chronic IBS and digestive disorders</a>",
+      "<a href=\"/conditions/thyroid-ayurveda-dubai/\" class=\" transition-colors\">Thyroid conditions (alongside endocrinology)</a>",
       "Post-illness recovery and rejuvenation",
       "<a href=\"/conditions/arthritis-ayurveda-dubai/\" class=\"  transition-colors\">Rheumatoid arthritis and chronic joint pain</a>",
       "Chronic sinusitis",

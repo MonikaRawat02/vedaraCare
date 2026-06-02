@@ -1,7 +1,7 @@
 export const thyroidHero = {
   breadcrumb: [
     { label: "Home", href: "/" },
-    { label: "Conditions", href: "/conditions" },
+    { label: "Conditions", href: "/conditions/" },
     { label: "Ayurveda for Thyroid in Dubai", active: true }
   ],
   label: "AYURVEDA FOR THYROID - DHA-LICENSED CLINIC IN JVC, DUBAI",
@@ -19,7 +19,7 @@ export const thyroidHero = {
     title: "BLOODWORK FIRST. ALWAYS.",
     subtitle: "We need your most recent TSH, T4, T3, and antibody panel before designing any treatment. Bring or send them. No exceptions."
   },
-  image: "https://images.unsplash.com/photo-1622253692010-333f2da6031d?q=80&w=1964&auto=format&fit=crop",
+  image: "thyroid-bloodwork-consultation-vedara-jvc.webp",
   alt: "Ayurvedic doctor reviewing thyroid bloodwork with patient at Vedara Care JVC clinic Dubai"
 };
 
@@ -80,6 +80,7 @@ export const thyroidPatterns = {
  label: "CONDITION MATTERS",
 title: "Seven thyroid conditions — each requires different Ayurvedic approach.",
 description: "At our JVC clinic, your specific condition determines what Ayurveda can realistically offer.",
+alt: "Seven thyroid conditions assessed at our JVC Ayurveda clinic Dubai",
 types: [
   {
     title: "Hashimoto's Thyroiditis",
@@ -115,7 +116,7 @@ types: [
     title: "Postpartum Thyroiditis",
     sanskritName: "Variable bloodwork; often transient hyperthyroid then hypothyroid phase postpartum",
     description: "Increasingly recognised condition affecting 5-10% of women postpartum. Many cases resolve spontaneously within 12-18 months; some progress to permanent hypothyroidism.",
-    emphasis: "Postpartum thyroid recovery; constitutional restoration; integrated postnatal Ayurvedic care; reduced progression to permanent hypothyroidism in some cases."
+    emphasis: `Postpartum thyroid recovery; constitutional restoration; integrated postnatal Ayurvedic care including <a href="/conditions/postnatal-care-ayurveda-dubai/" class="text-[#184C3A] hover:underline font-medium">classical 45-day Sutika Paricharya</a>; reduced progression to permanent hypothyroidism in some cases.`
   },
   {
     title: "Thyroid Nodules and Goitre",
@@ -137,19 +138,20 @@ export const thyroidHashimoto = {
     "Realistic outcomes for Hashimoto's: 30-60% reduction in thyroid antibody levels over 9 months for many patients (documented on follow-up bloodwork), meaningful improvement in residual symptoms, slower disease progression, and quality of life improvement. What Ayurveda does not do: reverse existing thyroid damage, replace levothyroxine, or eliminate antibodies entirely in \"cure\" Hashimoto's."
   ],
   quote: "For Hashimoto's specifically, Ayurvedic adjunctive treatment is one of the most clinically valuable additions to conventional endocrinology care available — when it is honest about what it does and does not do.",
-  image: "https://images.unsplash.com/photo-1559757175-5700dde675bc?q=80&w=1931&auto=format&fit=crop",
+  image: "hashimoto-antibody-monitoring-vedara-jvc.webp",
+  alt: "Ayurvedic doctor reviewing thyroid antibody reduction trends with Hashimoto's patient at Vedara Care JVC",
   imageLeft: false
 };
 
 export const thyroidPillars = {
   label: "THE TREATMENT APPROACH",
   title: "Ayurvedic thyroid treatment has four pillars — all supportive, none replacement.",
-  description: "The single-pillar approaches — \"just take this herb,\" \"just change your diet\" — produce limited results for complex thyroid conditions. The 6 to 9-month programme works by addressing all four pillars consistently.",
+  description: `The single-pillar approaches — "just take this herb," "just change your diet" — produce limited results for complex thyroid conditions. The 6 to 9-month programme works by addressing all four pillars consistently.`,
  pillars: [
   {
     id: 1,
     title: "Panchakarma Cleansing (Stage-Appropriate)",
-    description: "For Hashimoto's, subclinical hypothyroidism, and select hypothyroid patients with appropriate medication stability, classical Panchakarma — typically Virechana with selective Basti — addresses systemic inflammation, autoimmune patterns, and metabolic root factors. Performed once during the programme, typically months 2-3, with careful coordination around levothyroxine dosing."
+    description: `For Hashimoto's, subclinical hypothyroidism, and select hypothyroid patients with appropriate medication stability, classical <a href="/treatments/panchakarma-dubai/" class="text-[#184C3A] hover:underline font-medium">Panchakarma</a> — typically Virechana with selective Basti — addresses systemic inflammation, autoimmune patterns, and metabolic root factors. Performed once during the programme, typically months 2-3, with careful coordination around levothyroxine dosing.`
   },
   {
     id: 2,
@@ -164,7 +166,7 @@ export const thyroidPillars = {
   {
     id: 4,
     title: "Lifestyle, Stress & Constitutional Protocols",
-    description: "Thyroid function is profoundly affected by stress, sleep, exercise patterns, and constitutional factors. Our protocols include sleep optimisation, stress regulation (Shirodhara where indicated), movement prescription appropriate to your thyroid status, and daily rhythm regulation."
+    description: `Thyroid function is profoundly affected by stress, sleep, exercise patterns, and constitutional factors. Our protocols include sleep optimisation, stress regulation (<a href="/treatments/shirodhara-dubai/" class="text-[#184C3A] hover:underline font-medium">Shirodhara where indicated</a>), movement prescription appropriate to your thyroid status, and daily rhythm regulation.`
   }
 ],
 footer: "All four pillars work alongside — never instead of — your thyroid medication. The single most important predictor of outcome is consistent adherence to all four pillars for the full programme duration."
@@ -347,6 +349,7 @@ export const thyroidBoundaries = {
 export const thyroidFaqs = {
   label: "FREQUENTLY ASKED QUESTIONS",
   title: "Common questions about Ayurvedic thyroid treatment in Dubai.",
+  description: `Short, honest answers from our clinical team. <br/><br/><strong>Further Reading:</strong><br/>• <a href="/treatments/panchakarma-dubai/" class="text-[#184C3A] hover:underline">Read about Panchakarma</a><br/>• <a href="/conditions/pcos-ayurveda-dubai/" class="text-[#184C3A] hover:underline">Read about Ayurveda for PCOS</a>`,
   buttonText: "Ask the Clinical Team",
   faqs: [
     {
@@ -375,7 +378,7 @@ export const thyroidFaqs = {
     },
     {
       question: "Is Panchakarma safe for thyroid patients?",
-      answer: 'For most thyroid patients on stable medication, yes — with careful protocol design. We coordinate <a href="/treatments/panchakarma-dubai/" class="text-[#184C3A] hover:underline font-medium">Panchakarma</a> timing around your levothyroxine dosing. Contraindicated in active hyperthyroidism, post-thyroidectomy first year, severe hypothyroidism with TSH >50, and thyroid emergencies. Your stage determines whether Panchakarma is appropriate.'
+      answer: `For most thyroid patients on stable medication, yes — with careful protocol design. We coordinate <a href="/treatments/panchakarma-dubai/" class="text-[#184C3A] hover:underline font-medium">Panchakarma</a> timing around your levothyroxine dosing. Contraindicated in active hyperthyroidism, post-thyroidectomy first year, severe hypothyroidism with TSH >50, and thyroid emergencies. Your stage determines whether Panchakarma is appropriate.`
     },
     {
       question: "How much does Ayurvedic thyroid treatment cost in Dubai?",
@@ -383,7 +386,7 @@ export const thyroidFaqs = {
     },
     {
       question: "Do you treat thyroid and PCOS together?",
-      answer: "Yes. Thyroid conditions and <a href=\"/conditions/pcos-ayurveda-dubai/\" class=\"text-[#184C3A] hover:underline font-medium\">PCOS</a> frequently co-exist as part of a broader endocrine pattern. Our programmes are designed to address both simultaneously, as the metabolic foundations often overlap. We coordinate with both your endocrinologist and gynaecologist."
+      answer: `Yes. Thyroid conditions and <a href="/conditions/pcos-ayurveda-dubai/" class="text-[#184C3A] hover:underline font-medium">PCOS</a> frequently co-exist as part of a broader endocrine pattern. Our programmes are designed to address both simultaneously, as the metabolic foundations often overlap. We coordinate with both your endocrinologist and gynaecologist.`
     }
   ]
 };
@@ -413,7 +416,8 @@ export const thyroidLocation = {
     "5 minutes from JSS Private School",
     "Easy access from JVC, JVT, Al Barsha South, Sports City, Motor City"
   ],
-  image: "https://images.unsplash.com/photo-1519494026892-80bbd2d6fd0d?q=80&w=2053&auto=format&fit=crop",
+  image: "thyroid-treatment-room-jvc.webp",
+  alt: "Vedara Care thyroid clinic location in Jumeirah Village Circle Dubai near Circle Mall",
   buttonText: "Book a Thyroid Consultation"
 };
 
@@ -434,14 +438,14 @@ export const thyroidRelatedPages = {
       href: "/conditions/pcos-ayurveda-dubai/"
     },
     {
-      title: "Ayurveda for Weight Management →",
+      title: "Ayurveda for Weight Loss in Dubai →",
       description: "For thyroid patients struggling with weight despite medication, we address the underlying metabolic slowing.",
       href: "/conditions/weight-loss-ayurveda-dubai/"
     },
     {
-      title: "Ayurveda for Hair Loss in Dubai →",
-      description: "Thyroid-related hair loss requires addressing both the thyroid pattern and local scalp health.",
-      href: "/conditions/hair-loss-ayurveda-dubai/"
+      title: "Our Ayurveda Clinic in JVC →",
+      description: "Visit our DHA-licensed polyclinic in Jumeirah Village Circle for authentic Ayurvedic care.",
+      href: "/ayurveda-clinic-jvc/"
     }
   ]
 };

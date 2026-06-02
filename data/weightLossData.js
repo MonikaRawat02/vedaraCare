@@ -1,7 +1,7 @@
 export const weightLossHero = {
   breadcrumb: [
     { label: "Home", href: "/" },
-    { label: "Conditions", href: "/conditions/" },
+    { label: "Conditions" },
     { label: "Ayurveda for Weight Loss in Dubai", active: true }
   ],
   bgColor: "bg-[#FAF8F3]",
@@ -48,7 +48,7 @@ export const weightLossMechanism1 = {
     {
       number: "1",
       title: "Panchakarma Cleansing",
-      description: "Resets metabolic patterns through classical cleansing protocols — typically Udvartana (dry herbal powder massage) for Kapha-predominant patterns, Virechana (therapeutic purgation) for insulin-resistance patterns, and Shirodhara for stress-pattern weight gain. Performed once during the programme, typically in month 2."
+      description: "Resets metabolic patterns through classical cleansing protocols — typically <a href=\"/treatments/udvartana-dubai/\">Udvartana</a> (dry herbal powder massage) for Kapha-predominant patterns, Virechana (therapeutic purgation) for insulin-resistance patterns, and <a href=\"/treatments/shirodhara-dubai/\">Shirodhara</a> for stress-pattern weight gain. Performed once during the programme, typically in month 2. Learn more about <a href=\"/treatments/panchakarma-dubai/\">Panchakarma</a>."
     },
     {
       number: "2",
@@ -63,7 +63,7 @@ export const weightLossMechanism1 = {
     {
       number: "4",
       title: "Lifestyle, Sleep & Stress Modification",
-      description: "Systematic protocols for sleep optimisation, stress management, and movement tailored to your life context. Addresses the upstream factors that produce weight gain — late-night eating, poor sleep, chronic stress, sedentary lifestyle. Requires consistent implementation over 4-6 months."
+      description: "Systematic protocols for sleep optimisation, stress reduction, and movement tailored to your life context. Addresses the upstream factors that produce weight gain — late-night eating, poor sleep, chronic stress, sedentary lifestyle. Requires consistent implementation over 4-6 months."
     }
   ],
   footer: "The 'herbal supplement alone,' 'Panchakarma package alone,' or 'just eat less' approaches that dominate the Dubai weight loss market all fail because they address one pillar without the others. Real change requires all four for 4-6 months minimum."
@@ -144,8 +144,8 @@ export const weightLossPhenotypes = {
       letter: "D",
       title: "Hormonal Weight Gain",
       subtitle: "Cyclical, hormone-driven, PCOS/postpartum",
-      content: "Weight gain linked to hormonal life stages — PCOS-related weight (often present from teens or twenties), postpartum retention (failure to return to pre-pregnancy weight within 12 months), and perimenopausal weight redistribution. Each has different underlying patterns requiring different protocols.",
-      ayurvedicEmphasis: "Specific hormonal protocols, classical Sutika Paricharya for postpartum, Vata-pacification for perimenopause"
+      content: "Weight gain linked to hormonal life stages — <a href=\"/conditions/pcos-ayurveda-dubai/\">PCOS</a>-related weight (often present from teens or twenties), postpartum retention (failure to return to pre-pregnancy weight within 12 months), and perimenopausal weight redistribution. Each has different underlying patterns requiring different protocols.",
+      ayurvedicEmphasis: "Specific hormonal protocols, <a href=\"/conditions/postnatal-care-ayurveda-dubai/\">classical Sutika Paricharya</a> for postpartum, Vata-pacification for perimenopause"
     },
     {
       letter: "E",
