@@ -20,31 +20,13 @@ const DoctorSpecialties = ({ doctor }) => {
 
         <div className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-6">
           {doctor.specialtiesList.map((specialty, index) => {
-            let linkUrl = '#';
-            if (specialty.title === 'Chronic Back Pain & Sciatica') {
-              linkUrl = '/conditions/back-pain-treatment-jvc';
-            } else if (specialty.title === 'PCOS & Hormonal Health') {
-              linkUrl = '/conditions/pcos-ayurveda-dubai';
-            } else if (specialty.title === 'Migraine & Chronic Headache') {
-              linkUrl = '/conditions/migraine-ayurveda-dubai';
-            } else if (specialty.title === 'Postnatal Recovery') {
-              linkUrl = '/conditions/postnatal-care-ayurveda-dubai';
-            } else if (specialty.title === 'Stress, Anxiety & Insomnia') {
-              linkUrl = '/conditions/stress-anxiety-ayurveda-dubai';
-            } else if (specialty.title === 'Hair Loss') {
-              linkUrl = '/conditions/hair-loss-ayurveda-dubai';
-            }
-
             return (
-              <Link
+              <div
                 key={index}
-                href={linkUrl}
                 className="p-8 rounded-[8px] border hover:shadow-lg transition-all duration-300 cursor-pointer group"
                 style={{ backgroundColor: 'rgb(250, 246, 239)', border: '1px solid rgb(229, 223, 211)' }}
               >
-                <h3 style={{ fontFamily: 'Fraunces, Georgia, serif', fontSize: '20px', fontWeight: '500', color: 'rgb(26, 26, 26)', lineHeight: '1.2', marginBottom: '16px' }}>
-                  {specialty.title}
-                </h3>
+                <h3 style={{ fontFamily: 'Fraunces, Georgia, serif', fontSize: '20px', fontWeight: '500', color: 'rgb(26, 26, 26)', lineHeight: '1.2', marginBottom: '16px' }} dangerouslySetInnerHTML={{ __html: specialty.title }} />
                 <p className="text-[14px] font-sans leading-relaxed mb-6" style={{ color: 'rgb(74, 74, 74)' }}>
                   {specialty.description}
                 </p>
@@ -57,7 +39,7 @@ const DoctorSpecialties = ({ doctor }) => {
                   <span>Treatment approach</span>
                   <ArrowRight size={16} className="group-hover:translate-x-1 transition-transform duration-300" />
                 </div>
-              </Link>
+              </div>
             );
           })}
         </div>

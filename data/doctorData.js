@@ -3,13 +3,13 @@ export const drPriyaNair = {
   firstName: 'Dr. Nair',
   title: 'BAMS, MD (Ayurveda) — Classical Ayurveda Specialist',
   image: 'https://images.unsplash.com/photo-1594824476967-48c8b964273f?w=720&h=900&fit=crop&auto=format',
-  bio: 'Dr. Nair leads the Ayurveda department at Vedara Care Polyclinic in Jumeirah Village Circle. With over fifteen years of clinical practice — including eight years in Kerala’s leading Ayurvedic hospitals and seven years serving Dubai patients — she is known for treating chronic conditions where conventional care has plateaued. Her approach is precise, evidence-aware, and unhurried.',
-  specialties: 'Chronic pain, <a href="/conditions/pcos-ayurveda-dubai/" class="text-[#C9A961] hover:underline transition-colors">PCOS</a>, <a href="/conditions/migraine-ayurveda-dubai/" class="text-[#C9A961] hover:underline transition-colors">migraine</a>, <a href="/conditions/hair-loss-ayurveda-dubai/" class="text-[#C9A961] hover:underline transition-colors">hair loss</a>, stress & anxiety',
+  bio: 'Dr. Nair leads the <a href="/ayurveda-dubai/">Ayurveda department</a> at <a href="/">Vedara Care Polyclinic</a> in Jumeirah Village Circle. With over fifteen years of clinical practice — including eight years in Kerala’s leading Ayurvedic hospitals and seven years serving Dubai patients — she is known for treating chronic conditions where conventional care has plateaued. Her approach is precise, evidence-aware, and unhurried.',
+  specialties: 'Chronic pain, <a href="/conditions/pcos-ayurveda-dubai/" class="doctor-specialty-link">PCOS</a>, <a href="/conditions/migraine-ayurveda-dubai/" class="doctor-specialty-link">migraine</a>, <a href="/conditions/hair-loss-ayurveda-dubai/" class="doctor-specialty-link">hair loss</a>, <a href="/conditions/stress-anxiety-ayurveda-dubai/" class="doctor-specialty-link">stress & anxiety</a>',
   fee: 'From AED 350 (consultation)',
   languages: 'English, Hindi, Malayalam, Tamil',
   availability: 'Mon-Sat at JVC clinic',
   summaryTitle: 'Classical Ayurveda, practised with modern precision.',
-  summaryParagraph1: 'Dr. Priya Nair is a DHA-licensed Ayurvedic physician (BAMS, MD-Ayurveda) and the lead Ayurveda specialist at Vedara Care Polyclinic in Jumeirah Village Circle, Dubai. With 15+ years of clinical experience across Kerala and the UAE, she treats chronic back pain, PCOS, migraine, hair loss, and stress-related disorders through classical <a href="/treatments/panchakarma-dubai/" class="text-[#C9A961] hover:underline transition-colors">Panchakarma</a>, dosha-based herbal medicine, and individualised treatment protocols.',
+  summaryParagraph1: 'Dr. Priya Nair is a <a href="/about/dha-accreditation/">DHA-licensed</a> Ayurvedic physician (BAMS, MD-Ayurveda) and the lead Ayurveda specialist at <a href="/">Vedara Care Polyclinic</a> in Jumeirah Village Circle, Dubai. With 15+ years of clinical experience across Kerala and the UAE, she treats <a href="/conditions/back-pain-ayurveda-dubai/">chronic back pain & sciatica</a>, <a href="/conditions/pcos-ayurveda-dubai/">PCOS</a>, <a href="/conditions/migraine-ayurveda-dubai/">migraine</a>, <a href="/conditions/hair-loss-ayurveda-dubai/">hair loss</a>, and <a href="/conditions/stress-anxiety-ayurveda-dubai/">stress-related disorders</a> through classical <a href="/treatments/panchakarma-dubai/">Panchakarma</a>, dosha-based herbal medicine, and individualised treatment protocols.',
   summaryParagraph2: 'She holds DHA Professional License DHA-P-0048291 and consults daily at our JVC clinic.',
   summaryParagraph3: '',
   education: [
@@ -20,7 +20,7 @@ export const drPriyaNair = {
   ],
   licenses: [
     'Dubai Health Authority Professional License — DHA-P-0048291 (Active)',
-    'DHA Healthcare Facility License — Vedara Care — HC3284',
+    '<a href="/about/dha-accreditation/">DHA Healthcare Facility License</a> — Vedara Care — HC3284',
     'CCIM Registration — 7A-28930',
     'AYUSH Ministry Registration — AY-KL-29410',
     'Issued 2010 · Renewed 2024'
@@ -34,32 +34,32 @@ export const drPriyaNair = {
   ],
   specialtiesList: [
     {
-      title: 'Chronic Back Pain & Sciatica',
+      title: '<a href="/conditions/back-pain-ayurveda-dubai/" class="doctor-specialty-link">Chronic Back Pain & Sciatica</a>',
       description: 'Classical Ayurvedic management of lumbar disc issues, sciatica, and chronic mechanical back pain using KatiVasti, Pinda Swedana, and structured lifestyle correction. Many patients arrive after years of conventional management without lasting relief.',
       caseLoad: '800+ patients treated'
     },
     {
-      title: 'PCOS & Hormonal Health',
+      title: '<a href="/conditions/pcos-ayurveda-dubai/" class="doctor-specialty-link">PCOS & Hormonal Health</a>',
       description: 'Over 600 PCOS cases treated through dosha-specific protocols combining Virechana, Basti, herbal medicines, and dietary regulation. Average programme length 3 to 6 months, with documented cycle regularity in 78% of patients completing the full protocol.',
       caseLoad: '600+ patients treated'
     },
     {
-      title: 'Migraine & Chronic Headache',
+      title: '<a href="/conditions/migraine-ayurveda-dubai/" class="doctor-specialty-link">Migraine & Chronic Headache</a>',
       description: 'Migraine management through Nasya, Shirodhara, and constitutional herbal medicines. Particular focus on chronic migraine in women where hormonal and stress triggers overlap. Most patients report a 60% reduction in episode frequency within the first 8 weeks.',
       caseLoad: '450+ patients treated'
     },
     {
-      title: 'Postnatal Recovery',
+      title: '<a href="/conditions/postnatal-care-ayurveda-dubai/" class="doctor-specialty-link">Postnatal Recovery</a>',
       description: 'Classical 45-day postnatal care — Sutika Paricharya — including Abhyanga, internal medicines, dietary guidance, and home support. Increasingly popular by Dubai’s expat mothers who want structured postpartum recovery rooted in traditional medicine.',
       caseLoad: '300+ patients treated'
     },
     {
-      title: 'Stress, Anxiety & Insomnia',
+      title: '<a href="/conditions/stress-anxiety-ayurveda-dubai/" class="doctor-specialty-link">Stress, Anxiety & Insomnia</a>',
       description: 'Shirodhara, Medhya Rasayana protocols, and lifestyle restructuring for chronic stress and sleep disorders. Often integrated with the wellness team for breathing and yoga therapy. Average programme: 6 to 10 weeks with measurable sleep quality outcomes.',
       caseLoad: '550+ patients treated'
     },
     {
-      title: 'Hair Loss (Khalitya)',
+      title: '<a href="/conditions/hair-loss-ayurveda-dubai/" class="doctor-specialty-link">Hair Loss (Khalitya)</a>',
       description: 'Combined Nasya, scalp therapies, and constitutional herbal medicines for diffuse hair loss, post-pregnancy hair fall, and androgenetic pattern. Treated alongside the dermatology team where useful. Programme length: 3 to 9 months.',
       caseLoad: '400+ patients treated'
     }

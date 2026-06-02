@@ -37,14 +37,14 @@ const TreatmentProtocol = ({
                     {phase.items.map((item, idx) => (
                       <li key={idx} className="text-sm text-muted-foreground flex">
                         <span className="mr-2">•</span>
-                        <span>{item}</span>
+                        <span dangerouslySetInnerHTML={{ __html: item }} />
                       </li>
                     ))}
                   </ul>
                 )}
                 {phase.expected && (
                   <p className="text-sm italic text-muted-foreground">
-                    <span className="font-medium">Expected by end of {phase.time}:</span> {phase.expected}
+                    <span className="font-medium">Expected by end of {phase.time}:</span> <span dangerouslySetInnerHTML={{ __html: phase.expected }} />
                   </p>
                 )}
               </div>

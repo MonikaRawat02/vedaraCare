@@ -24,9 +24,7 @@ const TreatmentPrograms = ({
             {title}
           </h2>
           {description && (
-            <p className="text-lg mt-4" style={{ color: 'rgb(107, 114, 128)' }}>
-              {description}
-            </p>
+            <p className="text-lg mt-4" style={{ color: 'rgb(107, 114, 128)' }} dangerouslySetInnerHTML={{ __html: description }} />
           )}
         </div>
 
@@ -46,17 +44,11 @@ const TreatmentPrograms = ({
                 </div>
               )}
               
-              <h3 className="text-xl font-medium mb-2">
-                {program.name}
-              </h3>
+              <h3 className="text-xl font-medium mb-2" dangerouslySetInnerHTML={{ __html: program.name }} />
               
-              <div className="text-2xl font-medium mb-2" style={{ color: 'rgb(201, 169, 97)' }}>
-                {program.price}
-              </div>
+              <div className="text-2xl font-medium mb-2" style={{ color: 'rgb(201, 169, 97)' }} dangerouslySetInnerHTML={{ __html: program.price }} />
               
-              <div className="text-sm mb-6" style={{ color: 'rgb(107, 114, 128)' }}>
-                {program.duration}
-              </div>
+              <div className="text-sm mb-6" style={{ color: 'rgb(107, 114, 128)' }} dangerouslySetInnerHTML={{ __html: program.duration }} />
               
               <ul className="space-y-3 mb-6 flex-grow">
                 {program.features.map((feature, i) => (
@@ -111,9 +103,7 @@ const TreatmentPrograms = ({
         </div>
 
         {footer && (
-          <p className="mt-12 text-center text-sm" style={{ color: 'rgb(107, 114, 128)' }}>
-            {footer}
-          </p>
+          <p className="mt-12 text-center text-sm" style={{ color: 'rgb(107, 114, 128)' }} dangerouslySetInnerHTML={{ __html: footer }} />
         )}
       </div>
     </section>

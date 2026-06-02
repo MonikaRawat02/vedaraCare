@@ -68,7 +68,7 @@ const TreatmentHomeHealthcare = ({
                     className="flex-shrink-0 mt-0.5"
                     style={{ color: 'rgb(184, 144, 30)' }}
                   />
-                  <span>{feature}</span>
+                  <span dangerouslySetInnerHTML={{ __html: feature }} />
                 </li>
               ))}
             </ul>

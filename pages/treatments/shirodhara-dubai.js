@@ -37,7 +37,7 @@ const schemaMarkup = [
     "url": "https://vedaracare.ae/treatments/shirodhara-dubai/",
     "image": "https://vedaracare.ae/images/shirodhara-dubai-hero.jpg",
     "procedureType": "Ayurveda",
-    "bodyLocation": "Forehead",
+    "bodyLocation": ["Forehead", "Autonomic nervous system", "Hypothalamic-pituitary axis", "Trigeminal nerve"],
     "preparation": "BAMS doctor consultation to confirm indication and select the appropriate medicated oil. Brief preparatory head and neck Abhyanga.",
     "followup": "10 to 15-minute rest period on the droni. Oil left in hair for several hours. Shower at clinic or later in the day. Avoid demanding activities for 2-4 hours.",
     "indication": [
@@ -61,6 +61,69 @@ const schemaMarkup = [
     ],
     "sameAs": "https://en.wikipedia.org/wiki/Shirodhara",
     "performer": {"@id": "https://vedaracare.ae/#organization"}
+  },
+  {
+    "@context": "https://schema.org",
+    "@type": "MedicalTherapy",
+    "@id": "https://vedaracare.ae/treatments/shirodhara-dubai/#ayurveda",
+    "name": "Ayurveda",
+    "sameAs": "https://en.wikipedia.org/wiki/Ayurveda"
+  },
+  {
+    "@context": "https://schema.org",
+    "@type": "MedicalProcedure",
+    "name": "Takradhara"
+  },
+  {
+    "@context": "https://schema.org",
+    "@type": "MedicalProcedure",
+    "name": "Abhyanga"
+  },
+  {
+    "@context": "https://schema.org",
+    "@type": "MedicalSubstance",
+    "name": "Brahmi Taila"
+  },
+  {
+    "@context": "https://schema.org",
+    "@type": "MedicalSubstance",
+    "name": "Ksheerabala Taila"
+  },
+  {
+    "@context": "https://schema.org",
+    "@type": "MedicalSubstance",
+    "name": "Chandanadi Taila"
+  },
+  {
+    "@context": "https://schema.org",
+    "@type": "MedicalSubstance",
+    "name": "Mahanarayana Taila"
+  },
+  {
+    "@context": "https://schema.org",
+    "@type": "Substance",
+    "name": "Brahmi",
+    "alternateName": "Bacopa monnieri"
+  },
+  {
+    "@context": "https://schema.org",
+    "@type": "Book",
+    "name": "Ashtanga Hridayam"
+  },
+  {
+    "@context": "https://schema.org",
+    "@type": "Book",
+    "name": "Bhavaprakasha"
+  },
+  {
+    "@context": "https://schema.org",
+    "@type": "Place",
+    "name": "Kerala"
+  },
+  {
+    "@context": "https://schema.org",
+    "@type": "MedicalProcedure",
+    "name": "Sutika Paricharya"
   },
   {
     "@context": "https://schema.org",
@@ -152,6 +215,14 @@ const schemaMarkup = [
   },
   {
     "@context": "https://schema.org",
+    "@type": "Organization",
+    "@id": "https://vedaracare.ae/#organization",
+    "name": "Vedara Care Polyclinic",
+    "url": "https://vedaracare.ae/",
+    "logo": "https://vedaracare.ae/logo.png"
+  },
+  {
+    "@context": "https://schema.org",
     "@type": "FAQPage",
     "mainEntity": shirodharaFaqs.faqs.map((faq) => ({
       "@type": "Question",
@@ -165,6 +236,18 @@ const schemaMarkup = [
 ];
 
 const ShirodharaDubai = () => {
+  const currentDate = new Date().toISOString();
+  
+  // Update lastReviewed and dateModified in schema
+  schemaMarkup.forEach((schema) => {
+    if (schema['@type'] === 'MedicalWebPage') {
+      schema.lastReviewed = currentDate;
+    }
+    if (schema['@type'] === 'Article') {
+      schema.dateModified = currentDate;
+    }
+  });
+  
   return (
     <>
       <Head>

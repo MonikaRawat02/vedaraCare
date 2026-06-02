@@ -110,6 +110,12 @@ const AbhyangaDubai = () => {
     },
     {
       "@context": "https://schema.org",
+      "@type": "MedicalEntity",
+      "name": "Marma points",
+      "description": "Vital energy points in Ayurveda"
+    },
+    {
+      "@context": "https://schema.org",
       "@type": "MedicalSubstance",
       "name": "Mahanarayana taila"
     },
@@ -292,128 +298,14 @@ const AbhyangaDubai = () => {
     {
       "@context": "https://schema.org",
       "@type": "FAQPage",
-      "mainEntity": [
-        {
-          "@type": "Question",
-          "name": "What is Abhyanga in simple terms?",
-          "acceptedAnswer": {
-            "@type": "Answer",
-            "text": "Abhyanga is the classical full-body Ayurvedic oil massage from India, described in medical texts over 2,000 years old. It involves applying warm dosha-specific medicated oils across the entire body in synchronized strokes by two trained therapists, typically over 60 to 90 minutes."
-          }
-        },
-        {
-          "@type": "Question",
-          "name": "Why two therapists instead of one?",
-          "acceptedAnswer": {
-            "@type": "Answer",
-            "text": "The classical Kerala technique uses two therapists working in perfect synchronization for several reasons: the strokes are applied evenly and simultaneously on both sides of the body, which deepens the relaxation response; the therapy can be completed in 90 minutes instead of 3 hours; and the balanced pressure prevents the body from 'compensating' to one side."
-          }
-        },
-        {
-          "@type": "Question",
-          "name": "What should I wear for Abhyanga?",
-          "acceptedAnswer": {
-            "@type": "Answer",
-            "text": "You will wear a disposable undergarment provided by the clinic. The therapy is performed with full modesty — only the area being massaged is exposed at any time, and the rest of the body is covered with a warm cotton sheet. Same-gender therapists are always available upon request, and we default to same-gender for all patients unless requested otherwise."
-          }
-        },
-        {
-          "@type": "Question",
-          "name": "How long does an Abhyanga session take?",
-          "acceptedAnswer": {
-            "@type": "Answer",
-            "text": "A complete Abhyanga at Vedara Care runs 75-90 minutes of main therapy, sometimes preceded by a brief consultation and sometimes followed by Swedana (medicated steam). Total clinic time is approximately 100-110 minutes. Please arrive 10 minutes early to change and settle in."
-          }
-        },
-        {
-          "@type": "Question",
-          "name": "How much does Abhyanga cost in Dubai?",
-          "acceptedAnswer": {
-            "@type": "Answer",
-            "text": "At Vedara Care, single-session Abhyanga starts from AED 450. A 7-session course starts from AED 2,800. A 14-session therapeutic course starts from AED 5,200. Home Abhyanga starts from AED 650 per session. Across Dubai, authentic two-therapist Abhyanga typically ranges from AED 400 to AED 800 per session."
-          }
-        },
-        {
-          "@type": "Question",
-          "name": "Can I eat before Abhyanga?",
-          "acceptedAnswer": {
-            "@type": "Answer",
-            "text": "Please eat light — no heavy meal within 2 hours before your session. A light snack (fruit, nuts, toast) is fine 1-2 hours before. You will be lying face-down for part of the therapy, and a full stomach is uncomfortable and interferes with the abdominal work in classical Abhyanga."
-          }
-        },
-        {
-          "@type": "Question",
-          "name": "Should I shower before or after Abhyanga?",
-          "acceptedAnswer": {
-            "@type": "Answer",
-            "text": "You may shower before if you wish, but it is not required — we will clean your feet before the therapy begins. After Abhyanga, we recommend waiting at least 2 hours (ideally 4 hours) before showering, so the medicated oil remains on your skin and continues to absorb. We provide disposable wipes and towels for freshening up after the session if needed."
-          }
-        },
-        {
-          "@type": "Question",
-          "name": "How often should I have Abhyanga?",
-          "acceptedAnswer": {
-            "@type": "Answer",
-            "text": "For general wellbeing and stress management, every 1-2 weeks is typical. For specific conditions (insomnia, anxiety, joint stiffness), 7-14 sessions over 2-6 weeks is the standard protocol. For constitutional reset, 21 sessions over 8-12 weeks may be recommended, sometimes followed by monthly maintenance sessions."
-          }
-        },
-        {
-          "@type": "Question",
-          "name": "Will I feel results after one session?",
-          "acceptedAnswer": {
-            "@type": "Answer",
-            "text": "Most patients feel profound relaxation and improved sleep after a single Abhyanga session. But the therapeutic benefits accumulate: improved energy, reduced anxiety, better digestion, and lasting changes in sleep quality typically require the full 7-14 session course. This is not a 'one-and-done' therapy — it is a therapy where consistency produces lasting change."
-          }
-        },
-        {
-          "@type": "Question",
-          "name": "Can I have Abhyanga during my period?",
-          "acceptedAnswer": {
-            "@type": "Answer",
-            "text": "For light to moderate flow (days 4+), modified Abhyanga is fine. For heavy flow (days 1-3), we typically recommend waiting or doing a lighter, shorter session focusing only on the feet and head. Every patient is different — we adjust the protocol based on your flow, energy levels, and comfort."
-          }
-        },
-        {
-          "@type": "Question",
-          "name": "Can I have Abhyanga during pregnancy?",
-          "acceptedAnswer": {
-            "@type": "Answer",
-            "text": "Classical full-body Abhyanga is not performed during pregnancy. For pregnancy-related discomfort, we offer modified prenatal Ayurvedic protocols. Postnatal Abhyanga is offered after the standard recovery period and is one of the core protocols within classical Sutika Paricharya for postpartum recovery."
-          }
-        },
-        {
-          "@type": "Question",
-          "name": "What is the difference between Abhyanga and a 'normal' massage?",
-          "acceptedAnswer": {
-            "@type": "Answer",
-            "text": "Three key differences: (1) Abhyanga uses dosha-specific medicated oils, not generic 'massage oil'; (2) Abhyanga follows a specific classical sequence with marma-point work, not just general relaxation; (3) Abhyanga is performed by two therapists in synchronized strokes, not one. Abhyanga is a medical therapy first, relaxation second."
-          }
-        },
-        {
-          "@type": "Question",
-          "name": "Where exactly is your Abhyanga clinic in Dubai?",
-          "acceptedAnswer": {
-            "@type": "Answer",
-            "text": "Our clinic is in Jumeirah Village Circle (JVC), Dubai — next to Circle Mall, three minutes from FIVE Jumeirah Village Hotel, and five minutes from JSS Private School. Free patient parking is available. We also offer home Abhyanga service across Dubai — particularly common in JVC, JVT, Al Barsha, Dubai Marina, Downtown, and Palm Jumeirah."
-          }
-        },
-        {
-          "@type": "Question",
-          "name": "Do you offer home Abhyanga in Dubai?",
-          "acceptedAnswer": {
-            "@type": "Answer",
-            "text": "Yes. Home Abhyanga is one of our most-requested services for busy professionals, new parents, and patients with mobility limitations. Two trained therapists travel to your home with a portable droni table, medicated oils, and all required equipment. Pricing is higher than in-clinic to cover preparation and travel, but for many patients home delivery is what makes consistent care actually possible."
-          }
-        },
-        {
-          "@type": "Question",
-          "name": "How do I book Abhyanga at your clinic?",
-          "acceptedAnswer": {
-            "@type": "Answer",
-            "text": "For first-time patients, booking begins with a consultation where the doctor confirms Abhyanga is the right therapy and selects the appropriate medicated oil. Existing patients can rebook directly. Tap 'Book Abhyanga Consultation' on this page, WhatsApp us at +971 50 000 0000, or call +971 4 000 0000."
-          }
+      "mainEntity": abhyangaFaqs.faqs.map((faq) => ({
+        "@type": "Question",
+        "name": faq.question,
+        "acceptedAnswer": {
+          "@type": "Answer",
+          "text": faq.answer
         }
-      ]
+      }))
     }
   ];
   

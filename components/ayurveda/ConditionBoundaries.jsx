@@ -20,9 +20,7 @@ const ConditionBoundaries = ({
             {title}
           </h2>
           {description && (
-            <p className="text-sm text-muted-foreground max-w-[600px] mx-auto" style={{ lineHeight: 1.75 }}>
-              {description}
-            </p>
+            <p className="text-sm text-muted-foreground max-w-[600px] mx-auto" style={{ lineHeight: 1.75 }} dangerouslySetInnerHTML={{ __html: description }} />
           )}
         </div>
 
@@ -38,9 +36,7 @@ const ConditionBoundaries = ({
                   {column.label}
                 </p>
               )}
-              <h3 className="text-lg mb-4" style={{ fontFamily: 'DM Sans, sans-serif', fontWeight: 600, color: 'rgb(28, 28, 26)' }}>
-                {column.title}
-              </h3>
+              <h3 className="text-lg mb-4" style={{ fontFamily: 'DM Sans, sans-serif', fontWeight: 600, color: 'rgb(28, 28, 26)' }} dangerouslySetInnerHTML={{ __html: column.title }} />
               <ul className="space-y-3">
                 {column.items.map((item, i) => (
                   <li key={i} className="flex items-start gap-3 text-sm">
@@ -55,9 +51,7 @@ const ConditionBoundaries = ({
                         style={{ backgroundColor: 'rgb(184, 145, 90)' }} 
                       />
                     )}
-                    <span className="text-muted-foreground" style={{ lineHeight: 1.8 }}>
-                      {item}
-                    </span>
+                    <span className="text-muted-foreground" style={{ lineHeight: 1.8 }} dangerouslySetInnerHTML={{ __html: item }} />
                   </li>
                 ))}
               </ul>
@@ -66,9 +60,7 @@ const ConditionBoundaries = ({
         </div>
 
         {footer && (
-          <p className="text-center text-sm text-muted-foreground max-w-[720px] mx-auto">
-            {footer}
-          </p>
+          <p className="text-center text-sm text-muted-foreground max-w-[720px] mx-auto" dangerouslySetInnerHTML={{ __html: footer }} />
         )}
       </div>
     </section>

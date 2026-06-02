@@ -49,7 +49,7 @@ const DoctorCredentials = ({ doctor }) => {
               {doctor.licenses.map((item, index) => (
                 <li key={index} className="flex items-start gap-3">
                   <div className="w-2 h-2 rounded-full mt-2 flex-shrink-0" style={{ backgroundColor: 'rgb(201, 169, 97)' }}></div>
-                  <p className="text-[14px] font-sans" style={{ color: 'rgb(74, 74, 74)' }}>{item}</p>
+                  <p className="text-[14px] font-sans" style={{ color: 'rgb(74, 74, 74)' }} dangerouslySetInnerHTML={{ __html: item }} />
                 </li>
               ))}
             </ul>
