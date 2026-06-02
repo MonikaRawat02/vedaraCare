@@ -44,7 +44,7 @@ const RelatedPages = ({
             className="hidden sm:flex items-center gap-1 text-sm"
             style={{ color: 'rgb(184, 145, 90)' }}
           >
-            {linkText}
+            <span dangerouslySetInnerHTML={{ __html: linkText }} />
             <ArrowRight size={13} />
           </Link>
         </div>
