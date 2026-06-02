@@ -111,7 +111,7 @@ const HairLossAyurvedaDubai = () => {
         }}
       />
 
-      {/* Schema 2 - Hair Loss Pattern Subtypes */}
+      {/* Schema 2 - Hair Loss Pattern Subtypes & Additional Semantic Entities */}
       <script
         type="application/ld+json"
         dangerouslySetInnerHTML={{
@@ -159,6 +159,98 @@ const HairLossAyurvedaDubai = () => {
                 "signOrSymptom": [
                   {"@type": "MedicalSymptom", "name": "Excessive hair shedding"}
                 ]
+              },
+              {
+                "@type": "MedicalCondition",
+                "name": "Khalitya"
+              },
+              {
+                "@type": "MedicalCondition",
+                "name": "Indralupta"
+              },
+              {
+                "@type": "MedicalCondition",
+                "name": "Palitya"
+              },
+              {
+                "@type": "MedicalCondition",
+                "name": "Darunaka"
+              },
+              {
+                "@type": "MedicalSubstance",
+                "name": "Bhringraja Taila"
+              },
+              {
+                "@type": "MedicalSubstance",
+                "name": "Neelibhringadi Taila"
+              },
+              {
+                "@type": "MedicalSubstance",
+                "name": "Anu Taila"
+              },
+              {
+                "@type": "MedicalSubstance",
+                "name": "Shadbindu Taila"
+              },
+              {
+                "@type": "MedicalEntity",
+                "name": "Vata dosha"
+              },
+              {
+                "@type": "MedicalEntity",
+                "name": "Pitta dosha"
+              },
+              {
+                "@type": "MedicalEntity",
+                "name": "Kapha dosha"
+              },
+              {
+                "@type": "Place",
+                "name": "Circle Mall"
+              },
+              {
+                "@type": "Place",
+                "name": "FIVE Jumeirah Village"
+              },
+              {
+                "@type": "Place",
+                "name": "JSS Private School"
+              },
+              {
+                "@type": "MedicalSpecialty",
+                "name": "Dermatology"
+              },
+              {
+                "@type": "Drug",
+                "name": "Minoxidil"
+              },
+              {
+                "@type": "Drug",
+                "name": "Finasteride"
+              },
+              {
+                "@type": "MedicalProcedure",
+                "name": "Shiroabhyanga"
+              },
+              {
+                "@type": "MedicalProcedure",
+                "name": "Takradhara"
+              },
+              {
+                "@type": "MedicalProcedure",
+                "name": "Nasya"
+              },
+              {
+                "@type": "Plant",
+                "name": "Bhringraja"
+              },
+              {
+                "@type": "Plant",
+                "name": "Amalaki"
+              },
+              {
+                "@type": "Plant",
+                "name": "Brahmi"
               }
             ]
           })
