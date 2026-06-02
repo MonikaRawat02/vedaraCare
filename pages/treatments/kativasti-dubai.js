@@ -40,7 +40,7 @@ const KativastiDubai = () => {
       "alternateName": ["Kati Vasti", "Kati Basti", "Lumbar Oil Reservoir Therapy", "Ayurvedic Lower Back Therapy"],
       "description": "Kativasti is a classical Ayurvedic localised therapy in which warm medicated oil is contained over the lumbar spine in a custom-shaped wheat-flour dough reservoir for 30 to 45 minutes per session. Used for chronic mechanical lower back pain, sciatica, lumbar disc conditions, and spinal stiffness. Performed at Vedara Care Polyclinic in Jumeirah Village Circle, Dubai.",
       "url": "https://vedaracare.ae/treatments/kativasti-dubai/",
-      "image": "https://vedaracare.ae/images/kativasti-dubai-hero.jpg",
+      "image": "https://vedaracare.ae/images/kativasti-dubai-hero.webp",
       "procedureType": "Ayurveda",
       "bodyLocation": ["Lumbar spine", "Sacroiliac joint", "Paraspinal muscles"],
       "preparation": "BAMS doctor clinical assessment including pain scoring, range of motion, and palpation. Selection of appropriate medicated oil based on condition.",
@@ -193,7 +193,7 @@ const KativastiDubai = () => {
       "@context": "https://schema.org",
       "@type": "Article",
       "headline": "Kativasti Treatment in Dubai — A Complete Clinical Guide",
-      "image": "https://vedaracare.ae/images/kativasti-dubai-hero.jpg",
+      "image": "https://vedaracare.ae/images/kativasti-dubai-hero.webp",
       "datePublished": "2026-05-01",
       "dateModified": currentDate,
       "author": {
@@ -249,7 +249,7 @@ const KativastiDubai = () => {
         {/* Open Graph */}
         <meta property="og:title" content="Kativasti in Dubai — Targeted Ayurvedic Treatment for Chronic Back Pain" />
         <meta property="og:description" content="Doctor-prescribed Kativasti at our DHA-licensed JVC clinic. For chronic back pain, sciatica, and lumbar disc conditions. Integrated with physiotherapy." />
-        <meta property="og:image" content="https://vedaracare.ae/og-images/kativasti-dubai.jpg" />
+        <meta property="og:image" content="https://vedaracare.ae/images/kativasti-dubai-hero.webp" />
         <meta property="og:url" content="https://vedaracare.ae/treatments/kativasti-dubai/" />
         <meta property="og:type" content="article" />
         <meta property="og:locale" content="en_AE" />

@@ -10,7 +10,8 @@ const TreatmentMechanism = ({
   imageLeft = false,
   description = "",
   bulletPoints = [],
-  additionalText = ""
+  additionalText = "",
+  alt = "Therapy content"
 }) => {
   const isContentFormat = content.length > 0;
 
@@ -52,7 +53,7 @@ const TreatmentMechanism = ({
             <div className={`lg:w-[45%] ${imageLeft ? 'lg:order-1' : 'lg:order-2'}`}>
               <img 
                 src={image || "https://images.unsplash.com/photo-1664549760921-2198b054a592?w=600"} 
-                alt="Therapy content" 
+                alt={alt} 
                 className="w-full h-[400px] object-cover rounded-xl shadow-lg"
               />
             </div>
