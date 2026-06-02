@@ -75,7 +75,7 @@ export const arthritisTypesData = {
     {
       title: "Cervical and Lumbar Spondylosis",
       sanskritName: "Greevasandhigata Vata, Katisandhigata Vata",
-      description: "Degenerative arthritis of the cervical (neck) and lumbar (lower back) spine. Common in 40+ population, particularly in office workers with poor posture, prevalent in Dubai's expat working population. Different from back pain — involves specific joint and disc degeneration patterns. Often responds well to Ayurvedic treatment combined with physiotherapy.",
+      description: "Degenerative arthritis of the cervical (neck) and <a href=\"/conditions/back-pain-ayurveda-dubai/\" class=\"text-[#C9A961] hover:underline\">lumbar spondylosis</a>. Common in 40+ population, particularly in office workers with poor posture, prevalent in Dubai's expat working population. Different from back pain — involves specific joint and disc degeneration patterns. Often responds well to Ayurvedic treatment combined with physiotherapy.",
       emphasis: "Greeva Vasti for cervical, Kati Vasti for lumbar, Vata pacification, postural and ergonomic protocols, integrated physiotherapy"
     }
   ]
@@ -122,11 +122,11 @@ export const arthritisPillars = {
   pillars: [
     {
       title: "Localised Joint Therapies",
-      description: "The most clinically distinctive Ayurvedic intervention for arthritis. Specific localised therapies depending on affected joint — Janu Vasti (warm medicated oil reservoir over the knee) for knee arthritis, Greeva Vasti for cervical spondylosis, Kati Vasti for lumbar spondylosis, specific protocols for shoulders, Pizhichil for whole-body arthritis presentations. These therapies deliver medicated oils directly to the affected joint tissue with sustained warmth — typically 30-45 minutes per session, courses of 7-14 sessions."
+      description: "The most clinically distinctive Ayurvedic intervention for arthritis. Specific localised therapies depending on affected joint — Janu Vasti (warm medicated oil reservoir over the knee) for knee arthritis, Greeva Vasti for cervical spondylosis, <a href=\"/treatments/kativasti-dubai/\" class=\"text-[#C9A961] hover:underline\">Kati Vasti</a> for lumbar spondylosis, specific protocols for shoulders, Pizhichil for whole-body arthritis presentations. These therapies deliver medicated oils directly to the affected joint tissue with sustained warmth — typically 30-45 minutes per session, courses of 7-14 sessions."
     },
     {
       title: "Panchakarma Cleansing",
-      description: "For inflammatory arthritis subtypes (RA, PsA, gout) and complex osteoarthritis with systemic involvement, classical Panchakarma — typically Virechana for inflammatory patterns, sometimes Basti for Vata-pattern joint disease — addresses underlying systemic inflammation. Performed once during the programme, typically months 2-3. Carefully contraindicated in patients on biologics or with active inflammatory flares; coordinated with rheumatology."
+      description: "For inflammatory arthritis subtypes (RA, PsA, gout) and complex osteoarthritis with systemic involvement, classical <a href=\"/treatments/panchakarma-dubai/\" class=\"text-[#C9A961] hover:underline\">Panchakarma</a> — typically Virechana for inflammatory patterns, sometimes Basti for Vata-pattern joint disease — addresses underlying systemic inflammation. Performed once during the programme, typically months 2-3. Carefully contraindicated in patients on biologics or with active inflammatory flares; coordinated with rheumatology."
     },
     {
       title: "Internal Medicines for Joint Disease",
@@ -134,7 +134,7 @@ export const arthritisPillars = {
     },
     {
       title: "Dietary Regulation, Lifestyle & Integrated Physiotherapy",
-      description: "Most arthritis subtypes respond significantly to dietary modification — anti-inflammatory protocols, dosha-specific adjustments, and for gout specifically, dietary purine management. Movement protocols are calibrated to your joints — protective range-of-motion work for inflammatory arthritis, strengthening protocols for osteoarthritis, postural protocols for spondylosis. Integration with physiotherapy at our JVC clinic provides combined Ayurvedic-physiotherapy care that consistently outperforms either approach alone."
+      description: "Most arthritis subtypes respond significantly to dietary modification — anti-inflammatory protocols, dosha-specific adjustments, and for gout specifically, dietary purine management. Movement protocols are calibrated to your joints — protective range-of-motion work for inflammatory arthritis, strengthening protocols for osteoarthritis, postural protocols for spondylosis. Integration with physiotherapy at our JVC clinic, often incorporating specialized therapies like <a href=\"/treatments/njavarakizhi-dubai/\" class=\"text-[#C9A961] hover:underline\">Njavarakizhi</a>, provides combined Ayurvedic-physiotherapy care that consistently outperforms either approach alone."
     }
   ]
 };
@@ -142,7 +142,7 @@ export const arthritisPillars = {
 export const arthritisFaqs = {
   label: "ARTHRITIS QUESTIONS",
   title: "What patients ask before starting Ayurvedic arthritis treatment.",
-  description: "For specific joint treatments (Kativasti for back), see the treatment pages. For back-specific arthritis, see our <a href=\"/conditions/back-pain-ayurveda-dubai/\" class=\"text-[#C9A961] hover:underline transition-colors\">back pain page</a>.",
+  description: "For specific joint treatments (Kativasti for back), see the treatment pages. For back-specific arthritis, see our <a href=\"/conditions/back-pain-ayurveda-dubai/\" class=\"text-[#C9A961] hover:underline transition-colors\">back pain page</a>. <a href=\"/treatments/panchakarma-dubai/\" class=\"text-[#C9A961] hover:underline\">Read about Panchakarma</a> or <a href=\"/physiotherapy-jvc/\" class=\"text-[#C9A961] hover:underline\">Read about Physiotherapy in JVC</a>.",
   buttonText: "Ask the Clinical Team",
   bgColor: "bg-[#F9F7F3]",
   faqs: [
@@ -198,24 +198,24 @@ export const arthritisRelatedPages = {
   linkHref: "/ayurveda-dubai/",
   pages: [
     {
-      title: "Ayurvedic Treatment for Back Pain →",
+      title: "Panchakarma in Dubai →",
+      description: "For systemic inflammatory arthritis, classical Panchakarma protocols provide the deep cleansing needed for long-term management.",
+      href: "/treatments/panchakarma-dubai/"
+    },
+    {
+      title: "Physiotherapy in JVC →",
+      description: "Integrated physiotherapy care at our Jumeirah Village Circle clinic provides combined support for joint mobility and strength.",
+      href: "/physiotherapy-jvc/"
+    },
+    {
+      title: "Ayurvedic Back Pain Treatment Dubai →",
       description: "For back-specific arthritis like spondylosis or sciatica, see our comprehensive guide to Ayurvedic back care in Dubai.",
       href: "/conditions/back-pain-ayurveda-dubai/"
     },
     {
-      title: "Panchakarma in JVC →",
-      description: "For systemic inflammatory arthritis, classical Panchakarma protocols provide the deep cleansing needed for long-term management.",
-      href: "/treatments/panchakarma-jvc/"
-    },
-    {
-      title: "Kativasti for Spondylosis →",
-      description: "Localized oil therapy for lumbar and cervical spondylosis, providing deep nourishment to the affected vertebrae.",
-      href: "/treatments/kativasti-dubai/"
-    },
-    {
-      title: "Abhyanga for Joint Health →",
-      description: "Full-body warm oil massage to pacify Vata and improve joint lubrication across the entire body.",
-      href: "/treatments/abhyanga-dubai/"
+      title: "Njavarakizhi in Dubai →",
+      description: "Medicated rice bolus therapy for muscle and joint nourishment, essential for degenerative joint conditions.",
+      href: "/treatments/njavarakizhi-dubai/"
     }
   ]
 };
