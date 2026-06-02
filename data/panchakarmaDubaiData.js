@@ -76,9 +76,9 @@ export const panchakarmaDubaiApplications = {
     labelColor: "text-[#C9A961]",
     items: [
       "<a href=\"/conditions/back-pain-ayurveda-dubai/\" class=\"transition-colors\">Chronic back pain and sciatica</a>",
-      "<a href=\"/conditions/pcos-ayurveda-dubai/\" class=\"  transition-colors\">PCOS and irregular cycles</a>",
-      "<a href=\"/conditions/stress-anxiety-ayurveda-dubai/\" class=\"  transition-colors\">Chronic stress and burnout</a>",
-      "<a href=\"/conditions/migraine-ayurveda-dubai/\" class=\"  transition-colors\">Migraine and chronic headache</a>",
+      "<a href=\"/conditions/pcos-ayurveda-dubai/\" class=\"hover:underline transition-colors\">PCOS and irregular cycles</a>",
+      "<a href=\"/conditions/stress-anxiety-ayurveda-dubai/\" class=\"hover:underline transition-colors\">Chronic stress and burnout</a>",
+      "<a href=\"/conditions/migraine-ayurveda-dubai/\" class=\"hover:underline transition-colors\">Migraine and chronic headache</a>",
       "<a href=\"/conditions/weight-loss-ayurveda-dubai/\" class=\" transition-colors\">Weight management (with metabolic basis)</a>",
       "<a href=\"/conditions/hair-loss-ayurveda-dubai/\" class=\"  transition-colors\">Hair loss and skin conditions</a>",
       "<a href=\"/conditions/diabetes-ayurveda-dubai/\" class=\"  transition-colors\">Type 2 diabetes (alongside endocrinology)</a>",

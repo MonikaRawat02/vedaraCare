@@ -132,7 +132,7 @@ export const weightLossPhenotypes = {
     },
     {
       letter: "C",
-      title: "Stress-Pattern Weight Gain",
+      title: "<a href=\"/conditions/stress-anxiety-ayurveda-dubai/\" class=\"hover:underline\">Stress-Pattern Weight Gain</a>",
       subtitle: "Visceral, restless, late-night eating",
       content: "Weight gain associated with chronic stress, poor sleep, late-night eating, emotional eating, and cortisol dysregulation. Often visible as abdominal weight gain in patients who eat reasonably but cannot lose weight. Common in high-performance professionals in Dubai working in finance, executive roles, founders, and parents of young children.",
       ayurvedicEmphasis: "Shirodhara, Vata-Pitta pacification, sleep optimisation protocols, stress-specific herbs (Ashwagandha, Brahmi)"

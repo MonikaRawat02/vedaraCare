@@ -125,7 +125,7 @@ export const abhyangaApplications = {
    honestLimitsDescription: "Conditions where Abhyanga is one component of a larger treatment plan — combined with internal medicines, dietary correction, or other therapies.",
   whereItExcels: [
     {
-      title: "Chronic stress and burnout",
+      title: "<a href=\"/conditions/stress-anxiety-ayurveda-dubai/\" class=\"hover:underline\">Chronic stress and burnout</a>",
       href: "/conditions/stress-anxiety-ayurveda-dubai/"
     },
     {
@@ -137,7 +137,7 @@ export const abhyangaApplications = {
       
     },
     {
-      title: "Anxiety (alongside conventional care)",
+      title: "<a href=\"/conditions/stress-anxiety-ayurveda-dubai/\" class=\"hover:underline\">Anxiety</a> (alongside conventional care)",
       href: "/conditions/stress-anxiety-ayurveda-dubai/"
     },
     {

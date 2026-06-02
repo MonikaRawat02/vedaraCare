@@ -386,15 +386,9 @@ const WeightLossAyurvedaDubai = () => {
                 <div className="text-6xl mb-4" style={{ fontFamily: "Georgia, serif", color: "rgb(201, 169, 97)" }}>
                   {phenotype.letter}
                 </div>
-                <h3 className="text-xl mb-2" style={{ fontFamily: "Georgia, serif", fontWeight: 500 }}>
-                  {phenotype.title}
-                </h3>
-                <p className="text-sm italic mb-4" style={{ color: "rgb(201, 169, 97)" }}>
-                  {phenotype.subtitle}
-                </p>
-                <p className="mb-4 leading-relaxed" style={{ color: "rgb(107, 114, 128)" }}>
-                  {phenotype.content}
-                </p>
+                <h3 className="text-xl mb-2" style={{ fontFamily: "Georgia, serif", fontWeight: 500 }} dangerouslySetInnerHTML={{ __html: phenotype.title }} />
+                <p className="text-sm italic mb-4" style={{ color: "rgb(201, 169, 97)" }} dangerouslySetInnerHTML={{ __html: phenotype.subtitle }} />
+                <p className="mb-4 leading-relaxed" style={{ color: "rgb(107, 114, 128)" }} dangerouslySetInnerHTML={{ __html: phenotype.content }} />
                 <div className="text-sm">
                   <span style={{ color: "rgb(201, 169, 97)" }}>Ayurvedic emphasis for this pattern:</span>
                   <span className="ml-2" style={{ color: "rgb(107, 114, 128)" }}>
