@@ -31,9 +31,8 @@ const TreatmentOils = ({
           <p 
             className="text-lg max-w-3xl mx-auto"
             style={{ color: 'rgb(107, 114, 128)' }}
-          >
-            {description}
-          </p>
+            dangerouslySetInnerHTML={{ __html: description }}
+          />
         </div>
 
         {useCardsLayout ? (
@@ -48,15 +47,13 @@ const TreatmentOils = ({
                 <h3 
                   className="text-xl mb-4"
                   style={{ fontFamily: 'Georgia, serif', fontWeight: 500 }}
-                >
-                  {card.title}
-                </h3>
+                  dangerouslySetInnerHTML={{ __html: card.title }}
+                />
                 <p 
                   className="leading-relaxed"
                   style={{ color: 'rgb(107, 114, 128)' }}
-                >
-                  {card.content}
-                </p>
+                  dangerouslySetInnerHTML={{ __html: card.content }}
+                />
               </div>
             ))}
           </div>
@@ -77,15 +74,13 @@ const TreatmentOils = ({
                     fontSize: '1.2rem', 
                     color: 'rgb(184, 145, 90)' 
                   }}
-                >
-                  {oil.name}
-                </h3>
+                  dangerouslySetInnerHTML={{ __html: oil.name }}
+                />
                 <p 
                   className="text-xs mb-4"
                   style={{ color: 'rgb(138, 126, 116)' }}
-                >
-                  {oil.description}
-                </p>
+                  dangerouslySetInnerHTML={{ __html: oil.description }}
+                />
                 <p 
                   className="text-sm leading-[1.85] mb-5"
                   style={{ color: 'rgb(74, 67, 60)' }}
@@ -118,9 +113,8 @@ const TreatmentOils = ({
           <p 
             className="text-center mt-12 max-w-3xl mx-auto"
             style={{ color: 'rgb(107, 114, 128)' }}
-          >
-            {footer}
-          </p>
+            dangerouslySetInnerHTML={{ __html: footer }}
+          />
         )}
       </div>
     </section>

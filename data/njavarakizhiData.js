@@ -150,7 +150,7 @@ export const njavarakizhiApplications = {
   honestLimitsList: [
     {
       title: "General relaxation and stress",
-      subtitle: "<a href=\"/treatments/abhyanga-dubai/\">Abhyanga</a> is better and more cost-effective"
+      subtitle: " is better and more cost-effective"
     },
     {
       title: "Insomnia and anxiety",

@@ -75,7 +75,7 @@ const TreatmentBenefits = ({
                       className="mt-0.5 shrink-0"
                       style={{ color: 'rgb(184, 145, 90)' }}
                     />
-                    {benefit}
+                    <span dangerouslySetInnerHTML={{ __html: benefit }} />
                   </li>
                 ))}
               </ul>
@@ -88,9 +88,8 @@ const TreatmentBenefits = ({
             <p 
               className="text-center max-w-2xl mx-auto leading-relaxed"
               style={{ color: 'rgb(107, 114, 128)' }}
-            >
-              {footer}
-            </p>
+              dangerouslySetInnerHTML={{ __html: footer }}
+            />
           </div>
         )}
       </div>

@@ -60,15 +60,13 @@ const RelatedPages = ({
               <h3 
                 className="text-sm font-medium"
                 style={{ fontFamily: 'Fraunces, serif', color: 'rgb(28, 28, 26)' }}
-              >
-                {page.title}
-              </h3>
+                dangerouslySetInnerHTML={{ __html: page.title }}
+              />
               <p 
                 className="text-xs leading-relaxed flex-1"
                 style={{ color: 'rgb(107, 99, 89)' }}
-              >
-                {page.description}
-              </p>
+                dangerouslySetInnerHTML={{ __html: page.description }}
+              />
               {showUrl ? (
                 <span 
                   className="text-[11px] flex items-center gap-1 font-medium mt-2"
