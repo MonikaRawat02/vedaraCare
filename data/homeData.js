@@ -145,7 +145,7 @@ export const homeConditions = {
     { title: "Acne and Scars", category: "Skin and Hair", description: "Medical-grade acne treatment and scar reduction", sub: "Dermatology" },
     { title: "Frozen Shoulder", category: "Pain", description: "Combined manual therapy and Ayurvedic treatment", sub: "Physio and Ayurveda" },
     { title: "Stress and Anxiety", category: "Mental Wellness", description: "Holistic stress management programs", sub: "Ayurveda and Wellness" },
-    { title: "Migraine", category: "Pain", description: "Root cause treatment through Ayurvedic protocols", sub: "Ayurveda" },
+    { title: "Migraine", category: "Pain", description: "Root cause treatment through Ayurvedic protocols", sub: "Ayurveda", link: "/conditions/migraine-ayurveda-dubai/" },
     { title: "Arthritis & Knee Pain", category: "Pain", description: "Integrated approach to joint health and ", sub: "Physio and Ayurveda", link: "/conditions/arthritis-ayurveda-dubai/" },
     { title: "Weight Management", category: "Metabolic", description: "Personalized weight loss programs", sub: "Wellness and Ayurveda" },
     { title: "Postnatal Recovery", category: "Womens Health", description: "Comprehensive postpartum care at clinic or home", sub: "Ayurveda and Home Healthcare" },

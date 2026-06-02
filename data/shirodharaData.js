@@ -320,7 +320,8 @@ export const shirodharaTreatmentLocation = {
     " 7 min from JSS Private School"
   ],
   description: "Two dedicated Shirodhara rooms with traditional copper dhara vessels and authentic Kerala-style wooden droni tables. Rooms maintained at 26-28°C with soft amber lighting for the therapy.",
-  buttonText: "Book Shirodhara Consultation"
+  buttonText: "Book Shirodhara Consultation",
+  mapEmbed: "https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d3613.6391151624!2d55.2085!3d25.0560!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x3e5f6e85d4545555%3A0x5555555555555555!2sJumeirah%20Village%20Circle!5e0!3m2!1sen!2sae!4v1622620000000!5m2!1sen!2sae"
 };
 
 export const shirodharaFinalCTA = {

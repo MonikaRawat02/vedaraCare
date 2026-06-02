@@ -20,7 +20,7 @@ export const diabetesHero = {
     title: "WE DO NOT ASK YOU TO STOP YOUR MEDICATION.",
     subtitle: "Medication adjustments are made by your endocrinologist based on bloodwork improvements. We support those improvements through Ayurvedic treatment."
   },
-  image: "/images/hba1c-review-diabetes-consultation-vedara-jvc.webp",
+  image: "/images/diabetes-ayurveda-dubai-hero.webp",
   alt: "Ayurvedic doctor reviewing HbA1c bloodwork with diabetes patient at Vedara Care JVC clinic Dubai"
 };
 
@@ -28,7 +28,7 @@ export const diabetesIntro = {
   bgColor: "bg-white",
   label: "THE QUICK ANSWER",
   title: "Ayurvedic diabetes treatment in Dubai, in one paragraph.",
-  blockquote: "Ayurvedic treatment for diabetes in Dubai is a 6-month structured medical programme combining classical Panchakarma cleansing (typically Virechana), dosha-specific herbal medicines (including Guduchi, Methika, Karela, Vijaysar, and pattern-specific Asanadi formulations), individualised dietary protocols, and lifestyle modification — performed alongside your endocrinologist's conventional management. At Vedara Care Polyclinic in Jumeirah Village Circle (JVC), Dubai — next to Circle Mall — programmes for prediabetes typically produce normalisation of HbA1c within 6 months; programmes for early type 2 diabetes typically produce HbA1c reductions of 1-3 points with possible medication reduction under endocrinologist supervision; for long-standing type 2 diabetes, Ayurvedic treatment is supportive and addresses metabolic, inflammatory, and lifestyle factors not addressed by medication alone. Initial consultations start from AED 450.",
+  blockquote: "Ayurvedic treatment for diabetes in Dubai is a 6-month structured medical programme combining classical <a href='/treatments/panchakarma-dubai/' class='doctor-specialty-link'><a href='/treatments/panchakarma-dubai/' class='doctor-specialty-link'>Panchakarma</a></a> cleansing (typically <a href='/treatments/panchakarma-dubai/' class='doctor-specialty-link'>Virechana</a>), dosha-specific herbal medicines (including Guduchi, Methika, Karela, Vijaysar, and pattern-specific Asanadi formulations), individualised dietary protocols, and lifestyle modification — performed alongside your endocrinologist's conventional management. At Vedara Care Polyclinic in Jumeirah Village Circle (JVC), Dubai — next to Circle Mall — programmes for prediabetes typically produce normalisation of HbA1c within 6 months; programmes for early type 2 diabetes typically produce HbA1c reductions of 1-3 points with possible medication reduction under endocrinologist supervision; for long-standing type 2 diabetes, Ayurvedic treatment is supportive and addresses metabolic, inflammatory, and lifestyle factors not addressed by medication alone. Initial consultations start from AED 450.",
   footer: "Medically reviewed by Dr. Priya Sharma, BAMS, MD (Ayurveda), DHA-Licensed · Last updated May 2026"
 };
 
@@ -69,7 +69,7 @@ export const diabetesMechanism1 = {
       letter: "E",
       title: "Gestational Diabetes",
       subtitle: "Pregnancy-specific",
-      content: "Requires specialised obstetric and endocrinology coordination. Ayurvedic dietary and lifestyle support can be valuable during pregnancy under careful coordination, but Panchakarma and aggressive herbal protocols are not performed during pregnancy. Postpartum, structured Ayurvedic treatment to reduce future type 2 diabetes risk is one of the most clinically valuable programmes we offer.",
+      content: "Requires specialised obstetric and endocrinology coordination. Ayurvedic dietary and lifestyle support can be valuable during pregnancy under careful coordination, but <a href='/treatments/panchakarma-dubai/' class='doctor-specialty-link'>Panchakarma</a> and aggressive herbal protocols are not performed during pregnancy. Postpartum, structured Ayurvedic treatment to reduce future type 2 diabetes risk is one of the most clinically valuable programmes we offer.",
       ayurvedicEmphasis: "dietary and lifestyle support during pregnancy with obstetric coordination; postpartum metabolic restoration to reduce lifetime diabetes risk."
     }
   ],
@@ -78,8 +78,8 @@ export const diabetesMechanism1 = {
   pillars: [
     {
       number: "1",
-      title: "Panchakarma Cleansing",
-      description: "For prediabetes, newly diagnosed type 2, and most patients with established type 2 diabetes who do not have contraindications, classical Panchakarma — typically Virechana (medicated purgation) — addresses the insulin resistance, inflammation, and metabolic patterns underlying the condition. Performed once or twice during the programme, typically 7-14 days each time."
+      title: "<a href='/treatments/panchakarma-dubai/' class='doctor-specialty-link'>Panchakarma</a> Cleansing",
+      description: "For prediabetes, newly diagnosed type 2, and most patients with established type 2 diabetes who do not have contraindications, classical <a href='/treatments/panchakarma-dubai/' class='doctor-specialty-link'><a href='/treatments/panchakarma-dubai/' class='doctor-specialty-link'>Panchakarma</a></a> — typically <a href='/treatments/panchakarma-dubai/' class='doctor-specialty-link'>Virechana</a> (medicated purgation) — addresses the insulin resistance, inflammation, and metabolic patterns underlying the condition. Performed once or twice during the programme, typically 7-14 days each time."
     },
     {
       number: "2",
@@ -120,8 +120,8 @@ export const diabetesOils = {
   description: "Four integrated components for sustainable metabolic change.",
   pills: [
     {
-      title: "Panchakarma Cleansing",
-      description: "For prediabetes, newly diagnosed type 2, and most patients with established type 2 diabetes who do not have contraindications, classical Panchakarma — typically Virechana (medicated purgation) — addresses the insulin resistance, inflammation, and metabolic patterns underlying the condition. Performed once or twice during the programme, typically 7-14 days each time.",
+      title: "<a href='/treatments/panchakarma-dubai/' class='doctor-specialty-link'>Panchakarma</a> Cleansing",
+      description: "For prediabetes, newly diagnosed type 2, and most patients with established type 2 diabetes who do not have contraindications, classical <a href='/treatments/panchakarma-dubai/' class='doctor-specialty-link'><a href='/treatments/panchakarma-dubai/' class='doctor-specialty-link'>Panchakarma</a></a> — typically <a href='/treatments/panchakarma-dubai/' class='doctor-specialty-link'>Virechana</a> (medicated purgation) — addresses the insulin resistance, inflammation, and metabolic patterns underlying the condition. Performed once or twice during the programme, typically 7-14 days each time.",
       whatWeAchieve: "resetting metabolic patterns to create a foundation for long-term glucose regulation, reducing inflammation, and enhancing the effectiveness of herbs and dietary changes."
     },
     {
@@ -140,7 +140,7 @@ export const diabetesOils = {
       whatWeAchieve: "improved sleep, sustainable lifestyle changes that address the root drivers of insulin resistance and metabolic dysfunction."
     }
   ],
-  footer: "The strongest HbA1c reductions in our patient outcomes come from those who implement all four pillars consistently for 6 months alongside their conventional medications. Herbs alone or Panchakarma alone produce only partial results."
+  footer: "The strongest HbA1c reductions in our patient outcomes come from those who implement all four pillars consistently for 6 months alongside their conventional medications. Herbs alone or <a href='/treatments/panchakarma-dubai/' class='doctor-specialty-link'>Panchakarma</a> alone produce only partial results."
 };
 
 export const diabetesArthritisPillars = {
@@ -148,11 +148,11 @@ export const diabetesArthritisPillars = {
   cardBg: "bg-white",
   label: "THE TREATMENT APPROACH",
   title: "Ayurvedic diabetes treatment has four pillars.",
-  description: "The strongest HbA1c reductions in our patient outcomes come from those who implement all four pillars consistently for 6 months alongside their conventional medications. Herbs alone or Panchakarma alone produce only partial results.",
+  description: "The strongest HbA1c reductions in our patient outcomes come from those who implement all four pillars consistently for 6 months alongside their conventional medications. Herbs alone or <a href='/treatments/panchakarma-dubai/' class='doctor-specialty-link'>Panchakarma</a> alone produce only partial results.",
   pillars: [
     {
-      title: "Panchakarma Cleansing",
-      description: "For prediabetes, newly diagnosed type 2, and most patients with established type 2 diabetes who do not have contraindications, classical Panchakarma — typically Virechana (medicated purgation) — addresses the insulin resistance, inflammation, and metabolic patterns underlying the condition. Performed once or twice during the programme, typically 7-14 days each time."
+      title: "<a href='/treatments/panchakarma-dubai/' class='doctor-specialty-link'>Panchakarma</a> Cleansing",
+      description: "For prediabetes, newly diagnosed type 2, and most patients with established type 2 diabetes who do not have contraindications, classical <a href='/treatments/panchakarma-dubai/' class='doctor-specialty-link'><a href='/treatments/panchakarma-dubai/' class='doctor-specialty-link'>Panchakarma</a></a> — typically <a href='/treatments/panchakarma-dubai/' class='doctor-specialty-link'>Virechana</a> (medicated purgation) — addresses the insulin resistance, inflammation, and metabolic patterns underlying the condition. Performed once or twice during the programme, typically 7-14 days each time."
     },
     {
       title: "Pattern-Specific Herbal Medicines",
@@ -183,6 +183,7 @@ export const diabetesTreatmentLocationCustom = {
   contactEmail: "info@vedaracare.ae",
   description: "Our JVC clinic coordinates with most major Dubai endocrinology practices. Glucose monitoring equipment on-site for clinic visits. Comfortable consultation rooms with privacy for detailed health reviews. Walking distance from Circle Mall, easy access from JVC Districts 10, 11, 12, 13, JVT, and Al Barsha South.",
   buttonText: "Book a Diabetes Consultation",
+  mapAlt:'Vedara Care diabetes clinic location in Jumeirah Village Circle Dubai near Circle Mall',
   buttonHref: "/book"
 };
 
@@ -215,13 +216,13 @@ export const diabetesProtocol = {
     },
     {
       time: "Month 2",
-      title: "Panchakarma & Active Treatment",
+      title: "<a href='/treatments/panchakarma-dubai/' class='doctor-specialty-link'>Panchakarma</a> & Active Treatment",
       items: [
-        "7-14 day Panchakarma programme (typically Virechana-led)",
+        "7-14 day <a href='/treatments/panchakarma-dubai/' class='doctor-specialty-link'><a href='/treatments/panchakarma-dubai/' class='doctor-specialty-link'>Panchakarma</a></a> programme (typically <a href='/treatments/panchakarma-dubai/' class='doctor-specialty-link'>Virechana</a>-led)",
         "5-7 day at-clinic preparation with Snehapana, Abhyanga, Swedana",
-        "Glucose monitoring intensified during Panchakarma",
+        "Glucose monitoring intensified during <a href='/treatments/panchakarma-dubai/' class='doctor-specialty-link'>Panchakarma</a>",
         "7 days Paschatkarma recovery with structured dietary protocol",
-        "Resumed internal medicines post-Panchakarma with adjusted dosing",
+        "Resumed internal medicines post-<a href='/treatments/panchakarma-dubai/' class='doctor-specialty-link'>Panchakarma</a> with adjusted dosing",
         "Updated bloodwork at end of month"
       ],
       expected: "Substantial improvements in fasting glucose and postprandial response, often 0.3-0.8 HbA1c reduction visible, energy and sleep improvements"
@@ -245,7 +246,7 @@ export const diabetesProtocol = {
       items: [
         "Continued herbal medicines with stage-appropriate dose adjustments",
         "Dietary protocol becoming sustainable lifestyle",
-        "Possible second short Panchakarma (5-7 days) for selected patients",
+        "Possible second short <a href='/treatments/panchakarma-dubai/' class='doctor-specialty-link'>Panchakarma</a> (5-7 days) for selected patients",
         "Reduced clinic visits (every 2 weeks)",
         "Lab work review at end of month"
       ],
@@ -361,7 +362,7 @@ export const diabetesPhenotypes = {
     },
     {
       title: "Diabetic Foot Care",
-      description: "Padabhyanga for foot care, herbal support for circulation."
+      description: "<a href='/treatments/padabhyanga-dubai/' class='doctor-specialty-link'>Padabhyanga</a> for foot care, herbal support for circulation."
     }
   ]
 };
@@ -455,7 +456,7 @@ export const diabetesPrograms = {
       badge: "Most Common Diabetes Programme",
       features: [
         "All Initial Assessment components",
-        "One Panchakarma programme (7-14 days, if stage-appropriate)",
+        "One <a href='/treatments/panchakarma-dubai/' class='doctor-specialty-link'>Panchakarma</a> programme (7-14 days, if stage-appropriate)",
         "6 months of pattern-specific herbal medicines",
         "Comprehensive dietary protocol with monthly refinement",
         "Monthly doctor reviews",
@@ -472,7 +473,7 @@ export const diabetesPrograms = {
         "All Standard Programme components",
         "Extended complication-specific protocols (neuropathy, early nephropathy, foot care)",
         "Padabhyanga sessions weekly during active phase",
-        "Second Panchakarma component if appropriate",
+        "Second <a href='/treatments/panchakarma-dubai/' class='doctor-specialty-link'>Panchakarma</a> component if appropriate",
         "Coordination with endocrinologist, nephrologist, ophthalmologist, podiatrist"
       ],
       bestFor: "Best for: Long-standing type 2 with complications, post-GLP-1 management, and complex integrated care",
@@ -486,7 +487,7 @@ export const diabetesFaqs = {
   bgColor: "bg-white",
   label: "Diabetes Questions",
   title: "What patients ask before starting Ayurvedic diabetes treatment.",
-  description: "For weight loss treatment without diabetes, see our weight loss page. For PCOS-related insulin resistance, see PCOS page.",
+  description: "For weight loss treatment without diabetes, see <a href='/conditions/weight-loss-ayurveda-dubai/' class='doctor-specialty-link'>our weight loss page</a>. For PCOS-related insulin resistance, see <a href='/conditions/pcos-ayurveda-dubai/' class='doctor-specialty-link'>our PCOS page</a>.",
   buttonText: "Ask the Clinical Team",
   faqs: [
     {
@@ -510,8 +511,8 @@ export const diabetesFaqs = {
       question: "How much does Ayurvedic diabetes treatment cost in Dubai?",
       answer: "At Vedara Care, initial assessment starts from AED 450. A standard 6-month programme starts from AED 15,500. A comprehensive programme with complications focus starts from AED 24,000. Across Dubai, comprehensive Ayurvedic diabetes programmes typically range from AED 12,000 to AED 30,000 over 6 months. Many patients find the investment economical compared to ongoing medication costs and complication management over a lifetime."  },
        {
-      question: "Is Panchakarma safe for diabetic Patients?",
-      answer: "For prediabetes, newly diagnosed type 2, and stable established type 2 without severe complications: yes, with careful glucose monitoring during the programme. For type 1 diabetes, diabetes with severe kidney disease, advanced complications, or recent hypoglycaemic episodes: typically not appropriate or significantly modified. Your stage and stability are assessed at consultation. Panchakarma is never performed without bloodwork review and endocrinologist coordination for insulin-treated patients."  },
+      question: "Is <a href='/treatments/panchakarma-dubai/' class='doctor-specialty-link'>Panchakarma</a> safe for diabetic Patients?",
+      answer: "For prediabetes, newly diagnosed type 2, and stable established type 2 without severe complications: yes, with careful glucose monitoring during the programme. For type 1 diabetes, diabetes with severe kidney disease, advanced complications, or recent hypoglycaemic episodes: typically not appropriate or significantly modified. Your stage and stability are assessed at consultation. <a href='/treatments/panchakarma-dubai/' class='doctor-specialty-link'>Panchakarma</a> is never performed without bloodwork review and endocrinologist coordination for insulin-treated patients."  },
       {
         question: "What is dietary for diabetes?",
         answer: "The dietary protocol is dosha-specific, stage-specific, and culturally integrated — designed around your existing food preferences (whether you eat Indian, Arabic, Filipino, South Asian, or Western cuisines). General principles include managing glycaemic load through specific food combinations, eating timing (often with intermittent fasting protocols where appropriate), specific herbs incorporated as foods (Methika, Karela, Cinnamon, Turmeric), and addressing specific patterns like postprandial spikes through meal structure. Far more sophisticated than 'avoid sugar and white rice.'"  },
@@ -550,7 +551,7 @@ export const diabetesTreatmentLocation = {
     "Near Dubai Sports City and Motor City",
     "Free patient parking available"
   ],
-  description: "Our JVC clinic has dedicated Panchakarma rooms, private consultation rooms, and experience with diabetes care. Female doctors available on request.",
+  description: "Our JVC clinic has dedicated <a href='/treatments/panchakarma-dubai/' class='doctor-specialty-link'>Panchakarma</a> rooms, private consultation rooms, and experience with diabetes care. Female doctors available on request.",
   buttonText: "Book a Diabetes Consultation",
   directions: "From Sheikh Mohammed Bin Zayed Road: Take Exit 27 for JVC, follow signs for Circle Mall. From Al Khail Road: Take JVC exit, follow signs for Circle Mall. Clinic next to Circle Mall with free parking.",
   mapAlt: "Vedara Care diabetes clinic location in Jumeirah Village Circle Dubai near Circle Mall"
@@ -580,7 +581,7 @@ export const diabetesRelatedPages = {
   linkHref: "/ayurveda-dubai/",
   pages: [
     {
-      title: "Panchakarma in Dubai",
+      title: "<a href='/treatments/panchakarma-dubai/' class='doctor-specialty-link'>Panchakarma</a> in Dubai",
       description: "The classical cleansing protocol used in most diabetes programmes (where stage-appropriate). Full description of the five actions and what to expect.",
       href: "/treatments/panchakarma-dubai/"
     },

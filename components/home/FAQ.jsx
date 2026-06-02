@@ -88,9 +88,7 @@ const FAQ = ({
                   onClick={() => setOpenIndex(openIndex === index ? null : index)}
                   className="w-full flex justify-between items-center text-left group"
                 >
-                  <span className={`text-[18px] font-sans font-semibold transition-colors ${openIndex === index ? 'text-[#184C3A]' : 'text-[#1A1A1A] group-hover:text-[#184C3A]'}`}>
-                    {faq.question}
-                  </span>
+                  <span className={`text-[18px] font-sans font-semibold transition-colors ${openIndex === index ? 'text-[#184C3A]' : 'text-[#1A1A1A] group-hover:text-[#184C3A]'}`} dangerouslySetInnerHTML={{ __html: faq.question }} />
                   <div className="text-[#D4A373] shrink-0 ml-4">
                     {openIndex === index ? <Minus size={20} /> : <Plus size={20} />}
                   </div>
