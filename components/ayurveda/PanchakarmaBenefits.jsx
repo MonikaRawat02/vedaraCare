@@ -22,9 +22,8 @@ const PanchakarmaBenefits = ({
           <p 
             className="text-[13px] font-semibold tracking-[0.18em] uppercase"
             style={{ color: '#C9A567', fontFamily: '"DM Sans", sans-serif' }}
-          >
-            {label}
-          </p>
+            dangerouslySetInnerHTML={{ __html: label }}
+          />
           <h2 
             className="text-gray-900"
             style={{ 
@@ -33,9 +32,8 @@ const PanchakarmaBenefits = ({
               fontSize: 'clamp(1.75rem, 4vw, 2.75rem)', 
               lineHeight: '1.2' 
             }}
-          >
-            {title}
-          </h2>
+            dangerouslySetInnerHTML={{ __html: title }}
+          />
         </div>
 
         <div className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-5 gap-6">
@@ -57,12 +55,9 @@ const PanchakarmaBenefits = ({
                   <h3 
                     className="text-lg font-medium text-gray-900"
                     style={{ fontFamily: 'Fraunces, serif', lineHeight: '1.4' }}
-                  >
-                    {benefit.title}
-                  </h3>
-                  <p className=" text-sm text-gray-600 leading-relaxed font-sans">
-                    {benefit.description}
-                  </p>
+                    dangerouslySetInnerHTML={{ __html: benefit.title }}
+                  />
+                  <p className=" text-sm text-gray-600 leading-relaxed font-sans" dangerouslySetInnerHTML={{ __html: benefit.description }} />
                 </div>
               </div>
             );

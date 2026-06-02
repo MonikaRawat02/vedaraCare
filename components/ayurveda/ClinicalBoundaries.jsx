@@ -14,31 +14,21 @@ const ClinicalBoundaries = ({
     <section className={`${bgColor} py-24 px-6`}>
       <div className="max-w-[1400px] mx-auto">
         <div className="text-center space-y-4 mb-16">
-          <div className="text-sm font-sans tracking-wider text-[#C9A961] uppercase">
-            {label}
-          </div>
-          <h2 className="text-4xl font-serif text-[#1A1A1A]">
-            {title}
-          </h2>
+          <div className="text-sm font-sans tracking-wider text-[#C9A961] uppercase" dangerouslySetInnerHTML={{ __html: label }} />
+          <h2 className="text-4xl font-serif text-[#1A1A1A]" dangerouslySetInnerHTML={{ __html: title }} />
           {subtitle && (
-            <p className="text-[#717182] font-sans max-w-[800px] mx-auto text-base leading-relaxed">
-              {subtitle}
-            </p>
+            <p className="text-[#717182] font-sans max-w-[800px] mx-auto text-base leading-relaxed" dangerouslySetInnerHTML={{ __html: subtitle }} />
           )}
         </div>
 
         <div className="grid lg:grid-cols-2 gap-12">
           {/* Left Card */}
           <div className={`${leftCard.bgColor || 'bg-red-50'} p-8 rounded-xl border-2 ${leftCard.borderColor || 'border-red-200'}`}>
-            <div className={`text-sm font-sans font-semibold tracking-wider uppercase mb-4 ${leftCard.labelColor || 'text-red-500'}`}>
-              {leftCard.label}
-            </div>
+            <div className={`text-sm font-sans font-semibold tracking-wider uppercase mb-4 ${leftCard.labelColor || 'text-red-500'}`} dangerouslySetInnerHTML={{ __html: leftCard.label }} />
             
             {leftCard.alertBox && (
               <div className={`${leftCard.alertBg || 'bg-red-100'} p-4 rounded-lg mb-6 border-l-4 ${leftCard.alertBorder || 'border-red-500'}`}>
-                <p className={`text-sm ${leftCard.alertTextColor || 'text-red-900'} font-sans leading-relaxed`}>
-                  {leftCard.alertBox}
-                </p>
+                <p className={`text-sm ${leftCard.alertTextColor || 'text-red-900'} font-sans leading-relaxed`} dangerouslySetInnerHTML={{ __html: leftCard.alertBox }} />
               </div>
             )}
 
@@ -59,17 +49,13 @@ const ClinicalBoundaries = ({
               ))}
             </ul>
             {leftCard.footer && (
-              <p className="text-sm text-gray-500 font-sans leading-relaxed pt-6 border-t border-gray-100">
-                {leftCard.footer}
-              </p>
+              <p className="text-sm text-gray-500 font-sans leading-relaxed pt-6 border-t border-gray-100" dangerouslySetInnerHTML={{ __html: leftCard.footer }} />
             )}
           </div>
 
           {/* Right Card */}
           <div className={`${rightCard.bgColor || 'bg-[#FAF8F3]'} p-8 rounded-xl border-2 ${rightCard.borderColor || 'border-[#C9A961]/30'}`}>
-            <div className={`text-sm font-sans font-semibold tracking-wider uppercase mb-4 ${rightCard.labelColor || 'text-[#C9A961]'}`}>
-              {rightCard.label}
-            </div>
+            <div className={`text-sm font-sans font-semibold tracking-wider uppercase mb-4 ${rightCard.labelColor || 'text-[#C9A961]'}`} dangerouslySetInnerHTML={{ __html: rightCard.label }} />
             <div 
               className={`${rightCard.titleClass || 'text-lg font-sans font-medium'} text-[#1A1A1A] mb-8 leading-relaxed`}
               dangerouslySetInnerHTML={{ __html: rightCard.title }}
@@ -86,7 +72,7 @@ const ClinicalBoundaries = ({
             {rightCard.bestPractice && (
               <div className="mt-8 p-6 bg-[#F2F2E2] rounded-lg border border-[#C9A961]/20">
                 <p className="text-[14px] text-gray-700 leading-relaxed font-sans">
-                  <span className="font-bold">Best practice:</span> {rightCard.bestPractice}
+                  <span className="font-bold">Best practice:</span> <span dangerouslySetInnerHTML={{ __html: rightCard.bestPractice }} />
                 </p>
               </div>
             )}
@@ -95,9 +81,7 @@ const ClinicalBoundaries = ({
 
         {footer && (
           <div className="mt-12 text-center max-w-[800px] mx-auto">
-            <p className="text-sm text-[#717182] font-sans leading-relaxed">
-              {footer}
-            </p>
+            <p className="text-sm text-[#717182] font-sans leading-relaxed" dangerouslySetInnerHTML={{ __html: footer }} />
           </div>
         )}
       </div>

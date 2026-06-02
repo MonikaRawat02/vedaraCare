@@ -28,7 +28,7 @@ export const hairLossIntro = {
   bgColor: 'bg-white',
   label: 'THE QUICK ANSWER',
   title: 'Ayurvedic hair loss treatment in Dubai, in one paragraph.',
-  blockquote: 'Ayurvedic treatment for hair loss in Dubai begins with identifying the specific clinical pattern — androgenetic alopecia, telogen effluvium, alopecia areata, postpartum hair loss, or scalp-condition-driven hair fall. Treatment typically combines Nasya (medicated nasal therapy, the classical Ayurvedic protocol for hair conditions), specific scalp therapies including Shiroabhyanga and Takradhara, internal herbal medicines selected for your dosha pattern, dietary regulation addressing root causes, and where indicated, integration with dermatology. At Vedara Care Polyclinic in Jumeirah Village Circle (JVC), Dubai — next to Circle Mall — programmes typically run 3 to 9 months depending on the type and severity. Initial consultations start from AED 350.',
+  blockquote: 'Ayurvedic treatment for hair loss in Dubai begins with identifying the specific clinical pattern — androgenetic alopecia, telogen effluvium, alopecia areata, postpartum hair loss, or scalp-condition-driven hair fall. Treatment typically combines Nasya (medicated nasal therapy, the classical Ayurvedic protocol for hair conditions), specific scalp therapies including <a href="/treatments/abhyanga-dubai/" class="doctor-specialty-link">Abhyanga</a> (Shiroabhyanga) and <a href="/treatments/shirodhara-dubai/" class="doctor-specialty-link">Shirodhara</a>, internal herbal medicines selected for your dosha pattern, dietary regulation addressing root causes, and where indicated, integration with <a href="/dermatology-clinic-jvc/" class="doctor-specialty-link">dermatology</a>. At Vedara Care Polyclinic in Jumeirah Village Circle (JVC), Dubai — next to Circle Mall — programmes typically run 3 to 9 months depending on the type and severity. Initial consultations start from AED 350.',
   footer: 'Medically reviewed by Dr. [Lead Ayurvedic Physician], BAMS, MD (Ayurveda), DHA-Licensed · Last updated May 2026'
 };
 
@@ -43,7 +43,7 @@ export const hairLossPhenotypes = {
       title: 'Androgenetic Alopecia (Male and Female Pattern)',
       subtitle: 'Khalatiya in classical Sanskrit',
       content: 'The most common hair loss pattern globally. In men, presents as receding hairline and crown thinning, usually progressive from late 20s onwards. In women, presents as diffuse thinning across the crown, often noticed in 30s and 40s. Strongly genetic, hormone-mediated (androgens), and often family-clustered. Particularly common in South Asian and Middle Eastern men in Dubai.',
-      ayurvedicEmphasis: 'Nasya, Shirodhara, internal Bhringraja-based protocols, 6-9 month programme alongside dermatology where indicated'
+      ayurvedicEmphasis: 'Nasya, <a href="/treatments/shirodhara-dubai/" class="doctor-specialty-link">Shirodhara</a>, internal Bhringraja-based protocols, 6-9 month programme alongside <a href="/dermatology-clinic-jvc/" class="doctor-specialty-link">dermatology</a> where indicated'
     },
     {
       letter: 'B',
@@ -57,21 +57,21 @@ export const hairLossPhenotypes = {
       title: 'Alopecia Areata',
       subtitle: 'Indralupta in classical Sanskrit',
       content: 'Sudden patchy hair loss in well-defined circular or oval patches on the scalp (or sometimes beard, eyebrows, body). Autoimmune in origin. Onset can be at any age. Can resolve spontaneously, persist, or progress. Most clinically complex pattern to treat and most variable in outcomes.',
-      ayurvedicEmphasis: 'Local therapies (medicated oil applications, Raktamokshana in specific cases), internal immune-modulating medicines, dermatology coordination'
+      ayurvedicEmphasis: 'Local therapies (medicated oil applications, Raktamokshana in specific cases), internal immune-modulating medicines, <a href="/dermatology-clinic-jvc/" class="doctor-specialty-link">dermatology</a> coordination'
     },
     {
       letter: 'D',
       title: 'Postpartum Hair Loss',
       subtitle: 'Often classified under Sutika Vikara in classical Sanskrit',
       content: 'Significant hair shedding 2-6 months after childbirth, peaking around month 3-4. Hormonally driven — the hair that should have shed during pregnancy releases all at once postpartum. Common (affecting roughly 50% of new mothers) and almost always self-resolving by 12-18 months — but the experience is distressing and Ayurvedic support can meaningfully reduce severity and shorten recovery.',
-      ayurvedicEmphasis: 'Classical Sutika Paricharya 45-day postnatal programme, Bhringraja-based oils, internal medicines for postnatal Vata pacification, nutritional restoration'
+      ayurvedicEmphasis: 'Classical <a href="/conditions/postnatal-care-ayurveda-dubai/" class="doctor-specialty-link">Sutika Paricharya</a> 45-day postnatal programme, Bhringraja-based oils, internal medicines for postnatal Vata pacification, nutritional restoration'
     },
     {
       letter: 'E',
       title: 'Scalp-Condition-Driven Hair Loss',
       subtitle: 'Multiple Sanskrit classifications including Darunaka and Palitya-related',
       content: 'Hair loss secondary to scalp conditions — seborrheic dermatitis, scalp psoriasis, fungal infections, severe dandruff, scarring scalp conditions. The scalp needs treatment before the hair can grow back. Different protocol from other patterns — primary focus is restoring scalp health.',
-      ayurvedicEmphasis: 'Scalp-specific medicated oil treatments, internal medicines for the underlying skin condition, dermatology coordination for diagnosis confirmation'
+      ayurvedicEmphasis: 'Scalp-specific medicated oil treatments, internal medicines for the underlying skin condition, <a href="/dermatology-clinic-jvc/" class="doctor-specialty-link">dermatology</a> coordination for diagnosis confirmation'
     }
   ],
   footer: 'Most patients arrive at our JVC clinic not knowing which pattern they have. Some patients have more than one pattern simultaneously — particularly women with androgenetic alopecia experiencing postpartum exacerbation, or men with both androgenetic and stress-driven shedding. Pattern identification at consultation is the foundation of an effective treatment plan.'
@@ -83,7 +83,7 @@ export const hairLossMechanism1 = {
   title: 'Authentic Ayurvedic hair loss treatment works on four levels simultaneously.',
   content: [
     'In classical Ayurveda, hair (Kesha) is considered a tissue (upadhatu) of bone tissue (asthi dhatu) — meaning hair health is genuinely connected to deeper metabolic and constitutional patterns, not just to the scalp itself. This is why treating hair loss with topical oils alone, however expensive, produces only partial results.',
-    'Authentic treatment at our JVC clinic works on four parallel levels. Local scalp therapy addresses the scalp environment directly — through specific medicated oil applications, Shiroabhyanga (head massage), Shirodhara, and where indicated, Takradhara (buttermilk-based variant especially useful for inflammatory scalp conditions). Nasya therapy — medicated oils administered through the nasal passages — is the classical Ayurvedic protocol specifically for hair, considered in the texts to be the most direct route to nourish the structures of the head. Internal medicines address the systemic patterns underlying your specific type of hair loss — different formulations for androgenetic vs telogen vs autoimmune patterns. Lifestyle and dietary regulation addresses the root patterns that perpetuate hair loss — stress, sleep quality, iron and protein adequacy, hormonal balance, scalp hygiene, and the specific Dubai-life factors that affect hair (sun exposure, hard water, air conditioning, hair-care chemical load).',
+    'Authentic treatment at our JVC clinic works on four parallel levels. Local scalp therapy addresses the scalp environment directly — through specific medicated oil applications, <a href="/treatments/abhyanga-dubai/" class="doctor-specialty-link">Abhyanga</a> (Shiroabhyanga, head massage), <a href="/treatments/shirodhara-dubai/" class="doctor-specialty-link">Shirodhara</a>, and where indicated, Takradhara (buttermilk-based variant especially useful for inflammatory scalp conditions). Nasya therapy — medicated oils administered through the nasal passages — is the classical Ayurvedic protocol specifically for hair, considered in the texts to be the most direct route to nourish the structures of the head. Internal medicines address the systemic patterns underlying your specific type of hair loss — different formulations for androgenetic vs telogen vs autoimmune patterns. Lifestyle and dietary regulation addresses the root patterns that perpetuate hair loss — stress, sleep quality, iron and protein adequacy, hormonal balance, scalp hygiene, and the specific Dubai-life factors that affect hair (sun exposure, hard water, air conditioning, hair-care chemical load).',
     'The honest position is this: Ayurvedic hair loss treatment works substantially when all four levels are addressed for 3–9 months depending on pattern. It works marginally when only topical oils or only internal medicines are used. This is why treatment requires consultation and commitment, not products.'
   ],
   image:'https://images.unsplash.com/photo-1492552296703-4ec0a2fb3715?crop=entropy&cs=tinysrgb&fit=max&fm=jpg&ixid=M3w3Nzg4Nzd8MHwxfHNlYXJjaHw1fHxheXVydmVkaWMlMjBtZWRpY2luZSUyMGhlcmJzJTIwb2lsJTIwcHJlcGFyYXRpb258ZW58MXx8fHwxNzc5ODA0MzE3fDA&ixlib=rb-4.1.0&q=80&w=1080',
@@ -153,9 +153,9 @@ export const hairLossProtocol = {
       time: 'Month 1',
       title: 'Assessment & Foundation',
       items: [
-        '60-minute consultation with BAMS-qualified Ayurvedic physician at our JVC clinic',
+        '60-minute consultation with BAMS-qualified Ayurvedic physician at our <a href="/ayurveda-clinic-jvc/" class="doctor-specialty-link">Ayurveda Clinic in JVC</a>',
         'Comprehensive scalp examination, hair pull test, hair density assessment',
-        'Review of any existing diagnoses, blood work, dermatology reports',
+        'Review of any existing diagnoses, blood work, <a href="/dermatology-clinic-jvc/" class="doctor-specialty-link">dermatology</a> reports',
         'Pattern identification (which of the five clinical types)',
         'Pulse diagnosis and dosha assessment',
         'Iron studies, thyroid panel, hormone assessment (if not recent)',
@@ -169,7 +169,7 @@ export const hairLossProtocol = {
       title: 'Intensive Nasya & Scalp Therapy',
       items: [
         'First 7-day Nasya course (typically days 1-7 of month)',
-        '2-3 Shiroabhyanga sessions per week through the month',
+        '2-3 <a href="/treatments/abhyanga-dubai/" class="doctor-specialty-link">Abhyanga</a> (Shiroabhyanga) sessions per week through the month',
         'Continued internal medicines',
         'Dietary protocol fully implemented',
         'For inflammatory patterns: Takradhara sessions added'
@@ -182,8 +182,8 @@ export const hairLossProtocol = {
       items: [
         'Mid-programme doctor review with hair density reassessment',
         'Refined herbal medicine protocol',
-        'Continuation of weekly Shiroabhyanga',
-        'Possible introduction of Shirodhara if stress factors significant',
+        'Continuation of weekly <a href="/treatments/abhyanga-dubai/" class="doctor-specialty-link">Abhyanga</a> (Shiroabhyanga)',
+        'Possible introduction of <a href="/treatments/shirodhara-dubai/" class="doctor-specialty-link">Shirodhara</a> if stress factors significant',
         'Lifestyle protocols fully established'
       ],
       expected: 'shedding typically significantly reduced for telogen patterns, hairline beginning to show early stabilisation for androgenetic patterns, scalp condition substantially improved for inflammatory patterns'
@@ -195,7 +195,7 @@ export const hairLossProtocol = {
         'Second 7-day Nasya course (typically days 1-7 of month)',
         'Continued scalp therapies',
         'Internal medicines maintained',
-        'For complex patterns: Panchakarma considered if indicated',
+        'For complex patterns: <a href="/treatments/panchakarma-dubai/" class="doctor-specialty-link">Panchakarma</a> considered if indicated',
         'Mid-cycle doctor review'
       ],
       expected: 'new hair growth typically visible at hairline (1-2 cm length), reduced visible scalp at part-line for women with diffuse thinning'
@@ -235,7 +235,7 @@ export const hairLossSymptoms = {
   symptoms: [
     {
       title: 'Androgenetic Alopecia',
-      content: 'The most realistic outcome is stabilisation plus partial regrowth. Ayurvedic treatment for androgenetic alopecia at our JVC clinic typically slows or arrests progression for 6-12 months, partially regrows recently-lost hair (within the last 12-18 months), and improves overall hair quality and density. Hair lost more than 2-3 years ago does not regrow with Ayurveda alone — for that, dermatology integration (minoxidil, finasteride, or in select cases, transplant) may be appropriate.',
+      content: 'The most realistic outcome is stabilisation plus partial regrowth. Ayurvedic treatment for androgenetic alopecia at our JVC clinic typically slows or arrests progression for 6-12 months, partially regrows recently-lost hair (within the last 12-18 months), and improves overall hair quality and density. Hair lost more than 2-3 years ago does not regrow with Ayurveda alone — for that, <a href="/dermatology-clinic-jvc/" class="doctor-specialty-link">dermatology</a> integration (minoxidil, finasteride, or in select cases, transplant) may be appropriate.',
       expected: 'Realistic expectation: Stabilisation + partial regrowth at hairline and crown'
     },
     {
@@ -250,7 +250,7 @@ export const hairLossSymptoms = {
     },
     {
       title: 'Postpartum Hair Loss',
-      content: 'The most predictable pattern. Postpartum hair shedding almost always resolves spontaneously by 12-18 months. Ayurvedic treatment — particularly the classical 45-day Sutika Paricharya protocol — typically reduces severity and shortens recovery to 6-9 months, with better hair quality at the end. Common in women across JVC, JVT, and Dubai expat populations.',
+      content: 'The most predictable pattern. Postpartum hair shedding almost always resolves spontaneously by 12-18 months. Ayurvedic treatment — particularly the classical 45-day <a href="/conditions/postnatal-care-ayurveda-dubai/" class="doctor-specialty-link">Sutika Paricharya</a> protocol — typically reduces severity and shortens recovery to 6-9 months, with better hair quality at the end. Common in women across JVC, JVT, and Dubai expat populations.',
       expected: 'Realistic expectation: Substantial improvement with shortened recovery timeline'
     },
     {
@@ -272,7 +272,7 @@ export const hairLossBoundaries = {
       title: '',
       items: [
         'Sudden patchy hair loss appearing in the last 4 weeks (rule out alopecia areata progression vs trichotillomania)',
-        'Hair loss with skin rash, scalp pain, or scarring (needs dermatology to confirm scarring vs non-scarring alopecia)',
+        'Hair loss with skin rash, scalp pain, or scarring (needs <a href="/dermatology-clinic-jvc/" class="doctor-specialty-link">dermatology</a> to confirm scarring vs non-scarring alopecia)',
         'Hair loss with significant fatigue, weight changes, or temperature intolerance (thyroid evaluation needed)',
         'Hair loss with iron-deficiency symptoms (iron studies and underlying cause needed)',
         'Hair loss starting after specific medication (medication review needed first)',
@@ -284,14 +284,14 @@ export const hairLossBoundaries = {
       title: '',
       items: [
         'Severe androgenetic alopecia where minoxidil or finasteride is already part of the plan',
-        'Alopecia areata of moderate or greater severity (dermatologist often leads, Ayurveda supports)',
-        'Scalp psoriasis with hair fall (dermatology for psoriasis, Ayurveda for hair)',
+        'Alopecia areata of moderate or greater severity (<a href="/dermatology-clinic-jvc/" class="doctor-specialty-link">dermatologist</a> often leads, Ayurveda supports)',
+        'Scalp psoriasis with hair fall (<a href="/dermatology-clinic-jvc/" class="doctor-specialty-link">dermatology</a> for psoriasis, Ayurveda for hair)',
         'Patients considering hair transplant (Ayurvedic preparation often improves transplant outcomes)',
         'Post-chemotherapy hair regrowth (Ayurvedic support alongside oncology recovery)'
       ]
     }
   ],
-  footer: 'Real Ayurvedic doctors at our JVC clinic refer to dermatology, endocrinology, or other specialists when needed — and coordinate care rather than compete with it. For Dubai hair loss patients, the strongest outcomes often come from combined Ayurveda + dermatology programmes.'
+  footer: 'Real Ayurvedic doctors at our JVC clinic refer to <a href="/dermatology-clinic-jvc/" class="doctor-specialty-link">dermatology</a>, endocrinology, or other specialists when needed — and coordinate care rather than compete with it. For Dubai hair loss patients, the strongest outcomes often come from combined Ayurveda + <a href="/dermatology-clinic-jvc/" class="doctor-specialty-link">dermatology</a> programmes.'
 };
 
 export const hairLossReviews = {
@@ -356,8 +356,8 @@ export const hairLossPrograms = {
       features: [
         'All Initial Assessment components',
         '2 intensive Nasya courses (months 2 and 4)',
-        'Weekly Shiroabhyanga during months 1-3',
-        'Monthly Shirodhara where indicated (months 2-5)',
+        'Weekly <a href="/treatments/abhyanga-dubai/" class="doctor-specialty-link">Abhyanga</a> (Shiroabhyanga) during months 1-3',
+        'Monthly <a href="/treatments/shirodhara-dubai/" class="doctor-specialty-link">Shirodhara</a> where indicated (months 2-5)',
         '6 months of internal Ayurvedic medicines',
         'Home scalp oil protocol with medicated oils',
         'Monthly doctor reviews',
@@ -371,9 +371,9 @@ export const hairLossPrograms = {
       duration: '6-9 months · ~30-40 visits',
       features: [
         'All Standard Programme components',
-        'Joint Ayurvedic + dermatology consultation (when dermatology launches)',
+        'Joint Ayurvedic + <a href="/dermatology-clinic-jvc/" class="doctor-specialty-link">dermatology</a> consultation (when dermatology launches)',
         'Coordinated treatment with topical agents where appropriate',
-        'Extended Panchakarma component (7-14 days, typically month 3-4)',
+        'Extended <a href="/treatments/panchakarma-dubai/" class="doctor-specialty-link">Panchakarma</a> component (7-14 days, typically month 3-4)',
         'Photographic monitoring with baseline, 3-month, 6-month documentation',
         'Annual maintenance returns recommended'
       ],
@@ -387,7 +387,7 @@ export const hairLossFaqs = {
   bgColor: 'bg-white',
   label: 'HAIR LOSS QUESTIONS',
   title: 'What patients ask before starting Ayurvedic hair loss treatment.',
-  description: 'For specific treatment details, see the Panchakarma and treatment pages. For hair loss blog posts, see our journal.',
+  description: 'For specific treatment details, see the <a href="/treatments/panchakarma-dubai/" class="doctor-specialty-link">Panchakarma</a> and treatment pages. For hair loss blog posts, see our journal.',
   buttonText: 'Ask the Hair Loss Team',
   faqs: [
     {
@@ -416,7 +416,7 @@ export const hairLossFaqs = {
       answer: 'Yes — and we often recommend it. For androgenetic alopecia, Ayurvedic treatment alongside conventional dermatology often outperforms either alone. Your dermatologist manages the topical and oral medications; we address the systemic patterns, scalp environment, and root factors with Ayurvedic protocols. We coordinate where needed and never ask you to stop conventional treatment that is helping.'},
     {
       question: 'Is Ayurvedic hair loss treatment suitable for both men and women?',
-      answer: 'Yes. Roughly 60% of our hair loss patients at the JVC clinic are women (postpartum, telogen effluvium, female pattern, PCOS-related), 40% are men (mostly androgenetic alopecia, occasionally telogen). Treatment patterns and oils differ between male and female pattern hair loss, but the framework of pattern identification + four-level treatment applies to both.'},
+      answer: 'Yes. Roughly 60% of our hair loss patients at the JVC clinic are women (postpartum, telogen effluvium, female pattern, <a href="/conditions/pcos-ayurveda-dubai/" class="doctor-specialty-link">PCOS</a>-related), 40% are men (mostly androgenetic alopecia, occasionally telogen). Treatment patterns and oils differ between male and female pattern hair loss, but the framework of pattern identification + four-level treatment applies to both.'},
     {
       question: 'What about hair transplant — should I have one instead?',
       answer: 'Hair transplant has a specific role for advanced androgenetic alopecia where significant area has been lost beyond Ayurvedic recovery. For all other hair loss patterns — telogen, postpartum, alopecia areata, scalp-condition-driven, and early-to-moderate androgenetic — transplant is rarely the right first step. Many patients who consult us were heading toward unnecessary transplants for conditions that respond well to medical treatment. For severe androgenetic patterns, Ayurvedic preparation often improves transplant outcomes if transplant is genuinely needed.'},
@@ -473,12 +473,12 @@ export const hairLossRelatedPages = {
     {
       title: 'Shirodhara in Dubai',
       description: 'The continuous warm oil therapy frequently used in hair loss protocols, particularly for stress-driven and hormonal patterns.',
-      href: '/treatments/shirodhara-dubai'
+      href: '/treatments/shirodhara-dubai/'
     },
     {
       title: 'Ayurveda for PCOS in Dubai',
       description: 'For women whose hair loss is part of PCOS — the underlying hormonal pattern needs addressing alongside the hair-specific protocol.',
-      href: '/conditions/pcos-ayurveda-dubai'
+      href: '/conditions/pcos-ayurveda-dubai/'
     },
     {
       title: 'Panchakarma in Dubai',
@@ -488,7 +488,7 @@ export const hairLossRelatedPages = {
     {
       title: 'Our Ayurveda Clinic in JVC',
       description: 'The full picture of our Ayurveda department, doctors, treatments, and other conditions we treat at our JVC clinic.',
-      href: '/ayurveda-clinic-jvc'
+      href: '/ayurveda-clinic-jvc/'
     },
     
   ]
