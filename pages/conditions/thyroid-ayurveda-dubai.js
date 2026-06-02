@@ -7,6 +7,7 @@ import ArthritisPillars from '../../components/ayurveda/ArthritisPillars';
 import ClinicalBoundaries from '../../components/ayurveda/ClinicalBoundaries';
 import TreatmentProtocol from '../../components/ayurveda/Protocols';
 import OutcomeRanges from '../../components/ayurveda/OutcomeRanges';
+import RelatedPages from '../../components/ayurveda/RelatedPages';
 import CTA from '../../components/home/CTA';
 import FAQ from '../../components/home/FAQ';
 
@@ -308,7 +309,6 @@ const AyurvedaThyroid = () => {
           {...thyroidBoundaries}
           bgColor="bg-[#F5F5DC]"
         />
-
         <FAQ 
           {...thyroidFaqs} 
           bgColor="bg-white"
@@ -316,6 +316,10 @@ const AyurvedaThyroid = () => {
 
         <CTA 
           {...thyroidCTA} 
+        />
+          <RelatedPages 
+          {...thyroidRelatedPages}
+          bgColor="bg-[#F4F0E8]"
         />
       </main>
     </>
