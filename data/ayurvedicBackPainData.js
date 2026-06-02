@@ -64,8 +64,8 @@ export const ayurvedicBackPainAssessment = {
       approach: "Greeva Vasti, Nasya, internal medicines"
     },
     {
-      title: "Spondylosis and Degenerative Changes",
-      description: "Age-related wear-and-tear changes in the spine, often with chronic stiffness and intermittent acute episodes. Ayurvedic treatment can meaningfully slow degeneration progression and manage symptoms — particularly valuable for patients in their 40s and beyond.",
+      title: "Spondylosis and Spinal Arthritis",
+      description: "Age-related wear-and-tear changes in the spine and <a href='/conditions/arthritis-ayurveda-dubai/' class='hover:underline'>spinal arthritis</a>, often with chronic stiffness and intermittent acute episodes. Ayurvedic treatment can meaningfully slow degeneration progression and manage symptoms — particularly valuable for patients in their 40s and beyond.",
       approach: "Kativasti or Greeva Vasti based on level, Njavarakizhi, internal medicines",
       link: "/treatments/njavarakizhi-dubai/",
       linkText: "Read more about Njavarakizhi"
