@@ -68,7 +68,7 @@ export const stressAnxietyPatterns = {
     {
       title: "Panic and Acute Anxiety Episodes",
       sanskritName: "Often Vata-Pitta patterns",
-      description: "The pattern of episodic intense anxiety — panic attacks, anticipatory anxiety, sometimes with physical symptoms (heart racing, breathlessness, depersonalisation). Often requires coordinated psychiatric care alongside Ayurvedic support. Ayurvedic treatment focuses on the medical management, addressing nervous system reactivity over time.",
+      description: "The pattern of episodic intense anxiety — panic attacks, anticipatory anxiety, sometimes with physical symptoms (heart racing, breathlessness, depersonalisation). Often requires coordinated psychiatric care alongside Ayurvedic support. For some, this includes integrated <a href=\"#\" class=\"hover:underline\">trauma-informed therapy</a> to address underlying reactivity.",
       emphasis: "Shirodhara, specific support for amygdala reactivity, gradual reduction of baseline reactivity — must be coordinated with psychiatric care."
     },
     {
@@ -91,7 +91,7 @@ export const stressAnxietyPositioning = {
     },
     {
       title: "If You Are in Therapy",
-      content: "Therapy — particularly CBT, DBT, trauma-informed therapy, or psychoanalysis — addresses cognitive patterns, beliefs, and emotional processing that Ayurveda cannot directly access. Many of our most successful patients combine Ayurvedic nervous-system restoration with ongoing therapy. The two approaches work on different mechanisms — Ayurveda on the biological substrate, therapy on the cognitive and emotional layer."
+      content: "Therapy — particularly CBT, DBT, <a href=\"#\" class=\"hover:underline\">trauma-informed therapy</a>, or psychoanalysis — addresses cognitive patterns, beliefs, and emotional processing that Ayurveda cannot directly access. Many of our most successful patients combine Ayurvedic nervous-system restoration with ongoing therapy. The two approaches work on different mechanisms — Ayurveda on the biological substrate, therapy on the cognitive and emotional layer."
     },
     {
       title: "If You Have Not Yet Engaged Either",
@@ -107,8 +107,8 @@ export const stressAnxietyPillars = {
   description: "Single-pillar approaches fail for chronic anxiety. The Shirodhara alone, herbal supplement alone, or 'just meditate' approach that dominates Dubai's wellness market all produce limited sustained results because they address only one layer of a multi-layered nervous-system condition.",
   pillars: [
     {
-      title: "Shirodhara and Nervous System Therapies",
-      description: "The signature Ayurvedic treatment for chronic stress and anxiety. Continuous warm medicated oil poured rhythmically across the forehead for 35 minutes per session, calming the autonomic nervous system measurably. Typically prescribed as a 7-14 session course during the active phase of treatment. Most patients describe meaningful shifts in sleep and baseline calm within the first 3-5 sessions. Combined with Abhyanga for deeper Vata pacification."
+      title: "<a href=\"/treatments/shirodhara-dubai/\" class=\"hover:underline\">Shirodhara</a> and Nervous System Therapies",
+      description: "The signature Ayurvedic treatment for chronic stress and anxiety is <a href=\"/treatments/shirodhara-dubai/\" class=\"hover:underline\">Shirodhara</a>. Continuous warm medicated oil poured rhythmically across the forehead for 35 minutes per session, calming the autonomic nervous system measurably. Typically prescribed as a 7-14 session course during the active phase of treatment. Most patients describe meaningful shifts in sleep and baseline calm within the first 3-5 sessions. Combined with <a href=\"/treatments/abhyanga-dubai/\" class=\"hover:underline\">Abhyanga</a> for deeper Vata pacification. For complex cases, <a href=\"/treatments/panchakarma-dubai/\" class=\"hover:underline\">Panchakarma</a> provides a more systemic reset."
     },
     {
       title: "Internal Medicines for Nervous System Restoration",
@@ -274,7 +274,7 @@ export const stressAnxietyPrograms = {
 export const stressAnxietyFaqs = {
   label: "STRESS & ANXIETY QUESTIONS",
   title: "What patients ask before starting Ayurvedic stress and anxiety treatment.",
-  description: "For Shirodhara specifically, see the treatment page. For sleep-specific issues, our Insomnia page covers chronic insomnia in depth.",
+  description: "For Shirodhara specifically, see the <a href=\"/treatments/shirodhara-dubai/\" class=\"hover:underline text-gold\">treatment page</a>. For sleep-specific issues, our <a href=\"/treatments/abhyanga-dubai/\" class=\"hover:underline text-gold\">Abhyanga</a> page covers chronic relaxation in depth.",
   buttonText: "Ask the Clinical Team",
   faqs: [
     {
@@ -331,11 +331,11 @@ export const stressAnxietyFaqs = {
     },
     {
       question: "What if I have had trauma in my past?",
-      answer: "Trauma-informed care matters enormously here. We coordinate with trauma-informed therapists where appropriate. For patients with significant trauma history, we modify protocols — Shirodhara may be delivered with extra attention to safety and consent, body therapies are introduced gradually, and we never proceed without your full comfort. Ayurveda alone is rarely sufficient for processed trauma — combined with trauma-informed therapy, it can be deeply supportive."
+      answer: "Trauma-informed care matters enormously here. We coordinate with <a href=\"#\" class=\"hover:underline\">trauma-informed therapists</a> where appropriate. For patients with significant trauma history, we modify protocols — Shirodhara may be delivered with extra attention to safety and consent, body therapies are introduced gradually, and we never proceed without your full comfort. Ayurveda alone is rarely sufficient for processed trauma — combined with trauma-informed therapy, it can be deeply supportive."
     },
     {
       question: "How does this work for postpartum anxiety?",
-      answer: "Postpartum anxiety — including postpartum panic, hypervigilance, and sleep-deprivation-related anxiety — is one of our most-treated patterns. Classical Sutika Paricharya (45-day postnatal Ayurvedic care) specifically addresses postpartum nervous-system restoration. Beyond the immediate postpartum period, we offer integrated programmes for postnatal anxiety, always alongside postnatal mental health screening with your GP or psychiatrist."
+      answer: "Postpartum anxiety — including postpartum panic, hypervigilance, and sleep-deprivation-related anxiety — is one of our most-treated patterns. <a href=\"/conditions/postnatal-care-ayurveda-dubai/\" class=\"hover:underline\">Classical Sutika Paricharya</a> (45-day postnatal Ayurvedic care) specifically addresses postpartum nervous-system restoration. Beyond the immediate postpartum period, we offer integrated programmes for postnatal anxiety, always alongside postnatal mental health screening with your GP or psychiatrist."
     },
     {
       question: "What if my anxiety is mainly about work?",
@@ -478,7 +478,8 @@ export const stressAnxietyVisitSectionData = {
   button1Text: "Book an Anxiety & Stress Consultation",
   button2Text: "WhatsApp Us",
   alt: "Vedara Care stress and anxiety clinic location in Jumeirah Village Circle Dubai near Circle Mall",
-  image: "/images/restorative-environment-vedara-jvc.webp"
+  image: "/images/restorative-environment-vedara-jvc.webp",
+  mapEmbed: "https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d3613.6391151624!2d55.2085!3d25.0560!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x3e5f6e85d4545555%3A0x5555555555555555!2sJumeirah%20Village%20Circle!5e0!3m2!1sen!2sae!4v1622620000000!5m2!1sen!2sae"
 };
 
 export const stressAnxietyLocation = {
@@ -493,7 +494,8 @@ export const stressAnxietyLocation = {
     "Jumeirah Village Circle, Dubai"
   ],
   buttonText: "Book an Anxiety & Stress Consultation",
-  image: "https://images.unsplash.com/photo-1519494026892-80bbd2d6fd0d?q=80&w=2053&auto=format&fit=crop"
+  image: "https://images.unsplash.com/photo-1519494026892-80bbd2d6fd0d?q=80&w=2053&auto=format&fit=crop",
+  mapEmbed: "https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d3613.6391151624!2d55.2085!3d25.0560!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x3e5f6e85d4545555%3A0x5555555555555555!2sJumeirah%20Village%20Circle!5e0!3m2!1sen!2sae!4v1622620000000!5m2!1sen!2sae"
 };
 
 export const stressAnxietyCTA = {
@@ -507,7 +509,8 @@ export const stressAnxietyCTA = {
     "Walking distance from Circle Mall, JVC",
     "Doctors available 7 days a week",
     "Coordinated with psychiatry",
-    "Free clinic parking"
+    "Free clinic parking",
+    "<a href=\"/treatments/shirodhara-dubai/\" class=\"hover:underline\">Read about Shirodhara</a>"
   ],
   alertBox: "If you are experiencing a mental health crisis, please contact emergency services (999) or the 24/7 Crisis helpline (800 4673)."
 };

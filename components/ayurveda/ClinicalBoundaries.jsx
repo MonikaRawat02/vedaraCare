@@ -32,7 +32,7 @@ const ClinicalBoundaries = ({
               </div>
             )}
 
-            <div 
+            <h3 
               className={`${leftCard.titleClass || 'text-lg font-sans font-medium'} text-[#1A1A1A] mb-8 leading-relaxed`}
               dangerouslySetInnerHTML={{ __html: leftCard.title }}
             />
@@ -56,7 +56,7 @@ const ClinicalBoundaries = ({
           {/* Right Card */}
           <div className={`${rightCard.bgColor || 'bg-[#FAF8F3]'} p-8 rounded-xl border-2 ${rightCard.borderColor || 'border-[#C9A961]/30'}`}>
             <div className={`text-sm font-sans font-semibold tracking-wider uppercase mb-4 ${rightCard.labelColor || 'text-[#C9A961]'}`} dangerouslySetInnerHTML={{ __html: rightCard.label }} />
-            <div 
+            <h3 
               className={`${rightCard.titleClass || 'text-lg font-sans font-medium'} text-[#1A1A1A] mb-8 leading-relaxed`}
               dangerouslySetInnerHTML={{ __html: rightCard.title }}
             />

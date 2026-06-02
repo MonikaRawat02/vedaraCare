@@ -138,17 +138,17 @@ export const homeConditions = {
   categories: ["All", "Pain", "Womens Health", "Skin and Hair", "Metabolic", "Mental Wellness"],
   items: [
     { title: "Chronic Back Pain", category: "Pain", description: "Integrated treatment combining manual therapy and Ayurvedic protocols", sub: "Ayurveda and Physio", link: "/conditions/back-pain-ayurveda-dubai/" },
-    { title: "PCOS", category: "Womens Health", description: "Hormonal balance through traditional Ayurvedic medicine", sub: "Ayurveda" },
-    { title: "Hair Loss", category: "Skin and Hair", description: "Combined approach for hair restoration and scalp health", sub: "Dermatology and Ayurveda" },
+    { title: "PCOS", category: "Womens Health", description: "Hormonal balance through traditional Ayurvedic medicine", sub: "Ayurveda", link: "/conditions/pcos-ayurveda-dubai/" },
+    { title: "Hair Loss", category: "Skin and Hair", description: "Combined approach for hair restoration and scalp health", sub: "Dermatology and Ayurveda", link: "/conditions/hair-loss-ayurveda-dubai/" },
     { title: "Neck and Shoulder Pain", category: "Pain", description: "Manual therapy and targeted rehabilitation", sub: "Physio" },
     { title: "Sports Injuries", category: "Pain", description: "Evidence-based sports injury rehabilitation", sub: "Physio" },
     { title: "Acne and Scars", category: "Skin and Hair", description: "Medical-grade acne treatment and scar reduction", sub: "Dermatology" },
     { title: "Frozen Shoulder", category: "Pain", description: "Combined manual therapy and Ayurvedic treatment", sub: "Physio and Ayurveda" },
-    { title: "Stress and Anxiety", category: "Mental Wellness", description: "Holistic stress management programs", sub: "Ayurveda and Wellness" },
+    { title: "Stress and Anxiety", category: "Mental Wellness", description: "Holistic stress management programs", sub: "Ayurveda and Wellness", link: "/conditions/stress-anxiety-ayurveda-dubai/" },
     { title: "Migraine", category: "Pain", description: "Root cause treatment through Ayurvedic protocols", sub: "Ayurveda", link: "/conditions/migraine-ayurveda-dubai/" },
     { title: "Arthritis & Knee Pain", category: "Pain", description: "Integrated approach to joint health and ", sub: "Physio and Ayurveda", link: "/conditions/arthritis-ayurveda-dubai/" },
-    { title: "Weight Management", category: "Metabolic", description: "Personalized weight loss programs", sub: "Wellness and Ayurveda" },
-    { title: "Postnatal Recovery", category: "Womens Health", description: "Comprehensive postpartum care at clinic or home", sub: "Ayurveda and Home Healthcare" },
+    { title: "Weight Management", category: "Metabolic", description: "Personalized weight loss programs", sub: "Wellness and Ayurveda", link: "/conditions/weight-loss-ayurveda-dubai/" },
+    { title: "Postnatal Recovery", category: "Womens Health", description: "Comprehensive postpartum care at clinic or home", sub: "Ayurveda and Home Healthcare", link: "/conditions/postnatal-care-ayurveda-dubai/" },
     { title: "Thyroid", category: "Womens Health", description: "Supportive care for Hashimoto's and hypothyroid", sub: "Ayurveda", link: "/conditions/thyroid-ayurveda-dubai/" }
   ]
 };
