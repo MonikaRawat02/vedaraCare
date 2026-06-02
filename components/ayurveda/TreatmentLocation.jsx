@@ -12,6 +12,8 @@ const TreatmentLocation = ({
   whatsapp = "",
   hours = "",
   landmarks = [],
+  image = "",
+  alt = "Clinic location",
   description = "",
   buttonText = ""
 }) => {
@@ -55,11 +57,19 @@ const TreatmentLocation = ({
     <section className={`${bgColor} py-24 px-6 relative overflow-hidden`}>
       <div className="max-w-7xl mx-auto">
         <div className="grid lg:grid-cols-2 gap-12">
-          {/* Map Placeholder */}
-          <div className="h-[400px] bg-gray-300 rounded-xl overflow-hidden">
-            <div className="w-full h-full flex items-center justify-center text-gray-600">
-              [Google Maps Embed - JVC Location]
-            </div>
+          {/* Map / Image */}
+          <div className="h-[400px] bg-gray-300 rounded-xl overflow-hidden relative">
+            {image ? (
+              <img 
+                src={image.startsWith('http') ? image : `/images/${image}`} 
+                alt={alt} 
+                className="w-full h-full object-cover"
+              />
+            ) : (
+              <div className="w-full h-full flex items-center justify-center text-gray-600">
+                [Google Maps Embed - JVC Location]
+              </div>
+            )}
           </div>
 
           {/* Location Info */}
