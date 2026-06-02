@@ -114,7 +114,7 @@ const AyurvedaMigraine = () => {
         "name": "Dr. [Lead Ayurvedic Physician]",
         "hasCredential": "DHA-Licensed BAMS, MD (Ayurveda)"
       },
-      "primaryImageOfPage": "https://vedaracare.ae/images/migraine-ayurveda-dubai-hero.jpg"
+      "primaryImageOfPage": "https://vedaracare.ae/images/conditions/migraine-ayurveda-dubai-hero.webp"
     },
     {
       "@context": "https://schema.org",
@@ -165,7 +165,7 @@ const AyurvedaMigraine = () => {
       "@context": "https://schema.org",
       "@type": "Article",
       "headline": "Ayurveda for Migraine in Dubai — A Complete Clinical Guide",
-      "image": "https://vedaracare.ae/images/migraine-ayurveda-dubai-hero.jpg",
+      "image": "https://vedaracare.ae/images/conditions/migraine-ayurveda-dubai-hero.webp",
       "datePublished": "2026-05-28",
       "dateModified": "2026-05-28",
       "author": {
@@ -215,7 +215,7 @@ const AyurvedaMigraine = () => {
         
         <meta property="og:title" content="Ayurveda for Migraine in Dubai — Integrated Treatment at Our JVC Clinic" />
         <meta property="og:description" content="DHA-licensed Ayurvedic migraine treatment at our Jumeirah Village Circle clinic. Subtype-specific protocols for episodic, chronic, menstrual & vestibular migraine. Coordinated with neurology." />
-        <meta property="og:image" content="https://vedaracare.ae/og-images/migraine-ayurveda-dubai.jpg" />
+        <meta property="og:image" content="https://vedaracare.ae/images/conditions/migraine-ayurveda-dubai-hero.webp" />
         <meta property="og:url" content="https://vedaracare.ae/conditions/migraine-ayurveda-dubai/" />
         <meta property="og:type" content="article" />
         <meta property="og:locale" content="en_AE" />
@@ -223,6 +223,7 @@ const AyurvedaMigraine = () => {
         <meta property="article:modified_time" content="2026-05-28T09:00:00Z" />
         <meta property="article:author" content="Dr. [Lead Ayurvedic Physician Name]" />
         <meta name="twitter:card" content="summary_large_image" />
+        <meta name="twitter:image" content="https://vedaracare.ae/images/conditions/migraine-ayurveda-dubai-hero.webp" />
         <meta name="robots" content="index, follow, max-image-preview:large" />
 
         <script

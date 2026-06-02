@@ -15,7 +15,8 @@ const TreatmentLocation = ({
   image = "",
   alt = "Clinic location",
   description = "",
-  buttonText = ""
+  buttonText = "",
+  mapEmbed = ""
 }) => {
   const renderHours = () => {
     if (typeof hours === 'string') {
@@ -59,7 +60,18 @@ const TreatmentLocation = ({
         <div className="grid lg:grid-cols-2 gap-12">
           {/* Map / Image */}
           <div className="h-[400px] bg-gray-300 rounded-xl overflow-hidden relative">
-            {image ? (
+            {mapEmbed ? (
+              <iframe 
+                src={mapEmbed}
+                width="100%"
+                height="100%"
+                style={{ border: 0 }}
+                allowFullScreen=""
+                loading="lazy"
+                referrerPolicy="no-referrer-when-downgrade"
+                title="Clinic Location Map"
+              ></iframe>
+            ) : image ? (
               <img 
                 src={image.startsWith('http') ? image : `/images/${image}`} 
                 alt={alt} 

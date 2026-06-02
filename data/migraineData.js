@@ -19,7 +19,7 @@ export const migraineHero = {
     title: "WE READ YOUR DIARY, NOT YOUR AURA.",
     subtitle: "Bring your migraine tracker, your previous neurologist notes, and your current medications. Treatment starts from data."
   },
-  image: "https://images.unsplash.com/photo-1600334089648-b0d9d3028eb2?q=80&w=2070&auto=format&fit=crop",
+  image: "conditions/migraine-diary-review-consultation-vedara-jvc.webp",
   alt: "Ayurvedic doctor reviewing migraine diary with patient at Vedara Care JVC clinic Dubai"
 };
 
@@ -41,7 +41,8 @@ export const migraineMechanism = {
     "Authentic Ayurvedic treatment at our JVC clinic respects both frameworks. We use classical Ayurvedic diagnostic principles and treatment protocols, working alongside modern neurology and current migraine medications. The combination addresses what neither alone can fully treat."
   ],
   quote: "Most clinics treating migraine treat the headache. The clinical task is to treat the migraine — the underlying disease — and reduce both the frequency and severity of headache days.",
-  image: "https://images.unsplash.com/photo-1544367567-0f2fcb009e0b?q=80&w=2040&auto=format&fit=crop",
+  image: "conditions/shirodhara-migraine-treatment-vedara-jvc.webp",
+  alt: "Ayurvedic doctor explaining migraine pathway to patient at Vedara Care JVC",
   imageLeft: false
 };
 
@@ -64,7 +65,7 @@ export const migrainePillars = {
     },
     {
       title: "Trigger Management & Lifestyle Protocols",
-      description: "Most migraine patients know their triggers but lack a structured approach to managing them systematically. Our protocols address sleep timing and quality (one of the most consistent migraine triggers), specific dietary patterns (Pitta-pacifying for most patterns, with attention to known food triggers — aged cheese, processed meats, MSG, certain wines), screen patterns and eye strain (Dubai expat life is particularly demanding here), hormonal cycle tracking for women, weather-pattern awareness (Dubai's barometric changes affect some patients), and stress regulation, implemented gradually as sustainable habits."
+      description: "Most migraine patients know their triggers but lack a structured approach to managing them systematically. Our protocols address sleep timing and quality (one of the most consistent migraine triggers), specific dietary patterns (Pitta-pacifying for most patterns, with attention to known food triggers — aged cheese, processed meats, MSG, certain wines), screen patterns and eye strain (Dubai expat life is particularly demanding here), hormonal cycle tracking for women, weather-pattern awareness (Dubai's barometric changes affect some patients), and <a href=\"/conditions/stress-anxiety-ayurveda-dubai/\" class=\"text-gold hover:underline\">stress regulation</a>, implemented gradually as sustainable habits."
     }
   ]
 };
@@ -125,7 +126,9 @@ export const migraineLocation = {
     "5 minutes from JSS Private School",
     "Easy access from JVC, JVT, Al Barsha South, Sports City, Motor City"
   ],
-  image: "https://images.unsplash.com/photo-1519494026892-80bbd2d6fd0d?q=80&w=2053&auto=format&fit=crop",
+  image: "conditions/nasya-migraine-treatment-room-jvc.webp",
+  alt: "Vedara Care migraine clinic location in Jumeirah Village Circle Dubai near Circle Mall",
+  mapEmbed: "https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d3613.6391151624!2d55.2085!3d25.0560!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x3e5f6e85d4545555%3A0x5555555555555555!2sJumeirah%20Village%20Circle!5e0!3m2!1sen!2sae!4v1622620000000!5m2!1sen!2sae",
   buttonText: "Book a Migraine Consultation"
 };
 
@@ -134,6 +137,7 @@ export const migraineReviews = {
   title: "",
   isDarkText: true,
   cardBgColor: "bg-[#FAF7F2]",
+  alt: "Verified patient outcome from Ayurvedic migraine treatment at Vedara Care JVC Dubai",
   items: [
     {
       quote: "Twelve migraine days a month for fifteen years. Six months at Vedara alongside my neurologist — down to three migraine days a month. My neurologist agreed to a topiramate dose reduction.",
@@ -214,7 +218,7 @@ export const migrainePrograms = {
         "All Standard Programme components",
         "Extended Shirodhara protocols (often 21-30 sessions total)",
         "Three Nasya courses across the programme",
-        "Possible Panchakarma component (typically months 3-4)",
+        "Possible <a href=\"/treatments/panchakarma-dubai/\" class=\"text-gold hover:underline\">Panchakarma</a> component (typically months 3-4)",
         "Medication overuse headache withdrawal support if applicable (coordinated with neurologist)",
         "Extended internal medicine protocols",
         "12-month follow-up programme"
@@ -228,7 +232,7 @@ export const migrainePrograms = {
 export const migraineFaqs = {
   label: "MIGRAINE QUESTIONS",
   title: "What patients ask before starting Ayurvedic migraine treatment.",
-  description: "For Shirodhara specifically, see the treatment page. For stress-related headache without migraine pattern, see our stress and anxiety page.",
+  description: "For Shirodhara specifically, see the <a href=\"/treatments/shirodhara-dubai/\" class=\"text-gold hover:underline\">treatment page</a>. For stress-related headache without migraine pattern, see our <a href=\"/conditions/stress-anxiety-ayurveda-dubai/\" class=\"text-gold hover:underline\">stress and anxiety page</a>.",
   buttonText: "Ask the Clinical Team",
   faqs: [
     {
@@ -289,7 +293,7 @@ export const migraineFaqs = {
     },
     {
       question: "What about menstrual migraine specifically?",
-      answer: "Menstrual migraine has specific Ayurvedic protocols recognising the hormonal pattern. Treatment integrates with general migraine therapy but adds cycle-specific timing — preventive intensification in the days before expected migraine onset, hormonal-pattern dietary modifications, and where applicable, integrated treatment with PCOS or other hormonal patterns. For women on hormonal contraception with migraine, your specific situation is reviewed carefully — combined hormonal contraception with migraine with aura has cardiovascular implications that affect treatment selection."
+      answer: "Menstrual migraine has specific Ayurvedic protocols recognising the hormonal pattern. Treatment integrates with general migraine therapy but adds cycle-specific timing — preventive intensification in the days before expected migraine onset, hormonal-pattern dietary modifications, and where applicable, integrated treatment with <a href=\"/conditions/pcos-ayurveda-dubai/\" class=\"text-gold hover:underline\">PCOS</a> or other hormonal patterns. For women on hormonal contraception with migraine, your specific situation is reviewed carefully — combined hormonal contraception with migraine with aura has cardiovascular implications that affect treatment selection."
     },
     {
       question: "Does this work for vestibular migraine?",
@@ -318,6 +322,7 @@ export const migrainePatterns = {
   label: "PATTERN MATTERS",
   title: "Six clinical patterns of migraine. Treatment for one is not treatment for another.",
   description: "At our JVC clinic, the first step is identifying which specific pattern of migraine you have. The protocols differ significantly by subtype.",
+  alt: "Six clinical patterns of migraine assessed at our JVC Ayurveda clinic Dubai",
   types: [
     {
       title: "Episodic Migraine Without Aura",
@@ -335,12 +340,12 @@ export const migrainePatterns = {
       title: "Chronic Migraine",
       sanskritName: "Severe Ardhavabhedaka or related pattern",
       description: "Headache on 15 or more days per month for 3+ months, with at least 8 of those days being migraine (or treated as migraine). Often develops from episodic migraine over years. May involve medication overuse component. The most complex subtype to treat — typically requires the full 6-month programme alongside continued neurology care.",
-      emphasis: "Comprehensive 6-month programme with Panchakarma, intensive Shirodhara course, Nasya, internal medicines, medication review with your neurologist."
+      emphasis: "Comprehensive 6-month programme with <a href=\"/treatments/panchakarma-dubai/\" class=\"text-gold hover:underline\">Panchakarma</a>, intensive Shirodhara course, Nasya, internal medicines, medication review with your neurologist."
     },
     {
       title: "Menstrual Migraine",
       sanskritName: "Yoshapasmara-adjacent patterns; often Pitta-dominant",
-      description: "Migraine attacks linked specifically to the menstrual cycle — typically occurring 2 days before to 3 days after menstrual onset, often more severe and longer-lasting than non-menstrual attacks. Hormonally driven. Frequently in women with PCOS, perimenopause, or hormonal contraception use.",
+      description: "Migraine attacks linked specifically to the menstrual cycle — typically occurring 2 days before to 3 days after menstrual onset, often more severe and longer-lasting than non-menstrual attacks. Hormonally driven. Frequently in women with <a href=\"/conditions/pcos-ayurveda-dubai/\" class=\"text-gold hover:underline\">PCOS</a>, perimenopause, or hormonal contraception use.",
       emphasis: "Cycle-specific protocols, integration with hormonal pattern treatment (PCOS where applicable), Pitta-pacifying programmes, Takradhara variants."
     },
     {
@@ -544,7 +549,7 @@ export const migraineRelatedPages = {
     {
       title: "Ayurveda for Stress & Anxiety in Dubai →",
       description: "For migraine patients with prominent stress and anxiety components — often co-existing — the conditions are treated together.",
-      href: "/conditions/stress-anxiety-ayurveda-dubai#webpage" // Placeholder as stress page wasn't found in LS
+      href: "/conditions/stress-anxiety-ayurveda-dubai/"
     },
     {
       title: "Ayurveda for PCOS in Dubai →",
