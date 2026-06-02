@@ -33,25 +33,23 @@ const ArthritisTypes = ({
               
               <div className="space-y-4 flex-1">
                 <div>
-                  <h3 className="text-xl font-sans font-medium text-[#1A1A1A] mb-1 leading-tight">
-                    {type.title}
-                  </h3>
-                  <p className="text-[13px] italic text-[#C9A55A] font-sans">
-                    {type.sanskritName}
-                  </p>
+                  <h3 className="text-xl font-sans font-medium text-[#1A1A1A] mb-1 leading-tight" dangerouslySetInnerHTML={{ __html: type.title }} />
+                  <p className="text-[13px] italic text-[#C9A55A] font-sans" dangerouslySetInnerHTML={{ __html: type.sanskritName }} />
                 </div>
 
-                <p className="text-[14px] text-sm text-[#4A4A4A] font-sans leading-relaxed">
-                  {type.description}
-                </p>
+                <div 
+                  className="text-[14px] text-sm text-[#4A4A4A] font-sans leading-relaxed"
+                  dangerouslySetInnerHTML={{ __html: type.description }}
+                />
 
                 <div className="pt-4 border-t border-gray-50 mt-auto">
                   <p className="text-[12px] font-sans font-medium text-[#1A1A1A]  tracking-wider mb-2">
                     Ayurvedic emphasis for this type:
                   </p>
-                  <p className="text-[12px] text-[#6B6B6B] font-sans leading-relaxed">
-                    {type.emphasis}
-                  </p>
+                  <div 
+                    className="text-[12px] text-[#6B6B6B] font-sans leading-relaxed"
+                    dangerouslySetInnerHTML={{ __html: type.emphasis }}
+                  />
                 </div>
               </div>
             </div>
