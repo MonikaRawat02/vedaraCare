@@ -20,8 +20,8 @@ export const diabetesHero = {
     title: "WE DO NOT ASK YOU TO STOP YOUR MEDICATION.",
     subtitle: "Medication adjustments are made by your endocrinologist based on bloodwork improvements. We support those improvements through Ayurvedic treatment."
   },
-  image: "https://images.unsplash.com/photo-1758691462353-36b215702253?crop=entropy&cs=tinysrgb&fit=max&fm=jpg&ixid=M3w3Nzg4Nzd8MHwxfHNlYXJjaHw0fHxkb2N0b3IlMjBwYXRpZW50JTIwY29uc3VsdGF0aW9uJTIwbWVkaWNhbCUyMGNsaW5pY2FsfGVufDF8fHx8MTc3OTgwNTg5OHww&ixlib=rb-4.1.0&q=80&w=1080",
-  altText: "Ayurvedic doctor reviewing HbA1c bloodwork with diabetes patient at Vedara Care JVC clinic Dubai"
+  image: "/images/hba1c-review-diabetes-consultation-vedara-jvc.webp",
+  alt: "Ayurvedic doctor reviewing HbA1c bloodwork with diabetes patient at Vedara Care JVC clinic Dubai"
 };
 
 export const diabetesIntro = {
@@ -109,7 +109,8 @@ export const diabetesMechanism2 = {
     "For type 1 diabetes, we offer only supportive care — no insulin replacement. For all patients, we coordinate with your existing medical team to ensure safe, effective care."
   ],
   quote: "We will never tell you to stop your diabetes medication without your endocrinologist's approval.",
-  image: "https://images.unsplash.com/photo-1758691462353-36b215702253?crop=entropy&cs=tinysrgb&fit=max&fm=jpg&ixid=M3w3Nzg4Nzd8MHwxfHNlYXJjaHw0fHxkb2N0b3IlMjBwYXRpZW50JTIwY29uc3VsdGF0aW9uJTIwbWVkaWNhbCUyMGNsaW5pY2FsfGVufDF8fHx8MTc3OTgwNTg5OHww&ixlib=rb-4.1.0&q=80&w=1080"
+  image: "/images/ayurveda-endocrinology-integrated-diabetes-jvc.webp",
+  alt: "Ayurvedic doctor coordinating diabetes care with endocrinologist team at Vedara Care JVC"
 };
 
 export const diabetesOils = {
@@ -551,7 +552,8 @@ export const diabetesTreatmentLocation = {
   ],
   description: "Our JVC clinic has dedicated Panchakarma rooms, private consultation rooms, and experience with diabetes care. Female doctors available on request.",
   buttonText: "Book a Diabetes Consultation",
-  directions: "From Sheikh Mohammed Bin Zayed Road: Take Exit 27 for JVC, follow signs for Circle Mall. From Al Khail Road: Take JVC exit, follow signs for Circle Mall. Clinic next to Circle Mall with free parking."
+  directions: "From Sheikh Mohammed Bin Zayed Road: Take Exit 27 for JVC, follow signs for Circle Mall. From Al Khail Road: Take JVC exit, follow signs for Circle Mall. Clinic next to Circle Mall with free parking.",
+  mapAlt: "Vedara Care diabetes clinic location in Jumeirah Village Circle Dubai near Circle Mall"
 };
 
 export const diabetesFinalCTA = {
