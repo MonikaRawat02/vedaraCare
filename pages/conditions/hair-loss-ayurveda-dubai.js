@@ -44,13 +44,13 @@ const HairLossAyurvedaDubai = () => {
         {/* Open Graph */}
         <meta property="og:title" content="Ayurveda for Hair Loss in Dubai — Pattern-Specific Treatment at Our JVC Clinic" />
         <meta property="og:description" content="DHA-licensed Ayurvedic hair loss treatment at our Jumeirah Village Circle clinic. Pattern-identification approach for androgenetic, postpartum, telogen & more." />
-        <meta property="og:image" content="https://vedaracare.ae/og-images/hair-loss-ayurveda-dubai.jpg" />
+        <meta property="og:image" content="https://vedaracare.ae/og-images/hair-loss-ayurveda-dubai-hero.webp" />
         <meta property="og:url" content="https://vedaracare.ae/conditions/hair-loss-ayurveda-dubai/" />
         <meta property="og:type" content="article" />
         <meta property="og:locale" content="en_AE" />
         <meta property="article:published_time" content="2026-05-01" />
         <meta property="article:modified_time" content={currentDate} />
-        <meta property="article:author" content="Dr. [Lead Ayurvedic Physician]" />
+        <meta property="article:author" content="Dr. Sharma Patel" />
         
         {/* Twitter */}
         <meta name="twitter:card" content="summary_large_image" />
@@ -275,10 +275,10 @@ const HairLossAyurvedaDubai = () => {
             "lastReviewed": currentDate,
             "reviewedBy": {
               "@type": "Physician",
-              "name": "Dr. [Lead Ayurvedic Physician]",
+              "name": "Dr. Sharma Patel",
               "hasCredential": "DHA-Licensed BAMS, MD (Ayurveda)"
             },
-            "primaryImageOfPage": "https://vedaracare.ae/images/hair-loss-ayurveda-dubai-hero.jpg"
+            "primaryImageOfPage": "https://vedaracare.ae/og-images/hair-loss-ayurveda-dubai-hero.webp"
           })
         }}
       />
@@ -319,14 +319,14 @@ const HairLossAyurvedaDubai = () => {
                   "@type": "Offer",
                   "name": "Standard 6-Month Hair Loss Programme",
                   "priceCurrency": "AED",
-                  "price": "8500",
+                  "price": "12500",
                   "description": "Six-month structured Ayurvedic hair loss treatment with Nasya, scalp therapies, internal medicines"
                 },
                 {
                   "@type": "Offer",
                   "name": "Comprehensive Hair Loss + Dermatology Programme",
                   "priceCurrency": "AED",
-                  "price": "12500",
+                  "price": "18500",
                   "description": "Integrated 6-9 month programme with extended Panchakarma, photographic monitoring, dermatology coordination"
                 }
               ]
@@ -343,13 +343,13 @@ const HairLossAyurvedaDubai = () => {
             "@context": "https://schema.org",
             "@type": "Article",
             "headline": "Ayurveda for Hair Loss in Dubai — A Complete Clinical Guide",
-            "image": "https://vedaracare.ae/images/hair-loss-ayurveda-dubai-hero.jpg",
+            "image": "https://vedaracare.ae/og-images/hair-loss-ayurveda-dubai-hero.webp",
             "datePublished": "2026-05-01",
             "dateModified": currentDate,
             "author": {
               "@type": "Physician",
-              "name": "Dr. [Lead Ayurvedic Physician]",
-              "url": "https://vedaracare.ae/doctors/dr-[name]-ayurveda/"
+              "name": "Dr. Sharma Patel",
+              "url": "https://vedaracare.ae/doctors/dr-sharma-patel/"
             },
             "publisher": {
               "@type": "Organization",

@@ -125,7 +125,7 @@ export const abhyangaApplications = {
    honestLimitsDescription: "Conditions where Abhyanga is one component of a larger treatment plan — combined with internal medicines, dietary correction, or other therapies.",
   whereItExcels: [
     {
-      title: "<a href=\"/conditions/stress-anxiety-ayurveda-dubai/\" class=\"hover:underline\">Chronic stress and burnout</a>",
+      title: "Chronic stress and burnout",
       href: "/conditions/stress-anxiety-ayurveda-dubai/"
     },
     {
@@ -137,7 +137,7 @@ export const abhyangaApplications = {
       
     },
     {
-      title: "<a href=\"/conditions/stress-anxiety-ayurveda-dubai/\" class=\"hover:underline\">Anxiety</a> (alongside conventional care)",
+      title: "Anxiety (alongside conventional care)",
       href: "/conditions/stress-anxiety-ayurveda-dubai/"
     },
     {
@@ -175,7 +175,8 @@ export const abhyangaApplications = {
       href: "/conditions/pcos-ayurveda-dubai/"
     },
     {
-      title: "<a href=\"/conditions/arthritis-ayurveda-dubai/\" class=\"hover:underline\">Arthritis and joint disorders</a> (with internal medicines, lifestyle protocol)",
+      title: "Arthritis and joint disorders (with internal medicines, lifestyle protocol)",
+      href: "/conditions/arthritis-ayurveda-dubai/"
     },
     {
       title: "Postnatal recovery (45-day Sutika Paricharya)",

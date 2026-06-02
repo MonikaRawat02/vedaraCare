@@ -1,4 +1,6 @@
+import React from 'react';
 import Head from 'next/head';
+import Link from 'next/link';
 import AyurvedaHero from '../../components/ayurveda/AyurvedaHero';
 import AyurvedaIntro from '../../components/ayurveda/AyurvedaIntro';
 import ConditionPhenotypes from '../../components/ayurveda/ConditionPhenotypes';
@@ -47,13 +49,13 @@ const WeightLossAyurvedaDubai = () => {
         {/* Open Graph */}
         <meta property="og:title" content="Ayurveda for Weight Loss in Dubai — Honest, Pattern-Specific Treatment at Our JVC Clinic" />
         <meta property="og:description" content="DHA-licensed Ayurvedic weight loss treatment at our Jumeirah Village Circle clinic. Five metabolic patterns identified. 4-6 month medical programmes. No transformations marketing." />
-        <meta property="og:image" content="https://vedaracare.ae/og-images/weight-loss-ayurveda-dubai.jpg" />
+        <meta property="og:image" content="https://vedaracare.ae/og-images/weight-loss-ayurveda-dubai-hero.webp" />
         <meta property="og:url" content="https://vedaracare.ae/conditions/weight-loss-ayurveda-dubai/" />
         <meta property="og:type" content="article" />
         <meta property="og:locale" content="en_AE" />
         <meta property="article:published_time" content="2026-05-01" />
         <meta property="article:modified_time" content={currentDate} />
-        <meta property="article:author" content="Dr. [Lead Ayurvedic Physician]" />
+        <meta property="article:author" content="Dr. Sharma Patel" />
         
         {/* Twitter */}
         <meta name="twitter:card" content="summary_large_image" />
@@ -176,7 +178,7 @@ const WeightLossAyurvedaDubai = () => {
                 ],
                 "possibleTreatment": [
                   {"@type": "MedicalTherapy", "name": "Hormone-balancing herbs"},
-                  {"@type": "MedicalProcedure", "name": "Sutika Paricharya (for postpartum)"}
+                  {"@type": "MedicalProcedure", "name": "Sutika Paricharya (for postpartum)", "url": "https://vedaracare.ae/conditions/postnatal-care-ayurveda-dubai/"}
                 ]
               },
               {
@@ -216,10 +218,10 @@ const WeightLossAyurvedaDubai = () => {
             "lastReviewed": currentDate,
             "reviewedBy": {
               "@type": "Physician",
-              "name": "Dr. [Lead Ayurvedic Physician]",
+              "name": "Dr. Sharma Patel",
               "hasCredential": "DHA-Licensed BAMS, MD (Ayurveda)"
             },
-            "primaryImageOfPage": "https://vedaracare.ae/images/weight-loss-ayurveda-dubai-hero.jpg"
+            "primaryImageOfPage": "https://vedaracare.ae/og-images/weight-loss-ayurveda-dubai-hero.webp"
           })
         }}
       />
@@ -253,21 +255,21 @@ const WeightLossAyurvedaDubai = () => {
                   "@type": "Offer",
                   "name": "Weight Loss Initial Assessment",
                   "priceCurrency": "AED",
-                  "price": "350",
+                  "price": "450",
                   "description": "60-75 minute consultation with BAMS physician at JVC clinic, comprehensive assessment, pattern identification, written plan"
                 },
                 {
                   "@type": "Offer",
                   "name": "Standard 6-Month Weight Loss Programme",
                   "priceCurrency": "AED",
-                  "price": "9500",
-                  "description": "Six-month structured Ayurvedic weight loss treatment with Panchakarma, Udvartana, pattern-specific herbal medicines, dietary and lifestyle protocols"
+                  "price": "18500",
+                  "description": "Six-month structured Ayurvedic weight loss programme with Panchakarma, Udvartana, pattern-specific herbal medicines, dietary and lifestyle protocols"
                 },
                 {
                   "@type": "Offer",
                   "name": "Extended Integrated Weight Loss Programme",
                   "priceCurrency": "AED",
-                  "price": "14500",
+                  "price": "28500",
                   "description": "9-12 month integrated programme for significant weight loss, post-GLP-1 rebound, or complex metabolic patterns"
                 }
               ]
@@ -284,13 +286,13 @@ const WeightLossAyurvedaDubai = () => {
             "@context": "https://schema.org",
             "@type": "Article",
             "headline": "Ayurveda for Weight Loss in Dubai — A Complete Clinical Guide",
-            "image": "https://vedaracare.ae/images/weight-loss-ayurveda-dubai-hero.jpg",
+            "image": "https://vedaracare.ae/og-images/weight-loss-ayurveda-dubai-hero.webp",
             "datePublished": "2026-05-01",
             "dateModified": currentDate,
             "author": {
               "@type": "Physician",
-              "name": "Dr. [Lead Ayurvedic Physician]",
-              "url": "https://vedaracare.ae/doctors/dr-[name]-ayurveda/"
+              "name": "Dr. Sharma Patel",
+              "url": "https://vedaracare.ae/doctors/dr-sharma-patel/"
             },
             "publisher": {
               "@type": "Organization",
@@ -352,6 +354,77 @@ const WeightLossAyurvedaDubai = () => {
         }}
       />
 
+      {/* Additional Semantic Entities */}
+      <script
+        type="application/ld+json"
+        dangerouslySetInnerHTML={{
+          __html: JSON.stringify({
+            "@context": "https://schema.org",
+            "@type": "MedicalProcedure",
+            "@id": "https://vedaracare.ae/treatments/panchakarma-dubai/#procedure",
+            "name": "Panchakarma",
+            "url": "https://vedaracare.ae/treatments/panchakarma-dubai/"
+          })
+        }}
+      />
+
+      <script
+        type="application/ld+json"
+        dangerouslySetInnerHTML={{
+          __html: JSON.stringify({
+            "@context": "https://schema.org",
+            "@type": "MedicalProcedure",
+            "@id": "https://vedaracare.ae/treatments/udvartana-dubai/#procedure",
+            "name": "Udvartana",
+            "url": "https://vedaracare.ae/treatments/udvartana-dubai/"
+          })
+        }}
+      />
+
+      <script
+        type="application/ld+json"
+        dangerouslySetInnerHTML={{
+          __html: JSON.stringify({
+            "@context": "https://schema.org",
+            "@type": "MedicalCondition",
+            "@id": "https://vedaracare.ae/conditions/pcos-ayurveda-dubai/#condition",
+            "name": "PCOS",
+            "alternateName": ["Polycystic Ovary Syndrome"],
+            "url": "https://vedaracare.ae/conditions/pcos-ayurveda-dubai/"
+          })
+        }}
+      />
+
+      <script
+        type="application/ld+json"
+        dangerouslySetInnerHTML={{
+          __html: JSON.stringify({
+            "@context": "https://schema.org",
+            "@type": "MedicalProcedure",
+            "name": "Sutika Paricharya",
+            "url": "https://vedaracare.ae/conditions/postnatal-care-ayurveda-dubai/"
+          })
+        }}
+      />
+
+      <script
+        type="application/ld+json"
+        dangerouslySetInnerHTML={{
+          __html: JSON.stringify({
+            "@context": "https://schema.org",
+            "@type": "MedicalOrganization",
+            "name": "Vedara Care Polyclinic",
+            "url": "https://vedaracare.ae/ayurveda-clinic-jvc/",
+            "address": {
+              "@type": "PostalAddress",
+              "addressLocality": "Dubai",
+              "addressRegion": "Jumeirah Village Circle (JVC)",
+              "addressCountry": "AE"
+            }
+          })
+        }}
+      />
+
       {/* Section 1: Hero */}
       <AyurvedaHero {...weightLossHero} />
 
@@ -386,13 +459,18 @@ const WeightLossAyurvedaDubai = () => {
                 <div className="text-6xl mb-4" style={{ fontFamily: "Georgia, serif", color: "rgb(201, 169, 97)" }}>
                   {phenotype.letter}
                 </div>
-                <h3 className="text-xl mb-2" style={{ fontFamily: "Georgia, serif", fontWeight: 500 }} dangerouslySetInnerHTML={{ __html: phenotype.title }} />
+                {phenotype.href ? (
+                  <Link href={phenotype.href} className="hover:underline block" style={{ color: 'inherit' }}>
+                    <h3 className="text-xl mb-2" style={{ fontFamily: "Georgia, serif", fontWeight: 500 }} dangerouslySetInnerHTML={{ __html: phenotype.title }} />
+                  </Link>
+                ) : (
+                  <h3 className="text-xl mb-2" style={{ fontFamily: "Georgia, serif", fontWeight: 500 }} dangerouslySetInnerHTML={{ __html: phenotype.title }} />
+                )}
                 <p className="text-sm italic mb-4" style={{ color: "rgb(201, 169, 97)" }} dangerouslySetInnerHTML={{ __html: phenotype.subtitle }} />
                 <p className="mb-4 leading-relaxed" style={{ color: "rgb(107, 114, 128)" }} dangerouslySetInnerHTML={{ __html: phenotype.content }} />
                 <div className="text-sm">
                   <span style={{ color: "rgb(201, 169, 97)" }}>Ayurvedic emphasis for this pattern:</span>
-                  <span className="ml-2" style={{ color: "rgb(107, 114, 128)" }}>
-                    {phenotype.ayurvedicEmphasis}
+                  <span className="ml-2" style={{ color: "rgb(107, 114, 128)" }} dangerouslySetInnerHTML={{ __html: phenotype.ayurvedicEmphasis }}>
                   </span>
                 </div>
               </div>
@@ -418,29 +496,48 @@ const WeightLossAyurvedaDubai = () => {
           </div>
           
           <div className="grid md:grid-cols-4 gap-8">
-            {weightLossMechanism1.pillars.map(pillar => (
-              <div 
-                key={pillar.number} 
-                className="p-8 rounded-xl border-t-4"
-                style={{ 
-                  backgroundColor: "rgb(250, 248, 245)", 
-                  borderColor: "rgb(201, 169, 97)" 
-                }}
-              >
+            {weightLossMechanism1.pillars.map(pillar => {
+              const isPanchakarma = pillar.number === "1";
+              const content = (
                 <div 
-                  className="text-4xl mb-4" 
-                  style={{ fontFamily: "Georgia, serif", color: "rgb(201, 169, 97)" }}
+                  className="p-8 rounded-xl border-t-4 cursor-pointer transition-transform hover:scale-[1.02]"
+                  style={{ 
+                    backgroundColor: "rgb(250, 248, 245)", 
+                    borderColor: "rgb(201, 169, 97)" 
+                  }}
                 >
-                  {pillar.number}
+                  <div 
+                    className="text-4xl mb-4" 
+                    style={{ fontFamily: "Georgia, serif", color: "rgb(201, 169, 97)" }}
+                  >
+                    {pillar.number}
+                  </div>
+                  <h3 className="text-xl mb-4" style={{ fontFamily: "Georgia, serif", fontWeight: 500 }}>
+                    {pillar.title}
+                  </h3>
+                  <p className="leading-relaxed" style={{ color: "rgb(107, 114, 128)" }} dangerouslySetInnerHTML={{ __html: pillar.description }}>
+                  </p>
                 </div>
-                <h3 className="text-xl mb-4" style={{ fontFamily: "Georgia, serif", fontWeight: 500 }}>
-                  {pillar.title}
-                </h3>
-                <p className="leading-relaxed" style={{ color: "rgb(107, 114, 128)" }}>
-                  {pillar.description}
-                </p>
-              </div>
-            ))}
+              );
+              
+              if (isPanchakarma) {
+                return (
+                  <Link 
+                    key={pillar.number} 
+                    href="/treatments/panchakarma-dubai" 
+                    className="block"
+                  >
+                    {content}
+                  </Link>
+                );
+              }
+              
+              return (
+                <React.Fragment key={pillar.number}>
+                  {content}
+                </React.Fragment>
+              );
+            })}
           </div>
           
           <p className="text-center mt-12 max-w-3xl mx-auto" style={{ color: "rgb(107, 114, 128)" }}>
@@ -450,228 +547,7 @@ const WeightLossAyurvedaDubai = () => {
       </section>
 
       {/* Section 7: Treatment Protocol (4-6 Months) */}
-      <section className="px-6 md:px-24 py-24" style={{ backgroundColor: 'rgb(247, 243, 236)' }}>
-        <div className="max-w-5xl mx-auto">
-          <div className="text-center mb-16">
-            <div className="uppercase tracking-wider text-sm mb-4" style={{ color: 'rgb(201, 169, 97)' }}>WHAT TO EXPECT</div>
-            <h2 className="text-4xl mb-4" style={{ fontFamily: 'Georgia, serif', fontWeight: 500 }}>
-              What four to six months of Ayurvedic weight loss treatment at our JVC clinic actually looks like.
-            </h2>
-            <p className="text-lg max-w-3xl mx-auto" style={{ color: 'rgb(107, 114, 128)' }}>
-              A representative protocol for the most common pattern (Kapha-predominant with insulin-resistance component). Your specific plan varies based on pattern, severity, and life context.
-            </p>
-          </div>
-          
-          <div className="space-y-8">
-            <div className="bg-white p-8 rounded-xl">
-              <div className="mb-4">
-                <div className="text-sm uppercase tracking-wider mb-2" style={{ color: 'rgb(201, 169, 97)' }}>Month 1</div>
-                <h3 className="text-2xl" style={{ fontFamily: 'Georgia, serif', fontWeight: 500 }}>Assessment & Foundation</h3>
-              </div>
-              
-              <ul className="space-y-2 mb-6">
-                <li className="flex items-start gap-3">
-                  <span className="text-xs mt-1.5" style={{ color: 'rgb(201, 169, 97)' }}>•</span>
-                  <span style={{ color: 'rgb(107, 114, 128)' }}>60-minute consultation with BAMS-qualified physician at our JVC clinic</span>
-                </li>
-                <li className="flex items-start gap-3">
-                  <span className="text-xs mt-1.5" style={{ color: 'rgb(201, 169, 97)' }}>•</span>
-                  <span style={{ color: 'rgb(107, 114, 128)' }}>Comprehensive history-taking, physical examination, baseline measurements</span>
-                </li>
-                <li className="flex items-start gap-3">
-                  <span className="text-xs mt-1.5" style={{ color: 'rgb(201, 169, 97)' }}>•</span>
-                  <span style={{ color: 'rgb(107, 114, 128)' }}>Review of existing diagnoses, blood work, current medications</span>
-                </li>
-                <li className="flex items-start gap-3">
-                  <span className="text-xs mt-1.5" style={{ color: 'rgb(201, 169, 97)' }}>•</span>
-                  <span style={{ color: 'rgb(107, 114, 128)' }}>Lab orders if needed (fasting insulin, HbA1c, lipid panel, thyroid, hormones)</span>
-                </li>
-                <li className="flex items-start gap-3">
-                  <span className="text-xs mt-1.5" style={{ color: 'rgb(201, 169, 97)' }}>•</span>
-                  <span style={{ color: 'rgb(107, 114, 128)' }}>Pulse diagnosis, dosha assessment, pattern classification</span>
-                </li>
-                <li className="flex items-start gap-3">
-                  <span className="text-xs mt-1.5" style={{ color: 'rgb(201, 169, 97)' }}>•</span>
-                  <span style={{ color: 'rgb(107, 114, 128)' }}>Initial herbal medicine protocol begins</span>
-                </li>
-                <li className="flex items-start gap-3">
-                  <span className="text-xs mt-1.5" style={{ color: 'rgb(201, 169, 97)' }}>•</span>
-                  <span style={{ color: 'rgb(107, 114, 128)' }}>Dietary plan introduced gradually</span>
-                </li>
-              </ul>
-              
-              <div className="pt-4 border-t" style={{ borderColor: 'rgb(247, 243, 236)' }}>
-                <span className="font-medium">Expected by end of Month 1: </span>
-                <span style={{ color: 'rgb(107, 114, 128)' }}>
-                  Clear pattern diagnosis, baseline established, treatment plan signed off, initial 1-3 kg often lost from water retention and dietary changes
-                </span>
-              </div>
-            </div>
-            
-            <div className="bg-white p-8 rounded-xl">
-              <div className="mb-4">
-                <div className="text-sm uppercase tracking-wider mb-2" style={{ color: 'rgb(201, 169, 97)' }}>Month 2</div>
-                <h3 className="text-2xl" style={{ fontFamily: 'Georgia, serif', fontWeight: 500 }}>Panchakarma & Active Treatment</h3>
-              </div>
-              
-              <ul className="space-y-2 mb-6">
-                <li className="flex items-start gap-3">
-                  <span className="text-xs mt-1.5" style={{ color: 'rgb(201, 169, 97)' }}>•</span>
-                  <span style={{ color: 'rgb(107, 114, 128)' }}>7-14 day Panchakarma programme (typically Virechana-led)</span>
-                </li>
-                <li className="flex items-start gap-3">
-                  <span className="text-xs mt-1.5" style={{ color: 'rgb(201, 169, 97)' }}>•</span>
-                  <span style={{ color: 'rgb(107, 114, 128)' }}>3-5 day at-clinic preparation with Snehapana, Abhyanga, Swedana</span>
-                </li>
-                <li className="flex items-start gap-3">
-                  <span className="text-xs mt-1.5" style={{ color: 'rgb(201, 169, 97)' }}>•</span>
-                  <span style={{ color: 'rgb(107, 114, 128)' }}>Main Virechana day (in-clinic, doctor-supervised)</span>
-                </li>
-                <li className="flex items-start gap-3">
-                  <span className="text-xs mt-1.5" style={{ color: 'rgb(201, 169, 97)' }}>•</span>
-                  <span style={{ color: 'rgb(107, 114, 128)' }}>7 days Paschatkarma recovery with structured dietary protocol</span>
-                </li>
-                <li className="flex items-start gap-3">
-                  <span className="text-xs mt-1.5" style={{ color: 'rgb(201, 169, 97)' }}>•</span>
-                  <span style={{ color: 'rgb(107, 114, 128)' }}>Weekly Udvartana sessions where indicated</span>
-                </li>
-                <li className="flex items-start gap-3">
-                  <span className="text-xs mt-1.5" style={{ color: 'rgb(201, 169, 97)' }}>•</span>
-                  <span style={{ color: 'rgb(107, 114, 128)' }}>Resumed internal medicines post-Panchakarma with adjusted dosing</span>
-                </li>
-              </ul>
-              
-              <div className="pt-4 border-t" style={{ borderColor: 'rgb(247, 243, 236)' }}>
-                <span className="font-medium">Expected by end of Month 2: </span>
-                <span style={{ color: 'rgb(107, 114, 128)' }}>
-                  3-6 kg lost cumulatively, significant improvements in energy, sleep, digestion, and food cravings
-                </span>
-              </div>
-            </div>
-            
-            <div className="bg-white p-8 rounded-xl">
-              <div className="mb-4">
-                <div className="text-sm uppercase tracking-wider mb-2" style={{ color: 'rgb(201, 169, 97)' }}>Month 3</div>
-                <h3 className="text-2xl" style={{ fontFamily: 'Georgia, serif', fontWeight: 500 }}>Active Treatment Continues</h3>
-              </div>
-              
-              <ul className="space-y-2 mb-6">
-                <li className="flex items-start gap-3">
-                  <span className="text-xs mt-1.5" style={{ color: 'rgb(201, 169, 97)' }}>•</span>
-                  <span style={{ color: 'rgb(107, 114, 128)' }}>Mid-programme doctor review</span>
-                </li>
-                <li className="flex items-start gap-3">
-                  <span className="text-xs mt-1.5" style={{ color: 'rgb(201, 169, 97)' }}>•</span>
-                  <span style={{ color: 'rgb(107, 114, 128)' }}>Refined herbal protocol based on response</span>
-                </li>
-                <li className="flex items-start gap-3">
-                  <span className="text-xs mt-1.5" style={{ color: 'rgb(201, 169, 97)' }}>•</span>
-                  <span style={{ color: 'rgb(107, 114, 128)' }}>2-3 Udvartana sessions per week (for Kapha-predominant patterns)</span>
-                </li>
-                <li className="flex items-start gap-3">
-                  <span className="text-xs mt-1.5" style={{ color: 'rgb(201, 169, 97)' }}>•</span>
-                  <span style={{ color: 'rgb(107, 114, 128)' }}>Continued dietary refinement</span>
-                </li>
-                <li className="flex items-start gap-3">
-                  <span className="text-xs mt-1.5" style={{ color: 'rgb(201, 169, 97)' }}>•</span>
-                  <span style={{ color: 'rgb(107, 114, 128)' }}>Movement and exercise protocol fully implemented</span>
-                </li>
-                <li className="flex items-start gap-3">
-                  <span className="text-xs mt-1.5" style={{ color: 'rgb(201, 169, 97)' }}>•</span>
-                  <span style={{ color: 'rgb(107, 114, 128)' }}>Body composition reassessment</span>
-                </li>
-              </ul>
-              
-              <div className="pt-4 border-t" style={{ borderColor: 'rgb(247, 243, 236)' }}>
-                <span className="font-medium">Expected by end of Month 3: </span>
-                <span style={{ color: 'rgb(107, 114, 128)' }}>
-                  5-9 kg cumulative loss, body composition improvements often more striking than scale changes
-                </span>
-              </div>
-            </div>
-            
-            <div className="bg-white p-8 rounded-xl">
-              <div className="mb-4">
-                <div className="text-sm uppercase tracking-wider mb-2" style={{ color: 'rgb(201, 169, 97)' }}>Month 4</div>
-                <h3 className="text-2xl" style={{ fontFamily: 'Georgia, serif', fontWeight: 500 }}>Consolidation</h3>
-              </div>
-              
-              <ul className="space-y-2 mb-6">
-                <li className="flex items-start gap-3">
-                  <span className="text-xs mt-1.5" style={{ color: 'rgb(201, 169, 97)' }}>•</span>
-                  <span style={{ color: 'rgb(107, 114, 128)' }}>Second doctor review with progress assessment</span>
-                </li>
-                <li className="flex items-start gap-3">
-                  <span className="text-xs mt-1.5" style={{ color: 'rgb(201, 169, 97)' }}>•</span>
-                  <span style={{ color: 'rgb(107, 114, 128)' }}>Herbal medicines simplified to maintenance level</span>
-                </li>
-                <li className="flex items-start gap-3">
-                  <span className="text-xs mt-1.5" style={{ color: 'rgb(201, 169, 97)' }}>•</span>
-                  <span style={{ color: 'rgb(107, 114, 128)' }}>Udvartana reduced to bi-weekly</span>
-                </li>
-                <li className="flex items-start gap-3">
-                  <span className="text-xs mt-1.5" style={{ color: 'rgb(201, 169, 97)' }}>•</span>
-                  <span style={{ color: 'rgb(107, 114, 128)' }}>Focus on sustaining habits</span>
-                </li>
-              </ul>
-            </div>
-            
-            <div className="bg-white p-8 rounded-xl">
-              <div className="mb-4">
-                <div className="text-sm uppercase tracking-wider mb-2" style={{ color: 'rgb(201, 169, 97)' }}>Month 5</div>
-                <h3 className="text-2xl" style={{ fontFamily: 'Georgia, serif', fontWeight: 500 }}>Refinement</h3>
-              </div>
-              
-              <ul className="space-y-2 mb-6">
-                <li className="flex items-start gap-3">
-                  <span className="text-xs mt-1.5" style={{ color: 'rgb(201, 169, 97)' }}>•</span>
-                  <span style={{ color: 'rgb(107, 114, 128)' }}>Personalised maintenance protocol finalised</span>
-                </li>
-                <li className="flex items-start gap-3">
-                  <span className="text-xs mt-1.5" style={{ color: 'rgb(201, 169, 97)' }}>•</span>
-                  <span style={{ color: 'rgb(107, 114, 128)' }}>Udvartana reduced to monthly</span>
-                </li>
-                <li className="flex items-start gap-3">
-                  <span className="text-xs mt-1.5" style={{ color: 'rgb(201, 169, 97)' }}>•</span>
-                  <span style={{ color: 'rgb(107, 114, 128)' }}>Focus on long-term lifestyle habits</span>
-                </li>
-              </ul>
-            </div>
-            
-            <div className="bg-white p-8 rounded-xl">
-              <div className="mb-4">
-                <div className="text-sm uppercase tracking-wider mb-2" style={{ color: 'rgb(201, 169, 97)' }}>Month 6</div>
-                <h3 className="text-2xl" style={{ fontFamily: 'Georgia, serif', fontWeight: 500 }}>Discharge & Long-Term Plan</h3>
-              </div>
-              
-              <ul className="space-y-2 mb-6">
-                <li className="flex items-start gap-3">
-                  <span className="text-xs mt-1.5" style={{ color: 'rgb(201, 169, 97)' }}>•</span>
-                  <span style={{ color: 'rgb(107, 114, 128)' }}>Final assessment with body composition comparison</span>
-                </li>
-                <li className="flex items-start gap-3">
-                  <span className="text-xs mt-1.5" style={{ color: 'rgb(201, 169, 97)' }}>•</span>
-                  <span style={{ color: 'rgb(107, 114, 128)' }}>Maintenance protocol clearly outlined</span>
-                </li>
-                <li className="flex items-start gap-3">
-                  <span className="text-xs mt-1.5" style={{ color: 'rgb(201, 169, 97)' }}>•</span>
-                  <span style={{ color: 'rgb(107, 114, 128)' }}>Quarterly follow-up plan established</span>
-                </li>
-              </ul>
-              <div className="pt-4 border-t" style={{ borderColor: 'rgb(247, 243, 236)' }}>
-                <span className="font-medium">Expected by end of Month 6: </span>
-                <span style={{ color: 'rgb(107, 114, 128)' }}>
-                  10-15 kg cumulative loss for most patients, substantial improvements in metabolic markers, weight maintenance becoming natural
-                </span>
-              </div>
-            </div>
-            
-            <p className="text-sm text-center mt-10 max-w-4xl mx-auto leading-[26px] px-4" style={{ color: "rgb(107, 114, 128)" }}>
-              This is a representative protocol. Some patients reach their goals at month 4 and transition to maintenance. Others need a full 6 months or extension. Patients with significant weight to lose (over 20 kg) often continue active treatment for 9-12 months. Your timeline is realistic, documented, and adjusted at each monthly review.
-            </p>
-          </div>
-        </div>
-      </section>
+      <TreatmentProtocol {...weightLossProtocol} />
 
       {/* Section 8: Realistic Outcomes */}
       <section className="bg-white px-6 md:px-24 py-24">
@@ -719,9 +595,8 @@ const WeightLossAyurvedaDubai = () => {
                 </div>
               </div>
               
-              <p style={{ color: 'rgb(107, 114, 128)' }}>
-                These are honest ranges. Some patients exceed the upper end (rare but happens). Some land at the lower end (often patients with shorter programmes or specific contraindications). The patients who lose the least are usually those who do not implement the dietary and lifestyle protocols — the herbs and Panchakarma alone produce limited results.
-              </p>
+              <p style={{ color: 'rgb(107, 114, 128)' }}>These are honest ranges. Some patients exceed the upper end (rare but happens). Some land at the lower end (often patients with shorter programmes or specific contraindications). The patients who lose the least are usually those who do not implement the dietary and lifestyle protocols — the herbs and Panchakarma alone produce limited results.</p>
+
               
               <p className="text-lg font-medium">
                 What we measure beyond weight: body composition changes (often more striking than scale changes), insulin and HbA1c improvements, lipid panel changes, blood pressure normalisation, energy levels, sleep quality, food relationship changes, and sustained behaviour patterns. These are the markers that predict whether the weight stays off.
@@ -730,8 +605,8 @@ const WeightLossAyurvedaDubai = () => {
             
             <div>
               <img 
-                src="https://images.unsplash.com/photo-1667586745834-1d077ec9fe73?crop=entropy&cs=tinysrgb&fit=max&fm=jpg&w=800" 
-                alt="Sustainable healthy living" 
+                src={weightLossSymptoms.image} 
+                alt={weightLossSymptoms.alt} 
                 className="rounded-xl w-full h-auto object-cover shadow-lg" 
               />
             </div>
@@ -752,77 +627,13 @@ const WeightLossAyurvedaDubai = () => {
       <FAQ {...weightLossFaqs} />
 
       {/* Section 13: Treatment Location */}
-      <section className={`px-6 md:px-24 py-24 ${weightLossTreatmentLocation.bgColor}`}>
-        <div className="max-w-7xl mx-auto">
-          <div className="grid md:grid-cols-2 gap-12">
-            <div>
-              <div className="uppercase tracking-wider text-sm mb-4" style={{ color: 'rgb(201, 169, 97)' }}>VISIT US</div>
-              <h2 className="text-4xl mb-8" style={{ fontFamily: 'Georgia, serif', fontWeight: 500 }}>
-                Where weight loss treatment happens at Vedara Care.
-              </h2>
-              
-              <div className="space-y-6 mb-8">
-                <div>
-                  <div className="font-medium mb-2">Address</div>
-                  <p style={{ color: 'rgb(107, 114, 128)' }}>
-                    Vedara Care Polyclinic<br />
-                    Jumeirah Village Circle (JVC)<br />
-                    Next to Circle Mall<br />
-                    Dubai, United Arab Emirates
-                  </p>
-                </div>
-                
-                <div>
-                  <div className="font-medium mb-2">Contact</div>
-                  <p style={{ color: 'rgb(107, 114, 128)' }}>
-                    Phone: +971 4 000 0000<br />
-                    WhatsApp: +971 50 000 0000<br />
-                    Email: weightloss@vedaracare.ae
-                  </p>
-                </div>
-                
-                <div>
-                  <div className="font-medium mb-2">Hours</div>
-                  <div className="space-y-1 text-sm" style={{ color: 'rgb(107, 114, 128)' }}>
-                    <div className="flex justify-between">
-                      <span>Sunday - Thursday</span>
-                      <span>8:00 AM - 8:00 PM</span>
-                    </div>
-                    <div className="flex justify-between">
-                      <span>Friday</span>
-                      <span>Closed</span>
-                    </div>
-                    <div className="flex justify-between">
-                      <span>Saturday</span>
-                      <span>9:00 AM - 6:00 PM</span>
-                    </div>
-                  </div>
-                </div>
-              </div>
-
-              <p className="text-sm mb-6" style={{ color: 'rgb(107, 114, 128)' }}>
-                Dedicated consultation rooms with comfortable, fully-private examination areas, body composition equipment, and treatment rooms for Panchakarma and Udvartana sessions. Walking distance from Circle Mall, easy access from JVC Districts 10, 11, 12, 13, JVT, and Al Barsha South. Female doctors available on request.
-              </p>
-              
-              <button className="px-8 py-4 text-white rounded-lg hover:opacity-90 transition-opacity" style={{ backgroundColor: 'rgb(45, 95, 79)' }}>
-                Book a Weight Loss Consultation
-              </button>
-            </div>
-            
-            <div className="bg-gray-200 rounded-xl overflow-hidden h-[500px] flex items-center justify-center">
-              <span style={{ color: 'rgb(107, 114, 128)' }}>Map Placeholder</span>
-            </div>
-          </div>
-        </div>
-      </section>
+      <TreatmentLocation {...weightLossTreatmentLocation} />
 
       {/* Section 14: Final CTA */}
       <FinalCTA {...weightLossFinalCTA} />
 
       {/* Section 15: Related Pages */}
-      {weightLossRelatedPages && <RelatedPages {...weightLossRelatedPages} />}
-
-     
+      <RelatedPages {...weightLossRelatedPages} />
     </>
   );
 };

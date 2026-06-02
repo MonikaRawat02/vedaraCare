@@ -39,7 +39,6 @@ const ConditionPhenotypes = ({
             </div>
           ))}
         </div>
-
         {footer && (
           <p className="text-center text-sm text-muted-foreground max-w-[640px] mx-auto" dangerouslySetInnerHTML={{ __html: footer }} />
         )}

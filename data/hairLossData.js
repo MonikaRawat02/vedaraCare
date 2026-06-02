@@ -20,8 +20,8 @@ export const hairLossHero = {
     title: 'NO TRANSFORMATIONS. JUST EXAMINATION.',
     subtitle: 'Hair loss assessment at our JVC clinic begins with scalp examination, hair pull test, and history. We do not show you results before we know the cause.'
   },
-  image: 'https://images.unsplash.com/photo-1631217868264-e5b90bb7e133?crop=entropy&cs=tinysrgb&fit=max&fm=jpg&ixid=M3w3Nzg4Nzd8MHwxfHNlYXJjaHwxfHxtZWRpY2FsJTIwY29uc3VsdGF0aW9uJTIwZG9jdG9yJTIwcGF0aWVudCUyMHByb2Zlc3Npb25hbHxlbnwxfHx8fDE3Nzk4MDQzMTh8MA&ixlib=rb-4.1.0&q=80&w=1080',
-  altText: 'Ayurvedic doctor performing scalp examination on hair loss patient at Vedara Care JVC clinic Dubai'
+  image: '/images/scalp-examination-ayurvedic-jvc-vedara.webp',
+  alt: 'Ayurvedic doctor performing scalp examination on hair loss patient at Vedara Care JVC clinic Dubai'
 };
 
 export const hairLossIntro = {
@@ -86,7 +86,8 @@ export const hairLossMechanism1 = {
     'Authentic treatment at our JVC clinic works on four parallel levels. Local scalp therapy addresses the scalp environment directly — through specific medicated oil applications, <a href="/treatments/abhyanga-dubai/" class="doctor-specialty-link">Abhyanga</a> (Shiroabhyanga, head massage), <a href="/treatments/shirodhara-dubai/" class="doctor-specialty-link">Shirodhara</a>, and where indicated, Takradhara (buttermilk-based variant especially useful for inflammatory scalp conditions). Nasya therapy — medicated oils administered through the nasal passages — is the classical Ayurvedic protocol specifically for hair, considered in the texts to be the most direct route to nourish the structures of the head. Internal medicines address the systemic patterns underlying your specific type of hair loss — different formulations for androgenetic vs telogen vs autoimmune patterns. Lifestyle and dietary regulation addresses the root patterns that perpetuate hair loss — stress, sleep quality, iron and protein adequacy, hormonal balance, scalp hygiene, and the specific Dubai-life factors that affect hair (sun exposure, hard water, air conditioning, hair-care chemical load).',
     'The honest position is this: Ayurvedic hair loss treatment works substantially when all four levels are addressed for 3–9 months depending on pattern. It works marginally when only topical oils or only internal medicines are used. This is why treatment requires consultation and commitment, not products.'
   ],
-  image:'https://images.unsplash.com/photo-1492552296703-4ec0a2fb3715?crop=entropy&cs=tinysrgb&fit=max&fm=jpg&ixid=M3w3Nzg4Nzd8MHwxfHNlYXJjaHw1fHxheXVydmVkaWMlMjBtZWRpY2luZSUyMGhlcmJzJTIwb2lsJTIwcHJlcGFyYXRpb258ZW58MXx8fHwxNzc5ODA0MzE3fDA&ixlib=rb-4.1.0&q=80&w=1080',
+  image:'/images/bhringraja-medicated-hair-oil-jvc-clinic.webp',
+  alt: 'Medicated Bhringraja-based Ayurvedic hair oil prepared at Vedara Care JVC for hair loss treatment',
   quote: 'Hair grows from the scalp, but the scalp is fed by the body. Treating the scalp without treating the body addresses the surface, not the cause.'
 };
 
@@ -100,7 +101,8 @@ export const hairLossMechanism2 = {
     'What works is a structured 3-9 month programme at a DHA-licensed clinic — pattern identification, Nasya, scalp therapies, internal medicines selected for your specific pattern, dietary correction, and addressing root patterns. This is not what you can buy at Carrefour or Amazon. It is what authentic Ayurvedic hair loss treatment has always required — and what most Dubai "Ayurvedic hair care" markets without delivering.'
   ],
   quote: 'If your hair loss treatment came with a sales tag and not a consultation, it is not really Ayurveda. It is a product wearing Ayurveda as marketing.',
-  image: 'https://images.unsplash.com/photo-1545840716-c82e9eec6930?crop=entropy&cs=tinysrgb&fit=max&fm=jpg&ixid=M3w3Nzg4Nzd8MHwxfHNlYXJjaHwzfHxheXVydmVkaWMlMjBtZWRpY2luZSUyMGhlcmJzJTIwb2lsJTIwcHJlcGFyYXRpb258ZW58MXx8fHwxNzc5ODA0MzE3fDA&ixlib=rb-4.1.0&q=80&w=1080',
+  image: '/images/ayurvedic-hair-loss-treatment-room-jvc.webp',
+  alt: 'Authentic medicated Ayurvedic hair oils sourced from classical Kerala pharmacies for Vedara Care JVC',
   imageLeft: false,
   imageHeight: 'h-[500px]'
 };
@@ -109,6 +111,7 @@ export const hairLossTherapies = {
   bgColor: 'bg-[#FAF8F3]',
   label: 'THE SPECIFIC TREATMENTS',
   title: 'The therapies used in Ayurvedic hair loss protocols at our JVC clinic.',
+  alt:'Ayurvedic hair loss therapies offered at our JVC Dubai clinic — Nasya, Shirodhara, Takradhara',
   subtitle: 'Different therapies serve different roles in the protocol. Not every patient receives every therapy — your doctor selects based on your specific pattern.',
   items: [
     {
@@ -443,7 +446,8 @@ export const hairLossTreatmentLocation = {
   description: 'Our JVC clinic has dedicated Nasya treatment rooms with traditional positioning chairs, scalp therapy areas with appropriate lighting for examination, and private consultation rooms. Female doctors and therapists available on request. Walking distance from Circle Mall, easy access from JVC Districts 10, 11, 12, 13, and Jumeirah Village Triangle.'
 ,
   buttonText: 'Book Hair Loss Consultation',
-  directions: 'From Sheikh Mohammed Bin Zayed Road: Take Exit 27 for JVC, follow signs for Circle Mall. From Al Khail Road: Take JVC exit, follow signs for Circle Mall. Our clinic is next to Circle Mall with free patient parking.'
+  directions: 'From Sheikh Mohammed Bin Zayed Road: Take Exit 27 for JVC, follow signs for Circle Mall. From Al Khail Road: Take JVC exit, follow signs for Circle Mall. Our clinic is next to Circle Mall with free patient parking.',
+  mapAlt: "Vedara Care hair loss clinic location in Jumeirah Village Circle Dubai near Circle Mall  "
 };
 
 export const hairLossFinalCTA = {
