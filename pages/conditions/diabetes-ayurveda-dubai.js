@@ -14,6 +14,7 @@ import {
   diabetesHero,
   diabetesIntro,
   diabetesMechanism1,
+  diabetesMechanism2,
   diabetesOils,
   diabetesProtocol,
   diabetesSymptoms,
@@ -42,7 +43,7 @@ const DiabetesAyurvedaDubai = () => {
         {/* Open Graph */}
         <meta property="og:title" content="Ayurveda for Diabetes in Dubai — Integrated Treatment at Our JVC Clinic" />
         <meta property="og:description" content="DHA-licensed Ayurvedic diabetes treatment at our Jumeirah Village Circle clinic. Stage-specific 6-month medical programmes coordinated with your endocrinologist." />
-        <meta property="og:image" content="https://vedaracare.ae/og-images/diabetes-ayurveda-dubai.jpg" />
+        <meta property="og:image" content="https://vedaracare.ae/images/diabetes-ayurveda-dubai-hero.webp" />
         <meta property="og:url" content="https://vedaracare.ae/conditions/diabetes-ayurveda-dubai/" />
         <meta property="og:type" content="article" />
         <meta property="og:locale" content="en_AE" />
@@ -206,7 +207,7 @@ const DiabetesAyurvedaDubai = () => {
               "name": "Dr. [Lead Ayurvedic Physician]",
               "hasCredential": "DHA-Licensed BAMS, MD (Ayurveda)"
             },
-            "primaryImageOfPage": "https://vedaracare.ae/images/diabetes-ayurveda-dubai-hero.jpg"
+            "primaryImageOfPage": "https://vedaracare.ae/images/diabetes-ayurveda-dubai-hero.webp"
           })
         }}
       />
@@ -271,7 +272,7 @@ const DiabetesAyurvedaDubai = () => {
             "@context": "https://schema.org",
             "@type": "Article",
             "headline": "Ayurveda for Diabetes in Dubai — A Complete Clinical Guide",
-            "image": "https://vedaracare.ae/images/diabetes-ayurveda-dubai-hero.jpg",
+            "image": "https://vedaracare.ae/images/diabetes-ayurveda-dubai-hero.webp",
             "datePublished": "2026-05-01",
             "dateModified": currentDate,
             "author": {
@@ -355,9 +356,7 @@ const DiabetesAyurvedaDubai = () => {
             <h2 className="text-4xl mb-4" style={{ fontFamily: "Georgia, serif", fontWeight: 500 }}>
               {diabetesMechanism1.title}
             </h2>
-            <p className="text-lg max-w-3xl mx-auto" style={{ color: "rgb(107, 114, 128)" }}>
-              {diabetesMechanism1.description}
-            </p>
+            <p className="text-lg max-w-3xl mx-auto" style={{ color: "rgb(107, 114, 128)" }} dangerouslySetInnerHTML={{ __html: diabetesMechanism1.description }} />
           </div>
           
           <div className="grid md:grid-cols-3 gap-8">
@@ -370,25 +369,17 @@ const DiabetesAyurvedaDubai = () => {
                 <div className="text-6xl font-['Georgia']" style={{ color: "rgb(201, 169, 97)" }}>
                   {phenotype.letter}
                 </div>
-                <h4 className="text-xl font-medium" style={{ fontFamily: "Georgia, serif" }}>
-                  {phenotype.title}
-                </h4>
-                <div className="text-sm italic" style={{ color: "rgb(201, 169, 97)" }}>
-                  {phenotype.subtitle}
-                </div>
-                <p className="leading-relaxed" style={{ color: "rgb(107, 114, 128)" }}>
-                  {phenotype.content}
-                </p>
+                <h4 className="text-xl font-medium" style={{ fontFamily: "Georgia, serif" }} dangerouslySetInnerHTML={{ __html: phenotype.title }} />
+                <div className="text-sm italic" style={{ color: "rgb(201, 169, 97)" }} dangerouslySetInnerHTML={{ __html: phenotype.subtitle }} />
+                <p className="leading-relaxed" style={{ color: "rgb(107, 114, 128)" }} dangerouslySetInnerHTML={{ __html: phenotype.content }} />
                 <div className="pt-2 text-sm border-t border-gray-200">
-                  <span className="font-medium">What Ayurveda can realistically achieve:</span> {phenotype.ayurvedicEmphasis}
+                  <span className="font-medium">What Ayurveda can realistically achieve:</span> <span dangerouslySetInnerHTML={{ __html: phenotype.ayurvedicEmphasis }} />
                 </div>
               </div>
             ))}
           </div>
           
-          <p className="text-center mt-12 max-w-3xl mx-auto" style={{ color: "rgb(107, 114, 128)" }}>
-            {diabetesMechanism1.footer}
-          </p>
+          <p className="text-center mt-12 max-w-3xl mx-auto" style={{ color: "rgb(107, 114, 128)" }} dangerouslySetInnerHTML={{ __html: diabetesMechanism1.footer }} />
         </div>
       </section>
 
@@ -429,8 +420,8 @@ const DiabetesAyurvedaDubai = () => {
             
             <div>
               <img 
-                src="https://images.unsplash.com/photo-1758691461957-474a7686e388?crop=entropy&cs=tinysrgb&fit=max&fm=jpg&ixid=M3w3Nzg4Nzd8MHwxfHNlYXJjaHwxfHxkb2N0b3IlMjBwYXRpZW50JTIwY29uc3VsdGF0aW9uJTIwbWVkaWNhbCUyMGNsaW5pY2FsfGVufDF8fHx8MTc3OTgwNTg5OHww&ixlib=rb-4.1.0&q=80&w=1080" 
-                alt="Doctor consulting with patient" 
+                src={diabetesMechanism2.image} 
+                alt={diabetesMechanism2.alt} 
                 className="rounded-xl w-full h-auto object-cover shadow-lg" 
               />
             </div>
@@ -470,7 +461,7 @@ const DiabetesAyurvedaDubai = () => {
                   Diabetic Neuropathy
                 </h4>
                 <p className="leading-relaxed" style={{ color: 'rgb(107, 114, 128)' }}>
-                  Peripheral neuropathy is one of the most distressing diabetic complications and one where Ayurveda has its strongest adjunctive role. Specific protocols including Padabhyanga (medicated foot massage), Snehapana, internal medicines including Brahmi and Ashwagandha-based formulations, and Vata-pacification often reduce burning, tingling, and pain meaningfully. Best results combine Ayurvedic treatment with conventional neuropathy medications.
+                  Peripheral neuropathy is one of the most distressing diabetic complications and one where Ayurveda has its strongest adjunctive role. Specific protocols including <a href='/treatments/padabhyanga-dubai/' class='doctor-specialty-link'>Padabhyanga</a> (medicated foot massage), Snehapana, internal medicines including Brahmi and Ashwagandha-based formulations, and Vata-pacification often reduce burning, tingling, and pain meaningfully. Best results combine Ayurvedic treatment with conventional neuropathy medications.
                 </p>
               </div>
               
@@ -488,15 +479,15 @@ const DiabetesAyurvedaDubai = () => {
                   Diabetic Foot Care
                 </h4>
                 <p className="leading-relaxed" style={{ color: 'rgb(107, 114, 128)' }}>
-                  Preventive foot care is one of Ayurveda's most clinically valuable diabetes services. Weekly Padabhyanga, daily foot examination protocols, dietary support for circulation, and specific medications for vascular health. Particularly important for long-standing diabetic patients in Dubai's hot climate where foot issues escalate quickly.
+                  Preventive foot care is one of Ayurveda's most clinically valuable diabetes services. Weekly <a href='/treatments/padabhyanga-dubai/' class='doctor-specialty-link'>Padabhyanga</a>, daily foot examination protocols, dietary support for circulation, and specific medications for vascular health. Particularly important for long-standing diabetic patients in Dubai's hot climate where foot issues escalate quickly.
                 </p>
               </div>
             </div>
 
             <div>
               <img 
-                src="https://images.unsplash.com/photo-1758654859934-2a03792260a0?crop=entropy&cs=tinysrgb&fit=max&fm=jpg&ixid=M3w3Nzg4Nzd8MHwxfHNlYXJjaHw1fHxkb2N0b3IlMjBwYXRpZW50JTIwY29uc3VsdGF0aW9uJTIwbWVkaWNhbCUyMGNsaW5pY2FsfGVufDF8fHx8MTc3OTgwNTg5OHww&ixlib=rb-4.1.0&q=80&w=1080" 
-                alt="Doctor examining patient foot" 
+                src="/images/padabhyanga-diabetic-foot-care-jvc.webp" 
+                alt="Ayurvedic doctor performing diabetic foot examination at Vedara Care JVC Dubai" 
                 className="rounded-xl w-full h-auto object-cover shadow-lg" 
               />
             </div>
@@ -661,9 +652,8 @@ const DiabetesAyurvedaDubai = () => {
               <h2 className="text-4xl" style={{ fontFamily: 'Georgia, serif', fontWeight: 500 }}>
                 {diabetesFaqs.title}
               </h2>
-              <p style={{ color: 'rgb(107, 114, 128)' }}>
-                {diabetesFaqs.description}
-              </p>
+              <p style={{ color: 'rgb(107, 114, 128)' }} dangerouslySetInnerHTML={{ __html: diabetesFaqs.description }} />
+
               <button className="inline-flex items-center justify-center gap-2 whitespace-nowrap rounded-md text-sm font-medium transition-all h-9 px-4 py-2" style={{ backgroundColor: 'rgb(45, 95, 79)', color: 'white' }} onMouseOver={(e) => e.currentTarget.style.backgroundColor = '#2d4538'} onMouseOut={(e) => e.currentTarget.style.backgroundColor = 'rgb(45, 95, 79)'}>
                 <svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" strokeWidth="2" strokeLinecap="round" strokeLinejoin="round" className="w-4 h-4 mr-2">
                   <path d="M7.9 20A9 9 0 1 0 4 16.1L2 22Z"></path>
@@ -692,7 +682,8 @@ const DiabetesAyurvedaDubai = () => {
                           }
                         }}
                       >
-                        {faq.question}
+                        <span dangerouslySetInnerHTML={{ __html: faq.question }} />
+
                         <svg 
                           id={`faq-chevron-${index}`}
                           xmlns="http://www.w3.org/2000/svg" 
@@ -716,9 +707,9 @@ const DiabetesAyurvedaDubai = () => {
                       className="text-sm pb-4" 
                       style={{ color: 'rgb(107, 114, 128)' }} 
                       hidden
-                    >
-                      {faq.answer}
-                    </div>
+                      dangerouslySetInnerHTML={{ __html: faq.answer }}
+                    />
+
                   </div>
                 ))}
               </div>
@@ -740,9 +731,7 @@ const DiabetesAyurvedaDubai = () => {
             <h2 className="text-4xl" style={{ fontFamily: 'Georgia, serif', fontWeight: 500 }}>
               {diabetesPrograms.title}
             </h2>
-            <p className="text-lg max-w-3xl mx-auto" style={{ color: 'rgb(107, 114, 128)' }}>
-              {diabetesPrograms.description}
-            </p>
+            <p className="text-lg max-w-3xl mx-auto" style={{ color: 'rgb(107, 114, 128)' }} dangerouslySetInnerHTML={{ __html: diabetesPrograms.description }} />
           </div>
           <div className="grid md:grid-cols-3 gap-8">
             {diabetesPrograms.programs.map((program, index) => (
@@ -763,15 +752,9 @@ const DiabetesAyurvedaDubai = () => {
                 )}
                 <div className="flex-1">
                   <div className="mb-6">
-                    <h3 className="text-2xl font-medium mb-2" style={{ fontFamily: 'Georgia, serif' }}>
-                      {program.name}
-                    </h3>
-                    <div className="text-3xl mb-2" style={{ fontFamily: 'Georgia, serif', color: 'rgb(201, 169, 97)' }}>
-                      {program.price}
-                    </div>
-                    <p className="text-sm" style={{ color: 'rgb(107, 114, 128)' }}>
-                      {program.duration}
-                    </p>
+                    <h3 className="text-2xl font-medium mb-2" style={{ fontFamily: 'Georgia, serif' }} dangerouslySetInnerHTML={{ __html: program.name }} />
+                    <div className="text-3xl mb-2" style={{ fontFamily: 'Georgia, serif', color: 'rgb(201, 169, 97)' }} dangerouslySetInnerHTML={{ __html: program.price }} />
+                    <p className="text-sm" style={{ color: 'rgb(107, 114, 128)' }} dangerouslySetInnerHTML={{ __html: program.duration }} />
                   </div>
                   <ul className="space-y-3 mb-6" style={{ color: 'rgb(107, 114, 128)' }}>
                     {program.features.map((feature, i) => (
@@ -780,11 +763,11 @@ const DiabetesAyurvedaDubai = () => {
                           <path d="M21.801 10A10 10 0 1 1 17 3.335"></path>
                           <path d="m9 11 3 3L22 4"></path>
                         </svg>
-                        <span>{feature}</span>
+                        <span dangerouslySetInnerHTML={{ __html: feature }} />
                       </li>
                     ))}
                   </ul>
-                  <p className="text-sm font-medium mb-6">{program.bestFor}</p>
+                  <p className="text-sm font-medium mb-6" dangerouslySetInnerHTML={{ __html: program.bestFor }} />
                 </div>
                 <button
                   className="inline-flex items-center justify-center gap-2 whitespace-nowrap rounded-md text-sm font-medium transition-all h-9 px-4 py-2 has-[>svg]:px-3 w-full"

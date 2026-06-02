@@ -327,7 +327,8 @@ export const panchakarmaJVCBenefits = {
     title: "TARGETED, NOT GENERAL.",
     subtitle: "The entire treatment focuses on a 6-inch region of your lower back. The precision is the point."
   },
-  image: "https://images.unsplash.com/photo-1596178060671-7a80dc8059ea?w=800"
+  image: "/images/kativasti-dubai-hero.webp",
+  alt: "Wheat-flour dough reservoir filled with warm medicated oil over patient's lumbar spine during Kativasti at Vedara Care, JVC Dubai"
 };
 
 
@@ -349,7 +350,8 @@ export const kativastiMechanism = {
     "The therapy works through three mechanisms. First, sustained warmth penetrates deeper into the lumbar tissues than any handheld massage technique. Second, the medicated oil — selected for your specific condition — is absorbed directly through the skin into the lumbar fascia, paraspinal muscles, and surrounding connective tissue. Third, the prolonged contact time allows for therapeutic effects that quick massage cannot achieve."
   ],
   quote: "Most therapies brush across the area of concern. Kativasti sits on it for forty-five minutes.",
-  image: "https://images.unsplash.com/photo-1664549760921-2198b054a592?w=600"
+  image: "/images/kativasti-dough-ring-treatment-jvc.webp",
+  alt: "Therapist shaping dough reservoir for Kativasti lumbar oil therapy at our Ayurveda clinic in JVC Dubai"
 };
 
 export const kativastiProtocol = {
@@ -453,7 +455,8 @@ export const kativastiIntegration = {
     "For <a href='/conditions/back-pain-ayurveda-dubai/' class='text-[#C9A961] hover:underline'>chronic mechanical back pain</a>, the strongest outcomes at our Vedara Care JVC clinic come from combining Kativasti with structured <a href='/physiotherapy-jvc/' class='text-[#C9A961] hover:underline'>physiotherapy</a>. The two therapies work on different mechanisms — Kativasti addresses tissue quality, inflammation, and Vata imbalance; physiotherapy addresses biomechanics, postural patterns, and motor control.",
     "Our Ayurvedic doctors and <a href='/physiotherapy-jvc/' class='text-[#C9A961] hover:underline'>physiotherapists</a> share treatment notes for joint patients. A typical integrated plan combines 2-3 Kativasti sessions per week with 2 <a href='/physiotherapy-jvc/' class='text-[#C9A961] hover:underline'>physiotherapy sessions</a> per week for 4-6 weeks — booked at the same clinic, often on alternating days."
   ],
-  image: "https://images.unsplash.com/photo-1731597076108-f3bbe268162f?w=600",
+  image: "/images/ayurveda-physiotherapy-integrated-back-pain-jvc.webp",
+  alt: "Ayurvedic doctor and physiotherapist collaborating on back pain treatment plan at Vedara Care JVC",
   features: [
     "Joint clinical assessment with both teams at first visit",
     "Coordinated 4-6 week protocol",
@@ -635,7 +638,8 @@ export const kativastiTreatmentLocation = {
     "JSS Private School (5 min drive)"
   ],
   description: "Three dedicated Kativasti treatment rooms with traditional Kerala-style wooden droni tables and adjustable warming systems for sustained oil temperature throughout the session. Integrated with our physiotherapy department for joint protocols.",
-  buttonText: "Book Kativasti Consultation"
+  buttonText: "Book Kativasti Consultation",
+  mapAlt: "Vedara Care Kativasti and back pain clinic location in Jumeirah Village Circle Dubai near Circle Mall"
 };
 
 export const kativastiRelatedPages = {

@@ -52,10 +52,10 @@ const TreatmentMechanism = ({
             {/* Image */}
             <div className={`lg:w-[45%] ${imageLeft ? 'lg:order-1' : 'lg:order-2'}`}>
               <img 
-                src={image.startsWith('http') ? image : `/images/${image}`} 
+                 src={image || "https://images.unsplash.com/photo-1664549760921-2198b054a592?w=600"} 
                 alt={alt} 
-                className="w-full h-[400px] object-cover rounded-xl shadow-lg"
-              />
+                className="w-full h-[400px] object-cover rounded-xl shadow-lg"/>
+
             </div>
           </div>
         ) : (

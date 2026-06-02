@@ -27,22 +27,23 @@ h1, h2, h3, h4, h5, h6 {
 }
 
 /* Style regular links in content, not buttons */
-/* p a, 
+p a, 
 h1 a, 
 h2 a, 
 h3 a, 
-li a {
-  color: #184C3A;
-  text-decoration: none;
+li a,
+span a {
+  color: #C9A961;
+  text-decoration: underline;
   transition: color 0.2s;
 }
 
 a:hover {
-  color: #123a2c;
+  color: #a68d4c;
 }
 
 .doctor-specialty-link {
   color: #C9A961;
   text-decoration: underline;
   cursor: pointer;
-} */
+}

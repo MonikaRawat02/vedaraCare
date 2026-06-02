@@ -43,7 +43,9 @@ const AyurvedaIbsDubai = () => {
         {"@type": "AnatomicalStructure", "name": "Colon"},
         {"@type": "AnatomicalStructure", "name": "Small intestine"},
         {"@type": "AnatomicalStructure", "name": "Enteric nervous system"},
-        {"@type": "AnatomicalStructure", "name": "Gut microbiome"}
+        {"@type": "AnatomicalStructure", "name": "Gut microbiome"},
+        {"@type": "AnatomicalStructure", "name": "Brain-gut axis"},
+        {"@type": "AnatomicalStructure", "name": "Vagus nerve"}
       ],
       "signOrSymptom": [
         {"@type": "MedicalSymptom", "name": "Abdominal pain"},
@@ -61,8 +63,24 @@ const AyurvedaIbsDubai = () => {
         {"@type": "MedicalProcedure", "name": "Basti"},
         {"@type": "MedicalProcedure", "name": "Abhyanga", "url": "https://vedaracare.ae/treatments/abhyanga-dubai/"},
         {"@type": "MedicalProcedure", "name": "Shirodhara", "url": "https://vedaracare.ae/treatments/shirodhara-dubai/"},
-        {"@type": "MedicalTherapy", "name": "Ayurvedic gut medicines"},
-        {"@type": "MedicalTherapy", "name": "Dietary regulation"}
+        {"@type": "MedicalTherapy", "name": "Hingvashtaka Churna"},
+        {"@type": "MedicalTherapy", "name": "Dadimashtaka Churna"},
+        {"@type": "MedicalTherapy", "name": "Kutaja Ghana Vati"},
+        {"@type": "MedicalTherapy", "name": "Bilva Marmala"},
+        {"@type": "MedicalTherapy", "name": "Chitrakadi Vati"},
+        {"@type": "MedicalTherapy", "name": "Avipattikara Churna"},
+        {"@type": "MedicalTherapy", "name": "Trivrit Lehyam"},
+        {"@type": "MedicalTherapy", "name": "Pippali"},
+        {"@type": "MedicalTherapy", "name": "Trikatu"},
+        {"@type": "MedicalTherapy", "name": "Vidanga"},
+        {"@type": "MedicalTherapy", "name": "Triphala"},
+        {"@type": "MedicalTherapy", "name": "Dietary regulation"},
+        {"@type": "DietaryApproach", "name": "Low-FODMAP diet"},
+        {"@type": "Drug", "name": "Mebeverine"},
+        {"@type": "Drug", "name": "Hyoscine"},
+        {"@type": "Drug", "name": "Loperamide"},
+        {"@type": "Drug", "name": "Amitriptyline"},
+        {"@type": "Drug", "name": "Rifaximin"}
       ],
       "riskFactor": [
         {"@type": "MedicalRiskFactor", "name": "Previous GI infection (post-infectious IBS)"},
@@ -175,7 +193,7 @@ const AyurvedaIbsDubai = () => {
         "name": "Dr. [Lead Ayurvedic Physician]",
         "hasCredential": "DHA-Licensed BAMS, MD (Ayurveda)"
       },
-      "primaryImageOfPage": "https://vedaracare.ae/images/ibs-ayurveda-dubai-hero.jpg"
+      "primaryImageOfPage": "https://vedaracare.ae/images/ibs-ayurveda-dubai-hero.webp"
     },
     {
       "@context": "https://schema.org",
@@ -226,7 +244,7 @@ const AyurvedaIbsDubai = () => {
       "@context": "https://schema.org",
       "@type": "Article",
       "headline": "Ayurveda for IBS in Dubai — A Complete Clinical Guide",
-      "image": "https://vedaracare.ae/images/ibs-ayurveda-dubai-hero.jpg",
+      "image": "https://vedaracare.ae/images/ibs-ayurveda-dubai-hero.webp",
       "datePublished": "2026-05-01",
       "dateModified": currentDate,
       "author": {
@@ -239,7 +257,17 @@ const AyurvedaIbsDubai = () => {
         "name": "Vedara Care Polyclinic",
         "logo": {"@type": "ImageObject", "url": "https://vedaracare.ae/logo.png"}
       },
-      "mainEntityOfPage": "https://vedaracare.ae/conditions/ibs-ayurveda-dubai/"
+      "mainEntityOfPage": "https://vedaracare.ae/conditions/ibs-ayurveda-dubai/",
+      "citation": [
+        {"@type": "Book", "name": "Charaka Samhita"},
+        {"@type": "Book", "name": "Sushruta Samhita"},
+        {"@type": "Book", "name": "Ashtanga Hridayam"}
+      ],
+      "guideline": {"@type": "MedicalGuideline", "name": "Rome IV criteria"},
+      "medicalSpecialty": [
+        {"@type": "MedicalSpecialty", "name": "Gastroenterology"},
+        {"@type": "MedicalSpecialty", "name": "Ayurveda"}
+      ]
     },
     {
       "@context": "https://schema.org",
@@ -282,7 +310,7 @@ const AyurvedaIbsDubai = () => {
         {/* Open Graph */}
         <meta property="og:title" content="Ayurveda for IBS in Dubai — Subtype-Specific Treatment at Our JVC Clinic" />
         <meta property="og:description" content="DHA-licensed Ayurvedic IBS treatment at our Jumeirah Village Circle clinic. Different protocols for IBS-D, IBS-C, IBS-M, post-infectious IBS, and SIBO. Treats your IBS as the real biological condition it is." />
-        <meta property="og:image" content="https://vedaracare.ae/og-images/ibs-ayurveda-dubai.jpg" />
+        <meta property="og:image" content="https://vedaracare.ae/images/ibs-ayurveda-dubai-hero.webp" />
         <meta property="og:url" content="https://vedaracare.ae/conditions/ibs-ayurveda-dubai/" />
         <meta property="og:type" content="article" />
         <meta property="og:locale" content="en_AE" />
@@ -344,7 +372,7 @@ const AyurvedaIbsDubai = () => {
         <TreatmentLocationCustom {...ayurvedaIbsTreatmentLocationCustom} />
 
         {/* Section 11: Related Pages */}
-        {/* <RelatedPages {...ayurvedaIbsRelatedPages} /> */}
+        <RelatedPages {...ayurvedaIbsRelatedPages} />
 
         {/* Section 12: Final CTA */}
         <FinalCTA {...ayurvedaIbsFinalCTA} />
