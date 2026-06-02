@@ -19,7 +19,7 @@ export const thyroidHero = {
     title: "BLOODWORK FIRST. ALWAYS.",
     subtitle: "We need your most recent TSH, T4, T3, and antibody panel before designing any treatment. Bring or send them. No exceptions."
   },
-  image: "https://images.unsplash.com/photo-1622253692010-333f2da6031d?q=80&w=1964&auto=format&fit=crop",
+  image: "thyroid-bloodwork-consultation-vedara-jvc.webp",
   alt: "Ayurvedic doctor reviewing thyroid bloodwork with patient at Vedara Care JVC clinic Dubai"
 };
 
@@ -80,6 +80,7 @@ export const thyroidPatterns = {
  label: "CONDITION MATTERS",
 title: "Seven thyroid conditions — each requires different Ayurvedic approach.",
 description: "At our JVC clinic, your specific condition determines what Ayurveda can realistically offer.",
+alt: "Seven thyroid conditions assessed at our JVC Ayurveda clinic Dubai",
 types: [
   {
     title: "Hashimoto's Thyroiditis",
@@ -137,7 +138,8 @@ export const thyroidHashimoto = {
     "Realistic outcomes for Hashimoto's: 30-60% reduction in thyroid antibody levels over 9 months for many patients (documented on follow-up bloodwork), meaningful improvement in residual symptoms, slower disease progression, and quality of life improvement. What Ayurveda does not do: reverse existing thyroid damage, replace levothyroxine, or eliminate antibodies entirely in \"cure\" Hashimoto's."
   ],
   quote: "For Hashimoto's specifically, Ayurvedic adjunctive treatment is one of the most clinically valuable additions to conventional endocrinology care available — when it is honest about what it does and does not do.",
-  image: "https://images.unsplash.com/photo-1559757175-5700dde675bc?q=80&w=1931&auto=format&fit=crop",
+  image: "hashimoto-antibody-monitoring-vedara-jvc.webp",
+  alt: "Ayurvedic doctor reviewing thyroid antibody reduction trends with Hashimoto's patient at Vedara Care JVC",
   imageLeft: false
 };
 
@@ -414,7 +416,8 @@ export const thyroidLocation = {
     "5 minutes from JSS Private School",
     "Easy access from JVC, JVT, Al Barsha South, Sports City, Motor City"
   ],
-  image: "https://images.unsplash.com/photo-1519494026892-80bbd2d6fd0d?q=80&w=2053&auto=format&fit=crop",
+  image: "thyroid-treatment-room-jvc.webp",
+  alt: "Vedara Care thyroid clinic location in Jumeirah Village Circle Dubai near Circle Mall",
   buttonText: "Book a Thyroid Consultation"
 };
 

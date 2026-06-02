@@ -1,7 +1,7 @@
 export const arthritisHero = {
   breadcrumb: [
     { label: "Home", href: "/" },
-    { label: "Conditions", href: "/conditions" },
+    { label: "Conditions", href: "/conditions/" },
     { label: "Ayurveda for Arthritis in Dubai", active: true }
   ],
   label: "AYURVEDA FOR ARTHRITIS · DHA-LICENSED CLINIC IN JVC, DUBAI",
@@ -19,8 +19,8 @@ export const arthritisHero = {
     title: "EXAMINATION FIRST, TREATMENT SECOND.",
     subtitle: "Range of motion assessment, joint examination, inflammatory pattern review. The treatment plan follows from what we find."
   },
-  image: "https://images.unsplash.com/photo-1559839734-2b71f1536783?q=80&w=2070&auto=format&fit=crop",
-   alt: "Ayurvedic doctor examining knee joint range of motion at Vedara Care JVC clinic Dubai"
+  image: "arthritis-ayurveda-dubai-hero.webp",
+  alt: "Ayurvedic doctor examining knee joint range of motion at Vedara Care JVC clinic Dubai"
 };
 
 export const arthritisIntro = {
@@ -28,7 +28,7 @@ export const arthritisIntro = {
   label: "THE QUICK ANSWER",
   title: "Ayurvedic arthritis treatment in Dubai, in one paragraph.",
   blockquote: "Ayurvedic treatment for arthritis in Dubai is a 3 to 9-month structured medical programme combining classical Panchakarma protocols (typically Virechana for inflammatory patterns; Basti for Vata-pattern joint disease), localised joint therapies (Janu Vasti for knees, Greeva Vasti for cervical, specific protocols for shoulders and other joints), Njavarakizhi (medicated rice bolus therapy for muscle and joint nourishment), internal Ayurvedic medicines (typically including Dashamoola, Yogaraja Guggulu, Maharasnadi Kashayam, Sahacharadi formulations), dietary regulation, and integrated physiotherapy where indicated. At Vedara Care Polyclinic in Jumeirah Village Circle (JVC), Dubai — next to Circle Mall — protocols are specific to your arthritis subtype and work alongside rheumatology or orthopaedic care. Initial consultations start from AED 350.",
-  footer: "Medically reviewed by Dr. [Lead Ayurvedic Physician], BAMS, MD (Ayurveda), DHA-Licensed · Last updated May 2026"
+  footer: "Medically reviewed by Dr. Priya Menon, BAMS, MD (Ayurveda), DHA-Licensed · Last updated June 2026"
 };
 
 export const arthritisTypesData = {

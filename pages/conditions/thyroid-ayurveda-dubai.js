@@ -35,14 +35,7 @@ const AyurvedaThyroid = () => {
       "@type": "MedicalCondition",
       "@id": "https://vedaracare.ae/conditions/thyroid-ayurveda-dubai/#condition",
       "name": "Thyroid Disorders",
-      "alternateName": [
-        "Thyroid Disease",
-        "Hashimoto's Thyroiditis",
-        "Hypothyroidism",
-        "Hyperthyroidism",
-        "Galaganda",
-        "Gandamala"
-      ],
+      "alternateName": ["Thyroid Disease", "Hashimoto's Thyroiditis", "Hypothyroidism", "Hyperthyroidism", "Galaganda", "Gandamala"],
       "code": [
         { "@type": "MedicalCode", "code": "E03", "codingSystem": "ICD-10" },
         { "@type": "MedicalCode", "code": "E06.3", "codingSystem": "ICD-10" },
@@ -55,25 +48,20 @@ const AyurvedaThyroid = () => {
       ],
       "signOrSymptom": [
         { "@type": "MedicalSymptom", "name": "Fatigue" },
-        { "@type": "MedicalSymptom", "name": "Weight gain" },
+        { "@type": "MedicalSymptom", "name": "Weight changes" },
         { "@type": "MedicalSymptom", "name": "Hair loss" },
-        { "@type": "MedicalSymptom", "name": "Cold intolerance" },
-        { "@type": "MedicalSymptom", "name": "Brain fog" },
         { "@type": "MedicalSymptom", "name": "Mood changes" },
-        { "@type": "MedicalSymptom", "name": "Constipation" },
-        { "@type": "MedicalSymptom", "name": "Dry skin" }
+        { "@type": "MedicalSymptom", "name": "Cold intolerance" },
+        { "@type": "MedicalSymptom", "name": "Heat intolerance" },
+        { "@type": "MedicalSymptom", "name": "Constipation or diarrhoea" },
+        { "@type": "MedicalSymptom", "name": "Menstrual irregularities" }
       ],
       "possibleTreatment": [
-        {
-          "@type": "MedicalProcedure",
-          "name": "Panchakarma",
-          "url": "https://vedaracare.ae/treatments/panchakarma-dubai/"
-        },
-        { "@type": "MedicalProcedure", "name": "Virechana" },
-        { "@type": "MedicalProcedure", "name": "Vasti" },
+        { "@type": "MedicalProcedure", "name": "Panchakarma", "url": "https://vedaracare.ae/treatments/panchakarma-dubai/" },
         { "@type": "MedicalTherapy", "name": "Kanchanara Guggulu" },
         { "@type": "MedicalTherapy", "name": "Varunadi Kashayam" },
-        { "@type": "MedicalTherapy", "name": "Ayurvedic thyroid medicines" }
+        { "@type": "MedicalTherapy", "name": "Adjunctive Ayurvedic care" },
+        { "@type": "MedicalTherapy", "name": "Dietary regulation" }
       ],
       "riskFactor": [
         { "@type": "MedicalRiskFactor", "name": "Female sex" },
@@ -84,6 +72,7 @@ const AyurvedaThyroid = () => {
         { "@type": "MedicalRiskFactor", "name": "Radiation exposure" }
       ]
     },
+    // Subtypes
     {
       "@context": "https://schema.org",
       "@type": "MedicalCondition",
@@ -113,13 +102,13 @@ const AyurvedaThyroid = () => {
         "@type": "PatientAudience",
         "geographicArea": { "@type": "Place", "name": "Dubai, United Arab Emirates" }
       },
-      "lastReviewed": "2026-05-30",
+      "lastReviewed": "2026-06-02",
       "reviewedBy": {
         "@type": "Physician",
         "name": "Dr. Priya Menon",
         "hasCredential": "DHA-Licensed BAMS, MD (Ayurveda)"
       },
-      "primaryImageOfPage": "https://vedaracare.ae/images/thyroid-ayurveda-dubai-hero.jpg"
+      "primaryImageOfPage": "https://vedaracare.ae/images/thyroid-ayurveda-dubai-hero.webp"
     },
     {
       "@context": "https://schema.org",
@@ -153,14 +142,14 @@ const AyurvedaThyroid = () => {
             "@type": "Offer",
             "name": "Standard 6-Month Thyroid Programme",
             "priceCurrency": "AED",
-            "price": "0",
+            "price": "12000",
             "description": "Six-month structured Ayurvedic adjunctive thyroid treatment alongside endocrinology"
           },
           {
             "@type": "Offer",
             "name": "Comprehensive 9-Month Hashimoto's Programme",
             "priceCurrency": "AED",
-            "price": "0",
+            "price": "18000",
             "description": "Nine-month programme for Hashimoto's thyroiditis with antibody monitoring and integrated endocrinology coordination"
           }
         ]
@@ -170,9 +159,9 @@ const AyurvedaThyroid = () => {
       "@context": "https://schema.org",
       "@type": "Article",
       "headline": "Ayurveda for Thyroid in Dubai — A Complete Clinical Guide",
-      "image": "https://vedaracare.ae/images/thyroid-ayurveda-dubai-hero.jpg",
-      "datePublished": "2026-05-30",
-      "dateModified": "2026-05-30",
+      "image": "https://vedaracare.ae/images/thyroid-ayurveda-dubai-hero.webp",
+      "datePublished": "2026-06-02",
+      "dateModified": "2026-06-02",
       "author": {
         "@type": "Physician",
         "name": "Dr. Priya Menon",
@@ -184,6 +173,20 @@ const AyurvedaThyroid = () => {
         "logo": { "@type": "ImageObject", "url": "https://vedaracare.ae/logo.png" }
       },
       "mainEntityOfPage": "https://vedaracare.ae/conditions/thyroid-ayurveda-dubai/"
+    },
+    {
+      "@context": "https://schema.org",
+      "@id": "https://vedaracare.ae/#organization",
+      "@type": "MedicalClinic",
+      "name": "Vedara Care Polyclinic",
+      "url": "https://vedaracare.ae/",
+      "logo": "https://vedaracare.ae/logo.png",
+      "address": {
+        "@type": "PostalAddress",
+        "streetAddress": "District 13, Jumeirah Village Circle",
+        "addressLocality": "Dubai",
+        "addressCountry": "AE"
+      }
     },
     {
       "@context": "https://schema.org",
@@ -248,13 +251,13 @@ const AyurvedaThyroid = () => {
         />
         <meta
           property="og:image"
-          content="https://vedaracare.ae/og-images/thyroid-ayurveda-dubai.jpg"
+          content="https://vedaracare.ae/og-images/thyroid-ayurveda-dubai-hero.webp"
         />
         <meta property="og:url" content="https://vedaracare.ae/conditions/thyroid-ayurveda-dubai/" />
         <meta property="og:type" content="article" />
         <meta property="og:locale" content="en_AE" />
-        <meta property="article:published_time" content="2026-05-30T09:00:00Z" />
-        <meta property="article:modified_time" content="2026-05-30T09:00:00Z" />
+        <meta property="article:published_time" content="2026-06-02T09:00:00Z" />
+        <meta property="article:modified_time" content="2026-06-02T09:00:00Z" />
         <meta property="article:author" content="Dr. Priya Menon" />
         <meta name="twitter:card" content="summary_large_image" />
         <meta name="robots" content="index, follow, max-image-preview:large" />
