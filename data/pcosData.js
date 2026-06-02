@@ -26,7 +26,7 @@ export const pcosIntro = {
   bgColor: "bg-[#FFFFFF]",
   label: "THE QUICK ANSWER",
   title: "Ayurvedic treatment for PCOS in Dubai, in one paragraph.",
-  blockquote: "Ayurvedic treatment for PCOS in Dubai is a 3 to 6-month structured programme combining classical Panchakarma cleansing protocols (Virechana and selective Basti), constitution-specific herbal medicines (typically including Shatavari, Ashoka, Guduchi, and Kanchanara Guggulu), individualized dietary regulation based on dosha analysis, lifestyle and stress management protocols, and where indicated, integration with your gynaecologist. At Vedara Care Polyclinic in Jumeirah Village Circle, our female BAMS-qualified Ayurvedic physicians design protocols for irregular cycles, insulin resistance, weight management, hirsutism, hair loss, acne, and fertility support. Initial consultations start from AED 450.",
+  blockquote: "Ayurvedic treatment for PCOS in Dubai is a 3 to 6-month structured programme combining classical <a href=\"/treatments/panchakarma-dubai/\" class=\"doctor-specialty-link\">Panchakarma</a> cleansing protocols (<a href=\"/treatments/panchakarma-dubai/\" class=\"doctor-specialty-link\">Virechana</a> and selective Basti), constitution-specific herbal medicines (typically including Shatavari, Ashoka, Guduchi, and Kanchanara Guggulu), individualized dietary regulation based on dosha analysis, lifestyle and stress management protocols, and where indicated, integration with your gynaecologist. At Vedara Care Polyclinic in Jumeirah Village Circle, our female BAMS-qualified Ayurvedic physicians design protocols for irregular cycles, insulin resistance, weight management, hirsutism, hair loss, acne, and fertility support. Initial consultations start from AED 450.",
   footer: "Medically reviewed by Dr. [Lead Female Ayurvedic Physician], BAMS, MD (Ayurveda), DHA-Licensed · Last updated May 2026"
 };
 
@@ -88,7 +88,7 @@ export const pcosBenefits = {
   benefitGroups: [
     {
       title: "Panchakarma Cleansing",
-      description: "The classical detoxification protocol that addresses insulin resistance, lipid metabolism, and hormonal clearance. For PCOS, Virechana (medicated purgation targeting liver and Pitta) is the most-prescribed action, often followed by selective Basti (medicated enema). Typically performed once during the programme — usually in month 2 — over 7-14 days. Learn more in our <a href=\"/treatments/panchakarma-dubai/\" class=\"text-[#C9A961] hover:underline transition-colors\">Panchakarma guide</a>.",
+      description: "The classical detoxification protocol that addresses insulin resistance, lipid metabolism, and hormonal clearance. For PCOS, <a href=\"/treatments/panchakarma-dubai/\" class=\"doctor-specialty-link\">Virechana</a> (medicated purgation targeting liver and Pitta) is the most-prescribed action, often followed by selective Basti (medicated enema). Typically performed once during the programme — usually in month 2 — over 7-14 days. Learn more in our <a href=\"/treatments/panchakarma-dubai/\" class=\"doctor-specialty-link\">Panchakarma guide</a>.",
       benefits: [
         
       ]
@@ -109,7 +109,7 @@ export const pcosBenefits = {
     },
     {
       title: "Lifestyle, Sleep & Stress Protocols",
-      description: "PCOS is profoundly stress-responsive. Cortisol dysregulation worsens insulin resistance. Sleep quality affects every hormone in your body. Our programmes include specific protocols for sleep (often Shirodhara-supported), stress regulation, exercise prescription, and lifestyle modification — calibrated to what you can actually sustain, not what an Instagram post says you should do.",
+      description: "PCOS is profoundly stress-responsive. Cortisol dysregulation worsens insulin resistance. Sleep quality affects every hormone in your body. Our programmes include specific protocols for sleep (often <a href=\"/treatments/shirodhara-dubai/\" class=\"doctor-specialty-link\">Shirodhara-supported</a>), stress regulation, exercise prescription, and lifestyle modification — calibrated to what you can actually sustain.",
       benefits: [
        
       ]
@@ -136,7 +136,7 @@ export const pcosProtocol = {
         "Cycle history mapping and symptom baseline",
         "Initial herbal medicine protocol begins",
         "Dietary plan introduced gradually",
-        "Weekly Abhyanga (3-4 sessions) for foundational Vata pacification"
+        "Weekly <a href=\"/treatments/abhyanga-dubai/\" class=\"doctor-specialty-link\">Abhyanga</a> (3-4 sessions) for foundational Vata pacification"
       ],
       expected: "Clear phenotype diagnosis, baseline tracking established, initial medicines well-tolerated, first dietary adjustments adopted"
     },
@@ -144,9 +144,9 @@ export const pcosProtocol = {
       week: "MONTH 2",
       title: "Panchakarma Cleansing",
       items: [
-        "7-14 day Panchakarma programme (timing planned around your cycle)",
-        "Pre-Panchakarma preparation (Snehapana, Abhyanga, Swedana)",
-        "Virechana as primary action; selective Basti where indicated",
+        "7-14 day <a href=\"/treatments/panchakarma-dubai/\" class=\"doctor-specialty-link\">Panchakarma</a> programme (timing planned around your cycle)",
+        "Pre-Panchakarma preparation (Snehapana, <a href=\"/treatments/abhyanga-dubai/\" class=\"doctor-specialty-link\">Abhyanga</a>, Swedana)",
+        "<a href=\"/treatments/panchakarma-dubai/\" class=\"doctor-specialty-link\">Virechana</a> as primary action; selective Basti where indicated",
         "Structured Paschatkarma (recovery) with specific dietary protocol",
         "Resumption of monthly herbal medicines with adjusted dosing post-Panchakarma"
       ],
@@ -160,7 +160,7 @@ export const pcosProtocol = {
         "Refined herbal medicine protocol",
         "Dietary plan deepened based on response",
         "Specific lifestyle protocols added (sleep optimisation, stress regulation)",
-        "Weekly or fortnightly Shirodhara if stress is a major factor",
+        "Weekly or fortnightly <a href=\"/treatments/shirodhara-dubai/\" class=\"doctor-specialty-link\">Shirodhara</a> if stress is a major factor",
         "First cycle data review (typically 2-3 cycles since starting)"
       ],
       expected: "Meaningful change typically visible — cycle regulation improving, acne and skin texture changes, energy improvements, sometimes weight changes"
@@ -171,7 +171,7 @@ export const pcosProtocol = {
       items: [
         "Continued herbal medicines with phenotype-specific adjustments",
         "Continued dietary protocol with cultural integration",
-        "Possible second short Panchakarma (5-7 days) for complex phenotypes",
+        "Possible second short <a href=\"/treatments/panchakarma-dubai/\" class=\"doctor-specialty-link\">Panchakarma</a> (5-7 days) for complex phenotypes",
         "Ongoing symptom and cycle tracking",
         "Lab work review (if you bring updated hormone panels)"
       ],
@@ -224,7 +224,7 @@ export const pcosSymptoms = {
     },
     {
       title: "Acne and Skin",
-      content: "Hormonal acne is one of the slower-responding symptoms. Initial improvement in skin texture and oiliness often visible by month 2. Significant acne reduction typically emerges months 3-5. Old acne scarring takes longer or requires dermatology integration.",
+      content: "Hormonal acne is one of the slower-responding symptoms. Initial improvement in skin texture and oiliness often visible by month 2. Significant acne reduction typically emerges months 3-5. Old acne scarring takes longer or requires <a href=\"/dermatology-clinic-jvc/\" class=\"doctor-specialty-link\">dermatology</a> integration.",
       expected: "Expected meaningful change: Months 3-5"
     },
     {
@@ -254,7 +254,7 @@ export const pcosFertility = {
     "Many women with PCOS come to Ayurveda specifically because they are trying to conceive. The honest position is this: Ayurvedic treatment cannot replace fertility medicine, but it can meaningfully improve the conditions in which fertility medicine works.",
     "What Ayurvedic treatment for PCOS can realistically do for fertility: improve cycle regularity, support ovulation in some Phenotype B and C patients, reduce insulin resistance that interferes with implantation, address inflammation, and improve overall metabolic health before conception. For many women with mild to moderate PCOS, this is sometimes enough to conceive naturally.",
     "What Ayurvedic treatment cannot do: induce ovulation in patients with severe anovulation, address tubal factors, replace IVF or IUI when fertility specialists indicate them, or guarantee conception. For severe PCOS phenotypes or longer-standing infertility, Ayurveda is most useful alongside a fertility specialist — improving the body's response to treatment rather than replacing it.",
-    "We work with several Dubai fertility clinics for joint patients. Many of our most-successful conception stories involve Ayurvedic preparation for 3-6 months, then IUI or IVF — and the fertility specialist often comments on how responsive the treatment cycle is."
+    "We work with several Dubai <a href=\"/partners/\" class=\"doctor-specialty-link\">fertility clinics</a> for joint patients. Many of our most-successful conception stories involve Ayurvedic preparation for 3-6 months, then IUI or IVF — and the fertility specialist often comments on how responsive the treatment cycle is."
   ],
   buttonText: "Book a Fertility-Focused PCOS Consultation"
 };
@@ -272,7 +272,7 @@ export const pcosBoundaries = {
         "You have not had a recent gynaecological evaluation (Ayurveda complements, does not replace)",
         "You suspect non-PCOS hormonal disorders (Cushing's, thyroid disorders, adrenal hyperplasia, prolactinoma)",
         "You have been bleeding for more than 14 consecutive days (needs urgent evaluation)",
-        "You have severe pelvic pain (needs to rule out endometriosis, fibroids, other pathology)",
+        "You have severe pelvic pain (needs to rule out <a href=\"/conditions/endometriosis-ayurveda-dubai/\" class=\"doctor-specialty-link\">endometriosis</a>, fibroids, other pathology)",
         "You are pregnant or could be pregnant (different protocols entirely)",
         "You have undiagnosed mental health symptoms that need primary attention"
       ]
@@ -285,7 +285,7 @@ export const pcosBoundaries = {
         "You are trying to conceive and using ovulation induction (Ayurvedic preparation improves cycle response)",
         "You have insulin resistance with diabetes risk (Ayurveda alongside endocrinology, not instead)",
         "You are post-bariatric surgery (Ayurvedic support, not primary)",
-        "You have severe acne requiring dermatology (Ayurveda for root, dermatology for active lesions)"
+        "You have severe acne requiring <a href=\"/dermatology-clinic-jvc/\" class=\"doctor-specialty-link\">dermatology</a> (Ayurveda for root, dermatology for active lesions)"
       ]
     }
   ],
@@ -384,7 +384,7 @@ export const pcosFaqs = {
   bgColor: "bg-[#F5F0E8]",
   label: "PCOS QUESTIONS",
   title: "What women ask before starting Ayurvedic PCOS treatment.",
-  description: "For specific treatment details, see the Panchakarma and treatment pages. For women's health blog posts on PCOS, see our journal.",
+  description: "For specific treatment details, see the <a href=\"/treatments/panchakarma-dubai/\" class=\"doctor-specialty-link\">Panchakarma</a> and treatment pages. For women's health blog posts on PCOS, see our journal.",
   buttonText: "Ask the Team",
   faqs: [
     {
@@ -421,7 +421,7 @@ export const pcosFaqs = {
     },
     {
       question: "What is Panchakarma and do I need it for PCOS?",
-      answer: "Panchakarma is the classical Ayurvedic cleansing and rejuvenation protocol. For Classic PCOS (Phenotype A), Virechana-led Panchakarma is strongly recommended — it provides a metabolic reset that diet and herbs alone cannot achieve in the same timeframe. For milder phenotypes (C or D), Panchakarma may not be necessary, and we can focus more on herbs, diet, and stress reduction. Your doctor will recommend whether Panchakarma is right for you at your initial assessment."
+      answer: "<a href=\"/treatments/panchakarma-dubai/\" class=\"doctor-specialty-link\">Panchakarma</a> is the classical Ayurvedic cleansing and rejuvenation protocol. For Classic PCOS (Phenotype A), <a href=\"/treatments/panchakarma-dubai/\" class=\"doctor-specialty-link\">Virechana</a>-led Panchakarma is strongly recommended — it provides a metabolic reset that diet and herbs alone cannot achieve in the same timeframe. For milder phenotypes (C or D), Panchakarma may not be necessary, and we can focus more on herbs, diet, and stress reduction. Read about <a href=\"/treatments/panchakarma-dubai/\" class=\"doctor-specialty-link\">Panchakarma</a> in our guide. Your doctor will recommend whether Panchakarma is right for you at your initial assessment."
     },
     {
       question: "Will Ayurvedic treatment help with PCOS-related weight gain?",

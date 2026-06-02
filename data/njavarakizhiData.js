@@ -1,7 +1,7 @@
 export const njavarakizhiHero = {
   breadcrumb: [
     { label: "Home", href: "/" },
-    { label: "Ayurvedic Treatment in Dubai", href: "/ayurveda-clinic-jvc" },
+    { label: "Ayurvedic Treatment in Dubai", href: "/ayurveda-dubai/" },
     { label: "Njavarakizhi in Dubai", active: true }
   ],
   label: "NJAVARAKIZHI THERAPY IN DUBAI • DHA-LICENSED",
@@ -26,7 +26,7 @@ export const njavarakizhiIntro = {
   bgColor: "bg-[#FFFFFF]",
   label: "THE QUICK ANSWER",
   title: "Njavarakizhi in Dubai, in one paragraph.",
-  blockquote: "Njavarakizhi (नवरकिजी) — known in classical Sanskrit as Shashtika Shali Pinda Sweda — is a specialised Ayurvedic massage therapy performed using small cloth boluses filled with Shashtika rice cooked in herbal medicated milk. The boluses are dipped repeatedly in warm milk and used to massage the body with synchronized strokes for 60 to 75 minutes. At Vedara Care Polyclinic in Jumeirah Village Circle, Dubai, Njavarakizhi is doctor-prescribed by BAMS-qualified physicians for muscle wasting, post-illness recovery, neurological rehabilitation, paralysis support, rheumatoid conditions, and degenerative muscle disorders. Sessions start from AED 480.",
+  blockquote: "Njavarakizhi (नवरకిజీ) — known in classical Sanskrit as Shashtika Shali Pinda Sweda — is a specialised Ayurvedic massage therapy performed using small cloth boluses filled with Shashtika rice cooked in herbal medicated milk. The boluses are dipped repeatedly in warm milk and used to massage the body with synchronized strokes for 60 to 75 minutes. At Vedara Care Polyclinic in Jumeirah Village Circle, Dubai, Njavarakizhi is doctor-prescribed by BAMS-qualified physicians for muscle wasting, post-illness recovery, neurological rehabilitation, paralysis support, rheumatoid conditions, and degenerative muscle disorders. Sessions start from AED 480.",
   footer: "Medically reviewed by Dr. Priya Nair, BAMS, MD (Ayurveda), DHA-Licensed • Last updated May 2026"
 };
 
@@ -36,7 +36,7 @@ export const njavarakizhiMechanism = {
   title: "A therapy from classical Kerala texts, performed in Dubai with the exact rice variety the texts describe.",
   content: [
     "The Sanskrit name Shashtika Shali Pinda Sweda combines three concepts: 'Shashtika' (a specific variety of rice that matures in 60 days), 'Shali' (cultivated rice), 'Pinda' (bolus or tied package), and 'Sweda' (sudation or induced sweating). Together, the name describes the therapy precisely — a sudation treatment using boluses of sixty-day-matured rice. The classical Kerala name Njavarakizhi (also spelled Navarakizhi) names the rice itself: Njavara, the same Shashtika rice described in the classical texts.",
-    "The therapy works on a different principle from Abhyanga or Shirodhara. While therapies penetrate the skin externally, Njavarakizhi works through three mechanisms: the sustained heat from the boluses; the nutritive value of the rice itself (rich in specific amino acids and trace minerals); and the medicated milk that carries the herbs. The rice itself acts as a carrier and an active therapeutic agent in classical texts describe Njavara as one of the most nourishing therapies in Ayurveda — used historically for the most depleted patients: those recovering from severe illness, those with progressive muscle wasting (sarcopenia), those with post-stroke or post-crippling conditions, and those whose tissues need rebuilding rather than just relaxation.",
+    "The therapy works on a different principle from <a href=\"/treatments/abhyanga-dubai/\">Abhyanga</a> or <a href=\"/treatments/shirodhara-dubai/\">Shirodhara</a>. While therapies penetrate the skin externally, Njavarakizhi works through three mechanisms: the sustained heat from the boluses; the nutritive value of the rice itself (rich in specific amino acids and trace minerals); and the medicated milk that carries the herbs. The rice itself acts as a carrier and an active therapeutic agent in classical texts describe Njavara as one of the most nourishing therapies in Ayurveda — used historically for the most depleted patients: those recovering from severe illness, those with progressive muscle wasting (sarcopenia), those with post-stroke or post-crippling conditions, and those whose tissues need rebuilding rather than just relaxation.",
     "\"Most massages take something away — tension, fatigue, toxins. Njavarakizhi gives something back.\""
   ],
   quote: "Most massages take something away — tension, fatigue, toxins. Njavarakizhi gives something back.",
@@ -57,7 +57,7 @@ export const njavarakizhiProtocol = {
     {
       time: "0-15 MIN",
       title: "Phase 2 — Preparatory Abhyanga",
-      content: "Your session begins with a 15-minute full-body Abhyanga using a medicated oil selected to complement the Njavarakizhi protocol. This warm-up is essential — it opens the skin's pores, relaxes the muscles, and prepares the body to receive the sustained heat of the rice boluses. Without this preparation, the rice heat does not penetrate effectively."
+      content: "Your session begins with a 15-minute full-body <a href=\"/treatments/abhyanga-dubai/\">Abhyanga</a> using a medicated oil selected to complement the Njavarakizhi protocol. This warm-up is essential — it opens the skin's pores, relaxes the muscles, and prepares the body to receive the sustained heat of the rice boluses. Without this preparation, the rice heat does not penetrate effectively."
     },
     {
       time: "15-75 MIN",
@@ -82,7 +82,7 @@ export const njavarakizhiOils = {
     {
       name: "Dashamoola-Based Kashayam",
       description: "Anti-inflammatory and tissue-restorative",
-      content: "The most commonly used herbal preparation, based on Dashamoola — the classical 'ten-root' formulation. Used as the base for general Njavarakizhi protocols, particularly for rheumatoid conditions, post-illness recovery in adults, and muscle weakness without specific neurological involvement. Provides anti-inflammatory action alongside the nutritive rice.",
+      content: "The most commonly used herbal preparation, based on Dashamoola — the classical 'ten-root' formulation. Used as the base for general Njavarakizhi protocols, particularly for <a href=\"/conditions/arthritis-ayurveda-dubai/\">rheumatoid conditions</a>, post-illness recovery in adults, and muscle weakness without specific neurological involvement. Provides anti-inflammatory action alongside the nutritive rice.",
       indication: "Rheumatoid conditions, Post-illness recovery, General muscle weakness"
     },
     {
@@ -94,13 +94,13 @@ export const njavarakizhiOils = {
     {
       name: "Mahanarayana-Adjunct Kashayam",
       description: "Neurological recovery support",
-      content: "A specialised preparation used in protocols for post-stroke rehabilitation, certain forms of paralysis (Pakshaghata in Ayurvedic terminology), and post-Bell's-palsy recovery. Combined with internal Ayurvedic medicines and physiotherapy in our integrated neurological recovery programmes. Always in coordination with conventional neurology care.",
+      content: "A specialised preparation used in protocols for <a href=\"/conditions/stroke-recovery-ayurveda-dubai/\">post-stroke rehabilitation</a>, certain forms of paralysis (Pakshaghata in Ayurvedic terminology), and post-Bell's-palsy recovery. Combined with internal Ayurvedic medicines and <a href=\"/physiotherapy-jvc/\">physiotherapy</a> in our integrated neurological recovery programmes. Always in coordination with conventional neurology care.",
       indication: "Post-stroke rehabilitation, Facial paralysis recovery, Neurological recovery"
     },
     {
       name: "Postnatal Sutika-Specific Kashayam",
       description: "For new mothers in classical 45-day care",
-      content: "Within the classical Sutika Paricharya (postnatal Ayurvedic care) protocols, Njavarakizhi is sometimes prescribed in the third or fourth week postpartum for new mothers experiencing significant post-delivery weakness, particularly after caesarean recovery or prolonged labour. The herbal milk is specifically formulated for postpartum tissue restoration.",
+      content: "Within the classical <a href=\"/conditions/postnatal-care-ayurveda-dubai/\">Sutika Paricharya</a> (postnatal Ayurvedic care) protocols, Njavarakizhi is sometimes prescribed in the third or fourth week postpartum for new mothers experiencing significant post-delivery weakness, particularly after caesarean recovery or prolonged labour. The herbal milk is specifically formulated for postpartum tissue restoration.",
       indication: "Postpartum recovery, Post-caesarean rehabilitation, Postnatal weakness"
     }
   ],
@@ -123,7 +123,7 @@ export const njavarakizhiApplications = {
       subtitle: "Typical course: 14 sessions over 4–6 weeks"
     },
     {
-      title: "Post-stroke rehabilitation (part of integrated programme)",
+      title: "<a href=\"/conditions/stroke-recovery-ayurveda-dubai/\">Post-stroke rehabilitation</a> (part of integrated programme)",
       subtitle: "Typical course: 21–30 sessions"
     },
     {
@@ -131,7 +131,7 @@ export const njavarakizhiApplications = {
       subtitle: "Typical course: 14 sessions"
     },
     {
-      title: "Rheumatoid arthritis (with internal Ayurvedic medicines and conventional care)",
+      title: "<a href=\"/conditions/arthritis-ayurveda-dubai/\">Rheumatoid arthritis</a> (with internal Ayurvedic medicines and conventional care)",
       subtitle: "Typical course: 14–21 sessions"
     },
     {
@@ -143,22 +143,22 @@ export const njavarakizhiApplications = {
       subtitle: "Typical course: 14 sessions"
     },
     {
-      title: "Specific postpartum protocols (within Sutika Paricharya)",
+      title: "Specific postpartum protocols (within <a href=\"/conditions/postnatal-care-ayurveda-dubai/\">Sutika Paricharya</a>)",
       subtitle: "Typical course: 7–14 sessions"
     }
   ],
   honestLimitsList: [
     {
       title: "General relaxation and stress",
-      subtitle: "Abhyanga is better and more cost-effective"
+      subtitle: "<a href=\"/treatments/abhyanga-dubai/\">Abhyanga</a> is better and more cost-effective"
     },
     {
       title: "Insomnia and anxiety",
-      subtitle: "Shirodhara is the targeted therapy"
+      subtitle: "<a href=\"/treatments/shirodhara-dubai/\">Shirodhara</a> is the targeted therapy"
     },
     {
-      title: "Chronic back pain",
-      subtitle: "Kativasti is more focused"
+      title: "<a href=\"/conditions/back-pain-ayurveda-dubai/\">Chronic back pain</a>",
+      subtitle: "<a href=\"/treatments/kativasti-dubai/\">Kativasti</a> is more focused"
     },
     {
       title: "Weight management",
@@ -184,7 +184,7 @@ export const njavarakizhiBenefits = {
   benefitGroups: [
     {
       title: "Patients Recovering from Severe Illness",
-      description: "After prolonged hospitalisation, severe dengue, post-COVID weakness, or any condition involving significant muscle deconditioning, Njavarakizhi accelerates tissue recovery in ways that diet and physiotherapy alone cannot. The combination of moist heat, nutritive rice, and medicated milk supports protein synthesis and tissue rebuilding when the body is in a depleted state.",
+      description: "After prolonged hospitalisation, severe dengue, post-COVID weakness, or any condition involving significant muscle deconditioning, Njavarakizhi accelerates tissue recovery in ways that diet and <a href=\"/physiotherapy-jvc/\">physiotherapy</a> alone cannot. The combination of moist heat, nutritive rice, and medicated milk supports protein synthesis and tissue rebuilding when the body is in a depleted state.",
       benefits: [
         "Restores muscle bulk and strength",
         "Improves appetite and digestive capacity",
@@ -202,7 +202,7 @@ export const njavarakizhiBenefits = {
     },
     {
       title: "Patients in Neurological Recovery",
-      description: "For post-stroke patients, those recovering from Bell's palsy, and others in neurological rehabilitation, Njavarakizhi is used alongside conventional physiotherapy and neurology care. It does not replace medical management — but it consistently supports muscle tone recovery, tissue health, and patient quality-of-life during long rehabilitation periods.",
+      description: "For <a href=\"/conditions/stroke-recovery-ayurveda-dubai/\">post-stroke</a> patients, those recovering from Bell's palsy, and others in neurological rehabilitation, Njavarakizhi is used alongside conventional <a href=\"/physiotherapy-jvc/\">physiotherapy</a> and neurology care. It does not replace medical management — but it consistently supports muscle tone recovery, tissue health, and patient quality-of-life during long rehabilitation periods.",
       benefits: [
         "Supports motor recovery alongside physiotherapy",
         "Improves circulation in affected limbs",
@@ -210,15 +210,15 @@ export const njavarakizhiBenefits = {
       ]
     }
   ],
-  footer: "All three groups are also candidates for our home healthcare services — Njavarakizhi at home is one of our most-requested specialised therapies for elderly and post-illness patients across Dubai."
+  footer: "All three groups are also candidates for our <a href=\"/home-healthcare-dubai/\">home healthcare services</a> — <a href=\"/home-healthcare-dubai/\">home Njavarakizhi</a> is one of our most-requested specialised therapies for elderly and post-illness patients across Dubai."
 };
 
 export const njavarakizhiHomeHealthcare = {
   bgColor: "bg-[#F5F0E8]",
   label: "HOME HEALTHCARE",
   title: "For our elderly and post-illness patients, home Njavarakizhi changes outcomes.",
-  description: "Njavarakizhi is the home therapy our clinic most consistently recommends — because the patients who benefit most from it are often the patients who cannot easily travel.",
-  quote: "For elderly patients with mobility limitations, post-illness patients with significant fatigue, and post-stroke patients in rehabilitation, the clinical reality is that consistent treatment matters more than the venue. A patient who manages 7 of 14 prescribed clinic sessions due to fatigue gets a worse outcome than one who completes all 14 sessions at home.",
+  description: "Njavarakizhi is the <a href=\"/home-healthcare-dubai/\">home therapy</a> our clinic most consistently recommends — because the patients who benefit most from it are often the patients who cannot easily travel.",
+  quote: "For elderly patients with mobility limitations, post-illness patients with significant fatigue, and <a href=\"/conditions/stroke-recovery-ayurveda-dubai/\">post-stroke</a> patients in rehabilitation, the clinical reality is that consistent treatment matters more than the venue. A patient who manages 7 of 14 prescribed clinic sessions due to fatigue gets a worse outcome than one who completes all 14 sessions at home.",
   image: "https://images.unsplash.com/photo-1607619056574-7b8d3ee536b2?w=700&h=875&fit=crop&auto=format",
   imageAlt: "Ayurvedic therapist at a Dubai home for home Njavarakizhi service — carrying traditional herbal supplies",
   features: [
@@ -241,7 +241,7 @@ export const njavarakizhiPrograms = {
       duration: "7 sessions · 2-3 weeks",
       features: [
         "Initial doctor consultation included",
-        "7 Njavarakizhi sessions with preparatory Abhyanga",
+        "7 Njavarakizhi sessions with preparatory <a href=\"/treatments/abhyanga-dubai/\">Abhyanga</a>",
         "Doctor-selected kashayam preparation",
         "Authentic Shashtika Njavara rice",
         "4-week follow-up to assess response"
@@ -262,7 +262,7 @@ export const njavarakizhiPrograms = {
         "Two doctor reviews (Sessions 5 and 10)",
         "8-week follow-up programme"
       ],
-      bestFor: "Post-illness recovery, sarcopenia, rheumatoid conditions, post-immobilisation rehabilitation",
+      bestFor: "Post-illness recovery, sarcopenia, <a href=\"/conditions/arthritis-ayurveda-dubai/\">rheumatoid conditions</a>, post-immobilisation rehabilitation",
       buttonText: "Enquire on WhatsApp"
     },
     {
@@ -272,17 +272,17 @@ export const njavarakizhiPrograms = {
       features: [
         "Full clinical assessment with treatment team",
         "21-30 Njavarakizhi sessions",
-        "Combined with Abhyanga and other therapies as indicated",
+        "Combined with <a href=\"/treatments/abhyanga-dubai/\">Abhyanga</a> and other therapies as indicated",
         "Comprehensive internal Ayurvedic medicines",
         "Dietary and lifestyle protocol",
         "Three doctor reviews through programme",
         "12-week follow-up support"
       ],
-      bestFor: "Post-stroke rehabilitation, severe muscle wasting, complex neurological recovery, integrated long-term care",
+      bestFor: "<a href=\"/conditions/stroke-recovery-ayurveda-dubai/\">Post-stroke rehabilitation</a>, severe muscle wasting, complex neurological recovery, integrated long-term care",
       buttonText: "Enquire on WhatsApp"
     }
   ],
-  footer: "All programmes can be combined with home healthcare services for patients who cannot easily travel to the clinic. Pricing adjusted for home delivery. Insurance direct-billing available with seven major insurers — coverage for specialised restorative care varies by plan.",
+  footer: "All programmes can be combined with <a href=\"/home-healthcare-dubai/\">home healthcare services</a> for patients who cannot easily travel to the clinic. Pricing adjusted for home delivery. Insurance direct-billing available with seven major insurers — coverage for specialised restorative care varies by plan.",
   image: "https://images.unsplash.com/photo-1576091160399-112ba8d25d1d?w=800"
 };
 
@@ -304,7 +304,7 @@ export const njavarakizhiReviews = {
     {
       quote: "Eighteen months after my stroke, the Njavarakizhi sessions are the part of my recovery I will not skip.",
       author: "Rahul D.",
-      details: "Post-Stroke Rehabilitation · Ongoing Programme · Vedara Care JVC, March 2026"
+      details: "<a href=\"/conditions/stroke-recovery-ayurveda-dubai/\">Post-Stroke Rehabilitation</a> · Ongoing Programme · Vedara Care JVC, March 2026"
     }
   ],
   stats: [
@@ -319,7 +319,7 @@ export const njavarakizhiFaqs = {
   bgColor: "bg-white",
   label: "NJAVARAKIZHI QUESTIONS",
   title: "What patients ask before considering Njavarakizhi.",
-  description: "For broader Ayurvedic treatment options, see our category page. For comparison with other massages, see our massage guide.",
+  description: "For broader Ayurvedic treatment options, see our <a href=\"/ayurveda-dubai/\">category page</a>. For comparison with other massages, see our <a href=\"/treatments/ayurvedic-massage-jvc/\">massage guide</a>.",
   buttonText: "Ask the Team",
   faqs: [
     {
@@ -336,19 +336,19 @@ export const njavarakizhiFaqs = {
     },
     {
       question: "How long does a Njavarakizhi session take?",
-      answer: "A complete Njavarakizhi at Vedara Care runs 60 to 75 minutes of main therapy, preceded by 15 minutes of preparatory Abhyanga and followed by 10–15 minutes of recovery time. Total clinic time is approximately 90 to 105 minutes. Note that the rice and milk preparation takes 90 minutes before your arrival — which is why Njavarakizhi requires advance booking, not walk-in scheduling."
+      answer: "A complete Njavarakizhi at Vedara Care runs 60 to 75 minutes of main therapy, preceded by 15 minutes of preparatory <a href=\"/treatments/abhyanga-dubai/\">Abhyanga</a> and followed by 10–15 minutes of recovery time. Total clinic time is approximately 90 to 105 minutes. Note that the rice and milk preparation takes 90 minutes before your arrival — which is why Njavarakizhi requires advance booking, not walk-in scheduling."
     },
     {
       question: "How much does Njavarakizhi cost in Dubai?",
-      answer: "At Vedara Care, single-session Njavarakizhi starts from AED 480 — higher than Abhyanga or Shirodhara because of the cost of authentic Njavara rice and the longer preparation. A 7-session trial course starts from AED 2,950. A 14-session clinical restorative course starts from AED 5,600. A 21–30 session intensive programme starts from AED 7,800. Across Dubai, authentic Njavarakizhi typically ranges from AED 500 to AED 900 per session."
+      answer: "At Vedara Care, single-session Njavarakizhi starts from AED 480 — higher than <a href=\"/treatments/abhyanga-dubai/\">Abhyanga</a> or <a href=\"/treatments/shirodhara-dubai/\">Shirodhara</a> because of the cost of authentic Njavara rice and the longer preparation. A 7-session trial course starts from AED 2,950. A 14-session clinical restorative course starts from AED 5,600. A 21–30 session intensive programme starts from AED 7,800. Across Dubai, authentic Njavarakizhi typically ranges from AED 500 to AED 900 per session."
     },
     {
       question: "Who is Njavarakizhi actually for?",
-      answer: "Njavarakizhi is most clinically appropriate for: patients recovering from severe or prolonged illness (post-dengue, post-COVID, post-hospitalisation), elderly patients with sarcopenia or frailty, patients in neurological rehabilitation (post-stroke, Bell's palsy, certain paralysis conditions), patients with rheumatoid conditions, and certain postpartum protocols. It is not the right therapy for general relaxation, stress, or insomnia — Abhyanga or Shirodhara are better choices for those."
+      answer: "Njavarakizhi is most clinically appropriate for: patients recovering from severe or prolonged illness (post-dengue, post-COVID, post-hospitalisation), elderly patients with sarcopenia or frailty, patients in neurological rehabilitation (<a href=\"/conditions/stroke-recovery-ayurveda-dubai/\">post-stroke</a>, Bell's palsy, certain paralysis conditions), patients with <a href=\"/conditions/arthritis-ayurveda-dubai/\">rheumatoid conditions</a>, and certain postpartum protocols. It is not the right therapy for general relaxation, stress, or insomnia — <a href=\"/treatments/abhyanga-dubai/\">Abhyanga</a> or <a href=\"/treatments/shirodhara-dubai/\">Shirodhara</a> are better choices for those."
     },
     {
       question: "How is Njavarakizhi different from Abhyanga?",
-      answer: "Abhyanga uses warm medicated oil applied with hands; Njavarakizhi uses warm rice boluses dipped in medicated milk. Abhyanga primarily detoxifies, relaxes, and balances doshas; Njavarakizhi primarily nourishes, restores, and rebuilds tissues. Abhyanga is appropriate for nearly all adults; Njavarakizhi has specific clinical indications. Abhyanga is typically prescribed for general wellbeing; Njavarakizhi is typically prescribed for specific recovery or restoration needs."
+      answer: "<a href=\"/treatments/abhyanga-dubai/\">Abhyanga</a> uses warm medicated oil applied with hands; Njavarakizhi uses warm rice boluses dipped in medicated milk. Abhyanga primarily detoxifies, relaxes, and balances doshas; Njavarakizhi primarily nourishes, restores, and rebuilds tissues. Abhyanga is appropriate for nearly all adults; Njavarakizhi has specific clinical indications. Abhyanga is typically prescribed for general wellbeing; Njavarakizhi is typically prescribed for specific recovery or restoration needs."
     },
     {
       question: "How many Njavarakizhi sessions do I need?",
@@ -360,19 +360,19 @@ export const njavarakizhiFaqs = {
     },
     {
       question: "Can elderly patients have Njavarakizhi?",
-      answer: "Yes — elderly patients are one of the primary groups who benefit most from Njavarakizhi. We routinely offer it for patients in their 70s, 80s, and beyond, particularly for sarcopenia and post-illness recovery. For very elderly or frail patients, we modify the protocol — shorter sessions (45 minutes instead of 60), lighter pressure, and often delivered as home service to reduce travel stress."
+      answer: "Yes — elderly patients are one of the primary groups who benefit most from Njavarakizhi. We routinely offer it for patients in their 70s, 80s, and beyond, particularly for sarcopenia and post-illness recovery. For very elderly or frail patients, we modify the protocol — shorter sessions (45 minutes instead of 60), lighter pressure, and often delivered as <a href=\"/home-healthcare-dubai/\">home service</a> to reduce travel stress."
     },
     {
       question: "Can I have Njavarakizhi during pregnancy?",
-      answer: "Classical Njavarakizhi is not performed during pregnancy because of the sustained moist heat and the body positions required. For pregnancy-related muscle weakness or fatigue, we offer modified Ayurvedic protocols. Postnatal Njavarakizhi is offered after the standard recovery period and is one of the protocols within classical Sutika Paricharya for specific postpartum cases."
+      answer: "Classical Njavarakizhi is not performed during pregnancy because of the sustained moist heat and the body positions required. For pregnancy-related muscle weakness or fatigue, we offer modified Ayurvedic protocols. Postnatal Njavarakizhi is offered after the standard recovery period and is one of the protocols within classical <a href=\"/conditions/postnatal-care-ayurveda-dubai/\">Sutika Paricharya</a> for specific postpartum cases."
     },
     {
       question: "Where exactly is your Njavarakizhi clinic in Dubai?",
-      answer: "Our clinic is in Jumeirah Village Circle (JVC), Dubai — next to Circle Mall, three minutes from FIVE Jumeirah Village Hotel, and five minutes from JSS Private School. Free patient parking is available. We also offer home Njavarakizhi service across Dubai — particularly common for elderly and post-illness patients in JVC, JVT, Al Barsha, Dubai Marina, Downtown, and Palm Jumeirah."
+      answer: "Our clinic is in Jumeirah Village Circle (JVC), Dubai — next to Circle Mall, three minutes from FIVE Jumeirah Village Hotel, and five minutes from JSS Private School. Free patient parking is available. We also offer <a href=\"/home-healthcare-dubai/\">home Njavarakizhi</a> service across Dubai — particularly common for elderly and post-illness patients in JVC, JVT, Al Barsha, Dubai Marina, Downtown, and Palm Jumeirah."
     },
     {
       question: "Do you offer home Njavarakizhi in Dubai?",
-      answer: "Yes. Home Njavarakizhi is one of our most-requested specialised services for elderly patients, post-illness convalescents, and post-stroke rehabilitation patients. Two trained therapists travel to your home with freshly prepared Njavara rice (cooked at the clinic and transported warm), the herbal milk vessel, and all required equipment. Pricing is higher than in-clinic to cover preparation and travel, but for many patients home delivery is what makes the full course actually possible."
+      answer: "Yes. <a href=\"/home-healthcare-dubai/\">Home Njavarakizhi</a> is one of our most-requested specialised services for elderly patients, post-illness convalescents, and <a href=\"/conditions/stroke-recovery-ayurveda-dubai/\">post-stroke</a> rehabilitation patients. Two trained therapists travel to your home with freshly prepared Njavara rice (cooked at the clinic and transported warm), the herbal milk vessel, and all required equipment. Pricing is higher than in-clinic to cover preparation and travel, but for many patients home delivery is what makes the full course actually possible."
     },
     {
       question: "How do I book Njavarakizhi at your clinic?",

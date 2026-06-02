@@ -309,12 +309,12 @@ export const panchakarmaJVCBenefits = {
  export const kativastiHero = {
   breadcrumb: [
     { label: "Home", href: "/" },
-    { label: "Ayurvedic Treatment in Dubai", href: "/ayurveda-clinic-jvc" },
+    { label: "Ayurvedic Treatment in Dubai", href: "/ayurveda-dubai/" },
     { label: "Kativasti in Dubai", active: true }
   ],
   label: "KATIVASTI FOR LOWER BACK PAIN • DHA-LICENSED",
   title: "A reservoir of warm medicated oil, held over the spine. The most targeted Ayurvedic therapy for chronic back pain.",
-  description: "Classical Kativasti — a precise localised oil therapy where warm medicated oil is held over the lumbar spine in a custom dough reservoir for 30 to 45 minutes. Doctor-prescribed at our DHA-licensed Ayurveda clinic in JVC, Dubai, for chronic back pain, sciatica, and lumbar disc conditions.",
+  description: "Classical Kativasti — a precise localised oil therapy where warm medicated oil is held over the lumbar spine in a custom dough reservoir for 30 to 45 minutes. Doctor-prescribed at our DHA-licensed Ayurveda clinic in JVC, Dubai, for <a href='/conditions/back-pain-ayurveda-dubai/' class=' hover:underline'>chronic back pain</a>, <a href='/conditions/sciatica-ayurveda-dubai/' class=' hover:underline'>sciatica</a>, and lumbar disc conditions.",
   primaryCTA: "Book a Kativasti Consultation",
   secondaryCTA: "Chat on WhatsApp",
   trustSignals: [
@@ -335,7 +335,7 @@ export const kativastiIntro = {
   bgColor: "bg-[#FFFFFF]",
   label: "THE QUICK ANSWER",
   title: "Kativasti in Dubai, in one paragraph.",
-  blockquote: "Kativasti (कटिवस्ति) is a classical Ayurvedic therapy in which warm medicated oil is contained over the lumbar spine using a custom-shaped wheat-flour dough reservoir, held in place for 30 to 45 minutes per session. At Vedara Care Polyclinic in Jumeirah Village Circle, Dubai, Kativasti is doctor-prescribed by BAMS-qualified physicians for chronic lower back pain, sciatica, lumbar disc issues, and spinal stiffness — typically as a 7 or 14-session course alongside internal Ayurvedic medicines and integrated physiotherapy. Sessions start from AED 450.",
+  blockquote: "Kativasti (कटिवस्ति) is a classical Ayurvedic therapy in which warm medicated oil is contained over the lumbar spine using a custom-shaped wheat-flour dough reservoir, held in place for 30 to 45 minutes per session. At Vedara Care Polyclinic in Jumeirah Village Circle, Dubai, Kativasti is doctor-prescribed by BAMS-qualified physicians for <a href='/conditions/back-pain-ayurveda-dubai/' class='text-[#C9A961] hover:underline'>chronic lower back pain</a>, <a href='/conditions/sciatica-ayurveda-dubai/' class='text-[#C9A961] hover:underline'>sciatica</a>, lumbar disc issues, and spinal stiffness — typically as a 7 or 14-session course alongside internal Ayurvedic medicines and integrated <a href='/physiotherapy-jvc/' class='text-[#C9A961] hover:underline'>physiotherapy</a>. Sessions start from AED 450.",
   footer: "Medically reviewed by Dr. [Lead Ayurvedic Physician], BAMS, MD (Ayurveda), DHA-Licensed • Last updated May 2026"
 };
 
@@ -391,13 +391,13 @@ export const kativastiOils = {
     {
       name: "Mahanarayana Taila",
       description: "Heavy Vata pacification, deep penetration",
-      content: "The most-prescribed oil for Kativasti at our JVC clinic. A heavy, deeply warming sesame-based preparation medicated with classical herbs including Bala, Ashwagandha, and Dashamoola. Used for chronic mechanical back pain, age-related degeneration, post-exertional lumbar pain, and Vata-pattern stiffness. Provides both immediate warmth and sustained anti-inflammatory action.",
+      content: "The most-prescribed oil for Kativasti at our JVC clinic. A heavy, deeply warming sesame-based preparation medicated with classical herbs including Bala, Ashwagandha, and Dashamoola. Used for <a href='/conditions/back-pain-ayurveda-dubai/' class='text-[#C9A961] hover:underline'>chronic mechanical back pain</a>, age-related degeneration, post-exertional lumbar pain, and Vata-pattern stiffness. Provides both immediate warmth and sustained anti-inflammatory action.",
       indication: " chronic back pain, lumbar stiffness, post-exertional pain"
     },
     {
       name: "Sahacharadi Taila",
       description: "Targeted for nerve-related lumbar pain",
-      content: "A specialised preparation with Sahachara (Barleria prionitis) and supporting herbs, particularly effective for nerve-involvement pain patterns including sciatica, radiculopathy, and disc-related radiating pain. Often the oil of choice when pain radiates down the leg.",
+      content: "A specialised preparation with Sahachara (Barleria prionitis) and supporting herbs, particularly effective for nerve-involvement pain patterns including <a href='/conditions/sciatica-ayurveda-dubai/' class='text-[#C9A961] hover:underline'>sciatica</a>, radiculopathy, and disc-related radiating pain. Often the oil of choice when pain radiates down the leg.",
       indication: " sciatica, radiating leg pain, disc-related pain"
     },
     {
@@ -422,13 +422,13 @@ export const kativastiApplications = {
   title: "What Kativasti actually treats — and how it integrates with conventional care.",
   description: "Kativasti is most effective for mechanical and chronic lumbar pain. Honest guidance on what it does and what it does not.",
   primaryApplications: [
-    "Chronic mechanical lower back pain — Typical course: 7-14 sessions over 2-4 weeks",
-    "Sciatica (lumbar nerve root pain) — Typical course: 14 sessions over 4-6 weeks with Sahacharadi",
+    "<a href='/conditions/back-pain-ayurveda-dubai/' class='text-[#C9A961] hover:underline'>Chronic mechanical lower back pain</a> — Typical course: 7-14 sessions over 2-4 weeks",
+    "<a href='/conditions/sciatica-ayurveda-dubai/' class='text-[#C9A961] hover:underline'>Sciatica</a> (lumbar nerve root pain) — Typical course: 14 sessions over 4-6 weeks with Sahacharadi",
     "Lumbar disc bulge (non-surgical) — Typical course: 14-21 sessions over 6-10 weeks",
-    "Spondylosis (degenerative changes) — Typical course: 14 sessions, often repeated annually",
+    "<a href='/conditions/spondylosis-ayurveda-dubai/' class='text-[#C9A961] hover:underline'>Spondylosis</a> (degenerative changes) — Typical course: 14 sessions, often repeated annually",
     "Sacroiliac joint dysfunction — Typical course: 7-10 sessions",
     "Post-exercise lumbar stiffness — Typical course: 5-7 sessions",
-    "Postpartum back pain — Typical course: 7-14 sessions (as part of Sutika Paricharya)",
+    "<a href='/conditions/postnatal-care-ayurveda-dubai/' class='text-[#C9A961] hover:underline'>Postpartum back pain</a> — Typical course: 7-14 sessions (as part of Sutika Paricharya)",
     "Lumbar muscle spasm (chronic) — Typical course: 5-7 sessions"
   ],
   honestLimits: {
@@ -450,8 +450,8 @@ export const kativastiIntegration = {
   label: "INTEGRATED CARE AT VEDARA",
   title: "Why our back pain patients often combine Kativasti with physiotherapy.",
   paragraphs: [
-    "For chronic mechanical back pain, the strongest outcomes at our Vedara Care JVC clinic come from combining Kativasti with structured physiotherapy. The two therapies work on different mechanisms — Kativasti addresses tissue quality, inflammation, and Vata imbalance; physiotherapy addresses biomechanics, postural patterns, and motor control.",
-    "Our Ayurvedic doctors and physiotherapists share treatment notes for joint patients. A typical integrated plan combines 2-3 Kativasti sessions per week with 2 physiotherapy sessions per week for 4-6 weeks — booked at the same clinic, often on alternating days."
+    "For <a href='/conditions/back-pain-ayurveda-dubai/' class='text-[#C9A961] hover:underline'>chronic mechanical back pain</a>, the strongest outcomes at our Vedara Care JVC clinic come from combining Kativasti with structured <a href='/physiotherapy-jvc/' class='text-[#C9A961] hover:underline'>physiotherapy</a>. The two therapies work on different mechanisms — Kativasti addresses tissue quality, inflammation, and Vata imbalance; physiotherapy addresses biomechanics, postural patterns, and motor control.",
+    "Our Ayurvedic doctors and <a href='/physiotherapy-jvc/' class='text-[#C9A961] hover:underline'>physiotherapists</a> share treatment notes for joint patients. A typical integrated plan combines 2-3 Kativasti sessions per week with 2 <a href='/physiotherapy-jvc/' class='text-[#C9A961] hover:underline'>physiotherapy sessions</a> per week for 4-6 weeks — booked at the same clinic, often on alternating days."
   ],
   image: "https://images.unsplash.com/photo-1731597076108-f3bbe268162f?w=600",
   features: [
@@ -461,7 +461,8 @@ export const kativastiIntegration = {
     "Ayurvedic doctor adjusts oils based on physiotherapy progress"
   ],
   button1Text: "Book Joint Consultation",
-  button2Text: "Read about Physiotherapy in JVC →"
+  button2Text: "Read about Physiotherapy in JVC →",
+  button2Link: "/physiotherapy-jvc/"
 };
 
 export const kativastiPrograms = {
@@ -497,7 +498,7 @@ export const kativastiPrograms = {
         "Mid-course and end-of-course reviews",
         "8-week follow-up protocol"
       ],
-      bestFor: "Chronic mechanical back pain, sciatica, spondylosis, persistent lumbar stiffness",
+      bestFor: "<a href='/conditions/back-pain-ayurveda-dubai/' class='text-[#C9A961] hover:underline'>Chronic mechanical back pain</a>, <a href='/conditions/sciatica-ayurveda-dubai/' class='text-[#C9A961] hover:underline'>sciatica</a>, <a href='/conditions/spondylosis-ayurveda-dubai/' class='text-[#C9A961] hover:underline'>spondylosis</a>, persistent lumbar stiffness",
       buttonText: "Enquire on WhatsApp"
     },
     {
@@ -506,7 +507,7 @@ export const kativastiPrograms = {
       duration: "14-21 days · Multi-therapy",
       features: [
         "Joint Ayurveda + physiotherapy assessment",
-        "14 Kativasti sessions plus weekly Abhyanga",
+        "14 Kativasti sessions plus weekly <a href='/treatments/abhyanga-dubai/' class='text-[#C9A961] hover:underline'>Abhyanga</a>",
         "8-10 physiotherapy sessions",
         "Internal Ayurvedic medicines included",
         "Comprehensive lifestyle and ergonomic guidance",
@@ -553,12 +554,12 @@ export const kativastiFaqs = {
   bgColor: "bg-white",
   label: "KATIVASTI QUESTIONS",
   title: "What patients ask before booking Kativasti.",
-  description: "For broader back pain treatment options, see our condition page. For comparison with other Ayurvedic massages, see our category guide.",
+  description: "For broader back pain treatment options, see <a href='/conditions/back-pain-ayurveda-dubai/' class='text-[#C9A961] hover:underline'>Read about back pain treatment</a>. For comparison with other Ayurvedic massages, see <a href='/treatments/ayurvedic-massage-jvc/' class='text-[#C9A961] hover:underline'>Compare Ayurvedic therapies</a>.",
   buttonText: "Ask the Team",
   faqs: [
     {
       question: "What is Kativasti in simple terms?",
-      answer: "Kativasti is a targeted Ayurvedic therapy for chronic lower back pain in which warm medicated oil is contained over the lumbar spine in a custom dough ring for 30 to 45 minutes per session. The continuous warmth and the medicated oil work together to relieve pain, reduce inflammation, and improve tissue quality in the lumbar region. It is one of the most clinically validated Ayurvedic treatments for mechanical back pain."
+      answer: "Kativasti is a targeted Ayurvedic therapy for <a href='/conditions/back-pain-ayurveda-dubai/' class='text-[#C9A961] hover:underline'>chronic lower back pain</a> in which warm medicated oil is contained over the lumbar spine in a custom dough ring for 30 to 45 minutes per session. The continuous warmth and the medicated oil work together to relieve pain, reduce inflammation, and improve tissue quality in the lumbar region. It is one of the most clinically validated Ayurvedic treatments for mechanical back pain."
     },
     {
       question: "How long does a Kativasti session take?",
@@ -566,27 +567,27 @@ export const kativastiFaqs = {
     },
     {
       question: "How much does Kativasti cost in Dubai?",
-      answer: "At Vedara Care, single-session Kativasti starts from AED 450. A 7-session course starts from AED 2,850 (10-15% per-session discount). A 14-session chronic pain course starts from AED 5,400 (15-20% per-session discount). An integrated spine care programme combining Kativasti, Abhyanga, and physiotherapy starts from AED 8,900. Across Dubai, authentic Kativasti typically ranges from AED 350 to AED 700 per session."
+      answer: "At Vedara Care, single-session Kativasti starts from AED 450. A 7-session course starts from AED 2,850 (10-15% per-session discount). A 14-session chronic pain course starts from AED 5,400 (15-20% per-session discount). An integrated spine care programme combining Kativasti, <a href='/treatments/abhyanga-dubai/' class='text-[#C9A961] hover:underline'>Abhyanga</a>, and <a href='/physiotherapy-jvc/' class='text-[#C9A961] hover:underline'>physiotherapy</a> starts from AED 8,900. Across Dubai, authentic Kativasti typically ranges from AED 350 to AED 700 per session."
     },
     {
       question: "Does Kativasti actually work for back pain?",
-      answer: "For mechanical chronic back pain, yes — most patients report significant pain reduction within 4-6 sessions, with maximum benefit typically achieved over 14 sessions. Published research and clinical studies on Kativasti for lumbar pain have documented reductions in pain scores (VAS), improvements in lumbar range of motion, and quality-of-life improvements comparable to or better than NSAID-only approaches. It is less effective for nerve compression conditions like severe disc herniation with neurological signs — those typically need conventional workup first."
+      answer: "For mechanical <a href='/conditions/back-pain-ayurveda-dubai/' class='text-[#C9A961] hover:underline'>chronic back pain</a>, yes — most patients report significant pain reduction within 4-6 sessions, with maximum benefit typically achieved over 14 sessions. Published research and clinical studies on Kativasti for lumbar pain have documented reductions in pain scores (VAS), improvements in lumbar range of motion, and quality-of-life improvements comparable to or better than NSAID-only approaches. It is less effective for nerve compression conditions like severe disc herniation with neurological signs — those typically need conventional workup first."
     },
     {
       question: "How many Kativasti sessions do I need?",
-      answer: "For acute strains and post-exertional pain, 5-7 sessions over 1-2 weeks is usually sufficient. For chronic mechanical back pain, 14 sessions over 4-6 weeks is the standard protocol. For sciatica or disc-related conditions, 14-21 sessions over 6-10 weeks. Most patients benefit from session frequency of 2-3 per week rather than daily."
+      answer: "For acute strains and post-exertional pain, 5-7 sessions over 1-2 weeks is usually sufficient. For <a href='/conditions/back-pain-ayurveda-dubai/' class='text-[#C9A961] hover:underline'>chronic mechanical back pain</a>, 14 sessions over 4-6 weeks is the standard protocol. For <a href='/conditions/sciatica-ayurveda-dubai/' class='text-[#C9A961] hover:underline'>sciatica</a> or disc-related conditions, 14-21 sessions over 6-10 weeks. Most patients benefit from session frequency of 2-3 per week rather than daily."
     },
     {
       question: "What oil will be used in my Kativasti?",
-      answer: "Oil selection depends on your specific condition. Common options at Vedara Care include Mahanarayana Taila (for chronic mechanical pain — the most-prescribed), Sahacharadi Taila (for sciatica and nerve-related pain), Pinda Taila (for inflammatory back pain), and Murivenna (for sports injuries and acute trauma). Your doctor will explain the selection after assessment."
+      answer: "Oil selection depends on your specific condition. Common options at Vedara Care include Mahanarayana Taila (for <a href='/conditions/back-pain-ayurveda-dubai/' class='text-[#C9A961] hover:underline'>chronic mechanical pain</a> — the most-prescribed), Sahacharadi Taila (for <a href='/conditions/sciatica-ayurveda-dubai/' class='text-[#C9A961] hover:underline'>sciatica</a> and nerve-related pain), Pinda Taila (for inflammatory back pain), and Murivenna (for sports injuries and acute trauma). Your doctor will explain the selection after assessment."
     },
     {
       question: "Can I combine Kativasti with physiotherapy?",
-      answer: "Yes, and we strongly recommend it for chronic pain. At Vedara Care, our Ayurvedic doctors and physiotherapists work jointly for back pain patients. A typical integrated plan combines 2-3 Kativasti sessions per week with 2 physiotherapy sessions per week. We schedule the two therapies so they support rather than conflict — for example, no heavy physiotherapy on Kativasti days."
+      answer: "Yes, and we strongly recommend it for chronic pain. At Vedara Care, our Ayurvedic doctors and <a href='/physiotherapy-jvc/' class='text-[#C9A961] hover:underline'>physiotherapists</a> work jointly for back pain patients. A typical integrated plan combines 2-3 Kativasti sessions per week with 2 <a href='/physiotherapy-jvc/' class='text-[#C9A961] hover:underline'>physiotherapy sessions</a> per week. We schedule the two therapies so they support rather than conflict — for example, no heavy physiotherapy on Kativasti days."
     },
     {
       question: "Is Kativasti safe during pregnancy?",
-      answer: "Classical Kativasti is not performed during pregnancy. The position and the sustained heat over the lower back are not recommended for pregnant patients. For pregnancy-related back pain, we offer modified Ayurvedic protocols including gentle Abhyanga and specific positional therapies. Postpartum Kativasti is offered after the standard 45-day recovery period."
+      answer: "Classical Kativasti is not performed during pregnancy. The position and the sustained heat over the lower back are not recommended for pregnant patients. For pregnancy-related back pain, we offer modified Ayurvedic protocols including gentle <a href='/treatments/abhyanga-dubai/' class='text-[#C9A961] hover:underline'>Abhyanga</a> and specific positional therapies. Postpartum Kativasti is offered after the standard 45-day recovery period — see our <a href='/conditions/postnatal-care-ayurveda-dubai/' class='text-[#C9A961] hover:underline'>postnatal care page</a>."
     }
   ]
 };
@@ -641,27 +642,27 @@ export const kativastiRelatedPages = {
   bgColor: "bg-[#FAF7F2]",
   label: "EXPLORE FURTHER",
   title: "Related pages.",
-  linkText: "Browse all Ayurvedic treatments →",
+  linkText: "<a href='/ayurveda-dubai/' class='text-[#C9A961] hover:underline'>Browse all Ayurvedic treatments</a> →",
   pages: [
     {
       title: "Chronic Back Pain in Dubai →",
       description: "The full condition guide — symptoms, diagnosis, treatment options, when to see a doctor, and integrated treatment approaches.",
-      href: "/conditions/back-pain-ayurveda-dubai"
+      href: "/conditions/back-pain-ayurveda-dubai/"
     },
     {
       title: "Physiotherapy in JVC →",
       description: "For mechanical back pain, Kativasti combined with physiotherapy delivers the strongest outcomes. See our physiotherapy services.",
-      href: "/physiotherapy-jvc"
+      href: "/physiotherapy-jvc/"
     },
     {
       title: "Panchakarma in Dubai →",
       description: "For severe or long-standing back conditions, Kativasti is often part of a broader Panchakarma protocol over 14-21 days.",
-      href: "/treatments/panchakarma-dubai"
+      href: "/treatments/panchakarma-dubai/"
     },
     {
       title: "Abhyanga Massage in Dubai →",
       description: "Frequently combined with Kativasti in chronic pain protocols — the full-body classical Ayurvedic oil massage.",
-      href: "/treatments/abhyanga-dubai"
+      href: "/treatments/abhyanga-dubai/"
     }
   ]
 };
