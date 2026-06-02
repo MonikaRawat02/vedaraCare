@@ -375,11 +375,15 @@ export const thyroidFaqs = {
     },
     {
       question: "Is Panchakarma safe for thyroid patients?",
-      answer: "For most thyroid patients on stable medication, yes — with careful protocol design. We coordinate Panchakarma timing around your levothyroxine dosing. Contraindicated in active hyperthyroidism, post-thyroidectomy first year, severe hypothyroidism with TSH >50, and thyroid emergencies. Your stage determines whether Panchakarma is appropriate."
+      answer: 'For most thyroid patients on stable medication, yes — with careful protocol design. We coordinate <a href="/treatments/panchakarma-dubai/" class="text-[#184C3A] hover:underline font-medium">Panchakarma</a> timing around your levothyroxine dosing. Contraindicated in active hyperthyroidism, post-thyroidectomy first year, severe hypothyroidism with TSH >50, and thyroid emergencies. Your stage determines whether Panchakarma is appropriate.'
     },
     {
       question: "How much does Ayurvedic thyroid treatment cost in Dubai?",
       answer: "Initial consultation: AED 350. Full 6-9 month programme including consultations, internal medicines, Panchakarma (if appropriate), and follow-up: typically AED 12,000-18,000 depending on condition complexity and protocol. Bloodwork costs are separate (done through your usual lab or endocrinologist). We provide detailed cost breakdown at initial consultation."
+    },
+    {
+      question: "Do you treat thyroid and PCOS together?",
+      answer: "Yes. Thyroid conditions and <a href=\"/conditions/pcos-ayurveda-dubai/\" class=\"text-[#184C3A] hover:underline font-medium\">PCOS</a> frequently co-exist as part of a broader endocrine pattern. Our programmes are designed to address both simultaneously, as the metabolic foundations often overlap. We coordinate with both your endocrinologist and gynaecologist."
     }
   ]
 };
@@ -422,7 +426,7 @@ export const thyroidRelatedPages = {
     {
       title: "Panchakarma in Dubai →",
       description: "For Hashimoto's or complex thyroid patterns, classical Panchakarma addresses systemic root patterns over 14-21 days.",
-      href: "/treatments/panchakarma-jvc/"
+      href: "/treatments/panchakarma-dubai/"
     },
     {
       title: "Ayurveda for PCOS in Dubai →",
@@ -432,7 +436,7 @@ export const thyroidRelatedPages = {
     {
       title: "Ayurveda for Weight Management →",
       description: "For thyroid patients struggling with weight despite medication, we address the underlying metabolic slowing.",
-      href: "/conditions/pcos-ayurveda-dubai/" // Placeholder
+      href: "/conditions/weight-loss-ayurveda-dubai/"
     },
     {
       title: "Ayurveda for Hair Loss in Dubai →",

@@ -137,7 +137,7 @@ export const homeConditions = {
   footer: "Explore all 30+ conditions we treat",
   categories: ["All", "Pain", "Womens Health", "Skin and Hair", "Metabolic", "Mental Wellness"],
   items: [
-    { title: "Chronic Back Pain", category: "Pain", description: "Integrated treatment combining manual therapy and Ayurvedic protocols", sub: "Ayurveda and Physio" },
+    { title: "Chronic Back Pain", category: "Pain", description: "Integrated treatment combining manual therapy and Ayurvedic protocols", sub: "Ayurveda and Physio", link: "/conditions/back-pain-ayurveda-dubai/" },
     { title: "PCOS", category: "Womens Health", description: "Hormonal balance through traditional Ayurvedic medicine", sub: "Ayurveda" },
     { title: "Hair Loss", category: "Skin and Hair", description: "Combined approach for hair restoration and scalp health", sub: "Dermatology and Ayurveda" },
     { title: "Neck and Shoulder Pain", category: "Pain", description: "Manual therapy and targeted rehabilitation", sub: "Physio" },

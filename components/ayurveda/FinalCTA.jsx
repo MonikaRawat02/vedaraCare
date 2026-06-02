@@ -28,9 +28,7 @@ const FinalCTA = ({
           </h2>
         )}
         
-        <p className="text-[17px] font-sans leading-[1.8] text-[#6B6B6B] mb-10">
-          {description}
-        </p>
+        <p className="text-[17px] font-sans leading-[1.8] text-[#6B6B6B] mb-10" dangerouslySetInnerHTML={{ __html: description }} />
 
         <div className="flex flex-col sm:flex-row gap-4 justify-center mb-6">
           <button className="inline-flex items-center justify-center gap-2 px-5 py-3 rounded-md text-[16px] font-medium transition-all"
@@ -45,15 +43,11 @@ const FinalCTA = ({
           </button>
         </div>
 
-        <p className="text-sm text-gray-600">
-          {bullets.join(' · ')}
-        </p>
+        <p className="text-sm text-gray-600" dangerouslySetInnerHTML={{ __html: bullets.join(' · ') }} />
 
         {alertBox && (
           <div className="mt-8 p-6 bg-red-50 border border-red-100 rounded-lg">
-            <p className="text-sm text-red-800 leading-relaxed">
-              {alertBox}
-            </p>
+            <p className="text-sm text-red-800 leading-relaxed" dangerouslySetInnerHTML={{ __html: alertBox }} />
           </div>
         )}
       </div>

@@ -80,14 +80,7 @@ const TreatmentLocation = ({
                   <div className="font-semibold text-[#1A1A1A] mb-1">
                     Address
                   </div>
-                  <div className="text-gray-700">
-                    {address.split('<br/>').map((line, index) => (
-                      <React.Fragment key={index}>
-                        {line}
-                        {index < address.split('<br/>').length - 1 && <br />}
-                      </React.Fragment>
-                    ))}
-                  </div>
+                  <div className="text-gray-700" dangerouslySetInnerHTML={{ __html: address.replace(/<br\/>/g, '<br>') }} />
                 </div>
               </div>
 
@@ -98,21 +91,7 @@ const TreatmentLocation = ({
                   <div className="font-semibold text-[#1A1A1A] mb-1">
                     Contact
                   </div>
-                  <div className="text-gray-700">
-                    {phone}
-                    {whatsapp && (
-                      <>
-                        <br />
-                        WhatsApp: {whatsapp}
-                      </>
-                    )}
-                    {email && (
-                      <>
-                        <br />
-                        {email}
-                      </>
-                    )}
-                  </div>
+                  <div className="text-gray-700" dangerouslySetInnerHTML={{ __html: `${phone}${whatsapp ? `<br>WhatsApp: ${whatsapp}` : ''}${email ? `<br>${email}` : ''}` }} />
                 </div>
               </div>
 
@@ -123,9 +102,7 @@ const TreatmentLocation = ({
                   <div className="font-semibold text-[#1A1A1A] mb-1">
                     Hours
                   </div>
-                  <div className="text-gray-700">
-                    {renderHours()}
-                  </div>
+                  <div className="text-gray-700" dangerouslySetInnerHTML={{ __html: typeof hours === 'string' ? hours.replace(/<br\/>/g, '<br>') : '' }} />
                 </div>
               </div>
             </div>
@@ -155,15 +132,13 @@ const TreatmentLocation = ({
                       size={12} 
                       style={{ color: 'rgb(201, 169, 97)' }}
                     />
-                    {landmark}
+                    <span dangerouslySetInnerHTML={{ __html: landmark }} />
                   </li>
                 ))}
               </ul>
             </div>
 
-            <p className="text-sm text-gray-600 mb-6">
-              {description}
-            </p>
+            <p className="text-sm text-gray-600 mb-6" dangerouslySetInnerHTML={{ __html: description }} />
 
             <Link
               href="/book"

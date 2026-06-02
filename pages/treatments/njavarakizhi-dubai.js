@@ -127,6 +127,16 @@ const NjavarakizhiDubai = () => {
     },
     {
       "@context": "https://schema.org",
+      "@type": "Place",
+      "name": "Jumeirah Village Circle"
+    },
+    {
+      "@context": "https://schema.org",
+      "@type": "EducationalCredential",
+      "name": "BAMS"
+    },
+    {
+      "@context": "https://schema.org",
       "@type": "Service",
       "name": "Njavarakizhi Programmes at Vedara Care",
       "provider": {"@id": "https://vedaracare.ae/#organization"},

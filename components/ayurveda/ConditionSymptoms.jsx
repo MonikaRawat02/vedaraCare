@@ -19,32 +19,22 @@ const ConditionSymptoms = ({
             {title}
           </h2>
           {description && (
-            <p className="text-sm text-muted-foreground max-w-[600px] mx-auto" style={{ lineHeight: 1.75 }}>
-              {description}
-            </p>
+            <p className="text-sm text-muted-foreground max-w-[600px] mx-auto" style={{ lineHeight: 1.75 }} dangerouslySetInnerHTML={{ __html: description }} />
           )}
         </div>
 
         <div className="grid md:grid-cols-2 lg:grid-cols-3 gap-6">
           {symptoms.map((symptom, index) => (
             <div key={index} className="bg-white p-6 rounded-lg" style={{ borderLeft: '4px solid rgb(201, 169, 97)' }}>
-              <h4 className="text-lg font-medium mb-3" style={{ color: 'rgb(28, 28, 26)' }}>
-                {symptom.title}
-              </h4>
-              <p className="text-sm mb-4 leading-relaxed" style={{ color: 'rgb(107, 114, 128)' }}>
-                {symptom.content}
-              </p>
-              <div className="text-sm font-medium" style={{ color: 'rgb(201, 169, 97)' }}>
-                {symptom.expected}
-              </div>
+              <h4 className="text-lg font-medium mb-3" style={{ color: 'rgb(28, 28, 26)' }} dangerouslySetInnerHTML={{ __html: symptom.title }} />
+              <p className="text-sm mb-4 leading-relaxed" style={{ color: 'rgb(107, 114, 128)' }} dangerouslySetInnerHTML={{ __html: symptom.content }} />
+              <div className="text-sm font-medium" style={{ color: 'rgb(201, 169, 97)' }} dangerouslySetInnerHTML={{ __html: symptom.expected }} />
             </div>
           ))}
         </div>
 
         {footer && (
-          <p className="text-center mt-8 max-w-3xl mx-auto" style={{ color: 'rgb(107, 114, 128)' }}>
-            {footer}
-          </p>
+          <p className="text-center mt-8 max-w-3xl mx-auto" style={{ color: 'rgb(107, 114, 128)' }} dangerouslySetInnerHTML={{ __html: footer }} />
         )}
       </div>
     </section>

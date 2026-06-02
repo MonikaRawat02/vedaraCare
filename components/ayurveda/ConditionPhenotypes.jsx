@@ -19,9 +19,7 @@ const ConditionPhenotypes = ({
             {title}
           </h2>
           {description && (
-            <p className="text-sm text-muted-foreground max-w-[600px] mx-auto" style={{ lineHeight: 1.75 }}>
-              {description}
-            </p>
+            <p className="text-sm text-muted-foreground max-w-[600px] mx-auto" style={{ lineHeight: 1.75 }} dangerouslySetInnerHTML={{ __html: description }} />
           )}
         </div>
 
@@ -31,29 +29,19 @@ const ConditionPhenotypes = ({
               <p className="text-4xl font-semibold mb-2" style={{ color: 'rgb(184, 145, 90)' }}>
                 {phenotype.letter}
               </p>
-              <h3 className="text-xl mb-1" style={{ fontFamily: 'Fraunces, Georgia, serif', fontWeight: 500, color: 'rgb(28, 28, 26)' }}>
-                {phenotype.title}
-              </h3>
-              <p className="text-[11px] uppercase tracking-widest mb-4 text-muted-foreground">
-                {phenotype.subtitle}
-              </p>
-              <p className="text-sm text-muted-foreground mb-5" style={{ lineHeight: 1.85 }}>
-                {phenotype.content}
-              </p>
+              <h3 className="text-xl mb-1" style={{ fontFamily: 'Fraunces, Georgia, serif', fontWeight: 500, color: 'rgb(28, 28, 26)' }} dangerouslySetInnerHTML={{ __html: phenotype.title }} />
+              <p className="text-[11px] uppercase tracking-widest mb-4 text-muted-foreground" dangerouslySetInnerHTML={{ __html: phenotype.subtitle }} />
+              <p className="text-sm text-muted-foreground mb-5" style={{ lineHeight: 1.85 }} dangerouslySetInnerHTML={{ __html: phenotype.content }} />
               <p className="text-xs font-semibold uppercase tracking-wider mb-2" style={{ color: 'rgb(184, 145, 90)' }}>
                 Ayurvedic emphasis for this phenotype:
               </p>
-              <p className="text-xs text-muted-foreground" style={{ lineHeight: 1.7 }}>
-                {phenotype.ayurvedicEmphasis}
-              </p>
+              <p className="text-xs text-muted-foreground" style={{ lineHeight: 1.7 }} dangerouslySetInnerHTML={{ __html: phenotype.ayurvedicEmphasis }} />
             </div>
           ))}
         </div>
 
         {footer && (
-          <p className="text-center text-sm text-muted-foreground max-w-[640px] mx-auto">
-            {footer}
-          </p>
+          <p className="text-center text-sm text-muted-foreground max-w-[640px] mx-auto" dangerouslySetInnerHTML={{ __html: footer }} />
         )}
       </div>
     </section>
