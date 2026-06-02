@@ -28,20 +28,14 @@ const BackPainConditions = ({
         <div className="grid md:grid-cols-2 lg:grid-cols-3 gap-6">
           {items.map((item, index) => (
             <div key={index} className="bg-white rounded-xl p-8 shadow-sm hover:shadow-md transition-shadow">
-              <h3 className="text-2xl font-serif text-[#C9A961] mb-4">
-                {item.title}
-              </h3>
-              <p className="text-gray-700 font-sans leading-relaxed mb-6 text-[15px]">
-                {item.description}
-              </p>
+              <h3 className="text-2xl font-serif text-[#C9A961] mb-4" dangerouslySetInnerHTML={{ __html: item.title }} />
+              <p className="text-gray-700 font-sans leading-relaxed mb-6 text-[15px]" dangerouslySetInnerHTML={{ __html: item.description }} />
               <div className="pt-6 border-t border-gray-100 space-y-4">
                 <div className="space-y-1">
                   <div className="text-sm font-sans font-medium text-[#1A1A1A]">
                     Typical Ayurvedic approach:
                   </div>
-                  <div className="text-sm font-sans text-gray-700">
-                    {item.approach}
-                  </div>
+                  <div className="text-sm font-sans text-gray-700" dangerouslySetInnerHTML={{ __html: item.approach }} />
                 </div>
                 {item.link && (
                   <a href={item.link} className="text-[#C9A961] text-sm font-sans hover:underline inline-flex items-center gap-1">

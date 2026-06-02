@@ -175,8 +175,7 @@ export const abhyangaApplications = {
       href: "/conditions/pcos-ayurveda-dubai/"
     },
     {
-      title: "Arthritis (with internal medicines, lifestyle protocol)",
-     
+      title: "<a href=\"/conditions/arthritis-ayurveda-dubai/\" class=\"hover:underline\">Arthritis and joint disorders</a> (with internal medicines, lifestyle protocol)",
     },
     {
       title: "Postnatal recovery (45-day Sutika Paricharya)",
