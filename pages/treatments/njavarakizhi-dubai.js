@@ -42,7 +42,7 @@ const NjavarakizhiDubai = () => {
       "alternateName": ["Navarakizhi", "Shashtika Shali Pinda Sweda", "Rice Bolus Massage", "Ayurvedic Rice Pudding Massage", "Njavara Kizhi"],
       "description": "Njavarakizhi is a specialised Ayurvedic restorative therapy in which cloth boluses filled with Shashtika Shali (Njavara) rice cooked in herbal medicated milk are used to massage the body in synchronised strokes for 60 to 75 minutes. Performed at Vedara Care Polyclinic in Jumeirah Village Circle, Dubai for muscle wasting, post-illness recovery, neurological rehabilitation, sarcopenia, and rheumatoid conditions.",
       "url": "https://vedaracare.ae/treatments/njavarakizhi-dubai/",
-      "image": "https://vedaracare.ae/images/njavarakizhi-dubai-hero.jpg",
+      "image": "https://vedaracare.ae/images/njavarakizhi-dubai-hero.webp",
       "procedureType": "Ayurveda",
       "bodyLocation": "Whole body",
       "preparation": "BAMS doctor clinical assessment. Rice and herbal milk preparation begins 90 minutes before patient arrival.",
@@ -193,13 +193,13 @@ const NjavarakizhiDubai = () => {
         "name": "Dr. Priya Nair",
         "hasCredential": "DHA-Licensed BAMS, MD (Ayurveda)"
       },
-      "primaryImageOfPage": "https://vedaracare.ae/images/njavarakizhi-dubai-hero.jpg"
+      "primaryImageOfPage": "https://vedaracare.ae/images/njavarakizhi-dubai-hero.webp"
     },
     {
       "@context": "https://schema.org",
       "@type": "Article",
       "headline": "Njavarakizhi Treatment in Dubai — A Complete Clinical Guide",
-      "image": "https://vedaracare.ae/images/njavarakizhi-dubai-hero.jpg",
+      "image": "https://vedaracare.ae/images/njavarakizhi-dubai-hero.webp",
       "datePublished": "2026-05-01",
       "dateModified": currentDate,
       "author": {
@@ -255,7 +255,7 @@ const NjavarakizhiDubai = () => {
         {/* Open Graph */}
         <meta property="og:title" content="Njavarakizhi in Dubai — Classical Ayurvedic Rice Bolus Therapy" />
         <meta property="og:description" content="Doctor-prescribed Njavarakizhi at our DHA-licensed JVC clinic. For muscle wasting, post-illness recovery, and neurological rehabilitation. From AED 480." />
-        <meta property="og:image" content="https://vedaracare.ae/og-images/njavarakizhi-dubai.jpg" />
+        <meta property="og:image" content="https://vedaracare.ae/images/njavarakizhi-dubai-hero.webp" />
         <meta property="og:url" content="https://vedaracare.ae/treatments/njavarakizhi-dubai/" />
         <meta property="og:type" content="article" />
         <meta property="og:locale" content="en_AE" />

@@ -19,7 +19,8 @@ export const pcosHero = {
     title: "WE HEAR YOU FIRST",
     subtitle: "First consultation is 60 minutes. Most of it is you talking. We listen before we prescribe."
   },
-  image: "https://images.unsplash.com/photo-1559839734-2b71ea197ec2?w=900&h=1100&fit=crop&auto=format"
+  image: "/images/pcos-ayurveda-dubai-hero.webp",
+  alt: "Female Ayurvedic doctor in PCOS consultation with female patient at Vedara Care JVC Dubai"
 };
 
 export const pcosIntro = {
@@ -40,13 +41,15 @@ export const pcosMechanism = {
     "Authentic Ayurvedic treatment for PCOS does not replace your gynaecologist. It does what conventional 15-minute appointments cannot — a thorough constitutional assessment, a 3-6 month structured programme addressing the metabolic root, and the time to actually treat PCOS as the complex endocrine-metabolic-dosha imbalance it is. Your conventional doctor manages the markers. Ayurveda addresses what is underneath."
   ],
   quote: "PCOS is not one condition. It is a clinical pattern with at least four major presentations. Your treatment plan should reflect that.",
-  image: "https://images.unsplash.com/photo-1576091160399-112ba8d25d1d?w=800"
+  image: "/images/pcos-research-dubai-woman.webp",
+  alt: "Dubai woman researching PCOS treatment options — Ayurvedic perspective on under-treated condition"
 };
 
 export const pcosPhenotypes = {
   bgColor: "bg-[#FFFFFF]",
   label: "PRECISION MATTERS",
   title: "There are four distinct types of PCOS. They need different treatment.",
+  alt: "Four PCOS phenotypes assessed by Rotterdam criteria at Vedara Care Ayurveda Dubai",
   description: "The Rotterdam criteria define four PCOS phenotypes based on which combination of features you have. Your phenotype determines your treatment priorities — not the other way around.",
   phenotypes: [
     {
@@ -87,7 +90,7 @@ export const pcosBenefits = {
   title: "PCOS treatment in classical Ayurveda has four pillars. Skip any one and outcomes plateau.",
   benefitGroups: [
     {
-      title: "Panchakarma Cleansing",
+      title: "<a href=\"/treatments/panchakarma-dubai/\" class=\"doctor-specialty-link\">Panchakarma</a> Cleansing",
       description: "The classical detoxification protocol that addresses insulin resistance, lipid metabolism, and hormonal clearance. For PCOS, <a href=\"/treatments/panchakarma-dubai/\" class=\"doctor-specialty-link\">Virechana</a> (medicated purgation targeting liver and Pitta) is the most-prescribed action, often followed by selective Basti (medicated enema). Typically performed once during the programme — usually in month 2 — over 7-14 days. Learn more in our <a href=\"/treatments/panchakarma-dubai/\" class=\"doctor-specialty-link\">Panchakarma guide</a>.",
       benefits: [
         
@@ -142,7 +145,7 @@ export const pcosProtocol = {
     },
     {
       week: "MONTH 2",
-      title: "Panchakarma Cleansing",
+      title: "<a href=\"/treatments/panchakarma-dubai/\" class=\"doctor-specialty-link\">Panchakarma</a> Cleansing",
       items: [
         "7-14 day <a href=\"/treatments/panchakarma-dubai/\" class=\"doctor-specialty-link\">Panchakarma</a> programme (timing planned around your cycle)",
         "Pre-Panchakarma preparation (Snehapana, <a href=\"/treatments/abhyanga-dubai/\" class=\"doctor-specialty-link\">Abhyanga</a>, Swedana)",
@@ -250,6 +253,8 @@ export const pcosFertility = {
   bgColor: "bg-[#2D5F4F]",
   label: "A SPECIFIC SECTION FOR SOMETHING THAT MATTERS",
   title: "PCOS, fertility, and Ayurveda — honestly.",
+  image: "/images/pcos-fertility-ayurveda-dubai.webp",
+  imageAlt: "Dubai woman thoughtful in soft natural light — PCOS fertility treatment integrated with Ayurveda",
   paragraphs: [
     "Many women with PCOS come to Ayurveda specifically because they are trying to conceive. The honest position is this: Ayurvedic treatment cannot replace fertility medicine, but it can meaningfully improve the conditions in which fertility medicine works.",
     "What Ayurvedic treatment for PCOS can realistically do for fertility: improve cycle regularity, support ovulation in some Phenotype B and C patients, reduce insulin resistance that interferes with implantation, address inflammation, and improve overall metabolic health before conception. For many women with mild to moderate PCOS, this is sometimes enough to conceive naturally.",
@@ -384,7 +389,7 @@ export const pcosFaqs = {
   bgColor: "bg-[#F5F0E8]",
   label: "PCOS QUESTIONS",
   title: "What women ask before starting Ayurvedic PCOS treatment.",
-  description: "For specific treatment details, see the <a href=\"/treatments/panchakarma-dubai/\" class=\"doctor-specialty-link\">Panchakarma</a> and treatment pages. For women's health blog posts on PCOS, see our journal.",
+  description: "For specific treatment details, <a href=\"/treatments/panchakarma-dubai/\" class=\"doctor-specialty-link\">Read about Panchakarma</a>. Also, <a href=\"/treatments/shirodhara-dubai/\" class=\"doctor-specialty-link\">Read about Shirodhara</a>. For women's health blog posts on PCOS, see our journal.",
   buttonText: "Ask the Team",
   faqs: [
     {
@@ -468,7 +473,8 @@ export const pcosTreatmentLocation = {
   hours: "Monday - Friday: 9:00 AM - 8:00 PM<br/>Saturday: 9:00 AM - 6:00 PM<br/>Sunday: 10:00 AM - 4:00 PM",
   description: "Dedicated consultation rooms for women's health, female reception staff available on request, private treatment areas. We schedule PCOS consultations in longer 60-minute slots rather than rushing them into 20-minute appointments.",
   buttonText: "Book PCOS Consultation",
-  mapEmbed: "https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d3613.6391151624!2d55.2085!3d25.0560!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x3e5f6e85d4545555%3A0x5555555555555555!2sJumeirah%20Village%20Circle!5e0!3m2!1sen!2sae!4v1622620000000!5m2!1sen!2sae"
+  mapEmbed: "https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d3613.6391151624!2d55.2085!3d25.0560!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x3e5f6e85d4545555%3A0x5555555555555555!2sJumeirah%20Village%20Circle!5e0!3m2!1sen!2sae!4v1622620000000!5m2!1sen!2sae",
+  mapAlt: "Vedara Care female health Ayurveda clinic location in Jumeirah Village Circle Dubai"
 };
 
 export const pcosFinalCTA = {
