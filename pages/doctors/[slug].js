@@ -12,7 +12,7 @@ const doctorData = {
   metaDescription: 'Dr. Priya Nair, BAMS, MD (Ayurveda). DHA-licensed Ayurvedic physician in JVC, Dubai. 15+ years specialising in PCOS, back pain, migraine & Panchakarma. Book today.',
   ogDescription: 'DHA-licensed BAMS Ayurvedic doctor in Jumeirah Village Circle. 15+ years treating PCOS, back pain, migraine.',
   image: '/images/dr-priya-nair-ayurvedic-physician-jvc-dubai.webp',
-  ogImage: 'https://vedaracare.ae/og-images/dr-priya-nair-ayurveda-jvc.jpg',
+  ogImage: 'https://vedaracare.ae/og-images/dr-priya-nair-ayurveda-jvc.webp',
   url: 'https://vedaracare.ae/doctors/dr-priya-nair-ayurveda/',
   portraitImage: 'https://vedaracare.ae/doctors/dr-priya-nair-portrait.jpg',
   dhaLicense: 'DHA-P-0048291',
@@ -39,7 +39,7 @@ export default function DoctorSlugPage() {
         {/* Open Graph Tags */}
         <meta property="og:title" content="Dr. Priya Nair — Ayurvedic Physician in JVC, Dubai | Vedara Care" />
         <meta property="og:description" content="DHA-licensed BAMS Ayurvedic doctor in Jumeirah Village Circle. 15+ years treating PCOS, back pain, migraine." />
-        <meta property="og:image" content="https://vedaracare.ae/og-images/dr-priya-nair-ayurveda-jvc.jpg" />
+        <meta property="og:image" content="https://vedaracare.ae/og-images/dr-priya-nair-ayurveda-jvc.webp" />
         <meta property="og:url" content="https://vedaracare.ae/doctors/dr-priya-nair-ayurveda/" />
         <meta property="og:type" content="profile" />
         <meta property="og:locale" content="en_AE" />
@@ -48,7 +48,7 @@ export default function DoctorSlugPage() {
         <meta name="twitter:card" content="summary_large_image" />
         <meta name="twitter:title" content="Dr. Priya Nair — Ayurvedic Physician in JVC, Dubai | Vedara Care" />
         <meta name="twitter:description" content="DHA-licensed BAMS Ayurvedic doctor in Jumeirah Village Circle. 15+ years treating PCOS, back pain, migraine." />
-        <meta name="twitter:image" content="https://vedaracare.ae/og-images/dr-priya-nair-ayurveda-jvc.jpg" />
+        <meta name="twitter:image" content="https://vedaracare.ae/og-images/dr-priya-nair-ayurveda-jvc.webp" />
         
         {/* Profile Tags */}
         <meta property="profile:first_name" content="Priya" />
@@ -72,7 +72,7 @@ export default function DoctorSlugPage() {
           "honorificPrefix": "Dr.",
           "givenName": "Priya",
           "familyName": "Nair",
-          "image": "https://vedaracare.ae/doctors/dr-priya-nair-portrait.jpg",
+          "image": "https://vedaracare.ae/images/dr-priya-nair-ayurvedic-physician-jvc-dubai.webp",
           "url": "https://vedaracare.ae/doctors/dr-priya-nair-ayurveda/",
           "jobTitle": "Lead Ayurvedic Physician",
           "description": "DHA-licensed Ayurvedic physician (BAMS, MD-Ayurveda) at Vedara Care Polyclinic in Jumeirah Village Circle, Dubai. Specialises in chronic back pain, PCOS, migraine, postnatal recovery, and Panchakarma.",
@@ -100,14 +100,20 @@ export default function DoctorSlugPage() {
               "recognizedBy": {
                 "@type": "Organization",
                 "name": "Dubai Health Authority",
-                "url": "https://www.dha.gov.ae"
+                "url": "https://www.dha.gov.ae",
+                "sameAs": "https://en.wikipedia.org/wiki/Dubai_Health_Authority"
               }
             },
             {
               "@type": "EducationalOccupationalCredential",
               "credentialCategory": "registration",
               "name": "Central Council of Indian Medicine (CCIM)",
-              "identifier": "7A-28930"
+              "identifier": "7A-28930",
+              "recognizedBy": {
+                "@type": "Organization",
+                "name": "Central Council of Indian Medicine",
+                "sameAs": "https://en.wikipedia.org/wiki/Central_Council_of_Indian_Medicine"
+              }
             }
           ],
           "knowsLanguage": ["English", "Hindi", "Malayalam", "Arabic"],
@@ -155,7 +161,7 @@ export default function DoctorSlugPage() {
           "@type": "Person",
           "@id": "https://vedaracare.ae/doctors/dr-priya-nair-ayurveda/#person",
           "name": "Dr. Priya Nair",
-          "image": "https://vedaracare.ae/doctors/dr-priya-nair-portrait.jpg",
+          "image": "https://vedaracare.ae/images/dr-priya-nair-ayurvedic-physician-jvc-dubai.webp",
           "jobTitle": "Ayurvedic Physician",
           "worksFor": {"@id": "https://vedaracare.ae/#organization"},
           "url": "https://vedaracare.ae/doctors/dr-priya-nair-ayurveda/"
@@ -167,7 +173,7 @@ export default function DoctorSlugPage() {
           "@type": "ProfilePage",
           "mainEntity": {"@id": "https://vedaracare.ae/doctors/dr-priya-nair-ayurveda/#physician"},
           "dateModified": "2026-05-22T00:00:00Z",
-          "primaryImageOfPage": "https://vedaracare.ae/doctors/dr-priya-nair-portrait.jpg"
+          "primaryImageOfPage": "https://vedaracare.ae/images/dr-priya-nair-ayurvedic-physician-jvc-dubai.webp"
         })}} />
         
         {/* Schema 4 - BreadcrumbList */}
@@ -181,7 +187,99 @@ export default function DoctorSlugPage() {
           ]
         })}} />
         
-        {/* Schema 5 - FAQPage */}
+        {/* Schema 5 - Additional Semantic Entities */}
+        <script type="application/ld+json" dangerouslySetInnerHTML={{ __html: JSON.stringify([
+          {
+            "@context": "https://schema.org",
+            "@type": "Organization",
+            "@id": "https://vedaracare.ae/#organization",
+            "name": "Vedara Care Polyclinic",
+            "url": "https://vedaracare.ae/"
+          },
+          {
+            "@context": "https://schema.org",
+            "@type": "MedicalTherapy",
+            "name": "Ayurveda",
+            "sameAs": "https://en.wikipedia.org/wiki/Ayurveda"
+          },
+          {
+            "@context": "https://schema.org",
+            "@type": "Organization",
+            "name": "Central Council of Indian Medicine",
+            "alternateName": "CCIM",
+            "sameAs": "https://en.wikipedia.org/wiki/Central_Council_of_Indian_Medicine"
+          },
+          {
+            "@context": "https://schema.org",
+            "@type": "Place",
+            "name": "Jumeirah Village Circle",
+            "alternateName": ["JVC", "Jumeirah Village"]
+          },
+          {
+            "@context": "https://schema.org",
+            "@type": "MedicalCondition",
+            "name": "Polycystic Ovary Syndrome",
+            "alternateName": ["PCOS", "PCOD", "Polycystic Ovarian Syndrome"]
+          },
+          {
+            "@context": "https://schema.org",
+            "@type": "MedicalCondition",
+            "name": "Back Pain",
+            "alternateName": ["Lumbar Pain", "Sciatica"]
+          },
+          {
+            "@context": "https://schema.org",
+            "@type": "MedicalCondition",
+            "name": "Migraine"
+          },
+          {
+            "@context": "https://schema.org",
+            "@type": "MedicalCondition",
+            "name": "Hair Loss",
+            "alternateName": ["Alopecia", "Khalitya"]
+          },
+          {
+            "@context": "https://schema.org",
+            "@type": "MedicalCondition",
+            "name": "Stress"
+          },
+          {
+            "@context": "https://schema.org",
+            "@type": "MedicalCondition",
+            "name": "Anxiety"
+          },
+          {
+            "@context": "https://schema.org",
+            "@type": "MedicalCondition",
+            "name": "Insomnia"
+          },
+          {
+            "@context": "https://schema.org",
+            "@type": "MedicalCondition",
+            "name": "Postnatal Care",
+            "alternateName": ["Sutika Paricharya", "Postpartum Care"]
+          },
+          {
+            "@context": "https://schema.org",
+            "@type": "MedicalProcedure",
+            "name": "Shirodhara",
+            "sameAs": "https://en.wikipedia.org/wiki/Shirodhara"
+          },
+          {
+            "@context": "https://schema.org",
+            "@type": "MedicalProcedure",
+            "name": "Panchakarma",
+            "sameAs": "https://en.wikipedia.org/wiki/Panchakarma"
+          },
+          {
+            "@context": "https://schema.org",
+            "@type": "MedicalProcedure",
+            "name": "Nadi Pariksha",
+            "alternateName": "Pulse Diagnosis"
+          }
+        ])}} />
+        
+        {/* Schema 6 - FAQPage */}
         <script type="application/ld+json" dangerouslySetInnerHTML={{ __html: JSON.stringify({
           "@context": "https://schema.org",
           "@type": "FAQPage",

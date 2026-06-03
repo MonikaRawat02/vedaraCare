@@ -45,7 +45,7 @@ const PcosAyurvedaDubai = () => {
         {/* Open Graph */}
         <meta property="og:title" content="Ayurveda for PCOS in Dubai — Female Doctors, 6-Month Programme" />
         <meta property="og:description" content="DHA-licensed Ayurvedic PCOS treatment by female BAMS physicians at our JVC clinic. Panchakarma, herbal medicine, integrated with gynaecology." />
-        <meta property="og:image" content="https://vedaracare.ae/og-images/pcos-ayurveda-dubai.jpg" />
+        <meta property="og:image" content="https://vedaracare.ae/images/pcos-ayurveda-dubai-hero.webp" />
         <meta property="og:url" content="https://vedaracare.ae/conditions/pcos-ayurveda-dubai/" />
         <meta property="og:type" content="article" />
         <meta property="og:locale" content="en_AE" />
@@ -208,6 +208,32 @@ const PcosAyurvedaDubai = () => {
               "@context": "https://schema.org",
               "@type": "EducationalCredential",
               "name": "MD (Ayurveda)"
+            },
+            {
+              "@context": "https://schema.org",
+              "@type": "MedicalClinic",
+              "@id": "https://vedaracare.ae/#organization",
+              "name": "Vedara Care Polyclinic"
+            },
+            {
+              "@context": "https://schema.org",
+              "@type": "MedicalCondition",
+              "name": "Infertility"
+            },
+            {
+              "@context": "https://schema.org",
+              "@type": "MedicalEntity",
+              "name": "Vata"
+            },
+            {
+              "@context": "https://schema.org",
+              "@type": "MedicalEntity",
+              "name": "Pitta"
+            },
+            {
+              "@context": "https://schema.org",
+              "@type": "MedicalEntity",
+              "name": "Kapha"
             }
           ])
         }}
@@ -235,7 +261,7 @@ const PcosAyurvedaDubai = () => {
               "name": "Dr. Priya Menon",
               "hasCredential": "DHA-Licensed BAMS, MD (Ayurveda)"
             },
-            "primaryImageOfPage": "https://vedaracare.ae/images/pcos-ayurveda-dubai-hero.jpg"
+            "primaryImageOfPage": "https://vedaracare.ae/images/pcos-ayurveda-dubai-hero.webp"
           })
         }}
       />
@@ -293,7 +319,7 @@ const PcosAyurvedaDubai = () => {
             "@context": "https://schema.org",
             "@type": "Article",
             "headline": "Ayurveda for PCOS in Dubai — A Complete Clinical Guide",
-            "image": "https://vedaracare.ae/images/pcos-ayurveda-dubai-hero.jpg",
+            "image": "https://vedaracare.ae/images/pcos-ayurveda-dubai-hero.webp",
             "datePublished": "2026-05-01",
             "dateModified": currentDate,
             "author": {
@@ -323,6 +349,21 @@ const PcosAyurvedaDubai = () => {
               {"@type": "ListItem", "position": 2, "name": "Conditions", "item": "https://vedaracare.ae/conditions/"},
               {"@type": "ListItem", "position": 3, "name": "Ayurveda for PCOS in Dubai", "item": "https://vedaracare.ae/conditions/pcos-ayurveda-dubai/"}
             ]
+          })
+        }}
+      />
+
+      {/* Schema 7 — Organization */}
+      <script
+        type="application/ld+json"
+        dangerouslySetInnerHTML={{
+          __html: JSON.stringify({
+            "@context": "https://schema.org",
+            "@type": "Organization",
+            "@id": "https://vedaracare.ae/#organization",
+            "name": "Vedara Care Polyclinic",
+            "url": "https://vedaracare.ae/",
+            "logo": "https://vedaracare.ae/logo.png"
           })
         }}
       />

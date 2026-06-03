@@ -2,14 +2,15 @@ export const drPriyaNair = {
   name: 'Dr. Priya Nair',
   firstName: 'Dr. Nair',
   title: 'BAMS, MD (Ayurveda) — Classical Ayurveda Specialist',
-  image: 'https://images.unsplash.com/photo-1594824476967-48c8b964273f?w=720&h=900&fit=crop&auto=format',
-  bio: 'Dr. Nair leads the <a href="/ayurveda-dubai/">Ayurveda department</a> at <a href="/">Vedara Care Polyclinic</a> in Jumeirah Village Circle. With over fifteen years of clinical practice — including eight years in Kerala’s leading Ayurvedic hospitals and seven years serving Dubai patients — she is known for treating chronic conditions where conventional care has plateaued. Her approach is precise, evidence-aware, and unhurried.',
+  image: '/images/dr-priya-nair-ayurvedic-physician-jvc-dubai.webp',
+  alt: 'Dr. Priya Nair, BAMS-qualified DHA-licensed Ayurvedic physician at Vedara Care Polyclinic, JVC Dubai',
+  bio: 'Dr. Nair leads the <a href="/ayurveda-clinic-jvc/" class="doctor-specialty-link">Ayurveda department</a> at <a href="/">Vedara Care Polyclinic</a> in Jumeirah Village Circle. With over fifteen years of clinical practice — including eight years in Kerala’s leading Ayurvedic hospitals and seven years serving Dubai patients — she is known for treating chronic conditions where conventional care has plateaued. Her approach is precise, evidence-aware, and unhurried.',
   specialties: 'Chronic pain, <a href="/conditions/pcos-ayurveda-dubai/" class="doctor-specialty-link">PCOS</a>, <a href="/conditions/migraine-ayurveda-dubai/" class="doctor-specialty-link">migraine</a>, <a href="/conditions/hair-loss-ayurveda-dubai/" class="doctor-specialty-link">hair loss</a>, <a href="/conditions/stress-anxiety-ayurveda-dubai/" class="doctor-specialty-link">stress & anxiety</a>',
   fee: 'From AED 350 (consultation)',
   languages: 'English, Hindi, Malayalam, Tamil',
   availability: 'Mon-Sat at JVC clinic',
   summaryTitle: 'Classical Ayurveda, practised with modern precision.',
-  summaryParagraph1: 'Dr. Priya Nair is a <a href="/about/dha-accreditation/">DHA-licensed</a> Ayurvedic physician (BAMS, MD-Ayurveda) and the lead Ayurveda specialist at <a href="/">Vedara Care Polyclinic</a> in Jumeirah Village Circle, Dubai. With 15+ years of clinical experience across Kerala and the UAE, she treats <a href="/conditions/back-pain-ayurveda-dubai/">chronic back pain & sciatica</a>, <a href="/conditions/pcos-ayurveda-dubai/">PCOS</a>, <a href="/conditions/migraine-ayurveda-dubai/">migraine</a>, <a href="/conditions/hair-loss-ayurveda-dubai/">hair loss</a>, and <a href="/conditions/stress-anxiety-ayurveda-dubai/">stress-related disorders</a> through classical <a href="/treatments/panchakarma-dubai/">Panchakarma</a>, dosha-based herbal medicine, and individualised treatment protocols.',
+  summaryParagraph1: 'Dr. Priya Nair is a <a href="/about/dha-accreditation/">DHA-licensed</a> Ayurvedic physician (BAMS, MD-Ayurveda) and the lead Ayurveda specialist at <a href="/">Vedara Care Polyclinic</a> in Jumeirah Village Circle, Dubai. With 15+ years of clinical experience across Kerala and the UAE, she treats <a href="/conditions/back-pain-treatment-jvc/" class="doctor-specialty-link">chronic back pain & sciatica</a>, <a href="/conditions/pcos-ayurveda-dubai/">PCOS</a>, <a href="/conditions/migraine-ayurveda-dubai/">migraine</a>, <a href="/conditions/hair-loss-ayurveda-dubai/">hair loss</a>, and <a href="/conditions/stress-anxiety-ayurveda-dubai/">stress-related disorders</a> through classical <a href="/treatments/panchakarma-dubai/">Panchakarma</a>, dosha-based herbal medicine, and individualised treatment protocols.',
   summaryParagraph2: 'She holds DHA Professional License DHA-P-0048291 and consults daily at our JVC clinic.',
   summaryParagraph3: '',
   education: [
@@ -34,7 +35,7 @@ export const drPriyaNair = {
   ],
   specialtiesList: [
     {
-      title: '<a href="/conditions/back-pain-ayurveda-dubai/" class="doctor-specialty-link">Chronic Back Pain & Sciatica</a>',
+      title: '<a href="/conditions/back-pain-treatment-jvc/" class="doctor-specialty-link">Chronic Back Pain & Sciatica</a>',
       description: 'Classical Ayurvedic management of lumbar disc issues, sciatica, and chronic mechanical back pain using KatiVasti, Pinda Swedana, and structured lifestyle correction. Many patients arrive after years of conventional management without lasting relief.',
       caseLoad: '800+ patients treated'
     },
@@ -97,6 +98,7 @@ export const drPriyaNair = {
       "Free covered parking available"
     ],
     description: "",
+    mapAlt: "Vedara Care Polyclinic location in Jumeirah Village Circle — Dr. Priya Nair's clinic",
     buttonText: "Book with Dr. Nair"
   }
 };

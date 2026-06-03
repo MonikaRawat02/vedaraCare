@@ -7,24 +7,24 @@ const DoctorOtherPractitioners = () => {
       name: 'Dr. Meera Krishnan',
       specialty: 'Senior Ayurvedic Physician',
       focus: 'Panchakarma & Detox',
-      image: 'https://images.unsplash.com/photo-1614608682850-e0d6ed316d47?w=480&h=360&fit=crop&auto=format',
-      alt: 'Dr. Meera Krishnan',
+      image: '/images/dr-meera-krishnan-ayurvedic-physician-jvc-dubai.webp',
+      alt: 'Dr. Meera Krishnan, BAMS-qualified DHA-licensed Ayurvedic physician at Vedara Care Polyclinic, JVC Dubai',
       slug: 'dr-meera-krishnan-ayurveda'
     },
     {
       name: 'Dr. James Okafor',
       specialty: 'Lead Physiotherapist',
       focus: 'Sports Rehabilitation',
-      image: 'https://images.unsplash.com/photo-1612349317150-e413f6a5b16d?w=480&h=360&fit=crop&auto=format',
-      alt: 'Dr. James Okafor',
+      image: '/images/dr-james-okafor-physiotherapist-jvc-dubai.webp',
+      alt: 'Dr. James Okafor, DHA-licensed physiotherapist at Vedara Care Polyclinic, JVC Dubai',
       slug: 'dr-james-okafor-physiotherapy'
     },
     {
       name: 'Dr. Layla Al Rashid',
       specialty: 'Consultant Dermatologist',
       focus: 'Integrative Dermatology',
-      image: 'https://images.unsplash.com/photo-1559839734-2b71ea197ec2?w=480&h=360&fit=crop&auto=format',
-      alt: 'Dr. Layla Al Rashid',
+      image: '/images/dr-layla-al-rashid-dermatologist-jvc-dubai.webp',
+      alt: 'Dr. Layla Al Rashid, DHA-licensed consultant dermatologist at Vedara Care Polyclinic, JVC Dubai',
       slug: 'dr-layla-al-rashid-dermatology'
     }
   ];
