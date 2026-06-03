@@ -459,13 +459,7 @@ const WeightLossAyurvedaDubai = () => {
                 <div className="text-6xl mb-4" style={{ fontFamily: "Georgia, serif", color: "rgb(201, 169, 97)" }}>
                   {phenotype.letter}
                 </div>
-                {phenotype.href ? (
-                  <Link href={phenotype.href} className="hover:underline block" style={{ color: 'inherit' }}>
-                    <h3 className="text-xl mb-2" style={{ fontFamily: "Georgia, serif", fontWeight: 500 }} dangerouslySetInnerHTML={{ __html: phenotype.title }} />
-                  </Link>
-                ) : (
-                  <h3 className="text-xl mb-2" style={{ fontFamily: "Georgia, serif", fontWeight: 500 }} dangerouslySetInnerHTML={{ __html: phenotype.title }} />
-                )}
+                 <h3 className="text-xl mb-2" style={{ fontFamily: "Georgia, serif", fontWeight: 500 }} dangerouslySetInnerHTML={{ __html: phenotype.title }} />
                 <p className="text-sm italic mb-4" style={{ color: "rgb(201, 169, 97)" }} dangerouslySetInnerHTML={{ __html: phenotype.subtitle }} />
                 <p className="mb-4 leading-relaxed" style={{ color: "rgb(107, 114, 128)" }} dangerouslySetInnerHTML={{ __html: phenotype.content }} />
                 <div className="text-sm">
