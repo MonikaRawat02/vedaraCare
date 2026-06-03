@@ -35,7 +35,7 @@ const schemaMarkup = [
     "alternateName": ["Shirodhara Therapy", "Oil Stream Therapy", "Third Eye Oil Therapy", "Classical Ayurvedic Forehead Oil Therapy"],
     "description": "Shirodhara is the classical Ayurvedic therapy in which a continuous stream of warm medicated oil is poured rhythmically across the forehead for 30 to 60 minutes, targeting the Ajna marma point. Performed at Vedara Care Polyclinic in Jumeirah Village Circle, Dubai for chronic insomnia, anxiety, migraine, and stress-related disorders.",
     "url": "https://vedaracare.ae/treatments/shirodhara-dubai/",
-    "image": "https://vedaracare.ae/images/shirodhara-dubai-hero.jpg",
+    "image": "https://vedaracare.ae/images/shirodhara-dubai-hero.webp",
     "procedureType": "Ayurveda",
     "bodyLocation": ["Forehead", "Autonomic nervous system", "Hypothalamic-pituitary axis", "Trigeminal nerve"],
     "preparation": "BAMS doctor consultation to confirm indication and select the appropriate medicated oil. Brief preparatory head and neck Abhyanga.",
@@ -122,8 +122,63 @@ const schemaMarkup = [
   },
   {
     "@context": "https://schema.org",
+    "@type": "Place",
+    "name": "Jumeirah Village Circle"
+  },
+  {
+    "@context": "https://schema.org",
     "@type": "MedicalProcedure",
     "name": "Sutika Paricharya"
+  },
+  {
+    "@context": "https://schema.org",
+    "@type": "MedicalEntity",
+    "name": "Ajna marma"
+  },
+  {
+    "@context": "https://schema.org",
+    "@type": "MedicalEntity",
+    "name": "Heart rate variability"
+  },
+  {
+    "@context": "https://schema.org",
+    "@type": "MedicalEntity",
+    "name": "Cortisol"
+  },
+  {
+    "@context": "https://schema.org",
+    "@type": "MedicalEntity",
+    "name": "EEG"
+  },
+  {
+    "@context": "https://schema.org",
+    "@type": "EducationalCredential",
+    "name": "BAMS"
+  },
+  {
+    "@context": "https://schema.org",
+    "@type": "MedicalCondition",
+    "name": "Insomnia"
+  },
+  {
+    "@context": "https://schema.org",
+    "@type": "MedicalCondition",
+    "name": "Anxiety"
+  },
+  {
+    "@context": "https://schema.org",
+    "@type": "MedicalCondition",
+    "name": "Migraine"
+  },
+  {
+    "@context": "https://schema.org",
+    "@type": "MedicalCondition",
+    "name": "Hair loss"
+  },
+  {
+    "@context": "https://schema.org",
+    "@type": "MedicalCondition",
+    "name": "Postnatal mood disorders"
   },
   {
     "@context": "https://schema.org",
@@ -183,13 +238,13 @@ const schemaMarkup = [
       "name": "Dr. Priya Sharma",
       "hasCredential": "DHA-Licensed BAMS, MD (Ayurveda)"
     },
-    "primaryImageOfPage": "https://vedaracare.ae/images/shirodhara-dubai-hero.jpg"
+    "primaryImageOfPage": "https://vedaracare.ae/images/shirodhara-dubai-hero.webp"
   },
   {
     "@context": "https://schema.org",
     "@type": "Article",
     "headline": "Shirodhara in Dubai — A Complete Treatment Guide",
-    "image": "https://vedaracare.ae/images/shirodhara-dubai-hero.jpg",
+    "image": "https://vedaracare.ae/images/shirodhara-dubai-hero.webp",
     "datePublished": "2026-05-23",
     "dateModified": "2026-05-23",
     "author": {
@@ -258,7 +313,7 @@ const ShirodharaDubai = () => {
         {/* Open Graph */}
         <meta property="og:title" content="Shirodhara in Dubai — Classical Oil Stream Therapy at Vedara Care" />
         <meta property="og:description" content="Doctor-prescribed Shirodhara at our DHA-licensed JVC clinic. For insomnia, anxiety, migraine, and chronic stress. From AED 450." />
-        <meta property="og:image" content="https://vedaracare.ae/og-images/shirodhara-dubai.jpg" />
+        <meta property="og:image" content="https://vedaracare.ae/images/shirodhara-dubai-hero.webp" />
         <meta property="og:url" content="https://vedaracare.ae/treatments/shirodhara-dubai/" />
         <meta property="og:type" content="article" />
         <meta property="og:locale" content="en_AE" />

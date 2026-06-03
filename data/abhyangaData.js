@@ -19,7 +19,8 @@ export const abhyangaHero = {
     title: "TRADITIONAL KERALA TECHNIQUE",
     subtitle: "Performed on a wooden droni by two synchronized therapists — the way it was meant to be."
   },
-  image: "https://images.unsplash.com/photo-1728497872660-cc6b16238c3a?w=800&h=900&fit=crop&auto=format"
+  image: "/images/abhyanga-dubai-hero.webp",
+  alt: "Two therapists pouring warm medicated oil during Abhyanga on a wooden droni at Vedara Care Ayurveda clinic, JVC Dubai"
 };
 
 export const abhyangaIntro = {
@@ -41,7 +42,8 @@ export const abhyangaMechanism = {
     // "\"Abhyanga is the closest thing classical medicine has to a daily multivitamin — except it works through the skin, not the stomach.\""
   ],
   quote: "Abhyanga is the closest thing classical medicine has to a daily multivitamin — except it works through the skin, not the stomach.",
-  image: "https://images.unsplash.com/photo-1760434100079-91428953cbe9?w=700&h=700&fit=crop&auto=format"
+  image: "/images/abhyanga-medicated-oil-brass-bowl-jvc.webp",
+  alt: "Brass bowl with warm sesame oil and Ayurvedic herbs prepared for Abhyanga in Dubai"
 };
 
 export const abhyangaProtocol = {
@@ -192,7 +194,8 @@ export const abhyangaApplications = {
     }
   ],
   // honestNote: "Real Ayurvedic not the primary answer. Abhyanga is foundational — but not always sufficient alone",
-  image: "https://images.unsplash.com/photo-1559839734-2b71ea197ec2?w=800"
+  image: "/images/wooden-droni-table-abhyanga-vedara-jvc.webp",
+  alt: "Dosha-specific medicated oils for classical Ayurvedic Abhyanga Dubai"
 };
 
 export const abhyangaPrograms = {
@@ -253,10 +256,10 @@ export const abhyangaHomeHealthcare = {
   bgColor: "bg-[#FFFFFF]",
   label: "HOME HEALTHCARE",
   title: "We bring Abhyanga to your home across Dubai.",
-  description: "For new mothers, elderly patients, patients with limited mobility, or anyone whose schedule does not permit clinic visits — Abhyanga is one of our most-requested home services.",
+  description: "For new mothers, elderly patients, patients with limited mobility, or anyone whose schedule does not permit clinic visits — Abhyanga is one of our most-requested home services. <a href='/home-healthcare-dubai/' class='text-[#C9A961] hover:underline transition-colors'>Read about Home Healthcare</a>.",
   quote: "Our home Ayurvedic therapists travel to JVC, JVT, Al Barsha South, Dubai Sports City, Motor City, Downtown, Dubai Marina, Palm Jumeirah, Mirdif, and across Dubai. They bring authentic medicated oils, a portable folding wooden droni table, towels, and all required equipment.",
-  image: "https://images.unsplash.com/photo-1706795033735-823bb5fde87b?w=600&h=700&fit=crop&auto=format",
-  imageAlt: "Ayurvedic therapist ready for home Abhyanga treatment in Dubai",
+  image: "/images/abhyanga-home-service-dubai.webp",
+  imageAlt: "Home Ayurvedic therapist arriving at a Dubai residence for Abhyanga home service",
   features: [
     "Same DHA-licensed clinical standards",
     "Same trained therapists from our JVC clinic",
@@ -376,6 +379,7 @@ export const abhyangaTreatmentLocation = {
   whatsapp: "+971 50 000 0000",
   hours: "Monday - Friday: 9:00 AM - 8:00 PM<br/>Saturday: 9:00 AM - 6:00 PM<br/>Sunday: 10:00 AM - 4:00 PM",
   description: "Five private Abhyanga treatment rooms, each with traditional Kerala-style wooden droni table and brass oil-warming station. Heated rooms maintained at 26–28°C during sessions. Free patient parking available.",
+  mapAlt: "Vedara Care Abhyanga clinic location in Jumeirah Village Circle Dubai near Circle Mall",
   buttonText: "Book Abhyanga Consultation"
 };
 

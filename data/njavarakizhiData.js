@@ -19,7 +19,8 @@ export const njavarakizhiHero = {
     title: "NOT THE OBVIOUS CHOICE.",
     subtitle: "Njavarakizhi is prescribed for specific clinical reasons — not as a general relaxation therapy. Your doctor will explain whether it's right for you."
   },
-  image: "https://images.unsplash.com/photo-1544161515-4ab6ce6db874?w=900&h=1100&fit=crop&auto=format"
+  image: "/images/njavarakizhi-dubai-hero.webp",
+  alt: "Njavara rice boluses being dipped in warm herbal medicated milk at Vedara Care Ayurveda clinic, JVC Dubai"
 };
 
 export const njavarakizhiIntro = {
@@ -40,7 +41,8 @@ export const njavarakizhiMechanism = {
     "\"Most massages take something away — tension, fatigue, toxins. Njavarakizhi gives something back.\""
   ],
   quote: "Most massages take something away — tension, fatigue, toxins. Njavarakizhi gives something back.",
-  image: "https://images.unsplash.com/photo-1596040033229-a9821ebd058d?w=800"
+  image: "/images/njavara-rice-cooking-herbal-milk-vedara.webp",
+  alt: "Njavara rice cooking in copper pot with herbal milk preparation for Njavarakizhi treatment at Vedara Care JVC"
 };
 
 export const njavarakizhiProtocol = {
@@ -219,8 +221,8 @@ export const njavarakizhiHomeHealthcare = {
   title: "For our elderly and post-illness patients, home Njavarakizhi changes outcomes.",
   description: "Njavarakizhi is the <a href=\"/home-healthcare-dubai/\">home therapy</a> our clinic most consistently recommends — because the patients who benefit most from it are often the patients who cannot easily travel.",
   quote: "For elderly patients with mobility limitations, post-illness patients with significant fatigue, and <a href=\"/conditions/stroke-recovery-ayurveda-dubai/\">post-stroke</a> patients in rehabilitation, the clinical reality is that consistent treatment matters more than the venue. A patient who manages 7 of 14 prescribed clinic sessions due to fatigue gets a worse outcome than one who completes all 14 sessions at home.",
-  image: "https://images.unsplash.com/photo-1607619056574-7b8d3ee536b2?w=700&h=875&fit=crop&auto=format",
-  imageAlt: "Ayurvedic therapist at a Dubai home for home Njavarakizhi service — carrying traditional herbal supplies",
+  image: "/images/njavarakizhi-home-service-elderly-dubai.webp",
+  imageAlt: "Therapist arriving at Dubai home with prepared Njavara rice and herbal milk for home Njavarakizhi",
   features: [
     "Two synchronised therapists, same as clinic",
     "Freshly prepared Njavara rice from our clinic kitchen",
@@ -396,7 +398,8 @@ export const njavarakizhiTreatmentLocation = {
     "Free patient parking available"
   ],
   description: "Two dedicated Njavarakizhi treatment rooms with traditional Kerala-style wooden droni tables, insulated brass vessels, and rice-preparation stations. Our kitchen prepares Njavara rice and herbal kashayams fresh for every session — which is why advance booking is required.",
-  buttonText: "Book Njavarakizhi Consultation"
+  buttonText: "Book Njavarakizhi Consultation",
+  mapAlt: "Vedara Care Njavarakizhi specialised therapy clinic in Jumeirah Village Circle Dubai"
 };
 
 export const njavarakizhiFinalCTA = {
