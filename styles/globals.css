@@ -26,19 +26,8 @@ h1, h2, h3, h4, h5, h6 {
   font-family: var(--font-serif);
 }
 
-/* Style regular links in content, not buttons */
-p a, 
-h1 a, 
-h2 a, 
-h3 a, 
-li a,
-span a {
-  color: #C9A961;
-  text-decoration: underline;
-  transition: color 0.2s;
-}
 
-a:hover {
+main a:hover {
   color: #a68d4c;
 }
 
