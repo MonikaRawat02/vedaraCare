@@ -37,7 +37,15 @@ import {
 } from '../../data/weightLossData';
 
 const WeightLossAyurvedaDubai = () => {
-  const currentDate = new Date().toISOString();
+  const [mounted, setMounted] = React.useState(false);
+  
+  React.useEffect(() => {
+    setMounted(true);
+  }, []);
+
+  // Use a stable date for SSR to prevent hydration mismatch
+  const currentDate = "2026-06-03T00:00:00.000Z";
+  const displayDate = mounted ? new Date().toISOString() : currentDate;
 
   return (
     <>
@@ -54,7 +62,7 @@ const WeightLossAyurvedaDubai = () => {
         <meta property="og:type" content="article" />
         <meta property="og:locale" content="en_AE" />
         <meta property="article:published_time" content="2026-05-01" />
-        <meta property="article:modified_time" content={currentDate} />
+        <meta property="article:modified_time" content={displayDate} />
         <meta property="article:author" content="Dr. Sharma Patel" />
         
         {/* Twitter */}
@@ -215,7 +223,7 @@ const WeightLossAyurvedaDubai = () => {
               "@type": "PatientAudience",
               "geographicArea": {"@type": "Place", "name": "Dubai, United Arab Emirates"}
             },
-            "lastReviewed": currentDate,
+            "lastReviewed": displayDate,
             "reviewedBy": {
               "@type": "Physician",
               "name": "Dr. Sharma Patel",
@@ -288,7 +296,7 @@ const WeightLossAyurvedaDubai = () => {
             "headline": "Ayurveda for Weight Loss in Dubai — A Complete Clinical Guide",
             "image": "https://vedaracare.ae/og-images/weight-loss-ayurveda-dubai-hero.webp",
             "datePublished": "2026-05-01",
-            "dateModified": currentDate,
+            "dateModified": displayDate,
             "author": {
               "@type": "Physician",
               "name": "Dr. Sharma Patel",
@@ -459,7 +467,7 @@ const WeightLossAyurvedaDubai = () => {
                 <div className="text-6xl mb-4" style={{ fontFamily: "Georgia, serif", color: "rgb(201, 169, 97)" }}>
                   {phenotype.letter}
                 </div>
-                 <h3 className="text-xl mb-2" style={{ fontFamily: "Georgia, serif", fontWeight: 500 }} dangerouslySetInnerHTML={{ __html: phenotype.title }} />
+                 <h3 className="text-xl mb-2 [&_a]:text-[#1c1c1a] [&_a]:no-underline hover:[&_a]:text-[#C9A961] hover:[&_a]:underline [&_a]:transition-colors" style={{ fontFamily: "Georgia, serif", fontWeight: 500 }} dangerouslySetInnerHTML={{ __html: phenotype.title }} />
                 <p className="text-sm italic mb-4" style={{ color: "rgb(201, 169, 97)" }} dangerouslySetInnerHTML={{ __html: phenotype.subtitle }} />
                 <p className="mb-4 leading-relaxed" style={{ color: "rgb(107, 114, 128)" }} dangerouslySetInnerHTML={{ __html: phenotype.content }} />
                 <div className="text-sm">
@@ -492,6 +500,12 @@ const WeightLossAyurvedaDubai = () => {
           <div className="grid md:grid-cols-4 gap-8">
             {weightLossMechanism1.pillars.map(pillar => {
               const isPanchakarma = pillar.number === "1";
+              
+              // Strip inner links if the card is already a link to avoid hydration mismatch (nested <a> tags)
+              const processedDescription = isPanchakarma 
+                ? pillar.description.replace(/<a\b[^>]*>(.*?)<\/a>/gi, '$1')
+                : pillar.description;
+
               const content = (
                 <div 
                   className="p-8 rounded-xl border-t-4 cursor-pointer transition-transform hover:scale-[1.02]"
@@ -509,7 +523,7 @@ const WeightLossAyurvedaDubai = () => {
                   <h3 className="text-xl mb-4" style={{ fontFamily: "Georgia, serif", fontWeight: 500 }}>
                     {pillar.title}
                   </h3>
-                  <p className="leading-relaxed" style={{ color: "rgb(107, 114, 128)" }} dangerouslySetInnerHTML={{ __html: pillar.description }}>
+                  <p className="leading-relaxed" style={{ color: "rgb(107, 114, 128)" }} dangerouslySetInnerHTML={{ __html: processedDescription }}>
                   </p>
                 </div>
               );
