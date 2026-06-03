@@ -7,7 +7,7 @@ export const diabetesHero = {
   bgColor: "bg-[#FAF8F3]",
   label: "AYURVEDIC TREATMENT FOR DIABETES | DHA-LICENSED CLINIC IN JVC, DUBAI",
   title: "Diabetes is too serious for marketing. It needs integrated medicine.",
-  description: "Authentic Ayurvedic treatment for diabetes in Dubai works alongside your endocrinologist — not instead of them. At our Jumeirah Village Circle (JVC) clinic, structured Ayurvedic programmes address insulin resistance, lipid patterns, inflammation, and lifestyle factors that conventional 15-minute appointments cannot. Realistic outcomes: HbA1c reductions of 1-3 points for many patients over 6 months, often with medication adjustment under endocrinologist supervision.",
+  description: "Authentic Ayurvedic treatment for diabetes in Dubai works alongside your endocrinologist — not instead of them. At our Jumeirah Village Circle (JVC) clinic, structured Ayurvedic programmes address insulin resistance, lipid patterns, inflammation, and <a href=\"/conditions/stress-anxiety-ayurveda-dubai/\" class=\"hover:underline\">stress and sleep patterns</a> that conventional 15-minute appointments cannot. Realistic outcomes: HbA1c reductions of 1-3 points for many patients over 6 months, often with medication adjustment under endocrinologist supervision.",
   primaryCTA: "Book a Diabetes Consultation",
   secondaryCTA: "Chat on WhatsApp",
   trustSignals: [
@@ -94,7 +94,7 @@ export const diabetesMechanism1 = {
     {
       number: "4",
       title: "Lifestyle, Sleep & Movement Protocols",
-      description: "Diabetes is profoundly responsive to sleep quality, stress regulation, and movement patterns. Our programmes include specific protocols for sleep optimisation, stress regulation (often including Shirodhara), movement prescription appropriate to your fitness and complications status."
+      description: "Diabetes is profoundly responsive to <a href=\"/conditions/stress-anxiety-ayurveda-dubai/\" class=\"hover:underline\">sleep quality, stress regulation</a>, and movement patterns. Our programmes include specific protocols for sleep optimisation, stress regulation (often including Shirodhara), movement prescription appropriate to your fitness and complications status."
     }
     
   ]

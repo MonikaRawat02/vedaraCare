@@ -713,7 +713,7 @@ export const dubaiHubApplications = {
     "<a href=\"/conditions/migraine-ayurveda-dubai/\" class=\"hover:underline\">Migraine and headache disorders</a>",
     "Hair loss (Khalitya)",
     "Postnatal recovery (Sutika Paricharya)",
-    "Stress, anxiety, and chronic insomnia",
+    "<a href=\"/conditions/stress-anxiety-ayurveda-dubai/\" class=\"hover:underline\">Stress, anxiety, burnout</a>",
     "Knee pain and osteoarthritis",
     "Frozen shoulder and cervical spondylosis",
     "IBS and chronic digestive issues",

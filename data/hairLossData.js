@@ -49,7 +49,7 @@ export const hairLossPhenotypes = {
       letter: 'B',
       title: 'Telogen Effluvium (Diffuse Shedding)',
       subtitle: 'Indralupta-adjacent in classical texts',
-      content: 'Sudden, diffuse hair shedding 2-4 months after a triggering event — childbirth, severe illness (including COVID), surgery, significant weight loss, severe stress, iron deficiency, or medication changes. Hair falls from all over the scalp rather than in specific patterns. Most common in women aged 25-45. Usually reversible if root cause is addressed.',
+      content: 'Sudden, diffuse hair shedding 2-4 months after a triggering event — childbirth, severe illness (including COVID), surgery, significant weight loss, severe <a href="/conditions/stress-anxiety-ayurveda-dubai/" class="doctor-specialty-link">telogen effluvium from stress</a>, iron deficiency, or medication changes. Hair falls from all over the scalp rather than in specific patterns. Most common in women aged 25-45. Usually reversible if root cause is addressed.',
       ayurvedicEmphasis: 'Trigger identification, internal Rasayana medicines, dietary correction, 3-6 month recovery programme'
     },
     {

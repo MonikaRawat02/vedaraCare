@@ -71,13 +71,14 @@ export const StressAnxietyTimeline = ({
 
 export const StressAnxietySleepSection = ({
   label = "THE FOUNDATIONAL TREATMENT",
-  title = "For most patients, sleep changes first. Everything else changes more slowly.",
+  title = "",
   content = [],
   subheading = "Why Shirodhara Specifically Helps Sleep",
   subheadingContent = "",
   linkText = "Read about Shirodhara",
   linkHref = "/treatments/shirodhara-dubai/",
-  image = "https://images.unsplash.com/photo-1519494026892-80bbd2d6fd0d?q=80&w=2053&auto=format&fit=crop"
+  image = "",
+  alt = ""
 }) => {
   return (
     <section className="bg-white py-24 px-8" style={{ fontFamily: "'DM Sans', sans-serif" }}>
@@ -115,7 +116,7 @@ export const StressAnxietySleepSection = ({
           <div className="relative">
             <img 
               src={image} 
-              alt={title} 
+              alt={alt || title} 
               className="rounded-xl w-full h-auto object-cover aspect-[4/3]"
             />
           </div>
@@ -134,20 +135,35 @@ export const StressAnxietyVisitSection = ({
   hours = [],
   description = "",
   button1Text = "Book an Anxiety & Stress Consultation",
-  button2Text = "WhatsApp Us"
+  button2Text = "WhatsApp Us",
+  mapEmbed = "",
+  alt = ""
 }) => {
   return (
     <section className="bg-white py-24 px-8 border-t border-[#F5F0E8]" style={{ fontFamily: "'DM Sans', sans-serif" }}>
       <div className="max-w-7xl mx-auto grid md:grid-cols-2 gap-16 items-center">
         <div className="relative">
-          <div className="bg-[#F6F1E9] rounded-xl w-full aspect-[4/3] flex items-center justify-center">
-             <div className="text-center">
-                <div className="w-12 h-12 rounded-full bg-white flex items-center justify-center mx-auto mb-4 shadow-sm">
-                  <div className="w-3 h-3 rounded-full bg-[#B8915A]"></div>
-                </div>
-                <p className="text-base font-medium text-[#1A1A1A]" style={{ fontFamily: 'Fraunces, serif' }}>{location.name}</p>
-                <p className="text-xs text-[#6B6359]">{location.area}</p>
-             </div>
+          <div className="bg-[#F6F1E9] rounded-xl w-full aspect-[4/3] flex items-center justify-center overflow-hidden">
+             {mapEmbed ? (
+               <iframe 
+                 src={mapEmbed}
+                 width="100%"
+                 height="100%"
+                 style={{ border: 0 }}
+                 allowFullScreen=""
+                 loading="lazy"
+                 referrerPolicy="no-referrer-when-downgrade"
+                 title={alt}
+               ></iframe>
+             ) : (
+               <div className="text-center">
+                  <div className="w-12 h-12 rounded-full bg-white flex items-center justify-center mx-auto mb-4 shadow-sm">
+                    <div className="w-3 h-3 rounded-full bg-[#B8915A]"></div>
+                  </div>
+                  <p className="text-base font-medium text-[#1A1A1A]" style={{ fontFamily: 'Fraunces, serif' }}>{location.name}</p>
+                  <p className="text-xs text-[#6B6359]">{location.area}</p>
+               </div>
+             )}
           </div>
         </div>
         <div>
