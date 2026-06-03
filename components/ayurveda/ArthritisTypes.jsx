@@ -19,9 +19,7 @@ const ArthritisTypes = ({
           <h2 className="text-3xl font-medium text-[#1A1A1A] font-serif" style={{ fontFamily: 'Fraunces, Georgia, serif' }}>
             {title}
           </h2>
-          <p className="text-[17px] text-[#6B6B6B] font-sans max-w-[800px] mx-auto leading-relaxed">
-            {description}
-          </p>
+          <p className="text-[17px] text-[#6B6B6B] font-sans max-w-[800px] mx-auto leading-relaxed" dangerouslySetInnerHTML={{ __html: description }} />
         </div>
 
         <div className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-4 gap-6">
@@ -58,9 +56,7 @@ const ArthritisTypes = ({
 
         {footer && (
           <div className="mt-16 text-center max-w-[900px] mx-auto pt-8">
-            <p className="text-[#888888] text-sm font-sans leading-relaxed ">
-              {footer}
-            </p>
+            <p className="text-[#888888] text-sm font-sans leading-relaxed " dangerouslySetInnerHTML={{ __html: footer }} />
           </div>
         )}
       </div>
