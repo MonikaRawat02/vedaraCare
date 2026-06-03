@@ -6,7 +6,7 @@ export const shirodharaHero = {
   ],
   label: "SHIRODHARA OIL THERAPY IN DUBAI • DHA-LICENSED",
   title: "Warm oil. A copper vessel. Forty-five minutes of stillness on the forehead.",
-  description: "Classical Shirodhara — the continuous warm medicated oil stream poured rhythmically across the forehead. Doctor-prescribed at our DHA-licensed clinic in JVC, Dubai, for <a href='/conditions/stress-anxiety-ayurveda-dubai/' class=' hover:underline transition-colors'>chronic stress, insomnia, anxiety</a>, and <a href='/conditions/migraine-ayurveda-dubai/' class='hover:underline transition-colors'>migraine</a>.",
+  description: "Classical Shirodhara — the continuous warm medicated oil stream poured rhythmically across the forehead. Doctor-prescribed at our DHA-licensed clinic in JVC, Dubai, for <a href='/conditions/stress-anxiety-ayurveda-dubai/' class=' hover:underline transition-colors'>chronic stress</a>, <a href='/conditions/insomnia-ayurveda-dubai/' class=' hover:underline transition-colors'>insomnia</a>, <a href='/conditions/stress-anxiety-ayurveda-dubai/' class=' hover:underline transition-colors'>anxiety</a>, and <a href='/conditions/migraine-ayurveda-dubai/' class='hover:underline transition-colors'>migraine</a>.",
   primaryCTA: "Book a Shirodhara Consultation",
   secondaryCTA: "Chat on WhatsApp",
   trustSignals: ["Traditional Copper Dhara Vessel", "Doctor-Prescribed Medicated Oils", "Same-Gender Therapists Always", "From AED 450 per session"],
@@ -14,14 +14,15 @@ export const shirodharaHero = {
     title: "BEYOND RELAXATION",
     subtitle: "Shirodhara works on the autonomic nervous system. Most patients describe the first 10 minutes as ordinary calm. The next 35 minutes are something else entirely."
   },
-  image: "https://images.unsplash.com/photo-1775133263714-848c8fe09e73?crop=entropy&cs=tinysrgb&fit=max&fm=jpg&ixid=M3w3Nzg4Nzd8MHwxfHNlYXJjaHw1fHxheXVydmVkaWMlMjBvaWwlMjB0aGVyYXB5JTIwbWVkaXRhdGlvbiUyMHdlbGxuZXNzJTIwc3BhfGVufDF8fHx8MTc3OTQxNzU3M3ww&ixlib=rb-4.1.0&q=80&w=1080https://images.unsplash.com/photo-1544161515-4ab6ce6db87?w=800"
+  image: "/images/shirodhara-dubai-hero.webp",
+  alt: "Warm medicated oil streaming from copper Shirodhara vessel onto patient forehead at Vedara Care Ayurveda clinic, JVC Dubai"
 };
 
 export const shirodharaIntro = {
   bgColor: "bg-white",
   label: "THE QUICK ANSWER",
   title: "Shirodhara in Dubai, in one paragraph.",
-  blockquote: "Shirodhara (शिरोधारा) is the classical Ayurvedic therapy in which a continuous stream of warm medicated oil is poured rhythmically across the forehead — specifically targeting the Ajna marma point above and between the eyebrows — for 30 to 60 minutes. At Vedara Care Polyclinic in Jumeirah Village Circle, Dubai, Shirodhara is doctor-prescribed by BAMS-qualified physicians for <a href='/conditions/stress-anxiety-ayurveda-dubai/' class=' hover:underline transition-colors'>chronic insomnia, anxiety</a>, <a href='/conditions/migraine-ayurveda-dubai/' class=' hover:underline transition-colors'>migraine</a>, ADHD support, and stress-related disorders. Sessions start from AED 450 and are often most powerful when delivered as a 7 to 14-session course.",
+  blockquote: "Shirodhara (शिरोधారా) is the classical Ayurvedic therapy in which a continuous stream of warm medicated oil is poured rhythmically across the forehead — specifically targeting the Ajna marma point above and between the eyebrows — for 30 to 60 minutes. At Vedara Care Polyclinic in Jumeirah Village Circle, Dubai, Shirodhara is doctor-prescribed by BAMS-qualified physicians for <a href='/conditions/insomnia-ayurveda-dubai/' class=' hover:underline transition-colors'>chronic insomnia</a>, <a href='/conditions/stress-anxiety-ayurveda-dubai/' class=' hover:underline transition-colors'>anxiety</a>, <a href='/conditions/migraine-ayurveda-dubai/' class=' hover:underline transition-colors'>migraine</a>, ADHD support, and stress-related disorders. Sessions start from AED 450 and are often most powerful when delivered as a 7 to 14-session course.",
   footer: "Medically reviewed by Dr. Priya Sharma, BAMS, MD (Ayurveda), DHA-Licensed · Last updated May 2026"
 };
 
@@ -35,7 +36,8 @@ export const shirodharaMechanism = {
     "What Shirodhara is not is a \"relaxing oil drip\" or a spa add-on. It is a precise classical therapy with specific oil temperatures, flow rates, vessel heights, and stream points — all of which matter. Done casually, you receive a warm head shower. Done properly, you receive a therapy."
   ],
   quote: "Most patients say nothing happens for the first ten minutes. Then everything happens.",
-  image: "https://images.unsplash.com/photo-1644061925268-053b6a592c2e?w=1080"
+  image: "/images/copper-shirodhara-vessel-vedara-jvc.webp",
+  alt: "Traditional copper Shirodhara vessel suspended on wooden frame at Vedara Care, JVC Dubai"
 };
 
 export const shirodharaProtocol = {
@@ -78,19 +80,19 @@ export const shirodharaOils = {
     {
       name: "Ksheerabala Taila",
       description: "Vata pacification for severe insomnia",
-      content: "A specialised oil prepared with Bala (Sida cordifolia) and milk, used for <a href='/conditions/stress-anxiety-ayurveda-dubai/' class='text-[#C9A961] hover:underline transition-colors'>severe insomnia, restless sleep</a>, chronic tension headaches, and Vata-pattern nervous system depletion. Often the first choice for executive burnout and <a href='/conditions/stress-anxiety-ayurveda-dubai/' class='text-[#C9A961] hover:underline transition-colors'>chronic stress</a>.",
+      content: "A specialised oil prepared with Bala (Sida cordifolia) and milk, used for <a href='/conditions/insomnia-ayurveda-dubai/' class='text-[#C9A961] hover:underline transition-colors'>severe insomnia, restless sleep</a>, chronic tension headaches, and Vata-pattern nervous system depletion. Often the first choice for executive burnout and <a href='/conditions/stress-anxiety-ayurveda-dubai/' class='text-[#C9A961] hover:underline transition-colors'>chronic stress</a>.",
       indication: "insomnia, chronic stress, tension headache"
     },
     {
       name: "Chandanadi Taila",
       description: "Cooling for Pitta-pattern conditions",
-      content: "A cooling sandalwood-based preparation used for <a href='/conditions/migraine-ayurveda-dubai/' class='text-[#C9A961] hover:underline transition-colors'>migraine</a>, heat-pattern insomnia, irritability, and stress-related skin conditions. Patients with Pitta imbalance — typically high-achievers with hot, sharp, intense stress patterns — respond particularly well to this oil.",
+      content: "A cooling sandalwood-based preparation used for <a href='/conditions/migraine-ayurveda-dubai/' class='text-[#C9A961] hover:underline transition-colors'>migraine</a>, <a href='/conditions/insomnia-ayurveda-dubai/' class='text-[#C9A961] hover:underline transition-colors'>heat-pattern insomnia</a>, irritability, and stress-related skin conditions. Patients with Pitta imbalance — typically high-achievers with hot, sharp, intense stress patterns — respond particularly well to this oil.",
       indication: "migraine, irritability, Pitta-pattern stress"
     },
     {
       name: "Mahanarayana Taila",
       description: "Heavy Vata pacification",
-      content: "A heavier, deeply warming sesame oil preparation used for severe Vata disorders affecting the nervous system — chronic insomnia in elderly patients, post-illness mental fatigue, and certain neurological recovery protocols.",
+      content: "A heavier, deeply warming sesame oil preparation used for severe Vata disorders affecting the nervous system — <a href='/conditions/insomnia-ayurveda-dubai/' class='text-[#C9A961] hover:underline transition-colors'>chronic insomnia</a> in elderly patients, post-illness mental fatigue, and certain neurological recovery protocols.",
       indication: "neurological recovery, elderly nervous-system support"
     },
     {
@@ -115,7 +117,7 @@ export const shirodharaApplications = {
     {
       title: "Chronic insomnia",
       subtitle: "Typical protocol: 7-14 sessions over 2-4 weeks",
-      href: "/conditions/stress-anxiety-ayurveda-dubai/"
+      href: "/conditions/insomnia-ayurveda-dubai/"
     },
     {
       title: "Anxiety disorders",
@@ -178,7 +180,7 @@ export const shirodharaApplications = {
     }
   ],
   honestNote: "Honest note: Shirodhara is sometimes oversold. It is profoundly effective for some conditions and only modestly helpful for others. Your doctor will tell you which category yours is in.",
-  image: "https://images.unsplash.com/photo-1540553016828-71405107a6e3?w=800"
+  image: "/images/shirodhara-treatment-room-droni-jvc.webp"
 };
 
 export const shirodharaPrograms = {
@@ -268,7 +270,7 @@ export const shirodharaFaqs = {
   bgColor: "bg-[#F9F6F1]",
   label: "SHIRODHARA QUESTIONS",
   title: "What patients ask before their first Shirodhara.",
-  description: "For comparison with other Ayurvedic treatments, see our category guide: <a href='/treatments/ayurvedic-massage-jvc/' class='text-[#C9A961] hover:underline transition-colors'>Compare All Ayurvedic Massages</a>. For <a href='/treatments/abhyanga-dubai/' class='text-[#C9A961] hover:underline transition-colors'>Abhyanga</a> (often combined with Shirodhara), see the Abhyanga page.",
+  description: "For comparison with other Ayurvedic treatments, see our category guide: <a href='/treatments/ayurvedic-massage-jvc/' class='text-[#C9A961] hover:underline transition-colors'>Compare All Ayurvedic Massages</a>. For <a href='/treatments/abhyanga-dubai/' class='text-[#C9A961] hover:underline transition-colors'>Abhyanga</a> <a href='/treatments/abhyanga-dubai/' class='text-[#C9A961] hover:underline transition-colors'> (often combined with Shirodhara)</a>, see the Abhyanga page.",
   buttonText: "Ask the Team",
   faqs: [
     {
@@ -321,7 +323,8 @@ export const shirodharaTreatmentLocation = {
   ],
   description: "Two dedicated Shirodhara rooms with traditional copper dhara vessels and authentic Kerala-style wooden droni tables. Rooms maintained at 26-28°C with soft amber lighting for the therapy.",
   buttonText: "Book Shirodhara Consultation",
-  mapEmbed: "https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d3613.6391151624!2d55.2085!3d25.0560!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x3e5f6e85d4545555%3A0x5555555555555555!2sJumeirah%20Village%20Circle!5e0!3m2!1sen!2sae!4v1622620000000!5m2!1sen!2sae"
+  mapEmbed: "https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d3613.6391151624!2d55.2085!3d25.0560!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x3e5f6e85d4545555%3A0x5555555555555555!2sJumeirah%20Village%20Circle!5e0!3m2!1sen!2sae!4v1622620000000!5m2!1sen!2sae",
+  mapAlt: "Vedara Care Shirodhara clinic location in Jumeirah Village Circle Dubai near Circle Mall"
 };
 
 export const shirodharaFinalCTA = {
@@ -351,25 +354,25 @@ export const shirodharaRelatedPages = {
     {
       title: "Abhyanga Massage in Dubai",
       description: "Often combined with Shirodhara in extended sessions. The classical full-body Ayurvedic oil massage performed by two synchronized therapists.",
-      image: "https://images.unsplash.com/photo-1544161515-4ab6ce6db87?w=600",
+      image: "/images/copper-shirodhara-vessel-vedara-jvc.webp",
       href: "/treatments/abhyanga-dubai/"
     },
     {
       title: "Conditions Shirodhara Treats",
       description: "Insomnia, migraine, anxiety, and chronic stress. See full condition pages for treatment protocols and timelines.",
-      image: "https://images.unsplash.com/photo-1559839734-2b71ea197ec2?w=600",
+      image: "/images/shirodhara-dubai-hero.webp",
       href: "/conditions/stress-anxiety-ayurveda-dubai/"
     },
     {
       title: "Home Healthcare in Dubai",
       description: "Home Shirodhara is available for postnatal and elderly patients across Dubai through our home healthcare team.",
-      image: "https://images.unsplash.com/photo-1540553016828-71405107a6e3?w=600",
+      image: "/images/shirodhara-home-service-dubai.webp",
       href: "/home-healthcare-dubai/"
     },
     {
       title: "Compare All Ayurvedic Massages",
       description: "Not sure if Shirodhara is right for you? Compare with Abhyanga, Kativasti, Njavarakizhi, and Udvartana.",
-      image: "https://images.unsplash.com/photo-1508672019048-805c876b67e2?w=600",
+      image: "/images/shirodhara-treatment-room-droni-jvc.webp",
       href: "/treatments/ayurvedic-massage-jvc/"
     }
   ],

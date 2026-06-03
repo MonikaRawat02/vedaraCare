@@ -24,7 +24,7 @@ const DoctorHero = ({ doctor }) => {
               {/* Image placeholder - you will add your image here */}
               <img
                 src={doctor.image}
-                alt="Dr. Priya Nair, Ayurvedic Physician at Vedara Care Polyclinic, JVC Dubai"
+                alt={doctor.alt || "Doctor"}
                 className="w-full h-full object-cover"
               />
               

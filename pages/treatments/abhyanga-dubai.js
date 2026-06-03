@@ -41,7 +41,7 @@ const AbhyangaDubai = () => {
       "alternateName": ["Abhyanga Massage", "Classical Ayurvedic Oil Massage", "Two-Therapist Ayurvedic Massage"],
       "description": "Abhyanga is the classical full-body Ayurvedic oil massage in which warm dosha-specific medicated oils are applied head-to-toe in synchronized strokes by two trained therapists, typically over 60 to 90 minutes. Performed at Vedara Care Polyclinic in Jumeirah Village Circle, Dubai by therapists trained in classical Kerala technique.",
       "url": "https://vedaracare.ae/treatments/abhyanga-dubai/",
-      "image": "https://vedaracare.ae/images/abhyanga-dubai-hero.jpg",
+      "image": "https://vedaracare.ae/images/abhyanga-dubai-hero.webp",
       "procedureType": "Ayurveda",
       "bodyLocation": "Whole body",
       "preparation": "BAMS doctor consultation including dosha assessment to select appropriate medicated oils.",
@@ -257,13 +257,13 @@ const AbhyangaDubai = () => {
         "name": "Dr. Priya Menon",
         "hasCredential": "DHA-Licensed BAMS, MD (Ayurveda)"
       },
-      "primaryImageOfPage": "https://vedaracare.ae/images/abhyanga-dubai-hero.jpg"
+      "primaryImageOfPage": "https://vedaracare.ae/images/abhyanga-dubai-hero.webp"
     },
     {
       "@context": "https://schema.org",
       "@type": "Article",
       "headline": "Abhyanga Massage in Dubai — A Complete Treatment Guide",
-      "image": "https://vedaracare.ae/images/abhyanga-dubai-hero.jpg",
+      "image": "https://vedaracare.ae/images/abhyanga-dubai-hero.webp",
       "datePublished": "2026-05-01",
       "dateModified": currentDate,
       "author": {
@@ -319,7 +319,7 @@ const AbhyangaDubai = () => {
         {/* Open Graph */}
         <meta property="og:title" content="Abhyanga Massage in Dubai — Classical 90-Minute Ayurvedic Oil Therapy" />
         <meta property="og:description" content="Two synchronized therapists, dosha-specific medicated oils, traditional Kerala technique. DHA-licensed Ayurvedic Abhyanga in JVC, Dubai. From AED 450." />
-        <meta property="og:image" content="https://vedaracare.ae/og-images/abhyanga-dubai.jpg" />
+        <meta property="og:image" content="https://vedaracare.ae/og-images/abhyanga-dubai.webp" />
         <meta property="og:url" content="https://vedaracare.ae/treatments/abhyanga-dubai/" />
         <meta property="og:type" content="article" />
         <meta property="og:locale" content="en_AE" />
