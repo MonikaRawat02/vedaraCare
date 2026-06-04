@@ -3,29 +3,33 @@ import { MessageCircle } from 'lucide-react';
 
 const BlogFinalCTA = ({ label, title, content, bookHref, whatsappUrl, footerInfo = [] }) => {
   return (
-    <div id="how-to-start" className="mt-40 text-center max-w-[720px] mx-auto pb-24">
-      <span className="text-[11px] font-bold text-[#D4A373] uppercase tracking-[0.2em] mb-4 block">{label}</span>
-      <h2 className="text-[28px] md:text-[36px] font-serif font-medium text-[#1A1A1A] mb-8 leading-tight">
-        {title}
-      </h2>
-      
-      <p className="text-[16px] md:text-[18px] text-[#4A4A4A] mb-12 leading-relaxed">
-        {content}
-      </p>
+    <div id="how-to-start" className="bg-[#FAF8F5] py-[96px] px-6 mt-40">
+      <div className="max-w-[720px] mx-auto text-center">
+        <span className="text-[14px] font-medium text-[#C9A961] uppercase tracking-wider block mb-4 font-sans">
+          {label}
+        </span>
+        <h2 className="text-[28px] md:text-[36px] font-serif  text-[#1A1A1A] mb-6 ">
+          {title}
+        </h2>
+        
+        <p className="text-[17px] md:text-[19px] text-[#4A4A4A] mb-8 leading-[1.7] font-sans">
+          {content}
+        </p>
 
-      <div className="flex flex-col sm:flex-row gap-4 justify-center items-center mb-12">
-        <Link href={bookHref} className="w-full sm:w-auto px-10 py-4 bg-[#D4A373] text-white rounded-lg font-bold hover:bg-[#c69362] transition-all text-[15px] shadow-sm">
-          Book a Back Pain Consultation
-        </Link>
-        <a href={whatsappUrl} className="w-full sm:w-auto px-10 py-4 border border-[#D4A373] text-[#D4A373] rounded-lg font-bold hover:bg-[#F5F2ED] transition-all text-[15px] flex items-center justify-center gap-2">
-          <MessageCircle size={18} /> Chat on WhatsApp
-        </a>
-      </div>
+        <div className="flex flex-col sm:flex-row gap-4 justify-center items-center mb-10">
+          <Link href={bookHref} className="w-full sm:w-auto px-8 py-4 bg-[#C9A961] text-white rounded-lg font-bold hover:bg-[#C9A961]/90 transition-all text-[16px] shadow-sm">
+            Book a Back Pain Consultation
+          </Link>
+          <a href={whatsappUrl} className="w-full sm:w-auto px-8 py-4 border-2 border-[#C9A961] text-[#C9A961] rounded-lg font-bold hover:bg-[#FAF8F5] transition-all text-[16px] flex items-center justify-center gap-2">
+            <MessageCircle size={20} /> Chat on WhatsApp
+          </a>
+        </div>
 
-      <div className="text-[13px] text-[#A1A1A1] space-y-1">
-        {footerInfo.map((info, i) => (
-          <p key={i}>{info}</p>
-        ))}
+        <div className="text-[14px] text-[#6B6B6B] space-y-1 font-sans leading-relaxed">
+          {footerInfo.map((info, i) => (
+            <p key={i}>{info}</p>
+          ))}
+        </div>
       </div>
     </div>
   );

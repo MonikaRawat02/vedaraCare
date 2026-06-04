@@ -5,6 +5,7 @@ export const backPainEvidenceBlog = {
   description: "The short answer is yes — for specific back pain patterns, with realistic expectations. The longer answer involves understanding which back pain Ayurveda treats well, which it does not, what the evidence actually shows, and how the clinical experience at our Jumeirah Village Circle (JVC) clinic in Dubai aligns with published research.",
   category: "CONDITIONS · BACK PAIN",
   readingTime: "9 min read",
+  bgColor: "bg-[#FAF8F5]",
   author: {
     name: "Dr. Priya Sharma",
     credentials: "BAMS, MD (Ayurveda), DHA Licensed · Lead Ayurvedic Physician, Vedara Care Polyclinic JVC",
@@ -22,7 +23,7 @@ export const backPainEvidenceBlog = {
   breadcrumbs: [
     { label: 'Home', href: '/' },
     { label: 'Blog', href: '/blog' },
-    { label: 'Conditions', href: '/blog/conditions' }
+    { label: 'Conditions', href: '/conditions' }
   ],
   tableOfContents: [
     { id: 'what-is-back-pain', title: 'What back pain actually is — and isn\'t' },
@@ -181,6 +182,7 @@ export const backPainEvidenceBlog = {
       "Integrated Ayurveda + physiotherapy · Insurance-direct billing"
     ]
   },
+  relatedArticlesBgColor: "bg-[#F5F2ED]",
   relatedArticles: [
     { 
       title: "What happens during a Kati Vasti session? An honest walk-through", 
@@ -205,6 +207,164 @@ export const backPainEvidenceBlog = {
       category: "INTEGRATED CARE", 
       description: "A practical comparison for patients deciding between Ayurvedic treatment, physiotherapy, or integrated care for chronic back pain in Dubai.",
       img: "https://images.unsplash.com/photo-1576091160550-2173dba999ef?q=80&w=2070&auto=format&fit=crop" 
+    }
+  ]
+};
+
+export const panchakarmaBlog = {
+  id: "what-is-panchakarma",
+  slug: "what-is-panchakarma",
+  title: "What is Panchakarma — and how does it actually work?",
+  description: "Panchakarma is one of the most-misunderstood terms in Ayurvedic medicine — described as a detox, a cleanse, a spa retreat, or simply \"Indian wellness.\" The clinical reality is more specific and more interesting. This article explains what Panchakarma actually is, what its five components do, how the protocol unfolds over weeks, and why classical Ayurveda considers it the most important therapeutic intervention in the entire system.",
+  category: "FOUNDATIONS · AYURVEDA EXPLAINED",
+  readingTime: "12 min read",
+  heroBgColor: "bg-[#FAF8F5]",
+  quickAnswerBgColor: "bg-[#FAF8F5]",
+  contentBgColor: "bg-[#FDFCF9]",
+  relatedArticlesBgColor: "bg-[#FAF8F5]",
+  newsletterBgColor: "bg-[#FDFCF9]",
+  finalCtaBgColor: "bg-[#FAF8F5]",
+  author: {
+    name: "Dr. Priya Sharma",
+    credentials: "BAMS, MD (Ayurveda), DHA-Licensed · Lead Ayurvedic Physician, Vedara Care Polyclinic JVC",
+    bio: "Dr. Sharma is a DHA-licensed Ayurvedic physician with over 12 years of clinical experience, specialising in Panchakarma protocols and integrated Ayurvedic care for chronic conditions. She practises at the Vedara Care Polyclinic in Jumeirah Village Circle (JVC), Dubai, where she leads the Panchakarma programmes for patients across Dubai's neighbourhoods.",
+    readMoreHref: "/doctors/dr-priya-sharma",
+    bookHref: "/book"
+  },
+  publishDate: "June 1, 2026",
+  updatedDate: "June 1, 2026",
+  featuredImage: {
+    url: "https://images.unsplash.com/photo-1544161515-4ae6ce6db87e?q=80&w=2070&auto=format&fit=crop",
+    alt: "Traditional Panchakarma therapy setting",
+    caption: "Panchakarma protocols at the Vedara Care JVC clinic. The classical five-action framework as practised at our Jumeirah Village Circle, Dubai centre."
+  },
+  breadcrumbs: [
+    { label: 'Home', href: '/' },
+    { label: 'Blog', href: '/blog' },
+    { label: 'Foundations', href: '/blog/foundations' }
+  ],
+  tableOfContents: [
+    { id: 'meaning', title: '1. The word itself — what \"Panchakarma\" means' },
+    { id: 'not-panchakarma', title: '2. The misconceptions worth clearing up first' },
+    { id: 'five-procedures', title: '3. The five actions explained' },
+    { id: 'three-phases', title: '4. The three phases of the protocol' },
+    { id: 'how-it-works', title: '5. How Panchakarma actually works — the mechanism' },
+    { id: 'treats', title: '6. What Panchakarma treats' },
+    { id: 'who-not', title: '7. Who should not do Panchakarma' },
+    { id: 'authentic-dubai', title: '8. What authentic Panchakarma looks like in Dubai' },
+  ],
+  quickAnswer: {
+    title: "What is Panchakarma?",
+    content: "Panchakarma is a structured 7 to 21-day Ayurvedic therapeutic programme involving five specific medical procedures — Vamana (therapeutic vomiting), Virechana (medicated purgation), Basti (medicated enema therapy), Nasya (medicated nasal therapy), and Rakta Mokshana (controlled bloodletting) — performed in sequence with preparatory and recovery phases. Originating in classical Sanskrit texts including the Charaka Samhita (circa 200 BCE), Panchakarma is the most clinically significant therapeutic intervention in Ayurvedic medicine, used to treat chronic disease, address systemic inflammation and metabolic dysfunction, and clear deeply-seated patterns that internal medicines alone cannot reach. At authentic clinics like the Vedara Care Polyclinic in Jumeirah Village Circle (JVC), Dubai, Panchakarma is a doctor-led medical procedure — not a spa treatment, not a detox programme, and not a wellness retreat."
+  },
+  sections: [
+    {
+      id: "meaning",
+      title: "What \"Panchakarma\" actually means",
+      content: [
+        "The word Panchakarma is Sanskrit — Pancha meaning \"five\" and Karma meaning \"action\" or \"procedure.\" Translated literally: \"the five actions.\" The name refers to the five specific therapeutic procedures that comprise the protocol, each addressing a different aspect of imbalance in the body.",
+        "This linguistic specificity matters. Panchakarma is not a generic Ayurvedic treatment. It is not a category of therapies. It refers specifically to a structured medical intervention involving five named procedures, performed in a particular sequence, supported by preparatory and recovery phases, and overseen by a qualified Ayurvedic physician. The word \"five\" in the name is precise, not symbolic.",
+        "The protocol is described in detail across classical Ayurvedic texts. The Charaka Samhita (circa 200 BCE) provides the most comprehensive description, with later texts including the Sushruta Samhita and Ashtanga Hridayam adding clinical refinements. The framework has remained substantially intact for over 2,000 years — a testament to its clinical durability and a reason that authentic modern Panchakarma still resembles its classical form closely."
+      ],
+       quote: "Panchakarma is not what happens when you go to an Ayurvedic clinic. Panchakarma is one specific medical intervention within Ayurvedic medicine — described, structured, and overseen by qualified physicians for over two thousand years."
+     },
+     {
+       id: "not-panchakarma",
+       title: "What Panchakarma is not",
+       intro: "Before explaining what Panchakarma is, it is worth addressing what it has been frequently confused with — particularly in the wellness publications, spa marketing, and Instagram retreats that have popularised the term globally over the past two decades.",
+       subsections: [
+         {
+           title: "It is not a detox programme",
+           text: "\"Detox\" is a modern wellness concept with limited scientific basis as commonly used. Panchakarma is a 2,000-year-old medical intervention with specific procedures, classical clinical reasoning, and documented therapeutic mechanisms. The two should not be conflated. Authentic Panchakarma does involve removing accumulated metabolic byproducts (Ama in Ayurvedic terms), but the protocol is far more specific and clinically structured than generic \"detox\" marketing implies."
+         },
+         {
+           title: "It is not a spa treatment",
+           text: "Some components of Panchakarma — particularly the preparatory Abhyanga (warm oil massage) and Swedana (medicated steam) — feel pleasant and resemble what spas market as \"Ayurvedic\" treatments. The pleasantness is real but secondary. The main procedures (Virechana, Basti, Vamana) are medical interventions, not relaxation experiences. The protocol requires medical supervision, can produce significant temporary discomfort during certain phases, and demands strict dietary and behavioural compliance. It is therapy, not leisure."
+         },
+         {
+           title: "It is not just about diet or food",
+           text: "Dietary regulation is part of Panchakarma — both during the protocol and in the recovery phase — but Panchakarma is not primarily a dietary intervention. The five named procedures are physical medical treatments performed on the patient, not dietary practices the patient performs themselves."
+         },
+         {
+           title: "It is not a one-day or weekend experience",
+           text: "Authentic Panchakarma runs minimum 7 days, typically 14-21 days. The condensed \"Panchakarma weekend\" packages marketed by some clinics are not actually Panchakarma — they are typically just Abhyanga and steam therapy without the actual five procedures. Anyone claiming to deliver Panchakarma in less than 7 days is selling something else under a misappropriated name."
+         },
+         {
+           title: "It is not the same as yoga or yoga retreats",
+           text: "Panchakarma is an Ayurvedic medical procedure. Yoga is a separate but related discipline within Indian classical traditions. They are sometimes practised together but are not the same. A \"yoga retreat with Ayurvedic treatments\" is generally not authentic Panchakarma even if it includes some Ayurvedic therapies."
+         }
+       ]
+     },
+     {
+       id: "five-procedures",
+       title: "The five procedures — what each one is and what it does",
+       intro: "The core of Panchakarma is the five therapeutic procedures from which the name derives. Not every patient receives all five — most patients receive one or two depending on their clinical condition, age, and constitution. The Ayurvedic physician determines which procedures are appropriate after detailed examination.",
+       subsections: [
+         {
+           title: "1. Vamana — Therapeutic Vomiting",
+           text: "Medically supervised emesis using specific herbal preparations to clear Kapha-pattern accumulation from the upper digestive tract. Primarily used for chronic respiratory conditions, certain skin disorders with Kapha involvement, severe seasonal allergies, and metabolic conditions linked to Kapha excess. Less commonly performed than Virechana or Basti in modern practice. Requires careful selection — many patients are not suitable candidates."
+         },
+         {
+           title: "2. Virechana — Medicated Purgation",
+           text: "Medically supervised therapeutic purgation using specific herbal preparations to clear Pitta-pattern accumulation from the small intestine and liver. The most commonly performed Panchakarma procedure in modern clinical practice. Used for skin conditions (eczema, psoriasis, rosacea), metabolic conditions, hormonal patterns including PCOS, chronic inflammatory conditions, and as a foundational reset for many chronic disease protocols."
+         },
+         {
+           title: "3. Basti — Medicated Enema Therapy",
+           text: "Despite the modern Western associations of the word, Basti in classical Ayurveda is one of the most sophisticated therapeutic procedures in the entire system. Medicated oils, herbal decoctions, or both are administered rectally in carefully calibrated sequences. The procedure addresses Vata-pattern conditions — chronic pain (particularly back pain, sciatica, joint conditions), neurological conditions, post-stroke recovery, certain reproductive conditions, and chronic constipation. The Ayurvedic texts describe Basti as the single most powerful Panchakarma procedure for chronic disease — though modern Western associations have made the procedure under-utilised relative to its clinical value."
+         },
+         {
+           title: "4. Nasya — Medicated Nasal Therapy",
+           text: "Medicated oils administered through the nasal passages. The classical texts consider Nasya the most direct route to nourish and treat the structures of the head — brain, sense organs, cranial nerves, sinuses. Used for chronic headaches and migraine, sinus conditions, neurological conditions, cognitive concerns, sleep disorders, and certain mental health conditions. Often performed as 7-day intensive courses, sometimes integrated into longer Panchakarma protocols."
+         },
+         {
+           title: "5. Rakta Mokshana — Controlled Bloodletting",
+           text: "Controlled removal of small quantities of blood for specific severe Pitta-Rakta conditions — typically using leech therapy (jalauka) or controlled venous procedures. The most clinically intensive of the five procedures, performed only for specific severe conditions including severe inflammatory skin disease, certain types of severe chronic pain, varicose veins, and other selected indications. Performed less frequently than the other four procedures in modern practice and requires significant clinical justification."
+         }
+       ]
+     }
+   ],
+  cta: {
+    title: "Want to learn if Panchakarma is right for you?",
+    text: "For comprehensive information about our Panchakarma programmes, clinical protocols, and pricing — read our complete service page.",
+    buttonText: "See our Panchakarma Programmes",
+    buttonHref: "/treatments/panchakarma-dubai"
+  },
+  finalCta: {
+    id: "how-to-start",
+    label: "READY TO LEARN IF PANCHAKARMA IS RIGHT FOR YOU?",
+    title: "If this article has been useful, the next step is an honest consultation — not a Panchakarma booking.",
+    content: "We do not begin Panchakarma without a thorough 60-minute assessment to determine whether the protocol is right for your specific situation. The consultation includes detailed history, examination, review of any medical history and current medications, identification of which specific Panchakarma procedure (if any) would be clinically appropriate for you, and a written treatment plan with realistic expectations. If we determine that Panchakarma is not the right intervention for your situation, we will tell you honestly and recommend alternatives.",
+    bookHref: "/book",
+    whatsappUrl: "https://wa.me/971XXXXXXXX",
+    footerInfo: [
+      "Initial consultation from AED 350 · Walking distance from Circle Mall, JVC",
+      "Authentic clinical Panchakarma · Insurance direct-billing available"
+    ]
+  },
+  relatedArticles: [
+    { 
+      title: "What does Virechana actually feel like? A day-by-day account", 
+      readingTime: "8 min read", 
+      author: "Dr. Priya Sharma",
+      category: "VIRECHANA", 
+      description: "The most commonly performed Panchakarma procedure, described from the patient's perspective — what to expect, how it feels, and why session preparation matters as much as the day itself.",
+      img: "https://images.unsplash.com/photo-1519823551278-64ac92734fb1?q=80&w=1974&auto=format&fit=crop" 
+    },
+    { 
+      title: "Why Basti is Ayurveda's most under-utilised therapeutic procedure", 
+      readingTime: "9 min read", 
+      author: "Dr. Priya Sharma",
+      category: "BASTI", 
+      description: "Despite modern Western associations with the word, Basti is classically considered the most powerful Panchakarma procedure for chronic disease. An honest look at why.",
+      img: "https://images.unsplash.com/photo-1544161515-4ae6ce6db87e?q=80&w=2070&auto=format&fit=crop" 
+    },
+    { 
+      title: "Is Ayurveda effective for back pain? An honest, evidence-based answer.", 
+      readingTime: "9 min read", 
+      author: "Dr. Priya Sharma",
+      category: "EVIDENCE", 
+      description: "An evidence review of Ayurvedic treatment for chronic back pain — what the research shows, where Ayurveda works well, where it does not, and how integrated care produces the strongest outcomes.",
+      img: "https://images.unsplash.com/photo-1600334129128-685c5582fd35?q=80&w=2070&auto=format&fit=crop" 
     }
   ]
 };
