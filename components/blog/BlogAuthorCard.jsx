@@ -3,7 +3,7 @@ import { User } from 'lucide-react';
 
 const BlogAuthorCard = ({ name, credentials, bio, readMoreHref, bookHref }) => {
   return (
-    <div className="w-full bg-[#F5F2ED] py-24">
+    <div className="w-full bg-[#FAF8F5] py-24">
       <div className="max-w-[1200px] mx-auto px-6">
         <div className="flex flex-col md:flex-row gap-16 items-center md:items-start">
           {/* Avatar - 200px as per Figma */}
