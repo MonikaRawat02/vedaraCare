@@ -599,7 +599,7 @@ export const physiotherapyFinalCTA = {
   button2Text: "WhatsApp Us",
   button1BgColor: "#1A4D2E",
   button2BgColor: "#22C55E",
-  button2TextColor: "white",
+  button2TextColor: "#22C55E",
   button2BorderColor: "#22C55E",
   bullets: [
     "Initial assessment from AED [X]",
