@@ -68,7 +68,8 @@ const TreatmentReviews = ({
               <div className="mt-auto pt-4">
                 <div className="space-y-0.5">
                   <p className="font-sans font-bold text-[15px]" style={{ color: (isDarkText || isWhiteCard) ? '#1A1A1A' : '#F5F0E8' }} dangerouslySetInnerHTML={{ __html: review.author }} />
-                  <p className="text-[12px] font-sans" style={{ color: (isDarkText || isWhiteCard) ? '#6B6B6B' : 'rgba(245, 240, 232, 0.6)' }} dangerouslySetInnerHTML={{ __html: review.details }} />
+                  <p className="text-[12px] font-sans" style={{ color: (isDarkText || isWhiteCard) ? '#C9A84C' : '#C9A84C' }} dangerouslySetInnerHTML={{ __html: review.details }} />
+                  <p className="text-[12px] font-sans" style={{ color: (isDarkText || isWhiteCard) ? '#FAF7F280' : 'rgba(245, 240, 232, 0.6)' }} dangerouslySetInnerHTML={{ __html: review.details1 }} />
                 </div>
               </div>
             </div>

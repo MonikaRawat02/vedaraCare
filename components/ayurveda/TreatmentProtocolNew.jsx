@@ -33,12 +33,12 @@ const TreatmentProtocolNew = ({ bgColor, label, title, description, phases, foot
                   <div className="text-xs text-[#C4A962] font-semibold">
                     {phase.phaseName}
                   </div>
-                  <h4 
+                  <h3 
                     className="text-lg" 
                     style={{ fontFamily: 'Fraunces, serif', fontWeight: 500 }}
                   >
                     {phase.title}
-                  </h4>
+                  </h3>
                 </div>
               </div>
               

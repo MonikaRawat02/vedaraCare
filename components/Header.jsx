@@ -64,7 +64,7 @@ const Header = () => {
           {/* Desktop Nav Links */}
           <div className="hidden lg:flex items-center gap-8">
             <Link href="/ayurveda-dubai" className="text-[14px] font-sans font-medium text-[#1A1A1A] hover:text-[#184C3A] transition-colors">Ayurveda</Link>
-            <Link href="/services/physiotherapy" className="text-[14px] font-sans font-medium text-[#1A1A1A] hover:text-[#184C3A] transition-colors">Physiotherapy</Link>
+            <Link href="/physiotherapy-jvc" className="text-[14px] font-sans font-medium text-[#1A1A1A] hover:text-[#184C3A] transition-colors">Physiotherapy</Link>
             <Link href="/services/dermatology" className="text-[14px] font-sans font-medium text-[#1A1A1A] hover:text-[#184C3A] transition-colors">Dermatology</Link>
             <Link href="/services/home-healthcare" className="text-[14px] font-sans font-medium text-[#1A1A1A] hover:text-[#184C3A] transition-colors">Home Healthcare</Link>
             <Link href="/services/wellness" className="text-[14px] font-sans font-medium text-[#1A1A1A] hover:text-[#184C3A] transition-colors">Wellness</Link>

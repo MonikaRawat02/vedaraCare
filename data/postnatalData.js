@@ -98,7 +98,7 @@ export const postnatalStructure = {
       week: "Week 4",
       subtitle: "Consolidation",
       days: "Days 22-28",
-      content: "Continued daily care. Body composition continues to normalise. Pelvic floor work introduced if appropriate. Mental health check-in deepens. Sleep optimisation continues. Sometimes Shirodhara introduced for mothers with significant mood or sleep dysfunction.",
+      content: "Continued daily care. Body composition continues to normalise. <a href=\"/physiotherapy-jvc/\" class=\"text-[#C9A961] hover:underline\">Pelvic floor work</a> introduced if appropriate. Mental health check-in deepens. Sleep optimisation continues. Sometimes Shirodhara introduced for mothers with significant mood or sleep dysfunction.",
       footer: "5-6 home visits this week, daily Abhyanga, mid-programme doctor review"
     },
     {
@@ -251,7 +251,7 @@ export const postnatalBoundaries = {
       { text: "Diagnosed postpartum depression — Ayurveda alongside psychiatry and therapy" },
       { text: "Postpartum thyroiditis — Ayurveda alongside endocrinology" },
       { text: "Breastfeeding challenges — Ayurveda alongside lactation consultants" },
-      { text: "Postpartum pelvic floor issues — Ayurveda alongside pelvic floor physiotherapy" }
+      { text: "Postpartum pelvic floor issues — Ayurveda alongside <a href=\"/physiotherapy-jvc/\" class=\"text-[#C9A961] hover:underline\">pelvic floor physiotherapy</a>" }
     ],
     bgColor: "bg-white",
     borderColor: "border-[#C9A961]/30",
@@ -338,7 +338,7 @@ export const postnatalPricing = {
         "All Standard Programme components",
         "Extended duration for C-section, twins, traumatic birth",
         "Integrated mental health coordination if applicable",
-        "Pelvic floor physiotherapy coordination",
+        "<a href=\"/physiotherapy-jvc/\" class=\"text-[#C9A961] hover:underline\">Pelvic floor physiotherapy</a> coordination",
         "Extended dietary and lifestyle support",
         "More frequent doctor reviews",
         "3-month and 6-month follow-up"
