@@ -62,26 +62,20 @@ const TreatmentMechanism = ({
           /* Bullet Points Format */
           <div className="max-w-3xl mx-auto">
             {description && (
-              <p className="text-gray-700 leading-relaxed mb-8 text-center">
-                {description}
-              </p>
+              <p className="text-gray-700 leading-relaxed mb-8 text-center" dangerouslySetInnerHTML={{ __html: description }} />
             )}
             {bulletPoints.length > 0 && (
               <ul className="space-y-4 mb-8">
                 {bulletPoints.map((point, index) => (
                   <li key={index} className="flex items-start gap-3">
                     <div className="w-2 h-2 rounded-full mt-2 flex-shrink-0" style={{ backgroundColor: '#C8975F' }} />
-                    <span className="text-gray-700 leading-relaxed">
-                      {point}
-                    </span>
+                    <span className="text-gray-700 leading-relaxed" dangerouslySetInnerHTML={{ __html: point }} />
                   </li>
                 ))}
               </ul>
             )}
             {additionalText && (
-              <p className="text-gray-700 leading-relaxed text-center">
-                {additionalText}
-              </p>
+              <p className="text-gray-700 leading-relaxed text-center" dangerouslySetInnerHTML={{ __html: additionalText }} />
             )}
           </div>
         )}
