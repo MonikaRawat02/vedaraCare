@@ -8,9 +8,9 @@ import BlogAuthorCard from '../../components/blog/BlogAuthorCard';
 import BlogRelatedArticles from '../../components/blog/BlogRelatedArticles';
 import BlogNewsletter from '../../components/blog/BlogNewsletter';
 import BlogFinalCTA from '../../components/blog/BlogFinalCTA';
-import { backPainEvidenceBlog as data } from '../../data/blog-posts';
+import { panchakarmaBlog as data } from '../../data/blog-posts';
 
-const BlogPost = () => {
+const PanchakarmaPage = () => {
   return (
     <div className="min-h-screen bg-[#FDFCF9]">
       <Head>
@@ -58,7 +58,7 @@ const BlogPost = () => {
         />
 
         <BlogRelatedArticles 
-          title="Related articles on back pain and Ayurveda"
+          title="Related articles on Panchakarma and Ayurveda"
           browseAllHref="/blog"
           articles={data.relatedArticles}
           bgColor={data.relatedArticlesBgColor}
@@ -84,4 +84,4 @@ const BlogPost = () => {
   );
 };
 
-export default BlogPost;
+export default PanchakarmaPage;
