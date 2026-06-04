@@ -1,4 +1,5 @@
 import React from 'react';
+import Link from 'next/link';
 
 const Therapies2 = () => {
   return (
@@ -13,7 +14,7 @@ const Therapies2 = () => {
           </h2>
         </div>
         <div className="grid md:grid-cols-2 lg:grid-cols-4 gap-6 mb-8">
-          <div className="bg-white p-6 rounded-lg hover:shadow-lg transition-all cursor-pointer group">
+          <Link href="/conditions/back-pain-ayurveda-dubai/" className="bg-white p-6 rounded-lg hover:shadow-lg transition-all cursor-pointer group block">
             <div className="mb-4">
               <svg
                 xmlns="http://www.w3.org/2000/svg"
@@ -40,7 +41,7 @@ const Therapies2 = () => {
             <p className="text-sm text-[#6B7280]">
               Acute and chronic back pain
             </p>
-          </div>
+          </Link>
           <div className="bg-white p-6 rounded-lg hover:shadow-lg transition-all cursor-pointer group">
             <div className="mb-4">
               <svg
@@ -97,7 +98,7 @@ const Therapies2 = () => {
               Adhesive capsulitis specialist treatment
             </p>
           </div>
-          <div className="bg-white p-6 rounded-lg hover:shadow-lg transition-all cursor-pointer group">
+          <Link href="/conditions/arthritis-ayurveda-dubai/" className="bg-white p-6 rounded-lg hover:shadow-lg transition-all cursor-pointer group block">
             <div className="mb-4">
               <svg
                 xmlns="http://www.w3.org/2000/svg"
@@ -124,7 +125,7 @@ const Therapies2 = () => {
             <p className="text-sm text-[#6B7280]">
               Knee conditions including OA
             </p>
-          </div>
+          </Link>
           <div className="bg-white p-6 rounded-lg hover:shadow-lg transition-all cursor-pointer group">
             <div className="mb-4">
               <svg
@@ -392,7 +393,7 @@ const Therapies2 = () => {
               Incontinence, prolapse, painful intercourse
             </p>
           </div>
-          <div className="bg-white p-6 rounded-lg hover:shadow-lg transition-all cursor-pointer group">
+          <Link href="/conditions/postnatal-ayurveda-dubai/" className="bg-white p-6 rounded-lg hover:shadow-lg transition-all cursor-pointer group block">
             <div className="mb-4">
               <svg
                 xmlns="http://www.w3.org/2000/svg"
@@ -418,7 +419,7 @@ const Therapies2 = () => {
             <p className="text-sm text-[#6B7280]">
               Diastasis recti, pelvic floor restoration
             </p>
-          </div>
+          </Link>
           <div className="bg-white p-6 rounded-lg hover:shadow-lg transition-all cursor-pointer group">
             <div className="mb-4">
               <svg

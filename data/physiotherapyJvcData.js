@@ -156,8 +156,8 @@ export const physiotherapyJvcMechanism = {
       description: "Return-to-sport protocols including sport-specific movement assessment, biomechanical analysis, plyometric progression, and reactive testing. Critical for athletes returning from injury — premature return is the leading cause of re-injury."
     }
   ],
-  image: "/images/physiotherapy-jvc-treatment-room.webp",
-  imageAlt: "Specialised treatment room at Vedara Care JVC clinic"
+  image: "/images/physiotherapy-treatment-vedara-jvc.webp",
+  imageAlt: "Modern physiotherapy treatment techniques at Vedara Care JVC"
 };
 
 export const physiotherapyJvcProtocol = {
@@ -382,8 +382,8 @@ export const physiotherapyJvcHomeHealthcareNew = {
   priceText: "Home physiotherapy sessions from AED [X]",
   priceNote: "Additional travel charges may apply for distant locations",
   footer: "Home visits are especially valuable for post-ACL repair, post-joint replacement, and neurological rehabilitation patients who find clinic travel challenging.",
-  image: "/images/physio-home-healthcare-jvc.webp",
-  imageAlt: "Home physiotherapy session at patient's residence in Dubai",
+  image: "/images/physiotherapy-team-vedara-jvc.webp",
+  imageAlt: "Physiotherapist and Ayurvedic doctor collaborating at Vedara Care JVC",
   primaryButtonText: "Book Home Physiotherapy",
   secondaryButtonText: "Read about Home Healthcare"
 };
@@ -549,6 +549,8 @@ export const physiotherapyJvcLocation = {
     "Al Khail Road access"
   ],
   mapEmbed: "",
+  image: "",
+  alt: "Vedara Care physiotherapy clinic location JVC Dubai near Circle Mall",
   description: "Our JVC clinic has dedicated physiotherapy treatment rooms with modern equipment, a full rehabilitation gym, specialised pelvic floor assessment room, and integrated access to our Ayurveda department when needed. Free patient parking available.",
   buttonText: "Book a Physiotherapy Assessment"
 };
