@@ -26,12 +26,12 @@ const PhysiotherapySpecializations = ({
 
         <div className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-4 gap-6">
           {types.map((type, index) => (
-            <div key={index} className={`${cardBg} p-8 rounded-lg border-t-4 border-[#C9A55A] shadow-sm hover:shadow-md transition-all flex flex-col h-full gap-6`}>
-              <div className="text-4xl text-[#C9A55A] font-serif" style={{ fontFamily: 'Fraunces, Georgia, serif' }}>
+            <div key={index} className={`${cardBg} p-8 rounded-lg border-t-4 border-[#C9A55A] shadow-sm hover:shadow-md transition-all flex flex-col h-full`}>
+              <div className="text-4xl text-[#C9A55A] font-serif mb-6" style={{ fontFamily: 'Fraunces, Georgia, serif' }}>
                 {type.number}
               </div>
               
-              <div className="space-y-4 flex-1">
+              <div className="space-y-4 flex-grow">
                 <div>
                   {type.href ? (
                     <a href={type.href} className="text-xl font-sans font-medium text-[#1A1A1A] mb-1 leading-tight block hover:text-[#C9A55A] transition-colors" dangerouslySetInnerHTML={{ __html: type.title }} />
@@ -44,13 +44,13 @@ const PhysiotherapySpecializations = ({
                   className="text-[14px] text-sm text-[#4A4A4A] font-sans leading-relaxed"
                   dangerouslySetInnerHTML={{ __html: type.description }}
                 />
-
-                {type.commonConditions && type.commonConditions.length > 0 && (
-                  <div className="pt-4 border-t border-gray-50 mt-auto">
-                    <p className="text-xs text-gray-600" dangerouslySetInnerHTML={{ __html: `<strong class="text-[#d4af37]">Common Dubai presentations:</strong> ${type.commonConditions.join(", ")}` }} />
-                  </div>
-                )}
               </div>
+
+              {type.commonConditions && type.commonConditions.length > 0 && (
+                <div className="pt-4 border-t border-gray-50 mt-4">
+                  <p className="text-xs text-gray-600" dangerouslySetInnerHTML={{ __html: `<strong class="text-[#d4af37]">Common Dubai presentations:</strong> ${type.commonConditions.join(", ")}` }} />
+                </div>
+              )}
             </div>
           ))}
         </div>

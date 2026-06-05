@@ -11,7 +11,7 @@ const PhysiotherapyImageCards = ({ label, title, cards }) => {
         
         <div className="grid md:grid-cols-3 gap-8">
           {cards.map((card, index) => (
-            <div key={index} className="rounded-xl overflow-hidden bg-[#F5F1E8]">
+            <div key={index} className="rounded-xl overflow-hidden bg-[#F5F1E8] flex flex-col">
               <div className="aspect-square overflow-hidden">
                 <img 
                   src={card.image} 
@@ -19,9 +19,9 @@ const PhysiotherapyImageCards = ({ label, title, cards }) => {
                   className="w-full h-full object-cover"
                 />
               </div>
-              <div className="p-6">
+              <div className="p-6 flex-grow">
                 <h3 className="text-xl font-serif text-[#1A1A1A] mb-2">{card.title}</h3>
-                <p className="text-sm text-[#6B6B6B]">{card.description}</p>
+                <p className="text-sm text-[#6B7280]">{card.description}</p>
               </div>
             </div>
           ))}
