@@ -1,7 +1,8 @@
 export const physiotherapyJvcHero = {
   breadcrumb: [
     { label: "Home", href: "/" },
-    { label: "Physiotherapy in JVC", active: true }
+    { label: "Physiotherapy in JVC", active: true },
+    
   ],
   label: "PHYSIOTHERAPY · DHA-LICENSED CLINIC IN JVC, DUBAI",
   title: "Physiotherapy in JVC. Evidence-based, hands-on, results-focused.",
@@ -261,32 +262,32 @@ export const physiotherapyJvcTeam = {
       qualification: "DHA-Licensed Physiotherapist · Musculoskeletal & Sports Physiotherapy",
       specialties: ["Sports Physio", "Manual Therapy", "Dry Needling", "Post-Surgical"],
       experience: "12 years experience, specialized in sports injuries and complex musculoskeletal conditions.",
-      image: "https://images.unsplash.com/photo-1559839734-2b71ea197ec2?w=400&q=80",
-      alt: "Dr. Sarah Mitchell, DPT-qualified physiotherapist at Vedara Care JVC Dubai"
+      image: "",
+      alt: "Dr. Sarah Mitchell, qualified physiotherapist at Vedara Care JVC Dubai"
     },
     {
       name: "Dr. Priya Sharma, DPT",
       qualification: "DHA-Licensed Physiotherapist · Women's Health & Pelvic Floor",
       specialties: ["Pelvic Floor", "Postnatal", "Women's Health", "Manual Therapy"],
       experience: "10 years experience in women's health physiotherapy and pelvic floor rehabilitation.",
-      image: "https://images.unsplash.com/photo-1594824476967-48c8b964273f?w=400&q=80",
-      alt: "Dr. Priya Sharma, DPT-qualified physiotherapist at Vedara Care JVC Dubai"
+      image: "",
+      alt: "Dr. Priya Sharma, qualified physiotherapist at Vedara Care JVC Dubai"
     },
     {
       name: "Dr. James Anderson, DPT",
       qualification: "DHA-Licensed Physiotherapist · Neurological Rehabilitation",
       specialties: ["Neuro Rehab", "Post-Stroke", "Manual Therapy", "Vestibular"],
       experience: "15 years experience in neurological physiotherapy and stroke rehabilitation.",
-      image: "https://images.unsplash.com/photo-1612349317150-e413f6a5b16d?w=400&q=80",
-      alt: "Dr. James Anderson, DPT-qualified physiotherapist at Vedara Care JVC Dubai"
+      image: "",
+      alt: "Dr. James Anderson, qualified physiotherapist at Vedara Care JVC Dubai"
     },
     {
       name: "Dr. Fatima Al-Hashimi, DPT",
       qualification: "DHA-Licensed Physiotherapist · Paediatric & Cardiopulmonary",
       specialties: ["Paediatric", "Cardiopulmonary", "Post-COVID", "Developmental"],
       experience: "8 years experience in paediatric physiotherapy and respiratory rehabilitation.",
-      image: "https://images.unsplash.com/photo-1551836022-d5d88e9218df?w=400&q=80",
-      alt: "Dr. Fatima Al-Hashimi, DPT-qualified physiotherapist at Vedara Care JVC Dubai"
+      image: "",
+      alt: "Dr. Fatima Al-Hashimi,qualified physiotherapist at Vedara Care JVC Dubai"
     }
   ]
 };
