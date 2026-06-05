@@ -148,7 +148,7 @@ export const homeConditions = {
     { title: "Migraine", category: "Pain", description: "Root cause treatment through Ayurvedic protocols", sub: "Ayurveda", link: "/conditions/migraine-ayurveda-dubai/" },
     { title: "Arthritis & Knee Pain", category: "Pain", description: "Integrated approach to joint health and ", sub: "Physio and Ayurveda", link: "/conditions/arthritis-ayurveda-dubai/" },
     { title: "Weight Management", category: "Metabolic", description: "Personalized weight loss programs", sub: "Wellness and Ayurveda", link: "/conditions/weight-loss-ayurveda-dubai/" },
-    { title: "Postnatal Recovery", category: "Womens Health", description: "Comprehensive postpartum care at clinic or home", sub: "Ayurveda and Home Healthcare", link: "/conditions/postnatal-care-ayurveda-dubai/" },
+    { title: "Postnatal Recovery", category: "Womens Health", description: "Comprehensive postpartum care at clinic or home", sub: "Ayurveda and Home Healthcare", link: "/conditions/postnatal-ayurveda-dubai/" },
     { title: "Thyroid", category: "Womens Health", description: "Supportive care for Hashimoto's and hypothyroid", sub: "Ayurveda", link: "/conditions/thyroid-ayurveda-dubai/" }
   ]
 };

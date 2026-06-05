@@ -20,7 +20,7 @@ export const postSurgeryRehabHero = {
     subtitle: "Whether your surgery was in Dubai, London, Delhi, Frankfurt, New York, Beirut, or Cairo — we work with your operating surgeon's specific protocols, with their direct communication."
   },
   image: "/images/post-surgery-rehab-dubai-hero.webp",
-  alt: "Post-surgery rehabilitation in Dubai"
+  alt: "Post-surgery rehabilitation at Vedara Care JVC Dubai with DPT-qualified physiotherapist"
 };
 
 export const postSurgeryRehabIntro = {
@@ -43,7 +43,7 @@ export const postSurgeryRehabMechanism = {
   ],
   quote: "Your surgeon performed the technical procedure. Your rehabilitation determines whether that procedure delivers the outcome it was designed for. Both teams need to work together.",
   image: "/images/post-surgery-rehab-surgeon-coordination.webp",
-  alt: "Physiotherapist coordinating with surgeon for post-surgery rehabilitation"
+  alt: "Physiotherapist coordinating with surgeon at Vedara Care JVC post-surgery rehabilitation"
 };
 
 export const postSurgeryRehabFinalCTA = {
@@ -75,17 +75,17 @@ export const postSurgeryRehabRelatedPages = {
     {
       title: "Physiotherapy in JVC",
       description: "Our complete physiotherapy department — all seven specialisations, team, conditions treated, integrated care options.",
-      href: "/physiotherapy-jvc"
+      href: "/physiotherapy-jvc/"
     },
     {
       title: "Sports Injury Physiotherapy",
       description: "For sports-related ACL recovery, sports trauma, and return-to-sport protocols. Some overlap with post-surgical care.",
-      href: "/physiotherapy-dubai"
+      href: "/physiotherapy/sports-injury-jvc/"
     },
     {
       title: "Home Healthcare in JVC",
       description: "Our home physiotherapy and broader home healthcare services across Dubai for patients who cannot easily travel.",
-      href: "/physiotherapy-jvc"
+      href: "/home-healthcare-jvc/"
     },
     {
       title: "Arthritis Treatment",
@@ -149,7 +149,8 @@ export const homePhysiotherapyData = {
     duration: "60 minutes including travel time consideration",
     pricing: "From AED 450 per home session (includes therapist travel time)",
     booking: "WhatsApp +971 4 XXX XXXX for fastest response",
-    buttonText: "Book Home Physiotherapy"
+    buttonText: "Book Home Physiotherapy",
+    buttonLink: "/home-healthcare-jvc/"
   }
 };
 
@@ -204,21 +205,21 @@ export const postSurgeryTeamData = {
       credentials: "DHA-Licensed · Post-Surgical Specialist",
       tags: ["Joint Replacement", "ACL Rehab", "Spinal Recovery"],
       description: "Specialised in post-operative rehabilitation with 12+ years experience",
-      link: "#"
+      link: "/physiotherapists/dr-sarah-mitchell/"
     },
     {
       name: "Dr. Sarah Mitchell, DPT",
       credentials: "DHA-Licensed · Post-Surgical Specialist",
       tags: ["Joint Replacement", "ACL Rehab", "Spinal Recovery"],
       description: "Specialised in post-operative rehabilitation with 12+ years experience",
-      link: "#"
+      link: "/physiotherapists/dr-sarah-mitchell/"
     },
     {
       name: "Dr. Sarah Mitchell, DPT",
       credentials: "DHA-Licensed · Post-Surgical Specialist",
       tags: ["Joint Replacement", "ACL Rehab", "Spinal Recovery"],
       description: "Specialised in post-operative rehabilitation with 12+ years experience",
-      link: "#"
+      link: "/physiotherapists/dr-sarah-mitchell/"
     }
   ]
 };
@@ -257,4 +258,224 @@ export const whereWeWorkData = {
     primary: "Book a Post-Surgery Consultation",
     secondary: "Book Home Physiotherapy"
   }
+};
+
+export const surgicalProceduresData = {
+  bgColor: "bg-[#F8F6F0]",
+  label: "PROCEDURE-SPECIFIC REHABILITATION",
+  title: "Surgical procedures we rehabilitate at our JVC clinic and across Dubai.",
+  description: "Each surgical procedure has specific rehabilitation requirements — different timelines, different early-phase restrictions, different progression criteria. Our protocols follow established evidence-based pathways calibrated to your specific procedure and your surgeon's preferences.",
+  types: [
+    {
+      category: "JOINT REPLACEMENT",
+      title: "Total Knee Replacement (TKR)",
+      description: "Comprehensive rehabilitation for primary or revision total knee arthroplasty. Focuses on early-phase mobility, pain management, progressive range of motion, strength restoration, gait re-education, and functional return. Home physiotherapy available for early recovery when clinic travel is difficult or painful.",
+      timeline: "Typical timeline: 4–6 months with 30–40 sessions across the programme."
+    },
+    {
+      category: "JOINT REPLACEMENT",
+      title: "Total Hip Replacement (THR)",
+      description: "Rehabilitation following posterior, anterolateral, or anterior approach hip replacement. Includes hip precautions education, structured mobility progression, strengthening, gait normalisation, and functional rehabilitation. Your surgeon's specific approach determines which movements are restricted in the early phase.",
+      timeline: "Typical timeline: 3–4 months with 24–30 sessions."
+    },
+    {
+      category: "KNEE LIGAMENT SURGERY",
+      title: "ACL Reconstruction Recovery",
+      description: "Structured 9–12 month rehabilitation following anterior cruciate ligament reconstruction. Different protocols for hamstring tendon, patellar tendon, or quadriceps tendon grafts. Emphasises neuromuscular control, progressive strengthening, and criterion-based return to sport. Re-injury rates are substantially lower with structured rehabilitation than self-managed returns.",
+      timeline: "Typical timeline: 9–12 months with 40–60 sessions."
+    },
+    {
+      category: "SHOULDER SURGERY",
+      title: "Rotator Cuff Repair",
+      description: "Comprehensive rehabilitation for arthroscopic or open rotator cuff repair. Starts with early-phase protection (sling protocols), progresses through passive then active motion, strengthening, and functional return. Specific protocol depends on tear size, repair technique, and tissue quality.",
+      timeline: "Typical timeline: 4–6 months with 24–40 sessions."
+    },
+    {
+      category: "SPINAL PROCEDURES",
+      title: "Spinal Surgery Recovery",
+      description: "Rehabilitation following discectomy, laminectomy, foraminotomy, single-level or multi-level fusion, and other spinal procedures. Protocol based on procedure type, levels involved, and surgical approach. Focuses on early mobilisation, core stability, postural re-education, and pain management strategies. Coordination with your spine surgeon is essential throughout.",
+      timeline: "Typical timeline: 3–6 months depending on procedure complexity."
+    },
+    {
+      category: "KNEE ARTHROSCOPY",
+      title: "Meniscus Surgery",
+      description: "Different rehabilitation pathways for meniscectomy (partial meniscus removal) versus meniscus repair (longer, more protective recovery). Includes weight-bearing restrictions, structured return to activity, sport-specific progression for athletes, and long-term joint protection strategies.",
+      timeline: "Typical timeline: 6–12 weeks for meniscectomy; 12–24 weeks for repair."
+    },
+    {
+      category: "HIP SURGERY",
+      title: "Hip Arthroscopy & Labral Repair",
+      description: "Rehabilitation following hip arthroscopy for labral tears, femoroacetabular impingement (FAI), and related conditions. Focuses on weight-bearing progression, sport-specific rehabilitation, progressive strengthening, and functional return. Increasingly common procedure for active patients with hip pain.",
+      timeline: "Typical timeline: 4–6 months with structured phases."
+    },
+    {
+      category: "SPECIALISED",
+      title: "Other Orthopaedic & Surgical Procedures",
+      description: "Includes foot and ankle surgery, hand and wrist surgery, post-mastectomy rehabilitation, post-cardiac surgery rehabilitation, post-bariatric surgery rehabilitation, post-fracture fixation recovery, and other surgical procedures. Each requires specific protocols matched to the procedure performed.",
+      timeline: "Typical timeline: varies by procedure."
+    }
+  ],
+  footer: "If your specific procedure is not listed, contact us. Our team has experience across a wide range of surgical rehabilitation. We coordinate with your operating surgeon — local or international — to follow their specific protocols."
+};
+
+export const rehabilitationPhasesData = {
+  bgColor: "bg-[#F8F6F0]",
+  label: "THE REHABILITATION JOURNEY",
+  title: "The five phases of post-surgical rehabilitation.",
+  subtitle: "A representative progression for orthopaedic procedures. Each surgical procedure has specific phase durations and milestones; the principles below apply across most surgical rehabilitations.",
+  steps: [
+    {
+      week: "Phase 1 — Weeks 0–2 post-surgery",
+      title: "Early Protection",
+      items: [
+        "Surgeon-directed restrictions strictly followed (weight-bearing, range of motion, brace use, medications)",
+        "Active physiotherapy, often gentle at this stage",
+        "Pain management and swelling control",
+        "Wound care monitoring, visible signs of complications",
+        "Patient education on what to expect, what to watch for"
+      ],
+      expected: "End of Phase 1: Pain levels declining, wound healing well, early-phase movement established."
+    },
+    {
+      week: "Phase 2 — Weeks 2–8",
+      title: "Active Recovery",
+      items: [
+        "Transition from passive to active physiotherapy for most patients",
+        "Frequency typically 2–3 sessions per week",
+        "Progressive range of motion restoration",
+        "Early strengthening within surgeon-approved limits",
+        "Gait or movement pattern re-education"
+      ],
+      expected: "End of Phase 2: Substantial range of motion restored, basic strength returning, functional daily activities improving."
+    },
+    {
+      week: "Phase 3 — Weeks 8–16",
+      title: "Strengthening & Progression",
+      items: [
+        "Frequency reduces to 1–2 sessions per week",
+        "Progressive resistance training",
+        "Functional movement patterns deepened",
+        "Sport or activity-specific progression begins (for athletes)",
+        "Milestone surgery updates at 3-month mark"
+      ],
+      expected: "End of Phase 3: Strength substantially restored, functional independence in most activities, beginning return to higher-level activities."
+    },
+    {
+      week: "Phase 4 — Months 4–6",
+      title: "Return to Activity",
+      items: [
+        "Sessions reduce to weekly or bi-weekly",
+        "Activity-specific protocols for return to work, sport, daily life",
+        "Objective testing where appropriate (strength, flexibility, functional performance)",
+        "For complex procedures (ACL, multi-level spinal fusion): extended Phase 4 (6–12 months)"
+      ],
+      expected: "End of Phase 4: Full return to most pre-surgical activities, strength typically 80–90% of unaffected side."
+    },
+    {
+      week: "Phase 5 — Months 6+",
+      title: "Maintenance & Long-Term Outcome",
+      items: [
+        "Reduced frequency (monthly or as needed)",
+        "Long-term home programme maintained",
+        "Periodic measurement and outcome tracking",
+        "For some procedures (joint replacements): annual review recommended"
+      ],
+      expected: "End of Phase 5: Full return to desired activities, strength normalised, long-term joint protection or movement strategies in place."
+    }
+  ],
+  footer: "Phases are illustrative. Actual timelines vary based on individual factors, procedure complexity, and surgeon-specific protocols."
+};
+
+export const postSurgeryFAQData = {
+  bgColor: "bg-[#F8F6F0]",
+  label: "COMMON QUESTIONS",
+  title: "What post-surgical patients ask before booking.",
+  description: "For general physiotherapy questions, see our <a href='/physiotherapy-jvc/' class='text-[#C4A962] underline hover:text-[#b89a56]'>physiotherapy main page</a>.",
+  buttonText: "Ask Our Team on WhatsApp",
+  sidebarLinks: [
+    { text: "Visit physiotherapy main page", href: "/physiotherapy-jvc/" },
+    { text: "Read about home physiotherapy", href: "/home-healthcare-jvc/" }
+  ],
+  faqs: [
+    {
+      question: "When should I start physiotherapy after surgery?",
+      answer: "Typically within 24–72 hours of discharge for most orthopaedic procedures. Early initiation produces meaningfully better outcomes than waiting. Your operating surgeon's specific protocol determines the exact timing — some procedures have early restrictions, others encourage immediate early-phase work. WhatsApp your surgical report to +971 4 XXX XXXX and we will confirm the appropriate timing for your specific procedure."
+    },
+    {
+  question: "Can you coordinate with my surgeon who operated overseas?",
+  answer: "Yes — approximately 40% of our post-surgical patients had surgery internationally. We coordinate directly with surgeons in the UK, India, Germany, USA, Lebanon, Egypt, and other countries. The process: we obtain your post-operative report, contact your surgeon with your written consent, share our planned approach, and maintain ongoing communication throughout your rehabilitation. Most international surgeons respond well — they want their surgical work to succeed."
+},
+{
+  question: "Do you offer home physiotherapy after surgery?",
+  answer: "Yes — home physiotherapy is one of our most-utilised post-surgical services. Particularly common in the first 2-4 weeks when travel is difficult. Our DPT-qualified physiotherapists travel to your home <a href='/home-healthcare-jvc/' class='text-[#C4A962] underline hover:text-[#b89a56]'>across Dubai</a> including JVC, JVT, Al Barsha South, Sports City, Motor City, Arjan, Dubai Hills, Marina, Downtown, Palm Jumeirah, Mirdif, and surrounding areas. Home sessions are AED 450 including therapist travel time. Many patients transition from home sessions to clinic visits around week 3-6 as their mobility improves."
+},
+{
+  question: "How long will I need physiotherapy after knee replacement?",
+  answer: "Typically 4-6 months for total knee replacement with 30-40 sessions across the programme. Phase 1 (weeks 0-2) often home-based. Phases 2-3 (weeks 2-16) typically clinic-based with 2-3 sessions weekly initially, reducing to weekly. Phase 4-5 (months 4-6) typically weekly or bi-weekly. Some patients with bilateral knee replacement or complex revisions need extended programmes."
+},
+{
+  question: "How long for hip replacement rehabilitation?",
+  answer: "Typically 3-4 months for total hip replacement with 24-30 sessions. Slightly faster than knee replacement on average. Different protocols for posterior, anterolateral, and anterior surgical approaches — your surgeon's approach determines specific precautions. Home physiotherapy typically for the first 2-3 weeks, then transition to clinic."
+},
+{
+  question: "What about ACL reconstruction rehabilitation timeline?",
+  answer: "Typical timeline is 9-12 months from surgery to full return to cutting sports. This is genuinely the time needed — early return is the leading cause of re-injury. Our ACL programme follows evidence-based phases: early protection (0-6 weeks), strengthening (6-12 weeks), neuromuscular control (3-6 months), return-to-sport phase (6-12 months) with objective testing before clearance."
+},
+{
+  question: "Can I do post-surgical rehabilitation alongside conventional physiotherapy elsewhere?",
+  answer: "We do not recommend split-clinic rehabilitation for post-surgical patients. Effective post-surgical care requires consistent protocol application, same-therapist continuity, integrated progress documentation, and surgeon coordination through one channel. Patients who split rehabilitation across multiple clinics consistently have worse outcomes. We can review your rehabilitation if you are considering switching from another provider."
+},
+{
+  question: "What if my surgery was complicated by infection or other complications?",
+  answer: "We work with patients across the complexity spectrum. Patients with surgical complications (infection, hardware issues, delayed healing, revision surgery) often have longer rehabilitation timelines and require more careful protocol application. Coordination with your surgeon is even more important in these cases. We are honest about realistic timelines — patients with complications often need 50-100% longer rehabilitation than uncomplicated cases."
+},
+{
+  question: "How does insurance typically cover post-surgical physiotherapy?",
+  answer: "Generally well — better than most physiotherapy categories. Pre-authorisation is often required for programmes beyond 10-15 initial sessions. Our team handles pre-authorisation on your behalf. Direct-billing with seven major insurers. Bring your surgical report and insurance card to your initial consultation; WhatsApp the same to +971 4 XXX XXXX before booking to confirm exact coverage."
+},
+{
+  question: "Can elderly patients have safe post-surgical rehabilitation at home?",
+  answer: "Yes — elderly post-surgical rehabilitation is one of our specialised areas. Home physiotherapy is particularly valuable for elderly patients who find clinic travel exhausting or unsafe. Our therapists are experienced in working with elderly post-surgical patients (joint replacements being the most common). Family involvement is welcomed throughout."
+},
+{
+  question: "Where is your post-surgical rehabilitation clinic in Dubai?",
+  answer: "Our clinic is at Jumeirah Village Circle (JVC), Dubai — walking distance from Circle Mall, three minutes from FIVE Jumeirah Village Hotel, and five minutes from JSS Private School. Free patient parking. Easy access from Sheikh Mohammed Bin Zayed Road and Al Khail Road. Patients travel to us from across Dubai. Home physiotherapy available across Dubai for early-phase recovery."
+},
+{
+  question: "What about post-mastectomy or other oncology surgery rehabilitation?",
+  answer: "We provide post-mastectomy and oncology surgery rehabilitation with sensitivity to the specific clinical needs. This includes lymphedema management, shoulder mobility restoration, scar management, and broader functional rehabilitation. Coordination with your oncology team is essential. Particularly important for breast cancer patients in their early post-treatment phase."
+},
+{
+  question: "Do you offer post-bariatric surgery rehabilitation?",
+  answer: "Yes — post-bariatric surgery patients often benefit from structured rehabilitation including mobility restoration, functional capacity building, exercise prescription appropriate to changing body composition, and long-term activity programmes. We coordinate with your bariatric surgery team for specific protocols."
+},
+{
+  question: "What if I need to delay my rehabilitation due to travel or work commitments?",
+  answer: "Some flexibility is possible but post-surgical rehabilitation has time-sensitive windows. Major delays (more than 2-3 weeks at critical phases) can compromise outcomes. We work with patients who have temporary travel or work commitments to maintain programme momentum through home exercise compliance, modified scheduling, or temporary intensity reduction. Discuss any planned absences at initial consultation so we can plan appropriately."
+},
+{
+  question: "Can you recommend specific surgeons in Dubai for second opinions?",
+  answer: "We can suggest surgeons we have worked with extensively if you need second opinions or are considering surgical revision. We do not have referral arrangements — our suggestions are based on clinical reputation and our experience coordinating with their teams. The decision about your surgeon is always yours."
+},
+{
+  question: "What if I had surgery decades ago and am now having problems?",
+  answer: "Common situation — patients with decades-old surgical procedures (old knee replacements, old spinal surgeries, old joint procedures) often develop new symptoms or movement patterns related to the old surgery. We can assess your specific situation, identify whether rehabilitation can address your current symptoms, and coordinate with appropriate specialists if your situation requires further surgical or medical input."
+},
+{
+  question: "Do you work with cosmetic surgery rehabilitation?",
+  answer: "For surgical procedures with documented functional impact — breast reduction, major abdominal procedures, post-liposuction lymphatic drainage, post-cosmetic-surgery scar management — we provide appropriate rehabilitation. Pure cosmetic recovery without functional impact may not require formal physiotherapy."
+},
+{
+  question: "What about integrated Ayurveda and physiotherapy for post-surgical recovery?",
+  answer: "For specific procedures and patient situations, integrated care can be valuable. Post-surgical patients sometimes benefit from <a href='/ayurveda-clinic-jvc/' class='text-[#C4A962] underline hover:text-[#b89a56]'>Integrated Ayurveda</a> support for: chronic pain that persists after surgical recovery, systemic recovery support (energy, sleep, mood during recovery), addressing patterns that may have contributed to the need for surgery, and post-cardiac surgery recovery support. Integration is offered when clinically appropriate. Most post-surgical patients receive standalone physiotherapy only."
+},
+{
+  question: "Can I do home physiotherapy through my entire post-surgical recovery?",
+  answer: "Yes for some patients. Most patients transition from home to clinic sessions around weeks 3-6 as mobility improves — the clinic environment provides better equipment access for later-phase strengthening and rehabilitation. However, some patients (elderly, those with limited transportation, patient preference) continue home physiotherapy throughout. The trade-off: clinic-based later-phase rehab typically has better equipment access; home-based is more convenient. We discuss the trade-offs at consultation."
+},
+{
+  question: "How do I book a post-surgery consultation?",
+  answer: "Three ways: (1) WhatsApp +971 4 XXX XXXX — fastest response, ideal for sending surgical reports, post-operative imaging, and surgeon contact details. (2) Call +971 4 XXX XXXX — direct booking, available 9 AM to 9 PM seven days a week. (3) Book online through our website. For your first appointment, please bring or send: complete surgical report, post-operative imaging (X-rays, MRI), any rehabilitation prescription from your surgeon, your surgeon's contact details if international, current medication list, and insurance card."
+}
+  ]
 };

@@ -164,7 +164,7 @@ export const shirodharaApplications = {
     {
       title: "Postnatal mood disorders (alongside conventional support)",
       subtitle: "",
-      href: "/conditions/postnatal-care-ayurveda-dubai/"
+      href: "/conditions/postnatal-ayurveda-dubai/"
     },
     {
       title: "Pre-menstrual mood symptoms",
@@ -299,7 +299,7 @@ export const shirodharaFaqs = {
     },
     {
       question: "Is Shirodhara safe during pregnancy?",
-      answer: "Modified Shirodhara is generally safe and beneficial from the second trimester onwards, performed by a therapist trained in prenatal protocols, with lighter oils and gentler positioning. Classical Shirodhara is not performed in the first trimester. Postnatal Shirodhara is one of our most-requested services for new mothers — particularly for <a href='/conditions/postnatal-care-ayurveda-dubai/' class='text-[#C9A961] hover:underline transition-colors'>postnatal mood disorders</a> and <a href='/conditions/stress-anxiety-ayurveda-dubai/' class='text-[#C9A961] hover:underline transition-colors'>insomnia</a>."
+      answer: "Modified Shirodhara is generally safe and beneficial from the second trimester onwards, performed by a therapist trained in prenatal protocols, with lighter oils and gentler positioning. Classical Shirodhara is not performed in the first trimester. Postnatal Shirodhara is one of our most-requested services for new mothers — particularly for <a href='/conditions/postnatal-ayurveda-dubai/' class='text-[#C9A961] hover:underline transition-colors'>postnatal mood disorders</a> and <a href='/conditions/stress-anxiety-ayurveda-dubai/' class='text-[#C9A961] hover:underline transition-colors'>insomnia</a>."
     },
     {
       question: "Can I drive home after Shirodhara?",

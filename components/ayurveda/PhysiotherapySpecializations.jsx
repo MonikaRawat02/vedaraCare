@@ -33,7 +33,11 @@ const PhysiotherapySpecializations = ({
               
               <div className="space-y-4 flex-grow">
                 <div>
-                  <h3 className="text-xl font-sans font-medium text-[#1A1A1A] mb-1 leading-tight" dangerouslySetInnerHTML={{ __html: type.title }} />
+                  {type.href ? (
+                    <a href={type.href} className="text-xl font-sans font-medium text-[#1A1A1A] mb-1 leading-tight block hover:text-[#C9A55A] transition-colors" dangerouslySetInnerHTML={{ __html: type.title }} />
+                  ) : (
+                    <h3 className="text-xl font-sans font-medium text-[#1A1A1A] mb-1 leading-tight" dangerouslySetInnerHTML={{ __html: type.title }} />
+                  )}
                 </div>
 
                 <div 

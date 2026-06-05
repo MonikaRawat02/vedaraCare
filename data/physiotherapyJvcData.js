@@ -72,7 +72,8 @@ export const physiotherapyJvcSpecializations = {
         " rotator cuff repair",
         "spinal fusion",
         "meniscectomy"
-      ]
+      ],
+      href: "/physiotherapy/post-surgery-rehab-dubai/"
     },
     {
       number: "04",

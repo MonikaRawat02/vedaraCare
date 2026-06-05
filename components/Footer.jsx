@@ -59,7 +59,8 @@ const Footer = () => {
               <li><Link href="/treatments/panchakarma-dubai/" className="hover:text-white transition-colors">Panchakarma in Dubai</Link></li>
               <li><Link href="/treatments/abhyanga-dubai/" className="hover:text-white transition-colors">Abhyanga Massage</Link></li>
               <li><Link href="/treatments/shirodhara-dubai/" className="hover:text-white transition-colors">Shirodhara</Link></li>
-              <li><Link href="/physiotherapy-jvc" className="hover:text-white transition-colors">Sports Injury Rehab</Link></li>
+              <li><Link href="/services/physiotherapy" className="hover:text-white transition-colors">Sports Injury Rehab</Link></li>
+              <li><Link href="/physiotherapy/post-surgery-rehab-dubai/" className="hover:text-white transition-colors">Post-Surgery Rehab</Link></li>
               <li><Link href="/services/dermatology" className="hover:text-white transition-colors">PRP Hair</Link></li>
               <li><Link href="/services/home-healthcare" className="hover:text-white transition-colors">IV Drip at Home</Link></li>
             </ul>
