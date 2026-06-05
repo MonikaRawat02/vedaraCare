@@ -230,15 +230,15 @@ export const sportsPhysiotherapyTeam = {
       qualification: "DHA-Licensed · Sports Medicine Specialist",
       specialties: ["Sports Physiotherapy", "Manual Therapy", "Dry Needling", "Return-to-Sport"],
       experience: "Lead sports physiotherapist with 9 years of experience treating elite and recreational athletes across padel, running, and gym populations.",
-      image: "https://images.unsplash.com/photo-1559839734-2b71ea197ec2?w=400&q=80",
-      alt: "Dr. Sarah Mitchell,  sports physiotherapist at Vedara Care JVC Dubai"
+      image: "",
+      alt: "Dr. Sarah Mitchell, sports physiotherapist at Vedara Care JVC Dubai"
     },
     {
       name: "Dr. Rajan Mehta, DPT",
       qualification: "DHA-Licensed · ACL & Knee Rehabilitation",
       specialties: ["ACL Rehab", "Biomechanics", "Football Injuries", "Shockwave Therapy"],
       experience: "Specialist in post-surgical rehabilitation and knee injuries, with a particular focus on ACL reconstruction return-to-sport protocols.",
-      image: "https://images.unsplash.com/photo-1612349317150-e413f6a5b16d?w=400&q=80",
+      image: "",
       alt: "Dr. Rajan Mehta, sports physiotherapist at Vedara Care JVC Dubai"
     },
 
@@ -247,7 +247,7 @@ export const sportsPhysiotherapyTeam = {
       qualification: "DHA-Licensed · Running & Biomechanical Analysis",
       specialties: ["Running Injuries", "Gait Analysis", "Tendinopathies","Padel Injuries"],
       experience: "Expert in running biomechanics and gait analysis. Previously physiotherapist for the Dubai Marathon medical team.",
-      image: "https://images.unsplash.com/photo-1612349317150-e413f6a5b16d?w=400&q=80",
+      image: "",
       alt: "Dr. Priya Nair, sports physiotherapist at Vedara Care JVC Dubai"
     },
 
@@ -257,7 +257,7 @@ export const sportsPhysiotherapyTeam = {
       qualification: "DHA-Licensed · Gym & Performance Rehab",
       specialties: ["CrossFit Injuries", "Strength Rehab", "Dry Needling","Prevention"],
       experience: "CrossFit Level 2 certified physiotherapist specialising in gym-related injuries and sports performance optimisation.",
-      image: "https://images.unsplash.com/photo-1612349317150-e413f6a5b16d?w=400&q=80",
+      image: "",
       alt: "Dr. Carlos Fernandez, sports physiotherapist at Vedara Care JVC Dubai"
     }
 
@@ -348,33 +348,82 @@ export const sportsPhysiotherapyReviews = {
 export const sportsPhysiotherapyFaqs = {
   bgColor: "bg-[#FFFFFF]",
   label: "COMMON QUESTIONS",
-  title: "What patients ask about sports physiotherapy.",
-  description: "For general physiotherapy questions (insurance, qualifications), see the main physiotherapy page.",
+  title: "What sports patients ask before booking.",
+  description: "For general physiotherapy questions, see our main physiotherapy page.",
   faqs: [
     {
-      question: "When should I see a sports physiotherapist versus a general physiotherapist?",
-      answer: "If your primary goal is returning to sport, preventing re-injury, or optimising performance, a sports physiotherapist is the right choice. Sports physiotherapists have additional training in sport-specific biomechanics, return-to-sport protocols, and performance optimisation. For non-sport musculoskeletal issues, a general musculoskeletal physiotherapist is appropriate."
-    },
+      question: "Can I get a same-day appointment for an acute sports injury?",
+      answer: "Yes — same-day appointments are typically available for acute sports injuries at our JVC clinic. WhatsApp +971 50 123 4567 for fastest response (typically within 15 minutes during business hours), or call +971 4 123 4567 directly. Saturday and evening appointments are also available for working patients. For very severe acute injuries with suspected fracture, severe deformity, neurological symptoms, or inability to weight-bear, A&E evaluation comes first, then physiotherapy follow-up." },
     {
-      question: "How soon after a sports injury should I see a physiotherapist?",
-      answer: "For acute injuries (ankle sprain, hamstring strain), ideally within 24-72 hours if possible — early assessment prevents compensation patterns and speeds recovery. For chronic overuse injuries (padel elbow, runner's knee), whenever you notice persistent pain that doesn't resolve with rest and reduced activity. Waiting usually makes recovery longer."
-    },
+      question: "What is the difference between sports physiotherapy and general physiotherapy?",
+      answer: "Sports physiotherapy is specialised for active patients — different examination techniques, sport-specific exercise prescription, biomechanical analysis, return-to-sport testing, and prevention programmes. General physiotherapy may treat sports injuries but typically lacks the sport-specific progression protocols and return-to-sport criteria that prevent re-injury. For competitive athletes, recreational sportspeople with significant training volume, or anyone returning to a specific sport after injury, sports physiotherapy is meaningfully different."  },
     {
-      question: "Do you do running gait analysis?",
-      answer: "Yes — we offer both clinical gait assessment and video gait analysis for runners. We look at cadence, stride length, foot strike, hip and knee mechanics, and identify both injury-causing patterns and performance opportunities. For chronic running injuries, gait analysis is almost always part of the assessment."
-    },
+      question: "Do I need a doctor's referral for sports physiotherapy in Dubai?",
+      answer: "No — physiotherapy is direct-access in Dubai. However, your insurance may require referral for coverage. For injuries with potential fracture or serious pathology, A&E or sports medicine doctor evaluation first is recommended. We can often see you same-day and coordinate any additional imaging or specialist referral if needed."  },
     {
-      question: "Do you treat padel-specific injuries?",
-      answer: "Yes — padel has exploded in Dubai, and padel injuries (lateral epicondylitis, shoulder impingement, lower back strain, knee meniscus injuries, ankle sprains, wrist tendinopathies) are now our most common sports injury presentation. We have developed specific protocols for padel-related injuries based on the sport's unique biomechanics."
-    },
+      question: "Do you treat padel injuries specifically?",
+      answer: "Yes — padel injuries are one of our largest treatment cohorts due to the sport's explosion in Dubai. Common padel injuries we treat: padel elbow (lateral epicondylitis), rotator cuff impingement, lower back strain, wrist tendinopathies, ankle sprains, and meniscus injuries. Our sports physiotherapists understand padel-specific biomechanics — the rotational demands, repetitive overhead movements, and lateral cutting patterns that drive padel injury patterns."  },
     {
-      question: "What is return-to-sport testing and why is it important?",
-      answer: "Return-to-sport testing uses objective measures (strength testing, functional performance tests, change-of-direction tests) to determine when you are safe to return to your sport, rather than just 'feeling ready'. Premature return is the leading cause of re-injury. We have specific return-to-sport protocols for padel, running, football, tennis, and gym training."
-    },
+      question: "How long does ACL rehabilitation take?",
+      answer: "Typically 9–12 months from surgery to full return to cutting sports. Faster return is usually inappropriate — the graft requires time to remodel and tissue strength returns gradually. Our ACL rehabilitation programme follows evidence-based phases: early protection and range of motion (0–6 weeks), strengthening (6–12 weeks), neuromuscular control (3–6 months), and return-to-sport phase (6–12 months) with objective testing before clearance. Re-injury rates are substantially lower with proper protocols than with early return."   },
     {
-      question: "Can you work with my coach or trainer?",
-      answer: "Yes — with your permission, we can communicate directly with your coach or personal trainer to ensure consistency between physiotherapy rehab and gym/sport training. This is particularly valuable for performance optimisation and injury prevention."
-    }
+      question: "Can you help with running injuries?",
+      answer: "Yes — running injuries are a significant focus at our JVC clinic. Common presentations: runner's knee, IT band syndrome, shin splints, plantar fasciitis, Achilles tendinopathy, stress fractures, and hamstring issues. Our approach includes running gait analysis, biomechanical assessment, training load review, and sport-specific rehabilitation. For Dubai's marathon and recreational running community, we provide both injury treatment and preventive performance optimisation." },
+      {
+        question: "What is dry needling and is it the same as acupuncture?",
+        answer: "Dry needling involves inserting fine needles into trigger points and tight muscle bands to release tension and reduce pain. Acupuncture is a separate practice based on traditional Chinese medicine principles. Dry needling is performed by physiotherapists with specific certification — it is a Western medicine technique with growing evidence base for chronic muscle patterns, certain headaches, and persistent post-injury muscle tension. Most patients find it surprisingly comfortable and effective."    },
+        {
+       question:"What is shockwave therapy and when is it used?",
+       answer:"Shockwave therapy delivers focused acoustic waves to chronic tendinopathies. It is evidence-based first-line treatment for: plantar fasciitis, Achilles tendinopathy, patellar tendinopathy, lateral epicondylitis (tennis elbow / padel elbow), and rotator cuff calcific tendinopathy. Typically 3–6 sessions, weekly. Particularly useful for chronic tendon conditions that have not responded to traditional manual therapy and exercise alone."},
+      {
+           question:"How do you handle return-to-sport decisions?",
+            answer:"We apply objective return-to-sport criteria — not just 'you feel better.' Criteria include: strength testing (typically requiring 90% of unaffected side), functional performance tests (hop tests, change-of-direction tests, sport-specific drills), time-from-injury minimums based on tissue healing biology, and movement quality assessment. Premature return to sport is the leading cause of re-injury. We will not clear you for return until criteria are met — even when you are feeling ready."},
+               
+             {
+                question:"What about prevention — can sports physiotherapy prevent injuries?",
+             answer:"Yes — preventive sports physiotherapy is meaningfully effective. Common prevention programmes include: ACL prevention programmes (particularly for football players), rotator cuff prevention for racquet and overhead athletes, hamstring injury prevention for sprinting sports, and load management for runners. Prevention programmes are typically 6–12 weeks initially, with periodic reinforcement. For athletes with recurrent injuries, prevention may be more valuable than treatment."},
+             {
+                     question:"Do you do running gait analysis?",
+                 answer:"Yes — running gait analysis is part of our running injury and running performance services. We analyse: cadence, foot strike pattern, stride length, vertical oscillation, hip-knee-ankle alignment, trunk position, arm swing patterns. Findings inform both injury treatment (addressing biomechanical contributors) and performance optimisation. Video analysis is included where useful."}, 
+
+{
+question:"Can children and adolescents have sports physiotherapy?",
+answer:"Yes — adolescent and youth athletes are a specific patient cohort. Common presentations: Osgood-Schlatter disease, Sever's disease, sports injuries in school sports, growth-related issues, and overuse injuries from sports academy training. Approach is age-appropriate, includes parental involvement, and considers growth and development factors that distinguish paediatric from adult sports physiotherapy."
+},
+{
+  question:"What about cycling injuries?",
+  answer:"Cycling injuries are a growing patient cohort in Dubai given the city's expanding cycling culture. Common presentations: knee pain (patellofemoral), lower back pain, neck and shoulder tension, IT band syndrome, saddle-related injuries, and crash trauma. We can also provide bike-fit assessment guidance to address biomechanical causes."},
+{
+  question:"What if I had surgery overseas — can you provide rehabilitation?",
+  answer:"Yes — many Dubai expat patients have surgery overseas (often in their home countries) and need rehabilitation in Dubai. We coordinate with your operating surgeon to follow their specific protocols, integrate with any post-operative imaging, and provide structured rehabilitation. Bring all surgical documentation, post-operative imaging, and any rehabilitation protocols from your surgeon to your initial assessment."},
+
+{
+  question:"Where in JVC is your sports physiotherapy clinic?",
+  answer:"Our clinic is at [Building Name], Street 2, Jumeirah Village Circle (JVC), Dubai — walking distance from Circle Mall, three minutes from FIVE Jumeirah Village Hotel, and five minutes from JSS Private School. Free patient parking. Easy access from Sheikh Mohammed Bin Zayed Road and Al Khail Road. Patients travel to us from across Dubai including Sports City, Motor City, JVT, Al Barsha South, Marina, Downtown, Palm Jumeirah, and Mirdif."
+},
+
+
+{
+  question:"Does insurance cover sports physiotherapy?",
+  answer:"Sports injuries with medical justification are typically covered by Dubai insurance plans. Pure performance optimisation or preventive work may have limited coverage. We are direct-billing partners with Daman, AXA, Allianz, Oman Insurance, Now Health, Bupa, and MetLife. WhatsApp your insurance card to +971 50 123 4567 before booking to confirm specific coverage and out-of-pocket costs."
+},
+ {
+  question:"How is sports physiotherapy at Vedara different from general clinics?",
+  answer:"Specialised expertise — our sports physiotherapists have DPT qualifications plus sports medicine certifications and specific sport-knowledge from working with active populations. Longer sessions (45–60 minutes vs hospital-typical 20–30 minutes). Same therapist throughout your treatment. Objective return-to-sport testing rather than subjective 'feels better' clearance. Sport-specific rehabilitation protocols. Modern equipment including shockwave therapy. Transparent published pricing."
+
+},
+{
+  question:"What about tendinopathies that have not responded to other treatment?",
+  answer:"Chronic tendinopathies (plantar fasciitis, Achilles, patellar, lateral epicondylitis) often persist for months or years with general physiotherapy. Our approach combines evidence-based protocols: eccentric loading programmes specific to the tendon, shockwave therapy for chronic cases, isometric loading for pain management, and progressive return-to-loading. Chronic tendinopathies that have failed elsewhere often respond when treatment is properly structured."},
+  {
+question : "Can you help with sports performance, not just injuries?",
+answer:"Yes — performance optimisation is offered for active patients without active injuries. Performance services include: biomechanical assessment, movement screening for asymmetries, sport-specific strength and conditioning consultation, running gait analysis, and structured prevention programmes. Particularly useful for recreational athletes who want to optimise performance and prevent the injury patterns common to their sport."  },
+ 
+{
+  question:"How do  I book a sports physiotherapy appointment?",
+  answer:"Three ways: (1) WhatsApp +971 50 123 4567 — fastest response, ideal for sending injury photos, MRI images, or surgical reports. (2) Call +971 4 123 4567 — direct booking, available 9 AM to 9 PM seven days a week. (3) Book online via the button above. For your first appointment, please bring: any imaging (MRI, X-rays, ultrasound), surgical reports if applicable, current medication list, your sports schedule (competitive calendar if relevant), and insurance card."}
+
+
   ]
 };
 
@@ -399,7 +448,7 @@ export const sportsPhysiotherapyLocation = {
     "Easy access from Sheikh Mohammed Bin Zayed Road and Al Khail Road"
   ],
   mapEmbed: "",
-  image: "https://images.unsplash.com/photo-1571019613454-1cb2f99b2d8b?w=700&h=800&fit=crop&auto=format",
+  image: "",
   alt: "Vedara Care sports physiotherapy clinic in JVC Dubai",
   description: "Our JVC clinic has dedicated sports physiotherapy treatment rooms, a full rehabilitation gym for sport-specific exercise progression, modern modality equipment including focused shockwave therapy, and an outdoor space for return-to-sport testing.",
   buttonText: "Book a Sports Assessment"

@@ -74,7 +74,7 @@ const SportsInjuryMechanism = () => {
 
           <div className="sticky top-24">
             <div className="relative rounded-xl overflow-hidden" style={{ borderRadius: '12px', background: 'rgb(27, 67, 50)' }}>
-              <img src="https://images.unsplash.com/photo-1645005513713-9e2b92a687d3?w=700&h=800&fit=crop&auto=format" alt="Athlete performing return-to-sport testing under physiotherapist supervision" className="w-full object-cover" style={{ height: '500px' }} />
+              <img src="/images/return-to-sport-testing-vedara-jvc.webp" alt="Return-to-sport testing at Vedara Care JVC sports physiotherapy clinic" className="w-full object-cover" style={{ height: '500px' }} />
               <div className="absolute inset-0 rounded-xl" style={{ background: 'linear-gradient(to top, rgba(27, 67, 50, 0.4) 0%, transparent 60%)' }}></div>
             </div>
             <div className="mt-6 p-6 rounded-lg" style={{ background: 'rgb(27, 67, 50)', color: 'rgb(250, 247, 242)' }}>

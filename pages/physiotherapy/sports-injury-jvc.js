@@ -35,6 +35,22 @@ const SportsInjuryJvc = () => {
   const currentDate = new Date().toISOString();
   
   const schemaMarkup = [
+    // Site-wide Vedara Care Organization
+    {
+      "@context": "https://schema.org",
+      "@type": ["MedicalClinic", "Organization"],
+      "@id": "https://vedaracare.ae/#organization",
+      "name": "Vedara Care Polyclinic",
+      "url": "https://vedaracare.ae/",
+      "address": {
+        "@type": "PostalAddress",
+        "addressLocality": "Jumeirah Village Circle",
+        "addressRegion": "Dubai",
+        "addressCountry": "AE"
+      }
+    },
+    
+    // MedicalBusiness (Sports Physiotherapy)
     {
       "@context": "https://schema.org",
       "@type": ["MedicalBusiness", "LocalBusiness", "PhysicalTherapy"],
@@ -84,6 +100,9 @@ const SportsInjuryJvc = () => {
         {"@type": "Place", "name": "Downtown Dubai"},
         {"@type": "Place", "name": "Palm Jumeirah"},
         {"@type": "Place", "name": "Mirdif"},
+        {"@type": "Place", "name": "Circle Mall"},
+        {"@type": "Place", "name": "FIVE Jumeirah Village"},
+        {"@type": "Place", "name": "JSS Private School"},
         {"@type": "City", "name": "Dubai"}
       ],
       "medicalSpecialty": [
@@ -102,13 +121,23 @@ const SportsInjuryJvc = () => {
         {"@type": "MedicalProcedure", "name": "Dry Needling"},
         {"@type": "MedicalProcedure", "name": "Shockwave Therapy"},
         {"@type": "MedicalProcedure", "name": "Biomechanical Analysis"},
+        {"@type": "MedicalProcedure", "name": "Gait Analysis"},
         {"@type": "MedicalProcedure", "name": "Running Gait Analysis"},
         {"@type": "MedicalProcedure", "name": "Return-to-Sport Testing"}
       ],
       "memberOf": {
-        "@type": "Organization",
+        "@type": "GovernmentOrganization",
         "name": "Dubai Health Authority"
       },
+      "insuranceProvider": [
+        {"@type": "Organization", "name": "Daman"},
+        {"@type": "Organization", "name": "AXA"},
+        {"@type": "Organization", "name": "Allianz"},
+        {"@type": "Organization", "name": "Oman Insurance"},
+        {"@type": "Organization", "name": "Now Health"},
+        {"@type": "Organization", "name": "Bupa"},
+        {"@type": "Organization", "name": "MetLife"}
+      ],
       "aggregateRating": {
         "@type": "AggregateRating",
         "ratingValue": "4.9",
@@ -117,10 +146,13 @@ const SportsInjuryJvc = () => {
         "worstRating": "1"
       }
     },
+    
+    // Medical Conditions
     {
       "@context": "https://schema.org",
       "@type": "MedicalCondition",
-      "name": "Lateral Epicondylitis (Padel Elbow / Tennis Elbow)",
+      "name": "Lateral Epicondylitis",
+      "alternateName": ["Padel Elbow", "Tennis Elbow"],
       "code": {"@type": "MedicalCode", "code": "M77.1", "codingSystem": "ICD-10"},
       "possibleTreatment": [
         {"@type": "MedicalProcedure", "name": "Manual Therapy"},
@@ -149,7 +181,8 @@ const SportsInjuryJvc = () => {
     {
       "@context": "https://schema.org",
       "@type": "MedicalCondition",
-      "name": "Patellofemoral Pain Syndrome (Runner's Knee)",
+      "name": "Patellofemoral Pain Syndrome",
+      "alternateName": ["Runner's Knee"],
       "code": {"@type": "MedicalCode", "code": "M22.2", "codingSystem": "ICD-10"}
     },
     {
@@ -157,6 +190,44 @@ const SportsInjuryJvc = () => {
       "@type": "MedicalCondition",
       "name": "Achilles Tendinopathy",
       "code": {"@type": "MedicalCode", "code": "M76.6", "codingSystem": "ICD-10"}
+    },
+    {
+      "@context": "https://schema.org",
+      "@type": "MedicalCondition",
+      "name": "Rotator Cuff Injury"
+    },
+    {
+      "@context": "https://schema.org",
+      "@type": "MedicalCondition",
+      "name": "Meniscus Injury"
+    },
+    {
+      "@context": "https://schema.org",
+      "@type": "MedicalCondition",
+      "name": "Ankle Sprain"
+    },
+    {
+      "@context": "https://schema.org",
+      "@type": "MedicalCondition",
+      "name": "Iliotibial Band Syndrome",
+      "alternateName": ["IT Band Syndrome"]
+    },
+    {
+      "@context": "https://schema.org",
+      "@type": "MedicalCondition",
+      "name": "Plantar Fasciitis"
+    },
+    
+    // Sports Events
+    {
+      "@context": "https://schema.org",
+      "@type": "SportsEvent",
+      "name": "Dubai Marathon"
+    },
+    {
+      "@context": "https://schema.org",
+      "@type": "SportsEvent",
+      "name": "RAK Half Marathon"
     },
     {
       "@context": "https://schema.org",
@@ -190,14 +261,14 @@ const SportsInjuryJvc = () => {
             "@type": "Offer",
             "name": "Sport-Specific Rehabilitation Package",
             "priceCurrency": "AED",
-            "price": "2400",
+            "price": "2,400",
             "description": "12-session structured rehabilitation programme"
           },
           {
             "@type": "Offer",
             "name": "ACL Reconstruction Rehabilitation Programme",
             "priceCurrency": "AED",
-            "price": "6500",
+            "price": "6,500",
             "description": "Comprehensive 20-30 session ACL rehabilitation programme"
           },
           {
@@ -268,6 +339,7 @@ const SportsInjuryJvc = () => {
       },
       "mainEntityOfPage": "https://vedaracare.ae/physiotherapy/sports-injury-jvc/"
     },
+    // Team Physicians
     {
       "@context": "https://schema.org",
       "@type": "Physician",
@@ -275,7 +347,94 @@ const SportsInjuryJvc = () => {
       "url": "https://vedaracare.ae/physiotherapists/dr-sarah-mitchell/",
       "image": "https://vedaracare.ae/images/dr-sarah-mitchell.jpg",
       "medicalSpecialty": ["Sports Medicine", "Sports Physiotherapy", "Physiotherapy"],
-      "hasCredential": ["DPT", "Sports Medicine Certification", "DHA-Licensed"],
+      "hasCredential": [
+        {
+          "@type": "EducationalOccupationalCredential",
+          "name": "Doctor of Physical Therapy",
+          "alternateName": "DPT"
+        },
+        {
+          "@type": "EducationalOccupationalCredential",
+          "name": "Sports Medicine Certification"
+        },
+        {
+          "@type": "EducationalOccupationalCredential",
+          "name": "DHA-Licensed",
+          "issuingAuthority": {
+            "@type": "GovernmentOrganization",
+            "name": "Dubai Health Authority"
+          }
+        }
+      ],
+      "worksFor": {"@id": "https://vedaracare.ae/#organization"}
+    },
+    {
+      "@context": "https://schema.org",
+      "@type": "Physician",
+      "name": "Dr. Rajan Mehta, DPT",
+      "url": "https://vedaracare.ae/physiotherapists/dr-rajan-mehta/",
+      "medicalSpecialty": ["Sports Medicine", "Sports Physiotherapy", "Physiotherapy"],
+      "hasCredential": [
+        {
+          "@type": "EducationalOccupationalCredential",
+          "name": "Doctor of Physical Therapy",
+          "alternateName": "DPT"
+        },
+        {
+          "@type": "EducationalOccupationalCredential",
+          "name": "DHA-Licensed",
+          "issuingAuthority": {
+            "@type": "GovernmentOrganization",
+            "name": "Dubai Health Authority"
+          }
+        }
+      ],
+      "worksFor": {"@id": "https://vedaracare.ae/#organization"}
+    },
+    {
+      "@context": "https://schema.org",
+      "@type": "Physician",
+      "name": "Dr. Priya Nair, DPT",
+      "url": "https://vedaracare.ae/physiotherapists/dr-priya-nair/",
+      "medicalSpecialty": ["Sports Medicine", "Sports Physiotherapy", "Physiotherapy"],
+      "hasCredential": [
+        {
+          "@type": "EducationalOccupationalCredential",
+          "name": "Doctor of Physical Therapy",
+          "alternateName": "DPT"
+        },
+        {
+          "@type": "EducationalOccupationalCredential",
+          "name": "DHA-Licensed",
+          "issuingAuthority": {
+            "@type": "GovernmentOrganization",
+            "name": "Dubai Health Authority"
+          }
+        }
+      ],
+      "worksFor": {"@id": "https://vedaracare.ae/#organization"}
+    },
+    {
+      "@context": "https://schema.org",
+      "@type": "Physician",
+      "name": "Dr. Carlos Fernandez, DPT",
+      "url": "https://vedaracare.ae/physiotherapists/dr-carlos-fernandez/",
+      "medicalSpecialty": ["Sports Medicine", "Sports Physiotherapy", "Physiotherapy"],
+      "hasCredential": [
+        {
+          "@type": "EducationalOccupationalCredential",
+          "name": "Doctor of Physical Therapy",
+          "alternateName": "DPT"
+        },
+        {
+          "@type": "EducationalOccupationalCredential",
+          "name": "DHA-Licensed",
+          "issuingAuthority": {
+            "@type": "GovernmentOrganization",
+            "name": "Dubai Health Authority"
+          }
+        }
+      ],
       "worksFor": {"@id": "https://vedaracare.ae/#organization"}
     }
   ];
@@ -357,7 +516,7 @@ const SportsInjuryJvc = () => {
         {/* H2: Acute injury or chronic pattern — start with a proper assessment. */}
         <FinalCTA {...sportsPhysiotherapyFinalCTA} />
         
-        {/* Section 15 - Related Pages */}
+        {/* Related Pages */}
         <RelatedPages {...sportsPhysiotherapyRelatedPages} />
       </div>
     </>
