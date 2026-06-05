@@ -182,7 +182,7 @@ export const abhyangaApplications = {
     },
     {
       title: "Postnatal recovery (45-day Sutika Paricharya)",
-      href: "/conditions/postnatal-care-ayurveda-dubai/"
+      href: "/conditions/postnatal-ayurveda-dubai/"
     },
     {
       title: "Cervical spondylosis (with Greeva Vasti, Nasya)",
@@ -268,7 +268,7 @@ export const abhyangaHomeHealthcare = {
   ],
   priceText: "Home Abhyanga: From AED 550 per session",
   priceNote: "Slightly higher than in-clinic to cover travel and setup",
-  footer: "Most often requested for <a href='/conditions/postnatal-care-ayurveda-dubai/' class='text-[#C9A961] hover:underline transition-colors'>postnatal mothers</a> (the classical 45-day Sutika Paricharya protocol), elderly patients with limited mobility, busy executives who genuinely cannot commit to 90-minute clinic visits, or as part of recovery care."
+  footer: "Most often requested for <a href='/conditions/postnatal-ayurveda-dubai/' class='text-[#C9A961] hover:underline transition-colors'>postnatal mothers</a> (the classical 45-day Sutika Paricharya protocol), elderly patients with limited mobility, busy executives who genuinely cannot commit to 90-minute clinic visits, or as part of recovery care."
 };
 
 export const abhyangaReviews = {

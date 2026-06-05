@@ -186,7 +186,7 @@ const WeightLossAyurvedaDubai = () => {
                 ],
                 "possibleTreatment": [
                   {"@type": "MedicalTherapy", "name": "Hormone-balancing herbs"},
-                  {"@type": "MedicalProcedure", "name": "Sutika Paricharya (for postpartum)", "url": "https://vedaracare.ae/conditions/postnatal-care-ayurveda-dubai/"}
+                  {"@type": "MedicalProcedure", "name": "Sutika Paricharya (for postpartum)", "url": "https://vedaracare.ae/conditions/postnatal-ayurveda-dubai/"}
                 ]
               },
               {
@@ -410,7 +410,7 @@ const WeightLossAyurvedaDubai = () => {
             "@context": "https://schema.org",
             "@type": "MedicalProcedure",
             "name": "Sutika Paricharya",
-            "url": "https://vedaracare.ae/conditions/postnatal-care-ayurveda-dubai/"
+            "url": "https://vedaracare.ae/conditions/postnatal-ayurveda-dubai/"
           })
         }}
       />

@@ -39,7 +39,7 @@ export const arthritisTypesData = {
     {
       title: "Osteoarthritis (Degenerative)",
       sanskritName: "Sandhivata in classical Sanskrit",
-      description: "The most common arthritis type. Wear and tear degeneration of joint cartilage, typically affecting knees, hips, spine, and small finger joints. Onset usually after age 45. Pain worsens with use, improves with rest. Common in JVC's older population. Ayurvedic treatment is particularly valuable for pain management, joint mobility, slowing progression, and improving quality of life. Sometimes delays the timing of joint replacement.",
+      description: "The most common arthritis type. Wear and tear degeneration of joint cartilage, typically affecting knees, hips, spine, and small finger joints. Onset usually after age 45. Pain worsens with use, improves with rest. Common in JVC's older population. Ayurvedic treatment is particularly valuable for pain management, joint mobility, slowing progression, and improving quality of life. Sometimes delays the timing of <a href=\"/physiotherapy/post-surgery-rehab-dubai/\" class=\"text-[#C9A961] hover:underline\">joint replacement</a>.",
       emphasis: "Janu Vasti for knees, Vata-pacifying Panchakarma, Yogaraja Guggulu, Njavarakizhi for muscle support, integrated physiotherapy"
     },
     {

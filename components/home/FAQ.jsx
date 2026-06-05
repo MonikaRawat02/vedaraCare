@@ -50,7 +50,8 @@ const FAQ = ({
   title = "Everything patients ask before their first visit.",
   description = "Short, honest answers from our clinical team. Cannot find what you are looking for? WhatsApp us, usually answered in under 15 minutes.",
   faqs = [],
-  buttonText = "Ask a Question"
+  buttonText = "Ask a Question",
+  sidebarLinks = []
 }) => {
   const [openIndex, setOpenIndex] = useState(null);
 
@@ -78,6 +79,16 @@ const FAQ = ({
               <MessageCircle size={18} />
               {buttonText}
             </button>
+
+            {sidebarLinks.length > 0 && (
+              <div className="space-y-2 pt-2">
+                {sidebarLinks.map((link, idx) => (
+                  <a key={idx} href={link.href} className="block text-[14px] font-sans text-[#C4A962] hover:text-[#b89a56] hover:underline">
+                    {link.text} →
+                  </a>
+                ))}
+              </div>
+            )}
           </div>
 
           {/* Right Side: Accordion */}

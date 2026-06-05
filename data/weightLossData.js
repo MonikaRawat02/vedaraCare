@@ -145,7 +145,7 @@ export const weightLossPhenotypes = {
       title: "Hormonal Weight Gain",
       subtitle: "Cyclical, hormone-driven, PCOS/postpartum",
       content: "Weight gain linked to hormonal life stages — <a href=\"/conditions/pcos-ayurveda-dubai/\">PCOS</a>-related weight (often present from teens or twenties), postpartum retention (failure to return to pre-pregnancy weight within 12 months), and perimenopausal weight redistribution. Each has different underlying patterns requiring different protocols.",
-      ayurvedicEmphasis: "Specific hormonal protocols, <a href=\"/conditions/postnatal-care-ayurveda-dubai/\">classical Sutika Paricharya</a> for postpartum, Vata-pacification for perimenopause"
+      ayurvedicEmphasis: "Specific hormonal protocols, <a href=\"/conditions/postnatal-ayurveda-dubai/\">classical Sutika Paricharya</a> for postpartum, Vata-pacification for perimenopause"
     },
     {
       letter: "E",
