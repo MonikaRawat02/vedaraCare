@@ -371,8 +371,8 @@ const PostnatalAyurvedaDubai = () => {
 
         {/* Section 13: Related Pages */}
         <RelatedPages {...postnatalRelatedPages} 
-        bgColor="#F5F1EB"
-        cardColor="#FFFFFF"
+        bgColor="bg-[#F5F1EB]"
+        
         />
       </main>
     </>

@@ -70,7 +70,7 @@ export const hairLossPhenotypes = {
       letter: 'E',
       title: 'Scalp-Condition-Driven Hair Loss',
       subtitle: 'Multiple Sanskrit classifications including Darunaka and Palitya-related',
-      content: 'Hair loss secondary to scalp conditions — seborrheic dermatitis, scalp psoriasis, fungal infections, severe dandruff, scarring scalp conditions. The scalp needs treatment before the hair can grow back. Different protocol from other patterns — primary focus is restoring scalp health.',
+      content: 'Hair loss secondary to <a href="/conditions/skin-ayurveda-dubai/" class="doctor-specialty-link">scalp conditions</a> — seborrheic dermatitis, scalp psoriasis, fungal infections, severe dandruff, scarring scalp conditions. The scalp needs treatment before the hair can grow back. Different protocol from other patterns — primary focus is restoring scalp health.',
       ayurvedicEmphasis: 'Scalp-specific medicated oil treatments, internal medicines for the underlying skin condition, <a href="/dermatology-clinic-jvc/" class="doctor-specialty-link">dermatology</a> coordination for diagnosis confirmation'
     }
   ],

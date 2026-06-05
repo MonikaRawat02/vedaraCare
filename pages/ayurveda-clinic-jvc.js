@@ -34,11 +34,12 @@ const AyurvedaClinicJVC = () => {
       "@id": "https://vedaracare.ae/ayurveda-clinic-jvc/#clinic",
       "name": "Vedara Care Polyclinic — Ayurveda Department",
       "url": "https://vedaracare.ae/ayurveda-clinic-jvc/",
-      "image": "https://vedaracare.ae/images/ayurveda-clinic-jvc-hero.jpg",
+      "image": "https://vedaracare.ae/images/ayurveda-clinic-jvc-hero.webp",
       "telephone": "+971-XX-XXX-XXXX",
       "email": "info@vedaracare.ae",
       "priceRange": "AED",
-      "medicalSpecialty": "Ayurveda",
+      "medicalSpecialty": {"@type": "MedicalSpecialty", "name": "Ayurveda", "@id": "https://vedaracare.ae/ayurveda-clinic-jvc/#ayurveda"},
+      "parentOrganization": {"@id": "https://vedaracare.ae/#organization"},
       "address": {
         "@type": "PostalAddress",
         "streetAddress": "[Full street address, building, unit]",
@@ -60,43 +61,85 @@ const AyurvedaClinicJVC = () => {
         },
         {
           "@type": "OpeningHoursSpecification",
-          "dayOfWeek": "Sunday",
+          "dayOfWeek": ["Sunday"],
           "opens": "10:00",
           "closes": "19:00"
         }
       ],
       "availableService": [
-        {"@type":"MedicalProcedure","name":"Panchakarma","url":"https://vedaracare.ae/treatments/panchakarma-dubai/"},
-        {"@type":"MedicalProcedure","name":"Abhyanga","url":"https://vedaracare.ae/treatments/abhyanga-dubai/"},
-        {"@type":"MedicalProcedure","name":"Shirodhara","url":"https://vedaracare.ae/treatments/shirodhara-dubai/"},
+        {"@type":"MedicalProcedure","name":"Panchakarma","url":"https://vedaracare.ae/treatments/panchakarma-dubai/","sameAs":"https://en.wikipedia.org/wiki/Panchakarma"},
+        {"@type":"MedicalProcedure","name":"Abhyanga","url":"https://vedaracare.ae/treatments/abhyanga-dubai/","sameAs":"https://en.wikipedia.org/wiki/Abhyanga"},
+        {"@type":"MedicalProcedure","name":"Shirodhara","url":"https://vedaracare.ae/treatments/shirodhara-dubai/","sameAs":"https://en.wikipedia.org/wiki/Shirodhara"},
         {"@type":"MedicalProcedure","name":"Kativasti","url":"https://vedaracare.ae/treatments/kativasti-dubai/"},
         {"@type":"MedicalProcedure","name":"Njavarakizhi","url":"https://vedaracare.ae/treatments/njavarakizhi-dubai/"},
-        {"@type":"MedicalProcedure","name":"Nasya"},
-        {"@type":"MedicalProcedure","name":"Basti"},
-        {"@type":"MedicalProcedure","name":"Udvartana"}
+        {"@type":"MedicalProcedure","name":"Nasya","sameAs":"https://en.wikipedia.org/wiki/Nasya_(Ayurveda)"},
+        {"@type":"MedicalProcedure","name":"Basti","sameAs":"https://en.wikipedia.org/wiki/Basti_(Panchakarma)"},
+        {"@type":"MedicalProcedure","name":"Udvartana"},
+        {"@type":"MedicalProcedure","name":"Nadi Pariksha (Pulse Diagnosis)","description":"Classical Ayurvedic pulse diagnosis used for dosha assessment and treatment planning"}
       ],
       "areaServed": [
-        {"@type":"Place","name":"Jumeirah Village Circle"},
+        {"@type":"Place","name":"Jumeirah Village Circle","sameAs":"https://en.wikipedia.org/wiki/Jumeirah_Village_Circle"},
         {"@type":"Place","name":"Jumeirah Village Triangle"},
         {"@type":"Place","name":"Al Barsha South"},
         {"@type":"Place","name":"Dubai Sports City"},
         {"@type":"Place","name":"Motor City"},
-        {"@type":"Place","name":"Dubai"}
+        {"@type":"Place","name":"Dubai","sameAs":"https://en.wikipedia.org/wiki/Dubai"}
       ],
       "hasCredential": {
         "@type":"EducationalOccupationalCredential",
         "credentialCategory":"License",
         "name":"DHA Healthcare Facility License",
-        "identifier":"[DHA License Number]"
+        "identifier":"[DHA License Number]",
+        "recognizedBy": {"@type": "Organization", "name": "Dubai Health Authority", "url": "https://www.dha.gov.ae/", "sameAs": "https://en.wikipedia.org/wiki/Dubai_Health_Authority"}
       },
       "sameAs": [
         "https://en.wikipedia.org/wiki/Ayurveda"
       ],
       "aggregateRating": {
-        "@type":"AggregateRating",
+        "@type": "AggregateRating",
         "ratingValue":"4.9",
         "reviewCount":"[live count]",
         "bestRating":"5"
+      }
+    },
+    {
+      "@context": "https://schema.org",
+      "@type": "MedicalTherapy",
+      "@id": "https://vedaracare.ae/ayurveda-clinic-jvc/#ayurveda",
+      "name": "Ayurveda",
+      "alternateName": ["Ayurvedic Medicine", "Ayurvedic Treatment"],
+      "description": "Classical Ayurvedic medicine — pulse-based diagnosis (Nadi Pariksha), dosha analysis, herbal medicines, Panchakarma detoxification, and personalised treatment protocols for chronic conditions.",
+      "sameAs": "https://en.wikipedia.org/wiki/Ayurveda",
+      "usedToTreat": [
+        {"@type": "MedicalCondition", "name": "Chronic Back Pain", "code": {"@type": "MedicalCode", "code": "M54.5", "codingSystem": "ICD-10"}, "url": "https://vedaracare.ae/conditions/back-pain-ayurveda-dubai/"},
+        {"@type": "MedicalCondition", "name": "PCOS", "code": {"@type": "MedicalCode", "code": "E28.2", "codingSystem": "ICD-10"}, "url": "https://vedaracare.ae/conditions/pcos-ayurveda-dubai/"},
+        {"@type": "MedicalCondition", "name": "Migraine", "code": {"@type": "MedicalCode", "code": "G43", "codingSystem": "ICD-10"}, "url": "https://vedaracare.ae/conditions/migraine-ayurveda-dubai/"},
+        {"@type": "MedicalCondition", "name": "Hair Loss", "code": {"@type": "MedicalCode", "code": "L65.9", "codingSystem": "ICD-10"}, "url": "https://vedaracare.ae/conditions/hair-loss-ayurveda-dubai/"},
+        {"@type": "MedicalCondition", "name": "Stress and Anxiety", "code": {"@type": "MedicalCode", "code": "F41.1", "codingSystem": "ICD-10"}, "url": "https://vedaracare.ae/conditions/stress-anxiety-ayurveda-dubai/"},
+        {"@type": "MedicalCondition", "name": "Thyroid Disorders", "code": {"@type": "MedicalCode", "code": "E03.9", "codingSystem": "ICD-10"}, "url": "https://vedaracare.ae/conditions/thyroid-ayurveda-dubai/"},
+        {"@type": "MedicalCondition", "name": "Postnatal Recovery", "code": {"@type": "MedicalCode", "code": "Z39", "codingSystem": "ICD-10"}, "url": "https://vedaracare.ae/conditions/postnatal-ayurveda-dubai/"},
+        {"@type": "MedicalCondition", "name": "Diabetes (Type 2)", "code": {"@type": "MedicalCode", "code": "E11", "codingSystem": "ICD-10"}, "url": "https://vedaracare.ae/conditions/diabetes-ayurveda-dubai/"},
+        {"@type": "MedicalCondition", "name": "Arthritis", "code": {"@type": "MedicalCode", "code": "M06.9", "codingSystem": "ICD-10"}, "url": "https://vedaracare.ae/conditions/arthritis-ayurveda-dubai/"},
+        {"@type": "MedicalCondition", "name": "Weight Management", "code": {"@type": "MedicalCode", "code": "E66.9", "codingSystem": "ICD-10"}, "url": "https://vedaracare.ae/conditions/weight-loss-ayurveda-dubai/"}
+      ]
+    },
+    {
+      "@context": "https://schema.org",
+      "@type": "Organization",
+      "@id": "https://vedaracare.ae/#organization",
+      "name": "Vedara Care Polyclinic",
+      "url": "https://vedaracare.ae/",
+      "logo": "https://vedaracare.ae/logo.png",
+      "address": {
+        "@type": "PostalAddress",
+        "addressLocality": "Jumeirah Village Circle",
+        "addressRegion": "Dubai",
+        "addressCountry": "AE"
+      },
+      "department": {
+        "@type": "MedicalClinic",
+        "@id": "https://vedaracare.ae/ayurveda-clinic-jvc/#clinic",
+        "name": "Ayurveda Department"
       }
     },
     {
@@ -105,11 +148,11 @@ const AyurvedaClinicJVC = () => {
       "name": "Dr. Priya Menon",
       "image": "https://vedaracare.ae/doctors/dr-priya-menon-ayurvedic-physician-jvc.webp",
       "url": "https://vedaracare.ae/doctors/dr-priya-menon-ayurveda/",
-      "medicalSpecialty": "Ayurveda",
+      "medicalSpecialty": {"@type": "MedicalSpecialty", "name": "Ayurveda"},
       "hasCredential": [
-        {"@type":"EducationalOccupationalCredential","name":"BAMS","credentialCategory":"degree"},
+        {"@type":"EducationalOccupationalCredential","name":"BAMS","credentialCategory":"degree","sameAs":"https://en.wikipedia.org/wiki/Bachelor_of_Ayurvedic_Medicine_and_Surgery"},
         {"@type":"EducationalOccupationalCredential","name":"MD (Ayurveda)","credentialCategory":"degree"},
-        {"@type":"EducationalOccupationalCredential","name":"DHA Professional License","identifier":"DHA-P-XXXXXXX"}
+        {"@type":"EducationalOccupationalCredential","name":"DHA Professional License","identifier":"DHA-P-XXXXXXX","recognizedBy":{"@type":"Organization","name":"Dubai Health Authority","url":"https://www.dha.gov.ae/"}}
       ],
       "knowsLanguage": ["English","Hindi","Malayalam","Arabic"],
       "yearsOfExperience": "15",
@@ -120,7 +163,7 @@ const AyurvedaClinicJVC = () => {
       "@type": "MedicalWebPage",
       "name": "Ayurveda Clinic in JVC, Dubai",
       "url": "https://vedaracare.ae/ayurveda-clinic-jvc/",
-      "about": {"@type":"MedicalTherapy","name":"Ayurveda"},
+      "about": {"@type":"MedicalTherapy","name":"Ayurveda","@id":"https://vedaracare.ae/ayurveda-clinic-jvc/#ayurveda","sameAs":"https://en.wikipedia.org/wiki/Ayurveda"},
       "audience": {"@type":"PatientAudience"},
       "lastReviewed": "2026-05-23",
       "reviewedBy": {
@@ -128,7 +171,15 @@ const AyurvedaClinicJVC = () => {
         "name": "Dr. Priya Menon",
         "hasCredential": "DHA-Licensed BAMS, MD (Ayurveda)"
       },
-      "primaryImageOfPage": "https://vedaracare.ae/images/ayurveda-clinic-jvc-hero.jpg"
+      "primaryImageOfPage": "https://vedaracare.ae/images/ayurveda-clinic-jvc-hero.webp",
+      "mentions": [
+        {"@type":"MedicalProcedure","name":"Nadi Pariksha","description":"Classical Ayurvedic pulse diagnosis"},
+        {"@type":"MedicalProcedure","name":"Panchakarma","url":"https://vedaracare.ae/treatments/panchakarma-dubai/"},
+        {"@type":"MedicalCondition","name":"Chronic Back Pain","url":"https://vedaracare.ae/conditions/back-pain-ayurveda-dubai/"},
+        {"@type":"MedicalCondition","name":"PCOS","url":"https://vedaracare.ae/conditions/pcos-ayurveda-dubai/"},
+        {"@type":"MedicalCondition","name":"Migraine","url":"https://vedaracare.ae/conditions/migraine-ayurveda-dubai/"},
+        {"@type":"Organization","name":"Dubai Health Authority","url":"https://www.dha.gov.ae/"}
+      ]
     },
     {
       "@context": "https://schema.org",
