@@ -50,7 +50,7 @@ export const drPriyaNair = {
       caseLoad: '450+ patients treated'
     },
     {
-      title: '<a href="/conditions/postnatal-care-ayurveda-dubai/" class="doctor-specialty-link">Postnatal Recovery</a>',
+      title: '<a href="/conditions/postnatal-ayurveda-dubai/" class="doctor-specialty-link">Postnatal Recovery</a>',
       description: 'Classical 45-day postnatal care — Sutika Paricharya — including Abhyanga, internal medicines, dietary guidance, and home support. Increasingly popular by Dubai’s expat mothers who want structured postpartum recovery rooted in traditional medicine.',
       caseLoad: '300+ patients treated'
     },

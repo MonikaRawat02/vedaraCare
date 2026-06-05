@@ -393,7 +393,7 @@ export const ayurvedicBackPainFaqs = {
     },
     {
       question: "Can pregnant women receive Ayurvedic back pain treatment?",
-      answer: 'For back pain during pregnancy (after the first trimester), modified Ayurvedic protocols are available — including gentle Abhyanga, specific positional therapies, and Ayurvedic medicines safe in pregnancy. Classical Kativasti is not performed during pregnancy because of the position and sustained heat. For postpartum back pain, the classical 45-day <a href="/conditions/postnatal-care-ayurveda-dubai/" class="text-[#184C3A] hover:underline font-medium">Sutika Paricharya</a> protocol is one of the most effective Ayurvedic programmes in the entire system.'
+      answer: 'For back pain during pregnancy (after the first trimester), modified Ayurvedic protocols are available — including gentle Abhyanga, specific positional therapies, and Ayurvedic medicines safe in pregnancy. Classical Kativasti is not performed during pregnancy because of the position and sustained heat. For postpartum back pain, the classical 45-day <a href="/conditions/postnatal-ayurveda-dubai/" class="text-[#184C3A] hover:underline font-medium">Sutika Paricharya</a> protocol is one of the most effective Ayurvedic programmes in the entire system.'
     },
     {
       question: "What if my back pain is mainly muscle spasm, not structural?",

@@ -64,7 +64,7 @@ export const hairLossPhenotypes = {
       title: 'Postpartum Hair Loss',
       subtitle: 'Often classified under Sutika Vikara in classical Sanskrit',
       content: 'Significant hair shedding 2-6 months after childbirth, peaking around month 3-4. Hormonally driven — the hair that should have shed during pregnancy releases all at once postpartum. Common (affecting roughly 50% of new mothers) and almost always self-resolving by 12-18 months — but the experience is distressing and Ayurvedic support can meaningfully reduce severity and shorten recovery.',
-      ayurvedicEmphasis: 'Classical <a href="/conditions/postnatal-care-ayurveda-dubai/" class="doctor-specialty-link">Sutika Paricharya</a> 45-day postnatal programme, Bhringraja-based oils, internal medicines for postnatal Vata pacification, nutritional restoration'
+            ayurvedicEmphasis: 'Classical <a href="/conditions/postnatal-ayurveda-dubai/" class="doctor-specialty-link">Sutika Paricharya</a> 45-day postnatal programme, Bhringraja-based oils, internal medicines for postnatal Vata pacification, nutritional restoration'
     },
     {
       letter: 'E',
@@ -253,7 +253,7 @@ export const hairLossSymptoms = {
     },
     {
       title: 'Postpartum Hair Loss',
-      content: 'The most predictable pattern. Postpartum hair shedding almost always resolves spontaneously by 12-18 months. Ayurvedic treatment — particularly the classical 45-day <a href="/conditions/postnatal-care-ayurveda-dubai/" class="doctor-specialty-link">Sutika Paricharya</a> protocol — typically reduces severity and shortens recovery to 6-9 months, with better hair quality at the end. Common in women across JVC, JVT, and Dubai expat populations.',
+      content: 'The most predictable pattern. Postpartum hair shedding almost always resolves spontaneously by 12-18 months. Ayurvedic treatment — particularly the classical 45-day <a href="/conditions/postnatal-ayurveda-dubai/" class="doctor-specialty-link">Sutika Paricharya</a> protocol — typically reduces severity and shortens recovery to 6-9 months, with better hair quality at the end. Common in women across JVC, JVT, and Dubai expat populations.',
       expected: 'Realistic expectation: Substantial improvement with shortened recovery timeline'
     },
     {

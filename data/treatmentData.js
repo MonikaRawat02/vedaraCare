@@ -430,7 +430,7 @@ export const kativastiApplications = {
     "<a href='/conditions/spondylosis-ayurveda-dubai/' class='text-[#C9A961] hover:underline'>Spondylosis</a> (degenerative changes) — Typical course: 14 sessions, often repeated annually",
     "Sacroiliac joint dysfunction — Typical course: 7-10 sessions",
     "Post-exercise lumbar stiffness — Typical course: 5-7 sessions",
-    "<a href='/conditions/postnatal-care-ayurveda-dubai/' class='text-[#C9A961] hover:underline'>Postpartum back pain</a> — Typical course: 7-14 sessions (as part of Sutika Paricharya)",
+    "<a href='/conditions/postnatal-ayurveda-dubai/' class='text-[#C9A961] hover:underline'>Postpartum back pain</a> — Typical course: 7-14 sessions (as part of Sutika Paricharya)",
     "Lumbar muscle spasm (chronic) — Typical course: 5-7 sessions"
   ],
   honestLimits: {
@@ -590,7 +590,7 @@ export const kativastiFaqs = {
     },
     {
       question: "Is Kativasti safe during pregnancy?",
-      answer: "Classical Kativasti is not performed during pregnancy. The position and the sustained heat over the lower back are not recommended for pregnant patients. For pregnancy-related back pain, we offer modified Ayurvedic protocols including gentle <a href='/treatments/abhyanga-dubai/' class='text-[#C9A961] hover:underline'>Abhyanga</a> and specific positional therapies. Postpartum Kativasti is offered after the standard 45-day recovery period — see our <a href='/conditions/postnatal-care-ayurveda-dubai/' class='text-[#C9A961] hover:underline'>postnatal care page</a>."
+      answer: "Classical Kativasti is not performed during pregnancy. The position and the sustained heat over the lower back are not recommended for pregnant patients. For pregnancy-related back pain, we offer modified Ayurvedic protocols including gentle <a href='/treatments/abhyanga-dubai/' class='text-[#C9A961] hover:underline'>Abhyanga</a> and specific positional therapies. Postpartum Kativasti is offered after the standard 45-day recovery period — see our <a href='/conditions/postnatal-ayurveda-dubai/' class='text-[#C9A961] hover:underline'>postnatal care page</a>."
     }
   ]
 };

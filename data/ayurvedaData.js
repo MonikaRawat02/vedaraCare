@@ -291,7 +291,7 @@ export const ayurvedaConditions = {
       category: "Womens Health and Hormonal",
       description: "Sutika Paricharya (classical postpartum care)",
       programme: "Typical programme: 45 days",
-      link: "/conditions/postnatal-care-ayurveda-dubai/"
+      link: "/conditions/postnatal-ayurveda-dubai/"
     },
     {
       title: "Thyroid (Hypothyroid)",

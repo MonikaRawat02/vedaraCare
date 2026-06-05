@@ -62,7 +62,7 @@ const AyurvedicBackPain = () => {
         {"@type": "MedicalProcedure", "name": "Basti", "url": "https://vedaracare.ae/treatments/basti-dubai/"},
         {"@type": "MedicalProcedure", "name": "Patra Pinda Sweda", "url": "https://vedaracare.ae/treatments/patra-pinda-sweda-dubai/"},
         {"@type": "MedicalProcedure", "name": "Njavarakizhi", "url": "https://vedaracare.ae/treatments/njavarakizhi-dubai/"},
-        {"@type": "MedicalProcedure", "name": "Sutika Paricharya", "url": "https://vedaracare.ae/conditions/postnatal-care-ayurveda-dubai/"},
+        {"@type": "MedicalProcedure", "name": "Sutika Paricharya", "url": "https://vedaracare.ae/conditions/postnatal-ayurveda-dubai/"},
         {"@type": "MedicalTherapy", "name": "Physiotherapy", "url": "https://vedaracare.ae/physiotherapy-jvc/"},
         {"@type": "MedicalTherapy", "name": "Internal Ayurvedic Medicines"}
       ],
@@ -224,7 +224,7 @@ const AyurvedicBackPain = () => {
       "description": "Back pain following childbirth, particularly common after caesarean delivery, prolonged labour, or epidural analgesia",
       "isRelatedTo": {"@id": "https://vedaracare.ae/conditions/back-pain-ayurveda-dubai/#condition"},
       "possibleTreatment": [
-        {"@type": "MedicalProcedure", "name": "Sutika Paricharya", "url": "https://vedaracare.ae/conditions/postnatal-care-ayurveda-dubai/"}
+        {"@type": "MedicalProcedure", "name": "Sutika Paricharya", "url": "https://vedaracare.ae/conditions/postnatal-ayurveda-dubai/"}
       ]
     },
     {
@@ -381,7 +381,7 @@ const AyurvedicBackPain = () => {
       "description": "Classical 45-day postnatal Ayurvedic care protocol specifically addressing postpartum musculoskeletal recovery including back pain",
       "alternateName": ["Postnatal Ayurvedic Care", "Sukhu Programme"],
       "procedureType": "Ayurveda",
-      "url": "https://vedaracare.ae/conditions/postnatal-care-ayurveda-dubai/"
+            "url": "https://vedaracare.ae/conditions/postnatal-ayurveda-dubai/"
     }
   ];
 

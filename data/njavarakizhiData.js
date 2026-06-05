@@ -102,7 +102,7 @@ export const njavarakizhiOils = {
     {
       name: "Postnatal Sutika-Specific Kashayam",
       description: "For new mothers in classical 45-day care",
-      content: "Within the classical <a href=\"/conditions/postnatal-care-ayurveda-dubai/\">Sutika Paricharya</a> (postnatal Ayurvedic care) protocols, Njavarakizhi is sometimes prescribed in the third or fourth week postpartum for new mothers experiencing significant post-delivery weakness, particularly after caesarean recovery or prolonged labour. The herbal milk is specifically formulated for postpartum tissue restoration.",
+      content: "Within the classical <a href=\"/conditions/postnatal-ayurveda-dubai/\">Sutika Paricharya</a> (postnatal Ayurvedic care) protocols, Njavarakizhi is sometimes prescribed in the third or fourth week postpartum for new mothers experiencing significant post-delivery weakness, particularly after caesarean recovery or prolonged labour. The herbal milk is specifically formulated for postpartum tissue restoration.",
       indication: "Postpartum recovery, Post-caesarean rehabilitation, Postnatal weakness"
     }
   ],
@@ -145,7 +145,7 @@ export const njavarakizhiApplications = {
       subtitle: "Typical course: 14 sessions"
     },
     {
-      title: "Specific postpartum protocols (within <a href=\"/conditions/postnatal-care-ayurveda-dubai/\">Sutika Paricharya</a>)",
+      title: "Specific postpartum protocols (within <a href=\"/conditions/postnatal-ayurveda-dubai/\">Sutika Paricharya</a>)",
       subtitle: "Typical course: 7–14 sessions"
     }
   ],
@@ -366,7 +366,7 @@ export const njavarakizhiFaqs = {
     },
     {
       question: "Can I have Njavarakizhi during pregnancy?",
-      answer: "Classical Njavarakizhi is not performed during pregnancy because of the sustained moist heat and the body positions required. For pregnancy-related muscle weakness or fatigue, we offer modified Ayurvedic protocols. Postnatal Njavarakizhi is offered after the standard recovery period and is one of the protocols within classical <a href=\"/conditions/postnatal-care-ayurveda-dubai/\">Sutika Paricharya</a> for specific postpartum cases."
+      answer: "Classical Njavarakizhi is not performed during pregnancy because of the sustained moist heat and the body positions required. For pregnancy-related muscle weakness or fatigue, we offer modified Ayurvedic protocols. Postnatal Njavarakizhi is offered after the standard recovery period and is one of the protocols within classical <a href=\"/conditions/postnatal-ayurveda-dubai/\">Sutika Paricharya</a> for specific postpartum cases."
     },
     {
       question: "Where exactly is your Njavarakizhi clinic in Dubai?",
