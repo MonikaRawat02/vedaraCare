@@ -5,8 +5,8 @@ import PediatricAgeGroups from '../../components/ayurveda/PediatricAgeGroups';
 import SportsInjuryTypes from '../../components/ayurveda/SportsInjuryTypes';
 import PhysiotherapyMechanism from '../../components/ayurveda/PhysiotherapyMechanism';
 import PediatricWhatToExpect from '../../components/ayurveda/PediatricWhatToExpect';
-import PhysiotherapyIntegration from '../../components/ayurveda/PhysiotherapyIntegration';
-import OutcomeRanges from '../../components/ayurveda/OutcomeRanges';
+import PhysiotherapyInsurance from '../../components/ayurveda/PhysiotherapyInsurance';
+import PricingSectionNew from '../../components/ayurveda/PricingSectionNew';
 import TreatmentReviews from '../../components/ayurveda/TreatmentReviews';
 import PhysiotherapyTeam from '../../components/ayurveda/PhysiotherapyTeam';
 import FAQ from '../../components/home/FAQ';
@@ -17,9 +17,12 @@ import {
   pediatricPhysiotherapyHero,
   pediatricPhysiotherapyIntro,
   pediatricPhysiotherapyAgeGroups,
+  pediatricPhysiotherapyMechanism,
+  pediatricPhysiotherapyInsurance,
+  pediatricPhysiotherapyMechanism2,
   pediatricPhysiotherapyWhatToExpect,
   pediatricPhysiotherapyReviews,
-  pediatricPhysiotherapyOutcomeRanges,
+  pediatricPhysiotherapyJvcPricing,
   pediatricPhysiotherapyTeam,
   pediatricPhysiotherapyFaqs,
   pediatricPhysiotherapyLocation,
@@ -147,12 +150,16 @@ const PediatricDubai = () => {
         <AyurvedaHero {...pediatricPhysiotherapyHero} />
         <AyurvedaIntro {...pediatricPhysiotherapyIntro} />
         <PediatricAgeGroups {...pediatricPhysiotherapyAgeGroups} />
+             
         <SportsInjuryTypes />
-        <PhysiotherapyMechanism />
+        <PhysiotherapyMechanism{...pediatricPhysiotherapyMechanism2}
+        bgColor="bg-[#F8F6F1 ]" />
+        {/* <PhysiotherapyMechanism /> */}
         <PediatricWhatToExpect {...pediatricPhysiotherapyWhatToExpect} />
-        <PhysiotherapyIntegration />
-        <PhysiotherapyMechanism />
-        <OutcomeRanges  {...pediatricPhysiotherapyOutcomeRanges} />
+      <PhysiotherapyInsurance {...pediatricPhysiotherapyInsurance} />
+        <PhysiotherapyMechanism {...pediatricPhysiotherapyMechanism} />
+   
+        <PricingSectionNew {...pediatricPhysiotherapyJvcPricing} />
         <TreatmentReviews {...pediatricPhysiotherapyReviews} />
         <PhysiotherapyTeam {...pediatricPhysiotherapyTeam} />
         <FAQ {...pediatricPhysiotherapyFaqs} 
