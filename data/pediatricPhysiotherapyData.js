@@ -71,6 +71,78 @@ export const pediatricPhysiotherapyTeam = {
   ]
 };
 
+
+export const pediatricPhysiotherapyInsurance = {
+  bgColor: "bg-[#F5F1E8]",
+  label: "INSURANCE CLARITY8980",
+  title: "How insurance actually works for physiotherapy in Dubai.",
+  content: [
+    "Insurance coverage for physiotherapy in Dubai varies enormously by insurer and plan. Understanding what your specific plan covers — before you commit to a multi-session programme — prevents most billing surprises.",
+    "The major Dubai insurers offering some level of physiotherapy coverage include Daman, AXA, Allianz, Oman Insurance, Now Health, Bupa, and MetLife. Coverage typically varies across these dimensions: annual session limits (some plans allow 6-10 sessions per year; comprehensive plans allow unlimited with medical justification), copay percentages (often 10-30% patient responsibility), referral requirements (some plans require GP referral; others allow direct access), pre-authorisation requirements (some clinics require pre-authorisation for treatment beyond initial sessions), and direct-billing arrangements (some clinics direct-bill insurers; others require you to pay and claim back).",
+    "At Vedara Care, we are direct-billing partners with Daman, AXA, Allianz, Oman Insurance, Now Health, Bupa, and MetLife. The most efficient process for new patients: WhatsApp your insurance card photo to [number] before booking, and our team confirms exactly what is covered, what pre-authorisation is needed, and what your out-of-pocket cost will be. This typically takes 24-48 hours but prevents the most common billing surprises. For a full cost breakdown, see our <a href=\"/blog/ayurveda-cost-dubai/\">cost guide</a>.",
+    "Some realities worth knowing: most plans require medical justification (specific diagnosis, documented condition) rather than wellness physiotherapy. Most plans cover physiotherapy for diagnosed musculoskeletal conditions (like <a href=\"/conditions/back-pain-ayurveda-dubai/\">back pain</a> or <a href=\"/conditions/arthritis-ayurveda-dubai/\">knee OA</a>), post-surgical recovery, and neurological rehabilitation. Coverage for preventive sports performance work, wellness physiotherapy, or maintenance visits varies. <a href=\"/conditions/postnatal-ayurveda-dubai/\">Postnatal physiotherapy</a> coverage has improved substantially in recent years — most major plans now cover pelvic floor rehabilitation with appropriate clinical justification."
+  ],
+  insurers: ["Daman", "AXA", "Allianz", "Oman Insurance", "Now Health", "Bupa", "MetLife"]
+};
+
+
+
+export const pediatricPhysiotherapyMechanism = {
+  bgColor: "bg-[#FFFFFF ]",
+  label: "CARE NETWORK COORDINATION",
+  title: "We work with your child's broader care team.",
+  content: [
+    "Children with physiotherapy needs are typically embedded in a broader care network — paediatrician, sometimes paediatric specialists, often schools, occasionally other therapists. Effective paediatric physiotherapy requires coordination across this network.",
+   
+    "<strong>Paediatricians and Paediatric Specialists.</strong></br> We work with Dubai paediatricians across major hospitals and clinics — American Hospital, Mediclinic, NMC, Aster, Saudi German, and various private paediatric practices. For children with specific conditions requiring specialist coordination (paediatric orthopaedics for scoliosis, paediatric neurology for cerebral palsy, paediatric endocrinology for growth concerns), we coordinate with the relevant specialists. With your consent, we send progress updates to your child's paediatrician.",
+    "<strong>Schools.</strong> </br>For school-age children, we coordinate with schools when your child's condition affects school participation — physical education accommodations, posture during long school days, school sports participation, special needs support. We work with major Dubai schools including JSS Private School (walking distance from our clinic), Dubai International Academy, Repton, GEMS schools, and various others. Communication typically happens through written reports the parent shares with school, or with parental consent, direct communication with school nurses or special needs coordinators.",
+    "<strong>Occupational Therapists.</strong> </br>Some children benefit from concurrent occupational therapy alongside physiotherapy — particularly children with developmental coordination disorder, sensory processing challenges, fine motor concerns alongside gross motor needs. We coordinate with paediatric occupational therapists across Dubai (we can recommend specific colleagues if your child needs OT but does not yet have a therapist).",
+    "<strong>Sports Academies and Coaches.</strong></br>For adolescent athletes from sports academies (football academies, gymnastics academies, swimming academies common in Dubai), we coordinate with coaches and academy medical staff when appropriate. Return-to-sport decisions, training load modifications, and prevention programmes benefit from coach awareness.",
+    "<strong>Other Therapists</strong> </br>For children with speech therapy, behavioural therapy, or other specialised support, we coordinate as needed to ensure consistent goals across the care team." ],
+  // quote: "The right physiotherapist for your condition exists somewhere in Dubai. Choosing well at the outset matters more than getting started fast.",
+  image: "/images/physiotherapy-dubai-treatment-room.webp",
+  alt: "Modern physiotherapy treatment room with specialised equipment at Vedara Care JVC",
+  footer:""
+};
+
+
+
+export const pediatricPhysiotherapyMechanism2 = {
+  bgColor: "bg-[#F8F6F1 ]",
+  label: "THE APPROACH",
+  title: "How paediatric physiotherapy actually differs from adult physiotherapy.",
+  content: [
+    "Paediatric physiotherapy is genuinely a different practice from adult physiotherapy — not just adult techniques applied to smaller bodies. Several principles shape every paediatric session at our JVC clinic.",
+   
+    "<strong>Play is therapy</strong></br> Children, especially under age 8, cannot engage with structured exercise prescription the way adults can. The exercises that strengthen, stretch, and re-pattern movement must be embedded in play that the child finds enjoyable. This requires creative therapeutic skill — designing activities that achieve specific therapeutic goals while feeling fun to the child. Sessions that look like play to outside observers are precisely calibrated therapeutic intervention.",
+    "<strong>The parent is part of the team</strong> </br>Adult physiotherapy patients perform their home exercises themselves. Children typically need parents to facilitate the home programme. This means parents must understand what to do, why, when, and how to encourage their child without making it feel like punishment. Significant time in paediatric physiotherapy sessions is spent teaching parents — often more important than the direct treatment time with the child.",
+    "<strong>Children grow — and that changes everything</strong> </br>Adult patients have stable bone structure, established movement patterns, and predictable tissue responses. Children are growing — sometimes 8-10 cm in a single year during growth spurts. A treatment that worked at age 9 may need adjustment at age 11. Growth itself can create new physiotherapy concerns (Osgood-Schlatter, Sever's disease, growth-related postural changes). Long-term paediatric physiotherapy involves continuously adjusting to the child's developmental trajectory.",
+    "<strong>The child's experience matters</strong></br>If physiotherapy is traumatic, painful, or boring, the child stops cooperating — often refusing to come back. Effective paediatric physiotherapy requires building genuine rapport with the child, finding their interests, respecting their pace, and making the experience genuinely worthwhile from their perspective. Children remember physiotherapy experiences for years; the way we treat children in our clinic shapes their relationship with healthcare for life.",
+    "<strong>Coordination with the broader care team</strong> </br>Children with significant conditions typically have multiple healthcare providers — paediatrician, paediatric orthopaedic surgeon if surgical involvement, sometimes occupational therapist, speech therapist, special needs support at school. Effective paediatric physiotherapy requires understanding how our role fits into the broader care plan and communicating regularly with the team. We coordinate with paediatricians, schools (with parental consent), and other therapists as needed." ],
+  quote: "A great paediatric physiotherapist makes the child want to come back next week. Everything else follows from that.",
+  image: "/images/physiotherapy-dubai-treatment-room.webp",
+  alt: "Modern physiotherapy treatment room with specialised equipment at Vedara Care JVC",
+  footer:""
+};
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
 export const pediatricPhysiotherapyFaqs = {
   label: "COMMON QUESTIONS",
   title: "What parents ask before booking.",
@@ -225,64 +297,56 @@ export const pediatricPhysiotherapyWhatToExpect = {
   ]
 };
 
-export const pediatricPhysiotherapyOutcomeRanges = {
-  label: "REALISTIC EXPECTATIONS",
-  title: "Honest outcome ranges based on migraine subtype.",
-  description: "Different migraine subtypes respond differently to Ayurvedic treatment. These ranges are based on our 280+ migraine patients at the JVC clinic with documented migraine diaries before and after 6-month programmes.",
-  tableHeaders: ["Subtype", "Reduction in Migraine Days (6 months)", "Reduction in Attack Severity", "Reduction in Acute Medication Use"],
-  tableRows: [
+export const pediatricPhysiotherapyJvcPricing = {
+  bgColor: "bg-[#FAF8F5]",
+  label: "TRANSPARENT PRICING",
+  title: "What physiotherapy at our JVC clinic actually costs.",
+  description: "Specific pricing for our most-common services. Final pricing depends on condition complexity and any specialised modalities required, confirmed at your initial assessment.",
+  pricingCards: [
     {
-      subtype: "Episodic Migraine Without Aura",
-      days: "40-70% reduction typical",
-      severity: "30-50% reduction",
-      medication: "Often 40-60% reduction"
+      title: "Initial Physiotherapy Assessment",
+      price: "AED 400",
+      duration: "60 minutes at our JVC clinic",
+      bestFor: "First visit for any condition",
+      features: [
+        "Comprehensive consultation with DPT-qualified physiotherapist",
+        "Detailed history and physical examination",
+        "Postural and movement screening",
+        "Specific physiotherapy diagnosis",
+        "Written treatment plan with realistic timeline",
+        "First treatment intervention typically same session",
+        "Insurance pre-authorisation confirmed (if applicable)"
+      ]
     },
     {
-      subtype: "Episodic Migraine With Aura",
-      days: "30-60% reduction typical",
-      severity: "25-45% reduction",
-      medication: "Often 30-50% reduction"
+      title: "Single Physiotherapy Session",
+      price: "AED 350",
+      duration: "45-60 minutes",
+      bestFor: "Standard follow-up sessions after initial assessment",
+      features: [
+        "Hands-on manual therapy",
+        "Modalities as appropriate (dry needling, IFC, ultrasound)",
+        "Exercise prescription and progression",
+        "Documentation in your electronic medical record",
+        "Home programme updates"
+      ],
+      highlight: true
     },
     {
-      subtype: "Chronic Migraine",
-      days: "25-50% reduction typical",
-      severity: "20-40% reduction",
-      medication: "Variable — often less reduction due to baseline high use"
-    },
-    {
-      subtype: "Menstrual Migraine",
-      days: "40-70% reduction in menstrual attacks; non-menstrual attacks vary",
-      severity: "30-50% reduction in attack severity",
-      medication: "Often 40-60% reduction"
-    },
-    {
-      subtype: "Vestibular Migraine",
-      days: "30-60% reduction in episodes",
-      severity: "30-50% reduction in vertigo severity",
-      medication: "Variable depending on baseline medication"
-    },
-    {
-      subtype: "Medication Overuse Headache",
-      days: "After withdrawal: outcomes match underlying migraine subtype",
-      severity: "Withdrawal period: temporary increase before improvement",
-      medication: "Significant reduction (the goal of treatment)"
+      title: "Structured Treatment Programme",
+      price: "AED 1,800",
+      duration: "6-12 sessions package",
+      bestFor: "Chronic conditions, post-surgical rehab, structured treatment plans",
+      features: [
+        "Pre-paid package of 6 or 12 sessions",
+        "Discounted per-session rate",
+        "Includes specialised modalities (dry needling, shockwave, etc.)",
+        "Coordinated care for complex conditions",
+        "Home programme with video guidance"
+      ]
     }
-  ],
-  footer: "These are honest ranges based on patients who complete the full 6-month programme with consistent adherence. Patients who land at the lower end are typically those whose programme is interrupted, who do not implement lifestyle protocols, or who have complex co-existing conditions. Patients who exceed the upper ranges exist but are not the norm — honesty matters more than aspirational claims for this patient demographic."
+  ]
 };
-
-
-
-
-
-
-
-
-
-
-
-
-
 
 export const pediatricPhysiotherapyReviews = {
   bgColor: "bg-[#1A4D2E]",

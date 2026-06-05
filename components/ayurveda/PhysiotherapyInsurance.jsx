@@ -4,8 +4,8 @@ import Link from 'next/link';
 
 const PhysiotherapyInsurance = ({
   bgColor = "bg-[#F5F1E8]",
-  label = "INSURANCE CLARITY",
-  title = "How insurance actually works for physiotherapy in Dubai.",
+  label = "",
+  title = "",
   content = [],
   insurers = []
 }) => {
