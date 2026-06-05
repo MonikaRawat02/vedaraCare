@@ -115,7 +115,8 @@ export const physiotherapySpecializations = {
         "Post-joint replacement (older expats)",
         "Post-spinal fusion, post-meniscectomy",
         "Post-rotator cuff repair"
-      ]
+      ],
+      href: "/physiotherapy/post-surgery-rehab-dubai/"
     },
     {
       number: "04",

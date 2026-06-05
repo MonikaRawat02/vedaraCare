@@ -1,10 +1,13 @@
-import { useState, useEffect } from 'react';
+import { useState, useEffect, useRef } from 'react';
 import Link from 'next/link';
-import { Phone, MessageCircle, Globe, Menu, X, Calendar } from 'lucide-react';
+import { Phone, MessageCircle, Globe, Menu, X, Calendar, ChevronDown } from 'lucide-react';
 
 const Header = () => {
   const [showTopBar, setShowTopBar] = useState(true);
   const [isMenuOpen, setIsMenuOpen] = useState(false);
+  const [isPhysioDropdownOpen, setIsPhysioDropdownOpen] = useState(false);
+  const [isMobilePhysioOpen, setIsMobilePhysioOpen] = useState(false);
+  const dropdownRef = useRef(null);
 
   useEffect(() => {
     const handleScroll = () => {
@@ -17,6 +20,16 @@ const Header = () => {
 
     window.addEventListener('scroll', handleScroll, { passive: true });
     return () => window.removeEventListener('scroll', handleScroll);
+  }, []);
+
+  useEffect(() => {
+    const handleClickOutside = (event) => {
+      if (dropdownRef.current && !dropdownRef.current.contains(event.target)) {
+        setIsPhysioDropdownOpen(false);
+      }
+    };
+    document.addEventListener('mousedown', handleClickOutside);
+    return () => document.removeEventListener('mousedown', handleClickOutside);
   }, []);
 
   return (
@@ -64,7 +77,41 @@ const Header = () => {
           {/* Desktop Nav Links */}
           <div className="hidden lg:flex items-center gap-8">
             <Link href="/ayurveda-dubai" className="text-[14px] font-sans font-medium text-[#1A1A1A] hover:text-[#184C3A] transition-colors">Ayurveda</Link>
-            <Link href="/services/physiotherapy" className="text-[14px] font-sans font-medium text-[#1A1A1A] hover:text-[#184C3A] transition-colors">Physiotherapy</Link>
+            
+            {/* Physiotherapy Dropdown */}
+            <div 
+              className="relative" 
+              ref={dropdownRef}
+              onMouseEnter={() => setIsPhysioDropdownOpen(true)}
+              onMouseLeave={() => setIsPhysioDropdownOpen(false)}
+            >
+              <button 
+                className="flex items-center gap-1 text-[14px] font-sans font-medium text-[#1A1A1A] hover:text-[#184C3A] transition-colors"
+                onClick={() => setIsPhysioDropdownOpen(!isPhysioDropdownOpen)}
+              >
+                <Link href="/physiotherapy-dubai" className="hover:text-[#184C3A]">Physiotherapy</Link>
+                <ChevronDown size={14} className={`transition-transform duration-200 ${isPhysioDropdownOpen ? 'rotate-180' : ''}`} />
+              </button>
+              
+              {/* Dropdown Menu */}
+              <div className={`absolute top-full left-0 pt-2 transition-all duration-200 ${isPhysioDropdownOpen ? 'opacity-100 visible translate-y-0' : 'opacity-0 invisible -translate-y-1'}`}>
+                <div className="bg-white rounded-lg shadow-lg border border-gray-100 py-2 min-w-[240px]">
+                  <Link 
+                    href="/physiotherapy-jvc" 
+                    className="block px-4 py-2.5 text-[13px] font-sans text-[#4A4A4A] hover:text-[#184C3A] hover:bg-gray-50 transition-colors"
+                  >
+                    Physiotherapy in JVC
+                  </Link>
+                  <Link 
+                    href="/physiotherapy/post-surgery-rehab-dubai/" 
+                    className="block px-4 py-2.5 text-[13px] font-sans text-[#4A4A4A] hover:text-[#184C3A] hover:bg-gray-50 transition-colors"
+                  >
+                    Post-Surgery Rehab
+                  </Link>
+                </div>
+              </div>
+            </div>
+
             <Link href="/services/dermatology" className="text-[14px] font-sans font-medium text-[#1A1A1A] hover:text-[#184C3A] transition-colors">Dermatology</Link>
             <Link href="/services/home-healthcare" className="text-[14px] font-sans font-medium text-[#1A1A1A] hover:text-[#184C3A] transition-colors">Home Healthcare</Link>
             <Link href="/services/wellness" className="text-[14px] font-sans font-medium text-[#1A1A1A] hover:text-[#184C3A] transition-colors">Wellness</Link>
@@ -110,7 +157,26 @@ const Header = () => {
         >
           <div className="flex flex-col py-6 px-6 gap-6">
             <Link href="/services/ayurveda" onClick={() => setIsMenuOpen(false)} className="text-[16px] font-medium text-[#1A1A1A] hover:text-[#184C3A]">Ayurveda</Link>
-            <Link href="/services/physiotherapy" onClick={() => setIsMenuOpen(false)} className="text-[16px] font-medium text-[#1A1A1A] hover:text-[#184C3A]">Physiotherapy</Link>
+            
+            {/* Mobile Physiotherapy Accordion */}
+            <div>
+              <div className="flex items-center justify-between">
+                <Link href="/physiotherapy-dubai" onClick={() => setIsMenuOpen(false)} className="text-[16px] font-medium text-[#1A1A1A] hover:text-[#184C3A]">Physiotherapy</Link>
+                <button 
+                  onClick={() => setIsMobilePhysioOpen(!isMobilePhysioOpen)}
+                  className="p-1 text-[#4A4A4A]"
+                >
+                  <ChevronDown size={16} className={`transition-transform duration-200 ${isMobilePhysioOpen ? 'rotate-180' : ''}`} />
+                </button>
+              </div>
+              <div className={`overflow-hidden transition-all duration-200 ${isMobilePhysioOpen ? 'max-h-40 mt-2' : 'max-h-0'}`}>
+                <div className="flex flex-col gap-3 pl-4 border-l-2 border-gray-100">
+                  <Link href="/physiotherapy-jvc" onClick={() => setIsMenuOpen(false)} className="text-[14px] text-[#4A4A4A] hover:text-[#184C3A]">Physiotherapy in JVC</Link>
+                  <Link href="/physiotherapy/post-surgery-rehab-dubai/" onClick={() => setIsMenuOpen(false)} className="text-[14px] text-[#4A4A4A] hover:text-[#184C3A]">Post-Surgery Rehab</Link>
+                </div>
+              </div>
+            </div>
+
             <Link href="/services/dermatology" onClick={() => setIsMenuOpen(false)} className="text-[16px] font-medium text-[#1A1A1A] hover:text-[#184C3A]">Dermatology</Link>
             <Link href="/services/home-healthcare" onClick={() => setIsMenuOpen(false)} className="text-[16px] font-medium text-[#1A1A1A] hover:text-[#184C3A]">Home Healthcare</Link>
             <Link href="/services/wellness" onClick={() => setIsMenuOpen(false)} className="text-[16px] font-medium text-[#1A1A1A] hover:text-[#184C3A]">Wellness</Link>
