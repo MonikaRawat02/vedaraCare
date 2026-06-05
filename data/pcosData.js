@@ -226,7 +226,7 @@ export const pcosSymptoms = {
       expected: "Expected meaningful change: Months 3-4"
     },
     {
-      title: "Acne and Skin",
+      title: "<a href=\"/conditions/skin-ayurveda-dubai/\" class=\"hover:underline\">Acne and Skin</a>",
       content: "Hormonal acne is one of the slower-responding symptoms. Initial improvement in skin texture and oiliness often visible by month 2. Significant acne reduction typically emerges months 3-5. Old acne scarring takes longer or requires <a href=\"/dermatology-clinic-jvc/\" class=\"doctor-specialty-link\">dermatology</a> integration.",
       expected: "Expected meaningful change: Months 3-5"
     },
