@@ -133,7 +133,7 @@ export const arthritisPillars = {
       description: "Specific Ayurvedic medicines selected for your arthritis type and dosha pattern. For osteoarthritis: Dashamoola, Yogaraja Guggulu, Maharasnadi Kashayam. For rheumatoid arthritis: Amavata-specific Yogaraja Guggulu, Simhanada Guggulu, Vaiswanara Churna. For gout: Punarnava-based formulations, Kaishore Guggulu. For ankylosing spondylitis: specific Vata-pacifying combinations. Doses are individualised, adjusted monthly, and reviewed for interactions with conventional medications."
     },
     {
-      title: "Dietary Regulation, Lifestyle & Integrated Physiotherapy",
+      title: "<a href=\"/physiotherapy-jvc/\" class=\" \">Dietary Regulation, Lifestyle & Integrated Physiotherapy",
       description: "Most arthritis subtypes respond significantly to dietary modification — anti-inflammatory protocols, dosha-specific adjustments, and for gout specifically, dietary purine management. Movement protocols are calibrated to your joints — protective range-of-motion work for inflammatory arthritis, strengthening protocols for osteoarthritis, postural protocols for spondylosis. Integration with physiotherapy at our JVC clinic, often incorporating specialized therapies like <a href=\"/treatments/njavarakizhi-dubai/\" class=\"text-[#C9A961] hover:underline\">Njavarakizhi</a>, provides combined Ayurvedic-physiotherapy care that consistently outperforms either approach alone."
     }
   ]

@@ -7,8 +7,11 @@ const FinalCTA = ({
   title = "",
   description = "",
   button1Text = "",
+  button1Href = "/book",
   button2Text = "",
+  button2Href = "https://wa.me/[number]",
   bullets = [],
+  footer = "",
   button1BgColor = "rgb(31, 69, 56)",
   button1TextColor = "rgb(255, 255, 255)",
   button2BorderColor = "rgb(37, 211, 102)",
@@ -31,19 +34,25 @@ const FinalCTA = ({
         <p className="text-[17px] font-sans leading-[1.8] text-[#6B6B6B] mb-10" dangerouslySetInnerHTML={{ __html: description }} />
 
         <div className="flex flex-col sm:flex-row gap-4 justify-center mb-6">
-          <button className="inline-flex items-center justify-center gap-2 px-5 py-3 rounded-md text-[16px] font-medium transition-all"
+          <a href={button1Href} className="inline-flex items-center justify-center gap-2 px-5 py-3 rounded-md text-[16px] font-medium transition-all"
                   style={{ backgroundColor: button1BgColor, color: button1TextColor }}>
             {button1Text}
-          </button>
+          </a>
           
-          <button className="inline-flex items-center justify-center gap-2 px-8 py-6 rounded-md text-[16px] font-medium transition-all border"
+          <a href={button2Href} className="inline-flex items-center justify-center gap-2 px-8 py-6 rounded-md text-[16px] font-medium transition-all border"
                   style={{ borderColor: button2BorderColor, color: button2TextColor }}>
             <MessageCircle size={24} strokeWidth={2} />
             {button2Text}
-          </button>
+          </a>
         </div>
 
-        <p className="text-sm text-gray-600" dangerouslySetInnerHTML={{ __html: bullets.join(' · ') }} />
+        {footer && (
+          <p className="text-sm text-gray-600" dangerouslySetInnerHTML={{ __html: footer }} />
+        )}
+
+        {!footer && bullets.length > 0 && (
+          <p className="text-sm text-gray-600" dangerouslySetInnerHTML={{ __html: bullets.join(' · ') }} />
+        )}
 
         {alertBox && (
           <div className="mt-8 p-6 bg-red-50 border border-red-100 rounded-lg">

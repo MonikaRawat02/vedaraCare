@@ -98,7 +98,7 @@ export const physiotherapySpecializations = {
     },
     {
       number: "02",
-      title: "Sports Physiotherapy",
+      title: "<a href=\"/physiotherapy/sports-injury-jvc/\">Sports Physiotherapy</a>",
       description: "Acute and chronic sports injury management for Dubai's active expat population. Performance optimisation, biomechanical assessment, return-to-sport protocols. Padel injuries (given the sport's explosion in Dubai), running injuries, gym training injuries, golf and tennis presentations, recreational football injuries.",
       commonConditions: [
         "Padel injuries: padel-related elbow and shoulder injuries",
@@ -600,7 +600,7 @@ export const physiotherapyFinalCTA = {
   button2Text: "WhatsApp Us",
   button1BgColor: "#1A4D2E",
   button2BgColor: "#22C55E",
-  button2TextColor: "white",
+  button2TextColor: "#22C55E",
   button2BorderColor: "#22C55E",
   bullets: [
     "Initial assessment from AED [X]",

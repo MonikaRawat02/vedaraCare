@@ -39,13 +39,13 @@ const PhysiotherapyJvc = () => {
   const schemaMarkup = [
     {
       "@context": "https://schema.org",
-      "@type": ["MedicalBusiness", "LocalBusiness", "PhysicalTherapy", "MedicalClinic"],
+      "@type": ["MedicalBusiness", "LocalBusiness", "PhysicalTherapy"],
       "@id": "https://vedaracare.ae/physiotherapy-jvc/#physiotherapy",
       "name": "Vedara Care Physiotherapy Department",
       "alternateName": ["Vedara Physiotherapy JVC", "Vedara Care Physio"],
       "url": "https://vedaracare.ae/physiotherapy-jvc/",
       "parentOrganization": {"@id": "https://vedaracare.ae/#organization"},
-      "description": "DHA-licensed physiotherapy at Vedara Care Polyclinic, Jumeirah Village Circle, Dubai. DPT-qualified physiotherapists providing musculoskeletal, sports, post-surgical, neurological, women's health, paediatric, and cardiopulmonary physiotherapy.",
+      "description": "DHA-licensed physiotherapy department at Vedara Care Polyclinic, Jumeirah Village Circle, Dubai. DPT-qualified physiotherapists providing musculoskeletal, sports, post-surgical, neurological, women's health, paediatric, and cardiopulmonary physiotherapy.",
       "telephone": "[Phone number]",
       "priceRange": "AED 250 - AED 8,000",
       "address": {
@@ -75,63 +75,63 @@ const PhysiotherapyJvc = () => {
         }
       ],
       "areaServed": [
-        {"@type": "City", "name": "Dubai"},
         {"@type": "Place", "name": "Jumeirah Village Circle"},
-        {"@type": "Place", "name": "Circle Mall"},
-        {"@type": "Place", "name": "FIVE Jumeirah Village"},
-        {"@type": "Place", "name": "JSS Private School"},
         {"@type": "Place", "name": "Jumeirah Village Triangle"},
         {"@type": "Place", "name": "Al Barsha South"},
         {"@type": "Place", "name": "Dubai Sports City"},
         {"@type": "Place", "name": "Motor City"},
         {"@type": "Place", "name": "Arjan"},
         {"@type": "Place", "name": "Dubai Hills Estate"},
-        {"@type": "Place", "name": "United Arab Emirates"}
+        {"@type": "City", "name": "Dubai"}
       ],
       "medicalSpecialty": [
         "Physiotherapy",
         "Physical Therapy",
         "Sports Medicine",
-        "Rehabilitation Medicine",
-        "Sports Physiotherapy",
-        "Neurological Rehabilitation",
-        "Pelvic Floor Physiotherapy",
-        "Paediatric Physiotherapy"
+        "Rehabilitation Medicine"
       ],
       "isAcceptingNewPatients": true,
       "availableService": [
-        {"@type": "MedicalProcedure", "name": "Musculoskeletal Physiotherapy"},
-        {"@type": "MedicalProcedure", "name": "Sports Physiotherapy"},
-        {"@type": "MedicalProcedure", "name": "Post-surgical Rehabilitation"},
-        {"@type": "MedicalProcedure", "name": "Neurological Rehabilitation"},
-        {"@type": "MedicalProcedure", "name": "Women's Health Physiotherapy"},
-        {"@type": "MedicalProcedure", "name": "Paediatric Physiotherapy"},
-        {"@type": "MedicalProcedure", "name": "Cardiopulmonary Rehabilitation"},
-        {"@type": "MedicalProcedure", "name": "Manual Therapy"},
-        {"@type": "MedicalProcedure", "name": "Dry Needling"},
-        {"@type": "MedicalProcedure", "name": "Shockwave Therapy"},
-        {"@type": "MedicalProcedure", "name": "Ultrasound Therapy"},
-        {"@type": "MedicalProcedure", "name": "Interferential Therapy (IFC)"},
-        {"@type": "MedicalProcedure", "name": "Transcutaneous Electrical Nerve Stimulation (TENS)"},
-        {"@type": "MedicalProcedure", "name": "ACL Reconstruction Rehabilitation"},
-        {"@type": "MedicalProcedure", "name": "Joint Replacement Rehabilitation"},
-        {"@type": "MedicalProcedure", "name": "Spinal Surgery Rehabilitation"}
-      ],
-      "medicalCondition": [
-        {"@type": "MedicalCondition", "name": "Back pain"},
-        {"@type": "MedicalCondition", "name": "Neck pain"},
-        {"@type": "MedicalCondition", "name": "Frozen shoulder"},
-        {"@type": "MedicalCondition", "name": "Knee OA"},
-        {"@type": "MedicalCondition", "name": "Sciatica"}
-      ],
-      "insuranceProvider": [
-        {"@type": "Organization", "name": "Daman"},
-        {"@type": "Organization", "name": "AXA"},
-        {"@type": "Organization", "name": "Allianz"},
-        {"@type": "Organization", "name": "Oman Insurance"},
-        {"@type": "Organization", "name": "Now Health"},
-        {"@type": "Organization", "name": "Bupa"},
-        {"@type": "Organization", "name": "MetLife"}
+        {
+          "@type": "MedicalProcedure",
+          "name": "Musculoskeletal Physiotherapy"
+        },
+        {
+          "@type": "MedicalProcedure",
+          "name": "Sports Physiotherapy"
+        },
+        {
+          "@type": "MedicalProcedure",
+          "name": "Post-Surgical Rehabilitation"
+        },
+        {
+          "@type": "MedicalProcedure",
+          "name": "Neurological Rehabilitation"
+        },
+        {
+          "@type": "MedicalProcedure",
+          "name": "Women's Health Physiotherapy"
+        },
+        {
+          "@type": "MedicalProcedure",
+          "name": "Paediatric Physiotherapy"
+        },
+        {
+          "@type": "MedicalProcedure",
+          "name": "Cardiopulmonary Rehabilitation"
+        },
+        {
+          "@type": "MedicalProcedure",
+          "name": "Manual Therapy"
+        },
+        {
+          "@type": "MedicalProcedure",
+          "name": "Dry Needling"
+        },
+        {
+          "@type": "MedicalProcedure",
+          "name": "Shockwave Therapy"
+        }
       ],
       "memberOf": {
         "@type": "Organization",
@@ -151,8 +151,10 @@ const PhysiotherapyJvc = () => {
       "name": "Physiotherapy Services at JVC Dubai",
       "provider": {"@id": "https://vedaracare.ae/physiotherapy-jvc/#physiotherapy"},
       "areaServed": [
-        {"@type": "City", "name": "Dubai"},
-        {"@type": "Place", "name": "United Arab Emirates"}
+        {"@type": "Place", "name": "Jumeirah Village Circle"},
+        {"@type": "Place", "name": "Jumeirah Village Triangle"},
+        {"@type": "Place", "name": "Al Barsha South"},
+        {"@type": "City", "name": "Dubai"}
       ],
       "hasOfferCatalog": {
         "@type": "OfferCatalog",
@@ -191,7 +193,7 @@ const PhysiotherapyJvc = () => {
       "about": {"@id": "https://vedaracare.ae/physiotherapy-jvc/#physiotherapy"},
       "audience": {
         "@type": "PatientAudience",
-        "geographicArea": {"@type": "City", "name": "Dubai, United Arab Emirates"}
+        "geographicArea": {"@type": "Place", "name": "Dubai, United Arab Emirates"}
       },
       "lastReviewed": currentDate,
       "reviewedBy": {
@@ -199,33 +201,7 @@ const PhysiotherapyJvc = () => {
         "name": "[Lead Physiotherapist Name]",
         "hasCredential": "DPT, DHA-Licensed"
       },
-      "primaryImageOfPage": "https://vedaracare.ae/images/physiotherapy-jvc-hero.webp"
-    },
-    {
-      "@context": "https://schema.org",
-      "@type": "Article",
-      "headline": "Physiotherapy in JVC, Dubai — A Complete Service Guide",
-      "image": "https://vedaracare.ae/images/physiotherapy-jvc-hero.webp",
-      "datePublished": "2026-06-01",
-      "dateModified": currentDate,
-      "author": {
-        "@type": "Physician",
-        "name": "[Lead Physiotherapist]"
-      },
-      "publisher": {
-        "@type": "Organization",
-        "name": "Vedara Care Polyclinic",
-        "logo": "https://vedaracare.ae/logo.png"
-      },
-      "mainEntityOfPage": "https://vedaracare.ae/physiotherapy-jvc/"
-    },
-    {
-      "@context": "https://schema.org",
-      "@type": "Organization",
-      "@id": "https://vedaracare.ae/#organization",
-      "name": "Vedara Care Polyclinic",
-      "url": "https://vedaracare.ae/",
-      "logo": "https://vedaracare.ae/logo.png"
+      "primaryImageOfPage": "https://vedaracare.ae/images/physiotherapy-jvc-hero.jpg"
     },
     {
       "@context": "https://schema.org",
@@ -247,15 +223,40 @@ const PhysiotherapyJvc = () => {
         }
       }))
     },
-    {
+    ...physiotherapyJvcTeam.team.map((member) => ({
       "@context": "https://schema.org",
       "@type": "Physician",
-      "name": "[Lead Physiotherapist Name]",
-      "url": "https://vedaracare.ae/physiotherapists/[name]/",
-      "image": "https://vedaracare.ae/images/[name].jpg",
+      "name": member.name,
+      "url": `https://vedaracare.ae/physiotherapists/${member.name.toLowerCase().replace(/[.,]/g, '').replace(/\s+/g, '-')}/`,
+      "image": `https://vedaracare.ae/images/${member.name.toLowerCase().replace(/[.,]/g, '').replace(/\s+/g, '-')}.jpg`,
       "medicalSpecialty": ["Physiotherapy", "Physical Therapy"],
       "hasCredential": ["DPT", "DHA-Licensed"],
       "worksFor": {"@id": "https://vedaracare.ae/#organization"}
+    })),
+    {
+      "@context": "https://schema.org",
+      "@type": "Article",
+      "headline": "Physiotherapy in JVC, Dubai — A Complete Service Guide",
+      "image": "https://vedaracare.ae/images/physiotherapy-jvc-hero.jpg",
+      "datePublished": "2026-06-01",
+      "dateModified": currentDate,
+      "author": {
+        "@type": "Physician",
+        "name": "[Lead Physiotherapist]"
+      },
+      "publisher": {
+        "@type": "Organization",
+        "name": "Vedara Care Polyclinic"
+      },
+      "mainEntityOfPage": "https://vedaracare.ae/physiotherapy-jvc/"
+    },
+    {
+      "@context": "https://schema.org",
+      "@type": "Organization",
+      "@id": "https://vedaracare.ae/#organization",
+      "name": "Vedara Care Polyclinic",
+      "url": "https://vedaracare.ae/",
+      "logo": "https://vedaracare.ae/logo.png"
     }
   ];
   
@@ -329,6 +330,7 @@ const PhysiotherapyJvc = () => {
         
         {/* Section 10 - Insurance */}
        
+        {/* <Insurance {...physiotherapyJvcInsurance} /> */}
         
         {/* Section 11 - Pricing */}
         <PricingSectionNew {...physiotherapyJvcPricing} />

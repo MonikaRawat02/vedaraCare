@@ -23,7 +23,7 @@ const PricingSectionNew = ({ bgColor, label, title, description, pricingCards })
           {pricingCards.map((card, index) => (
             <div 
               key={index} 
-              className={`bg-white rounded-xl p-8 relative shadow-lg ${card.highlight ? 'ring-4 ring-[#C4A962] shadow-2xl' : ''}`}
+              className={`bg-white rounded-xl p-8 relative shadow-lg ${card.highlight ? 'ring-4 ring-[#C4A962] shadow-2xl' : ''} flex flex-col`}
             >
               {card.highlight && (
                 <div className="absolute -top-4 left-1/2 -translate-x-1/2 bg-[#C4A962] text-white px-6 py-2 rounded-full text-xs font-semibold">
@@ -49,7 +49,7 @@ const PricingSectionNew = ({ bgColor, label, title, description, pricingCards })
                 </div>
               </div>
               
-              <ul className="space-y-3 mb-6">
+              <ul className="space-y-3 mb-6 flex-grow">
                 {card.features.map((feature, idx) => (
                   <li key={idx} className="flex items-start gap-2 text-sm">
                     <svg 
@@ -73,7 +73,7 @@ const PricingSectionNew = ({ bgColor, label, title, description, pricingCards })
                 ))}
               </ul>
               
-              <div className="border-t pt-4">
+              <div className="border-t pt-4 mt-auto">
                 <div className="text-xs font-semibold text-[#6B7280] mb-1">Best for:</div>
                 <div className="text-sm text-[#6B7280]">
                   {card.bestFor || 'Standard follow-up sessions after initial assessment'}
