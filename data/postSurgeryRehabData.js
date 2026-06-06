@@ -122,7 +122,7 @@ export const postSurgeryRehabReviews = {
   stats: [
     { value: "4.9", label: "STARS ON GOOGLE" },
     { value: "140+", label: "POST-SURGICAL REVIEWS" },
-    { value: "96%", label: "ACHIEVED GOALS" }
+    { value: "97%", label: "ACHIEVED GOALS" }
   ],
   buttonText: "Read All Post-Surgical Reviews"
 };

@@ -340,7 +340,7 @@ export const sportsPhysiotherapyReviews = {
   stats: [
     { value: "4.9", label: "stars on Google" },
     { value: "180+", label: " sports physiotherapy review" },
-    { value: "94%", label: " of patients returned to their pre-injury sport level" }
+    { value: "97%", label: " of patients returned to their pre-injury sport level" }
   ],
   buttonText: "Read All Sports Reviews →"
 };
