@@ -164,12 +164,14 @@ const TreatmentLocation = ({
             )}
 
             {/* Description */}
-            <p className="text-sm text-gray-600 my-6 p-3 border-l-2 border-[#C9A961]" style={{ background: 'rgba(201, 169, 97, 0.05)' }} dangerouslySetInnerHTML={{ __html: description }} />
+            {description && (
+              <p className="text-sm text-gray-600 y-6 p-3 mt-5 border-l-2 border-[#C9A961]" style={{ background: 'rgba(201, 169, 97, 0.05)' }} dangerouslySetInnerHTML={{ __html: description }} />
+            )}
 
             {/* CTA Button */}
             <Link
               href="/book"
-              className="inline-flex items-center justify-center gap-2 whitespace-nowrap rounded-md text-sm font-medium transition-all bg-[#1A4D3E] hover:bg-opacity-90 text-white px-10 py-3 w-full justify-center"
+              className="inline-flex items-center justify-center mt-5 gap-2 whitespace-nowrap rounded-md text-sm font-medium transition-all bg-[#1A4D3E] hover:bg-opacity-90 text-white px-10 py-3 w-full justify-center"
             >
               {buttonText}
             </Link>
