@@ -10,6 +10,7 @@ import CTA from '../components/home/CTA';
 import Journal from '../components/home/Journal';
 import WhyVedara from '../components/home/WhyVedara';
 import Reviews from '../components/home/Reviews';
+import AyurvedaPricing from '../components/ayurveda/AyurvedaPricing';
 import Conditions from '../components/home/Conditions';
 import { 
   ayurvedaFaqs, 
@@ -17,6 +18,7 @@ import {
   ayurvedaHero, 
   ayurvedaIntro, 
   ayurvedaLocation, 
+  ayurvedaPricing,
   ayurvedaCTA,
   ayurvedaWhy,
   ayurvedaReviews,
@@ -253,14 +255,14 @@ const AyurvedaClinicJVC = () => {
       
       <Reviews {...ayurvedaReviews} />
       
-      <section className="py-20 bg-white">
+      {/* <section className="py-20 bg-white">
         <div className="max-w-[1280px] mx-auto px-6">
           <h2 className="text-[42px] font-serif font-medium text-[#1A1A1A] leading-[1.2] text-center">
             What Ayurveda actually costs in Dubai.
           </h2>
         </div>
-      </section>
-      
+      </section> */}
+      <AyurvedaPricing  />
       <FAQ {...ayurvedaFaqs} />
       <Location {...ayurvedaLocation} />
       <CTA {...ayurvedaCTA} />
