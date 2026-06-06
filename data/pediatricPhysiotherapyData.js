@@ -473,3 +473,22 @@ export const pediatricPhysiotherapyRelatedPages = {
 
   ]
 };
+
+export const pediatricPhysiotherapyPricing = {
+  bgColor: "bg-[#f8f6f1]",
+  label: "TRANSPARENT PRICING",
+  title: "What paediatric physiotherapy at our JVC clinic costs.",
+  tableData: [
+    { service: "Initial paediatric assessment (60-75 minutes)", price: "AED 450" },
+    { service: "Follow-up paediatric session (45-60 minutes)", price: "AED 350" },
+    { service: "Infant physiotherapy session (30-45 minutes)", price: "AED 300" },
+    { service: "Adolescent sports physiotherapy session (60 minutes)", price: "AED 380" },
+    { service: "Home paediatric physiotherapy session", price: "AED 500" },
+    { service: "Scoliosis assessment and structured programme", price: "AED 420" },
+    { service: "Sports injury package (10 sessions, adolescents)", price: "AED 3,400" },
+    { service: "Developmental support package (12 sessions)", price: "AED 3,900" },
+    { service: "Cerebral palsy ongoing care (per session, structured programme)", price: "AED 370" },
+    { service: "Multi-disciplinary case coordination (per case)", price: "AED 250" }
+  ],
+  footerText: "Family pricing available for siblings receiving treatment. Insurance direct-billing with seven major insurers — coverage for paediatric physiotherapy is often substantial with paediatrician referral. WhatsApp your insurance card and referral letter to +971 50 123 4567 before booking."
+};

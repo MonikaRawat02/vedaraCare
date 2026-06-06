@@ -128,7 +128,8 @@ export const physiotherapySpecializations = {
         "Parkinson's progression management",
         "Post-COVID neurological symptoms",
         "Peripheral neuropathy"
-      ]
+      ],
+      href: "/physiotherapy/neurological-dubai"
     },
     {
       number: "05",

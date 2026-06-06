@@ -14,14 +14,15 @@ const PostnatalLocation = ({
   image = "",
   alt = "",
   buttonText = "",
-  footerNote = ""
+  footerNote = "",
+  reverse = false
 }) => {
   return (
     <section className={`${bgColor} py-24 px-6`}>
       <div className="max-w-[1400px] mx-auto">
         <div className="grid lg:grid-cols-2 gap-16 items-start">
           {/* Left Content */}
-          <div className="space-y-8">
+          <div className={`space-y-8 ${reverse ? 'lg:order-2' : 'lg:order-1'}`}>
             <div className="space-y-4">
               <span className="text-[13px] font-sans font-semibold tracking-[0.15em] text-[#C9A961] uppercase block">
                 {label}
@@ -89,7 +90,7 @@ const PostnatalLocation = ({
           </div>
 
           {/* Right Image */}
-          <div className="relative">
+          <div className={`relative ${reverse ? 'lg:order-1' : 'lg:order-2'}`}>
             <div className="aspect-[4/3] rounded-[24px] overflow-hidden shadow-2xl">
               <img 
                 src={image} 

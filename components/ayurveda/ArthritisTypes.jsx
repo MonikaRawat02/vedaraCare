@@ -26,13 +26,13 @@ const ArthritisTypes = ({
           {types.map((type, index) => (
             <div key={index} className={`${cardBg} p-8 rounded-lg border-t-4 border-transparent hover:border-[#C9A55A] shadow-sm hover:shadow-md transition-all flex flex-col h-full gap-6`}>
               <div className="text-4xl text-[#C9A55A] font-serif" style={{ fontFamily: 'Fraunces, Georgia, serif' }}>
-                {String.fromCharCode(65 + index)}
+                {type.number || String.fromCharCode(65 + index)}
               </div>
               
               <div className="space-y-4 flex-1">
                 <div>
                   <h3 className="text-xl font-sans font-medium text-[#1A1A1A] mb-1 leading-tight" dangerouslySetInnerHTML={{ __html: type.title }} />
-                  <p className="text-[13px] italic text-[#C9A55A] font-sans" dangerouslySetInnerHTML={{ __html: type.sanskritName }} />
+                  <p className="text-[13px] italic text-[#C9A55A] font-sans" dangerouslySetInnerHTML={{ __html: type.subtitle || type.sanskritName }} />
                 </div>
 
                 <div 
@@ -40,15 +40,17 @@ const ArthritisTypes = ({
                   dangerouslySetInnerHTML={{ __html: type.description }}
                 />
 
-                <div className="pt-4 border-t border-gray-50 mt-auto">
-                  <p className="text-[12px] font-sans font-medium text-[#1A1A1A]  tracking-wider mb-2">
-                    Ayurvedic emphasis for this type:
-                  </p>
-                  <div 
-                    className="text-[12px] text-[#6B6B6B] font-sans leading-relaxed"
-                    dangerouslySetInnerHTML={{ __html: type.emphasis }}
-                  />
-                </div>
+                {(type.realisticOutcomes || type.emphasis) && (
+                  <div className="pt-4 border-t border-gray-50 mt-auto">
+                    <p className="text-[12px] font-sans font-medium text-[#1A1A1A]  tracking-wider mb-2">
+                      {type.realisticOutcomes ? "Realistic outcomes:" : "Ayurvedic emphasis for this type:"}
+                    </p>
+                    <div 
+                      className="text-[12px] text-[#6B6B6B] font-sans leading-relaxed"
+                      dangerouslySetInnerHTML={{ __html: type.realisticOutcomes || type.emphasis }}
+                    />
+                  </div>
+                )}
               </div>
             </div>
           ))}

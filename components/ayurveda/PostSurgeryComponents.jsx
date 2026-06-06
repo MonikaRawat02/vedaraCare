@@ -72,8 +72,17 @@ export const HomePhysiotherapy = ({ data }) => {
           </h2>
         </div>
 
-        <div className="grid md:grid-cols-5 gap-12">
-          <div className="md:col-span-3 space-y-5">
+        <div className="grid md:grid-cols-2 gap-12 items-start">
+          <div className="md:col-span-1 space-y-5">
+            {data.image && (
+              <div className="rounded-xl overflow-hidden h-[400px] mb-8">
+                <img 
+                  src={data.image} 
+                  alt={data.alt || "Home physiotherapy"} 
+                  className="w-full h-full object-cover"
+                />
+              </div>
+            )}
             {data.content.map((paragraph, idx) => (
               <p key={idx} className="text-[17px] font-sans leading-[1.75] text-[#717182]">
                 {paragraph}
@@ -81,7 +90,7 @@ export const HomePhysiotherapy = ({ data }) => {
             ))}
           </div>
 
-          <div className="md:col-span-2">
+          <div className="md:col-span-1">
             <div className="bg-[#F8F6F0] border-4 border-[#C4A962] rounded-xl p-6 shadow-[0_2px_10px_rgba(0,0,0,0.05)] h-full flex flex-col">
               <span className="text-[11px] font-sans font-semibold tracking-[0.15em] text-[#C4A962] uppercase block mb-4">
                 {data.sidebar.label}
@@ -207,10 +216,17 @@ export const PostSurgeryTeam = ({ data }) => {
           {data.members.map((member, idx) => (
             <div key={idx} className="bg-[#FAF8F5] rounded-xl overflow-hidden shadow-sm group hover:shadow-md transition-shadow">
               <div className="aspect-[4/5] bg-gradient-to-b from-[#D4B57E] to-[#B89A56] relative">
-                {/* Image Placeholder or actual image if provided */}
-                <div className="absolute inset-0 flex items-center justify-center text-white/20">
-                  <span className="text-sm font-sans uppercase tracking-widest">Image Placeholder</span>
-                </div>
+                {member.image ? (
+                  <img 
+                    src={member.image} 
+                    alt={member.alt || member.name} 
+                    className="w-full h-full object-cover"
+                  />
+                ) : (
+                  <div className="absolute inset-0 flex items-center justify-center text-white/20">
+                    <span className="text-sm font-sans uppercase tracking-widest">Image Placeholder</span>
+                  </div>
+                )}
               </div>
               <div className="p-8">
                 <h3 className="text-[19px] font-serif font-medium text-[#1A1A1A] mb-1">{member.name}</h3>

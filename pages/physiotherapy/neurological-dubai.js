@@ -4,6 +4,8 @@ import AyurvedaIntro from '../../components/ayurveda/AyurvedaIntro';
 import PhysiotherapyMechanism from '../../components/ayurveda/PhysiotherapyMechanism';
 import ArthritisTypes from '../../components/ayurveda/ArthritisTypes';
 import TreatmentProtocol from '../../components/ayurveda/Protocols';
+import PediatricPhysiotherapyPricing from '../../components/ayurveda/PediatricPhysiotherapyPricing';
+import PostnatalLocation from '../../components/ayurveda/PostnatalLocation';
 import {
   HomePhysiotherapy,
   PostSurgeryTeam,
@@ -20,12 +22,15 @@ import {
   neurologicalConditionsData,
   neurologicalPhasesData,
   neurologicalHomePhysiotherapyData,
+  neurologicalDubaiMechanism2,
+  neurologicalPricingData,
   neurologicalDubaiReviews,
   neurologicalTeamData,
   neurologicalInsuranceCoverageData,
   neurologicalDubaiFAQData,
   neurologicalDubaiFinalCTA,
-  neurologicalDubaiRelatedPages
+  neurologicalDubaiRelatedPages,
+  neurologicalDubaiLocationData
 } from '../../data/neurologicalDubaiData';
 
 const NeurologicalDubai = () => {
@@ -37,15 +42,15 @@ const NeurologicalDubai = () => {
       "@type": ["MedicalBusiness", "LocalBusiness", "PhysicalTherapy"],
       "@id": "https://vedaracare.ae/physiotherapy/neurological-dubai/#neurological",
       "name": "Vedara Care Neurological Physiotherapy",
-      "alternateName": ["Vedara Neurological Rehabilitation Dubai", "Vedara Neuro Physio JVC"],
+      "alternateName": ["Vedara Neuro Physio Dubai", "Vedara Neurological Rehabilitation JVC"],
       "url": "https://vedaracare.ae/physiotherapy/neurological-dubai/",
       "parentOrganization": {"@id": "https://vedaracare.ae/#organization"},
-      "description": "DHA-licensed neurological physiotherapy at Vedara Care Polyclinic, Jumeirah Village Circle, Dubai. DPT-qualified neurological rehabilitation specialists treating post-stroke recovery, multiple sclerosis, Parkinson's disease, traumatic brain injury, peripheral neuropathy, vestibular disorders, and other neurological conditions with evidence-based protocols. Home physiotherapy available across Dubai.",
+      "description": "DHA-licensed neurological physiotherapy at Vedara Care Polyclinic, Jumeirah Village Circle, Dubai. Specialised long-term care for stroke recovery, Parkinson's disease, multiple sclerosis, traumatic brain injury, spinal cord injury, motor neurone disease, and other neurological conditions. Home physiotherapy across Dubai. Neurologist-coordinated care.",
       "telephone": "+971 4 XXX XXXX",
-      "priceRange": "AED 350 - AED 15,000",
+      "priceRange": "AED 400 - AED 25,000",
       "address": {
         "@type": "PostalAddress",
-        "streetAddress": "Jumeirah Village Circle",
+        "streetAddress": "Vedara Care Polyclinic, Jumeirah Village Circle",
         "addressLocality": "Jumeirah Village Circle",
         "addressRegion": "Dubai",
         "addressCountry": "AE"
@@ -64,9 +69,9 @@ const NeurologicalDubai = () => {
         },
         {
           "@type": "OpeningHoursSpecification",
-          "dayOfWeek": ["Sunday"],
-          "opens": "10:00",
-          "closes": "16:00"
+          "dayOfWeek": "Sunday",
+          "opens": "09:00",
+          "closes": "18:00"
         }
       ],
       "areaServed": [
@@ -82,55 +87,209 @@ const NeurologicalDubai = () => {
         {"@type": "Place", "name": "Downtown Dubai"},
         {"@type": "Place", "name": "Palm Jumeirah"},
         {"@type": "Place", "name": "Mirdif"},
-        {"@type": "Place", "name": "United Arab Emirates"}
+        {"@type": "Place", "name": "Circle Mall"},
+        {"@type": "Place", "name": "FIVE Jumeirah Village"},
+        {"@type": "Place", "name": "JSS Private School"}
       ],
       "medicalSpecialty": [
-        "Neurological Rehabilitation",
+        "Neurological Physiotherapy",
+        "Neurorehabilitation",
         "Physical Therapy",
-        "Physiotherapy",
-        "Vestibular Rehabilitation"
+        "Rehabilitation Medicine"
       ],
       "isAcceptingNewPatients": true,
       "availableService": [
-        {"@type": "MedicalProcedure", "name": "Post-Stroke Rehabilitation"},
-        {"@type": "MedicalProcedure", "name": "Multiple Sclerosis Rehabilitation"},
-        {"@type": "MedicalProcedure", "name": "Parkinson's Disease Rehabilitation"},
+        {"@type": "MedicalProcedure", "name": "Stroke Rehabilitation"},
+        {"@type": "MedicalProcedure", "name": "Parkinson's Physiotherapy"},
+        {"@type": "MedicalProcedure", "name": "LSVT-BIG Programme"},
+        {"@type": "MedicalProcedure", "name": "Multiple Sclerosis Physiotherapy"},
         {"@type": "MedicalProcedure", "name": "Traumatic Brain Injury Rehabilitation"},
-        {"@type": "MedicalProcedure", "name": "Peripheral Neuropathy Treatment"},
-        {"@type": "MedicalProcedure", "name": "Vestibular Rehabilitation"},
         {"@type": "MedicalProcedure", "name": "Spinal Cord Injury Rehabilitation"},
-        {"@type": "MedicalProcedure", "name": "Home Physiotherapy"},
+        {"@type": "MedicalProcedure", "name": "Motor Neurone Disease Physiotherapy"},
+        {"@type": "MedicalProcedure", "name": "Peripheral Neuropathy Treatment"},
+        {"@type": "MedicalProcedure", "name": "Home Neurological Physiotherapy"},
+        {"@type": "MedicalProcedure", "name": "Gait Training"},
+        {"@type": "MedicalProcedure", "name": "Falls Prevention"},
+        {"@type": "MedicalProcedure", "name": "Constraint-Induced Movement Therapy"},
+        {"@type": "MedicalProcedure", "name": "Task-Specific Training"},
+        {"@type": "MedicalProcedure", "name": "Neurodynamic Mobilisation"},
         {"@type": "MedicalProcedure", "name": "Functional Electrical Stimulation"}
       ],
-      "medicalCondition": [
-        {"@type": "MedicalCondition", "name": "Stroke"},
-        {"@type": "MedicalCondition", "name": "Multiple Sclerosis"},
-        {"@type": "MedicalCondition", "name": "Parkinson's Disease"},
-        {"@type": "MedicalCondition", "name": "Traumatic Brain Injury"},
-        {"@type": "MedicalCondition", "name": "Peripheral Neuropathy"},
-        {"@type": "MedicalCondition", "name": "Vertigo"},
-        {"@type": "MedicalCondition", "name": "BPPV"}
-      ],
-      "insuranceProvider": [
-        {"@type": "Organization", "name": "Daman"},
-        {"@type": "Organization", "name": "AXA"},
-        {"@type": "Organization", "name": "Allianz"},
-        {"@type": "Organization", "name": "Oman Insurance"},
-        {"@type": "Organization", "name": "Now Health"},
-        {"@type": "Organization", "name": "Bupa"},
-        {"@type": "Organization", "name": "MetLife"}
-      ],
       "memberOf": {
-        "@type": "Organization",
-        "name": "Dubai Health Authority"
+        "@id": "https://vedaracare.ae/#dha"
       },
       "aggregateRating": {
         "@type": "AggregateRating",
-        "ratingValue": "4.8",
-        "reviewCount": "85",
+        "ratingValue": "4.9",
+        "reviewCount": "75",
         "bestRating": "5",
         "worstRating": "1"
       }
+    },
+    {
+      "@context": "https://schema.org",
+      "@graph": [
+        {
+          "@type": "MedicalCondition",
+          "name": "Cerebrovascular Accident (Stroke)",
+          "alternateName": ["CVA", "Stroke"],
+          "code": {"@type": "MedicalCode", "code": "I63", "codingSystem": "ICD-10"},
+          "possibleTreatment": [
+            {"@type": "MedicalProcedure", "name": "Stroke Rehabilitation Physiotherapy"},
+            {"@type": "MedicalProcedure", "name": "Constraint-Induced Movement Therapy"},
+            {"@type": "MedicalProcedure", "name": "Gait Training"}
+          ],
+          "possibleComplication": [
+            {"@type": "MedicalSymptom", "name": "Hemiparesis"},
+            {"@type": "MedicalSymptom", "name": "Ataxia"}
+          ]
+        },
+        {
+          "@type": "MedicalCondition",
+          "name": "Parkinson's Disease",
+          "code": {"@type": "MedicalCode", "code": "G20", "codingSystem": "ICD-10"},
+          "possibleTreatment": [
+            {"@type": "MedicalProcedure", "name": "LSVT-BIG Programme"},
+            {"@type": "MedicalProcedure", "name": "Parkinson's Physiotherapy"}
+          ],
+          "possibleComplication": [
+            {"@type": "MedicalSymptom", "name": "Bradykinesia"}
+          ]
+        },
+        {
+          "@type": "MedicalCondition",
+          "name": "Multiple Sclerosis",
+          "alternateName": ["MS"],
+          "code": {"@type": "MedicalCode", "code": "G35", "codingSystem": "ICD-10"},
+          "possibleComplication": [
+            {"@type": "MedicalSymptom", "name": "Ataxia"},
+            {"@type": "MedicalSymptom", "name": "Spasticity"}
+          ]
+        },
+        {
+          "@type": "MedicalCondition",
+          "name": "Traumatic Brain Injury",
+          "alternateName": ["TBI"],
+          "code": {"@type": "MedicalCode", "code": "S06", "codingSystem": "ICD-10"}
+        },
+        {
+          "@type": "MedicalCondition",
+          "name": "Spinal Cord Injury",
+          "alternateName": ["SCI"],
+          "code": {"@type": "MedicalCode", "code": "S14", "codingSystem": "ICD-10"}
+        },
+        {
+          "@type": "MedicalCondition",
+          "name": "Motor Neurone Disease",
+          "alternateName": ["MND", "ALS", "Amyotrophic Lateral Sclerosis"],
+          "code": {"@type": "MedicalCode", "code": "G12.2", "codingSystem": "ICD-10"}
+        },
+        {
+          "@type": "MedicalCondition",
+          "name": "Peripheral Neuropathy",
+          "code": {"@type": "MedicalCode", "code": "G62", "codingSystem": "ICD-10"}
+        },
+        {
+          "@type": "MedicalCondition",
+          "name": "Bell's Palsy",
+          "code": {"@type": "MedicalCode", "code": "G51.0", "codingSystem": "ICD-10"}
+        },
+        {
+          "@type": "MedicalCondition",
+          "name": "Guillain-Barré Syndrome",
+          "alternateName": ["GBS"],
+          "code": {"@type": "MedicalCode", "code": "G61.0", "codingSystem": "ICD-10"}
+        },
+        {
+          "@type": "MedicalCondition",
+          "name": "Functional Neurological Disorder",
+          "alternateName": ["FND"],
+          "code": {"@type": "MedicalCode", "code": "F44.6", "codingSystem": "ICD-10"}
+        },
+        {
+          "@type": "MedicalCondition",
+          "name": "Cerebral Palsy",
+          "code": {"@type": "MedicalCode", "code": "G80", "codingSystem": "ICD-10"}
+        },
+        {
+          "@type": "MedicalSymptom",
+          "name": "Hemiparesis"
+        },
+        {
+          "@type": "MedicalSymptom",
+          "name": "Bradykinesia"
+        },
+        {
+          "@type": "MedicalSymptom",
+          "name": "Spasticity"
+        },
+        {
+          "@type": "MedicalSymptom",
+          "name": "Ataxia"
+        },
+        {
+          "@type": "MedicalAssessment",
+          "name": "Berg Balance Scale"
+        },
+        {
+          "@type": "MedicalAssessment",
+          "name": "Tinetti Test"
+        },
+        {
+          "@type": "MedicalAssessment",
+          "name": "Functional Independence Measure"
+        },
+        {
+          "@type": "MedicalAssessment",
+          "name": "Timed Up and Go"
+        },
+        {
+          "@type": "MedicalAssessment",
+          "name": "Modified Ashworth Scale"
+        },
+        {
+          "@type": "MedicalAssessment",
+          "name": "Fugl-Meyer Assessment"
+        },
+        {
+          "@type": "MedicalConcept",
+          "name": "Neuroplasticity"
+        },
+        {
+          "@id": "https://vedaracare.ae/#dha",
+          "@type": "GovernmentOrganization",
+          "name": "Dubai Health Authority",
+          "alternateName": ["DHA"]
+        },
+        {
+          "@type": "Organization",
+          "name": "Daman"
+        },
+        {
+          "@type": "Organization",
+          "name": "AXA"
+        },
+        {
+          "@type": "Organization",
+          "name": "Allianz"
+        },
+        {
+          "@type": "Organization",
+          "name": "Oman Insurance"
+        },
+        {
+          "@type": "Organization",
+          "name": "Now Health"
+        },
+        {
+          "@type": "Organization",
+          "name": "Bupa"
+        },
+        {
+          "@type": "Organization",
+          "name": "MetLife"
+        }
+      ]
     },
     {
       "@context": "https://schema.org",
@@ -141,38 +300,45 @@ const NeurologicalDubai = () => {
         {"@type": "City", "name": "Dubai"},
         {"@type": "Place", "name": "United Arab Emirates"}
       ],
-      "serviceType": "Neurological Rehabilitation Physiotherapy",
+      "serviceType": "Neurological Physiotherapy and Neurorehabilitation",
       "hasOfferCatalog": {
         "@type": "OfferCatalog",
-        "name": "Neurological Rehabilitation Services",
+        "name": "Neurological Physiotherapy Services",
         "itemListElement": [
           {
             "@type": "Offer",
-            "name": "Neurological Assessment (Clinic)",
+            "name": "Initial Neurological Assessment (Clinic)",
             "priceCurrency": "AED",
-            "price": "350",
-            "description": "60-minute comprehensive neurological assessment with DPT-qualified specialist"
+            "price": "450",
+            "description": "60-75 minute comprehensive assessment with neurological specialist"
           },
           {
             "@type": "Offer",
-            "name": "Neurological Assessment (Home)",
+            "name": "Initial Neurological Assessment (Home)",
             "priceCurrency": "AED",
-            "price": "450",
-            "description": "60-minute home assessment for patients with mobility limitations"
+            "price": "550",
+            "description": "75-minute home assessment for patients with mobility limitations"
+          },
+          {
+            "@type": "Offer",
+            "name": "LSVT-BIG Programme",
+            "priceCurrency": "AED",
+            "price": "5200",
+            "description": "Evidence-based 16-session programme over 4 weeks for Parkinson's disease"
           },
           {
             "@type": "Offer",
             "name": "Post-Stroke Rehabilitation Programme",
             "priceCurrency": "AED",
             "price": "8500",
-            "description": "Structured rehabilitation programme over 3-6 months with task-specific training"
+            "description": "Structured 24-session programme over 3 months for post-stroke recovery"
           },
           {
             "@type": "Offer",
-            "name": "Home Physiotherapy Session",
+            "name": "Home Neurological Physiotherapy Session",
             "priceCurrency": "AED",
             "price": "450",
-            "description": "Home-delivered neurological physiotherapy session across Dubai"
+            "description": "Home-delivered neurological physiotherapy across Dubai"
           }
         ]
       }
@@ -182,7 +348,7 @@ const NeurologicalDubai = () => {
       "@type": "BreadcrumbList",
       "itemListElement": [
         {"@type": "ListItem", "position": 1, "name": "Home", "item": "https://vedaracare.ae/"},
-        {"@type": "ListItem", "position": 2, "name": "Physiotherapy in Dubai", "item": "https://vedaracare.ae/physiotherapy-dubai/"},
+        {"@type": "ListItem", "position": 2, "name": "Physiotherapy in JVC", "item": "https://vedaracare.ae/physiotherapy-jvc/"},
         {"@type": "ListItem", "position": 3, "name": "Neurological Physiotherapy", "item": "https://vedaracare.ae/physiotherapy/neurological-dubai/"}
       ]
     },
@@ -201,34 +367,49 @@ const NeurologicalDubai = () => {
     {
       "@context": "https://schema.org",
       "@type": "Article",
-      "headline": "Neurological Physiotherapy in Dubai — Complete Rehabilitation Guide",
+      "headline": "Neurological Physiotherapy in Dubai — Complete Service Guide",
       "image": "https://vedaracare.ae/images/neurological-physiotherapy-dubai-hero.jpg",
       "datePublished": "2026-06-05",
       "dateModified": currentDate,
       "author": {
         "@type": "Physician",
-        "name": "Dr. James Okafor"
+        "name": "Dr. Sarah Thompson"
       },
       "publisher": {
-        "@type": "Organization",
-        "name": "Vedara Care Polyclinic",
-        "logo": {"@type": "ImageObject", "url": "https://vedaracare.ae/logo.png"}
+        "@id": "https://vedaracare.ae/#organization"
       },
       "mainEntityOfPage": "https://vedaracare.ae/physiotherapy/neurological-dubai/"
+    },
+    ...neurologicalTeamData.members.map(member => ({
+      "@context": "https://schema.org",
+      "@type": "Physician",
+      "name": member.name,
+      "url": `https://vedaracare.ae${member.link}`,
+      "image": `https://vedaracare.ae/images/${member.name.toLowerCase().replace(/[^a-z0-9]/g, '-')}.jpg`,
+      "medicalSpecialty": ["Neurological Physiotherapy", "Neurorehabilitation", "Physiotherapy"],
+      "hasCredential": ["DPT", "Neurological Specialist", "LSVT-BIG Certified", "DHA-Licensed"],
+      "worksFor": {"@id": "https://vedaracare.ae/#organization"}
+    })),
+    {
+      "@id": "https://vedaracare.ae/#organization",
+      "@type": "MedicalClinic",
+      "name": "Vedara Care Polyclinic",
+      "url": "https://vedaracare.ae/",
+      "logo": "https://vedaracare.ae/logo.png"
     }
   ];
 
   return (
     <>
       <Head>
-        <title>Neurological Physiotherapy in Dubai | Post-Stroke, MS, Parkinson's | Vedara JVC</title>
-        <meta name="description" content="DHA-licensed neurological physiotherapy at our JVC Dubai clinic. Specialised rehabilitation for post-stroke recovery, multiple sclerosis, Parkinson's disease, TBI, neuropathy, vestibular disorders. DPT-qualified neurological specialists. Home physiotherapy available." />
+        <title>Neurological Physiotherapy in Dubai | Stroke, Parkinson's, MS | Vedara JVC</title>
+        <meta name="description" content="Specialist neurological physiotherapy at our DHA-licensed JVC clinic and home services across Dubai. Stroke rehabilitation, Parkinson's, MS, TBI, spinal cord injury. Neurologist coordination. LSVT-BIG certified. Insurance direct-billing with 7 major insurers." />
         <link rel="canonical" href="https://vedaracare.ae/physiotherapy/neurological-dubai/" />
         <link rel="alternate" hreflang="en-AE" href="https://vedaracare.ae/physiotherapy/neurological-dubai/" />
         <link rel="alternate" hreflang="ar-AE" href="https://vedaracare.ae/ar/physiotherapy/neurological-dubai/" />
         <link rel="alternate" hreflang="x-default" href="https://vedaracare.ae/physiotherapy/neurological-dubai/" />
-        <meta property="og:title" content="Neurological Physiotherapy in Dubai — Post-Stroke, MS, Parkinson's | Vedara JVC" />
-        <meta property="og:description" content="DHA-licensed neurological rehabilitation at our Jumeirah Village Circle clinic. Specialised protocols for post-stroke recovery, multiple sclerosis, Parkinson's disease, TBI, neuropathy, and vestibular disorders. Home physiotherapy across Dubai." />
+        <meta property="og:title" content="Neurological Physiotherapy in Dubai — Specialist Long-Term Care | Vedara JVC" />
+        <meta property="og:description" content="DHA-licensed neurological physiotherapy at our Jumeirah Village Circle clinic and home services across Dubai. Specialised treatment for stroke recovery, Parkinson's, MS, TBI, spinal cord injury, motor neurone disease, and other neurological conditions. Neurologist-coordinated care." />
         <meta property="og:image" content="https://vedaracare.ae/og-images/neurological-physiotherapy-dubai.jpg" />
         <meta property="og:url" content="https://vedaracare.ae/physiotherapy/neurological-dubai/" />
         <meta property="og:type" content="business.business" />
@@ -264,9 +445,14 @@ const NeurologicalDubai = () => {
 
         {/* Home Physiotherapy - Using PostSurgeryComponents HomePhysiotherapy */}
         <HomePhysiotherapy data={neurologicalHomePhysiotherapyData} />
+         <PhysiotherapyMechanism {...neurologicalDubaiMechanism2} />
          {/* Insurance Coverage */}
-         <InsuranceCoverage data={neurologicalInsuranceCoverageData} />
+         <InsuranceCoverage data={neurologicalInsuranceCoverageData}
+         bgColor="bg-[#FFFFFF]"
+         />
 
+        {/* Patient Reviews */}
+        <PediatricPhysiotherapyPricing data={neurologicalPricingData} />
         {/* Patient Reviews */}
         <TreatmentReviews {...neurologicalDubaiReviews} />
 
@@ -275,6 +461,9 @@ const NeurologicalDubai = () => {
 
         {/* FAQ Section */}
         <FAQ {...neurologicalDubaiFAQData} />
+
+        {/* Location Section */}
+        <PostnatalLocation {...neurologicalDubaiLocationData} />
 
         {/* Final CTA */}
         <FinalCTA {...neurologicalDubaiFinalCTA} />
