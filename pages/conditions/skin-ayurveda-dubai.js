@@ -340,7 +340,6 @@ const SkinAyurvedaDubai = () => {
       }))
     }
   ];
-
   return (
     <>
       <Head>

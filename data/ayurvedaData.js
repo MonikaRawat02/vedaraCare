@@ -6,7 +6,11 @@ export const ayurvedaHero = {
   label: "Ayurveda Clinic in Jumeirah Village Circle, Dubai",
   title: "Classical Ayurveda,\npractised in the heart of JVC.",
   description: "A DHA-licensed Ayurveda clinic in Jumeirah Village Circle, Dubai. BAMS-qualified Ayurvedic physicians offering authentic Panchakarma, Abhyanga, Shirodhara and personalised dosha-based treatment for chronic conditions, stress, and long-term wellbeing.",
+<<<<<<< HEAD
   image: "",
+=======
+  image: "/images/ayurveda-clinic-jvc-hero.webp",
+>>>>>>> 7c9f4b63406226ac6b203f7394454581da0d537b
   alt: "BAMS-qualified Ayurvedic doctor performing pulse diagnosis (Nadi Pariksha) on a patient at Vedara Care Ayurveda clinic in JVC, Dubai",
   primaryCTA: "Book an Ayurvedic Consultation",
   secondaryCTA: "Chat on WhatsApp",
@@ -20,7 +24,11 @@ export const ayurvedaHero = {
     title: "Led by BAMS-qualified physicians",
     subtitle: "DHA Licensed · 15+ years average experience"
   },
+<<<<<<< HEAD
   image: ""
+=======
+  image: "/images/ayurveda-clinic-jvc-hero.webp"
+>>>>>>> 7c9f4b63406226ac6b203f7394454581da0d537b
 };
 
 export const ayurvedaIntro = {
@@ -114,7 +122,11 @@ export const ayurvedaPhysician = {
   name: "Dr. Priya Menon",
   qualification: "BAMS · MD (Ayurveda) · DHA Licensed",
   description: "Dr. Menon has practised classical Ayurveda for 17 years, with clinical training at the Government Ayurveda College, Thiruvananthapuram, and over nine years in Dubai. At Vedara Care she leads our Ayurveda department, with a focus on chronic conditions where conventional care has plateaued - particularly PCOS, chronic pain, and migraine. Patients describe her consultations as the longest and most thorough they have had in Dubai.",
+<<<<<<< HEAD
   image: "",
+=======
+  image: "dr-[name]-ayurvedic-physician-jvc.webp",
+>>>>>>> 7c9f4b63406226ac6b203f7394454581da0d537b
   alt: "Dr. Priya Menon, BAMS-qualified Ayurvedic physician and DHA-licensed doctor at Vedara Care Polyclinic, JVC Dubai",
   stats: [
     { value: "15+", label: "Years of Practice" },
@@ -269,7 +281,7 @@ export const ayurvedaConditions = {
       category: "Pain and Movement",
       description: "Panchakarma + classical formulations",
       programme: "Typical programme: 21-28 days",
-      link: "/conditions/arthritis-treatment-jvc/"
+      link: "/conditions/arthritis-ayurveda-dubai/"
     },
     // Women's Health
     {
@@ -355,7 +367,7 @@ export const ayurvedaConditions = {
       category: "Metabolic and Lifestyle",
       description: "Udvartana + Virechana + lifestyle programme",
       programme: "Typical programme: 2-4 months",
-      link: "/conditions/weight-management-ayurveda-dubai/"
+      link: "/conditions/weight-loss-ayurveda-dubai/"
     }
   ],
   footer: "Browse all 30+ conditions →"
@@ -719,7 +731,7 @@ export const dubaiHubApplications = {
     "IBS and chronic digestive issues",
     "Thyroid disorders (alongside endocrinology)",
     "Type 2 diabetes support",
-    "Skin conditions including eczema and psoriasis"
+    "<a href=\"/conditions/skin-ayurveda-dubai/\" class=\"hover:underline transition-colors\">Skin conditions including eczema and psoriasis</a>"
   ],
   referralCases: [
     "Acute infections requiring antibiotics",
