@@ -274,10 +274,8 @@ const PhysiotherapyJvc = () => {
         <meta property="og:url" content="https://vedaracare.ae/physiotherapy-jvc/" />
         <meta property="og:type" content="business.business" />
         <meta property="og:locale" content="en_AE" />
-        
         {/* Twitter */}
         <meta name="twitter:card" content="summary_large_image" />
-        
         {/* Canonical & Language Tags */}
         <link rel="canonical" href="https://vedaracare.ae/physiotherapy-jvc/" />
         <link rel="alternate" hreflang="en-AE" href="https://vedaracare.ae/physiotherapy-jvc/" />

@@ -374,7 +374,6 @@ export const physiotherapyJvcHomeHealthcareNew = {
     "The conditions where integrated Ayurveda + physiotherapy is most valuable include chronic back pain (where physiotherapy addresses biomechanics and Ayurvedic Kati Vasti addresses tissue-level inflammation), arthritis (combining physiotherapy strengthening with Ayurvedic Janu Vasti for knees, Greeva Vasti for cervical), frozen shoulder (physiotherapy mobilisation with Ayurvedic Patra Pinda Sweda), post-stroke neurological rehabilitation, postnatal recovery (pelvic floor physiotherapy with Sutika Paricharya), and chronic sports injuries that have plateaued with physiotherapy alone.",
   "For most patients, however, conventional physiotherapy alone is what they need — acute injuries, post-surgical rehabilitation, paediatric physiotherapy, cardiopulmonary rehab, and women's health are typically physiotherapy-only services. Integration is offered when clinically appropriate, never as a default upsell.",
   
-  
   ],
   features: [
     "Shared clinical notes between physiotherapy and Ayurveda teams",
