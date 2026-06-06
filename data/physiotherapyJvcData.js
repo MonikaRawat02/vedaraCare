@@ -482,7 +482,7 @@ export const physiotherapyJvcReviews = {
       label: "physiotherapy reviews"
     },
     {
-      value: "92%",
+      value: "97%",
       label: "reported significant pain reduction"
     },
    

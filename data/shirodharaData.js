@@ -261,7 +261,7 @@ export const shirodharaReviews = {
   stats: [
     { value: "4.9", label: "4.9 stars on Google" },
     { value: "41", label: "Shirodhara-specific reviews" },
-    { value: "96%", label: "would recommend" }
+    { value: "97%", label: "would recommend" }
   ],
   buttonText: "Read All Reviews"
 };
