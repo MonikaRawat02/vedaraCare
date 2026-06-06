@@ -1,7 +1,7 @@
 export const neurologicalDubaiHero = {
   breadcrumb: [
     { label: "Home", href: "/" },
-    { label: "Physiotherapy", href: "/physiotherapy-dubai" },
+    { label: "Physiotherapy in JVC", href: "/physiotherapy-jvc/" },
     { label: "Neurological Physiotherapy", active: true }
   ],
   label: "NEUROLOGICAL PHYSIOTHERAPY · DHA-LICENSED · SPECIALISED LONG-TERM CARE",
@@ -22,7 +22,7 @@ export const neurologicalDubaiHero = {
       "Many neurological patients cannot easily travel to clinic. Our specialist physiotherapists deliver care at your home across JVC, JVT, Al Barsha South, Marina, Downtown, Palm Jumeirah, Mirdif, and surrounding Dubai areas."
   },
   image: "/images/neurological-physiotherapy-dubai-hero.webp",
-  alt: "Neurological physiotherapy gait training with patient"
+  alt: "Neurological physiotherapist working with patient at Vedara Care JVC Dubai"
 };
 
 export const neurologicalDubaiIntro = {
@@ -60,7 +60,7 @@ export const neurologicalDubaiMechanism = {
     "Modern neurological rehabilitation is grounded in neuroscience and evidence. The gains are real — but they require intensive, task-specific, sustained work. There are no shortcuts and no miracles. There is honest work that produces honest outcomes.",
 
   image: "/images/neurological-rehabilitation-treatment.webp",
-  alt: "Neurological rehabilitation consultation and gait training session at Vedara Care Dubai"
+  alt: "Specialised neurological rehabilitation at Vedara Care JVC Dubai"
 };
 
 export const neurologicalConditionsData = {
@@ -77,62 +77,63 @@ export const neurologicalConditionsData = {
       title: "Stroke Recovery (CVA)",
       subtitle: "Cerebrovascular Accident Rehabilitation",
       description:
-        "The most common neurological referral. Treatment focuses on regaining motor function, gait training, arm and hand rehabilitation, fall prevention, and functional independence. We use evidence-based approaches including motor relearning and task-specific training."
+        "The most common neurological referral. Treatment focuses on regaining motor function (typically affected on one side — hemiparesis), gait training, balance restoration, hand and upper limb rehabilitation, falls prevention, and functional independence. We use evidence-based approaches including constraint-induced movement therapy, motor relearning, and task-specific training. Early intervention (within first 6 months) typically produces the strongest gains, but meaningful improvement is possible years after stroke.",
+      realisticOutcomes: "Most patients achieve substantial functional gains; complete recovery varies enormously by stroke severity, location, and intervention timing."
     },
+        
     {
       number: "02",
       title: "Parkinson's Disease",
       subtitle: "Progressive Neurodegenerative Disease",
       description:
-        "Long-term physiotherapy is increasingly recognised as essential alongside medical management. Protocols include LSVT-BIG, gait training, balance work, posture maintenance, and exercises to maintain function throughout disease progression."
-    },
+        "Long-term physiotherapy is increasingly recognised as essential alongside medical management. Our protocols include LSVT-BIG (Lee Silverman Voice Treatment - BIG amplitude training), gait training to address shuffling and freezing, balance work to reduce falls, posture maintenance protocols, and exercise as medicine (cardiovascular work has neuroprotective effects in Parkinson's). Long-term relationships with the same therapist help track progression and adjust approach as the condition evolves.",
+      realisticOutcomes: " physiotherapy does not stop disease progression but can meaningfully maintain function, reduce falls, and improve quality of life"    },
     {
       number: "03",
       title: "Multiple Sclerosis (MS)",
       subtitle: "Demyelinating Neurological Disease",
       description:
-        "Treatment varies according to MS type and current symptoms. Common focuses include fatigue management, balance and gait training, spasticity management, exercise prescription, and energy conservation strategies."
-    },
+        "Treatment varies by MS form (relapsing-remitting vs progressive) and current symptoms. Common focuses include fatigue management, balance and gait, spasticity management, exercise prescription (carefully calibrated to avoid heat-related symptom exacerbation), function preservation during disease progression, and adaptation strategies. Coordination with your neurologist regarding disease-modifying medications is essential.",
+      realisticOutcomes: "function preservation, quality of life improvement, fall reduction; physiotherapy is one component of comprehensive MS management"   },
     {
       number: "04",
       title: "Traumatic Brain Injury (TBI)",
       subtitle: "Acquired Brain Injury Rehabilitation",
       description:
-        "Comprehensive rehabilitation following mild-to-severe traumatic brain injury. Treatment addresses motor function, balance, gait, cognitive-motor integration, and gradual return to function with multidisciplinary coordination."
-    },
+        "Complex rehabilitation often requiring multi-system intervention. Treatment addresses motor function, balance, gait, cognitive-motor integration, and gradual return to function. Often involves coordination with neuropsychologists, occupational therapists, and speech-language therapists. Particularly common for international patients evacuated to Dubai or expats who experienced TBI overseas and need continuing rehabilitation.",
+      realisticOutcomes: "highly variable depending on injury severity and location; most patients see meaningful gains over months to years"    },
     {
       number: "05",
       title: "Spinal Cord Injury (SCI)",
       subtitle: "Traumatic or Non-Traumatic SCI",
       description:
-        "Treatment focuses on maximising function within injury constraints through movement training, strength work, gait rehabilitation, wheelchair skills, transfers, and prevention of secondary complications."
-    },
+        "Treatment focuses on maximising function within the constraints of the injury — complete vs incomplete, paraplegia vs tetraplegia. Includes mobility training, transfers, wheelchair skills, residual function optimisation, and prevention of secondary complications (pressure injuries, contractures, deconditioning). Coordination with rehabilitation physicians and SCI specialists.",
+      realisticOutcomes: " function maximisation within injury constraints; independence focus; prevention of secondary complications"   },
     {
       number: "06",
       title: "Motor Neuron Disease (MND/ALS)",
       subtitle: "Degenerative Motor Neuron Disease",
       description:
-        "Palliative-oriented physiotherapy focused on quality of life, symptom management, mobility preservation, respiratory support strategies, and adaptation as the disease progresses."
-    },
+        "Palliative-oriented physiotherapy focused on quality of life, function preservation as long as possible, mobility aid prescription and training, caregiver education, and dignified adaptation as the disease progresses. Honest discussion with patient and family about goals and expectations. Often combined with palliative care team coordination.",
+      realisticOutcomes: "physiotherapy cannot halt disease progression; goal is quality of life maintenance and dignified function"  },
     {
       number: "07",
       title: "Peripheral Neuropathy",
       subtitle: "Including Diabetic & Post-Chemotherapy Neuropathy",
       description:
-        "Treatment focuses on balance improvement, falls prevention, sensory retraining, gait optimisation, and maintaining functional mobility despite sensory deficits."
-    },
+        "Treatment focuses on managing symptoms (balance, falls prevention, sensory awareness), preventing complications (foot care in diabetic neuropathy), exercise prescription appropriate to neuropathic considerations, and adaptation. Common in Dubai's diabetic population and post-chemotherapy patients.",
+      realisticOutcomes: "symptom management, function maintenance, falls prevention; underlying neuropathy may or may not improve" },
     {
       number: "08",
       title: "Other Neurological Conditions",
       subtitle: "Including Bell's Palsy, Guillain-Barré Syndrome & Functional Neurological Disorders",
       description:
-        "Specialised rehabilitation protocols for less common neurological conditions with treatment tailored to diagnosis, current function, and long-term goals."
-    }
+        "Specialised protocols for less common but important conditions. Bell's palsy responds well to early facial neuromuscular re-education. Guillain-Barré requires structured rehabilitation through recovery. Functional neurological disorder requires specific physiotherapy approaches (very different from 'psychological' framing). Adults with cerebral palsy need ongoing condition management.",
+      realisticOutcomes: "vary by condition; many have good rehabilitation potential"  }
   ],
   
   footer:
-    "If your specific neurological condition is not listed, contact us. Our team has experience across the spectrum of adult neurological rehabilitation. We coordinate with your neurologist to ensure our approach aligns with your overall medical management."
-};
+    "If your specific neurological condition is not listed, contact us. Our team has experience across the spectrum of adult neurological rehabilitation. We coordinate with your neurologist to ensure our approach aligns with your overall medical management."};
 
 export const neurologicalPhasesData = {
   bgColor: "bg-[#FAF8F3]",
@@ -145,14 +146,13 @@ export const neurologicalPhasesData = {
       title: "Acute and Early Recovery (Weeks 0-12 post-event)",
       items: [
         "Often hospital-based initially; transition to outpatient or home care as appropriate",
-        "Frequency: typically 2-6 sessions per week if tolerated",
+        "Frequency: typically 3-5 sessions per week if tolerated",
         "Focus on early motor recovery, preventing secondary complications, family education",
         "Home physiotherapy often essential at this stage",
         "Intensive task-specific practice within tolerance",
         "Coordination with hospital discharge team, neurologist, and other rehabilitation providers"
       ],
-      expected: "Expected by end of Phase 1: substantial early gains typical for acquired neurological conditions; honest assessment of recovery trajectory; family integrated into care plan"
-    },
+      expected: "Expected by end of Phase 1: substantial early gains typical for acquired neurological conditions; honest assessment of recovery trajectory; family integrated into care plan"   },
     {
       week: "PHASE 2",
       title: "Active Recovery (Months 3-9)",
@@ -164,20 +164,19 @@ export const neurologicalPhasesData = {
         "Equipment evaluation and prescription as needed (orthoses, mobility aids)",
         "Continued family caregiver education and support"
       ],
-      expected: "Expected by end of Phase 2: most patients achieve substantial functional gains; recovery trajectory clearer; some patients approach plateau"
-    },
+      expected: "Expected by end of Phase 2: most patients achieve substantial functional gains; recovery trajectory clearer; some patients approach plateau"    },
     {
       week: "PHASE 3",
       title: "Consolidation and Plateau Management (Months 9-18)",
       items: [
-        "Frequency reduced for some patients; plateau management for others",
+        "Frequency reduces: typically 1-2 sessions per week",
+        "Continued progress for some patients; plateau management for others",
         "Long-term function preservation",
         "Return to community activities and life roles",
         "Adaptation to permanent functional changes where applicable",
         "Caregiver support ongoing"
       ],
-      expected: "Expected by end of Phase 3: established functional status; ongoing maintenance vs continued recovery determined; long-term plan documented"
-    },
+      expected: "Expected by end of Phase 3: established functional status; ongoing maintenance vs continued recovery determined; long-term plan documented" },
     {
       week: "PHASE 4",
       title: "Long-Term Maintenance and Adaptation (Months 18+)",
@@ -189,11 +188,9 @@ export const neurologicalPhasesData = {
         "Quality of life optimisation",
         "For progressive conditions: ongoing adaptation to evolving disease"
       ],
-      expected: "Expected by end of Phase 4: established long-term care plan; sustained functional outcomes; ongoing relationship for as-needed support"
-    }
+      expected: "Expected by end of Phase 4: established long-term care plan; sustained functional outcomes; ongoing relationship for as-needed support"  }
   ],
-  footer: "These phases are illustrative for acquired neurological conditions. Progressive conditions (Parkinson's, MS, MND) follow different patterns — typically ongoing physiotherapy without distinct 'recovery' and 'maintenance' phases. Your specific trajectory and plan are documented based on your condition and individual situation."
-};
+  footer: "These phases are illustrative for acquired neurological conditions. Progressive conditions (Parkinson's, MS, MND) follow different patterns — typically ongoing physiotherapy without distinct 'recovery' and 'maintenance' phases. Your specific trajectory and plan are documented based on your condition and individual situation."};
 
 export const neurologicalHomePhysiotherapyData = {
   label: "HOME PHYSIOTHERAPY",
@@ -218,10 +215,56 @@ export const neurologicalHomePhysiotherapyData = {
     duration: "60-75 minutes including travel time consideration",
     pricing: "From AED 550 per home session",
     booking: "WhatsApp +971 4 XXX XXXX for fastest response",
-    buttonLink: "https://wa.me/971XXXXXXXX",
+    buttonLink: "/home-healthcare-jvc/",
     buttonText: "Book Home Physiotherapy"
-  }
+  },
+
 };
+
+export const neurologicalDubaiMechanism2 = {
+  label: "COORDINATED CARE",
+  title: "How we work with your broader neurological care team.",
+  content: [
+    "Effective neurological rehabilitation requires coordination across multiple healthcare providers. Neurology is a multi-disciplinary specialty by necessity — different professionals address different aspects of complex conditions.",
+
+    "<strong>Neurologists</strong><br/>Your neurologist remains the medical lead for your condition. We coordinate with neurologists across Dubai and internationally — sharing initial assessments, milestone updates, observations about medication effects on function, and clinical questions where their guidance is essential. With your consent, we maintain regular communication appropriate to your condition's complexity.",
+
+    "<strong>Occupational Therapists</strong><br/>Occupational therapy addresses activities of daily living, fine motor function, cognitive-functional integration, and home/workplace adaptation. Many neurological patients benefit from concurrent OT alongside physiotherapy. We coordinate with occupational therapists across Dubai or can recommend colleagues if your child needs OT but does not yet have a therapist.",
+
+    "<strong>Speech-Language Therapists</strong><br/>For patients with communication or swallowing involvement (common in stroke, TBI, Parkinson's, MS, MND), speech-language therapy is essential. We coordinate with SLTs across Dubai. For Parkinson's patients specifically, we sometimes pair our LSVT-BIG protocols (which we deliver) with LSVT-LOUD voice protocols (delivered by SLTs).",
+
+    "<strong>Neuropsychologists and Psychologists</strong><br/>Many neurological conditions involve cognitive, emotional, or psychological components that benefit from specialised support. Post-stroke depression, MS-related psychological challenges, TBI-related cognitive issues, and caregiver mental health all matter. We coordinate with neuropsychologists and psychologists experienced in neurological conditions.",
+
+    "<strong>Rehabilitation Physicians and Pain Specialists</strong><br/>For patients with complex pain, spasticity management needs, or comprehensive rehabilitation oversight, we coordinate with rehabilitation physicians (physiatrists) and pain specialists. Botox for spasticity, intrathecal pump management, and other interventions sometimes complement physiotherapy.",
+
+    "<strong>Social Workers and Care Coordinators</strong><br/>For complex situations involving home care needs, equipment provision, financial concerns, family support, or long-term care planning, social work and care coordination matter. We can connect families with appropriate support services across Dubai.",
+    "<strong>Family and Caregivers</strong><br/>The family caregivers are often the most important members of the care team. Our family education involves teaching specific techniques for safe transfers, exercise facilitation, falls prevention, communication strategies, and emotional support. Caregiver burnout is a real risk — we monitor caregiver wellbeing and refer for caregiver support when needed."
+  ],
+  image: "/images/neurological-care-coordination-dubai.webp",
+  alt: "Multi-disciplinary neurological care coordination Vedara Care JVC"
+};
+
+export const neurologicalPricingData = {
+  bgColor: "bg-[#f8f6f1]",
+  label: "TRANSPARENT PRICING",
+  title: "What neurological physiotherapy at our JVC clinic costs.",
+  tableData: [
+    { service: "Initial neurological assessment (60-75 minutes, clinic)", price: "AED 450" },
+    { service: "Initial neurological assessment (75 minutes, home)", price: "AED 550" },
+    { service: "Follow-up neurological session (clinic, 60 minutes)", price: "AED 350" },
+    { service: "Follow-up neurological session (home, 60-75 minutes)", price: "AED 450" },
+    { service: "LSVT-BIG programme (Parkinson's, 16 sessions over 4 weeks)", price: "AED 5,200" },
+    { service: "Post-stroke rehabilitation programme (24 sessions over 3 months)", price: "AED 7,800" },
+    { service: "Extended stroke rehabilitation (48 sessions over 6 months)", price: "AED 14,400" },
+    { service: "MS structured programme (12 sessions, calibrated to disease state)", price: "AED 3,900" },
+    { service: "Family caregiver training session", price: "AED 350" },
+    { service: "Multi-disciplinary case coordination (per case, complex cases)", price: "AED 500" }
+  ],
+  footerText: "Insurance direct-billing with seven major insurers. Long-term neurological physiotherapy typically benefits from annual coverage planning — WhatsApp +971 4 XXX XXXX to discuss your coverage and out-of-pocket cost before committing to a programme."
+};
+
+
+
 
 export const neurologicalDubaiReviews = {
   bgColor: "bg-[#1A4D3E]",
@@ -250,7 +293,7 @@ export const neurologicalDubaiReviews = {
   stats: [
     { value: "4.9", label: "stars on Google" },
     { value: "75+", label: "neurological physiotherapy reviews" },
-    { value: "94%", label: "of families would recommend to others facing neurological conditions" }
+    { value: "94%", label: "recommend to others facing neurological conditions" }
   ],
   buttonText: "Read All Neurological Reviews"
 };
@@ -270,7 +313,9 @@ export const neurologicalTeamData = {
       ],
       description: "15+ years neurological rehabilitation specialisation",
       languages: "Languages spoken: English, Arabic",
-      link: "/physiotherapists/dr-sarah-thompson/"
+      link: "/physiotherapists/dr-sarah-thompson/",
+      image: "",
+      alt: "Dr. Sarah Thompson neurological physiotherapy specialist Vedara Care JVC Dubai"
     },
     {
       name: "Dr. Michael Chen, DPT",
@@ -283,7 +328,9 @@ export const neurologicalTeamData = {
       ],
       description: "Specialised in progressive neurological conditions",
       languages: "Languages spoken: English, Mandarin, Cantonese",
-      link: "/physiotherapists/dr-michael-chen/"
+      link: "/physiotherapists/dr-michael-chen/",
+      image: "",
+      alt: "Dr. Michael Chen neurological physiotherapy specialist Vedara Care JVC Dubai"
     },
     {
       name: "Dr. Priya Sharma, DPT",
@@ -295,12 +342,15 @@ export const neurologicalTeamData = {
       ],
       description: "Diabetic neuropathy and balance rehabilitation expert",
       languages: "Languages spoken: English, Hindi, Urdu",
-      link: "/physiotherapists/dr-priya-sharma/"
+      link: "/physiotherapists/dr-priya-sharma/",
+      image: "",
+      alt: "Dr. Priya Sharma neurological physiotherapy specialist Vedara Care JVC Dubai"
     }
   ]
 };
 
 export const neurologicalInsuranceCoverageData = {
+  bgColor: "bg-[#FFFFFF]",
   label: "INSURANCE COVERAGE",
   title: "How insurance works for long-term neurological physiotherapy in Dubai.",
   content: [
@@ -318,20 +368,23 @@ export const neurologicalInsuranceCoverageData = {
   }
 };
 export const neurologicalDubaiLocationData = {
-  label: "OUR JVC CLINIC",
-  title: "Neurological rehabilitation at our Jumeirah Village Circle clinic.",
-  description: "Our neurological rehabilitation clinic in JVC is designed for accessibility and safety — wide treatment spaces for mobility devices, specialised equipment for gait training, balance assessment tools, and private treatment rooms for sensitive neurological conditions.",
-  details: {
-    address: "Vedara Care Polyclinic<br/>Building 7, Street 2, Jumeirah Village Circle<br/>Dubai, United Arab Emirates",
-    hours: "Monday - Friday: 9:00 AM - 9:00 PM<br/>Saturday: 9:00 AM - 6:00 PM<br/>Sunday: 10:00 AM - 4:00 PM",
-    phone: "+971 4 XXX XXXX",
-    email: "info@vedaracare.ae"
-  },
-  footer: "Free patient parking available. Clinic is wheelchair accessible with elevator access. Home physiotherapy available for patients who cannot travel to clinic.",
-  buttons: {
-    primary: "Book a Neurological Assessment",
-    secondary: "WhatsApp Our Team"
-  }
+  bgColor: "bg-white",
+  label: "WHERE WE WORK",
+  title: "At our JVC clinic, or at your home across Dubai.",
+  description: "Neurological physiotherapy happens at two primary locations depending on patient need: at home across Dubai with our specialised neurological physiotherapists travelling to you (often essential for early recovery, advanced disease, or significant mobility limitations), and at our JVC clinic with specialised equipment including gait training equipment, functional electrical stimulation, and balance equipment (when transport is feasible). Many patients benefit from a combination of both.",
+  address: "Vedara Care Polyclinic, Jumeirah Village Circle (JVC), Dubai",
+  phone: "+971 4 XXX XXXX",
+  hours: "Sunday - Thursday: 9:00 AM - 9:00 PM<br/>Friday - Saturday: 10:00 AM - 8:00 PM",
+  landmarks: [
+    "Walking distance from Circle Mall",
+    "3 minutes from FIVE Jumeirah Village",
+    "5 minutes from JSS Private School"
+  ],
+  image: "/images/neurological-physiotherapy-clinic-interior.webp",
+  alt: "Neurological physiotherapy clinic interior at Vedara Care JVC",
+  buttonText: "Book a Neurological Consultation",
+  footerNote: "Our JVC clinic has accessible facilities with appropriate accommodations for neurological patients with mobility limitations, dedicated neurological treatment rooms with specialised equipment, parking spaces near clinic entrance for limited-mobility patients, and integrated access to our broader physiotherapy and Ayurveda departments when needed. Easy access from JVC, JVT, Al Barsha South, and across Dubai.",
+  reverse: true
 };
 export const neurologicalDubaiFAQData = {
   bgColor: "bg-[#F5F1E8]",
@@ -403,7 +456,7 @@ export const neurologicalDubaiRelatedPages = {
       title: "Physiotherapy in JVC",
       description:
         "Our complete physiotherapy department — all seven specialisations including neurological, team, conditions treated.",
-      href: "/physiotherapy-dubai/",
+      href: "/physiotherapy-jvc/",
       cta: "Learn more"
     },
     {
@@ -424,7 +477,7 @@ export const neurologicalDubaiRelatedPages = {
       title: "Ayurveda Clinic in JVC",
       description:
         "For specific neurological conditions where integrated Ayurveda + physiotherapy produces additional benefits (post-stroke recovery, Parkinson's, certain neuropathies).",
-      href: "/ayurveda-dubai/",
+      href: "/ayurveda-clinic-jvc/",
       cta: "Learn more"
     }
   ],

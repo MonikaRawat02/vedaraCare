@@ -28,7 +28,8 @@ import {
   pediatricPhysiotherapyFaqs,
   pediatricPhysiotherapyLocation,
   pediatricPhysiotherapyFinalCTA,
-  pediatricPhysiotherapyRelatedPages
+  pediatricPhysiotherapyRelatedPages,
+  pediatricPhysiotherapyPricing
 } from '../../data/pediatricPhysiotherapyData';
 
 const PediatricDubai = () => {
@@ -576,7 +577,7 @@ const PediatricDubai = () => {
         <PhysiotherapyMechanism {...pediatricPhysiotherapyMechanism} />
    
         {/* <PricingSectionNew {...pediatricPhysiotherapyJvcPricing} /> */}
-        <PediatricPhysiotherapyPricing />
+        <PediatricPhysiotherapyPricing data={pediatricPhysiotherapyPricing} />
         <TreatmentReviews {...pediatricPhysiotherapyReviews} />
         <PhysiotherapyTeam {...pediatricPhysiotherapyTeam} />
         <FAQ {...pediatricPhysiotherapyFaqs} 
