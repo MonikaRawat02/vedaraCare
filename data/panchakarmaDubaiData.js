@@ -80,7 +80,7 @@ export const panchakarmaDubaiApplications = {
       "<a href=\"/conditions/stress-anxiety-ayurveda-dubai/\" class=\"hover:underline transition-colors\">Chronic stress and burnout</a>",
       "<a href=\"/conditions/migraine-ayurveda-dubai/\" class=\"hover:underline transition-colors\">Migraine and chronic headache</a>",
       "<a href=\"/conditions/weight-loss-ayurveda-dubai/\" class=\" transition-colors\">Weight management (with metabolic basis)</a>",
-      "<a href=\"/conditions/hair-loss-ayurveda-dubai/\" class=\"  transition-colors\">Hair loss and skin conditions</a>",
+      "<a href=\"/conditions/hair-loss-ayurveda-dubai/\" class=\"  transition-colors\">Hair loss</a> and <a href=\"/conditions/skin-ayurveda-dubai/\" class=\"hover:underline transition-colors\">skin conditions</a>",
       "<a href=\"/conditions/diabetes-ayurveda-dubai/\" class=\"  transition-colors\">Type 2 diabetes (alongside endocrinology)</a>",
       "<a href=\"/conditions/ibs-ayurveda-dubai/\" class=\" transition-colors\">Chronic IBS and digestive disorders</a>",
       "<a href=\"/conditions/thyroid-ayurveda-dubai/\" class=\" transition-colors\">Thyroid conditions (alongside endocrinology)</a>",
