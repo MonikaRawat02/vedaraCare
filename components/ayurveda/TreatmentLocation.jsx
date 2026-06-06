@@ -171,7 +171,7 @@ const TreatmentLocation = ({
             {/* CTA Button */}
             <Link
               href="/book"
-              className="inline-flex items-center justify-center gap-2 whitespace-nowrap rounded-md text-sm font-medium transition-all bg-[#030213] hover:bg-opacity-90 text-white px-10 py-3 w-full justify-center"
+              className="inline-flex items-center justify-center gap-2 whitespace-nowrap rounded-md text-sm font-medium transition-all bg-[#1A4D3E] hover:bg-opacity-90 text-white px-10 py-3 w-full justify-center"
             >
               {buttonText}
             </Link>

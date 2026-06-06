@@ -62,7 +62,7 @@ export const homeHero = {
   ],
   stats: [
     { label: "4.9 Google Rating", type: "star" },
-    { label: "1000+ Patients", type: "users" },
+    { label: "5000+ Patients", type: "users" },
     { label: "Personalized Care", type: "heart" },
     { label: "JVC Dubai", type: "map" }
   ]

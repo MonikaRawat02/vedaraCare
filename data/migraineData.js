@@ -129,7 +129,7 @@ export const migraineLocation = {
   ],
   image: "conditions/nasya-migraine-treatment-room-jvc.webp",
   alt: "Vedara Care migraine clinic location in Jumeirah Village Circle Dubai near Circle Mall",
-  mapEmbed: "https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d3613.6391151624!2d55.2085!3d25.0560!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x3e5f6e85d4545555%3A0x5555555555555555!2sJumeirah%20Village%20Circle!5e0!3m2!1sen!2sae!4v1622620000000!5m2!1sen!2sae",
+  mapEmbed: "https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d3613.9894568193345!2d55.20722358578439!3d25.068346479666594!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x3e5f6dd72f3da587%3A0xe7ecca8687a75b72!2sVedara%20Care%20Polyclinic!5e0!3m2!1sen!2sus!4v1780727442216!5m2!1sen!2sus",
   buttonText: "Book a Migraine Consultation"
 };
 
