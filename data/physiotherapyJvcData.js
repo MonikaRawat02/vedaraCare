@@ -86,7 +86,8 @@ export const physiotherapyJvcSpecializations = {
         "traumatic brain injury",
         "peripheral neuropathy",
         "Bell's palsy"
-      ]
+      ],
+      href: "/treatments/njavarakizhi-dubai/"
     },
     {
       number: "05",
@@ -103,6 +104,7 @@ export const physiotherapyJvcSpecializations = {
     {
       number: "06",
       title: "Paediatric Physiotherapy",
+      href: "/physiotherapy/pediatric-dubai/",
       description: "Physiotherapy for children — developmental concerns (gross motor delay, postural issues, scoliosis screening and management), sports injuries in children and adolescents, post-surgical paediatric rehabilitation, neurological conditions in children (cerebral palsy, developmental coordination disorder). Approach is age-appropriate, often play-based for younger children, with family involvement throughout.",
       commonConditions: [
         "developmental coordination delay",

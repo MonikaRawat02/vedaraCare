@@ -125,7 +125,8 @@ export const panchakarmaDubaiProtocol = {
         "Snehapana (graduated internal medicated ghee or oil)",
         "Daily Abhyanga (full body warm oil massage)",
         "Daily Swedana (medicated steam)"
-      ]
+      ],
+      href: "/treatments/abhyanga-dubai/"
     },
     {
       label: "2",

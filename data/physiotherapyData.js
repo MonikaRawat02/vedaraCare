@@ -145,6 +145,7 @@ export const physiotherapySpecializations = {
     {
       number: "06",
       title: "Paediatric Physiotherapy",
+      href: "/physiotherapy/pediatric-dubai/",
       description: "Physiotherapy for children — developmental concerns, sports injuries in children and adolescents, post-surgical paediatric rehabilitation, neurological conditions. Age-appropriate, family-involved approach.",
       commonConditions: [
         "Developmental coordination delay",

@@ -468,6 +468,89 @@ export const sportsPhysiotherapyFinalCTA = {
 
 
 
+export const sportsPhysiotherapyInjuryTypes = {
+  label: "By Injury Type",
+  title: "Specific injury types we treat at our JVC clinic.",
+  items: [
+    {
+      title: 'Padel Elbow / Tennis Elbow',
+      subtitle: 'Lateral epicondylitis',
+      description: 'Pain on the outer elbow, often from racquet sports. Manual therapy, dry needling, eccentric loading protocols.'
+    },
+    {
+      title: "Golfer's Elbow",
+      subtitle: 'Medial epicondylitis',
+      description: 'Pain on the inner elbow. Similar treatment approach to lateral epicondylitis with sport-specific modifications.'
+    },
+    {
+      title: 'Rotator Cuff Injuries',
+      subtitle: 'Supraspinatus tendinopathy, partial tears, impingement',
+      description: 'Shoulder pain particularly with overhead movement. Sport-specific in padel, tennis, swimming, gym training.'
+    },
+    {
+      title: 'ACL Injuries & Reconstruction Recovery',
+      subtitle: 'Anterior cruciate ligament',
+      description: 'Major knee ligament injury common in football and pivoting sports. Surgical or conservative pathway; 6–12 month rehab.'
+    },
+    {
+      title: 'Meniscus Injuries',
+      subtitle: 'Medial or lateral meniscus tears',
+      description: 'Cartilage injuries in the knee. Surgical or conservative management. Common across cutting sports and gym training.'
+    },
+    {
+      title: 'Hamstring Strains',
+      subtitle: 'Grade 1, 2, or 3 hamstring tears',
+      description: 'Common in running, football, sprinting. Different rehabilitation by grade and location of injury.'
+    },
+    {
+      title: 'Ankle Sprains',
+      subtitle: 'Lateral ligament sprains, high ankle sprains',
+      description: 'The most common acute sports injury. Proper rehabilitation prevents the chronic instability that often follows poorly managed sprains.'
+    },
+    {
+      title: "Runner's Knee",
+      subtitle: 'Patellofemoral pain syndrome',
+      description: 'Anterior knee pain in runners. Often biomechanical — addressed through specific exercise prescription and gait analysis.'
+    },
+    {
+      title: 'IT Band Syndrome',
+      subtitle: 'Iliotibial band friction syndrome',
+      description: 'Lateral knee pain in runners and cyclists. Soft tissue work combined with hip strengthening protocols.'
+    },
+    {
+      title: 'Achilles Tendinopathy',
+      subtitle: 'Mid-portion or insertional Achilles issues',
+      description: 'Common in runners and active patients. Eccentric loading protocols are evidence-based first-line treatment.'
+    },
+    {
+      title: 'Shin Splints & Stress Fractures',
+      subtitle: 'Medial tibial stress syndrome',
+      description: 'Common in runners. Differential diagnosis from stress fractures is important. Load management protocols.'
+    },
+    {
+      title: 'Lower Back Strains',
+      subtitle: 'Acute and chronic mechanical low back pain',
+      description: 'Common across nearly all sports. Specific protocols depending on sport-specific demands and injury mechanism.'
+    }
+  ],
+  footer: 'Did not find your injury? <a href="https://wa.me/971501234567" className="underline hover:opacity-70 transition-opacity" style={{ color: "rgb(27, 67, 50)" }}>Contact us — we treat the full range of sports injuries →</a>'
+};
+
+export const sportsPhysiotherapyInsurance = {
+  bgColor: "bg-[#F9F7F3]",
+  label: "INSURANCE CLARITY",
+  title: "How insurance actually works for physiotherapy in Dubai.",
+  paragraphs: [
+    "Insurance coverage for physiotherapy in Dubai varies enormously by insurer and plan. Understanding what your specific plan covers — before you commit to a multi-session programme — prevents most billing surprises.",
+    "The major Dubai insurers offering some level of physiotherapy coverage include Daman, AXA, Allianz, Oman Insurance, Now Health, Bupa, MetLife, and several others. Coverage typically varies across these dimensions: annual session limits (some plans allow 6-10 sessions per year; comprehensive plans allow unlimited with medical justification), copay percentages (often 10-30% patient responsibility), referral requirements (some plans require GP referral; others allow direct access), pre-authorisation requirements (some clinics require pre-authorisation for treatment beyond initial sessions), and direct-billing arrangements (some clinics direct-bill insurers; others require you to pay and claim back).",
+    "At Vedara Care, we are direct-billing partners with Daman, AXA, Allianz, Oman Insurance, Now Health, Bupa, and MetLife. The most efficient process for new patients: WhatsApp your insurance card photo to +971 50 123 4567 before booking, and our team confirms exactly what is covered, what pre-authorisation is needed, and what your out-of-pocket cost will be. This typically takes 24-48 hours but prevents the most common billing surprises. For a full cost breakdown, see our <a href=\"/blog/ayurveda-cost-dubai/\">cost guide</a>.",
+    "Some realities worth knowing: most plans require medical justification (specific diagnosis, documented condition) rather than wellness physiotherapy. Most plans cover physiotherapy for diagnosed musculoskeletal conditions (like <a href=\"/conditions/back-pain-ayurveda-dubai/\">back pain</a> or <a href=\"/conditions/arthritis-ayurveda-dubai/\">knee OA</a>), post-surgical recovery, and neurological rehabilitation. Coverage for preventive sports performance work, wellness physiotherapy, or maintenance visits varies. <a href=\"/conditions/postnatal-ayurveda-dubai/\">Postnatal physiotherapy</a> coverage has improved substantially in recent years — most major plans now cover pelvic floor rehabilitation with appropriate clinical justification."
+  ],
+  insurers: ["Daman", "AXA", "Allianz", "Oman Insurance", "Now Health", "Bupa", "MetLife"],
+  sidebarText: [],
+  whatsappNumber: "971501234567"
+};
+
 export const sportsPhysiotherapyRelatedPages = {
   label: "Explore Further",
   title: "Related services and conditions",
@@ -487,7 +570,7 @@ export const sportsPhysiotherapyRelatedPages = {
       description: "For joint conditions including post-injury arthritis and sports-related joint conditions.",
       href: "/conditions/arthritis-ayurveda-dubai/"
     },
-      {
+    {
       title: "Cost of Treatment Guide",
       description: "Transparent pricing across all our services with Dubai market context.",
       href: "/blog/ayurveda-cost-dubai/"

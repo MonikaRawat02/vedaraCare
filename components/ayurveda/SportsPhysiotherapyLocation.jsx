@@ -9,7 +9,7 @@ const SportsPhysiotherapyLocation = () => {
           {/* Image Section */}
           <div className="relative rounded-xl overflow-hidden">
             <img 
-              src="https://images.unsplash.com/photo-1571019613454-1cb2f99b2d8b?w=700&h=800&fit=crop&auto=format" 
+              src="" 
               alt="Vedara Care sports physiotherapy clinic in JVC Dubai"
               className="w-full h-[450px] object-cover"
             />

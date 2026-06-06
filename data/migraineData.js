@@ -52,8 +52,9 @@ export const migrainePillars = {
   description: "The single-pillar approaches — \"just do Shirodhara,\" \"just take this herbal supplement,\" \"just identify your triggers\" — produce limited results because migraine is a multi-factor neurological condition. The 6-month programme works by addressing all four pillars consistently.",
   pillars: [
     {
-      title: "Shirodhara — The Foundational Therapy",
+      title: "<a href='/treatments/shirodhara-dubai/'>Shirodhara — The Foundational Therapy</a>",
       description: "Continuous warm medicated oil poured rhythmically across the forehead for 35 minutes per session. The classical Ayurvedic treatment for headache disorders. For migraine specifically, typically prescribed as 14-21 sessions over the active treatment phase. Oils selected for your pattern — Chandanadi Taila (cooling, for Pitta-pattern migraine), Ksheerabala Taila (for Vata-pattern with stress component), or buttermilk-based Takradhara for inflammatory or hormonal patterns. Most patients describe deep improvement and reduced attack frequency by session 7-10."
+    
     },
     {
       title: "Nasya — The Direct Head Therapy",

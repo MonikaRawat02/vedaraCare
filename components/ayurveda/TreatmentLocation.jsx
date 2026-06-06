@@ -20,12 +20,19 @@ const TreatmentLocation = ({
 }) => {
   const renderHours = () => {
     if (typeof hours === 'string') {
-      return hours.split('<br/>').map((line, index) => (
-        <React.Fragment key={index}>
-          {line}
-          {index < hours.split('<br/>').length - 1 && <br />}
-        </React.Fragment>
-      ));
+      return (
+        <div className="bg-[#F5F1E8] p-4 rounded-lg">
+          <div className="text-xs font-semibold mb-3">Operating Hours</div>
+          <div className="space-y-2">
+            {hours.split('<br/>').map((line, index) => (
+              <div key={index} className="text-sm text-gray-700">
+                {line}
+              </div>
+            ))}
+          </div>
+         
+        </div>
+      );
     }
     if (typeof hours === 'object') {
       return (
@@ -34,20 +41,24 @@ const TreatmentLocation = ({
           <div className="space-y-2">
             {hours.monday && (
               <div className="flex justify-between text-sm">
-                <span className="text-gray-700">Sunday - Thursday</span>
+                <span className="text-gray-700">Monday - Friday</span>
                 <span className="text-gray-700">{hours.monday}</span>
               </div>
             )}
             {hours.saturday && (
               <div className="flex justify-between text-sm">
-                <span className="text-gray-700">Friday - Saturday</span>
+                <span className="text-gray-700">Saturday</span>
                 <span className="text-gray-700">{hours.saturday}</span>
               </div>
             )}
+            {hours.sunday && (
+              <div className="flex justify-between text-sm">
+                <span className="text-gray-700">Sunday</span>
+                <span className="text-gray-700">{hours.sunday}</span>
+              </div>
+            )}
           </div>
-          <div className="mt-3 pt-3 border-t border-gray-200 text-xs text-gray-600">
-            Same-day and evening appointments available. Emergency assessments scheduled within 24 hours.
-          </div>
+          
         </div>
       );
     }
@@ -128,7 +139,7 @@ const TreatmentLocation = ({
             </div>
 
             {/* Operating Hours */}
-            {typeof hours === 'object' && renderHours()}
+            {(typeof hours === 'object' || typeof hours === 'string') && renderHours()}
 
             {/* Nearby Landmarks */}
             {landmarks && landmarks.length > 0 && (
