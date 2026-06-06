@@ -321,9 +321,9 @@ export const hairLossReviews = {
     }
   ],
   stats: [
-    { value: '78%', label: ' Hair loss reviews' },
+    { value: '4.9', label: 'Stars on Google' },
     { value: '86%', label: ' reported visible improvement at 6 months' },
-    { value: '4.8', label: 'Average Rating on Google' }
+    { value: '78%', label: ' Hair loss reviews' }
   ],
   buttonText: 'Read All Hair Loss Reviews →'
 };

@@ -22,6 +22,9 @@ export const ayurvedaHero = {
   },
 };
 
+
+
+
 export const ayurvedaIntro = {
   bgColor: "bg-white",
   label: "About Our Ayurveda Practice",
@@ -125,6 +128,8 @@ export const ayurvedaPhysician = {
   button2Text: "View Full Profile",
   profileLink: "/doctors/dr-priya-menon-ayurveda/"
 };
+
+
 
 export const ayurvedaFaqs = {
   bgColor: "bg-[#FAF8F1]",

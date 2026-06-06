@@ -73,11 +73,7 @@ const SportsPhysiotherapyLocation = () => {
               <div className="text-gray-700">
                 <div>+971 4 123 4567</div>
                 <div className="flex items-center gap-2 mt-1 text-sm">
-                  <svg xmlns="http://www.w3.org/2000/svg" width="14" height="14" viewBox="0 0 24 24" fill="none" stroke="#C9A55A" strokeWidth="2" strokeLinecap="round" strokeLinejoin="round">
-                    <path d="M21 10c0 7-9 13-9 13s-9-6-9-13a9 9 0 0 1 18 0Z" />
-                    <circle cx="12" cy="10" r="3" />
-                  </svg>
-                  +971 50 123 4567 (WhatsApp preferred)
+                  
                 </div>
               </div>
             </div>
