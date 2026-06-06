@@ -130,7 +130,7 @@ export const weightLossPhenotypes = {
       letter: "B",
       title: "Insulin-Resistance Weight Gain",
       subtitle: "Central, visceral, blood-sugar-driven",
-      content: "Weight gain concentrated around the abdomen, often with fasting blood sugar elevation, lipid panel changes, and energy crashes after meals. Strongly linked to PCOS, prediabetes, type 2 diabetes, and metabolic syndrome. Common in South Asian and Middle Eastern populations in Dubai due to genetic predisposition.",
+      content: "Weight gain concentrated around the abdomen, often with fasting blood sugar elevation, lipid panel changes, and energy crashes after meals. Strongly linked to PCOS, prediabetes, type 2<a href=\"/conditions/diabetes-ayurveda-dubai/\"> diabetes</a>, and metabolic syndrome. Common in South Asian and Middle Eastern populations in Dubai due to genetic predisposition.",
       ayurvedicEmphasis: "Virechana-led Panchakarma, insulin-sensitising herbs (Guduchi, Methi, Karela), low-glycaemic dietary protocols"
     },
     {

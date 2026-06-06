@@ -90,7 +90,7 @@ export const pcosBenefits = {
   title: "PCOS treatment in classical Ayurveda has four pillars. Skip any one and outcomes plateau.",
   benefitGroups: [
     {
-      title: "<a href=\"/treatments/panchakarma-dubai/\" class=\"doctor-specialty-link\">Panchakarma</a> Cleansing",
+      title: "Panchakarma Cleansing ",
       description: "The classical detoxification protocol that addresses insulin resistance, lipid metabolism, and hormonal clearance. For PCOS, <a href=\"/treatments/panchakarma-dubai/\" class=\"doctor-specialty-link\">Virechana</a> (medicated purgation targeting liver and Pitta) is the most-prescribed action, often followed by selective Basti (medicated enema). Typically performed once during the programme — usually in month 2 — over 7-14 days. Learn more in our <a href=\"/treatments/panchakarma-dubai/\" class=\"doctor-specialty-link\">Panchakarma guide</a>.",
       benefits: [
         
@@ -221,7 +221,7 @@ export const pcosSymptoms = {
       expected: "Expected meaningful change: Months 2-4"
     },
     {
-      title: "Insulin Resistance and Weight",
+      title: "<a href=\"/conditions/weight-loss-ayurveda-dubai/\" class=\"hover:underline\">Insulin Resistance and Weight</a>",
       content: "Insulin resistance markers (HOMA-IR, fasting insulin) typically show change on bloodwork by month 3-4. Weight changes vary enormously — some patients see meaningful loss by month 4, others not until month 6 or beyond. Body composition (muscle vs fat ratio) usually improves before scale weight does.",
       expected: "Expected meaningful change: Months 3-4"
     },
@@ -236,9 +236,10 @@ export const pcosSymptoms = {
       expected: "Expected meaningful change: Months 4-6"
     },
     {
-      title: "Hair Loss (Scalp)",
+      title: "<a href=\"/conditions/hair-loss-ayurveda-dubai/\" class=\"hover:underline\">Hair Loss (Scalp)</a>",
       content: "Androgenic hair thinning responds to reduced androgen activity but new hair growth is slow. Reduction in shedding typically by month 2-3. Visible regrowth by month 5-6. Long-term hair density restoration takes 8-12 months total.",
       expected: "Expected meaningful change: Months 5-6"
+      
     },
     {
       title: "Mood, Energy, Sleep",

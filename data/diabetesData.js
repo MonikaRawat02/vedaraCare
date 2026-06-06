@@ -216,7 +216,7 @@ export const diabetesProtocol = {
     },
     {
       time: "Month 2",
-      title: "<a href='/treatments/panchakarma-dubai/' class='doctor-specialty-link'>Panchakarma</a> & Active Treatment",
+      title: "Panchakarma & Active Treatment",
       items: [
         "7-14 day <a href='/treatments/panchakarma-dubai/' class='doctor-specialty-link'><a href='/treatments/panchakarma-dubai/' class='doctor-specialty-link'>Panchakarma</a></a> programme (typically <a href='/treatments/panchakarma-dubai/' class='doctor-specialty-link'>Virechana</a>-led)",
         "5-7 day at-clinic preparation with Snehapana, Abhyanga, Swedana",

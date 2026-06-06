@@ -42,7 +42,9 @@ export const pediatricPhysiotherapyTeam = {
       specialties: ["Infants ", "Developmental ", "Scoliosis"],
       experience: "Languages: English, Arabi.",
       image: "",
-      alt: "Dr. Sarah Johnson, DPT, paediatric physiotherapist at Vedara Care Dubai"
+      alt: "Dr. Sarah Johnson, DPT paediatric physiotherapy specialist Vedara Care JVC Dubai",
+      profileHref: "/physiotherapists/dr-sarah-johnson/",
+      profileText: "View profile"
     },
     {
       name: "Dr. Priya Sharma, DPT",
@@ -50,7 +52,9 @@ export const pediatricPhysiotherapyTeam = {
       specialties: ["Adolescents", "Sports", "School-Age"],
       experience: "Languages: English, Arabi.",
       image: "",
-      alt: "Dr. Priya Sharma, sports physiotherapist at Vedara Care Dubai"
+      alt: "Dr. Priya Sharma, DPT paediatric physiotherapy specialist Vedara Care JVC Dubai",
+      profileHref: "/physiotherapists/dr-priya-sharma/",
+      profileText: "View profile"
     },
     {
       name: "Dr. Maya Al-Rashid, DPT",
@@ -58,7 +62,9 @@ export const pediatricPhysiotherapyTeam = {
       specialties: ["School-Age Development", "Cerebral Palsy", "Neurological", "Infants"],
       experience: "Languages: English, Arabi.",
       image: "",
-      alt: "Dr. Maya Al-Rashid, school-age physiotherapist at Vedara Care Dubai"
+      alt: "Dr. Maya Al-Rashid, DPT paediatric physiotherapy specialist Vedara Care JVC Dubai",
+      profileHref: "/physiotherapists/dr-maya-al-rashid/",
+      profileText: "View profile"
     },
       {
       name: "Dr. Emma Williams, DPT",
@@ -66,23 +72,33 @@ export const pediatricPhysiotherapyTeam = {
       specialties: ["School-Age Development", "Scoliosis", "Postural", "Adolescents"],
       experience: "Languages: English, Arabi.",
       image: "",
-      alt: "Dr. Emma Williams, school-age physiotherapist at Vedara Care Dubai"
+      alt: "Dr. Emma Williams, DPT paediatric physiotherapy specialist Vedara Care JVC Dubai",
+      profileHref: "/physiotherapists/dr-emma-williams/",
+      profileText: "View profile"
     }
   ]
 };
 
 
 export const pediatricPhysiotherapyInsurance = {
-  bgColor: "bg-[#F5F1E8]",
-  label: "INSURANCE CLARITY8980",
-  title: "How insurance actually works for physiotherapy in Dubai.",
-  content: [
-    "Insurance coverage for physiotherapy in Dubai varies enormously by insurer and plan. Understanding what your specific plan covers — before you commit to a multi-session programme — prevents most billing surprises.",
-    "The major Dubai insurers offering some level of physiotherapy coverage include Daman, AXA, Allianz, Oman Insurance, Now Health, Bupa, and MetLife. Coverage typically varies across these dimensions: annual session limits (some plans allow 6-10 sessions per year; comprehensive plans allow unlimited with medical justification), copay percentages (often 10-30% patient responsibility), referral requirements (some plans require GP referral; others allow direct access), pre-authorisation requirements (some clinics require pre-authorisation for treatment beyond initial sessions), and direct-billing arrangements (some clinics direct-bill insurers; others require you to pay and claim back).",
-    "At Vedara Care, we are direct-billing partners with Daman, AXA, Allianz, Oman Insurance, Now Health, Bupa, and MetLife. The most efficient process for new patients: WhatsApp your insurance card photo to [number] before booking, and our team confirms exactly what is covered, what pre-authorisation is needed, and what your out-of-pocket cost will be. This typically takes 24-48 hours but prevents the most common billing surprises. For a full cost breakdown, see our <a href=\"/blog/ayurveda-cost-dubai/\">cost guide</a>.",
-    "Some realities worth knowing: most plans require medical justification (specific diagnosis, documented condition) rather than wellness physiotherapy. Most plans cover physiotherapy for diagnosed musculoskeletal conditions (like <a href=\"/conditions/back-pain-ayurveda-dubai/\">back pain</a> or <a href=\"/conditions/arthritis-ayurveda-dubai/\">knee OA</a>), post-surgical recovery, and neurological rehabilitation. Coverage for preventive sports performance work, wellness physiotherapy, or maintenance visits varies. <a href=\"/conditions/postnatal-ayurveda-dubai/\">Postnatal physiotherapy</a> coverage has improved substantially in recent years — most major plans now cover pelvic floor rehabilitation with appropriate clinical justification."
+  bgColor: "bg-[#F9F7F3]",
+  label: "INSURANCE COVERAGE",
+  title: "How insurance works for paediatric physiotherapy in Dubai.",
+  paragraphs: [
+    "Paediatric physiotherapy coverage in Dubai insurance plans varies by plan and condition. Generally, coverage is strongest when there is a clear medical diagnosis — particularly when the referral comes from a paediatrician.",
+    "What is typically covered well: paediatric physiotherapy with paediatrician referral and documented condition (developmental delay, cerebral palsy, scoliosis, post-surgical conditions, post-injury rehabilitation). Annual session limits vary substantially — some plans allow 12-20 sessions annually; comprehensive plans allow more with continued medical justification.",
+    "What may have limits: ongoing maintenance physiotherapy for chronic conditions (often capped annually), preventive or developmental support without specific diagnosed condition, sports physiotherapy for adolescent recreational athletes without specific injury, postural physiotherapy without clear medical justification.",
+    "For children with significant conditions (cerebral palsy, muscular dystrophy, scoliosis requiring ongoing care), we help families navigate insurance pre-authorisation, annual coverage planning, and appeal processes when coverage is initially denied. Our experience with the major insurers — Daman, AXA, Allianz, Oman Insurance, Now Health, Bupa, MetLife — helps families maximise their child's coverage.",
+    "WhatsApp your insurance card to +971 50 123 4567 before booking, along with any paediatrician referral letter and brief description of your child's concern. Our team will confirm exact coverage and out-of-pocket cost before you commit to a programme."
   ],
-  insurers: ["Daman", "AXA", "Allianz", "Oman Insurance", "Now Health", "Bupa", "MetLife"]
+  insurers: ["Daman", "AXA", "Allianz", "Oman Insurance", "Now Health", "Bupa", "MetLife"],
+  sidebarText: [
+    "Some children's hospitals and paediatric specialists in Dubai also refer to us for outpatient physiotherapy. WhatsApp +971 50 123 4567 for coverage confirmation."
+
+,
+    
+  ],
+  whatsappNumber: "971501234567"
 };
 
 
@@ -100,8 +116,8 @@ export const pediatricPhysiotherapyMechanism = {
     "<strong>Sports Academies and Coaches.</strong></br>For adolescent athletes from sports academies (football academies, gymnastics academies, swimming academies common in Dubai), we coordinate with coaches and academy medical staff when appropriate. Return-to-sport decisions, training load modifications, and prevention programmes benefit from coach awareness.",
     "<strong>Other Therapists</strong> </br>For children with speech therapy, behavioural therapy, or other specialised support, we coordinate as needed to ensure consistent goals across the care team." ],
   // quote: "The right physiotherapist for your condition exists somewhere in Dubai. Choosing well at the outset matters more than getting started fast.",
-  image: "/images/physiotherapy-dubai-treatment-room.webp",
-  alt: "Modern physiotherapy treatment room with specialised equipment at Vedara Care JVC",
+  image: "/images/paediatric-physio-vedara-jvc.webp",
+  alt: "Paediatric physiotherapy coordination with paediatricians schools Vedara Care JVC",
   footer:""
 };
 
@@ -120,13 +136,49 @@ export const pediatricPhysiotherapyMechanism2 = {
     "<strong>The child's experience matters</strong></br>If physiotherapy is traumatic, painful, or boring, the child stops cooperating — often refusing to come back. Effective paediatric physiotherapy requires building genuine rapport with the child, finding their interests, respecting their pace, and making the experience genuinely worthwhile from their perspective. Children remember physiotherapy experiences for years; the way we treat children in our clinic shapes their relationship with healthcare for life.",
     "<strong>Coordination with the broader care team</strong> </br>Children with significant conditions typically have multiple healthcare providers — paediatrician, paediatric orthopaedic surgeon if surgical involvement, sometimes occupational therapist, speech therapist, special needs support at school. Effective paediatric physiotherapy requires understanding how our role fits into the broader care plan and communicating regularly with the team. We coordinate with paediatricians, schools (with parental consent), and other therapists as needed." ],
   quote: "A great paediatric physiotherapist makes the child want to come back next week. Everything else follows from that.",
-  image: "/images/physiotherapy-dubai-treatment-room.webp",
-  alt: "Modern physiotherapy treatment room with specialised equipment at Vedara Care JVC",
+  image: "/images/paediatric-therapy-play-based.webp",
+  alt: "Therapeutic play in paediatric physiotherapy at Vedara Care JVC",
   footer:""
 };
 
 
-
+export const pediatricPhysiotherapySportsInjuryTypes ={
+  label: "Conditions We Treat",
+  title: "Specific paediatric conditions at our JVC clinic.",
+  items: [
+    {
+      title: 'Developmental Concerns',
+      description: 'Gross motor delay, fine motor delay, walking pattern concerns (toe walking, in-toeing, out-toeing), balance and coordination problems, developmental coordination disorder (DCD), hypotonia, premature infant developmental support, achieving developmental milestones late.',
+      age: 'Typical age range: 6 months - 7 years'
+    },
+    {
+      title: 'Neurological & Genetic Conditions',
+      description: 'Cerebral palsy (all types and severities), Down syndrome physiotherapy support, brachial plexus injury, spina bifida, muscular dystrophy, genetic conditions affecting movement, neurodevelopmental conditions.',
+      age: 'Typical age range: Birth - 18 years'
+    },
+    {
+      title: 'Spinal & Postural Conditions',
+      description: 'Scoliosis (adolescent idiopathic, congenital, neuromuscular), kyphosis, lordosis, torticollis (congenital muscular and acquired), postural concerns from device use, neck and back pain from school posture, spondylolysis in young athletes.',
+      age: 'Typical age range: Infants (torticollis) to adolescents (scoliosis, postural)'
+    },
+    {
+      title: 'Sports & Adolescent Sports Injuries',
+      description: 'Osgood-Schlatter disease, Sever\'s disease, sports injuries from academy training (football, gymnastics, tennis, swimming), apophysitis, stress fractures, growth plate injuries, return-to-sport after injury, sports-related back pain in young athletes.',
+      age: 'Typical age range: 8 - 18 years'
+    },
+    {
+      title: 'Musculoskeletal & Acute Injuries',
+      description: 'Post-fracture rehabilitation, post-cast removal mobility restoration, ankle sprains, knee injuries, wrist injuries, back pain in young athletes, hypermobility-related pain, acute trauma care.',
+      age: 'Typical age range: All paediatric ages'
+    },
+    {
+      title: 'Skull Shape & Infant Concerns',
+      description: 'Plagiocephaly (positional flat head syndrome), brachycephaly, infant positioning concerns, neonatal intensive care follow-up, early developmental support.',
+      age: 'Typical age range: 0-12 months primarily'
+    }
+  ],
+  footer: 'Did not find your child\'s condition? <a href="https://wa.me/" className="underline hover:opacity-70 transition-opacity" style={{ color: "rgb(27, 67, 50)" }}>Contact us — we treat the full range of paediatric physiotherapy conditions →</a>'
+};
 
 
 
@@ -198,16 +250,20 @@ export const pediatricPhysiotherapyLocation = {
   bgColor: "bg-[#FFFFFF]",
   label: "VISIT US",
   title: "A welcoming clinic for children of all ages.",
-   address: "Jumeirah Village Circle (JVC)<br/>Dubai, United Arab Emirates<br/>Walking distance from Circle Mall",
+  address: "Jumeirah Village Circle (JVC)<br/>Dubai, United Arab Emirates<br/>Walking distance from Circle Mall",
   mapEmbed: "https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d3610.123456789!2d55.24!3d25.04!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x0!2sVedara%20Care!5e0!3m2!1sen!2sae!4v1234567890",
-  phone:"+971 4 423 4567",
-  whatsapp:"+9971 50 123 4567",
-   hours: "Monday - Friday: 9:00 AM - 9:00 PM<br/>Saturday: 9:00 AM - 6:00 PM<br/>Sunday: 10:00 AM - 4:00 PM",
+  phone: "+971 4 423 4567",
+  whatsapp: "+971 50 123 4567",
+  hours: {
+    monday: "9:00 AM - 9:00 PM",
+    saturday: "9:00 AM - 6:00 PM",
+    sunday: "10:00 AM - 6:00 PM"
+  },
  
   description: "Our JVC clinic has a dedicated paediatric area with age-appropriate equipment, sensory-friendly elements, and a small waiting area suitable for children and siblings. Free parking. Easy access from JVC, JVT, Al Barsha South, and across Dubai. Particularly convenient for JSS Private School families — schedule around school pickup. Convenient for Circle Mall family time.",
-  mapAlt: "Vedara Care JVC physiotherapy clinic location",
   image: "/images/vedara-care-clinic-exterior.webp",
-  alt: "Vedara Care Polyclinic exterior, Jumeirah Village Circle Dubai"
+  alt: "Vedara Care Polyclinic exterior, Jumeirah Village Circle Dubai",
+  buttonText: "Book a Paediatric Assessment"
 };
 
 export const pediatricPhysiotherapyFinalCTA = {

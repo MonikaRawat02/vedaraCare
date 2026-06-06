@@ -1,16 +1,75 @@
 import React from 'react';
-import { MessageCircle } from 'lucide-react';
-import Link from 'next/link';
 
 const PhysiotherapyInsurance = ({
-  bgColor = "bg-[#F5F1E8]",
+  bgColor = "bg-[#F9F7F3]",
   label = "",
   title = "",
-  content = [],
-  insurers = []
+  paragraphs = [],
+  content = [], // For backward compatibility
+  insurers = [],
+  sidebarText = [],
+  whatsappNumber = "971501234567"
 }) => {
+  // Use paragraphs or content for backward compatibility
+  const displayParagraphs = paragraphs.length > 0 ? paragraphs : content;
+
   return (
-   <section class="bg-[#f9f7f3] py-24 px-4" data-fg-d3bl227="0.8:1.66931:/src/app/App.tsx:390:7:26510:3980:e:section:e" data-fgid-d3bl227=":r72:"><div class="max-w-7xl mx-auto" data-fg-d3bl228="0.8:1.66931:/src/app/App.tsx:391:9:26564:3909:e:div:ete" data-fgid-d3bl228=":r73:"><div class="text-center mb-12" data-fg-d3bl229="0.8:1.66931:/src/app/App.tsx:392:11:26610:286:e:div:ete" data-fgid-d3bl229=":r74:"><div class="text-[#d4af37] text-sm tracking-wider mb-4" data-fg-d3bl230="0.8:1.66931:/src/app/App.tsx:393:13:26658:83:e:div:t" data-fgid-d3bl230=":r75:">INSURANCE CLARITY</div><h2 class="text-4xl font-serif" data-fg-d3bl232="0.8:1.66931:/src/app/App.tsx:394:13:26754:125:e:h2:t" data-fgid-d3bl232=":r76:">How insurance actually works for physiotherapy in Dubai.</h2></div><div class="grid md:grid-cols-3 gap-12" data-fg-d3bl234="0.8:1.66931:/src/app/App.tsx:399:11:26908:3550:e:div:ete" data-fgid-d3bl234=":r77:"><div class="md:col-span-2 space-y-6 text-gray-700" data-fg-d3bl235="0.8:1.66931:/src/app/App.tsx:400:13:26965:2208:e:div:etetete" data-fgid-d3bl235=":r78:"><p class="text-lg" data-fg-d3bl236="0.8:1.66931:/src/app/App.tsx:401:15:27035:272:e:p:t" data-fgid-d3bl236=":r79:">Insurance coverage for physiotherapy in Dubai varies enormously by insurer and plan. Understanding what your specific plan covers — before you commit to a multi-session programme — prevents most billing surprises.</p><p data-fg-d3bl238="0.8:1.66931:/src/app/App.tsx:405:15:27323:730:e:p:t" data-fgid-d3bl238=":r7a:">The major Dubai insurers offering some level of physiotherapy coverage include Daman, AXA, Allianz, Oman Insurance, Now Health, Bupa, MetLife, and several others. Coverage typically varies across these dimensions: annual session limits (some plans allow 6-10 sessions per year; comprehensive plans allow unlimited with medical justification), copay percentages (often 10-30% patient responsibility), referral requirements (some plans require GP referral; others allow direct access), pre-authorisation requirements (some plans require pre-authorisation for treatment beyond initial sessions), and direct-billing arrangements (some clinics direct-bill insurers; others require pay-and-claim).</p><p data-fg-d3bl240="0.8:1.66931:/src/app/App.tsx:409:15:28069:470:e:p:t" data-fgid-d3bl240=":r7b:">At Vedara Care, we are direct-billing partners with Daman, AXA, Allianz, Oman Insurance, Now Health, Bupa, and MetLife. The most efficient process for new patients: WhatsApp your insurance card photo to [number] before booking, and our team confirms exactly what is covered, what pre-authorisation is needed, and what your out-of-pocket cost will be. This typically takes 24-48 hours but prevents the most common billing surprises.</p><p data-fg-d3bl242="0.8:1.66931:/src/app/App.tsx:413:15:28555:599:e:p:t" data-fgid-d3bl242=":r7c:">Some realities worth knowing: most plans require medical justification (specific diagnosis, documented condition) rather than wellness reasons. Most plans cover physiotherapy for diagnosed musculoskeletal conditions, post-surgical recovery, and neurological rehabilitation. Coverage for preventive sports performance work, wellness physiotherapy, or maintenance care is less consistent. Postnatal physiotherapy coverage has improved substantially in recent years — most major plans now cover pelvic floor rehabilitation with appropriate clinical justification.</p></div><div class="bg-white p-6 rounded-lg border-2 border-[#d4af37]" data-fg-d3bl244="0.8:1.66931:/src/app/App.tsx:418:13:29187:1254:e:div:etetete" data-fgid-d3bl244=":r7d:"><div class="text-[#d4af37] text-sm tracking-wider mb-6" data-fg-d3bl245="0.8:1.66931:/src/app/App.tsx:419:15:29269:93:e:div:t" data-fgid-d3bl245=":r7e:">OUR DIRECT-BILLING PARTNERS</div><div class="space-y-3 mb-6" data-fg-d3bl247="0.8:1.66931:/src/app/App.tsx:420:15:29377:598:e:div:x" data-fgid-d3bl247=":r7f:"><div class="flex items-center gap-3 pb-3 border-b border-gray-200" data-fg-d3bl249="0.8:1.66931:/src/app/App.tsx:422:19:29546:388:e:div:ete" data-fgid-d3bl249=":r7g:"><div class="w-12 h-12 bg-gray-100 rounded flex items-center justify-center" data-fg-d3bl250="0.8:1.66931:/src/app/App.tsx:423:21:29646:196:e:div:e" data-fgid-d3bl250=":r7h:"><span class="text-xs text-gray-500" data-fg-d3bl251="0.8:1.66931:/src/app/App.tsx:424:23:29749:66:e:span:x" data-fgid-d3bl251=":r7i:">D</span></div><span class="font-medium" data-fg-d3bl253="0.8:1.66931:/src/app/App.tsx:426:21:29863:46:e:span:x" data-fgid-d3bl253=":r7j:">Daman</span></div><div class="flex items-center gap-3 pb-3 border-b border-gray-200" data-fg-d3bl249="0.8:1.66931:/src/app/App.tsx:422:19:29546:388:e:div:ete" data-fgid-d3bl249=":r7k:"><div class="w-12 h-12 bg-gray-100 rounded flex items-center justify-center" data-fg-d3bl250="0.8:1.66931:/src/app/App.tsx:423:21:29646:196:e:div:e" data-fgid-d3bl250=":r7l:"><span class="text-xs text-gray-500" data-fg-d3bl251="0.8:1.66931:/src/app/App.tsx:424:23:29749:66:e:span:x" data-fgid-d3bl251=":r7m:">A</span></div><span class="font-medium" data-fg-d3bl253="0.8:1.66931:/src/app/App.tsx:426:21:29863:46:e:span:x" data-fgid-d3bl253=":r7n:">AXA</span></div><div class="flex items-center gap-3 pb-3 border-b border-gray-200" data-fg-d3bl249="0.8:1.66931:/src/app/App.tsx:422:19:29546:388:e:div:ete" data-fgid-d3bl249=":r7o:"><div class="w-12 h-12 bg-gray-100 rounded flex items-center justify-center" data-fg-d3bl250="0.8:1.66931:/src/app/App.tsx:423:21:29646:196:e:div:e" data-fgid-d3bl250=":r7p:"><span class="text-xs text-gray-500" data-fg-d3bl251="0.8:1.66931:/src/app/App.tsx:424:23:29749:66:e:span:x" data-fgid-d3bl251=":r7q:">A</span></div><span class="font-medium" data-fg-d3bl253="0.8:1.66931:/src/app/App.tsx:426:21:29863:46:e:span:x" data-fgid-d3bl253=":r7r:">Allianz</span></div><div class="flex items-center gap-3 pb-3 border-b border-gray-200" data-fg-d3bl249="0.8:1.66931:/src/app/App.tsx:422:19:29546:388:e:div:ete" data-fgid-d3bl249=":r7s:"><div class="w-12 h-12 bg-gray-100 rounded flex items-center justify-center" data-fg-d3bl250="0.8:1.66931:/src/app/App.tsx:423:21:29646:196:e:div:e" data-fgid-d3bl250=":r7t:"><span class="text-xs text-gray-500" data-fg-d3bl251="0.8:1.66931:/src/app/App.tsx:424:23:29749:66:e:span:x" data-fgid-d3bl251=":r7u:">O</span></div><span class="font-medium" data-fg-d3bl253="0.8:1.66931:/src/app/App.tsx:426:21:29863:46:e:span:x" data-fgid-d3bl253=":r7v:">Oman Insurance</span></div><div class="flex items-center gap-3 pb-3 border-b border-gray-200" data-fg-d3bl249="0.8:1.66931:/src/app/App.tsx:422:19:29546:388:e:div:ete" data-fgid-d3bl249=":r80:"><div class="w-12 h-12 bg-gray-100 rounded flex items-center justify-center" data-fg-d3bl250="0.8:1.66931:/src/app/App.tsx:423:21:29646:196:e:div:e" data-fgid-d3bl250=":r81:"><span class="text-xs text-gray-500" data-fg-d3bl251="0.8:1.66931:/src/app/App.tsx:424:23:29749:66:e:span:x" data-fgid-d3bl251=":r82:">N</span></div><span class="font-medium" data-fg-d3bl253="0.8:1.66931:/src/app/App.tsx:426:21:29863:46:e:span:x" data-fgid-d3bl253=":r83:">Now Health</span></div><div class="flex items-center gap-3 pb-3 border-b border-gray-200" data-fg-d3bl249="0.8:1.66931:/src/app/App.tsx:422:19:29546:388:e:div:ete" data-fgid-d3bl249=":r84:"><div class="w-12 h-12 bg-gray-100 rounded flex items-center justify-center" data-fg-d3bl250="0.8:1.66931:/src/app/App.tsx:423:21:29646:196:e:div:e" data-fgid-d3bl250=":r85:"><span class="text-xs text-gray-500" data-fg-d3bl251="0.8:1.66931:/src/app/App.tsx:424:23:29749:66:e:span:x" data-fgid-d3bl251=":r86:">B</span></div><span class="font-medium" data-fg-d3bl253="0.8:1.66931:/src/app/App.tsx:426:21:29863:46:e:span:x" data-fgid-d3bl253=":r87:">Bupa</span></div><div class="flex items-center gap-3 pb-3 border-b border-gray-200" data-fg-d3bl249="0.8:1.66931:/src/app/App.tsx:422:19:29546:388:e:div:ete" data-fgid-d3bl249=":r88:"><div class="w-12 h-12 bg-gray-100 rounded flex items-center justify-center" data-fg-d3bl250="0.8:1.66931:/src/app/App.tsx:423:21:29646:196:e:div:e" data-fgid-d3bl250=":r89:"><span class="text-xs text-gray-500" data-fg-d3bl251="0.8:1.66931:/src/app/App.tsx:424:23:29749:66:e:span:x" data-fgid-d3bl251=":r8a:">M</span></div><span class="font-medium" data-fg-d3bl253="0.8:1.66931:/src/app/App.tsx:426:21:29863:46:e:span:x" data-fgid-d3bl253=":r8b:">MetLife</span></div></div><p class="text-sm text-gray-600 mb-4" data-fg-d3bl255="0.8:1.66931:/src/app/App.tsx:430:15:29990:163:e:p:t" data-fgid-d3bl255=":r8c:">WhatsApp your insurance card to [number] before booking to confirm specific coverage.</p><button class="w-full bg-[#25D366] text-white px-6 py-3 rounded-md hover:bg-[#20bd5a] transition-colors flex items-center justify-center gap-2" data-fg-d3bl257="0.8:1.66931:/src/app/App.tsx:433:15:30168:254:e:button:et" data-fgid-d3bl257=":r8d:"><svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" class="lucide lucide-message-circle w-5 h-5" data-fg-d3bl258="0.8:1.66931:/src/app/App.tsx:434:17:30333:37:e:MessageCircle::::::DDY7" data-fgid-d3bl258=":r8e:"><path d="M7.9 20A9 9 0 1 0 4 16.1L2 22Z"></path></svg>WhatsApp Us</button></div></div></div></section>
+    <section className={bgColor} style={{ padding: '96px 24px' }}>
+      <div className="max-w-7xl mx-auto">
+        <div className="text-center mb-12">
+          <div className="text-sm tracking-wider mb-4" style={{ color: '#d4af37' }}>
+            {label}
+          </div>
+          <h2 className="text-4xl" style={{ fontFamily: 'var(--font-display, Fraunces, Georgia, serif)', color: 'rgb(26, 26, 26)' }}>
+            {title}
+          </h2>
+        </div>
+        <div className="grid md:grid-cols-3 gap-12">
+          <div className="md:col-span-2 space-y-6 text-gray-700">
+            {displayParagraphs.map((paragraph, index) => (
+              <p 
+                key={index} 
+                className={index === 0 ? 'text-lg' : ''} 
+                style={{ color: 'rgb(107, 107, 107)', lineHeight: '1.8' }}
+                dangerouslySetInnerHTML={{ __html: paragraph }}
+              />
+            ))}
+          </div>
+          <div className="bg-white p-8 rounded-lg" style={{ borderTop: '4px solid #d4af37' }}>
+            <h3 className="text-lg font-semibold mb-6 text-gray-800">
+              OUR DIRECT-BILLING INSURERS
+            </h3>
+            <ul className="space-y-3 mb-8">
+              {insurers.map((insurer, index) => (
+                <li key={index} className="flex items-center gap-3">
+                  <svg className="w-5 h-5" style={{ color: 'rgb(26, 77, 46)' }} fill="currentColor" viewBox="0 0 24 24">
+                    <path d="M9 16.17L4.83 12l-1.42 1.41L9 19 21 7l-1.41-1.41L9 16.17z"></path>
+                  </svg>
+                  <span style={{ color: 'rgb(107, 107, 107)' }}>{insurer}</span>
+                </li>
+              ))}
+            </ul>
+            {sidebarText.map((text, index) => (
+              <p key={index} className="text-sm text-gray-600 mb-6">
+                {text}
+              </p>
+            ))}
+            <a
+              href={`https://wa.me/${whatsappNumber}`}
+              className="w-full text-white font-semibold py-3 px-6 rounded-lg flex items-center justify-center gap-2 transition-colors"
+              style={{ backgroundColor: '#25d366' }}
+              onMouseEnter={(e) => e.currentTarget.style.backgroundColor = '#128c7e'}
+              onMouseLeave={(e) => e.currentTarget.style.backgroundColor = '#25d366'}
+            >
+              <svg className="w-5 h-5" fill="currentColor" viewBox="0 0 24 24">
+                <path d="M17.472 14.382c-.297-.149-1.758-.867-2.03-.967-.273-.099-.471-.148-.67.15-.197.297-.767.966-.94 1.164-.173.199-.347.223-.644.075-.297-.15-1.255-.463-2.39-1.475-.883-.788-1.48-1.761-1.653-2.059-.173-.297-.018-.458.13-.606.134-.133.298-.347.446-.52.149-.174.198-.298.298-.497.099-.198.05-.371-.025-.52-.075-.149-.669-1.612-.916-2.207-.242-.579-.488-.492-.67-.5h-.572c-.198 0-.52.074-.792.372s-1.04 1.016-1.04 2.479 1.065 2.879 1.213 3.078c.148.198 2.096 3.2 5.077 4.487.709.306 1.262.489 1.694.625.712.227 1.36.195 1.871.118.571-.085 1.758-.719 2.006-1.413.248-.694.248-1.289.173-1.413-.074-.124-.272-.198-.57-.347m-5.421 7.403h-.004a9.87 9.87 0 01-5.031-1.378l-.361-.214-3.741.982.998-3.648-.235-.374a9.86 9.86 0 01-1.51-5.26c.001-5.45 4.436-9.884 9.888-9.884 2.64 0 5.122 1.03 6.988 2.898a9.823 9.823 0 01 2.893 6.994c-.003 5.45-4.437 9.884-9.885 9.884m8.413-18.297A11.815 11.815 0 0012.05 0C5.495 0 .16 5.335.157 11.892c0 2.096.547 4.142 1.588 5.945L.057 24l6.305-1.654a11.882 11.882 0 005.683 1.448h.005c6.554 0 11.89-5.335 11.893-11.893a11.821 11.821 0 00-3.48-8.413z"></path>
+              </svg>
+              WhatsApp Us
+            </a>
+          </div>
+        </div>
+      </div>
+    </section>
   );
 };
 

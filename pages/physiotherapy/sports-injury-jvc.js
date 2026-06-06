@@ -28,7 +28,8 @@ import {
   sportsPhysiotherapyFaqs,
   sportsPhysiotherapyLocation,
   sportsPhysiotherapyFinalCTA,
-  sportsPhysiotherapyRelatedPages
+  sportsPhysiotherapyRelatedPages,
+  sportsPhysiotherapyInjuryTypes
 } from '../../data/sportsPhysiotherapyData';
 
 const SportsInjuryJvc = () => {
@@ -484,7 +485,7 @@ const SportsInjuryJvc = () => {
         <SportsProtocols />
         
         {/* H2: Specific injury types we treat at our JVC clinic. */}
-        <SportsInjuryTypes />
+        <SportsInjuryTypes {...sportsPhysiotherapyInjuryTypes} />
         
         {/* H2: How sports injury physiotherapy actually works at our JVC clinic. */}
         <SportsInjuryMechanism />

@@ -286,7 +286,7 @@ export const homeJournal = {
       description: "How traditional medicine addresses hormonal imbalance when Western approaches stall.",
       author: "Dr. Anjali Kumar",
       readTime: "8 min read",
-      image: "pcos-article"
+      image: "pcos-article",
     },
     {
       category: "PHYSIOTHERAPY",

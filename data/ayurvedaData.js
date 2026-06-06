@@ -6,7 +6,7 @@ export const ayurvedaHero = {
   label: "Ayurveda Clinic in Jumeirah Village Circle, Dubai",
   title: "Classical Ayurveda,\npractised in the heart of JVC.",
   description: "A DHA-licensed Ayurveda clinic in Jumeirah Village Circle, Dubai. BAMS-qualified Ayurvedic physicians offering authentic Panchakarma, Abhyanga, Shirodhara and personalised dosha-based treatment for chronic conditions, stress, and long-term wellbeing.",
-  image: "https://images.unsplash.com/photo-1600334089648-b0d9d3028eb2?q=80&w=2070&auto=format&fit=crop",
+  image: "",
   alt: "BAMS-qualified Ayurvedic doctor performing pulse diagnosis (Nadi Pariksha) on a patient at Vedara Care Ayurveda clinic in JVC, Dubai",
   primaryCTA: "Book an Ayurvedic Consultation",
   secondaryCTA: "Chat on WhatsApp",
@@ -20,7 +20,7 @@ export const ayurvedaHero = {
     title: "Led by BAMS-qualified physicians",
     subtitle: "DHA Licensed · 15+ years average experience"
   },
-  image: "https://images.unsplash.com/photo-1600334089648-b0d9d3028eb2?q=80&w=2070&auto=format&fit=crop"
+  image: ""
 };
 
 export const ayurvedaIntro = {
@@ -114,7 +114,7 @@ export const ayurvedaPhysician = {
   name: "Dr. Priya Menon",
   qualification: "BAMS · MD (Ayurveda) · DHA Licensed",
   description: "Dr. Menon has practised classical Ayurveda for 17 years, with clinical training at the Government Ayurveda College, Thiruvananthapuram, and over nine years in Dubai. At Vedara Care she leads our Ayurveda department, with a focus on chronic conditions where conventional care has plateaued - particularly PCOS, chronic pain, and migraine. Patients describe her consultations as the longest and most thorough they have had in Dubai.",
-  image: "https://images.unsplash.com/photo-1594824476967-48c8b964273f?w=720&h=900&fit=crop&auto=format",
+  image: "",
   alt: "Dr. Priya Menon, BAMS-qualified Ayurvedic physician and DHA-licensed doctor at Vedara Care Polyclinic, JVC Dubai",
   stats: [
     { value: "15+", label: "Years of Practice" },
@@ -711,7 +711,7 @@ export const dubaiHubApplications = {
     "Chronic back pain and sciatica",
     "PCOS and hormonal imbalance",
     "<a href=\"/conditions/migraine-ayurveda-dubai/\" class=\"hover:underline\">Migraine and headache disorders</a>",
-    "Hair loss (Khalitya)",
+    "<a href=\"/conditions/hair-loss-ayurveda-dubai/\" class=\"hover:underline\">Hair loss (Khalitya)</a>",
     "Postnatal recovery (Sutika Paricharya)",
     "<a href=\"/conditions/stress-anxiety-ayurveda-dubai/\" class=\"hover:underline\">Stress, anxiety, burnout</a>",
     "Knee pain and osteoarthritis",

@@ -28,9 +28,11 @@ const PanchakarmaPhases = ({
                 <span className="text-[40px] md:text-[48px] font-serif font-normal text-[#C9A961] leading-none block">
                   {phase.label}
                 </span>
+                
                 <h3 className="text-[32px] md:text-[38px] font-serif font-normal text-[#1A1A1A] leading-tight">
                   {phase.title}
                 </h3>
+                
               </div>
 
               <div className="space-y-6">
