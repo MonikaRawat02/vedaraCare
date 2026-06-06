@@ -293,7 +293,7 @@ export const neurologicalDubaiReviews = {
   stats: [
     { value: "4.9", label: "stars on Google" },
     { value: "75+", label: "neurological physiotherapy reviews" },
-    { value: "94%", label: "recommend to others facing neurological conditions" }
+    { value: "97%", label: "of families would recommend to others facing neurological conditions" }
   ],
   buttonText: "Read All Neurological Reviews"
 };

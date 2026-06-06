@@ -374,15 +374,16 @@ export const WhereWeWork = ({ data }) => {
             </div>
           </div>
 
-          <div className="aspect-square lg:aspect-auto lg:h-[800px] bg-gradient-to-br from-[#C4A962] to-[#887355] rounded-lg relative overflow-hidden">
-            <div className="absolute inset-0 flex flex-col items-center justify-center text-white/40 gap-4">
-              <MapPin size={48} strokeWidth={1.5} />
-              <div className="text-center">
-                <h3 className="text-[24px] font-serif font-medium text-white mb-1">Map Placeholder</h3>
-                <p className="text-[14px] font-sans uppercase tracking-widest text-white/60">JVC, Dubai Location</p>
-              </div>
-            </div>
-          </div>
+          <div className="aspect-square lg:aspect-auto lg:h-[800px] rounded-lg overflow-hidden">
+  <iframe
+    className="w-full h-full"
+    src="https://www.google.com/maps?q=Jumeirah+Village+Circle+Dubai&output=embed"
+    allowFullScreen
+    loading="lazy"
+    referrerPolicy="no-referrer-when-downgrade"
+    title="Vedara Care JVC Dubai Location"
+  />
+</div>
         </div>
       </div>
     </section>
