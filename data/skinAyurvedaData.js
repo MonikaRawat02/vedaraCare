@@ -371,7 +371,7 @@ export const skinReviews = {
     }
   ],
   stats: [
-    { label: "Skin Patients Treated", value: "380+" },
+    { label: "Patients Treated", value: "5,000+" },
     { label: "Improvement Reported", value: "74%" },
     { label: "Reduced Topical Needs", value: "62%" }
   ],

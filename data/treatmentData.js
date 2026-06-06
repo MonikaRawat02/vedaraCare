@@ -134,8 +134,9 @@ export const panchakarmaJVCLocation = {
   description: "Panchakarma sessions are typically scheduled 9:00 AM to 1:00 PM. Evening slots available on request.",
   buttonText: "Book Your Visit",
   parkingText: "Three reserved Panchakarma patient parking spots + general patient parking",
-  mapAlt: "Vedara Care Panchakarma clinic location in JVC Dubai next to Circle Mall"
- };
+  mapAlt: "Vedara Care Panchakarma clinic location in JVC Dubai next to Circle Mall",
+  mapEmbed: "https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d3613.9894568193345!2d55.20722358578439!3d25.068346479666594!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x3e5f6dd72f3da587%3A0xe7ecca8687a75b72!2sVedara%20Care%20Polyclinic!5e0!3m2!1sen!2sus!4v1780727442216!5m2!1sen!2sus"
+};
  
  export const panchakarmaJVCCTA = {
    bgColor: "bg-white",
@@ -545,7 +546,7 @@ export const kativastiReviews = {
     }
   ],
   stats: [
-    { value: "4.9", label: "4.8 stars on Google" },
+    { value: "4.9", label: "stars on Google" },
     { value: "34", label: "Kativasti-specific reviews" },
     { value: "97%", label: "reported significant pain reduction" }
   ],
@@ -639,7 +640,8 @@ export const kativastiTreatmentLocation = {
   ],
   description: "Three dedicated Kativasti treatment rooms with traditional Kerala-style wooden droni tables and adjustable warming systems for sustained oil temperature throughout the session. Integrated with our physiotherapy department for joint protocols.",
   buttonText: "Book Kativasti Consultation",
-  mapAlt: "Vedara Care Kativasti and back pain clinic location in Jumeirah Village Circle Dubai near Circle Mall"
+  mapAlt: "Vedara Care Kativasti and back pain clinic location in Jumeirah Village Circle Dubai near Circle Mall",
+  mapEmbed: "https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d3613.9894568193345!2d55.20722358578439!3d25.068346479666594!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x3e5f6dd72f3da587%3A0xe7ecca8687a75b72!2sVedara%20Care%20Polyclinic!5e0!3m2!1sen!2sus!4v1780727442216!5m2!1sen!2sus"
 };
 
 export const kativastiRelatedPages = {

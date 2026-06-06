@@ -583,7 +583,9 @@ const PediatricDubai = () => {
         <FAQ {...pediatricPhysiotherapyFaqs} 
         bgColor="bg-[#F5F1E8]"/>
         <TreatmentLocation {...pediatricPhysiotherapyLocation}
-        bgColor="bg-[#FFFFFF]" />
+        bgColor="bg-[#FFFFFF]"
+        buttonColor="bg-[#1A4D2E]" 
+        />
         <FinalCTA {...pediatricPhysiotherapyFinalCTA} />
         <RelatedPages {...pediatricPhysiotherapyRelatedPages} />
       </div>
