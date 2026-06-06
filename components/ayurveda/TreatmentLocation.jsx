@@ -58,7 +58,6 @@ const TreatmentLocation = ({
               </div>
             )}
           </div>
-          
         </div>
       );
     }
@@ -137,7 +136,7 @@ const TreatmentLocation = ({
                 </div>
               )}
             </div>
-
+        
             {/* Operating Hours */}
             {(typeof hours === 'object' || typeof hours === 'string') && renderHours()}
 
@@ -152,8 +151,7 @@ const TreatmentLocation = ({
                     <div 
                       key={index} 
                       className="flex items-center gap-2 text-xs" 
-                      style={{ color: '#6B6B6B' }}
-                    >
+                      style={{ color: '#6B6B6B' }}>
                       <CircleCheckBig 
                         size={14} 
                         style={{ color: '#C9A961' }}
