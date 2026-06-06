@@ -108,6 +108,27 @@ const Header = () => {
                   >
                     Post-Surgery Rehab
                   </Link>
+                   <Link 
+                    href="/physiotherapy/neurological-dubai/
+" 
+                    className="block px-4 py-2.5 text-[13px] font-sans text-[#4A4A4A] hover:text-[#184C3A] hover:bg-gray-50 transition-colors"
+                  >
+                    Neurological Rehab
+                  </Link>
+                   <Link 
+                    href="/physiotherapy/pediatric-dubai/
+" 
+                    className="block px-4 py-2.5 text-[13px] font-sans text-[#4A4A4A] hover:text-[#184C3A] hover:bg-gray-50 transition-colors"
+                  >
+                   Pediatric 
+                  </Link>
+                   <Link 
+                    href="/physiotherapy/sports-injury-jvc/
+" 
+                    className="block px-4 py-2.5 text-[13px] font-sans text-[#4A4A4A] hover:text-[#184C3A] hover:bg-gray-50 transition-colors"
+                  >
+                   Sports Injury
+                  </Link>
                 </div>
               </div>
             </div>
