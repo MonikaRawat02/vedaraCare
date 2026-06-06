@@ -29,20 +29,26 @@ const HubLocation = ({
 
         <div className="grid lg:grid-cols-2 gap-10 items-start">
           {/* Map Illustration Side */}
-          <div className="relative aspect-[4/3] bg-[#FAF6EF] rounded-[12px] overflow-hidden flex items-center justify-center p-8 lg:p-12 border border-[#F0E9DF]">
-            <div className="relative w-full h-full border-[12px] border-[#184C3A]/5 rounded-full flex items-center justify-center">
-                <div className="bg-white p-6 rounded-xl shadow-sm border border-[#F0E9DF] text-center z-10 max-w-[240px]">
-                    <div className="w-8 h-8 bg-[#184C3A]/5 rounded-full flex items-center justify-center mx-auto mb-3">
-                        <div className="w-2 h-2 bg-[#184C3A] rounded-full"></div>
-                    </div>
-                    <p className="text-[15px] font-semibold text-[#1A1A1A] mb-1">Vedara Care, JVC</p>
-                    <p className="text-[12px] text-[#6B6B6B]">Jumeirah Village Circle, Dubai</p>
-                </div>
-                <p className="absolute bottom-8 text-[13px] text-[#888888] text-center px-8 leading-relaxed">
-                    Serving patients across all Dubai neighbourhoods + Home Healthcare city-wide
-                </p>
-            </div>
-          </div>
+         <div className="relative aspect-[4/3] rounded-[12px] overflow-hidden border border-[#F0E9DF]">
+  <iframe
+    className="absolute inset-0 w-full h-full"
+    src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d3613.9894568193345!2d55.20722358578439!3d25.068346479666594!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x3e5f6dd72f3da587%3A0xe7ecca8687a75b72!2sVedara%20Care%20Polyclinic!5e0!3m2!1sen!2sus!4v1780727442216!5m2!1sen!2sus"
+    loading="lazy"
+    allowFullScreen
+    referrerPolicy="no-referrer-when-downgrade"
+    title="Vedara Care Polyclinic"
+  />
+
+  <div className="absolute bottom-4 left-4 bg-white rounded-xl shadow-lg border border-[#F0E9DF] p-4 max-w-[260px]">
+    <h4 className="text-[15px] font-semibold text-[#1A1A1A]">
+      Vedara Care Polyclinic
+    </h4>
+
+    <p className="text-[12px] text-[#6B6B6B] mt-1">
+      Jumeirah Village Circle, Dubai
+    </p>
+  </div>
+</div>
 
           {/* Neighborhoods Side */}
           <div className="space-y-10">
