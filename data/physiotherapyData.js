@@ -459,7 +459,8 @@ export const physiotherapyTreatmentLocation = {
   ],
   description: "Dedicated physiotherapy treatment rooms, gym area for exercise prescription, private consultation rooms, and integrated team offices. Walkable from Circle Mall, with convenient access from Sheikh Mohammed Bin Zayed Road for patients from across Dubai.",
   buttonText: "Book a Physiotherapy Assessment",
-  mapAlt: "Vedara Care JVC physiotherapy clinic location"
+  mapAlt: "Vedara Care JVC physiotherapy clinic location",
+  mapEmbed: "https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d3613.9894568193345!2d55.20722358578439!3d25.068346479666594!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x3e5f6dd72f3da587%3A0xe7ecca8687a75b72!2sVedara%20Care%20Polyclinic!5e0!3m2!1sen!2sus!4v1780727442216!5m2!1sen!2sus"
 };
 
 export const physiotherapyHomeHealthcare = {
@@ -488,7 +489,10 @@ export const physiotherapyInsurance = {
     "At Vedara Care, we are direct-billing partners with Daman, AXA, Allianz, Oman Insurance, Now Health, Bupa, and MetLife. The most efficient process for new patients: WhatsApp your insurance card photo to [number] before booking, and our team confirms exactly what is covered, what pre-authorisation is needed, and what your out-of-pocket cost will be. This typically takes 24-48 hours but prevents the most common billing surprises. For a full cost breakdown, see our <a href=\"/blog/ayurveda-cost-dubai/\">cost guide</a>.",
     "Some realities worth knowing: most plans require medical justification (specific diagnosis, documented condition) rather than wellness physiotherapy. Most plans cover physiotherapy for diagnosed musculoskeletal conditions (like <a href=\"/conditions/back-pain-ayurveda-dubai/\">back pain</a> or <a href=\"/conditions/arthritis-ayurveda-dubai/\">knee OA</a>), post-surgical recovery, and neurological rehabilitation. Coverage for preventive sports performance work, wellness physiotherapy, or maintenance visits varies. <a href=\"/conditions/postnatal-ayurveda-dubai/\">Postnatal physiotherapy</a> coverage has improved substantially in recent years — most major plans now cover pelvic floor rehabilitation with appropriate clinical justification."
   ],
-  insurers: ["Daman", "AXA", "Allianz", "Oman Insurance", "Now Health", "Bupa", "MetLife"]
+  insurers: ["Daman", "AXA", "Allianz", "Oman Insurance", "Now Health", "Bupa", "MetLife"],
+  sidebarText: [
+    "WhatsApp your insurance card to [number] before booking to confirm specific coverage."
+  ],
 };
 
 export const physiotherapyPricing = {
@@ -590,7 +594,8 @@ export const physiotherapyLocationCustom = {
   primaryButtonText: "Book a Physiotherapy Assessment",
   primaryButtonHref: "/book",
   secondaryButtonText: "See full clinic details →",
-  secondaryButtonHref: "/physiotherapy-jvc/"
+  secondaryButtonHref: "/physiotherapy-jvc/",
+  mapEmbed: "https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d3613.9894568193345!2d55.20722358578439!3d25.068346479666594!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x3e5f6dd72f3da587%3A0xe7ecca8687a75b72!2sVedara%20Care%20Polyclinic!5e0!3m2!1sen!2sus!4v1780727442216!5m2!1sen!2sus"
 };
 
 export const physiotherapyFinalCTA = {

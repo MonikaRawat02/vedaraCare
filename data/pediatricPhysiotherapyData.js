@@ -251,7 +251,7 @@ export const pediatricPhysiotherapyLocation = {
   label: "VISIT US",
   title: "A welcoming clinic for children of all ages.",
   address: "Jumeirah Village Circle (JVC)<br/>Dubai, United Arab Emirates<br/>Walking distance from Circle Mall",
-  mapEmbed: "https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d3610.123456789!2d55.24!3d25.04!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x0!2sVedara%20Care!5e0!3m2!1sen!2sae!4v1234567890",
+  mapEmbed: "https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d3613.9894568193345!2d55.20722358578439!3d25.068346479666594!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x3e5f6dd72f3da587%3A0xe7ecca8687a75b72!2sVedara%20Care%20Polyclinic!5e0!3m2!1sen!2sus!4v1780727442216!5m2!1sen!2sus",
   phone: "+971 4 423 4567",
   whatsapp: "+971 50 123 4567",
   hours: {
@@ -432,9 +432,9 @@ export const pediatricPhysiotherapyReviews = {
     }
   ],
   stats: [
-    { value: "300+", label: "Paediatric Patients Treated" },
+    { value: "5,000+", label: "Patients Treated" },
     { value: "4.9", label: "stars on Google" },
-    { value: "92% ", label: "would recommend to other parents" }
+    { value: "92%", label: "would recommend to other parents" }
   ]
 };
 
