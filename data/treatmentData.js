@@ -61,7 +61,7 @@ export const panchakarmaJVCReviews = {
   stats: [
     { value: "4.9", label: "stars on Google" },
     { value: "24", label: "reviews from JVC residents" },
-    { value: "96%", label: "would recommend" }
+    { value: "97%", label: "would recommend" }
   ]
 };
 
@@ -547,7 +547,7 @@ export const kativastiReviews = {
   stats: [
     { value: "4.9", label: "4.8 stars on Google" },
     { value: "34", label: "Kativasti-specific reviews" },
-    { value: "94%", label: "reported significant pain reduction" }
+    { value: "97%", label: "reported significant pain reduction" }
   ],
   buttonText: "Read All Kativasti Reviews"
 };

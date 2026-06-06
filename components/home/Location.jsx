@@ -35,31 +35,36 @@ const Location = ({
     <section className={`${bgColor} py-24 px-6`}>
       <div className="max-w-[1440px] mx-auto">
         <div className="grid lg:grid-cols-2 gap-12 items-center">
-          {/* Map Content */}
-          <div className="relative aspect-square bg-[#F6F1EA] rounded-[2rem] overflow-hidden shadow-sm flex items-center justify-center text-[#A1A1A1] font-sans">
-            {mapCard.image ? (
-              <img 
-                src={mapCard.image.startsWith('http') || mapCard.image.startsWith('/') ? mapCard.image : `/images/${mapCard.image}`} 
-                alt={mapCard.alt || "Map location"} 
-                className="w-full h-full object-cover"
-              />
-            ) : (
-              <span className="text-sm">Map with Vedara Care Pin</span>
-            )}
-            
-            {/* Location Card Overlay */}
-            <div className="absolute bottom-8 left-8 bg-white p-6 rounded-2xl shadow-xl border border-gray-100 max-w-[280px] space-y-3">
-              <div className="space-y-1">
-                <h4 className="text-[16px] font-serif font-bold text-[#1A1A1A]">{mapCard.title}</h4>
-                <p className="text-[13px] text-[#6B6B6B] font-sans">{mapCard.subtitle}</p>
-              </div>
-              <button className="text-[#C9A961] font-sans font-bold text-[14px] flex items-center gap-2 hover:underline">
-                <Navigation size={14} />
-                {mapCard.linkText}
-              </button>
-            </div>
-          </div>
+        {/* Map Content */}
+<div className="relative aspect-square bg-[#F6F1EA] rounded-[2rem] overflow-hidden shadow-sm">
+  
+  {/* Google Map */}
+  <iframe
+    className="absolute inset-0 w-full h-full"
+    src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d3613.9894568193345!2d55.20722358578439!3d25.068346479666594!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x3e5f6dd72f3da587%3A0xe7ecca8687a75b72!2sVedara%20Care%20Polyclinic!5e0!3m2!1sen!2sus!4v1780727442216!5m2!1sen!2sus"
+    loading="lazy"
+    allowFullScreen
+    referrerPolicy="no-referrer-when-downgrade"
+    title="Vedara Care JVC Dubai Location"
+  />
 
+  {/* Location Card Overlay */}
+  <div className="absolute bottom-8 left-8 bg-white p-6 rounded-2xl shadow-xl border border-gray-100 max-w-[280px] space-y-3 z-10">
+    <div className="space-y-1">
+      <h4 className="text-[16px] font-serif font-bold text-[#1A1A1A]">
+        {mapCard.title}
+      </h4>
+      <p className="text-[13px] text-[#6B6B6B] font-sans">
+        {mapCard.subtitle}
+      </p>
+    </div>
+
+    <button className="text-[#C9A961] font-sans font-bold text-[14px] flex items-center gap-2 hover:underline">
+      <Navigation size={14} />
+      {mapCard.linkText}
+    </button>
+  </div>
+</div>
           {/* Contact Content */}
           <div className="lg:pl-12 space-y-10">
             <div className="space-y-4">

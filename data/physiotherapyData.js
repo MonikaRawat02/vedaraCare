@@ -246,7 +246,7 @@ export const physiotherapyReviews = {
   stats: [
     { value: "4.9", label: "4.9 stars on Google" },
     { value: "180+", label: "Physiotherapy-specific reviews" },
-    { value: "92%", label: "complete their full programme completion" }
+    { value: "97%", label: "complete their full programme completion" }
   ],
   buttonText: "Read All Reviews →"
 };
