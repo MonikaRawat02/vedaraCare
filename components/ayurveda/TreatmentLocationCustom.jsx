@@ -18,7 +18,8 @@ const TreatmentLocationCustom = ({
   contactEmail = 'info@vedaracare.ae',
   description = 'Our JVC clinic schedules extended consultations for IBS patients — typically 60 minutes for initial, 30 minutes for follow-ups. We allow time to discuss symptoms patients have often stopped mentioning to other clinicians. Walking distance from Circle Mall, easy access from JVC Districts 10, 11, 12, 13, JVT, and Al Barsha South. Female doctors available on request.',
   buttonText = 'Book an IBS Consultation',
-  buttonHref = '/book'
+  buttonHref = '/book',
+  mapEmbed = ''
 }) => {
   return (
     <section className={`${bgColor} py-12 md:py-24 px-4 md:px-8`}>
@@ -68,18 +69,33 @@ const TreatmentLocationCustom = ({
               </p>
               <Link
                 href={buttonHref}
-                className="inline-flex items-center justify-center gap-2 whitespace-nowrap rounded-md text-sm font-medium transition-all disabled:pointer-events-none disabled:opacity-50 [&_svg]:pointer-events-none [&_svg:not([class*='size-'])]:size-4 shrink-0 [&_svg]:shrink-0 outline-none focus-visible:border-ring focus-visible:ring-ring/50 focus-visible:ring-[3px] aria-invalid:ring-destructive/20 dark:aria-invalid:ring-destructive/40 aria-invalid:border-destructive text-primary-foreground h-9 px-4 py-2 has-[>svg]:px-3 bg-[#C9A55B] hover:bg-[#B89440]"
+                className="inline-flex items-center justify-center gap-2 whitespace-nowrap rounded-md text-sm font-medium transition-all disabled:pointer-events-none disabled:opacity-50 [&_svg]:pointer-events-none [&_svg:not([class*='size-'])]:size-4 shrink-0 [&_svg]:shrink-0 outline-none focus-visible:border-ring focus-visible:ring-ring/50 focus-visible:ring-[3px] aria-invalid:ring-destructive/20 dark:aria-invalid:ring-destructive/40 aria-invalid:border-destructive text-white h-9 px-4 py-2 has-[>svg]:px-3 bg-[#1A4D3E] hover:bg-opacity-90"
               >
                 {buttonText}
               </Link>
             </div>
           </div>
-          <div className="bg-[#F5F3EE] rounded-xl p-8 flex items-center justify-center aspect-square">
-            <div className="text-center text-muted-foreground">
-              <MapPin className="size-16 mx-auto mb-4 text-[#C9A55B]" />
-              <p className="text-sm">Interactive map would be embedded here</p>
-              <p className="text-xs mt-2">Google Maps / Location Preview</p>
-            </div>
+          <div className="bg-[#F5F3EE] rounded-xl overflow-hidden aspect-square">
+            {mapEmbed ? (
+              <iframe 
+                src={mapEmbed}
+                width="100%"
+                height="100%"
+                style={{ border: 0 }}
+                allowFullScreen=""
+                loading="lazy"
+                referrerPolicy="no-referrer-when-downgrade"
+                title="Clinic Location Map"
+              ></iframe>
+            ) : (
+              <div className="h-full w-full flex items-center justify-center">
+                <div className="text-center text-muted-foreground">
+                  <MapPin className="size-16 mx-auto mb-4 text-[#C9A55B]" />
+                  <p className="text-sm">Interactive map would be embedded here</p>
+                  <p className="text-xs mt-2">Google Maps / Location Preview</p>
+                </div>
+              </div>
+            )}
           </div>
         </div>
       </div>

@@ -552,7 +552,7 @@ export const physiotherapyJvcLocation = {
     "Sheikh Mohammed Bin Zayed Road",
     "Al Khail Road access"
   ],
-  mapEmbed: "",
+  mapEmbed: "https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d3613.9894568193345!2d55.20722358578439!3d25.068346479666594!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x3e5f6dd72f3da587%3A0xe7ecca8687a75b72!2sVedara%20Care%20Polyclinic!5e0!3m2!1sen!2sus!4v1780727442216!5m2!1sen!2sus",
   image: "",
   alt: "Vedara Care physiotherapy clinic location JVC Dubai near Circle Mall",
   description: "Our JVC clinic has dedicated physiotherapy treatment rooms with modern equipment, a full rehabilitation gym, specialised pelvic floor assessment room, and integrated access to our Ayurveda department when needed. Free patient parking available.",

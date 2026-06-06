@@ -15,7 +15,8 @@ const PostnatalLocation = ({
   alt = "",
   buttonText = "",
   footerNote = "",
-  reverse = false
+  reverse = false,
+  mapEmbed = ""
 }) => {
   return (
     <section className={`${bgColor} py-24 px-6`}>
@@ -82,21 +83,34 @@ const PostnatalLocation = ({
             {buttonText && (
               <Link
                 href="/book"
-                className="inline-flex items-center justify-center px-8 py-4 bg-[#C9A961] text-white rounded-md hover:opacity-90 transition-all text-[14px] font-sans font-bold shadow-md"
+                className="inline-flex items-center justify-center px-8 py-4 bg-[#1A4D3E] text-white rounded-md hover:opacity-90 transition-all text-[14px] font-sans font-bold shadow-md"
               >
                 {buttonText}
               </Link>
             )}
           </div>
 
-          {/* Right Image */}
+          {/* Right Image or Map */}
           <div className={`relative ${reverse ? 'lg:order-1' : 'lg:order-2'}`}>
             <div className="aspect-[4/3] rounded-[24px] overflow-hidden shadow-2xl">
-              <img 
-                src={image} 
-                alt={alt} 
-                className="w-full h-full object-cover"
-              />
+              {mapEmbed ? (
+                <iframe 
+                  src={mapEmbed}
+                  width="100%"
+                  height="100%"
+                  style={{ border: 0 }}
+                  allowFullScreen=""
+                  loading="lazy"
+                  referrerPolicy="no-referrer-when-downgrade"
+                  title={alt}
+                />
+              ) : (
+                <img 
+                  src={image} 
+                  alt={alt} 
+                  className="w-full h-full object-cover"
+                />
+              )}
             </div>
           </div>
         </div>

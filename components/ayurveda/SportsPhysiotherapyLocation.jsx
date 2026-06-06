@@ -1,30 +1,45 @@
 import React from 'react';
 import Link from 'next/link';
+import { sportsPhysiotherapyLocation } from '../../data/sportsPhysiotherapyData';
 
 const SportsPhysiotherapyLocation = () => {
   return (
     <section style={{ padding: '96px 24px', background: '#FFFFFF' }}>
       <div className="max-w-7xl mx-auto">
         <div className="grid lg:grid-cols-2 gap-12 items-start">
-          {/* Image Section */}
-          <div className="relative rounded-xl overflow-hidden">
-            <img 
-              src="" 
-              alt="Vedara Care sports physiotherapy clinic in JVC Dubai"
-              className="w-full h-[450px] object-cover"
-            />
-            <div className="absolute inset-0 flex flex-col items-center justify-center" style={{ background: 'linear-gradient(to bottom, rgba(27, 67, 50, 0.3), rgba(27, 67, 50, 0.7))' }}>
-              <svg xmlns="http://www.w3.org/2000/svg" width="32" height="32" viewBox="0 0 24 24" fill="none" stroke="#C9A55A" strokeWidth="2" strokeLinecap="round" strokeLinejoin="round">
-                <path d="M21 10c0 7-9 13-9 13s-9-6-9-13a9 9 0 0 1 18 0Z" />
-                <circle cx="12" cy="10" r="3" />
-              </svg>
-              <p className="text-white text-lg font-semibold mt-2" style={{ fontFamily: 'Fraunces, Georgia, serif' }}>
-                Jumeirah Village Circle, Dubai
-              </p>
-              <p className="text-white/80 text-sm mt-1">
-                Walking distance from Circle Mall
-              </p>
-            </div>
+          {/* Map Section */}
+          <div className="relative rounded-xl overflow-hidden h-[450px]">
+            {sportsPhysiotherapyLocation.mapEmbed ? (
+              <iframe 
+                src={sportsPhysiotherapyLocation.mapEmbed}
+                width="100%"
+                height="100%"
+                style={{ border: 0 }}
+                allowFullScreen=""
+                loading="lazy"
+                referrerPolicy="no-referrer-when-downgrade"
+                title="Clinic Location Map"
+              ></iframe>
+            ) : sportsPhysiotherapyLocation.image ? (
+              <img 
+                src={sportsPhysiotherapyLocation.image} 
+                alt={sportsPhysiotherapyLocation.alt}
+                className="w-full h-full object-cover"
+              />
+            ) : (
+              <div className="absolute inset-0 flex flex-col items-center justify-center bg-gray-200">
+                <svg xmlns="http://www.w3.org/2000/svg" width="32" height="32" viewBox="0 0 24 24" fill="none" stroke="#C9A55A" strokeWidth="2" strokeLinecap="round" strokeLinejoin="round">
+                  <path d="M21 10c0 7-9 13-9 13s-9-6-9-13a9 9 0 0 1 18 0Z" />
+                  <circle cx="12" cy="10" r="3" />
+                </svg>
+                <p className="text-white text-lg font-semibold mt-2" style={{ fontFamily: 'Fraunces, Georgia, serif' }}>
+                  Jumeirah Village Circle, Dubai
+                </p>
+                <p className="text-white/80 text-sm mt-1">
+                  Walking distance from Circle Mall
+                </p>
+              </div>
+            )}
           </div>
 
           {/* Info Section */}
