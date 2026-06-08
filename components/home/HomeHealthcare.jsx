@@ -5,6 +5,7 @@ const HomeHealthcare = ({
   label = "DOCTOR ON CALL | NURSING | PHYSIO AT HOME",
   title = "When coming to the clinic is not the right answer.",
   description = "Our home healthcare team brings DHA-licensed doctors, registered nurses and qualified physiotherapists to your door across JVC, JVT, Al Barsha South, Sports City and all of Dubai. Same protocols. Same accountability. Faster access.",
+  image = "https://images.unsplash.com/photo-1584515933487-779824d29309?q=80&w=2070&auto=format&fit=crop",
   features = [
     "Doctor on Call 24/7",
     "Physiotherapy at Home",
@@ -25,9 +26,11 @@ const HomeHealthcare = ({
         <div className="grid lg:grid-cols-[45%_55%] gap-12 items-center">
           {/* Image Content */}
           <div className="aspect-[4/5] bg-gradient-to-br from-[#F6F1EA] to-[#FAF8EF] rounded-[2rem] flex items-center justify-center text-[#A1A1A1] font-sans shadow-sm overflow-hidden">
-            <div className="relative w-full h-full flex items-center justify-center">
-               <span className="text-sm">Home Healthcare Visit Photo</span>
-            </div>
+            <img
+              src={image}
+              alt={title}
+              className="w-full h-full object-cover"
+           />
           </div>
 
           {/* Text Content */}
