@@ -78,7 +78,7 @@ export const homeServices = {
       image: 'https://images.unsplash.com/photo-1600334089648-b0d9d3028eb2?q=80&w=2070&auto=format&fit=crop',
       features: ['Panchakarma', 'Abhyanga', 'Shirodhara', 'Stress Management', 'PCOS Support', 'Weight Management'],
       buttonText: 'Explore Ayurveda',
-      link: '/services/ayurveda'
+      link: '/ayurveda-clinic-jvc'
     },
     {
       id: 'physiotherapy',
@@ -87,7 +87,7 @@ export const homeServices = {
       image: 'https://images.unsplash.com/photo-1576091160550-2173dba999ef?q=80&w=2070&auto=format&fit=crop',
       features: ['Back Pain', 'Sports Injury', 'Frozen Shoulder', 'Dry Needling', 'Home Physiotherapy', 'Post Surgery Rehab'],
       buttonText: 'Explore Physiotherapy',
-      link: '/services/physiotherapy'
+      link: '/physiotherapy-jvc'
     },
     {
       id: 'dermatology',
@@ -141,7 +141,7 @@ export const homeConditions = {
     { title: "PCOS", category: "Womens Health", description: "Hormonal balance through traditional Ayurvedic medicine", sub: "Ayurveda", link: "/conditions/pcos-ayurveda-dubai/" },
     { title: "Hair Loss", category: "Skin and Hair", description: "Combined approach for hair restoration and scalp health", sub: "Dermatology and Ayurveda", link: "/conditions/hair-loss-ayurveda-dubai/" },
     { title: "Neck and Shoulder Pain", category: "Pain", description: "Manual therapy and targeted rehabilitation", sub: "Physio" },
-    { title: "Sports Injuries", category: "Pain", description: "Evidence-based sports injury rehabilitation", sub: "Physio" },
+    { title: "Sports Injuries", category: "Pain", description: "Evidence-based sports injury rehabilitation", sub: "Physio", link: "/physiotherapy/sports-injury-jvc" },
     { title: "Acne and Scars", category: "Skin and Hair", description: "Medical-grade acne treatment and scar reduction", sub: "Dermatology" },
     { title: "Frozen Shoulder", category: "Pain", description: "Combined manual therapy and Ayurvedic treatment", sub: "Physio and Ayurveda" },
     { title: "Stress and Anxiety", category: "Mental Wellness", description: "Holistic stress management programs", sub: "Ayurveda and Wellness", link: "/conditions/stress-anxiety-ayurveda-dubai/" },
