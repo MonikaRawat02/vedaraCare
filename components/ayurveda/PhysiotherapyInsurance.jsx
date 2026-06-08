@@ -35,7 +35,7 @@ const PhysiotherapyInsurance = ({
               />
             ))}
           </div>
-          <div className="bg-white p-8 rounded-lg" style={{ borderTop: '4px solid #d4af37' }}>
+          <div className="bg-white p-8 rounded-lg h-fit" style={{ borderTop: '4px solid #d4af37' }}>
             <h3 className="text-lg font-semibold mb-6 text-gray-800">
               OUR DIRECT-BILLING INSURERS
             </h3>
