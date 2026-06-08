@@ -93,7 +93,8 @@ export const pediatricPhysiotherapyInsurance = {
   ],
   insurers: ["Daman", "AXA", "Allianz", "Oman Insurance", "Now Health", "Bupa", "MetLife"],
   sidebarText: [
-    "Some children's hospitals and paediatric specialists in Dubai also refer to us for outpatient physiotherapy. WhatsApp +971 50 123 4567 for coverage confirmation."
+    "Some children's hospitals and paediatric specialists in Dubai also refer to us for outpatient physiotherapy. ",
+    " WhatsApp +971 50 123 4567 for coverage confirmation."
 
 ,
     
