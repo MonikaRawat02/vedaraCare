@@ -44,11 +44,11 @@ const Footer = () => {
           <div>
             <h4 className="text-lg font-bold text-white mb-6">Services</h4>
             <ul className="space-y-4 text-[#F8F9FA]/80 text-sm">
-              <li><Link href="/ayurveda-dubai" className="hover:text-white transition-colors">Ayurveda in JVC</Link></li>
+              <li><Link href="/ayurveda-clinic-jvc" className="hover:text-white transition-colors">Ayurveda in JVC</Link></li>
               <li><Link href="/physiotherapy-jvc" className="hover:text-white transition-colors">Physiotherapy in JVC</Link></li>
-              <li><Link href="/services/dermatology" className="hover:text-white transition-colors">Dermatology in JVC</Link></li>
-              <li><Link href="/services/home-healthcare" className="hover:text-white transition-colors">Home Healthcare in Dubai</Link></li>
-              <li><Link href="/services/wellness" className="hover:text-white transition-colors">Wellness Treatments</Link></li>
+              <li><Link href="/dermatology-jvc" className="hover:text-white transition-colors">Dermatology in JVC</Link></li>
+              <li><Link href="/home-healthcare-jvc" className="hover:text-white transition-colors">Home Healthcare in Dubai</Link></li>
+              <li><Link href="/wellness-jvc" className="hover:text-white transition-colors">Wellness Treatments</Link></li>
             </ul>
           </div>
 
