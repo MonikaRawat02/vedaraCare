@@ -335,7 +335,7 @@ export const stressAnxietyFaqs = {
     },
     {
       question: "How does this work for postpartum anxiety?",
-      answer: "Postpartum anxiety — including postpartum panic, hypervigilance, and sleep-deprivation-related anxiety — is one of our most-treated patterns. <a href=\"/conditions/postnatal-ayurveda-dubai/\" class=\"hover:underline\">Classical Sutika Paricharya</a> (45-day postnatal Ayurvedic care) specifically addresses postpartum nervous-system restoration. Beyond the immediate postpartum period, we offer integrated programmes for postnatal anxiety, always alongside postnatal mental health screening with your GP or psychiatrist."
+      answer: "Postpartum anxiety — including postpartum panic, hypervigilance, and sleep-deprivation-related anxiety — is one of our most-treated patterns. <a href=\"/conditions/postnatal-ayurveda-dubai/\" class=\"hover:underline\">Classical Sutika Paricharya</a> (45-day postnatal Ayurvedic care) specifically addresses postpartum nervous-system restoration. Beyond the immediate postpartum period, we offer integrated programmes for <a href=\"/conditions/postnatal-ayurveda-dubai/\" class=\"hover:underline\">postnatal anxiety</a>, always alongside postnatal mental health screening with your GP or psychiatrist."
     },
     {
       question: "What if my anxiety is mainly about work?",
