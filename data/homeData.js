@@ -75,7 +75,7 @@ export const homeServices = {
       id: 'ayurveda',
       title: 'Ayurveda in JVC',
       subtitle: 'Traditional healing science adapted for modern Dubai lifestyles',
-      image: 'https://images.unsplash.com/photo-1600334089648-b0d9d3028eb2?q=80&w=2070&auto=format&fit=crop',
+      image: '/images/ayurveda.webp',
       features: ['Panchakarma', 'Abhyanga', 'Shirodhara', 'Stress Management', 'PCOS Support', 'Weight Management'],
       buttonText: 'Explore Ayurveda',
       link: '/ayurveda-clinic-jvc'
@@ -84,7 +84,7 @@ export const homeServices = {
       id: 'physiotherapy',
       title: 'Physiotherapy in JVC',
       subtitle: 'Evidence-based rehabilitation and movement therapy for pain relief and recovery',
-      image: 'https://images.unsplash.com/photo-1576091160550-2173dba999ef?q=80&w=2070&auto=format&fit=crop',
+      image: '/images/physiotherapy.webp',
       features: ['Back Pain', 'Sports Injury', 'Frozen Shoulder', 'Dry Needling', 'Home Physiotherapy', 'Post Surgery Rehab'],
       buttonText: 'Explore Physiotherapy',
       link: '/physiotherapy-jvc'
@@ -93,7 +93,7 @@ export const homeServices = {
       id: 'dermatology',
       title: 'Dermatology in JVC',
       subtitle: 'Advanced skin treatments for healthy, radiant skin',
-      image: 'https://images.unsplash.com/photo-1512290923902-8a9f81dc236c?q=80&w=2070&auto=format&fit=crop',
+      image: '/images/dermatology.webp',
       features: ['Acne Treatment', 'Hair Loss', 'PRP Therapy', 'Pigmentation', 'Skin Rejuvenation', 'Chemical Peel'],
       buttonText: 'Explore Dermatology',
       link: '/services/dermatology'
@@ -102,7 +102,7 @@ export const homeServices = {
       id: 'home-healthcare',
       title: 'Home Healthcare in Dubai',
       subtitle: 'Premium healthcare services in the comfort of your home',
-      image: 'https://images.unsplash.com/photo-1584515933487-779824d29309?q=80&w=2070&auto=format&fit=crop',
+      image: '/images/Home Healthcare in Dubai.webp',
       features: ['Doctor on Call', 'Home Nursing', 'IV Drip', 'Lab Tests at Home', 'Elderly Care', 'Physiotherapy at Home'],
       buttonText: 'Explore Home Healthcare',
       link: '/services/home-healthcare'
@@ -111,7 +111,7 @@ export const homeServices = {
       id: 'wellness',
       title: 'Wellness Treatments',
       subtitle: 'Holistic wellness programs for mind, body, and spirit',
-      image: 'https://images.unsplash.com/photo-1544367567-0f2fcb009e0b?q=80&w=2020&auto=format&fit=crop',
+      image: '/images/Wellness Treatments.webp',
       features: ['Detox Programs', 'Stress Management', 'Yoga Therapy', 'Nutrition Consultation', 'Weight Management'],
       buttonText: 'Explore Wellness',
       link: '/services/wellness'
@@ -123,7 +123,7 @@ export const homeAbout = {
   label: "About Vedara Care",
   title: "A polyclinic built around one belief — that healing should treat the whole person.",
   description: "Vedara Care Polyclinic is a DHA-licensed holistic healthcare clinic in Jumeirah Village Circle, Dubai. We integrate classical Ayurveda, modern physiotherapy, medical dermatology, home healthcare and wellness programs under one roof. Our BAMS-qualified Ayurvedic physicians and DPT physiotherapists work alongside board-certified dermatologists to serve JVC residents and patients across Dubai.",
-  image: "https://images.unsplash.com/photo-1629909613654-28e377c37b09?q=80&w=2070&auto=format&fit=crop",
+  image: "/images/about.webp",
   stats: [
     { value: "5,000+", label: "Patients Treated" },
     { value: "15+", label: "DHA-Licensed Practitioners" },
@@ -250,6 +250,7 @@ export const homeHealthcare = {
   label: "DOCTOR ON CALL | NURSING | PHYSIO AT HOME",
   title: "When coming to the clinic is not the right answer.",
   description: "Our home healthcare team brings DHA-licensed doctors, registered nurses and qualified physiotherapists to your door across JVC, JVT, Al Barsha South, Sports City and all of Dubai. Same protocols. Same accountability. Faster access.",
+  image: "/images/Doctor on Call.webp",
   features: ["Doctor on Call 24/7", "Physiotherapy at Home", "Lab Collection", "Newborn Care", "Home Nursing", "IV Drip Therapy", "Vaccinations", "Elderly Care"],
   button1Text: "Request a Home Visit",
   button2Text: "Learn More",

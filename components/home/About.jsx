@@ -48,9 +48,7 @@ const About = ({
               alt={title} 
               className="w-full h-full object-cover opacity-90"
             />
-            <div className="absolute inset-0 bg-black/10 flex items-center justify-center">
-              <span className="text-white/40 font-sans text-sm">Clinic Interior Photo</span>
-            </div>
+           
           </div>
         </div>
       </div>
