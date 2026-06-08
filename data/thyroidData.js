@@ -113,7 +113,7 @@ types: [
     emphasis: "Quality of life, metabolic function, related symptoms, energy levels; never affecting levothyroxine requirement."
   },
   {
-    title: "Postpartum Thyroiditis",
+    title: "<a href=\"/conditions/postnatal-ayurveda-dubai/\">Postpartum Thyroiditis</a>",
     sanskritName: "Variable bloodwork; often transient hyperthyroid then hypothyroid phase postpartum",
     description: "Increasingly recognised condition affecting 5-10% of women postpartum. Many cases resolve spontaneously within 12-18 months; some progress to permanent hypothyroidism.",
     emphasis: `Postpartum thyroid recovery; constitutional restoration; integrated postnatal Ayurvedic care including <a href="/conditions/postnatal-ayurveda-dubai/" class="text-[#184C3A] hover:underline font-medium">classical 45-day Sutika Paricharya</a>; reduced progression to permanent hypothyroidism in some cases.`

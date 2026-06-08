@@ -44,7 +44,7 @@ const Insights = ({
             <div 
               key={index} 
               data-slot="card"
-              className="bg-white text-[#1C1C1C] flex flex-col gap-6 rounded-xl border-none h-full shadow-lg hover:shadow-xl transition-all cursor-pointer group"
+              className="bg-white text-[#1C1C1C] flex flex-col gap-6 rounded-xl border-none h-full shadow-lg hover:shadow-xl transition-all  group"
             >
               <div data-slot="card-content" className="p-6 space-y-4">
                 <span 
