@@ -16,7 +16,7 @@ const TreatmentLocation = ({
   alt = "Clinic location",
   description = "",
   buttonText = "",
-  mapEmbed = ""
+  mapEmbed = "https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d3613.9894568193345!2d55.20722358578439!3d25.068346479666594!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x3e5f6dd72f3da587%3A0xe7ecca8687a75b72!2sVedara%20Care%20Polyclinic!5e0!3m2!1sen!2sus!4v1780727442216!5m2!1sen!2sus"
 }) => {
   const renderHours = () => {
     if (typeof hours === 'string') {
@@ -58,7 +58,6 @@ const TreatmentLocation = ({
               </div>
             )}
           </div>
-          
         </div>
       );
     }
@@ -137,7 +136,7 @@ const TreatmentLocation = ({
                 </div>
               )}
             </div>
-
+        
             {/* Operating Hours */}
             {(typeof hours === 'object' || typeof hours === 'string') && renderHours()}
 
@@ -152,8 +151,7 @@ const TreatmentLocation = ({
                     <div 
                       key={index} 
                       className="flex items-center gap-2 text-xs" 
-                      style={{ color: '#6B6B6B' }}
-                    >
+                      style={{ color: '#6B6B6B' }}>
                       <CircleCheckBig 
                         size={14} 
                         style={{ color: '#C9A961' }}

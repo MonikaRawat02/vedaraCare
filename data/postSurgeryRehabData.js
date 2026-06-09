@@ -53,7 +53,7 @@ export const postSurgeryRehabFinalCTA = {
   description: "The first useful step is a 60-minute post-surgery assessment at our JVC clinic or at your home across Dubai. We review your surgical report, examine your current status, contact your operating surgeon (with your consent) to confirm specific protocols, and provide a written rehabilitation plan with realistic timeline. For early-phase patients, the assessment can happen at your home. Insurance pre-authorisation can begin during your first session. Same-week appointments typically available.",
   button1Text: "Book a Post-Surgery Consultation",
   button2Text: "WhatsApp Us Your Surgical Report",
-  button1BgColor: "#1A1A1A",
+  button1BgColor: "#1F4538",
   button1TextColor: "#FFFFFF",
   button2BorderColor: "#25D366",
   button2TextColor: "#25D366",

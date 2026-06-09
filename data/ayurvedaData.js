@@ -730,7 +730,7 @@ export const dubaiHubApplications = {
     "Knee pain and osteoarthritis",
     "Frozen shoulder and cervical spondylosis",
     "IBS and chronic digestive issues",
-    "Thyroid disorders (alongside endocrinology)",
+    "<a href=\"/conditions/thyroid-ayurveda-dubai/\" class=\"hover:underline\">Thyroid disorders</a>(alongside endocrinology)",
     "Type 2 diabetes support",
     "<a href=\"/conditions/skin-ayurveda-dubai/\" class=\"hover:underline transition-colors\">Skin conditions including eczema and psoriasis</a>"
   ],

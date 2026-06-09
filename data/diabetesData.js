@@ -582,7 +582,7 @@ export const diabetesRelatedPages = {
   linkHref: "/ayurveda-dubai/",
   pages: [
     {
-      title: "<a href='/treatments/panchakarma-dubai/' class='doctor-specialty-link'>Panchakarma</a> in Dubai",
+      title: "Panchakarma in Dubai",
       description: "The classical cleansing protocol used in most diabetes programmes (where stage-appropriate). Full description of the five actions and what to expect.",
       href: "/treatments/panchakarma-dubai/"
     },

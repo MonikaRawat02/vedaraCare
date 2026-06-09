@@ -214,22 +214,19 @@ const Header = () => {
           href="https://wa.me/971XXXXXXXX" 
           className="flex-1 flex flex-col items-center justify-center gap-1 h-full text-white hover:bg-[#4A7C59]/10 transition-colors"
           target="_blank"
-          rel="noopener noreferrer"
-        >
+          rel="noopener noreferrer">
           <MessageCircle size={22} className="fill-current" />
           <span className="text-[12px] font-medium font-sans">WhatsApp</span>
         </a>
         <a 
           href="tel:+9714XXXXXXX" 
-          className="flex-1 flex flex-col items-center justify-center gap-1 h-full text-[#D4A373] bg-[#FDF8F1] hover:bg-[#EAE3D5] transition-colors"
-        >
+          className="flex-1 flex flex-col items-center justify-center gap-1 h-full text-[#D4A373] bg-[#FDF8F1] hover:bg-[#EAE3D5] transition-colors">
           <Phone size={22} />
           <span className="text-[12px] font-medium font-sans">Call</span>
         </a>
         <Link 
           href="/book" 
-          className="flex-1 flex flex-col items-center justify-center gap-1 h-full text-white bg-[#1F4538] hover:bg-[#184C3A] transition-colors"
-        >
+          className="flex-1 flex flex-col items-center justify-center gap-1 h-full text-white bg-[#1F4538] hover:bg-[#184C3A] transition-colors">
           <Calendar size={22} />
           <span className="text-[12px] font-medium font-sans">Book</span>
         </Link>
