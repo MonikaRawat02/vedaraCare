@@ -19,7 +19,7 @@ export const postSurgeryRehabHero = {
     title: "WE COORDINATE WITH YOUR SURGEON",
     subtitle: "Whether your surgery was in Dubai, London, Delhi, Frankfurt, New York, Beirut, or Cairo — we work with your operating surgeon's specific protocols, with their direct communication."
   },
-  image: "/images/post-surgery-rehab-dubai-hero.webp",
+  image: "/images/post-surgery-rehabilitation-dubai-hero.webp",
   alt: "Post-surgery rehabilitation at Vedara Care JVC Dubai with DPT-qualified physiotherapist"
 };
 
@@ -42,7 +42,7 @@ export const postSurgeryRehabMechanism = {
     "<strong>What we share with your surgeon:</strong> Initial assessment summary (your condition, range of motion, strength, functional status when starting), planned rehabilitation timeline and milestones, clinical concerns or unexpected findings, mid-point reports at key recovery points (typically 6 weeks, 3 months, 6 months), and any questions about your specific protocol where their guidance is needed. The communication is brief and professional — surgeons appreciate efficient updates, not lengthy reports."
   ],
   quote: "Your surgeon performed the technical procedure. Your rehabilitation determines whether that procedure delivers the outcome it was designed for. Both teams need to work together.",
-  image: "/images/post-surgery-rehab-surgeon-coordination.webp",
+  image: "/images/surgeon-coordination-vedara-dubai.webp",
   alt: "Physiotherapist coordinating with surgeon at Vedara Care JVC post-surgery rehabilitation"
 };
 
@@ -130,6 +130,8 @@ export const postSurgeryRehabReviews = {
 export const homePhysiotherapyData = {
   label: "HOME PHYSIOTHERAPY",
   title: "We come to you during early recovery.",
+  image: "/images/home-physiotherapy-post-surgery-dubai.webp",
+  alt: "Home physiotherapy post-surgery in Dubai",
   content: [
     "Post-surgical patients in the first 2-4 weeks of recovery often cannot easily travel to a clinic. Getting in and out of cars is painful or impossible. Stairs are inaccessible. Long sitting positions are uncomfortable. Asking a recently-operated patient to travel for a 60-minute appointment can set back their recovery.",
     "Our home physiotherapy service operates across Dubai — JVC, JVT, Al Barsha South, Sports City, Motor City, Arjan, Dubai Hills, Marina, Downtown, Palm Jumeirah, Mirdif, and surrounding areas. Our DPT-qualified physiotherapists travel to your home with portable equipment, treatment supplies, and structured protocols. The home environment is often more conducive to early-phase rehabilitation than a clinic — your familiar surroundings, your own equipment if available, no travel stress.",
@@ -264,6 +266,8 @@ export const surgicalProceduresData = {
   bgColor: "bg-[#F8F6F0]",
   label: "PROCEDURE-SPECIFIC REHABILITATION",
   title: "Surgical procedures we rehabilitate at our JVC clinic and across Dubai.",
+  image: "/images/post-surgical-physio-vedara-jvc.webp",
+  alt: "Post-surgical physiotherapy at Vedara Care JVC",
   description: "Each surgical procedure has specific rehabilitation requirements — different timelines, different early-phase restrictions, different progression criteria. Our protocols follow established evidence-based pathways calibrated to your specific procedure and your surgeon's preferences.",
   types: [
     {

@@ -390,7 +390,7 @@ const AyurvedicBackPain = () => {
       <Head>
         <title>Ayurvedic Treatment for Back Pain in Dubai | DHA-Licensed | Vedara</title>
         <meta name="description" content="DHA-licensed Ayurvedic treatment for chronic back pain in Dubai — Kativasti, Abhyanga, Panchakarma. Integrated with physiotherapy at our JVC clinic. From AED 350." />
-        
+         <meta name="robots" content="index, follow, max-image-preview:large" />
         {/* Open Graph / Facebook */}
         <meta property="og:type" content="article" />
         <meta property="og:url" content="https://vedaracare.ae/conditions/back-pain-ayurveda-dubai/" />

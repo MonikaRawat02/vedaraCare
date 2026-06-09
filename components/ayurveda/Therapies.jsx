@@ -7,6 +7,7 @@ const Therapies = ({
   label, 
   title, 
   description, 
+  footer,
   items 
 }) => {
   const getIcon = (index) => {
@@ -36,6 +37,7 @@ const Therapies = ({
           <p className="text-[17px] text-[#6B6B6B] font-sans max-w-[640px] mx-auto leading-relaxed">
             {description}
           </p>
+         
         </div>
 
         <div className="grid grid-cols-2 lg:grid-cols-4 gap-4">
@@ -67,12 +69,25 @@ const Therapies = ({
                     {item.linkText || 'Learn more'} →
                   </button>
                 )}
+           
               </div>
+            
             </div>
           ))}
         </div>
       </div>
-    </section>
+
+
+  {footer && (
+    
+  <div className="mt-8 text-center text-[14px] font-sans font-medium text-[#C9A961] leading-relaxed"
+    dangerouslySetInnerHTML={{ __html: footer }}
+  />
+)}
+
+
+</section>
+   
   );
 };
 

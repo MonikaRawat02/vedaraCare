@@ -60,11 +60,21 @@ const ClassicalTherapies = ({
                     </div>
                   </div>
 
-                  {/* Number Side (Right for Even, Left for Odd) */}
+                  {/* Image Side (Right for Even, Left for Odd) */}
                   <div className={`flex justify-center ${isEven ? 'md:order-2 md:justify-end' : 'md:order-1 md:justify-start'}`}>
-                    <span className="text-[60px] md:text-[100px] font-serif font-normal text-[#EAE3D5] group-hover:text-[#C9A961]/20 transition-colors leading-none select-none">
-                      {item.id}
-                    </span>
+                    {item.image ? (
+                      <div className="rounded-xl overflow-hidden w-full max-w-[400px] shadow-lg">
+                        <img 
+                          src={item.image} 
+                          alt={item.alt || item.title} 
+                          className="w-full h-auto object-cover"
+                        />
+                      </div>
+                    ) : (
+                      <span className="text-[60px] md:text-[100px] font-serif font-normal text-[#EAE3D5] group-hover:text-[#C9A961]/20 transition-colors leading-none select-none">
+                        {item.id}
+                      </span>
+                    )}
                   </div>
 
                 </div>

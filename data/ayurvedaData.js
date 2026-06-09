@@ -16,13 +16,12 @@ export const ayurvedaHero = {
     "45-60 Min First Consultations",
     "Insurance Accepted"
   ],
-  floatingCard: {
+   
+    floatingCard: {
     title: "Led by BAMS-qualified physicians",
     subtitle: "DHA Licensed · 15+ years average experience"
   },
 };
-
-
 
 
 export const ayurvedaIntro = {
@@ -33,10 +32,15 @@ export const ayurvedaIntro = {
   footer: "Medically reviewed by Dr. Priya Menon, BAMS, MD (Ayurveda) · DHA License XXXXX · Last updated May 2026"
 };
 
+
+
 export const ayurvedaTherapies = {
   label: "AUTHENTIC TREATMENTS",
   title: "Eight classical therapies. Practised the way they were meant to be.",
+  description: "Every sure which Ayurvedic massage you need? → See our comparison guide</a>",
   description: "Every treatment at our JVC Ayurveda clinic is prescribed by a BAMS-qualified physician after dosha consultation. We do not offer Ayurveda as massage. We offer it as medicine.",
+  footer:
+  '<a href="/treatments/ayurvedic-massage-jvc/">Not sure which Ayurvedic massage you need?</a> → See our comparison guide',
   items: [
     {
       title: "Panchakarma",
@@ -107,8 +111,12 @@ export const ayurvedaTherapies = {
       bestFor: "weight management, cellulite, lymphatic stagnation",
       alt: "Udvartana herbal powder massage for weight management at Vedara Care Ayurveda Dubai",
       link: "/treatments/udvartana-dubai/"
-    }
+    },
+
+   
+  
   ]
+
 };
 
 export const ayurvedaPhysician = {
@@ -362,7 +370,7 @@ export const ayurvedaConditions = {
       link: "/conditions/weight-loss-ayurveda-dubai/"
     }
   ],
-  footer: "Browse all 30+ conditions →"
+  footer: "Browse all 30+ conditions"
 };
 
 export const ayurvedaWhy = {

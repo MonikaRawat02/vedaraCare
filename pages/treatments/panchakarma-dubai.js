@@ -44,7 +44,7 @@ const PanchakarmaDubai = () => {
       "alternateName": ["Pancha Karma", "Classical Ayurvedic Detoxification"],
       "description": "Panchakarma is the classical five-action Ayurvedic detoxification protocol involving Vamana, Virechana, Basti, Nasya, and Raktamokshana, supervised by a BAMS-qualified physician over 7 to 21 days.",
       "url": currentUrl,
-      "image": "https://vedaracare.ae/images/panchakarma-dubai-hero.jpg",
+      "image": "https://vedaracare.ae/images/panchakarma-dubai-hero.webp",
       "procedureType": "Ayurveda",
       "bodyLocation": "Multiple",
       "preparation": "Snehapana (internal oleation), daily Abhyanga, and Swedana for 3-7 days before main therapies.",
@@ -127,14 +127,14 @@ const PanchakarmaDubai = () => {
         "name": "Dr. Priya Nair",
         "hasCredential": "DHA-Licensed BAMS, MD (Ayurveda)"
       },
-      "primaryImageOfPage": "https://vedaracare.ae/images/panchakarma-dubai-hero.jpg"
+      "primaryImageOfPage": "https://vedaracare.ae/images/panchakarma-dubai-hero.webp"
     },
     // Schema 5 — Article
     {
       "@context": "https://schema.org",
       "@type": "Article",
       "headline": "Panchakarma Treatment in Dubai — A Complete Guide",
-      "image": "https://vedaracare.ae/images/panchakarma-dubai-hero.jpg",
+      "image": "https://vedaracare.ae/images/panchakarma-dubai-hero.webp",
       "datePublished": publishedDate,
       "dateModified": modifiedDate,
       "author": {
@@ -213,7 +213,7 @@ const PanchakarmaDubai = () => {
         ))}
 
         {/* Preload Hero Image */}
-        <link rel="preload" as="image" href="https://vedaracare.ae/images/panchakarma-dubai-hero.jpg" />
+        <link rel="preload" as="image" href="https://vedaracare.ae/images/panchakarma-dubai-hero.webp" />
       </Head>
 
       <AyurvedaHero {...panchakarmaDubaiHero} />

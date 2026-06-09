@@ -558,7 +558,7 @@ const PostSurgeryRehabDubai = () => {
       "@context": "https://schema.org",
       "@type": "Article",
       "headline": "Post-Surgery Rehabilitation in Dubai — Complete Service Guide",
-      "image": "https://vedaracare.ae/images/post-surgery-rehabilitation-dubai-hero.jpg",
+      "image": "https://vedaracare.ae/images/post-surgery-rehabilitation-dubai-hero.webp",
       "datePublished": "2026-06-01",
       "dateModified": "2026-06-04",
       "author": {

@@ -95,8 +95,8 @@ const Conditions = ({
           })}
         </div>
 
-        <div className="text-center mt-16">
-          <p className="text-[#C9A961] font-sans font-medium text-[15px] cursor-pointer hover:underline flex items-center justify-center gap-2">
+        <div className="text-center mt-10">
+          <p className="text-[#C9A961] font-sans font-medium text-[15px] flex items-center justify-center gap-2">
             {footer}
           </p>
         </div>
