@@ -8,22 +8,35 @@ export const SurgicalProcedures = ({
   title = "",
   description = "",
   types = [],
-  footer = ""
+  footer = "",
+  image,
+  alt
 }) => {
   return (
     <section className={`${bgColor} py-24 px-4`}>
       <div className="max-w-[1400px] mx-auto">
-        <div className="text-center max-w-[720px] mx-auto mb-14 space-y-4">
-          <p className="text-[13px] font-sans font-semibold tracking-[0.15em] text-[#C4A962] uppercase">
-            {label}
-          </p>
-          <h2 className="text-[32px] md:text-[42px] font-serif font-normal text-[#1A1A1A] leading-[1.2]">
-            {title}
-          </h2>
-          {description && (
-            <p className="text-[16px] font-sans text-[#6B6B6B] leading-relaxed">
-              {description}
+        <div className="grid lg:grid-cols-2 gap-12 items-start mb-14">
+          <div className="space-y-4">
+            <p className="text-[13px] font-sans font-semibold tracking-[0.15em] text-[#C4A962] uppercase">
+              {label}
             </p>
+            <h2 className="text-[32px] md:text-[42px] font-serif font-normal text-[#1A1A1A] leading-[1.2]">
+              {title}
+            </h2>
+            {description && (
+              <p className="text-[16px] font-sans text-[#6B6B6B] leading-relaxed">
+                {description}
+              </p>
+            )}
+          </div>
+          {image && (
+            <div className="rounded-xl overflow-hidden h-[300px]">
+              <img 
+                src={image} 
+                alt={alt || "Surgical procedures"} 
+                className="w-full h-full object-cover"
+              />
+            </div>
           )}
         </div>
 

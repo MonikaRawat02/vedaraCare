@@ -19,7 +19,7 @@ export const panchakarmaDubaiHero = {
     title: "DOCTOR-SUPERVISED THROUGHOUT",
     subtitle: "Daily consultations included in every Panchakarma programme."
   },
-  image: "https://vedaracare.ae/images/panchakarma-dubai-hero.jpg",
+  image: "/images/panchakarma-dubai-hero.webp",
   alt: "Wooden Panchakarma droni with brass medicated oil vessels at Vedara Care Ayurveda clinic, JVC Dubai"
 };
 
@@ -41,8 +41,8 @@ export const panchakarmaDubaiFoundation = {
     "Done properly, Panchakarma takes a minimum of 7 days for a basic reset and 21 days for full classical treatment. Done in a single day, or \"added to\" a spa weekend, it is not Panchakarma."
   ],
   quote: "Panchakarma is medicine, not maintenance. The body needs preparation, treatment, and recovery — in that order.",
-  image: "https://images.unsplash.com/photo-1544367567-0f2fcb009e0b?q=80&w=1920&auto=format&fit=crop",
-  alt: "Ayurvedic doctor performing pulse diagnosis before prescribing Panchakarma in Dubai"
+  image: "/images/panchakarma-droni-treatment-room-jvc.webp",
+  alt: "Wooden Panchakarma droni treatment room at Vedara Care Ayurveda clinic in JVC Dubai"
 };
 
 export const panchakarmaDubaiPhysician = {
@@ -173,11 +173,13 @@ export const panchakarmaDubaiActions = {
     },
     {
       id: "02",
-      label: "Virechana (विरेचन — Therapeutic Purgation)",
+      label: "Virechana (विरेचన — Therapeutic Purgation)",
       title: "Medicated Purgation",
       description: "Medicated purgation to clear accumulated Pitta from the liver, gallbladder, and small intestine. One of the most clinically useful Panchakarma actions for modern conditions.",
       typicalUse: "<a href=\"/conditions/pcos-ayurveda-dubai/\" class=\"text-[#C9A961] hover:underline transition-colors\">PCOS</a>, skin conditions, liver health, metabolic imbalance",
-      duration: "Single day with 3 days preparation and recovery"
+      duration: "Single day with 3 days preparation and recovery",
+      image: "/images/virechana-treatment-vedara-jvc.webp",
+      alt: "Virechana treatment at Vedara Care Ayurveda clinic in JVC Dubai"
     },
     {
       id: "03",
@@ -185,7 +187,9 @@ export const panchakarmaDubaiActions = {
       title: "Medicated Enema Therapy",
       description: "Considered the most important of the five actions in classical texts — \"half of all treatment is Basti.\" A series of medicated enemas using either herbal decoctions or medicated oils.",
       typicalUse: "<a href=\"/conditions/back-pain-ayurveda-dubai/\" class=\"text-[#C9A961] hover:underline transition-colors\">Chronic pain</a>, sciatica, <a href=\"/conditions/ibs-ayurveda-dubai/\" class=\"text-[#C9A961] hover:underline transition-colors\">IBS</a>, neurological recovery, Vata disorders",
-      duration: "8, 15, or 30 day courses depending on condition"
+      duration: "8, 15, or 30 day courses depending on condition",
+      image: "/images/basti-treatment-room-panchakarma-dubai.webp",
+      alt: "Basti treatment room for Panchakarma in Dubai"
     },
     {
       id: "04",
@@ -193,11 +197,13 @@ export const panchakarmaDubaiActions = {
       title: "Nasal Administration",
       description: "Medicated oils or herbal preparations administered through the nasal passages, addressing everything from chronic sinusitis to migraines, hair loss, and head-and-neck conditions.",
       typicalUse: "Chronic sinusitis, <a href=\"/conditions/migraine-ayurveda-dubai/\" class=\"text-[#C9A961] hover:underline transition-colors\">migraine</a>, <a href=\"/conditions/hair-loss-ayurveda-dubai/\" class=\"text-[#C9A961] hover:underline transition-colors\">hair loss</a>, cervical spondylosis",
-      duration: "7-14 day courses"
+      duration: "7-14 day courses",
+      image: "/images/nasya-procedure-jvc-ayurveda.webp",
+      alt: "Nasya procedure at JVC Ayurveda clinic"
     },
     {
       id: "05",
-      label: "Raktamokshana (रक्तमोक्षण — Therapeutic Bloodletting)",
+      label: "Raktamokshana (रक्तमోక्षण — Therapeutic Bloodletting)",
       title: "Selective Bloodletting",
       description: "Selective bloodletting through controlled methods including leech therapy (Jalaukavacharana) or venesection. Used for specific Pitta-Raktha conditions like certain skin diseases and gout.",
       typicalUse: "Severe skin conditions, gout, varicose veins (selective)",
@@ -211,6 +217,8 @@ export const panchakarmaDubaiDaily = {
   label: "THE DAILY REALITY",
   title: "A day in a Vedara Care Panchakarma programme.",
   subtitle: "A representative day during Pradhanakarma (main therapy phase). Days vary by phase and protocol.",
+  image: "/images/panchakarma-daily-schedule-vedara.webp",
+  alt: "Panchakarma daily schedule at Vedara Care",
   items: [
     {
       time: "07:30",

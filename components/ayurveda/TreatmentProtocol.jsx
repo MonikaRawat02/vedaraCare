@@ -26,7 +26,7 @@ const TreatmentProtocol = ({
                 <div className="text-[#B8860B] font-medium">{phase.time}</div>
               </div>
               <div className="flex-1 border-l-2 border-[#B8860B] pl-6 pb-6">
-                <h4 className="text-lg mb-3">{phase.title}</h4>
+                <h3 className="text-lg mb-3">{phase.title}</h3>
                 {/* Support for the old format with "content" */}
                 {phase.content && (
                   <p className="text-sm leading-relaxed text-muted-foreground mb-4" dangerouslySetInnerHTML={{ __html: phase.content }} />

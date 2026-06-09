@@ -207,7 +207,7 @@ const AyurvedicMassageJVC = () => {
       <Head>
         <title>Ayurvedic Massage in JVC, Dubai | Classical Therapy | Vedara Care</title>
         <meta name="description" content="Authentic Ayurvedic massage in Jumeirah Village Circle — Abhyanga, Shirodhara, Kativasti & more. DHA-licensed, doctor-prescribed, same-gender therapists. From AED 250." />
-        
+         <meta name="robots" content="index, follow, max-image-preview:large" />
         {/* Open Graph / Facebook */}
         <meta property="og:type" content="article" />
         <meta property="og:url" content="https://vedaracare.ae/treatments/ayurvedic-massage-jvc/" />
