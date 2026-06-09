@@ -378,7 +378,7 @@ export const WhereWeWork = ({ data }) => {
             </p>
 
             <div className="flex flex-col gap-3 pt-4">
-              <button className="w-full bg-[#1A1A1A] text-white py-4 rounded-md font-sans font-bold text-[15px] hover:bg-black transition-colors">
+              <button className="w-full bg-[#1F4538] text-white py-4 rounded-md font-sans font-bold text-[15px] hover:bg-black transition-colors">
                 {data.buttons.primary}
               </button>
               <button className="w-full bg-[#C4A962] text-white py-4 rounded-md font-sans font-bold text-[15px] hover:bg-[#b89a56] transition-colors">
@@ -394,8 +394,7 @@ export const WhereWeWork = ({ data }) => {
     allowFullScreen
     loading="lazy"
     referrerPolicy="no-referrer-when-downgrade"
-    title="Vedara Care JVC Dubai Location"
-  />
+    title="Vedara Care JVC Dubai Location"/>
 </div>
         </div>
       </div>

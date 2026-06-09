@@ -8,7 +8,7 @@ const Services = ({
       id: 'ayurveda',
       title: 'Ayurveda in JVC',
       subtitle: 'Traditional healing science adapted for modern Dubai lifestyles',
-      image: 'https://images.unsplash.com/photo-1600334089648-b0d9d3028eb2?q=80&w=2070&auto=format&fit=crop',
+      image: '/images/ayurveda.webp',
       features: ['Panchakarma', 'Abhyanga', 'Shirodhara', 'Stress Management', 'PCOS Support', 'Weight Management'],
       buttonText: 'Explore Ayurveda',
       link: '/services/ayurveda'
@@ -17,7 +17,7 @@ const Services = ({
       id: 'physiotherapy',
       title: 'Physiotherapy in JVC',
       subtitle: 'Evidence-based rehabilitation and movement therapy for pain relief and recovery',
-      image: 'https://images.unsplash.com/photo-1576091160550-2173dba999ef?q=80&w=2070&auto=format&fit=crop',
+      image: '/images/physiotherapy.webp',
       features: ['Back Pain', 'Sports Injury', 'Frozen Shoulder', 'Dry Needling', 'Home Physiotherapy', 'Post Surgery Rehab'],
       buttonText: 'Explore Physiotherapy',
       link: '/services/physiotherapy'
@@ -26,7 +26,7 @@ const Services = ({
       id: 'dermatology',
       title: 'Dermatology in JVC',
       subtitle: 'Advanced skin treatments for healthy, radiant skin',
-      image: 'https://images.unsplash.com/photo-1512290923902-8a9f81dc236c?q=80&w=2070&auto=format&fit=crop',
+      image: '/images/dermatology.webp',
       features: ['Acne Treatment', 'Hair Loss', 'PRP Therapy', 'Pigmentation', 'Skin Rejuvenation', 'Chemical Peel'],
       buttonText: 'Explore Dermatology',
       link: '/services/dermatology'
@@ -35,7 +35,7 @@ const Services = ({
       id: 'home-healthcare',
       title: 'Home Healthcare in Dubai',
       subtitle: 'Premium healthcare services in the comfort of your home',
-      image: 'https://images.unsplash.com/photo-1584515933487-779824d29309?q=80&w=2070&auto=format&fit=crop',
+      image: '/images/Home Healthcare in Dubai.webp',
       features: ['Doctor on Call', 'Home Nursing', 'IV Drip', 'Lab Tests at Home', 'Elderly Care', 'Physiotherapy at Home'],
       buttonText: 'Explore Home Healthcare',
       link: '/services/home-healthcare'
@@ -44,7 +44,7 @@ const Services = ({
       id: 'wellness',
       title: 'Wellness Treatments',
       subtitle: 'Holistic wellness programs for mind, body, and spirit',
-      image: 'https://images.unsplash.com/photo-1544367567-0f2fcb009e0b?q=80&w=2020&auto=format&fit=crop',
+      image: '/images/Wellness Treatments.webp',
       features: ['Detox Programs', 'Stress Management', 'Yoga Therapy', 'Nutrition Consultation', 'Weight Management'],
       buttonText: 'Explore Wellness',
       link: '/services/wellness'
