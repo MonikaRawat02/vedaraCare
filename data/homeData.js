@@ -311,7 +311,7 @@ export const homeLocation = {
   },
   address: {
     label: "Address",
-    street: "[Full Street Address]",
+    street: "",
     area: "Jumeirah Village Circle",
     city: "Dubai, UAE"
   },
@@ -319,7 +319,7 @@ export const homeLocation = {
     label: "Contact",
     phone: "+971 4 XXX XXXX",
     whatsapp: "+971 5X XXX XXXX",
-    email: "hello@vedaracare.ae"
+    email: "info@vedaracare.ae"
   },
   hours: {
     label: "Hours",
