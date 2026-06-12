@@ -491,7 +491,7 @@ const SportsInjuryJvc = () => {
         <SportsInjuryMechanism />
         
         {/* H2: Evidence-based sports physiotherapy techniques. */}
-        <SportsPhysiotherapyModalities />
+        <SportsPhysiotherapyModalities {...sportsPhysiotherapyModalities} />
         
         {/* H2: Same-day appointments for acute sports injuries. */}
         <PhysiotherapyIntegration />
