@@ -130,8 +130,6 @@ export const postSurgeryRehabReviews = {
 export const homePhysiotherapyData = {
   label: "HOME PHYSIOTHERAPY",
   title: "We come to you during early recovery.",
-  image: "/images/home-physiotherapy-post-surgery-dubai.webp",
-  alt: "Home physiotherapy post-surgery in Dubai",
   content: [
     "Post-surgical patients in the first 2-4 weeks of recovery often cannot easily travel to a clinic. Getting in and out of cars is painful or impossible. Stairs are inaccessible. Long sitting positions are uncomfortable. Asking a recently-operated patient to travel for a 60-minute appointment can set back their recovery.",
     "Our home physiotherapy service operates across Dubai — JVC, JVT, Al Barsha South, Sports City, Motor City, Arjan, Dubai Hills, Marina, Downtown, Palm Jumeirah, Mirdif, and surrounding areas. Our DPT-qualified physiotherapists travel to your home with portable equipment, treatment supplies, and structured protocols. The home environment is often more conducive to early-phase rehabilitation than a clinic — your familiar surroundings, your own equipment if available, no travel stress.",

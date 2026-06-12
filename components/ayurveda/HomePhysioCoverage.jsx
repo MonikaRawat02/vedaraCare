@@ -5,9 +5,10 @@ const HomePhysioCoverage = ({
   label = "ACROSS DUBAI",
   title = "Where we deliver home physiotherapy.",
   description = "",
-  within10Minutes = [],
-  within1525Minutes = [],
-  within2545Minutes = [],
+  within15Minutes = [],
+  within2025Minutes = [],
+  within2535Minutes = [],
+  within3545Minutes = [],
   note = "",
   image = "",
   alt = "Home physiotherapy coverage image"
@@ -48,7 +49,7 @@ const HomePhysioCoverage = ({
                 Within 15 minutes of clinic:
               </h4>
               <div className="flex flex-wrap gap-2">
-                {within10Minutes.map((item, idx) => (
+                {within15Minutes.map((item, idx) => (
                   <span 
                     key={idx} 
                     className="bg-white px-3 py-1 rounded-full text-sm text-gray-700 shadow-sm"
@@ -61,10 +62,10 @@ const HomePhysioCoverage = ({
 
             <div>
               <h4 className="font-semibold text-[#d4af37] mb-3">
-                Within 15-25 minutes:
+                Within 20-25 minutes:
               </h4>
               <div className="flex flex-wrap gap-2">
-                {within1525Minutes.map((item, idx) => (
+                {within2025Minutes.map((item, idx) => (
                   <span 
                     key={idx} 
                     className="bg-white px-3 py-1 rounded-full text-sm text-gray-700 shadow-sm"
@@ -77,10 +78,25 @@ const HomePhysioCoverage = ({
 
             <div>
               <h4 className="font-semibold text-[#d4af37] mb-3">
-                Within 25-45 minutes:
+                Within 25-35 minutes:
               </h4>
               <div className="flex flex-wrap gap-2">
-                {within2545Minutes.map((item, idx) => (
+                {within2535Minutes.map((item, idx) => (
+                  <span 
+                    key={idx} 
+                    className="bg-white px-3 py-1 rounded-full text-sm text-gray-700 shadow-sm"
+                  >
+                    {item}
+                  </span>
+                ))}
+              </div>
+            </div>
+             <div>
+              <h4 className="font-semibold text-[#d4af37] mb-3">
+                Within 35-45 minutes:
+              </h4>
+              <div className="flex flex-wrap gap-2">
+                {within3545Minutes.map((item, idx) => (
                   <span 
                     key={idx} 
                     className="bg-white px-3 py-1 rounded-full text-sm text-gray-700 shadow-sm"
