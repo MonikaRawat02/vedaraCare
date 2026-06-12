@@ -2,6 +2,7 @@ import Head from 'next/head';
 import AyurvedaHero from '../../components/ayurveda/AyurvedaHero';
 import AyurvedaIntro from '../../components/ayurveda/AyurvedaIntro';
 import PhysiotherapyTechniques from '../../components/ayurveda/PhysiotherapyTechniques';
+import SportsPhysiotherapyModalities from '../../components/ayurveda/SportsPhysiotherapyModalities';
 import TreatmentReviews from '../../components/ayurveda/TreatmentReviews';
 import PhysiotherapyTeam from '../../components/ayurveda/PhysiotherapyTeam';
 import FAQ from '../../components/home/FAQ';
@@ -158,36 +159,11 @@ const BackPainPhysioJvc = () => {
         <AyurvedaHero {...backPainPhysioHero} />
         <AyurvedaIntro {...backPainPhysioIntro} />
         <PhysiotherapyTechniques {...backPainPhysioTechniques} />
-        <section className="bg-white" style={{ padding: '96px 24px' }}>
-          <div className="max-w-7xl mx-auto">
-            <div className="text-center mb-14">
-              <p className="text-xs font-bold tracking-widest uppercase mb-4" style={{ color: 'rgb(201, 168, 76)' }}>
-                <span className="inline-block w-6 h-px mr-2 align-middle" style={{ background: 'rgb(201, 168, 76)' }}></span>
-                {backPainPhysioModalities.label}
-                <span className="inline-block w-6 h-px ml-2 align-middle" style={{ background: 'rgb(201, 168, 76)' }}></span>
-              </p>
-              <h2 className="text-3xl sm:text-4xl" style={{ fontFamily: 'Fraunces, Georgia, serif', fontWeight: 500, color: 'rgb(26, 26, 26)' }}>
-                {backPainPhysioModalities.title}
-              </h2>
-            </div>
-
-            <div className="grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-3 gap-6">
-              {backPainPhysioModalities.modalities.map((modality, index) => (
-                <div key={index} className="rounded-lg p-7 transition-all hover:shadow-md" style={{ background: 'rgb(250, 247, 242)' }}>
-                  <p className="text-4xl mb-4" style={{ fontFamily: 'Fraunces, Georgia, serif', color: 'rgb(201, 168, 76)', fontWeight: 300 }}>
-                    {modality.number}
-                  </p>
-                  <h4 className="text-lg mb-3" style={{ fontFamily: 'Fraunces, Georgia, serif', fontWeight: 500, color: 'rgb(26, 26, 26)' }}>
-                    {modality.title}
-                  </h4>
-                  <p className="text-sm leading-relaxed" style={{ color: 'rgb(107, 107, 107)', lineHeight: 1.7 }}>
-                    {modality.description}
-                  </p>
-                </div>
-              ))}
-            </div>
-          </div>
-        </section>
+        <SportsPhysiotherapyModalities
+          label={backPainPhysioModalities.label}
+          title={backPainPhysioModalities.title}
+          modalities={backPainPhysioModalities.modalities}
+        />
         <TreatmentReviews {...backPainPhysioReviews} />
         <PhysiotherapyTeam {...backPainPhysioTeam} />
         <FAQ {...backPainPhysioFaqs} />
