@@ -31,7 +31,7 @@ export const homePhysioIntro = {
 };
 
 export const homePhysioSituations = {
-  bgColor: "bg-[#F5F1E8]",
+  bgColor: "bg-[#FFFFFF]",
   label: "Is Home Physiotherapy Right for You?",
   title: "Situations where home physiotherapy is the right choice.",
   description: "Home physiotherapy is not the right fit for every patient — clinic-based care has advantages for specific conditions requiring specialised equipment. However, for many patients, home physiotherapy produces better outcomes, is more convenient, and avoids the stress of travel.",
@@ -72,7 +72,7 @@ export const homePhysioSituations = {
 };
 
 export const homePhysioSessionFlow = {
-  bgColor: "bg-[#FFFFFF]",
+  bgColor: "bg-[#F7F2EA]",
   label: "HOW IT WORKS",
   title: "What happens during a home physiotherapy session.",
   steps: [

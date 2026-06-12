@@ -2,65 +2,83 @@ import React from 'react';
 import Link from 'next/link';
 
 const HomePhysioSingleImageSection = ({
-  bgColor = "bg-[#FFFFFF]",
-  label = "THE SECTION",
-  title = "Section title",
+  bgColor = "bg-white",
+  label = "What to Expect",
+  title = "What happens during a home physiotherapy session.",
   description = "",
   items = [],
   image = "",
-  alt = "Image alt text"
+  alt = "Image alt text",
+  quote = "",
+  footer = ""
 }) => {
   return (
-    <section className={`${bgColor} py-24 px-4`}>
+    <section className={`${bgColor} py-24 px-6`}>
       <div className="max-w-7xl mx-auto">
-        <div className="text-center mb-12">
-          <div className="text-[#d4af37] text-sm tracking-wider mb-4">
+        <div className="text-center mb-16">
+          <span className="text-[10px] tracking-[0.18em] font-semibold text-[#B8933F] uppercase">
             {label}
-          </div>
-          <h2 className="text-4xl font-serif mb-6">
+          </span>
+          <h2 className="mt-3 text-[clamp(1.8rem,3.5vw,2.6rem)] text-[#1C1814] leading-tight" style={{ fontFamily: 'var(--font-display)', fontWeight: 500 }}>
             {title}
           </h2>
-          {description && (
-            <p className="text-gray-600 max-w-2xl mx-auto">
-              {description}
-            </p>
-          )}
         </div>
 
-        <div className="grid md:grid-cols-2 gap-12 items-start">
-          <div className="space-y-6">
-            {items.map((item, index) => (
-              <div key={index} className="flex gap-4">
-                <div className="flex-shrink-0 w-10 h-10 rounded-full bg-[#f5f1e8] flex items-center justify-center text-[#d4af37] font-bold text-sm">
-                  {item.number}
+        <div className="grid grid-cols-1 lg:grid-cols-[55fr_45fr] gap-16 items-start">
+          <div>
+            {description && (
+              <p className="text-[#6B635A] leading-relaxed mb-10">
+                {description}
+              </p>
+            )}
+
+            <div className="space-y-8">
+              {items.map((item, index) => (
+                <div key={index} className="flex gap-5">
+                  <div className="flex flex-col items-center">
+                    <div className="w-7 h-7 rounded-full bg-[#1E4D3A] text-white flex items-center justify-center text-xs font-medium shrink-0">
+                      {index + 1}
+                    </div>
+                    {index < items.length - 1 && (
+                      <div className="w-px flex-1 bg-[#B8933F]/30 mt-2"></div>
+                    )}
+                  </div>
+                  <div className="pb-2">
+                    <h3 className="text-[1rem] text-[#1C1814] mb-2 leading-snug" style={{ fontFamily: 'var(--font-display)', fontWeight: 500 }}>
+                      {item.title}
+                      {(item.link || item.href) ? (
+                        <Link href={item.link || item.href} className="text-[#184c3a] hover:underline ml-1">→</Link>
+                      ) : null}
+                    </h3>
+                    <p className="text-sm text-[#6B635A] leading-[1.75]">
+                      {item.description}
+                    </p>
+                  </div>
                 </div>
-                <div>
-                  <h3 className="font-serif text-xl mb-2">
-                    {item.title}
-                    {item.link ? (
-                      <Link href={item.link} className="text-[#184c3a] hover:underline ml-1">→</Link>
-                    ) : null}
-                  </h3>
-                  <p className="text-gray-600 leading-relaxed">
-                    {item.description}
-                  </p>
-                </div>
-              </div>
-            ))}
+              ))}
+            </div>
+
+            {quote && (
+              <blockquote className="mt-12 italic text-[1.15rem] text-[#B8933F] leading-[1.7] pl-6 border-l-2 border-[#B8933F]" style={{ fontFamily: 'var(--font-display)', fontWeight: 400 }}>
+                {quote}
+              </blockquote>
+            )}
           </div>
 
-          <div className="bg-gray-200 rounded-xl h-[500px] md:h-[600px] flex items-center justify-center overflow-hidden">
-            {image ? (
-              <img 
-                src={image} 
-                alt={alt} 
-                className="w-full h-full object-cover rounded-xl"
-              />
-            ) : (
-              <span className="text-gray-500 text-center px-4">
-                Image Placeholder
-              </span>
-            )}
+          <div className="sticky top-24">
+            <div className="overflow-hidden rounded-xl aspect-[3/4]">
+              {image ? (
+                <img 
+                  src={image} 
+                  alt={alt} 
+                  className="w-full h-full object-cover"
+                />
+              ) : (
+                <span className="text-gray-500 text-center px-4">
+                  Image Placeholder
+                </span>
+              )}
+            </div>
           </div>
         </div>
       </div>
