@@ -32,6 +32,8 @@ export const pediatricPhysiotherapyIntro = {
   footer: "Medically reviewed by Dr. Sarah Johnson, DPT, Paediatric Specialist, DHA-Licensed · Last updated June 2026"
 };
 
+
+
 export const pediatricPhysiotherapyTeam = {
   label: "THE TEAM",
   title: "Paediatric specialists at our JVC clinic.",
@@ -183,19 +185,6 @@ export const pediatricPhysiotherapySportsInjuryTypes ={
 
 
 
-
-
-
-
-
-
-
-
-
-
-
-
-
 export const pediatricPhysiotherapyFaqs = {
   label: "COMMON QUESTIONS",
   title: "What parents ask before booking.",
@@ -247,6 +236,8 @@ export const pediatricPhysiotherapyFaqs = {
     ]
 };
 
+
+
 export const pediatricPhysiotherapyLocation = {
   bgColor: "bg-[#FFFFFF]",
   label: "VISIT US",
@@ -267,6 +258,8 @@ export const pediatricPhysiotherapyLocation = {
   buttonText: "Book a Paediatric Assessment"
 };
 
+
+
 export const pediatricPhysiotherapyFinalCTA = {
   bgColor: "bg-[#F8F6F1]",
   label: "READY TO START?",
@@ -284,6 +277,7 @@ export const pediatricPhysiotherapyFinalCTA = {
   ],
   footer: "Initial consultation from AED 450 · Walking distance from Circle Mall, JVC · Five minutes from JSS Private School · Female therapists available · Insurance direct-billing."
 };
+
 
 export const pediatricPhysiotherapyAgeGroups = {
   bgColor: "bg-[#F5F1E8]",
@@ -316,6 +310,7 @@ export const pediatricPhysiotherapyAgeGroups = {
   ],
   footer: "Our paediatric physiotherapists are trained across all four age groups, with depth in particular age ranges. At consultation, your child will be matched with the therapist whose expertise best fits their age and specific condition."
 };
+
 
 export const pediatricPhysiotherapyWhatToExpect = {
   bgColor: "bg-[#FFFFFF]",
@@ -353,6 +348,7 @@ export const pediatricPhysiotherapyWhatToExpect = {
     " During usual meal times"
   ]
 };
+
 
 export const pediatricPhysiotherapyJvcPricing = {
   bgColor: "bg-[#FAF8F5]",
@@ -405,6 +401,7 @@ export const pediatricPhysiotherapyJvcPricing = {
   ]
 };
 
+
 export const pediatricPhysiotherapyReviews = {
   bgColor: "bg-[#1A4D2E]",
   cardBgColor: "rgba(255, 255, 255, 0.05)",
@@ -438,6 +435,7 @@ export const pediatricPhysiotherapyReviews = {
     { value: "92%", label: "would recommend to other parents" }
   ]
 };
+
 
 export const pediatricPhysiotherapyRelatedPages = {
   bgColor: "bg-[#F5F1E8]",
@@ -474,6 +472,7 @@ export const pediatricPhysiotherapyRelatedPages = {
 
   ]
 };
+
 
 export const pediatricPhysiotherapyPricing = {
   bgColor: "bg-[#f8f6f1]",

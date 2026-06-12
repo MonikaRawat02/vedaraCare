@@ -31,6 +31,7 @@ export const pcosIntro = {
   footer: "Medically reviewed by Dr. [Lead Female Ayurvedic Physician], BAMS, MD (Ayurveda), DHA-Licensed · Last updated May 2026"
 };
 
+
 export const pcosMechanism = {
   bgColor: "bg-[#F5F1E8]",
   label: "WHY YOU ARE HERE",
@@ -44,6 +45,8 @@ export const pcosMechanism = {
   image: "/images/pcos-research-dubai-woman.webp",
   alt: "Dubai woman researching PCOS treatment options — Ayurvedic perspective on under-treated condition"
 };
+
+
 
 export const pcosPhenotypes = {
   bgColor: "bg-[#FFFFFF]",

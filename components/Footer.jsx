@@ -18,9 +18,7 @@ const Footer = () => {
               DHA-licensed holistic healthcare in Jumeirah Village Circle, Dubai.
             </p>
             <div className="space-y-4 text-sm text-[#F8F9FA]/80">
-              <p>
-                [Full Street Address]<br />
-                Jumeirah Village Circle<br />
+              <p>Jumeirah Village Circle<br />
                 Dubai, UAE
               </p>
               <div className="space-y-2">
@@ -32,9 +30,9 @@ const Footer = () => {
                   <Phone size={14} />
                   <span>+971 5X XXX XXXX</span>
                 </a>
-                <a href="mailto:hello@vedaracare.ae" className="flex items-center gap-2 hover:text-white transition-colors">
+                <a href="mailto:info@vedaracare.ae" className="flex items-center gap-2 hover:text-white transition-colors">
                   <Mail size={14} />
-                  <span>hello@vedaracare.ae</span>
+                  <span>info@vedaracare.ae</span>
                 </a>
               </div>
             </div>

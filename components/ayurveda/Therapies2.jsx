@@ -420,7 +420,7 @@ const Therapies2 = () => {
               Diastasis recti, pelvic floor restoration
             </p>
           </Link>
-          <div className="bg-white p-6 rounded-lg hover:shadow-lg transition-all cursor-pointer group">
+          <Link href="/physiotherapy/pediatric-dubai" className="bg-white p-6 rounded-lg hover:shadow-lg transition-all cursor-pointer group block">
             <div className="mb-4">
               <svg
                 xmlns="http://www.w3.org/2000/svg"
@@ -444,7 +444,7 @@ const Therapies2 = () => {
             <p className="text-sm text-[#6B7280]">
               Developmental and sports concerns in children
             </p>
-          </div>
+          </Link>
         </div>
       </div>
       

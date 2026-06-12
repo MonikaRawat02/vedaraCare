@@ -109,22 +109,19 @@ const Header = () => {
                     Post-Surgery Rehab
                   </Link>
                    <Link 
-                    href="/physiotherapy/neurological-dubai/
-" 
+                    href="/physiotherapy/neurological-dubai" 
                     className="block px-4 py-2.5 text-[13px] font-sans text-[#4A4A4A] hover:text-[#184C3A] hover:bg-gray-50 transition-colors"
                   >
                     Neurological Rehab
                   </Link>
                    <Link 
-                    href="/physiotherapy/pediatric-dubai/
-" 
+                    href="/physiotherapy/pediatric-dubai" 
                     className="block px-4 py-2.5 text-[13px] font-sans text-[#4A4A4A] hover:text-[#184C3A] hover:bg-gray-50 transition-colors"
                   >
                    Pediatric 
                   </Link>
                    <Link 
-                    href="/physiotherapy/sports-injury-jvc/
-" 
+                    href="/physiotherapy/sports-injury-jvc" 
                     className="block px-4 py-2.5 text-[13px] font-sans text-[#4A4A4A] hover:text-[#184C3A] hover:bg-gray-50 transition-colors"
                   >
                    Sports Injury
@@ -172,12 +169,12 @@ const Header = () => {
 
         {/* Mobile Menu Dropdown */}
         <div 
-          className={`lg:hidden absolute top-full left-0 right-0 z-[60] bg-white border-b border-gray-100 transition-all duration-300 ease-in-out shadow-xl overflow-hidden ${
-            isMenuOpen ? 'max-h-[60vh] opacity-100' : 'max-h-0 opacity-0 pointer-events-none'
+          className={`lg:hidden absolute top-full left-0 right-0 z-[60] bg-white border-b border-gray-100 transition-all duration-300 ease-in-out shadow-xl overflow-y-auto ${
+            isMenuOpen ? 'max-h-[80vh] opacity-100' : 'max-h-0 opacity-0 pointer-events-none'
           }`}
         >
-          <div className="flex flex-col py-6 px-6 gap-6">
-            <Link href="/services/ayurveda" onClick={() => setIsMenuOpen(false)} className="text-[16px] font-medium text-[#1A1A1A] hover:text-[#184C3A]">Ayurveda</Link>
+          <div className="flex flex-col py-6 px-6 pb-24 gap-6">
+            <Link href="/ayurveda-dubai" onClick={() => setIsMenuOpen(false)} className="text-[16px] font-medium text-[#1A1A1A] hover:text-[#184C3A]">Ayurveda</Link>
             
             {/* Mobile Physiotherapy Accordion */}
             <div>
@@ -190,10 +187,13 @@ const Header = () => {
                   <ChevronDown size={16} className={`transition-transform duration-200 ${isMobilePhysioOpen ? 'rotate-180' : ''}`} />
                 </button>
               </div>
-              <div className={`overflow-hidden transition-all duration-200 ${isMobilePhysioOpen ? 'max-h-40 mt-2' : 'max-h-0'}`}>
+              <div className={`overflow-hidden transition-all duration-200 ${isMobilePhysioOpen ? 'max-h-80 mt-2' : 'max-h-0'}`}>
                 <div className="flex flex-col gap-3 pl-4 border-l-2 border-gray-100">
                   <Link href="/physiotherapy-jvc" onClick={() => setIsMenuOpen(false)} className="text-[14px] text-[#4A4A4A] hover:text-[#184C3A]">Physiotherapy in JVC</Link>
-                  <Link href="/physiotherapy/post-surgery-rehab-dubai/" onClick={() => setIsMenuOpen(false)} className="text-[14px] text-[#4A4A4A] hover:text-[#184C3A]">Post-Surgery Rehab</Link>
+                  <Link href="/physiotherapy/post-surgery-rehab-dubai" onClick={() => setIsMenuOpen(false)} className="text-[14px] text-[#4A4A4A] hover:text-[#184C3A]">Post-Surgery Rehab</Link>
+                  <Link href="/physiotherapy/neurological-dubai" onClick={() => setIsMenuOpen(false)} className="text-[14px] text-[#4A4A4A] hover:text-[#184C3A]">Neurological Rehab</Link>
+                  <Link href="/physiotherapy/pediatric-dubai" onClick={() => setIsMenuOpen(false)} className="text-[14px] text-[#4A4A4A] hover:text-[#184C3A]">Pediatric</Link>
+                  <Link href="/physiotherapy/sports-injury-jvc" onClick={() => setIsMenuOpen(false)} className="text-[14px] text-[#4A4A4A] hover:text-[#184C3A]">Sports Injury</Link>
                 </div>
               </div>
             </div>
