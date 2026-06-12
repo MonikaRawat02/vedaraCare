@@ -19,7 +19,6 @@ import {
   homePhysioHero,
   homePhysioIntro,
   homePhysioSituations,
-  // homePhysioSessionFlow,
   homePhysioCoverage,
   homePhysioModalities,
   homePhysioSpecialisations,
@@ -284,25 +283,22 @@ const HomePhysiotherapyDubai = () => {
 
       <AyurvedaHero {...homePhysioHero} />
       <AyurvedaIntro {...homePhysioIntro} />
-       <SportsPhysiotherapyModalities {...homePhysioModalities} />
+      
       <HomePhysioSingleImageSection 
         {...homePhysioSituations}
         items={homePhysioSituations.situations}
+        image={homePhysioSituations.image}
+        alt={homePhysioSituations.alt}
+        quote={homePhysioSituations.quote}
       />
 
-      {/* <HomePhysioSessionFlow 
-        {...homePhysioSessionFlow}
-        steps={homePhysioSessionFlow.steps}
-      /> */}
+   
 
       <HomePhysioCoverage {...homePhysioCoverage} />
 
-      {/* <SportsPhysiotherapyModalities {...homePhysioModalities} /> */}
- <PhysiotherapySpecializations {...homePhysioSpecialisations} />
+      <SportsPhysiotherapyModalities {...homePhysioModalities} />
 
- 
-
-    
+      <PhysiotherapySpecializations {...homePhysioSpecialisations} />
 
       <HomePhysioBookingLogistics 
         {...homePhysioBookingLogistics}
