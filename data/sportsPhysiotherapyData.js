@@ -93,38 +93,34 @@ export const sportsPhysiotherapyMechanism = {
 
 export const sportsPhysiotherapyModalities = {
   bgColor: "bg-[#FFFFFF]",
-  label: "MODALITIES & TECHNIQUES",
-  title: "Evidence-based sports physiotherapy techniques used in our JVC clinic.",
+  label: "Techniques & Modalities",
+  title: "Evidence-based sports physiotherapy techniques.",
   modalities: [
     {
       number: "01",
       title: "Manual Therapy",
-      description: "Joint mobilisation, soft tissue work, myofascial release — the foundation of sports injury treatment."
-    },
+      description: "Skilled hands-on treatment — joint mobilisation, soft tissue work, manual stretching, myofascial release, and manipulation where appropriate. The foundational sports physiotherapy technique. Particularly valuable for acute injury management, restricted joint mobility, and chronic soft tissue patterns." },
     {
       number: "02",
       title: "Dry Needling",
-      description: "Trigger point dry needling for muscle tightness and pain, particularly effective for hamstrings and rotator cuffs."
-    },
+      description: "Fine needles inserted into trigger points and tight muscle bands to release tension and reduce pain. Particularly effective for chronic muscle patterns, certain sport-related pain syndromes, and persistent post-injury muscle tension. Performed by certified physiotherapists."   },
     {
       number: "03",
       title: "Shockwave Therapy",
-      description: "Extracorporeal shockwave therapy for chronic tendinopathies — plantar fasciitis, patellar tendinopathy, tennis elbow."
-    },
+      description: "Focused or radial shockwave therapy for chronic tendinopathies — plantar fasciitis, Achilles tendinopathy, patellar tendinopathy, lateral epicondylitis, rotator cuff calcific tendinopathy. Evidence-based first-line treatment for chronic tendon conditions that have not responded to other approaches." },
     {
       number: "04",
-      title: "Biomechanical Analysis",
-      description: "Gait analysis, movement screening, video review of specific sport techniques."
+      title: "Biomechanical Analysis & Gait Assessment",
+      description: "Detailed analysis of movement patterns specific to your sport. Running gait analysis, sport-specific movement screening, single-leg and bilateral functional testing. Identifies the movement patterns contributing to injury or limiting performance."
     },
     {
       number: "05",
       title: "Sport-Specific Exercise Prescription",
-      description: "Not generic exercises — exercises tailored to your sport: padel, running, gym training, football, tennis."
-    },
+      description: "Progressive exercise programmes tailored to your sport. Not generic 'physio exercises' but specific protocols for your sport's demands. Documented in writing with video guidance for home performance."  },
     {
       number: "06",
       title: "Return-to-Sport Testing",
-      description: "Objective strength testing, functional performance tests, change-of-direction tests — evidence-based clearance to return."
+      description: "Objective testing before clearing return to sport — strength testing (isokinetic or hand-held dynamometry), functional hop tests, change-of-direction tests, sport-specific drills. Evidence-based criteria for return-to-sport clearance."
     }
   ]
 };
