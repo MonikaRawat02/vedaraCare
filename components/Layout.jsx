@@ -5,7 +5,7 @@ const Layout = ({ children }) => {
   return (
     <div className="min-h-screen flex flex-col">
       <Header />
-      <main className="flex-grow">
+      <main className="flex-grow lg:pb-0 pb-20">
         {children}
       </main>
       <Footer />
@@ -13,7 +13,7 @@ const Layout = ({ children }) => {
       {/* Floating WhatsApp Button */}
       <a 
         href="https://wa.me/971XXXXXXXX" 
-        className="fixed bottom-8 right-8 bg-[#184C3A] text-white p-4 rounded-full shadow-2xl hover:scale-110 transition-transform z-[100]"
+        className="fixed bottom-8 right-8 lg:bottom-8 lg:right-8 bg-[#184C3A] text-white p-4 rounded-full shadow-2xl hover:scale-110 transition-transform z-[100] mb-20 lg:mb-0"
         target="_blank"
         rel="noopener noreferrer"
       >

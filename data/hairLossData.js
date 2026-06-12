@@ -433,7 +433,7 @@ export const hairLossTreatmentLocation = {
   address: 'Vedara Care Polyclinic, Building X, Jumeirah Village Circle (JVC), Dubai — next to Circle Mall, near FIVE Jumeirah Village Hotel',
   phone: '+971 4 000 0000',
   whatsapp: '+971 50 000 0000',
-  email: 'hello@vedaracare.ae',
+  email: 'Info@vedaracare.ae',
   hours: {
     monday: '9:00 AM - 8:00 PM',
     saturday: '9:00 AM - 5:00 PM',
