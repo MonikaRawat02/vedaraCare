@@ -89,9 +89,10 @@ const AyurvedaHero = ({
                 <p className="text-[12px] font-sans font-medium text-[#C9A961] mb-0.5">
                   {floatingCard.title}
                 </p>
-                <p className="text-[12px] text-[#5a5a5a] font-sans leading-snug">
-                  {floatingCard.subtitle}
-                </p>
+                <p 
+                  className="text-[12px] text-[#5a5a5a] font-sans leading-snug"
+                  dangerouslySetInnerHTML={{ __html: floatingCard.subtitle }}
+                />
               </div>
             </div>
           </div>
