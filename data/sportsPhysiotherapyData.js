@@ -429,7 +429,7 @@ export const sportsPhysiotherapyLocation = {
   title: "Where sports physiotherapy happens at Vedara Care JVC.",
   address: "Vedara Care Polyclinic<br/>Building X, Street 2<br/>Jumeirah Village Circle (JVC)<br/>Dubai, UAE",
   phone: "+971 4 123 4567",
-  // whatsapp: "+971 50 123 4567",
+  whatsapp: "+971 50 123 4567",
   email: "sports@vedaracare.ae",
   hours: {
     monday: "9:00 AM - 9:00 PM",

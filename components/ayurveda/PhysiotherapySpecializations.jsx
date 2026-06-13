@@ -46,6 +46,13 @@ const PhysiotherapySpecializations = ({
                 />
               </div>
 
+              {type.typicalSigns && (
+                <div className="pt-4 mt-4 border-t border-gray-100">
+                  <p className="text-[9px] font-semibold tracking-widest uppercase mb-1" style={{ color: 'rgb(150, 116, 28)' }}>Typical signs:</p>
+                  <p className="text-[12px]" style={{ color: 'rgb(26, 25, 22)' }} dangerouslySetInnerHTML={{ __html: type.typicalSigns }} />
+                </div>
+              )}
+
               {type.commonConditions && type.commonConditions.length > 0 && (
                 <div className="pt-4 border-t border-gray-50 mt-4">
                   <p className="text-xs text-gray-600" dangerouslySetInnerHTML={{ __html: `<strong class="text-[#d4af37]">Common Dubai presentations:</strong> ${type.commonConditions.join(", ")}` }} />
@@ -54,7 +61,7 @@ const PhysiotherapySpecializations = ({
             </div>
           ))}
         </div>
-
+{/* <div><p class="text-[9px] font-semibold tracking-widest uppercase mb-1" style="color: rgb(150, 116, 28);">Typical signs:</p><p class="text-[12px]" style="color: rgb(26, 25, 22);">Stiff neck, limited rotation, pain on movement, recent onset</p></div> */}
         {footer && (
           <div className="mt-5 text-center max-w-[900px] mx-auto pt-8 hover:text-[#C9A55A] transition-colors">
             <p className="text-[#888888] text-sm font-sans leading-relaxed" dangerouslySetInnerHTML={{ __html: footer }} />
