@@ -44,7 +44,7 @@ const HomePhysiotherapyDubai = () => {
       "@type": ["MedicalBusiness", "LocalBusiness", "PhysicalTherapy", "HomeHealthCare"],
       "@id": `${currentUrl}#home-physiotherapy`,
       "name": "Vedara Care Home Physiotherapy",
-      "alternateName": ["Vedara Home Physio Dubai", "Vedara At-Home Physiotherapy"],
+      "alternateName": ["Vedara Home Physio Dubai", "Vedara At-Home Physiotherapy", "At-Home Physical Therapy", "Mobile Physiotherapy"],
       "url": currentUrl,
       "parentOrganization": { "@id": "https://vedaracare.ae/#organization" },
       "description": "DHA-licensed home physiotherapy across Dubai delivered by DPT-qualified physiotherapists from Vedara Care Polyclinic, Jumeirah Village Circle. All physiotherapy specialisations available at patient homes — post-surgical, neurological, postnatal, paediatric, geriatric. Coverage across 18+ Dubai neighbourhoods.",
@@ -97,13 +97,28 @@ const HomePhysiotherapyDubai = () => {
         { "@type": "Place", "name": "Town Square" },
         { "@type": "Place", "name": "Jumeirah Beach Residence" },
         { "@type": "Place", "name": "Dubai Production City" },
-        { "@type": "Place", "name": "Dubai Studio City" }
+        { "@type": "Place", "name": "Dubai Studio City" },
+        { "@type": "Place", "name": "DIFC" },
+        { "@type": "Place", "name": "Jumeirah" },
+        { "@type": "Place", "name": "Umm Suqeim" },
+        { "@type": "Place", "name": "Al Quoz" },
+        { "@type": "Place", "name": "Dubai Silicon Oasis" },
+        { "@type": "Place", "name": "Al Warqa" },
+        { "@type": "Place", "name": "International City" },
+        { "@type": "Place", "name": "Academic City" },
+        { "@type": "Place", "name": "Liwan" },
+        { "@type": "Place", "name": "The Lakes / Springs / Meadows" }
       ],
       "medicalSpecialty": [
         "Home Physiotherapy",
         "Physical Therapy",
         "Rehabilitation Medicine",
-        "Home Healthcare"
+        "Home Healthcare",
+        "Post-Surgical Rehabilitation",
+        "Neurological Rehabilitation",
+        "Postnatal Physiotherapy",
+        "Paediatric Physiotherapy",
+        "Geriatric Physiotherapy"
       ],
       "isAcceptingNewPatients": true,
       "availableService": [
@@ -116,11 +131,13 @@ const HomePhysiotherapyDubai = () => {
         { "@type": "MedicalProcedure", "name": "Home Geriatric Physiotherapy" },
         { "@type": "MedicalProcedure", "name": "Falls Prevention" },
         { "@type": "MedicalProcedure", "name": "Manual Therapy" },
-        { "@type": "MedicalProcedure", "name": "Home Exercise Prescription" }
+        { "@type": "MedicalProcedure", "name": "Home Exercise Prescription" },
+        { "@type": "MedicalProcedure", "name": "Functional Re-Education" }
       ],
       "memberOf": {
-        "@type": "Organization",
-        "name": "Dubai Health Authority"
+        "@type": "GovernmentOrganization",
+        "name": "Dubai Health Authority",
+        "alternateName": ["DHA"]
       },
       "aggregateRating": {
         "@type": "AggregateRating",
@@ -134,6 +151,7 @@ const HomePhysiotherapyDubai = () => {
       "@context": "https://schema.org",
       "@type": "Service",
       "name": "Home Physiotherapy Services in Dubai",
+      "alternateName": ["At-Home Physical Therapy", "Mobile Physiotherapy"],
       "provider": { "@id": `${currentUrl}#home-physiotherapy` },
       "areaServed": [
         { "@type": "City", "name": "Dubai" },
@@ -191,6 +209,53 @@ const HomePhysiotherapyDubai = () => {
     },
     {
       "@context": "https://schema.org",
+      "@type": "EducationalCredential",
+      "name": "Doctor of Physical Therapy",
+      "alternateName": ["DPT"],
+      "description": "Doctoral-level qualification in physical therapy required for all physiotherapists at Vedara Care"
+    },
+    {
+      "@context": "https://schema.org",
+      "@type": "MedicalCondition",
+      "name": "Stroke"
+    },
+    {
+      "@context": "https://schema.org",
+      "@type": "MedicalCondition",
+      "name": "Parkinson's Disease"
+    },
+    {
+      "@context": "https://schema.org",
+      "@type": "MedicalCondition",
+      "name": "Multiple Sclerosis"
+    },
+    {
+      "@context": "https://schema.org",
+      "@type": "MedicalCondition",
+      "name": "Knee Replacement"
+    },
+    {
+      "@context": "https://schema.org",
+      "@type": "MedicalCondition",
+      "name": "Hip Replacement"
+    },
+    {
+      "@context": "https://schema.org",
+      "@type": "MedicalCondition",
+      "name": "ACL Reconstruction"
+    },
+    {
+      "@context": "https://schema.org",
+      "@type": "MedicalCondition",
+      "name": "Spinal Surgery"
+    },
+    {
+      "@context": "https://schema.org",
+      "@type": "MedicalCondition",
+      "name": "C-Section Recovery"
+    },
+    {
+      "@context": "https://schema.org",
       "@type": "MedicalWebPage",
       "@id": `${currentUrl}#webpage`,
       "name": "Physiotherapy at Home in Dubai",
@@ -204,7 +269,11 @@ const HomePhysiotherapyDubai = () => {
       "reviewedBy": {
         "@type": "Physician",
         "name": "[Lead Home Physiotherapist Name]",
-        "hasCredential": "DPT, DHA-Licensed"
+        "hasCredential": {
+          "@type": "EducationalCredential",
+          "name": "Doctor of Physical Therapy",
+          "alternateName": ["DPT"]
+        }
       },
       "primaryImageOfPage": "https://vedaracare.ae/images/physiotherapy-at-home-dubai-hero.webp"
     },
@@ -283,7 +352,7 @@ const HomePhysiotherapyDubai = () => {
 
       <AyurvedaHero {...homePhysioHero} />
       <AyurvedaIntro {...homePhysioIntro} />
-      
+       <SportsPhysiotherapyModalities {...homePhysioModalities} />
       <HomePhysioSingleImageSection 
         {...homePhysioSituations}
         items={homePhysioSituations.situations}
@@ -296,7 +365,7 @@ const HomePhysiotherapyDubai = () => {
 
       <HomePhysioCoverage {...homePhysioCoverage} />
 
-      <SportsPhysiotherapyModalities {...homePhysioModalities} />
+     
 
       <PhysiotherapySpecializations {...homePhysioSpecialisations} />
 
