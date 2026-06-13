@@ -622,8 +622,8 @@ export const physiotherapyRelatedPages = {
   bgColor: "bg-[#F5F1E8]",
   label: "EXPLORE FURTHER",
   title: "Related services and resources",
-  linkText: "Browse all services",
-  linkHref: "/ayurveda-dubai/",
+  linkText: "Browse all physiotherapy services",
+  linkHref: "/physiotherapy-dubai/",
   pages: [
     {
       title: "Our JVC Physiotherapy Clinic",

@@ -33,9 +33,9 @@ modalities = [],
               <p className="text-4xl mb-4" style={{ fontFamily: 'Fraunces, Georgia, serif', color: 'rgb(201, 168, 76)', fontWeight: 300 }}>
                 {modality.number}
               </p>
-              <h4 className="text-lg mb-3" style={{ fontFamily: 'Fraunces, Georgia, serif', fontWeight: 500, color: 'rgb(26, 26, 26)' }}>
+              <h3 className="text-lg mb-3" style={{ fontFamily: 'Fraunces, Georgia, serif', fontWeight: 500, color: 'rgb(26, 26, 26)' }}>
                 {modality.title}
-              </h4>
+              </h3>
               <p className="text-sm leading-relaxed" style={{ color: 'rgb(107, 107, 107)', lineHeight: 1.7 }}>
                 {modality.description}
               </p>

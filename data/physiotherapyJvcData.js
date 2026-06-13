@@ -573,6 +573,8 @@ export const physiotherapyJvcFinalCTA = {
 export const physiotherapyJvcRelatedPages = {
   label: "EXPLORE FURTHER",
   title: "Related services and conditions",
+   linkText: "Browse all physiotherapy services",
+  linkHref: "/physiotherapy-jvc/",
   pages: [
  
     {

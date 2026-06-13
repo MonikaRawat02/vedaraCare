@@ -550,6 +550,8 @@ export const sportsPhysiotherapyInsurance = {
 export const sportsPhysiotherapyRelatedPages = {
   label: "Explore Further",
   title: "Related services and conditions",
+   linkText: "Browse all physiotherapy services",
+  linkHref: "/physiotherapy-jvc/",
   pages: [
     {
       title: "Physiotherapy in Jvc",
