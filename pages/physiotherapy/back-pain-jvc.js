@@ -43,7 +43,9 @@ const BackPainPhysioJvc = () => {
         <link rel="canonical" href="https://vedaracare.ae/physiotherapy/back-pain-jvc" />
       </Head>
       <div className="back-pain-physiotherapy-page">
-        <AyurvedaHero {...backPainPhysioHero} />
+        <AyurvedaHero {...backPainPhysioHero}
+        bgColor='bg-[#F8F5EE]'
+        />
         <AyurvedaIntro {...backPainPhysioIntro} />
         <PhysiotherapySpecializations 
           bgColor={backPainPhysioConditions.bgColor}
@@ -76,9 +78,12 @@ const BackPainPhysioJvc = () => {
           modalities={backPainPhysioModalities.modalities}
         />
         <BackPainAcuteAndPricing data={backPainPhysioAcuteAndPricing} />
-        <TreatmentReviews {...backPainPhysioReviews} />
+        <TreatmentReviews {...backPainPhysioReviews} 
+        bgColor='bg-[#1C3D2E]'
+        />
         <PhysiotherapyTeam {...backPainPhysioTeam} />
-        <FAQ {...backPainPhysioFaqs} />
+        <FAQ {...backPainPhysioFaqs} 
+        bgColor='bg-[#F2EDE5]'/>
         <TreatmentLocation {...backPainPhysioLocation} />
          <BackPainIntegratedCare 
           bgColor={backPainPhysioIntegratedCare.bgColor}

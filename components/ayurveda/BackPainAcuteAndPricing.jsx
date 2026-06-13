@@ -6,7 +6,7 @@ const BackPainAcuteAndPricing = ({ data }) => {
   return (
     <>
       {/* Acute Back Pain Section */}
-      <section className="bg-[#FAF8F5]" style={{ padding: '96px 24px' }}>
+      <section className="bg-[#F2EDE5]" style={{ padding: '96px 24px' }}>
         <div className="max-w-7xl mx-auto">
           <div className="text-center mb-12">
             <div className="text-xs tracking-[0.2em] uppercase mb-4" style={{ color: '#C9A84C' }}>
@@ -124,7 +124,7 @@ const BackPainAcuteAndPricing = ({ data }) => {
 };
 
 export const BackPainTreatmentPhases = ({
-  bgColor = "bg-[#FAF8F5]",
+  bgColor = "bg-[#F8F5EE]",
   label = "TREATMENT PHASES",
   title = "The four phases of back pain physiotherapy.",
   description = "",
@@ -154,8 +154,7 @@ export const BackPainTreatmentPhases = ({
               <div className="flex-shrink-0 flex flex-col items-center">
                 <div 
                   className="w-16 h-16 rounded-full bg-[#1C3D2E] text-[#B8965A] flex items-center justify-center text-2xl font-bold"
-                  style={{ fontFamily: 'Fraunces, Georgia, serif' }}
-                >
+                  style={{ fontFamily: 'Fraunces, Georgia, serif' }}>
                   {phase.number}
                 </div>
                 {index < phases.length - 1 && (
@@ -167,8 +166,7 @@ export const BackPainTreatmentPhases = ({
                 <div className="flex justify-between items-start mb-5">
                   <h3 
                     className="text-lg"
-                    style={{ fontFamily: 'Fraunces, Georgia, serif', fontWeight: 500, color: 'rgb(26, 26, 26)' }}
-                  >
+                    style={{ fontFamily: 'Fraunces, Georgia, serif', fontWeight: 500, color: 'rgb(26, 26, 26)' }}>
                     {phase.title}
                   </h3>
                   <div className="text-xs text-[#C9A84C] font-medium px-3 py-1.5 rounded-full border border-[#C9A84C] bg-[#FAF8F5]">

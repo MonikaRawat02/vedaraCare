@@ -6,7 +6,7 @@ export const backPainPhysioHero = {
   ],
   label: "PHYSIOTHERAPY FOR BACK PAIN · DHA-LICENSED · EVIDENCE-BASED",
   title: "Physiotherapy for back pain in JVC. Evidence-based protocols. DPT-qualified specialists.",
-  description: "Specialised physiotherapy for back pain at our Jumeirah Village Circle clinic, walking distance from Circle Mall — manual therapy, McKenzie method, dry needling, motor control exercise, modern modalities. Acute back pain, chronic back pain, sciatica. Same-week appointments. Same-day for severe acute pain. Insurance direct-billing.",
+  description: "Specialised physiotherapy for back pain at our Jumeirah Village Circle (JVC) clinic, walking distance from Circle Mall. DPT-qualified physiotherapists using evidence-based protocols — manual therapy, McKenzie method, dry needling, motor control exercise, modern modalities. Acute back pain, chronic back pain, sciatica, mechanical patterns, post-imaging concerns. Same-week appointments. Same-day for severe acute pain. Insurance direct-billing.",
   primaryCTA: "Book Back Pain Assessment",
   secondaryCTA: "WhatsApp Us",
   trustSignals: [
@@ -31,7 +31,7 @@ export const backPainPhysioIntro = {
 };
 
 export const backPainPhysioConditions = {
-  bgColor: "bg-[#FAF8F5]",
+  bgColor: "bg-[#F2EDE5]",
   label: "SPECIFIC BACK PAIN TYPES",
   title: "Back pain conditions we treat at our JVC clinic.",
   description: "Different back pain types require different physiotherapy protocols. Accurate diagnosis at assessment determines the specific treatment approach for your situation.",
@@ -185,7 +185,7 @@ export const backPainPhysioTeam = {
       name: "Dr. Sarah Al-Mansoori, DPT",
       qualification: "DHA-Licensed · Back Pain Specialist",
       specialties: ["Manual Therapy", "McKenzie Method", "Sciatica", "Chronic Back Pain"],
-      experience: "Lead physiotherapist specialising in chronic back pain and disc-related pathologies. 12 years clinical experience.",
+      experience: "Lead physiotherapist specialising in chronic back pain and sciatica. 12 years clinical experience.",
       languages: ["English", "Arabic"],
       image: "",
       alt: "Dr. Sarah Al-Mansoori, back pain physiotherapist at Vedara Care JVC"
@@ -193,8 +193,8 @@ export const backPainPhysioTeam = {
     {
       name: "James Whitfield, DPT, MCSP",
       qualification: "DHA-Licensed · Back Pain Specialist",
-      specialties: ["Dry Needling", "Sports Back Pain", "Motor Control", "Sciatica with Radiculopathy"],
-      experience: "Senior physiotherapist with interest in disc-related back pain and return-to-sport protocols.",
+      specialties: ["Dry Needling", "Sports Back Pain", "Motor Control", "Disc-Related Pain"],
+      experience: "Senior physiotherapist with special interest in disc-related back pain and return-to-sport protocols.",
       languages: ["English"],
       image: "",
       alt: "James Whitfield, back pain physiotherapist at Vedara Care JVC"
@@ -202,8 +202,8 @@ export const backPainPhysioTeam = {
     {
       name: "Dr. Aisha Patel, DPT",
       qualification: "DHA-Licensed · Back Pain Specialist",
-      specialties: ["Spinal Manipulation", "Women's Health", "Postpartum Back Pain", "Piriformis Syndrome"],
-      experience: "Specialises in pelvic and postpartum back pain, particularly office workers returning to work.",
+      specialties: ["Postural Pain", "Office Workers", "Shockwave Therapy", "Piriformis Syndrome"],
+      experience: "Specialises in postural and mechanical back pain patterns, particularly office worker presentations.",
       languages: ["English", "Hindi", "Urdu"],
       image: "",
       alt: "Dr. Aisha Patel, back pain physiotherapist at Vedara Care JVC"
@@ -211,8 +211,8 @@ export const backPainPhysioTeam = {
     {
       name: "Dr. Carlos Mendes, DPT, OMPT",
       qualification: "DHA-Licensed · Back Pain Specialist",
-      specialties: ["Orthopaedic", "Acute Back Pain", "Chiropractic Manual Therapy", "Post-Surgical Rehabilitation"],
-      experience: "Osteopathic manual therapy specialist with specialisation in post-surgical rehabilitation.",
+      specialties: ["Orthopaedic", "Acute Back Pain", "Manual Therapy", "Post-Surgical Rehabilitation"],
+      experience: "Orthopaedic manual therapy specialist with advanced training in post-surgical rehabilitation.",
       languages: ["English", "Portuguese", "Spanish"],
       image: "",
       alt: "Dr. Carlos Mendes, back pain physiotherapist at Vedara Care JVC"
@@ -221,50 +221,99 @@ export const backPainPhysioTeam = {
 };
 
 export const backPainPhysioFaqs = {
-  bgColor: "bg-[#F5F1E8]",
+  bgColor: "bg-[#F2EDE5]",
   label: "FAQS",
   title: "What back pain patients ask before booking.",
   description: "For integrated Ayurveda + physiotherapy, see the back pain integrated care page.",
   faqs: [
-    {
-      question: "Do I need a doctor's referral for back pain physiotherapy?",
-      answer: "No — physiotherapy is direct-access in Dubai. You can book directly. For insurance, your plan may require a referral depending on coverage. WhatsApp your insurance card first to confirm."
-    },
-    {
-      question: "How quickly can I get a back pain assessment?",
-      answer: "Same-week or next-day appointments usually available. Acute severe back pain prioritised. WhatsApp +971 50 123 4567 for fastest response."
-    },
-    {
-      question: "How many back pain physiotherapy sessions will I need?",
-      answer: "Acute back pain: 4-8 sessions. Chronic back pain: 8-16 sessions. Post-surgical: 12-24 sessions. Your exact plan is given at assessment."
-    },
-    {
-      question: "Will my insurance cover back pain physiotherapy?",
-      answer: "Most Dubai plans cover physiotherapy. We direct-bill with Daman, AXA, Allianz, Oman Insurance, Now Health, Bupa, MetLife. WhatsApp your card to confirm coverage."
-    },
-    {
-      question: "What's the difference between physiotherapy and chiropractic for back pain?",
-      answer: "Physiotherapy is broader: manual therapy + exercise + modalities. DPT-qualified, evidence-based. Chiropractic focuses primarily on spinal manipulation."
-    },
-    {
-      question: "Do you offer home visits for back pain physiotherapy?",
-      answer: "Yes, for patients with mobility limitations. Home visits cost AED 600/session."
-    },
-    {
-      question: "Can I have back pain physiotherapy without Ayurveda?",
-      answer: "Absolutely — 80% of our back pain patients are physiotherapy-only. Integrated care is optional, never required."
-    },
-    {
-      question: "What about dry needling for back pain?",
-      answer: "Dry needling is effective for muscle tension, trigger points, chronic back pain. Performed by certified physiotherapists."
-    }
+  {
+question: "How is this different from your integrated back pain page?",
+answer: "This page is for patients who specifically want evidence-based physiotherapy for back pain — not integrated Ayurveda + physiotherapy care. Same DPT-qualified physiotherapists, same JVC clinic, but a focused physiotherapy-only approach. If you are interested in integrated traditional + conventional medicine for back pain, our back pain integrated care page describes that pathway. Patients sometimes start with physiotherapy alone and add integrated care later if needed."
+},
+{
+question: "Can I get a same-day appointment for severe back pain?",
+answer: "Yes — same-day appointments are typically available for severe acute back pain at our JVC clinic. WhatsApp +971 4 200 0000 for fastest response (typically within 15 minutes during business hours), or call +971 4 200 0001 directly. Note: if you have red flag symptoms (bladder/bowel changes, saddle numbness, progressive leg weakness, fever with back pain, severe night pain), A&E evaluation comes first, then physiotherapy follow-up."
+},
+{
+question: "Do I need imaging before physiotherapy for back pain?",
+answer: "Usually no — imaging is not required for most back pain. Current evidence-based guidelines recommend against routine imaging for acute back pain without red flags. Most back pain responds to physiotherapy without imaging. Imaging may be appropriate if: red flags are present, symptoms do not improve as expected, surgical consideration is being discussed, or there are specific clinical findings that warrant investigation. Your physiotherapist can advise during assessment."
+},
+{
+question: "What if I already have imaging showing a disc bulge or herniation?",
+answer: "Many people with imaging findings — including disc bulges and herniations — have no pain. Conversely, many people with significant back pain have completely normal imaging. The imaging finding alone does not determine treatment. Our approach assesses your actual functional patterns, identifies what is actually driving your pain, and treats accordingly. Bring your imaging to assessment — we incorporate it but do not let it overshadow clinical assessment."
+},
+{
+question: "How long does back pain physiotherapy take?",
+answer: "Highly variable by presentation. Acute back pain often resolves in 4–8 weeks (8–12 sessions typically). Chronic back pain typically requires 12–24 sessions over 3–6 months. Sciatica often takes 8–16 weeks with specific protocols. Post-surgical back pain follows surgeon-coordinated timelines. At initial assessment, you receive a specific estimated session count and timeline for your presentation."
+},
+{
+question: "What is the McKenzie method?",
+answer: "McKenzie Method (also called Mechanical Diagnosis and Therapy or MDT) is an evidence-based assessment and treatment approach particularly effective for disc-related back pain and sciatica. It identifies movements that 'centralise' your pain (move it from leg toward back) and prescribes specific repeated movements to reduce symptoms. Patients learn self-management exercises they perform throughout the day. Particularly powerful for sciatica patterns with directional preference."
+},
+{
+question: "Is dry needling safe for back pain?",
+answer: "Yes — dry needling is safe and evidence-supported when performed by certified physiotherapists. The technique uses fine needles to release trigger points and tight muscle bands. Particularly effective for chronic muscle tension contributing to back pain. Different from acupuncture in mechanism and training. Most patients find it surprisingly comfortable and meaningfully effective. Performed only by DPT-qualified physiotherapists with specific dry needling certification."
+},
+{
+question: "Where in JVC is your back pain physiotherapy clinic?",
+answer: "Our DHA-licensed clinic is in Jumeirah Village Circle (JVC), Dubai — walking distance from Circle Mall, three minutes from FIVE Jumeirah Village Hotel, and five minutes from JSS Private School. Free patient parking. Easy access from Sheikh Mohammed Bin Zayed Road and Al Khail Road. Patients travel to us from JVT, Al Barsha South, Sports City, Motor City, Arjan, Dubai Hills, and across Dubai."
+},
+{
+question: "Does insurance cover back pain physiotherapy?",
+answer: "Most Dubai insurance plans cover back pain physiotherapy with medical justification. Coverage typically includes initial sessions; extended programmes may require pre-authorisation. We are direct-billing partners with Daman, AXA, Allianz, Oman Insurance, Now Health, Bupa, and MetLife. WhatsApp your insurance card to +971 4 200 0000 before booking to confirm specific coverage and out-of-pocket cost."
+},
+{
+question: "What about chronic back pain that has not responded to other treatment?",
+answer: "Chronic back pain that has not responded to previous physiotherapy or other treatment is one of our specialised areas. Our approach: thorough assessment to identify patterns missed by previous providers, structured evidence-based intervention combining manual therapy and specific exercise, pain neuroscience education, and realistic expectation-setting. For some patients with chronic patterns that do not respond to physiotherapy alone, integrated Ayurveda + physiotherapy care is an optional pathway — see our integrated back pain care page."
+},
+{
+question: "Do you offer home physiotherapy for severe back pain?",
+answer: "Yes — patients with severe acute back pain who cannot easily travel to clinic can have home physiotherapy. Particularly common in the first 1–2 weeks of severe acute presentation. Home sessions help with initial pain management and early mobilisation; most patients transition to clinic visits within 2–4 weeks as mobility improves. Home physiotherapy is AED 400 per session including therapist travel time."
+},
+{
+question: "Can physiotherapy help with sciatica?",
+answer: "Yes — sciatica responds well to specific physiotherapy approaches, particularly McKenzie method for patients with directional preference. We treat sciatica from disc-related causes (most common), piriformis syndrome (muscle compression of sciatic nerve), foraminal stenosis, and other causes. Typical sciatica programme: 8–16 weeks. Many patients with significant sciatica achieve full resolution with appropriate physiotherapy without surgery."
+},
+{
+question: "What if my back pain comes from desk work?",
+answer: "Office worker back pain is very common in Dubai given the high desk-working population. Our approach: thorough postural assessment, identification of specific postural patterns driving your pain, structured exercise prescription to address the patterns, workplace ergonomic guidance (workstation setup, breaks, movement strategies), and gradually building postural endurance. Many office workers find significant improvement within 6–8 weeks of structured intervention."
+},
+{
+question: "Can pregnant women have back pain physiotherapy?",
+answer: "Yes — pregnancy-related back pain is one of our common presentations. Approach is calibrated to pregnancy considerations: modified positions for treatment, specific exercises appropriate to pregnancy stage, avoidance of certain modalities and techniques. Female physiotherapists available for patient preference. Postnatal back pain is also treated, often coordinated with our postnatal care programmes."
+},
+{
+question: "What about sports-related back pain?",
+answer: "For sports-related back pain, our sports physiotherapy team provides specialised expertise — see our sports injury physiotherapy page. Common sports-related back pain includes: padel-related back strain, running-related back pain, gym training injuries, golf-related back pain. Sport-specific protocols, biomechanical assessment, and return-to-sport progressions are part of sports physio care."
+},
+{
+question: "What if I want female physiotherapists?",
+answer: "Female physiotherapists are available at our JVC clinic. For back pain treatment, gender preference is accommodated when requested at booking. Particularly important for some cultural backgrounds and for some patient comfort preferences. All female-preferred patients are seen by female specialists for all back pain treatment."
+},
+{
+question: "Do you treat post-surgical back pain?",
+answer: "Yes — post-spinal-surgery rehabilitation (post-laminectomy, post-discectomy, post-fusion) is a specific physiotherapy programme. Different protocols from acute or chronic back pain — follows operating surgeon's specific rehabilitation pathway. For detailed post-surgical care, see our post-surgery rehabilitation page. Coordination with your operating surgeon (local Dubai or international) is standard."
+},
+{
+question: "How is back pain physiotherapy at Vedara different from other Dubai clinics?",
+answer: "DPT-qualified specialists (not just minimum-qualified physios), evidence-based protocols (current guidelines, not outdated approaches), longer sessions (45–60 minutes vs hospital-typical 20–30 minutes), same therapist throughout treatment (no rotating physiotherapists), specific assessment for each patient (not generic 'back pain protocol'), transparent published pricing, integrated team available if needed (Ayurveda physiotherapy combination optional), and home physiotherapy capability for patients who need it."
+},
+{
+question: "Can I do back pain physiotherapy if I am also seeing another practitioner?",
+answer: "Generally we do not recommend concurrent physiotherapy at multiple clinics — it produces conflicting approaches and worse outcomes. However, concurrent care with non-physiotherapy providers is fine: GP for medications, pain specialist for interventions, chiropractor (though we typically recommend choosing one or the other), Ayurveda practitioners (we can integrate formally through our integrated care pathway). Tell us about all current care so we can coordinate appropriately."
+},
+{
+question: "How do I book a back pain physiotherapy assessment?",
+answer: "Three ways: (1) WhatsApp +971 4 200 0000 — fastest response, ideal for sending imaging, brief description of your pain, or asking specific questions. (2) Call +971 4 200 0001 — direct booking, available 9 AM to 9 PM seven days a week. (3) Book online through our website. For your first appointment, please bring: any imaging (MRI, X-rays, CT), medical reports, current medication list, insurance card, comfortable clothing for movement assessment, and brief description of your pain history."
+}
+
   ]
 };
 
 export const backPainPhysioLocation = {
   bgColor: "bg-white",
   label: "VISIT US",
-  title: "Back pain physiotherapy clinic in Jumeirah Village Circle.",
+  title: "Where back pain physiotherapy happens at Vedara Care JVC.",
   address: "Vedara Care Polyclinic<br/>Building 23, District 12<br/>Jumeirah Village Circle, Dubai<br/>United Arab Emirates",
   phone: "+971 4 567 8900",
   email: "info@vedaracare.ae",
@@ -274,14 +323,15 @@ export const backPainPhysioLocation = {
     sunday: "9:00 AM - 6:00 PM"
   },
   landmarks: [
-    "Next to Circle Mall",
-    "3 minutes from FIVE Jumeirah Village Hotel",
-    "5 minutes from JSS Private School"
+    "Walking distance from Circle Mall",
+    "3 min from FIVE Jumeirah Village",
+    "5 min from JSS Private School",
+    "Free patient parking"
   ],
   mapEmbed: "https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d3613.9894568193345!2d55.20722358578439!3d25.068346479666594!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x3e5f6dd72f3da587%3A0xe7ecca8687a75b72!2sVedara%20Care%20Polyclinic!5e0!3m2!1sen!2sus!4v1780727442216!5m2!1sen!2sus",
   image: "",
   alt: "Vedara Care back pain physiotherapy clinic JVC Dubai",
-  description: "Our JVC clinic has dedicated physiotherapy treatment rooms, a full rehabilitation gym, and DPT-qualified back pain specialists.",
+  description: "Our JVC clinic has dedicated physiotherapy treatment rooms, manual therapy plinths, a full rehabilitation gym for exercise progression, dry needling and shockwave therapy equipment, modern modalities, and accessibility for patients with acute pain. Serving JVC, JVT, Al Barsha South, Sports City, Motor City, Arjan, Dubai Hills, and across Dubai.",
   buttonText: "Book Back Pain Assessment"
 };
 
@@ -303,29 +353,29 @@ export const backPainPhysioRelatedPages = {
   pages: [
     {
       title: "Physiotherapy in JVC",
-      description: "Our full physiotherapy services in Jumeirah Village Circle.",
+      description: "Our complete physiotherapy department — all seven specialisations, team, conditions treated, integrated care options.",
       href: "/physiotherapy-jvc/"
     },
     {
-      title: "Integrated Back Pain Care",
-      description: "Combined Ayurveda + physiotherapy for chronic back pain.",
+      title: "Sports Injury Physiotherapy",
+      description: "For sports-related back pain — running, padel, gym training, sport-specific patterns and return-to-sport protocols.",
       href: "/conditions/back-pain-ayurveda-dubai/"
     },
     {
-      title: "Sports Physiotherapy JVC",
-      description: "Sports injury physiotherapy in JVC.",
+      title: "Post-Surgery Rehabilitation",
+      description: "For post-spinal-surgery rehabilitation — post-laminectomy, discectomy, fusion. Coordinated with your operating surgeon.",
       href: "/physiotherapy/sports-injury-jvc/"
     },
     {
-      title: "Post-Surgical Rehabilitation",
-      description: "Post-surgical physiotherapy in Dubai.",
+      title: "Integrated Back Pain Care",
+      description: "For patients interested in combined Ayurveda + physiotherapy care for back pain. Optional pathway when physiotherapy alone is insufficient.",
       href: "/physiotherapy/post-surgery-rehab-dubai/"
     }
   ]
 };
 
 export const backPainPhysioPhases = {
-  bgColor: "bg-[#FAF8F5]",
+  bgColor: "bg-[#F8F5EE]",
   label: "TREATMENT PHASES",
   title: "The four phases of back pain physiotherapy.",
   description: "A representative progression. Acute, subacute, and chronic back pain follow somewhat different patterns. Your specific timeline is calibrated to your presentation.",
