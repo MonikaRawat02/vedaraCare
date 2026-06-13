@@ -14,7 +14,7 @@ const Therapies2 = () => {
           </h2>
         </div>
         <div className="grid md:grid-cols-2 lg:grid-cols-4 gap-6 mb-8">
-          <Link href="/conditions/back-pain-ayurveda-dubai/" className="bg-white p-6 rounded-lg hover:shadow-lg transition-all cursor-pointer group block">
+          <Link href="/conditions/back-pain-physiotherapy-jvc/" className="bg-white p-6 rounded-lg hover:shadow-lg transition-all cursor-pointer group block">
             <div className="mb-4">
               <svg
                 xmlns="http://www.w3.org/2000/svg"
@@ -82,8 +82,7 @@ const Therapies2 = () => {
                 strokeWidth="2"
                 strokeLinecap="round"
                 strokeLinejoin="round"
-                className="lucide lucide-stethoscope text-[#C4A962]"
-              >
+                className="lucide lucide-stethoscope text-[#C4A962]" >
                 <path d="M11 2v2"></path>
                 <path d="M5 2v2"></path>
                 <path d="M5 3H4a2 2 0 0 0-2 2v4a6 6 0 0 0 12 0V5a2 2 0 0 0-2-2h-1"></path>

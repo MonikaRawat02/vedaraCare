@@ -260,7 +260,7 @@ export const physiotherapyConditions = {
     {
       title: "Chronic Lower Back Pain",
       description: "The most-utilised pathway",
-      link: "/conditions/back-pain-ayurveda-dubai/"
+      link: "/conditions/back-pain-physiotherapy-jvc/"
     },
     {
       title: "Cervical Spondylosis & Neck Pain",
