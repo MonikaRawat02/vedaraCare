@@ -54,16 +54,10 @@ const HomePhysioPricing = ({
             </h3>
             <div className="grid md:grid-cols-2 gap-6">
               {packages.map((pkg, idx) => (
-                <div key={idx} className="bg-[#F7F2EA] p-7 rounded-2xl shadow-sm border border-[#B8933F]/20">
-                  <h3 className="text-[1.05rem] text-[#1C1814] mb-3 font-medium" style={{ fontFamily: 'var(--font-display)' }}>
-                    {pkg.name}
-                  </h3>
-                  <div className="text-[2.2rem] font-bold text-[#1E4D3A] mb-2" style={{ fontFamily: 'var(--font-display)' }}>
-                    {pkg.price}
-                  </div>
-                  <p className="text-sm text-[#6B635A]">
-                    {pkg.perSession}
-                  </p>
+                <div key={idx} className="bg-[#F7F2EA] rounded-xl p-6 border border-[#B8933F]/20 hover:border-[#B8933F]/50 transition-colors">
+                  <div className="text-xs text-[#6B635A] mb-3 leading-snug">{pkg.name}</div>
+                  <div className="text-2xl text-[#1E4D3A]" style={{ fontFamily: 'var(--font-display)', fontWeight: 500 }}>{pkg.price}</div>
+                  <div className="text-xs text-[#B8933F] font-semibold mt-1">{pkg.perSession}</div>
                 </div>
               ))}
             </div>
@@ -74,21 +68,36 @@ const HomePhysioPricing = ({
             <h3 className="text-[1.1rem] text-[#1C1814] mb-6 font-semibold" style={{ fontFamily: 'var(--font-display)' }}>
               Comparison — clinic vs. home
             </h3>
-            <div className="bg-white rounded-2xl p-6 shadow-sm border border-gray-100 overflow-hidden">
-              <div className="grid grid-cols-[2fr_1fr_1fr] bg-[#1E4D3A] text-white px-6 py-4 rounded-t-xl">
-                <span className="font-semibold text-sm uppercase tracking-wider">Service</span>
-                <span className="font-semibold text-sm uppercase tracking-wider text-center">Clinic Price</span>
-                <span className="font-semibold text-sm uppercase tracking-wider text-center">Home Price</span>
-              </div>
-              <div className="divide-y divide-gray-100">
-                {comparison.map((item, idx) => (
-                  <div key={idx} className="grid grid-cols-[2fr_1fr_1fr] px-6 py-5 items-center">
-                    <span className="text-[#6B635A] text-base">{item.service}</span>
-                    <span className="text-[#1C1814] font-medium text-base text-center">{item.clinicPrice}</span>
-                    <span className="text-[#1C1814] font-medium text-base text-center">{item.homePrice}</span>
-                  </div>
-                ))}
-              </div>
+            <div className="rounded-xl border border-black/10 overflow-hidden mb-8">
+              <table className="w-full text-sm">
+                <thead>
+                  <tr className="bg-[#1E4D3A] text-[#F7F2EA] text-xs uppercase tracking-wide">
+                    <th className="text-left px-6 py-3 font-medium">Service</th>
+                    <th className="text-right px-6 py-3 font-medium">Clinic Price</th>
+                    <th className="text-right px-6 py-3 font-medium">Home Price</th>
+                  </tr>
+                </thead>
+                <tbody>
+                  {comparison.map((item, idx) => {
+                    const isPremium = item.service.includes('Home premium');
+                    if (isPremium) {
+                      return (
+                        <tr key={idx} className="bg-[#F7F2EA] border-t border-black/10">
+                          <td colSpan="2" className="px-6 py-3 text-xs text-[#6B635A]">{item.service}</td>
+                          <td className="px-6 py-3 text-right text-xs font-semibold text-[#B8933F]">{item.homePrice}</td>
+                        </tr>
+                      );
+                    }
+                    return (
+                      <tr key={idx} className="border-t border-black/5">
+                        <td className="px-6 py-4 text-[#1C1814]">{item.service}</td>
+                        <td className="px-6 py-4 text-right text-[#6B635A]">{item.clinicPrice}</td>
+                        <td className="px-6 py-4 text-right font-semibold text-[#1E4D3A]">{item.homePrice}</td>
+                      </tr>
+                    );
+                  })}
+                </tbody>
+              </table>
             </div>
           </div>
 
