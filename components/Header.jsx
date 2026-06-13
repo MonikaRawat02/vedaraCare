@@ -103,6 +103,12 @@ const Header = () => {
                     Physiotherapy in JVC
                   </Link>
                   <Link 
+                    href="/conditions/back-pain-physiotherapy-jvc" 
+                    className="block px-4 py-2.5 text-[13px] font-sans text-[#4A4A4A] hover:text-[#184C3A] hover:bg-gray-50 transition-colors"
+                  >
+                    Back Pain 
+                  </Link>
+                  <Link 
                     href="/physiotherapy/post-surgery-rehab-dubai/" 
                     className="block px-4 py-2.5 text-[13px] font-sans text-[#4A4A4A] hover:text-[#184C3A] hover:bg-gray-50 transition-colors"
                   >
@@ -190,6 +196,7 @@ const Header = () => {
               <div className={`overflow-hidden transition-all duration-200 ${isMobilePhysioOpen ? 'max-h-80 mt-2' : 'max-h-0'}`}>
                 <div className="flex flex-col gap-3 pl-4 border-l-2 border-gray-100">
                   <Link href="/physiotherapy-jvc" onClick={() => setIsMenuOpen(false)} className="text-[14px] text-[#4A4A4A] hover:text-[#184C3A]">Physiotherapy in JVC</Link>
+                  <Link href="/conditions/back-pain-physiotherapy-jvc" onClick={() => setIsMenuOpen(false)} className="text-[14px] text-[#4A4A4A] hover:text-[#184C3A]">Back Pain Physiotherapy</Link>
                   <Link href="/physiotherapy/post-surgery-rehab-dubai" onClick={() => setIsMenuOpen(false)} className="text-[14px] text-[#4A4A4A] hover:text-[#184C3A]">Post-Surgery Rehab</Link>
                   <Link href="/physiotherapy/neurological-dubai" onClick={() => setIsMenuOpen(false)} className="text-[14px] text-[#4A4A4A] hover:text-[#184C3A]">Neurological Rehab</Link>
                   <Link href="/physiotherapy/pediatric-dubai" onClick={() => setIsMenuOpen(false)} className="text-[14px] text-[#4A4A4A] hover:text-[#184C3A]">Pediatric</Link>

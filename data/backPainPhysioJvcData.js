@@ -1,7 +1,7 @@
 export const backPainPhysioHero = {
   breadcrumb: [
     { label: "Home", href: "/" },
-    { label: "Conditions", href: "/" },
+    { label: "Conditions", href: "/conditions/" },
     { label: "Back Pain Physiotherapy in JVC", active: true }
   ],
   label: "PHYSIOTHERAPY FOR BACK PAIN · DHA-LICENSED · EVIDENCE-BASED",
@@ -17,16 +17,16 @@ export const backPainPhysioHero = {
   ],
   floatingCard: {
     title: "EVIDENCE-BASED PHYSIOTHERAPY ONLY",
-    subtitle: "This page is for physiotherapy-only back pain treatment. For integrated Ayurveda + physiotherapy care, see our back pain integrated care page →"
+    subtitle: 'This page is for physiotherapy-only back pain treatment. For integrated Ayurveda + physiotherapy care, see our <a href="/conditions/back-pain-ayurveda-dubai/" class="text-[#1F4538] hover:underline">back pain integrated care page</a> →'
   },
-  image: "/images/back-pain-physio-jvc.jpg",
-  alt: "Physiotherapist treating patient's back pain at Vedara Care JVC clinic"
+  image: "/images/back-pain-physio-vedara-jvc.webp",
+  alt: "Physiotherapist treating back pain patient at Vedara Care JVC Dubai clinic"
 };
 
 export const backPainPhysioIntro = {
   label: "THE QUICK ANSWER",
   title: "Back pain physiotherapy at our JVC clinic, in one paragraph.",
-  blockquote: "Back pain physiotherapy at Vedara Care Polyclinic in Jumeirah Village Circle (JVC), Dubai — walking distance from Circle Mall — is evidence-based conventional physiotherapy delivered by DPT-qualified specialists. We treat acute back pain (recent onset, mechanical patterns, work-related strain), chronic back pain (long-standing patterns), lower back pain (lumbar mechanical pain, lumbar radiculopathy), upper back pain (thoracic, postural patterns), sciatica (nerve root irritation, radicular pain), disc-related back pain (disc bulges, herniated discs), and mechanical postural back pain (office worker patterns, repetitive strain). Treatment combines hands-on manual therapy (spinal mobilisation, soft tissue work), evidence-based exercise prescription (McKenzie method, motor control training, progressive loading), dry needling for chronic muscle patterns, modalities where appropriate (IFC for pain, shockwave for chronic patterns), and ergonomic and postural education. Initial assessment from AED 350; structured back pain programmes from AED 2,400. Patients travel to our JVC clinic from JVT, Al Barsha South, Sports City, Motor City, Arjan, Dubai Hills, and across Dubai. Insurance direct-billing with seven major insurers. For patients whose back pain does not respond fully to physiotherapy alone, integrated Ayurveda + physiotherapy care is available as an optional pathway.",
+  blockquote: 'Back pain physiotherapy at Vedara Care Polyclinic in Jumeirah Village Circle (JVC), Dubai — walking distance from Circle Mall — is evidence-based conventional physiotherapy delivered by DPT-qualified specialists. We treat acute back pain (recent onset, mechanical patterns, work-related strain), chronic back pain (long-standing patterns), lower back pain (lumbar mechanical pain, lumbar radiculopathy), upper back pain (thoracic, postural patterns), sciatica (nerve root irritation, radicular pain), disc-related back pain (disc bulges, herniated discs), and mechanical postural back pain (office worker patterns, repetitive strain). Treatment combines hands-on manual therapy (spinal mobilisation, soft tissue work), evidence-based exercise prescription (McKenzie method, motor control training, progressive loading), dry needling for chronic muscle patterns, modalities where appropriate (IFC for pain, shockwave for chronic patterns), and ergonomic and postural education. Initial assessment from AED 350; structured back pain programmes from AED 2,400. Patients travel to our JVC clinic from JVT, Al Barsha South, Sports City, Motor City, Arjan, Dubai Hills, and across Dubai. Insurance direct-billing with seven major insurers. For patients whose back pain does not respond fully to physiotherapy alone, integrated Ayurveda + physiotherapy care is available as an <a href="/conditions/back-pain-ayurveda-dubai/" class="text-[#1F4538] hover:underline">optional pathway</a>.',
   footer: "Medically reviewed by Dr. Sarah Al-Mansoori, DPT, DHA-Licensed · Last updated June 2026"
 };
 
@@ -69,12 +69,12 @@ export const backPainPhysioConditions = {
     {
       number: "07",
       title: "Post-Surgical Back Pain Management",
-      description: "Patients post spinal surgery (micro-discectomy, discectomy, laminectomy, fusion, etc.) who need ongoing rehabilitation. We work with both acute post-op patients (with surgeon clearance) and those chronic pain with post-surgical presentations. Coordination with operating surgeon as needed. See our post-surgical rehabilitation page for detailed surgery recovery protocols."
+      description: 'Patients post spinal surgery (micro-discectomy, discectomy, laminectomy, fusion, etc.) who need ongoing rehabilitation. We work with both acute post-op patients (with surgeon clearance) and those chronic pain with post-surgical presentations. Coordination with operating surgeon as needed. See our <a href="/physiotherapy/post-surgery-rehab-dubai/" class="text-[#1F4538] hover:underline">post-surgical rehabilitation page</a> for detailed surgery recovery protocols.'
     },
     {
       number: "08",
       title: "Sports-Related and Activity-Related Back Pain",
-      description: "Back pain in athletes — runners, padel players, gym training, sports, return-to-sport assessment, bio-mechanical assessment, return-to-sport protocols, and sport-specific exercise prescription for focused back pain. Our physiotherapy team provides specialised expertise. See our sports physiotherapy page."
+      description: 'Back pain in athletes — runners, padel players, gym training, sports, return-to-sport assessment, bio-mechanical assessment, return-to-sport protocols, and sport-specific exercise prescription for focused back pain. Our physiotherapy team provides specialised expertise. See our <a href="/physiotherapy/sports-injury-jvc/" class="text-[#1F4538] hover:underline">sports physiotherapy page</a>.'
     }
   ],
   footer: "Did not find your specific back pain type? Contact us — we treat the full range of back pain conditions →"
@@ -95,8 +95,8 @@ export const backPainPhysioMechanism = {
     "<strong>Patient education and self-management</strong><br />Patients who understand their back pain — what it is, what it's not, what makes it better, what makes it worse — recover faster and have less recurrence. Evidence-based education, ergonomic advice, activity modification guidance, and explicit return-to-activity protocols are integral to our approach."
   ],
   quote: "Back pain physiotherapy that works in 2026 looks meaningfully different from back pain physiotherapy of 20 years ago. Evidence has evolved. Approach has evolved. Outcomes have evolved.",
-  image: "/images/back-pain-techniques.jpg",
-  alt: "Physiotherapist performing manual therapy on patient's back at Vedara Care JVC"
+  image: "/images/back-pain-physio-vedara-jvc.webp",
+  alt: "Evidence-based back pain physiotherapy at Vedara Care JVC Dubai"
 };
 
 export const backPainPhysioModalities = {
@@ -188,7 +188,7 @@ export const backPainPhysioTeam = {
       experience: "Lead physiotherapist specialising in chronic back pain and sciatica. 12 years clinical experience.",
       languages: ["English", "Arabic"],
       image: "",
-      alt: "Dr. Sarah Al-Mansoori, back pain physiotherapist at Vedara Care JVC"
+      alt: "Dr. Sarah Al-Mansoori back pain physiotherapist Vedara Care JVC Dubai"
     },
     {
       name: "James Whitfield, DPT, MCSP",
@@ -197,7 +197,7 @@ export const backPainPhysioTeam = {
       experience: "Senior physiotherapist with special interest in disc-related back pain and return-to-sport protocols.",
       languages: ["English"],
       image: "",
-      alt: "James Whitfield, back pain physiotherapist at Vedara Care JVC"
+      alt: "James Whitfield back pain physiotherapist Vedara Care JVC Dubai"
     },
     {
       name: "Dr. Aisha Patel, DPT",
@@ -206,7 +206,7 @@ export const backPainPhysioTeam = {
       experience: "Specialises in postural and mechanical back pain patterns, particularly office worker presentations.",
       languages: ["English", "Hindi", "Urdu"],
       image: "",
-      alt: "Dr. Aisha Patel, back pain physiotherapist at Vedara Care JVC"
+      alt: "Dr. Aisha Patel back pain physiotherapist Vedara Care JVC Dubai"
     },
     {
       name: "Dr. Carlos Mendes, DPT, OMPT",
@@ -215,7 +215,7 @@ export const backPainPhysioTeam = {
       experience: "Orthopaedic manual therapy specialist with advanced training in post-surgical rehabilitation.",
       languages: ["English", "Portuguese", "Spanish"],
       image: "",
-      alt: "Dr. Carlos Mendes, back pain physiotherapist at Vedara Care JVC"
+      alt: "Dr. Carlos Mendes back pain physiotherapist Vedara Care JVC Dubai"
     }
   ]
 };
@@ -224,11 +224,15 @@ export const backPainPhysioFaqs = {
   bgColor: "bg-[#F2EDE5]",
   label: "FAQS",
   title: "What back pain patients ask before booking.",
-  description: "For integrated Ayurveda + physiotherapy, see the back pain integrated care page.",
+  description: 'For integrated Ayurveda + physiotherapy, see the <a href="/conditions/back-pain-ayurveda-dubai/" class="text-[#1F4538] hover:underline">back pain integrated care page</a>. Also see our <a href="/physiotherapy-jvc/" class="text-[#1F4538] hover:underline">physiotherapy main page</a>.',
+  sidebarLinks: [
+    { text: "Physiotherapy main page", href: "/physiotherapy-jvc/" },
+    { text: "Integrated Ayurveda + physiotherapy back pain care", href: "/conditions/back-pain-ayurveda-dubai/" }
+  ],
   faqs: [
   {
 question: "How is this different from your integrated back pain page?",
-answer: "This page is for patients who specifically want evidence-based physiotherapy for back pain — not integrated Ayurveda + physiotherapy care. Same DPT-qualified physiotherapists, same JVC clinic, but a focused physiotherapy-only approach. If you are interested in integrated traditional + conventional medicine for back pain, our back pain integrated care page describes that pathway. Patients sometimes start with physiotherapy alone and add integrated care later if needed."
+answer: 'This page is for patients who specifically want evidence-based physiotherapy for back pain — not integrated Ayurveda + physiotherapy care. Same DPT-qualified physiotherapists, same JVC clinic, but a focused physiotherapy-only approach. If you are interested in integrated traditional + conventional medicine for back pain, our <a href="/conditions/back-pain-ayurveda-dubai/" class="text-[#1F4538] hover:underline">back pain integrated care page</a> describes that pathway. Patients sometimes start with physiotherapy alone and add integrated care later if needed.'
 },
 {
 question: "Can I get a same-day appointment for severe back pain?",
@@ -264,7 +268,7 @@ answer: "Most Dubai insurance plans cover back pain physiotherapy with medical j
 },
 {
 question: "What about chronic back pain that has not responded to other treatment?",
-answer: "Chronic back pain that has not responded to previous physiotherapy or other treatment is one of our specialised areas. Our approach: thorough assessment to identify patterns missed by previous providers, structured evidence-based intervention combining manual therapy and specific exercise, pain neuroscience education, and realistic expectation-setting. For some patients with chronic patterns that do not respond to physiotherapy alone, integrated Ayurveda + physiotherapy care is an optional pathway — see our integrated back pain care page."
+answer: 'Chronic back pain that has not responded to previous physiotherapy or other treatment is one of our specialised areas. Our approach: thorough assessment to identify patterns missed by previous providers, structured evidence-based intervention combining manual therapy and specific exercise, pain neuroscience education, and realistic expectation-setting. For some patients with chronic patterns that do not respond to physiotherapy alone, integrated Ayurveda + physiotherapy care is an optional pathway — see our <a href="/conditions/back-pain-ayurveda-dubai/" class="text-[#1F4538] hover:underline">integrated back pain care page</a>.'
 },
 {
 question: "Do you offer home physiotherapy for severe back pain?",
@@ -284,7 +288,7 @@ answer: "Yes — pregnancy-related back pain is one of our common presentations.
 },
 {
 question: "What about sports-related back pain?",
-answer: "For sports-related back pain, our sports physiotherapy team provides specialised expertise — see our sports injury physiotherapy page. Common sports-related back pain includes: padel-related back strain, running-related back pain, gym training injuries, golf-related back pain. Sport-specific protocols, biomechanical assessment, and return-to-sport progressions are part of sports physio care."
+answer: 'For sports-related back pain, our sports physiotherapy team provides specialised expertise — see our <a href="/physiotherapy/sports-injury-jvc/" class="text-[#1F4538] hover:underline">sports injury physiotherapy page</a>. Common sports-related back pain includes: padel-related back strain, running-related back pain, gym training injuries, golf-related back pain. Sport-specific protocols, biomechanical assessment, and return-to-sport progressions are part of sports physio care.'
 },
 {
 question: "What if I want female physiotherapists?",
@@ -292,7 +296,7 @@ answer: "Female physiotherapists are available at our JVC clinic. For back pain 
 },
 {
 question: "Do you treat post-surgical back pain?",
-answer: "Yes — post-spinal-surgery rehabilitation (post-laminectomy, post-discectomy, post-fusion) is a specific physiotherapy programme. Different protocols from acute or chronic back pain — follows operating surgeon's specific rehabilitation pathway. For detailed post-surgical care, see our post-surgery rehabilitation page. Coordination with your operating surgeon (local Dubai or international) is standard."
+answer: 'Yes — post-spinal-surgery rehabilitation (post-laminectomy, post-discectomy, post-fusion) is a specific physiotherapy programme. Different protocols from acute or chronic back pain — follows operating surgeon\'s specific rehabilitation pathway. For detailed post-surgical care, see our <a href="/physiotherapy/post-surgery-rehab-dubai/" class="text-[#1F4538] hover:underline">post-surgery rehabilitation page</a>. Coordination with your operating surgeon (local Dubai or international) is standard.'
 },
 {
 question: "How is back pain physiotherapy at Vedara different from other Dubai clinics?",
@@ -350,6 +354,8 @@ export const backPainPhysioCTA = {
 export const backPainPhysioRelatedPages = {
   label: "EXPLORE FURTHER",
   title: "Related services and conditions",
+  linkText: 'Browse all physiotherapy services →',
+  linkHref: '/physiotherapy-jvc/',
   pages: [
     {
       title: "Physiotherapy in JVC",
@@ -359,17 +365,17 @@ export const backPainPhysioRelatedPages = {
     {
       title: "Sports Injury Physiotherapy",
       description: "For sports-related back pain — running, padel, gym training, sport-specific patterns and return-to-sport protocols.",
-      href: "/conditions/back-pain-ayurveda-dubai/"
+      href: "/physiotherapy/sports-injury-jvc/"
     },
     {
       title: "Post-Surgery Rehabilitation",
       description: "For post-spinal-surgery rehabilitation — post-laminectomy, discectomy, fusion. Coordinated with your operating surgeon.",
-      href: "/physiotherapy/sports-injury-jvc/"
+      href: "/physiotherapy/post-surgery-rehab-dubai/"
     },
     {
       title: "Integrated Back Pain Care",
       description: "For patients interested in combined Ayurveda + physiotherapy care for back pain. Optional pathway when physiotherapy alone is insufficient.",
-      href: "/physiotherapy/post-surgery-rehab-dubai/"
+      href: "/conditions/back-pain-ayurveda-dubai/"
     }
   ]
 };
