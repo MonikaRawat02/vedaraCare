@@ -63,7 +63,7 @@ export const homePhysioSituations = {
   ],
  quote: "Home physiotherapy is not diluted clinic physiotherapy. For many patients, treating in the actual environment where they need to function produces better outcomes than treating in a sterile clinical setting that does not resemble their real life.",
   image: "/images/home-physiotherapy-situations-dubai.webp",
-  alt: "Home physiotherapy suitable for post-surgical, elderly, and postnatal patients in Dubai"
+  alt: "Home physiotherapy use cases at Vedara Care Dubai including post-surgical neurological postnatal"
 };
 
 export const homePhysioSessionFlow = {
@@ -98,7 +98,7 @@ export const homePhysioSessionFlow = {
   ],
    quote: "Home physiotherapy is not diluted clinic physiotherapy. For many patients, treating in the actual environment where they need to function produces better outcomes than treating in a sterile clinical setting that does not resemble their real life.",
   image: "/images/home-physiotherapy-session-dubai.webp",
-  alt: "DPT-qualified physiotherapist conducting a home physiotherapy assessment in Dubai"
+  alt: "Home physiotherapy session walkthrough Vedara Care Dubai"
 };
 
 export const homePhysioCoverage = {
@@ -147,7 +147,7 @@ export const homePhysioCoverage = {
   ],
   note: "For neighbourhoods further from JVC (typically 40+ minutes travel each way), home physiotherapy is available but additional travel surcharge may apply. WhatsApp us with your address to confirm service availability and any travel surcharge before booking.",
     image: "/images/home-physiotherapy-coverage-dubai.webp",
-  alt: "Home physiotherapy coverage map across Dubai neighbourhoods"
+  alt: "Vedara Care home physiotherapy coverage map Dubai 18 neighbourhoods from JVC"
 };
 
 export const homePhysioModalities = {
@@ -228,7 +228,7 @@ export const homePhysioSpecialisations = {
       title: "Geriatric and Falls Prevention Home Physiotherapy",
       description: "Specialised care for elderly patients with mobility limitations, falls risk, post-illness deconditioning, and chronic conditions affecting older adults. Falls prevention work is particularly valuable when performed in the actual home environment where fall risks can be identified and addressed. Often combined with caregiver education for family members."  }
   ],
-  footer: "Browser All Physiotherapy Services ->"
+  footer: "<a href=\"/physiotherapy-jvc/\">Browser All Physiotherapy Services -></a>"
 };
 
 export const homePhysioBookingLogistics = {
@@ -324,7 +324,7 @@ export const homePhysioPricing = {
     {
       name: "Long-term neurological home package (weekly)",
       price: "AED 3,200 / mo",
-      perSession: "AED 355 / session"
+      perSession: "AED 320 / session"
     }
   ],
   comparison: [
@@ -337,6 +337,11 @@ export const homePhysioPricing = {
       service: "Initial assessment",
       clinicPrice: "AED 380",
       homePrice: "AED 520"
+    },
+    {
+      service: "Home premium (reflects travel time & operational costs)",
+      clinicPrice: "",
+      homePrice: "+ AED 130–140"
     }
   ],
   note: "Insurance direct-billing with seven major insurers — home physiotherapy is covered by most plans with appropriate medical justification. WhatsApp your insurance card and brief condition description before booking for specific coverage confirmation."
@@ -357,7 +362,8 @@ export const homePhysioOutcomes = {
       quote:"My mother had a stroke at 71 while staying with us. Vedara's team started home physiotherapy within 72 hours of hospital discharge. Eight months of structured rehabilitation, mostly at our home in Dubai Hills. She walks independently now, returned to her home in Pakistan able to manage independently. The team coordinated with her neurologist in Karachi throughout.",
       author: "Aisha K.",
       condition: "Family member of post-stroke patient",
-      details: "8-Month Home Rehabilitation \n Dubai Hills · January 2026"
+      details: "8-Month Home Rehabilitation<br />Dubai Hills · January 2026"
+   
     },
     {
       quote: "C-section recovery with my second baby — leaving the house with a newborn was impossible. Vedara's postnatal physiotherapist came to our home in JVT three times a week for six weeks. Pelvic floor recovery, diastasis recti work, scar mobilisation. Female therapist, made the whole experience comfortable. Transitioned to clinic at six weeks postpartum." ,
@@ -428,13 +434,28 @@ export const homePhysioFaqs = {
     {
       question: "Where exactly are you based?",
       answer: "Our clinic is at Circle Mall Medical Centre, Jumeirah Village Circle (JVC), Dubai — walking distance from Circle Mall, three minutes from FIVE Jumeirah Village Hotel, and five minutes from JSS Private School. The clinic is our base — therapists travel from there to your home across Dubai. For clinic visits, free patient parking is available. Easy access from Sheikh Mohammed Bin Zayed Road and Al Khail Road."  },
-    
+    {
+      question : "Are your home physiotherapists male or female?",
+      answer:"Both male and female physiotherapists available. For specific situations where gender preference matters — pelvic floor work, postnatal care, certain cultural preferences, or personal comfort — request your preference when booking. All pelvic floor and postnatal home physiotherapy is delivered by female specialists for female patients. For most general physiotherapy needs, therapist matching prioritises clinical specialisation over gender, but gender preferences are accommodated when requested."
+    },
+    {
+      question : "How is home physiotherapy different from home healthcare?",
+      answer:"Home physiotherapy is specifically physiotherapy delivered at home — DPT-qualified physiotherapists providing the same physiotherapy services as our clinic. Home healthcare is broader — including nursing care, Ayurveda home services, medication management, and other services beyond physiotherapy. Some patients need both. For broader home healthcare needs beyond physiotherapy, see our home healthcare page. For combined care, both services can be coordinated through Vedara Care."
+    },
+    {
+      question : "Can my child have home physiotherapy?",
+      answer:"Yes — paediatric home physiotherapy is available for children with significant disabilities, infants with positional concerns, children with neurological conditions, and children where home environment is therapeutically essential. Delivered by paediatric-trained physiotherapists. For most children with less significant needs, clinic visits are typically preferable (better equipment access, social environment, age-appropriate spaces). Discuss your child's specific situation when booking."  }
+
+,{question: "What happens if I need to cancel a home physiotherapy appointment?",
+
+answer:"We understand that home physiotherapy patients (particularly elderly, post-surgical, and neurological patients) sometimes experience unexpected challenges that require cancellation or rescheduling. We ask for as much notice as possible (24 hours preferred) but accommodate genuine urgent cancellations. Late cancellations or no-shows may have a small fee given the therapist travel time already invested. We work flexibly with patients facing genuine difficulties."
+},
+{
+  question: "How do I book home physiotherapy?",
+  answer:"Three ways: (1) WhatsApp +971 4 300 0000 — fastest response, ideal for sending medical records, hospital discharge summaries, or insurance card details. (2) Call +971 4 300 0001 — direct booking, available 9 AM to 9 PM seven days a week. (3) Book online through our website. For your first appointment, please provide: your full address, brief description of your condition, any recent medical reports or hospital discharge summaries, current medication list, insurance card details if applicable, and preferred appointment times."}
 
 
 
-
-
-  
   
   
   
@@ -500,7 +521,7 @@ export const homePhysioClinicTransition = {
     { text: "Read about our JVC physiotherapy clinic →", variant: "link", link: "/physiotherapy-jvc/" }
   ],
   image: "/images/home-physiotherapy-to-clinic-dubai.webp",
-  alt: "Transitioning from home physiotherapy to Vedara Care JVC clinic in Dubai"
+  alt: "Vedara Care JVC clinic location Jumeirah Village Circle Dubai"
 };
 
 export const homePhysioFinalCTA = {
@@ -536,7 +557,7 @@ export const homePhysioTeam = {
       specialties: ["Post-Surgical", "Pelvic", "Home Physio"],
       experience: "Lead specialist in postnatal and women's health physiotherapy. 9 years clinical experience, trained in pelvic floor rehabilitation.  ",
       image: "/images/dr-priya-nair-home-physiotherapy-dubai.webp",
-      alt: "Dr. Priya Nair, DPT home physiotherapy specialist"
+      alt: "Dr. Priya Nair, DPT home physiotherapist Vedara Care Dubai JVC"
     },
     {
       name: "Dr. Ahmed Al-Rashid, DPT",
@@ -544,7 +565,7 @@ export const homePhysioTeam = {
       specialties: ["Neurological", "Post-Stroke", "Home Physio"],
       experience: "Specialist in neurological rehabilitation and post-stroke recovery. Extensive home-based neurorehabilitation experience across Dubai.",
       image: "/images/dr-ahmed-al-rashid-home-physiotherapy-dubai.webp",
-      alt: "Dr. Ahmed Al-Rashid, DPT neurological home physiotherapy specialist"
+      alt: "Dr. Ahmed Al-Rashid, DPT home physiotherapist Vedara Care Dubai JVC"
     },
     {
       name: "Dr. Riya Thomas, DPT",
@@ -552,16 +573,16 @@ export const homePhysioTeam = {
       specialties: ["Post-Surgical", "Musculoskeletal", "Home Physio"],
       experience: "Post-surgical rehabilitation specialist. Works extensively with joint replacement, ACL, and spinal surgery patients in home settings",
       image: "/images/dr-riya-thomas-home-physiotherapy-dubai.webp",
-      alt: "Dr. Riya Thomas, DPT women's health home physiotherapy specialist"
+      alt: "Dr. Riya Thomas, DPT home physiotherapist Vedara Care Dubai JVC"
     },
-    // {
-    //   name: "Dr. Marcus Chen, DPT",
-    //   qualification: "DHA-Licensed · Geriatric & Falls Prevention",
-    //   specialties: ["Geriatric", "Falls Prevention","Home Physio"],
-    //   experience: "Geriatric physiotherapy and falls prevention specialist. Skilled in home environment assessment and mobility optimisation for elderly patients.",
-    //   image: "/images/dr-marcus-chen-home-physiotherapy-dubai.webp",
-    //   alt: "Dr. Marcus Chen, DPT falls home physiotherapy specialist" 
-    // }
+    {
+      name: "Dr. Marcus Chen, DPT",
+      qualification: "DHA-Licensed · Geriatric & Falls Prevention",
+      specialties: ["Geriatric", "Falls Prevention","Home Physio"],
+      experience: "Geriatric physiotherapy and falls prevention specialist. Skilled in home environment assessment and mobility optimisation for elderly patients.",
+      image: "/images/dr-marcus-chen-home-physiotherapy-dubai.webp",
+      alt: "Dr. Marcus Chen, DPT home physiotherapist Vedara Care Dubai JVC" 
+    }
   ]
 };
 
@@ -579,8 +600,11 @@ export const homePhysioTwoImage = {
 
 export const homePhysioRelatedPages = {
   bgColor: "bg-[#EDE8DE]",
+
   label: "Explore Further",
-  title: "Related services and resources",
+  title: "Related physiotherapy services",
+  linkText: "Browse all physiotherapy services",
+  linkHref: "/physiotherapy-jvc/",
   pages: [
     {
       title: "Physiotherapy in JVC",
@@ -598,9 +622,10 @@ export const homePhysioRelatedPages = {
       href: "/physiotherapy/neurological-dubai"
     },
     {
-      title: "Sports Injury Physiotherapy",
+      title: "Home Healthcare IN jvc ",
       description: "Beyond physiotherapy — comprehensive home healthcare services including Ayurveda, nursing, and combined care programmes.",
-      href: "/physiotherapy/sports-injury-jvc/"
+      href: "/physiotherapy/home-healthcare-jvc/"
     }
-  ]
+  ],
+ 
 };

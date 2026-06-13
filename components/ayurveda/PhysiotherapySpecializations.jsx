@@ -56,7 +56,7 @@ const PhysiotherapySpecializations = ({
         </div>
 
         {footer && (
-          <div className="mt-16 text-center max-w-[900px] mx-auto pt-8">
+          <div className="mt-5 text-center max-w-[900px] mx-auto pt-8 hover:text-[#C9A55A] transition-colors">
             <p className="text-[#888888] text-sm font-sans leading-relaxed" dangerouslySetInnerHTML={{ __html: footer }} />
           </div>
         )}
