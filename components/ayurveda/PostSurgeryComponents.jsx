@@ -243,7 +243,8 @@ export const PostSurgeryTeam = ({ data }) => {
               </div>
               <div className="p-8">
                 <h3 className="text-[19px] font-serif font-medium text-[#1A1A1A] mb-1">{member.name}</h3>
-                <p className="text-[13px] font-sans text-[#C9A961] mb-4">{member.credentials}</p>
+                <p className="text-[13px] font-sans text-[#C9A961] mb-2 uppercase tracking-widest">{member.credentials}</p>
+                {member.role && <p className="text-[14px] font-sans text-[#6B6B6B] mb-4">{member.role}</p>}
                 <div className="flex flex-wrap gap-2 mb-4">
                   {member.tags.map((tag, tagIdx) => (
                     <span key={tagIdx} className="text-[11px] font-sans font-medium bg-white px-2 py-1 rounded border border-gray-100 text-[#6B6B6B]">
@@ -251,11 +252,12 @@ export const PostSurgeryTeam = ({ data }) => {
                     </span>
                   ))}
                 </div>
-                <p className="text-[14px] font-sans text-[#6B6B6B] leading-relaxed mb-6">
+                <p className="text-[14px] font-sans text-[#6B6B6B] leading-relaxed mb-4">
                   {member.description}
                 </p>
-                <a href={member.link} className="inline-flex items-center gap-1 text-[13px] font-sans font-bold text-[#C9A961] hover:underline">
-                  View profile <ArrowRight size={14} />
+                {member.languages && <p className="text-[14px] font-sans text-[#6B6B6B] mb-6"><strong>Languages:</strong> {member.languages}</p>}
+                <a href={member.link} className="inline-flex items-center gap-1 text-[13px] font-sans font-bold text-[#C9A961] hover:underline border-b border-[#C9A961]/30">
+                  View full profile <ArrowRight size={14} />
                 </a>
               </div>
             </div>

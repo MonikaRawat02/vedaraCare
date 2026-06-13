@@ -512,7 +512,7 @@ const SportsInjuryJvc = () => {
         <FAQ {...sportsPhysiotherapyFaqs} />
         
         {/* H2: Where sports physiotherapy happens at Vedara Care JVC. */}
-        <SportsPhysiotherapyLocation />
+        <SportsPhysiotherapyLocation data={sportsPhysiotherapyLocation} />
         
         {/* H2: Acute injury or chronic pattern — start with a proper assessment. */}
         <FinalCTA {...sportsPhysiotherapyFinalCTA} />
