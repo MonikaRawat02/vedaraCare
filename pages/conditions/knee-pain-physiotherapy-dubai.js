@@ -91,6 +91,7 @@ const KneePainPhysioDubai = () => {
         {"@type": "Place", "name": "Mirdif"}
       ],
       "medicalSpecialty": [
+        "Knee Pain Physiotherapy",
         "Physiotherapy",
         "Physical Therapy",
         "Sports Medicine",
@@ -107,10 +108,13 @@ const KneePainPhysioDubai = () => {
         {"@type": "MedicalProcedure", "name": "Knee Osteoarthritis Management"},
         {"@type": "MedicalProcedure", "name": "Running Gait Analysis"},
         {"@type": "MedicalProcedure", "name": "Dry Needling"},
-        {"@type": "MedicalProcedure", "name": "Shockwave Therapy"}
+        {"@type": "MedicalProcedure", "name": "Shockwave Therapy"},
+        {"@type": "MedicalProcedure", "name": "Manual Therapy"},
+        {"@type": "MedicalProcedure", "name": "Exercise Prescription"},
+        {"@type": "MedicalProcedure", "name": "Biomechanical Analysis"}
       ],
       "memberOf": {
-        "@type": "Organization",
+        "@type": "GovernmentOrganization",
         "name": "Dubai Health Authority"
       },
       "aggregateRating": {
@@ -149,6 +153,18 @@ const KneePainPhysioDubai = () => {
         },
         {
           "@type": "MedicalCondition",
+          "name": "Medial Collateral Ligament Injury",
+          "alternateName": ["MCL Tear", "MCL Injury"],
+          "code": {"@type": "MedicalCode", "code": "S83.4", "codingSystem": "ICD-10"}
+        },
+        {
+          "@type": "MedicalCondition",
+          "name": "Lateral Collateral Ligament Injury",
+          "alternateName": ["LCL Tear", "LCL Injury"],
+          "code": {"@type": "MedicalCode", "code": "S83.3", "codingSystem": "ICD-10"}
+        },
+        {
+          "@type": "MedicalCondition",
           "name": "Iliotibial Band Syndrome",
           "alternateName": ["IT Band Syndrome", "ITBS"],
           "code": {"@type": "MedicalCode", "code": "M76.3", "codingSystem": "ICD-10"}
@@ -168,6 +184,11 @@ const KneePainPhysioDubai = () => {
           "@type": "MedicalCondition",
           "name": "Osgood-Schlatter Disease",
           "code": {"@type": "MedicalCode", "code": "M92.5", "codingSystem": "ICD-10"}
+        },
+        {
+          "@type": "MedicalCondition",
+          "name": "Pes Anserine Bursitis",
+          "code": {"@type": "MedicalCode", "code": "M71.86", "codingSystem": "ICD-10"}
         }
       ]
     },
@@ -287,31 +308,69 @@ const KneePainPhysioDubai = () => {
     {
       "@context": "https://schema.org",
       "@type": "Physician",
-      "name": "Dr. Marcus Silva",
-      "url": "https://vedaracare.ae/physiotherapists/dr-marcus-silva/",
-      "image": "https://vedaracare.ae/images/dr-marcus-silva-home-physiotherapy-dubai.webp",
+      "name": "Dr. Priya Sharma, DPT",
+      "url": "https://vedaracare.ae/physiotherapists/dr-priya-sharma",
+      "image": "https://vedaracare.ae/images/dr-priya-sharma-home-physiotherapy-dubai.webp",
       "medicalSpecialty": ["Physiotherapy", "Sports Medicine", "Knee Rehabilitation"],
-      "hasCredential": ["DPT", "Sports Physiotherapy", "Dry Needling Certified", "DHA-Licensed"],
+      "hasCredential": [
+        {
+          "@type": "EducationalCredential",
+          "name": "Doctor of Physical Therapy",
+          "alternateName": ["DPT"]
+        },
+        "DHA-Licensed"
+      ],
       "worksFor": {"@id": "https://vedaracare.ae/#organization"}
     },
     {
       "@context": "https://schema.org",
       "@type": "Physician",
-      "name": "Dr. Priya Nair",
-      "url": "https://vedaracare.ae/physiotherapists/dr-priya-nair/",
-      "image": "https://vedaracare.ae/images/dr-priya-nair-home-physiotherapy-dubai.webp",
+      "name": "Dr. Ahmed Al Rashid, DPT, MSc",
+      "url": "https://vedaracare.ae/physiotherapists/dr-ahmed-al-rashid",
+      "image": "https://vedaracare.ae/images/dr-ahmed-al-rashid-home-physiotherapy-dubai.webp",
       "medicalSpecialty": ["Physiotherapy", "Sports Medicine", "Knee Rehabilitation"],
-      "hasCredential": ["DPT", "Running Biomechanics", "Dry Needling Certified", "DHA-Licensed"],
+      "hasCredential": [
+        {
+          "@type": "EducationalCredential",
+          "name": "Doctor of Physical Therapy",
+          "alternateName": ["DPT"]
+        },
+        "DHA-Licensed"
+      ],
       "worksFor": {"@id": "https://vedaracare.ae/#organization"}
     },
     {
       "@context": "https://schema.org",
       "@type": "Physician",
-      "name": "Dr. Carlos Fernandez",
-      "url": "https://vedaracare.ae/physiotherapists/dr-carlos-fernandez/",
-      "image": "https://vedaracare.ae/images/dr-carlos-fernandez-home-physiotherapy-dubai.webp",
+      "name": "Dr. Sarah Mitchell, DPT",
+      "url": "https://vedaracare.ae/physiotherapists/dr-sarah-mitchell",
+      "image": "https://vedaracare.ae/images/dr-sarah-mitchell-home-physiotherapy-dubai.webp",
       "medicalSpecialty": ["Physiotherapy", "Sports Medicine", "Knee Rehabilitation"],
-      "hasCredential": ["DPT", "Strength & Conditioning", "Dry Needling Certified", "DHA-Licensed"],
+      "hasCredential": [
+        {
+          "@type": "EducationalCredential",
+          "name": "Doctor of Physical Therapy",
+          "alternateName": ["DPT"]
+        },
+        "DHA-Licensed"
+      ],
+      "worksFor": {"@id": "https://vedaracare.ae/#organization"}
+    },
+    {
+      "@context": "https://schema.org",
+      "@type": "Physician",
+      "name": "Dr. Rahul Mehta, DPT, CSCS",
+      "url": "https://vedaracare.ae/physiotherapists/dr-rahul-mehta",
+      "image": "https://vedaracare.ae/images/dr-rahul-mehta-home-physiotherapy-dubai.webp",
+      "medicalSpecialty": ["Physiotherapy", "Sports Medicine", "Knee Rehabilitation"],
+      "hasCredential": [
+        {
+          "@type": "EducationalCredential",
+          "name": "Doctor of Physical Therapy",
+          "alternateName": ["DPT"]
+        },
+        "DHA-Licensed"
+      ],
       "worksFor": {"@id": "https://vedaracare.ae/#organization"}
     }
   ];
@@ -448,7 +507,28 @@ const KneePainPhysioDubai = () => {
 
       <FAQ {...kneePainFaqs} />
 
-      <TreatmentLocationCustom {...kneePainLocation} />
+      <TreatmentLocationCustom 
+        bgColor={kneePainLocation.bgColor}
+        label={kneePainLocation.label}
+        title={kneePainLocation.title}
+        address1="Vedara Care Polyclinic"
+        address2={kneePainLocation.address}
+        // addressNote="Next to Circle Mall · 3 min from FIVE Jumeirah Village Hotel"
+        clinicHours={[
+          { label: "Monday - Saturday", time: "9:00 AM – 9:00 PM" },
+          { label: "Sunday", time: "10:00 AM – 7:00 PM" }
+        ]}
+        contactPhone={kneePainLocation.phone}
+        description={kneePainLocation.description}
+        buttonText={kneePainLocation.buttonText}
+        buttonHref={kneePainLocation.buttonLink}
+        mapEmbed={kneePainLocation.mapEmbed}
+        locationMarkers={[
+          { name: "Circle Mall", distance: "5 min walk" },
+          { name: "FIVE JV Hotel", distance: "3 min drive" },
+          { name: "JSS School", distance: "5 min drive" }
+        ]} 
+      />
 
       <FinalCTA 
         {...kneePainCTA}

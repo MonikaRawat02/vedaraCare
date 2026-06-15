@@ -12,7 +12,8 @@ const TreatmentMechanism = ({
   description = "",
   bulletPoints = [],
   additionalText = "",
-  showStats = false
+  showStats = false,
+  keyFact = ""
 }) => {
   const isContentFormat = content.length > 0;
 
@@ -53,12 +54,24 @@ const TreatmentMechanism = ({
               )}
             </div>
 
-            {/* Image */}
+            {/* Image + Key Fact */}
             <div className={`lg:w-[45%] ${imageLeft ? 'lg:order-1' : 'lg:order-2'}`}>
               <img 
                  src={image || ""} 
                 alt={alt} 
                 className="w-full h-[400px] object-cover rounded-xl shadow-lg"/>
+
+              {/* Key Fact */}
+              {keyFact && (
+                <div className="mt-6 bg-white p-6 rounded-lg border border-gray-100 shadow-sm">
+                  <p className="text-[12px] font-semibold tracking-[0.15em] uppercase text-[#C9A84C] mb-2">
+                    KEY FACT
+                  </p>
+                  <p className="text-sm text-gray-700 leading-relaxed">
+                    {keyFact}
+                  </p>
+                </div>
+              )}
 
               {/* Stats Cards */}
               {showStats && (

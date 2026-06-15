@@ -273,7 +273,7 @@ export const physiotherapyConditions = {
     {
       title: "Knee Osteoarthritis",
       description: "Hot climate compounds activity limitations",
-      link: "/conditions/arthritis-ayurveda-dubai/"
+      link: "/conditions/knee-pain-physiotherapy-dubai"
     },
     {
       title: "Tennis Elbow / Golfer's Elbow",
