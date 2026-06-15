@@ -65,7 +65,7 @@ export const sciaticaPhysioReviews = {
 export const sciaticaPhysioTeam = {
   label: "THE TEAM",
   title: "Sciatica specialists at our JVC clinic.",
-  bgColor: "bg-[#F8F5EE]",
+  bgColor: "bg-[#F8F5F0]",
   team: [
     {
       name: "Dr. Sarah Al-Mansoori, DPT",
@@ -353,6 +353,57 @@ export const sciaticaPhysioPricing = {
   ],
   insuranceText: "Sciatica physiotherapy is well covered by most Dubai insurance plans with medical justification (often substantial coverage given the documented disability impact). WhatsApp your insurance card before booking for specific coverage confirmation.",
   insurances: ["Daman", "AXA", "Allianz", "Oman Insurance", "Now Health", "Bupa", "MetLife"]
+};
+
+export const sciaticaPhysioTreatment = {
+  treatment: {
+    label: "THE APPROACH",
+    title: "How we actually treat sciatica at our JVC clinic.",
+    intro: "Sciatica responds remarkably well to specific evidence-based physiotherapy approaches. The key is matching the treatment to your specific sciatica pattern — generic protocols produce mediocre outcomes, but pattern-specific treatment often produces excellent results.",
+    steps: [
+      {
+        title: "Detailed initial assessment",
+        description: "The first session is comprehensive — typically 60 minutes including detailed history of your symptoms, neurological examination (sensation testing, reflex testing, muscle strength testing) to identify which nerve root is involved, specific orthopaedic tests for sciatica patterns, movement assessment to identify your directional preference (critical for McKenzie method), and review of any imaging you have.",
+        bullets: []
+      },
+      {
+        title: "McKenzie Method (MDT) for disc-related sciatica",
+        description: "The Mechanical Diagnosis and Therapy approach developed by Robin McKenzie is the most evidence-supported intervention for disc-related sciatica. The method identifies your directional preference — a specific movement that reduces or 'centralises' your pain — move it from your leg toward your back. Patients with disc-related sciatica experience substantial relief within weeks of McKenzie treatment when directional preference is found.",
+        bullets: []
+      },
+      {
+        title: "Nerve mobilisation techniques",
+        description: "Specific techniques to mobilise the sciatic nerve and reduce nerve root irritation. Different from generic stretching — calibrated mobilisation that addresses nerve gliding patterns. Particularly effective for chronic sciatica patterns and patients with significant nerve sensitivity. Often produces immediate symptom changes that demonstrate the approach is working.",
+        bullets: []
+      },
+      {
+        title: "Manual therapy for associated dysfunction",
+        description: "Sciatica often involves associated muscle tension, joint dysfunction, and protective patterns that complicate recovery. Lumbar spine mobilisation, soft tissue work for chronic muscle patterns, manipulation where appropriate. Manual therapy creates a window for active rehabilitation to be more effective.",
+        bullets: []
+      },
+      {
+        title: "Dry needling for piriformis-related sciatica",
+        description: "For sciatica with significant piriformis muscle involvement, dry needling is particularly effective. The fine needle technique releases the piriformis muscle tension that may be compressing or irritating the sciatic nerve. Often produces rapid symptom improvement in piriformis-related sciatica patterns that have not responded to other approaches.",
+        bullets: []
+      },
+      {
+        title: "Specific exercise prescription",
+        description: "Beyond McKenzie method exercises, structured exercise programmes address the underlying factors contributing to sciatica — deep stabiliser strength, hip mobility, hamstring flexibility, postural patterns. Exercises are matched to your specific pattern and progressed as you improve.",
+        bullets: []
+      },
+      {
+        title: "Patient education about your condition",
+        description: "Understanding your sciatica reduces fear and improves outcomes. We explain what is happening physiologically, why specific treatments work, what to expect from the recovery timeline, and what you can do to support your own recovery. Patients who understand their condition have better outcomes.",
+        bullets: []
+      }
+    ],
+    footer: '"The McKenzie method, when applied correctly, can produce results in days that older approaches struggle to achieve in months. Pattern recognition matters."'
+  },
+  rightContent: {
+    image: "/images/sciatica-physiotherapy-vedara-jvc.webp",
+    alt: "Sciatica treatment at Vedara Care JVC Dubai",
+    tags: ["McKenzie Method", "Nerve Mobilisation", "Manual Therapy", "Dry Needling", "Exercise Prescription", "Patient Education"]
+  }
 };
 
 export const sciaticaPhysioRelatedPages = {

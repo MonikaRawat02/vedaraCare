@@ -7,11 +7,12 @@ const TreatmentMechanism = ({
   content = [],
   quote = "",
   image = "",
-  alt = "Therapy content",
+  alt = "",
   imageLeft = false,
   description = "",
   bulletPoints = [],
-  additionalText = ""
+  additionalText = "",
+  showStats = false
 }) => {
   const isContentFormat = content.length > 0;
 
@@ -27,6 +28,9 @@ const TreatmentMechanism = ({
           <h2 className="text-4xl text-[#1A1A1A]" style={{ fontFamily: 'Fraunces, serif' }}>
             {title}
           </h2>
+          {description && (
+            <p className="text-gray-700 leading-relaxed mt-6 max-w-2xl mx-auto" dangerouslySetInnerHTML={{ __html: description }} />
+          )}
         </div>
 
         {isContentFormat ? (
@@ -52,18 +56,32 @@ const TreatmentMechanism = ({
             {/* Image */}
             <div className={`lg:w-[45%] ${imageLeft ? 'lg:order-1' : 'lg:order-2'}`}>
               <img 
-                 src={image || "https://images.unsplash.com/photo-1664549760921-2198b054a592?w=600"} 
+                 src={image || ""} 
                 alt={alt} 
                 className="w-full h-[400px] object-cover rounded-xl shadow-lg"/>
 
+              {/* Stats Cards */}
+              {showStats && (
+                <div className="mt-6 grid grid-cols-3 gap-3">
+                  <div className="bg-white p-4 rounded-lg text-center border border-[#E5DFD3]">
+                    <div className="text-2xl font-bold" style={{ fontFamily: 'Fraunces, serif', color: '#1A1A1A' }}>5 kg</div>
+                    <div className="text-xs text-gray-600 mt-1">Natural head weight</div>
+                  </div>
+                  <div className="bg-white p-4 rounded-lg text-center border border-[#E5DFD3]">
+                    <div className="text-2xl font-bold" style={{ fontFamily: 'Fraunces, serif', color: '#1A1A1A' }}>18 kg</div>
+                    <div className="text-xs text-gray-600 mt-1">Load at 30° forward</div>
+                  </div>
+                  <div className="bg-white p-4 rounded-lg text-center border border-[#E5DFD3]">
+                    <div className="text-2xl font-bold" style={{ fontFamily: 'Fraunces, serif', color: '#1A1A1A' }}>&gt;8 hrs</div>
+                    <div className="text-xs text-gray-600 mt-1">Avg daily screen time</div>
+                  </div>
+                </div>
+              )}
             </div>
           </div>
         ) : (
           /* Bullet Points Format */
           <div className="max-w-3xl mx-auto">
-            {description && (
-              <p className="text-gray-700 leading-relaxed mb-8 text-center" dangerouslySetInnerHTML={{ __html: description }} />
-            )}
             {bulletPoints.length > 0 && (
               <ul className="space-y-4 mb-8">
                 {bulletPoints.map((point, index) => (

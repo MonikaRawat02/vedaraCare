@@ -7,7 +7,7 @@ import FinalCTA from '../../components/ayurveda/FinalCTA';
 import RelatedPages from '../../components/ayurveda/RelatedPages';
 import TreatmentReviews from '../../components/ayurveda/TreatmentReviews';
 import PhysiotherapyTeam from '../../components/ayurveda/PhysiotherapyTeam';
-import { SciaticaTypes, SciaticaEmergency, SciaticaPricing } from '../../components/ayurveda/SciaticaSections';
+import { SciaticaTypes, SciaticaEmergency, SciaticaPricing, SciaticaTreatment } from '../../components/ayurveda/SciaticaSections';
 import {
   sciaticaPhysioHero,
   sciaticaPhysioIntro,
@@ -19,7 +19,8 @@ import {
   sciaticaPhysioTeam,
   sciaticaPhysioTypes,
   sciaticaPhysioEmergency,
-  sciaticaPhysioPricing
+  sciaticaPhysioPricing,
+  sciaticaPhysioTreatment
 } from '../../data/sciaticaPhysiotherapyData';
 
 const SciaticaPhysiotherapyDubai = () => {
@@ -249,6 +250,7 @@ const SciaticaPhysiotherapyDubai = () => {
         <AyurvedaIntro {...sciaticaPhysioIntro} />
         <SciaticaTypes {...sciaticaPhysioTypes} />
         <SciaticaEmergency data={sciaticaPhysioEmergency} />
+        <SciaticaTreatment data={sciaticaPhysioTreatment} />
         <TreatmentReviews {...sciaticaPhysioReviews} />
         <PhysiotherapyTeam {...sciaticaPhysioTeam} />
          <SciaticaPricing {...sciaticaPhysioPricing} />
