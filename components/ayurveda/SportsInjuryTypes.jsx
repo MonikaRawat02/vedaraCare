@@ -1,44 +1,76 @@
 import React from 'react';
 
-const SportsInjuryTypes = ({ label, title, items, footer }) => {
+const SportsInjuryTypes = ({ label, title, items, footer, variant = 'condition', description = '', bgColor = 'rgb(248, 244, 238)' }) => {
   return (
-    <section className="bg-white" style={{ padding: '96px 24px' }}>
+    <section style={{ background: bgColor, padding: '96px 24px' }}>
       <div className="max-w-7xl mx-auto">
         <div className="text-center mb-14">
-          <p className="text-xs font-bold tracking-widest uppercase mb-4" style={{ color: 'rgb(201, 168, 76)' }}>
-            <span className="inline-block w-6 h-px mr-2 align-middle" style={{ background: 'rgb(201, 168, 76)' }}></span>
+          <p className="text-xs font-bold tracking-widest uppercase mb-4" style={{ color: 'rgb(184, 150, 90)' }}>
+            <span className="inline-block w-6 h-px mr-2 align-middle" style={{ background: 'rgb(184, 150, 90)' }}></span>
             {label}
-            <span className="inline-block w-6 h-px ml-2 align-middle" style={{ background: 'rgb(201, 168, 76)' }}></span>
+            <span className="inline-block w-6 h-px ml-2 align-middle" style={{ background: 'rgb(184, 150, 90)' }}></span>
           </p>
-          <h2 className="text-3xl sm:text-4xl" style={{ fontFamily: 'var(--font-display, Fraunces, Georgia, serif)', fontWeight: 500, color: 'rgb(26, 26, 26)' }}>
+          <h2 className="text-3xl sm:text-4xl" style={{ fontFamily: 'Fraunces, serif', fontWeight: 500, color: 'rgb(28, 25, 23)' }}>
             {title}
           </h2>
+          {description && (
+            <p className="text-base leading-relaxed mt-6 max-w-2xl mx-auto" style={{ color: 'rgb(61, 52, 45)', fontFamily: 'DM Sans, sans-serif' }} dangerouslySetInnerHTML={{ __html: description }} />
+          )}
         </div>
-        <div className="grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-4 gap-5">
-          {items.map((item, index) => (
-            <div 
-              key={index}
-              className="rounded-lg p-6 cursor-pointer transition-all hover:-translate-y-1 hover:shadow-md group"
-              style={{ background: 'rgb(250, 247, 242)', borderLeft: '3px solid rgb(201, 168, 76)' }}
-            >
-              <h4 className="text-base mb-1" style={{ fontFamily: 'var(--font-display, Fraunces, Georgia, serif)', fontWeight: 500, color: 'rgb(26, 26, 26)' }}>
-                {item.title}
-              </h4>
-              {item.subtitle && (
-                <p className="text-xs mb-3" style={{ color: 'rgb(201, 168, 76)', fontStyle: 'italic' }}>
-                  {item.subtitle}
+        <div className="grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-3 gap-5">
+          {items.map((item, index) => {
+            // Determine card background (contrast with section bg)
+            const cardBg = bgColor === 'rgb(255, 255, 255)' ? 'rgb(248, 244, 238)' : 'rgb(255, 255, 255)';
+            
+            return (
+            variant === 'condition' ? (
+              <div 
+                key={index}
+                className="rounded-lg p-6 transition-all hover:shadow-md"
+                style={{ background: cardBg, borderLeft: '3px solid rgb(184, 150, 90)' }}
+              >
+                <div className="flex items-baseline gap-3 mb-3">
+                  {item.number && (
+                    <span className="text-2xl font-medium" style={{ fontFamily: 'Fraunces, serif', color: 'rgb(184, 150, 90)' }}>
+                      {item.number}
+                    </span>
+                  )}
+                  <h4 className="text-base font-medium leading-snug" style={{ fontFamily: 'Fraunces, serif', color: 'rgb(28, 25, 23)' }}>
+                    {item.title}
+                  </h4>
+                </div>
+                <p className="text-sm leading-relaxed mb-4" style={{ color: 'rgb(90, 79, 71)', fontFamily: 'DM Sans, sans-serif' }}>
+                  {item.description}
                 </p>
-              )}
-              <p className="text-sm leading-relaxed mb-3" style={{ color: 'rgb(107, 107, 107)', lineHeight: 1.6 }}>
-                {item.description}
-              </p>
-              {item.age && (
-                <p className="text-xs" style={{ color: 'rgb(26, 67, 50)', fontWeight: '500' }}>
-                  {item.age}
+                {item.typicalPatient && (
+                  <p className="text-xs" style={{ color: 'rgb(184, 150, 90)', fontFamily: 'DM Sans, sans-serif' }}>
+                    <span className="font-semibold uppercase tracking-wide text-[10px]">Typical patient: </span>
+                    {item.typicalPatient}
+                  </p>
+                )}
+              </div>
+            ) : (
+              <div 
+                key={index}
+                className="rounded-lg p-7 transition-all hover:shadow-md"
+                style={{ background: cardBg, borderTop: '4px solid rgb(184, 150, 90)' }}
+              >
+                <h4 className="text-lg font-medium mb-4" style={{ fontFamily: 'Fraunces, serif', color: 'rgb(28, 25, 23)' }}>
+                  {item.title}
+                </h4>
+                <p className="text-sm leading-relaxed mb-5" style={{ color: 'rgb(90, 79, 71)', fontFamily: 'DM Sans, sans-serif' }}>
+                  {item.description}
                 </p>
-              )}
-            </div>
-          ))}
+                {item.typicalRecovery && (
+                  <div className="pt-4 border-t text-xs" style={{ borderColor: 'rgba(28, 25, 23, 0.08)', color: 'rgb(122, 110, 100)', fontFamily: 'DM Sans, sans-serif' }}>
+                    <span className="font-semibold uppercase tracking-wide text-[10px]" style={{ color: 'rgb(184, 150, 90)' }}>Typical recovery: </span>
+                    {item.typicalRecovery}
+                  </div>
+                )}
+              </div>
+            )
+            );
+          })}
         </div>
         {footer && (
           <div className="text-center mt-10">
