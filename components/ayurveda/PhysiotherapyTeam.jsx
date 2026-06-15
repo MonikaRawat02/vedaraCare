@@ -1,7 +1,7 @@
 import React from 'react';
 import Link from 'next/link';
 
-const PhysiotherapyTeam = ({ label, title, team }) => {
+const PhysiotherapyTeam = ({ label, title, team, bgColor = "bg-white" }) => {
   // Helper function to create a slug from the name
   const createSlug = (name) => {
     return name.toLowerCase().replace(/[.,]/g, '').replace(/\s+/g, '-');
