@@ -122,7 +122,7 @@ export const arthritisPillars = {
   pillars: [
     {
       title: "Localised Joint Therapies",
-      description: "The most clinically distinctive Ayurvedic intervention for arthritis. Specific localised therapies depending on affected joint — Janu Vasti (warm medicated oil reservoir over the knee) for knee arthritis, Greeva Vasti for cervical spondylosis, <a href=\"/treatments/kativasti-dubai/\" class=\"text-[#C9A961] hover:underline\">Kati Vasti</a> for lumbar spondylosis, specific protocols for shoulders, Pizhichil for whole-body arthritis presentations. These therapies deliver medicated oils directly to the affected joint tissue with sustained warmth — typically 30-45 minutes per session, courses of 7-14 sessions."
+      description: "The most clinically distinctive Ayurvedic intervention for arthritis. Specific localised therapies depending on affected joint — Janu Vasti (warm medicated oil reservoir over the knee) for<a href=\"/treatments/kativasti-dubai/\" class=\"text-[#C9A961] hover:underline\"> knee arthritis, </a> Greeva Vasti for cervical spondylosis, <a href=\"/treatments/kativasti-dubai/\" class=\"text-[#C9A961] hover:underline\">Kati Vasti</a> for lumbar spondylosis, specific protocols for shoulders, Pizhichil for whole-body arthritis presentations. These therapies deliver medicated oils directly to the affected joint tissue with sustained warmth — typically 30-45 minutes per session, courses of 7-14 sessions."
     },
     {
       title: "Panchakarma Cleansing",
