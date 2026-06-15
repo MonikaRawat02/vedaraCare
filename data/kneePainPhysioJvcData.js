@@ -130,122 +130,170 @@ export const kneePainOutcomes = {
   bgColor: "bg-[#F5F1EB]",
   headerBgColor: "bg-[#184C3A]",
   headerTextColor: "text-white",
-  label: "RECOVERY TIMELINES",
+  label: "Realistic Recovery",
   title: "Recovery timelines by knee condition.",
-  description: "Based on our patients at the JVC clinic with documented knee pain outcomes.",
+  description: "Different knee conditions have different recovery timelines. Honest expectations help you stay engaged with treatment.",
   tableHeaders: [
-    "Knee Condition",
-    "Typical Recovery Timeline",
-    "Return to Full Activity (with proper protocol)",
-    "Return to Full Activity (without proper protocol)"
+    "Condition",
+    "Acute Phase",
+    "Full Recovery",
+    "Risk Factor"
   ],
   tableRows: [
     {
       subtype: "Patellofemoral Pain Syndrome",
-      days: "6–12 weeks",
-      severity: "90%+ return to pre-injury activity level",
-      medication: "High risk of chronic recurrence"
+      days: "4-8 weeks",
+      severity: "8–16 weeks",
+      medication: "Hip strength compliance"
     },
     {
-      subtype: "Meniscus Injury (Conservative)",
-      days: "8–16 weeks",
-      severity: "70–80% return to full activity",
-      medication: "Often develops arthritis symptoms earlier"
+      subtype: "Meniscus injury (non-surgical)",
+      days: "6-12 weeks",
+      severity: "12–24 weeks",
+      medication: "Activity modification compliance"
     },
     {
-      subtype: "ACL Reconstruction",
-      days: "9–12 months",
-      severity: ">85% return to pre-injury sport at 12 months",
-      medication: "40–50% re-injury rate with early return"
-    },
-    {
-      subtype: "IT Band Syndrome",
+      subtype: "MCL Grade 1–2 strain",
       days: "4–8 weeks",
-      severity: "95%+ resolution with proper rehab",
-      medication: "Chronic recurrence likely"
+      severity: "8–16 weeks",
+      medication: "Return to sport timing"
     },
     {
-      subtype: "Knee Osteoarthritis",
-      days: "Ongoing management",
-      severity: "Significant pain reduction maintained long-term",
-      medication: "Progressive decline in function"
+      subtype: "ACL reconstruction recovery",
+      days: "0–12 weeks",
+      severity: "9–12 months",
+      medication: "Return-to-sport criteria adherence"
+    },
+    {
+      subtype: "IT band syndrome",
+      days: "6–10 weeks",
+      severity: "10–16 weeks",
+      medication: "Hip strength + training load"
     },
     {
       subtype: "Patellar Tendinopathy",
-      days: "12–24 weeks",
-      severity: "80%+ full resolution",
-      medication: "Chronic tendinopathy development"
-    }
+      days: "8–12 weeks",
+      severity: "12–24 weeks",
+      medication: "Loading progression discipline"
+    },
+    {
+      subtype: "Knee Osteoarthritis",
+      days: "8–12 weeks initial",
+      severity: "Ongoing management",
+      medication: "Exercise compliance, weight"
+    },
+    
+      {
+        subtype: "Osgood-Schlatter disease",
+        days: "4–8 weeks",
+        severity: "Ongoing through growth",
+        medication: "Sport modification compliance"
+      },
+      {
+        subtype: "Quadriceps/Hamstring tendinopathy",
+        days: "6–12 weeks",
+        severity: "12–20 weeks",
+        medication: "Loading progression"
+      },
+      {
+        subtype: "Post-meniscectomy",
+        days: "4–8 weeks",
+        severity: "12–16 weeks",
+        medication: "Activity progression"
+      },
+      {
+        subtype: "Post-meniscus repair",
+        days: "8–16 weeks",
+        severity: "6–9 months",
+        medication: "Restrictions adherence"
+      },
+      {
+        subtype: "Pes anserine bursitis",
+        days: "4–8 weeks",
+        severity: "8–12 weeks",
+        medication: "Biomechanical correction"
+      }
+    
   ],
-  footer: "The single largest factor in knee pain recovery is sticking to your rehabilitation programme — especially the eccentric loading and neuromuscular control exercises. Patients who complete proper rehab have dramatically better long-term outcomes."
-};
+  footer: "These timelines represent typical patterns. Your specific timeline depends on condition severity, when treatment starts, compliance with home programmes, return-to-activity goals, age and overall health, and underlying contributing factors. At initial assessment, you receive a specific timeline estimate for your situation."};
 
 export const kneePainReviews = {
   label: "PATIENT STORIES",
   title: "Real knee pain recoveries.",
-  bgColor: "bg-[#1C3D2E]",
-  cardBgColor: "bg-[#FFFFFF12]",
+  bgColor: "bg-white",
+  cardBgColor: "rgb(248, 244, 238)",
+  isDarkText: true,
   items: [
     {
-      quote: "ACL reconstruction after a padel injury. Vedara's rehab protocol got me back on the padel court at 10 months, stronger than before. The strength testing and return-to-sport criteria gave me confidence I was ready.",
-      author: "Ahmed H.",
-      details: "ACL Reconstruction · 10-Month Rehab <br/>Motor City resident · March 2026"
+      quote: "Patellofemoral pain for two years. Tried multiple things including generic strengthening exercises. Vedara identified specific hip weakness pattern driving my knee issues. Twelve weeks of structured treatment combining manual therapy and specific exercises. Returned to running pain-free. Three years on, still running, no recurrence.",
+      author: "Sarah K.",
+      details: "Patellofemoral Pain Syndrome<br/>12-Week Programme · Dubai Marina · February 2026"
     },
     {
-      quote: "Runner's knee for 18 months. Tried multiple clinics with generic knee exercises that didn't work. Vedara did a proper gait analysis, identified weak glutes as the cause, and gave specific exercises. Pain-free running within 12 weeks.",
-      author: "Emma W.",
-      details: "Patellofemoral Pain · 12-Week Programme <br/>Dubai Hills resident · January 2026"
+      quote: "MRI showed a meniscus tear. Orthopaedic surgeon recommended surgery. Vedara recommended trying physiotherapy first given the type of tear. Twelve weeks of structured rehabilitation, fully returned to padel and gym training. Surgery completely avoided. The honest conversation about when surgery is and is not needed was invaluable.",
+      author: "Rajan M.",
+      details: "Meniscus Injury<br/>12-Week Conservative Programme · Sports City · January 2026"
     },
     {
-      quote: "Knee arthritis that was getting worse every month. Thought I'd need a knee replacement soon. Vedara's exercise programme reduced my pain by 80% and I'm back to walking 5km daily without discomfort.",
-      author: "Rajan P.",
-      details: "Knee Osteoarthritis · 16-Week Programme <br/>JVC resident · February 2026"
+      quote: "Knee osteoarthritis at 58. Significant imaging changes, considering knee replacement. Vedara's physiotherapy programme over six months combined with weight management substantially reduced my symptoms. Walking comfortably, playing tennis again, surgery deferred indefinitely. Honest about realistic expectations — not 'cured' but substantially improved.",
+      author: "James M.",
+      details: "Knee Osteoarthritis<br/>6-Month Programme + Ongoing · Dubai Hills · March 2026"
     }
   ],
   stats: [
-    { value: "4.9", label: "stars on Google" },
-    { value: "310+", label: "knee pain patients treated" },
-    { value: "92%", label: "report significant improvement within 12 weeks" }
+    { value: "4.9 ★", label: "Google Rating" },
+    { value: "350+", label: "Knee Patients Treated" },
+    { value: "87%", label: "Substantial Improvement in 12 Weeks" },
+    { value: "Most", label: "Patients Avoid Surgery" }
   ],
   buttonText: "Read All Knee Pain Reviews"
 };
 
 export const kneePainTeam = {
+  bgColor: "bg-[#F8F4EE]",
+  cardColor: "bg-white",
   label: "THE TEAM",
   title: "Physiotherapy specialists for knee pain at our JVC clinic.",
   members: [
     {
-      name: "Dr. Marcus Silva",
-      credentials: "DPT · MSc Sports Physio",
-      role: "Knee & Sports Rehabilitation Specialist",
-      languages: "English, Portuguese, Spanish",
-      tags: ["Knee Rehab", "Sports Injuries", "Gait Analysis"],
-      description: "Specialist in knee injuries and post-surgical knee rehabilitation. Extensive experience with ACL reconstruction recovery and sports-related knee pain.",
-      link: "/physiotherapists/dr-marcus-silva",
-      image: "/images/dr-marcus-silva-home-physiotherapy-dubai.webp",
-      alt: "Dr. Marcus Silva knee pain physiotherapy specialist Vedara Care JVC Dubai"
+      name: "Dr. Priya Sharma, DPT",
+      credentials: "DHA-Licensed · Knee Specialist",
+      languages: "English, Hindi, Malayalam",
+      tags: ["Sports Knee", "Post-Surgical", "Running Gait"],
+      description: "Specialises in sports knee rehabilitation and running biomechanics with 8 years of clinical experience.",
+      link: "/physiotherapists/dr-priya-sharma",
+      image: "/images/dr-priya-sharma-home-physiotherapy-dubai.webp",
+      alt: "Dr. Priya Sharma knee pain physiotherapy specialist Vedara Care JVC Dubai"
     },
     {
-      name: "Dr. Priya Nair",
-      credentials: "DPT · Cert. Running Biomechanics",
-      role: "Running & Tendinopathy Specialist",
-      languages: "English, Malayalam, Hindi",
-      tags: ["Running Injuries", "Tendinopathies", "Gait Analysis"],
-      description: "Expert in running-related knee injuries and tendinopathy management. Previously physiotherapist for the Dubai Marathon medical team.",
-      link: "/physiotherapists/dr-priya-nair",
-      image: "/images/dr-priya-nair-home-physiotherapy-dubai.webp",
-      alt: "Dr. Priya Nair knee pain physiotherapy specialist Vedara Care JVC Dubai"
+      name: "Dr. Ahmed Al Rashid, DPT, MSc",
+      credentials: "DHA-Licensed · Knee Specialist",
+      languages: "English, Arabic",
+      tags: ["Osteoarthritis", "Manual Therapy", "ACL Rehab"],
+      description: "Expert in knee osteoarthritis management and ACL reconstruction rehabilitation protocols.",
+      link: "/physiotherapists/dr-ahmed-al-rashid",
+      image: "/images/dr-ahmed-al-rashid-home-physiotherapy-dubai.webp",
+      alt: "Dr. Ahmed Al Rashid knee pain physiotherapy specialist Vedara Care JVC Dubai"
     },
     {
-      name: "Dr. Carlos Fernandez",
-      credentials: "DPT · Strength & Conditioning",
-      role: "Gym & Performance Knee Specialist",
-      languages: "English, Spanish, French",
-      tags: ["Gym Injuries", "Strength Rehab", "Return to Sport"],
-      description: "CrossFit Level 2 certified physiotherapist specialising in gym-related knee injuries and return-to-performance protocols.",
-      link: "/physiotherapists/dr-carlos-fernandez",
-      image: "/images/dr-carlos-fernandez-home-physiotherapy-dubai.webp",
-      alt: "Dr. Carlos Fernandez knee pain physiotherapy specialist Vedara Care JVC Dubai"
+      name: "Dr. Sarah Mitchell, DPT",
+      credentials: "DHA-Licensed · Knee Specialist",
+      languages: "English, French",
+      tags: ["Tendinopathy", "Dry Needling", "Sports Knee"],
+      description: "Certified in dry needling with particular expertise in tendinopathy management and gym-related knee injuries.",
+      link: "/physiotherapists/dr-sarah-mitchell",
+      image: "/images/dr-sarah-mitchell-home-physiotherapy-dubai.webp",
+      alt: "Dr. Sarah Mitchell knee pain physiotherapy specialist Vedara Care JVC Dubai"
+    },
+    {
+      name: "Dr. Rahul Mehta, DPT, CSCS",
+      credentials: "DHA-Licensed · Knee Specialist",
+      languages: "English, Hindi, Gujarati",
+      tags: ["Post-Surgical", "Padel Injuries", "Strength & Conditioning"],
+      description: "Combines physiotherapy with strength and conditioning expertise for complete knee rehabilitation.",
+      link: "/physiotherapists/dr-rahul-mehta",
+      image: "/images/dr-rahul-mehta-home-physiotherapy-dubai.webp",
+      alt: "Dr. Rahul Mehta knee pain physiotherapy specialist Vedara Care JVC Dubai"
     }
   ]
 };
