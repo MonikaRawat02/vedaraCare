@@ -396,12 +396,18 @@ const KneePainPhysioDubai = () => {
       />
 
       <TreatmentReviews 
+        // bgColor="bg-[#1C3D2E]"
+        bgColor="bg-[#FFFFFFF]"
         label="PATIENT STORIES"
         title="Real knee pain recoveries."
         {...kneePainReviews}
+        useKneeStyle={true}
       />
 
-      <PhysiotherapyTeam {...kneePainTeam} />
+      <PhysiotherapyTeam 
+      bgColor="bg-[#F8F4EE]"
+      cardColor="bg-white"
+      {...kneePainTeam} />
 
       <div className={`bg-white py-24 px-6 ${kneePainPricing.bgColor}`}>
         <div className="max-w-5xl mx-auto">
