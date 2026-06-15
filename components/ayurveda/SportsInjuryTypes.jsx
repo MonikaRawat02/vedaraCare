@@ -39,9 +39,8 @@ const SportsInjuryTypes = ({ label, title, items, footer, variant = 'condition',
                     {item.title}
                   </h4>
                 </div>
-                <p className="text-sm leading-relaxed mb-4" style={{ color: 'rgb(90, 79, 71)', fontFamily: 'DM Sans, sans-serif' }}>
-                  {item.description}
-                </p>
+                <p className="text-sm leading-relaxed mb-4" style={{ color: 'rgb(90, 79, 71)', fontFamily: 'DM Sans, sans-serif' }} dangerouslySetInnerHTML={{ __html: item.description }} />
+
                 {item.typicalPatient && (
                   <p className="text-xs" style={{ color: 'rgb(184, 150, 90)', fontFamily: 'DM Sans, sans-serif' }}>
                     <span className="font-semibold uppercase tracking-wide text-[10px]">Typical patient: </span>
@@ -58,9 +57,8 @@ const SportsInjuryTypes = ({ label, title, items, footer, variant = 'condition',
                 <h4 className="text-lg font-medium mb-4" style={{ fontFamily: 'Fraunces, serif', color: 'rgb(28, 25, 23)' }}>
                   {item.title}
                 </h4>
-                <p className="text-sm leading-relaxed mb-5" style={{ color: 'rgb(90, 79, 71)', fontFamily: 'DM Sans, sans-serif' }}>
-                  {item.description}
-                </p>
+                <p className="text-sm leading-relaxed mb-5" style={{ color: 'rgb(90, 79, 71)', fontFamily: 'DM Sans, sans-serif' }} dangerouslySetInnerHTML={{ __html: item.description }} />
+
                 {item.typicalRecovery && (
                   <div className="pt-4 border-t text-xs" style={{ borderColor: 'rgba(28, 25, 23, 0.08)', color: 'rgb(122, 110, 100)', fontFamily: 'DM Sans, sans-serif' }}>
                     <span className="font-semibold uppercase tracking-wide text-[10px]" style={{ color: 'rgb(184, 150, 90)' }}>Typical recovery: </span>
