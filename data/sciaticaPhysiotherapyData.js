@@ -65,7 +65,7 @@ export const sciaticaPhysioReviews = {
 export const sciaticaPhysioTeam = {
   label: "THE TEAM",
   title: "Sciatica specialists at our JVC clinic.",
-  bgColor: 'bg-[#F8F5F0]',
+  bgColor: "bg-[#F8F5EE]",
   team: [
     {
       name: "Dr. Sarah Al-Mansoori, DPT",

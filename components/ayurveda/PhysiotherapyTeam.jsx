@@ -8,7 +8,7 @@ const PhysiotherapyTeam = ({ label, title, team, bgColor = "bg-white" }) => {
   };
 
   return (
-    <section className="bg-white px-6 md:px-24 py-24">
+    <section className={`${bgColor} px-6 md:px-24 py-24`}>
       <div className="max-w-7xl mx-auto">
         <div className="text-center max-w-7xl mx-auto mb-16 space-y-4">
           <div className="text-[#C4A962] text-xs font-semibold tracking-[0.2em] uppercase">{label}</div>
