@@ -8,7 +8,7 @@ const TreatmentLocationCustom = ({
   title = 'Where IBS treatment happens at Vedara Care.',
   address1 = 'Vedara Care Polyclinic',
   address2 = '[Full Address], Jumeirah Village Circle (JVC)<br />Dubai, United Arab Emirates',
-  addressNote = 'Next to Circle Mall · 3 min from FIVE Jumeirah Village Hotel',
+  addressNote = '',
   clinicHours = [
     { label: 'Sunday - Thursday', time: '9:00 AM - 8:00 PM' },
     { label: 'Friday', time: '2:00 PM - 8:00 PM' },
@@ -19,7 +19,8 @@ const TreatmentLocationCustom = ({
   description = 'Our JVC clinic schedules extended consultations for IBS patients — typically 60 minutes for initial, 30 minutes for follow-ups. We allow time to discuss symptoms patients have often stopped mentioning to other clinicians. Walking distance from Circle Mall, easy access from JVC Districts 10, 11, 12, 13, JVT, and Al Barsha South. Female doctors available on request.',
   buttonText = 'Book an IBS Consultation',
   buttonHref = '/book',
-  mapEmbed = 'https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d3613.9894568193345!2d55.20722358578439!3d25.068346479666594!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x3e5f6dd72f3da587%3A0xe7ecca8687a75b72!2sVedara%20Care%20Polyclinic!5e0!3m2!1sen!2sus!4v1780727442216!5m2!1sen!2sus'
+  mapEmbed = 'https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d3613.9894568193345!2d55.20722358578439!3d25.068346479666594!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x3e5f6dd72f3da587%3A0xe7ecca8687a75b72!2sVedara%20Care%20Polyclinic!5e0!3m2!1sen!2sus!4v1780727442216!5m2!1sen!2sus',
+  locationMarkers
 }) => {
   return (
     <section className={`${bgColor} py-12 md:py-24 px-4 md:px-8`}>
@@ -63,6 +64,20 @@ const TreatmentLocationCustom = ({
                 </div>
               </div>
             </div>
+            {locationMarkers && (
+              <div className="grid grid-cols-1 md:grid-cols-3 gap-4">
+                {locationMarkers.map((marker, index) => (
+                  <div key={index} className="rounded-lg p-3 text-center" style={{ background: "rgb(240, 234, 224)" }}>
+                    <p className="text-xs font-semibold" style={{ color: "rgb(28, 25, 23)", fontFamily: '"DM Sans", sans-serif' }}>
+                      {marker.name}
+                    </p>
+                    <p className="text-xs mt-0.5" style={{ color: "rgb(184, 150, 90)", fontFamily: '"DM Sans", sans-serif' }}>
+                      {marker.distance}
+                    </p>
+                  </div>
+                ))}
+              </div>
+            )}
             <div className="pt-4">
               <p className="text-xs text-muted-foreground mb-4">
                 {description}
