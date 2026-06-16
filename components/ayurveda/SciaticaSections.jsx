@@ -77,7 +77,7 @@ export const SciaticaEmergency = ({ data }) => {
   const { emergency = {}, rightCard = {} } = data || {};
 
   return (
-    <section className="bg-white" style={{ padding: '96px 24px' }}>
+    <section className="bg-[#F8F5F0]" style={{ padding: '96px 24px' }}>
       <style>{`
         .no-scrollbar::-webkit-scrollbar {
           display: none;
@@ -92,7 +92,7 @@ export const SciaticaEmergency = ({ data }) => {
           <div className="text-sm tracking-[0.2em] uppercase mb-4" style={{ color: '#C9A84C' }}>
             {emergency.label}
           </div>
-          <h2 className="text-3xl md:text-5xl" style={{ fontFamily: 'Fraunces, Georgia, serif', color: 'rgb(26,26,26)' }}>
+          <h2 className="text-3xl md:text-4xl" style={{ fontFamily: 'Fraunces, Georgia, serif', color: 'rgb(26,26,26)' }}>
             {emergency.title}
           </h2>
         </div>
@@ -277,11 +277,11 @@ export const SciaticaPricing = ({
   );
 };
 
-export const SciaticaTreatment = ({ data }) => {
+export const SciaticaTreatment = ({ data, showBorderLeft = true, rightContentStyle = 'tags', bgColor = 'bg-white' }) => {
   const { treatment = {}, rightContent = {} } = data || {};
 
   return (
-    <section className="bg-white" style={{ padding: '96px 24px' }}>
+    <section className={bgColor} style={{ padding: '96px 24px' }}>
       <style>{`
         .no-scrollbar::-webkit-scrollbar {
           display: none;
@@ -296,22 +296,22 @@ export const SciaticaTreatment = ({ data }) => {
           <div className="text-xs tracking-[0.2em] uppercase mb-4" style={{ color: '#C9A84C', fontFamily: 'Fraunces, Georgia, serif' }}>
             {treatment.label}
           </div>
-          <h2 className="text-3xl md:text-5xl" style={{ fontFamily: 'Fraunces, Georgia, serif', color: 'rgb(26,26,26)', fontWeight: 500 }}>
+          <h2 className="text-4xl md:text-3xl" style={{ fontFamily: 'Fraunces, Georgia, serif', color: 'rgb(26,26,26)', fontWeight: 500 }}>
             {treatment.title}
           </h2>
         </div>
         <div className="grid grid-cols-1 lg:grid-cols-2 gap-12 items-stretch">
           <div className="relative">
-            <div className="overflow-y-auto pr-6 space-y-8 no-scrollbar absolute inset-0">
-              <p className="text-base" style={{ color: 'rgb(107, 107, 107)', lineHeight: '1.8', fontSize: '17px' }}>
+            <div className="lg:absolute lg:inset-0 lg:overflow-y-auto lg:pr-6 space-y-8 no-scrollbar">
+              <p className="text-base" style={{ color: 'rgb(107, 107, 107)', lineHeight: '1.8', fontSize: '16px' }}>
                 {treatment.intro}
               </p>
               {(treatment.steps || []).map((step, index) => (
-                <div key={index} className="space-y-3 border-l-4 border-[#C9A84C] pl-6">
+                <div key={index} className={`space-y-3 ${showBorderLeft ? 'border-l-4 border-[#C9A84C] pl-6' : ''}`}>
                   <h3 className="text-lg font-serif" style={{ fontFamily: 'Fraunces, Georgia, serif', color: 'rgb(26,26,26)', fontSize: '19px', fontWeight: 600 }}>
                     {step.title}
                   </h3>
-                  <p className="text-base" style={{ color: 'rgb(107, 107, 107)', lineHeight: '1.8', fontSize: '17px' }}>
+                  <p className="text-base" style={{ color: 'rgb(107, 107, 107)', lineHeight: '1.8', fontSize: '15px' }}>
                     {step.description}
                   </p>
                 </div>
@@ -323,23 +323,41 @@ export const SciaticaTreatment = ({ data }) => {
               )}
             </div>
           </div>
-
           <div className="space-y-6">
             {rightContent.image && (
               <div className="rounded-lg overflow-hidden">
                 <img src={rightContent.image} alt={rightContent.alt || ''} className="w-full object-cover" style={{ aspectRatio: '4/5' }} />
               </div>
             )}
-            {rightContent.tags && rightContent.tags.length > 0 && (
-              <div className="grid grid-cols-2 gap-3 bg-[#F8F5F0] p-6 rounded-lg border border-[#E5DFD3]">
+            {rightContentStyle === 'tags' && rightContent.tags && rightContent.tags.length > 0 && (
+              <div className="grid grid-cols-2 gap-3">
                 {rightContent.tags.map((tag, index) => (
-                  <div key={index} className="flex items-center gap-2 text-xs text-[#1C1C14]">
+                  <div key={index} className="bg-[#F8F5F0] p-3 rounded text-center border border-[#E5DFD3] flex items-center justify-center gap-2">
                     <svg className="w-3 h-3 flex-shrink-0" style={{ color: '#C9A84C' }} fill="currentColor" viewBox="0 0 24 24">
                       <path d="M9 16.17L4.83 12l-1.42 1.41L9 19 21 7l-1.41-1.41L9 16.17z"></path>
                     </svg>
-                    <span style={{ fontSize: '13px' }}>{tag}</span>
+                    <span style={{ fontSize: '13px', color: '#1C1C14' }}>{tag}</span>
                   </div>
                 ))}
+              </div>
+            )}
+            {rightContentStyle === 'list' && rightContent.items && rightContent.items.length > 0 && (
+              <div className="bg-[#F8F5F0] p-6 rounded-lg border border-[#E5DFD3]">
+                {rightContent.label && (
+                  <div className="text-xs tracking-[0.2em] uppercase mb-4" style={{ color: '#C9A84C' }}>
+                    {rightContent.label}
+                  </div>
+                )}
+                <div className="space-y-3">
+                  {rightContent.items.map((item, index) => (
+                    <div key={index} className="flex items-center gap-3 pb-3 border-b border-[#E5DFD3] last:pb-0 last:border-b-0">
+                      <div className="w-7 h-7 rounded-full bg-[#1C1C14] flex items-center justify-center text-white text-xs font-serif flex-shrink-0">
+                        {item.number}
+                      </div>
+                      <span style={{ fontSize: '14px', color: '#1C1C14' }}>{item.text}</span>
+                    </div>
+                  ))}
+                </div>
               </div>
             )}
           </div>
@@ -348,3 +366,85 @@ export const SciaticaTreatment = ({ data }) => {
     </section>
   );
 };
+
+export const SciaticaTimeline = ({ data }) => {
+  const { timeline = {} } = data || {};
+
+  return (
+    <section className="bg-[#F0EBE3]" style={{ padding: '96px 24px' }}>
+      <div className="max-w-7xl mx-auto">
+        <div className="text-center mb-16">
+          <div className="text-xs tracking-[0.2em] uppercase mb-4" style={{ color: '#C9A84C' }}>
+            {timeline.label}
+          </div>
+          <h2 className="text-4xl md:text-4xl" style={{ fontFamily: 'Fraunces, Georgia, serif', color: 'rgb(26, 26, 26)' }}>
+            {timeline.title}
+          </h2>
+          <p className="text-base mt-4" style={{ color: 'rgb(107, 107, 107)', lineHeight: '1.7', maxWidth: '700px', margin: '0 auto', fontSize: '16px' }}>
+            {timeline.description}
+          </p>
+        </div>
+
+        <div className="relative">
+          {/* Single vertical line */}
+          <div className="absolute left-[39px] top-[24px] w-0.5 h-[calc(100%-48px)] bg-[#C9A84C]"></div>
+          {(timeline.phases || []).map((phase, index) => (
+            <div key={index} className={`relative flex gap-8 mb-12 ${index === (timeline.phases || []).length - 1 ? 'mb-0' : ''}`}>
+              <div className="flex-shrink-0 w-20 flex flex-col items-center">
+                <div className="w-12 h-12 rounded-full bg-[#1C1C14] flex items-center justify-center text-[#C9A84C] text-lg font-serif z-10" style={{ fontFamily: 'Fraunces, Georgia, serif' }}>
+                  {phase.number}
+                </div>
+              </div>
+              <div className="flex-1">
+                <div className="bg-white p-8 rounded-lg">
+                  <div className="text-xs tracking-[0.2em] uppercase mb-2" style={{ color: '#C9A84C' }}>
+                    {phase.week}
+                  </div>
+                  <h3 className="text-2xl md:text-3xl mb-6" style={{ fontFamily: 'Fraunces, Georgia, serif', color: 'rgb(26, 26, 26)' }}>
+                    Phase {phase.number} — {phase.title}
+                  </h3>
+                  <div className="grid grid-cols-1 md:grid-cols-2 gap-8 mb-8">
+                    <ul className="space-y-3">
+                      {(phase.leftItems || []).map((item, idx) => (
+                        <li key={idx} className="flex items-start gap-3" style={{ color: 'rgb(107, 107, 107)', fontSize: '14px' }}>
+                          <svg className="w-4 h-4 flex-shrink-0 mt-1" style={{ color: '#C9A84C' }} fill="currentColor" viewBox="0 0 24 24">
+                            <path d="M9 16.17L4.83 12l-1.42 1.41L9 19 21 7l-1.41-1.41L9 16.17z"></path>
+                          </svg>
+                          <span>{item}</span>
+                        </li>
+                      ))}
+                    </ul>
+                    <ul className="space-y-3">
+                      {(phase.rightItems || []).map((item, idx) => (
+                        <li key={idx} className="flex items-start gap-3" style={{ color: 'rgb(107, 107, 107)', fontSize: '14px' }}>
+                          <svg className="w-4 h-4 flex-shrink-0 mt-1" style={{ color: '#C9A84C' }} fill="currentColor" viewBox="0 0 24 24">
+                            <path d="M9 16.17L4.83 12l-1.42 1.41L9 19 21 7l-1.41-1.41L9 16.17z"></path>
+                          </svg>
+                          <span>{item}</span>
+                        </li>
+                      ))}
+                    </ul>
+                  </div>
+                  <div className="bg-[#F8F5F0] p-6 rounded border-l-4 border-[#C9A84C]">
+                    <p className="text-sm" style={{ color: 'rgb(107, 107, 107)', lineHeight: '1.6' }}>
+                      <span style={{ color: '#C9A84C', fontWeight: 600, fontSize: '13px', letterSpacing: '0.1em' }}>EXPECTED OUTCOME:</span> {phase.expectedOutcome}
+                    </p>
+                  </div>
+                </div>
+              </div>
+            </div>
+          ))}
+        </div>
+
+        {timeline.footer && (
+          <div className="mt-16 text-center max-w-[800px] mx-auto">
+            <p className="text-base" style={{ color: 'rgb(107, 107, 107)', lineHeight: '1.7' }}>
+              {timeline.footer}
+            </p>
+          </div>
+        )}
+      </div>
+    </section>
+  );
+};
+

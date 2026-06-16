@@ -472,6 +472,11 @@ export const neckPainRelatedPages = {
   linkHref: "/physiotherapy-jvc/",
   pages: [
     {
+      title: "Sciatica Physiotherapy",
+      description: "Specialised sciatica treatment at our JVC clinic — McKenzie method certified therapists for disc herniation, piriformis syndrome, and pregnancy-related sciatica.",
+      href: "/conditions/sciatica-physiotherapy-dubai/"
+    },
+    {
       title: "Physiotherapy in JVC",
       description: "Our complete physiotherapy department — all seven specialisations, the full team, and every condition we treat.",
       href: "/physiotherapy-jvc/"
