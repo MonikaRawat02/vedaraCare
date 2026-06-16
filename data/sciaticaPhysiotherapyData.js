@@ -65,47 +65,48 @@ export const sciaticaPhysioReviews = {
 export const sciaticaPhysioTeam = {
   label: "THE TEAM",
   title: "Sciatica specialists at our JVC clinic.",
+  description: "Our senior physiotherapists hold McKenzie method certification (Credentialed MDT or Diploma MDT) — the gold standard qualification for disc-related sciatica treatment. This specific training matters meaningfully for sciatica outcomes.",
   bgColor: "bg-[#F8F5F0]",
   team: [
     {
-      name: "Dr. Sarah Al-Mansoori, DPT",
-      qualification: "DHA-Licensed · Credentialed MDT (McKenzie)",
-      specialties: ["McKenzie Method", "Disc-Related Sciatica", "Chronic Sciatica", "Nerve Mobilisation"],
-      experience: "Lead physiotherapist specialising in sciatica with 12 years clinical experience. Credentialed in McKenzie method.",
+      name: "Dr. Sarah Al-Mansoori",
+      qualification: "DPT, Credentialed MDT, DHA-Licensed",
+      specialties: ["McKenzie Method", "Disc Herniation", "Manual Therapy", "Nerve Mobilisation"],
+      experience: "Lead physiotherapist with 11 years treating complex sciatica. Credentialed MDT certified, DHA-licensed.",
       languages: ["English", "Arabic"],
-      image: "",
+      image: "/images/dr-sarah-al-mansoori.webp",
       alt: "Dr. Sarah Al-Mansoori Credentialed MDT sciatica specialist Vedara Care JVC Dubai",
       profileHref: "/physiotherapists/dr-sarah-al-mansoori/"
     },
     {
-      name: "James Whitfield, DPT, MCSP",
-      qualification: "DHA-Licensed · Sciatica Specialist",
-      specialties: ["Dry Needling", "Piriformis Syndrome", "Post-Surgical Sciatica", "Motor Control"],
-      experience: "Senior physiotherapist with special interest in piriformis syndrome and post-surgical sciatica.",
-      languages: ["English"],
-      image: "",
-      alt: "James Whitfield Credentialed MDT sciatica specialist Vedara Care JVC Dubai",
-      profileHref: "/physiotherapists/james-whitfield/"
+      name: "Dr. James Thornton",
+      qualification: "DPT, Diploma MDT, DHA-Licensed",
+      specialties: ["McKenzie Method", "Dry Needling", "Manual Therapy", "Sports Science"],
+      experience: "Diploma MDT qualification — gold standard certification — and specialist in sports-related and disc herniation sciatica.",
+      languages: ["English", "French"],
+      image: "/images/dr-james-thornton.webp",
+      alt: "Dr. James Thornton Credentialed MDT sciatica specialist Vedara Care JVC Dubai",
+      profileHref: "/physiotherapists/dr-james-thornton/"
     },
     {
-      name: "Dr. Aisha Patel, DPT",
-      qualification: "DHA-Licensed · Sciatica Specialist",
-      specialties: ["Piriformis Syndrome", "Office Worker Sciatica", "Shockwave Therapy", "Chronic Pain"],
-      experience: "Specialises in sciatica patterns related to prolonged sitting and office work.",
-      languages: ["English", "Hindi", "Urdu"],
-      image: "",
-      alt: "Dr. Aisha Patel Credentialed MDT sciatica specialist Vedara Care JVC Dubai",
-      profileHref: "/physiotherapists/dr-aisha-patel/"
+      name: "Dr. Aisha Rahman",
+      qualification: "DPT, Credentialed MDT, DHA-Licensed",
+      specialties: ["Piriformis Syndrome", "Nerve Mobilisation", "Manual Therapy", "Prenatal Postpartum"],
+      experience: "Specialist in pregnancy-related sciatica and piriformis syndrome. Female physiotherapist available for patient preferences.",
+      languages: ["English", "Arabic", "Urdu"],
+      image: "/images/dr-aisha-rahman.webp",
+      alt: "Dr. Aisha Rahman Credentialed MDT sciatica specialist Vedara Care JVC Dubai",
+      profileHref: "/physiotherapists/dr-aisha-rahman/"
     },
     {
-      name: "Dr. Carlos Mendes, DPT, OMPT",
-      qualification: "DHA-Licensed · Sciatica Specialist",
-      specialties: ["Manual Therapy", "Foraminal Stenosis", "Spinal Stenosis", "Post-Surgical Rehabilitation"],
-      experience: "Orthopaedic manual therapy specialist with advanced training in spinal stenosis sciatica.",
+      name: "Dr. Marco Vieira",
+      qualification: "DPT, Credentialed MDT, DHA-Licensed",
+      specialties: ["Spinal Stenosis", "Foraminal Stenosis", "Manual Therapy", "Chronic Sciatica"],
+      experience: "Specialist in chronic sciatica and complex spinal patterns. Experienced with neuro-musculoskeletal presentations.",
       languages: ["English", "Portuguese", "Spanish"],
-      image: "",
-      alt: "Dr. Carlos Mendes Credentialed MDT sciatica specialist Vedara Care JVC Dubai",
-      profileHref: "/physiotherapists/dr-carlos-mendes/"
+      image: "/images/dr-marco-vieira.webp",
+      alt: "Dr. Marco Vieira Credentialed MDT sciatica specialist Vedara Care JVC Dubai",
+      profileHref: "/physiotherapists/dr-marco-vieira/"
     }
   ]
 };
@@ -209,7 +210,7 @@ export const sciaticaPhysioLocation = {
   bgColor: "bg-white",
   label: "VISIT US",
   title: "Where sciatica physiotherapy happens at Vedara Care JVC.",
-  address: "Vedara Care Polyclinic<br/>Building 23, District 12<br/>Jumeirah Village Circle, Dubai<br/>United Arab Emirates",
+  address: "Circle Mall Area, Jumeirah Village Circle (JVC), Dubai, UAE",
   phone: "+971 4 567 8900",
   email: "info@vedaracare.ae",
   hours: {
@@ -221,12 +222,13 @@ export const sciaticaPhysioLocation = {
     "Walking distance from Circle Mall",
     "3 min from FIVE Jumeirah Village",
     "5 min from JSS Private School",
+    "Easy access from Sheikh Mohammed Bin Zayed Road",
     "Free patient parking"
   ],
   mapEmbed: "https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d3613.9894568193345!2d55.20722358578439!3d25.068346479666594!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x3e5f6dd72f3da587%3A0xe7ecca8687a75b72!2sVedara%20Care%20Polyclinic!5e0!3m2!1sen!2sus!4v1780727442216!5m2!1sen!2sus",
   image: "",
   alt: "Vedara Care sciatica physiotherapy clinic JVC Dubai",
-  description: "Our JVC clinic has dedicated physiotherapy treatment rooms, manual therapy plinths, a full rehabilitation gym for exercise progression, dry needling and shockwave therapy equipment, modern modalities, and accessibility for patients with severe sciatica. Serving JVC, JVT, Al Barsha South, Sports City, Motor City, Arjan, Dubai Hills, and across Dubai.",
+  description: "",
   buttonText: "Book Sciatica Assessment"
 };
 

@@ -77,7 +77,7 @@ export const SciaticaEmergency = ({ data }) => {
   const { emergency = {}, rightCard = {} } = data || {};
 
   return (
-    <section className="bg-white" style={{ padding: '96px 24px' }}>
+    <section className="bg-[#F8F5F0]" style={{ padding: '96px 24px' }}>
       <style>{`
         .no-scrollbar::-webkit-scrollbar {
           display: none;
