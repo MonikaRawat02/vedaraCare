@@ -7,10 +7,11 @@ import KneeTreatmentApproach from '../../components/ayurveda/KneeTreatmentApproa
 import TreatmentReviews from '../../components/ayurveda/TreatmentReviews';
 // import TreatmentMechanism from '../../components/ayurveda/TreatmentMechanism'
 import FAQ from '../../components/home/FAQ';
-import PhysiotherapyTeam from '../../components/ayurveda/PhysiotherapyTeam';
+// import PhysiotherapyTeam from '../../components/ayurveda/PhysiotherapyTeam';
 import TreatmentLocation   from '../../components/ayurveda/TreatmentLocationCustom';
 import FinalCTA from '../../components/ayurveda/FinalCTA';
 import RelatedPages from '../../components/ayurveda/RelatedPages';
+import { PostSurgeryTeam } from '../../components/ayurveda/PostSurgeryComponents';
 import {
   frozenShoulderHero,
   frozenShoulderIntro,
@@ -18,6 +19,7 @@ import {
   frozenShoulderOutcomes,
   frozenShoulderPhases,
   frozenShoulderTreatmentMechanism,
+  frozenShoulderMechanism2,
   frozenShoulderApproach,
   frozenShoulderInjectionsSurgery,
   frozenShoulderReviews,
@@ -48,7 +50,7 @@ const FrozenShoulderDubai = () => {
       "priceRange": "AED 350 - AED 18,000",
       "address": {
         "@type": "PostalAddress",
-        "streetAddress": "Building 23, District 12",
+        "streetAddress": "Unit G-05, Circle Mall, JVC District 12",
         "addressLocality": "Jumeirah Village Circle",
         "addressRegion": "Dubai",
         "addressCountry": "AE"
@@ -61,14 +63,20 @@ const FrozenShoulderDubai = () => {
       "openingHoursSpecification": [
         {
           "@type": "OpeningHoursSpecification",
-          "dayOfWeek": ["Monday", "Tuesday", "Wednesday", "Thursday", "Friday", "Saturday"],
+          "dayOfWeek": ["Monday", "Tuesday", "Wednesday", "Thursday", "Friday"],
           "opens": "09:00",
           "closes": "21:00"
         },
         {
           "@type": "OpeningHoursSpecification",
-          "dayOfWeek": "Sunday",
+          "dayOfWeek": "Saturday",
           "opens": "09:00",
+          "closes": "19:00"
+        },
+        {
+          "@type": "OpeningHoursSpecification",
+          "dayOfWeek": "Sunday",
+          "opens": "10:00",
           "closes": "18:00"
         }
       ],
@@ -104,11 +112,13 @@ const FrozenShoulderDubai = () => {
         {"@type": "MedicalProcedure", "name": "Dry Needling"},
         {"@type": "MedicalProcedure", "name": "Diabetic Frozen Shoulder Treatment"},
         {"@type": "MedicalProcedure", "name": "Post-Surgical Frozen Shoulder Treatment"},
-        {"@type": "MedicalProcedure", "name": "Hydrodilatation Coordination"}
+        {"@type": "MedicalProcedure", "name": "Hydrodilatation Coordination"},
+        {"@type": "MedicalProcedure", "name": "Manipulation Under Anaesthesia Coordination"},
+        {"@type": "MedicalProcedure", "name": "Capsular Release Surgery Coordination"}
       ],
       "memberOf": {
         "@type": "GovernmentOrganization",
-        "name": "Dubai Health Authority"
+        "name": "Dubai Health Authority (DHA)"
       },
       "aggregateRating": {
         "@type": "AggregateRating",
@@ -122,15 +132,29 @@ const FrozenShoulderDubai = () => {
       "@context": "https://schema.org",
       "@graph": [
         {
+          "@type": "MedicalClinic",
+          "@id": "https://vedaracare.ae/#organization",
+          "name": "Vedara Care Polyclinic"
+        },
+        {
           "@type": "MedicalCondition",
           "name": "Adhesive Capsulitis (Frozen Shoulder)",
           "alternateName": ["Frozen Shoulder", "Adhesive Capsulitis", "Shoulder Capsulitis"],
           "code": {"@type": "MedicalCode", "code": "M75.0", "codingSystem": "ICD-10"},
           "possibleTreatment": [
             {"@type": "MedicalProcedure", "name": "Phase-Specific Physiotherapy"},
-            {"@type": "MedicalProcedure", "name": "Joint Mobilisation"},
+            {"@type": "MedicalProcedure", "name": "Phase-Specific Joint Mobilisation"},
             {"@type": "MedicalProcedure", "name": "Capsular Stretching"},
-            {"@type": "MedicalProcedure", "name": "Hydrodilatation"}
+            {"@type": "MedicalProcedure", "name": "Manual Therapy"},
+            {"@type": "MedicalProcedure", "name": "Dry Needling"},
+            {"@type": "MedicalProcedure", "name": "Hydrodilatation"},
+            {"@type": "MedicalProcedure", "name": "Manipulation Under Anaesthesia"},
+            {"@type": "MedicalProcedure", "name": "Capsular Release Surgery"}
+          ],
+          "associatedAnatomy": [
+            {"@type": "AnatomicalStructure", "name": "Glenohumeral Joint"},
+            {"@type": "AnatomicalStructure", "name": "Shoulder Joint Capsule"},
+            {"@type": "AnatomicalStructure", "name": "Rotator Cuff"}
           ]
         },
         {
@@ -146,6 +170,66 @@ const FrozenShoulderDubai = () => {
           "@type": "MedicalCondition",
           "name": "Post-Surgical Frozen Shoulder",
           "alternateName": ["Secondary Frozen Shoulder"]
+        },
+        {
+          "@type": "MedicalCondition",
+          "name": "Type 2 Diabetes"
+        },
+        {
+          "@type": "MedicalCondition",
+          "name": "Thyroid Disorders"
+        },
+        {
+          "@type": "MedicalProcessStage",
+          "name": "Freezing Phase of Frozen Shoulder"
+        },
+        {
+          "@type": "MedicalProcessStage",
+          "name": "Frozen Phase of Frozen Shoulder"
+        },
+        {
+          "@type": "MedicalProcessStage",
+          "name": "Thawing Phase of Frozen Shoulder"
+        },
+        {
+          "@type": "Organization",
+          "name": "Daman"
+        },
+        {
+          "@type": "Organization",
+          "name": "AXA"
+        },
+        {
+          "@type": "Organization",
+          "name": "Allianz"
+        },
+        {
+          "@type": "Organization",
+          "name": "Oman Insurance"
+        },
+        {
+          "@type": "Organization",
+          "name": "Now Health"
+        },
+        {
+          "@type": "Organization",
+          "name": "Bupa"
+        },
+        {
+          "@type": "Organization",
+          "name": "MetLife"
+        },
+        {
+          "@type": "Place",
+          "name": "Circle Mall"
+        },
+        {
+          "@type": "Place",
+          "name": "FIVE Jumeirah Village"
+        },
+        {
+          "@type": "Place",
+          "name": "JSS Private School"
         }
       ]
     },
@@ -317,78 +401,114 @@ const FrozenShoulderDubai = () => {
 
   // First, let's create the injections/surgery section component structure
   const InjectionsSurgerySection = () => (
-    <section style={{ background: 'rgb(248, 244, 238)', padding: '96px 24px' }}>
-      <div className="max-w-6xl mx-auto">
-        <div className="text-center mb-14">
-          <p className="text-xs font-bold tracking-widest uppercase mb-4" style={{ color: '#C9A84C' }}>
-            <span className="inline-block w-6 h-px mr-2 align-middle" style={{ background: '#C9A84C' }}></span>
+    <section className="bg-[#F2EDE4] py-24 px-6 md:px-16">
+      <div className="max-w-7xl mx-auto">
+        <div className="text-center mb-16">
+          <p className="text-[#B8975A] tracking-[0.18em] text-xs mb-4" style={{ fontFamily: "DM Sans, sans-serif", fontWeight: 500 }}>
             {frozenShoulderInjectionsSurgery.label}
-            <span className="inline-block w-6 h-px ml-2 align-middle" style={{ background: '#C9A84C' }}></span>
           </p>
-          <h2 className="text-4xl" style={{ fontFamily: 'Fraunces, serif', color: 'rgb(28, 25, 23)' }}>
+          <h2 className="text-[#1C1612] mb-5" style={{ fontFamily: "Fraunces, serif", fontWeight: 500, fontSize: "clamp(1.75rem, 3vw, 2.5rem)" }}>
             {frozenShoulderInjectionsSurgery.title}
           </h2>
-          <p className="text-base mt-4 max-w-2xl mx-auto" style={{ color: 'rgb(107, 107, 107)', lineHeight: '1.7' }}>
+          <p className="text-[#7A6E62] max-w-[720px] mx-auto leading-[1.75]" style={{ fontFamily: "DM Sans, sans-serif", fontSize: "1.0625rem" }}>
             {frozenShoulderInjectionsSurgery.description}
           </p>
         </div>
-        <div className="grid grid-cols-1 lg:grid-cols-2 gap-12 items-start">
+        <div className="grid grid-cols-1 lg:grid-cols-[60fr_40fr] gap-12 items-start">
           <div className="space-y-8">
+            <p className="text-[#2C2419] leading-[1.8]" style={{ fontFamily: "DM Sans, sans-serif", fontSize: "1.0625rem" }}>
+              Conservative physiotherapy is the appropriate first-line treatment for nearly all frozen shoulder. However, some patients benefit from additional medical interventions during their recovery.
+            </p>
             {frozenShoulderInjectionsSurgery.items.map((item, index) => (
               <div key={index}>
-                <h3 className="text-xl font-medium mb-3" style={{ fontFamily: 'Fraunces, serif', color: 'rgb(28, 25, 23)' }}>
+                <h3 className="text-[#1C1612] mb-3" style={{ fontFamily: "Fraunces, serif", fontWeight: 500, fontSize: "1.25rem" }}>
                   {item.title}
                 </h3>
-                <p className="text-sm leading-relaxed" style={{ color: 'rgb(107, 107, 107)', lineHeight: '1.8' }}>
+                <p className="text-[#4A4239] leading-[1.8]" style={{ fontFamily: "DM Sans, sans-serif", fontSize: "1rem" }}>
                   {item.description}
                 </p>
               </div>
             ))}
           </div>
-          <div className="bg-white p-8 rounded-lg border border-[#E5DFD3]">
-            <div className="space-y-4">
-              <div className="flex items-center gap-3 p-4 bg-[#FAF8F5] rounded-lg">
-                <div className="w-8 h-8 rounded-full bg-[#C9A84C] flex items-center justify-center text-white text-xs font-bold">1</div>
-                <div>
-                  <p className="text-xs font-bold" style={{ color: 'rgb(28, 25, 23)' }}>Conservative physiotherapy</p>
-                  <p className="text-xs" style={{ color: 'rgb(107, 107, 107)' }}>First line for nearly all patients</p>
+          <div className="sticky top-24">
+            <div className="rounded-[10px] p-8 bg-white" style={{ border: "2px solid rgb(184, 151, 90)" }}>
+              <p className="text-[#B8975A] tracking-[0.14em] text-xs mb-6" style={{ fontFamily: "DM Sans, sans-serif", fontWeight: 600 }}>
+                TYPICAL TREATMENT HIERARCHY
+              </p>
+              <div className="space-y-4">
+                <div className="flex gap-4 p-4 rounded-[6px] bg-[#B8975A]/10">
+                  <span className="w-7 h-7 rounded-full flex items-center justify-center shrink-0 text-white" style={{ backgroundColor: "rgb(184, 151, 90)", fontFamily: "DM Sans, sans-serif", fontWeight: 700, fontSize: "0.8rem" }}>
+                    1
+                  </span>
+                  <div>
+                    <p className="text-[#1C1612]" style={{ fontFamily: "DM Sans, sans-serif", fontWeight: 500, fontSize: "0.9375rem" }}>
+                      Conservative physiotherapy
+                    </p>
+                    <p className="text-[#7A6E62]" style={{ fontFamily: "DM Sans, sans-serif", fontSize: "0.8125rem" }}>
+                      First-line for nearly all patients
+                    </p>
+                  </div>
+                </div>
+                <div className="flex gap-4 p-4 rounded-[6px] bg-transparent">
+                  <span className="w-7 h-7 rounded-full flex items-center justify-center shrink-0 text-white" style={{ backgroundColor: "rgb(212, 196, 168)", fontFamily: "DM Sans, sans-serif", fontWeight: 700, fontSize: "0.8rem" }}>
+                    2
+                  </span>
+                  <div>
+                    <p className="text-[#1C1612]" style={{ fontFamily: "DM Sans, sans-serif", fontWeight: 500, fontSize: "0.9375rem" }}>
+                      Corticosteroid injection
+                    </p>
+                    <p className="text-[#7A6E62]" style={{ fontFamily: "DM Sans, sans-serif", fontSize: "0.8125rem" }}>
+                      Optional addition during freezing phase for pain control
+                    </p>
+                  </div>
+                </div>
+                <div className="flex gap-4 p-4 rounded-[6px] bg-transparent">
+                  <span className="w-7 h-7 rounded-full flex items-center justify-center shrink-0 text-white" style={{ backgroundColor: "rgb(212, 196, 168)", fontFamily: "DM Sans, sans-serif", fontWeight: 700, fontSize: "0.8rem" }}>
+                    3
+                  </span>
+                  <div>
+                    <p className="text-[#1C1612]" style={{ fontFamily: "DM Sans, sans-serif", fontWeight: 500, fontSize: "0.9375rem" }}>
+                      Hydrodilatation
+                    </p>
+                    <p className="text-[#7A6E62]" style={{ fontFamily: "DM Sans, sans-serif", fontSize: "0.8125rem" }}>
+                      Optional addition during frozen phase if progress is slow
+                    </p>
+                  </div>
+                </div>
+                <div className="flex gap-4 p-4 rounded-[6px] bg-transparent">
+                  <span className="w-7 h-7 rounded-full flex items-center justify-center shrink-0 text-white" style={{ backgroundColor: "rgb(212, 196, 168)", fontFamily: "DM Sans, sans-serif", fontWeight: 700, fontSize: "0.8rem" }}>
+                    4
+                  </span>
+                  <div>
+                    <p className="text-[#1C1612]" style={{ fontFamily: "DM Sans, sans-serif", fontWeight: 500, fontSize: "0.9375rem" }}>
+                      Manipulation under anaesthesia
+                    </p>
+                    <p className="text-[#7A6E62]" style={{ fontFamily: "DM Sans, sans-serif", fontSize: "0.8125rem" }}>
+                      Considered after 9–12 months if conservative care inadequate
+                    </p>
+                  </div>
+                </div>
+                <div className="flex gap-4 p-4 rounded-[6px] bg-transparent">
+                  <span className="w-7 h-7 rounded-full flex items-center justify-center shrink-0 text-white" style={{ backgroundColor: "rgb(212, 196, 168)", fontFamily: "DM Sans, sans-serif", fontWeight: 700, fontSize: "0.8rem" }}>
+                    5
+                  </span>
+                  <div>
+                    <p className="text-[#1C1612]" style={{ fontFamily: "DM Sans, sans-serif", fontWeight: 500, fontSize: "0.9375rem" }}>
+                      Surgical capsular release
+                    </p>
+                    <p className="text-[#7A6E62]" style={{ fontFamily: "DM Sans, sans-serif", fontSize: "0.8125rem" }}>
+                      Reserved for persistent cases after extended conservative care
+                    </p>
+                  </div>
                 </div>
               </div>
-              <div className="flex items-center gap-3 p-4">
-                <div className="w-8 h-8 rounded-full bg-[#E5DFD3] flex items-center justify-center text-[#888] text-xs font-bold">2</div>
-                <div>
-                  <p className="text-xs font-bold" style={{ color: 'rgb(28, 25, 23)' }}>Corticosteroid injection</p>
-                  <p className="text-xs" style={{ color: 'rgb(107, 107, 107)' }}>Optional addition during freezing phase for pain control</p>
-                </div>
-              </div>
-              <div className="flex items-center gap-3 p-4">
-                <div className="w-8 h-8 rounded-full bg-[#E5DFD3] flex items-center justify-center text-[#888] text-xs font-bold">3</div>
-                <div>
-                  <p className="text-xs font-bold" style={{ color: 'rgb(28, 25, 23)' }}>Hydrodilatation</p>
-                  <p className="text-xs" style={{ color: 'rgb(107, 107, 107)' }}>Optional addition during frozen phase if progress is slow</p>
-                </div>
-              </div>
-              <div className="flex items-center gap-3 p-4">
-                <div className="w-8 h-8 rounded-full bg-[#E5DFD3] flex items-center justify-center text-[#888] text-xs font-bold">4</div>
-                <div>
-                  <p className="text-xs font-bold" style={{ color: 'rgb(28, 25, 23)' }}>Manipulation under anaesthesia</p>
-                  <p className="text-xs" style={{ color: 'rgb(107, 107, 107)' }}>Rare, after 9-12 months if conservative care inadequate</p>
-                </div>
-              </div>
-              <div className="flex items-center gap-3 p-4">
-                <div className="w-8 h-8 rounded-full bg-[#E5DFD3] flex items-center justify-center text-[#888] text-xs font-bold">5</div>
-                <div>
-                  <p className="text-xs font-bold" style={{ color: 'rgb(28, 25, 23)' }}>Surgical capsular release</p>
-                  <p className="text-xs" style={{ color: 'rgb(107, 107, 107)' }}>Very rare, last resort after 12+ months</p>
-                </div>
-              </div>
+              <p className="text-[#B8975A] mt-6 text-center" style={{ fontFamily: "Fraunces, serif", fontStyle: "italic", fontSize: "0.9375rem" }}>
+                Most patients only need step 1.
+              </p>
             </div>
-            <div className="mt-6 text-center">
-              <p className="text-xs" style={{ color: '#C9A84C', fontStyle: 'italic' }}>Most patients only need step 1.</p>
-              <a href={frozenShoulderCTA.buttonLink} className="inline-block mt-4 px-8 py-3 bg-[#1C3D2E] text-white text-xs font-bold tracking-widest uppercase rounded hover:bg-[#2a5a43] transition-colors">
-                Book Assessment to Discuss Options
-              </a>
-            </div>
+            <button className="w-full mt-6 px-6 py-3.5 border border-[#1C1612] text-[#1C1612] rounded-sm hover:bg-[#1C1612] hover:text-white transition-colors" style={{ fontFamily: "DM Sans, sans-serif", fontWeight: 500 }}>
+              Book Assessment to Discuss Options
+            </button>
           </div>
         </div>
       </div>
@@ -397,54 +517,127 @@ const FrozenShoulderDubai = () => {
 
   // Timeline component
   const TimelineSection = () => (
-    <section style={{ background: 'white', padding: '96px 24px' }}>
-      <div className="max-w-6xl mx-auto">
-        <div className="text-center mb-14">
-          <p className="text-xs font-bold tracking-widest uppercase mb-4" style={{ color: '#C9A84C' }}>
-            <span className="inline-block w-6 h-px mr-2 align-middle" style={{ background: '#C9A84C' }}></span>
+    <section className="bg-[#FAF7F2] py-24 px-6 md:px-16">
+      <div className="max-w-7xl mx-auto">
+        <div className="text-center mb-16">
+          <p className="text-[#B8975A] tracking-[0.18em] text-xs mb-4" style={{ fontFamily: "DM Sans, sans-serif", fontWeight: 500 }}>
             {frozenShoulderOutcomes.label}
-            <span className="inline-block w-6 h-px ml-2 align-middle" style={{ background: '#C9A84C' }}></span>
           </p>
-          <h2 className="text-4xl" style={{ fontFamily: 'Fraunces, serif', color: 'rgb(28, 25, 23)' }}>
+          <h2 className="text-[#1C1612] mb-5" style={{ fontFamily: "Fraunces, serif", fontWeight: 500, fontSize: "clamp(1.75rem, 3vw, 2.5rem)" }}>
             {frozenShoulderOutcomes.title}
           </h2>
-          <p className="text-base mt-4 max-w-2xl mx-auto" style={{ color: 'rgb(107, 107, 107)', lineHeight: '1.7' }}>
+          <p className="text-[#7A6E62] max-w-[720px] mx-auto leading-[1.75]" style={{ fontFamily: "DM Sans, sans-serif", fontSize: "1.0625rem" }}>
             {frozenShoulderOutcomes.description}
           </p>
         </div>
-        <div className="grid grid-cols-1 lg:grid-cols-2 gap-12">
+        <div className="grid grid-cols-1 lg:grid-cols-2 gap-16 items-start">
           <div className="relative">
-            <div className="absolute left-4 top-0 bottom-0 w-0.5 bg-[#E5DFD3]"></div>
-            <div className="space-y-10">
-              {frozenShoulderOutcomes.timeline.map((item, index) => (
-                <div key={index} className="relative pl-12">
-                  <div className="absolute left-0 top-1 w-8 h-8 rounded-full flex items-center justify-center text-white text-xs font-bold" style={{ background: item.color }}></div>
-                  <div>
-                    <p className="text-xs font-bold tracking-widest uppercase mb-1" style={{ color: '#C9A84C' }}>{item.phase}</p>
-                    <p className="text-sm" style={{ color: 'rgb(107, 107, 107)', lineHeight: '1.6' }}>{item.description}</p>
+            <div className="absolute left-5 top-6 bottom-6 w-[2px] bg-gradient-to-b from-[#E8A87C] via-[#B8975A] to-[#5A8A6A]"></div>
+            <div className="space-y-0">
+              {[
+                {
+                  number: 1,
+                  phase: "Months 0–3",
+                  title: "Freezing begins",
+                  description: "Gradual onset of pain and stiffness",
+                  treatment: "Treatment: Diagnosis, pain management",
+                  color: "rgb(232, 168, 124)"
+                },
+                {
+                  number: 2,
+                  phase: "Months 3–6",
+                  title: "Freezing peak",
+                  description: "Peak pain, sleep disruption common",
+                  treatment: "Treatment: Gentle therapy, pain modulation",
+                  color: "rgb(212, 147, 92)"
+                },
+                {
+                  number: 3,
+                  phase: "Months 6–9",
+                  title: "Frozen phase",
+                  description: "Pain easing, stiffness dominant",
+                  treatment: "Treatment: Active joint mobilisation",
+                  color: "rgb(184, 151, 90)"
+                },
+                {
+                  number: 4,
+                  phase: "Months 9–12",
+                  title: "Active recovery",
+                  description: "Substantial functional gains",
+                  treatment: "Treatment: Intensive mobilisation + strengthening",
+                  color: "rgb(154, 125, 72)"
+                },
+                {
+                  number: 5,
+                  phase: "Months 12–18",
+                  title: "Continued improvement",
+                  description: "Progressive return of function",
+                  treatment: "Treatment: Functional progression",
+                  color: "rgb(122, 155, 118)"
+                },
+                {
+                  number: 6,
+                  phase: "Months 18–24",
+                  title: "Full recovery",
+                  description: "Most patients substantially or fully recovered",
+                  treatment: "Treatment: Discharge planning",
+                  color: "rgb(90, 138, 106)",
+                  isLast: true
+                }
+              ].map((item, index) => (
+                <div key={index} className="flex gap-6 relative pb-0">
+                  <div className="flex flex-col items-center">
+                    <div className="w-10 h-10 rounded-full flex items-center justify-center z-10 shrink-0" style={{ backgroundColor: item.color }}>
+                      <span className="text-white" style={{ fontFamily: "DM Sans, sans-serif", fontWeight: 600, fontSize: "0.7rem" }}>{item.number}</span>
+                    </div>
+                    {!item.isLast && (
+                      <div className="w-[2px] flex-1 min-h-[48px]" style={{ backgroundColor: `${item.color}25` }}></div>
+                    )}
+                  </div>
+                  <div className="pb-8 pt-1.5">
+                    <p className="text-[#B8975A] text-xs tracking-[0.14em] mb-0.5" style={{ fontFamily: "DM Sans, sans-serif", fontWeight: 600 }}>{item.phase}</p>
+                    <p className="text-[#1C1612] mb-1" style={{ fontFamily: "Fraunces, serif", fontWeight: 500, fontSize: "1.0625rem" }}>{item.title}</p>
+                    <p className="text-[#4A4239]" style={{ fontFamily: "DM Sans, sans-serif", fontSize: "0.875rem", lineHeight: 1.6 }}>{item.description}</p>
+                    <p className="text-[#7A6E62] text-xs mt-1" style={{ fontFamily: "DM Sans, sans-serif" }}>{item.treatment}</p>
                   </div>
                 </div>
               ))}
             </div>
           </div>
-          <div className="space-y-6">
-            {frozenShoulderOutcomes.items.map((item, index) => (
-              <div key={index} className="p-6 rounded-lg border border-[#E5DFD3] bg-white">
-                <h3 className="text-lg font-medium mb-4" style={{ fontFamily: 'Fraunces, serif', color: 'rgb(28, 25, 23)' }}>{item.title}</h3>
-                <ul className="space-y-3">
-                  {item.points.map((point, i) => (
-                    <li key={i} className="text-sm flex items-start gap-2">
-                      <span className="mt-1 flex-shrink-0 w-1.5 h-1.5 rounded-full" style={{ background: '#C9A84C' }}></span>
-                      <span style={{ color: 'rgb(107, 107, 107)' }}>{point}</span>
-                    </li>
-                  ))}
-                </ul>
+          <div className="space-y-8">
+            <p className="text-[#2C2419] leading-[1.8]" style={{ fontFamily: "DM Sans, sans-serif", fontSize: "1.0625rem" }}>
+              Frozen shoulder recovery timelines vary significantly between patients. The numbers below represent typical patterns based on research and our clinical experience treating 200+ frozen shoulder patients. Your specific timeline depends on several factors:
+            </p>
+            <div>
+              <h3 className="text-[#1C1612] mb-5" style={{ fontFamily: "Fraunces, serif", fontWeight: 500, fontSize: "1.375rem" }}>Factors that affect timeline</h3>
+              <div className="space-y-3">
+                {[
+                  { title: "Phase when treatment begins", description: "Earlier intervention often shortens total course" },
+                  { title: "Diabetic status", description: "Diabetic patients often have longer recovery and more severe presentation" },
+                  { title: "Bilateral involvement", description: "Patients with both shoulders affected often have more complex recovery" },
+                  { title: "Patient compliance", description: "Daily home programme adherence substantially affects outcomes" },
+                  { title: "Underlying causes", description: "Post-surgical or post-injury frozen shoulder may have different patterns" }
+                ].map((item, index) => (
+                  <div key={index} className="flex gap-4 p-4 bg-white rounded-[8px]" style={{ border: "1px solid rgba(28, 22, 18, 0.08)" }}>
+                    <div className="w-1.5 h-1.5 rounded-full bg-[#B8975A] mt-2 shrink-0"></div>
+                    <div>
+                      <p className="text-[#1C1612]" style={{ fontFamily: "DM Sans, sans-serif", fontWeight: 500, fontSize: "0.9375rem" }}>{item.title}</p>
+                      <p className="text-[#7A6E62]" style={{ fontFamily: "DM Sans, sans-serif", fontSize: "0.875rem" }}>{item.description}</p>
+                    </div>
+                  </div>
+                ))}
               </div>
-            ))}
-            <div className="p-6 rounded-lg bg-[#FAF8F5] border border-[#E5DFD3]">
-              <p className="text-sm" style={{ color: 'rgb(107, 107, 107)', lineHeight: '1.8' }}>
-                <strong>Patient frustration is normal — and expected</strong><br/>
-                Frozen shoulder recovery often feels frustrating. Progress is gradual rather than dramatic. The patients who do best understand the phase-based nature of the condition and trust the process. It is genuinely a marathon, not a sprint — but it is a marathon with a known finish line.
+            </div>
+            <div>
+              <h3 className="text-[#1C1612] mb-3" style={{ fontFamily: "Fraunces, serif", fontWeight: 500, fontSize: "1.375rem" }}>What patients typically experience</h3>
+              <p className="text-[#4A4239] leading-[1.8]" style={{ fontFamily: "DM Sans, sans-serif", fontSize: "1rem" }}>
+                Most patients who start treatment during the freezing phase complete recovery in 8–12 months total. Patients who present already in established frozen phase typically take 6–10 months from start of treatment to substantial recovery. Untreated frozen shoulder typically resolves naturally in 18–30 months — the treatment difference is substantial.
+              </p>
+            </div>
+            <div className="bg-[#F2EDE4] rounded-[8px] p-6">
+              <h3 className="text-[#1C1612] mb-3" style={{ fontFamily: "Fraunces, serif", fontWeight: 500, fontSize: "1.1rem" }}>Patient frustration is normal — and expected</h3>
+              <p className="text-[#4A4239] leading-[1.8]" style={{ fontFamily: "DM Sans, sans-serif", fontSize: "0.9375rem" }}>
+                Frozen shoulder recovery often feels frustrating. Progress is gradual rather than dramatic. The patients who do best understand the phase-based nature of the condition and trust the process. This is genuinely a marathon, not a sprint — but it is a marathon with a known finish line.
               </p>
             </div>
           </div>
@@ -504,13 +697,12 @@ const FrozenShoulderDubai = () => {
       <FrozenShoulderPhases 
         {...frozenShoulderPhases}
       />
-      
-      <KneeTreatmentApproach
-        {...frozenShoulderApproach}
-      />
+     
       
       <TimelineSection />
       
+      <TreatmentMechanism {...frozenShoulderMechanism2} />
+
       <InjectionsSurgerySection />
       
       <TreatmentReviews 
@@ -524,10 +716,18 @@ const FrozenShoulderDubai = () => {
         useKneeStyle={false}
       />
       
-      <PhysiotherapyTeam 
-        bgColor="bg-[#F8F4EE]"
-        cardColor="bg-white"
-        {...frozenShoulderTeam} 
+      <PostSurgeryTeam
+        bgColor={frozenShoulderTeam.bgColor}
+        data={{
+          ...frozenShoulderTeam,
+          members: frozenShoulderTeam.members.map(member => ({
+            ...member,
+            credentials: member.role,
+            tags: member.specialties,
+            description: member.bio,
+            languages: member.languages
+          }))
+        }}
       />
       
       <div className={`bg-white py-24 px-6 ${frozenShoulderPricing.bgColor}`}>
@@ -554,35 +754,105 @@ const FrozenShoulderDubai = () => {
             ))}
           </div>
 
-          <p className="text-center mb-8" style={{ color: 'rgb(107, 107, 107)', lineHeight: '1.7', fontSize: '14px' }}>
-            {frozenShoulderPricing.insuranceText}
-          </p>
+          <div className="text-center">
+            <p className="mb-6 text-center" style={{ color: 'rgb(107, 107, 107)', lineHeight: '1.7', fontSize: '14px' }}>
+              {frozenShoulderPricing.insuranceText}
+            </p>
+           
+            <div className="flex flex-wrap justify-center gap-3">
+              {frozenShoulderPricing.insurers.map((insurer, index) => (
+                <span key={index} className="px-4 py-2 rounded-lg bg-[#FAF6EF] border border-[#E5DFD3] text-sm text-[#6B6B6B] font-medium">
+                  {insurer}
+                </span>
+              ))}
+            </div>
+          </div>
         </div>
       </div>
 
       <FAQ {...frozenShoulderFaqs} />
 
-      <TreatmentLocation
-        bgColor={frozenShoulderLocation.bgColor}
-        label={frozenShoulderLocation.label}
-        title={frozenShoulderLocation.title}
-        address1="Vedara Care Polyclinic"
-        address2={frozenShoulderLocation.address}
-        clinicHours={[
-          { label: "Monday - Saturday", time: "9:00 AM – 9:00 PM" },
-          { label: "Sunday", time: "10:00 AM – 7:00 PM" }
-        ]}
-        contactPhone={frozenShoulderLocation.phone}
-        description={frozenShoulderLocation.description}
-        buttonText={frozenShoulderLocation.buttonText}
-        buttonHref={frozenShoulderLocation.buttonLink}
-        mapEmbed={frozenShoulderLocation.mapEmbed}
-        locationMarkers={[
-          { name: "Circle Mall", distance: "5 min walk" },
-          { name: "FIVE JV Hotel", distance: "3 min drive" },
-          { name: "JSS School", distance: "5 min drive" }
-        ]} 
-      />
+      <section className={`${frozenShoulderLocation.bgColor} py-24 px-6`}>
+        <div className="max-w-6xl mx-auto">
+          <div className="grid md:grid-cols-2 gap-12 items-start">
+            {/* Left: Image */}
+            <div className="rounded-xl overflow-hidden">
+              {frozenShoulderLocation.image && (
+                <img
+                  src={frozenShoulderLocation.image}
+                  alt="Vedara Care Clinic"
+                  className="w-full h-auto"
+                />
+              )}
+            </div>
+
+            {/* Right: Content */}
+            <div>
+              <p className="text-[11px] font-sans font-semibold tracking-[0.2em] text-[#C9A84C] uppercase mb-4">
+                {frozenShoulderLocation.label}
+              </p>
+              <h2 className="text-4xl mb-8" style={{ fontFamily: 'Fraunces, Georgia, serif', color: 'rgb(26, 26, 26)' }}>
+                {frozenShoulderLocation.title}
+              </h2>
+
+              {/* Contact Info */}
+              <div className="space-y-4 mb-8">
+                <div className="flex gap-4">
+                  <span className="text-sm font-medium text-[#6B6B6B] min-w-[80px]">Address</span>
+                  <span className="text-sm text-[#262626]">{frozenShoulderLocation.address}</span>
+                </div>
+                <div className="flex gap-4">
+                  <span className="text-sm font-medium text-[#6B6B6B] min-w-[80px]">Phone</span>
+                  <span className="text-sm text-[#262626]">{frozenShoulderLocation.phone}</span>
+                </div>
+                <div className="flex gap-4">
+                  <span className="text-sm font-medium text-[#6B6B6B] min-w-[80px]">WhatsApp</span>
+                  <span className="text-sm text-[#262626]">{frozenShoulderLocation.whatsapp}</span>
+                </div>
+                <div className="flex gap-4">
+                  <span className="text-sm font-medium text-[#6B6B6B] min-w-[80px]">Email</span>
+                  <span className="text-sm text-[#262626]">{frozenShoulderLocation.email}</span>
+                </div>
+              </div>
+
+              {/* Hours */}
+              <div className="border border-[#E5DFD3] rounded-lg overflow-hidden mb-8">
+                <div className="bg-[#FAF8F5] px-6 py-3 border-b border-[#E5DFD3]">
+                  <p className="text-xs font-semibold uppercase tracking-wider text-[#6B6B6B]">Day</p>
+                </div>
+                {frozenShoulderLocation.hours.map((hour, index) => (
+                  <div key={index} className="flex justify-between px-6 py-3 border-b border-[#E5DFD3] last:border-b-0">
+                    <span className="text-sm text-[#262626]">{hour.day}</span>
+                    <span className="text-sm text-[#262626]">{hour.time}</span>
+                  </div>
+                ))}
+              </div>
+
+              {/* Location Markers */}
+              <div className="flex flex-wrap gap-2 mb-8">
+                {frozenShoulderLocation.locationMarkers.map((marker, index) => (
+                  <span key={index} className="px-3 py-2 bg-[#FAF8F5] rounded-lg text-xs text-[#6B6B6B] font-medium">
+                    {marker.name}
+                  </span>
+                ))}
+              </div>
+
+              {/* Description */}
+              <p className="text-sm mb-8 leading-relaxed text-[#6B6B6B]">
+                {frozenShoulderLocation.description}
+              </p>
+
+              {/* Button */}
+              <a
+                href={frozenShoulderLocation.buttonLink}
+                className="inline-block px-6 py-3 bg-[#1A1A1A] text-white text-sm font-medium rounded-md hover:bg-[#333] transition-colors"
+              >
+                {frozenShoulderLocation.buttonText}
+              </a>
+            </div>
+          </div>
+        </div>
+      </section>
 
       <FinalCTA 
         {...frozenShoulderCTA}

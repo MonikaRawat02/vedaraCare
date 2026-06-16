@@ -8,7 +8,7 @@ export const frozenShoulderHero = {
   title: "Frozen shoulder treatment in Dubai.\nHighly treatable.\nPredictable phases.\nHonest timelines.",
   description: "Specialist frozen shoulder physiotherapy at our Jumeirah Village Circle (JVC) clinic, walking distance from Circle Mall. DPT-qualified physiotherapists with specific expertise in adhesive capsulitis across all phases — freezing, frozen, and thawing. Most patients see substantial improvement in 6–12 months with proper treatment compared to 2–3 years natural recovery. Particularly significant expertise in diabetic-related frozen shoulder, common in Dubai's patient population.",
   image: "/images/frozen-shoulder-dubai-hero.webp",
-  alt: "Frozen shoulder treatment at Vedara Care JVC Dubai physiotherapy clinic",
+  alt: "Frozen shoulder treatment at Vedara Care JVC Dubai clinic",
   bgColor: "bg-[#F8F4EE]",
   primaryCTA: "Book Frozen Shoulder Assessment",
   secondaryCTA: "Read About Frozen Shoulder",
@@ -31,19 +31,21 @@ export const frozenShoulderIntro = {
 };
 
 export const frozenShoulderMechanism1 = {
-  image: "/images/frozen-shoulder-anatomy.webp",
-  alt: "Frozen shoulder (adhesive capsulitis) anatomy educational illustration"
+  image: "/images/frozen-shoulder-phases-illustration.webp",
+  alt: "Frozen shoulder adhesive capsulitis anatomy three-phase progression"
 };
 
 export const frozenShoulderPhases = {
   label: "PHASE IDENTIFICATION",
   title: "Identifying which phase of frozen shoulder you are in.",
   description: "Treatment approach differs by phase. Identifying your phase determines the appropriate treatment focus.",
+  image: "/images/frozen-shoulder-phases-illustration.webp",
+  alt: "Frozen shoulder three phases freezing frozen thawing at Vedara Care",
   items: [
     {
       number: "01",
       title: "The Freezing Phase",
-      typicalDuration: "Typical duration: 2–9 months",
+      typicalDuration: "Typical duration: 3–9 months",
       typicalSymptoms: [
         "Increasing shoulder pain, often worse at night",
         "Pain disturbing sleep, especially when lying on affected side",
@@ -72,7 +74,8 @@ export const frozenShoulderPhases = {
         "Stiffness now the dominant symptom",
         "Range of motion substantially restricted but stable",
         "Daily activities significantly affected",
-        "Difficulty with dressing/grooming, reaching, functional limitations constant rather than worsening"
+        "Difficulty with dressing, grooming, reaching",
+        "Functional limitations consistent rather than worsening"
       ],
       treatmentFocus: [
         "Active range of motion progression",
@@ -83,18 +86,18 @@ export const frozenShoulderPhases = {
         "Strengthening of surrounding musculature",
         "Potential coordination for hydrodilatation if progress is slow"
       ],
-      whatToExpect: "The phase of most active intervention. Substantial functional gains possible. Some patients benefit from hydrodilatation alongside physiotherapy. Recovery progress becomes more measurable."
-    },
+      whatToExpect: "The phase of most active intervention. Substantial functional gains possible. Some patients benefit from hydrodilatation injection alongside physiotherapy. Recovery progress becomes more measurable." },
     {
       number: "03",
       title: "The Thawing Phase",
-      typicalDuration: "Typical duration: 5–26 months",
+      typicalDuration: "Typical duration: 5–24 months",
       typicalSymptoms: [
         "Pain minimal or absent",
         "Range of motion gradually returning",
         "Function progressively improving",
         "Daily activities returning to normal",
-        "Some residual stiffness common"
+        "Some residual stiffness common",
+        "Occasional discomfort with extreme ranges"
       ],
       treatmentFocus: [
         "Maximising range of motion recovery",
@@ -104,9 +107,7 @@ export const frozenShoulderPhases = {
         "Reducing treatment frequency",
         "Discharge planning"
       ],
-      whatToExpect: "Most natural recovery happens in this phase. Physiotherapy accelerates (often months). The phase frequency reduces (often monthly). The phase ending in discharge from active treatment."
-    }
-  ]
+      whatToExpect: "Most natural recovery happens in this phase. Physiotherapy accelerates progression. Treatment frequency reduces (often monthly). The phase ending in discharge from active treatment"} ]
 };
 
 export const frozenShoulderTreatmentMechanism = {
@@ -156,8 +157,8 @@ export const frozenShoulderApproach = {
     }
   ],
   quote: "Phase-specific treatment produces meaningfully better outcomes than generic shoulder exercises.",
-  image: "/images/frozen-shoulder-treatment-approach.jpg",
-  alt: "Patient receiving phase-specific frozen shoulder treatment in physiotherapy clinic",
+  image: "/images/frozen-shoulder-treatment-vedara-jvc.webp",
+  alt: "Phase-specific frozen shoulder treatment Vedara Care JVC Dubai",
   toolkitItems: [
     "Manual Therapy",
     "Phase-Specific Stretching",
@@ -174,6 +175,8 @@ export const frozenShoulderOutcomes = {
   label: "REALISTIC TIMELINE",
   title: "A realistic recovery timeline for frozen shoulder.",
   description: "Frozen shoulder recovery is measured in months not weeks. Honest realistic expectations help you stay engaged with treatment.",
+  image: "/images/frozen-shoulder-phases-illustration.webp",
+  alt: "Frozen shoulder recovery timeline month by month",
   items: [
     {
       title: "Factors that affect timeline",
@@ -238,6 +241,31 @@ export const frozenShoulderOutcomes = {
   ]
 };
 
+
+export const frozenShoulderMechanism2 = {
+  bgColor: "bg-white",
+  label: "THE APPROACH",
+  title: "Phase-specific treatment for frozen shoulder.",
+  // description: "Frozen shoulder is a complex condition that can be challenging to treat. Understanding the mechanism of the condition is key to effective treatment.",
+  content: [
+    "Effective frozen shoulder treatment is phase-specific. The same techniques that help in the frozen phase can worsen symptoms in the freezing phase. Pattern recognition and phase-appropriate intervention are central to good outcomes.",
+    "<strong>Comprehensive initial assessment</strong><br/>The first session is comprehensive — typically 60 minutes including detailed history, specific frozen shoulder assessment tests, range of motion measurement (recorded for tracking progress), identification of your current phase, screening for contributing factors (diabetes status, thyroid concerns, prior shoulder history), and clinical decision-making about appropriate treatment intensity for your current phase. The phase identification is critical — getting this wrong leads to treatment that is either too aggressive or insufficient.",
+    "<strong>Freezing phase treatment</strong><br/>In the freezing phase, the priority is pain management and protecting the shoulder from worsening. We use gentle manual therapy for symptom relief, modalities including heat and IFC for pain modulation, very gentle range of motion within comfortable limits (not pushing into pain), patient education about the condition, sleep positioning guidance, and gentle home programme. We explicitly avoid aggressive stretching that often makes freezing phase symptoms worse.",
+    "<strong>Frozen phase treatment</strong><br/>In the frozen phase, more active intervention becomes appropriate. We use specific joint mobilisation techniques (Maitland, Mulligan, Kaltenborn approaches as appropriate), targeted capsular stretching protocols, manual therapy for surrounding muscle tension, dry needling for associated trigger points, range of motion exercises progressed to capacity, strengthening of surrounding musculature, and functional movement progression.",
+    "<strong>Thawing phase treatment</strong><br/>In the thawing phase, treatment focuses on maximising range of motion recovery and functional return. Continued mobilisation and stretching, strengthening throughout the recovering range, functional progression to demanding activities, other shoulder protection (preventing recurrence on opposite side), and gradual discharge planning. Treatment frequency reduces as recovery progresses.",
+    "<strong>Hydrodilatation coordination</strong><br/>For some frozen shoulder patients — particularly those with severe restriction in the frozen phase or those whose progress with physiotherapy alone is slower than expected — hydrodilatation can be valuable. This is performed by rheumatologists or radiologists. We coordinate with appropriate specialists when hydrodilatation is potentially beneficial, and the procedure is typically followed by intensified physiotherapy.",
+    "<strong>Diabetic patient considerations</strong><br/>For diabetic patients with frozen shoulder, we account for the typically more severe and prolonged presentation. Coordination with the patient's endocrinologist (glycaemic control affects connective tissue healing) is important. Diabetic frozen shoulder is also more likely to become bilateral — we monitor the unaffected shoulder for early signs and intervene preventively when appropriate."
+  ],
+  quote: "The treatment that helps in the frozen phase can worsen symptoms in the freezing phase. Phase identification matters more than any specific technique."};
+
+
+
+
+
+
+
+
+
 export const frozenShoulderInjectionsSurgery = {
   label: "ADVANCED OPTIONS",
   title: "When are injections or surgery appropriate for frozen shoulder?",
@@ -271,186 +299,250 @@ export const frozenShoulderReviews = {
   title: "Real frozen shoulder recoveries.",
   items: [
     {
-      quote: "I thought I'd have frozen shoulder forever. After 6 months of treatment with Dr. Priya, I have 95% of my range back. The phase-based approach made sense and the timeline was exactly what they told me.",
-      author: "Sarah M.",
-      details: "Frozen shoulder (diabetic patient)"
+      quote: "Frozen shoulder for fourteen months before I came to Vedara. Had been told repeatedly it was 'just shoulder pain' and given generic shoulder exercises that made it worse. First proper assessment identified frozen phase. Eight months of phase-specific treatment combined with hydrodilatation. Full range of motion returned. Cannot believe how much earlier this could have been resolved with correct treatment.",
+      author: "Sarah K.",
+      details: "Right Frozen Shoulder · 14-Month Delayed Diagnosis · Dubai Marina resident · February 2026"
     },
     {
-      quote: "I was in the freezing phase for 4 months before coming here. The pain management was excellent and they gradually progressed my treatment as I moved into the frozen phase. 10 months from start I'm back to padel.",
-      author: "Ahmed K.",
-      details: "Idiopathic frozen shoulder"
+      quote: "Diabetic, bilateral frozen shoulder. Right shoulder six months ahead of left. Vedara's team coordinated with my endocrinologist for glycaemic control, treated the right shoulder through frozen phase to recovery (10 months), and caught the left shoulder in early freezing phase preventing it from progressing as severely. The proactive approach to the second shoulder was something no other clinic offered.",
+      author: "Rajan M.",
+      details: "Diabetic Bilateral Frozen Shoulder · 14-Month Programme · JVC resident · January 2026"
     },
     {
-      quote: "They coordinated my hydrodilatation with a rheumatologist and the combined approach made a huge difference. The team really understands frozen shoulder and what works at each phase.",
-      author: "Jennifer L.",
-      details: "Frozen-phase frozen shoulder"
+      quote: "Post-surgical frozen shoulder after rotator cuff repair. Surgeon and previous physio said the stiffness would resolve naturally. Six months later, still significantly restricted. Vedara correctly identified post-surgical frozen shoulder, applied phase-appropriate treatment combining manual therapy with home programme. Substantial improvement within four months, full functional recovery by month nine.",
+      author: "James M.",
+      details: "Post-Surgical Frozen Shoulder · 9-Month Programme · Dubai Hills resident · March 2026"
     }
   ],
   stats: [
     {
-      value: "300+",
-      label: "Frozen shoulder patients treated"
+      value: "4.9",
+      label: "stars on Google"
     },
     {
-      value: "12+",
-      label: "Specialists with shoulder focus"
+      value: "200+",
+      label: "frozen shoulder patients treated"
     },
     {
-      value: "6–12",
-      label: "Months typical recovery (untreated 18–36)"
+      value: "8-10",
+      label: "Average 8–10 months to functional recovery"
     }
   ]
 };
 
 export const frozenShoulderTeam = {
-  label: "OUR SPECIALISTS",
+  bgColor: "bg-[#FAF7F2]",
+  label: "THE TEAM",
   title: "Frozen shoulder specialists at our JVC clinic.",
   members: [
     {
-      name: "Dr. Priya Sharma, DPT",
-      role: "Senior Physiotherapist",
-      specialties: ["Frozen Shoulder", "Shoulder Rehabilitation", "Diabetic Frozen Shoulder"],
-      bio: "10+ years experience. Special interest in phase-specific frozen shoulder treatment and diabetic frozen shoulder management.",
-      image: "/images/dr-priya-sharma-home-physiotherapy-dubai.webp",
-      link: "/physiotherapists/dr-priya-sharma"
+      name: "Dr. Sarah Al-Mansouri, DPT",
+      role: "DHA-Licensed · Shoulder Specialist",
+      specialties: ["Frozen Shoulder", "Manual Therapy", "Joint Mobilisation", "Dry Needling"],
+      bio: "Lead shoulder specialist with 9 years experience in adhesive capsulitis. Extensive diabetic frozen shoulder expertise.",
+      languages: "English, Arabic",
+      image: "/images/dr-sarah-al-mansouri-home-physiotherapy-dubai.webp",
+      alt: "Dr. Sarah Al-Mansouri frozen shoulder specialist Vedara Care JVC Dubai",
+      link: "/physiotherapists/dr-sarah-al-mansouri"
     },
     {
-      name: "Dr. Ahmed Al Rashid, DPT, MSc",
-      role: "Lead Physiotherapist",
-      specialties: ["Shoulder Rehabilitation", "Manual Therapy", "Hydrodilatation Coordination"],
-      bio: "12+ years experience. Specialist in shoulder conditions, including complex frozen shoulder cases.",
-      image: "/images/dr-ahmed-al-rashid-home-physiotherapy-dubai.webp",
-      link: "/physiotherapists/dr-ahmed-al-rashid"
+      name: "Dr. Omar Hassan, DPT",
+      role: "DHA-Licensed · Shoulder Specialist",
+      specialties: ["Frozen Shoulder", "Dry Needling", "Sports Rehabilitation","Manual Therapy"],
+      bio: "Specialist in freezing phase management and pain modulation strategies for adhesive capsulitis.",
+      languages: "English, Arabic, Urdu",
+      image: "/images/dr-omar-hassan-home-physiotherapy-dubai.webp",
+      alt: "Dr. Omar Hassan frozen shoulder specialist Vedara Care JVC Dubai",
+      link: "/physiotherapists/dr-omar-hassan"
     },
     {
-      name: "Dr. Sarah Mitchell, DPT",
-      role: "Physiotherapist",
-      specialties: ["Shoulder Rehabilitation", "Manual Therapy", "Functional Rehab"],
-      bio: "8+ years experience. Focus on phase-specific treatment and patient education about frozen shoulder timelines.",
-      image: "/images/dr-sarah-mitchell-home-physiotherapy-dubai.webp",
-      link: "/physiotherapists/dr-sarah-mitchell"
+      name: "Dr. Priya Krishnamurthy, DPT",
+      role: "DHA-Licensed · Shoulder Specialist",
+      specialties: ["Frozen Shoulder", "Post-Surgical Rehab", "Hydrodilatation Coordination","Mobilisation"],
+      bio: "Specialist in post-surgical frozen shoulder and bilateral presentations. Published researcher in adhesive capsulitis.",
+      languages: "English, Hindi, Tamil",
+      image: "/images/dr-priya-krishnamurthy-home-physiotherapy-dubai.webp",
+      alt: "Dr. Priya Krishnamurthy frozen shoulder specialist Vedara Care JVC Dubai",
+      link: "/physiotherapists/dr-priya-krishnamurthy"
     }
   ]
 };
 
 export const frozenShoulderPricing = {
   label: "TRANSPARENT PRICING",
-  bgColor: "bg-[#F8F4EE]",
+  bgColor: "bg-white",
   title: "What frozen shoulder treatment at our JVC clinic costs.",
   services: [
     { name: "Initial frozen shoulder assessment (60 minutes)", price: "AED 350" },
     { name: "Follow-up physiotherapy session (45-60 minutes)", price: "AED 250" },
-    { name: "Freezing phase programme (8-12 sessions)", price: "AED 1,800" },
-    { name: "Frozen phase programme (16-24 sessions)", price: "AED 3,500" },
-    { name: "Complete frozen shoulder programme (30-40 sessions)", price: "AED 6,800" },
-    { name: "Diabetic frozen shoulder extended programme", price: "AED 8,500" }
+    { name: "Dry needling (add-on per session)", price: "AED 80" },
+    { name: "Freezing phase programme (8–12 sessions over 8–12 weeks)", price: "AED 2,800" },
+    { name: "Frozen phase programme (16–24 sessions over 4–6 months)", price: "AED 4,900" },
+    { name: "Complete frozen shoulder programme (30–40 sessions over 8–12 months)", price: "AED 8,500" },
+    { name: "Diabetic frozen shoulder programme (extended timeline)", price: "AED 9,500" },
+    {name: "Post-surgical frozen shoulder rehabilitation",price: "AED 3,500"}
   ],
-  insuranceText: "Insurance direct-billing with seven major insurers including Daman, AXA, Allianz, Oman Insurance, Now Health, Bupa, and MetLife. Frozen shoulder treatment is well-covered by most Dubai insurance plans with medical justification. WhatsApp your insurance card to +971 50 XXX XXXX before booking for specific coverage confirmation."
+  insurers: ["Daman", "AXA", "Allianz", "Oman Insurance", "Now Health", "Bupa", "MetLife"],
+  insuranceText: "Insurance direct-billing with seven major insurers. Frozen shoulder physiotherapy is well-covered by Dubai insurance plans given the documented disability impact and clear diagnostic criteria. WhatsApp your insurance card before booking for specific coverage confirmation. Pre-authorisation is sometimes needed for extended programmes — we handle this on your behalf."
 };
+
+
+
 
 export const frozenShoulderFaqs = {
   bgColor: "bg-[#F2EDE5]",
   label: "COMMON QUESTIONS",
   title: "What frozen shoulder patients ask before booking.",
-  description: "For general physiotherapy questions, see our <a href='/physiotherapy-jvc/' style='color: rgb(184, 150, 90); text-decoration: underline;'>physiotherapy main page</a>. For sports injury questions, see our <a href='/physiotherapy/sports-injury-jvc/' style='color: rgb(184, 150, 90); text-decoration: underline;'>sports injury physiotherapy page</a>.",
+  sidebarLinks: [
+    { text: "Conditions", href: "/conditions/" },
+    { text: "post-surgical frozen shoulder", href: "/physiotherapy/post-surgery-rehab-dubai/" },
+    { text: "paediatric physiotherapy page", href: "/physiotherapy/pediatric-dubai/" }
+  ],
+  description: "For general physiotherapy questions, see our main physiotherapy page.",
   faqs: [
     {
+      question: "How do I know if I have frozen shoulder?",
+      answer: "The hallmark sign of frozen shoulder is restriction of both active and passive shoulder movement in all directions — not just specific movements or directions. You cannot raise your arm overhead, you cannot reach behind your back, you cannot rotate your arm outward, and someone else moving your arm produces similar restriction. This distinguishes frozen shoulder from rotator cuff problems where passive movement is typically still possible. Other features: pain often worse at night, gradual onset over weeks or months, sleep disrupted by shoulder pain, daily activities affected." },
+    {
       question: "How long does frozen shoulder last?",
-      answer: "Untreated frozen shoulder typically resolves in 18-30 months. With appropriate physiotherapy, recovery typically completes in 6-12 months. Diabetic frozen shoulder often takes longer. The phase you are in when treatment starts affects total timeline."
-    },
+      answer: "Untreated frozen shoulder typically resolves in 18–30 months as the condition progresses through its natural phases. With appropriate physiotherapy, recovery typically completes in 6–12 months — substantially faster. Diabetic frozen shoulder often takes longer (sometimes 12–18 months with treatment). The phase you are in when treatment starts affects total timeline: starting in freezing phase often means 8–12 months total; starting in established frozen phase typically 6–10 months from treatment start." },
+    {
+      question: "Will my frozen shoulder go away on its own?",
+      answer: "Most frozen shoulder does resolve naturally given enough time — typically 18–30 months from onset to substantial recovery. However, this is a long time with significant pain, sleep disruption, and functional limitation. Appropriate physiotherapy substantially shortens the course and improves your quality of life during the recovery process. Most patients find the difference between 'going away on its own' and 'active treatment' worth pursuing."  },
     {
       question: "Why is frozen shoulder more common in diabetic patients?",
-      answer: "Diabetic patients have 4-5 times higher prevalence of frozen shoulder. The mechanism involves glycation of collagen tissues in the joint capsule. Diabetic frozen shoulder is more severe, longer-lasting, and more likely to become bilateral."
-    },
+      answer: "Diabetic patients have 4–5 times higher prevalence of frozen shoulder compared to non-diabetic populations. The likely mechanism involves glycation of collagen tissues in the joint capsule — sugar molecules binding to collagen proteins and altering their properties. Diabetic frozen shoulder also tends to be more severe, longer-lasting, and more likely to become bilateral. Glycaemic control matters — better controlled diabetes is associated with better frozen shoulder outcomes."   },
     {
-      question: "What are the three phases of frozen shoulder?",
-      answer: "The freezing phase (pain dominant, 2-9 months), the frozen phase (stiffness dominant, 4-12 months), and the thawing phase (recovery phase, 5-26 months). Phase identification determines treatment focus."
-    },
+      question: "Why is my frozen shoulder so much worse at night?",
+      answer: "Several factors contribute to nocturnal frozen shoulder pain. Lying on the affected shoulder compresses inflamed tissues. The horizontal position can increase fluid pressure in the joint. Reduced distraction (lower daytime activity to compete with the pain) makes the pain more noticeable. Lower cortisol levels at night may also play a role. Sleep position guidance, sometimes pain medication coordinated with your GP, and management strategies can help significantly."  },
     {
-      question: "Do I need imaging for frozen shoulder?",
-      answer: "Imaging (X-ray, ultrasound, MRI) is often not necessary for typical frozen shoulder, but may be ordered to rule out other conditions like rotator cuff tears, arthritis, or labral injuries. Clinical assessment is usually sufficient for diagnosis."
-    },
+      question: "Can my second shoulder also get frozen shoulder?",
+      answer: "Yes — bilateral frozen shoulder is relatively common, particularly in diabetic patients. The second shoulder may develop frozen shoulder during the recovery of the first, or after the first has fully resolved. We monitor patients with frozen shoulder for early signs in the unaffected shoulder and can intervene preventively if symptoms begin to develop. Diabetic patients have particularly high rates of bilateral involvement and benefit from preventive awareness." },
     {
-      question: "Is frozen shoulder the same as a rotator cuff tear?",
-      answer: "No. Frozen shoulder is a capsular problem with both active and passive range of motion loss. Rotator cuff tears are tendon problems, usually with preserved passive range of motion."
-    },
+      question: "Where in Dubai is your frozen shoulder treatment clinic?",
+      answer: "Our DHA-licensed clinic is in Jumeirah Village Circle (JVC), Dubai — walking distance from Circle Mall, three minutes from FIVE Jumeirah Village Hotel, and five minutes from JSS Private School. Free patient parking. Easy access from Sheikh Mohammed Bin Zayed Road and Al Khail Road. Patients travel to us from JVT, Al Barsha South, Sports City, Motor City, Arjan, Dubai Hills, Marina, Downtown, Palm Jumeirah, Mirdif, and across Dubai for specialist frozen shoulder care." },
     {
-      question: "Will cortisone cure my frozen shoulder?",
-      answer: "Cortisone injections do not 'cure' frozen shoulder, but they can provide temporary pain relief (typically 6-12 weeks) that allows better engagement with physiotherapy during the painful freezing phase."
-    },
+      question: "How quickly can I get an appointment for frozen shoulder?",
+      answer: "Same-week appointments are typical for frozen shoulder assessment. Unlike acute injuries, frozen shoulder is generally not a same-day emergency — it is a chronic progressive condition where appropriate diagnosis and structured treatment matters more than emergency response. However, we do prioritise patients with significant sleep disruption or functional impact for earlier appointments."   },
     {
-      question: "What is hydrodilatation?",
-      answer: "Hydrodilatation (capsular distension) is a procedure where saline (sometimes with steroid) is injected into the shoulder joint under ultrasound guidance to mechanically stretch the thickened capsule. Often used in the frozen phase to accelerate recovery, combined with physiotherapy."
-    },
+      question: "Should I have an MRI for frozen shoulder?",
+      answer: "Usually not required for frozen shoulder diagnosis. The diagnosis is primarily clinical — based on the characteristic pattern of restricted active and passive movement in all directions. MRI may be appropriate if there is concern about other contributing conditions (rotator cuff tears, labral pathology), or if response to treatment is slower than expected."},
+       {
+      question: "Does insurance cover frozen shoulder treatment?",
+      answer: "Yes — frozen shoulder is well-documented in insurance terms and typically covered substantially. Extended treatment programmes (which frozen shoulder often requires) may need pre-authorisation, which we handle on your behalf. Direct-billing with Daman, AXA, Allianz, Oman Insurance, Now Health, Bupa, and MetLife. WhatsApp your insurance card before booking to confirm specific coverage and out-of-pocket cost."    },
     {
-      question: "When do I need surgery for frozen shoulder?",
-      answer: "Surgery (manipulation under anaesthesia or arthroscopic capsular release) is rarely needed for frozen shoulder when appropriately managed with conservative physiotherapy. Typically reserved for persistent severe restriction after 12+ months of appropriate treatment."
-    },
+      question: "Will physiotherapy be painful?",
+      answer: "Treatment intensity is calibrated to your phase. In the freezing phase, treatment is gentle and prioritises pain management — aggressive treatment in this phase typically worsens symptoms. In the frozen phase, more active treatment is appropriate and may produce some discomfort during stretching and mobilisation, but should not produce severe pain. The 'no pain no gain' approach is not appropriate for frozen shoulder — phase-specific treatment produces better outcomes with less suffering." },
     {
-      question: "Can frozen shoulder come back?",
-      answer: "Frozen shoulder recurrence in the same shoulder is uncommon (around 10-15% of patients). Bilateral frozen shoulder (both shoulders) is more common in diabetic patients."
-    },
+      question: "What is hydrodilatation and do I need it?",
+      answer: "Hydrodilatation is an injection procedure where saline (sometimes combined with steroid) is injected into the shoulder joint under ultrasound guidance to mechanically stretch the contracted capsule. Performed by rheumatologists or radiologists. Most frozen shoulder patients do not need hydrodilatation. It is particularly useful for patients in the frozen phase whose progress with physiotherapy alone is slower than desired." }
+ 
+ ,{
+  question: "Should I get a cortisone injection?",
+  answer: "Cortisone (corticosteroid) injections can be very useful in the freezing phase for patients with severe pain disrupting sleep and quality of life. The injection does not cure frozen shoulder but can substantially improve pain during the painful phase. Effects typically last 6–12 weeks. Useful as part of a broader treatment plan, not as a standalone treatment. Coordinated through your GP or rheumatologist." },
+
+ 
+ {
+question: "Can I exercise normally while I have frozen shoulder?",
+answer:"Most activities can continue, though some modifications are needed. Movements that produce significant pain should be avoided. Activities requiring overhead reach, behind-back positioning, or sustained shoulder positions may need modification. Cardiovascular exercise (walking, stationary cycling, swimming with modified strokes) generally remains accessible. We provide specific activity guidance during treatment."},
+ {
+  question: "How is frozen shoulder different from rotator cuff problems?",
+  answer:"Frozen shoulder involves the joint capsule and restricts movement in all directions, including passive movement (when someone else moves your arm). Rotator cuff problems involve specific tendons and typically affect specific movements or activities, with passive movement usually preserved. Accurate diagnosis matters because treatment approaches differ substantially." },
+
+ {
+  question: "What if I had shoulder surgery and now have frozen shoulder?",
+  answer:"<a href=\"/physiotherapy/post-surgery-rehab-dubai/\">Post-surgical frozen shoulder</a> is a recognised complication after rotator cuff repair, shoulder arthroscopy, and other shoulder procedures. The condition develops during the recovery phase when post-surgical pain and immobilisation can predispose to capsular contracture. Treatment is similar to other frozen shoulder, but coordination with your operating surgeon is important." },
+  {
+    question: "Will frozen shoulder come back after I recover?",
+    answer:"Recurrence in the same shoulder after complete resolution is rare. However, frozen shoulder can develop in the opposite shoulder — particularly in diabetic patients. We provide guidance on early signs to watch for and preventive strategies. Even if a second shoulder is affected, early intervention typically produces better outcomes than waiting for full progression."  },
     {
-      question: "Can I do anything at home for frozen shoulder?",
-      answer: "Yes, but what you should do depends on your current phase. During the freezing phase: gentle pendulum exercises and pain-relief strategies. During the frozen phase: specific stretching exercises. We provide clear home exercise programmes tailored to your phase."
-    },
-    {
-      question: "Can frozen shoulder be prevented?",
-      answer: "For most idiopathic frozen shoulder, no known prevention exists. For secondary frozen shoulder (after surgery or trauma), early gentle mobilisation and avoiding prolonged immobilisation may reduce risk."
-    },
-    {
-      question: "How do I book a frozen shoulder assessment?",
-      answer: "Three ways: WhatsApp +971 50 XXX XXXX (fastest), call +971 4 567 8900, or book online through our website. Bring any previous imaging or reports, your insurance card, and wear comfortable clothing."
+      question: "Can children get frozen shoulder?",
+      answer:"Very rare. Frozen shoulder is overwhelmingly an adult condition, most commonly in patients aged 40–60. Shoulder pain in children typically reflects other conditions — sports injuries, growth-related issues, neurological conditions. For children's shoulder issues, see our <a href=\"/physiotherapy/pediatric-dubai/\">paediatric physiotherapy page</a>."
     }
-  ]
+,{
+  question: "How is frozen shoulder treatment at Vedara different?",
+  answer:"Phase-specific treatment (most clinics apply the same approach regardless of phase, which produces worse outcomes), DPT-qualified specialists with specific frozen shoulder training, longer sessions allowing thorough treatment, same therapist throughout the long treatment course, coordination with rheumatologists for hydrodilatation when appropriate, diabetic patient expertise given Dubai's population, transparent published pricing, honest realistic timeline expectations, and structured home programme that adapts as you progress through phases."},
+  {
+    question: "How do I book a frozen shoulder assessment?",
+    answer:"Three ways: (1) WhatsApp us — fastest response, ideal for sending brief description of your symptoms and how long they have been present. (2) Call us — direct booking, available 9 AM to 9 PM seven days a week. (3) Book online through our website. For your first appointment, please bring: any imaging if available (MRI, X-rays, ultrasound), medical reports, current medication list including diabetes medications if applicable, insurance card, and comfortable clothing allowing shoulder assessment."  }
+ 
+ 
+ 
+ 
+ 
+ 
+    ]
 };
 
 export const frozenShoulderLocation = {
   bgColor: "bg-white",
-  label: "WHERE WE ARE",
+  label: "VISIT US",
   title: "Where frozen shoulder treatment happens at Vedara Care JVC.",
-  address: "Unit G-04, Building 12, JVC District 14, Dubai, United Arab Emirates",
-  phone: "+971 4 567 8900",
-  description: "Our JVC clinic has dedicated physiotherapy treatment rooms, manual therapy plinths, and a full rehabilitation gym. All our physiotherapists are DPT-qualified with specific training in shoulder conditions.",
+  address: "Unit G-05, Circle Mall, JVC District 12, Jumeirah Village Circle, Dubai, UAE",
+  phone: "+971 4 XXX XXXX",
+  whatsapp: "+971 50 XXX XXXX",
+  email: "hello@vedaracare.ae",
+  hours: [
+    { day: "Monday – Friday", time: "9:00 AM – 9:00 PM" },
+    { day: "Saturday", time: "9:00 AM – 7:00 PM" },
+    { day: "Sunday", time: "10:00 AM – 6:00 PM" }
+  ],
+  locationMarkers: [
+    { name: "Walking distance from Circle Mall" },
+    { name: "3 min from FIVE Jumeirah Village" },
+    { name: "5 min from JSS Private School" },
+    { name: "Free patient parking" }
+  ],
+  description: "Our JVC clinic has dedicated physiotherapy treatment rooms suited to the slow careful work that frozen shoulder treatment requires, manual therapy plinths, modern modalities including IFC and ultrasound, dry needling equipment, and a rehabilitation gym for the strengthening phases of treatment.",
   buttonText: "Book Frozen Shoulder Assessment",
   buttonLink: "/book",
-  mapEmbed: "https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d3611.5000000!2d55.2072235!3d25.068346!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x0:0x0!2zMjXCsDA0JzA2LjEiTiA1NcKwMTInMjYuMCJF!5e0!3m2!1sen!2sae!4v1234567890!5m2!1sen!2sae"
+  image: "/images/clinic-reception.jpg"
 };
 
 export const frozenShoulderCTA = {
-  title: "Frozen shoulder is highly treatable.",
-  subheading: "The right phase-specific approach makes the difference.",
-  buttonText: "Book Assessment",
-  buttonLink: "/book",
-  bgColor: "bg-[#1C3D2E]"
+   bgColor: 'bg-[#FAF7F2]',
+  label: 'READY TO ADDRESS YOUR FROZEN SHOULDER?',
+  title: ['Frozen shoulder is highly treatable. The right phase-specific approach makes the difference.'],
+  description: 'If you have shoulder pain and stiffness that has progressed over weeks or months, with restriction in all directions, frozen shoulder is a likely diagnosis. The first step is a 60-minute frozen shoulder assessment at our JVC clinic. We confirm or rule out frozen shoulder, identify your specific phase, design a phase-appropriate treatment plan, and provide realistic timeline expectations. Diabetic patients welcome — we have specific expertise in this presentation. Same-week appointments typically available.',
+  button1Text: 'Book Frozen Shoulder Assessment',
+
+  button2Text: 'Chat on WhatsApp',
+  bullets: [
+    'Initial consultation from AED 350',
+    ' Walking distance from Circle Mall, JVC',
+    ' 200+ frozen shoulder patients treated',
+    'Diabetic patient expertise',
+    'Insurance direct-billing',
+   
+  ]
 };
 
 export const frozenShoulderRelatedPages = {
-  bgColor: "bg-[#F8F4EE]",
+  bgColor: "bg-[#F2EDE4]",
   label: "EXPLORE FURTHER",
   title: "Related services and conditions",
   linkText: "Browse all physiotherapy services",
   linkHref: "/physiotherapy-jvc/",
   pages: [
     {
-      title: "Sports Injury Physiotherapy",
-      description: "For shoulder injuries from sports — rotator cuff, impingement, instability. Sport-specific protocols.",
-      href: "/physiotherapy/sports-injury-jvc/"
-    },
-    {
       title: "Physiotherapy in JVC",
-      description: "Our complete physiotherapy department — all specialisations including shoulder conditions.",
+      description: "Our complete physiotherapy department — all seven specialisations including shoulder conditions, team, conditions treated.",
       href: "/physiotherapy-jvc/"
     },
     {
+      title: "Back Pain Physiotherapy",
+      description: "Evidence-based physiotherapy for back pain — same evidence-based approach, different anatomical region.",
+      href: "/conditions/back-pain-physiotherapy-jvc"
+    },
+    {
       title: "Post-Surgery Rehabilitation",
-      description: "For patients after shoulder surgery — rotator cuff repair, shoulder replacement, capsular release. Coordinated with operating surgeon.",
+      description: "For patients with shoulder surgery who developed post-surgical frozen shoulder. Coordinated with operating surgeon.",
       href: "/physiotherapy/post-surgery-rehab-dubai/"
     },
     {
-      title: "Arthritis Integrated Care",
-      description: "For shoulder arthritis patients interested in integrated Ayurveda + physiotherapy care. Optional pathway combining traditional and conventional approaches.",
-      href: "/conditions/arthritis-ayurveda-dubai/"
+      title: "Sports Injury Physiotherapy",
+      description: "For shoulder injuries from sports — padel-related shoulder issues, gym training shoulder problems, sport-specific patterns.",
+      href: "/physiotherapy/sports-injury-jvc/"
     }
   ]
 };

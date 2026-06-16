@@ -42,7 +42,7 @@ const Therapies2 = () => {
               Acute and chronic back pain
             </p>
           </Link>
-          <div className="bg-white p-6 rounded-lg hover:shadow-lg transition-all cursor-pointer group">
+          <Link href="/conditions/neck-pain-physiotherapy-jvc/" className="bg-white p-6 rounded-lg hover:shadow-lg transition-all cursor-pointer group block">
             <div className="mb-4">
               <svg
                 xmlns="http://www.w3.org/2000/svg"
@@ -69,8 +69,8 @@ const Therapies2 = () => {
             <p className="text-sm text-[#6B7280]">
               Postural and degenerative neck conditions
             </p>
-          </div>
-          <div className="bg-white p-6 rounded-lg hover:shadow-lg transition-all cursor-pointer group">
+          </Link>
+          <Link href="/conditions/frozen-shoulder-dubai/" className="bg-white p-6 rounded-lg hover:shadow-lg transition-all cursor-pointer group block">
             <div className="mb-4">
               <svg
                 xmlns="http://www.w3.org/2000/svg"
@@ -96,8 +96,8 @@ const Therapies2 = () => {
             <p className="text-sm text-[#6B7280]">
               Adhesive capsulitis specialist treatment
             </p>
-          </div>
-          <Link href="/conditions/arthritis-ayurveda-dubai/" className="bg-white p-6 rounded-lg hover:shadow-lg transition-all cursor-pointer group block">
+          </Link>
+          <Link href="/conditions/knee-pain-physiotherapy-dubai/" className="bg-white p-6 rounded-lg hover:shadow-lg transition-all cursor-pointer group block">
             <div className="mb-4">
               <svg
                 xmlns="http://www.w3.org/2000/svg"

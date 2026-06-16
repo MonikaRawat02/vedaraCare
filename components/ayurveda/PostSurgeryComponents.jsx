@@ -212,9 +212,9 @@ export const TransparentPricing = ({ data }) => {
 };
 
 // 9. The Team
-export const PostSurgeryTeam = ({ data }) => {
+export const PostSurgeryTeam = ({ data, bgColor = "bg-white" }) => {
   return (
-    <section className="bg-white py-24 px-6">
+    <section className={`${bgColor} py-24 px-6`}>
       <div className="max-w-[1200px] mx-auto">
         <div className="text-center mb-16">
           <span className="text-[13px] font-sans font-semibold tracking-[0.15em] text-[#C9A961] uppercase block mb-4">
@@ -243,8 +243,7 @@ export const PostSurgeryTeam = ({ data }) => {
               </div>
               <div className="p-8">
                 <h3 className="text-[19px] font-serif font-medium text-[#1A1A1A] mb-1">{member.name}</h3>
-                <p className="text-[13px] font-sans text-[#C9A961] mb-2 uppercase tracking-widest">{member.credentials}</p>
-                {member.role && <p className="text-[14px] font-sans text-[#6B6B6B] mb-4">{member.role}</p>}
+                <p className="text-[13px] font-sans text-[#C9A961] mb-4 uppercase tracking-widest">{member.credentials}</p>
                 <div className="flex flex-wrap gap-2 mb-4">
                   {member.tags.map((tag, tagIdx) => (
                     <span key={tagIdx} className="text-[11px] font-sans font-medium bg-white px-2 py-1 rounded border border-gray-100 text-[#6B6B6B]">
