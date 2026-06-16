@@ -72,8 +72,7 @@ const Header = () => {
       <div 
         className={`bg-[#184C3A] text-white overflow-hidden transition-all duration-300 ${
           showTopBar ? 'h-10 opacity-100' : 'h-0 opacity-0'
-        }`}
-      >
+        }`}>
         <div className="max-w-[1440px] mx-auto px-6 h-full flex items-center justify-between text-[14px] font-sans">
           <div className="flex items-center gap-6">
             <a href="tel:+9714XXXXXXX" className="flex items-center gap-2 hover:opacity-80 transition-opacity">
