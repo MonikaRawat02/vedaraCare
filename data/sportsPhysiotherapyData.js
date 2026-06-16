@@ -344,6 +344,10 @@ export const sportsPhysiotherapyReviews = {
 export const sportsPhysiotherapyFaqs = {
   bgColor: "bg-[#FFFFFF]",
   label: "COMMON QUESTIONS",
+  sidebarLinks: [
+    { text: "Visit physiotherapy main page", href: "/physiotherapy-jvc/" },
+    
+  ],
   title: "What sports patients ask before booking.",
   description: "For general physiotherapy questions, see our main physiotherapy page.",
   faqs: [
