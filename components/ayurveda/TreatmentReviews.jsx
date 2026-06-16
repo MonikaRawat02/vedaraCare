@@ -52,9 +52,14 @@ const TreatmentReviews = ({
                   ))}
                 </div>
                 
-                <p className="text-base leading-relaxed mb-8 flex-grow italic" style={{ 
-                  fontFamily: 'Fraunces, serif',
-                  color: 'rgb(28, 25, 23)',
+                <h3 style={{ 
+                  fontFamily: 'Fraunces, Georgia, serif', 
+                  fontSize: '14px', 
+                  fontWeight: '400', 
+                  fontStyle: 'normal', 
+                  color: 'rgb(28, 25, 23)', 
+                  lineHeight: '1.5', 
+                  marginBottom: '16px' 
                 }} dangerouslySetInnerHTML={{ __html: `"${review.quote}"` }} />
                 
                 <div className="mt-auto pt-4" style={{ borderTop: '1px solid rgba(28, 25, 23, 0.1)' }}>
@@ -139,15 +144,13 @@ const TreatmentReviews = ({
               </div>
               
               <h3 style={{ 
-                fontFamily: 'sans-serif',
-                role: 'paragraph',
+                fontFamily: 'Fraunces, Georgia, serif',
                 fontSize: '14px', 
-                fontWeight: '120', 
-                margin: '0px 0px 20px',
-                fontStyle: "norrmal", 
+                fontWeight: '400', 
+                fontStyle: 'normal', 
                 color: (isDarkText || isWhiteCard) ? '#1A1A1A' : '#F5F0E8', 
-                lineHeight: '1.35', 
-                marginBottom: '16px' 
+                lineHeight: '1.5', 
+                marginBottom: '17px' 
               }} dangerouslySetInnerHTML={{ __html: `"${review.quote}"` }} />
               
               {review.content && (
