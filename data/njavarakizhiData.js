@@ -320,8 +320,12 @@ export const njavarakizhiReviews = {
 export const njavarakizhiFaqs = {
   bgColor: "bg-white",
   label: "NJAVARAKIZHI QUESTIONS",
+  sidebarLinks: [
+    { text: "Compare Ayurvedic massages", href: "/treatments/ayurvedic-massage-jvc/" },
+    { text: "Read about Abhyanga", href: "/treatments/abhyanga-dubai/" }
+  ],
   title: "What patients ask before considering Njavarakizhi.",
-  description: "For broader Ayurvedic treatment options, see our <a href=\"/ayurveda-dubai/\">category page</a>. For comparison with other massages, see our <a href=\"/treatments/ayurvedic-massage-jvc/\">massage guide</a>.",
+  description: "For comparison with other Ayurvedic massages, see our category guide. For Abhyanga or general Ayurvedic care, see the broader treatment pages.",
   buttonText: "Ask the Team",
   faqs: [
     {

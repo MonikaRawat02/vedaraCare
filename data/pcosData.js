@@ -392,8 +392,12 @@ export const pcosPrograms = {
 export const pcosFaqs = {
   bgColor: "bg-[#F5F0E8]",
   label: "PCOS QUESTIONS",
+  sidebarLinks: [
+    { text: "Read about Panchakarma", href: "/treatments/panchakarma-dubai/" },
+    { text: "Read about Shirodhara", href: "/treatments/shirodhara-dubai/" }
+  ],
   title: "What women ask before starting Ayurvedic PCOS treatment.",
-  description: "For specific treatment details, <a href=\"/treatments/panchakarma-dubai/\" class=\"doctor-specialty-link\">Read about Panchakarma</a>. Also, <a href=\"/treatments/shirodhara-dubai/\" class=\"doctor-specialty-link\">Read about Shirodhara</a>. For women's health blog posts on PCOS, see our journal.",
+  description: "For specific treatment details, see the Panchakarma and treatment pages. For women's health blog posts on PCOS, see our journal.",
   buttonText: "Ask the Team",
   faqs: [
     {
