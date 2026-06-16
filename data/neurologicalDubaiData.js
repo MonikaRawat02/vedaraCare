@@ -390,6 +390,10 @@ export const neurologicalDubaiLocationData = {
 export const neurologicalDubaiFAQData = {
   bgColor: "bg-[#F5F1E8]",
   label: "COMMON QUESTIONS",
+  sidebarLinks: [
+    { text: "physiotherapy main page", href: "/physiotherapy-jvc/" },
+    { text: "Read about home physiotherapy", href: "/home-healthcare-jvc/" }
+  ],
   title: "What patients and families ask before booking.",
   description: "For questions about specific conditions, see our condition-specific pages. For JVC-specific questions, see our clinic page.",
   buttonText: "Ask Our Neurological Team",

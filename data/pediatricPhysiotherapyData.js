@@ -188,6 +188,10 @@ export const pediatricPhysiotherapySportsInjuryTypes ={
 export const pediatricPhysiotherapyFaqs = {
   label: "COMMON QUESTIONS",
   title: "What parents ask before booking.",
+  sidebarLinks: [
+    { text: "Visit physiotherapy main page", href: "/physiotherapy-jvc/" },
+   
+  ],
   description: "For general physiotherapy questions, see our main physiotherapy page.",
   faqs: [
     {

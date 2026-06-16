@@ -366,6 +366,10 @@ export const physiotherapyTwoImage = {
 export const physiotherapyFaqs = {
   bgColor: "bg-[#FFFFFF]",
   label: "COMMON QUESTIONS",
+  sidebarLinks: [
+    { text: "Visit our JVC clinic page", href: "/physiotherapy-jvc/" },
+    { text: "Read pricing guide", href: "/blog/ayurveda-cost-dubai/" }
+  ],
   title: "What patients ask about physiotherapy in Dubai.",
   description: "For JVC-specific questions (parking, location, hours), see our JVC clinic page..",
   buttonText: "Ask Our Team on WhatsApp",

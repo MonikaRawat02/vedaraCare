@@ -323,6 +323,10 @@ export const kneePainPricing = {
 export const kneePainFaqs = {
   bgColor: "bg-[#F2EDE5]",
   label: "COMMON QUESTIONS",
+  sidebarLinks: [
+    { text: "Visit physiotherapy main page", href: "/physiotherapy-jvc/" },
+    { text: "Sports injury physiotherapy", href: "/physiotherapy/sports-injury-jvc/" }
+  ],
   title: "What knee pain patients ask before booking.",
   description: "For general physiotherapy questions, see our main physiotherapy page.",
   faqs: [

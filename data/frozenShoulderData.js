@@ -394,9 +394,9 @@ export const frozenShoulderFaqs = {
   label: "COMMON QUESTIONS",
   title: "What frozen shoulder patients ask before booking.",
   sidebarLinks: [
-    { text: "Conditions", href: "/conditions/" },
-    { text: "post-surgical frozen shoulder", href: "/physiotherapy/post-surgery-rehab-dubai/" },
-    { text: "paediatric physiotherapy page", href: "/physiotherapy/pediatric-dubai/" }
+   
+    { text: "physiotherapy main page", href: "/physiotherapy-jvc/" },
+    { text: "Other shoulder conditions", href: "/physiotherapy-jvc/" }
   ],
   description: "For general physiotherapy questions, see our main physiotherapy page.",
   faqs: [
