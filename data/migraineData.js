@@ -233,7 +233,11 @@ export const migrainePrograms = {
 export const migraineFaqs = {
   label: "MIGRAINE QUESTIONS",
   title: "What patients ask before starting Ayurvedic migraine treatment.",
-  description: "For Shirodhara specifically, see the <a href=\"/treatments/shirodhara-dubai/\" class=\"text-gold hover:underline\">treatment page</a>. For stress-related headache without migraine pattern, see our <a href=\"/conditions/stress-anxiety-ayurveda-dubai/\" class=\"text-gold hover:underline\">stress and anxiety page</a>.",
+  sidebarLinks: [
+    { text: "Read about Shirodhara", href: "/treatments/shirodhara-dubai/" },
+    { text: "Read about Stress & Anxiety Ayurveda", href: "/conditions/stress-anxiety-ayurveda-dubai/" }
+  ],
+  description: "For Shirodhara specifically, see the treatment page. For stress-related headache without migraine pattern, see our stress and anxiety page.",
   buttonText: "Ask the Clinical Team",
   faqs: [
     {

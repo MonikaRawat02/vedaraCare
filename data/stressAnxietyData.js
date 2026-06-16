@@ -274,7 +274,7 @@ export const stressAnxietyPrograms = {
 export const stressAnxietyFaqs = {
   label: "STRESS & ANXIETY QUESTIONS",
   title: "What patients ask before starting Ayurvedic stress and anxiety treatment.",
-  description: "For Shirodhara specifically, see the <a href=\"/treatments/shirodhara-dubai/\" class=\"hover:underline text-gold\">treatment page</a>. For sleep-specific issues, our <a href=\"/treatments/abhyanga-dubai/\" class=\"hover:underline text-gold\">Abhyanga</a> page covers chronic relaxation in depth.",
+  description: "For Shirodhara specifically, see the treatment page. For sleep-specific issues, our insomnia condition page covers chronic insomnia in depth.",
   buttonText: "Ask the Clinical Team",
   faqs: [
     {

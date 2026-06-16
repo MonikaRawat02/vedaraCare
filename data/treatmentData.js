@@ -557,8 +557,12 @@ export const kativastiReviews = {
 export const kativastiFaqs = {
   bgColor: "bg-white",
   label: "KATIVASTI QUESTIONS",
+  sidebarLinks: [
+    { text: "Read about back pain treatment", href: "/conditions/back-pain-ayurveda-dubai/" },
+    { text: "Compare Ayurvedic therapies", href: "/treatments/ayurvedic-massage-jvc/" }
+  ],
   title: "What patients ask before booking Kativasti.",
-  description: "For broader back pain treatment options, see <a href='/conditions/back-pain-ayurveda-dubai/' class='text-[#C9A961] hover:underline'>Read about back pain treatment</a>. For comparison with other Ayurvedic massages, see <a href='/treatments/ayurvedic-massage-jvc/' class='text-[#C9A961] hover:underline'>Compare Ayurvedic therapies</a>.",
+  description: "For broader back pain treatment options, see our condition page. For comparison with other Ayurvedic massages, see our category guide.",
   buttonText: "Ask the Team",
   faqs: [
     {

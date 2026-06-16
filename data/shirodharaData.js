@@ -269,8 +269,12 @@ export const shirodharaReviews = {
 export const shirodharaFaqs = {
   bgColor: "bg-[#F9F6F1]",
   label: "SHIRODHARA QUESTIONS",
+  sidebarLinks: [
+    { text: "Compare Ayurvedic massages", href: "/treatments/ayurvedic-massage-jvc/" },
+    { text: "Read about Abhyanga", href: "/treatments/abhyanga-dubai/" }
+  ],
   title: "What patients ask before their first Shirodhara.",
-  description: "For comparison with other Ayurvedic treatments, see our category guide: <a href='/treatments/ayurvedic-massage-jvc/' class='text-[#C9A961] hover:underline transition-colors'>Compare All Ayurvedic Massages</a>. For <a href='/treatments/abhyanga-dubai/' class='text-[#C9A961] hover:underline transition-colors'>Abhyanga</a> <a href='/treatments/abhyanga-dubai/' class='text-[#C9A961] hover:underline transition-colors'> (often combined with Shirodhara)</a>, see the Abhyanga page.",
+  description: "For comparison with other Ayurvedic therapies, see our category guide. For Abhyanga (often combined with Shirodhara), see the Abhyanga page.",
   buttonText: "Ask the Team",
   faqs: [
     {

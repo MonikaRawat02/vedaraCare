@@ -51,7 +51,7 @@ export const pediatricPhysiotherapyTeam = {
     {
       name: "Dr. Priya Sharma, DPT",
       qualification: "DHA-Licensed · Paediatric Specialist",
-      specialties: ["Adolescents", "Sports", "School-Age"],
+      specialties: [ "Sports", "School-Age", "Adolescents"],
       experience: "Languages: English, Arabi.",
       image: "",
       alt: "Dr. Priya Sharma, DPT paediatric physiotherapy specialist Vedara Care JVC Dubai",
@@ -61,7 +61,7 @@ export const pediatricPhysiotherapyTeam = {
     {
       name: "Dr. Maya Al-Rashid, DPT",
       qualification: "DHA-Licensed · Paediatric Specialist",
-      specialties: ["School-Age Development", "Cerebral Palsy", "Neurological", "Infants"],
+      specialties: ["Cerebral Palsy", "Neurological", "Infants"],
       experience: "Languages: English, Arabi.",
       image: "",
       alt: "Dr. Maya Al-Rashid, DPT paediatric physiotherapy specialist Vedara Care JVC Dubai",
@@ -71,7 +71,7 @@ export const pediatricPhysiotherapyTeam = {
       {
       name: "Dr. Emma Williams, DPT",
       qualification: "DHA-Licensed · Paediatric Specialist",
-      specialties: ["School-Age Development", "Scoliosis", "Postural", "Adolescents"],
+      specialties: [ "Scoliosis", "Postural", "Adolescents"],
       experience: "Languages: English, Arabi.",
       image: "",
       alt: "Dr. Emma Williams, DPT paediatric physiotherapy specialist Vedara Care JVC Dubai",

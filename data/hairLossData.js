@@ -389,8 +389,12 @@ export const hairLossPrograms = {
 export const hairLossFaqs = {
   bgColor: 'bg-white',
   label: 'HAIR LOSS QUESTIONS',
+  sidebarLinks: [
+    { text: "Read about Shirodhara", href: "/treatments/shirodhara-dubai/" },
+    { text: "Read about PCOS Ayurveda", href: "/conditions/pcos-ayurveda-dubai/" }
+  ],
   title: 'What patients ask before starting Ayurvedic hair loss treatment.',
-  description: 'For specific treatment details, see the <a href="/treatments/panchakarma-dubai/" class="doctor-specialty-link">Panchakarma</a> and treatment pages. For hair loss blog posts, see our journal.',
+  description: 'For specific treatment details, see the Nasya, Shirodhara, and Panchakarma pages. For PCOS-related hair loss, see our PCOS condition page.',
   buttonText: 'Ask the Hair Loss Team',
   faqs: [
     {
