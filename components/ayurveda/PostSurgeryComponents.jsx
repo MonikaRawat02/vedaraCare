@@ -15,7 +15,7 @@ export const SurgicalProcedures = ({
   return (
     <section className={`${bgColor} py-24 px-4`}>
       <div className="max-w-[1400px] mx-auto flex flex-col items-center justify-center">
-        <div className="grid lg:grid-cols-2 gap-12 items-start mb-14">
+        <div className="grid lg:grid-cols-2 gap-12 items-start mb-14 ">
           <div className="space-y-4 flex flex-col items-center">
             <p className="text-[13px] font-sans font-semibold tracking-[0.15em] text-[#C4A962] uppercase">
               {label}
