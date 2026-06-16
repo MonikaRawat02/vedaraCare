@@ -196,8 +196,7 @@ export const SciaticaEmergency = ({ data }) => {
                 </p>
                 <a
                   href={rightCard.buttonHref}
-                  className="w-full text-white font-semibold py-4 px-6 rounded flex items-center justify-center gap-2 transition-colors text-sm border-2 border-[#1C1C14] bg-[#1C1C14] hover:bg-[#C9A84C] hover:text-[#1C1C14] hover:border-[#C9A84C]"
-                >
+                  className="w-full text-white font-semibold py-4 px-6 rounded flex items-center justify-center gap-2 transition-colors text-sm border-2 border-[#1C1C14] bg-[#1C1C14] hover:bg-[#C9A84C] hover:text-[#1C1C14] hover:border-[#C9A84C]">
                   {rightCard.buttonText}
                 </a>
               </div>
@@ -325,7 +324,7 @@ export const SciaticaTreatment = ({ data, showBorderLeft = true, rightContentSty
           </div>
           <div className="space-y-6">
             {rightContent.image && (
-              <div className="rounded-lg overflow-hidden">
+              <div className="rounded-md overflow-hidden">
                 <img src={rightContent.image} alt={rightContent.alt || ''} className="w-full object-cover" style={{ aspectRatio: '4/5' }} />
               </div>
             )}
@@ -342,19 +341,19 @@ export const SciaticaTreatment = ({ data, showBorderLeft = true, rightContentSty
               </div>
             )}
             {rightContentStyle === 'list' && rightContent.items && rightContent.items.length > 0 && (
-              <div className="bg-[#F8F5F0] p-6 rounded-lg border border-[#E5DFD3]">
+              <div className="bg-white p-5 rounded-md border border-gray-200 shadow-sm">
                 {rightContent.label && (
-                  <div className="text-xs tracking-[0.2em] uppercase mb-4" style={{ color: '#C9A84C' }}>
+                  <div className="text-[11px] tracking-[0.2em] uppercase mb-4" style={{ color: '#C9A84C', fontFamily: 'Fraunces, Georgia, serif' }}>
                     {rightContent.label}
                   </div>
                 )}
-                <div className="space-y-3">
+                <div className="space-y-2.5">
                   {rightContent.items.map((item, index) => (
-                    <div key={index} className="flex items-center gap-3 pb-3 border-b border-[#E5DFD3] last:pb-0 last:border-b-0">
-                      <div className="w-7 h-7 rounded-full bg-[#1C1C14] flex items-center justify-center text-white text-xs font-serif flex-shrink-0">
+                    <div key={index} className="flex items-center gap-3 py-1">
+                      <div className="w-7 h-7 rounded-full bg-[#1C1A16] flex items-center justify-center text-white text-xs font-serif flex-shrink-0" style={{color: '#C49A2C',fontFamily: 'Fraunces, Georgia, serif' }}>
                         {item.number}
                       </div>
-                      <span style={{ fontSize: '14px', color: '#1C1C14' }}>{item.text}</span>
+                      <span style={{ fontSize: '13px', color: '#1C1C14', fontFamily: 'Inter, system-ui, sans-serif', lineHeight: '1.4' }}>{item.text}</span>
                     </div>
                   ))}
                 </div>
