@@ -4,6 +4,10 @@ import { Star } from 'lucide-react';
 const TreatmentReviews = ({
   bgColor = "bg-[#2A4340]",
   cardBgColor = "rgba(255, 255, 255, 0.05)",
+  statsBgColor = "rgb(24, 20, 18)",
+  buttonBgColor = "rgb(28, 25, 23)",
+  buttonTextColor = "white",
+  buttonBorderColor = "rgb(28, 25, 23)",
   isDarkText = false,
   label = "PATIENT STORIES",
   title = "Kativasti outcomes from our JVC clinic.",
@@ -14,7 +18,8 @@ const TreatmentReviews = ({
   useKneeStyle = false
 }) => {
   // Determine if cards are solid white or light, requiring dark text
-  const isWhiteCard = cardBgColor === 'bg-white' || cardBgColor === 'white' || cardBgColor === '#FFFFFF';
+  const isWhiteCard = cardBgColor === 'bg-white' || cardBgColor === 'white' || cardBgColor === '#FFFFFF' || cardBgColor === 'rgb(255, 255, 255)' || cardBgColor === 'rgb(248, 244, 238)';
+  const isWhiteStatsBg = statsBgColor === 'bg-white' || statsBgColor === 'white' || statsBgColor === '#FFFFFF' || statsBgColor === 'rgb(255, 255, 255)' || statsBgColor === 'rgb(248, 244, 238)';
   
   if (useKneeStyle) {
     return (
@@ -74,11 +79,11 @@ const TreatmentReviews = ({
 
           {/* Stats Row */}
           {stats && stats.length > 0 && (
-            <div className="flex flex-wrap justify-center items-center gap-12 md:gap-24 mb-16 mx-6 rounded-xl p-10" style={{ backgroundColor: 'rgb(24, 20, 18)' }}>
+            <div className="flex flex-wrap justify-center items-center gap-12 md:gap-24 mb-16 mx-6 rounded-xl p-10" style={{ backgroundColor: statsBgColor }}>
               {stats.map((stat, index) => (
                 <div key={index} className="text-center flex-1 min-w-[150px]">
-                  <h4 className="text-4xl font-serif font-medium leading-none mb-2" style={{ color: 'rgb(184, 150, 90)', fontFamily: 'Fraunces, serif' }}>{stat.value}</h4>
-                  <p className="text-xs font-sans tracking-wider" style={{ color: 'rgba(255, 255, 255, 0.8)', fontFamily: 'DM Sans, sans-serif' }}>{stat.label}</p>
+                  <h4 className="text-4xl font-serif font-medium leading-none mb-2" style={{ color: isWhiteStatsBg ? 'rgb(201, 153, 97)' : 'rgb(184, 150, 90)', fontFamily: 'Fraunces, serif' }}>{stat.value}</h4>
+                  <p className="text-xs font-sans tracking-wider" style={{ color: isWhiteStatsBg ? 'rgb(90, 79, 71)' : 'rgba(255, 255, 255, 0.8)', fontFamily: 'DM Sans, sans-serif' }}>{stat.label}</p>
                 </div>
               ))}
             </div>
@@ -89,9 +94,9 @@ const TreatmentReviews = ({
               <button 
                 className="inline-flex items-center px-8 py-3.5 border font-sans font-bold text-sm rounded-md hover:opacity-90 transition-all duration-300"
                 style={{
-                  backgroundColor: 'rgb(28, 25, 23)',
-                  color: 'white',
-                  borderColor: 'rgb(28, 25, 23)',
+                  backgroundColor: buttonBgColor,
+                  color: buttonTextColor,
+                  borderColor: buttonBorderColor,
                   fontFamily: 'DM Sans, sans-serif'
                 }}
               >

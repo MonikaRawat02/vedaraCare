@@ -277,7 +277,8 @@ export const physiotherapyConditions = {
     },
     {
       title: "Tennis Elbow / Golfer's Elbow",
-      description: "Padel and tennis specific"
+      description: "Padel and tennis specific",
+      link: "/conditions/tennis-elbow-dubai/"
     },
     {
       title: "Plantar Fasciitis",

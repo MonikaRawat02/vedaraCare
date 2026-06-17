@@ -1,6 +1,6 @@
 import React from 'react';
 
-const SportsInjuryTypes = ({ label, title, items, footer, variant = 'condition', description = '', bgColor = 'rgb(248, 244, 238)' }) => {
+const SportsInjuryTypes = ({ label, title, items, footer, variant = 'condition', description = '', bgColor = 'rgb(248, 244, 238)', lgColumns = 3 }) => {
   return (
     <section style={{ background: bgColor, padding: '96px 24px' }}>
       <div className="max-w-7xl mx-auto">
@@ -17,7 +17,7 @@ const SportsInjuryTypes = ({ label, title, items, footer, variant = 'condition',
             <p className="text-base leading-relaxed mt-6 max-w-2xl mx-auto" style={{ color: 'rgb(61, 52, 45)', fontFamily: 'DM Sans, sans-serif' }} dangerouslySetInnerHTML={{ __html: description }} />
           )}
         </div>
-        <div className="grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-3 gap-5">
+        <div className={`grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-${lgColumns} gap-5`}>
           {items.map((item, index) => {
             // Determine card background (contrast with section bg)
             const cardBg = bgColor === 'rgb(255, 255, 255)' ? 'rgb(248, 244, 238)' : 'rgb(255, 255, 255)';
@@ -47,7 +47,15 @@ const SportsInjuryTypes = ({ label, title, items, footer, variant = 'condition',
                     {item.typicalPatient}
                   </p>
                 )}
-              </div>
+                
+                {item.statistic && (
+                  <div className="pt-3 border-t text-xs font-medium" style={{ fontFamily: '"DM Sans", system-ui, sans-serif', color: 'rgb(201, 168, 76)', borderColor: 'rgba(201, 168, 76, 0.3)' }}>
+                    {item.statistic}
+                  </div>
+                )}
+                           
+                           
+ </div>
             ) : (
               <div 
                 key={index}

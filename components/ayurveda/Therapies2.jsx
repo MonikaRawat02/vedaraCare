@@ -125,7 +125,7 @@ const Therapies2 = () => {
               Knee conditions including OA
             </p>
           </Link>
-          <div className="bg-white p-6 rounded-lg hover:shadow-lg transition-all cursor-pointer group">
+          <Link href="/conditions/tennis-elbow-dubai/" className="bg-white p-6 rounded-lg hover:shadow-lg transition-all cursor-pointer group block">
             <div className="mb-4">
               <svg
                 xmlns="http://www.w3.org/2000/svg"
@@ -152,7 +152,7 @@ const Therapies2 = () => {
             <p className="text-sm text-[#6B7280]">
               Lateral and medial epicondylitis
             </p>
-          </div>
+          </Link>
           <div className="bg-white p-6 rounded-lg hover:shadow-lg transition-all cursor-pointer group">
             <div className="mb-4">
               <svg

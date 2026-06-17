@@ -442,6 +442,8 @@ const KneePainPhysioDubai = () => {
         bgColor="rgb(248, 244, 238)"
         description={kneePainActivityTypes.description}
         variant="activity"
+        lgColumns={3}
+     
       />
 
       <KneeTreatmentApproach

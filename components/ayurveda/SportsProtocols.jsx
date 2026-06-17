@@ -42,7 +42,9 @@ const SportsProtocols = () => {
               className="text-xl mb-3" 
               style={{ fontFamily: 'var(--font-display, Fraunces, Georgia, serif)', fontWeight: 500, color: 'rgb(26, 26, 26)' }}
             >
-              Padel
+              <a href="/conditions/tennis-elbow-dubai/">
+Padel
+              </a>
             </h4>
             <p 
               className="text-xs mb-3" 
@@ -246,7 +248,9 @@ const SportsProtocols = () => {
               className="text-xl mb-3" 
               style={{ fontFamily: 'var(--font-display, Fraunces, Georgia, serif)', fontWeight: 500, color: 'rgb(26, 26, 26)' }}
             >
-              Tennis
+            <a href="/conditions/tennis-elbow-dubai/">
+                Tennis Elbow / Golfer's Elbow
+              </a>
             </h4>
             <p 
               className="text-xs mb-3" 
