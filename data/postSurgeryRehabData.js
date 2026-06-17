@@ -264,7 +264,7 @@ export const surgicalProceduresData = {
   bgColor: "bg-[#F8F6F0]",
   label: "PROCEDURE-SPECIFIC REHABILITATION",
   title: "Surgical procedures we rehabilitate at our JVC clinic and across Dubai.",
-  image: "/images/post-surgical-physio-vedara-jvc.webp",
+  // image: "/images/post-surgical-physio-vedara-jvc.webp",
   alt: "Post-surgical physiotherapy at Vedara Care JVC",
   description: "Each surgical procedure has specific rehabilitation requirements — different timelines, different early-phase restrictions, different progression criteria. Our protocols follow established evidence-based pathways calibrated to your specific procedure and your surgeon's preferences.",
   types: [

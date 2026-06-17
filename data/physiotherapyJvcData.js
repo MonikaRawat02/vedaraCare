@@ -492,6 +492,10 @@ export const physiotherapyJvcReviews = {
 export const physiotherapyJvcFaqs = {
   bgColor: "bg-[#F5F1EA]",
   label: "COMMON QUESTIONS",
+  sidebarLinks: [
+    { text: "Read about Ayurveda Clinic in JVC", href: "/ayurveda-clinic-jvc" },
+   
+  ],
   title: "What patients ask about physiotherapy at our JVC clinic.",
   description: "For integrated Ayurveda + physiotherapy care, see specific condition pages.",
   faqs: [

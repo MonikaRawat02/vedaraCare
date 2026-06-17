@@ -340,6 +340,11 @@ export const neckPainPricing = {
 export const neckPainFaqs = {
   bgColor: "bg-[#F2EDE5]",
   label: "COMMON QUESTIONS",
+  sidebarLinks: [
+   
+    { text: "physiotherapy main page", href: "/physiotherapy-jvc/" },
+    { text: "Back pain physiotherapy", href: "/conditions/back-pain-physiotherapy-jvc/" }
+  ],
   title: "What people ask about neck pain physiotherapy.",
   description: "For general physiotherapy questions, see our main physiotherapy page.",
   faqs: [

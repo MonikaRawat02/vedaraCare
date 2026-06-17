@@ -384,6 +384,10 @@ export const homePhysioOutcomes = {
 export const homePhysioFaqs = {
   bgColor: "bg-[#F5F1E8]",
   label: "COMMON QUESTIONS",
+  sidebarLinks: [
+    { text: "physiotherapy main page", href: "/physiotherapy-jvc/" },
+    { text: "Home healthcare beyond physiotherapy", href: "/home-healthcare-jvc/" }
+  ],
   title: "What patients ask about home physiotherapy in Dubai.",
   description: "For specialisation-specific questions, see our individual physiotherapy pages.",
   buttonText: "Ask Our Home Physio Team on WhatsApp",
