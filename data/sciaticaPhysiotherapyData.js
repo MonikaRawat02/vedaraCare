@@ -255,8 +255,7 @@ export const sciaticaPhysioTypes = {
       title: "Disc Herniation Sciatica",
       description: "The most common cause of sciatica in patients under 50. A disc protrudes or extrudes beyond its normal boundaries, compressing or irritating the adjacent nerve root. Pain often follows specific movements or positions. Highly responsive to McKenzie method when patients have a directional preference — a specific movement that reduces or 'centralises' their pain.",
       typicalSigns: [
-        "Sudden onset, gradual onset, often related to lifting or bending/rotational/twisting movements",
-        "Classic directional preference for certain positions",
+        "Sudden onset, gradual onset, often related to lifting or bending/rotational/twisting movements, Classic directional preference for certain positions",
         "Typical recovery: 4–12 weeks"
       ]
     },
@@ -265,8 +264,7 @@ export const sciaticaPhysioTypes = {
       title: "Disc Bulge Sciatica",
       description: "Less severe than herniation but can produce similar symptoms. Disc material bulges beyond normal boundaries without rupturing. Often relates to gradual degenerative changes. Patients with disc bulges may have disc bulges visible on imaging without symptoms — the bulge alone does not determine treatment.",
       typicalSigns: [
-        "Gradual onset, often work-related/activity-related",
-        "History of similar episodes, responsive to specific movements",
+        "Gradual onset, often work-related/activity-related, History of similar episodes, responsive to specific movements",
         "Typical recovery: 4–10 weeks"
       ]
     },
@@ -275,8 +273,7 @@ export const sciaticaPhysioTypes = {
       title: "Foraminal Stenosis Sciatica",
       description: "Narrowing of the foraminal channel where the nerve root exits the spine. Common in patients over 50 due to degenerative changes — bone spurs, thickened ligaments, facet joint enlargement. Typically worse with extension (leaning back, walking), better with flexion (sitting, leaning forward).",
       typicalSigns: [
-        "Older patient, gradual onset, worse with standing or walking, better with sitting, often bilateral",
-        "Gradual onset, worse with walking",
+        "Older patient, gradual onset, worse with standing or walking, better with sitting, often bilateral . Gradual onset, worse with walking",
         "Typical recovery: 8–16 weeks"
       ]
     },

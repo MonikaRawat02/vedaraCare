@@ -7,7 +7,9 @@ export const SciaticaTypes = ({
   title = "The different sciatica patterns we treat at our JVC clinic.",
   description = "",
   types = [],
-  footer = ""
+  footer = "",
+  gridCols = "grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-6",
+  typicalSignsLabel = "TYPICAL SIGNS:"
 }) => {
   return (
     <section className={`${bgColor} py-24 px-6`}>
@@ -24,7 +26,7 @@ export const SciaticaTypes = ({
           </p>
         </div>
 
-        <div className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-6">
+        <div className={gridCols}>
           {types.map((type, index) => (
             <div key={index} className={`${cardBg} p-6 rounded-lg border-t-3 border-[#C9A55A] shadow-sm hover:shadow-md transition-all flex flex-col gap-4 h-full`}>
               <div className="text-4xl text-[#C9A55A] font-serif mb-6" style={{ fontFamily: 'Fraunces, Georgia, serif' }}>
@@ -46,14 +48,20 @@ export const SciaticaTypes = ({
                 />
               </div>
 
-              {type.typicalSigns && type.typicalSigns.length > 0 && (
+              {((type.typicalSigns && type.typicalSigns.length > 0) || (type.typicalImpairmentPatterns && type.typicalImpairmentPatterns.length > 0)) && (
                 <div className="pt-4 border-t border-gray-100 mt-4">
-                  <p className="text-xs text-gray-600 mb-2" dangerouslySetInnerHTML={{ __html: `<strong class="text-[#C9A55A]">TYPICAL SIGNS:</strong>` }} />
+                  <p className="text-xs text-gray-600 mb-2" dangerouslySetInnerHTML={{ __html: `<strong class="text-[#C9A55A]">${typicalSignsLabel}</strong>` }} />
                   <ul className="space-y-2">
-                    {type.typicalSigns.map((sign, idx) => (
-                      <li key={idx} className="flex items-center gap-2 text-xs text-[#6B6B6B]">
-                        <span className="text-[#C9A55A] w-3 h-3 rounded-full border border-[#C9A55A] flex items-center justify-center text-[8px]">✓</span>
-                        <span dangerouslySetInnerHTML={{ __html: sign }} />
+                    {(type.typicalSigns || type.typicalImpairmentPatterns).map((sign, idx) => (
+                      <li key={idx} className="text-xs text-[#6B6B6B]">
+                        {sign.startsWith("Typical recovery:") ? (
+                          <div className="flex items-center gap-2">
+                            <span className="text-[#C9A55A] w-3 h-3 rounded-full border border-[#C9A55A] flex items-center justify-center text-[8px]">✓</span>
+                            <span dangerouslySetInnerHTML={{ __html: sign }} />
+                          </div>
+                        ) : (
+                          <span dangerouslySetInnerHTML={{ __html: sign }} />
+                        )}
                       </li>
                     ))}
                   </ul>
@@ -276,7 +284,7 @@ export const SciaticaPricing = ({
   );
 };
 
-export const SciaticaTreatment = ({ data, showBorderLeft = true, rightContentStyle = 'tags', bgColor = 'bg-white' }) => {
+export const SciaticaTreatment = ({ data, showBorderLeft = true, rightContentStyle = 'tags', bgColor = 'bg-white', showStepNumbers = false }) => {
   const { treatment = {}, rightContent = {} } = data || {};
 
   return (
@@ -299,22 +307,54 @@ export const SciaticaTreatment = ({ data, showBorderLeft = true, rightContentSty
             {treatment.title}
           </h2>
         </div>
+        {treatment.intro && (
+          <p className="text-base mb-12 max-w-[720px] mx-auto" style={{ color: 'rgb(107,107,107)', lineHeight: '1.8', fontSize: '16px', textAlign: 'center' }}>
+            {treatment.intro}
+          </p>
+        )}
         <div className="grid grid-cols-1 lg:grid-cols-2 gap-12 items-stretch">
           <div className="relative">
             <div className="lg:absolute lg:inset-0 lg:overflow-y-auto lg:pr-6 space-y-8 no-scrollbar">
-              <p className="text-base" style={{ color: 'rgb(107, 107, 107)', lineHeight: '1.8', fontSize: '16px' }}>
-                {treatment.intro}
-              </p>
-              {(treatment.steps || []).map((step, index) => (
-                <div key={index} className={`space-y-3 ${showBorderLeft ? 'border-l-4 border-[#C9A84C] pl-6' : ''}`}>
-                  <h3 className="text-lg font-serif" style={{ fontFamily: 'Fraunces, Georgia, serif', color: 'rgb(26,26,26)', fontSize: '19px', fontWeight: 600 }}>
-                    {step.title}
-                  </h3>
-                  <p className="text-base" style={{ color: 'rgb(107, 107, 107)', lineHeight: '1.8', fontSize: '15px' }}>
-                    {step.description}
-                  </p>
-                </div>
-              ))}
+              {(treatment.steps || []).map((step, index) => {
+                const displayNumber = step.number || (index + 1 < 10 ? `0${index + 1}` : `${index + 1}`);
+                const hasTitle = step.title && step.title.trim() !== '';
+                return (
+                  <div key={index} className={`space-y-3 ${showBorderLeft ? 'border-l-4 border-[#C9A84C] pl-6' : ''}`}>
+                    {showStepNumbers ? (
+                      <>
+                        {hasTitle && (
+                          <div className="flex items-start gap-3">
+                            <div className="w-7 h-7 rounded-full bg-white border-2 border-[#C9A84C] flex items-center justify-center text-xs font-serif flex-shrink-0" style={{ color: '#C9A84C', fontFamily: 'Fraunces, Georgia, serif' }}>
+                              {displayNumber}
+                            </div>
+                            <h3 className="text-lg font-serif" style={{ fontFamily: 'Fraunces, Georgia, serif', color: 'rgb(26,26,26)', fontSize: '19px', fontWeight: 600 }}>
+                              {step.title}
+                            </h3>
+                          </div>
+                        )}
+                        {step.description && (
+                          <p className={hasTitle ? "text-base ml-10" : "text-base"} style={{ color: 'rgb(107,107,107)', lineHeight: '1.8', fontSize: '15px' }}>
+                            {step.description}
+                          </p>
+                        )}
+                      </>
+                    ) : (
+                      <>
+                        {hasTitle && (
+                          <h3 className="text-lg font-serif" style={{ fontFamily: 'Fraunces, Georgia, serif', color: 'rgb(26,26,26)', fontSize: '19px', fontWeight: 600 }}>
+                            {step.title}
+                          </h3>
+                        )}
+                        {step.description && (
+                          <p className="text-base" style={{ color: 'rgb(107,107,107)', lineHeight: '1.8', fontSize: '15px' }}>
+                            {step.description}
+                          </p>
+                        )}
+                      </>
+                    )}
+                  </div>
+                );
+              })}
               {treatment.footer && (
                 <blockquote className="py-6 border-y border-[#E5DFD3] mt-6 italic" style={{ color: '#C9A84C', fontFamily: 'Fraunces, Georgia, serif', fontSize: '19px', lineHeight: '1.7' }}>
                   {treatment.footer}
@@ -354,6 +394,33 @@ export const SciaticaTreatment = ({ data, showBorderLeft = true, rightContentSty
                         {item.number}
                       </div>
                       <span style={{ fontSize: '13px', color: '#1C1C14', fontFamily: 'Inter, system-ui, sans-serif', lineHeight: '1.4' }}>{item.text}</span>
+                    </div>
+                  ))}
+                </div>
+              </div>
+            )}
+            {rightContentStyle === 'simpleBox' && rightContent.text && (
+              <div className="bg-white p-6 rounded-lg border-l-4 border-[#C9A84C] shadow-sm">
+                {rightContent.label && (
+                  <div className="text-[11px] tracking-[0.2em] uppercase mb-4" style={{ color: '#C9A84C', fontFamily: 'Fraunces, Georgia, serif' }}>
+                    {rightContent.label}
+                  </div>
+                )}
+                <p style={{ fontSize: '15px', color: '#1C1C14', fontFamily: 'Inter, system-ui, sans-serif', lineHeight: '1.7' }}>{rightContent.text}</p>
+              </div>
+            )}
+            {rightContentStyle === 'bulletList' && rightContent.items && rightContent.items.length > 0 && (
+              <div className="bg-[#FAF7F2] p-6 rounded-xl border border-[#E5DFD3]">
+                {rightContent.label && (
+                  <div className="text-[11px] tracking-[0.2em] uppercase mb-4" style={{ color: '#C9A84C', fontFamily: 'Fraunces, Georgia, serif' }}>
+                    {rightContent.label}
+                  </div>
+                )}
+                <div className="space-y-2">
+                  {rightContent.items.map((item, index) => (
+                    <div key={index} className="flex items-start gap-3 pb-3 border-b border-[#E5DFD3] last:border-b-0 last:pb-0">
+                      <div className="w-2 h-2 rounded-full bg-[#C9A84C] flex-shrink-0 mt-1.5"></div>
+                      <span style={{ fontSize: '13px', color: '#333333', fontFamily: 'Inter, system-ui, sans-serif', lineHeight: '1.5' }}>{item.text}</span>
                     </div>
                   ))}
                 </div>
