@@ -304,8 +304,11 @@ export const abhyangaReviews = {
 export const abhyangaFaqs = {
   bgColor: "bg-white",
   label: "ABHYANGA QUESTIONS",
+  sidebarLinks: [
+    { text: "Compare Ayurvedic massages", href: "/treatments/ayurvedic-massage-jvc/" }
+  ],
   title: "What patients ask before their first Abhyanga.",
-  description: "For a comparison with other Ayurvedic massages, see our category guide: <a href='/treatments/ayurvedic-massage-jvc/' class='text-[#C9A961] hover:underline transition-colors'>Compare All Ayurvedic Massages</a>.",
+  description: "For a comparison with other Ayurvedic massages, see our category guide.",
 
 
   buttonText: "Ask the Team",
