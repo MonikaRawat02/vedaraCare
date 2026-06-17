@@ -13,7 +13,11 @@ const TreatmentMechanism = ({
   bulletPoints = [],
   additionalText = "",
   showStats = false,
-  keyFact = ""
+  keyFact = "",
+  keyFactLabel = "KEY FACT",
+  keyAnatomy = [],
+  whatWeRecommendAgainst = null,
+  comparisonSection = null
 }) => {
   const isContentFormat = content.length > 0;
 
@@ -46,6 +50,28 @@ const TreatmentMechanism = ({
                 />
               ))}
 
+              {/* What we recommend against */}
+              {whatWeRecommendAgainst && (
+                <div className="mt-10 p-8 rounded-xl" style={{ backgroundColor: 'rgb(255, 248, 248)', border: '1px solid rgba(212, 24, 61, 0.1)' }}>
+                  <h3 className="mb-6 text-base font-semibold" style={{ fontFamily: 'Fraunces, Georgia, serif', color: 'rgb(28, 21, 10)' }}>
+                    {whatWeRecommendAgainst.title}
+                  </h3>
+                  <div className="space-y-4">
+                    {whatWeRecommendAgainst.items.map((item, index) => (
+                      <div key={index} className="flex gap-3">
+                        <svg xmlns="http://www.w3.org/2000/svg" width="16" height="16" viewBox="0 0 24 24" fill="none" stroke="currentColor" strokeWidth="2" strokeLinecap="round" strokeLinejoin="round" className="mt-1 shrink-0" style={{ color: 'rgb(212, 24, 61)' }}>
+                          <path d="M18 6 6 18"></path>
+                          <path d="m6 6 12 12"></path>
+                        </svg>
+                        <p className="text-gray-700 leading-relaxed">
+                          <strong>{item.label}</strong>{item.description}
+                        </p>
+                      </div>
+                    ))}
+                  </div>
+                </div>
+              )}
+
               {/* Quote */}
               {quote && (
                 <blockquote className="text-2xl italic text-[#C8975F] border-l-4 border-[#C8975F] pl-6 my-8" style={{ fontFamily: 'Fraunces, serif' }}>
@@ -54,24 +80,79 @@ const TreatmentMechanism = ({
               )}
             </div>
 
-            {/* Image + Key Fact */}
+            {/* Image + Key Fact / Comparison */}
             <div className={`lg:w-[45%] ${imageLeft ? 'lg:order-1' : 'lg:order-2'}`}>
               <img 
                  src={image || ""} 
                 alt={alt} 
                 className="w-full h-[400px] object-cover rounded-xl shadow-lg"/>
 
-              {/* Key Fact */}
-              {keyFact && (
+              {/* Comparison Section */}
+              {comparisonSection && (
+                <div className="mt-6 bg-white rounded-2xl overflow-hidden border border-gray-100 shadow-sm">
+                  <div className="grid grid-cols-2 border-b border-gray-100">
+                    <div className="p-4 text-center border-r border-gray-100">
+                      <p className="text-xs font-semibold mb-2" style={{ color: 'rgb(212, 24, 61)' }}>Cortisone at 6 weeks</p>
+                      <p className="text-lg font-bold mb-1" style={{ fontFamily: 'Fraunces, Georgia, serif', color: 'rgb(212, 24, 61)' }}>Better</p>
+                      <p className="text-[10px] text-gray-500">Short-term relief</p>
+                    </div>
+                    <div className="p-4 text-center">
+                      <p className="text-xs font-semibold mb-2" style={{ color: 'rgb(42, 122, 74)' }}>Physio at 6 weeks</p>
+                      <p className="text-lg font-bold mb-1" style={{ fontFamily: 'Fraunces, Georgia, serif', color: 'rgb(42, 122, 74)' }}>Building</p>
+                      <p className="text-[10px] text-gray-500">Tendon remodelling</p>
+                    </div>
+                  </div>
+                  <div className="grid grid-cols-2 border-b border-gray-100">
+                    <div className="p-4 text-center border-r border-gray-100">
+                      <p className="text-xs font-semibold mb-2" style={{ color: 'rgb(212, 24, 61)' }}>Cortisone at 12 months</p>
+                      <p className="text-lg font-bold mb-1" style={{ fontFamily: 'Fraunces, Georgia, serif', color: 'rgb(212, 24, 61)' }}>Worse</p>
+                      <p className="text-[10px] text-gray-500">Higher recurrence</p>
+                    </div>
+                    <div className="p-4 text-center">
+                      <p className="text-xs font-semibold mb-2" style={{ color: 'rgb(42, 122, 74)' }}>Physio at 12 months</p>
+                      <p className="text-lg font-bold mb-1" style={{ fontFamily: 'Fraunces, Georgia, serif', color: 'rgb(42, 122, 74)' }}>Better</p>
+                      <p className="text-[10px] text-gray-500">Sustained recovery</p>
+                    </div>
+                  </div>
+                  <div className="p-3 text-center bg-[#FAF8F5]">
+                    <p className="text-xs text-gray-600">Based on multiple systematic reviews and meta-analyses</p>
+                  </div>
+                </div>
+              )}
+
+              {/* Key Fact / Key Anatomy */}
+              {!comparisonSection && (keyAnatomy.length > 0 ? (
+                <div className="mt-6 bg-white p-6 rounded-xl" style={{ border: "1px solid rgba(28, 21, 10, 0.08)" }}>
+                  <p className="text-xs font-semibold tracking-widest uppercase mb-4" style={{ fontFamily: '"DM Sans", system-ui, sans-serif', color: "rgb(201, 168, 76)" }}>
+                    Key anatomy
+                  </p>
+                  <div className="space-y-3">
+                    {keyAnatomy.map((item, index) => (
+                      <div 
+                        key={index} 
+                        className="pb-3 last:pb-0"
+                        style={{ borderBottom: index < keyAnatomy.length - 1 ? "1px solid rgba(28, 21, 10, 0.06)" : "none" }}
+                      >
+                        <div className="text-sm font-medium mb-0.5" style={{ fontFamily: '"DM Sans", system-ui, sans-serif', color: "rgb(28, 21, 10)" }}>
+                          {item.title}
+                        </div>
+                        <div className="text-xs leading-relaxed" style={{ fontFamily: '"DM Sans", system-ui, sans-serif', color: "rgb(122, 110, 97)" }}>
+                          {item.description}
+                        </div>
+                      </div>
+                    ))}
+                  </div>
+                </div>
+              ) : keyFact ? (
                 <div className="mt-6 bg-white p-6 rounded-lg border border-gray-100 shadow-sm">
                   <p className="text-[12px] font-semibold tracking-[0.15em] uppercase text-[#C9A84C] mb-2">
-                    KEY FACT
+                    {keyFactLabel}
                   </p>
                   <p className="text-sm text-gray-700 leading-relaxed">
                     {keyFact}
                   </p>
                 </div>
-              )}
+              ) : null)}
 
               {/* Stats Cards */}
               {showStats && (
