@@ -284,7 +284,7 @@ export const SciaticaPricing = ({
   );
 };
 
-export const SciaticaTreatment = ({ data, showBorderLeft = true, rightContentStyle = 'tags', bgColor = 'bg-white', showStepNumbers = false }) => {
+export const SciaticaTreatment = ({ data, showBorderLeft = true, rightContentStyle = 'tags', bgColor = 'bg-white', showStepNumbers = false, showComparison = false }) => {
   const { treatment = {}, rightContent = {} } = data || {};
 
   return (
@@ -308,8 +308,7 @@ export const SciaticaTreatment = ({ data, showBorderLeft = true, rightContentSty
           </h2>
         </div>
         {treatment.intro && (
-          <p className="text-base mb-12 max-w-[720px] mx-auto" style={{ color: 'rgb(107,107,107)', lineHeight: '1.8', fontSize: '16px', textAlign: 'center' }}>
-            {treatment.intro}
+          <p className="text-base mb-12 max-w-[720px] mx-auto" style={{ color: 'rgb(107,107,107)', lineHeight: '1.8', fontSize: '16px', textAlign: 'center' }} dangerouslySetInnerHTML={{ __html: treatment.intro }}>
           </p>
         )}
         <div className="grid grid-cols-1 lg:grid-cols-2 gap-12 items-stretch">
@@ -333,8 +332,7 @@ export const SciaticaTreatment = ({ data, showBorderLeft = true, rightContentSty
                           </div>
                         )}
                         {step.description && (
-                          <p className={hasTitle ? "text-base ml-10" : "text-base"} style={{ color: 'rgb(107,107,107)', lineHeight: '1.8', fontSize: '15px' }}>
-                            {step.description}
+                          <p className={hasTitle ? "text-base ml-10" : "text-base"} style={{ color: 'rgb(107,107,107)', lineHeight: '1.8', fontSize: '15px' }} dangerouslySetInnerHTML={{ __html: step.description }}>
                           </p>
                         )}
                       </>
@@ -346,8 +344,7 @@ export const SciaticaTreatment = ({ data, showBorderLeft = true, rightContentSty
                           </h3>
                         )}
                         {step.description && (
-                          <p className="text-base" style={{ color: 'rgb(107,107,107)', lineHeight: '1.8', fontSize: '15px' }}>
-                            {step.description}
+                          <p className="text-base" style={{ color: 'rgb(107,107,107)', lineHeight: '1.8', fontSize: '15px' }} dangerouslySetInnerHTML={{ __html: step.description }}>
                           </p>
                         )}
                       </>
@@ -355,9 +352,28 @@ export const SciaticaTreatment = ({ data, showBorderLeft = true, rightContentSty
                   </div>
                 );
               })}
+              {treatment.whatWeRecommendAgainst && (
+                <div className="mt-10 p-8 rounded-xl" style={{ backgroundColor: 'rgb(255, 248, 248)', border: '1px solid rgba(212, 24, 61, 0.1)' }}>
+                  <h3 className="mb-6 text-base font-semibold" style={{ fontFamily: 'Fraunces, Georgia, serif', color: 'rgb(26, 26, 26)' }}>
+                    {treatment.whatWeRecommendAgainst.title}
+                  </h3>
+                  <div className="space-y-4">
+                    {treatment.whatWeRecommendAgainst.items.map((item, index) => (
+                      <div key={index} className="flex gap-3">
+                        <svg xmlns="http://www.w3.org/2000/svg" width="16" height="16" viewBox="0 0 24 24" fill="none" stroke="currentColor" strokeWidth="2" strokeLinecap="round" strokeLinejoin="round" className="mt-1 shrink-0" style={{ color: 'rgb(212, 24, 61)' }}>
+                          <path d="M18 6 6 18"></path>
+                          <path d="m6 6 12 12"></path>
+                        </svg>
+                        <p className="text-gray-700 leading-relaxed">
+                          <strong>{item.label}</strong>{item.description}
+                        </p>
+                      </div>
+                    ))}
+                  </div>
+                </div>
+              )}
               {treatment.footer && (
-                <blockquote className="py-6 border-y border-[#E5DFD3] mt-6 italic" style={{ color: '#C9A84C', fontFamily: 'Fraunces, Georgia, serif', fontSize: '19px', lineHeight: '1.7' }}>
-                  {treatment.footer}
+                <blockquote className="py-6 border-y border-[#E5DFD3] mt-6 italic" style={{ color: '#C9A84C', fontFamily: 'Fraunces, Georgia, serif', fontSize: '19px', lineHeight: '1.7' }} dangerouslySetInnerHTML={{ __html: treatment.footer }}>
                 </blockquote>
               )}
             </div>
@@ -366,6 +382,37 @@ export const SciaticaTreatment = ({ data, showBorderLeft = true, rightContentSty
             {rightContent.image && (
               <div className="rounded-md overflow-hidden">
                 <img src={rightContent.image} alt={rightContent.alt || ''} className="w-full object-cover" style={{ aspectRatio: '4/5' }} />
+              </div>
+            )}
+            {showComparison && (
+              <div className="bg-white rounded-2xl overflow-hidden border border-gray-100 shadow-sm">
+                <div className="grid grid-cols-2 border-b border-gray-100">
+                  <div className="p-4 text-center border-r border-gray-100">
+                    <p className="text-xs font-semibold mb-2" style={{ color: 'rgb(212, 24, 61)' }}>Cortisone at 6 weeks</p>
+                    <p className="text-lg font-bold mb-1" style={{ fontFamily: 'Fraunces, Georgia, serif', color: 'rgb(212, 24, 61)' }}>Better</p>
+                    <p className="text-[10px] text-gray-500">Short-term relief</p>
+                  </div>
+                  <div className="p-4 text-center">
+                    <p className="text-xs font-semibold mb-2" style={{ color: 'rgb(42, 122, 74)' }}>Physio at 6 weeks</p>
+                    <p className="text-lg font-bold mb-1" style={{ fontFamily: 'Fraunces, Georgia, serif', color: 'rgb(42, 122, 74)' }}>Building</p>
+                    <p className="text-[10px] text-gray-500">Tendon remodelling</p>
+                  </div>
+                </div>
+                <div className="grid grid-cols-2 border-b border-gray-100">
+                  <div className="p-4 text-center border-r border-gray-100">
+                    <p className="text-xs font-semibold mb-2" style={{ color: 'rgb(212, 24, 61)' }}>Cortisone at 12 months</p>
+                    <p className="text-lg font-bold mb-1" style={{ fontFamily: 'Fraunces, Georgia, serif', color: 'rgb(212, 24, 61)' }}>Worse</p>
+                    <p className="text-[10px] text-gray-500">Higher recurrence</p>
+                  </div>
+                  <div className="p-4 text-center">
+                    <p className="text-xs font-semibold mb-2" style={{ color: 'rgb(42, 122, 74)' }}>Physio at 12 months</p>
+                    <p className="text-lg font-bold mb-1" style={{ fontFamily: 'Fraunces, Georgia, serif', color: 'rgb(42, 122, 74)' }}>Better</p>
+                    <p className="text-[10px] text-gray-500">Sustained recovery</p>
+                  </div>
+                </div>
+                <div className="p-3 text-center bg-[#FAF8F5]">
+                  <p className="text-xs text-gray-600">Based on multiple systematic reviews and meta-analyses</p>
+                </div>
               </div>
             )}
             {rightContentStyle === 'tags' && rightContent.tags && rightContent.tags.length > 0 && (
@@ -424,6 +471,45 @@ export const SciaticaTreatment = ({ data, showBorderLeft = true, rightContentSty
                     </div>
                   ))}
                 </div>
+              </div>
+            )}
+            {rightContentStyle === 'keyAnatomy' && rightContent.keyAnatomy && rightContent.keyAnatomy.length > 0 && (
+              <div className="mt-6 bg-white p-6 rounded-xl" style={{ border: "1px solid rgba(28, 21, 10, 0.08)" }}>
+                {rightContent.label && (
+                  <p className="text-xs font-semibold tracking-widest uppercase mb-4" style={{ fontFamily: '"DM Sans", system-ui, sans-serif', color: "rgb(201, 168, 76)" }}>
+                    {rightContent.label}
+                  </p>
+                )}
+                <div className="space-y-3">
+                  {rightContent.keyAnatomy.map((item, index) => (
+                    <div 
+                      key={index} 
+                      className="pb-3 last:pb-0"
+                      style={{ borderBottom: index < rightContent.keyAnatomy.length - 1 ? "1px solid rgba(28, 21, 10, 0.06)" : "none" }}
+                    >
+                      <div className="text-sm font-medium mb-0.5" style={{ fontFamily: '"DM Sans", system-ui, sans-serif', color: "rgb(28, 21, 10)" }}>
+                        {item.title}
+                      </div>
+                      <div className="text-xs leading-relaxed" style={{ fontFamily: '"DM Sans", system-ui, sans-serif', color: "rgb(122, 110, 97)" }}>
+                        {item.description}
+                      </div>
+                    </div>
+                  ))}
+                </div>
+              </div>
+            )}
+            {rightContentStyle === 'keyFact' && rightContent.keyFact && rightContent.keyFact.length > 0 && (
+              <div className="mt-6 bg-white p-6 rounded-lg border border-gray-100 shadow-sm">
+                {rightContent.label && (
+                  <p className="text-[12px] font-semibold tracking-[0.15em] uppercase text-[#C9A84C] mb-2">
+                    {rightContent.label}
+                  </p>
+                )}
+                {rightContent.keyFact.map((item, index) => (
+                  <p key={index} className="text-sm text-gray-700 leading-relaxed">
+                    {item.description}
+                  </p>
+                ))}
               </div>
             )}
           </div>
@@ -513,4 +599,3 @@ export const SciaticaTimeline = ({ data }) => {
     </section>
   );
 };
-

@@ -43,7 +43,7 @@ const SportsProtocols = () => {
               style={{ fontFamily: 'var(--font-display, Fraunces, Georgia, serif)', fontWeight: 500, color: 'rgb(26, 26, 26)' }}
             >
               <a href="/conditions/tennis-elbow-dubai/">
-Padel
+                      Padel
               </a>
             </h4>
             <p 
