@@ -12,7 +12,8 @@ const AyurvedaHero = ({
   primaryCTA = "",
   secondaryCTA = "",
   trustSignals = [],
-  floatingCard = {}
+  floatingCard = {},
+  patientsTreated = null
 }) => {
   return (
     <>
@@ -84,6 +85,17 @@ const AyurvedaHero = ({
                   className="w-full h-full object-cover"
                 />
               </div>
+              {/* Patients Treated Badge (only if provided */}
+              {patientsTreated && (
+                <div className="absolute top-5 right-5 bg-white shadow-xl rounded-[8px] px-5 py-4 border border-gray-50 z-10">
+                  <p className="text-[24px] font-serif font-bold text-[#1A1A1A] mb-0.5">
+                    {patientsTreated.count}
+                  </p>
+                  <p className="text-[12px] font-sans text-[#5a5a5a]">
+                    {patientsTreated.label}
+                  </p>
+                </div>
+              )}
               {/* Floating Card */}
               <div className="absolute bottom-5 left-5 bg-white shadow-xl rounded-[8px] px-5 py-4 max-w-[270px] border border-gray-50 z-10">
                 <p className="text-[12px] font-sans font-medium text-[#C9A961] mb-0.5">

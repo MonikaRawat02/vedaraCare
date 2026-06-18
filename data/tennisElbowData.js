@@ -18,8 +18,12 @@ export const tennisElbowHero = {
   floatingCard: {
     title: "Most 'tennis elbow' patients have never played tennis.",
     subtitle: "The condition is actually lateral epicondylalgia — a tendinopathy at the outer elbow from any repetitive gripping or wrist extension activity. Office work, padel, gym training cause it. Specific evidence-based loading protocols resolve it." },
-  image: "/images/tennis-elbow-eccentric-loading-vedara-jvc.webp",
-  alt: "Tennis elbow eccentric loading exercise at Vedara Care JVC Dubai clinic"
+  image: "/images/tenennis-elbow-dubai-hero.webp",
+  alt: "Tennis elbow eccentric loading exercise at Vedara Care JVC Dubai clinic",
+  patientsTreated: {
+    count: "220+",
+    label: "Patients treated"
+  }
 };
 
 export const tennisElbowIntro = {
@@ -29,7 +33,67 @@ export const tennisElbowIntro = {
   footer: "Medically reviewed by Dr. Sarah Al-Rashid, DPT, DHA-Licensed · Last updated June 2026"
 };
 
-
+export const tennisElbowSciaticaSection2 = {
+  treatment: {
+    label: "The Approach",
+    title: "Evidence-based tennis elbow treatment — what works and what does not.",
+    intro: "Tennis elbow treatment has evolved substantially. Modern evidence-based protocols produce meaningfully better outcomes than older approaches.",
+    steps: [
+      {
+        description: "Tennis elbow treatment is one of the areas where evidence-based modern protocols differ significantly from older clinical practice. Patients arriving at specialist care often have received treatments that current evidence does not support, or have missed the treatments that do work."    },
+      {
+        description: "<strong>Eccentric and isometric loading — the gold standard</strong><br/>Specific tendon-loading protocols are the most evidence-supported treatment for tennis elbow. Eccentric exercises (lowering phase under load) stimulate tendon remodelling. Isometric exercises (held contractions) provide pain relief and tendon stimulus. Specific protocols (Stanish, Tyler twist, isometric wrist extension holds) have strong evidence bases. The exercises must be specific — generic strengthening rarely produces the same results. The exercises must be progressed appropriately — too little produces no stimulus, too much produces aggravation."
+      },
+      {
+        description: "<strong>Comprehensive initial assessment</strong><br/>The first session is comprehensive — typically 60 minutes including detailed history identifying triggers, specific examination tests (Cozen's test, Mill's test, Maudsley's test), grip strength assessment, range of motion testing, neurological screening to rule out cervical involvement (referred pain from neck can mimic tennis elbow), assessment for comorbid conditions (carpal tunnel, golfer's elbow, shoulder issues), and ergonomic discussion."
+      },
+      {
+        description: "<strong>Manual therapy for associated dysfunction</strong><br/>Tennis elbow often involves associated dysfunction beyond the tendon itself — restricted radial head mobility, scar tissue at the lateral epicondyle, muscle tension in the forearm extensors, sometimes cervical spine contribution. Manual therapy addresses these factors and creates conditions for the loading protocols to work effectively. Mulligan mobilisation with movement (MWM) techniques have specific evidence for tennis elbow."    },
+      {
+        description: "<strong>Dry needling for associated muscle patterns</strong><br/> Dry needling addresses chronic muscle tension patterns in the forearm extensors that often accompany tennis elbow. Particularly useful for chronic cases with significant muscle guarding. The fine needle technique releases trigger points and reduces protective muscle tension. Combined with loading protocols rather than used alone."     },
+      {
+        description: "<strong>Shockwave therapy for chronic cases</strong><br/> For chronic tennis elbow (symptoms more than 12 weeks despite appropriate conservative care), shockwave therapy has good evidence. Both focused and radial shockwave can be effective. Typically 3–6 sessions weekly. Stimulates tendon healing response and can produce substantial improvement in chronic cases that have plateaued. Combined with continued loading protocols rather than used in isolation."
+      },
+      {
+        description: "<strong>Activity modification — calibrated, not complete rest</strong><br/>The traditional advice to 'rest completely' is incorrect for tennis elbow. Complete rest leads to deconditioning and slower recovery. The correct approach is calibrated activity modification — continuing activities that do not aggravate the tendon, reducing or modifying activities that do. Specific guidance depends on your activities and triggers. Most patients can continue most of their normal activities with appropriate modifications."     },
+    ],
+    whatWeRecommendAgainst: {
+      title: "What we recommend against — and why",
+      items: [
+        {
+          label: "Cortisone injections — ",
+          description: "Short-term pain relief but worse long-term outcomes per multiple research studies. Higher recurrence rates and longer overall recovery."
+        },
+        {
+          label: "Complete immobilisation — ",
+          description: "Slows recovery rather than accelerating it."
+        },
+        {
+          label: "Anti-inflammatory medications alone — ",
+          description: "May provide symptom relief but do not address underlying tendon changes."
+        },
+        {
+          label: "Generic exercises without specific loading — ",
+          description: "Common in non-specialist physiotherapy; produces mediocre outcomes."
+        },
+        {
+          label: "\"Pushing through pain\" — ",
+          description: "Aggravates the condition; calibrated loading respects pain limits."
+        }
+      ]
+    },
+    footer:"The treatments that produce the best long-term outcomes for tennis elbow are not the most aggressive — they are the most specific. Loading protocols matched to your tendon's current capacity produce sustainable recovery."
+ },
+  rightContent: {
+    image: "/images/tennis-elbow-anatomy-illustration.webp",
+    alt: "Evidence-based tennis elbow treatment with eccentric loading Vedara Care JVC",
+    label: "EVIDENCE-BASED PROTOCOLS",
+    keyFact: [
+    {
+       description: "Eccentric and isometric loading protocols are the gold standard for lateral epicondylalgia. The Tyler twist (Theraband eccentric) and isometric wrist extension holds have the strongest evidence bases. Protocols must be specifically prescribed and progressed." },
+    ]
+  }
+};
 
 export const tennisElbowMechanism1 = {
   label: "UNDERSTANDING TENNIS ELBOW",
@@ -66,6 +130,10 @@ export const tennisElbowMechanism1 = {
   ],
   quote: "Tennis elbow is one of the most stubborn conditions treated with the wrong approach — and one of the most responsive to specific evidence-based loading protocols. The treatment matters more than the diagnosis."
 };
+
+
+
+
 
 export const tennisElbowTypes = {
   label: "Common Triggers",
@@ -448,7 +516,7 @@ export const tennisElbowRecoveryTimeline = {
   title: "How long does tennis elbow take to resolve?",
   description: "Tennis elbow recovery is measured in months, not weeks. Honest realistic expectations help you stay engaged with treatment.",
   introText: "Tennis elbow recovery follows reasonably predictable patterns based on factors including symptom duration before treatment, severity of presentation, compliance with the loading protocols, and successful activity modification. The phases below represent typical patterns based on research evidence and our clinical experience treating 220+ tennis elbow patients.",
-  image: "/images/tennis-elbow3.jpg",
+
   phases: [
     {
       title: "Initial response",
@@ -505,23 +573,66 @@ export const tennisElbowRecoveryTimeline = {
   buttonHref: "/book"
 };
 
-export const tennisElbowMechanism3 = {
-  bgColor: "bg-[#F5F1E8]",
-  label: "An Important Topic",
-  title: "Should you have a cortisone injection for tennis elbow?",
-  // description: "Recurrence rates are high if underlying factors aren't addressed. Here's how we help you stay pain-free long-term.",
-  image: "/images/tennis-elbow-anatomy-illustration.webp",
-  alt: "Tendon structure remodelling illustration tennis elbow",
-  imageLeft: false,
-  showStats: false,
-  keyFact: "Maintenance loading protocols reduce recurrence risk by over 50% in active people.",
-  comparisonSection: true,
-  content: [
-    "Cortisone (corticosteroid) injections are commonly offered for tennis elbow. Current evidence suggests they are typically not the right choice. This is an important conversation to have before deciding on injection.",
-    "<strong>What the evidence shows</strong><br/>Multiple high-quality research studies (including systematic reviews and meta-analyses) consistently show that cortisone injections for tennis elbow produce short-term pain relief but worse long-term outcomes than physiotherapy alone. Patients who receive cortisone injections often feel substantially better at 6 weeks compared to physiotherapy patients — but by 12 weeks and beyond, the cortisone patients have worse outcomes, higher recurrence rates, and longer overall recovery times.",
-    "<strong>Why the short-term relief is misleading</strong><br/>Cortisone reduces inflammation and provides immediate symptom relief. This feels like rapid improvement. However, cortisone also impairs collagen production in the tendon — meaning the underlying tendon problem worsens while the symptoms feel better. Patients often return to full activity feeling fine, only to experience recurrence when the cortisone effect wears off and the now-weaker tendon cannot handle the load.",
-    "<strong>When cortisone might be appropriate</strong><br/>In specific limited circumstances cortisone can be considered: severe acute pain preventing engagement with any treatment, specific time-pressured situations (important competition or career commitment) where short-term relief is essential, and as part of a broader treatment plan when other approaches have failed. Even in these cases, the patient should understand the long-term tradeoff. Cortisone is not a treatment for the underlying condition — it is symptomatic relief that often makes the underlying condition worse.",
-    "<strong>If you have already had cortisone</strong><br/>Patients who have had cortisone injections still benefit substantially from physiotherapy. The treatment approach remains the same — evidence-based loading protocols, manual therapy, activity modification, sometimes shockwave for chronic cases. Recovery may take slightly longer than for patients without prior injections, but outcomes are still excellent."
-  ],
-  // quote: "Tennis elbow treatment isn't just about getting you pain-free now — it's about keeping you pain-free for years to come."
+
+
+export const tennisElbowSciaticaSection3 = {
+  treatment: {
+    label: "An Important Topic",
+    title: "Should you have a cortisone injection for tennis elbow?",
+    intro: "",
+    steps: [
+      { description: "Cortisone (corticosteroid) injections are commonly offered for tennis elbow. Current evidence suggests they are typically not the right choice. This is an important conversation to have before deciding on injection." },
+      { description: "<strong>What the evidence shows</strong><br/>Multiple high-quality research studies (including systematic reviews and meta-analyses) consistently show that cortisone injections for tennis elbow produce short-term pain relief but worse long-term outcomes than physiotherapy alone. Patients who receive cortisone injections often feel substantially better at 6 weeks compared to physiotherapy patients — but by 12 weeks and beyond, the cortisone patients have worse outcomes, higher recurrence rates, and longer overall recovery times." },
+      { description: "<strong>Why the short-term relief is misleading</strong><br/>Cortisone reduces inflammation and provides immediate symptom relief. This feels like rapid improvement. However, cortisone also impairs collagen production in the tendon — meaning the underlying tendon problem worsens while the symptoms feel better. Patients often return to full activity feeling fine, only to experience recurrence when the cortisone effect wears off and the now-weaker tendon cannot handle the load." },
+      { description: "<strong>When cortisone might be appropriate</strong><br/>In specific limited circumstances cortisone can be considered: severe acute pain preventing engagement with any treatment, specific time-pressured situations (important competition or career commitment) where short-term relief is essential, and as part of a broader treatment plan when other approaches have failed. Even in these cases, the patient should understand the long-term tradeoff. Cortisone is not a treatment for the underlying condition — it is symptomatic relief that often makes the underlying condition worse." },
+      { description: "<strong>If you have already had cortisone</strong><br/>Patients who have had cortisone injections still benefit substantially from physiotherapy. The treatment approach remains the same — evidence-based loading protocols, manual therapy, activity modification, sometimes shockwave for chronic cases. Recovery may take slightly longer than for patients without prior injections, but outcomes are still excellent." }
+    ]
+  },
+  rightContent: {
+    image: "/images/tennis-elbow-anatomy-illustration.webp",
+    alt: "Tendon structure remodelling illustration tennis elbow",
+    label: "KEY FACT",
+    keyFact: [
+      { title: "Maintenance loading protocols", description: "Maintenance loading protocols reduce recurrence risk by over 50% in active people." }
+    ]
+  }
+};
+
+export const tennisElbowSciaticaSection1 = {
+  treatment: {
+    label: "UNDERSTANDING TENNIS ELBOW",
+    title: "What tennis elbow actually is — and why the name is misleading.",
+    intro: "Most patients with tennis elbow have never played tennis. Understanding what is actually happening — and what is not — guides effective treatment.",
+    steps: [
+      {
+        description: "Tennis elbow, formally called lateral epicondylalgia, is a tendinopathy affecting the common extensor tendon at the outer (lateral) elbow. This tendon is the attachment point for the muscles that extend the wrist and fingers — particularly the extensor carpi radialis brevis (ECRB), the muscle most commonly involved. The name 'tennis elbow' persists from historical association with the condition, but it substantially misleads modern patients."
+      },
+      {
+        description: "<strong>Why most tennis elbow patients have never played tennis</strong><br/>The condition affects anyone who performs repetitive wrist extension or sustained gripping activities. In our Dubai patient population, the actual triggers are: padel (extremely common — the overhead and gripping patterns produce high rates), office work (sustained mouse use, prolonged keyboard activity, holding pens or phones), gym training (deadlifts, pull-ups, rows, heavy gripping load), manual work (construction, carpentry, mechanics), childcare (repeated lifting of children, carrying car seats), cooking (chopping, mixing, gripping), music (guitar, drums, certain instruments). Tennis is responsible for perhaps 5% of our tennis elbow patients."
+      },
+      {
+        description: "<strong>What is actually happening in the tendon</strong><br/>Modern understanding of tendinopathy has evolved substantially. Older terminology used 'epicondylitis'(suggesting inflammation), but current research shows the condition is primarily a degenerative process at the cellular level rather than inflammatory. The tendon collagen structure deteriorates, the cells producing new collagen become dysfunctional, and the tendon becomes more vulnerable to load. This matters for treatment — anti-inflammatory approaches alone do not address the underlying problem. Active loading protocols are needed to stimulate proper tendon remodelling."
+      },
+      {
+        description: "<strong>The Dubai-specific patterns we see</strong><br/>Dubai's demographics produce specific tennis elbow patterns. The padel explosion has dramatically increased lateral epicondylalgia presentations — the sport's specific overhead and gripping patterns are particularly causative. Office workers with sustained mouse use and prolonged screen time develop classic patterns from chronic low-level loading. Gym training culture (CrossFit, F45, weightlifting) produces tennis elbow from heavy gripping demands. The combination of multiple contributors is common — many patients have office work plus padel plus gym training, with cumulative loading exceeding tissue tolerance."
+      },
+      {
+        description: "<strong>Why the condition is so frustrating</strong><br/> Tennis elbow has earned a reputation as a stubborn condition. Several factors explain this: (1) onset is usually gradual, often unrecognised until pain becomes substantial — meaning tissue damage is already established when patients seek care, (2) the activities that trigger it are typically essential (work, exercise, daily activities) and difficult to fully avoid, (3) generic 'rest' approaches often fail because tendons need calibrated loading to remodel properly, (4) generic strengthening exercises often miss the specific loading patterns needed, (5) recovery takes longer than patients expect — 12–24 weeks for full resolution is normal, not exceptional."
+      },
+      {
+        description: "<strong>Why the right treatment makes such a difference</strong><br/> Tennis elbow responds excellently to specific evidence-based treatment. Progressive eccentric and isometric loading protocols stimulate proper tendon remodelling. Manual therapy addresses associated muscle and joint dysfunction. Activity modification reduces excessive loading without forbidding all activity. Shockwave therapy provides additional stimulus for chronic cases. Patient education enables sustainable self-management. The treatment is not exotic — but it is specific. Generic physiotherapy with 'elbow exercises' often fails; specific tendinopathy protocols often succeed."
+      }
+    ],
+    footer: "Tennis elbow is one of the most stubborn conditions treated with the wrong approach — and one of the most responsive to specific evidence-based loading protocols. The treatment matters more than the diagnosis."
+  },
+  rightContent: {
+    image: "/images/tennis-elbow-anatomy-illustration.webp",
+    alt: "Tennis elbow anatomy common extensor tendon lateral epicondyle illustration",
+    label: "Key anatomy",
+    keyAnatomy: [
+      { title: "Lateral epicondyle", description: "The bony prominence on the outside of the elbow where the tendon attaches" },
+      { title: "Common extensor tendon", description: "Attachment point for wrist and finger extension muscles" },
+      { title: "ECRB (Extensor Carpi Radialis Brevis)", description: "Most commonly affected muscle — key target of loading protocols" },
+    ]
+  }
 };

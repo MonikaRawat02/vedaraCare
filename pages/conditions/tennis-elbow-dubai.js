@@ -10,10 +10,11 @@ import PhysiotherapyTeam from '../../components/ayurveda/PhysiotherapyTeam';
 import TreatmentLocation from '../../components/ayurveda/TreatmentLocation';
 import FinalCTA from '../../components/ayurveda/FinalCTA';
 import RelatedPages from '../../components/ayurveda/RelatedPages';
+import { SciaticaTreatment } from '../../components/ayurveda/SciaticaSections';
+// import {SciaticaTreatment} from '../../components/ayurveda/SciaticaTreatment';
 import {
   tennisElbowHero,
   tennisElbowIntro,
-  tennisElbowMechanism1,
   tennisElbowTypes,
   tennisElbowMechanism2,
   tennisElbowRecoveryTimeline,
@@ -22,9 +23,12 @@ import {
   tennisElbowTeam,
   tennisElbowPricing,
   tennisElbowFaqs,
+  tennisElbowSciaticaSection2,
   tennisElbowLocation,
   tennisElbowCTA,
-  tennisElbowRelatedPages
+  tennisElbowRelatedPages,
+  tennisElbowSciaticaSection1,
+  tennisElbowSciaticaSection3
 } from '../../data/tennisElbowData';
 
 
@@ -378,24 +382,19 @@ const TennisElbowDubai = () => {
 
       <AyurvedaHero 
         {...tennisElbowHero}
+        patientsTreated={tennisElbowHero.patientsTreated}
       />
       
       <AyurvedaIntro 
         {...tennisElbowIntro}
       />
       
-      <TreatmentMechanism
+      <SciaticaTreatment
+        data={tennisElbowSciaticaSection1}
+        showBorderLeft={false}
+        rightContentStyle="keyAnatomy"
         bgColor="bg-[#F5F1E8]"
-        label={tennisElbowMechanism1.label}
-        title={tennisElbowMechanism1.title}
-        description={tennisElbowMechanism1.description}
-        content={tennisElbowMechanism1.content}
-        quote={tennisElbowMechanism1.quote}
-        image={tennisElbowMechanism1.image}
-        alt={tennisElbowMechanism1.alt}
-        imageLeft={tennisElbowMechanism1.imageLeft}
-        showStats={tennisElbowMechanism1.showStats}
-        keyAnatomy={tennisElbowMechanism1.keyAnatomy}
+        showStepNumbers={false}
       />
 
       <SportsInjuryTypes 
@@ -406,40 +405,26 @@ const TennisElbowDubai = () => {
         lgColumns={4}
       />
 
-      <TreatmentMechanism
-        bgColor="bg-[#FAF8F3]"
-        label={tennisElbowMechanism2.label}
-        title={tennisElbowMechanism2.title}
-        description={tennisElbowMechanism2.description}
-        content={tennisElbowMechanism2.content}
-        quote={tennisElbowMechanism2.quote}
-        image={tennisElbowMechanism2.image}
-        alt={tennisElbowMechanism2.alt}
-        imageRight={tennisElbowMechanism2.imageLeft}
-        showStats={tennisElbowMechanism2.showStats}
-        keyFact={tennisElbowMechanism2.keyFact}
-        keyFactLabel={tennisElbowMechanism2.keyFactLabel}
-        whatWeRecommendAgainst={tennisElbowMechanism2.whatWeRecommendAgainst}
-        // comparisonSection={tennisElbowMechanism2.comparisonSection}
+      <SciaticaTreatment
+        data={tennisElbowSciaticaSection2}
+        showBorderLeft={false}
+        rightContentStyle="keyFact"
+        bgColor="bg-[#F5F1E8]"
+        showStepNumbers={false}
       />
+
+      
 
       <TennisElbowRecoveryTimeline 
         {...tennisElbowRecoveryTimeline}
       />
 
-      <TreatmentMechanism
-        bgColor={tennisElbowMechanism3.bgColor}
-        label={tennisElbowMechanism3.label}
-        title={tennisElbowMechanism3.title}
-        description={tennisElbowMechanism3.description}
-        content={tennisElbowMechanism3.content}
-        quote={tennisElbowMechanism3.quote}
-        image={tennisElbowMechanism3.image}
-        alt={tennisElbowMechanism3.alt}
-        imageLeft={tennisElbowMechanism3.imageLeft}
-        showStats={tennisElbowMechanism3.showStats}
-        keyFact={tennisElbowMechanism3.keyFact}
-        comparisonSection={tennisElbowMechanism3.comparisonSection}
+      <SciaticaTreatment
+        data={tennisElbowSciaticaSection3}
+        showBorderLeft={false}
+        bgColor="bg-[#F5F1E8]"
+        showStepNumbers={false}
+        showComparison={true}
       />
 
       <TreatmentReviews 
