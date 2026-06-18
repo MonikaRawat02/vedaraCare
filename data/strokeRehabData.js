@@ -19,8 +19,8 @@ export const strokeRehabHero = {
     title: "MOST RECOVERY HAPPENS IN",
     subtitle: "the first 6 months. We start within days of hospital discharge, if needed. We’ll meet you wherever you are in your recovery journey."
   },
-  image: "/images/stroke-rehab-dubai-hero.jpg",
-  alt: "Stroke rehabilitation physiotherapy at Vedara Care JVC Dubai"
+  image: "/images/stroke-rehab-dubai-hero.webp",
+  alt: "Post-stroke rehabilitation at Vedara Care JVC Dubai with patient and physiotherapist"
 };
 
 export const strokeRehabIntro = {
@@ -64,8 +64,8 @@ export const strokeRehabRecovery = {
     footer: '"The brain that had a stroke is also the brain that recovers from a stroke. Modern rehabilitation focuses on engaging the brain\'s remarkable capacity to reorganize and adapt."'
   },
   rightContent: {
-    image: "/images/stroke-recovery-anatomy-visualization.jpg",
-    alt: "Stroke recovery and neuroplasticity educational visual",
+    image: "/images/stroke-recovery-neuroplasticity-illustration.webp",
+    alt: "Stroke recovery brain neuroplasticity educational illustration",
     label: "",
     text: ""
   }
@@ -134,7 +134,7 @@ export const strokeRehabCareSettings = {
   ],
   footer: "Most stroke patients move through several phases of care setting during recovery — typically starting with intensive home physiotherapy after hospital discharge, transitioning to combined home and clinic care as mobility improves, eventually moving to clinic-based care for advanced rehabilitation.",
   linkText: "Read more about our home physiotherapy service →",
-  linkHref: "/home-healthcare-jvc/"
+  linkHref: "/physiotherapy-at-home-dubai/"
 };
 
 export const strokeRehabTreatment = {
@@ -182,8 +182,8 @@ export const strokeRehabTreatment = {
     footer: '"Stroke rehabilitation has evolved enormously. The brain\'s capacity to recover is greater than older treatment models recognised — when we apply the right specific intensive interventions, recovery is often substantially better than families expect."'
   },
   rightContent: {
-    image: "/images/stroke-rehabilitation-treatment.webp",
-    alt: "Stroke rehabilitation physiotherapy at Vedara Care JVC Dubai",
+    image: "/images/post-stroke-rehab-vedara-jvc.webp",
+    alt: "Evidence-based stroke rehabilitation CIMT mirror therapy FES at Vedara Care",
     label: "KEY EVIDENCE-BASED PROTOCOLS",
     items: [
       { text: "CIMT - Constraint-Induced Movement Therapy" },
@@ -304,83 +304,83 @@ export const strokeRehabFaqs = {
   faqs: [
     {
       question: "How soon after a stroke can rehabilitation begin?",
-      answer: "As soon as medically cleared — often within days of hospital admission. We coordinate with your treating medical team (doctors, neurologists, hospital therapists). Early intervention substantially improves outcomes. We can see patients while still in hospital, or immediately after discharge. Same-day assessments available for recent hospital discharge transitions."
+      answer: "Rehabilitation begins in hospital, typically within 24–72 hours of stroke when medical condition is stable. Post-hospital rehabilitation at home or clinic typically starts within 48–72 hours of hospital discharge. The first 6 months post-stroke is when most recovery happens, so starting appropriate rehabilitation promptly substantially improves outcomes. We can coordinate with your hospital discharge team to begin home physiotherapy immediately after discharge."
     },
     {
       question: "How long does stroke recovery take?",
-      answer: "Variable based on stroke severity, location, patient age, and rehabilitation intensity and quality. Most rapid recovery is in first 6 months. Substantial recovery possible for 12–24 months with appropriate rehabilitation. Many patients continue slow recovery beyond 2 years — particularly with high-intensity task-specific training. We provide realistic timeline estimates at initial assessment."
+      answer: "Highly variable. Most patients experience the steepest recovery in the first 3 months. Substantial recovery typically continues through the first 6 months. Continued improvement happens beyond 6 months for many patients with appropriate intervention. Some patients see meaningful improvements years after stroke with specific intensive interventions. Most active rehabilitation programmes run 6–12 months; some patients benefit from longer programmes; periodic intensive interventions years post-stroke can produce meaningful gains."
     },
     {
       question: "Will my family member recover fully?",
-      answer: "Honest answer depends on many factors. Some patients recover nearly completely; others have persistent impairments but return to meaningful daily activities. Many patients make substantial recovery with high-quality evidence-based rehabilitation. 'Full recovery' depends on baseline function; we focus on maximizing recovery and function goals meaningful to patient and family."
+      answer: "Honest answer: highly variable. Some patients recover so completely the stroke leaves minimal lasting impact. Others have substantial improvement with persistent impairments. Others have more limited recovery requiring ongoing care. Factors affecting recovery include stroke severity, stroke location, age, overall health, rehabilitation quality and intensity, and family support. We commit to maximising recovery for every patient while being honest about realistic expectations."
     },
     {
       question: "What is constraint-induced movement therapy?",
-      answer: "Constraint-induced movement therapy (CIMT) is evidence-based approach for upper limb recovery. Constrains unaffected arm to force intensive use of affected arm. Requires significant preserved function (some active wrist and finger extension). Proven effective for meaningful recovery. We evaluate appropriateness at assessment."
+      answer: "CIMT is one of the most evidence-supported interventions for upper limb recovery after stroke. The unaffected arm is constrained (with a mitt or sling) while the patient practices intensive repetitive use of the affected arm. Original protocols involve 6 hours daily for 2 weeks; modified versions adapt this to practical contexts. Particularly effective for patients with some preserved upper limb function. Produces upper limb improvements that conventional therapy often does not achieve."
     },
     {
       question: "Do you provide home physiotherapy for stroke patients?",
-      answer: "Yes — throughout Dubai. Home physiotherapy particularly important early after stroke when mobility limited, or for patients with limited transportation. We also transition to in-clinic sessions as mobility improves. Home sessions available 7 days/week."
+      answer: "Yes — home physiotherapy is one of our most-utilised services for stroke patients. Particularly common in the first 2–4 weeks post-hospital discharge when clinic travel is impractical, and for patients with significant mobility limitations throughout recovery. Our home physiotherapists travel across Dubai including JVT, Al Barsha South, Sports City, Motor City, Arjan, Dubai Hills, Marina, Downtown, Palm Jumeirah, Mirdif, and surrounding areas. Many patients combine home and clinic care as mobility improves."
     },
     {
       question: "Where in Dubai is your stroke rehabilitation clinic?",
-      answer: "Our Jumeirah Village Circle (JVC) clinic, walking distance from Circle Mall, Dubai. We also provide home physiotherapy across all areas of Dubai (JVC, Jumeirah Village Triangle, Al Barsha, Dubai Sports City, Motor City, Arjan, Dubai Hills, Dubai Marina, Downtown, Palm Jumeirah, Mirdif, and more)."
+      answer: "Our DHA-licensed clinic is in Jumeirah Village Circle (JVC), Dubai — walking distance from Circle Mall, three minutes from FIVE Jumeirah Village Hotel, and five minutes from JSS Private School. Free patient parking with accessibility for limited-mobility patients. Easy access from Sheikh Mohammed Bin Zayed Road and Al Khail Road. We also provide home physiotherapy across Dubai. Many stroke patients begin with home care and transition to clinic visits as mobility improves."
     },
     {
       question: "Can you coordinate with the hospital where my family member is being treated?",
-      answer: "Yes. We coordinate with your treating neurologist, hospital therapists, and medical team. Request medical records, coordinate continuity, ensure smooth transition after hospital discharge, and communicate progress to medical team."
+      answer: "Yes — hospital discharge coordination is a routine service. We can coordinate with any Dubai hospital's discharge team. Process: contact us during discharge planning, we coordinate timing with the hospital's discharge planners, first home physiotherapy visit typically within 24–72 hours of discharge. We can review hospital records, coordinate with hospital physiotherapy teams during transitions, and integrate with the broader medical plan."
     },
     {
       question: "What about patients from outside Dubai — can you help with stroke care for relatives visiting?",
-      answer: "Yes. We treat many patients from abroad seeking high-quality Dubai stroke rehabilitation. We can arrange short-term intensive programmes (2–4 weeks). WhatsApp us patient details to plan care."
+      answer: "Yes — this is one of our common patient categories. Many Dubai expats bring elderly parents or relatives from other countries for family care after stroke. We provide both home and clinic-based rehabilitation throughout their Dubai stay. Coordination with the patient's home country medical team can be arranged for continuity when they return."
     },
     {
       question: "How is post-stroke rehabilitation different from regular physiotherapy?",
-      answer: "Post-stroke rehabilitation requires specialist neurological training, knowledge of neuroplasticity, evidence-based stroke-specific approaches (CIMT, mirror therapy, FES, high-intensity task-specific training, gait training), coordination with medical team and family education. We have specialist neuro-rehab physiotherapists."
+      answer: "Stroke rehabilitation is a specialised area of physiotherapy requiring specific neurological training, evidence-based protocols designed for neurological conditions (CIMT, mirror therapy, FES, task-specific training), longer sessions for thorough intervention, family caregiver integration, coordination with multiple specialists, longer treatment courses (months to years), and specific outcome measurement. Most general physiotherapy does not have this specialised focus."
     },
     {
       question: "Does insurance cover stroke rehabilitation?",
-      answer: "Yes — direct billing with seven major insurers. Initial assessment AED [X]; structured programmes AED [X]. WhatsApp insurance card before booking for specific coverage confirmation."
+      answer: "Most Dubai insurance plans cover stroke rehabilitation substantially given the well-documented medical need. Extended programmes typically require pre-authorisation, which we handle on your behalf. We are direct-billing partners with Daman, AXA, Allianz, Oman Insurance, Now Health, Bupa, and MetLife. WhatsApp your insurance card and brief patient information before booking — we can confirm specific coverage and discuss pre-authorisation requirements."
     },
     {
       question: "What about patients with severe impairments — can they still benefit?",
-      answer: "Yes — even severe stroke patients benefit from rehabilitation for spasticity management, pressure injury prevention, mobility assistance training, and quality-of-life improvement, care-giver education, and maximising remaining function."
+      answer: "Yes — even patients with significant impairments typically benefit substantially from appropriate intervention. The treatment approach adapts to current capability and progresses as ability improves. Patients who cannot weight-bear initially can still benefit from positioning, range of motion, and early task practice. Patients who cannot communicate well still respond to functional training. Recovery is highly variable; we work with what each patient can do and progress from there."
     },
     {
       question: "Can patients recover years after their stroke?",
-      answer: "Yes — though recovery possible years after stroke, though typically slower. Appropriate high-intensity task-specific training still produces meaningful improvements even long after stroke. We assess appropriateness at evaluation."
+      answer: "Yes, often more than older treatment models recognised. The chronic phase (6+ months post-stroke) was historically considered limited for recovery, but current evidence shows substantial recovery is possible years post-stroke with appropriate intensive intervention. Constraint-induced movement therapy is particularly effective in chronic stroke. Periodic intensive intervention years after stroke can produce meaningful improvement."
     },
     {
       question: "What about stroke prevention after the first stroke?",
-      answer: "Important part of care. We work on cardiovascular fitness, balance, fall prevention, while medical team manages medications. Physiotherapy supports secondary prevention too."
+      answer: "Critical concern — patients who have had one stroke are at elevated risk for another. Recurrence prevention is a coordinated effort: cardiovascular medication management by your treating neurologist or cardiologist, lifestyle modifications (diet, exercise, smoking cessation), cardiovascular fitness training as part of rehabilitation (which we provide), and ongoing medical surveillance."
     },
     {
       question: "Are there language considerations for Dubai's diverse population?",
-      answer: "Yes — multi-lingual team (English, Arabic, Hindi, Malayalam, Urdu, Tamil, Spanish, Portuguese, French, Turkish) and cultural sensitivity. Family members welcome to translate and participate sessions."
+      answer: "Yes — our team includes Arabic-speaking physiotherapists, Hindi/Urdu-speaking physiotherapists, and physiotherapists with various other language capabilities. Stroke rehabilitation often involves substantial family communication, particularly for patients with aphasia or for elderly patients who prefer their native language. We match therapists to family language needs when possible."
     },
     {
       question: "What about post-stroke depression — do you address this?",
-      answer: "Yes — depression common after stroke; we screen and provide education and work with medical team, incorporate into care plan while physiotherapy."
+      answer: "Yes — post-stroke depression affects 30–40% of stroke patients and substantially affects rehabilitation engagement and outcomes. We screen for depression during rehabilitation, discuss with families about mood and engagement, recommend psychiatric or psychological assessment when indicated, and adapt rehabilitation approach to support engagement. Mental health support is part of comprehensive stroke care."
     },
     {
       question: "What does a typical home physiotherapy session look like?",
-      answer: "Typically 45–60 minutes, includes motor function training, balance training, gait training, functional task practice, home exercise programme, and family education/care-giver training."
+      answer: "A typical home session is 60 minutes total, including therapist arrival, assessment of current status, treatment intervention, family education, and planning. Therapists bring portable equipment (FES devices, exercise equipment, assessment tools). Sessions take place in your home, often using the actual home environment for functional training (real stairs, real bed, real bathroom). Family members are often included in education during sessions."
     },
     {
       question: "Can patients return to work after a stroke?",
-      answer: "Variable — many return to work with appropriate rehabilitation and workplace adjustments. We work on work-specific training, ergonomic, and gradual return planning."
+      answer: "Many patients return to work, sometimes in modified roles. The return depends on stroke severity, occupation type, residual impairments, and patient motivation. Our rehabilitation includes return-to-work considerations when relevant — assessment of work-relevant abilities, vocational rehabilitation activities, coordination with occupational therapists for workplace assessment, and gradual return planning."
     },
     {
       question: "How do family members support recovery?",
-      answer: "Critical for recovery — family support improves outcomes dramatically. We provide family education, home exercise support, communication strategies, and how to encourage consistent practice at home."
+      answer: "Family support is one of the strongest predictors of stroke recovery outcomes. We provide structured family education throughout the treatment course: understanding the stroke and impairments, safe transfer and assistance techniques, home exercise programme support, recognition of complications, fall prevention, communication strategies for patients with aphasia, and self-care for caregivers."
     },
     {
       question: "What about driving after a stroke?",
-      answer: "Important and sensitive topic — patients must be medically cleared before driving. We work with medical team and provide balance/cognition assessment, and functional assessments as appropriate."
+      answer: "Driving after stroke is a complex decision requiring evaluation. Many patients can return to driving with assessment; others should not drive due to specific impairments. Formal driving assessment by qualified Dubai providers is the appropriate pathway. We can identify when driving assessment is appropriate and discuss options for assessment."
     },
     {
       question: "How do I book a stroke rehabilitation assessment?",
-      answer: "Three ways: WhatsApp +971 4 XXX XXXX (fastest for sending hospital discharge or initial assessment), phone +971 4 XXX XXXX, or book online through our website. For assessment, bring any medical records and imaging."
+      answer: "Three ways: (1) WhatsApp us — fastest response, ideal for hospital discharge planning, sending hospital documents, or asking specific questions about your situation. (2) Call us — direct booking, available 9 AM to 9 PM seven days a week. (3) Book online through our website. For initial consultation, please provide: hospital discharge summary, imaging reports (CT/MRI), current medications, insurance details, brief description of impairments, and preferred care setting (clinic or home). We typically respond within 15 minutes during business hours."
     }
   ]
 };
@@ -434,6 +434,211 @@ export const strokeRehabTeam = {
   ]
 };
 
+export const strokeRehabPhases = {
+  bgColor: "bg-[#F8F5F0]",
+  label: "PHASE-BASED RECOVERY",
+  title: "The phases of stroke recovery — what to expect and when.",
+  description: "Stroke recovery follows phases with predictable characteristics, even when individual outcomes vary. Understanding the process helps families plan appropriately.",
+  phases: [
+    {
+      phaseNumber: "Phase 1",
+      phaseTitle: "Acute Phase (Hospital)",
+      phaseSubtitle: "Days 0-14 post-stroke",
+      typicalCharacteristics: [
+        "Hospital admission for medical management",
+        "Medical stabilisation, imaging, medication management",
+        "Initial impairment severity becomes clearer",
+        "Some early spontaneous recovery may begin"
+      ],
+      rehabilitationFocus: [
+        "Hospital-based rehabilitation begins as medically appropriate",
+        "Initial assessment of impairments",
+        "Early mobilisation if appropriate",
+        "Positioning to prevent contractures",
+        "Initial swallowing assessment"
+      ],
+      familyConsiderations: [
+        "Hospital teams handle this phase typically",
+        "Family role is presence, support, and gathering information",
+        "Plan for discharge — what care will be needed?",
+        "We can consult during hospital phase if engaged early"
+      ]
+    },
+    {
+      phaseNumber: "Phase 2",
+      phaseTitle: "Early Recovery Phase",
+      phaseSubtitle: "MONTHS 1-3 POST-STROKE",
+      typicalCharacteristics: [
+        "Patient returning home or to rehabilitation setting",
+        "Rapid recovery typically occurring",
+        "Substantial therapy time needed daily",
+        "Patient often fatigues easily",
+        "Family adjusting to new caregiving demands"
+      ],
+      rehabilitationFocus: [
+        "Intensive daily rehabilitation (typically 3-5 sessions weekly minimum)",
+        "Constraint-induced movement therapy if appropriate",
+        "Task-specific training of daily activities",
+        "Gait training and balance retraining",
+        "Upper limb rehabilitation with mirror therapy, FES as appropriate",
+        "Spasticity management coordination"
+      ],
+      familyConsiderations: [
+        "This is the highest-intensity rehabilitation phase",
+        "Home environment may need modifications",
+        "Caregiver education and training crucial",
+        "We coordinate appropriate care setting based on patient mobility"
+      ]
+    },
+    {
+      phaseNumber: "Phase 3",
+      phaseTitle: "Continued Recovery Phase",
+      phaseSubtitle: "MONTHS 3-6 POST-STROKE",
+      typicalCharacteristics: [
+        "Recovery continuing but rate typically slowing",
+        "Functional independence increasing for many patients",
+        "Patient typically more capable of attending clinic visits",
+        "Specific persistent impairments becoming clearer"
+      ],
+      rehabilitationFocus: [
+        "Continued intensive intervention with progressive demands",
+        "Higher-level functional training",
+        "Community mobility and return-to-activity work",
+        "Vocational rehabilitation considerations",
+        "Driving assessment if appropriate"
+      ],
+      familyConsiderations: [
+        "Often a transition from intensive home care to more clinic-based care",
+        "Family caregiver fatigue often peaks — important to address",
+        "Long-term planning becomes more relevant",
+        "Insurance coverage may shift as recovery phases change"
+      ]
+    },
+    {
+      phaseNumber: "Phase 4",
+      phaseTitle: "Chronic Phase",
+      phaseSubtitle: "6+ MONTHS POST-STROKE",
+      typicalCharacteristics: [
+        "Major recovery has occurred; remaining impairments often stable",
+        "Patient typically functionally adapted",
+        "New opportunities to address persistent impairments with intensive intervention",
+        "Recurrence prevention important"
+      ],
+      rehabilitationFocus: [
+        "Targeted intensive intervention for specific persistent impairments",
+        "Constraint-induced movement therapy for upper limb (very effective in chronic phase)",
+        "Ongoing fitness and conditioning",
+        "Vocational and recreational engagement support",
+        "Annual review and assessment"
+      ],
+      familyConsiderations: [
+        "'Chronic' does not mean 'no further recovery'",
+        "Periodic intensive interventions can produce meaningful improvement years post-stroke",
+        "Family roles often stabilise around new normal",
+        "Support systems for long-term care"
+      ]
+    }
+  ],
+  footer: "Recovery does not stop at 6 months — modern evidence shows substantial improvement is possible years after stroke with appropriate intervention. The phases describe typical patterns; your individual journey may differ."
+};
+
+export const strokeRehabCoordinatedCare = {
+  bgColor: "bg-white",
+  label: "COORDINATED CARE",
+  title: "Coordination with your broader medical team.",
+  description: "Stroke rehabilitation works best when integrated with the broader medical team. We routinely coordinate with the specialists involved in your care.",
+  specialists: [
+    {
+      title:"",
+      description:"Effective stroke rehabilitation requires coordination beyond physiotherapy alone. Several other specialists may be involved in your care, and we work collaboratively with all of them."
+    },
+    {
+      title: "Your Treating Neurologist",
+      description: "Your neurologist manages the medical aspects of stroke care — medication for stroke prevention, management of vascular risk factors, assessment for stroke complications, decisions about spasticity injections, and evaluation for cognitive impairment. We coordinate regularly: sharing observations from rehabilitation, receiving guidance on medical issues affecting therapy, coordinating spasticity management."
+    },
+    {
+      title: "Occupational Therapists (OTs)",
+      description: "Occupational therapy focuses on functional activities of daily living — dressing, bathing, meal preparation, return to work, driving, home environment modifications. Stroke OT and stroke physiotherapy work closely together. We coordinate goals and avoid duplication. If you have an existing OT team, we work with them."
+    },
+    {
+      title: "Speech and Language Therapists",
+      description: "For patients with aphasia, dysarthria, or dysphagia, speech and language therapy is essential. We coordinate with speech therapists on shared goals — particularly for swallowing safety affecting feeding and pneumonia prevention."
+    },
+    {
+      title: "Cardiologists",
+      description: "For patients whose stroke had cardiac contributions (atrial fibrillation, heart failure, valve disease), cardiology management is essential. Cardiovascular fitness training is part of stroke rehabilitation — we coordinate intensity with your cardiologist particularly for patients with significant cardiac considerations."
+    },
+    {
+      title: "Psychiatrists and Psychologists",
+      description: "Post-stroke depression affects 30–40% of stroke patients and substantially affects rehabilitation engagement and outcomes. We screen for depression during rehabilitation and recommend psychiatric or psychological assessment when indicated. Cognitive impairment screening and management also coordinated with appropriate specialists."
+    },
+    {
+      title: "GPs and Family Physicians",
+      description: "Your GP often coordinates overall care, particularly for patients without a stroke-specific neurologist. We coordinate with your GP on shared care plans, medication management, and ongoing follow-up arrangements."
+    }
+  ],
+  protocols: [
+    "Review of hospital discharge documentation",
+    "Communication with treating teams during discharge",
+    "Regular updates to referring physicians",
+    "Coordination meetings with OT, speech therapy when active",
+    "Family meetings as needed",
+    "Shared care plans documented"
+  ]
+};
+
+export const strokeRehabPricing = {
+  bgColor: "bg-[#F5F0E8]",
+  label: "TRANSPARENT PRICING",
+  title: "What post-stroke rehabilitation costs.",
+  services: [
+    { name: "Initial stroke rehabilitation assessment (90 minutes)", price: "AED [X]" },
+    { name: "Follow-up clinic-based session (60 minutes)", price: "AED [X]" },
+    { name: "Home physiotherapy session (60 minutes including travel)", price: "AED [X]" },
+    { name: "Hospital discharge coordination consultation", price: "AED [X]" },
+    { name: "Family caregiver training session", price: "AED [X]" },
+    { name: "Constraint-Induced Movement Therapy intensive (2 week programme)", price: "AED [X]" },
+    { name: "Acute phase intensive home programme (3 months, 3-5 sessions weekly)", price: "AED [X]" },
+    { name: "Subacute phase programme (3-6 months, combined home and clinic)", price: "AED [X]" },
+    { name: "Chronic phase rehabilitation programme (ongoing)", price: "AED [X]" },
+    { name: "Annual review and re-assessment", price: "AED [X]" }
+  ],
+  insurance: "Insurance direct-billing with seven major insurers. Stroke rehabilitation is typically covered substantially by Dubai insurance plans given the documented need. Established programmes often require pre-authorisation — we handle this on your behalf and have experience with stroke rehabilitation insurance coverage. <a href=\"#\" style=\"color: #B8975A; text-decoration: underline; font-weight: normal;\">WhatsApp us for specific coverage discussion</a>."
+};
+
+export const strokeRehabReviews = {
+  bgColor: "bg-white",
+  cardBgColor: "#FAF7F2",
+  statsBgColor: "white",
+  label: "PATIENT & FAMILY STORIES",
+  title: "Real recoveries.",
+  items: [
+    {
+      quote: "My father had a stroke at 71 visiting us in Dubai. Hospital discharge after two weeks. Vedara started home physiotherapy within 48 hours of discharge — daily sessions at our home in Dubai Hills. Eight months of consistent rehabilitation through home care transitioning to clinic visits. He returned home walking independently with a cane, managing his own self-care, talking with mild residual aphasia. The team coordinated with his treating neurologist throughout. We are grateful beyond words.",
+      author: "Family member of post-stroke patient",
+      details: "Right Middle Cerebral Artery Stroke · 8-Month Home + Clinic Programme · Dubai Hills · February 2026",
+    },
+    {
+      quote: "Stroke at 58 — successful executive, suddenly unable to use my right side or speak properly. Six months of intensive rehabilitation at Vedara — speech therapy, occupational therapy, and the physiotherapy programme. Constraint-induced movement therapy for the arm was the breakthrough — finally regained meaningful use after three months of intensive programme. Returned to a modified work role at 9 months. The honest discussion about realistic expectations balanced against genuine commitment to maximum recovery was exactly what I needed.",
+      author: "Rajan M.",
+      details: "Left Hemisphere Ischaemic Stroke · 12-Month Programme · Sports City · January 2026",
+    },
+    {
+      quote: "My mother had a cerebellar stroke at 67. Severe balance problems initially. Specialist physiotherapy at Vedara over four months — balance training, coordination work, gait retraining. She returned to walking independently, returned to her painting hobby, and travels again. The cerebellar-specific approach made all the difference — generic stroke rehab would not have produced this outcome.",
+      author: "Family member of post-stroke patient",
+      details: "Cerebellar Stroke · 4-Month Programme · JVT · March 2026",
+    }
+  ],
+  stats: [
+    { value: "4.9", label: "stars on Google" },
+    { value: "180+", label: "stroke patients treated" },
+    
+  ],
+  buttonText: "Read All Stroke Rehabilitation Reviews →",
+  isDarkText: true,
+  useKneeStyle: false
+};
+
 export const strokeRehabRelatedPages = {
   label: "EXPLORE FURTHER",
   title: "Related services and resources",
@@ -448,7 +653,7 @@ export const strokeRehabRelatedPages = {
     {
       title: "Home Physiotherapy Across Dubai",
       description: "Detailed home physiotherapy service information — critical for many stroke patients in early recovery and those with mobility limitations.",
-      href: "/home-healthcare-jvc/"
+      href: "/physiotherapy-at-home-dubai/"
     },
     {
       title: "Physiotherapy in JVC",

@@ -18,16 +18,16 @@ export const shoulderPhysioHero = {
   ],
   floatingCard: {
     title: "BROAD SHOULDER CONDITIONS COVERED",
-    subtitle: "This page covers the full range of shoulder pain conditions. For frozen shoulder specifically, see our dedicated frozen shoulder page —"
+    subtitle: "This page covers the full range of shoulder pain conditions. For frozen shoulder specifically, see our <a href='/conditions/frozen-shoulder-dubai/' class='text-[#C9A55A] hover:text-[#B8965A] transition-colors'>dedicated frozen shoulder page</a> —"
   },
   image: "/images/shoulder-pain-physiotherapy-dubai-hero.webp",
-  alt: "Shoulder pain physiotherapy treatment at Vedara Care JVC Dubai clinic"
+  alt: "Shoulder pain assessment at Vedara Care JVC Dubai physiotherapy clinic"
 };
 
 export const shoulderPhysioIntro = {
   label: "THE QUICK ANSWER",
   title: "Shoulder pain physiotherapy at Vedara Care, in one paragraph.",
-  blockquote: "Shoulder pain physiotherapy at Vedara Care Polyclinic in Jumeirah Village Circle (JVC), Dubai — walking distance from Circle Mall — is evidence-based comprehensive treatment delivered by DPT-qualified specialists across the full range of shoulder conditions. The shoulder is the most mobile joint in the body, making it vulnerable to a wide range of problems requiring different specific treatment approaches: rotator cuff conditions (tears, tendinopathies, strains — the most common shoulder presentation), shoulder impingement syndrome (subacromial impingement, internal impingement), AC joint pain (acromioclavicular joint problems), biceps tendinopathy (long head of biceps tendon issues), shoulder instability (dislocations, hyperlaxity, post-traumatic instability), shoulder bursitis, calcific tendinopathy, post-surgical shoulder recovery (rotator cuff repair, labral repair, shoulder replacement), and frozen shoulder (adhesive capsulitis — see our dedicated frozen shoulder page for phase-based deep-dive). Our approach starts with accurate diagnosis (the foundation of effective treatment), then applies condition-specific evidence-based protocols. Most shoulder pain responds excellently to physiotherapy without requiring surgery. Initial assessment from AED 350; structured programmes from AED 2,400. Patients travel to our JVC clinic from across Dubai. Insurance direct-billing with seven major insurers.",
+  blockquote: "Shoulder pain physiotherapy at Vedara Care Polyclinic in Jumeirah Village Circle (JVC), Dubai — walking distance from Circle Mall — is evidence-based comprehensive treatment delivered by DPT-qualified specialists across the full range of shoulder conditions. The shoulder is the most mobile joint in the body, making it vulnerable to a wide range of problems requiring different specific treatment approaches: rotator cuff conditions (tears, tendinopathies, strains — the most common shoulder presentation), shoulder impingement syndrome (subacromial impingement, internal impingement), AC joint pain (acromioclavicular joint problems), biceps tendinopathy (long head of biceps tendon issues), shoulder instability (dislocations, hyperlaxity, post-traumatic instability), shoulder bursitis, calcific tendinopathy, post-surgical shoulder recovery (rotator cuff repair, labral repair, shoulder replacement), and frozen shoulder (adhesive capsulitis — see our <a href='/conditions/frozen-shoulder-dubai/' class='text-[#C9A55A] hover:text-[#B8965A] transition-colors'>dedicated frozen shoulder page</a> for phase-based deep-dive). Our approach starts with accurate diagnosis (the foundation of effective treatment), then applies condition-specific evidence-based protocols. Most shoulder pain responds excellently to physiotherapy without requiring surgery. Initial assessment from AED 350; structured programmes from AED 2,400. Patients travel to our JVC clinic from across Dubai. Insurance direct-billing with seven major insurers.",
   footer: "Medically reviewed by Dr. Sarah Al-Hassan, DPT, DHA-Licensed · Last updated June 2026"
 };
 
@@ -61,8 +61,8 @@ export const shoulderPhysioTreatment = {
     footer: "\"Shoulder pain is one of the most under-diagnosed presentations in physiotherapy. The right treatment for one condition can be wrong treatment for another that looks similar.\""
   },
   rightContent: {
-    image: "/images/shoulder-pain-physiotherapy-treatement.jpg",
-    alt: "Shoulder pain physiotherapy treatment at Vedara Care JVC",
+    image: "/images/shoulder-anatomy-illustration.webp",
+    alt: "Shoulder anatomy rotator cuff AC joint educational illustration",
     label: "KEY INSIGHT",
     text: "The shoulder's extraordinary mobility — the widest range of motion of any joint — is precisely what makes it vulnerable. Four bones, dozens of muscles, tendons, bursae, and the joint capsule must all work in precise coordination."
   }
@@ -152,6 +152,16 @@ export const shoulderPhysioFaqs = {
   bgColor: "bg-[#F2EDE5]",
   label: "COMMON QUESTIONS",
   title: "What shoulder pain patients ask before booking.",
+  sidebarLinks: [
+    {
+      text: "physiotherapy main page",
+      href: "/physiotherapy-jvc/"
+    },
+    {
+      text: "Frozen shoulder specific information",
+      href: "/conditions/frozen-shoulder-dubai/"
+    }
+  ],
   faqs: [
     {
       question: "What is causing my shoulder pain?",
@@ -163,7 +173,7 @@ export const shoulderPhysioFaqs = {
     },
     {
       question: "How is my shoulder pain different from frozen shoulder?",
-      answer: "Frozen shoulder (adhesive capsulitis) is a specific distinct condition with characteristic features: restriction of both active and passive movement in all directions, progressive worsening over months, often pain worse at night. Most shoulder pain involves specific structures (rotator cuff, AC joint, biceps) and typically restricts certain movements rather than all directions. For frozen shoulder specifically, see our dedicated frozen shoulder page for detailed phase-based content."
+      answer: "Frozen shoulder (adhesive capsulitis) is a specific distinct condition with characteristic features: restriction of both active and passive movement in all directions, progressive worsening over months, often pain worse at night. Most shoulder pain involves specific structures (rotator cuff, AC joint, biceps) and typically restricts certain movements rather than all directions. For frozen shoulder specifically, see our <a href='/conditions/frozen-shoulder-dubai/' class='text-[#C9A55A] hover:text-[#B8965A] transition-colors'>dedicated frozen shoulder page</a> for detailed phase-based content."
     },
     {
       question: "How long does shoulder pain take to resolve?",
@@ -211,7 +221,7 @@ export const shoulderPhysioFaqs = {
     },
     {
       question: "Can shoulder pain come from my neck?",
-      answer: "Yes — referred shoulder pain from cervical spine conditions is common. Cervical radiculopathy (nerve root irritation) can refer pain to the shoulder. Cervical muscle patterns can refer to the shoulder. Our comprehensive assessment includes neck screening to identify when cervical involvement contributes to shoulder symptoms."
+      answer: "Yes — referred shoulder pain from cervical spine conditions is common. Cervical radiculopathy (nerve root irritation) can refer pain to the shoulder. Cervical muscle patterns can refer to the shoulder. Our comprehensive assessment includes neck screening to identify when cervical involvement contributes to shoulder symptoms. For neck pain, see our <a href='/conditions/neck-pain-physiotherapy-jvc/' class='text-[#C9A55A] hover:text-[#B8965A] transition-colors'>neck pain physiotherapy page</a>."
     },
     {
       question: "What is shockwave therapy and when is it useful?",
@@ -235,7 +245,6 @@ export const shoulderPhysioFaqs = {
     },
   ]
 };
-
 export const shoulderPhysioLocation = {
   bgColor: "bg-white",
   label: "VISIT US",
@@ -344,7 +353,7 @@ export const shoulderPhysioConditions = {
     {
       number: "09",
       title: "Post-Surgical Shoulder Recovery",
-      description: "Rehabilitation after shoulder surgery — rotator cuff repair, labral repair, shoulder replacement, AC joint reconstruction, instability surgery. Each procedure has specific rehabilitation protocols coordinated with the operating surgeon. See our post-surgical rehabilitation page for detailed surgical recovery information.",
+      description: "Rehabilitation after shoulder surgery — rotator cuff repair, labral repair, shoulder replacement, AC joint reconstruction, instability surgery. Each procedure has specific rehabilitation protocols coordinated with the operating surgeon. See our <a href='/physiotherapy/post-surgery-rehab-dubai/' class='text-[#C9A55A] hover:text-[#B8965A] transition-colors'>post-surgical rehabilitation page</a> for detailed surgical recovery information.",
       typicalSigns: [
         "Post-surgical patient, often coordinated with Dubai or international surgeons"
       ]
@@ -429,8 +438,8 @@ export const shoulderPhysioApproach = {
     footer: "\"The shoulder treatment that works for rotator cuff tendinopathy can fail for impingement, which differs from instability, which differs from frozen shoulder. Pattern-specific treatment is the difference between adequate and excellent outcomes.\""
   },
   rightContent: {
-    image: "/images/shoulder-pain-approach.jpg",
-    alt: "Shoulder pain physiotherapy approach at Vedara Care JVC",
+    image: "/images/shoulder-assessment-vedara-jvc.webp",
+    alt: "Evidence-based shoulder pain treatment at Vedara Care JVC Dubai",
     label: "",
     tags: [
       "60-minute initial assessment",
