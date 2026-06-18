@@ -274,6 +274,16 @@ export const stressAnxietyPrograms = {
 export const stressAnxietyFaqs = {
   label: "STRESS & ANXIETY QUESTIONS",
   title: "What patients ask before starting Ayurvedic stress and anxiety treatment.",
+   sidebarLinks: [
+    {
+      text: "Read about Shirodhara",
+      href: "/treatments/shirodhara-dubai/"
+    },
+    {
+      text: "Read about Abhyanga",
+      href: "/treatments/abhyanga-dubai/"
+    }
+  ],
   description: "For Shirodhara specifically, see the treatment page. For sleep-specific issues, our insomnia condition page covers chronic insomnia in depth.",
   buttonText: "Ask the Clinical Team",
   faqs: [

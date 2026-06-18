@@ -39,7 +39,7 @@ export const physiotherapyJvcSpecializations = {
     {
       number: "01",
       title: "Musculoskeletal Physiotherapy",
-      description: "The most-utilised area. Treatment of joint, muscle, and soft tissue conditions — chronic and acute. Includes back pain, neck pain, shoulder conditions, knee problems, hip dysfunction, and joint arthritis. Treatment combines manual therapy techniques (joint mobilisation, soft tissue work, manipulation where appropriate), modalities (ultrasound, IFC, dry needling), and structured exercise prescription tailored to your specific condition and recovery stage.",
+      description: "The most-utilised area. Treatment of joint, muscle, and soft tissue conditions — chronic and acute. Includes back pain, neck pain, <a href='/conditions/shoulder-pain-physiotherapy-dubai/' class='text-[#C9A55A] hover:text-[#B8965A] transition-colors'>shoulder conditions</a>, knee problems, hip dysfunction, and joint arthritis. Treatment combines manual therapy techniques (joint mobilisation, soft tissue work, manipulation where appropriate), modalities (ultrasound, IFC, dry needling), and structured exercise prescription tailored to your specific condition and recovery stage.",
       commonConditions: [
         "lower back pain",
         "cervical spondylosis",

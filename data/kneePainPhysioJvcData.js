@@ -581,6 +581,11 @@ export const kneePainRelatedPages = {
   linkHref: "/physiotherapy-jvc/",
   pages: [
     {
+      title: "Shoulder Pain Physiotherapy",
+      description: "Comprehensive shoulder pain treatment for rotator cuff, impingement, and other shoulder conditions — our sister pillar page.",
+      href: "/conditions/shoulder-pain-physiotherapy-dubai/"
+    },
+    {
       title: "Sports Injury Physiotherapy",
       description: "For sports-related knee injuries — ACL, meniscus, padel injuries, running injuries. Sport-specific protocols.",
       href: "/physiotherapy/sports-injury-jvc/"

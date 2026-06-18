@@ -77,7 +77,7 @@ export const neurologicalConditionsData = {
       title: "Stroke Recovery (CVA)",
       subtitle: "Cerebrovascular Accident Rehabilitation",
       description:
-        "The most common neurological referral. Treatment focuses on regaining motor function (typically affected on one side — hemiparesis), gait training, balance restoration, hand and upper limb rehabilitation, falls prevention, and functional independence. We use evidence-based approaches including constraint-induced movement therapy, motor relearning, and task-specific training. Early intervention (within first 6 months) typically produces the strongest gains, but meaningful improvement is possible years after stroke.",
+        "The most common neurological referral. Treatment focuses on regaining motor function (typically affected on one side — hemiparesis), gait training, balance restoration, hand and upper limb rehabilitation, falls prevention, and functional independence. We use evidence-based approaches including constraint-induced movement therapy, motor relearning, and task-specific training. Early intervention (within first 6 months) typically produces the strongest gains, but meaningful improvement is possible years after stroke. See our <a href='/conditions/stroke-rehab-dubai/' class='text-[#C9A55A] hover:text-[#B8965A] transition-colors'>dedicated stroke rehabilitation page</a> for detailed information.",
       realisticOutcomes: "Most patients achieve substantial functional gains; complete recovery varies enormously by stroke severity, location, and intervention timing."
     },
         
