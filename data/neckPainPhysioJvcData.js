@@ -477,6 +477,11 @@ export const neckPainRelatedPages = {
   linkHref: "/physiotherapy-jvc/",
   pages: [
     {
+      title: "Shoulder Pain Physiotherapy",
+      description: "Comprehensive shoulder pain treatment for rotator cuff, impingement, and other shoulder conditions — related anatomical region.",
+      href: "/conditions/shoulder-pain-physiotherapy-dubai/"
+    },
+    {
       title: "Sciatica Physiotherapy",
       description: "Specialised sciatica treatment at our JVC clinic — McKenzie method certified therapists for disc herniation, piriformis syndrome, and pregnancy-related sciatica.",
       href: "/conditions/sciatica-physiotherapy-dubai/"
@@ -497,7 +502,7 @@ export const neckPainRelatedPages = {
       description: "For sports-related neck pain — gym training, contact sports, padel-related cervical strain.",
       href: "/physiotherapy/sports-injury-jvc/"
     },
-      {
+    {
       title: "Pediatric Physiotherapy",
       description: "For children and adolescents with neck pain — increasingly common from device use and gaming.",
       href: "/physiotherapy-pediatric-jvc/"

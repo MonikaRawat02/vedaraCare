@@ -16,7 +16,9 @@ const PHYSIOTHERAPY_CONDITIONS = [
   { href: '/conditions/sciatica-physiotherapy-dubai', label: 'Sciatica' },
   { href: '/conditions/neck-pain-physiotherapy-jvc', label: 'Neck Pain' },
   { href: '/conditions/knee-pain-physiotherapy-dubai', label: 'Knee Pain' },
+  { href: '/conditions/shoulder-pain-physiotherapy-dubai', label: 'Shoulder Pain' },
   { href: '/conditions/frozen-shoulder-dubai', label: 'Frozen Shoulder' },
+  { href: '/conditions/stroke-rehab-dubai', label: 'Post-Stroke Rehabilitation' },
 ];
 
 const AYURVEDA_CONDITIONS = [

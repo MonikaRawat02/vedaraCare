@@ -73,6 +73,11 @@ export const postSurgeryRehabRelatedPages = {
   linkHref: "/physiotherapy-dubai",
   pages: [
     {
+      title: "Shoulder Pain Physiotherapy",
+      description: "Comprehensive shoulder pain treatment for pre-surgical conservative care and post-surgical shoulder rehabilitation.",
+      href: "/conditions/shoulder-pain-physiotherapy-dubai/"
+    },
+    {
       title: "Physiotherapy in JVC",
       description: "Our complete physiotherapy department — all seven specialisations, team, conditions treated, integrated care options.",
       href: "/physiotherapy-jvc/"
