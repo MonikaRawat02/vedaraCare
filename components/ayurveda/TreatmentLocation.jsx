@@ -16,9 +16,12 @@ const TreatmentLocation = ({
   alt = "Clinic location",
   description = "",
   buttonText = "",
-  mapEmbed = "https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d3613.9894568193345!2d55.20722358578439!3d25.068346479666594!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x3e5f6dd72f3da587%3A0xe7ecca8687a75b72!2sVedara%20Care%20Polyclinic!5e0!3m2!1sen!2sus!4v1780727442216!5m2!1sen!2sus"
+  mapEmbed = "https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d3613.9894568193345!2d55.20722358578439!3d25.068346479666594!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x3e5f6dd72f3da587%3A0xe7ecca8687a75b72!2sVedara%20Care%20Polyclinic!5e0!3m2!1sen!2sus!4v1780727442216!5m2!1sen!2sus",
+  appointmentInfo = null
 }) => {
   const renderHours = () => {
+    if (!hours) return null;
+    
     if (typeof hours === 'string') {
       return (
         <div className="bg-[#F5F1E8] p-4 rounded-lg">
@@ -34,7 +37,7 @@ const TreatmentLocation = ({
         </div>
       );
     }
-    if (typeof hours === 'object') {
+    if (typeof hours === 'object' && hours !== null) {
       return (
         <div className="bg-[#F5F1E8] p-4 rounded-lg">
           <div className="text-xs font-semibold mb-3">Operating Hours</div>
@@ -121,6 +124,20 @@ const TreatmentLocation = ({
                   {phone}
                 </div>
               </div>
+
+              {/* Appointment Info */}
+              {appointmentInfo && (
+                <div className="flex items-start gap-3">
+                  <svg xmlns="http://www.w3.org/2000/svg" width="16" height="16" viewBox="0 0 24 24" fill="none" stroke="currentColor" strokeWidth="2" strokeLinecap="round" strokeLinejoin="round" className="text-[#C8975F] shrink-0 mt-1">
+                    <circle cx="12" cy="12" r="10"></circle>
+                    <polyline points="12 6 12 12 16 14"></polyline>
+                  </svg>
+                  <div>
+                    <p className="text-sm font-medium" style={{ color: 'rgb(28, 26, 22)' }}>{appointmentInfo.title}</p>
+                    <p className="text-sm" style={{ color: 'rgb(107, 100, 86)' }}>{appointmentInfo.subtitle}</p>
+                  </div>
+                </div>
+              )}
 
               {/* Email */}
               {email && (

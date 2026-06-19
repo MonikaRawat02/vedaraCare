@@ -19,6 +19,8 @@ const PHYSIOTHERAPY_CONDITIONS = [
   { href: '/conditions/shoulder-pain-physiotherapy-dubai', label: 'Shoulder Pain' },
   { href: '/conditions/frozen-shoulder-dubai', label: 'Frozen Shoulder' },
   { href: '/conditions/stroke-rehab-dubai', label: 'Post-Stroke Rehabilitation' },
+  { href: '/conditions/tennis-elbow-dubai', label: 'Tennis Elbow' },  
+  { href: '/conditions/pelvic-floor-physiotherapy-dubai', label: 'Pelvic Floor Physiotherapy' },
 ];
 
 const AYURVEDA_CONDITIONS = [

@@ -1,6 +1,6 @@
 import React from 'react';
 
-const SportsInjuryTypes = ({ label, title, items, footer, variant = 'condition', description = '', bgColor = 'rgb(248, 244, 238)', lgColumns = 3 }) => {
+const SportsInjuryTypes = ({ label, title, items, footer, variant = 'condition', description = '', bgColor = 'rgb(248, 244, 238)',  lgColumns = 3 }) => {
   return (
     <section style={{ background: bgColor, padding: '96px 24px' }}>
       <div className="max-w-7xl mx-auto">

@@ -17,7 +17,8 @@ const TreatmentMechanism = ({
   keyFactLabel = "KEY FACT",
   keyAnatomy = [],
   whatWeRecommendAgainst = null,
-  comparisonSection = null
+  comparisonSection = null,
+  coordinationApproach = null
 }) => {
   const isContentFormat = content.length > 0;
 
@@ -82,10 +83,12 @@ const TreatmentMechanism = ({
 
             {/* Image + Key Fact / Comparison */}
             <div className={`lg:w-[45%] ${imageLeft ? 'lg:order-1' : 'lg:order-2'}`}>
-              <img 
-                 src={image || ""} 
-                alt={alt} 
-                className="w-full h-[400px] object-cover rounded-xl shadow-lg"/>
+              {image && (
+                <img 
+                  src={image} 
+                  alt={alt} 
+                  className="w-full h-[400px] object-cover rounded-xl shadow-lg"/>
+              )}
 
               {/* Comparison Section */}
               {comparisonSection && (
@@ -169,6 +172,44 @@ const TreatmentMechanism = ({
                     <div className="text-2xl font-bold" style={{ fontFamily: 'Fraunces, serif', color: '#1A1A1A' }}>&gt;8 hrs</div>
                     <div className="text-xs text-gray-600 mt-1">Avg daily screen time</div>
                   </div>
+                </div>
+              )}
+
+              {/* Our Coordination Approach */}
+              {coordinationApproach && (
+                <div className="p-7 sticky top-24 mt-6" style={{border: "1.5px solid rgb(184, 151, 90)", borderRadius: "8px", background: "rgb(250, 246, 238)", fontFamily: "DM Sans, sans-serif"}}>
+                  <p className="text-[10px] font-medium tracking-widest uppercase mb-5" style={{color: "rgb(184, 151, 90)"}}>
+                    {coordinationApproach.label}
+                  </p>
+                  {coordinationApproach.subtitle && (
+                    <p className="text-sm font-medium mb-4" style={{color: "rgb(28, 26, 22)"}}>
+                      {coordinationApproach.subtitle}
+                    </p>
+                  )}
+                  {coordinationApproach.items && coordinationApproach.items.length > 0 && (
+                    coordinationApproach.items.map((item, index) => (
+                      <div key={index} className="flex items-start gap-2 mb-3 text-sm" style={{color: "rgb(107, 100, 86)"}}>
+                        <svg xmlns="http://www.w3.org/2000/svg" width="13" height="13" viewBox="0 0 24 24" fill="none" stroke="currentColor" strokeWidth="2" strokeLinecap="round" strokeLinejoin="round" className="lucide lucide-check" style={{color: "rgb(184, 151, 90)", marginTop: "2px", flexShrink: "0"}}>
+                          <path d="M20 6 9 17l-5-5"></path>
+                        </svg>
+                        {item}
+                      </div>
+                    ))
+                  )}
+                  {coordinationApproach.bottomSection && (
+                    <div className="mt-6 pt-6" style={{borderTop: "1px solid rgba(184, 151, 90, 0.2)"}}>
+                      <p className="text-sm font-medium mb-3" style={{color: "rgb(28, 26, 22)"}}>
+                        {coordinationApproach.bottomSection.title}
+                      </p>
+                      {coordinationApproach.bottomSection.items && coordinationApproach.bottomSection.items.length > 0 && (
+                        coordinationApproach.bottomSection.items.map((item, index) => (
+                          <p key={index} className="text-xs mb-2 leading-[1.5]" style={{color: "rgb(107, 100, 86)"}}>
+                            {item}
+                          </p>
+                        ))
+                      )}
+                    </div>
+                  )}
                 </div>
               )}
             </div>

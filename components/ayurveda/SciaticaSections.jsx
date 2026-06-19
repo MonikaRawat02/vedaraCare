@@ -94,6 +94,9 @@ export const SciaticaEmergency = ({ data }) => {
           -ms-overflow-style: none;
           scrollbar-width: none;
         }
+        strong {
+          color: rgb(26, 26, 26) !important;
+        }
       `}</style>
       <div className="max-w-7xl mx-auto">
         <div className="text-center mb-12">
@@ -296,6 +299,9 @@ export const SciaticaTreatment = ({ data, showBorderLeft = true, rightContentSty
         .no-scrollbar {
           -ms-overflow-style: none;
           scrollbar-width: none;
+        }
+        strong {
+          color: rgb(26, 26, 26) !important;
         }
       `}</style>
       <div className="max-w-7xl mx-auto">
@@ -509,6 +515,43 @@ export const SciaticaTreatment = ({ data, showBorderLeft = true, rightContentSty
                   <p key={index} className="text-sm text-gray-700 leading-relaxed">
                     {item.description}
                   </p>
+                ))}
+              </div>
+            )}
+            {rightContent.keyStatistics && rightContent.keyStatistics.length > 0 && (
+              <div className="p-6 text-sm" style={{ background: 'rgb(255, 255, 255)', borderRadius: '8px', border: '1px solid rgba(184, 151, 90, 0.2)', fontFamily: 'DM Sans, sans-serif' }}>
+                <p className="text-[10px] font-medium tracking-widest uppercase mb-3" style={{ color: 'rgb(184, 151, 90)' }}>
+                  Key Statistics
+                </p>
+                {rightContent.keyStatistics.map((stat, index) => (
+                  <div key={index} className="flex items-start gap-2 mb-2.5 text-xs leading-[1.6]" style={{ color: 'rgb(107, 100, 86)' }}>
+                    <span className="mt-0.5 w-3.5 h-3.5 flex-shrink-0 flex items-center justify-center rounded-full" style={{ background: 'rgba(184, 151, 90, 0.15)' }}>
+                      <svg xmlns="http://www.w3.org/2000/svg" width="8" height="8" viewBox="0 0 24 24" fill="none" stroke="currentColor" strokeWidth="2" strokeLinecap="round" strokeLinejoin="round" style={{ color: 'rgb(184, 151, 90)' }}>
+                        <path d="M20 6 9 17l-5-5"></path>
+                      </svg>
+                    </span>
+                    {stat}
+                  </div>
+                ))}
+              </div>
+            )}
+            {rightContent.treatmentModalities && rightContent.treatmentModalities.length > 0 && (
+              <div className="mt-5 p-5" style={{ background: 'rgb(250, 246, 238)', borderRadius: '8px', border: '1px solid rgba(184, 151, 90, 0.2)', fontFamily: 'DM Sans, sans-serif' }}>
+                <p className="text-[10px] font-medium tracking-widest uppercase mb-3" style={{ color: 'rgb(184, 151, 90)' }}>
+                  Treatment Modalities
+                </p>
+                {rightContent.treatmentModalities.map((modality, index, array) => (
+                  <div 
+                    key={index} 
+                    className="flex items-center gap-2 py-2 text-sm" 
+                    style={{ 
+                      color: 'rgb(107, 100, 86)', 
+                      borderBottom: index !== array.length - 1 ? '1px solid rgba(184, 151, 90, 0.15)' : 'none'
+                    }}
+                  >
+                    <div className="w-1.5 h-1.5 rounded-full flex-shrink-0" style={{ background: 'rgb(184, 151, 90)' }}></div>
+                    {modality}
+                  </div>
                 ))}
               </div>
             )}
