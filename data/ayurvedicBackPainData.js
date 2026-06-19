@@ -353,6 +353,16 @@ export const ayurvedicBackPainPricing = {
 export const ayurvedicBackPainFaqs = {
   label: "BACK PAIN QUESTIONS",
   title: "What patients ask before starting Ayurvedic back pain treatment.",
+    sidebarLinks: [
+    {
+      text: "Read about Kativasti",
+      href: "/treatments/kativasti-dubai/"
+    },
+    {
+      text: "Read about Physiotherapy in JVC",
+      href: "/physiotherapy-jvc/"
+    }
+  ],
   description: "For specific treatment details, see the Kativasti, Abhyanga, and Panchakarma pages. For physiotherapy alone, see the physio page.",
   faqs: [
     {

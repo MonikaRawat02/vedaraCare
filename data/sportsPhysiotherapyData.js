@@ -558,6 +558,11 @@ export const sportsPhysiotherapyRelatedPages = {
   linkHref: "/physiotherapy-jvc/",
   pages: [
     {
+      title: "Shoulder Pain Physiotherapy",
+      description: "Comprehensive shoulder pain treatment for rotator cuff, impingement, and other shoulder conditions — our dedicated shoulder care page.",
+      href: "/conditions/shoulder-pain-physiotherapy-dubai/"
+    },
+    {
       title: "Physiotherapy in Jvc",
       description: "Our complete physiotherapy department — all seven specialisations, team, conditions treated, integrated care options.",
       href: "/physiotherapy-jvc/"

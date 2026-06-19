@@ -525,6 +525,11 @@ export const frozenShoulderRelatedPages = {
   linkHref: "/physiotherapy-jvc/",
   pages: [
     {
+      title: "Shoulder Pain Physiotherapy",
+      description: "Comprehensive shoulder pain treatment for rotator cuff, impingement, and other shoulder conditions — our broader shoulder care.",
+      href: "/conditions/shoulder-pain-physiotherapy-dubai/"
+    },
+    {
       title: "Physiotherapy in JVC",
       description: "Our complete physiotherapy department — all seven specialisations including shoulder conditions, team, conditions treated.",
       href: "/physiotherapy-jvc/"

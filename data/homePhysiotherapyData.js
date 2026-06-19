@@ -204,7 +204,7 @@ export const homePhysioSpecialisations = {
     {
       number: "03",
       title: "Neurological Home Physiotherapy",
-      description: "Specialised neurorehabilitation at home for stroke recovery, Parkinson's disease, multiple sclerosis, traumatic brain injury, motor neurone disease, and other neurological conditions. Particularly valuable in early stroke recovery, advanced progressive conditions, and patients with significant mobility limitations. Often long-term care relationships spanning months or years.",
+      description: "Specialised neurorehabilitation at home for stroke recovery, Parkinson's disease, multiple sclerosis, traumatic brain injury, motor neurone disease, and other neurological conditions. Particularly valuable in early stroke recovery, advanced progressive conditions, and patients with significant mobility limitations. Often long-term care relationships spanning months or years. See our <a href='/conditions/stroke-rehab-dubai/' class='text-[#C9A55A] hover:text-[#B8965A] transition-colors'>dedicated post-stroke home rehabilitation page</a> for detailed information.",
       href: "/physiotherapy/neurological-dubai/"
     },
     {

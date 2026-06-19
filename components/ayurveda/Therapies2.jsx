@@ -301,7 +301,8 @@ const Therapies2 = () => {
               Knee, hip, shoulder replacement recovery
             </p>
           </div>
-          <div className="bg-white p-6 rounded-lg hover:shadow-lg transition-all cursor-pointer group">
+          <Link href="/conditions/stroke-rehab-dubai/"  className="bg-white p-6 rounded-lg hover:shadow-lg transition-all cursor-pointer group">
+            
             <div className="mb-4">
               <svg
                 xmlns="http://www.w3.org/2000/svg"
@@ -332,7 +333,8 @@ const Therapies2 = () => {
             <p className="text-sm text-[#6B7280]">
               Hemiparesis and motor recovery
             </p>
-          </div>
+            </Link>
+         
           <div className="bg-white p-6 rounded-lg hover:shadow-lg transition-all cursor-pointer group">
             <div className="mb-4">
               <svg
