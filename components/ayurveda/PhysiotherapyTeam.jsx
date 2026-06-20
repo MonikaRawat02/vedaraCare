@@ -1,7 +1,7 @@
 import React from 'react';
 import Link from 'next/link';
 
-const PhysiotherapyTeam = ({ label, title, team = [], members = [], bgColor = "bg-white" }) => {
+const PhysiotherapyTeam = ({ label, title, description, team = [], members = [], bgColor = "bg-white", gridColumns = "lg:grid-cols-4" }) => {
   // Helper function to create a slug from the name
   const createSlug = (name) => {
     return name.toLowerCase().replace(/[.,]/g, '').replace(/\s+/g, '-');
@@ -16,9 +16,10 @@ const PhysiotherapyTeam = ({ label, title, team = [], members = [], bgColor = "b
         <div className="text-center max-w-7xl mx-auto mb-16 space-y-4">
           {label && <div className="text-[#C4A962] text-xs font-semibold tracking-[0.2em] uppercase">{label}</div>}
           {title && <h2 className="text-3xl md:text-4xl" style={{ fontFamily: 'Fraunces, serif', fontWeight: 500, color: '#1A1A1A' }}>{title}</h2>}
+          {description && <p className="text-[15px] text-[#6B6B6B] font-sans leading-relaxed max-w-3xl mx-auto">{description}</p>}
         </div>
         
-        <div className="grid md:grid-cols-2 lg:grid-cols-4 gap-6 mb-8">
+        <div className={`grid md:grid-cols-2 ${gridColumns} gap-6 mb-8`}>
           {displayTeam.map((member, index) => {
             const slug = createSlug(member.name);
             return (
