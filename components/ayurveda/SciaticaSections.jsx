@@ -284,13 +284,13 @@ export const SciaticaPricing = ({
   );
 };
 
-export const SciaticaTreatment = ({ data, showBorderLeft = true, rightContentStyle = 'tags', bgColor = 'bg-white', showStepNumbers = false, showComparison = false, colRatio = 'lg:grid-cols-[55%_45%]' }) => {
+export const SciaticaTreatment = ({ data, showBorderLeft = true, rightContentStyle = 'tags', bgColor = 'bg-white', showStepNumbers = false, showComparison = false, colRatio = 'md:grid-cols-[55%_45%]' }) => {
   const { treatment = {}, rightContent = {} } = data || {};
 
   return (
-    <section className={bgColor} style={{ padding: '96px 24px' }}>
-      <div className="max-w-7xl mx-auto">
-        <div className="text-center mb-12">
+    <section className={`${bgColor} py-16 md:py-24 px-4 md:px-6 lg:px-12`}>
+      <div className="max-w-6xl mx-auto">
+        <div className="text-center mb-10 md:mb-12">
           <div className="text-xs tracking-[0.2em] uppercase mb-4" style={{ color: '#C9A84C', fontFamily: 'Fraunces, Georgia, serif' }}>
             {treatment.label}
           </div>
@@ -299,11 +299,11 @@ export const SciaticaTreatment = ({ data, showBorderLeft = true, rightContentSty
           </h2>
         </div>
         {treatment.intro && (
-          <p className="text-base mb-12 max-w-[720px] mx-auto" style={{ color: 'rgb(107,107,107)', lineHeight: '1.8', fontSize: '16px', textAlign: 'center' }} dangerouslySetInnerHTML={{ __html: treatment.intro }}>
+          <p className="text-base mb-10 md:mb-12 max-w-[720px] mx-auto" style={{ color: 'rgb(107,107,107)', lineHeight: '1.8', fontSize: '14px', textAlign: 'center' }} dangerouslySetInnerHTML={{ __html: treatment.intro }}>
           </p>
         )}
-        <div className={`grid grid-cols-1 ${colRatio} gap-12 items-start`}>
-          <div className="space-y-8">
+        <div className={`grid grid-cols-1 ${colRatio} gap-8 lg:gap-12 items-start`}>
+          <div className="space-y-6 md:space-y-8">
             {(treatment.steps || []).map((step, index) => {
               const displayNumber = step.number || (index + 1 < 10 ? `0${index + 1}` : `${index + 1}`);
               const hasTitle = step.title && step.title.trim() !== '';
@@ -316,8 +316,7 @@ export const SciaticaTreatment = ({ data, showBorderLeft = true, rightContentSty
                           <div className="w-7 h-7 rounded-full bg-white border-2 border-[#C9A84C] flex items-center justify-center text-xs font-serif flex-shrink-0" style={{ color: '#C9A84C', fontFamily: 'Fraunces, Georgia, serif' }}>
                             {displayNumber}
                           </div>
-                          <h3 className="text-lg font-serif" style={{ fontFamily: 'Fraunces, Georgia, serif', color: 'rgb(26,26,26)', fontSize: '19px', fontWeight: 600 }}>
-                            {step.title}
+                          <h3 className="text-lg font-serif" style={{ fontFamily: 'Fraunces, Georgia, serif', color: 'rgb(26,26,26)', fontSize: '19px', fontWeight: 600 }} dangerouslySetInnerHTML={{ __html: step.title }}>
                           </h3>
                         </div>
                       )}
@@ -329,8 +328,7 @@ export const SciaticaTreatment = ({ data, showBorderLeft = true, rightContentSty
                   ) : (
                     <>
                       {hasTitle && (
-                        <h3 className="text-lg font-serif" style={{ fontFamily: 'Fraunces, Georgia, serif', color: 'rgb(26,26,26)', fontSize: '19px', fontWeight: 600 }}>
-                          {step.title}
+                        <h3 className="text-lg font-serif" style={{ fontFamily: 'Fraunces, Georgia, serif', color: 'rgb(26,26,26)', fontSize: '19px', fontWeight: 600 }} dangerouslySetInnerHTML={{ __html: step.title }}>
                         </h3>
                       )}
                       {step.description && (
@@ -367,14 +365,14 @@ export const SciaticaTreatment = ({ data, showBorderLeft = true, rightContentSty
               </blockquote>
             )}
           </div>
-          <div className="lg:sticky lg:top-8 space-y-6">
+          <div className="md:sticky md:top-6 lg:top-8 space-y-5 md:space-y-6 w-full max-w-md mx-auto md:max-w-none">
             {rightContent.image && (
               <div className="rounded-md overflow-hidden">
                 <img src={rightContent.image} alt={rightContent.alt || ''} className="w-full object-cover" style={{ aspectRatio: '4/5' }} />
               </div>
             )}
             {showComparison && (
-              <div className="bg-white rounded-2xl overflow-hidden border border-gray-100 shadow-sm">
+              <div className="bg-white rounded-2xl overflow-hidden border border-gray-100 shadow-sm w-full">
                 <div className="grid grid-cols-2 border-b border-gray-100">
                   <div className="p-4 text-center border-r border-gray-100">
                     <p className="text-xs font-semibold mb-2" style={{ color: 'rgb(212, 24, 61)' }}>Cortisone at 6 weeks</p>
@@ -405,7 +403,7 @@ export const SciaticaTreatment = ({ data, showBorderLeft = true, rightContentSty
               </div>
             )}
             {rightContentStyle === 'tags' && rightContent.tags && rightContent.tags.length > 0 && (
-              <div className="grid grid-cols-2 gap-3">
+              <div className="grid grid-cols-2 gap-3 w-full">
                 {rightContent.tags.map((tag, index) => (
                   <div key={index} className="bg-[#F8F5F0] p-3 rounded text-center border border-[#E5DFD3] flex items-center justify-center gap-2">
                     <svg className="w-3 h-3 flex-shrink-0" style={{ color: '#C9A84C' }} fill="currentColor" viewBox="0 0 24 24">
@@ -417,7 +415,7 @@ export const SciaticaTreatment = ({ data, showBorderLeft = true, rightContentSty
               </div>
             )}
             {rightContentStyle === 'tagsBox' && rightContent.tags && rightContent.tags.length > 0 && (
-              <div className="bg-white p-4 rounded-lg border-l-4 border-[#C9A84C] shadow-sm">
+              <div className="bg-white p-4 rounded-lg border-l-4 border-[#C9A84C] shadow-sm w-full">
                 {rightContent.label && (
                   <div className="text-[11px] tracking-[0.2em] uppercase mb-3" style={{ color: '#C9A84C', fontFamily: 'Fraunces, Georgia, serif' }}>
                     {rightContent.label}
@@ -436,7 +434,7 @@ export const SciaticaTreatment = ({ data, showBorderLeft = true, rightContentSty
               </div>
             )}
             {rightContentStyle === 'list' && rightContent.items && rightContent.items.length > 0 && (
-              <div className="bg-white p-5 rounded-md border border-gray-200 shadow-sm">
+              <div className="bg-white p-5 rounded-md border border-gray-200 shadow-sm w-full">
                 {rightContent.label && (
                   <div className="text-[11px] tracking-[0.2em] uppercase mb-4" style={{ color: '#C9A84C', fontFamily: 'Fraunces, Georgia, serif' }}>
                     {rightContent.label}
@@ -455,7 +453,7 @@ export const SciaticaTreatment = ({ data, showBorderLeft = true, rightContentSty
               </div>
             )}
             {rightContentStyle === 'simpleBox' && (rightContent.text || rightContent.description) && (
-              <div className="bg-white p-6 rounded-lg border-l-4 border-[#C9A84C] shadow-sm">
+              <div className="bg-white p-6 rounded-lg border-l-4 border-[#C9A84C] shadow-sm w-full">
                 {rightContent.label && (
                   <div className="text-[11px] tracking-[0.2em] uppercase mb-4" style={{ color: '#C9A84C', fontFamily: 'Fraunces, Georgia, serif' }}>
                     {rightContent.label}
@@ -465,7 +463,7 @@ export const SciaticaTreatment = ({ data, showBorderLeft = true, rightContentSty
               </div>
             )}
             {rightContentStyle === 'bulletList' && rightContent.items && rightContent.items.length > 0 && (
-              <div className="bg-[#FAF7F2] p-6 rounded-xl border border-[#E5DFD3]">
+              <div className="bg-[#FAF7F2] p-6 rounded-xl border border-[#E5DFD3] w-full">
                 {rightContent.label && (
                   <div className="text-[11px] tracking-[0.2em] uppercase mb-4" style={{ color: '#C9A84C', fontFamily: 'Fraunces, Georgia, serif' }}>
                     {rightContent.label}
@@ -482,7 +480,7 @@ export const SciaticaTreatment = ({ data, showBorderLeft = true, rightContentSty
               </div>
             )}
             {rightContentStyle === 'keyAnatomy' && rightContent.keyAnatomy && rightContent.keyAnatomy.length > 0 && (
-              <div className="mt-6 bg-white p-6 rounded-xl" style={{ border: "1px solid rgba(28, 21, 10, 0.08)" }}>
+              <div className="mt-6 bg-white p-6 rounded-xl w-full" style={{ border: "1px solid rgba(28, 21, 10, 0.08)" }}>
                 {rightContent.label && (
                   <p className="text-xs font-semibold tracking-widest uppercase mb-4" style={{ fontFamily: '"DM Sans", system-ui, sans-serif', color: "rgb(201, 168, 76)" }}>
                     {rightContent.label}
@@ -507,7 +505,7 @@ export const SciaticaTreatment = ({ data, showBorderLeft = true, rightContentSty
               </div>
             )}
             {rightContentStyle === 'keyFact' && rightContent.keyFact && rightContent.keyFact.length > 0 && (
-              <div className="mt-6 bg-white p-6 rounded-lg border border-gray-100 shadow-sm">
+              <div className="mt-6 bg-white p-6 rounded-lg border border-gray-100 shadow-sm w-full">
                 {rightContent.label && (
                   <p className="text-[12px] font-semibold tracking-[0.15em] uppercase text-[#C9A84C] mb-2">
                     {rightContent.label}

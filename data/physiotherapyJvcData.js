@@ -136,7 +136,7 @@ export const physiotherapyJvcMechanism = {
   title: "Evidence-based techniques and modalities at our JVC clinic.",
   techniques: [
     {
-      title: "Manual Therapy",
+      title: "<a href='/treatments/manual-therapy-dubai/' class='text-inherit hover:text-[#C9A55A] transition-colors'>Manual Therapy</a>",
       description: "Skilled hands-on treatment including joint mobilisation, soft tissue mobilisation, manipulation, myofascial release, and where appropriate, joint manipulation. The foundational physiotherapy technique that no machine replaces."
     },
     {

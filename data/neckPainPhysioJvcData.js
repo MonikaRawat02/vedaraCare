@@ -222,7 +222,7 @@ export const neckPainModalities = {
   modalities: [
     {
       number: "01",
-      title: "Cervical Manual Therapy",
+      title: "<a href='/treatments/manual-therapy-dubai/' class='text-inherit hover:text-[#C9A55A] transition-colors'>Cervical Manual Therapy</a>",
       description: "Spinal mobilisation (graded oscillatory movements to restore cervical joint motion), manipulation in carefully selected patients, soft tissue work for muscle tension, and manual stretching. Evidence-based for both acute and chronic neck pain. Performed by DPT-qualified physiotherapists with manual therapy training."  },
     {
       number: "02",
