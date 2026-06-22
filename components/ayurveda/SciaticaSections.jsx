@@ -94,9 +94,6 @@ export const SciaticaEmergency = ({ data }) => {
           -ms-overflow-style: none;
           scrollbar-width: none;
         }
-        strong {
-          color: rgb(26, 26, 26) !important;
-        }
       `}</style>
       <div className="max-w-7xl mx-auto">
         <div className="text-center mb-12">
@@ -287,23 +284,11 @@ export const SciaticaPricing = ({
   );
 };
 
-export const SciaticaTreatment = ({ data, showBorderLeft = true, rightContentStyle = 'tags', bgColor = 'bg-white', showStepNumbers = false, showComparison = false }) => {
+export const SciaticaTreatment = ({ data, showBorderLeft = true, rightContentStyle = 'tags', bgColor = 'bg-white', showStepNumbers = false, showComparison = false, colRatio = 'lg:grid-cols-[55%_45%]' }) => {
   const { treatment = {}, rightContent = {} } = data || {};
 
   return (
     <section className={bgColor} style={{ padding: '96px 24px' }}>
-      <style>{`
-        .no-scrollbar::-webkit-scrollbar {
-          display: none;
-        }
-        .no-scrollbar {
-          -ms-overflow-style: none;
-          scrollbar-width: none;
-        }
-        strong {
-          color: rgb(26, 26, 26) !important;
-        }
-      `}</style>
       <div className="max-w-7xl mx-auto">
         <div className="text-center mb-12">
           <div className="text-xs tracking-[0.2em] uppercase mb-4" style={{ color: '#C9A84C', fontFamily: 'Fraunces, Georgia, serif' }}>
@@ -317,74 +302,72 @@ export const SciaticaTreatment = ({ data, showBorderLeft = true, rightContentSty
           <p className="text-base mb-12 max-w-[720px] mx-auto" style={{ color: 'rgb(107,107,107)', lineHeight: '1.8', fontSize: '16px', textAlign: 'center' }} dangerouslySetInnerHTML={{ __html: treatment.intro }}>
           </p>
         )}
-        <div className="grid grid-cols-1 lg:grid-cols-2 gap-12 items-stretch">
-          <div className="relative">
-            <div className="lg:absolute lg:inset-0 lg:overflow-y-auto lg:pr-6 space-y-8 no-scrollbar">
-              {(treatment.steps || []).map((step, index) => {
-                const displayNumber = step.number || (index + 1 < 10 ? `0${index + 1}` : `${index + 1}`);
-                const hasTitle = step.title && step.title.trim() !== '';
-                return (
-                  <div key={index} className={`space-y-3 ${showBorderLeft ? 'border-l-4 border-[#C9A84C] pl-6' : ''}`}>
-                    {showStepNumbers ? (
-                      <>
-                        {hasTitle && (
-                          <div className="flex items-start gap-3">
-                            <div className="w-7 h-7 rounded-full bg-white border-2 border-[#C9A84C] flex items-center justify-center text-xs font-serif flex-shrink-0" style={{ color: '#C9A84C', fontFamily: 'Fraunces, Georgia, serif' }}>
-                              {displayNumber}
-                            </div>
-                            <h3 className="text-lg font-serif" style={{ fontFamily: 'Fraunces, Georgia, serif', color: 'rgb(26,26,26)', fontSize: '19px', fontWeight: 600 }}>
-                              {step.title}
-                            </h3>
+        <div className={`grid grid-cols-1 ${colRatio} gap-12 items-start`}>
+          <div className="space-y-8">
+            {(treatment.steps || []).map((step, index) => {
+              const displayNumber = step.number || (index + 1 < 10 ? `0${index + 1}` : `${index + 1}`);
+              const hasTitle = step.title && step.title.trim() !== '';
+              return (
+                <div key={index} className={`space-y-3 ${showBorderLeft ? 'border-l-4 border-[#C9A84C] pl-6' : ''}`}>
+                  {showStepNumbers ? (
+                    <>
+                      {hasTitle && (
+                        <div className="flex items-start gap-3">
+                          <div className="w-7 h-7 rounded-full bg-white border-2 border-[#C9A84C] flex items-center justify-center text-xs font-serif flex-shrink-0" style={{ color: '#C9A84C', fontFamily: 'Fraunces, Georgia, serif' }}>
+                            {displayNumber}
                           </div>
-                        )}
-                        {step.description && (
-                          <p className={hasTitle ? "text-base ml-10" : "text-base"} style={{ color: 'rgb(107,107,107)', lineHeight: '1.8', fontSize: '15px' }} dangerouslySetInnerHTML={{ __html: step.description }}>
-                          </p>
-                        )}
-                      </>
-                    ) : (
-                      <>
-                        {hasTitle && (
                           <h3 className="text-lg font-serif" style={{ fontFamily: 'Fraunces, Georgia, serif', color: 'rgb(26,26,26)', fontSize: '19px', fontWeight: 600 }}>
                             {step.title}
                           </h3>
-                        )}
-                        {step.description && (
-                          <p className="text-base" style={{ color: 'rgb(107,107,107)', lineHeight: '1.8', fontSize: '15px' }} dangerouslySetInnerHTML={{ __html: step.description }}>
-                          </p>
-                        )}
-                      </>
-                    )}
-                  </div>
-                );
-              })}
-              {treatment.whatWeRecommendAgainst && (
-                <div className="mt-10 p-8 rounded-xl" style={{ backgroundColor: 'rgb(255, 248, 248)', border: '1px solid rgba(212, 24, 61, 0.1)' }}>
-                  <h3 className="mb-6 text-base font-semibold" style={{ fontFamily: 'Fraunces, Georgia, serif', color: 'rgb(26, 26, 26)' }}>
-                    {treatment.whatWeRecommendAgainst.title}
-                  </h3>
-                  <div className="space-y-4">
-                    {treatment.whatWeRecommendAgainst.items.map((item, index) => (
-                      <div key={index} className="flex gap-3">
-                        <svg xmlns="http://www.w3.org/2000/svg" width="16" height="16" viewBox="0 0 24 24" fill="none" stroke="currentColor" strokeWidth="2" strokeLinecap="round" strokeLinejoin="round" className="mt-1 shrink-0" style={{ color: 'rgb(212, 24, 61)' }}>
-                          <path d="M18 6 6 18"></path>
-                          <path d="m6 6 12 12"></path>
-                        </svg>
-                        <p className="text-gray-700 leading-relaxed">
-                          <strong>{item.label}</strong>{item.description}
+                        </div>
+                      )}
+                      {step.description && (
+                        <p className={hasTitle ? "text-base ml-10" : "text-base"} style={{ color: 'rgb(107,107,107)', lineHeight: '1.8', fontSize: '15px' }} dangerouslySetInnerHTML={{ __html: step.description }}>
                         </p>
-                      </div>
-                    ))}
-                  </div>
+                      )}
+                    </>
+                  ) : (
+                    <>
+                      {hasTitle && (
+                        <h3 className="text-lg font-serif" style={{ fontFamily: 'Fraunces, Georgia, serif', color: 'rgb(26,26,26)', fontSize: '19px', fontWeight: 600 }}>
+                          {step.title}
+                        </h3>
+                      )}
+                      {step.description && (
+                        <p className="text-base" style={{ color: 'rgb(107,107,107)', lineHeight: '1.8', fontSize: '15px' }} dangerouslySetInnerHTML={{ __html: step.description }}>
+                        </p>
+                      )}
+                    </>
+                  )}
                 </div>
-              )}
-              {treatment.footer && (
-                <blockquote className="py-6 border-y border-[#E5DFD3] mt-6 italic" style={{ color: '#C9A84C', fontFamily: 'Fraunces, Georgia, serif', fontSize: '19px', lineHeight: '1.7' }} dangerouslySetInnerHTML={{ __html: treatment.footer }}>
-                </blockquote>
-              )}
-            </div>
+              );
+            })}
+            {treatment.whatWeRecommendAgainst && (
+              <div className="mt-10 p-8 rounded-xl" style={{ backgroundColor: 'rgb(255, 248, 248)', border: '1px solid rgba(212, 24, 61, 0.1)' }}>
+                <h3 className="mb-6 text-base font-semibold" style={{ fontFamily: 'Fraunces, Georgia, serif', color: 'rgb(26, 26, 26)' }}>
+                  {treatment.whatWeRecommendAgainst.title}
+                </h3>
+                <div className="space-y-4">
+                  {treatment.whatWeRecommendAgainst.items.map((item, index) => (
+                    <div key={index} className="flex gap-3">
+                      <svg xmlns="http://www.w3.org/2000/svg" width="16" height="16" viewBox="0 0 24 24" fill="none" stroke="currentColor" strokeWidth="2" strokeLinecap="round" strokeLinejoin="round" className="mt-1 shrink-0" style={{ color: 'rgb(212, 24, 61)' }}>
+                        <path d="M18 6 6 18"></path>
+                        <path d="m6 6 12 12"></path>
+                      </svg>
+                      <p className="text-gray-700 leading-relaxed">
+                        <strong>{item.label}</strong>{item.description}
+                      </p>
+                    </div>
+                  ))}
+                </div>
+              </div>
+            )}
+            {treatment.footer && (
+              <blockquote className="py-6 border-y border-[#E5DFD3] mt-6 italic" style={{ color: '#C9A84C', fontFamily: 'Fraunces, Georgia, serif', fontSize: '19px', lineHeight: '1.7' }} dangerouslySetInnerHTML={{ __html: treatment.footer }}>
+              </blockquote>
+            )}
           </div>
-          <div className="space-y-6">
+          <div className="lg:sticky lg:top-8 space-y-6">
             {rightContent.image && (
               <div className="rounded-md overflow-hidden">
                 <img src={rightContent.image} alt={rightContent.alt || ''} className="w-full object-cover" style={{ aspectRatio: '4/5' }} />
@@ -433,6 +416,25 @@ export const SciaticaTreatment = ({ data, showBorderLeft = true, rightContentSty
                 ))}
               </div>
             )}
+            {rightContentStyle === 'tagsBox' && rightContent.tags && rightContent.tags.length > 0 && (
+              <div className="bg-white p-4 rounded-lg border-l-4 border-[#C9A84C] shadow-sm">
+                {rightContent.label && (
+                  <div className="text-[11px] tracking-[0.2em] uppercase mb-3" style={{ color: '#C9A84C', fontFamily: 'Fraunces, Georgia, serif' }}>
+                    {rightContent.label}
+                  </div>
+                )}
+                <div className="grid grid-cols-2 md:grid-cols-3 gap-2">
+                  {rightContent.tags.map((tag, index) => (
+                    <div key={index} className="bg-[#F8F5F0] p-2 rounded text-center border border-[#E5DFD3] flex items-center justify-center gap-1.5">
+                      <svg className="w-2.5 h-2.5 flex-shrink-0" style={{ color: '#C9A84C' }} fill="currentColor" viewBox="0 0 24 24">
+                        <path d="M9 16.17L4.83 12l-1.42 1.41L9 19 21 7l-1.41-1.41L9 16.17z"></path>
+                      </svg>
+                      <span style={{ fontSize: '11px', color: '#1C1C14' }}>{tag}</span>
+                    </div>
+                  ))}
+                </div>
+              </div>
+            )}
             {rightContentStyle === 'list' && rightContent.items && rightContent.items.length > 0 && (
               <div className="bg-white p-5 rounded-md border border-gray-200 shadow-sm">
                 {rightContent.label && (
@@ -452,14 +454,14 @@ export const SciaticaTreatment = ({ data, showBorderLeft = true, rightContentSty
                 </div>
               </div>
             )}
-            {rightContentStyle === 'simpleBox' && rightContent.text && (
+            {rightContentStyle === 'simpleBox' && (rightContent.text || rightContent.description) && (
               <div className="bg-white p-6 rounded-lg border-l-4 border-[#C9A84C] shadow-sm">
                 {rightContent.label && (
                   <div className="text-[11px] tracking-[0.2em] uppercase mb-4" style={{ color: '#C9A84C', fontFamily: 'Fraunces, Georgia, serif' }}>
                     {rightContent.label}
                   </div>
                 )}
-                <p style={{ fontSize: '15px', color: '#1C1C14', fontFamily: 'Inter, system-ui, sans-serif', lineHeight: '1.7' }}>{rightContent.text}</p>
+                <p style={{ fontSize: '15px', color: '#1C1C14', fontFamily: 'Inter, system-ui, sans-serif', lineHeight: '1.7' }}>{rightContent.text || rightContent.description}</p>
               </div>
             )}
             {rightContentStyle === 'bulletList' && rightContent.items && rightContent.items.length > 0 && (
@@ -515,43 +517,6 @@ export const SciaticaTreatment = ({ data, showBorderLeft = true, rightContentSty
                   <p key={index} className="text-sm text-gray-700 leading-relaxed">
                     {item.description}
                   </p>
-                ))}
-              </div>
-            )}
-            {rightContent.keyStatistics && rightContent.keyStatistics.length > 0 && (
-              <div className="p-6 text-sm" style={{ background: 'rgb(255, 255, 255)', borderRadius: '8px', border: '1px solid rgba(184, 151, 90, 0.2)', fontFamily: 'DM Sans, sans-serif' }}>
-                <p className="text-[10px] font-medium tracking-widest uppercase mb-3" style={{ color: 'rgb(184, 151, 90)' }}>
-                  Key Statistics
-                </p>
-                {rightContent.keyStatistics.map((stat, index) => (
-                  <div key={index} className="flex items-start gap-2 mb-2.5 text-xs leading-[1.6]" style={{ color: 'rgb(107, 100, 86)' }}>
-                    <span className="mt-0.5 w-3.5 h-3.5 flex-shrink-0 flex items-center justify-center rounded-full" style={{ background: 'rgba(184, 151, 90, 0.15)' }}>
-                      <svg xmlns="http://www.w3.org/2000/svg" width="8" height="8" viewBox="0 0 24 24" fill="none" stroke="currentColor" strokeWidth="2" strokeLinecap="round" strokeLinejoin="round" style={{ color: 'rgb(184, 151, 90)' }}>
-                        <path d="M20 6 9 17l-5-5"></path>
-                      </svg>
-                    </span>
-                    {stat}
-                  </div>
-                ))}
-              </div>
-            )}
-            {rightContent.treatmentModalities && rightContent.treatmentModalities.length > 0 && (
-              <div className="mt-5 p-5" style={{ background: 'rgb(250, 246, 238)', borderRadius: '8px', border: '1px solid rgba(184, 151, 90, 0.2)', fontFamily: 'DM Sans, sans-serif' }}>
-                <p className="text-[10px] font-medium tracking-widest uppercase mb-3" style={{ color: 'rgb(184, 151, 90)' }}>
-                  Treatment Modalities
-                </p>
-                {rightContent.treatmentModalities.map((modality, index, array) => (
-                  <div 
-                    key={index} 
-                    className="flex items-center gap-2 py-2 text-sm" 
-                    style={{ 
-                      color: 'rgb(107, 100, 86)', 
-                      borderBottom: index !== array.length - 1 ? '1px solid rgba(184, 151, 90, 0.15)' : 'none'
-                    }}
-                  >
-                    <div className="w-1.5 h-1.5 rounded-full flex-shrink-0" style={{ background: 'rgb(184, 151, 90)' }}></div>
-                    {modality}
-                  </div>
                 ))}
               </div>
             )}
