@@ -39,19 +39,24 @@ export const pelvicFloorSciaticaSection1 = {
       {
         description: "The pelvic floor is a group of muscles, ligaments, and connective tissues that form the base of your pelvis. These structures support the pelvic organs (bladder, uterus, bowel), control continence, contribute to sexual function, and play a role in core stability and breathing." },
       {
-        description: "<strong>What the pelvic floor does every day</strong><br/>The pelvic floor muscles work continuously throughout the day. They contract automatically when you cough, sneeze, lift, or laugh — preventing leakage. They relax appropriately during urination and bowel movements. They contribute to sexual sensation and function. When functioning properly, you should be unaware of them — they simply do their job."
+        title: "What the pelvic floor does every day",
+        description: "The pelvic floor muscles work continuously throughout the day. They contract automatically when you cough, sneeze, lift, or laugh — preventing leakage. They relax appropriately during urination and bowel movements. They contribute to sexual sensation and function. When functioning properly, you should be unaware of them — they simply do their job."
       },
       {
-        description: "<strong>When the pelvic floor is not working properly</strong><br/>Pelvic floor dysfunction can manifest in many ways: leaking urine with cough or exercise (stress incontinence); sudden urgent need to urinate (urge incontinence); feeling of heaviness or bulging in the pelvis (prolapse); pain during sexual activity; chronic pelvic pain; lower back pain related to pelvic instability. The same muscle group, different patterns of dysfunction."
+        title: "When the pelvic floor is not working properly",
+        description: "Pelvic floor dysfunction can manifest in many ways: leaking urine with cough or exercise (stress incontinence); sudden urgent need to urinate (urge incontinence); feeling of heaviness or bulging in the pelvis (prolapse); pain during sexual activity; chronic pelvic pain; lower back pain related to pelvic instability. The same muscle group, different patterns of dysfunction."
       },
       {
-        description: "<strong>Why pelvic floor dysfunction is so common and so undertreated</strong><br/>Pelvic floor dysfunction affects up to one in three women during their lifetime, with rates substantially higher in postnatal populations. Despite this, many patients suffer silently for years. The reasons: embarrassment, cultural norms, assumption that symptoms are normal after childbirth, and lack of awareness that effective treatment exists."
+        title: "Why pelvic floor dysfunction is so common and so undertreated",
+        description: "Pelvic floor dysfunction affects up to one in three women during their lifetime, with rates substantially higher in postnatal populations. Despite this, many patients suffer silently for years. The reasons: embarrassment, cultural norms, assumption that symptoms are normal after childbirth, and lack of awareness that effective treatment exists."
       },
       {
-        description: "<strong>The Dubai context</strong><br/>In Dubai's diverse expat and Emirati population, pelvic floor concerns are particularly underaddressed. The substantial expat and Emirati birth rate means many postnatal women have concerns that go untreated. Cultural modesty norms in some communities make raising pelvic concerns particularly difficult. The presence of qualified female pelvic floor physiotherapists matters significantly."
+        title: "The Dubai context",
+        description: "In Dubai's diverse expat and Emirati population, pelvic floor concerns are particularly underaddressed. The substantial expat and Emirati birth rate means many postnatal women have concerns that go untreated. Cultural modesty norms in some communities make raising pelvic concerns particularly difficult. The presence of qualified female pelvic floor physiotherapists matters significantly."
       },
       {
-        description: "<strong>The good news</strong><br/>Most pelvic floor conditions respond excellently to appropriate physiotherapy. Stress incontinence often resolves completely with structured pelvic floor muscle training. Many prolapse symptoms substantially improve with conservative management. Postnatal recovery is typically excellent with appropriate intervention."     }
+        title: "The good news",
+        description: "Most pelvic floor conditions respond excellently to appropriate physiotherapy. Stress incontinence often resolves completely with structured pelvic floor muscle training. Many prolapse symptoms substantially improve with conservative management. Postnatal recovery is typically excellent with appropriate intervention."     }
     ],
     footer: "Many of the most distressing pelvic floor symptoms — stress incontinence, prolapse symptoms, painful intercourse, postnatal recovery — respond excellently to physiotherapy. The shame and silence are often more limiting than the conditions themselves."  },
   rightContent: {
@@ -69,7 +74,8 @@ export const pelvicFloorSciaticaSection1 = {
 };
 
 export const pelvicFloorTypes = {
-  cardBgColor: "bg-[#FAF6EE]",
+  bgColor: "rgb(255, 255, 255)", // Section background
+  cardBgColor: "rgb(250, 246, 238)", // Card background
   label: "Common Conditions",
   title: "The pelvic floor conditions we treat at our JVC clinic.",
   description: "Most pelvic floor conditions are highly treatable with appropriate physiotherapy. These are the most common conditions we see at our clinic.",
@@ -379,8 +385,11 @@ export const pelvicFloorAssessment = {
     },
     {
       title: "When internal assessment particularly adds value",
-      description: "For certain conditions, internal assessment substantially improves diagnostic accuracy: complex prolapse assessment, evaluating specific muscle layer strength, assessing pelvic floor coordination problems, evaluating muscle tension causing pain, and evaluating scar tissue from childbirth or surgery. We will explain this honestly so you can make an informed choice."
-    },
+      description: "For certain conditions, internal assessment substantially improves diagnostic accuracy: complex prolapse assessment, evaluating specific muscle layer strength, assessing pelvic floor coordination problems, evaluating muscle tension causing pain, and evaluating scar tissue from childbirth or surgery. We will explain this honestly so you can make an informed choice."  },
+    // {
+    //   title: "When external-only assessment is sufficient",
+    //   description: "Many conditions can be effectively assessed and treated with external-only techniques. These include postnatal recovery planning, basic pelvic floor strengthening, bladder retraining, postural retraining, and many cases of chronic pelvic pain. We will always prioritise your comfort and discuss what's right for you."
+    // },
     {
       title: "Always with respect",
       description: "Throughout assessment and treatment, your comfort and consent guide everything. You can ask questions at any time. You can stop the assessment at any point. You can choose to keep clothing on or have a chaperone present. We have no agenda other than helping you address your concerns in the way that works for you."
@@ -447,7 +456,11 @@ export const pelvicFloorPostnatalSection = {
     {
       heading: "Postnatal home physiotherapy available",
       paragraph: "For new mothers in the early postnatal period, leaving home with a newborn is often impractical. We provide home physiotherapy across Dubai for postnatal pelvic floor work. Particularly useful in the first 6-12 weeks postpartum, with transition to clinic visits as logistics improve. Same female physiotherapist throughout home and clinic phases."
-    }
+    },
+    // {
+    //   heading: "Coordination with maternity care",
+    //   paragraph: "We work closely with your obstetrician, midwife, and maternity team to ensure seamless care. We can communicate with your providers about your recovery, share assessment findings with your consent, and align our treatment plan with your overall postnatal care goals."
+    // }
   ],
   image: "/images/postnatal-pelvic-floor-recovery-vedara-jvc.webp",
   alt: "Postnatal pelvic floor recovery at Vedara Care JVC Dubai with female physiotherapist",
@@ -529,24 +542,32 @@ export const pelvicFloorSciaticaSection2 = {
         description: "Effective pelvic floor physiotherapy combines several evidence-based approaches. The specific combination is calibrated to your condition, your preferences, and your goals."
       },
       {
-        description: "<strong>Comprehensive initial assessment</strong><br/>The first session is comprehensive — typically 75-90 minutes including detailed history, postural assessment, breathing assessment, external pelvic floor assessment (and internal if you consent), assessment of associated muscle groups, goal-setting, and treatment planning."
+        title: "Comprehensive initial assessment",
+        description: "The first session is comprehensive — typically 75-90 minutes including detailed history, postural assessment, breathing assessment, external pelvic floor assessment (and internal if you consent), assessment of associated muscle groups, goal-setting, and treatment planning."
       },
       {
-        description: "<strong>Pelvic floor muscle training </strong><br/>The foundation of pelvic floor physiotherapy. Specific training of pelvic floor muscles — including both strengthening (for weak pelvic floors) and relaxation training (for tight pelvic floors with pain or coordination problems). Different from generic Kegel exercises — calibrated to your specific dysfunction pattern."
+        title: "Pelvic floor muscle training",
+        description: "The foundation of pelvic floor physiotherapy. Specific training of pelvic floor muscles — including both strengthening (for weak pelvic floors) and relaxation training (for tight pelvic floors with pain or coordination problems). Different from generic Kegel exercises — calibrated to your specific dysfunction pattern."
       },
       {
-        description: "<strong>Biofeedback technology</strong><br/>External biofeedback using sensors that detect muscle activity provides visual feedback during pelvic floor training. Particularly useful for patients who struggle to identify pelvic floor contractions. Biofeedback substantially improves training accuracy and patient understanding."
+        title: "Biofeedback technology",
+        description: "External biofeedback using sensors that detect muscle activity provides visual feedback during pelvic floor training. Particularly useful for patients who struggle to identify pelvic floor contractions. Biofeedback substantially improves training accuracy and patient understanding."
       },
      {
-description:"<strong>Manual therapy where appropriate</strong><br/>For patients with muscle tension, scar tissue restrictions, or specific dysfunction patterns, manual therapy may be appropriate. This may include external soft tissue work on relevant muscle groups, scar tissue work for postnatal patients, and where consent is given, internal techniques for specific conditions." 
+       title: "Manual therapy where appropriate",
+       description: "For patients with muscle tension, scar tissue restrictions, or specific dysfunction patterns, manual therapy may be appropriate. This may include external soft tissue work on relevant muscle groups, scar tissue work for postnatal patients, and where consent is given, internal techniques for specific conditions." 
      },
 
       {
-        description: "<strong>Postural and breathing retraining</strong><br/>The pelvic floor works with the diaphragm, deep abdominals, and postural muscles as a coordinated system. Many pelvic floor problems involve dysfunction in this broader system. Addressing the broader system is often essential for pelvic floor recovery."
+        title: "Postural and breathing retraining",
+        description: "The pelvic floor works with the diaphragm, deep abdominals, and postural muscles as a coordinated system. Many pelvic floor problems involve dysfunction in this broader system. Addressing the broader system is often essential for pelvic floor recovery."
             },
 
             {
-              description: "<strong>Bladder and bowel retraining</strong><br/>For incontinence and urgency conditions, behavioural training programmes substantially improve outcomes. May include bladder diaries, scheduled voiding, urge suppression techniques, fluid management guidance, and bowel coordination training."      }
+              title: "Bladder and bowel retraining",
+              description: "For incontinence and urgency conditions, behavioural training programmes substantially improve outcomes. May include bladder diaries, scheduled voiding, urge suppression techniques, fluid management guidance, and bowel coordination training."
+            },
+           
     ],
     footer: "Most pelvic floor conditions are highly treatable. The combination of accurate assessment, specific exercise, biofeedback, manual therapy, and patient education produces excellent outcomes for most patients."
   },
