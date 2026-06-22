@@ -55,6 +55,7 @@ const Footer = () => {
         <h4 className="text-lg font-bold text-white mb-6">Popular Treatments</h4>
         <ul className="space-y-4 text-[#F8F9FA]/80 text-sm">
           <li><Link href="/treatments/manual-therapy-dubai/" className="hover:text-white transition-colors">Manual Therapy</Link></li>
+          <li><Link href="/treatments/cupping-therapy-dubai/" className="hover:text-white transition-colors">Cupping Therapy</Link></li>
           <li><Link href="/treatments/panchakarma-dubai/" className="hover:text-white transition-colors">Panchakarma in Dubai</Link></li>
           <li><Link href="/treatments/abhyanga-dubai/" className="hover:text-white transition-colors">Abhyanga Massage</Link></li>
           <li><Link href="/treatments/shirodhara-dubai/" className="hover:text-white transition-colors">Shirodhara</Link></li>

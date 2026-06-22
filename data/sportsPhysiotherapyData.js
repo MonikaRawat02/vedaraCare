@@ -568,6 +568,11 @@ export const sportsPhysiotherapyRelatedPages = {
       href: "/physiotherapy-jvc/"
     },
     {
+      title: "Cupping Therapy",
+      description: "Can be used as an adjunct treatment for sports injuries and muscle tension.",
+      href: "/treatments/cupping-therapy-dubai/"
+    },
+    {
       title: "Back Pain Treatment",
       description: "Integrated physiotherapy + Ayurveda for chronic back pain — including sports-related chronic back conditions.",
       href: "/conditions/back-pain-ayurveda-dubai/"

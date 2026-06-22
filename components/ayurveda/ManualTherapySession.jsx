@@ -36,7 +36,7 @@ const ManualTherapySession = ({
           )}
         </div>
 
-        <div className="grid grid-cols-1 md:grid-cols-[55%_45%] gap-8 lg:gap-12 items-start">
+        <div className="grid lg:grid-cols-[60%_40%] gap-12 items-start">
           {/* Left Content */}
           <div className="space-y-6 md:space-y-8">
             {sections.map((section, index) => (
@@ -57,14 +57,14 @@ const ManualTherapySession = ({
 
           {/* Right Sidebar - Safety Card */}
           <div className="md:sticky md:top-6 lg:top-8 w-full max-w-md mx-auto md:max-w-none">
-            <div className="bg-white rounded-lg border-2 border-[#C9A961] overflow-hidden">
+            <div className="bg-white rounded-lg border-2 border-[#C4912A] overflow-hidden">
               {/* Safety Card Header */}
               <div className="p-4 md:p-5 lg:p-7 border-b border-[#E5DFD3]">
                 <div className="flex items-center gap-2 md:gap-3 mb-3 md:mb-4">
-                  <svg className="w-5 h-5 md:w-6 md:h-6 text-[#C9A961]" fill="none" stroke="currentColor" viewBox="0 0 24 24">
+                  <svg className="w-5 h-5 md:w-6 md:h-6 text-[#C4912A]" fill="none" stroke="currentColor" viewBox="0 0 24 24">
                     <path strokeLinecap="round" strokeLinejoin="round" strokeWidth="1.5" d="M9 12l2 2 4-4m6 2a9 9 0 11-18 0 9 9 0 0118 0z" />
                   </svg>
-                  <p className="text-[10px] md:text-xs tracking-[0.2em] uppercase text-[#C9A961] font-semibold">
+                  <p className="text-[10px] md:text-xs tracking-[0.2em] uppercase text-[#C4912A] font-semibold">
                     {safetyLabel}
                   </p>
                 </div>
@@ -75,14 +75,14 @@ const ManualTherapySession = ({
                 {/* Safety Standards List */}
                 {safetyStandards && safetyStandards.length > 0 && (
                   <div className="mb-6 md:mb-8">
-                    <p className="text-[10px] md:text-xs font-semibold tracking-[0.15em] uppercase text-[#C9A961] mb-3 md:mb-4">
+                    <p className="text-[10px] md:text-xs font-semibold tracking-[0.15em]  text-[#1A1714] mb-3 md:mb-4">
                       {safetyStandardsLabel}
                     </p>
                     <ul className="space-y-2 md:space-y-3">
                       {safetyStandards.map((item, idx) => (
                         <li key={idx} className="flex items-start gap-2 md:gap-3">
-                          <svg className="w-3.5 h-3.5 md:w-4 md:h-4 text-[#C9A961] flex-shrink-0 mt-0.5" fill="currentColor" viewBox="0 0 24 24">
-                            <path d="M9 16.17L4.83 12l-1.42 1.41L9 19 21 7l-1.41-1.41L9 16.17z" />
+                          <svg className="w-3.5 h-3.5 md:w-4 md:h-4 text-[#C4912A] flex-shrink-0 mt-0.5" fill="none" stroke="currentColor" viewBox="0 0 24 24">
+                            <path strokeLinecap="round" strokeLinejoin="round" strokeWidth="2" d="M9 12l2 2 4-4m6 2a9 9 0 11-18 0 9 9 0 0118 0z" />
                           </svg>
                           <span className="text-[12px] md:text-[13px] text-[#6B6B6B] leading-relaxed">{item}</span>
                         </li>
@@ -94,7 +94,7 @@ const ManualTherapySession = ({
                 {/* Contraindications */}
                 {contraindications && contraindications.length > 0 && (
                   <div className="mb-6 md:mb-8 pt-4 md:pt-6 border-t border-[#E5DFD3]">
-                    <p className="text-[10px] md:text-xs font-semibold tracking-[0.15em] uppercase text-[#C9A961] mb-3 md:mb-4">
+                    <p className="text-[10px] md:text-xs font-semibold tracking-[0.15em] text-[#1A1714] mb-3 md:mb-4">
                       {contraindicationsLabel}
                     </p>
                     <ul className="space-y-1.5 md:space-y-2">
@@ -112,7 +112,7 @@ const ManualTherapySession = ({
                 {/* Side Effects */}
                 {sideEffects && sideEffects.length > 0 && (
                   <div className="mb-6 md:mb-8 pt-4 md:pt-6 border-t border-[#E5DFD3]">
-                    <p className="text-[10px] md:text-xs font-semibold tracking-[0.15em] uppercase text-[#C9A961] mb-3 md:mb-4">
+                    <p className="text-[10px] md:text-xs font-semibold tracking-[0.15em] uppercase text-[#C4912A] mb-3 md:mb-4">
                       {sideEffectsLabel}
                     </p>
                     <ul className="space-y-1.5 md:space-y-2">
@@ -310,7 +310,7 @@ const HijamaSection = ({
           )}
         </div>
 
-        <div className="grid grid-cols-1 lg:grid-cols-[55%_45%] gap-12 items-start">
+        <div className="grid grid-cols-1 lg:grid-cols-[3fr_2fr] gap-12">
           {/* Left Content */}
           <div className="space-y-8">
             {content.map((item, index) => (

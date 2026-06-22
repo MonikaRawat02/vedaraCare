@@ -284,7 +284,7 @@ export const SciaticaPricing = ({
   );
 };
 
-export const SciaticaTreatment = ({ data, showBorderLeft = true, rightContentStyle = 'tags', bgColor = 'bg-white', showStepNumbers = false, showComparison = false, colRatio = 'md:grid-cols-[55%_45%]' }) => {
+export const SciaticaTreatment = ({ data, showBorderLeft = true, rightContentStyle = 'tags', bgColor = 'bg-white', showStepNumbers = false, showComparison = false, colRatio = 'lg:grid-cols-[55%_45%]' }) => {
   const { treatment = {}, rightContent = {} } = data || {};
 
   return (

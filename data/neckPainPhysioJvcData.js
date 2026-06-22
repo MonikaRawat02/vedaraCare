@@ -492,6 +492,11 @@ export const neckPainRelatedPages = {
       href: "/physiotherapy-jvc/"
     },
     {
+      title: "Cupping Therapy",
+      description: "Can be used as an adjunct treatment for neck pain and muscle tension.",
+      href: "/treatments/cupping-therapy-dubai/"
+    },
+    {
       title: "Back Pain Physiotherapy",
       description: "Evidence-based physiotherapy for acute and chronic back pain — same approach, different spinal region.",
       href: "/conditions/back-pain-physiotherapy-jvc/"
