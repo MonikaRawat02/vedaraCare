@@ -328,7 +328,7 @@ const FrozenShoulderDubai = () => {
       "@context": "https://schema.org",
       "@type": "MedicalScholarlyArticle",
       "headline": "Frozen Shoulder Treatment in Dubai — Complete Phase-Based Guide",
-      "image": "https://vedaracare.ae/og-images/frozen-shoulder-dubai.jpg",
+      "image": "https://vedaracare.ae/og-images/frozen-shoulder-treatment-vedara-jvc.webp",
       "datePublished": publishedDate,
       "dateModified": modifiedDate,
       "author": {
@@ -658,7 +658,7 @@ const FrozenShoulderDubai = () => {
         <meta name="robots" content="index, follow, max-image-preview:large" />
         <meta property="og:title" content="Frozen Shoulder Treatment in Dubai — Phase-Specific Specialist Care | Vedara JVC" />
         <meta property="og:description" content="Frozen shoulder (adhesive capsulitis) is highly treatable with phase-specific physiotherapy. DPT-qualified specialists at our Jumeirah Village Circle clinic with specific expertise in diabetic frozen shoulder, common in Dubai's patient population. Honest realistic timelines." />
-        <meta property="og:image" content="https://vedaracare.ae/og-images/frozen-shoulder-dubai.jpg" />
+        <meta property="og:image" content="https://vedaracare.ae/og-images/frozen-shoulder-treatment-vedara-jvc.webp" />
         <meta property="og:url" content={currentUrl} />
         <meta property="og:type" content="business.business" />
         <meta property="og:locale" content="en_AE" />
