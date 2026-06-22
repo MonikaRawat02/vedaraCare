@@ -39,45 +39,50 @@ const AyurvedaHero = ({
 
       <section className={`${bgColor} py-16 md:py-24 px-6 relative overflow-hidden`}>
         <div className="max-w-[1170px] mx-auto">
-          <div className="grid lg:grid-cols-[55%_45%] gap-14 items-center">
-            {/* Text Content */}
-            <div className="space-y-7 order-2 lg:order-1">
-              <div className="space-y-4">
-                <span className="text-[13px] font-sans font-semibold tracking-[0.15em] text-[#C9A961] uppercase block">
-                  {label}
-                </span>
-                <h1 className="text-[53.325px] font-serif font-normal leading-[1.08] text-[#1A1A1A] mb-7 whitespace-pre-line">
-                  {title}
-                </h1>
+          <div className="grid lg:grid-cols-[55%_45%] gap-14 items-start">
+            {/* Left Column: Heading + Desc (Desktop) / Heading + Desc (Mobile) */}
+            <div className="order-1 lg:col-span-1">
+              <div className="space-y-7">
+                <div className="space-y-4">
+                  <span className="text-[13px] font-sans font-semibold tracking-[0.15em] text-[#C9A961] uppercase block">
+                    {label}
+                  </span>
+                  <h1 className="text-[53.325px] font-serif font-normal leading-[1.08] text-[#1A1A1A] mb-7 whitespace-pre-line">
+                    {title}
+                  </h1>
+                </div>
+                
+                <p 
+                  className="text-[18px] font-sans leading-[1.75] text-[#4A4A4A] max-w-[540px]"
+                  dangerouslySetInnerHTML={{ __html: description }}
+                />
               </div>
               
-              <p 
-                className="text-[18px] font-sans leading-[1.75] text-[#4A4A4A] max-w-[540px]"
-                dangerouslySetInnerHTML={{ __html: description }}
-              />
+              {/* Desktop: Buttons + Trust Signals (below desc) */}
+              <div className="hidden lg:block space-y-7 mt-7">
+                <div className="flex flex-wrap gap-3 pt-2">
+                  <button className="inline-flex items-center gap-2 px-8 py-4 bg-[#1F4538] text-white rounded-md hover:bg-[#184C3A] transition-all text-[15px] font-sans font-bold shadow-lg">
+                    {primaryCTA}
+                  </button>
+                  <button className="inline-flex items-center gap-2 px-8 py-4 bg-[#4A7C59] text-white rounded-md hover:opacity-95 transition-all text-[15px] font-sans font-bold shadow-lg">
+                    <MessageCircle size={20} className="fill-current" />
+                    {secondaryCTA}
+                  </button>
+                </div>
 
-              <div className="flex flex-wrap gap-3 pt-2">
-                <button className="inline-flex items-center gap-2 px-8 py-4 bg-[#1F4538] text-white rounded-md hover:bg-[#184C3A] transition-all text-[15px] font-sans font-bold shadow-lg">
-                  {primaryCTA}
-                </button>
-                <button className="inline-flex items-center gap-2 px-8 py-4 bg-[#4A7C59] text-white rounded-md hover:opacity-95 transition-all text-[15px] font-sans font-bold shadow-lg">
-                  <MessageCircle size={20} className="fill-current" />
-                  {secondaryCTA}
-                </button>
-              </div>
-
-              <div className="grid grid-cols-2 gap-y-3 gap-x-8 pt-6">
-                {trustSignals.map((signal, index) => (
-                  <div key={index} className="flex items-center gap-2 text-[13px] font-sans text-[#5a5a5a]">
-                    <Check size={16} className="text-[#C9A961]" />
-                    <span>{signal}</span>
-                  </div>
-                ))}
+                <div className="grid grid-cols-2 gap-y-3 gap-x-8 pt-6">
+                  {trustSignals.map((signal, index) => (
+                    <div key={index} className="flex items-center gap-2 text-[13px] font-sans text-[#5a5a5a]">
+                      <Check size={16} className="text-[#C9A961]" />
+                      <span>{signal}</span>
+                    </div>
+                  ))}
+                </div>
               </div>
             </div>
 
-            {/* Image Content */}
-            <div className="relative order-1 lg:order-2">
+            {/* Middle Column: Image (Mobile & Desktop) */}
+            <div className="relative order-2 lg:col-span-1">
               <div className="relative aspect-[4/5] rounded-[12px] overflow-hidden shadow-2xl max-h-[628px]">
                 <img 
                   src={image.startsWith('http') || image.startsWith('/') ? image : `/images/${image}`} 
@@ -105,6 +110,28 @@ const AyurvedaHero = ({
                   className="text-[12px] text-[#5a5a5a] font-sans leading-snug"
                   dangerouslySetInnerHTML={{ __html: floatingCard.subtitle }}
                 />
+              </div>
+            </div>
+
+            {/* Right Column (Mobile Only): Buttons + Trust Signals (below image) */}
+            <div className="order-3 lg:hidden space-y-7 mt-7">
+              <div className="flex flex-wrap gap-3 pt-2">
+                <button className="inline-flex items-center gap-2 px-8 py-4 bg-[#1F4538] text-white rounded-md hover:bg-[#184C3A] transition-all text-[15px] font-sans font-bold shadow-lg">
+                  {primaryCTA}
+                </button>
+                <button className="inline-flex items-center gap-2 px-8 py-4 bg-[#4A7C59] text-white rounded-md hover:opacity-95 transition-all text-[15px] font-sans font-bold shadow-lg">
+                  <MessageCircle size={20} className="fill-current" />
+                  {secondaryCTA}
+                </button>
+              </div>
+
+              <div className="grid grid-cols-2 gap-y-3 gap-x-8 pt-6">
+                {trustSignals.map((signal, index) => (
+                  <div key={index} className="flex items-center gap-2 text-[13px] font-sans text-[#5a5a5a]">
+                    <Check size={16} className="text-[#C9A961]" />
+                    <span>{signal}</span>
+                  </div>
+                ))}
               </div>
             </div>
           </div>

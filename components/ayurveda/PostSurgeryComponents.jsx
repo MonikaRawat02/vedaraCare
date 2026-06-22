@@ -15,28 +15,17 @@ export const SurgicalProcedures = ({
   return (
     <section className={`${bgColor} py-24 px-4`}>
       <div className="max-w-[1400px] mx-auto flex flex-col items-center justify-center">
-        <div className="grid lg:grid-cols-2 gap-12 items-start mb-14 ">
-          <div className="space-y-4 flex flex-col items-center">
-            <p className="text-[13px] font-sans font-semibold tracking-[0.15em] text-[#C4A962] uppercase">
-              {label}
+        <div className="text-center max-w-[800px] mx-auto mb-14">
+          <p className="text-[13px] font-sans font-semibold tracking-[0.15em] text-[#C4A962] uppercase mb-4">
+            {label}
+          </p>
+          <h2 className="text-[32px] md:text-[42px] font-serif font-normal text-[#1A1A1A] leading-[1.2] mb-6">
+            {title}
+          </h2> 
+          {description && (
+            <p className="text-[16px] font-sans text-[#6B6B6B] leading-relaxed">
+              {description}
             </p>
-            <h2 className="text-[32px] md:text-[42px] font-serif font-normal text-[#1A1A1A] leading-[1.2]">
-              {title}
-            </h2> 
-            {description && (
-              <p className="text-[16px] font-sans flex items-center text-[#6B6B6B] leading-relaxed">
-                {description}
-              </p>
-            )}
-          </div>
-          {image && (
-            <div className="rounded-xl overflow-hidden h-[300px]">
-              <img 
-                src={image} 
-                alt={alt || "Surgical procedures"} 
-                className="w-full h-full object-cover"
-              />
-            </div>
           )}
         </div>
 
