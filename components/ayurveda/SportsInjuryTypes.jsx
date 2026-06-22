@@ -1,6 +1,6 @@
 import React from 'react';
 
-const SportsInjuryTypes = ({ label, title, items, footer, variant = 'condition', description = '', bgColor = 'rgb(248, 244, 238)',  lgColumns = 3 }) => {
+const SportsInjuryTypes = ({ label, title, items, footer, variant = 'condition', description = '', bgColor = 'rgb(248, 244, 238)', cardBgColor, lgColumns = 3 }) => {
   return (
     <section style={{ background: bgColor, padding: '96px 24px' }}>
       <div className="max-w-7xl mx-auto">
@@ -19,8 +19,8 @@ const SportsInjuryTypes = ({ label, title, items, footer, variant = 'condition',
         </div>
         <div className={`grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-${lgColumns} gap-5`}>
           {items.map((item, index) => {
-            // Determine card background (contrast with section bg)
-            const cardBg = bgColor === 'rgb(255, 255, 255)' ? 'rgb(248, 244, 238)' : 'rgb(255, 255, 255)';
+            // Use cardBgColor if provided, otherwise use the default logic
+            const cardBg = cardBgColor || (bgColor === 'rgb(255, 255, 255)' ? 'rgb(248, 244, 238)' : 'rgb(255, 255, 255)');
             
             return (
             variant === 'condition' ? (
