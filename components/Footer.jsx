@@ -52,17 +52,18 @@ const Footer = () => {
 
           {/* Popular Treatments */}
           <div>
-            <h4 className="text-lg font-bold text-white mb-6">Popular Treatments</h4>
-            <ul className="space-y-4 text-[#F8F9FA]/80 text-sm">
-              <li><Link href="/treatments/panchakarma-dubai/" className="hover:text-white transition-colors">Panchakarma in Dubai</Link></li>
-              <li><Link href="/treatments/abhyanga-dubai/" className="hover:text-white transition-colors">Abhyanga Massage</Link></li>
-              <li><Link href="/treatments/shirodhara-dubai/" className="hover:text-white transition-colors">Shirodhara</Link></li>
-              <li><Link href="/services/physiotherapy" className="hover:text-white transition-colors">Sports Injury Rehab</Link></li>
-              <li><Link href="/physiotherapy/post-surgery-rehab-dubai/" className="hover:text-white transition-colors">Post-Surgery Rehab</Link></li>
-              <li><Link href="/services/dermatology" className="hover:text-white transition-colors">PRP Hair</Link></li>
-              <li><Link href="/services/home-healthcare" className="hover:text-white transition-colors">IV Drip at Home</Link></li>
-            </ul>
-          </div>
+        <h4 className="text-lg font-bold text-white mb-6">Popular Treatments</h4>
+        <ul className="space-y-4 text-[#F8F9FA]/80 text-sm">
+          <li><Link href="/treatments/manual-therapy-dubai/" className="hover:text-white transition-colors">Manual Therapy</Link></li>
+          <li><Link href="/treatments/panchakarma-dubai/" className="hover:text-white transition-colors">Panchakarma in Dubai</Link></li>
+          <li><Link href="/treatments/abhyanga-dubai/" className="hover:text-white transition-colors">Abhyanga Massage</Link></li>
+          <li><Link href="/treatments/shirodhara-dubai/" className="hover:text-white transition-colors">Shirodhara</Link></li>
+          <li><Link href="/services/physiotherapy" className="hover:text-white transition-colors">Sports Injury Rehab</Link></li>
+          <li><Link href="/physiotherapy/post-surgery-rehab-dubai/" className="hover:text-white transition-colors">Post-Surgery Rehab</Link></li>
+          <li><Link href="/services/dermatology" className="hover:text-white transition-colors">PRP Hair</Link></li>
+          <li><Link href="/services/home-healthcare" className="hover:text-white transition-colors">IV Drip at Home</Link></li>
+        </ul>
+      </div>
 
           {/* Company */}
           <div>

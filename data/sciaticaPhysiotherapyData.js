@@ -402,7 +402,7 @@ export const sciaticaPhysioTreatment = {
         bullets: []
       },
       {
-        title: "Manual therapy for associated dysfunction",
+        title: "<a href='/treatments/manual-therapy-dubai/' class='text-inherit hover:text-[#C9A55A] transition-colors'>Manual therapy</a> for associated dysfunction",
         description: "Sciatica often involves associated muscle tension, joint dysfunction, and protective patterns that complicate recovery. Lumbar spine mobilisation, soft tissue work for chronic muscle patterns, manipulation where appropriate. Manual therapy creates a window for active rehabilitation to be more effective.",
         bullets: []
       },

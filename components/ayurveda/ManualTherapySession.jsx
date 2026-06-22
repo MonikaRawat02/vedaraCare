@@ -20,34 +20,34 @@ const ManualTherapySession = ({
     buttonHref
   } = safetyCard;
   return (
-    <section className={`${bgColor} py-24 px-6`}>
-      <div className="max-w-7xl mx-auto">
-        <div className="text-center mb-16">
-          <p className="text-[13px] font-sans font-semibold tracking-[0.15em] text-[#C9A961] uppercase mb-4">
+    <section className={`${bgColor} py-16 md:py-24 px-4 md:px-6 lg:px-12`}>
+      <div className="max-w-6xl mx-auto">
+        <div className="text-center mb-10 md:mb-16">
+          <p className="text-[11px] md:text-[13px] font-sans font-semibold tracking-[0.15em] text-[#C9A961] uppercase mb-2 md:mb-4">
             {label}
           </p>
-          <h2 className="text-[clamp(1.75rem,2vw,2.5rem)] font-serif font-normal text-[#1A1A1A] leading-[1.2] mb-6">
+          <h2 className="text-2xl md:text-3xl lg:text-[clamp(1.75rem,2vw,2.5rem)] font-serif font-normal text-[#1A1A1A] leading-[1.2] mb-4 md:mb-6">
             {title}
           </h2>
           {subtitle && (
-            <p className="text-[16px] text-[#6B6B6B] font-sans leading-relaxed max-w-3xl mx-auto">
+            <p className="text-[14px] md:text-[16px] text-[#6B6B6B] font-sans leading-relaxed max-w-3xl mx-auto">
               {subtitle}
             </p>
           )}
         </div>
 
-        <div className="grid md:grid-cols-[60%_40%] gap-12 items-start">
+        <div className="grid grid-cols-1 md:grid-cols-[55%_45%] gap-8 lg:gap-12 items-start">
           {/* Left Content */}
-          <div className="space-y-8">
+          <div className="space-y-6 md:space-y-8">
             {sections.map((section, index) => (
-              <div key={index} className={index < sections.length - 1 ? "pb-8 border-b border-[#E5DFD3]" : ""}>
+              <div key={index} className={index < sections.length - 1 ? "pb-6 md:pb-8 border-b border-[#E5DFD3]" : ""}>
                 {section.title && (
-                  <h3 className="text-[19px] font-serif font-semibold text-[#1A1A1A] mb-4">
+                  <h3 className="text-[17px] md:text-[19px] font-serif font-semibold text-[#1A1A1A] mb-3 md:mb-4">
                     {section.title}
                   </h3>
                 )}
                 {section.content && (
-                  <p className="text-[15px] text-[#6B6B6B] font-sans leading-relaxed">
+                  <p className="text-[14px] md:text-[15px] text-[#6B6B6B] font-sans leading-relaxed">
                     {section.content}
                   </p>
                 )}
@@ -56,35 +56,35 @@ const ManualTherapySession = ({
           </div>
 
           {/* Right Sidebar - Safety Card */}
-          <div className="sticky top-8">
+          <div className="md:sticky md:top-6 lg:top-8 w-full max-w-md mx-auto md:max-w-none">
             <div className="bg-white rounded-lg border-2 border-[#C9A961] overflow-hidden">
               {/* Safety Card Header */}
-              <div className="p-7 border-b border-[#E5DFD3]">
-                <div className="flex items-center gap-3 mb-4">
-                  <svg className="w-6 h-6 text-[#C9A961]" fill="none" stroke="currentColor" viewBox="0 0 24 24">
+              <div className="p-4 md:p-5 lg:p-7 border-b border-[#E5DFD3]">
+                <div className="flex items-center gap-2 md:gap-3 mb-3 md:mb-4">
+                  <svg className="w-5 h-5 md:w-6 md:h-6 text-[#C9A961]" fill="none" stroke="currentColor" viewBox="0 0 24 24">
                     <path strokeLinecap="round" strokeLinejoin="round" strokeWidth="1.5" d="M9 12l2 2 4-4m6 2a9 9 0 11-18 0 9 9 0 0118 0z" />
                   </svg>
-                  <p className="text-xs tracking-[0.2em] uppercase text-[#C9A961] font-semibold">
+                  <p className="text-[10px] md:text-xs tracking-[0.2em] uppercase text-[#C9A961] font-semibold">
                     {safetyLabel}
                   </p>
                 </div>
               </div>
 
               {/* Safety Card Content */}
-              <div className="p-7">
+              <div className="p-4 md:p-5 lg:p-7">
                 {/* Safety Standards List */}
                 {safetyStandards && safetyStandards.length > 0 && (
-                  <div className="mb-8">
-                    <p className="text-xs font-semibold tracking-[0.15em] uppercase text-[#C9A961] mb-4">
+                  <div className="mb-6 md:mb-8">
+                    <p className="text-[10px] md:text-xs font-semibold tracking-[0.15em] uppercase text-[#C9A961] mb-3 md:mb-4">
                       {safetyStandardsLabel}
                     </p>
-                    <ul className="space-y-3">
+                    <ul className="space-y-2 md:space-y-3">
                       {safetyStandards.map((item, idx) => (
-                        <li key={idx} className="flex items-start gap-3">
-                          <svg className="w-4 h-4 text-[#C9A961] flex-shrink-0 mt-0.5" fill="currentColor" viewBox="0 0 24 24">
+                        <li key={idx} className="flex items-start gap-2 md:gap-3">
+                          <svg className="w-3.5 h-3.5 md:w-4 md:h-4 text-[#C9A961] flex-shrink-0 mt-0.5" fill="currentColor" viewBox="0 0 24 24">
                             <path d="M9 16.17L4.83 12l-1.42 1.41L9 19 21 7l-1.41-1.41L9 16.17z" />
                           </svg>
-                          <span className="text-[13px] text-[#6B6B6B] leading-relaxed">{item}</span>
+                          <span className="text-[12px] md:text-[13px] text-[#6B6B6B] leading-relaxed">{item}</span>
                         </li>
                       ))}
                     </ul>
@@ -93,15 +93,15 @@ const ManualTherapySession = ({
 
                 {/* Contraindications */}
                 {contraindications && contraindications.length > 0 && (
-                  <div className="mb-8 pt-6 border-t border-[#E5DFD3]">
-                    <p className="text-xs font-semibold tracking-[0.15em] uppercase text-[#C9A961] mb-4">
+                  <div className="mb-6 md:mb-8 pt-4 md:pt-6 border-t border-[#E5DFD3]">
+                    <p className="text-[10px] md:text-xs font-semibold tracking-[0.15em] uppercase text-[#C9A961] mb-3 md:mb-4">
                       {contraindicationsLabel}
                     </p>
-                    <ul className="space-y-2">
+                    <ul className="space-y-1.5 md:space-y-2">
                       {contraindications.map((item, idx) => (
-                        <li key={idx} className="flex items-start gap-3">
-                          <div className="w-2 h-2 rounded-full bg-[#C9A961] flex-shrink-0 mt-1.5"></div>
-                          <span className="text-[13px] text-[#6B6B6B] leading-relaxed">{item}</span>
+                        <li key={idx} className="flex items-start gap-2 md:gap-3">
+                          <div className="w-1.5 h-1.5 md:w-2 md:h-2 rounded-full bg-[#C9A961] flex-shrink-0 mt-1.5"></div>
+                          <span className="text-[12px] md:text-[13px] text-[#6B6B6B] leading-relaxed">{item}</span>
                         </li>
                       ))}
                     </ul>
@@ -111,15 +111,15 @@ const ManualTherapySession = ({
 
                 {/* Side Effects */}
                 {sideEffects && sideEffects.length > 0 && (
-                  <div className="mb-8 pt-6 border-t border-[#E5DFD3]">
-                    <p className="text-xs font-semibold tracking-[0.15em] uppercase text-[#C9A961] mb-4">
+                  <div className="mb-6 md:mb-8 pt-4 md:pt-6 border-t border-[#E5DFD3]">
+                    <p className="text-[10px] md:text-xs font-semibold tracking-[0.15em] uppercase text-[#C9A961] mb-3 md:mb-4">
                       {sideEffectsLabel}
                     </p>
-                    <ul className="space-y-2">
+                    <ul className="space-y-1.5 md:space-y-2">
                       {sideEffects.map((item, idx) => (
-                        <li key={idx} className="flex items-start gap-3">
-                          <div className="w-2 h-2 rounded-full bg-[#C9A961] flex-shrink-0 mt-1.5"></div>
-                          <span className="text-[13px] text-[#6B6B6B] leading-relaxed">{item}</span>
+                        <li key={idx} className="flex items-start gap-2 md:gap-3">
+                          <div className="w-1.5 h-1.5 md:w-2 md:h-2 rounded-full bg-[#C9A961] flex-shrink-0 mt-1.5"></div>
+                          <span className="text-[12px] md:text-[13px] text-[#6B6B6B] leading-relaxed">{item}</span>
                         </li>
                       ))}
                     </ul>
@@ -130,7 +130,7 @@ const ManualTherapySession = ({
                 {buttonText && buttonHref && (
                   <a
                     href={buttonHref}
-                    className="w-full text-white font-semibold py-4 px-6 rounded flex items-center justify-center gap-2 transition-colors text-sm border-2 border-[#C9A961] bg-[#C9A961] hover:bg-[#B8965A] hover:border-[#B8965A]"
+                    className="w-full text-white font-semibold py-3 md:py-4 px-5 md:px-6 rounded flex items-center justify-center gap-2 transition-colors text-xs md:text-sm border-2 border-[#C9A961] bg-[#C9A961] hover:bg-[#B8965A] hover:border-[#B8965A]"
                   >
                     {buttonText}
                   </a>

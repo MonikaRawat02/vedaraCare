@@ -24,11 +24,9 @@ const PhysiotherapyTechniques = ({
           <div className="space-y-6">
             {techniques.map((technique, index) => (
               <div key={index}>
-                <h3 className="text-lg font-medium mb-2" style={{ fontFamily: 'Fraunces, serif' }}>
-                  {technique.title}
+                <h3 className="text-lg font-medium mb-2" style={{ fontFamily: 'Fraunces, serif' }} dangerouslySetInnerHTML={{ __html: technique.title }}>
                 </h3>
-                <p className="text-sm text-gray-600">
-                  {technique.description}
+                <p className="text-sm text-gray-600" dangerouslySetInnerHTML={{ __html: technique.description }}>
                 </p>
               </div>
             ))}

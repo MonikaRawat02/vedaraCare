@@ -49,9 +49,8 @@ const KneeTreatmentApproach = ({
                   <h3
                     className="text-lg font-medium mb-2"
                     style={{ fontFamily: 'Fraunces, serif', color: 'rgb(28, 25, 23)' }}
-                  >
-                    {item.title}
-                  </h3>
+                    dangerouslySetInnerHTML={{ __html: item.title }}
+                  />
                   <p
                     className="text-sm leading-relaxed"
                     style={{

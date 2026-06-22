@@ -411,7 +411,7 @@ export const shoulderPhysioApproach = {
         description: "The first session is comprehensive — typically 60 minutes including detailed history of your symptoms, postural assessment, cervical spine screening (neck often contributes to shoulder symptoms), comprehensive shoulder range of motion testing (active and passive), strength assessment, specific orthopaedic tests for shoulder conditions (Neer's, Hawkins-Kennedy, empty can, drop arm, AC joint tests, biceps tests, instability tests), scapular control assessment, and review of any imaging. The assessment identifies your specific shoulder condition and the contributing factors driving it."
       },
       {
-        title: "Manual therapy when indicated",
+        title: "<a href='/treatments/manual-therapy-dubai/' class='text-inherit hover:text-[#C9A55A] transition-colors'>Manual therapy</a> when indicated",
         description: "Hands-on manual therapy — joint mobilisation of the glenohumeral joint, scapulothoracic joint, AC joint, sternoclavicular joint as appropriate, soft tissue work for muscle tension patterns, manual stretching for capsular restrictions — provides effective symptom relief and addresses restricted areas. Particularly valuable for chronic patients and patients with associated muscle tension."
       },
       {

@@ -98,7 +98,7 @@ export const sportsPhysiotherapyModalities = {
   modalities: [
     {
       number: "01",
-      title: "Manual Therapy",
+      title: "<a href='/treatments/manual-therapy-dubai/' class='text-inherit hover:text-[#C9A55A] transition-colors'>Manual Therapy</a>",
       description: "Skilled hands-on treatment — joint mobilisation, soft tissue work, manual stretching, myofascial release, and manipulation where appropriate. The foundational sports physiotherapy technique. Particularly valuable for acute injury management, restricted joint mobility, and chronic soft tissue patterns." },
     {
       number: "02",

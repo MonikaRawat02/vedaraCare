@@ -88,7 +88,7 @@ export const physiotherapySpecializations = {
     {
       number: "01",
       title: "Musculoskeletal Physiotherapy",
-      description: "Treatment of joint, muscle, and soft tissue conditions across acute and chronic presentations. Manual therapy, dry needling, modalities, structured exercise prescription. Most common patient pathway at <a href=\"/physiotherapy-jvc/\">our JVC clinic</a>.",
+      description: "Treatment of joint, muscle, and soft tissue conditions across acute and chronic presentations. <a href=\"/treatments/manual-therapy-dubai/\" class=\"text-inherit hover:text-[#C9A55A] transition-colors\">Manual therapy</a>, dry needling, modalities, structured exercise prescription. Most common patient pathway at <a href=\"/physiotherapy-jvc/\">our JVC clinic</a>.",
       commonConditions: [
         "<a href=\"/conditions/back-pain-ayurveda-dubai/\">Chronic lower back pain</a> and neck pain",
         "<a href=\"/conditions/arthritis-ayurveda-dubai/\">Knee OA</a>, shoulder pain, hip pain",
