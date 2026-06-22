@@ -354,13 +354,13 @@ const HijamaSection = ({
                             <svg className="w-4 h-4 flex-shrink-0 mt-0.5" style={{ color: '#C9A84C' }} fill="currentColor" viewBox="0 0 24 24">
                               <path d="M9 16.17L4.83 12l-1.42 1.41L9 19 21 7l-1.41-1.41L9 16.17z"/>
                             </svg>
-                            <span className="text-[14px] text-[#4A4A4A] leading-relaxed">{listItem}</span>
+                            <span className="text-[12px] text-[#4A4A4A] leading-relaxed">{listItem}</span>
                           </li>
                         ))}
                       </ul>
                     )}
                     {section.text && (
-                      <p className="text-[14px] text-[#4A4A4A] leading-relaxed">
+                      <p className="text-[12px] text-[#4A4A4A] leading-relaxed">
                         {section.text}
                       </p>
                     )}
@@ -387,6 +387,5 @@ const HijamaSection = ({
     </section>
   );
 };
-
 export { ManualTherapyTechniques, ManualTherapyPricing, HijamaSection };
 export default ManualTherapySession;
