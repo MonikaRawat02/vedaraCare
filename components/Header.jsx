@@ -211,7 +211,7 @@ const Header = () => {
               </div>
             </div>
 
-            <Link href="/services/dermatology" className="text-[14px] font-sans font-medium text-[#1A1A1A] hover:text-[#184C3A] transition-colors">Dermatology</Link>
+            <Link href="/dermatology-clinic-jvc" className="text-[14px] font-sans font-medium text-[#1A1A1A] hover:text-[#184C3A] transition-colors">Dermatology</Link>
 
             {/* Treatments Dropdown */}
             <div 
@@ -335,7 +335,7 @@ const Header = () => {
               </div>
             </div>
 
-            <Link href="/services/dermatology" onClick={() => setIsMenuOpen(false)} className="text-[16px] font-medium text-[#1A1A1A] hover:text-[#184C3A]">Dermatology</Link>
+            <Link href="/dermatology-clinic-jvc" onClick={() => setIsMenuOpen(false)} className="text-[16px] font-medium text-[#1A1A1A] hover:text-[#184C3A]">Dermatology</Link>
 
             {/* Mobile Treatments Accordion */}
             <div>

@@ -54,12 +54,19 @@ const RelatedPages = ({
             <Link
               key={index}
               href={page.href}
-              className="rounded-xl p-6 flex flex-col gap-3 transition-transform hover:scale-[1.02]"
-              style={{ background: 'rgb(255, 255, 255)' }}
+              className="rounded-xl p-6 flex flex-col gap-3 transition-transform hover:scale-[1.02] relative"
+              style={{ 
+                background: 'rgb(255, 255, 255)', 
+                border: page.highlight ? '1px solid rgb(184, 145, 90)' : '1px solid rgba(28, 28, 26, 0.1)',
+                boxShadow: page.highlight ? '0 10px 15px -3px rgba(0, 0, 0, 0.1), 0 4px 6px -2px rgba(0, 0, 0, 0.05)' : 'none'
+              }}
             >
               <h3 
                 className="text-sm font-medium"
-                style={{ fontFamily: 'Fraunces, serif', color: 'rgb(28, 28, 26)' }}
+                style={{ 
+                  fontFamily: 'Fraunces, serif', 
+                  
+                }}
                 dangerouslySetInnerHTML={{ __html: page.title }}
               />
               <p 
@@ -79,7 +86,7 @@ const RelatedPages = ({
                   className="text-xs flex items-center gap-1 font-medium"
                   style={{ color: 'rgb(184, 145, 90)' }}
                 >
-                  Read more
+                  Learn more
                   <ArrowRight size={11} />
                 </span>
               )}

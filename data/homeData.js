@@ -96,7 +96,7 @@ export const homeServices = {
       image: '/images/dermatology.webp',
       features: ['Acne Treatment', 'Hair Loss', 'PRP Therapy', 'Pigmentation', 'Skin Rejuvenation', 'Chemical Peel'],
       buttonText: 'Explore Dermatology',
-      link: '/services/dermatology'
+      link: '/dermatology-clinic-jvc/'
     },
     {
       id: 'home-healthcare',
