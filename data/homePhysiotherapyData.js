@@ -210,8 +210,9 @@ export const homePhysioSpecialisations = {
     {
       number: "04",
       title: "Women's Health and Postnatal Home Physiotherapy",
-      description: "Pelvic floor rehabilitation, diastasis recti work, postnatal recovery, pregnancy-related conditions — all delivered at home by trained female physiotherapists. Particularly utilised by postnatal mothers in the first 6 weeks postpartum. Combined with our 45-day Sutika Paricharya Ayurvedic postnatal programme for integrated home-based postnatal care."  },
-    {
+      description: "Pelvic floor rehabilitation, diastasis recti work, postnatal recovery, pregnancy-related conditions — all delivered at home by trained female physiotherapists. Particularly utilised by postnatal mothers in the first 6 weeks postpartum. Combined with our 45-day Sutika Paricharya Ayurvedic postnatal programme for integrated home-based postnatal care."  ,
+   href: "/conditions/pelvic-floor-physiotherapy-dubai/"}
+,      {
       number: "05",
       title: "Sports Injury Home Physiotherapy",
       description: "Less common for sports patients (most prefer clinic access to equipment and gym), but appropriate for severe acute injuries limiting mobility, post-acute sports injury phases, and athletes with logistical reasons making clinic visits impractical. Same evidence-based sports physiotherapy approach delivered at home.",

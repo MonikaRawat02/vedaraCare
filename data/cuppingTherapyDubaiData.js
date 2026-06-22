@@ -19,8 +19,8 @@ export const cuppingTherapyHero = {
     title: "MULTIPLE TYPES OF CUPPING EXIST.",
     subtitle: "Dry cupping, massage cupping, and Hijama (wet cupping with small controlled incisions, deeply rooted in Islamic tradition) are distinct practices with different applications. Understanding which is appropriate for your situation matters."
   },
-  image: "/images/cupping-therapy-hero-dubai.webp",
-  alt: "Professional dry cupping treatment in clinical setting — cups placed on patient's back in clean clinical environment"
+  image: "/images/cupping-therapy-dubai-hero.webp",
+  alt: "Cupping therapy at Vedara Care JVC Dubai clinic with DHA-licensed practitioner"
 };
 
 export const cuppingTherapyIntro = {
@@ -69,15 +69,14 @@ export const cuppingTherapyWhatIs = {
       footer: "Cupping has been practiced for millennia across many cultures and continues to be used widely. Modern clinical practice combines respect for traditional applications with honest assessment of current evidence."
     },
     rightContent: {
-      image: "/images/cupping-therapy-types-dubai.webp",
-      alt: "Woman receiving cupping therapy on back in clean clinical setting",
+      image: "/images/cupping-types-vedara-jvc.webp",
+      alt: "Cupping types dry massage Hijama educational illustration",
       label: "COMMON CLINICAL APPLICATIONS",
       description: "Chronic muscle tension in back, shoulders, and neck. Sports recovery — trigger point treatment. Office worker shoulder tension. Office worker shoulder and upper back tension. Fibromyalgia-related muscle tension."
     }
   },
   bgColor: "bg-[#EDE5D8]"
 };
-
 export const cuppingTherapyReviews = {
   label: "PATIENT STORIES",
   title: "Real experiences from our patients.",
@@ -113,37 +112,96 @@ export const cuppingTherapyReviews = {
 export const cuppingTherapyFaqs = {
   bgColor: "bg-[#EDE5D8]",
   label: "COMMON QUESTIONS",
-  title: "What patients ask about cupping therapy in Dubai.",
-  description: "Different cupping types have different applications — important distinctions below.",
+  title: "What patients ask about cupping before booking.",
+  description: "For broader physiotherapy questions, see our main physiotherapy page.",
+   sidebarLinks: [
+    {
+      text: "Visit physiotherapy main page",
+      href: "/physiotherapy-jvc/"
+    },
+  ],
   faqs: [
     {
-      question: "What is the difference between dry cupping, massage cupping, and Hijama?",
-      answer: "Dry cupping uses cups with suction (no incisions, no blood) — static holds or dynamic movement. Massage cupping (dynamic cupping) moves oiled cups across skin for broader soft tissue work. Hijama (wet cupping) involves controlled small incisions to draw small amounts of blood, deeply rooted in Islamic tradition. We offer all three when appropriate, with full explanation of differences."
+      question: "What exactly is cupping therapy?",
+      answer: "Cupping therapy involves applying cups to the skin to create localised suction. The suction draws skin and underlying soft tissue upward into the cup, producing therapeutic effects including increased local blood flow, soft tissue mobilisation, and release of muscular tension. Multiple types exist: dry cupping (most common in clinical practice), massage cupping (cups moved across oiled skin), and Hijama (wet cupping with small controlled incisions, with Islamic religious significance)."
     },
     {
-      question: "Are the cupping marks bruises?",
-      answer: "No — the circular marks cupping leaves are normal therapeutic effects, not bruises. They result from increased blood flow to the area under suction, not from trauma. The marks typically fade in 1-2 weeks, and their presence or colour intensity does not determine treatment effectiveness."
+      question: "What is the difference between dry cupping and Hijama?",
+      answer: "Dry cupping uses suction only — no incisions, no blood drawn. Cups are applied for 5–15 minutes typically. Hijama (wet cupping) involves applying cups, releasing suction, making small controlled skin incisions, then reapplying cups to draw out small amounts of blood. Hijama has deep significance in Islamic tradition as a Sunnah practice, whereas dry cupping is widely practiced across many cultures and integrated into modern clinical practice."
+    },
+    {
+      question: "Do you offer Hijama?",
+      answer: "Yes — Hijama is available at our clinic, performed with sterile single-use equipment and complete respect for both clinical safety and religious significance. We can accommodate traditional Sunnah days for scheduling. WhatsApp +971 4 XXX XXXX for specific availability and scheduling."
     },
     {
       question: "Does cupping hurt?",
-      answer: "Most techniques feel like firm suction — typically comfortable or mildly uncomfortable, not painful. Massage cupping feels like deep tissue massage with suction. Static dry cupping feels like sustained firm pressure. Treatment intensity is calibrated to your tolerance; you can ask to stop or adjust at any time."
+      answer: "Most patients describe cupping as unusual but not painful. The suction creates a pulling sensation, sometimes intense with stronger suction, but generally comfortable. Massage cupping with oil typically feels similar to deep tissue massage with additional pulling sensation. Hijama involves the additional brief sharp sensation of small incisions — typically much less uncomfortable than patients expect. Treatment intensity can be adjusted to your comfort level."
     },
     {
-      question: "How many sessions will I need?",
-      answer: "Variable by condition. Acute muscle tension sometimes improves in 2-4 sessions. Chronic conditions typically 4-8 sessions integrated with broader physiotherapy. Hijama for wellness is sometimes done as single sessions or periodic. Cupping alone rarely produces sustainable outcomes — combined with exercise and education when appropriate."
+      question: "Why does cupping leave marks?",
+      answer: "The visible marks are localised ecchymosis — controlled vascular response from the suction effect drawing blood toward the skin surface. They are not bruises (which result from impact trauma). The marks are considered normal therapeutic effects in cupping practice. They typically appear reddish-purple initially, fading through various colours over 1–2 weeks."
     },
     {
-      question: "Where in Dubai is your cupping therapy clinic?",
-      answer: "Our DHA-licensed clinic is in Jumeirah Village Circle (JVC), Dubai — walking distance from Circle Mall, 3 minutes from FIVE Jumeirah Village Hotel, and 5 minutes from JSS Private School. Free patient parking. Easy access from Sheikh Mohammed Bin Zayed Road and Al Khail Road. Patients travel to us from JVC, Al Barsha South, Sports City, Motor City, Arjan, Dubai Hills, Marina, Downtown, Palm Jumeirah, Mirdif, and across Dubai for cupping therapy."
+      question: "How long do cupping marks last?",
+      answer: "Typically 1–2 weeks, varying by individual response and treatment intensity. Initial colour is usually red-purple, fading through brown, yellow-brown, to skin colour over the resolution period. Patients with stronger circulation often have shorter resolution times. Consider this before booking if visible marks would create concern — they can be covered by clothing in most cases."
     },
     {
-      question: "Is cupping therapy safe?",
-      answer: "Yes, when delivered by appropriately trained practitioners with proper protocols. Comprehensive contraindication screening, explicit informed consent for all cupping types, sterile single-use equipment for all procedures, and continuous communication during treatment are standard. Adverse events are rare when proper protocols are followed."
+      question: "Will my specific condition benefit from cupping?",
+      answer: "Cupping has moderate evidence for chronic neck and back pain, certain sports recovery contexts, chronic muscle tension, and some other musculoskeletal conditions. Evidence is less clear for systemic claims. We provide honest assessment of whether cupping is appropriate for your specific situation and which type would be most suitable."
     },
     {
-      question: "Can I shower or exercise after cupping?",
-      answer: "Light activity is fine. We recommend avoiding intense exercise, hot showers, saunas, or direct sun exposure for 12-24 hours after treatment to let the skin recover. Specific aftercare instructions are provided for each cupping type."
-    }
+      question: "Where in Dubai is your cupping clinic?",
+      answer: "Our DHA-licensed clinic is in Jumeirah Village Circle (JVC), Dubai — walking distance from Circle Mall, three minutes from FIVE Jumeirah Village Hotel, and five minutes from JSS Private School. Free patient parking. Easy access from Sheikh Mohammed Bin Zayed Road and Al Khail Road. Patients travel to us from JVT, Al Barsha South, Sports City, Motor City, Arjan, Dubai Hills, Marina, Downtown, Palm Jumeirah, Mirdif, and across Dubai."
+    },
+    {
+      question: "How many cupping sessions will I need?",
+      answer: "Variable by condition and treatment goals. Acute presentations sometimes resolve in 1–3 sessions. Chronic conditions typically benefit from regular sessions over weeks to months. For sports recovery: often as needed after intense training. For Hijama practiced as Sunnah: traditionally on specific recommended days, frequency varies by personal practice. Integration with broader physiotherapy usually produces better outcomes than cupping alone."
+    },
+    {
+      question: "Is cupping safe?",
+      answer: "Yes, when performed by qualified practitioners with appropriate protocols. We use sterile equipment, comprehensive contraindication screening, and informed consent. Adverse events are rare. Common normal effects: visible marks (described above), mild soreness 24–48 hours after treatment. Significant adverse events are very rare with appropriate practitioner training. Hijama specifically requires sterile single-use lancets and cups for every patient — never reused."
+    },
+    {
+      question: "What are contraindications to cupping?",
+      answer: "Absolute contraindications: active skin infection at treatment site, bleeding disorders (for Hijama particularly), severe skin conditions in active phase. Relative contraindications requiring modification: anticoagulant medications (we coordinate with your prescribing physician), pregnancy in certain areas, severe anaemia (particularly for Hijama), specific medical conditions. We screen comprehensively before treatment."
+    },
+    {
+      question: "Can I exercise after cupping?",
+      answer: "Light activity is fine immediately after dry cupping. We recommend avoiding heavy exercise for 24 hours after treatment to allow tissue response to develop normally. After Hijama: avoid heavy activity for 24 hours, keep incision sites clean and dry, return to normal activities gradually. Specific guidance depends on your treatment and goals."
+    },
+    {
+      question: "Can I shower after cupping?",
+      answer: "After dry cupping: yes, normal showering is fine. Avoid extremely hot showers in the immediate treatment area for the first day. After Hijama: keep incision sites clean and dry for 24 hours, use only clean water if washing the area, avoid soaking in baths or pools for several days until incision sites are fully healed."
+    },
+    {
+      question: "Will insurance cover cupping?",
+      answer: "Insurance coverage varies. Many plans do not cover cupping as standalone treatment but may cover it when integrated with physiotherapy treatment for specific conditions. Hijama is typically not covered by insurance plans regardless of clinical indication. We can discuss specific coverage during initial consultation. We are direct-billing partners with Daman, AXA, Allianz, Oman Insurance, Now Health, Bupa, and MetLife for physiotherapy services."
+    },
+    {
+      question: "Is Hijama on Sunnah days different from other days?",
+      answer: "The traditional Sunnah days (17th, 19th, 21st of the Islamic lunar month, particularly when falling on Monday, Tuesday, or Thursday) are recommended in authentic hadith for Hijama. Many Muslim patients schedule Hijama specifically on these days for religious significance. Clinically, the treatment is the same regardless of date — the significance of the days is religious. We can accommodate Sunnah days scheduling where Hijama is offered."
+    },
+    {
+      question: "Can pregnant women receive cupping?",
+      answer: "Modified approach possible during pregnancy. Certain areas (lower abdomen, low back) are typically avoided during pregnancy. Other areas (upper back, shoulders for tension relief) may be appropriate with appropriate adaptations. Hijama specifically is generally not recommended during pregnancy. We coordinate with obstetric care providers when treating pregnant patients."
+    },
+    {
+      question: "What about diabetes and cupping?",
+      answer: "Patients with diabetes can typically receive dry cupping with appropriate screening. Diabetic patients should have well-controlled blood sugar, no peripheral circulation issues affecting healing, and no skin conditions at treatment sites. Hijama specifically requires more careful consideration in diabetic patients — assessment of healing capacity, blood sugar control, and risk factors. We screen comprehensively."
+    },
+    {
+      question: "How is cupping at Vedara different?",
+      answer: "DHA-licensed practitioners with appropriate training, sterile single-use equipment for Hijama (where offered), comprehensive contraindication screening, integration with broader physiotherapy treatment for musculoskeletal conditions, transparent published pricing, honest discussion of evidence, respect for religious significance of Hijama for Muslim patients, and cultural and modesty sensitivity for all patients."
+    },
+     {
+      question: "Can children receive cupping?",
+      answer: "Cupping for children requires careful assessment. Generally not recommended for very young children. For adolescents with specific conditions (sports injuries, chronic muscle tension), modified cupping may be appropriate. Hijama specifically is generally not performed on children. We assess on a case-by-case basis with appropriate caution."
+    },
+     {
+      question: "How do I book a cupping appointment?",
+      answer: "Three ways: (1) WhatsApp +971 4 XXX XXXX — fastest response, ideal for asking specific questions about which type of cupping would suit you. (2) Call +971 4 XXX XXXX — direct booking, available 9 AM to 9 PM seven days a week. (3) Book online through our website. For Hijama specifically, inquire about availability and Sunnah days scheduling. Please bring: any relevant medical reports, current medication list, insurance card if applicable, and comfortable clothing allowing access to treatment areas."
+    },
+    
   ]
 };
 
@@ -370,6 +428,7 @@ export const cuppingTherapyTeam = {
       experience: "Advanced training in cupping modalities including Hijama. Special interest in sports recovery and chronic pain conditions.",
       languages: ["Arabic", "English"],
       image: "https://vedaracare.ae/wp-content/uploads/2024/01/team-fatima.jpg",
+      alt: "Dr. Fatima Al-Rashidi, DPT cupping practitioner Vedara Care JVC Dubai",
       link: "/physiotherapists/dr-fatima-al-rashidi/"
     },
     {
@@ -379,6 +438,7 @@ export const cuppingTherapyTeam = {
       experience: "Post-graduate training in cupping therapy. Specialises in sports cupping for athletic performance recovery and muscle rehabilitation.",
       languages: ["English", "Portuguese"],
       image: "https://vedaracare.ae/wp-content/uploads/2024/01/team-daniel.jpg",
+      alt: "Daniel Mendes, MSc PT cupping practitioner Vedara Care JVC Dubai",
       link: "/physiotherapists/daniel-mendes/"
     },
     {
@@ -388,6 +448,7 @@ export const cuppingTherapyTeam = {
       experience: "Integrated cupping within comprehensive physiotherapy programmes. Focus on chronic musculoskeletal conditions and office worker presentations.",
       languages: ["English", "Hindi", "Malayalam"],
       image: "https://vedaracare.ae/wp-content/uploads/2024/01/team-priya.jpg",
+      alt: "Priya Sharma, BPT cupping practitioner Vedara Care JVC Dubai",
       link: "/physiotherapists/priya-sharma/"
     }
   ]

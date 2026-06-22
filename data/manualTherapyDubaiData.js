@@ -20,9 +20,8 @@ export const manualTherapyHero = {
     subtitle: "Manual therapy is the hands-on component of evidence-based physiotherapy. Joint mobilisation, soft tissue work, manipulation where appropriate, and specific exercise — delivered by DPT-qualified physiotherapists."
   },
   image: "/images/manual-therapy-hero-dubai.webp",
-  alt: "Manual therapy treatment at Vedara Care JVC clinic Dubai"
+  alt: "Manual therapy treatment at Vedara Care JVC Dubai clinic with certified specialist"
 };
-
 export const manualTherapyIntro = {
   label: "THE QUICK ANSWER",
   title: "Manual therapy at Vedara Care, in one paragraph.",
@@ -65,8 +64,8 @@ export const manualTherapyWhatIs = {
       footer: "Manual therapy is the hands-on craft of physiotherapy. Skilled application combined with appropriate exercise prescription and patient education produces sustainable outcomes that hands-on treatment alone rarely achieves."
     },
     rightContent: {
-      image: "/images/manual-therapy-brain-model.webp",
-      alt: "Anatomical model of brain showing manual therapy approach",
+      image: "manual-therapy-techniques-illustration.webp",
+      alt: "Manual therapy techniques joint mobilisation educational illustration",
       label: "TECHNIQUES IN OUR PRACTICE",
       tags: [
         "Maitland I-IV",
@@ -82,7 +81,6 @@ export const manualTherapyWhatIs = {
   },
   bgColor: "bg-[#EDE8DF]"
 };
-
 export const manualTherapyReviews = {
   label: "PATIENT STORIES",
   title: "Real recoveries. Real outcomes.",
@@ -117,8 +115,18 @@ export const manualTherapyReviews = {
 export const manualTherapyFaqs = {
   bgColor: "bg-[#EDE8DF]",
   label: "COMMON QUESTIONS",
-  title: "What patients ask about manual therapy in Dubai.",
-  description: "Manual therapy is often confused with chiropractic and massage — important distinctions below.",
+  title: "What patients ask about manual therapy before booking.",
+  description: "For broader physiotherapy questions, see our main physiotherapy page.",
+   sidebarLinks: [
+    {
+      text: "Visit physiotherapy main page",
+      href: "/physiotherapy-jvc/"
+    },
+    {
+      text: "Dry needling treatment",
+      href: "/treatments/dry-needling-dubai/"
+    }
+  ],
   faqs: [
     {
       question: "What exactly is manual therapy?",
@@ -446,7 +454,7 @@ export const manualTherapyTeam = {
       languages: ["Arabic", "English"],
       link: "/physiotherapists/dr-layla-hassan/",
       image: "/images/dr-layla-hassan.webp",
-      alt: "Dr. Layla Hassan, DPT, manual therapy specialist at Vedara Care JVC"
+      alt: "Dr. Layla Hassan, DPT manual therapy certified specialist Vedara Care JVC Dubai"
     },
     {
       name: "Dr. Amit Sharma, DPT",
@@ -456,7 +464,7 @@ export const manualTherapyTeam = {
       languages: ["Hindi", "English"],
       link: "/physiotherapists/dr-amit-sharma/",
       image: "/images/dr-amit-sharma.webp",
-      alt: "Dr. Amit Sharma, DPT, manual therapy specialist at Vedara Care JVC"
+      alt: "Dr. Amit Sharma, DPT manual therapy certified specialist Vedara Care JVC Dubai"
     },
     {
       name: "Dr. Sofia Reyes, DPT",
@@ -466,7 +474,7 @@ export const manualTherapyTeam = {
       languages: ["Spanish", "English"],
       link: "/physiotherapists/dr-sofia-reyes/",
       image: "/images/dr-sofia-reyes.webp",
-      alt: "Dr. Sofia Reyes, DPT, manual therapy specialist at Vedara Care JVC"
+      alt: "Dr. Sofia Reyes, DPT manual therapy certified specialist Vedara Care JVC Dubai"
     },
     {
       name: "Dr. James Mitchell, DPT",
@@ -476,7 +484,7 @@ export const manualTherapyTeam = {
       languages: ["English"],
       link: "/physiotherapists/dr-james-mitchell/",
       image: "/images/dr-james-mitchell.webp",
-      alt: "Dr. James Mitchell, DPT, manual therapy specialist at Vedara Care JVC"
+      alt: "Dr. James Mitchell, DPT manual therapy certified specialist Vedara Care JVC Dubai"
     }
   ]
 };

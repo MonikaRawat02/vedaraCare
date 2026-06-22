@@ -283,7 +283,7 @@ export const tennisElbowReviews = {
     { value: "4.9 ★", label: "Google Rating" },
     { value: "220+", label: "Tennis elbow patients treated" },
     { value: "86%", label: "Substantial improvement within 16 weeks" },
-    { value: "0", label: "Cortisone-first treatments" }
+    // { value: "0", label: "Cortisone-first treatments" }
   ],
   buttonText: "Read All Elbow Pain Reviews"
 };
