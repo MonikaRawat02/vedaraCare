@@ -68,7 +68,12 @@ const ModernBlogEditorV1 = ({
   const [showVideoOptions, setShowVideoOptions] = useState(false);
   const [activeFormats, setActiveFormats] = useState(new Set());
   const [editorFocused, setEditorFocused] = useState(false);
+  const [showColorPicker, setShowColorPicker] = useState(false);
+  const [selectedTable, setSelectedTable] = useState(null);
+  const [selectedCell, setSelectedCell] = useState(null);
+  const [tableToolbarPos, setTableToolbarPos] = useState({ top: 0, left: 0 });
   const editorRef = useRef(null);
+  const tableToolbarRef = useRef(null);
   const fileInputRef = useRef(null);
   const videoInputRef = useRef(null);
   const autoSaveTimerRef = useRef(null);
@@ -159,38 +164,82 @@ const ModernBlogEditorV1 = ({
     };
   }, []);
 
-  // Update active formats when selection changes
+  // Update active formats and table selection when selection changes
   useEffect(() => {
     if (!editorRef.current) return;
-   
+
+    const updateTablePosition = (table) => {
+      if (table && editorRef.current) {
+        const editorRect = editorRef.current.getBoundingClientRect();
+        const tableRect = table.getBoundingClientRect();
+        setTableToolbarPos({
+          top: tableRect.top - editorRect.top + editorRef.current.scrollTop - 60,
+          left: tableRect.left - editorRect.left
+        });
+      }
+    };
+
     const handleSelectionChange = () => {
       updateActiveFormats();
+      // Check if selection is in a table cell
+      const cell = getTableCellFromSelection();
+      if (cell) {
+        const table = getTableFromCell(cell);
+        setSelectedCell(cell);
+        setSelectedTable(table);
+        updateTablePosition(table);
+      } else {
+        setSelectedCell(null);
+        setSelectedTable(null);
+      }
     };
-   
+
     const handleMouseUp = () => {
       updateActiveFormats();
+      const cell = getTableCellFromSelection();
+      if (cell) {
+        const table = getTableFromCell(cell);
+        setSelectedCell(cell);
+        setSelectedTable(table);
+        updateTablePosition(table);
+      } else {
+        setSelectedCell(null);
+        setSelectedTable(null);
+      }
     };
-   
+
     const handleKeyDown = () => {
       // Update formats after key press with slight delay to ensure DOM is updated
-      setTimeout(updateActiveFormats, 1);
+      setTimeout(() => {
+        updateActiveFormats();
+        const cell = getTableCellFromSelection();
+        if (cell) {
+          const table = getTableFromCell(cell);
+          setSelectedCell(cell);
+          setSelectedTable(table);
+          updateTablePosition(table);
+        } else {
+          setSelectedCell(null);
+          setSelectedTable(null);
+        }
+      }, 1);
     };
-    
+
     const handleFocus = () => {
       setEditorFocused(true);
       updateActiveFormats();
     };
-    
+
     const handleBlur = () => {
       setEditorFocused(false);
     };
-   
+
     document.addEventListener('selectionchange', handleSelectionChange);
     editorRef.current.addEventListener('mouseup', handleMouseUp);
     editorRef.current.addEventListener('keydown', handleKeyDown);
     editorRef.current.addEventListener('focus', handleFocus);
     editorRef.current.addEventListener('blur', handleBlur);
-   
+
     return () => {
       document.removeEventListener('selectionchange', handleSelectionChange);
       if (editorRef.current) {
@@ -762,6 +811,244 @@ const ModernBlogEditorV1 = ({
     } catch (error) {
       console.error('Error executing command:', error, { command, value });
     }
+  };
+
+  // ==================== TABLE FUNCTIONS ====================
+  const insertTable = () => {
+    if (!editorRef.current) return;
+    editorRef.current.focus();
+
+    const tableId = `table-${Date.now()}`;
+    const tableHTML = `
+      <table id="${tableId}" style="border-collapse: collapse; width: 100%; margin: 16px 0; border: 1px solid #184C3A; border-radius: 8px; overflow: hidden; box-shadow: 0 1px 3px rgba(0,0,0,0.1);">
+        <thead>
+          <tr style="background-color: #f0fdf4;">
+            <th style="border: 1px solid #184C3A; padding: 12px; text-align: left; font-weight: 600; color: #184C3A;">Header 1</th>
+            <th style="border: 1px solid #184C3A; padding: 12px; text-align: left; font-weight: 600; color: #184C3A;">Header 2</th>
+            <th style="border: 1px solid #184C3A; padding: 12px; text-align: left; font-weight: 600; color: #184C3A;">Header 3</th>
+          </tr>
+        </thead>
+        <tbody>
+          <tr>
+            <td style="border: 1px solid #184C3A; padding: 12px; min-width: 100px;">Cell 1</td>
+            <td style="border: 1px solid #184C3A; padding: 12px; min-width: 100px;">Cell 2</td>
+            <td style="border: 1px solid #184C3A; padding: 12px; min-width: 100px;">Cell 3</td>
+          </tr>
+          <tr>
+            <td style="border: 1px solid #184C3A; padding: 12px; min-width: 100px;">Cell 4</td>
+            <td style="border: 1px solid #184C3A; padding: 12px; min-width: 100px;">Cell 5</td>
+            <td style="border: 1px solid #184C3A; padding: 12px; min-width: 100px;">Cell 6</td>
+          </tr>
+        </tbody>
+      </table>
+      <p><br></p>
+    `;
+
+    document.execCommand('insertHTML', false, tableHTML);
+    updateContent();
+  };
+
+  const getTableCellFromSelection = () => {
+    const selection = window.getSelection();
+    if (!selection || selection.rangeCount === 0) return null;
+
+    const range = selection.getRangeAt(0);
+    let element = range.commonAncestorContainer;
+
+    while (element && element !== editorRef.current) {
+      if (element.tagName === 'TD' || element.tagName === 'TH') {
+        return element;
+      }
+      element = element.parentElement;
+    }
+
+    return null;
+  };
+
+  const getTableFromCell = (cell) => {
+    let element = cell;
+    while (element && element !== editorRef.current) {
+      if (element.tagName === 'TABLE') {
+        return element;
+      }
+      element = element.parentElement;
+    }
+    return null;
+  };
+
+  const addRowAbove = () => {
+    if (!selectedCell) return;
+    const table = getTableFromCell(selectedCell);
+    if (!table) return;
+
+    const row = selectedCell.closest('tr');
+    if (!row) return;
+
+    const newRow = document.createElement('tr');
+    const cells = row.querySelectorAll('td, th');
+    cells.forEach((cell) => {
+      const newCell = cell.tagName === 'TH' ? document.createElement('th') : document.createElement('td');
+      newCell.style.border = '1px solid #184C3A';
+      newCell.style.padding = '12px';
+      newCell.style.minWidth = '100px';
+      newCell.innerHTML = '&nbsp;';
+      if (cell.tagName === 'TH') {
+        newCell.style.backgroundColor = '#f0fdf4';
+        newCell.style.textAlign = 'left';
+        newCell.style.fontWeight = '600';
+        newCell.style.color = '#184C3A';
+      }
+      newRow.appendChild(newCell);
+    });
+
+    row.parentNode.insertBefore(newRow, row);
+    updateContent();
+  };
+
+  const addRowBelow = () => {
+    if (!selectedCell) return;
+    const table = getTableFromCell(selectedCell);
+    if (!table) return;
+
+    const row = selectedCell.closest('tr');
+    if (!row) return;
+
+    const newRow = document.createElement('tr');
+    const cells = row.querySelectorAll('td, th');
+    cells.forEach((cell) => {
+      const newCell = cell.tagName === 'TH' ? document.createElement('th') : document.createElement('td');
+      newCell.style.border = '1px solid #184C3A';
+      newCell.style.padding = '12px';
+      newCell.style.minWidth = '100px';
+      newCell.innerHTML = '&nbsp;';
+      if (cell.tagName === 'TH') {
+        newCell.style.backgroundColor = '#f0fdf4';
+        newCell.style.textAlign = 'left';
+        newCell.style.fontWeight = '600';
+        newCell.style.color = '#184C3A';
+      }
+      newRow.appendChild(newCell);
+    });
+
+    row.parentNode.insertBefore(newRow, row.nextSibling);
+    updateContent();
+  };
+
+  const addColumnLeft = () => {
+    if (!selectedCell) return;
+    const table = getTableFromCell(selectedCell);
+    if (!table) return;
+
+    const cellIndex = Array.from(selectedCell.parentNode.children).indexOf(selectedCell);
+    const rows = table.querySelectorAll('tr');
+
+    rows.forEach(row => {
+      const cells = row.querySelectorAll('td, th');
+      const newCell = cells[0].tagName === 'TH' ? document.createElement('th') : document.createElement('td');
+      newCell.style.border = '1px solid #184C3A';
+      newCell.style.padding = '12px';
+      newCell.style.minWidth = '100px';
+      newCell.innerHTML = '&nbsp;';
+      if (cells[0].tagName === 'TH') {
+        newCell.style.backgroundColor = '#f0fdf4';
+        newCell.style.textAlign = 'left';
+        newCell.style.fontWeight = '600';
+        newCell.style.color = '#184C3A';
+      }
+
+      if (cells[cellIndex]) {
+        row.insertBefore(newCell, cells[cellIndex]);
+      } else {
+        row.appendChild(newCell);
+      }
+    });
+
+    updateContent();
+  };
+
+  const addColumnRight = () => {
+    if (!selectedCell) return;
+    const table = getTableFromCell(selectedCell);
+    if (!table) return;
+
+    const cellIndex = Array.from(selectedCell.parentNode.children).indexOf(selectedCell);
+    const rows = table.querySelectorAll('tr');
+
+    rows.forEach(row => {
+      const cells = row.querySelectorAll('td, th');
+      const newCell = cells[0].tagName === 'TH' ? document.createElement('th') : document.createElement('td');
+      newCell.style.border = '1px solid #184C3A';
+      newCell.style.padding = '12px';
+      newCell.style.minWidth = '100px';
+      newCell.innerHTML = '&nbsp;';
+      if (cells[0].tagName === 'TH') {
+        newCell.style.backgroundColor = '#f0fdf4';
+        newCell.style.textAlign = 'left';
+        newCell.style.fontWeight = '600';
+        newCell.style.color = '#184C3A';
+      }
+
+      if (cells[cellIndex + 1]) {
+        row.insertBefore(newCell, cells[cellIndex + 1]);
+      } else {
+        row.appendChild(newCell);
+      }
+    });
+
+    updateContent();
+  };
+
+  const deleteRow = () => {
+    if (!selectedCell) return;
+    const table = getTableFromCell(selectedCell);
+    if (!table) return;
+
+    const row = selectedCell.closest('tr');
+    if (!row) return;
+
+    const rowCount = table.querySelectorAll('tr').length;
+    if (rowCount <= 1) {
+      // If it's the last row, delete the whole table
+      table.remove();
+      setSelectedTable(null);
+      setSelectedCell(null);
+    } else {
+      row.remove();
+    }
+    updateContent();
+  };
+
+  const deleteColumn = () => {
+    if (!selectedCell) return;
+    const table = getTableFromCell(selectedCell);
+    if (!table) return;
+
+    const cellIndex = Array.from(selectedCell.parentNode.children).indexOf(selectedCell);
+    const rows = table.querySelectorAll('tr');
+    const colCount = rows[0].querySelectorAll('td, th').length;
+
+    if (colCount <= 1) {
+      // If it's the last column, delete the whole table
+      table.remove();
+      setSelectedTable(null);
+      setSelectedCell(null);
+    } else {
+      rows.forEach(row => {
+        const cells = row.querySelectorAll('td, th');
+        if (cells[cellIndex]) {
+          cells[cellIndex].remove();
+        }
+      });
+    }
+    updateContent();
+  };
+
+  const deleteTable = () => {
+    if (!selectedTable) return;
+    selectedTable.remove();
+    setSelectedTable(null);
+    setSelectedCell(null);
+    updateContent();
   };
 
   const updateContent = () => {
@@ -2764,7 +3051,7 @@ const saveDraft = async (isAutoSave = false) => {
                 URL Slug
               </label>
               <div className="flex items-center gap-1.5 sm:gap-2">
-                <span className="text-xs sm:text-sm text-gray-500 whitespace-nowrap flex-shrink-0">/blogs/</span>
+                <span className="text-xs sm:text-sm text-gray-500 whitespace-nowrap flex-shrink-0">/blog/</span>
                 <input
                   type="text"
                   value={paramlink}
@@ -2869,6 +3156,64 @@ const saveDraft = async (isAutoSave = false) => {
                       >
                         <LinkIcon className="w-4 h-4 text-current" />
                       </button>
+                      
+                      {/* Text Color Picker */}
+                      <div className="relative">
+                        <button
+                          onClick={(e) => {
+                            e.preventDefault();
+                            e.stopPropagation();
+                            setShowColorPicker(!showColorPicker);
+                          }}
+                          className="p-2.5 hover:bg-gray-100 rounded-lg transition-colors flex items-center justify-center text-gray-700 hover:text-gray-900"
+                          title="Text Color"
+                          type="button"
+                        >
+                          <Type className="w-4 h-4 text-current" />
+                        </button>
+                        
+                        {showColorPicker && (
+                          <div className="absolute top-full right-0 mt-2 bg-white rounded-lg shadow-xl border border-gray-200 p-2 z-[200]">
+                            <div className="grid grid-cols-5 gap-1">
+                              {[
+                                '#000000', '#4B5563', '#6B7280', '#9CA3AF', '#D1D5DB',
+                                '#DC2626', '#EA580C', '#D97706', '#B45309', '#92400E',
+                                '#16A34A', '#10B981', '#14B8A6', '#06B6D4', '#0EA5E9',
+                                '#3B82F6', '#6366F1', '#8B5CF6', '#A855F7', '#D946EF',
+                                '#EC4899', '#F43F5E', '#F87171', '#FB7185', '#FCA5A5'
+                              ].map((color) => (
+                                <button
+                                  key={color}
+                                  onClick={(e) => {
+                                    e.preventDefault();
+                                    e.stopPropagation();
+                                    document.execCommand('foreColor', false, color);
+                                    updateContent();
+                                    setShowColorPicker(false);
+                                    setShowToolbar(false);
+                                  }}
+                                  style={{ backgroundColor: color }}
+                                  className="w-6 h-6 rounded-full border border-gray-300 hover:scale-110 transition-transform"
+                                  title={color}
+                                />
+                              ))}
+                            </div>
+                            <button
+                              onClick={(e) => {
+                                e.preventDefault();
+                                e.stopPropagation();
+                                document.execCommand('removeFormat', false, null);
+                                updateContent();
+                                setShowColorPicker(false);
+                                setShowToolbar(false);
+                              }}
+                              className="mt-2 w-full text-xs text-gray-600 hover:text-gray-900 py-1"
+                            >
+                              Reset Color
+                            </button>
+                          </div>
+                        )}
+                      </div>
                                       
                       {/* Text Format - Icons only */}
                       <button
@@ -3145,6 +3490,19 @@ const saveDraft = async (isAutoSave = false) => {
                         onClick={(e) => {
                           e.preventDefault();
                           e.stopPropagation();
+                          insertTable();
+                          setShowToolbar(false);
+                        }}
+                        className="p-2.5 hover:bg-gray-100 rounded-lg transition-colors flex items-center justify-center text-gray-700 hover:text-gray-900"
+                        title="Insert Table"
+                        type="button"
+                      >
+                        <Table className="w-4 h-4 text-current" />
+                      </button>
+                      <button
+                        onClick={(e) => {
+                          e.preventDefault();
+                          e.stopPropagation();
                           formatText('formatBlock', '<blockquote>');
                           setShowToolbar(false);
                         }}
@@ -3356,6 +3714,18 @@ const saveDraft = async (isAutoSave = false) => {
                   onClick={(e) => {
                     e.preventDefault();
                     e.stopPropagation();
+                    insertTable();
+                  }}
+                  className="p-1.5 sm:p-2 hover:bg-white rounded-lg transition-colors border border-transparent hover:border-gray-300 toolbar-button"
+                  title="Insert Table"
+                  type="button"
+                >
+                  <Table className="w-3.5 h-3.5 sm:w-4 sm:h-4" />
+                </button>
+                <button
+                  onClick={(e) => {
+                    e.preventDefault();
+                    e.stopPropagation();
                     formatText('formatBlock', '<blockquote>');
                   }}
                     className={`p-1.5 sm:p-2 rounded-lg transition-colors border ${
@@ -3498,6 +3868,8 @@ const saveDraft = async (isAutoSave = false) => {
               </div>
               </div>
 
+
+
               {/* Featured Image */}
               {featuredImage && (
                 <div className="mb-4 sm:mb-6 relative group">
@@ -3516,53 +3888,147 @@ const saveDraft = async (isAutoSave = false) => {
               )}
 
               {/* Content Editor */}
-              <div
-                ref={editorRef}
-                contentEditable
-                onInput={updateContent}
-                onPaste={handlePaste}
-                onBlur={updateContent}
-                onKeyUp={() => {
-                  // Update active formats after typing to ensure toolbar reflects current state
-                  setTimeout(updateActiveFormats, 0);
-                }}
-                onKeyDown={() => {
-                  // Ensure cursor is visible after key presses
-                  if (editorRef.current) {
-                    setTimeout(() => {
-                      const selection = window.getSelection();
-                      if (selection && selection.rangeCount > 0) {
-                        const range = selection.getRangeAt(0);
-                        // Ensure cursor is visible
-                        try {
-                          range.collapse(true);
-                          selection.removeAllRanges();
-                          selection.addRange(range);
-                        } catch (err) {
-                          // Ignore errors
+              <div className="relative">
+                {/* Floating Table Toolbar */}
+                {selectedTable && selectedCell && (
+                  <div
+                    ref={tableToolbarRef}
+                    className="absolute z-50 bg-white p-2 sm:p-3 rounded-lg shadow-xl border border-amber-200 flex items-center gap-1 sm:gap-2 flex-wrap"
+                    style={{
+                      top: `${tableToolbarPos.top}px`,
+                      left: `${tableToolbarPos.left}px`
+                    }}
+                  >
+                    <span className="text-xs sm:text-sm font-medium text-amber-800 mr-1 sm:mr-2 whitespace-nowrap">Table:</span>
+                    <button
+                      onClick={(e) => {
+                        e.preventDefault();
+                        e.stopPropagation();
+                        addRowAbove();
+                      }}
+                      className="px-2 sm:px-3 py-1 sm:py-1.5 bg-amber-50 hover:bg-amber-100 border border-amber-300 rounded-lg text-xs sm:text-sm font-medium text-amber-800 transition-colors whitespace-nowrap"
+                      title="Add Row Above"
+                    >
+                      ↑ Add Row
+                    </button>
+                    <button
+                      onClick={(e) => {
+                        e.preventDefault();
+                        e.stopPropagation();
+                        addRowBelow();
+                      }}
+                      className="px-2 sm:px-3 py-1 sm:py-1.5 bg-amber-50 hover:bg-amber-100 border border-amber-300 rounded-lg text-xs sm:text-sm font-medium text-amber-800 transition-colors whitespace-nowrap"
+                      title="Add Row Below"
+                    >
+                      ↓ Add Row
+                    </button>
+                    <button
+                      onClick={(e) => {
+                        e.preventDefault();
+                        e.stopPropagation();
+                        addColumnLeft();
+                      }}
+                      className="px-2 sm:px-3 py-1 sm:py-1.5 bg-amber-50 hover:bg-amber-100 border border-amber-300 rounded-lg text-xs sm:text-sm font-medium text-amber-800 transition-colors whitespace-nowrap"
+                      title="Add Column Left"
+                    >
+                      ← Add Col
+                    </button>
+                    <button
+                      onClick={(e) => {
+                        e.preventDefault();
+                        e.stopPropagation();
+                        addColumnRight();
+                      }}
+                      className="px-2 sm:px-3 py-1 sm:py-1.5 bg-amber-50 hover:bg-amber-100 border border-amber-300 rounded-lg text-xs sm:text-sm font-medium text-amber-800 transition-colors whitespace-nowrap"
+                      title="Add Column Right"
+                    >
+                      → Add Col
+                    </button>
+                    <div className="w-px h-5 sm:h-6 bg-amber-300 mx-1 sm:mx-1.5" />
+                    <button
+                      onClick={(e) => {
+                        e.preventDefault();
+                        e.stopPropagation();
+                        deleteRow();
+                      }}
+                      className="px-2 sm:px-3 py-1 sm:py-1.5 bg-red-50 hover:bg-red-100 border border-red-300 rounded-lg text-xs sm:text-sm font-medium text-red-700 transition-colors whitespace-nowrap"
+                      title="Delete Current Row"
+                    >
+                      - Row
+                    </button>
+                    <button
+                      onClick={(e) => {
+                        e.preventDefault();
+                        e.stopPropagation();
+                        deleteColumn();
+                      }}
+                      className="px-2 sm:px-3 py-1 sm:py-1.5 bg-red-50 hover:bg-red-100 border border-red-300 rounded-lg text-xs sm:text-sm font-medium text-red-700 transition-colors whitespace-nowrap"
+                      title="Delete Current Column"
+                    >
+                      - Col
+                    </button>
+                    <button
+                      onClick={(e) => {
+                        e.preventDefault();
+                        e.stopPropagation();
+                        deleteTable();
+                      }}
+                      className="px-2 sm:px-3 py-1 sm:py-1.5 bg-red-50 hover:bg-red-100 border border-red-400 rounded-lg text-xs sm:text-sm font-medium text-red-700 transition-colors whitespace-nowrap"
+                      title="Delete Entire Table"
+                    >
+                      Delete Table
+                    </button>
+                  </div>
+                )}
+
+                <div
+                  ref={editorRef}
+                  contentEditable
+                  onInput={updateContent}
+                  onPaste={handlePaste}
+                  onBlur={updateContent}
+                  onKeyUp={() => {
+                    // Update active formats after typing to ensure toolbar reflects current state
+                    setTimeout(updateActiveFormats, 0);
+                  }}
+                  onKeyDown={() => {
+                    // Ensure cursor is visible after key presses
+                    if (editorRef.current) {
+                      setTimeout(() => {
+                        const selection = window.getSelection();
+                        if (selection && selection.rangeCount > 0) {
+                          const range = selection.getRangeAt(0);
+                          // Ensure cursor is visible
+                          try {
+                            range.collapse(true);
+                            selection.removeAllRanges();
+                            selection.addRange(range);
+                          } catch (err) {
+                            // Ignore errors
+                          }
                         }
-                      }
-                    }, 0);
-                  }
-                }}
-                onClick={() => {
-                  // Ensure cursor is visible on click
-                  if (editorRef.current) {
-                    setTimeout(() => {
-                      editorRef.current?.focus();
-                    }, 0);
-                  }
-                }}
-                className="min-h-[300px] sm:min-h-[350px] md:min-h-[400px] text-base sm:text-lg leading-relaxed text-gray-700 focus:outline-none prose prose-sm sm:prose-base md:prose-lg max-w-none"
-                style={{
-                  wordBreak: 'break-word',
-                  caretColor: '#06b6d4', // Cyan cursor color for visibility
-                  outline: 'none',
-                  overflow: 'visible', // Ensure buttons are not clipped
-                  position: 'relative', // Create stacking context
-                }}
-                suppressContentEditableWarning={true}
-              />
+                      }, 0);
+                    }
+                  }}
+                  onClick={() => {
+                    // Ensure cursor is visible on click
+                    if (editorRef.current) {
+                      setTimeout(() => {
+                        editorRef.current?.focus();
+                      }, 0);
+                    }
+                  }}
+                  className="min-h-[300px] sm:min-h-[350px] md:min-h-[400px] text-base sm:text-lg leading-relaxed text-gray-700 focus:outline-none prose prose-sm sm:prose-base md:prose-lg max-w-none"
+                  style={{
+                    wordBreak: 'break-word',
+                    caretColor: '#06b6d4', // Cyan cursor color for visibility
+                    outline: 'none',
+                    overflow: 'visible', // Ensure buttons are not clipped
+                    position: 'relative', // Create stacking context
+                  }}
+                  suppressContentEditableWarning={true}
+                />
+              </div>
 
 
             </div>

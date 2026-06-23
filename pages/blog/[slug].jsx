@@ -46,10 +46,6 @@ function cleanBlogContent(html) {
     // Remove hidden topic markers (but extract topics if needed)
     cleaned = cleaned.replace(/<p[^>]*style="display:\s*none[^"']*"[^>]*>.*?<\/p>/gi, '');
     
-    // Ensure proper HTML structure
-    cleaned = cleaned.replace(/<div[^>]*class="image-container"[^>]*>|<div[^>]*class="video-container"[^>]*>/gi, '');
-    cleaned = cleaned.replace(/<\/div>/gi, '');
-    
     // Clean up any empty paragraphs
     cleaned = cleaned.replace(/<p><\/p>/gi, '');
     cleaned = cleaned.replace(/<p><br><\/p>/gi, '');

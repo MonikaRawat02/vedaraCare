@@ -36,7 +36,7 @@ export default async function handler(req, res) {
   }
 
   try {
-    const uploadDir = path.join(process.cwd(), "uploads");
+    const uploadDir = path.join(process.cwd(), "public", "images", "uploads");
     
     // Ensure directory exists
     if (!fs.existsSync(uploadDir)) {
