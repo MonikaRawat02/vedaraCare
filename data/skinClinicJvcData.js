@@ -39,10 +39,9 @@ export const howThisPageWorks = {
       description: "When you feel ready — either confident about what you need or wanting expert guidance — book a consultation. Same-week appointments typically available."
     }
   ],
-  linkText: "Skip the guidance and book a consultation directly →",
+  linkText: "Skip the guidance and book a consultation directly",
   linkHref: "/book"
 };
-
 export const skinConcernSelector = {
   bgColor: "bg-[#FAF8F3]",
   label: "YOUR SKIN CONCERN",
@@ -59,7 +58,7 @@ export const skinConcernSelector = {
         "· What treatments actually work?"
       ],
       linkText: "Learn more about Acne and Breakouts",
-      linkHref: "/dermatology-clinic-jvc/#medical-dermatology"
+      linkHref: "/conditions/acne-treatment-jvc/"
     },
     {
       number: "02",
@@ -176,7 +175,7 @@ export const skinConcernSelector = {
 };
 
 export const skinClinicPatientPreferences = {
-  bgColor: "bg-[#F0EBE3]",
+  bgColor: "bg-[#F0EAE0]",
   label: "PATIENT PREFERENCES",
   title: "Multiple languages. Discretion. Patient preferences accommodated.",
   description: "Our patient population is diverse and we accommodate the preferences that matter to you. Female and male dermatologists available. Multiple languages including Arabic, English, Hindi, and Urdu. Modest treatment options available. Privacy and discretion throughout your visit. Family members or chaperones welcomed if you prefer. Cultural and religious preferences respected. Patient comfort prioritised throughout.",
@@ -197,7 +196,7 @@ export const skinClinicPatientPreferences = {
 };
 
 export const skinClinicPricing = {
-  bgColor: "bg-[#FAF8F3]",
+  bgColor: "bg-white",
   label: "COST GUIDANCE",
   title: "Understanding what skin care costs at our clinic.",
   description: "Costs vary substantially based on what your specific situation requires — from straightforward consultations through to comprehensive treatment programmes. Some general guidance:",
@@ -214,7 +213,7 @@ export const skinClinicPricing = {
 };
 
 export const skinClinicFaqs = {
-  bgColor: "bg-white",
+  bgColor: "bg-[#FAF7F2]",
   label: "COMMON QUESTIONS",
   sidebarLinks: [
     { text: "Full dermatology clinic details", href: "/dermatology-clinic-jvc" },
@@ -339,9 +338,9 @@ export const skinClinicSpecificSituations = {
     }
   ]
 };
-
 export const skinClinicWhenToSeeSpecialist = {
   label: "GUIDANCE",
+  bgColor: "bg-[#FAF7F2]",
   title: "When does your skin concern need a specialist?",
   description: "Not every skin concern requires specialist consultation. Honest guidance about when professional help is most valuable.",
   sections: [

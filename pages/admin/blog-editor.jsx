@@ -44,7 +44,6 @@ const ModernBlogEditorV1 = ({
   const [featuredImage, setFeaturedImage] = useState('');
   const [topics, setTopics] = useState([]);
   const [newTopic, setNewTopic] = useState('');
-
   const [isLoading, setIsLoading] = useState(false);
   const [isPublishing, setIsPublishing] = useState(false);
   const [showPreview, setShowPreview] = useState(false);
@@ -118,11 +117,11 @@ const ModernBlogEditorV1 = ({
     if (!editorRef.current) return;
    
     let debounceTimer = null;
-   
+
     const observer = new MutationObserver((mutations) => {
       // Content changed, update state
       updateContent();
-     
+      
       // Check if any media elements were added
       const hasMediaAdded = mutations.some(mutation => {
         return Array.from(mutation.addedNodes).some(node => {

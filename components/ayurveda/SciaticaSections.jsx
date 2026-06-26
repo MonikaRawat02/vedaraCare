@@ -9,7 +9,8 @@ export const SciaticaTypes = ({
   types = [],
   footer = "",
   gridCols = "grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-6",
-  typicalSignsLabel = "TYPICAL SIGNS:"
+  typicalSignsLabel = "TYPICAL SIGNS:",
+  borderPosition = "top" // 'top' (default) or 'left'
 }) => {
   return (
     <section className={`${bgColor} py-24 px-6`}>
@@ -28,7 +29,7 @@ export const SciaticaTypes = ({
 
         <div className={gridCols}>
           {types.map((type, index) => (
-            <div key={index} className={`${cardBg} p-6 rounded-lg border-t-3 border-[#C9A55A] shadow-sm hover:shadow-md transition-all flex flex-col gap-4 h-full`}>
+            <div key={index} className={`${cardBg} p-6 rounded-lg ${borderPosition === 'left' ? 'border-l-3' : 'border-t-3'} border-[#C9A55A] shadow-sm hover:shadow-md transition-all flex flex-col gap-4 h-full`}>
               <div className="text-4xl text-[#C9A55A] font-serif mb-6" style={{ fontFamily: 'Fraunces, Georgia, serif' }}>
                 {type.number}
               </div>
@@ -41,6 +42,11 @@ export const SciaticaTypes = ({
                     <h3 className="text-xl font-sans font-medium text-[#1A1A1A] mb-1 leading-tight" dangerouslySetInnerHTML={{ __html: type.title }} />
                   )}
                 </div>
+
+                {/* Sub-label/subtitle if provided */}
+                {type.subTitle && (
+                  <p className="text-[#B8963E] text-sm  tracking-wider " dangerouslySetInnerHTML={{ __html: type.subTitle }} />
+                )}
 
                 <div 
                   className="text-[14px] text-sm text-[#4A4A4A] font-sans leading-relaxed"

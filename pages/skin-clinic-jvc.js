@@ -168,18 +168,15 @@ const SkinClinicJvc = () => {
       <HowThisPageWorksSection 
         {...howThisPageWorks}
       />
-      
       <PhysiotherapySpecializations 
         {...skinConcernSelector}
         cardBorder="border border-[#E5DFD3]"
       />
-      
       <SportsInjuryTypes 
         {...skinClinicSpecificSituations}
         bgColor="rgb(255, 255, 255)"
         lgColumns={3}
       />
-
       <ManualTherapySession 
         bgColor="bg-[#F8F4EE]"
         label={skinClinicWhenToSeeSpecialist.label}

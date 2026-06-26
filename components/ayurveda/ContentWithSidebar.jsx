@@ -1,0 +1,356 @@
+import React, { useState } from 'react';
+
+// ============================================
+// SECTION 1: TREATMENT LADDER COMPONENT
+// ============================================
+const TreatmentLadderSection = ({
+  bgColor,
+  label,
+  title,
+  intro,
+  preContent,
+  ladderItems,
+  sidebar,
+}) => {
+  const [openItems, setOpenItems] = useState({});
+
+  const toggleItem = (index) => {
+    setOpenItems(prev => ({
+      ...prev,
+      [index]: !prev[index]
+    }));
+  };
+
+  return (
+    <section className={`${bgColor}`} style={{ padding: '96px 24px' }}>
+      <div className="max-w-7xl mx-auto">
+        <div className="text-center mb-12">
+          <div className="text-xs tracking-[0.2em] uppercase mb-3" style={{ color: '#C9A84C', marginBottom: '12px' }}>
+            {label}
+          </div>
+          <h2 className="text-3xl md:text-4xl" style={{ fontFamily: 'Fraunces, Georgia, serif', color: 'rgb(26,26,26)' }}>
+            {title}
+          </h2>
+          {intro && (
+            <p className="text-base mt-4" style={{ color: 'rgb(107,107,107)', lineHeight: '1.7', maxWidth: '800px', margin: '16px auto 0 auto' }}>
+              {intro}
+            </p>
+          )}
+        </div>
+        <div className="grid grid-cols-1 lg:grid-cols-[60fr_40fr] gap-12 items-start">
+          <div className="space-y-6">
+            {preContent && (
+              <p className="text-base" style={{ color: 'rgb(107,107,107)', lineHeight: '1.7', marginBottom: '24px' }}>
+                {preContent}
+              </p>
+            )}
+            <div className="space-y-3">
+              {ladderItems.map((item, index) => (
+                <div key={index} className="rounded-lg border border-[#E5DFD3] bg-white overflow-hidden">
+                  <button
+                    onClick={() => toggleItem(index)}
+                    className="w-full p-4 text-left flex items-center justify-between"
+                  >
+                    <div className="flex items-center gap-4">
+                      <span className="text-xs tracking-[0.15em] uppercase" style={{ color: '#C9A84C', fontWeight: 500 }}>
+                        {item.level}
+                      </span>
+                      <div>
+                        <h3 className="text-base" style={{ fontFamily: 'Fraunces, Georgia, serif', color: 'rgb(26,26,26)' }}>
+                          {item.title}
+                        </h3>
+                        <p className="text-xs mt-1" style={{ color: 'rgb(107,107,107)' }}>
+                          {item.description}
+                        </p>
+                      </div>
+                    </div>
+                    <svg
+                      className={`w-4 h-4 flex-shrink-0 transition-transform ${openItems[index] ? 'rotate-45' : ''}`}
+                      style={{ color: '#C9A84C' }}
+                      fill="none"
+                      stroke="currentColor"
+                      viewBox="0 0 24 24"
+                    >
+                      <path strokeLinecap="round" strokeLinejoin="round" strokeWidth="2" d="M12 4v16m8-8H4"></path>
+                    </svg>
+                  </button>
+                  {openItems[index] && (
+                    <div className="px-5 pb-5 pt-0">
+                      <p className="text-sm" style={{ color: 'rgb(107,107,107)', lineHeight: '1.7' }}>
+                        {item.content}
+                      </p>
+                    </div>
+                  )}
+                </div>
+              ))}
+            </div>
+          </div>
+
+          <div className="md:sticky md:top-6 lg:top-8">
+            <div className="rounded-lg border-2 border-[#B8963E] bg-white p-7">
+              <h3 className="text-xs tracking-[0.2em] uppercase mb-4" style={{ color: '#C9A84C' }}>
+                {sidebar.label}
+              </h3>
+              <p className="text-xs font-semibold mb-4" style={{ color: 'rgb(26,26,26)' }}>
+                {sidebar.title}
+              </p>
+              {sidebar.features && sidebar.features.length > 0 && (
+                <div className="space-y-2 mb-6">
+                  {sidebar.features.map((feature, index) => (
+                    <div key={index} className="flex items-start gap-2 text-xs">
+                      <svg className="w-3 h-3 text-[#C9A84C] flex-shrink-0 mt-0.5" fill="currentColor" viewBox="0 0 24 24">
+                        <path d="M9 16.17L4.83 12l-1.42 1.41L9 19 21 7l-1.41-1.41L9 16.17z"></path>
+                      </svg>
+                      <span style={{ color: 'rgb(107,107,107)' }}>{feature}</span>
+                    </div>
+                  ))}
+                </div>
+              )}
+              {sidebar.note && (
+                <div className="text-xs leading-relaxed" style={{ color: 'rgba(51, 49, 49, 1)' }} dangerouslySetInnerHTML={{ __html: sidebar.note }} />
+              )}
+              {sidebar.footer && (
+                <p className="text-xs mb-6" style={{ color: 'rgba(14, 12, 12, 1)' }}>
+                  {sidebar.footer}
+                </p>
+              )}
+              {sidebar.buttonText && sidebar.buttonHref && (
+                <a
+                  href={sidebar.buttonHref}
+                  className={`w-full font-semibold py-3 px-4 rounded flex items-center justify-center gap-2 transition-colors text-xs border-2 ${sidebar.buttonBgColor || 'bg-[#1C1C14]'} ${sidebar.buttonTextColor || 'text-white'} border-[#C9A84C] hover:bg-opacity-90`}
+                >
+                  {sidebar.buttonText}
+                </a>
+              )}
+            </div>
+          </div>
+        </div>
+      </div>
+    </section>
+  );
+};
+
+// ============================================
+// SECTION 2: CONTENT WITH SIDEBAR COMPONENT (Original Isotretinoin style)
+// ============================================
+const ContentOnlySection = ({
+  bgColor,
+  label,
+  title,
+  contentSections,
+  sidebar,
+}) => {
+  return (
+    <section className={`${bgColor}`} style={{ padding: '96px 24px' }}>
+      <div className="max-w-7xl mx-auto">
+        <div className="text-center mb-12">
+          <div className="text-sm tracking-[0.2em] uppercase mb-4" style={{ color: '#C9A84C' }}>
+            {label}
+          </div>
+          <h2 className="text-3xl md:text-4xl" style={{ fontFamily: 'Fraunces, Georgia, serif', color: 'rgb(26,26,26)' }}>
+            {title}
+          </h2>
+        </div>
+        <div className="grid grid-cols-1 lg:grid-cols-[60fr_40fr] gap-12 items-start">
+          <div className="space-y-6">
+            {contentSections.map((section, index) => (
+              <div key={index}>
+                {section.subtitle && (
+                  <h3 className="text-lg font-serif mb-3" style={{ fontFamily: 'Fraunces, Georgia, serif', color: 'rgb(26,26,26)' }}>
+                    {section.subtitle}
+                  </h3>
+                )}
+                {section.description && (
+                  <p className="text-base" style={{ color: 'rgb(107,107,107)', lineHeight: '1.7' }}>
+                    {section.description}
+                  </p>
+                )}
+                {section.items && section.items.length > 0 && (
+                  <div className="mt-4 space-y-2">
+                    {section.items.map((item, idx) => (
+                      <p key={idx} className="text-base" style={{ color: 'rgb(107,107,107)', lineHeight: '1.7' }}>
+                        {item.text}
+                      </p>
+                    ))}
+                  </div>
+                )}
+              </div>
+            ))}
+          </div>
+
+          <div className="md:sticky md:top-6 lg:top-8">
+            <div className="rounded-lg border-2 border-[#B8965A] bg-[#FAF7F2] p-7">
+              <h3 className="text-xs tracking-[0.2em] uppercase mb-4" style={{ color: '#C9A84C' }}>
+                {sidebar.label}
+              </h3>
+              <p className="text-sm font-semibold mb-4" style={{ color: 'rgb(26,26,26)' }}>
+                {sidebar.title}
+              </p>
+              {sidebar.features && sidebar.features.length > 0 && (
+                <div className="space-y-2 mb-6">
+                  {sidebar.features.map((feature, index) => (
+                    <div key={index} className="flex items-start gap-2 text-sm">
+                      <svg className="w-4 h-4 text-[#C9A84C] flex-shrink-0 mt-1" fill="currentColor" viewBox="0 0 24 24">
+                        <path d="M9 16.17L4.83 12l-1.42 1.41L9 19 21 7l-1.41-1.41L9 16.17z"></path>
+                      </svg>
+                      <span style={{ color: 'rgb(26,26,26)' }}>{feature}</span>
+                    </div>
+                  ))}
+                </div>
+              )}
+              {sidebar.note && (
+                <div className="text-xs leading-relaxed" style={{ color: 'rgba(20, 20, 20, 1)' }} dangerouslySetInnerHTML={{ __html: sidebar.note }} />
+              )}
+              {sidebar.footer && (
+                <p className="text-xs mb-8" style={{ color: 'rgb(107,107,107)' }}>
+                  {sidebar.footer}
+                </p>
+              )}
+              {sidebar.buttonText && sidebar.buttonHref && (
+                <a
+                  href={sidebar.buttonHref}
+                  className="w-full text-white font-semibold py-4 px-6 rounded flex items-center justify-center gap-2 transition-colors text-sm border-2 border-[#1C1C14] bg-[#1C1C14] hover:bg-[#C9A84C] hover:text-[#1C1C14] hover:border-[#C9A84C]"
+                >
+                  {sidebar.buttonText}
+                </a>
+              )}
+            </div>
+          </div>
+        </div>
+      </div>
+    </section>
+  );
+};
+
+// ============================================
+// SECTION 3: TREATMENT TIMELINE COMPONENT
+// ============================================
+const TreatmentTimelineSection = ({
+  bgColor,
+  label,
+  title,
+  intro,
+  phases,
+  footerNote,
+}) => {
+  return (
+    <section className={`${bgColor}`} style={{ padding: '96px 24px' }}>
+      <div className="max-w-7xl mx-auto">
+        <div className="text-center mb-12">
+          <div className="text-xs tracking-[0.2em] uppercase mb-3" style={{ color: '#C9A84C' }}>
+            {label}
+          </div>
+          <h2 className="text-3xl md:text-4xl" style={{ fontFamily: 'Fraunces, Georgia, serif', color: 'rgb(26,26,26)' }}>
+            {title}
+          </h2>
+          {intro && (
+            <p className="text-base mt-4" style={{ color: 'rgb(107,107,107)', lineHeight: '1.7', maxWidth: '800px', margin: '16px auto 0 auto' }}>
+              {intro}
+            </p>
+          )}
+        </div>
+
+        <div className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-4 gap-6 mb-12">
+          {phases.map((phase, index) => (
+            <div key={index} className="relative bg-white rounded-xl p-6 overflow-hidden">
+              <div className="absolute top-0 left-0 right-0 h-1" style={{ 
+                background: 'linear-gradient(90deg, #B8965A 0%, #C9A84C 50%, #B8965A 100%)' 
+              }}></div>
+              <div className="absolute top-4 right-4 text-5xl font-medium" style={{ 
+                fontFamily: 'Fraunces, Georgia, serif', 
+                color: 'rgba(201, 168, 76, 0.15)' 
+              }}>
+                {phase.phaseNumber}
+              </div>
+              <div className="relative z-10">
+                <div className="text-xs tracking-[0.15em] uppercase mb-2" style={{ color: '#C9A84C', fontWeight: 500 }}>
+                  Phase {parseInt(phase.phaseNumber)}
+                </div>
+                <h3 className="text-xl mb-1" style={{ fontFamily: 'Fraunces, Georgia, serif', color: 'rgb(26,26,26)' }}>
+                  {phase.phaseName}
+                </h3>
+                <p className="text-xs mb-4" style={{ color: 'rgb(107,107,107)' }}>
+                  {phase.time}
+                </p>
+                <p className="text-sm" style={{ color: '#4A4540', lineHeight: '1.7' }}>
+                  {phase.description}
+                </p>
+              </div>
+            </div>
+          ))}
+        </div>
+
+        {footerNote && (
+          <div className="text-center max-w-3xl mx-auto">
+            <p className="text-base" style={{ color: 'rgb(107,107,107)', lineHeight: '1.7' }}>
+              {footerNote}
+            </p>
+          </div>
+        )}
+      </div>
+    </section>
+  );
+};
+
+// ============================================
+// SECTION 4: PRICING SECTION
+// ============================================
+const PricingSection = ({
+  bgColor,
+  label,
+  title,
+  services,
+  insuranceText,
+  insurances,
+}) => {
+  return (
+    <section className={`${bgColor}`} style={{ padding: '96px 24px' }}>
+      <div className="max-w-4xl mx-auto">
+        <div className="text-center mb-12">
+          <div className="text-sm tracking-widest uppercase mb-4" style={{ color: '#C9A84C' }}>
+            {label}
+          </div>
+          <h2 className="text-4xl" style={{ fontFamily: 'Fraunces, Georgia, serif', color: 'rgb(26, 26, 26)' }}>
+            {title}
+          </h2>
+        </div>
+
+        <div className="bg-white rounded-lg border border-[#E5DFD3] overflow-hidden mb-12">
+          {(services || []).map((service, index) => (
+            <div key={index} className={`flex items-center justify-between px-8 py-5 ${index % 2 === 1 ? 'bg-[#FAF8F5]' : 'bg-white'}`}>
+              <p className="text-sm" style={{ color: 'rgb(26, 26, 26)' }}>
+                {service.name}
+              </p>
+              <p style={{ fontFamily: 'Fraunces, Georgia, serif', color: 'rgb(201, 168, 76)' }}>
+                {service.price}
+              </p>
+            </div>
+          ))}
+        </div>
+
+        <p className="text-center mb-8" style={{ color: 'rgb(107, 107, 107)', lineHeight: '1.7', fontSize: '14px' }}>
+          {insuranceText}
+        </p>
+       
+      </div>
+    </section>
+  );
+};
+
+// ============================================
+// MAIN COMPONENT: Decides which section to render
+// ============================================
+const ContentWithSidebar = (props) => {
+  if (props.services && props.services.length > 0) {
+    return <PricingSection {...props} />;
+  }
+  if (props.phases && props.phases.length > 0) {
+    return <TreatmentTimelineSection {...props} />;
+  }
+  if (props.ladderItems && props.ladderItems.length > 0) {
+    return <TreatmentLadderSection {...props} />;
+  }
+  return <ContentOnlySection {...props} />;
+};
+
+export default ContentWithSidebar;

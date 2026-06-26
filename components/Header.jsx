@@ -35,6 +35,10 @@ const PHYSIOTHERAPY_CONDITIONS = [
   { href: '/conditions/pelvic-floor-physiotherapy-dubai', label: 'Pelvic Floor Physiotherapy' },
 ];
 
+const DERMATOLOGY_CONDITIONS = [
+  { href: '/conditions/acne-treatment-jvc', label: 'Acne Treatment' },
+];
+
 const AYURVEDA_CONDITIONS = [
   { href: '/conditions/back-pain-ayurveda-dubai', label: 'Back Pain (Ayurveda)' },
   { href: '/conditions/arthritis-ayurveda-dubai', label: 'Arthritis' },
@@ -183,6 +187,19 @@ const Header = () => {
               <div className={`absolute top-full left-0 pt-2 transition-all duration-200 ${isConditionsDropdownOpen ? 'opacity-100 visible translate-y-0' : 'opacity-0 invisible -translate-y-1'}`}>
                 <div className={`bg-white rounded-lg shadow-lg border border-gray-100 py-2 min-w-[240px] max-h-[400px] overflow-y-auto ${scrollbarHide}`}>
                   <div className="px-4 py-2 border-b border-gray-100">
+                    <span className="text-[12px] font-semibold uppercase tracking-wider text-[#C9A84C]">Dermatology Conditions</span>
+                  </div>
+                  {DERMATOLOGY_CONDITIONS.map((page) => (
+                    <Link 
+                      key={page.href} 
+                      href={page.href} 
+                      className="block px-4 py-2.5 text-[13px] font-sans text-[#4A4A4A] hover:text-[#184C3A] hover:bg-gray-50 transition-colors"
+                    >
+                      {page.label}
+                    </Link>
+                  ))}
+                  
+                  <div className="px-4 py-2 border-t border-b border-gray-100 mt-1">
                     <span className="text-[12px] font-semibold uppercase tracking-wider text-[#C9A84C]">Physiotherapy Conditions</span>
                   </div>
                   {PHYSIOTHERAPY_CONDITIONS.map((page) => (
@@ -322,7 +339,12 @@ const Header = () => {
               </div>
               <div className={`overflow-hidden transition-all duration-200 ${isMobileConditionsOpen ? `max-h-[400px] overflow-y-auto mt-2 ${scrollbarHide}` : 'max-h-0'}`}>
                 <div className="flex flex-col gap-3 pl-4 border-l-2 border-gray-100">
-                  <span className="text-[12px] font-semibold uppercase tracking-wider text-[#C9A84C] mt-2">Physiotherapy Conditions</span>
+                  <span className="text-[12px] font-semibold uppercase tracking-wider text-[#C9A84C] mt-2">Dermatology Conditions</span>
+                  {DERMATOLOGY_CONDITIONS.map((page) => (
+                    <Link key={page.href} onClick={() => setIsMenuOpen(false)} href={page.href} className="text-[14px] text-[#4A4A4A] hover:text-[#184C3A]">{page.label}</Link>
+                  ))}
+                  
+                  <span className="text-[12px] font-semibold uppercase tracking-wider text-[#C9A84C] mt-4">Physiotherapy Conditions</span>
                   {PHYSIOTHERAPY_CONDITIONS.map((page) => (
                     <Link key={page.href} onClick={() => setIsMenuOpen(false)} href={page.href} className="text-[14px] text-[#4A4A4A] hover:text-[#184C3A]">{page.label}</Link>
                   ))}

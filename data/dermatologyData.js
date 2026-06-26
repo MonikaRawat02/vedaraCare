@@ -73,7 +73,9 @@ export const dermatologyTypes = {
     {
       number: "01",
       title: 'Acne — Adolescent and Adult',
-      description: 'The most common dermatology consultation. We treat adolescent acne, adult-onset acne (increasingly common, particularly in women), hormonal acne, cystic acne, and acne scarring. Treatment ranges from topical and oral medications through to specialised procedures (chemical peels, light treatments, scar revision). Multi-modal approach typically produces best outcomes. Long-term management plan tailored to your specific acne pattern and triggers'
+      description: 'The most common dermatology consultation. We treat adolescent acne, adult-onset acne (increasingly common, particularly in women), hormonal acne, cystic acne, and acne scarring. Treatment ranges from topical and oral medications through to specialised procedures (chemical peels, light treatments, scar revision). Multi-modal approach typically produces best outcomes. Long-term management plan tailored to your specific acne pattern and triggers.',
+      linkText: 'Explore acne treatment page',
+      linkHref: '/conditions/acne-treatment-jvc/'
     },
     {
       number: "02",
