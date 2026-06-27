@@ -223,6 +223,121 @@ const ContentOnlySection = ({
 };
 
 // ============================================
+// SECTION 2.5: WORKUP SECTION (For Hair Loss Page Only)
+// ============================================
+const WorkupSection = ({
+  bgColor,
+  label,
+  title,
+  contentSections,
+  sidebar,
+}) => {
+  return (
+    <section className={`${bgColor}`} style={{ padding: '96px 24px' }}>
+      <div className="max-w-7xl mx-auto">
+        <div className="text-center mb-12">
+          <div className="text-xs tracking-[0.2em] uppercase mb-3" style={{ color: '#C9A84C' }}>
+            {label}
+          </div>
+          <h2 className="text-3xl md:text-4xl" style={{ fontFamily: 'Fraunces, Georgia, serif', color: 'rgb(26,26,26)' }}>
+            {title}
+          </h2>
+          {contentSections[0]?.description && !contentSections[0]?.subtitle && (
+            <p className="text-base mt-4" style={{ color: 'rgb(107,107,107)', lineHeight: '1.7', maxWidth: '600px', margin: '16px auto 0 auto' }}>
+              {contentSections[0].description}
+            </p>
+          )}
+        </div>
+        <div className="grid grid-cols-1 lg:grid-cols-[55fr_45fr] gap-12 items-start">
+          <div className="space-y-6">
+            {contentSections.slice(1).map((section, index) => {
+              const isHighlighted = section.isHighlighted || 
+                (index === contentSections.slice(1).length - 1 && contentSections.length > 3);
+              
+              return (
+                <div 
+                  key={index} 
+                  className={isHighlighted ? 'p-6 rounded-xl' : ''} 
+                  style={isHighlighted ? { backgroundColor: '#F0EBE3' } : {}}
+                >
+                  {section.subtitle && (
+                    <h3 className="text-lg font-semibold mb-3" style={{ fontFamily: 'Fraunces, Georgia, serif', color: 'rgb(26,26,26)' }}>
+                      {section.subtitle}
+                    </h3>
+                  )}
+                  {section.description && (
+                    <p className="text-base" style={{ color: 'rgb(107,107,107)', lineHeight: '1.7' }}>
+                      {section.description}
+                    </p>
+                  )}
+                  {section.items && section.items.length > 0 && (
+                    <div className="mt-4 space-y-2">
+                      {section.items.map((item, idx) => (
+                        <p key={idx} className="text-base" style={{ color: 'rgb(107,107,107)', lineHeight: '1.7' }}>
+                          {item.text}
+                        </p>
+                      ))}
+                    </div>
+                  )}
+                </div>
+              );
+            })}
+          </div>
+
+          <div className="md:sticky md:top-6 lg:top-8">
+            <div className="rounded-lg border-2 border-[#B8965A] bg-white p-7">
+              <h3 className="text-xs tracking-[0.2em] uppercase mb-4" style={{ color: '#C9A84C' }}>
+                {sidebar.label}
+              </h3>
+              <p className="text-sm font-semibold mb-4" style={{ color: 'rgb(26,26,26)' }}>
+                {sidebar.title}
+              </p>
+              {sidebar.features && sidebar.features.length > 0 && (
+                <div className="space-y-2 mb-6">
+                  {sidebar.features.map((feature, index) => (
+                    <div key={index} className="flex items-start gap-2 text-sm">
+                      <svg className="w-4 h-4 text-[#C9A84C] flex-shrink-0 mt-1" fill="currentColor" viewBox="0 0 24 24">
+                        <path d="M9 16.17L4.83 12l-1.42 1.41L9 19 21 7l-1.41-1.41L9 16.17z"></path>
+                      </svg>
+                      <span style={{ color: 'rgb(107,107,107)' }}>{feature}</span>
+                    </div>
+                  ))}
+                </div>
+              )}
+              {sidebar.additionalFeaturesTitle && sidebar.additionalFeatures?.length > 0 && (
+                <div className="border-t border-[#E5DFD3] pt-4 mb-4">
+                  <p className="text-sm font-semibold mb-3" style={{ color: 'rgb(26,26,26)' }}>
+                    {sidebar.additionalFeaturesTitle}
+                  </p>
+                  <div className="space-y-2">
+                    {sidebar.additionalFeatures.map((feature, index) => (
+                      <div key={index} className="flex items-start gap-2 text-sm">
+                        <svg className="w-4 h-4 text-[#C9A84C] flex-shrink-0 mt-1" fill="currentColor" viewBox="0 0 24 24">
+                          <path d="M9 16.17L4.83 12l-1.42 1.41L9 19 21 7l-1.41-1.41L9 16.17z"></path>
+                        </svg>
+                        <span style={{ color: 'rgb(107,107,107)' }}>{feature}</span>
+                      </div>
+                    ))}
+                  </div>
+                </div>
+              )}
+              {sidebar.note && (
+                <div className="border-t border-[#E5DFD3] pt-4">
+                  <p className="text-xs leading-relaxed" style={{ color: 'rgba(20, 20, 20, 1)' }}>
+                    <span style={{ color: '#C9A84C', fontWeight: 600 }}>Why we include this: </span>
+                    {sidebar.note}
+                  </p>
+                </div>
+              )}
+            </div>
+          </div>
+        </div>
+      </div>
+    </section>
+  );
+};
+
+// ============================================
 // SECTION 3: TREATMENT TIMELINE COMPONENT
 // ============================================
 const TreatmentTimelineSection = ({
@@ -349,6 +464,9 @@ const ContentWithSidebar = (props) => {
   }
   if (props.ladderItems && props.ladderItems.length > 0) {
     return <TreatmentLadderSection {...props} />;
+  }
+  if (props.sidebar && props.sidebar.additionalFeaturesTitle) {
+    return <WorkupSection {...props} />;
   }
   return <ContentOnlySection {...props} />;
 };

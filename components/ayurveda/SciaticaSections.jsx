@@ -524,6 +524,30 @@ export const SciaticaTreatment = ({ data, showBorderLeft = true, rightContentSty
                 ))}
               </div>
             )}
+            {rightContentStyle === 'hairCycle' && rightContent.hairCycle && rightContent.hairCycle.length > 0 && (
+              <div className="mt-6 p-6 rounded-xl bg-white w-full" style={{ border: "1px solid rgba(28, 21, 10, 0.08)" }}>
+                {rightContent.label && (
+                  <p className="text-xs font-semibold tracking-widest uppercase mb-4" style={{ fontFamily: '"DM Sans", system-ui, sans-serif', color: "rgb(201, 168, 76)" }}>
+                    {rightContent.label}
+                  </p>
+                )}
+                <div className="grid grid-cols-3 gap-3">
+                  {rightContent.hairCycle.map((item, index) => (
+                    <div key={index} className="p-3 rounded-lg text-center" style={{ backgroundColor: "rgb(248, 234, 224)" }}>
+                      <p className="text-xl font-bold mb-1" style={{ fontFamily: 'Fraunces, Georgia, serif', color: "rgb(184, 150, 58)" }}>
+                        {item.percentage}
+                      </p>
+                      <p className="text-xs font-semibold mb-1" style={{ fontFamily: '"DM Sans", system-ui, sans-serif', color: "rgb(28, 21, 10)" }}>
+                        {item.phase}
+                      </p>
+                      <p className="text-xs" style={{ fontFamily: '"DM Sans", system-ui, sans-serif', color: "rgb(107, 107, 107)" }}>
+                        {item.description}
+                      </p>
+                    </div>
+                  ))}
+                </div>
+              </div>
+            )}
           </div>
         </div>
       </div>

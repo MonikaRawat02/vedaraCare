@@ -65,7 +65,7 @@ const TreatmentReviews = ({
                   color: 'rgb(28, 25, 23)', 
                   lineHeight: '1.5', 
                   marginBottom: '16px' 
-                }} dangerouslySetInnerHTML={{ __html: `"${review.quote}"` }} />
+                }} dangerouslySetInnerHTML={{ __html: review.quote }} />
                 
                 <div className="mt-auto pt-4" style={{ borderTop: '1px solid rgba(28, 25, 23, 0.1)' }}>
                   <div className="space-y-0.5">
@@ -79,9 +79,9 @@ const TreatmentReviews = ({
 
           {/* Stats Row */}
           {stats && stats.length > 0 && (
-            <div className="flex flex-wrap justify-center items-center gap-12 md:gap-24 mb-16 mx-6 rounded-xl p-10" style={{ backgroundColor: statsBgColor }}>
+            <div className="flex flex-wrap justify-center items-center gap-12 md:gap-24 mb-16" style={{ backgroundColor: statsBgColor }}>
               {stats.map((stat, index) => (
-                <div key={index} className="text-center flex-1 min-w-[150px]">
+                <div key={index} className="text-center">
                   <h4 className="text-4xl font-serif font-medium leading-none mb-2" style={{ color: isWhiteStatsBg ? 'rgb(201, 153, 97)' : 'rgb(184, 150, 90)', fontFamily: 'Fraunces, serif' }}>{stat.value}</h4>
                   <p className="text-xs font-sans tracking-wider" style={{ color: isWhiteStatsBg ? 'rgb(90, 79, 71)' : 'rgba(255, 255, 255, 0.8)', fontFamily: 'DM Sans, sans-serif' }}>{stat.label}</p>
                 </div>
@@ -92,18 +92,15 @@ const TreatmentReviews = ({
           {buttonText && (
             <div className="text-center">
               <button 
-                className="inline-flex items-center px-8 py-3.5 border font-sans font-bold text-sm rounded-md hover:opacity-90 transition-all duration-300"
+                className="inline-flex items-center px-0 py-3.5 font-sans font-bold text-sm hover:opacity-90 transition-all duration-300"
                 style={{
-                  backgroundColor: buttonBgColor,
-                  color: buttonTextColor,
-                  borderColor: buttonBorderColor,
+                  backgroundColor: 'transparent',
+                  color: 'rgb(184, 150, 90)',
+                  border: 'none',
                   fontFamily: 'DM Sans, sans-serif'
                 }}
               >
                 {buttonText}
-                <svg className="ml-2" width="16" height="16" viewBox="0 0 24 24" fill="none" stroke="currentColor" strokeWidth="2">
-                  <path d="M5 12h14M12 5l7 7-7 7"></path>
-                </svg>
               </button>
             </div>
           )}
