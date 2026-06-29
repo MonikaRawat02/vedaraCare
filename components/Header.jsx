@@ -37,6 +37,7 @@ const PHYSIOTHERAPY_CONDITIONS = [
 
 const DERMATOLOGY_CONDITIONS = [
   { href: '/conditions/acne-treatment-jvc', label: 'Acne Treatment' },
+  { href: '/conditions/hair-loss-treatment-jvc', label: 'Hair Loss Treatment' },
 ];
 
 const AYURVEDA_CONDITIONS = [

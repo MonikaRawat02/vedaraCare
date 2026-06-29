@@ -35,14 +35,14 @@ const HairLossTreatmentJvc = () => {
     {
       "@context": "https://schema.org",
       "@type": ["MedicalBusiness", "LocalBusiness", "MedicalClinic"],
-      "@id": `${currentUrl}#hair-loss-treatment`,
-      "name": "Vedara Care Hair Loss Treatment Clinic",
-      "alternateName": ["Vedara Hair Loss Treatment JVC", "Vedara Hair Loss Specialist Dubai"],
+      "@id": `${currentUrl}#hair-loss`,
+      "name": "Vedara Care Hair Loss Treatment",
+      "alternateName": ["Vedara Hair Loss JVC", "Vedara Hair Restoration Dubai", "Vedara Trichology JVC"],
       "url": currentUrl,
       "parentOrganization": { "@id": "https://vedaracare.ae/#organization" },
-      "description": "Specialist hair loss treatment at Vedara Care Polyclinic, Jumeirah Village Circle, Dubai. DHA-licensed consultant dermatologists treating male pattern hair loss, female pattern hair loss, postnatal hair loss, alopecia areata, telogen effluvium, traction alopecia, and scarring alopecia. Comprehensive evidence-based treatment including topical minoxidil, oral finasteride/dutasteride, PRP, mesotherapy, microneedling, and hair transplant coordination. All genders and skin types.",
+      "description": "Specialist hair loss treatment at Vedara Care Polyclinic, Jumeirah Village Circle, Dubai. DHA-licensed consultant dermatologists treating male and female pattern hair loss, postnatal hair loss, alopecia areata, telogen effluvium, and other hair loss conditions. Comprehensive workup including hormonal and nutritional evaluation. Evidence-based treatments including topical and oral medications, PRP injections, hair mesotherapy, and coordination with qualified hair transplant surgeons.",
       "telephone": "+971 4 567 8900",
-      "priceRange": "AED 300 - AED 12,000",
+      "priceRange": "AED 400 - AED 25,000",
       "address": {
         "@type": "PostalAddress",
         "streetAddress": "Building 23, District 12",
@@ -83,17 +83,26 @@ const HairLossTreatmentJvc = () => {
         { "@type": "Place", "name": "Palm Jumeirah" },
         { "@type": "Place", "name": "Mirdif" }
       ],
-      "medicalSpecialty": ["Dermatology", "Trichology", "Hair Loss Treatment", "Medical Dermatology"],
+      "medicalSpecialty": ["Dermatology", "Hair Loss Treatment", "Trichology", "Medical Dermatology"],
       "isAcceptingNewPatients": true,
       "availableService": [
-        { "@type": "MedicalProcedure", "name": "Hair Loss Consultation" },
+        { "@type": "MedicalProcedure", "name": "Hair Loss Treatment" },
+        { "@type": "MedicalProcedure", "name": "Male Pattern Hair Loss Treatment" },
+        { "@type": "MedicalProcedure", "name": "Female Pattern Hair Loss Treatment" },
+        { "@type": "MedicalProcedure", "name": "Postnatal Hair Loss Treatment" },
+        { "@type": "MedicalProcedure", "name": "Alopecia Areata Treatment" },
+        { "@type": "MedicalProcedure", "name": "Telogen Effluvium Treatment" },
+        { "@type": "MedicalProcedure", "name": "PRP Hair Treatment" },
+        { "@type": "MedicalProcedure", "name": "PRP Injection" },
+        { "@type": "MedicalProcedure", "name": "Hair Mesotherapy" },
         { "@type": "MedicalProcedure", "name": "Trichoscopy" },
+        { "@type": "MedicalProcedure", "name": "Hair Loss Workup" },
+        { "@type": "MedicalProcedure", "name": "Hormonal Hair Loss Evaluation" },
         { "@type": "MedicalProcedure", "name": "Topical Minoxidil Treatment" },
         { "@type": "MedicalProcedure", "name": "Oral Finasteride Treatment" },
-        { "@type": "MedicalProcedure", "name": "Platelet-Rich Plasma (PRP) Therapy" },
-        { "@type": "MedicalProcedure", "name": "Hair Mesotherapy" },
-        { "@type": "MedicalProcedure", "name": "Scalp Microneedling" },
-        { "@type": "MedicalProcedure", "name": "Hormonal Evaluation" }
+        { "@type": "MedicalProcedure", "name": "Oral Dutasteride Treatment" },
+        { "@type": "MedicalProcedure", "name": "Hormonal Hair Loss Treatment" },
+        { "@type": "MedicalProcedure", "name": "Hair Transplantation Coordination" }
       ],
       "memberOf": {
         "@type": "Organization",
@@ -109,93 +118,186 @@ const HairLossTreatmentJvc = () => {
     },
     {
       "@context": "https://schema.org",
-      "@graph": [
-        {
-          "@type": "MedicalCondition",
-          "name": "Androgenetic Alopecia",
-          "alternateName": ["Male Pattern Baldness", "Female Pattern Baldness", "Pattern Hair Loss"],
-          "code": { "@type": "MedicalCode", "code": "L64", "codingSystem": "ICD-10" },
-          "possibleTreatment": [
-            { "@type": "MedicalProcedure", "name": "Topical Minoxidil" },
-            { "@type": "MedicalProcedure", "name": "Oral Finasteride" },
-            { "@type": "MedicalProcedure", "name": "Platelet-Rich Plasma Therapy" }
-          ]
-        },
-        {
-          "@type": "MedicalCondition",
-          "name": "Telogen Effluvium",
-          "code": { "@type": "MedicalCode", "code": "L65.0", "codingSystem": "ICD-10" }
-        },
-        {
-          "@type": "MedicalCondition",
-          "name": "Alopecia Areata",
-          "code": { "@type": "MedicalCode", "code": "L63", "codingSystem": "ICD-10" }
-        },
-        {
-          "@type": "MedicalCondition",
-          "name": "Postpartum Alopecia",
-          "alternateName": ["Postnatal Hair Loss"]
-        },
-        {
-          "@type": "MedicalCondition",
-          "name": "Traction Alopecia",
-          "code": { "@type": "MedicalCode", "code": "L65.1", "codingSystem": "ICD-10" }
-        },
-        {
-          "@type": "MedicalCondition",
-          "name": "Scarring Alopecia",
-          "alternateName": ["Cicatricial Alopecia"]
-        }
+      "@type": "MedicalCondition",
+      "name": "Androgenetic Alopecia",
+      "alternateName": ["Pattern Hair Loss", "Male Pattern Baldness", "Female Pattern Hair Loss"],
+      "code": { "@type": "MedicalCode", "code": "L64", "codingSystem": "ICD-10" },
+      "possibleTreatment": [
+        { "@type": "MedicalProcedure", "name": "Topical Minoxidil" },
+        { "@type": "MedicalProcedure", "name": "Oral Finasteride" },
+        { "@type": "MedicalProcedure", "name": "Oral Dutasteride" },
+        { "@type": "MedicalProcedure", "name": "PRP Injection" },
+        { "@type": "MedicalProcedure", "name": "Hair Transplantation" }
       ]
+    },
+    {
+      "@context": "https://schema.org",
+      "@type": "MedicalCondition",
+      "name": "Telogen Effluvium",
+      "code": { "@type": "MedicalCode", "code": "L65.0", "codingSystem": "ICD-10" },
+      "possibleTreatment": [
+        { "@type": "MedicalProcedure", "name": "Topical Minoxidil" },
+        { "@type": "MedicalProcedure", "name": "Nutritional Supplementation" },
+        { "@type": "MedicalProcedure", "name": "Trigger Identification and Management" }
+      ]
+    },
+    {
+      "@context": "https://schema.org",
+      "@type": "MedicalCondition",
+      "name": "Postnatal Hair Loss",
+      "alternateName": ["Postpartum Telogen Effluvium", "Postpartum Hair Loss"]
+    },
+    {
+      "@context": "https://schema.org",
+      "@type": "MedicalCondition",
+      "name": "Alopecia Areata",
+      "code": { "@type": "MedicalCode", "code": "L63", "codingSystem": "ICD-10" },
+      "possibleTreatment": [
+        { "@type": "MedicalProcedure", "name": "Intralesional Corticosteroid Injection" },
+        { "@type": "MedicalProcedure", "name": "Topical Immunotherapy" },
+        { "@type": "MedicalProcedure", "name": "JAK Inhibitor Therapy" }
+      ]
+    },
+    {
+      "@context": "https://schema.org",
+      "@type": "MedicalCondition",
+      "name": "Traction Alopecia",
+      "code": { "@type": "MedicalCode", "code": "L65.8", "codingSystem": "ICD-10" }
+    },
+    {
+      "@context": "https://schema.org",
+      "@type": "MedicalCondition",
+      "name": "Scarring Alopecia",
+      "alternateName": ["Cicatricial Alopecia"],
+      "code": { "@type": "MedicalCode", "code": "L66", "codingSystem": "ICD-10" }
+    },
+    {
+      "@context": "https://schema.org",
+      "@type": "MedicalCondition",
+      "name": "Diffuse Hair Thinning"
+    },
+    {
+      "@context": "https://schema.org",
+      "@type": "MedicalCondition",
+      "name": "Thyroid Disorders"
+    },
+    {
+      "@context": "https://schema.org",
+      "@type": "MedicalCondition",
+      "name": "Polycystic Ovary Syndrome",
+      "alternateName": ["PCOS"]
     },
     {
       "@context": "https://schema.org",
       "@type": "Service",
       "name": "Hair Loss Treatment Services in JVC Dubai",
-      "provider": { "@id": `${currentUrl}#hair-loss-treatment` },
+      "provider": { "@id": `${currentUrl}#hair-loss` },
       "areaServed": [
         { "@type": "City", "name": "Dubai" },
         { "@type": "Place", "name": "United Arab Emirates" }
       ],
-      "serviceType": "Trichology & Hair Loss Treatment",
+      "serviceType": "Hair Loss Treatment and Trichology",
       "hasOfferCatalog": {
         "@type": "OfferCatalog",
         "name": "Hair Loss Treatment Services",
         "itemListElement": [
           {
             "@type": "Offer",
-            "name": "Initial Hair Loss Consultation",
+            "name": "Initial hair loss consultation with trichoscopy (60–75 minutes)",
             "priceCurrency": "AED",
-            "price": "400",
-            "description": "45-60 minute comprehensive consultation with consultant dermatologist including trichoscopy"
+            "price": "650",
+            "description": "60–75 minute comprehensive consultation with trichoscopy"
           },
           {
             "@type": "Offer",
-            "name": "PRP Hair Treatment (Single Session)",
+            "name": "Follow-up consultation",
             "priceCurrency": "AED",
-            "price": "1200",
-            "description": "Single PRP hair treatment session"
+            "price": "350",
+            "description": "Follow-up consultation for ongoing hair loss management"
           },
           {
             "@type": "Offer",
-            "name": "PRP Hair Treatment (4 Sessions)",
+            "name": "Comprehensive blood work panel for hair loss",
             "priceCurrency": "AED",
-            "price": "4000",
-            "description": "4-session PRP hair treatment programme"
+            "price": "450",
+            "description": "Thyroid, ferritin, vitamin D, vitamin B12, zinc, and other relevant markers"
           },
           {
             "@type": "Offer",
-            "name": "Hair Mesotherapy (Single Session)",
+            "name": "Hormonal evaluation panel for women",
             "priceCurrency": "AED",
-            "price": "800",
-            "description": "Single hair mesotherapy session"
+            "price": "550",
+            "description": "Testosterone, DHEAS, SHBG, prolactin, and other hormonal markers"
           },
           {
             "@type": "Offer",
-            "name": "Comprehensive Hair Loss Programme (6 Months)",
+            "name": "PRP hair treatment — single session",
             "priceCurrency": "AED",
-            "price": "8000",
-            "description": "6-month comprehensive hair loss treatment programme"
+            "price": "1800",
+            "description": "Single PRP injection session for hair restoration"
+          },
+          {
+            "@type": "Offer",
+            "name": "PRP hair treatment — 3-session package",
+            "priceCurrency": "AED",
+            "price": "4500",
+            "description": "Three monthly PRP sessions for hair restoration"
+          },
+          {
+            "@type": "Offer",
+            "name": "PRP hair treatment — 4-session package",
+            "priceCurrency": "AED",
+            "price": "5800",
+            "description": "Four monthly PRP sessions for hair restoration"
+          },
+          {
+            "@type": "Offer",
+            "name": "Hair mesotherapy — single session",
+            "priceCurrency": "AED",
+            "price": "900",
+            "description": "Single hair mesotherapy session with growth factors"
+          },
+          {
+            "@type": "Offer",
+            "name": "Hair mesotherapy — 6-session package",
+            "priceCurrency": "AED",
+            "price": "4800",
+            "description": "Six sessions of hair mesotherapy"
+          },
+          {
+            "@type": "Offer",
+            "name": "Combined PRP and mesotherapy programme",
+            "priceCurrency": "AED",
+            "price": "7500",
+            "description": "Integrated PRP and mesotherapy treatment programme"
+          },
+          {
+            "@type": "Offer",
+            "name": "Comprehensive 6-month hair loss programme",
+            "priceCurrency": "AED",
+            "price": "9500",
+            "description": "Structured 6-month hair loss treatment programme including consultation, workup, and treatments"
+          },
+          {
+            "@type": "Offer",
+            "name": "Topical and oral medication consultation",
+            "priceCurrency": "AED",
+            "price": "350",
+            "description": "Consultation and prescription for topical and oral hair loss medications"
+          },
+          {
+            "@type": "Offer",
+            "name": "Photographic monitoring visit",
+            "priceCurrency": "AED",
+            "price": "150",
+            "description": "Standardised photographic monitoring of hair treatment progress"
+          },
+          {
+            "@type": "Offer",
+            "name": "Hair transplant referral consultation",
+            "priceCurrency": "AED",
+            "price": "450",
+            "description": "Consultation for hair transplant surgery candidacy assessment and referral"
           }
         ]
       }
@@ -226,49 +328,119 @@ const HairLossTreatmentJvc = () => {
       "@context": "https://schema.org",
       "@type": "MedicalScholarlyArticle",
       "headline": "Hair Loss Treatment in JVC Dubai — Specialist Dermatology Guide",
-      "image": "https://vedaracare.ae/og-images/hair-loss-treatment-jvc.webp",
-      "datePublished": "2026-06-27T08:00:00+04:00",
-      "dateModified": new Date().toISOString(),
+      "image": "https://vedaracare.ae/images/hair-loss-treatment-jvc-hero.jpg",
+      "datePublished": publishedDate,
+      "dateModified": modifiedDate,
       "author": {
         "@type": "Physician",
         "name": "Consultant Dermatologist"
       },
       "publisher": {
         "@type": "Organization",
-        "name": "Vedara Care Polyclinic"
+        "name": "Vedara Care Polyclinic",
+        "logo": {
+          "@type": "ImageObject",
+          "url": "https://vedaracare.ae/logo.png"
+        }
       },
       "about": [
         { "@type": "MedicalCondition", "name": "Androgenetic Alopecia" },
+        { "@type": "MedicalCondition", "name": "Alopecia Areata" },
         { "@type": "MedicalCondition", "name": "Telogen Effluvium" },
-        { "@type": "MedicalCondition", "name": "Alopecia Areata" }
+        { "@type": "MedicalCondition", "name": "Female Pattern Hair Loss" },
+        { "@type": "MedicalCondition", "name": "Postnatal Hair Loss" },
+        { "@type": "MedicalCondition", "name": "Diffuse Hair Thinning" },
+        { "@type": "MedicalCondition", "name": "Thyroid Disorders" },
+        { "@type": "MedicalCondition", "name": "Polycystic Ovary Syndrome" },
+        { "@type": "MedicalProcedure", "name": "Topical Minoxidil Treatment" },
+        { "@type": "MedicalProcedure", "name": "Oral Finasteride Treatment" },
+        { "@type": "MedicalProcedure", "name": "Oral Dutasteride Treatment" },
+        { "@type": "MedicalProcedure", "name": "PRP Injection" },
+        { "@type": "MedicalProcedure", "name": "Hair Mesotherapy" },
+        { "@type": "MedicalProcedure", "name": "Trichoscopy" }
       ],
       "mainEntityOfPage": currentUrl
     },
+    ...hairLossTreatmentTeam.team.map((member) => ({
+      "@context": "https://schema.org",
+      "@type": "Physician",
+      "name": member.name,
+      "url": `https://vedaracare.ae${member.link}`,
+      "image": `https://vedaracare.ae${member.image}`,
+      "medicalSpecialty": member.specialties,
+      "hasCredential": ["MD", "Dermatology Board Certification", "DHA-Licensed Consultant Dermatologist"],
+      "knowsAbout": ["Male Pattern Hair Loss", "Female Pattern Hair Loss", "Postnatal Hair Loss", "Alopecia Areata", "Telogen Effluvium", "PRP Hair Treatment", "Trichoscopy"],
+      "knowsLanguage": member.languages,
+      "worksFor": { "@id": "https://vedaracare.ae/#organization" }
+    })),
     {
       "@context": "https://schema.org",
       "@type": "Organization",
       "@id": "https://vedaracare.ae/#organization",
-      "name": "Vedara Care Polyclinic"
+      "name": "Vedara Care Polyclinic",
+      "url": "https://vedaracare.ae/",
+      "logo": {
+        "@type": "ImageObject",
+        "url": "https://vedaracare.ae/logo.png"
+      },
+      "contactPoint": {
+        "@type": "ContactPoint",
+        "telephone": "+971 4 567 8900",
+        "contactType": "Customer Service",
+        "areaServed": "AE",
+        "availableLanguage": ["English", "Arabic", "Hindi", "Urdu"]
+      },
+      "insurancePlan": [
+        { "@type": "InsuranceCompany", "name": "Daman" },
+        { "@type": "InsuranceCompany", "name": "AXA" },
+        { "@type": "InsuranceCompany", "name": "Allianz" },
+        { "@type": "InsuranceCompany", "name": "Oman Insurance" },
+        { "@type": "InsuranceCompany", "name": "Now Health" },
+        { "@type": "InsuranceCompany", "name": "Bupa" },
+        { "@type": "InsuranceCompany", "name": "MetLife" }
+      ],
+      "areaServed": [
+        { "@type": "City", "name": "Dubai" },
+        { "@type": "Place", "name": "Jumeirah Village Circle" },
+        { "@type": "Place", "name": "Circle Mall" },
+        { "@type": "Place", "name": "FIVE Jumeirah Village" },
+        { "@type": "Place", "name": "JSS Private School" },
+        { "@type": "Place", "name": "Jumeirah Village Triangle" },
+        { "@type": "Place", "name": "Al Barsha South" },
+        { "@type": "Place", "name": "Dubai Sports City" },
+        { "@type": "Place", "name": "Motor City" },
+        { "@type": "Place", "name": "Arjan" },
+        { "@type": "Place", "name": "Dubai Hills Estate" },
+        { "@type": "Place", "name": "Dubai Marina" },
+        { "@type": "Place", "name": "Downtown Dubai" },
+        { "@type": "Place", "name": "Palm Jumeirah" },
+        { "@type": "Place", "name": "Mirdif" }
+      ]
     }
   ];
 
   return (
     <>
       <Head>
-        <title>Hair Loss Treatment in JVC | Specialist Dermatologists | Vedara Dubai</title>
-        <meta name="description" content="Specialist hair loss treatment in JVC, Dubai. DHA-licensed consultant dermatologists treating male pattern hair loss, female pattern hair loss, postnatal hair loss, alopecia areata. All genders. Comprehensive evidence-based care including PRP and mesotherapy. Walking distance from Circle Mall." />
+        <title>Hair Loss Treatment in JVC | Specialist Dermatology | Vedara Dubai</title>
+        <meta name="description" content="Specialist hair loss treatment in JVC, Dubai. DHA-licensed consultant dermatologists. Male and female pattern hair loss, postnatal hair loss, alopecia areata. Comprehensive workup, PRP, mesotherapy, medical treatment. Walking distance from Circle Mall." />
         <link rel="canonical" href={currentUrl} />
         <link rel="alternate" hrefLang="en-AE" href={currentUrl} />
         <link rel="alternate" hrefLang="ar-AE" href="https://vedaracare.ae/ar/conditions/hair-loss-treatment-jvc/" />
         <link rel="alternate" hrefLang="x-default" href={currentUrl} />
-        <meta property="og:title" content="Hair Loss Treatment in JVC — Specialist Dermatologists | Vedara Care Dubai" />
-        <meta property="og:description" content="Specialist hair loss treatment at our Jumeirah Village Circle clinic. DHA-licensed consultant dermatologists treating male pattern hair loss, female pattern hair loss, postnatal hair loss, alopecia areata, telogen effluvium, and all hair loss types. Evidence-based comprehensive treatment including topical minoxidil, oral finasteride/dutasteride, PRP, mesotherapy, and scalp microneedling. Realistic timelines, transparent pricing." />
-        <meta property="og:image" content="https://vedaracare.ae/og-images/hair-loss-treatment-jvc.webp" />
+        <meta property="og:title" content="Hair Loss Treatment in JVC — Specialist Dermatology | Vedara Care Dubai" />
+        <meta property="og:description" content="Specialist hair loss treatment at our Jumeirah Village Circle clinic. DHA-licensed consultant dermatologists treating male and female pattern hair loss, postnatal hair loss, alopecia areata, telogen effluvium. Comprehensive workup including hormonal and nutritional evaluation. Evidence-based treatment with PRP, mesotherapy, topical and oral medications, hair transplant coordination." />
+        <meta property="og:image" content="https://vedaracare.ae/og-images/hair-loss-treatment-jvc.jpg" />
         <meta property="og:url" content={currentUrl} />
         <meta property="og:type" content="business.business" />
         <meta property="og:locale" content="en_AE" />
         <meta name="twitter:card" content="summary_large_image" />
-        <meta name="robots" content="index, follow, max-image-preview:large" />
+        <meta name="twitter:title" content="Hair Loss Treatment in JVC — Specialist Dermatology | Vedara Care Dubai" />
+        <meta name="twitter:description" content="DHA-licensed consultant dermatologists treating all types of hair loss. Comprehensive workup. PRP, mesotherapy, evidence-based treatment. Walking distance from Circle Mall." />
+        <meta name="twitter:image" content="https://vedaracare.ae/og-images/hair-loss-treatment-jvc.jpg" />
+        <meta name="robots" content="index, follow, max-image-preview:large, max-snippet:-1, max-video-preview:-1" />
+        <meta name="googlebot" content="index, follow, max-image-preview:large" />
+        <meta name="bingbot" content="index, follow" />
         {schemas.map((schema, index) => (
           <script
             key={index}
@@ -281,7 +453,6 @@ const HairLossTreatmentJvc = () => {
       <AyurvedaHero
         {...hairLossTreatmentHero}
       />
-
       <AyurvedaIntro
         {...hairLossTreatmentIntro}
       />

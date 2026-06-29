@@ -82,8 +82,8 @@ export const hairLossUnderstanding = {
         description: "Resting / shedding phase, 3 months"
       }
     ],
-    image: "https://images.pexels.com/photos/15760911/pexels-photo-15760911.jpeg?auto=compress&cs=tinysrgb&w=1260&h=756&dpr=2",
-    alt: "Hair loss treatment consultation"
+    image: "/images/hair-growth-cycle-illustration.webp",
+    alt: "Hair growth cycle and follicle miniaturisation educational illustration"
   }
 };
 
@@ -167,7 +167,7 @@ export const hairLossTypes = {
       ]
     }
   ],
-  footer: "Your specific hair loss pattern may combine multiple types or have less common causes — comprehensive consultation identifies your specific situation — and guides treatment selection."
+  footer: 'Your specific hair loss pattern may combine multiple types or have less common causes — <a href="/book" class="text-[#C9A84C] hover:underline">comprehensive consultation identifies your specific situation</a> — and guides treatment selection.'
 };
 
 export const hairLossTreatmentLadder = {
@@ -232,7 +232,7 @@ export const hairLossTreatmentLadder = {
       ]
     }
   ],
-  footer: "Most patients benefit from combination treatment rather than single modality. Treatment plans are designed based on your specific hair loss type, severity, patient preferences, and budget. We discuss all relevant options including those we do not provide directly."
+  footer: 'Most patients benefit from combination treatment rather than single modality. <a href="/book" class="text-[#C9A84C] hover:underline">Treatment plans are designed based on your specific hair loss type</a>, severity, patient preferences, and budget. We discuss all relevant options including those we do not provide directly.'
 };
 
 export const hairLossTreatmentTimeline = {
@@ -347,7 +347,7 @@ export const hairLossTreatmentPricing = {
     { name: "Photographic monitoring visit", price: "AED 150" },
     { name: "Hair transplant referral consultation", price: "AED 450" }
   ],
-  insuranceText: "Medical hair loss workup including consultations and blood work is covered by most Dubai insurance plans with appropriate medical justification. PRP, mesotherapy, and procedural treatments are typically self-pay. We are direct-billing partners with Daman, AXA, Allianz, Oman Insurance, Now Health, Bupa, and MetLife. WhatsApp your insurance card before booking for specific coverage confirmation.",
+  insuranceText: 'Medical hair loss workup including consultations and blood work is covered by most Dubai insurance plans with appropriate medical justification. PRP, mesotherapy, and procedural treatments are typically self-pay. We are direct-billing partners with Daman, AXA, Allianz, Oman Insurance, Now Health, Bupa, and MetLife. <a href="https://wa.me/971501234567" class="text-[#C9A84C] hover:underline">WhatsApp your insurance card</a> before booking for specific coverage confirmation.',
   insurances: ["Daman", "AXA", "Allianz", "Oman Insurance", "Now Health", "Bupa", "MetLife"]
 };
 
@@ -544,7 +544,7 @@ export const hairLossTreatmentLocation = {
   mapEmbed: "https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d3613.9894568193345!2d55.20722358578439!3d25.068346479666594!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x3e5f6dd72f3da587%3A0xe7ecca8687a75b72!2sVedara%20Care%20Polyclinic!5e0!3m2!1sen!2sus!4v1782536985!5m2!1sen!2sus",
   description: "Our JVC clinic has dedicated dermatology consultation rooms equipped for trichoscopy and hair examination, treatment rooms for PRP and mesotherapy procedures, on-site blood collection for hair loss workup, and comfortable patient facilities throughout. Walking distance from Circle Mall, easy access for patients from JVC, JVT, Al Barsha South, Sports City, Motor City, Arjan, Dubai Hills, and across Dubai.",
   buttonText: "Book Hair Loss Consultation",
-  buttonHref: "#",
+  buttonHref: "/book",
   bgColor: "bg-white"
 };
 
@@ -597,7 +597,7 @@ export const hairLossTreatmentRelatedPages = {
     {
       title: "Best Dermatologist Evidence",
       description: "Credibility evidence for patients evaluating dermatology providers in JVC and across Dubai.",
-      href: "/about/"
+      href: "/best-dermatologist-jvc-dubai/"
     }
   ]
 };

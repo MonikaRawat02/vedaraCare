@@ -64,7 +64,6 @@ export const dermatologySciaticaSection1 = {
   }
 };
 
-
 export const dermatologyTypes = {
   label: "Medical Dermatology",
   title: "Skin conditions we diagnose and treat.",
@@ -105,13 +104,13 @@ export const dermatologyTypes = {
       number: "07",
       title: 'Hyperhidrosis (Excessive Sweating)',
       description: 'Particularly relevant in Dubai\'s climate. Treatments range from prescription topical therapies to botulinum toxin injections (well-established treatment for axillary, palmar, or other focal hyperhidrosis), iontophoresis, and other approaches. Botulinum toxin for hyperhidrosis is often dramatically effective with effects lasting 4–9 months. Coordination for surgical options when appropriate',
-     
     },
     {
       number: "08",
       title: 'Hair and Scalp Conditions',
       description: 'Hair loss (male pattern, female pattern, alopecia areata, telogen effluvium), scalp conditions (seborrheic dermatitis, scalp psoriasis), and other hair-related concerns. Treatment options include topical and oral medications, PRP treatments, mesotherapy, and referrals for hair transplantation when appropriate. Comprehensive workup to identify underlying causes essential.',
-    
+      linkText: 'Explore hair loss treatment page',
+      linkHref: '/conditions/hair-loss-treatment-jvc/'
     }
   ],
   footer: 'Other medical dermatology conditions — including specific patient concerns not listed above — comprehensive consultation determines appropriate diagnostic workup and treatment →'
@@ -126,7 +125,6 @@ export const dermatologyAestheticTypes = {
       number: "01",
       title: 'Botulinum Toxin (Wrinkle Treatment)',
       description: 'The most common aesthetic dermatology treatment. Botulinum toxin (FDA-approved/EMA-approved products) temporarily relaxes specific facial muscles to reduce dynamic wrinkles. Also used for hyperhidrosis, masseter reduction, jaw slimming, neck bands. Treatment takes 15–20 minutes with results developing over 7–14 days. Lasts typically 3–4 months. Expert injection prevents over-treatment and preserves natural expression.',
-     
     },
     {
       number: "02",

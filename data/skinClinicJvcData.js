@@ -97,7 +97,7 @@ export const skinConcernSelector = {
         "· Should I consider a transplant?"
       ],
       linkText: "Learn more about Hair Loss, Thinning or Scalp Concerns",
-      linkHref: "/dermatology-clinic-jvc/#aesthetic-dermatology"
+      linkHref: "/conditions/hair-loss-treatment-jvc/"
     },
     {
       number: "05",

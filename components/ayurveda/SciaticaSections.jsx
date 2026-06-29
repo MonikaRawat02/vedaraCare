@@ -274,8 +274,7 @@ export const SciaticaPricing = ({
           <div className="text-[#C9A84C] text-xs tracking-[0.2em] uppercase mb-4">
             INSURANCE DIRECT-BILLING
           </div>
-          <p className="mb-8" style={{ color: 'rgb(107, 107, 107)', lineHeight: '1.7', fontSize: '14px' }}>
-            {insuranceText}
+          <p className="mb-8" style={{ color: 'rgb(107, 107, 107)', lineHeight: '1.7', fontSize: '14px' }} dangerouslySetInnerHTML={{ __html: insuranceText }}>
           </p>
           <div className="flex flex-wrap gap-3">
             {insurances.map((insurer, index) => (
