@@ -43,7 +43,7 @@ const SciaticaPhysiotherapyDubai = () => {
       "url": "https://vedaracare.ae/conditions/sciatica-physiotherapy-dubai/",
       "parentOrganization": {"@id": "https://vedaracare.ae/#organization"},
       "description": "Specialist sciatica physiotherapy at Vedara Care Polyclinic, Jumeirah Village Circle, Dubai. Credentialed MDT (McKenzie method) DPT-qualified physiotherapists treating disc herniation sciatica, piriformis syndrome, spinal stenosis, foraminal stenosis, and pregnancy sciatica. Evidence-based protocols with honest expectations. Walking distance from Circle Mall.",
-      "telephone": "[Phone number]",
+      "telephone": "+971 55 586 7466",
       "priceRange": "AED 350 - AED 15,000",
       "address": {
         "@type": "PostalAddress",

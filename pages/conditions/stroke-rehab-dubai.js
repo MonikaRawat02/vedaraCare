@@ -46,7 +46,7 @@ const StrokeRehabDubai = () => {
       "url": "https://vedaracare.ae/conditions/stroke-rehab-dubai/",
       "parentOrganization": {"@id": "https://vedaracare.ae/#organization"},
       "description": "Specialist post-stroke rehabilitation at Vedara Care Polyclinic, Jumeirah Village Circle, Dubai. DPT-qualified neurorehabilitation specialists delivering evidence-based protocols including constraint-induced movement therapy, mirror therapy, functional electrical stimulation, and task-specific training. Clinic-based care at JVC and home physiotherapy across Dubai. Hospital discharge coordination.",
-      "telephone": "[Phone number]",
+      "telephone": "+971 55 586 7466",
       "priceRange": "AED 400 - AED 50,000",
       "address": {
         "@type": "PostalAddress",

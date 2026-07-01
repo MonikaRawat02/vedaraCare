@@ -48,7 +48,7 @@ const HomePhysiotherapyDubai = () => {
       "url": currentUrl,
       "parentOrganization": { "@id": "https://vedaracare.ae/#organization" },
       "description": "DHA-licensed home physiotherapy across Dubai delivered by DPT-qualified physiotherapists from Vedara Care Polyclinic, Jumeirah Village Circle. All physiotherapy specialisations available at patient homes — post-surgical, neurological, postnatal, paediatric, geriatric. Coverage across 18+ Dubai neighbourhoods.",
-      "telephone": "[Phone number]",
+      "telephone": "+971 55 586 7466",
       "priceRange": "AED 400 - AED 25,000",
       "address": {
         "@type": "PostalAddress",

@@ -427,7 +427,7 @@ export const ayurvedicBackPainFaqs = {
     },
     {
       question: "How do I start treatment?",
-      answer: "Always with an assessment, never directly with a treatment package. Tap \"Book a Back Pain Consultation\" on this page, WhatsApp us at +971 XX XXX XXXX for the fastest response, or call the same number. The initial 45-60 minute assessment includes physical examination, history-taking, imaging review if you bring scans, dosha assessment, and a written treatment plan with realistic expectations and pricing."
+      answer: "Always with an assessment, never directly with a treatment package. Tap \"Book a Back Pain Consultation\" on this page, WhatsApp us at +971 55 586 7466 for the fastest response, or call the same number. The initial 45-60 minute assessment includes physical examination, history-taking, imaging review if you bring scans, dosha assessment, and a written treatment plan with realistic expectations and pricing."
     }
   ]
 };
@@ -437,9 +437,9 @@ export const ayurvedicBackPainLocation = {
   label: "VISIT OUR BACK PAIN CLINIC",
   title: "Expert back pain care in Jumeirah Village Circle.",
   address: "Vedara Care Polyclinic<br/>Building 23, District 12<br/>Jumeirah Village Circle, Dubai<br/>United Arab Emirates",
-  phone: "+971 4 567 8900",
-  whatsapp: "+971 50 123 4567",
-  email: "info@vedaracare.ae",
+  phone: "+971 55 586 7466",
+  whatsapp: "+971 55 586 7466",
+  email: "booking@vedaracare.ae",
   hours: "Saturday - Thursday: 9:00 AM - 9:00 PM<br/>Friday: 2:00 PM - 9:00 PM",
   landmarks: [
     "Next to Circle Mall",

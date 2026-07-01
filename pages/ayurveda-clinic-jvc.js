@@ -38,7 +38,7 @@ const AyurvedaClinicJVC = () => {
       "url": "https://vedaracare.ae/ayurveda-clinic-jvc/",
       "image": "https://vedaracare.ae/images/ayurveda-clinic-jvc-hero.webp",
       "telephone": "+971-XX-XXX-XXXX",
-      "email": "info@vedaracare.ae",
+      "email": "booking@vedaracare.ae",
       "priceRange": "AED",
       "medicalSpecialty": {"@type": "MedicalSpecialty", "name": "Ayurveda", "@id": "https://vedaracare.ae/ayurveda-clinic-jvc/#ayurveda"},
       "parentOrganization": {"@id": "https://vedaracare.ae/#organization"},

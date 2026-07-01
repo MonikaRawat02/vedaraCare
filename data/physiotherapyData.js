@@ -439,7 +439,7 @@ answer: "Padel has exploded in Dubai's expat community, and padel injuries are a
   answer: "At Vedara Care, typically same-day or next-day for new patients, with priority booking for acute injuries within 24 hours when possible. Saturday and evening slots available. WhatsApp [number] for fastest response. Across Dubai's market, scheduling availability varies enormously — busy clinics may have 1-2 week waits, less busy clinics offer same-day."},
   {
     question: "How do I book a physiotherapy assessment?",
-    answer: "Three ways at Vedara Care: WhatsApp [number] for fastest response (typically within 15 minutes business hours), call [phone number] (9 AM to 9 PM seven days a week), or book online. For your first appointment, bring or send: any relevant imaging (X-rays, MRI), medical reports, current medication list, and insurance card if applicable."
+    answer: "Three ways at Vedara Care: WhatsApp [number] for fastest response (typically within 15 minutes business hours), call +971 55 586 7466 (9 AM to 9 PM seven days a week), or book online. For your first appointment, bring or send: any relevant imaging (X-rays, MRI), medical reports, current medication list, and insurance card if applicable."
    }
 
 
@@ -453,8 +453,8 @@ export const physiotherapyTreatmentLocation = {
   label: "OUR CLINIC",
   title: "Vedara Care's physiotherapy clinic in Jumeirah Village Circle.",
   address: "Vedara Care Polyclinic<br/>Building 7, Street 2, Jumeirah Village Circle<br/>Dubai, United Arab Emirates",
-  phone: "+971 4 XXXX XXX",
-  email: "info@vedaracare.ae",
+  phone: "+971 55 586 7466",
+  email: "booking@vedaracare.ae",
   hours: "Monday - Friday: 9:00 AM - 9:00 PM<br/>Saturday: 9:00 AM - 6:00 PM<br/>Sunday: 10:00 AM - 4:00 PM",
   landmarks: [
     "Next to Circle Mall",
@@ -593,8 +593,8 @@ export const physiotherapyLocationCustom = {
   description1: "Vedara Care Polyclinic is located at Building 7, Street 2, Jumeirah Village Circle (JVC), Dubai. Walking distance from Circle Mall, three minutes from FIVE Jumeirah Village Hotel, and five minutes from JSS Private School. Free patient parking is available on-site.",
   description2: "Operating hours: Monday through Saturday 9:00 AM to 9:00 PM; Sunday 9:00 AM to 6:00 PM. Open seven days a week including most public holidays. Easy access from Sheikh Mohammed Bin Zayed Road and Al Khail Road — typically 15-25 minutes from most Dubai neighbourhoods.",
   addressLine: "Building 7, Street 2, Jumeirah Village Circle<br/>Dubai, United Arab Emirates",
-  contactPhone: "+971 4 XXXX XXX",
-  whatsApp: "+971 4 XXXX XXX",
+  contactPhone: "+971 55 586 7466",
+  whatsApp: "+971 55 586 7466",
   clinicImageAlt: "Vedara Care Polyclinic JVC Dubai physiotherapy department",
   primaryButtonText: "Book a Physiotherapy Assessment",
   primaryButtonHref: "/book",

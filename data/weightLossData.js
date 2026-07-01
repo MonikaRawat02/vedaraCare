@@ -456,9 +456,9 @@ export const weightLossTreatmentLocation = {
   label: "WHERE WE TREAT",
   title: "Where weight loss treatment happens at Vedara Care.",
   address: "Vedara Care Polyclinic, Building X, Jumeirah Village Circle (JVC), Dubai — next to Circle Mall, near FIVE Jumeirah Village",
-  phone: "+971 4 000 0000",
-  whatsapp: "+971 50 000 0000",
-  email: "weightloss@vedaracare.ae",
+  phone: "+971 55 586 7466",
+  whatsapp: "+971 55 586 7466",
+  email: "booking@vedaracare.ae",
   hours: {
     monday: "8:00 AM - 8:00 PM",
     tuesday: "8:00 AM - 8:00 PM",

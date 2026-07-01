@@ -199,7 +199,7 @@ answer: "Specific McKenzie method certification (Credentialed MDT or Diploma MDT
 },
 {
 question: "How do I book a sciatica physiotherapy assessment?",
-answer: "Three ways: (1) WhatsApp +971 4 XXX XXXX — fastest response, ideal for sending imaging, brief description of your symptoms, or asking specific questions about your case. (2) Call +971 4 XXX XXXX — direct booking, available 9 AM to 9 PM seven days a week. (3) Book online through our website. For your first appointment, please bring: any imaging (MRI, CT, X-rays), medical reports, current medication list, insurance card, comfortable clothing allowing movement assessment."
+answer: "Three ways: (1) WhatsApp +971 55 586 7466 — fastest response, ideal for sending imaging, brief description of your symptoms, or asking specific questions about your case. (2) Call +971 55 586 7466 — direct booking, available 9 AM to 9 PM seven days a week. (3) Book online through our website. For your first appointment, please bring: any imaging (MRI, CT, X-rays), medical reports, current medication list, insurance card, comfortable clothing allowing movement assessment."
 }
 
 
@@ -211,8 +211,8 @@ export const sciaticaPhysioLocation = {
   label: "VISIT US",
   title: "Where sciatica physiotherapy happens at Vedara Care JVC.",
   address: "Circle Mall Area, Jumeirah Village Circle (JVC), Dubai, UAE",
-  phone: "+971 4 567 8900",
-  email: "info@vedaracare.ae",
+  phone: "+971 55 586 7466",
+  email: "booking@vedaracare.ae",
   hours: {
     monday: "9:00 AM - 9:00 PM",
     saturday: "9:00 AM - 8:00 PM",
@@ -240,7 +240,7 @@ export const sciaticaPhysioCTA = {
   button1Text: "Book Sciatica Assessment",
   button1Href: "/book",
   button2Text: "WhatsApp Us",
-  button2Href: "https://wa.me/971501234567",
+  button2Href: "https://wa.me/971555867466",
   footer: "Initial assessment from AED 350 · McKenzie certified specialists · Walking distance from Circle Mall, JVC · Patients across Dubai · Insurance direct-billing with seven major insurers"
 };
 

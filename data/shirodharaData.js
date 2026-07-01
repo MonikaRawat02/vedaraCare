@@ -317,8 +317,8 @@ export const shirodharaTreatmentLocation = {
   label: "VISIT US",
   title: "Where Shirodhara happens at Vedara Care.",
   address: "Vedara Care Polyclinic<br/>District 13, Jumeirah Village Circle<br/>Dubai, United Arab Emirates",
-  phone: "+971 4 XXX XXXX",
-  email: "info@vedaracare.ae",
+  phone: "+971 55 586 7466",
+  email: "booking@vedaracare.ae",
   hours: "Saturday - Thursday: 9:00 AM - 9:00 PM<br/>Friday: 2:00 PM - 9:00 PM",
   landmarks: [
     "Next to Circle Mall (3 min walk) ",

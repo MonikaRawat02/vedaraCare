@@ -347,7 +347,7 @@ export const postnatalPricing = {
     }
   ],
   footer: "Insurance direct billing available with some major insurers — coverage for Ayurvedic postnatal care varies by plan. Postpartum care is increasingly covered where there is medical justification.",
-  whatsappUrl: "https://wa.me/971XXXXXXXX",
+  whatsappUrl: "https://wa.me/971555867466",
   bgColor: "bg-white",
   cardBg: "white",
   buttonBg: "#357c63ff",
@@ -432,7 +432,7 @@ export const postnatalFinalCTA = {
   button1Text: "Book a Postnatal Consultation",
   button1Link: "/book",
   button2Text: "Chat on WhatsApp",
-  button2Link: "https://wa.me/971XXXXXXXX",
+  button2Link: "https://wa.me/971555867466",
   footer: "Initial consultations from AED 450 · Home services across Dubai · JVC clinic next to Circle Mall · Female doctors and therapists available · Insurance direct billing",
   bgColor: "bg-[#FAF8F3]"
 };

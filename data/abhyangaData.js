@@ -365,7 +365,7 @@ export const abhyangaFaqs = {
     
     {
       question: "How do I book Abhyanga at your clinic?",
-      answer: "For first-time patients, booking begins with a brief consultation (15–20 minutes, AED 150) where your doctor confirms Abhyanga is the right therapy and selects the right oils for your dosha. Existing patients can rebook directly. Tap \"Book Abhyanga Consultation\" anywhere on this page, WhatsApp us at +971 50 000 0000 for the fastest response, or call +971 4 000 0000."
+      answer: "For first-time patients, booking begins with a brief consultation (15–20 minutes, AED 150) where your doctor confirms Abhyanga is the right therapy and selects the right oils for your dosha. Existing patients can rebook directly. Tap \"Book Abhyanga Consultation\" anywhere on this page, WhatsApp us at +971 55 586 7466 for the fastest response, or call +971 55 586 7466."
     }
   ]
 };
@@ -378,8 +378,8 @@ export const abhyangaTreatmentLocation = {
   landmarks: [
     "Next to Circle Mall · Near FIVE Hotel · 5 min from JSS School"
   ],
-  phone: "+971 4 000 0000",
-  whatsapp: "+971 50 000 0000",
+  phone: "+971 55 586 7466",
+  whatsapp: "+971 55 586 7466",
   hours: "Monday - Friday: 9:00 AM - 8:00 PM<br/>Saturday: 9:00 AM - 6:00 PM<br/>Sunday: 10:00 AM - 4:00 PM",
   description: "Five private Abhyanga treatment rooms, each with traditional Kerala-style wooden droni table and brass oil-warming station. Heated rooms maintained at 26–28°C during sessions. Free patient parking available.",
   mapAlt: "Vedara Care Abhyanga clinic location in Jumeirah Village Circle Dubai near Circle Mall",

@@ -317,9 +317,9 @@ export const homeLocation = {
   },
   contact: {
     label: "Contact",
-    phone: "+971 4 XXX XXXX",
+    phone: "+971 55 586 7466",
     whatsapp: "+971 5X XXX XXXX",
-    email: "info@vedaracare.ae"
+    email: "booking@vedaracare.ae"
   },
   hours: {
     label: "Hours",

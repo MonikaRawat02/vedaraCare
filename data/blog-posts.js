@@ -176,7 +176,7 @@ export const backPainEvidenceBlog = {
     title: "If this article has been useful, the next step is an honest consultation — not a treatment package.",
     content: "We do not begin treatment without a thorough 60-minute assessment to determine whether Ayurvedic back pain treatment is right for your specific situation. The consultation includes detailed history, examination, imaging review, classification of your back pain pattern, and a written treatment plan with realistic expectations. If we determine that conventional care should come first, or that your case is not well-suited to Ayurvedic treatment, we will tell you honestly.",
     bookHref: "/book",
-    whatsappUrl: "https://wa.me/971XXXXXXXX",
+    whatsappUrl: "https://wa.me/971555867466",
     footerInfo: [
       "Initial consultation from AED 350 · Walking distance from Circle Mall, JVC",
       "Integrated Ayurveda + physiotherapy · Insurance-direct billing"
@@ -335,7 +335,7 @@ export const panchakarmaBlog = {
     title: "If this article has been useful, the next step is an honest consultation — not a Panchakarma booking.",
     content: "We do not begin Panchakarma without a thorough 60-minute assessment to determine whether the protocol is right for your specific situation. The consultation includes detailed history, examination, review of any medical history and current medications, identification of which specific Panchakarma procedure (if any) would be clinically appropriate for you, and a written treatment plan with realistic expectations. If we determine that Panchakarma is not the right intervention for your situation, we will tell you honestly and recommend alternatives.",
     bookHref: "/book",
-    whatsappUrl: "https://wa.me/971XXXXXXXX",
+    whatsappUrl: "https://wa.me/971555867466",
     footerInfo: [
       "Initial consultation from AED 350 · Walking distance from Circle Mall, JVC",
       "Authentic clinical Panchakarma · Insurance direct-billing available"

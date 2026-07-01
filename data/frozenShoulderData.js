@@ -479,8 +479,8 @@ export const frozenShoulderLocation = {
   label: "VISIT US",
   title: "Where frozen shoulder treatment happens at Vedara Care JVC.",
   address: "Unit G-05, Circle Mall, JVC District 12, Jumeirah Village Circle, Dubai, UAE",
-  phone: "+971 4 XXX XXXX",
-  whatsapp: "+971 50 XXX XXXX",
+  phone: "+971 55 586 7466",
+  whatsapp: "+971 55 586 7466",
   email: "hello@vedaracare.ae",
   hours: [
     { day: "Monday – Friday", time: "9:00 AM – 9:00 PM" },

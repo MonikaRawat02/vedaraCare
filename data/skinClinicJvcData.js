@@ -222,7 +222,7 @@ export const skinClinicFaqs = {
   title: "Questions patients ask when exploring skin care options.",
   description: "For specific procedural and clinical questions, see our dermatology clinic page.",
   primaryCtaText: "Ask Our Team on WhatsApp",
-  primaryCtaHref: "https://wa.me/97150XXXXXXXX",
+  primaryCtaHref: "https://wa.me/971555867466X",
   secondaryCtaText: "Full dermatology clinic details →",
   secondaryCtaHref: "/dermatology-clinic-jvc",
   faqs: [

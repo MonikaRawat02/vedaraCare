@@ -382,7 +382,7 @@ export const njavarakizhiFaqs = {
     },
     {
       question: "How do I book Njavarakizhi at your clinic?",
-      answer: "Njavarakizhi requires advance booking — typically at least 24 hours notice, ideally 48 hours, because of the rice and milk preparation required. For first-time patients, booking begins with a consultation where the doctor confirms Njavarakizhi is the right therapy and selects the appropriate kashayam. Existing patients can rebook directly with the required advance notice. Tap 'Book a Njavarakizhi Consultation' on this page, WhatsApp us at +971 50 000 0000, or call +971 4 000 0000."
+      answer: "Njavarakizhi requires advance booking — typically at least 24 hours notice, ideally 48 hours, because of the rice and milk preparation required. For first-time patients, booking begins with a consultation where the doctor confirms Njavarakizhi is the right therapy and selects the appropriate kashayam. Existing patients can rebook directly with the required advance notice. Tap 'Book a Njavarakizhi Consultation' on this page, WhatsApp us at +971 55 586 7466, or call +971 55 586 7466."
     }
   ]
 };
@@ -392,8 +392,8 @@ export const njavarakizhiTreatmentLocation = {
   label: "VISIT US",
   title: "Where Njavarakizhi happens at Vedara Care.",
   address: "Vedara Care Polyclinic<br/>District 13, Jumeirah Village Circle<br/>Dubai, United Arab Emirates",
-  phone: "+971 4 XXX XXXX",
-  email: "info@vedaracare.ae",
+  phone: "+971 55 586 7466",
+  email: "booking@vedaracare.ae",
   hours: "Saturday - Thursday: 9:00 AM - 9:00 PM<br/>Friday: 2:00 PM - 9:00 PM",
   landmarks: [
     "Next to Circle Mall ",

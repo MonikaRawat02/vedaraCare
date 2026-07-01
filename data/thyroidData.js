@@ -407,8 +407,8 @@ export const thyroidLocation = {
   title: "Where thyroid treatment happens at Vedara Care.",
   description: "Our JVC clinic has dedicated Panchakarma treatment rooms, private consultation spaces, and a calm environment essential for endocrine health. Walking distance from Circle Mall, easy access from JVC, JVT, and Al Barsha South.",
   address: "Vedara Care Polyclinic<br/>District 13, Jumeirah Village Circle<br/>Dubai, United Arab Emirates",
-  phone: "+971 XX XXX XXXX",
-  email: "info@vedaracare.ae",
+  phone: "+971 55 586 7466",
+  email: "booking@vedaracare.ae",
   hours: "Saturday - Thursday: 9:00 AM - 8:00 PM<br/>Friday: 2:00 PM - 8:00 PM",
   landmarks: [
     "Next to Circle Mall",

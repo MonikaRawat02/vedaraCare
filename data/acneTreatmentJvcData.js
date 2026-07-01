@@ -460,7 +460,7 @@ export const acneTreatmentFaqs = {
   title: "What patients ask about acne treatment.",
   description: "For broader dermatology questions, see our dermatology clinic page",
   primaryCtaText: "Ask Our Team on WhatsApp",
-  primaryCtaHref: "https://wa.me/971501234567",
+  primaryCtaHref: "https://wa.me/971555867466",
   secondaryCtaText: "Full dermatology clinic details →",
   secondaryCtaHref: "/dermatology-clinic-jvc/",
   faqs: [
@@ -558,7 +558,7 @@ export const acneTreatmentLocation = {
     },
     {
       label: "Phone",
-      content: "+971 4 567 8900"
+      content: "+971 55 586 7466"
     },
     {
       label: "Clinic Hours",
@@ -581,7 +581,7 @@ export const acneTreatmentCTA = {
   button1Text: "Book Acne Consultation",
   button1Href: "/book",
   button2Text: "WhatsApp Us",
-  button2Href: "https://wa.me/971501234567",
+  button2Href: "https://wa.me/971555867466",
   footer: "Initial consultation from AED [X] · Walking distance from Circle Mall, JVC · DHA-licensed consultant dermatologists · 400+ acne patients treated · All acne types and skin types · Female and male dermatologists · Insurance direct-billing"
 };
 

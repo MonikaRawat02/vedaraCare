@@ -464,7 +464,7 @@ export const pcosFaqs = {
       answer: "We offer video consultations for follow-up appointments and for patients located outside Dubai who want to start with an initial assessment before travelling. For first-time PCOS consultations, in-person is strongly preferred — pulse diagnosis, physical examination, and the depth of conversation work better in person. Many of our international patients fly in for the initial consultation and the Panchakarma component, then continue with video follow-ups." },
     {
       question: "How do I start?",
-      answer: "Tap 'Book a PCOS Consultation' on this page, WhatsApp us at +971 XX XXX XXXX for the fastest response, or call +971 XX XXX XXXX. If you have specific questions before booking, WhatsApp us — our team typically replies within 15 minutes during clinic hours. Many women find it easier to ask their initial questions on WhatsApp first."}
+      answer: "Tap 'Book a PCOS Consultation' on this page, WhatsApp us at +971 55 586 7466 for the fastest response, or call +971 55 586 7466. If you have specific questions before booking, WhatsApp us — our team typically replies within 15 minutes during clinic hours. Many women find it easier to ask their initial questions on WhatsApp first."}
   ]
 };
 
@@ -476,8 +476,8 @@ export const pcosTreatmentLocation = {
   landmarks: [
     "Next to Circle Mall ·FIVE Jumeirah Village · JVC District 12 · JSS Private School "
   ],
-  phone: "+971 4 000 0000",
-  whatsapp: "+971 50 000 0000",
+  phone: "+971 55 586 7466",
+  whatsapp: "+971 55 586 7466",
   hours: "Monday - Friday: 9:00 AM - 8:00 PM<br/>Saturday: 9:00 AM - 6:00 PM<br/>Sunday: 10:00 AM - 4:00 PM",
   description: "Dedicated consultation rooms for women's health, female reception staff available on request, private treatment areas. We schedule PCOS consultations in longer 60-minute slots rather than rushing them into 20-minute appointments.",
   buttonText: "Book PCOS Consultation",

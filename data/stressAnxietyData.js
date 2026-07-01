@@ -365,7 +365,7 @@ export const stressAnxietyFaqs = {
     },
     {
       question: "How do I start?",
-      answer: "Always with an honest consultation. Tap \"Book an Anxiety & Stress Consultation\" on this page, WhatsApp us at +971 4 XXX XXXX, or call +971 4 XXX XXXX. If you are currently in mental health crisis, please contact emergency services (999) or the UAE Crisis Helpline (800 4673) first — Ayurvedic treatment is not for crisis care. For chronic ongoing patterns, the 60-minute consultation includes thorough history, pattern identification, and a written treatment plan with realistic expectations."
+      answer: "Always with an honest consultation. Tap \"Book an Anxiety & Stress Consultation\" on this page, WhatsApp us at +971 55 586 7466, or call +971 55 586 7466. If you are currently in mental health crisis, please contact emergency services (999) or the UAE Crisis Helpline (800 4673) first — Ayurvedic treatment is not for crisis care. For chronic ongoing patterns, the 60-minute consultation includes thorough history, pattern identification, and a written treatment plan with realistic expectations."
     }
   ]
 };
@@ -479,7 +479,7 @@ export const stressAnxietyVisitSectionData = {
     line1: "207 Circle Mall, JVC",
     line2: "Jumeirah Village Circle, Dubai, UAE"
   },
-  phone: "+971 4 XXX XXXX",
+  phone: "+971 55 586 7466",
   hours: [
     { label: "Mon - Sat", time: "9:00am - 8:00pm" },
     { label: "Sun", time: "10:00am - 4:00pm" }
@@ -496,8 +496,8 @@ export const stressAnxietyLocation = {
   title: "Where stress and anxiety treatment happens at Vedara Care.",
   description: "Our JVC clinic has dedicated Shirodhara treatment rooms with controlled lighting (important for patients with light sensitivity), sound-insulated quiet environment, and Nasya treatment positions. Walking distance from Circle Mall, easy access from JVC Districts 10, 11, 12, 13, JVT, and Al Barsha South. Female doctors available on request.",
   address: "207 Circle Mall, JVC<br/>Jumeirah Village Circle, Dubai, UAE",
-  phone: "+971 4 XXX XXXX",
-  email: "info@vedaracare.ae",
+  phone: "+971 55 586 7466",
+  email: "booking@vedaracare.ae",
   hours: "Mon - Sat: 9:00am - 8:00pm<br/>Sun: 10:00am - 6:00pm",
   landmarks: [
     "Circle Mall, JVC",

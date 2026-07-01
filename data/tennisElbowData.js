@@ -429,7 +429,7 @@ export const tennisElbowFaqs = {
       answer: "Evidence-based eccentric and isometric loading protocols (often missed at non-specialist clinics that use generic 'strengthening'), longer sessions (60 minutes) allowing thorough treatment and patient education, shockwave therapy available for chronic cases, padel-specific expertise given Dubai's demographics, ergonomic assessment integrated into office worker treatment, honest discussion about cortisone evidence, transparent published pricing, and realistic timeline expectations."  },
     {
       question: "How do I book a tennis elbow assessment?",
-      answer: "Three ways: (1) WhatsApp +971 4 555 1234 — fastest response, ideal for sending brief description of your symptoms. (2) Call +971 4 555 1234 — direct booking, available 9AM to 9PM seven days a week. (3) Book online through our website. For your first appointment, please bring: any imaging if available, medical reports, current medication list, insurance card, comfortable clothing allowing elbow assessment, and information about your activities and triggers."}
+      answer: "Three ways: (1) WhatsApp +971 55 586 7466 — fastest response, ideal for sending brief description of your symptoms. (2) Call +971 55 586 7466 — direct booking, available 9AM to 9PM seven days a week. (3) Book online through our website. For your first appointment, please bring: any imaging if available, medical reports, current medication list, insurance card, comfortable clothing allowing elbow assessment, and information about your activities and triggers."}
     ]
 };
 
@@ -438,7 +438,7 @@ export const tennisElbowLocation = {
   label: "VISIT US",
   title: "Where tennis elbow treatment happens at Vedara Care JVC.",
   address: "Jumeirah Village Circle (JVC), Dubai<br/>Near Circle Mall · FIVE Jumeirah Village · JSS Private School",
-  phone: "+971 4 555 1234",
+  phone: "+971 55 586 7466",
   hours: {
     monday: "9:00 AM – 9:00 PM",
     tuesday: "9:00 AM – 9:00 PM",
@@ -467,7 +467,7 @@ export const tennisElbowCTA = {
   button1Text: "Book Tennis Elbow Assessment",
   button1Href: "/book",
   button2Text: "WhatsApp Us",
-  button2Href: "https://wa.me/971501234567",
+  button2Href: "https://wa.me/971555867466",
   bullets: [
     "Initial assessment from AED 450",
     "Walking distance from Circle Mall, JVC",

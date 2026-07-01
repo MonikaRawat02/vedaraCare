@@ -525,7 +525,7 @@ answer: "Yes. We work with several Dubai dermatology practices for joint patient
 },
 {
   question: "How do I start?",
-  answer: "Always with a thorough assessment. Tap 'Book a Skin Consultation' on this page, WhatsApp us at +971 50 123 4567, or call +971 4 123 4567. Please bring (or send before consultation): recent dermatologist notes if available, any biopsy or pathology reports, current medication list (topical and systemic), and photos of affected areas (we will also take baseline photos with consent). The 60-minute consultation at our JVC clinic includes comprehensive history, examination, classification, and a written treatment plan with realistic expectations."
+  answer: "Always with a thorough assessment. Tap 'Book a Skin Consultation' on this page, WhatsApp us at +971 55 586 7466, or call +971 55 586 7466. Please bring (or send before consultation): recent dermatologist notes if available, any biopsy or pathology reports, current medication list (topical and systemic), and photos of affected areas (we will also take baseline photos with consent). The 60-minute consultation at our JVC clinic includes comprehensive history, examination, classification, and a written treatment plan with realistic expectations."
 },
 ]
 };

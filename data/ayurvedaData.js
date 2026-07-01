@@ -455,9 +455,9 @@ export const ayurvedaLocation = {
   },
   contact: {
     label: "Contact",
-    phone: "+971 4 XXX XXXX",
+    phone: "+971 55 586 7466",
     whatsapp: "+971 5X XXX XXXX",
-    email: "info@vedaracare.ae"
+    email: "booking@vedaracare.ae"
   },
   hours: {
     label: "Hours",
@@ -685,7 +685,7 @@ export const dubaiHubFaqs = {
     },
     {
       question: "How do I start with Ayurvedic treatment in Dubai?",
-      answer: "Begin with a consultation, not a treatment. A first Ayurvedic consultation is a diagnostic conversation — your doctor will assess your dosha, review your symptoms, and recommend a treatment plan. You decide whether to proceed. At Vedara Care, you can book a consultation using any Book a Consultation button on this page, on WhatsApp at +971 XX XXX XXXX, or by calling +971 4 XXX XXXX."
+      answer: "Begin with a consultation, not a treatment. A first Ayurvedic consultation is a diagnostic conversation — your doctor will assess your dosha, review your symptoms, and recommend a treatment plan. You decide whether to proceed. At Vedara Care, you can book a consultation using any Book a Consultation button on this page, on WhatsApp at +971 55 586 7466, or by calling +971 55 586 7466."
     }
   ]
 };

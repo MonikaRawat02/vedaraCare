@@ -347,7 +347,7 @@ export const hairLossTreatmentPricing = {
     { name: "Photographic monitoring visit", price: "AED 150" },
     { name: "Hair transplant referral consultation", price: "AED 450" }
   ],
-  insuranceText: 'Medical hair loss workup including consultations and blood work is covered by most Dubai insurance plans with appropriate medical justification. PRP, mesotherapy, and procedural treatments are typically self-pay. We are direct-billing partners with Daman, AXA, Allianz, Oman Insurance, Now Health, Bupa, and MetLife. <a href="https://wa.me/971501234567" class="text-[#C9A84C] hover:underline">WhatsApp your insurance card</a> before booking for specific coverage confirmation.',
+  insuranceText: 'Medical hair loss workup including consultations and blood work is covered by most Dubai insurance plans with appropriate medical justification. PRP, mesotherapy, and procedural treatments are typically self-pay. We are direct-billing partners with Daman, AXA, Allianz, Oman Insurance, Now Health, Bupa, and MetLife. <a href="https://wa.me/971555867466" class="text-[#C9A84C] hover:underline">WhatsApp your insurance card</a> before booking for specific coverage confirmation.',
   insurances: ["Daman", "AXA", "Allianz", "Oman Insurance", "Now Health", "Bupa", "MetLife"]
 };
 
@@ -444,7 +444,7 @@ export const hairLossTreatmentFaqs = {
   title: "What patients ask about hair loss treatment.",
   description: "For broader dermatology questions, see our dermatology clinic page",
   primaryCtaText: "Ask Our Team on WhatsApp",
-  primaryCtaHref: "https://wa.me/971501234567",
+  primaryCtaHref: "https://wa.me/971555867466",
   secondaryCtaText: "Full dermatology clinic details →",
   secondaryCtaHref: "/dermatology-clinic-jvc/",
   faqs: [
@@ -538,7 +538,7 @@ export const hairLossTreatmentFaqs = {
 export const hairLossTreatmentLocation = {
   sections: [
     { label: "Address", content: "Jumeirah Village Circle (JVC), Dubai<br/>Walking distance from Circle Mall · 3 min from FIVE JV Hotel · 5 min from JSS School" },
-    { label: "Phone", content: "+971 4 XXX XXXX" },
+    { label: "Phone", content: "+971 55 586 7466" },
     { label: "Clinic Hours", content: "Monday – Thursday: 9:00 AM – 9:00 PM<br/>Friday – Saturday: 10:00 AM – 6:00 PM" }
   ],
   mapEmbed: "https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d3613.9894568193345!2d55.20722358578439!3d25.068346479666594!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x3e5f6dd72f3da587%3A0xe7ecca8687a75b72!2sVedara%20Care%20Polyclinic!5e0!3m2!1sen!2sus!4v1782536985!5m2!1sen!2sus",
@@ -558,7 +558,7 @@ export const hairLossTreatmentCTA = {
   button1BgColor: "rgb(184, 150, 90)",
   button1TextColor: "rgb(255, 255, 255)",
   button2Text: "WhatsApp Us",
-  button2Href: "https://wa.me/971501234567",
+  button2Href: "https://wa.me/971555867466",
   button2BorderColor: "rgb(74, 222, 128)",
   button2TextColor: "rgb(74, 222, 128)",
   bullets: [

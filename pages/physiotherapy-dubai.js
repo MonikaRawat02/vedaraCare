@@ -43,7 +43,7 @@ const PhysiotherapyDubai = () => {
       "url": "https://vedaracare.ae/physiotherapy-dubai/",
       "parentOrganization": {"@id": "https://vedaracare.ae/#organization"},
       "description": "DHA-licensed physiotherapy at Vedara Care Polyclinic, Jumeirah Village Circle, Dubai. DPT-qualified physiotherapists serving patients from across Dubai including JVC, Marina, Downtown, Palm Jumeirah, Mirdif. Seven specialisations available for conditions like back pain, knee OA, post-surgical rehab, and more.",
-      "telephone": "[Phone number]",
+      "telephone": "+971 55 586 7466",
       "priceRange": "AED 250 - AED 8,000",
       "address": {
         "@type": "PostalAddress",

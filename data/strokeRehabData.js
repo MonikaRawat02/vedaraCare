@@ -262,7 +262,7 @@ export const strokeRehabCTA = {
   button1Text: "Book Stroke Rehabilitation Assessment",
   button1Href: "/book",
   button2Text: "WhatsApp Us",
-  button2Href: "https://wa.me/971501234567",
+  button2Href: "https://wa.me/971555867466",
   footer: "Initial assessment from AED [X] · JVC clinic + home across Dubai · DPT-qualified neurorehabilitation specialists · Hospital discharge coordination · Insurance direct-billing · Cultural and language sensitivity"
 };
 
@@ -271,7 +271,7 @@ export const strokeRehabLocation = {
   label: "VISIT US",
   title: "Where post-stroke rehabilitation happens at Vedara Care JVC.",
   address: "[Full address], Jumeirah Village Circle, Dubai, UAE",
-  phone: "[Phone number]",
+  phone: "+971 55 586 7466",
   email: "",
   hours: {
     monday: "8:00 AM - 9:00 PM",

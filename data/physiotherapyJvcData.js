@@ -505,7 +505,7 @@ export const physiotherapyJvcFaqs = {
     },
     {
       question: "How quickly can I get an appointment at the JVC physiotherapy clinic?",
-      answer: "Typically same-day or next-day for new patients. Our scheduling allows priority booking for acute injuries (within 24 hours when possible) and structured booking for chronic conditions. WhatsApp +971 XX XXX XXXX for fastest response — typically within 15 minutes during business hours. Saturday and evening slots are available for working patients."
+      answer: "Typically same-day or next-day for new patients. Our scheduling allows priority booking for acute injuries (within 24 hours when possible) and structured booking for chronic conditions. WhatsApp +971 55 586 7466 for fastest response — typically within 15 minutes during business hours. Saturday and evening slots are available for working patients."
     },
     {
       question: "How many physiotherapy sessions will I need?",
@@ -540,8 +540,8 @@ export const physiotherapyJvcLocation = {
   label: "VISIT US",
   title: "Where physiotherapy happens at Vedara Care JVC.",
   address: "Vedara Care Polyclinic<br />Building X, District 12<br />Jumeirah Village Circle (JVC)<br />Dubai, United Arab Emirates<br />Next to Circle Mall • 3 minutes from FIVE Jumeirah Village Hotel",
-  phone: "+971 4 XXXX XXX",
-  email: "physiotherapy@vedaracare.ae",
+  phone: "+971 55 586 7466",
+  email: "booking@vedaracare.ae",
   hours: {
     monday: "9:00 AM - 9:00 PM",
     saturday: "9:00 AM - 8:00 PM",
@@ -570,7 +570,7 @@ export const physiotherapyJvcFinalCTA = {
   button1Text: "Book a Physiotherapy Assessment",
   button1Href: "/book",
   button2Text: "WhatsApp Us",
-  button2Href: "https://wa.me/[number]",
+  button2Href: "https://wa.me/971555867466",
   footer: "Initial assessment from AED [X] · DHA-licensed JVC clinic · Insurance direct-billing with 7 major insurers · Same-day appointments often available · Home services across Dubai"
 };
 

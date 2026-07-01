@@ -279,7 +279,7 @@ const Header = () => {
               Book Appointment
             </Link>
             <a 
-              href="https://wa.me/971XXXXXXXX" 
+              href="https://wa.me/971555867466" 
               className="hidden xl:flex w-10 h-10 items-center justify-center bg-[#4A7C59] text-white rounded-full hover:opacity-90 transition-all"
               target="_blank"
               rel="noopener noreferrer"
@@ -392,7 +392,7 @@ const Header = () => {
       {/* Persistent Mobile Bottom Navigation */}
       <div className="xl:hidden fixed bottom-0 left-0 right-0 z-50 bg-[#184C3A] border-t border-[#1F4538] shadow-2xl h-20 flex items-center">
         <a 
-          href="https://wa.me/971XXXXXXXX" 
+          href="https://wa.me/971555867466" 
           className="flex-1 flex flex-col items-center justify-center gap-1 h-full text-white hover:bg-[#4A7C59]/10 transition-colors"
           target="_blank"
           rel="noopener noreferrer"

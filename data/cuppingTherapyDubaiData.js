@@ -131,7 +131,7 @@ export const cuppingTherapyFaqs = {
     },
     {
       question: "Do you offer Hijama?",
-      answer: "Yes — Hijama is available at our clinic, performed with sterile single-use equipment and complete respect for both clinical safety and religious significance. We can accommodate traditional Sunnah days for scheduling. WhatsApp +971 4 XXX XXXX for specific availability and scheduling."
+      answer: "Yes — Hijama is available at our clinic, performed with sterile single-use equipment and complete respect for both clinical safety and religious significance. We can accommodate traditional Sunnah days for scheduling. WhatsApp +971 55 586 7466 for specific availability and scheduling."
     },
     {
       question: "Does cupping hurt?",
@@ -199,7 +199,7 @@ export const cuppingTherapyFaqs = {
     },
      {
       question: "How do I book a cupping appointment?",
-      answer: "Three ways: (1) WhatsApp +971 4 XXX XXXX — fastest response, ideal for asking specific questions about which type of cupping would suit you. (2) Call +971 4 XXX XXXX — direct booking, available 9 AM to 9 PM seven days a week. (3) Book online through our website. For Hijama specifically, inquire about availability and Sunnah days scheduling. Please bring: any relevant medical reports, current medication list, insurance card if applicable, and comfortable clothing allowing access to treatment areas."
+      answer: "Three ways: (1) WhatsApp +971 55 586 7466 — fastest response, ideal for asking specific questions about which type of cupping would suit you. (2) Call +971 55 586 7466 — direct booking, available 9 AM to 9 PM seven days a week. (3) Book online through our website. For Hijama specifically, inquire about availability and Sunnah days scheduling. Please bring: any relevant medical reports, current medication list, insurance card if applicable, and comfortable clothing allowing access to treatment areas."
     },
     
   ]
@@ -210,8 +210,8 @@ export const cuppingTherapyLocation = {
   label: "VISIT US",
   title: "Where cupping therapy happens at Vedara Care JVC.",
   address: "Jumeirah Village Circle (JVC), Dubai<br />Walking distance from Circle Mall · 3 min from FIVE Jumeirah Village <br />· 5 min from JSS Private School",
-  phone: "+971 4 XXX XXXX",
-  whatsapp: "+971 50 XXX XXXX",
+  phone: "+971 55 586 7466",
+  whatsapp: "+971 55 586 7466",
   hours: "Saturday – Thursday: 9:00 AM – 9:00 PM,Friday: 2:00 PM – 9:00 PM",
   landmarks: [
     
@@ -231,7 +231,7 @@ export const cuppingTherapyFinalCTA = {
   button1Text: "Book Cupping Assessment",
   button1Href: "/book",
   button2Text: "WhatsApp Us",
-  button2Href: "https://wa.me/97150XXXXXXXX",
+  button2Href: "https://wa.me/971555867466X",
   footer: "Sessions from AED 250 · Walking distance from Circle Mall, JVC · 400+ cupping treatments delivered · DHA-licensed practitioners · Sterile single-use equipment · Cultural and religious respect"
 };
 

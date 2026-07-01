@@ -316,7 +316,7 @@ export const kneePainPricing = {
     {name: "ACL rehabilitation programme (40–60 sessions over 9–12 months)",price: "AED 9,800"}
     
   ],
-  insuranceText: "Insurance direct-billing with seven major insurers including Daman, AXA, Allianz, Oman Insurance, Now Health, Bupa, and MetLife. Knee pain physiotherapy is well-covered by most Dubai insurance plans with medical justification. WhatsApp your insurance card to +971 50 XXX XXXX before booking for specific coverage confirmation. ",
+  insuranceText: "Insurance direct-billing with seven major insurers including Daman, AXA, Allianz, Oman Insurance, Now Health, Bupa, and MetLife. Knee pain physiotherapy is well-covered by most Dubai insurance plans with medical justification. WhatsApp your insurance card to +971 55 586 7466 before booking for specific coverage confirmation. ",
   // insurances: ["Daman", "AXA", "Allianz", "Oman Insurance", "Now Health", "Bupa", "MetLife"]
 };
 
@@ -356,13 +356,13 @@ export const kneePainFaqs = {
       answer: "Our DHA-licensed clinic is in Jumeirah Village Circle (JVC), Dubai — walking distance from Circle Mall, three minutes from FIVE Jumeirah Village Hotel, and five minutes from JSS Private School. Free patient parking. Easy access from Sheikh Mohammed Bin Zayed Road and Al Khail Road. Patients travel to us from JVT, Al Barsha South, Sports City, Motor City, Arjan, Dubai Hills, Marina, Downtown, Palm Jumeirah, and across Dubai."  },
     {
       question: "How quickly can I get an appointment for knee pain?",
-      answer: "Same-week appointments are typical for knee pain assessment. For acute knee injuries (sudden onset, recent trauma, inability to weight-bear), same-day or next-day appointments are often available. WhatsApp +971 50 XXX XXXX for fastest response — typically within 15 minutes during business hours."   },
+      answer: "Same-week appointments are typical for knee pain assessment. For acute knee injuries (sudden onset, recent trauma, inability to weight-bear), same-day or next-day appointments are often available. WhatsApp +971 55 586 7466 for fastest response — typically within 15 minutes during business hours."   },
     {
       question: "Do I need imaging before physiotherapy for knee pain?",
       answer: "Often not. Most knee pain diagnosis is clinical — based on history, examination, and movement assessment. Imaging may be appropriate if specific clinical findings suggest serious pathology, if treatment is not progressing as expected, or if surgical consideration arises. Imaging alone does not determine treatment — patients with significant imaging findings often respond excellently to physiotherapy."  },
     {
       question: "Does insurance cover knee pain physiotherapy?",
-      answer: "Most Dubai insurance plans cover knee pain physiotherapy with medical justification. We are direct-billing partners with Daman, AXA, Allianz, Oman Insurance, Now Health, Bupa, and MetLife. WhatsApp your insurance card to +971 50 XXX XXXX before booking to confirm specific coverage."  },
+      answer: "Most Dubai insurance plans cover knee pain physiotherapy with medical justification. We are direct-billing partners with Daman, AXA, Allianz, Oman Insurance, Now Health, Bupa, and MetLife. WhatsApp your insurance card to +971 55 586 7466 before booking to confirm specific coverage."  },
     {
       question: "Can I run with knee pain?",
       answer: "Depends on the specific cause. Some knee conditions improve with continued modified running; others require temporary running cessation while other conditioning continues. At assessment, you receive specific guidance on what activities are safe and beneficial for your specific condition. Calibrated activity modification produces better outcomes than either 'push through the pain' or complete rest."   },
@@ -399,7 +399,7 @@ answer: "The decision depends on multiple factors: completeness of the tear, you
 
 ,{
   question: "How do I book a knee pain physiotherapy assessment?",
-  answer: "Three ways: (1) WhatsApp +971 50 XXX XXXX — fastest response, ideal for sending imaging and brief symptom description. (2) Call +971 4 XXX XXXX — direct booking, available 9 AM to 9 PM seven days a week. (3) Book online through our website. For your first appointment, bring: any imaging (MRI, X-rays), medical reports, current medication list, insurance card, comfortable clothing, and athletic shoes if relevant."}]
+  answer: "Three ways: (1) WhatsApp +971 55 586 7466 — fastest response, ideal for sending imaging and brief symptom description. (2) Call +971 55 586 7466 — direct booking, available 9 AM to 9 PM seven days a week. (3) Book online through our website. For your first appointment, bring: any imaging (MRI, X-rays), medical reports, current medication list, insurance card, comfortable clothing, and athletic shoes if relevant."}]
 };
 
 export const kneePainLocation = {
@@ -407,8 +407,9 @@ export const kneePainLocation = {
   label: "VISIT US",
   title: "Where knee pain physiotherapy happens at Vedara Care JVC.",
   address: "Vedara Care Polyclinic<br/>Building 23, District 12<br/>Jumeirah Village Circle (JVC), Dubai, UAE",
-  phone: "+971 4 567 8900",
-  whatsapp: "+971 50 123 4567",
+  phone: "+971 55 586 7466",
+  whatsapp: "+971 55 586 7466",
+  email: "booking@vedaracare.ae",
   hours: {
     monday: "9:00 AM – 9:00 PM",
     tuesday: "9:00 AM – 9:00 PM",
@@ -442,7 +443,7 @@ export const kneePainCTA = {
   button1Text: "Book Knee Pain Assessment",
   button1Href: "/book",
   button2Text: "WhatsApp Us",
-  button2Href: "https://wa.me/971501234567",
+  button2Href: "https://wa.me/971555867466",
   bullets: [
     "Initial assessment from AED 350",
     "JVC · 350+ knee patients treated ",

@@ -30,9 +30,9 @@ const Footer = () => {
                   <Phone size={14} />
                   <span>+971 5X XXX XXXX</span>
                 </a>
-                <a href="mailto:info@vedaracare.ae" className="flex items-center gap-2 hover:text-white transition-colors">
+                <a href="mailto:booking@vedaracare.ae" className="flex items-center gap-2 hover:text-white transition-colors">
                   <Mail size={14} />
-                  <span>info@vedaracare.ae</span>
+                  <span>booking@vedaracare.ae</span>
                 </a>
               </div>
             </div>

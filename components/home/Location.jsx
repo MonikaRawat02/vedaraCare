@@ -20,7 +20,7 @@ const Location = ({
     label: "Contact",
     phone: "+971 4 XXX XXXX",
     whatsapp: "+971 5X XXX XXXX",
-    email: "info@vedaracare.ae"
+    email: "booking@vedaracare.ae"
   },
   hours = {
     label: "Hours",

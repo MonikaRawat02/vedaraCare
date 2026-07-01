@@ -206,7 +206,7 @@ export const manualTherapyFaqs = {
     },
     {
       question: "How do I book a manual therapy assessment?",
-      answer: "Three ways: (1) WhatsApp +971 50 000 0000 — fastest response, ideal for asking specific questions about whether manual therapy would help your situation. (2) Call +971 4 200 0000 — direct booking, available 9 AM to 9 PM seven days a week. (3) Book online through our website. For your first appointment, please bring: any relevant medical reports, imaging if available, current medication list, insurance card, and comfortable clothing allowing assessment of the affected area."
+      answer: "Three ways: (1) WhatsApp +971 55 586 7466 — fastest response, ideal for asking specific questions about whether manual therapy would help your situation. (2) Call +971 4 200 0000 — direct booking, available 9 AM to 9 PM seven days a week. (3) Book online through our website. For your first appointment, please bring: any relevant medical reports, imaging if available, current medication list, insurance card, and comfortable clothing allowing assessment of the affected area."
     }
   ]
 };
@@ -216,8 +216,8 @@ export const manualTherapyLocation = {
   label: "VISIT US",
   title: "Where manual therapy happens at Vedara Care JVC.",
   address: "Vedara Care Polyclinic<br />Cluster [X], Jumeirah Village Circle<br />Dubai, United Arab Emirates",
-  phone: "+971 4 XXX XXXX",
-  whatsapp: "+971 50 XXX XXXX",
+  phone: "+971 55 586 7466",
+  whatsapp: "+971 55 586 7466",
   hours: "9:00 AM - 9:00 PM • 7 days a week",
   landmarks: [
     "Walking distance from Circle Mall",
@@ -240,7 +240,7 @@ export const manualTherapyFinalCTA = {
   button1Text: "Book Manual Therapy Assessment",
   button1Href: "/book",
   button2Text: "WhatsApp Us",
-  button2Href: "https://wa.me/97150XXXXXXXX",
+  button2Href: "https://wa.me/971555867466X",
   footer: "Initial assessment from AED 380 • Walking distance from Circle Mall, JVC • 500+ manual therapy patients treated • Certified specialists • Evidence-based techniques • Insurance direct-billing"
 };
 
@@ -533,6 +533,6 @@ export const manualTherapyPricing = {
     { name: 'Sciatica McKenzie programme (6-8 sessions)', price: 'AED 1,900', bg: 'rgb(255, 255, 255)' },
     { name: 'Sports injury manual therapy programme (variable)', price: 'From AED 2,200', bg: 'rgb(250, 247, 242)' }
   ],
-  insuranceNote: "Insurance direct-billing with seven major insurers. Manual therapy is part of standard physiotherapy benefits — coverage typically included without separate authorisation. Extended programmes may require pre-authorisation, which we handle on your behalf. WhatsApp your insurance card to +971 50 000 0000 before booking for specific coverage confirmation.",
+  insuranceNote: "Insurance direct-billing with seven major insurers. Manual therapy is part of standard physiotherapy benefits — coverage typically included without separate authorisation. Extended programmes may require pre-authorisation, which we handle on your behalf. WhatsApp your insurance card to +971 55 586 7466 before booking for specific coverage confirmation.",
   insurers: ['Daman', 'AXA', 'Allianz', 'Oman Insurance', 'Now Health', 'Bupa', 'MetLife']
 };

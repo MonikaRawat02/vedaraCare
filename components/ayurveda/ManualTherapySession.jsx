@@ -2,6 +2,7 @@ import React from 'react';
 
 const ManualTherapySession = ({
   bgColor = "bg-[#F5F0E8]",
+  cardColor = "bg-white",
   label = "WHAT TO EXPECT",
   title = "",
   subtitle = "",
@@ -13,9 +14,11 @@ const ManualTherapySession = ({
     safetyStandardsLabel = "For every manual therapy session:",
     contraindicationsLabel = "Contraindications we screen for:",
     sideEffectsLabel = "Side effects you should know:",
+    additionalSectionLabel,
     safetyStandards = [],
     contraindications = [],
     sideEffects = [],
+    additionalSectionItems = [],
     buttonText,
     buttonHref
   } = safetyCard;
@@ -57,7 +60,7 @@ const ManualTherapySession = ({
 
           {/* Right Sidebar - Safety Card */}
           <div className="md:sticky md:top-6 lg:top-8 w-full max-w-md mx-auto md:max-w-none">
-            <div className="bg-white rounded-lg border-2 border-[#C4912A] overflow-hidden">
+            <div className={`${cardColor} rounded-lg border-2 border-[#C4912A] overflow-hidden`}>
               {/* Safety Card Header */}
               <div className="p-4 md:p-5 lg:p-7 border-b border-[#E5DFD3]">
                 <div className="flex items-center gap-2 md:gap-3 mb-3 md:mb-4">
@@ -119,6 +122,25 @@ const ManualTherapySession = ({
                       {sideEffects.map((item, idx) => (
                         <li key={idx} className="flex items-start gap-2 md:gap-3">
                           <div className="w-1.5 h-1.5 md:w-2 md:h-2 rounded-full bg-[#C9A961] flex-shrink-0 mt-1.5"></div>
+                          <span className="text-[12px] md:text-[13px] text-[#6B6B6B] leading-relaxed">{item}</span>
+                        </li>
+                      ))}
+                    </ul>
+                  </div>
+                )}
+
+                {/* Additional Section */}
+                {additionalSectionItems && additionalSectionItems.length > 0 && (
+                  <div className="mb-6 md:mb-8 pt-4 md:pt-6 border-t border-[#E5DFD3]">
+                    <p className="text-[10px] md:text-xs font-semibold tracking-[0.15em] text-[#1A1714] mb-3 md:mb-4">
+                      {additionalSectionLabel}
+                    </p>
+                    <ul className="space-y-1.5 md:space-y-2">
+                      {additionalSectionItems.map((item, idx) => (
+                        <li key={idx} className="flex items-start gap-2 md:gap-3">
+                          <svg className="w-3.5 h-3.5 md:w-4 md:h-4 text-[#C4912A] flex-shrink-0 mt-0.5" fill="none" stroke="currentColor" viewBox="0 0 24 24">
+                            <path strokeLinecap="round" strokeLinejoin="round" strokeWidth="2" d="M9 12l2 2 4-4m6 2a9 9 0 11-18 0 9 9 0 0118 0z" />
+                          </svg>
                           <span className="text-[12px] md:text-[13px] text-[#6B6B6B] leading-relaxed">{item}</span>
                         </li>
                       ))}

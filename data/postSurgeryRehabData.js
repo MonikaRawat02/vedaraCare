@@ -153,7 +153,7 @@ export const homePhysiotherapyData = {
     ],
     duration: "60 minutes including travel time consideration",
     pricing: "From AED 450 per home session (includes therapist travel time)",
-    booking: "WhatsApp +971 4 XXX XXXX for fastest response",
+    booking: "WhatsApp +971 55 586 7466 for fastest response",
     buttonText: "Book Home Physiotherapy",
     buttonLink: "/home-healthcare-jvc/"
   }
@@ -198,7 +198,7 @@ export const transparentPricingData = {
       ]
     }
   ],
-  footer: "Insurance coverage for post-surgery rehabilitation is typically substantial — most plans cover physiotherapy with documented surgical procedure. Direct-billing with Daman, AXA, Allianz, Oman Insurance, Now Health, Bupa, and MetLife. WhatsApp your insurance card and surgical report to +971 4 XXX XXXX before booking for specific coverage confirmation."
+  footer: "Insurance coverage for post-surgery rehabilitation is typically substantial — most plans cover physiotherapy with documented surgical procedure. Direct-billing with Daman, AXA, Allianz, Oman Insurance, Now Health, Bupa, and MetLife. WhatsApp your insurance card and surgical report to +971 55 586 7466 before booking for specific coverage confirmation."
 };
 
 export const postSurgeryTeamData = {
@@ -238,12 +238,12 @@ export const insuranceCoverageData = {
     { title: "What may have limits:", text: "prolonged rehabilitation beyond expected timelines, multiple modality sessions per visit, certain specialised techniques." },
     { title: "What is rarely covered:", text: "maintenance physiotherapy after the surgical recovery is complete, performance optimisation beyond functional recovery." },
     { title: "How insurance typically works:", text: "most plans require pre-authorisation for extended rehabilitation programmes (typically beyond 10-15 initial sessions). Our team handles this on your behalf. You typically submit your initial sessions while pre-authorisation is being processed (covered by initial entitlement), then pre-authorisation is granted for the extended programme. Annual session limits may apply but are typically generous for documented post-surgical cases." },
-    { title: "For international surgery patients:", text: "insurance coverage in Dubai often extends to rehabilitation regardless of where surgery occurred, provided the surgery itself was medically necessary and properly documented. Bring or send: full surgical report, post-operative imaging, surgeon's rehabilitation prescription, insurance card. WhatsApp these to +971 4 XXX XXXX before booking and we will confirm exact coverage." }
+    { title: "For international surgery patients:", text: "insurance coverage in Dubai often extends to rehabilitation regardless of where surgery occurred, provided the surgery itself was medically necessary and properly documented. Bring or send: full surgical report, post-operative imaging, surgeon's rehabilitation prescription, insurance card. WhatsApp these to +971 55 586 7466 before booking and we will confirm exact coverage." }
   ],
   sidebar: {
     label: "OUR DIRECT-BILLING INSURERS",
     insurers: ["Daman", "AXA", "Allianz", "Oman Insurance", "Now Health", "Bupa", "MetLife"],
-    text: "WhatsApp your insurance card and surgical report to +971 4 XXX XXXX before booking to confirm specific coverage and pre-authorisation needs.",
+    text: "WhatsApp your insurance card and surgical report to +971 55 586 7466 before booking to confirm specific coverage and pre-authorisation needs.",
     buttonText: "WhatsApp Us Your Surgical Report"
   }
 };
@@ -255,8 +255,8 @@ export const whereWeWorkData = {
   details: {
     address: "Jumeirah Village Circle (JVC), Dubai.<br />Walking distance from Circle Mall.",
     hours: "Sunday - Saturday: 9 AM - 9 PM",
-    phone: "+971 4 XXX XXXX",
-    email: "info@vedaracare.ae"
+    phone: "+971 55 586 7466",
+    email: "booking@vedaracare.ae"
   },
   footer: "Our JVC clinic has dedicated rehabilitation rooms with modern equipment, full strength and conditioning gym, specialised modalities including shockwave therapy, and accessibility features for post-surgical patients with limited mobility. Free patient parking on-site. Easy access from JVC, JVT, Al Barsha South, and across Dubai.",
   buttons: {
@@ -406,7 +406,7 @@ export const postSurgeryFAQData = {
   faqs: [
     {
       question: "When should I start physiotherapy after surgery?",
-      answer: "Typically within 24–72 hours of discharge for most orthopaedic procedures. Early initiation produces meaningfully better outcomes than waiting. Your operating surgeon's specific protocol determines the exact timing — some procedures have early restrictions, others encourage immediate early-phase work. WhatsApp your surgical report to +971 4 XXX XXXX and we will confirm the appropriate timing for your specific procedure."
+      answer: "Typically within 24–72 hours of discharge for most orthopaedic procedures. Early initiation produces meaningfully better outcomes than waiting. Your operating surgeon's specific protocol determines the exact timing — some procedures have early restrictions, others encourage immediate early-phase work. WhatsApp your surgical report to +971 55 586 7466 and we will confirm the appropriate timing for your specific procedure."
     },
     {
   question: "Can you coordinate with my surgeon who operated overseas?",
@@ -438,7 +438,7 @@ export const postSurgeryFAQData = {
 },
 {
   question: "How does insurance typically cover post-surgical physiotherapy?",
-  answer: "Generally well — better than most physiotherapy categories. Pre-authorisation is often required for programmes beyond 10-15 initial sessions. Our team handles pre-authorisation on your behalf. Direct-billing with seven major insurers. Bring your surgical report and insurance card to your initial consultation; WhatsApp the same to +971 4 XXX XXXX before booking to confirm exact coverage."
+  answer: "Generally well — better than most physiotherapy categories. Pre-authorisation is often required for programmes beyond 10-15 initial sessions. Our team handles pre-authorisation on your behalf. Direct-billing with seven major insurers. Bring your surgical report and insurance card to your initial consultation; WhatsApp the same to +971 55 586 7466 before booking to confirm exact coverage."
 },
 {
   question: "Can elderly patients have safe post-surgical rehabilitation at home?",
@@ -482,7 +482,7 @@ export const postSurgeryFAQData = {
 },
 {
   question: "How do I book a post-surgery consultation?",
-  answer: "Three ways: (1) WhatsApp +971 4 XXX XXXX — fastest response, ideal for sending surgical reports, post-operative imaging, and surgeon contact details. (2) Call +971 4 XXX XXXX — direct booking, available 9 AM to 9 PM seven days a week. (3) Book online through our website. For your first appointment, please bring or send: complete surgical report, post-operative imaging (X-rays, MRI), any rehabilitation prescription from your surgeon, your surgeon's contact details if international, current medication list, and insurance card."
+  answer: "Three ways: (1) WhatsApp +971 55 586 7466 — fastest response, ideal for sending surgical reports, post-operative imaging, and surgeon contact details. (2) Call +971 55 586 7466 — direct booking, available 9 AM to 9 PM seven days a week. (3) Book online through our website. For your first appointment, please bring or send: complete surgical report, post-operative imaging (X-rays, MRI), any rehabilitation prescription from your surgeon, your surgeon's contact details if international, current medication list, and insurance card."
 }
   ]
 };

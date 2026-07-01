@@ -45,7 +45,7 @@ const PediatricDubai = () => {
       "url": "https://vedaracare.ae/physiotherapy/pediatric-dubai/",
       "parentOrganization": {"@id": "https://vedaracare.ae/#organization"},
       "description": "DHA-licensed paediatric physiotherapy at Vedara Care Polyclinic, Jumeirah Village Circle, Dubai. Specialised treatment for infants, preschool, school-age, and adolescent children. Developmental concerns, scoliosis, cerebral palsy, sports injuries, torticollis, plagiocephaly, and more. Coordination with paediatricians and schools.",
-      "telephone": "+971 4 423 4567",
+      "telephone": "+971 55 586 7466",
       "priceRange": "AED 350 - AED 12,000",
       "address": {
         "@type": "PostalAddress",

@@ -46,7 +46,7 @@ const PhysiotherapyJvc = () => {
       "url": "https://vedaracare.ae/physiotherapy-jvc/",
       "parentOrganization": {"@id": "https://vedaracare.ae/#organization"},
       "description": "DHA-licensed physiotherapy department at Vedara Care Polyclinic, Jumeirah Village Circle, Dubai. DPT-qualified physiotherapists providing musculoskeletal, sports, post-surgical, neurological, women's health, paediatric, and cardiopulmonary physiotherapy.",
-      "telephone": "[Phone number]",
+      "telephone": "+971 55 586 7466",
       "priceRange": "AED 250 - AED 8,000",
       "address": {
         "@type": "PostalAddress",

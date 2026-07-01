@@ -457,30 +457,8 @@ answer:"We understand that home physiotherapy patients (particularly elderly, po
 },
 {
   question: "How do I book home physiotherapy?",
-  answer:"Three ways: (1) WhatsApp +971 4 300 0000 — fastest response, ideal for sending medical records, hospital discharge summaries, or insurance card details. (2) Call +971 4 300 0001 — direct booking, available 9 AM to 9 PM seven days a week. (3) Book online through our website. For your first appointment, please provide: your full address, brief description of your condition, any recent medical reports or hospital discharge summaries, current medication list, insurance card details if applicable, and preferred appointment times."}
-
-
-
-  
-  
-  
-  
-  
-  
-  
-  
-  
-  
-  
-  
-  
-  
-  
-  
-  
-  
-  
-  
+  answer:"Three ways: (1) WhatsApp +971 4 300 0000 — fastest response, ideal for sending medical records, hospital discharge summaries, or insurance card details. (2) Call +971 4 300 0001 — direct booking, available 9 AM to 9 PM seven days a week. (3) Book online through our website. For your first appointment, please provide: your full address, brief description of your condition, any recent medical reports or hospital discharge summaries, current medication list, insurance card details if applicable, and preferred appointment times."
+}
     ]
 };
 
@@ -549,7 +527,6 @@ export const homePhysioFinalCTA = {
     
   ]
 };
-
 
 export const homePhysioTeam = {
   label: "OUR TEAM",

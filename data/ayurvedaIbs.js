@@ -313,9 +313,9 @@ export const ayurvedaIbsTreatmentLocation = {
   label: "VISIT US",
   title: "Where IBS treatment happens at Vedara Care.",
   address: "[Full Address], Jumeirah Village Circle (JVC)<br />Dubai, United Arab Emirates",
-  phone: "+971 XX XXX XXXX",
-  whatsapp: "+971 XX XXX XXXX",
-  email: "info@vedaracare.ae",
+  phone: "+971 55 586 7466",
+  whatsapp: "+971 55 586 7466",
+  email: "booking@vedaracare.ae",
   hours: {
     monday: "9:00 AM - 8:00 PM",
     friday: "2:00 PM - 8:00 PM",
@@ -342,8 +342,8 @@ export const ayurvedaIbsTreatmentLocationCustom = {
     { label: 'Friday', time: '2:00 PM - 8:00 PM' },
     { label: 'Saturday', time: '9:00 AM - 6:00 PM' }
   ],
-  contactPhone: '+971 XX XXX XXXX',
-  contactEmail: 'info@vedaracare.ae',
+  contactPhone: '+971 55 586 7466',
+  contactEmail: 'booking@vedaracare.ae',
   description: 'Our JVC clinic schedules extended consultations for IBS patients — typically 60 minutes for initial, 30 minutes for follow-ups. We allow time to discuss symptoms patients have often stopped mentioning to other clinicians. Walking distance from Circle Mall, easy access from JVC Districts 10, 11, 12, 13, JVT, and Al Barsha South. Female doctors available on request.',
   buttonText: 'Book an IBS Consultation',
   buttonHref: '/book',

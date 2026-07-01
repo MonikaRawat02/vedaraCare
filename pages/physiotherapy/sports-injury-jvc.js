@@ -61,7 +61,7 @@ const SportsInjuryJvc = () => {
       "url": "https://vedaracare.ae/physiotherapy/sports-injury-jvc/",
       "parentOrganization": {"@id": "https://vedaracare.ae/#organization"},
       "description": "DHA-licensed sports injury physiotherapy at Vedara Care Polyclinic, Jumeirah Village Circle, Dubai. DPT-qualified sports physiotherapists treating padel injuries, running injuries, ACL rehabilitation, gym training injuries, and full sports medicine rehabilitation with evidence-based return-to-sport protocols.",
-      "telephone": "+971 4 123 4567",
+      "telephone": "+971 55 586 7466",
       "priceRange": "AED 300 - AED 12,000",
       "address": {
         "@type": "PostalAddress",

@@ -45,7 +45,7 @@ const ShoulderPainPhysiotherapyDubai = () => {
       "url": "https://vedaracare.ae/conditions/shoulder-pain-physiotherapy-dubai/",
       "parentOrganization": {"@id": "https://vedaracare.ae/#organization"},
       "description": "Comprehensive shoulder pain physiotherapy at Vedara Care Polyclinic, Jumeirah Village Circle, Dubai. DPT-qualified specialists treating rotator cuff problems, shoulder impingement, AC joint pain, biceps tendinopathy, shoulder instability, bursitis, calcific tendinopathy, post-surgical recovery, and frozen shoulder. Most shoulder pain responds to evidence-based physiotherapy without surgery.",
-      "telephone": "[Phone number]",
+      "telephone": "+971 55 586 7466",
       "priceRange": "AED 300 - AED 25,000",
       "address": {
         "@type": "PostalAddress",

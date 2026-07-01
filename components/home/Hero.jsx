@@ -69,7 +69,7 @@ const Hero = ({
                 <Calendar size={18} />
                 {primaryCTA}
               </Link>
-              <Link href="https://wa.me/971XXXXXXXX" className="px-8 py-3 bg-white/20 backdrop-blur-sm text-white border border-white/30 rounded-lg font-bold text-sm hover:bg-white/30 transition-all flex items-center gap-2">
+              <Link href="https://wa.me/971555867466" className="px-8 py-3 bg-white/20 backdrop-blur-sm text-white border border-white/30 rounded-lg font-bold text-sm hover:bg-white/30 transition-all flex items-center gap-2">
                 <MessageCircle size={18} />
                 {secondaryCTA}
               </Link>

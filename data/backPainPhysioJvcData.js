@@ -319,8 +319,8 @@ export const backPainPhysioLocation = {
   label: "VISIT US",
   title: "Where back pain physiotherapy happens at Vedara Care JVC.",
   address: "Vedara Care Polyclinic<br/>Building 23, District 12<br/>Jumeirah Village Circle, Dubai<br/>United Arab Emirates",
-  phone: "+971 4 567 8900",
-  email: "info@vedaracare.ae",
+  phone: "+971 55 586 7466",
+  email: "booking@vedaracare.ae",
   hours: {
     monday: "9:00 AM - 9:00 PM",
     saturday: "9:00 AM - 8:00 PM",
@@ -347,7 +347,7 @@ export const backPainPhysioCTA = {
   button1Text: "Book Back Pain Assessment",
   button1Href: "/book",
   button2Text: "WhatsApp Us",
-  button2Href: "https://wa.me/971501234567",
+  button2Href: "https://wa.me/971555867466",
   footer: "Initial assessment from AED 350 · Walking distance from Circle Mall, JVC · Evidence-based DPT-qualified physiotherapists · Insurance direct-billing · Same-day appointments for severe acute pain"
 };
 

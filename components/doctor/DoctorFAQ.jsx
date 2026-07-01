@@ -42,7 +42,7 @@ const DoctorFAQ = ({ doctor }) => {
     },
     {
       question: 'How do I book an appointment with Dr. Nair specifically?',
-      answer: 'Three ways: tap Book a Consultation anywhere on this page for live calendar availability, WhatsApp us mentioning Dr. Nair by name for the fastest response, or call us at +971 4 400 0000. Same-day slots are usually available with 2-hour notice via WhatsApp.'
+      answer: 'Three ways: tap Book a Consultation anywhere on this page for live calendar availability, WhatsApp us mentioning Dr. Nair by name for the fastest response, or call us at +971 55 586 7466. Same-day slots are usually available with 2-hour notice via WhatsApp.'
     }
   ];
 

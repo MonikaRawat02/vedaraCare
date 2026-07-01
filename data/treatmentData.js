@@ -110,7 +110,7 @@ export const panchakarmaJVCFaqs = {
     },
     {
       question: "How do I book Panchakarma at your JVC clinic?",
-      answer: "Booking always begins with a consultation, not a direct package purchase. Tap \"Book a Panchakarma Consultation\" anywhere on this page for live calendar availability, WhatsApp us at +971 XX XXX XXXX for the fastest response (typically under 15 minutes during clinic hours), or call us at +971 XX XXX XXXX. Walk-in consultation slots are sometimes available with prior WhatsApp coordination."
+      answer: "Booking always begins with a consultation, not a direct package purchase. Tap \"Book a Panchakarma Consultation\" anywhere on this page for live calendar availability, WhatsApp us at +971 55 586 7466 for the fastest response (typically under 15 minutes during clinic hours), or call us at +971 55 586 7466. Walk-in consultation slots are sometimes available with prior WhatsApp coordination."
     }
   ]
 };
@@ -120,8 +120,8 @@ export const panchakarmaJVCLocation = {
   label: "VISIT US",
   title: "Our Panchakarma clinic in Jumeirah Village Circle.",
   address: "Building 123, Street 45A<br/>Jumeirah Village Circle (JVC)<br/>Dubai, United Arab Emirates",
-  phone: "+971 XX XXX XXXX",
-  email: "info@vedaracare.ae",
+  phone: "+971 55 586 7466",
+  email: "booking@vedaracare.ae",
   hours: "Monday to Saturday: 9:00 AM to 9:00 PM<br/>Sunday: 10:00 AM to 7:00 PM",
   landmarks: [
     "Next to Circle Mall (walking distance)",
@@ -618,8 +618,8 @@ export const kativastiFinalCTA = {
 export const kativastiLocation = {
   name: "Kativasti at Vedara Care",
   address: "Building 7, Street 2, Jumeirah Village Circle, Dubai, UAE",
-  phone: "+971 4 400 0000",
-  whatsapp: "+971 50 000 0000",
+  phone: "+971 55 586 7466",
+  whatsapp: "+971 55 586 7466",
   hours: "Mon-Tue, Thu 10 AM-7 PM · Fri 10 AM-1 PM, 4-8 PM · Sat 10 AM-6 PM · Sun 12-5 PM",
   landmarks: [
     "Next to Circle Mall (2 min walk)",
@@ -634,8 +634,8 @@ export const kativastiTreatmentLocation = {
   label: "VISIT US",
   title: "Where Kativasti happens at Vedara Care.",
   address: "Vedara Care Polyclinic<br/>District 13, Jumeirah Village Circle<br/>Dubai, United Arab Emirates",
-  phone: "+971 4 XXX XXXX",
-  email: "info@vedaracare.ae",
+  phone: "+971 55 586 7466",
+  email: "booking@vedaracare.ae",
   hours: "Saturday - Thursday: 9:00 AM - 9:00 PM<br/>Friday: 2:00 PM - 9:00 PM",
   landmarks: [
     "Circle Mall (2 min walk)",

@@ -342,6 +342,7 @@ const WorkupSection = ({
 // ============================================
 const TreatmentTimelineSection = ({
   bgColor,
+  cardBg='bg-white',
   label,
   title,
   intro,
@@ -367,7 +368,7 @@ const TreatmentTimelineSection = ({
 
         <div className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-4 gap-6 mb-12">
           {phases.map((phase, index) => (
-            <div key={index} className="relative bg-white rounded-xl p-6 overflow-hidden">
+            <div key={index} className={`relative ${cardBg} rounded-xl p-6 overflow-hidden`}>
               <div className="absolute top-0 left-0 right-0 h-1" style={{ 
                 background: 'linear-gradient(90deg, #B8965A 0%, #C9A84C 50%, #B8965A 100%)' 
               }}></div>

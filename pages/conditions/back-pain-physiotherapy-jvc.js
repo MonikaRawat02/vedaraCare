@@ -67,7 +67,7 @@ const BackPainPhysioJvc = () => {
               "url": "https://vedaracare.ae/conditions/back-pain-physiotherapy-jvc/",
               "parentOrganization": {"@id": "https://vedaracare.ae/#organization"},
               "description": "Evidence-based physiotherapy for back pain at Vedara Care Polyclinic, Jumeirah Village Circle, Dubai. DPT-qualified physiotherapists treating acute back pain, chronic back pain, sciatica, disc-related conditions, mechanical postural pain. Manual therapy, McKenzie method, dry needling, modern modalities. Walking distance from Circle Mall.",
-              "telephone": "[Phone number]",
+              "telephone": "+971 55 586 7466",
               "priceRange": "AED 300 - AED 12,000",
               "address": {
                 "@type": "PostalAddress",

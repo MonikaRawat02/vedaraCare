@@ -424,8 +424,8 @@ export const neckPainLocation = {
   label: "VISIT US",
   title: "Where neck pain physiotherapy happens at Vedara Care JVC.",
   address: "Vedara Care Polyclinic<br/>Building 23, District 12<br/>Jumeirah Village Circle (JVC), Dubai, UAE",
-  phone: "+971 4 567 8900",
-  whatsapp: "+971 50 123 4567",
+  phone: "+971 55 586 7466",
+  whatsapp: "+971 55 586 7466",
   hours: {
     monday: "9:00 AM – 9:00 PM",
     tuesday: "9:00 AM – 9:00 PM",
@@ -459,7 +459,7 @@ export const neckPainCTA = {
   button1Text: "Book Neck Pain Assessment",
   button1Href: "/book",
   button2Text: "WhatsApp Us",
-  button2Href: "https://wa.me/971501234567",
+  button2Href: "https://wa.me/971555867466",
   bullets: [
     "Initial assessment from AED 350",
     " JVC · DPT-qualified physiotherapists",
