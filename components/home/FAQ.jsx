@@ -51,6 +51,9 @@ const FAQ = ({
   description = "Short, honest answers from our clinical team. Cannot find what you are looking for? WhatsApp us, usually answered in under 15 minutes.",
   faqs = [],
   buttonText = "Ask a Question",
+  buttonHref = "#",
+  secondaryCtaText = "",
+  secondaryCtaHref = "#",
   sidebarLinks = []
 }) => {
   const [openIndex, setOpenIndex] = useState(null);
@@ -75,15 +78,27 @@ const FAQ = ({
               dangerouslySetInnerHTML={{ __html: description }}
             />
 
-            <button className="inline-flex items-center gap-2 px-7 py-3.5 bg-[#4A7C59] text-white rounded-lg hover:bg-[#3d664a] transition-colors font-sans font-semibold text-[16px]">
+            <a href={buttonHref} target="_blank" rel="noopener noreferrer" className="inline-flex items-center gap-2 px-7 py-3.5 bg-[#4A7C59] text-white rounded-lg hover:bg-[#3d664a] transition-colors font-sans font-semibold text-[16px]">
               <MessageCircle size={18} />
               {buttonText}
-            </button>
+            </a>
+
+            {secondaryCtaText && secondaryCtaHref && (
+              <a href={secondaryCtaHref} className="block text-[14px] font-sans text-[#C4A962] hover:text-[#b89a56] hover:underline">
+                {secondaryCtaText}
+              </a>
+            )}
 
             {sidebarLinks.length > 0 && (
               <div className="space-y-2 pt-2">
                 {sidebarLinks.map((link, idx) => (
-                  <a key={idx} href={link.href} className="block text-[14px] font-sans text-[#C4A962] hover:text-[#b89a56] hover:underline">
+                  <a 
+                    key={idx} 
+                    href={link.href} 
+                    target={link.href.startsWith('http') ? '_blank' : '_self'}
+                    rel={link.href.startsWith('http') ? 'noopener noreferrer' : ''}
+                    className="block text-[14px] font-sans text-[#C4A962] hover:text-[#b89a56] hover:underline"
+                  >
                     {link.text} →
                   </a>
                 ))}

@@ -73,13 +73,13 @@ export const dermatologyTypes = {
       number: "01",
       title: 'Acne — Adolescent and Adult',
       description: 'The most common dermatology consultation. We treat adolescent acne, adult-onset acne (increasingly common, particularly in women), hormonal acne, cystic acne, and acne scarring. Treatment ranges from topical and oral medications through to specialised procedures (chemical peels, light treatments, scar revision). Multi-modal approach typically produces best outcomes. Long-term management plan tailored to your specific acne pattern and triggers.',
-      linkText: 'Explore acne treatment page',
       linkHref: '/conditions/acne-treatment-jvc/'
     },
     {
       number: "02",
       title: 'Melasma and Hyperpigmentation',
-      description: 'Particularly common in Dubai due to sun exposure and ethnic skin patterns. Melasma (chronic facial pigmentation often worsened by hormonal factors and sun exposure), post-inflammatory hyperpigmentation, age spots, and other pigmentation concerns. Comprehensive treatment: topical regimens, chemical peels calibrated to skin type, specific laser treatments where appropriate, sun protection strategies, lifestyle modifications.'
+      description: 'Particularly common in Dubai due to sun exposure and ethnic skin patterns. Melasma (chronic facial pigmentation often worsened by hormonal factors and sun exposure), post-inflammatory hyperpigmentation, age spots, and other pigmentation concerns. Comprehensive treatment: topical regimens, chemical peels calibrated to skin type, specific laser treatments where appropriate, sun protection strategies, lifestyle modifications.',
+      linkHref: '/conditions/melasma-treatment-dubai/'
     },
     {
       number: "03",

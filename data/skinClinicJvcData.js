@@ -70,7 +70,7 @@ export const skinConcernSelector = {
         "· What about underarm darkening?"
       ],
       linkText: "Learn more about Pigmentation, Dark Spots & Melasma",
-      linkHref: "/dermatology-clinic-jvc/#medical-dermatology"
+      linkHref: "/conditions/pigmentation-treatment-dubai/"
     },
     {
       number: "03",

@@ -397,7 +397,16 @@ const PigmentationTreatmentDubai = () => {
       />
 
       <FAQ
-        {...pigmentationFaqs}
+        bgColor={pigmentationFaqs.bgColor}
+        label={pigmentationFaqs.label}
+        title={pigmentationFaqs.title}
+        description={pigmentationFaqs.description}
+        faqs={pigmentationFaqs.faqs}
+        buttonText={pigmentationFaqs.primaryCtaText}
+        buttonHref={pigmentationFaqs.primaryCtaHref}
+        secondaryLinkText={pigmentationFaqs.secondaryCtaText}
+        secondaryLinkHref={pigmentationFaqs.secondaryCtaHref}
+        sidebarLinks={pigmentationFaqs.sidebarLinks}
       />
 
       <TreatmentLocation

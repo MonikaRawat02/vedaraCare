@@ -43,7 +43,7 @@ export const pigmentationHowItWorks = {
     }
   ],
   linkText: "Skip the guidance and book a consultation directly",
-  linkHref: "/book"
+  linkHref: "https://wa.me/971555867466?text=Hi%2C%20I%27m%20interested%20in%20booking%20a%20pigmentation%20consultation%20at%20Vedara%20Care%20Polyclinic."
 };
 
 export const pigmentationWhenToSeeSpecialist = {
@@ -115,7 +115,7 @@ export const pigmentationWhenToSeeSpecialist = {
       }
     ],
     buttonText: "Book Consultation",
-    buttonHref: "/book"
+    buttonHref: "https://wa.me/971555867466?text=Hi%2C%20I%27m%20interested%20in%20booking%20a%20pigmentation%20consultation%20at%20Vedara%20Care%20Polyclinic."
   }
 };
 
@@ -125,7 +125,7 @@ export const pigmentationCTA = {
   title: "Whether you know your pigmentation type or need expert assessment — start where you are.",
   description: "If reading this page has helped you identify your pigmentation type and you want detailed information, follow the routing to the specific page for your situation. If you'd prefer expert guidance from the start, book a consultation directly — our consultant dermatologists provide comprehensive assessment regardless of how clearly you can articulate your concerns. Accurate diagnosis is the foundation of effective pigmentation treatment.",
   button1Text: "Book Pigmentation Consultation",
-  button1Href: "/book",
+  button1Href: "https://wa.me/971555867466?text=Hi%2C%20I%27m%20interested%20in%20booking%20a%20pigmentation%20consultation%20at%20Vedara%20Care%20Polyclinic.",
   button2Text: "Read Detailed Dermatology Information",
   button2Href: "/dermatology-clinic-jvc/",
   footer: "Initial consultation from AED 350 · Walking distance from Circle Mall, JVC · DHA-licensed consultant dermatologists · All skin types · Multiple languages · Female and male dermatologists"
@@ -219,8 +219,8 @@ export const pigmentationConcernSelector = {
       description: "Pigmentation in non-facial areas — underarms, intimate areas, neck, knees, elbows, body folds. Multiple causes including friction, hormonal factors, deodorants, hair removal methods. Treatment approach differs from facial pigmentation. Discreet consultation always available.",
       howToRecognise: "Dark areas on body, often in folds or friction areas",
       commonIn: "Many demographics, particularly women with preferences for even body tone",
-      linkText: "Book a discreet consultation",
-      linkHref: "/book"
+      linkText: "Book consultation for body pigmentation →",
+      linkHref: "https://wa.me/971555867466?text=Hi%2C%20I%27m%20interested%20in%20a%20discreet%20consultation%20for%20body%20pigmentation%20at%20Vedara%20Care%20Polyclinic."
     },
     {
       number: "06",
@@ -230,8 +230,8 @@ export const pigmentationConcernSelector = {
       description: "Opposite of hyperpigmentation — loss of skin pigment producing white or lighter patches. Distinct condition with a different treatment approach. Includes vitiligo (autoimmune), post-inflammatory hypopigmentation, and other causes. Requires specialist assessment.",
       howToRecognise: "White or lighter patches rather than dark patches",
       commonIn: "Various demographics; vitiligo affects approximately 1% of population",
-      linkText: "Book specialist assessment",
-      linkHref: "/book"
+      linkText: "Book consultation for vitiligo →",
+      linkHref: "https://wa.me/971555867466?text=Hi%2C%20I%27m%20interested%20in%20a%20consultation%20for%20vitiligo%20or%20hypopigmentation%20at%20Vedara%20Care%20Polyclinic."
     },
     {
       number: "07",
@@ -241,8 +241,8 @@ export const pigmentationConcernSelector = {
       description: "Pigmentation caused by medications (some antibiotics, antimalarials, hormones, chemotherapy) or following procedures (laser treatments, chemical peels, injectables). Requires identification of cause and specific management. Sometimes resolves with cause removal; sometimes requires treatment.",
       howToRecognise: "Pigmentation onset associated with specific medications or procedures",
       commonIn: "Patients on specific medications; patients with adverse procedural outcomes",
-      linkText: "Book specific assessment",
-      linkHref: "/book"
+      linkText: "Book consultation for assessment →",
+      linkHref: "https://wa.me/971555867466?text=Hi%2C%20I%27m%20interested%20in%20a%20consultation%20for%20drug-induced%20or%20post-procedural%20pigmentation%20at%20Vedara%20Care%20Polyclinic."
     },
     {
       number: "08",
@@ -252,8 +252,8 @@ export const pigmentationConcernSelector = {
       description: "Multiple pigmentation types in the same patient, or pigmentation that does not clearly fit other categories, or pigmentation requiring expert assessment to identify the specific cause. Comprehensive dermatology consultation provides accurate diagnosis and treatment planning.",
       howToRecognise: "Multiple pigmentation patterns or uncertainty about specific type",
       commonIn: "Patients with complex pigmentation history",
-      linkText: "Book comprehensive assessment",
-      linkHref: "/book"
+      linkText: "Book consultation for assessment →",
+      linkHref: "https://wa.me/971555867466?text=Hi%2C%20I%27m%20interested%20in%20a%20comprehensive%20consultation%20for%20multiple%20or%20unclear%20pigmentation%20concerns%20at%20Vedara%20Care%20Polyclinic."
     }
   ]
 };
@@ -269,7 +269,7 @@ export const pigmentationWhatToExpect = {
   ],
   primaryButton: {
     text: "Book Consultation",
-    href: "/book"
+    href: "https://wa.me/971555867466?text=Hi%2C%20I%27m%20interested%20in%20booking%20a%20pigmentation%20consultation%20at%20Vedara%20Care%20Polyclinic."
   },
   secondaryButton: {
     text: "Read full consultation details on our dermatology page",
@@ -315,7 +315,7 @@ export const pigmentationPricing = {
     { name: "Vitiligo treatment programmes", price: "From AED 1,000" }
   ],
   linkText: "Complete pricing for melasma treatment on our melasma page →",
-  linkHref: "/conditions/melasma-treatment-dubai/",
+  linkHref: "/conditions/melasma-treatment-dubai/#pricing",
   insuranceText: "Most cosmetic pigmentation treatment is not covered by insurance. Medical aspects of pigmentation evaluation may be covered with appropriate justification. WhatsApp us for specific coverage questions."
 };
 
@@ -388,7 +388,7 @@ export const pigmentationFaqs = {
   ],
   buttonText: "Ask Our Team on WhatsApp",
   primaryCtaText: "Ask Our Team on WhatsApp",
-  primaryCtaHref: "https://wa.me/+971555867466",
+  primaryCtaHref: "https://wa.me/971555867466?text=Hi%2C%20I%27d%20like%20to%20ask%20a%20question%20about%20pigmentation%20treatment%20at%20Vedara%20Care%20Polyclinic.",
   secondaryCtaText: "Melasma treatment details →",
   secondaryCtaHref: "/conditions/melasma-treatment-dubai/",
   sidebarLinks: [

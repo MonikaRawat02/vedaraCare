@@ -1,4 +1,5 @@
 import React from 'react';
+import Link from 'next/link';
 
 const SportsInjuryTypes = ({ label, title, items, footer, variant = 'condition', description = '', bgColor = 'rgb(248, 244, 238)', cardBgColor, lgColumns = 3 }) => {
   return (
@@ -19,14 +20,8 @@ const SportsInjuryTypes = ({ label, title, items, footer, variant = 'condition',
           {items.map((item, index) => {
             // Use cardBgColor if provided, otherwise use the default logic
             const cardBg = cardBgColor || (bgColor === 'rgb(255, 255, 255)' ? 'rgb(248, 244, 238)' : 'rgb(255, 255, 255)');
-            
-            return (
-            variant === 'condition' ? (
-              <div 
-                key={index}
-                className="rounded-lg p-6 transition-all hover:shadow-md"
-                style={{ background: cardBg, borderLeft: '3px solid #C9A961' }}
-              >
+            const CardContent = () => (
+              <>
                 <div className="flex items-baseline gap-3 mb-3">
                   {item.number && (
                     <span className="text-2xl font-medium font-serif text-[#C9A961]">
@@ -38,7 +33,6 @@ const SportsInjuryTypes = ({ label, title, items, footer, variant = 'condition',
                   </h4>
                 </div>
                 <p className="text-sm leading-relaxed mb-4 text-[#6B6B6B] font-sans" dangerouslySetInnerHTML={{ __html: item.description }} />
-
                 {item.typicalPatient && (
                   <p className="text-xs text-[#C9A961] font-sans">
                     <span className="font-semibold uppercase tracking-wide text-[10px]">Typical patient: </span>
@@ -53,22 +47,17 @@ const SportsInjuryTypes = ({ label, title, items, footer, variant = 'condition',
                 )}
 
                 {item.linkText && (
-                  <a 
-                    href={item.linkHref || '#'}
+                  <span 
                     className="inline-block text-[14px] font-sans mt-3 text-[#C9A961]"
                   >
                     {item.linkText}
-                  </a>
+                  </span>
                 )}
-                           
-                           
- </div>
-            ) : (
-              <div 
-                key={index}
-                className="rounded-lg p-7 transition-all hover:shadow-md"
-                style={{ background: cardBg, borderTop: '4px solid #C9A961' }}
-              >
+              </>
+            );
+
+            const AestheticCardContent = () => (
+              <>
                 <h4 className="text-lg font-medium mb-4 font-serif text-[#1A1A1A]">
                   {item.title}
                 </h4>
@@ -82,14 +71,83 @@ const SportsInjuryTypes = ({ label, title, items, footer, variant = 'condition',
                 )}
 
                 {item.linkText && (
-                  <a 
-                    href={item.linkHref || '#'}
+                  <span 
                     className="inline-block text-[14px] font-sans mt-3 text-[#C9A961]"
                   >
                     {item.linkText}
-                  </a>
+                  </span>
                 )}
-              </div>
+              </>
+            );
+
+            const isExternalLink = item.linkHref && item.linkHref.startsWith('http');
+            const hasLink = !!item.linkHref;
+            
+            return (
+            variant === 'condition' ? (
+              hasLink ? (
+                isExternalLink ? (
+                  <a 
+                    key={index}
+                    href={item.linkHref}
+                    target="_blank"
+                    rel="noopener noreferrer"
+                    className="rounded-lg p-6 transition-all duration-300 hover:shadow-md hover:scale-[1.02] block no-underline"
+                    style={{ background: cardBg, borderLeft: '3px solid #C9A961' }}
+                  >
+                    <CardContent />
+                  </a>
+                ) : (
+                  <Link 
+                    key={index}
+                    href={item.linkHref}
+                    className="rounded-lg p-6 transition-all duration-300 hover:shadow-md hover:scale-[1.02] block no-underline"
+                    style={{ background: cardBg, borderLeft: '3px solid #C9A961' }}
+                  >
+                    <CardContent />
+                  </Link>
+                )
+              ) : (
+                <div 
+                  key={index}
+                  className="rounded-lg p-6 transition-all hover:shadow-md"
+                  style={{ background: cardBg, borderLeft: '3px solid #C9A961' }}
+                >
+                  <CardContent />
+                </div>
+              )
+            ) : (
+              hasLink ? (
+                isExternalLink ? (
+                  <a 
+                    key={index}
+                    href={item.linkHref}
+                    target="_blank"
+                    rel="noopener noreferrer"
+                    className="rounded-lg p-7 transition-all duration-300 hover:shadow-md hover:scale-[1.02] block no-underline"
+                    style={{ background: cardBg, borderTop: '4px solid #C9A961' }}
+                  >
+                    <AestheticCardContent />
+                  </a>
+                ) : (
+                  <Link 
+                    key={index}
+                    href={item.linkHref}
+                    className="rounded-lg p-7 transition-all duration-300 hover:shadow-md hover:scale-[1.02] block no-underline"
+                    style={{ background: cardBg, borderTop: '4px solid #C9A961' }}
+                  >
+                    <AestheticCardContent />
+                  </Link>
+                )
+              ) : (
+                <div 
+                  key={index}
+                  className="rounded-lg p-7 transition-all hover:shadow-md"
+                  style={{ background: cardBg, borderTop: '4px solid #C9A961' }}
+                >
+                  <AestheticCardContent />
+                </div>
+              )
             )
             );
           })}

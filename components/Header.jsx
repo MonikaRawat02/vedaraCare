@@ -38,6 +38,8 @@ const PHYSIOTHERAPY_CONDITIONS = [
 const DERMATOLOGY_CONDITIONS = [
   { href: '/conditions/acne-treatment-jvc', label: 'Acne Treatment' },
   { href: '/conditions/hair-loss-treatment-jvc', label: 'Hair Loss Treatment' },
+  { href: '/conditions/pigmentation-treatment-dubai', label: 'Pigmentation Treatment' },
+  { href: '/conditions/melasma-treatment-dubai', label: 'Melasma Treatment' },
 ];
 
 const AYURVEDA_CONDITIONS = [
@@ -92,7 +94,7 @@ const Header = () => {
     document.addEventListener('mousedown', handleClickOutside);
     return () => document.removeEventListener('mousedown', handleClickOutside);
   }, []);
-
+  
   return (
     <header className="w-full sticky top-0 z-50">
       {/* Top Bar */}

@@ -146,7 +146,7 @@ export const melasmaTreatmentTypes = {
       typicalSigns: ["Darker skin (Fitzpatrick IV–VI) with melasma; substantial Dubai demographic"]
     }
   ],
-  footer: "Your specific melasma may combine multiple triggers and depths — comprehensive assessment identifies your specific situation →"
+  footer: 'Your specific melasma may combine multiple triggers and depths — <a href="/book" style="color: #C9A84C; text-decoration: none;">comprehensive assessment identifies your specific situation →</a>'
 };
 
 export const melasmaTreatmentReviews = {
@@ -347,7 +347,7 @@ export const melasmaTreatmentRelatedPages = {
     {
       title: "Best Dermatologist Evidence →",
       description: "Credibility evidence for patients evaluating dermatology providers in JVC and Dubai — accreditations, qualifications, patient outcomes.",
-      href: "/best-dermatologist-dubai/"
+      href: "/best-dermatologist-jvc-dubai/"
     }
   ]
 };
@@ -384,7 +384,7 @@ export const melasmaTreatmentFaqs = {
   title: "What patients ask about melasma treatment.",
   description: "For broader dermatology questions, see our dermatology clinic page",
   primaryCtaText: "Ask Our Team on WhatsApp",
-  primaryCtaHref: "https://wa.me/+971555867466",
+  primaryCtaHref: "https://wa.me/971555867466?text=Hi%2C%20I%27d%20like%20to%20ask%20a%20question%20about%20melasma%20treatment%20at%20Vedara%20Care%20Polyclinic.",
   secondaryCtaText: "Full dermatology clinic details →",
   secondaryCtaHref: "/dermatology-clinic-jvc/",
   faqs: [
