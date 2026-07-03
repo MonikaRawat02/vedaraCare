@@ -18,8 +18,8 @@ const Location = ({
   },
   contact = {
     label: "Contact",
-    phone: "+971 4 XXX XXXX",
-    whatsapp: "+971 5X XXX XXXX",
+    phone: "+971 55 586 7466",
+    whatsapp: "+971 55 586 7466",
     email: "booking@vedaracare.ae"
   },
   hours = {
@@ -100,10 +100,26 @@ const Location = ({
                 <div className="space-y-1">
                   <h4 className="text-[16px] font-sans font-bold text-[#1A1A1A]">{contact.label}</h4>
                   <p className="text-[15px] text-[#6B6B6B] font-sans leading-relaxed">
-                    Phone: {contact.phone}<br />
-                    WhatsApp: {contact.whatsapp}<br />
-                    Email: {contact.email}
-                  </p>
+  Phone:{' '}
+  <a href={`tel:${contact.phone.replace(/\s+/g, '')}`} className="hover:text-[#184C3A]">
+    {contact.phone}
+  </a>
+  <br />
+
+WhatsApp: <a
+  href={`https://wa.me/${contact.whatsapp.replace(/\D/g, '')}?text=${encodeURIComponent("Hello! I'm interested in your treatments. I'd like to book a consultation.")}`}
+  target="_blank"
+  rel="noopener noreferrer"
+  className="hover:text-[#25D366] hover:underline"
+>
+  {contact.whatsapp}
+</a><br />
+
+  Email:{' '}
+  <a href={`mailto:${contact.email}`} className="hover:text-[#184C3A]">
+    {contact.email}
+  </a>
+</p>
                 </div>
               </div>
 

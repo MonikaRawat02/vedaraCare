@@ -460,7 +460,7 @@ export const acneTreatmentFaqs = {
   title: "What patients ask about acne treatment.",
   description: "For broader dermatology questions, see our dermatology clinic page",
   primaryCtaText: "Ask Our Team on WhatsApp",
-  primaryCtaHref: "https://wa.me/971555867466",
+  primaryCtaHref: "https://wa.me/971555867466?text=Hi,%20I%20want%20to%20book%20an%20Acne%20Treatment%20consultation.",
   secondaryCtaText: "Full dermatology clinic details →",
   secondaryCtaHref: "/dermatology-clinic-jvc/",
   faqs: [

@@ -121,7 +121,7 @@ const TreatmentLocation = ({
                 <Phone size={20} className="text-[#C8975F] shrink-0 mt-1" />
                 <div className="text-gray-700">
                   <div className="font-medium mb-0.5">Phone</div>
-                  {phone}
+                  <a href={`tel:${phone}`}>{phone}</a>
                 </div>
               </div>
 

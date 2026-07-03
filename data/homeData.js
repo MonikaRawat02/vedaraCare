@@ -3,6 +3,7 @@ export const homeFaqs = {
   title: "Everything patients ask before their first visit.",
   description: "Short, honest answers from our clinical team. Cannot find what you are looking for? WhatsApp us, usually answered in under 15 minutes.",
   buttonText: "Ask Our Team",
+  
   faqs: [
     {
       question: "Is Vedara Care Polyclinic DHA-licensed?",
@@ -53,6 +54,7 @@ export const homeHero = {
   subtext: "Vedara Care Polyclinic is a DHA-licensed healthcare clinic in JVC Dubai offering Ayurveda, physiotherapy, dermatology, home healthcare, and wellness treatments by experienced doctors and therapists in a modern patient-focused environment.",
   primaryCTA: "Book Appointment",
   secondaryCTA: "WhatsApp Now",
+  
   image: "/images/home.jpg",
   badges: [
     { label: "DHA Licensed", type: "shield" },
@@ -318,7 +320,7 @@ export const homeLocation = {
   contact: {
     label: "Contact",
     phone: "+971 55 586 7466",
-    whatsapp: "+971 5X XXX XXXX",
+    whatsapp: "+971 55 586 7466",
     email: "booking@vedaracare.ae"
   },
   hours: {

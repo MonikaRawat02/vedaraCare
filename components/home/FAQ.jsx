@@ -51,7 +51,7 @@ const FAQ = ({
   description = "Short, honest answers from our clinical team. Cannot find what you are looking for? WhatsApp us, usually answered in under 15 minutes.",
   faqs = [],
   buttonText = "Ask a Question",
-  buttonHref = "#",
+  buttonHref = "https://wa.me/971555867466?text=Hi,%20I%27m%20interested%20in%20your%20treatments%20and%20would%20like%20to%20book%20a%20consultation.",
   secondaryCtaText = "",
   secondaryCtaHref = "#",
   sidebarLinks = []

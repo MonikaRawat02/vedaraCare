@@ -39,11 +39,14 @@ const FinalCTA = ({
             {button1Text}
           </a>
           
-          <a href={button2Href} className="inline-flex items-center justify-center gap-2 px-8 py-6 rounded-md text-[16px] font-medium transition-all border"
-                  style={{ borderColor: button2BorderColor, color: button2TextColor }}>
-            <MessageCircle size={24} strokeWidth={2} />
-            {button2Text}
-          </a>
+         <a
+  href={button2Href}
+  className="inline-flex items-center justify-center gap-2 px-8 py-6 rounded-md text-[16px] font-medium border transition-all duration-300 text-[#25D366] hover:bg-[#25D366] hover:text-white hover:border-[#25D366] hover:shadow-lg"
+  style={{ borderColor: button2BorderColor }}
+>
+  <MessageCircle size={24} strokeWidth={2} />
+  {button2Text}
+</a>
         </div>
 
         {footer && (

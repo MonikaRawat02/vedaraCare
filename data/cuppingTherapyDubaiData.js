@@ -231,7 +231,7 @@ export const cuppingTherapyFinalCTA = {
   button1Text: "Book Cupping Assessment",
   button1Href: "/book",
   button2Text: "WhatsApp Us",
-  button2Href: "https://wa.me/971555867466X",
+  button2Href: "https://wa.me/971555867466",
   footer: "Sessions from AED 250 · Walking distance from Circle Mall, JVC · 400+ cupping treatments delivered · DHA-licensed practitioners · Sterile single-use equipment · Cultural and religious respect"
 };
 
@@ -411,7 +411,7 @@ export const cuppingTherapyHijama = {
       }
     ],
     buttonText: "WhatsApp for Hijama Inquiry",
-    buttonHref: "https://wa.me/971500000000"
+    buttonHref: "https://wa.me/971555867466"
   }
 };
 
