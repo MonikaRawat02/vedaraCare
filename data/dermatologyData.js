@@ -84,7 +84,9 @@ export const dermatologyTypes = {
     {
       number: "03",
       title: 'Eczema and Atopic Dermatitis',
-      description: 'Chronic inflammatory skin condition affecting both children and adults. Comprehensive management including identification of triggers, prescription topical and systemic treatments where indicated, barrier repair strategies, allergy considerations, lifestyle factor management. Particular expertise in childhood eczema where appropriate parental education makes significant difference. Coordination with allergists when relevant.' },
+      description: 'Chronic inflammatory skin condition affecting both children and adults. Comprehensive management including identification of triggers, prescription topical and systemic treatments where indicated, barrier repair strategies, allergy considerations, lifestyle factor management. Particular expertise in childhood eczema where appropriate parental education makes significant difference. Coordination with allergists when relevant.',
+      linkHref: '/conditions/eczema-treatment-dubai/'
+    },
     {
       number: "04",
       title: 'Psoriasis',

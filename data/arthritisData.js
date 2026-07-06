@@ -9,6 +9,8 @@ export const arthritisHero = {
   description: "Authentic Ayurvedic treatment for arthritis in Dubai begins with identifying which type — osteoarthritis, rheumatoid arthritis, gout, ankylosing spondylitis, frozen shoulder, psoriatic arthritis. Each has different Ayurvedic protocols, different realistic outcomes, and different roles for conventional rheumatology. At our Jumeirah Village Circle (JVC) clinic, structured 3 to 9-month programmes combine Panchakarma, localised joint therapies, internal medicines, and integrated physiotherapy — working alongside your rheumatologist or orthopaedic specialist.",
   primaryCTA: "Book an Arthritis Consultation",
   secondaryCTA: "Chat on WhatsApp",
+  primaryCTAHref: "/book",
+  secondaryCTAHref: "https://wa.me/971555867466?text=Hi,%20I'm%20interested%20in%20Arthritis%20treatment.%20Please%20share%20more%20details.",
   trustSignals: [
     "We Work With Your Rheumatologist",
     "450+ Arthritis Patients Treated",
@@ -186,7 +188,9 @@ export const arthritisCTA = {
   title: "Begin with the assessment that treats your specific arthritis.",
   description: "If you have been managing arthritis with general \"anti-inflammatory\" approaches that do not address your specific type, the first useful step is a 60-minute consultation that takes your specific condition seriously. We confirm your arthritis type, examine your specific joints, review your current treatments, and design a 4-9 month programme tailored to whether you have osteoarthritis, rheumatoid arthritis, gout, ankylosing spondylitis, frozen shoulder, or another specific pattern. We coordinate with your rheumatologist or orthopaedic specialist throughout.",
   button1Text: "Book an Arthritis Consultation",
+  button1Href:   "/book",
   button2Text: "Chat on WhatsApp",
+  button2Href:"https://wa.me/971555867466?text=Hello%20Vedara%20Care,%20I%20would%20like%20to%20know%20more%20about%20Arthritis%20treatment.%20Please%20assist%20me.",
   subtext: "Initial consultation from AED 350 · Walking distance from Circle Mall, JVC · Integrated Ayurveda + physiotherapy · Home services available · Insurance direct-billing",
    bgColor: "bg-[#F5F1E8]",
 };

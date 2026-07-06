@@ -1,5 +1,6 @@
 import React from 'react';
 import { MessageCircle, Calendar, Check } from 'lucide-react';
+import Link from "next/link";
 
 const AyurvedaHero = ({
   bgColor = "bg-[#FAF6EF]",
@@ -11,6 +12,8 @@ const AyurvedaHero = ({
   alt = "Ayurvedic Treatment",
   primaryCTA = "",
   secondaryCTA = "",
+  primaryCTAHref = "/book",
+  secondaryCTAHref =  "https://wa.me/971555867466?text=Hello%20Vedara%20Care,%20I%20would%20like%20to%20know%20more%20about%20your%20treatments%20and%20book%20a%20consultation.%20Please%20assist%20me.",
   trustSignals = [],
   floatingCard = {},
   patientsTreated = null
@@ -60,16 +63,21 @@ const AyurvedaHero = ({
               
               {/* Desktop: Buttons + Trust Signals (below desc) */}
               <div className="hidden lg:block space-y-5 sm:space-y-7 mt-5 sm:mt-7">
-                <div className="flex flex-wrap gap-3 pt-2">
-                  <button className="inline-flex items-center gap-2 px-6 sm:px-8 py-3 sm:py-4 bg-[#1F4538] text-white rounded-md hover:bg-[#184C3A] transition-all text-[14px] sm:text-[15px] font-sans font-bold shadow-lg">
-                    {primaryCTA}
-                  </button>
-                  <button className="inline-flex items-center gap-2 px-6 sm:px-8 py-3 sm:py-4 bg-[#4A7C59] text-white rounded-md hover:opacity-95 transition-all text-[14px] sm:text-[15px] font-sans font-bold shadow-lg">
-                    <MessageCircle size={20} className="fill-current" />
-                    {secondaryCTA}
-                  </button>
-                </div>
-
+               <div className="flex flex-wrap gap-3 pt-2">
+                <Link
+                  href={primaryCTAHref}
+                  className="inline-flex items-center gap-2 px-6 sm:px-8 py-3 sm:py-4 bg-[#1F4538] text-white rounded-md hover:bg-[#184C3A] transition-all text-[14px] sm:text-[15px] font-sans font-bold shadow-lg">
+                  {primaryCTA}
+                </Link>
+                <a
+                  href={secondaryCTAHref}
+                  target="_blank"
+                  rel="noopener noreferrer"
+                  className="inline-flex items-center gap-2 px-6 sm:px-8 py-3 sm:py-4 bg-[#4A7C59] text-white rounded-md hover:opacity-95 transition-all text-[14px] sm:text-[15px] font-sans font-bold shadow-lg">
+                  <MessageCircle size={20} className="fill-current" />
+                  {secondaryCTA}
+                </a>
+              </div>
                 <div className="grid grid-cols-1 sm:grid-cols-2 gap-y-3 gap-x-4 sm:gap-x-8 pt-4 sm:pt-6">
                   {trustSignals.map((signal, index) => (
                     <div key={index} className="flex items-center gap-2 text-[13px] font-sans text-[#5a5a5a]">
@@ -116,15 +124,20 @@ const AyurvedaHero = ({
             {/* Mobile & Tablet Only: Buttons + Trust Signals (below image) */}
             <div className="order-3 lg:hidden space-y-5 mt-5">
               <div className="flex flex-wrap gap-3 pt-2">
-                <button className="inline-flex items-center gap-2 px-6 py-3 bg-[#1F4538] text-white rounded-md hover:bg-[#184C3A] transition-all text-[14px] font-sans font-bold shadow-lg">
-                  {primaryCTA}
-                </button>
-                <button className="inline-flex items-center gap-2 px-6 py-3 bg-[#4A7C59] text-white rounded-md hover:opacity-95 transition-all text-[14px] font-sans font-bold shadow-lg">
-                  <MessageCircle size={18} className="fill-current" />
-                  {secondaryCTA}
-                </button>
-              </div>
-
+              <Link
+                href={primaryCTAHref}
+                className="inline-flex items-center gap-2 px-6 py-3 bg-[#1F4538] text-white rounded-md hover:bg-[#184C3A] transition-all text-[14px] font-sans font-bold shadow-lg">
+                {primaryCTA}
+              </Link>
+              <a
+                href={secondaryCTAHref}
+                target="_blank"
+                rel="noopener noreferrer"
+                className="inline-flex items-center gap-2 px-6 py-3 bg-[#4A7C59] text-white rounded-md hover:opacity-95 transition-all text-[14px] font-sans font-bold shadow-lg" >
+                <MessageCircle size={18} className="fill-current" />
+                {secondaryCTA}
+              </a>
+            </div>
               <div className="grid grid-cols-1 sm:grid-cols-2 gap-y-3 gap-x-4 sm:gap-x-8 pt-4">
                 {trustSignals.map((signal, index) => (
                   <div key={index} className="flex items-center gap-2 text-[13px] font-sans text-[#5a5a5a]">

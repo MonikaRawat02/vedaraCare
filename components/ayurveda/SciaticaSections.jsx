@@ -78,8 +78,18 @@ export const SciaticaTypes = ({
         </div>
 
         {footer && (
-          <div className="mt-5 text-center max-w-[900px] mx-auto pt-8 hover:text-[#C9A55A] transition-colors">
+          <div className="mt-5 text-center max-w-[900px] mx-auto pt-8 footer-link-container">
             <p className="text-[#888888] text-sm font-sans leading-relaxed" dangerouslySetInnerHTML={{ __html: footer }} />
+            <style jsx global>{`
+              .footer-link-container a {
+                color: #C9A55A;
+                text-decoration: none;
+                transition: text-decoration 0.2s ease;
+              }
+              .footer-link-container a:hover {
+                text-decoration: underline;
+              }
+            `}</style>
           </div>
         )}
       </div>

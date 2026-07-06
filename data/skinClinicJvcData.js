@@ -109,7 +109,7 @@ export const skinConcernSelector = {
         "· What products are safe for reactive skin?"
       ],
       linkText: "Learn more about Eczema, Sensitive Skin or Allergic Reactions",
-      linkHref: "/ayurveda-clinic-jvc/"
+      linkHref: "/conditions/eczema-treatment-dubai/"
     },
     {
       number: "06",

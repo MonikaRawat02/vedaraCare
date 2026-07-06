@@ -37,6 +37,7 @@ const PHYSIOTHERAPY_CONDITIONS = [
 
 const DERMATOLOGY_CONDITIONS = [
   { href: '/conditions/acne-treatment-jvc', label: 'Acne Treatment' },
+  { href: '/conditions/eczema-treatment-dubai', label: 'Eczema Treatment' },
   { href: '/conditions/hair-loss-treatment-jvc', label: 'Hair Loss Treatment' },
   { href: '/conditions/pigmentation-treatment-dubai', label: 'Pigmentation Treatment' },
   { href: '/conditions/melasma-treatment-dubai', label: 'Melasma Treatment' },

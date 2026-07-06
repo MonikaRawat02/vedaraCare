@@ -121,8 +121,7 @@ const AdminBlogPost = () => {
     if (isDraft) {
       setEditDraftId(id);
       setEditBlogId(null);
-    } else {
-      setEditBlogId(id);
+    } else {setEditBlogId(id);
       setEditDraftId(null);
     }
     setShowEditor(true);
@@ -240,12 +239,12 @@ const AdminBlogPost = () => {
   const draftMonthGroups = groupByMonth(filteredDrafts);
 
   return (
-    <div className="min-h-screen bg-gradient-to-br from-blue-50 via-indigo-50 to-purple-50 text-gray-800 font-sans selection:bg-blue-200">
+    <div className="min-h-screen bg-gradient-to-br from-[#FAF8EF] via-[#F8F9FA] to-white text-gray-800 font-sans selection:bg-[#C9A961]/30">
       {/* Soft Background Effects */}
       <div className="fixed inset-0 overflow-hidden pointer-events-none z-0">
-        <div className="absolute top-[-20%] left-[-10%] w-[500px] h-[500px] bg-blue-200/20 rounded-full blur-3xl animate-pulse" />
-        <div className="absolute top-[40%] right-[-5%] w-[400px] h-[400px] bg-indigo-200/15 rounded-full blur-3xl animate-pulse" style={{ animationDelay: '2s' }} />
-        <div className="absolute bottom-[-10%] left-[30%] w-[600px] h-[600px] bg-purple-200/10 rounded-full blur-3xl animate-pulse" style={{ animationDelay: '4s' }} />
+        <div className="absolute top-[-20%] left-[-10%] w-[500px] h-[500px] bg-[#C9A961]/20 rounded-full blur-3xl animate-pulse" />
+        <div className="absolute top-[40%] right-[-5%] w-[400px] h-[400px] bg-[#184C3A]/15 rounded-full blur-3xl animate-pulse" style={{ animationDelay: '2s' }} />
+        <div className="absolute bottom-[-10%] left-[30%] w-[600px] h-[600px] bg-[#C9A961]/10 rounded-full blur-3xl animate-pulse" style={{ animationDelay: '4s' }} />
       </div>
 
       <div className="relative z-10 max-w-8xl mx-auto px-4 sm:px-6 lg:px-8 py-8">
@@ -253,11 +252,11 @@ const AdminBlogPost = () => {
         <div className="flex flex-col lg:flex-row lg:items-center justify-between gap-6 mb-12">
           <div className="flex items-center gap-6">
             <div className="flex items-center gap-4">
-              <div className="w-14 h-14 rounded-2xl bg-gradient-to-br from-blue-500 via-indigo-500 to-purple-500 flex items-center justify-center shadow-xl shadow-blue-200">
-                <Lightbulb className="w-7 h-7 text-white" />
+              <div className="w-14 h-14 rounded-2xl bg-gradient-to-br from-[#184C3A] via-[#1f5f47] to-[#266b54] flex items-center justify-center shadow-xl shadow-[#184C3A]/20">
+                <Lightbulb className="w-7 h-7 text-[#C9A961]" />
               </div>
               <div>
-                <h1 className="text-3xl font-black bg-gradient-to-r from-blue-700 via-indigo-700 to-purple-700 bg-clip-text text-transparent">
+                <h1 className="text-3xl font-black text-[#184C3A]">
                   Content Lab
                 </h1>
                 <p className="text-gray-500 text-sm">Create. Publish. Grow.</p>
@@ -267,13 +266,13 @@ const AdminBlogPost = () => {
 
           <div className="flex flex-wrap items-center gap-4">
             {/* View Switcher */}
-            <div className="flex items-center gap-2 p-1.5 bg-white backdrop-blur-xl rounded-2xl border border-gray-200 shadow-sm">
+            <div className="flex items-center gap-2 p-1.5 bg-white backdrop-blur-xl rounded-2xl border border-[#E5E5E5] shadow-sm">
               <button
                 onClick={() => setActiveView('dashboard')}
                 className={`flex items-center gap-2 px-5 py-2.5 rounded-xl text-sm font-semibold transition-all ${
                   activeView === 'dashboard'
-                    ? 'bg-gradient-to-r from-blue-500 to-indigo-500 text-white shadow-lg shadow-blue-200'
-                    : 'text-gray-600 hover:text-gray-900 hover:bg-gray-50'
+                    ? 'bg-[#184C3A] text-white shadow-lg shadow-[#184C3A]/20'
+                    : 'text-gray-600 hover:text-[#184C3A] hover:bg-[#FAF8EF]'
                 }`}
               >
                 <Grid className="w-4.5 h-4.5" />
@@ -283,8 +282,8 @@ const AdminBlogPost = () => {
                 onClick={() => setActiveView('timeline')}
                 className={`flex items-center gap-2 px-5 py-2.5 rounded-xl text-sm font-semibold transition-all ${
                   activeView === 'timeline'
-                    ? 'bg-gradient-to-r from-blue-500 to-indigo-500 text-white shadow-lg shadow-blue-200'
-                    : 'text-gray-600 hover:text-gray-900 hover:bg-gray-50'
+                    ? 'bg-[#184C3A] text-white shadow-lg shadow-[#184C3A]/20'
+                    : 'text-gray-600 hover:text-[#184C3A] hover:bg-[#FAF8EF]'
                 }`}
               >
                 <CalendarDays className="w-4.5 h-4.5" />
@@ -294,8 +293,8 @@ const AdminBlogPost = () => {
                 onClick={() => setActiveView('grid')}
                 className={`flex items-center gap-2 px-5 py-2.5 rounded-xl text-sm font-semibold transition-all ${
                   activeView === 'grid'
-                    ? 'bg-gradient-to-r from-blue-500 to-indigo-500 text-white shadow-lg shadow-blue-200'
-                    : 'text-gray-600 hover:text-gray-900 hover:bg-gray-50'
+                    ? 'bg-[#184C3A] text-white shadow-lg shadow-[#184C3A]/20'
+                    : 'text-gray-600 hover:text-[#184C3A] hover:bg-[#FAF8EF]'
                 }`}
               >
                 <Box className="w-4.5 h-4.5" />
@@ -306,7 +305,7 @@ const AdminBlogPost = () => {
             {/* Create Button */}
             <button
               onClick={handleCreateNew}
-              className="group relative inline-flex items-center justify-center gap-2 px-7 py-3.5 bg-gradient-to-r from-blue-500 via-indigo-500 to-purple-500 text-white rounded-2xl font-bold hover:shadow-xl hover:shadow-blue-200 transition-all duration-300 hover:-translate-y-0.5 overflow-hidden"
+              className="group relative inline-flex items-center justify-center gap-2 px-7 py-3.5 bg-gradient-to-r from-[#184C3A] via-[#1f5f47] to-[#266b54] text-white rounded-2xl font-bold hover:shadow-xl hover:shadow-[#184C3A]/20 transition-all duration-300 hover:-translate-y-0.5 overflow-hidden"
             >
               <div className="absolute inset-0 bg-gradient-to-r from-transparent via-white/20 to-transparent translate-x-[-100%] group-hover:translate-x-[100%] transition-transform duration-700" />
               <PlusCircle className="w-5.5 h-5.5 relative z-10" />
@@ -320,57 +319,57 @@ const AdminBlogPost = () => {
           <div className="space-y-8">
             {/* Stat KPI Cards */}
             <div className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-4 gap-5">
-              <div className="group relative overflow-hidden bg-white backdrop-blur-2xl border border-gray-200 rounded-3xl p-6 hover:border-blue-300 transition-all duration-500 hover:-translate-y-1.5 hover:shadow-xl hover:shadow-blue-100">
+              <div className="group relative overflow-hidden bg-white backdrop-blur-2xl border border-[#E5E5E5] rounded-3xl p-6 hover:border-[#C9A961] transition-all duration-500 hover:-translate-y-1.5 hover:shadow-xl hover:shadow-[#C9A961]/10">
                 <div className="absolute top-0 right-0 p-8 opacity-5">
-                  <Trophy className="w-24 h-24 text-blue-500" />
+                  <Trophy className="w-24 h-24 text-[#184C3A]" />
                 </div>
                 <div className="flex items-start justify-between mb-4">
-                  <div className="w-12 h-12 rounded-2xl bg-gradient-to-br from-blue-100 to-indigo-100 flex items-center justify-center">
-                    <FileText className="w-6 h-6 text-blue-600" />
+                  <div className="w-12 h-12 rounded-2xl bg-gradient-to-br from-[#FAF8EF] to-[#FAF8EF] flex items-center justify-center">
+                    <FileText className="w-6 h-6 text-[#184C3A]" />
                   </div>
-                  <span className="text-xs font-semibold text-emerald-600 bg-emerald-50 px-3 py-1 rounded-full border border-emerald-200">Published</span>
+                  <span className="text-xs font-semibold text-[#184C3A] bg-[#FAF8EF] px-3 py-1 rounded-full border border-[#C9A961]/30">Published</span>
                 </div>
                 <p className="text-4xl font-black text-gray-900 mb-1.5">{posts.length}</p>
                 <p className="text-gray-500 text-sm font-medium">Total Stories</p>
               </div>
 
-              <div className="group relative overflow-hidden bg-white backdrop-blur-2xl border border-gray-200 rounded-3xl p-6 hover:border-amber-300 transition-all duration-500 hover:-translate-y-1.5 hover:shadow-xl hover:shadow-amber-100">
+              <div className="group relative overflow-hidden bg-white backdrop-blur-2xl border border-[#E5E5E5] rounded-3xl p-6 hover:border-[#C9A961] transition-all duration-500 hover:-translate-y-1.5 hover:shadow-xl hover:shadow-[#C9A961]/10">
                 <div className="absolute top-0 right-0 p-8 opacity-5">
-                  <ClockIcon className="w-24 h-24 text-amber-500" />
+                  <ClockIcon className="w-24 h-24 text-[#C9A961]" />
                 </div>
                 <div className="flex items-start justify-between mb-4">
-                  <div className="w-12 h-12 rounded-2xl bg-gradient-to-br from-amber-100 to-orange-100 flex items-center justify-center">
-                    <PenLine className="w-6 h-6 text-amber-600" />
+                  <div className="w-12 h-12 rounded-2xl bg-gradient-to-br from-[#FAF8EF] to-[#FAF8EF] flex items-center justify-center">
+                    <PenLine className="w-6 h-6 text-[#C9A961]" />
                   </div>
-                  <span className="text-xs font-semibold text-amber-600 bg-amber-50 px-3 py-1 rounded-full border border-amber-200">In Progress</span>
+                  <span className="text-xs font-semibold text-[#C9A961] bg-[#FAF8EF] px-3 py-1 rounded-full border border-[#C9A961]/30">In Progress</span>
                 </div>
                 <p className="text-4xl font-black text-gray-900 mb-1.5">{drafts.length}</p>
                 <p className="text-gray-500 text-sm font-medium">Drafts Waiting</p>
               </div>
 
-              <div className="group relative overflow-hidden bg-white backdrop-blur-2xl border border-gray-200 rounded-3xl p-6 hover:border-cyan-300 transition-all duration-500 hover:-translate-y-1.5 hover:shadow-xl hover:shadow-cyan-100">
+              <div className="group relative overflow-hidden bg-white backdrop-blur-2xl border border-[#E5E5E5] rounded-3xl p-6 hover:border-[#C9A961] transition-all duration-500 hover:-translate-y-1.5 hover:shadow-xl hover:shadow-[#C9A961]/10">
                 <div className="absolute top-0 right-0 p-8 opacity-5">
-                  <Eye className="w-24 h-24 text-cyan-500" />
+                  <Eye className="w-24 h-24 text-[#184C3A]" />
                 </div>
                 <div className="flex items-start justify-between mb-4">
-                  <div className="w-12 h-12 rounded-2xl bg-gradient-to-br from-cyan-100 to-blue-100 flex items-center justify-center">
-                    <BarChart3 className="w-6 h-6 text-cyan-600" />
+                  <div className="w-12 h-12 rounded-2xl bg-gradient-to-br from-[#FAF8EF] to-[#FAF8EF] flex items-center justify-center">
+                    <BarChart3 className="w-6 h-6 text-[#184C3A]" />
                   </div>
-                  <span className="text-xs font-semibold text-cyan-600 bg-cyan-50 px-3 py-1 rounded-full border border-cyan-200">Views</span>
+                  <span className="text-xs font-semibold text-[#184C3A] bg-[#FAF8EF] px-3 py-1 rounded-full border border-[#C9A961]/30">Views</span>
                 </div>
                 <p className="text-4xl font-black text-gray-900 mb-1.5">{totalViews.toLocaleString()}</p>
                 <p className="text-gray-500 text-sm font-medium">Total Reads</p>
               </div>
 
-              <div className="group relative overflow-hidden bg-white backdrop-blur-2xl border border-gray-200 rounded-3xl p-6 hover:border-pink-300 transition-all duration-500 hover:-translate-y-1.5 hover:shadow-xl hover:shadow-pink-100">
+              <div className="group relative overflow-hidden bg-white backdrop-blur-2xl border border-[#E5E5E5] rounded-3xl p-6 hover:border-[#C9A961] transition-all duration-500 hover:-translate-y-1.5 hover:shadow-xl hover:shadow-[#C9A961]/10">
                 <div className="absolute top-0 right-0 p-8 opacity-5">
-                  <Heart className="w-24 h-24 text-pink-500" />
+                  <Heart className="w-24 h-24 text-[#C9A961]" />
                 </div>
                 <div className="flex items-start justify-between mb-4">
-                  <div className="w-12 h-12 rounded-2xl bg-gradient-to-br from-pink-100 to-rose-100 flex items-center justify-center">
-                    <Sparkles className="w-6 h-6 text-pink-600" />
+                  <div className="w-12 h-12 rounded-2xl bg-gradient-to-br from-[#FAF8EF] to-[#FAF8EF] flex items-center justify-center">
+                    <Sparkles className="w-6 h-6 text-[#C9A961]" />
                   </div>
-                  <span className="text-xs font-semibold text-pink-600 bg-pink-50 px-3 py-1 rounded-full border border-pink-200">Engagement</span>
+                  <span className="text-xs font-semibold text-[#C9A961] bg-[#FAF8EF] px-3 py-1 rounded-full border border-[#C9A961]/30">Engagement</span>
                 </div>
                 <p className="text-4xl font-black text-gray-900 mb-1.5">{totalLikes.toLocaleString()}</p>
                 <p className="text-gray-500 text-sm font-medium">Total Likes</p>
@@ -381,38 +380,38 @@ const AdminBlogPost = () => {
             <div className="grid grid-cols-1 lg:grid-cols-3 gap-6">
               {/* Quick Actions */}
               <div className="lg:col-span-1">
-                <div className="bg-white backdrop-blur-2xl border border-gray-200 rounded-3xl p-6 shadow-sm">
+                <div className="bg-white backdrop-blur-2xl border border-[#E5E5E5] rounded-3xl p-6 shadow-sm">
                   <h3 className="text-lg font-bold text-gray-900 mb-5 flex items-center gap-2">
-                    <Zap className="w-5 h-5 text-amber-500" />
+                    <Zap className="w-5 h-5 text-[#C9A961]" />
                     Quick Actions
                   </h3>
                   <div className="space-y-3">
                     <button
                       onClick={handleCreateNew}
-                      className="w-full flex items-center gap-3 px-5 py-4 bg-gradient-to-r from-blue-50 to-indigo-50 border border-blue-200 rounded-2xl text-left hover:from-blue-100 hover:to-indigo-100 transition-all group">
-                      <div className="w-10 h-10 rounded-xl bg-gradient-to-br from-blue-500 to-indigo-500 flex items-center justify-center">
+                      className="w-full flex items-center gap-3 px-5 py-4 bg-[#FAF8EF] border border-[#C9A961]/30 rounded-2xl text-left hover:bg-[#FAF8EF] transition-all group">
+                      <div className="w-10 h-10 rounded-xl bg-gradient-to-br from-[#184C3A] to-[#1f5f47] flex items-center justify-center">
                         <PlusCircle className="w-5 h-5 text-white" />
                       </div>
                       <div className="flex-1">
-                        <p className="font-semibold text-gray-900 group-hover:text-blue-700 transition-colors">Write New Story</p>
+                        <p className="font-semibold text-gray-900 group-hover:text-[#184C3A] transition-colors">Write New Story</p>
                         <p className="text-xs text-gray-500">Start from scratch</p>
                       </div>
-                      <ArrowUpRight className="w-4.5 h-4.5 text-gray-400 group-hover:text-blue-500 group-hover:translate-x-1 group-hover:-translate-y-1 transition-all" />
+                      <ArrowUpRight className="w-4.5 h-4.5 text-gray-400 group-hover:text-[#184C3A] group-hover:translate-x-1 group-hover:-translate-y-1 transition-all" />
                     </button>
 
                     {filteredDrafts.length > 0 && (
                       <button
                         onClick={() => handleEdit(filteredDrafts[0]._id, true)}
-                        className="w-full flex items-center gap-3 px-5 py-4 bg-gradient-to-r from-amber-50 to-orange-50 border border-amber-200 rounded-2xl text-left hover:from-amber-100 hover:to-orange-100 transition-all group"
+                        className="w-full flex items-center gap-3 px-5 py-4 bg-[#FAF8EF] border border-[#C9A961]/30 rounded-2xl text-left hover:bg-[#FAF8EF] transition-all group"
                       >
-                        <div className="w-10 h-10 rounded-xl bg-gradient-to-br from-amber-500 to-orange-500 flex items-center justify-center">
+                        <div className="w-10 h-10 rounded-xl bg-gradient-to-br from-[#C9A961] to-[#C9A961]/90 flex items-center justify-center">
                           <Edit3 className="w-5 h-5 text-white" />
                         </div>
                         <div className="flex-1 min-w-0">
-                          <p className="font-semibold text-gray-900 group-hover:text-amber-700 transition-colors truncate">Continue: {filteredDrafts[0].title || 'Untitled'}</p>
+                          <p className="font-semibold text-gray-900 group-hover:text-[#C9A961] transition-colors truncate">Continue: {filteredDrafts[0].title || 'Untitled'}</p>
                           <p className="text-xs text-gray-500">Last edit {getRelativeDate(filteredDrafts[0].updatedAt)}</p>
                         </div>
-                        <ArrowUpRight className="w-4.5 h-4.5 text-gray-400 group-hover:text-amber-500 group-hover:translate-x-1 group-hover:-translate-y-1 transition-all" />
+                        <ArrowUpRight className="w-4.5 h-4.5 text-gray-400 group-hover:text-[#C9A961] group-hover:translate-x-1 group-hover:-translate-y-1 transition-all" />
                       </button>
                     )}
                   </div>
@@ -421,15 +420,15 @@ const AdminBlogPost = () => {
 
               {/* Latest Content */}
               <div className="lg:col-span-2">
-                <div className="bg-white backdrop-blur-2xl border border-gray-200 rounded-3xl p-6 shadow-sm">
+                <div className="bg-white backdrop-blur-2xl border border-[#E5E5E5] rounded-3xl p-6 shadow-sm">
                   <div className="flex items-center justify-between mb-6">
                     <h3 className="text-lg font-bold text-gray-900 flex items-center gap-2">
-                      <TrendingUp className="w-5 h-5 text-blue-500" />
+                      <TrendingUp className="w-5 h-5 text-[#184C3A]" />
                       Latest Stories
                     </h3>
                     <button
                       onClick={() => setActiveView('timeline')}
-                      className="text-sm text-blue-600 hover:text-blue-700 font-semibold flex items-center gap-1.5"
+                      className="text-sm text-[#184C3A] hover:text-[#1f5f47] font-semibold flex items-center gap-1.5"
                     >
                       View All <ArrowUpRight className="w-4 h-4" />
                     </button>
@@ -440,19 +439,19 @@ const AdminBlogPost = () => {
                       return (
                         <div
                           key={post._id}
-                          className="group relative flex items-center gap-5 p-4 rounded-2xl bg-gray-50 border border-gray-100 hover:border-blue-200 hover:bg-blue-50 transition-all duration-300"
+                          className="group relative flex items-center gap-5 p-4 rounded-2xl bg-[#FAF8EF]/50 border border-[#E5E5E5] hover:border-[#C9A961]/50 hover:bg-[#FAF8EF] transition-all duration-300"
                         >
-                          <div className="flex-shrink-0 w-14 h-14 rounded-xl bg-gradient-to-br from-gray-100 to-gray-200 overflow-hidden">
+                          <div className="flex-shrink-0 w-14 h-14 rounded-xl bg-gradient-to-br from-[#FAF8EF] to-[#FAF8EF] overflow-hidden">
                             {imageSrc ? (
                               <img src={imageSrc} alt="" className="w-full h-full object-cover" />
                             ) : (
                               <div className="w-full h-full flex items-center justify-center">
-                                <FileText className="w-6 h-6 text-gray-400" />
+                                <FileText className="w-6 h-6 text-[#C9A961]" />
                               </div>
                             )}
                           </div>
                           <div className="flex-1 min-w-0">
-                            <h4 className="font-semibold text-gray-900 truncate group-hover:text-blue-700 transition-colors">{post.title || 'Untitled'}</h4>
+                            <h4 className="font-semibold text-gray-900 truncate group-hover:text-[#184C3A] transition-colors">{post.title || 'Untitled'}</h4>
                             <div className="flex items-center gap-4 mt-1 text-xs text-gray-500">
                               <span className="flex items-center gap-1">
                                 <CalendarDays className="w-3.5 h-3.5" />
@@ -471,7 +470,7 @@ const AdminBlogPost = () => {
                           <div className="flex items-center gap-2 opacity-0 group-hover:opacity-100 transition-all duration-300">
                             <button
                               onClick={() => handleEdit(post._id)}
-                              className="p-2.5 bg-white hover:bg-blue-100 text-gray-600 hover:text-blue-600 rounded-xl transition-all shadow-sm"
+                              className="p-2.5 bg-white hover:bg-[#FAF8EF] text-gray-600 hover:text-[#184C3A] rounded-xl transition-all shadow-sm"
                             >
                               <Edit3 className="w-4.5 h-4.5" />
                             </button>
@@ -501,8 +500,8 @@ const AdminBlogPost = () => {
                 onClick={() => setActiveContentTab('published')}
                 className={`flex items-center gap-2 px-5 py-2.5 rounded-xl text-sm font-semibold transition-all ${
                   activeContentTab === 'published'
-                    ? 'bg-gradient-to-r from-blue-500 to-indigo-500 text-white shadow-lg shadow-blue-200'
-                    : 'bg-white text-gray-600 hover:text-gray-900 hover:bg-gray-50 border border-gray-200'
+                    ? 'bg-[#184C3A] text-white shadow-lg shadow-[#184C3A]/20'
+                    : 'bg-white text-gray-600 hover:text-[#184C3A] hover:bg-[#FAF8EF] border border-[#E5E5E5]'
                 }`}
               >
                 <CheckCircle2 className="w-4.5 h-4.5" />
@@ -512,8 +511,8 @@ const AdminBlogPost = () => {
                 onClick={() => setActiveContentTab('drafts')}
                 className={`flex items-center gap-2 px-5 py-2.5 rounded-xl text-sm font-semibold transition-all ${
                   activeContentTab === 'drafts'
-                    ? 'bg-gradient-to-r from-amber-500 to-orange-500 text-white shadow-lg shadow-amber-200'
-                    : 'bg-white text-gray-600 hover:text-gray-900 hover:bg-gray-50 border border-gray-200'
+                    ? 'bg-[#C9A961] text-white shadow-lg shadow-[#C9A961]/20'
+                    : 'bg-white text-gray-600 hover:text-[#C9A961] hover:bg-[#FAF8EF] border border-[#E5E5E5]'
                 }`}
               >
                 <Edit3 className="w-4.5 h-4.5" />
@@ -529,21 +528,21 @@ const AdminBlogPost = () => {
                 placeholder="Search through your content..."
                 value={searchQuery}
                 onChange={(e) => setSearchQuery(e.target.value)}
-                className="w-full pl-14 pr-6 py-4 bg-white border border-gray-200 rounded-2xl focus:outline-none focus:ring-2 focus:ring-blue-500/30 focus:border-blue-400 text-gray-900 placeholder-gray-400 shadow-sm"
+                className="w-full pl-14 pr-6 py-4 bg-white border border-[#E5E5E5] rounded-2xl focus:outline-none focus:ring-2 focus:ring-[#184C3A]/30 focus:border-[#184C3A] text-gray-900 placeholder-gray-400 shadow-sm"
               />
             </div>
 
             {/* Timeline Content */}
             <div className="relative">
-              <div className="absolute left-8 top-0 bottom-0 w-0.5 bg-gradient-to-b from-blue-400 via-indigo-400 to-transparent" />
+              <div className="absolute left-8 top-0 bottom-0 w-0.5 bg-gradient-to-b from-[#C9A961] via-[#184C3A] to-transparent" />
               
               {Object.entries(activeContentTab === 'published' ? publishedMonthGroups : draftMonthGroups).map(([month, items]) => (
                 <div key={month} className="mb-12">
                   <div className="flex items-center gap-4 mb-8 pl-6">
-                    <div className="w-4 h-4 rounded-full bg-blue-500 shadow-lg shadow-blue-200" />
+                    <div className="w-4 h-4 rounded-full bg-[#C9A961] shadow-lg shadow-[#C9A961]/20" />
                     <h3 className="text-2xl font-bold text-gray-900 flex items-center gap-2">
                       {month}
-                      <span className="text-sm font-normal text-gray-500 bg-gray-100 px-3 py-1 rounded-full border border-gray-200">
+                      <span className="text-sm font-normal text-gray-500 bg-gray-100 px-3 py-1 rounded-full border border-[#E5E5E5]">
                         {items.length} items
                       </span>
                     </h3>
@@ -555,14 +554,14 @@ const AdminBlogPost = () => {
                       return (
                         <div
                           key={item._id}
-                          className="group relative bg-white backdrop-blur-2xl border border-gray-200 rounded-3xl p-7 hover:border-blue-300 transition-all duration-500 hover:-translate-y-1 hover:shadow-xl hover:shadow-blue-100 shadow-sm"
+                          className="group relative bg-white backdrop-blur-2xl border border-[#E5E5E5] rounded-3xl p-7 hover:border-[#C9A961] transition-all duration-500 hover:-translate-y-1 hover:shadow-xl hover:shadow-[#C9A961]/10 shadow-sm"
                         >
-                          <div className="absolute -left-10 top-10 w-3 h-3 rounded-full bg-gradient-to-br from-blue-400 to-indigo-400 shadow-lg shadow-blue-200" />
+                          <div className="absolute -left-10 top-10 w-3 h-3 rounded-full bg-gradient-to-br from-[#C9A961] to-[#184C3A] shadow-lg shadow-[#C9A961]/20" />
                           
                           <div className="flex flex-col md:flex-row gap-6">
                             {imageSrc && (
                               <div className="md:w-48 flex-shrink-0">
-                                <div className="w-full h-32 rounded-2xl overflow-hidden bg-gray-100 group-hover:scale-105 transition-transform duration-500">
+                                <div className="w-full h-32 rounded-2xl overflow-hidden bg-[#FAF8EF] group-hover:scale-105 transition-transform duration-500">
                                   <img src={imageSrc} alt="" className="w-full h-full object-cover" />
                                 </div>
                               </div>
@@ -573,8 +572,8 @@ const AdminBlogPost = () => {
                                   <div className="flex items-center gap-3 mb-2">
                                     <span className={`inline-flex items-center gap-1.5 px-3 py-1 rounded-full text-xs font-semibold border ${
                                       isDraft
-                                        ? 'bg-amber-50 text-amber-700 border-amber-200'
-                                        : 'bg-emerald-50 text-emerald-700 border-emerald-200'
+                                        ? 'bg-[#FAF8EF] text-[#C9A961] border-[#C9A961]/30'
+                                        : 'bg-[#FAF8EF] text-[#184C3A] border-[#C9A961]/30'
                                     }`}>
                                       {isDraft ? <Edit3 className="w-3.5 h-3.5" /> : <CheckCircle2 className="w-3.5 h-3.5" />}
                                       {isDraft ? 'Draft' : 'Live'}
@@ -583,14 +582,14 @@ const AdminBlogPost = () => {
                                       {formatDate(isDraft ? item.updatedAt : item.createdAt)}
                                     </span>
                                   </div>
-                                  <h4 className="text-xl font-bold text-gray-900 mb-1 group-hover:text-blue-700 transition-colors">
+                                  <h4 className="text-xl font-bold text-gray-900 mb-1 group-hover:text-[#184C3A] transition-colors">
                                     {item.title || 'Untitled Story'}
                                   </h4>
                                 </div>
                                 <div className="flex items-center gap-2 opacity-0 group-hover:opacity-100 transition-all duration-300">
                                   <button
                                     onClick={() => handleEdit(item._id, isDraft)}
-                                    className="p-2.5 bg-gray-100 hover:bg-blue-100 text-gray-600 hover:text-blue-600 rounded-xl transition-all"
+                                    className="p-2.5 bg-[#FAF8EF] hover:bg-[#FAF8EF] text-gray-600 hover:text-[#184C3A] rounded-xl transition-all"
                                     title="Edit"
                                   >
                                     <Edit3 className="w-5 h-5" />
@@ -598,7 +597,7 @@ const AdminBlogPost = () => {
                                   {!isDraft && (
                                     <button
                                       onClick={() => handleCopyLink(item.paramlink)}
-                                      className="p-2.5 bg-gray-100 hover:bg-cyan-100 text-gray-600 hover:text-cyan-600 rounded-xl transition-all"
+                                      className="p-2.5 bg-[#FAF8EF] hover:bg-[#FAF8EF] text-gray-600 hover:text-[#184C3A] rounded-xl transition-all"
                                       title="Copy Link"
                                     >
                                       <Copy className="w-5 h-5" />
@@ -606,7 +605,7 @@ const AdminBlogPost = () => {
                                   )}
                                   <button
                                     onClick={() => handleDelete(item._id, isDraft)}
-                                    className="p-2.5 bg-gray-100 hover:bg-red-100 text-gray-600 hover:text-red-600 rounded-xl transition-all"
+                                    className="p-2.5 bg-[#FAF8EF] hover:bg-[#FAF8EF] text-gray-600 hover:text-[#C9A961] rounded-xl transition-all"
                                     title="Delete"
                                   >
                                     <Trash2 className="w-5 h-5" />
@@ -638,14 +637,14 @@ const AdminBlogPost = () => {
               ))}
               {Object.keys(activeContentTab === 'published' ? publishedMonthGroups : draftMonthGroups).length === 0 && (
                 <div className="text-center py-20 pl-20">
-                  <div className="w-20 h-20 bg-gray-100 rounded-full flex items-center justify-center mx-auto mb-5">
+                  <div className="w-20 h-20 bg-[#FAF8EF] rounded-full flex items-center justify-center mx-auto mb-5">
                     <Cloud className="w-9 h-9 text-gray-400" />
                   </div>
                   <h3 className="text-xl font-bold text-gray-900 mb-2">No content yet</h3>
                   <p className="text-gray-500 mb-6">Start creating amazing content for your audience</p>
                   <button
                     onClick={handleCreateNew}
-                    className="inline-flex items-center gap-2 px-6 py-3 bg-gradient-to-r from-blue-500 to-indigo-500 text-white rounded-xl font-semibold hover:shadow-xl hover:shadow-blue-200 transition-all"
+                    className="inline-flex items-center gap-2 px-6 py-3 bg-gradient-to-r from-[#184C3A] to-[#1f5f47] text-white rounded-xl font-semibold hover:shadow-xl hover:shadow-[#184C3A]/20 transition-all"
                   >
                     <PlusCircle className="w-5 h-5" />
                     Create First Piece
@@ -666,8 +665,8 @@ const AdminBlogPost = () => {
                   onClick={() => setActiveContentTab('published')}
                   className={`flex items-center gap-2 px-5 py-2.5 rounded-xl text-sm font-semibold transition-all ${
                     activeContentTab === 'published'
-                      ? 'bg-gradient-to-r from-blue-500 to-indigo-500 text-white shadow-lg shadow-blue-200'
-                      : 'bg-white text-gray-600 hover:text-gray-900 hover:bg-gray-50 border border-gray-200'
+                      ? 'bg-[#184C3A] text-white shadow-lg shadow-[#184C3A]/20'
+                      : 'bg-white text-gray-600 hover:text-[#184C3A] hover:bg-[#FAF8EF] border border-[#E5E5E5]'
                   }`}
                 >
                   <CheckCircle2 className="w-4.5 h-4.5" />
@@ -677,8 +676,8 @@ const AdminBlogPost = () => {
                   onClick={() => setActiveContentTab('drafts')}
                   className={`flex items-center gap-2 px-5 py-2.5 rounded-xl text-sm font-semibold transition-all ${
                     activeContentTab === 'drafts'
-                      ? 'bg-gradient-to-r from-amber-500 to-orange-500 text-white shadow-lg shadow-amber-200'
-                      : 'bg-white text-gray-600 hover:text-gray-900 hover:bg-gray-50 border border-gray-200'
+                      ? 'bg-[#C9A961] text-white shadow-lg shadow-[#C9A961]/20'
+                      : 'bg-white text-gray-600 hover:text-[#C9A961] hover:bg-[#FAF8EF] border border-[#E5E5E5]'
                   }`}
                 >
                   <Edit3 className="w-4.5 h-4.5" />
@@ -692,7 +691,7 @@ const AdminBlogPost = () => {
                   placeholder="Search..."
                   value={searchQuery}
                   onChange={(e) => setSearchQuery(e.target.value)}
-                  className="w-full pl-12 pr-4 py-2.5 bg-white border border-gray-200 rounded-xl focus:outline-none focus:ring-2 focus:ring-blue-500/30 focus:border-blue-400 text-gray-900 placeholder-gray-400 text-sm shadow-sm"
+                  className="w-full pl-12 pr-4 py-2.5 bg-white border border-[#E5E5E5] rounded-xl focus:outline-none focus:ring-2 focus:ring-[#184C3A]/30 focus:border-[#184C3A] text-gray-900 placeholder-gray-400 text-sm shadow-sm"
                 />
               </div>
             </div>
@@ -705,21 +704,21 @@ const AdminBlogPost = () => {
                 return (
                   <div
                     key={item._id}
-                    className="group relative bg-white backdrop-blur-2xl border border-gray-200 rounded-3xl overflow-hidden hover:border-blue-300 transition-all duration-500 hover:-translate-y-2 hover:shadow-xl hover:shadow-blue-100 shadow-sm"
+                    className="group relative bg-white backdrop-blur-2xl border border-[#E5E5E5] rounded-3xl overflow-hidden hover:border-[#C9A961] transition-all duration-500 hover:-translate-y-2 hover:shadow-xl hover:shadow-[#C9A961]/10 shadow-sm"
                   >
-                    <div className="relative h-48 bg-gradient-to-br from-gray-100 to-gray-200 overflow-hidden">
+                    <div className="relative h-48 bg-gradient-to-br from-[#FAF8EF] to-[#FAF8EF] overflow-hidden">
                       {imageSrc ? (
                         <img src={imageSrc} alt="" className="w-full h-full object-cover group-hover:scale-110 transition-transform duration-700" />
                       ) : (
                         <div className="w-full h-full flex items-center justify-center">
-                          <FileText className="w-12 h-12 text-gray-400" />
+                          <FileText className="w-12 h-12 text-[#C9A961]" />
                         </div>
                       )}
                       <div className="absolute top-4 left-4">
                         <span className={`inline-flex items-center gap-1.5 px-3 py-1.5 rounded-full text-xs font-bold border ${
                           isDraft
-                            ? 'bg-amber-500/90 text-white border-amber-400/30'
-                            : 'bg-emerald-500/90 text-white border-emerald-400/30'
+                            ? 'bg-[#C9A961]/90 text-white border-[#C9A961]/30'
+                            : 'bg-[#184C3A]/90 text-white border-[#184C3A]/30'
                         }`}>
                           {isDraft ? <Edit3 className="w-3.5 h-3.5" /> : <CheckCircle2 className="w-3.5 h-3.5" />}
                           {isDraft ? 'Draft' : 'Live'}
@@ -728,34 +727,34 @@ const AdminBlogPost = () => {
                       <div className="absolute top-4 right-4 flex flex-col gap-2 opacity-0 group-hover:opacity-100 transition-all duration-300 translate-y-2 group-hover:translate-y-0">
                         <button
                           onClick={() => handleEdit(item._id, isDraft)}
-                          className="p-2.5 bg-white/90 backdrop-blur-xl text-gray-800 rounded-xl hover:bg-blue-500 hover:text-white hover:scale-110 transition-all shadow-lg"
+                          className="p-2.5 bg-white/90 backdrop-blur-xl text-gray-800 rounded-xl hover:bg-[#184C3A] hover:text-white hover:scale-110 transition-all shadow-lg"
                         >
                           <Edit3 className="w-4.5 h-4.5" />
                         </button>
                         {!isDraft && (
                           <button
                             onClick={() => handleCopyLink(item.paramlink)}
-                            className="p-2.5 bg-white/90 backdrop-blur-xl text-gray-800 rounded-xl hover:bg-cyan-500 hover:text-white hover:scale-110 transition-all shadow-lg"
+                            className="p-2.5 bg-white/90 backdrop-blur-xl text-gray-800 rounded-xl hover:bg-[#184C3A] hover:text-white hover:scale-110 transition-all shadow-lg"
                           >
                             <Copy className="w-4.5 h-4.5" />
                           </button>
                         )}
                         <button
                           onClick={() => handleDelete(item._id, isDraft)}
-                          className="p-2.5 bg-white/90 backdrop-blur-xl text-gray-800 rounded-xl hover:bg-red-500 hover:text-white hover:scale-110 transition-all shadow-lg"
+                          className="p-2.5 bg-white/90 backdrop-blur-xl text-gray-800 rounded-xl hover:bg-[#C9A961] hover:text-white hover:scale-110 transition-all shadow-lg"
                         >
                           <Trash2 className="w-4.5 h-4.5" />
                         </button>
                       </div>
                     </div>
                     <div className="p-6">
-                      <h4 className="text-lg font-bold text-gray-900 mb-2 line-clamp-2 group-hover:text-blue-700 transition-colors">
+                      <h4 className="text-lg font-bold text-gray-900 mb-2 line-clamp-2 group-hover:text-[#184C3A] transition-colors">
                         {item.title || 'Untitled'}
                       </h4>
                       <p className="text-gray-600 text-sm mb-4 line-clamp-3">
                         {truncateText(item.content)}
                       </p>
-                      <div className="flex items-center justify-between pt-4 border-t border-gray-100">
+                      <div className="flex items-center justify-between pt-4 border-t border-[#E5E5E5]">
                         <span className="text-xs text-gray-500">
                           {formatDate(isDraft ? item.updatedAt : item.createdAt)}
                         </span>
@@ -779,7 +778,7 @@ const AdminBlogPost = () => {
             </div>
             {(activeContentTab === 'published' ? filteredPosts : filteredDrafts).length === 0 && (
               <div className="text-center py-20">
-                <div className="w-20 h-20 bg-gray-100 rounded-full flex items-center justify-center mx-auto mb-5">
+                <div className="w-20 h-20 bg-[#FAF8EF] rounded-full flex items-center justify-center mx-auto mb-5">
                   <Cloud className="w-9 h-9 text-gray-400" />
                 </div>
                 <h3 className="text-xl font-bold text-gray-900 mb-2">No content found</h3>
@@ -789,7 +788,7 @@ const AdminBlogPost = () => {
                 {!searchQuery && (
                   <button
                     onClick={handleCreateNew}
-                    className="inline-flex items-center gap-2 px-6 py-3 bg-gradient-to-r from-blue-500 to-indigo-500 text-white rounded-xl font-semibold hover:shadow-xl hover:shadow-blue-200 transition-all"
+                    className="inline-flex items-center gap-2 px-6 py-3 bg-gradient-to-r from-[#184C3A] to-[#1f5f47] text-white rounded-xl font-semibold hover:shadow-xl hover:shadow-[#184C3A]/20 transition-all"
                   >
                     <PlusCircle className="w-5 h-5" />
                     Create Something New
@@ -806,10 +805,10 @@ const AdminBlogPost = () => {
         {toasts.map((toast) => (
           <div
             key={toast.id}
-            className={`flex items-center gap-4 px-6 py-4 rounded-2xl shadow-xl border border-gray-200 backdrop-blur-2xl animate-fade-in-up ${
+            className={`flex items-center gap-4 px-6 py-4 rounded-2xl shadow-xl border border-[#E5E5E5] backdrop-blur-2xl animate-fade-in-up ${
               toast.type === 'success'
-                ? 'bg-gradient-to-r from-emerald-500/95 to-teal-500/95 text-white border-emerald-400/30'
-                : 'bg-gradient-to-r from-red-500/95 to-rose-500/95 text-white border-red-400/30'
+                ? 'bg-gradient-to-r from-[#184C3A]/95 to-[#1f5f47]/95 text-white border-[#C9A961]/30'
+                : 'bg-gradient-to-r from-[#C9A961]/95 to-[#C9A961]/95 text-white border-[#184C3A]/30'
             }`}
           >
             {toast.type === 'success' ? (

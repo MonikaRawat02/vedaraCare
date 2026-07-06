@@ -9,7 +9,7 @@ const FinalCTA = ({
   button1Text = "",
   button1Href = "/book",
   button2Text = "",
-  button2Href = "https://wa.me/971555867466",
+  button2Href = "https://wa.me/971555867466?text=Hello%20Vedara%20Care,%20I%20would%20like%20to%20know%20more%20about%20your%20treatments%20and%20book%20a%20consultation.%20Please%20assist%20me.",
   bullets = [],
   footer = "",
   button1BgColor = "rgb(31, 69, 56)",

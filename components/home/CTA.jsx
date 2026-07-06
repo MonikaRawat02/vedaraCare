@@ -8,6 +8,8 @@ const CTA = ({
   description = "Most patients reach us on WhatsApp. It is the fastest way to check availability, ask about insurance, or send a photo of your concern for our team to review.",
   button1Text = "Book a Consultation",
   button2Text = "Chat on WhatsApp",
+  button1Href = "/book",
+  button2Href = "https://wa.me/971555867466?text=Hello%20Vedara%20Care,%20I%20would%20like%20to%20know%20more%20about%20your%20treatments%20and%20book%20a%20consultation.%20Please%20assist%20me.",
   subtext = "Typical reply time under 15 minutes during clinic hours",
   button1Class = "bg-[#184C3A] text-white hover:bg-[#123a2c]",
   button2Class = "bg-[#4A7C59] text-white hover:bg-[#3d664a]"
@@ -30,16 +32,21 @@ const CTA = ({
             />
           </div>
 
-          {/* Action Buttons */}
+          
+         {/* Action Buttons */}
           <div className="flex flex-col sm:flex-row items-center justify-center gap-4 pt-4">
-            <button className={`w-full sm:w-auto inline-flex items-center justify-center gap-2 px-8 py-4 ${button1Class} rounded-lg transition-all font-sans font-bold text-[16px]`}>
+              <a href={button1Href}
+              className={`w-full sm:w-auto inline-flex items-center justify-center gap-2 px-8 py-4 ${button1Class} rounded-lg transition-all font-sans font-bold text-[16px]`}>
               {button1Text}
-            </button>
-            
-            <button className={`w-full sm:w-auto inline-flex items-center justify-center gap-2 px-7 py-3.5 ${button2Class} rounded-lg transition-all font-sans font-semibold text-[16px]`}>
+            </a>
+            <a
+              href={button2Href}
+              target="_blank"
+              rel="noopener noreferrer"
+              className={`w-full sm:w-auto inline-flex items-center justify-center gap-2 px-7 py-3.5 ${button2Class} rounded-lg transition-all font-sans font-semibold text-[16px]`}>
               <MessageCircle size={20} />
               {button2Text}
-            </button>
+            </a>
           </div>
 
           {/* Subtext */}

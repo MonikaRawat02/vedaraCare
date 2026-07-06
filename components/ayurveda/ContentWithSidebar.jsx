@@ -444,8 +444,18 @@ const PricingSection = ({
           ))}
         </div>
 
-        <p className="text-center mb-8" style={{ color: 'rgb(107, 107, 107)', lineHeight: '1.7', fontSize: '14px' }} dangerouslySetInnerHTML={{ __html: insuranceText }}>
-        </p>
+        <div className="text-center mb-8 insurance-link-container" style={{ color: 'rgb(107, 107, 107)', lineHeight: '1.7', fontSize: '14px' }} dangerouslySetInnerHTML={{ __html: insuranceText }}>
+        </div>
+        <style jsx global>{`
+          .insurance-link-container a {
+            color: #C9A55A;
+            text-decoration: none;
+            transition: text-decoration 0.2s ease;
+          }
+          .insurance-link-container a:hover {
+            text-decoration: underline;
+          }
+        `}</style>
        
       </div>
     </section>
