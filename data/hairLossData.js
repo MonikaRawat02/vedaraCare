@@ -20,7 +20,7 @@ export const hairLossHero = {
     title: 'NO TRANSFORMATIONS. JUST EXAMINATION.',
     subtitle: 'Hair loss assessment at our JVC clinic begins with scalp examination, hair pull test, and history. We do not show you results before we know the cause.'
   },
-  image: '/images/scalp-examination-ayurvedic-jvc-vedara.webp',
+  image: '/images/hair-loss-ayurveda-dubai-hero.webp',
   alt: 'Ayurvedic doctor performing scalp examination on hair loss patient at Vedara Care JVC clinic Dubai'
 };
 

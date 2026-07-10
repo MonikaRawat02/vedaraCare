@@ -237,25 +237,6 @@ export const physiotherapyJvcProtocol = {
   footer: "This is a representative journey. Total session count varies enormously by condition: acute injuries often resolve in 4-8 sessions; chronic conditions may need 12-20 sessions; post-surgical rehabilitation typically 16-30 sessions over 3-6 months. Your specific plan is documented at the initial assessment."
 };
 
-export const physiotherapyJvcHomeHealthcare = {
-  bgColor: "bg-[#F5F0E8]",
-  label: "WHAT MAKES VEDARA CARE DIFFERENT",
-  title: "",
-  description: "Vedara Care is one of the few DHA-licensed polyclinics in Dubai offering both physiotherapy and Ayurvedic medicine under one license, with both teams sharing clinical notes for joint patients. For the right patient, this integration produces outcomes neither modality achieves alone.",
-  quote: "ers more than the venue. A patient who manages 7 of 14 prescribed clinic sessions due to fatigue gets a worse outcome than one who completes all 14 sessions at home.",
-  image: "",
-  imageAlt: "Therapist arriving at Dubai home with prepared Njavara rice and herbal milk for home Njavarakizhi",
-  features: [
-    "Shared clinical notes between physiotherapy and Ayurveda teams",
-    "Joint treatment plans for integrated care patients",
-    "Coordinated scheduling across both departments",
-    "Honest assessment of when integration helps vs. when standalone physio is sufficient"
-  ],
-  priceText: "Home Njavarakizhi: From AED 680 per session"
-};
-
-
-
 export const physiotherapyJvcTeam = {
   label: "MEET OUR TEAM",
   title: "DPT-qualified physiotherapists at our JVC clinic.",
@@ -570,7 +551,7 @@ export const physiotherapyJvcFinalCTA = {
   button1Text: "Book a Physiotherapy Assessment",
   button1Href: "/book",
   button2Text: "WhatsApp Us",
-  button2Href: "https://wa.me/971555867466",
+  button2Href: "https://wa.me/971555867466?text=Hello%20Vedara%20Care,%20I%20would%20like%20to%20inquire%20about%20physiotherapy%20and%20book%20a%20consultation.",
   footer: "Initial assessment from AED [X] · DHA-licensed JVC clinic · Insurance direct-billing with 7 major insurers · Same-day appointments often available · Home services across Dubai"
 };
 

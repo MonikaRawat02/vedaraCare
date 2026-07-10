@@ -37,7 +37,7 @@ const DoctorCTA = ({ doctor }) => {
               </Link>
               
               <a
-                href="https://wa.me/971555867466"
+                href="https://wa.me/971555867466?text=Hello%20Vedara%20Care,%20I%20would%20like%20to%20inquire%20about%20your%20treatments%20and%20book%20a%20consultation."
                 className="w-full sm:w-auto inline-flex items-center justify-center gap-2 px-6 py-3 border border-[#184C3A] text-[#184C3A] rounded-md hover:bg-[#184C3A] hover:text-white transition-all font-sans font-semibold text-[14px]"
                 target="_blank"
                 rel="noopener noreferrer"

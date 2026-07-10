@@ -28,19 +28,19 @@ export const SciaticaTypes = ({
         </div>
 
         <div className={gridCols}>
-          {types.map((type, index) => (
-            <div key={index} className={`${cardBg} p-6 rounded-lg ${borderPosition === 'left' ? 'border-l-3' : 'border-t-3'} border-[#C9A55A] shadow-sm hover:shadow-md transition-all flex flex-col gap-4 h-full`}>
+         {types.map((type, index) => {
+         const Card = (
+   <div className={`${cardBg} p-6 rounded-lg ${borderPosition === 'left' ? 'border-l-3' : 'border-t-3'} border-[#C9A55A] shadow-sm transition-all duration-300 flex flex-col gap-4 h-full ${type.href ? 'cursor-pointer hover:shadow-xl hover:-translate-y-1 hover:border-[#B8963E]' : ''}`}>
               <div className="text-4xl text-[#C9A55A] font-serif mb-6" style={{ fontFamily: 'Fraunces, Georgia, serif' }}>
                 {type.number}
               </div>
               
               <div className="space-y-4 flex-grow">
                 <div>
-                  {type.href ? (
-                    <a href={type.href} className="text-xl font-sans font-medium text-[#1A1A1A] mb-1 leading-tight block hover:text-[#C9A55A] transition-colors" dangerouslySetInnerHTML={{ __html: type.title }} />
-                  ) : (
-                    <h3 className="text-xl font-sans font-medium text-[#1A1A1A] mb-1 leading-tight" dangerouslySetInnerHTML={{ __html: type.title }} />
-                  )}
+                 <h3
+  className="text-xl font-sans font-medium text-[#1A1A1A] mb-1 leading-tight"
+  dangerouslySetInnerHTML={{ __html: type.title }}
+/>
                 </div>
 
                 {/* Sub-label/subtitle if provided */}
@@ -49,7 +49,7 @@ export const SciaticaTypes = ({
                 )}
 
                 <div 
-                  className="text-[14px] text-sm text-[#4A4A4A] font-sans leading-relaxed"
+                  className="text-[14px] text-sm text-[#4A4A4A] font-sans leading-relaxed description-link-container"
                   dangerouslySetInnerHTML={{ __html: type.description }}
                 />
               </div>
@@ -73,21 +73,39 @@ export const SciaticaTypes = ({
                   </ul>
                 </div>
               )}
-            </div>
-          ))}
+              </div>
+  );
+
+  return type.href ? (
+    <a
+      key={index}
+      href={type.href}
+      className="block no-underline"
+    >
+      {Card}
+    </a>
+  ) : (
+    <div key={index}>
+      {Card}
+    </div>
+  );
+})}
         </div>
 
         {footer && (
           <div className="mt-5 text-center max-w-[900px] mx-auto pt-8 footer-link-container">
             <p className="text-[#888888] text-sm font-sans leading-relaxed" dangerouslySetInnerHTML={{ __html: footer }} />
             <style jsx global>{`
-              .footer-link-container a {
+              .footer-link-container a,
+              .description-link-container a {
                 color: #C9A55A;
                 text-decoration: none;
-                transition: text-decoration 0.2s ease;
+                transition: all 0.2s ease;
               }
-              .footer-link-container a:hover {
+              .footer-link-container a:hover,
+              .description-link-container a:hover {
                 text-decoration: underline;
+                color: #B8963E;
               }
             `}</style>
           </div>
@@ -556,6 +574,122 @@ export const SciaticaTreatment = ({ data, showBorderLeft = true, rightContentSty
                   ))}
                 </div>
               </div>
+            )}
+            {rightContentStyle === 'peelDepthAndFitzpatrick' && (
+              <div className="w-full space-y-6">
+                {/* Peel Penetration Depths */}
+                <div className="bg-[#FAF7F2] rounded-xl p-6 border border-[#E5DFD3]">
+                  <p className="text-xs font-semibold tracking-widest uppercase mb-6" style={{ fontFamily: '"DM Sans", system-ui, sans-serif', color: "#C9A961" }}>
+                    {rightContent.peelDepthsLabel || "PEEL PENETRATION DEPTHS"}
+                  </p>
+                  <div className="space-y-5">
+                    {rightContent.peelDepths.map((depth, idx) => (
+                      <div key={idx} className={idx < rightContent.peelDepths.length - 1 ? "pb-5 border-b border-[#E5DFD3]" : ""}>
+                        <div className="flex items-start gap-3">
+                          <div className="w-4 h-4 rounded mt-1 flex-shrink-0" style={{ backgroundColor: depth.color }}></div>
+                          <div>
+                            <p className="text-sm font-semibold mb-1" style={{ fontFamily: '"DM Sans", system-ui, sans-serif', color: "rgb(28, 28, 20)" }}>
+                              {depth.title}
+                            </p>
+                            <p className="text-xs" style={{ fontFamily: '"DM Sans", system-ui, sans-serif', color: "rgb(74, 69, 64)" }}>
+                              {depth.description}
+                            </p>
+                          </div>
+                        </div>
+                      </div>
+                    ))}
+                  </div>
+                </div>
+                {/* Fitzpatrick Skin Type Spectrum */}
+                {rightContent.fitzpatrick && (
+                  <div>
+                    <p className="text-xs font-semibold tracking-widest uppercase mb-4" style={{ fontFamily: '"DM Sans", system-ui, sans-serif', color: "#C9A961" }}>
+                      {rightContent.fitzpatrickLabel || "FITZPATRICK SKIN TYPE SPECTRUM"}
+                    </p>
+                    <div className="grid grid-cols-6 gap-2 mb-4">
+                      {rightContent.fitzpatrick.types.map((type, idx) => (
+                        <div key={idx} className="p-2 rounded text-center" style={{ backgroundColor: type.color, height: '32px', display: 'flex', alignItems: 'center', justifyContent: 'center' }}>
+                          <p className="text-sm font-semibold" style={{ fontFamily: '"DM Sans", system-ui, sans-serif', color: type.textColor || "rgba(241, 241, 238, 1)" }}>
+                            {type.label}
+                          </p>
+                        </div>
+                      ))}
+                    </div>
+                    <div className="p-3 rounded-lg" style={{ backgroundColor: "#F0EBE3" }}>
+                      <p className="text-xs text-center" style={{ fontFamily: '"DM Sans", system-ui, sans-serif', color: "#777777" }}>
+                        {rightContent.fitzpatrick.note}
+                      </p>
+                    </div>
+                  </div>
+                )}
+              </div>
+            )}
+            {rightContentStyle === 'acneScarTypes' && (
+              <div className="w-full bg-white rounded-xl p-6 shadow-sm border border-[rgba(28,21,10,0.06)]">
+                <p className="text-xs font-semibold tracking-widest uppercase mb-4" style={{ fontFamily: '"DM Sans", system-ui, sans-serif', color: "#C9A961" }}>
+                  {rightContent.label || "ACNE SCAR TYPES — CROSS SECTION"}
+                </p>
+                {/* Diagram */}
+                {rightContent.diagram && (
+                  <div className="mb-4 p-8 rounded-lg" style={{ backgroundColor: "#FAF7F2" }}>
+                    <svg viewBox="0 0 340 280" width="100%" height="auto" xmlns="http://www.w3.org/2000/svg">
+                      {/* Skin Layers */}
+                      <rect x="20" y="60" width="300" height="180" fill="#F0E0CB" rx="8"></rect>
+                      <rect x="20" y="60" width="300" height="50" fill="#F7E8D0" rx="8"></rect>
+                      <rect x="20" y="110" width="300" height="70" fill="#E9D4BC" rx="8"></rect>
+                      <rect x="20" y="180" width="300" height="60" fill="#E5CDB7" rx="8"></rect>
+                      
+                      {/* Layer Labels */}
+                      <text x="30" y="55" fontFamily="DM Sans, sans-serif" fontSize="9" fill="#777777" fontWeight="600">EPIDERMIS</text>
+                      <text x="30" y="105" fontFamily="DM Sans, sans-serif" fontSize="9" fill="#777777" fontWeight="600">DERMIS</text>
+                      <text x="30" y="175" fontFamily="DM Sans, sans-serif" fontSize="9" fill="#777777" fontWeight="600">SUB-DERMIS</text>
+                      
+                      {/* Ice Pick Scar */}
+                      <rect x="70" y="78" width="30" height="30" fill="#5F5F5F" rx="3" opacity="0.8"></rect>
+                      <line x1="85" y1="60" x2="85" y2="78" stroke="#1F1F1F" strokeWidth="3"></line>
+                      <text x="55" y="145" fontFamily="DM Sans, sans-serif" fontSize="9" fill="#1F1F1F" fontWeight="600">Ice Pick</text>
+                      <text x="55" y="155" fontFamily="DM Sans, sans-serif" fontSize="8" fill="#777777">Deep, narrow</text>
+                      
+                      {/* Boxcar Scar */}
+                      <rect x="130" y="85" width="40" height="35" fill="#5F5F5F" rx="3" opacity="0.6"></rect>
+                      <text x="130" y="145" fontFamily="DM Sans, sans-serif" fontSize="9" fill="#1F1F1F" fontWeight="600">Boxcar</text>
+                      <text x="130" y="155" fontFamily="DM Sans, sans-serif" fontSize="8" fill="#777777">Wide, defined edges</text>
+                      
+                      {/* Rolling Scar */}
+                      <path d="M 190 90 Q 205 100 220 90 Q 235 80 250 90" fill="none" stroke="#5F5F5F" strokeWidth="3" strokeLinecap="round" opacity="0.8"></path>
+                      <text x="190" y="145" fontFamily="DM Sans, sans-serif" fontSize="9" fill="#1F1F1F" fontWeight="600">Rolling</text>
+                      <text x="190" y="155" fontFamily="DM Sans, sans-serif" fontSize="8" fill="#777777">Undulating surface</text>
+                      
+                      {/* Hypertrophic Scar */}
+                      <ellipse cx="275" cy="55" rx="22" ry="14" fill="#1F1F1F" opacity="0.8"></ellipse>
+                      <text x="245" y="85" fontFamily="DM Sans, sans-serif" fontSize="9" fill="#1F1F1F" fontWeight="600">Hypertrophic</text>
+                      <text x="245" y="95" fontFamily="DM Sans, sans-serif" fontSize="8" fill="#777777">Raised scar</text>
+                      
+                      {/* Skin Surface */}
+                      <text x="240" y="45" fontFamily="DM Sans, sans-serif" fontSize="8" fill="#777777">SKIN SURFACE</text>
+                      
+                      {/* Dashed Line */}
+                      <line x1="20" y1="60" x2="320" y2="60" stroke="#C9A961" strokeWidth="1" strokeDasharray="5,5"></line>
+                    </svg>
+                  </div>
+                )}
+                {/* Key Points */}
+                {rightContent.keyPoints && rightContent.keyPoints.length > 0 && (
+                  <div className="space-y-3">
+                    {rightContent.keyPoints.map((point, idx) => (
+                      <div key={idx} className="flex items-start gap-3">
+                        <div className="w-3 h-3 rounded-full mt-1 flex-shrink-0" style={{ backgroundColor: point.color || "#1C1C14" }}></div>
+                        <p className="text-xs leading-relaxed" style={{ fontFamily: '"DM Sans", system-ui, sans-serif', color: "rgb(74, 69, 64)" }}>
+                          {point.text}
+                        </p>
+                      </div>
+                    ))}
+                  </div>
+                )}
+              </div>
+            )}
+            {rightContent.bottomContent && (
+              <div dangerouslySetInnerHTML={{ __html: rightContent.bottomContent }} />
             )}
           </div>
         </div>

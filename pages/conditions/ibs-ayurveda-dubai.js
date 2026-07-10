@@ -372,10 +372,10 @@ const AyurvedaIbsDubai = () => {
         <TreatmentLocationCustom {...ayurvedaIbsTreatmentLocationCustom} />
 
         {/* Section 11: Related Pages */}
-        <RelatedPages {...ayurvedaIbsRelatedPages} />
+      <FinalCTA {...ayurvedaIbsFinalCTA} />
 
         {/* Section 12: Final CTA */}
-        <FinalCTA {...ayurvedaIbsFinalCTA} />
+         <RelatedPages {...ayurvedaIbsRelatedPages} />
       </main>
     </>
   );

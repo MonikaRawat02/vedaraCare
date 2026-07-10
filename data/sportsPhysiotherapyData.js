@@ -462,7 +462,7 @@ export const sportsPhysiotherapyFinalCTA = {
   button1Text: "Book a Sports Assessment",
   button1Href: "/book",
   button2Text: "WhatsApp Us",
-  button2Href: "https://wa.me/971555867466",
+  button2Href: "https://wa.me/971555867466?text=Hello%20Vedara%20Care,%20I%20would%20like%20to%20inquire%20about%20sports%20physiotherapy%20and%20book%20a%20consultation.",
   footer: "Initial assessment from AED 350 · DHA-licensed JVC clinic · Insurance direct-billing with 7 major insurers · Same-day appointments often available · Home services across Dubai"
 };
 
@@ -533,7 +533,7 @@ export const sportsPhysiotherapyInjuryTypes = {
       description: 'Common across nearly all sports. Specific protocols depending on sport-specific demands and injury mechanism.'
     }
   ],
-  footer: 'Did not find your injury? <a href="https://wa.me/971555867466" className="underline hover:opacity-70 transition-opacity" style={{ color: "rgb(27, 67, 50)" }}>Contact us — we treat the full range of sports injuries →</a>'
+  footer: 'Did not find your injury? <a href="https://wa.me/971555867466?text=Hello%20Vedara%20Care,%20I%27d%20like%20to%20inquire%20about%20treatment%20for%20my%20sports%20injury." className="underline hover:opacity-70 transition-opacity" style={{ color: "rgb(27, 67, 50)" }}>Contact us — we treat the full range of sports injuries →</a>'
 };
 
 export const sportsPhysiotherapyInsurance = {

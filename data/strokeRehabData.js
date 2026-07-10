@@ -262,7 +262,7 @@ export const strokeRehabCTA = {
   button1Text: "Book Stroke Rehabilitation Assessment",
   button1Href: "/book",
   button2Text: "WhatsApp Us",
-  button2Href: "https://wa.me/971555867466",
+  button2Href: "https://wa.me/971555867466?text=Hello%20Vedara%20Care,%20I%20would%20like%20to%20inquire%20about%20stroke%20rehabilitation%20and%20book%20a%20consultation.",
   footer: "Initial assessment from AED [X] · JVC clinic + home across Dubai · DPT-qualified neurorehabilitation specialists · Hospital discharge coordination · Insurance direct-billing · Cultural and language sensitivity"
 };
 

@@ -19,7 +19,7 @@ export const panchakarmaJVCHero = {
     title: "5 MIN FROM JSS SCHOOL · 3 MIN FROM FIVE HOTEL",
     subtitle: "Convenient daily access for the 7-21 day programme."
   },
-  image: "https://images.unsplash.com/photo-1600334089648-b0d9d3028eb2?q=80&w=2070&auto=format&fit=crop",
+  image: "/images/panchakarma-jvc-hero.webp",
   alt: "Vedara Care Panchakarma clinic entrance in Jumeirah Village Circle, Dubai near Circle Mall"
 };
 
@@ -351,7 +351,7 @@ export const kativastiMechanism = {
     "The therapy works through three mechanisms. First, sustained warmth penetrates deeper into the lumbar tissues than any handheld massage technique. Second, the medicated oil — selected for your specific condition — is absorbed directly through the skin into the lumbar fascia, paraspinal muscles, and surrounding connective tissue. Third, the prolonged contact time allows for therapeutic effects that quick massage cannot achieve."
   ],
   quote: "Most therapies brush across the area of concern. Kativasti sits on it for forty-five minutes.",
-  image: "/images/kativasti-dough-ring-treatment-jvc.webp",
+  image: "/images/lumbar-oil-therapy-vedara-jvc.webp",
   alt: "Therapist shaping dough reservoir for Kativasti lumbar oil therapy at our Ayurveda clinic in JVC Dubai"
 };
 

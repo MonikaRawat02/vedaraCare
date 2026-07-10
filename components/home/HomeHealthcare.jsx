@@ -17,7 +17,9 @@ const HomeHealthcare = ({
     "Elderly Care"
   ],
   button1Text = "Request a Home Visit",
+  button1Href = "https://wa.me/971555867466?text=Hello%20Vedara%20Care,%20I%20would%20like%20to%20request%20a%20home%20visit%20for%20home%20healthcare%20services.",
   button2Text = "Learn More",
+  button2Href = "/physiotherapy-at-home-dubai",
   footer = "Typical response time within JVC: 30 to 60 minutes"
 }) => {
   return (
@@ -58,12 +60,12 @@ const HomeHealthcare = ({
             </div>
 
             <div className="flex flex-col sm:flex-row items-center gap-4 pt-4">
-              <button className="w-full sm:w-auto px-8 py-4 bg-[#184C3A] text-white rounded-lg font-sans font-bold text-[16px] hover:bg-[#123a2c] transition-all">
+              <a href={button1Href} target="_blank" rel="noopener noreferrer" className="w-full sm:w-auto px-8 py-4 bg-[#184C3A] text-white rounded-lg font-sans font-bold text-[16px] hover:bg-[#123a2c] transition-all">
                 {button1Text}
-              </button>
-              <button className="w-full sm:w-auto px-8 py-4 bg-white border border-[#184C3A] text-[#184C3A] rounded-lg font-sans font-bold text-[16px] hover:bg-[#F6F1EA] transition-all">
+              </a>
+              <a href={button2Href} className="w-full sm:w-auto px-8 py-4 bg-white border border-[#184C3A] text-[#184C3A] rounded-lg font-sans font-bold text-[16px] hover:bg-[#F6F1EA] transition-all">
                 {button2Text}
-              </button>
+              </a>
             </div>
 
             <p className="text-[14px] text-[#6B6B6B] font-sans italic">

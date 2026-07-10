@@ -1,8 +1,14 @@
 import Link from 'next/link';
-import { Phone, Mail, Clock, MapPin, Stethoscope } from 'lucide-react';
+import { Phone, Mail, Clock, MapPin, Stethoscope, ChevronDown } from 'lucide-react';
+import { useState } from 'react';
 
 const Footer = () => {
   const currentYear = new Date().getFullYear();
+  const [openSection, setOpenSection] = useState(null);
+
+  const toggleSection = (section) => {
+    setOpenSection(openSection === section ? null : section);
+  };
 
   return (
     <footer className="bg-[#184C3A] text-[#F8F9FA] pt-20 pb-8">
@@ -36,8 +42,17 @@ const Footer = () => {
 
           {/* Services */}
           <div>
-            <h4 className="text-lg font-bold text-white mb-6">Services</h4>
-            <ul className="space-y-4 text-[#F8F9FA]/80 text-sm">
+            <button 
+              onClick={() => toggleSection('services')}
+              className="w-full flex items-center justify-between text-left mb-6 md:cursor-default"
+            >
+              <h4 className="text-lg font-bold text-white">Services</h4>
+              <ChevronDown 
+                size={18} 
+                className={`md:hidden transition-transform duration-300 ${openSection === 'services' ? 'rotate-180' : ''}`} 
+              />
+            </button>
+            <ul className={`space-y-4 text-[#F8F9FA]/80 text-sm ${openSection === 'services' ? 'block' : 'hidden md:block'}`}>
               <li><Link href="/ayurveda-clinic-jvc" className="hover:text-white transition-colors">Ayurveda in JVC</Link></li>
               <li><Link href="/physiotherapy-jvc" className="hover:text-white transition-colors">Physiotherapy in JVC</Link></li>
               <li><Link href="/dermatology-jvc" className="hover:text-white transition-colors">Dermatology in JVC</Link></li>
@@ -48,24 +63,44 @@ const Footer = () => {
 
           {/* Popular Treatments */}
           <div>
-        <h4 className="text-lg font-bold text-white mb-6">Popular Treatments</h4>
-        <ul className="space-y-4 text-[#F8F9FA]/80 text-sm">
-          <li><Link href="/treatments/manual-therapy-dubai/" className="hover:text-white transition-colors">Manual Therapy</Link></li>
-          <li><Link href="/treatments/cupping-therapy-dubai/" className="hover:text-white transition-colors">Cupping Therapy</Link></li>
-          <li><Link href="/treatments/panchakarma-dubai/" className="hover:text-white transition-colors">Panchakarma in Dubai</Link></li>
-          <li><Link href="/treatments/abhyanga-dubai/" className="hover:text-white transition-colors">Abhyanga Massage</Link></li>
-          <li><Link href="/treatments/shirodhara-dubai/" className="hover:text-white transition-colors">Shirodhara</Link></li>
-          <li><Link href="/services/physiotherapy" className="hover:text-white transition-colors">Sports Injury Rehab</Link></li>
-          <li><Link href="/physiotherapy/post-surgery-rehab-dubai/" className="hover:text-white transition-colors">Post-Surgery Rehab</Link></li>
-          <li><Link href="/services/dermatology" className="hover:text-white transition-colors">PRP Hair</Link></li>
-          <li><Link href="/services/home-healthcare" className="hover:text-white transition-colors">IV Drip at Home</Link></li>
-        </ul>
-      </div>
+            <button 
+              onClick={() => toggleSection('treatments')}
+              className="w-full flex items-center justify-between text-left mb-6 md:cursor-default"
+            >
+              <h4 className="text-lg font-bold text-white">Popular Treatments</h4>
+              <ChevronDown 
+                size={18} 
+                className={`md:hidden transition-transform duration-300 ${openSection === 'treatments' ? 'rotate-180' : ''}`} 
+              />
+            </button>
+            <ul className={`space-y-4 text-[#F8F9FA]/80 text-sm ${openSection === 'treatments' ? 'block' : 'hidden md:block'}`}>
+              <li><Link href="/treatments/manual-therapy-dubai/" className="hover:text-white transition-colors">Manual Therapy</Link></li>
+              <li><Link href="/treatments/cupping-therapy-dubai/" className="hover:text-white transition-colors">Cupping Therapy</Link></li>
+              <li><Link href="/treatments/panchakarma-dubai/" className="hover:text-white transition-colors">Panchakarma in Dubai</Link></li>
+              <li><Link href="/treatments/abhyanga-dubai/" className="hover:text-white transition-colors">Abhyanga Massage</Link></li>
+              <li><Link href="/treatments/shirodhara-dubai/" className="hover:text-white transition-colors">Shirodhara</Link></li>
+              <li><Link href="/treatments/skin-rejuvenation-jvc/" className="hover:text-white transition-colors">Skin Rejuvenation</Link></li>
+              <li><Link href="/conditions/psoriasis-treatment-dubai" className="hover:text-white transition-colors">Psoriasis Treatment</Link></li>
+              <li><Link href="/services/physiotherapy" className="hover:text-white transition-colors">Sports Injury Rehab</Link></li>
+              <li><Link href="/physiotherapy/post-surgery-rehab-dubai/" className="hover:text-white transition-colors">Post-Surgery Rehab</Link></li>
+              <li><Link href="/services/dermatology" className="hover:text-white transition-colors">PRP Hair</Link></li>
+              <li><Link href="/services/home-healthcare" className="hover:text-white transition-colors">IV Drip at Home</Link></li>
+            </ul>
+          </div>
 
           {/* Company */}
           <div>
-            <h4 className="text-lg font-bold text-white mb-6">Company</h4>
-            <ul className="space-y-4 text-[#F8F9FA]/80 text-sm">
+            <button 
+              onClick={() => toggleSection('company')}
+              className="w-full flex items-center justify-between text-left mb-6 md:cursor-default"
+            >
+              <h4 className="text-lg font-bold text-white">Company</h4>
+              <ChevronDown 
+                size={18} 
+                className={`md:hidden transition-transform duration-300 ${openSection === 'company' ? 'rotate-180' : ''}`} 
+              />
+            </button>
+            <ul className={`space-y-4 text-[#F8F9FA]/80 text-sm ${openSection === 'company' ? 'block' : 'hidden md:block'}`}>
               <li><Link href="/about" className="hover:text-white transition-colors">About Us</Link></li>
               <li><Link href="/doctors" className="hover:text-white transition-colors">Our Doctors</Link></li>
               <li><Link href="/insurance" className="hover:text-white transition-colors">Insurance</Link></li>

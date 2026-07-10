@@ -19,7 +19,7 @@ export const backPainPhysioHero = {
     title: "EVIDENCE-BASED PHYSIOTHERAPY ONLY",
     subtitle: 'This page is for physiotherapy-only back pain treatment. For integrated Ayurveda + physiotherapy care, see our <a href="/conditions/back-pain-ayurveda-dubai/" class="text-[#1F4538] hover:underline">back pain integrated care page</a> →'
   },
-  image: "/images/back-pain-physio-vedara-jvc.webp",
+  image: "/images/back-pain-physiotherapy-jvc-hero.webp",
   alt: "Physiotherapist treating back pain patient at Vedara Care JVC Dubai clinic"
 };
 
@@ -347,7 +347,7 @@ export const backPainPhysioCTA = {
   button1Text: "Book Back Pain Assessment",
   button1Href: "/book",
   button2Text: "WhatsApp Us",
-  button2Href: "https://wa.me/971555867466",
+  button2Href: "https://wa.me/971555867466?text=Hello%20Vedara%20Care,%20I%20would%20like%20to%20inquire%20about%20back%20pain%20physiotherapy%20and%20book%20a%20consultation.",
   footer: "Initial assessment from AED 350 · Walking distance from Circle Mall, JVC · Evidence-based DPT-qualified physiotherapists · Insurance direct-billing · Same-day appointments for severe acute pain"
 };
 

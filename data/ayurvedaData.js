@@ -9,7 +9,9 @@ export const ayurvedaHero = {
   image: "/images/ayurveda-clinic-jvc-hero.webp",
   alt: "BAMS-qualified Ayurvedic doctor performing pulse diagnosis (Nadi Pariksha) on a patient at Vedara Care Ayurveda clinic in JVC, Dubai",
   primaryCTA: "Book an Ayurvedic Consultation",
+  primaryCTAHref: "/book",
   secondaryCTA: "Chat on WhatsApp",
+  secondaryCTAHref: "https://wa.me/971555867466?text=Hello%20Vedara%20Care,%20I%20have%20a%20question%20about%20Ayurvedic%20treatment.",
   trustSignals: [
     "DHA-Licensed Practitioners",
     "BAMS-Qualified Doctors",
@@ -20,6 +22,7 @@ export const ayurvedaHero = {
     floatingCard: {
     title: "Led by BAMS-qualified physicians",
     subtitle: "DHA Licensed · 15+ years average experience"
+    
   },
 };
 
@@ -246,28 +249,28 @@ export const ayurvedaConditions = {
       category: "Pain and Movement",
       description: "Kativasti + internal medicines + lifestyle correction",
       programme: "Typical programme: 14-21 days",
-      link: "/conditions/back-pain-ayurveda-dubai/"
+      link: "/conditions/back-pain-ayurveda-dubai"
     },
     {
       title: "Sciatica",
       category: "Pain and Movement",
       description: "Kativasti + Basti + classical herbs",
       programme: "Typical programme: 21-28 days",
-      link: "/conditions/sciatica-treatment-jvc/"
+      link: "/conditions/sciatica-physiotherapy-dubai"
     },
     {
       title: "Frozen Shoulder",
       category: "Pain and Movement",
       description: "Abhyanga + Patra Pinda Sweda + internal medicines",
       programme: "Typical programme: 14-21 days",
-      link: "/conditions/frozen-shoulder-treatment-jvc/"
+      link: "/conditions/frozen-shoulder-dubai"
     },
     {
       title: "Knee Pain (Osteoarthritis)",
       category: "Pain and Movement",
       description: "Janu Vasti + herbal medicines",
       programme: "Typical programme: 14-21 days",
-      link: "/conditions/knee-pain-treatment-jvc/"
+      link: "/conditions/knee-pain-physiotherapy-dubai"
     },
     {
       title: "Cervical Spondylosis",
@@ -281,7 +284,7 @@ export const ayurvedaConditions = {
       category: "Pain and Movement",
       description: "Panchakarma + classical formulations",
       programme: "Typical programme: 21-28 days",
-      link: "/conditions/arthritis-ayurveda-dubai/"
+      link: "/conditions/arthritis-ayurveda-dubai"
     },
     // Women's Health
     {
@@ -289,7 +292,7 @@ export const ayurvedaConditions = {
       category: "Womens Health and Hormonal",
       description: "Virechana + Basti + herbal medicines + diet",
       programme: "Typical programme: 3-6 months",
-      link: "/conditions/pcos-ayurveda-dubai/"
+      link: "/conditions/pcos-ayurveda-dubai"
     },
     {
       title: "Irregular Cycles",
@@ -303,14 +306,14 @@ export const ayurvedaConditions = {
       category: "Womens Health and Hormonal",
       description: "Sutika Paricharya (classical postpartum care)",
       programme: "Typical programme: 45 days",
-      link: "/conditions/postnatal-ayurveda-dubai/"
+      link: "/conditions/postnatal-ayurveda-dubai"
     },
     {
       title: "Thyroid (Hypothyroid)",
       category: "Womens Health and Hormonal",
       description: "Internal medicines + Nasya + diet",
       programme: "Typical programme: 3-6 months",
-      link: "/conditions/thyroid-ayurveda-dubai/"
+      link: "/conditions/thyroid-ayurveda-dubai"
     },
     {
       title: "Menopausal Symptoms",
@@ -332,7 +335,7 @@ export const ayurvedaConditions = {
       category: "Metabolic and Lifestyle",
       description: "Shirodhara + Medhya herbs",
       programme: "Typical programme: 4-8 weeks",
-      link: "/conditions/stress-anxiety-ayurveda-dubai/"
+      link: "/conditions/stress-anxiety-ayurveda-dubai"
     },
     {
       title: "Insomnia",
@@ -346,31 +349,38 @@ export const ayurvedaConditions = {
       category: "Metabolic and Lifestyle",
       description: "Nasya + Shirodhara + internal medicines",
       programme: "Typical programme: 2-3 months",
-      link: "/conditions/migraine-ayurveda-dubai/"
+      link: "/conditions/migraine-ayurveda-dubai"
     },
     {
       title: "Hair Loss",
       category: "Metabolic and Lifestyle",
       description: "Nasya + medicated oils + internal support",
       programme: "Typical programme: 3-6 months",
-      link: "/conditions/hair-loss-ayurveda-dubai/"
+      link: "/conditions/hair-loss-ayurveda-dubai"
+    },
+    {
+      title: "Psoriasis",
+      category: "Metabolic and Lifestyle",
+      description: "Virechana + internal medicines + skin care",
+      programme: "Typical programme: 3-6 months",
+      link: "/conditions/psoriasis-treatment-dubai"
     },
     {
       title: "Diabetes Support",
       category: "Metabolic and Lifestyle",
       description: "Panchakarma + Madhumeha herbs (alongside endocrinologist)",
       programme: "Typical programme: 3-6 months",
-      link: "/conditions/diabetes-ayurveda-dubai/"
+      link: "/conditions/diabetes-ayurveda-dubai"
     },
     {
       title: "Weight Management",
       category: "Metabolic and Lifestyle",
       description: "Udvartana + Virechana + lifestyle programme",
       programme: "Typical programme: 2-4 months",
-      link: "/conditions/weight-loss-ayurveda-dubai/"
+      link: "/conditions/weight-loss-ayurveda-dubai"
     }
   ],
-  footer: "Browse all 30+ conditions"
+  footer: "Browse all conditions"
 };
 
 export const ayurvedaWhy = {
@@ -408,6 +418,7 @@ export const ayurvedaReviews = {
   title: "When Ayurveda works, it works deeply.",
   description: "Verified Google reviews from patients treated at our JVC Ayurveda clinic. Conditions, programmes, and outcomes, in their own words.",
   buttonText: "Read All Ayurveda Reviews",
+  buttonHref: "https://www.google.com/maps/search/?api=1&query=Vedara+Care+Polyclinic+JVC+Dubai",
   items: [
     {
       quote: "After three years of back pain, finally a long-term answer.",
@@ -445,30 +456,32 @@ export const ayurvedaLocation = {
     title: "Vedara Care Polyclinic",
     subtitle: "JVC, Dubai",
     linkText: "Get Directions",
+    directionsHref: "https://www.google.com/maps/search/?api=1&query=Vedara+Care+Polyclinic+JVC+Dubai",
     image: "vedara-care-ayurveda-clinic-interior-jvc.webp",
     alt: "Vedara Care Ayurveda clinic location in Jumeirah Village Circle, Dubai — next to Circle Mall"
   },
   address: {
     label: "Address",
-    area: "Jumeirah Village Circle",
-    city: "Dubai, UAE"
+    area: "Al Barsha South Fourth, Binghatti Azure, Shop -4,",
+    city: "Jumeraih Village Circle (JVC) Dubai"
   },
   contact: {
     label: "Contact",
     phone: "+971 55 586 7466",
-    whatsapp: "+971 5X XXX XXXX",
+    whatsapp: "+971 55 586 7466",
     email: "booking@vedaracare.ae"
   },
   hours: {
     label: "Hours",
-    weekdays: "Mon - Sat: 9 AM to 9 PM",
-    sunday: "Sun: 10 AM to 7 PM"
+    weekdays: "Mon - Sun: 8:30 am to 11:30 pm",
+    sunday: ""
   },
   // mapEmbed: "https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d3613.9894568193345!2d55.20722358578439!3d25.068346479666594!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x3e5f6dd72f3da587%3A0xe7ecca8687a75b72!2sVedara%20Care%20Polyclinic!5e0!3m2!1sen!2sus!4v1780727442216!5m2!1sen!2sus",
    mapEmbed: "https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d3613.9894568193345!2d55.20722358578439!3d25.068346479666594!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x3e5f6dd72f3da587%3A0xe7ecca8687a75b72!2sVedara%20Care%20Polyclinic!5e0!3m2!1sen!2sus!4v1780727442216!5m2!1sen!2sus",
   parkingText: "Free covered parking for patients",
   tags: ["Next to Circle Mall", "5 min from FIVE JVC Hotel", "15 mins from JLT/Marina", "Free covered parking"],
-  buttonText: "Book Your Ayurvedic Visit"
+  buttonText: "Book Your Ayurvedic Visit",
+  buttonHref: "https://wa.me/971555867466?text=Hello%20Vedara%20Care,%20I%20would%20like%20to%20book%20an%20Ayurvedic%20visit."
 };
 
 export const ayurvedaCTA = {
@@ -477,7 +490,9 @@ export const ayurvedaCTA = {
   title: "Begin with a consultation. Decide everything else from there.",
   description: "An Ayurvedic consultation is not a commitment to a treatment plan — it is a diagnostic conversation. You will leave knowing what is actually going on and what we recommend. Whether you choose to proceed is entirely up to you.",
   button1Text: "Book an Ayurveda Consultation",
+  button1Href: "/book",
   button2Text: "Chat on WhatsApp",
+  button2Href: "https://wa.me/971555867466?text=Hello%20Vedara%20Care,%20I%20have%20a%20question%20about%20Ayurvedic%20treatment.",
   subtext: "First consultation from AED [price] · Typical WhatsApp reply under 15 minutes"
 };
 
@@ -489,10 +504,12 @@ export const dubaiHubHero = {
   label: "A GUIDE TO AYURVEDIC TREATMENT IN DUBAI",
   title: "Authentic Ayurveda in\nDubai — what it is, who it\nis for, and where to find\nit.",
   description: "A definitive guide to Ayurvedic treatment in Dubai, written by the DHA-licensed Ayurvedic team at Vedara Care Polyclinic. Covering treatments, costs, insurance, and how to choose the right Ayurveda clinic for your specific needs.",
-  image: "ayurveda-dubai-hero.webp",
+  image: "/images/ayurveda-dubai-hero.webp",
   alt: "Ayurvedic doctor selecting herbal medicines at a DHA-licensed Ayurveda clinic in Dubai",
   primaryCTA: "Book an Ayurvedic Consultation",
-  secondaryCTA: "Read the Guide",
+  primaryCTAHref: "/book",
+  secondaryCTA: "Chat on WhatsApp",
+  secondaryCTAHref: "https://wa.me/971555867466?text=Hello%20Vedara%20Care,%20I%20would%20like%20to%20know%20more%20about%20Ayurvedic%20treatments.",
   trustSignals: [
     "DHA-Licensed Ayurveda Practice",
     "BAMS-Qualified Physicians",
@@ -502,7 +519,9 @@ export const dubaiHubHero = {
   floatingCard: {
     title: "EST. DUBAI",
     subtitle: "5,000+ Patients Treated"
-  }
+  },
+   image: "/images/ayurveda-dubai-hero.webp",
+  alt: "Ayurvedic doctor selecting herbal medicines at a DHA-licensed Ayurveda clinic in Dubai"
 };
 
 export const dubaiHubIntro = {
@@ -602,6 +621,7 @@ export const dubaiHubReviews = {
   title: "Patient outcomes from across Dubai.",
   description: "",
   buttonText: "Read All Reviews",
+  buttonHref: "https://www.google.com/maps/search/?api=1&query=Vedara+Care+Polyclinic+JVC+Dubai",
   items: [
     {
       quote: "After three years of back pain, finally a long-term answer.",
@@ -638,6 +658,7 @@ export const dubaiHubFaqs = {
   title: "The most asked questions about Ayurvedic treatment in Dubai.",
   description: "Honest answers from our DHA-licensed clinical team. For JVC-specific practical details, see our <a href=\"/treatments/panchakarma-jvc/\" class=\"text-[#C9A961] hover:underline transition-colors\">Panchakarma in JVC guide</a>.",
   buttonText: "Ask the Ayurvedic Team",
+  buttonHref: "https://wa.me/971555867466?text=Hello%20Vedara%20Care,%20I%20have%20a%20question%20about%20Ayurvedic%20treatment.",
   faqs: [
     {
       question: "Is Ayurvedic treatment legal and regulated in Dubai?",
@@ -696,7 +717,9 @@ export const dubaiHubCTA = {
   title: "Start with a consultation. Decide everything else from there.",
   description: "An Ayurvedic consultation is not a commitment to a treatment plan — it is a diagnostic conversation. You will leave knowing what is actually going on and what we recommend. Whether you choose to proceed is entirely up to you.",
   button1Text: "Book a Consultation",
+  button1Href: "/book",
   button2Text: "Chat on WhatsApp",
+  button2Href: "https://wa.me/971555867466?text=Hello%20Vedara%20Care,%20I%20would%20like%20to%20know%20more%20about%20Ayurvedic%20treatments.",
   subtext: "First consultations from AED 350 · Typical WhatsApp reply under 15 minutes"
 };
 
@@ -710,7 +733,7 @@ export const dubaiHubBasics = {
     "What Ayurveda is not, however, is a spa service. Authentic Ayurvedic treatment in Dubai is medical — prescribed by a DHA-licensed BAMS physician after diagnostic assessment, using regulated herbal medicines and classical therapies. If you are offered \"Ayurvedic massage\" without a doctor consultation, you are being sold wellness, not medicine."
   ],
   quote: "Ayurveda treats the cause. Modern medicine often manages the symptom. The best Dubai patients use both.",
-  image: "ayurvedic-text-manuscript-classical.webp",
+  image: "/images/ayurveda-medicines-classical-pharmacy.webp",
   alt: "Classical Ayurvedic palm-leaf manuscript representing 5000-year tradition of Ayurveda in Dubai",
   imageLeft: true
 };
@@ -731,7 +754,7 @@ export const dubaiHubApplications = {
     "IBS and chronic digestive issues",
     "<a href=\"/conditions/thyroid-ayurveda-dubai/\" class=\"hover:underline\">Thyroid disorders</a>(alongside endocrinology)",
     "Type 2 diabetes support",
-    "<a href=\"/conditions/skin-ayurveda-dubai/\" class=\"hover:underline transition-colors\">Skin conditions including eczema and psoriasis</a>"
+    "<a href=\"/conditions/skin-ayurveda-dubai/\" class=\"hover:underline hover:text-[#C9A55A] transition-colors\">Skin conditions including</a> <a href=\"/conditions/psoriasis-treatment-dubai/\" class=\"hover:underline hover:text-[#C9A55A] transition-colors psoriasis-link\">psoriasis</a> and <a href=\"/conditions/eczema-treatment-dubai/\" class=\" hover:underline hover:text-[#C9A55A] transition-colors description-link\">eczema</a>"
   ],
   referralCases: [
     "Acute infections requiring antibiotics",
@@ -849,7 +872,7 @@ export const dubaiHubNextSteps = {
       title: "Visit Our JVC Clinic",
       description: "Classical Ayurveda in the heart of Jumeirah Village Circle.",
       linkText: "View Clinic Details",
-      href: "/ayurveda-clinic-jvc/",
+      href: "/ayurveda-clinic-jvc",
       image: "vedara-care-ayurveda-clinic-jvc-dubai.webp",
       alt: "Vedara Care Polyclinic interior, DHA-licensed Ayurveda clinic in JVC Dubai"
     },

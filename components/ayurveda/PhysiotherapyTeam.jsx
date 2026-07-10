@@ -26,14 +26,14 @@ const PhysiotherapyTeam = ({ label, title, description, team = [], members = [],
             const slug = createSlug(member.name);
             return (
               <div key={index} className="bg-[#FAF8F5] rounded-xl overflow-hidden shadow-sm hover:shadow-md transition-all flex flex-col">
-                <div className="aspect-[5/5] bg-gray-100 overflow-hidden">
-                  {member.image && (
-                    <img 
-                      src={member.image} 
-                      alt={member.alt || `${member.name} physiotherapist at Vedara Care JVC Dubai`} 
-                      className="w-full h-full object-cover"
-                    />
-                  )}
+              <div className="aspect-[5/5] bg-gray-100 overflow-hidden">
+                {member.image && (
+                  <img 
+                    src={member.image} 
+                    alt={member.alt} 
+                    className="w-full h-full object-cover"
+                  />
+                )}
                 </div>
                 <div className="p-4 space-y-3 flex flex-col flex-grow">
                   <h4 className="text-lg" style={{ fontFamily: 'Fraunces, serif', fontWeight: 500, color: '#1A1A1A' }}>{member.name}</h4>

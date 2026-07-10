@@ -81,11 +81,8 @@ export const skinConcernSelector = {
         "· When should I consider injectables?",
         "· What is realistic without surgery?"
       ],
-      links: [
-        { text: "Botulinum toxin", href: "/treatments/botulinum-toxin-dubai/" },
-        { text: "Dermal fillers", href: "/treatments/dermal-fillers-dubai/" },
-        { text: "Aesthetic dermatology", href: "/dermatology-clinic-jvc/#aesthetic-dermatology" }
-      ]
+      linkText: "Learn more about Signs of Aging — Wrinkles & Volume Loss",
+      linkHref: "/treatments/skin-rejuvenation-jvc/"
     },
     {
       number: "04",
@@ -113,6 +110,18 @@ export const skinConcernSelector = {
     },
     {
       number: "06",
+      title: "Psoriasis",
+      description: "Chronic autoimmune skin condition with red, scaly patches, potentially affecting joints (psoriatic arthritis). Treatment options include topical therapies, phototherapy, systemic medications, and biologic therapies for severe cases. We provide comprehensive long-term management plans tailored to your needs.",
+      commonQuestions: [
+        "· Can psoriasis be completely managed?",
+        "· What are biologic therapies?",
+        "· Is there a connection to arthritis?"
+      ],
+      linkText: "Learn more about Psoriasis",
+      linkHref: "/conditions/psoriasis-treatment-dubai"
+    },
+    {
+      number: "07",
       title: "Moles, Skin Cancer Concerns or Suspicious Lesions",
       description: "Changing moles, new growths, suspicious spots, family history of skin cancer, or general skin cancer screening important. Particularly important in Dubai given UV exposure intensity. Early detection of skin cancers is critical and often curative.",
       commonQuestions: [
@@ -124,7 +133,7 @@ export const skinConcernSelector = {
       linkHref: "/dermatology-clinic-jvc/#medical-dermatology"
     },
     {
-      number: "07",
+      number: "08",
       title: "Unwanted Hair — Removal Options",
       description: "Excess facial or body hair, hirsutism, general unwanted hair patients want to address permanently rather than waxing. Laser hair removal is the primary modern treatment but requires expert selection based on skin and hair characteristics.",
       commonQuestions: [
@@ -136,7 +145,7 @@ export const skinConcernSelector = {
       linkHref: "/dermatology-clinic-jvc/#aesthetic-dermatology"
     },
     {
-      number: "08",
+      number: "09",
       title: "Skin Health & Maintenance — General Wellness",
       description: "Patients interested in optimising skin health, preventing aging, maintaining current skin condition, or developing a sustainable skincare regimen. Not necessarily problem-focused — interested in proactive skin care and longevity. An increasing demographic in Dubai's health-conscious population.",
       commonQuestions: [
@@ -148,7 +157,7 @@ export const skinConcernSelector = {
       linkHref: "/dermatology-clinic-jvc/#aesthetic-dermatology"
     },
     {
-      number: "09",
+      number: "10",
       title: "Excessive Sweating (Hyperhidrosis)",
       description: "Excessive sweating in underarms, palms, soles, or face — particularly significant in Dubai's climate. Affects daily life, clothing, and social situations. Treatment options are highly effective — botulinum toxin treatment can produce dramatic improvement for months at a time.",
       commonQuestions: [
@@ -160,7 +169,7 @@ export const skinConcernSelector = {
       linkHref: "/dermatology-clinic-jvc/#medical-dermatology"
     },
     {
-      number: "10",
+      number: "11",
       title: "Skin Concerns I Cannot Categorise",
       description: "Vague skin concerns, multiple concerns you cannot prioritise, unusual symptoms, or simply not knowing what your situation is. Comprehensive dermatology consultation provides expert evaluation and clear, structured guidance.",
       commonQuestions: [
@@ -222,7 +231,7 @@ export const skinClinicFaqs = {
   title: "Questions patients ask when exploring skin care options.",
   description: "For specific procedural and clinical questions, see our dermatology clinic page.",
   primaryCtaText: "Ask Our Team on WhatsApp",
-  primaryCtaHref: "https://wa.me/971555867466X",
+  primaryCtaHref: "https://wa.me/971555867466?text=Hello%20Vedara%20Care,%20I%20would%20like%20to%20inquire%20about%20skin%20care%20and%20book%20a%20consultation.",
   secondaryCtaText: "Full dermatology clinic details →",
   secondaryCtaHref: "/dermatology-clinic-jvc",
   faqs: [

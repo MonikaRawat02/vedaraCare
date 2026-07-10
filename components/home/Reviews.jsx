@@ -8,6 +8,7 @@ const Reviews = ({
   title = "Verified outcomes, in patients' own words.",
   description = "These are Google reviews from patients personally treated by Dr. Nair at our JVC clinic. Displayed in full, never edited.",
   buttonText = "Read All Reviews for Dr. Nair",
+  buttonHref = "https://www.google.com/maps/search/?api=1&query=Vedara+Care+Polyclinic+JVC+Dubai",
   items = [
     {
       quote: "Dr. Nair is the first doctor in Dubai who actually listened.",
@@ -96,9 +97,9 @@ const Reviews = ({
         </div>
 
         <div className="text-center">
-          <button className="inline-flex items-center px-8 py-3.5 border border-[#C9A961] text-[#C9A961] font-sans font-bold text-[14px] rounded-md hover:bg-[#C9A961] hover:text-white transition-all duration-300">
+          <a href={buttonHref} target="_blank" rel="noopener noreferrer" className="inline-flex items-center px-8 py-3.5 border border-[#C9A961] text-[#C9A961] font-sans font-bold text-[14px] rounded-md hover:bg-[#C9A961] hover:text-white transition-all duration-300">
             {buttonText}
-          </button>
+          </a>
         </div>
       </div>
     </section>

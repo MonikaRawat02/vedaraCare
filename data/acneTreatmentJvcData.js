@@ -157,10 +157,11 @@ export const acneTypes = {
       number: "07",
       title: "Acne Scarring",
       subTitle: "Post-Acne Textural Changes",
-      description: "Lasting consequences of severe or untreated acne. Multiple scarring patterns: ice-pick scars (deep narrow), rolling scars (broad shallow), boxcar scars (sharp edged), hypertrophic and keloid scars (raised). Treatment is specialised — multiple approaches including subcision, fractional laser, microneedling, chemical peels, fillers for specific scar types.",
+      description: "Lasting consequences of severe or untreated acne. Multiple scarring patterns: ice-pick scars (deep narrow), rolling scars (broad shallow), boxcar scars (sharp edged), hypertrophic and keloid scars (raised). Treatment is specialised — multiple approaches including subcision, fractional laser, microneedling, chemical peels, fillers for specific scar types, often part of a <a href=\"/treatments/skin-rejuvenation-jvc/\" class=\"description-link\">skin rejuvenation</a> approach.",
       typicalSigns: [
         "Patient with cleared acne but lasting textural and pigmentation changes",
-      ]
+      ],
+      href: "/conditions/acne-scars-dubai"
     },
     {
       number: "08",
@@ -289,8 +290,8 @@ export const acneTreatmentPricing = {
     { name: "Initial dermatology consultation (45–60 minutes)", price: "AED [X]" },
     { name: "Follow-up consultation", price: "AED [X]" },
     { name: "Acne treatment monitoring visit", price: "AED [X]" },
-    { name: "Chemical peel — superficial (for acne)", price: "From AED [X]" },
-    { name: "Chemical peel — medium-depth", price: "From AED [X]" },
+   { name: '<a href="/treatments/chemical-peel-dubai/" class="hover:text-[#B8924F] hover:underline transition-colors">Chemical peel — superficial (for acne)</a>', price: 'From AED [X]' },
+   { name: '<a href="/treatments/chemical-peel-dubai/" class="hover:text-[#B8924F] hover:underline transition-colors">Chemical peel — medium-depth</a>', price: 'From AED [X]' },
     { name: "Laser treatment for acne (per session)", price: "From AED [X]" },
     { name: "Intralesional cortisone injection (per lesion)", price: "From AED [X]" },
     { name: "Comedone extraction session", price: "From AED [X]" },
@@ -581,7 +582,7 @@ export const acneTreatmentCTA = {
   button1Text: "Book Acne Consultation",
   button1Href: "/book",
   button2Text: "WhatsApp Us",
-  button2Href: "https://wa.me/971555867466",
+  button2Href: "https://wa.me/971555867466?text=Hello%20Vedara%20Care,%20I%20would%20like%20to%20inquire%20about%20acne%20treatment%20and%20book%20a%20consultation.",
   footer: "Initial consultation from AED [X] · Walking distance from Circle Mall, JVC · DHA-licensed consultant dermatologists · 400+ acne patients treated · All acne types and skin types · Female and male dermatologists · Insurance direct-billing"
 };
 

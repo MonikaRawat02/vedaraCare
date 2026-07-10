@@ -18,7 +18,7 @@ export const pelvicFloorHero = {
   floatingCard: {
     title: "Entirely Female Team for This Service",
     subtitle: "Our pelvic floor service is delivered exclusively by female physiotherapists. Internal assessment is available but never required — external-only assessment produces excellent outcomes for many conditions." },
-  image: "/images/female-pelvic-floor-physiotherapist-vedara-jvc.webp ",
+  image: "/images/pelvic-floor-physiotherapy-dubai-hero.webp",
   alt: "Female pelvic floor physiotherapist at Vedara Care JVC Dubai clinic",
  
 };
@@ -60,7 +60,7 @@ export const pelvicFloorSciaticaSection1 = {
     ],
     footer: "Many of the most distressing pelvic floor symptoms — stress incontinence, prolapse symptoms, painful intercourse, postnatal recovery — respond excellently to physiotherapy. The shame and silence are often more limiting than the conditions themselves."  },
   rightContent: {
-    image: "/images/pelvic-floor-function-illustration.webp",
+    image: "/images/postnatal-pelvic-floor-recovery-vedara-jvc.webp",
     alt: "Pelvic floor function modesty-appropriate educational illustration",
     label: "KEY STATISTICS",
     keyStatistics: [
@@ -462,8 +462,7 @@ export const pelvicFloorPostnatalSection = {
     //   paragraph: "We work closely with your obstetrician, midwife, and maternity team to ensure seamless care. We can communicate with your providers about your recovery, share assessment findings with your consent, and align our treatment plan with your overall postnatal care goals."
     // }
   ],
-  image: "/images/postnatal-pelvic-floor-recovery-vedara-jvc.webp",
-  alt: "Postnatal pelvic floor recovery at Vedara Care JVC Dubai with female physiotherapist",
+
   sideBoxes: [
     {
       label: "For new mothers (6 weeks postpartum+)",

@@ -19,7 +19,7 @@ export const migraineHero = {
     title: "WE READ YOUR DIARY, NOT YOUR AURA.",
     subtitle: "Bring your migraine tracker, your previous neurologist notes, and your current medications. Treatment starts from data."
   },
-  image: "conditions/migraine-diary-review-consultation-vedara-jvc.webp",
+  image: "/images/migraine-ayurveda-dubai-hero.webp",
   alt: "Ayurvedic doctor reviewing migraine diary with patient at Vedara Care JVC clinic Dubai"
 };
 
@@ -41,7 +41,7 @@ export const migraineMechanism = {
     "Authentic Ayurvedic treatment at our JVC clinic respects both frameworks. We use classical Ayurvedic diagnostic principles and treatment protocols, working alongside modern neurology and current migraine medications. The combination addresses what neither alone can fully treat."
   ],
   quote: "Most clinics treating migraine treat the headache. The clinical task is to treat the migraine — the underlying disease — and reduce both the frequency and severity of headache days.",
-  image: "conditions/shirodhara-migraine-treatment-vedara-jvc.webp",
+  image: "/images/migraine-diary-review-consultation-vedara-jvc.webp",
   alt: "Ayurvedic doctor explaining migraine pathway to patient at Vedara Care JVC",
   imageLeft: false
 };

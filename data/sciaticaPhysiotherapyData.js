@@ -240,7 +240,7 @@ export const sciaticaPhysioCTA = {
   button1Text: "Book Sciatica Assessment",
   button1Href: "/book",
   button2Text: "WhatsApp Us",
-  button2Href: "https://wa.me/971555867466",
+  button2Href: "https://wa.me/971555867466?text=Hello%20Vedara%20Care,%20I%20would%20like%20to%20inquire%20about%20sciatica%20physiotherapy%20and%20book%20a%20consultation.",
   footer: "Initial assessment from AED 350 · McKenzie certified specialists · Walking distance from Circle Mall, JVC · Patients across Dubai · Insurance direct-billing with seven major insurers"
 };
 

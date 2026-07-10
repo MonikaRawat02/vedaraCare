@@ -42,7 +42,7 @@ export const skinMechanism = {
     "Authentic Ayurvedic skin treatment at our JVC clinic addresses these systemic patterns through structured 4-9 month programmes. The topical treatments your dermatologist has prescribed continue throughout (we do not ask you to stop them). What we add is the systemic work that reduces the underlying patterns producing recurrence — so the topical treatments become progressively less needed over time, not because we replace them, but because the root patterns improve."
   ],
   quote: "Topical treatment of chronic skin disease is like mopping the floor while the tap is running. Necessary, sometimes essential — but never enough.",
-  image: "skin-consultation-vedara-jvc.webp",
+  image: "/images/skin-consultation-vedara-jvc.webp",
   alt: "Doctor and patient reviewing systemic health factors affecting skin at Vedara Care JVC"
 };
 
@@ -304,7 +304,7 @@ export const skinIntegration = {
     "At Vedara Care, our Ayurvedic doctors and DHA-licensed dermatologists share clinical notes for skin patients. The dermatologist provides accurate diagnosis, manages acute presentations, prescribes topical and systemic treatments as clinically indicated, and monitors disease activity. The Ayurvedic physician addresses systemic patterns through Panchakarma, internal medicines, dietary protocols, and lifestyle modification.",
     "A typical integrated programme looks like: dermatology visit for accurate diagnosis and topical-systemic treatment optimization; then Ayurvedic consultation for systemic root pattern work, with both teams reviewing progress together at key milestones. Topical treatments continue throughout the Ayurvedic programme — we do not ask you to stop them. The goal is reducing the underlying patterns, so topical treatments become progressively less needed over time."
   ],
-  image: "integrated-ayurveda-dermatology-jvc.webp",
+  image: "/images/integrated-ayurveda-dermatology-jvc.webp",
   features: [
     "Joint clinical notes between dermatology and Ayurveda team",
     "Coordinated treatment protocols for chronic skin conditions",

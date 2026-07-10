@@ -361,6 +361,7 @@ export const physiotherapyTwoImage = {
   ],
   description2: "For patients in areas outside reasonable commute distance, or patients with mobility constraints, our home physiotherapy service operates across Dubai. Home visits are particularly utilised for post-surgical patients in early recovery, elderly orthopaedic patients, and patients with significant mobility limitations.",
   imageAlt: "Vedara Care JVC physiotherapy clinic Dubai serving all neighbourhoods",
+  image: "/images/physiotherapy-dubai-clinic-vedara-jvc.webp",
  
 };
 

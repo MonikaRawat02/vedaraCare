@@ -20,7 +20,7 @@ export const melasmaTreatmentHero = {
     title: "MELASMA REQUIRES EXPERTISE.",
     subtitle: "Wrong treatment can substantially worsen melasma — particularly in darker skin types. Specialist expertise in treatment selection is essential; many clinics lack it."
   },
-  image: "/images/melasma-treatment-jvc-hero.webp",
+  image: "/images/melasma-treatment-jvc-dubai-hero.webp",
   alt: "Melasma treatment consultation at Vedara Care JVC Dubai with consultant dermatologist"
 };
 
@@ -255,7 +255,7 @@ export const melasmaTreatmentOptions = {
       description: "Increasingly important addition to melasma treatment for appropriate patients. Oral tranexamic acid demonstrates substantial efficacy for melasma. Typical dosing 250 mg twice daily. Requires medical evaluation — contraindications include thromboembolic risk factors. Most patients tolerate well. Combined with topical treatment produces substantially better outcomes than topical alone in many cases. Treatment typically 3–6 months with possible maintenance approach."
     },
     {
-      subtitle: "Chemical peels",
+      subtitle: '<a href="/treatments/chemical-peel-dubai" class=" hover:text-[#B8924F] hover:underline transition-colors">Chemical peels</a>',
       description: "Calibrated to skin type and melasma severity. Superficial peels (glycolic acid, lactic acid, mandelic acid, salicylic acid) — safest for darker skin types; gentle skin renewal; minimal downtime. Medium-depth peels (TCA-based, Jessner's peel) — selectively in lighter skin types. Specialised melasma peels — combinations targeting pigmentation specifically. Peel selection must match skin type — wrong peel choice in darker skin produces hyperpigmentation worse than original melasma."
     },
     {

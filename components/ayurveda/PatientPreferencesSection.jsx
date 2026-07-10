@@ -272,9 +272,10 @@ const PigmentationConcernSelector = ({
                   )}
                 </div>
 
-                <p className="text-[14px] text-[#7A6F65] font-sans leading-relaxed">
-                  {type.description}
-                </p>
+               <p
+                className="text-[14px] text-[#7A6F65] font-sans leading-relaxed"
+                dangerouslySetInnerHTML={{ __html: type.description }}
+              />
 
                 <div className="pt-4 mt-4 border-t border-[#E5DFD3] space-y-3">
                   {type.howToRecognise && (

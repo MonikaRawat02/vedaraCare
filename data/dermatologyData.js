@@ -17,8 +17,8 @@ export const dermatologyHero = {
   floatingCard: {
     title: "MEDICAL AND COSMETIC EXPERTISE",
     subtitle: "Our dermatology practice combines medical dermatology (treating skin conditions and disease) with aesthetic dermatology (treatments for appearance and aging concerns). Many patients benefit from both — comprehensive skin care addresses both health and appearance." },
-  image: "/images/dermatology-consultation-vedara-jvc.webp",
-  alt: "Dermatology consultation at Vedara Care JVC Dubai with consultant dermatologist",
+  image: "/images/dermatologist-near-circle-mall-jvc-hero.webp",
+  alt: "Dermatology clinic near Circle Mall JVC Dubai — Vedara Care consultant dermatologists",
  
 };
 
@@ -59,8 +59,8 @@ export const dermatologySciaticaSection1 = {
     ],
     footer: "Excellent dermatology requires both — the clinical expertise to diagnose and treat skin conditions accurately, and the refined patient experience that makes treatment something patients choose rather than tolerate. We deliver both."    },
   rightContent: {
-    image: "/images/dermatology-treatments-vedara-jvc.webp",
-    alt: "Premium dermatology treatment room at Vedara Care JVC clinic"
+    image: "/images/dermatology-services-vedara-jvc.webp",
+    alt: "Dermatology-led care approach Vedara Care JVC"
   }
 };
 
@@ -72,7 +72,7 @@ export const dermatologyTypes = {
     {
       number: "01",
       title: 'Acne — Adolescent and Adult',
-      description: 'The most common dermatology consultation. We treat adolescent acne, adult-onset acne (increasingly common, particularly in women), hormonal acne, cystic acne, and acne scarring. Treatment ranges from topical and oral medications through to specialised procedures (chemical peels, light treatments, scar revision). Multi-modal approach typically produces best outcomes. Long-term management plan tailored to your specific acne pattern and triggers.',
+     description: 'The most common dermatology consultation. We treat adolescent acne, adult-onset acne (increasingly common, particularly in women), hormonal acne, cystic acne, and <a href="/conditions/acne-scars-dubai/" class="text-[#C9A961] hover:text-[#B8963E] hover:underline transition-colors">acne scarring</a>. Treatment ranges from topical and oral medications through to specialised procedures (chemical peels, light treatments, scar revision). Multi-modal approach typically produces best outcomes. Long-term management plan tailored to your specific acne pattern and triggers.',
       linkHref: '/conditions/acne-treatment-jvc/'
     },
     {
@@ -90,7 +90,8 @@ export const dermatologyTypes = {
     {
       number: "04",
       title: 'Psoriasis',
-      description: 'Chronic autoimmune skin condition requiring comprehensive management. Treatment options include topical therapies, phototherapy, systemic medications, and increasingly biologic therapies for severe presentations. We manage psoriasis as a chronic condition requiring sustained partnership rather than single intervention. Coordination with rheumatologists for psoriatic arthritis when present.'
+      description: 'Chronic autoimmune skin condition requiring comprehensive management. Treatment options include topical therapies, phototherapy, systemic medications, and increasingly biologic therapies for severe presentations. We manage psoriasis as a chronic condition requiring sustained partnership rather than single intervention. Coordination with rheumatologists for psoriatic arthritis when present.',
+      linkHref: '/conditions/psoriasis-treatment-dubai'
     },
     {
       number: "05",
@@ -136,8 +137,8 @@ export const dermatologyAestheticTypes = {
     {
       number: "03",
       title: 'Chemical Peels',
-      description: 'Multiple depths and applications. Superficial peels (glycolic, salicylic, lactic acid) for general skin renewal, mild pigmentation, acne maintenance — minimal downtime. Medium-depth peels (TCA-based) for moderate pigmentation, photoaging, acne scarring. Deeper peels for more substantial concerns with appropriate downtime. Peel selection calibrated to skin type — critical for darker Fitzpatrick types.',
-     
+      description: 'Multiple depths and applications. Superficial peels (glycolic, salicylic, lactic acid) for general skin renewal, mild pigmentation, acne maintenance — minimal downtime. Medium-depth peels (TCA-based) for moderate pigmentation, photoaging, <a href="/conditions/acne-scars-dubai/" class="text-[#C9A961] hover:text-[#B8963E] hover:underline transition-colors">acne scarring</a>. Deeper peels for more substantial concerns with appropriate downtime. Peel selection calibrated to skin type — critical for darker Fitzpatrick types.',
+      linkHref: "/treatments/chemical-peel-dubai/"
     },
     {
       number: "04",
@@ -163,6 +164,7 @@ export const dermatologyAestheticTypes = {
       number: "08",
       title: 'Skin Rejuvenation Procedures',
       description: 'Comprehensive skin rejuvenation combining multiple modalities — chemical peels, lasers, microneedling, mesotherapy, professional skincare regimens. Tailored skin rejuvenation plans calibrated to age, skin type, and specific concerns. Pre-event skin preparation programmes (pre-wedding, pre-photography events) particularly relevant for Dubai patients.',
+      linkHref: '/treatments/skin-rejuvenation-jvc/'
     }
   ],
   footer: 'We offer additional aesthetic treatments based on patient needs and current evidence-based options. Comprehensive consultation identifies the most appropriate treatment plan for your specific goals →'
@@ -278,7 +280,6 @@ export const dermatologyPricing = {
 
   ],
   insuranceText: "Medical dermatology covered by most Dubai insurance plans with appropriate medical justification. Direct-billing partners with Daman, AXA, Allianz, Oman Insurance, Now Health, Bupa, and MetLife. Cosmetic and aesthetic treatments typically self-pay. WhatsApp your insurance card to +971 55 586 7466 before booking for specific coverage confirmation.",
- 
 };
 
 export const dermatologyFaqs = {
@@ -386,7 +387,7 @@ export const dermatologyCTA = {
   button1Text: "Book Dermatology Consultation",
   button1Href: "/book",
   button2Text: "WhatsApp Us",
-  button2Href: "https://wa.me/971555867466",
+  button2Href: "https://wa.me/971555867466?text=Hello%20Vedara%20Care,%20I%20would%20like%20to%20inquire%20about%20dermatology%20treatments%20and%20book%20a%20consultation.",
   footer: "Initial consultation from AED 500 · Walking distance from Circle Mall, JVC · Consultant dermatologists, DHA-licensed · Medical and aesthetic dermatology · All Fitzpatrick skin types · Multiple languages · Female and male dermatologists · Insurance direct-billing for medical dermatology"
 };
 
@@ -451,6 +452,7 @@ export const dermatologyConsultation = {
     buttonHref: "#"
   }
 };
+
 export const servicePillarsData = {
   label: "EXPLORE FURTHER",
   title: "Our other service pillars at Vedara Care.",

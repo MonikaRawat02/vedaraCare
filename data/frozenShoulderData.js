@@ -256,14 +256,10 @@ export const frozenShoulderMechanism2 = {
     "<strong>Hydrodilatation coordination</strong><br/>For some frozen shoulder patients — particularly those with severe restriction in the frozen phase or those whose progress with physiotherapy alone is slower than expected — hydrodilatation can be valuable. This is performed by rheumatologists or radiologists. We coordinate with appropriate specialists when hydrodilatation is potentially beneficial, and the procedure is typically followed by intensified physiotherapy.",
     "<strong>Diabetic patient considerations</strong><br/>For diabetic patients with frozen shoulder, we account for the typically more severe and prolonged presentation. Coordination with the patient's endocrinologist (glycaemic control affects connective tissue healing) is important. Diabetic frozen shoulder is also more likely to become bilateral — we monitor the unaffected shoulder for early signs and intervene preventively when appropriate."
   ],
-  quote: "The treatment that helps in the frozen phase can worsen symptoms in the freezing phase. Phase identification matters more than any specific technique."};
-
-
-
-
-
-
-
+  quote: "The treatment that helps in the frozen phase can worsen symptoms in the freezing phase. Phase identification matters more than any specific technique.",
+ image: "/images/frozen-shoulder-treatment-vedara-jvc.webp",
+  alt: "Phase-specific frozen shoulder treatment Vedara Care JVC Dubai",
+};
 
 
 export const frozenShoulderInjectionsSurgery = {

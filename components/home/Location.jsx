@@ -8,7 +8,8 @@ const Location = ({
   mapCard = {
     title: "Vedara Care Polyclinic",
     subtitle: "JVC, Dubai",
-    linkText: "Get Directions"
+    linkText: "Get Directions",
+    directionsHref: "https://www.google.com/maps/search/?api=1&query=Vedara+Care+Polyclinic+JVC+Dubai"
   },
   address = {
     label: "Address",
@@ -29,7 +30,8 @@ const Location = ({
   },
   parkingText = "Free covered parking available for patients",
   tags = ["5 min from JSS School", "3 min from FIVE JVC", "Next to Circle Mall"],
-  buttonText = "Book Your Visit"
+  buttonText = "Book Your Visit",
+  buttonHref = "https://wa.me/971555867466?text=Hello%20Vedara%20Care,%20I%20would%20like%20to%20book%20a%20visit%20to%20your%20clinic."
 }) => {
   return (
     <section className={`${bgColor} py-24 px-6`}>
@@ -59,10 +61,10 @@ const Location = ({
       </p>
     </div>
 
-    <button className="text-[#C9A961] font-sans font-bold text-[14px] flex items-center gap-2 hover:underline">
+    <a href={mapCard.directionsHref} target="_blank" rel="noopener noreferrer" className="text-[#C9A961] font-sans font-bold text-[14px] flex items-center gap-2 hover:underline">
       <Navigation size={14} />
       {mapCard.linkText}
-    </button>
+    </a>
   </div>
 </div>
           {/* Contact Content */}
@@ -152,9 +154,9 @@ WhatsApp: <a
                 ))}
               </div>
 
-              <button className="px-10 py-4 bg-[#184C3A] text-white rounded-lg font-sans font-bold text-[16px] hover:bg-[#123a2c] transition-all shadow-md">
+              <a href={buttonHref} target="_blank" rel="noopener noreferrer" className="px-10 py-4 bg-[#184C3A] text-white rounded-lg font-sans font-bold text-[16px] hover:bg-[#123a2c] transition-all shadow-md inline-block">
                 {buttonText}
-              </button>
+              </a>
             </div>
           </div>
         </div>

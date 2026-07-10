@@ -69,7 +69,8 @@ const SportsInjuryTypes = ({ label, title, items, footer, variant = 'condition',
                     {item.typicalRecovery}
                   </div>
                 )}
-
+   
+   
                 {item.linkText && (
                   <span 
                     className="inline-block text-[14px] font-sans mt-3 text-[#C9A961]"

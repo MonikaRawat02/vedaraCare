@@ -6,7 +6,9 @@ const Hero = ({
   description = "DHA-licensed Ayurveda, Physiotherapy, Dermatology, Home Healthcare & Wellness services designed for modern Dubai living.",
   subtext = "Vedara Care Polyclinic is a DHA-licensed healthcare clinic in JVC Dubai offering Ayurveda, physiotherapy, dermatology, home healthcare, and wellness treatments by experienced doctors and therapists in a modern patient-focused environment.",
   primaryCTA = "Book Appointment",
+  primaryCTAHref = "/book",
   secondaryCTA = "WhatsApp Now",
+  secondaryCTAHref = "https://wa.me/971555867466?text=Hello%20Vedara%20Care,%20I%20would%20like%20to%20inquire%20about%20your%20treatments%20and%20book%20a%20consultation.",
   image = "/images/home.jpg",
   badges = [
     { label: "DHA Licensed", type: "shield" },
@@ -65,14 +67,14 @@ const Hero = ({
             </div>
 
             <div className="flex flex-wrap gap-4 mb-12">
-              <Link href="/book" className="px-8 py-3 bg-[#C8A76A] text-white rounded-lg font-bold text-sm hover:opacity-90 transition-all flex items-center gap-2">
+              <a href={primaryCTAHref} target="_blank" rel="noopener noreferrer" className="px-8 py-3 bg-[#C8A76A] text-white rounded-lg font-bold text-sm hover:opacity-90 transition-all flex items-center gap-2">
                 <Calendar size={18} />
                 {primaryCTA}
-              </Link>
-              <Link href="https://wa.me/971555867466" className="px-8 py-3 bg-white/20 backdrop-blur-sm text-white border border-white/30 rounded-lg font-bold text-sm hover:bg-white/30 transition-all flex items-center gap-2">
+              </a>
+              <a href={secondaryCTAHref} target="_blank" rel="noopener noreferrer" className="px-8 py-3 bg-white/20 backdrop-blur-sm text-white border border-white/30 rounded-lg font-bold text-sm hover:bg-white/30 transition-all flex items-center gap-2">
                 <MessageCircle size={18} />
                 {secondaryCTA}
-              </Link>
+              </a>
             </div>
 
             {/* Bottom Badges */}

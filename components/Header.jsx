@@ -2,6 +2,10 @@ import { useState, useEffect, useRef } from 'react';
 import Link from 'next/link';
 import { Phone, MessageCircle, Globe, Menu, X, Calendar, ChevronDown } from 'lucide-react';
 
+
+const AYURVEDA_PAGES = [
+  { href: '/ayurveda-clinic-jvc/', label: 'Ayurveda Clinic in JVC' },
+];
 // Data for dropdown menus
 const PHYSIOTHERAPY_PAGES = [
   { href: '/physiotherapy-jvc', label: 'Physiotherapy in JVC' },
@@ -12,7 +16,10 @@ const PHYSIOTHERAPY_PAGES = [
 ];
 
 const TREATMENTS_PAGES = [
+  {href: '/treatments/prp-hair-dubai/', label: 'Hair-PRP' },
+  {href:'/treatments/chemical-peel-dubai/',label: 'Chemical-Peel'},
   { href: '/treatments/manual-therapy-dubai/', label: 'Manual Therapy' },
+  {href: '/treatments/skin-rejuvenation-jvc/', label: 'Skin Rejuvenation'},
   { href: '/treatments/cupping-therapy-dubai/', label: 'Cupping Therapy' },
   { href: '/treatments/panchakarma-dubai/', label: 'Panchakarma' },
   { href: '/treatments/ayurvedic-massage-jvc/', label: 'Ayurvedic Massage' },
@@ -37,10 +44,12 @@ const PHYSIOTHERAPY_CONDITIONS = [
 
 const DERMATOLOGY_CONDITIONS = [
   { href: '/conditions/acne-treatment-jvc', label: 'Acne Treatment' },
+  { href: '/conditions/acne-scars-dubai/', label: 'Acne-Scars Treatment' },
   { href: '/conditions/eczema-treatment-dubai', label: 'Eczema Treatment' },
   { href: '/conditions/hair-loss-treatment-jvc', label: 'Hair Loss Treatment' },
   { href: '/conditions/pigmentation-treatment-dubai', label: 'Pigmentation Treatment' },
   { href: '/conditions/melasma-treatment-dubai', label: 'Melasma Treatment' },
+  { href: '/conditions/psoriasis-treatment-dubai', label: 'Psoriasis Treatment' },
 ];
 
 const AYURVEDA_CONDITIONS = [
@@ -64,12 +73,15 @@ const scrollbarHide = "scrollbar-hide [scrollbar-width:none] [-ms-overflow-style
 const Header = () => {
   const [showTopBar, setShowTopBar] = useState(true);
   const [isMenuOpen, setIsMenuOpen] = useState(false);
+  const [isAyurvedaDropdownOpen, setIsAyurvedaDropdownOpen] = useState(false);
   const [isPhysioDropdownOpen, setIsPhysioDropdownOpen] = useState(false);
   const [isConditionsDropdownOpen, setIsConditionsDropdownOpen] = useState(false);
   const [isTreatmentsDropdownOpen, setIsTreatmentsDropdownOpen] = useState(false);
+  const [isMobileAyurvedaOpen, setIsMobileAyurvedaOpen] = useState(false);
   const [isMobilePhysioOpen, setIsMobilePhysioOpen] = useState(false);
   const [isMobileConditionsOpen, setIsMobileConditionsOpen] = useState(false);
   const [isMobileTreatmentsOpen, setIsMobileTreatmentsOpen] = useState(false);
+  const ayurvedaDropdownRef = useRef(null);
   const physioDropdownRef = useRef(null);
   const conditionsDropdownRef = useRef(null);
   const treatmentsDropdownRef = useRef(null);
@@ -82,6 +94,9 @@ const Header = () => {
 
   useEffect(() => {
     const handleClickOutside = (event) => {
+      if ( ayurvedaDropdownRef.current &&  !ayurvedaDropdownRef.current.contains(event.target)) {
+         setIsAyurvedaDropdownOpen(false);
+        }
       if (physioDropdownRef.current && !physioDropdownRef.current.contains(event.target)) {
         setIsPhysioDropdownOpen(false);
       }
@@ -105,9 +120,9 @@ const Header = () => {
         }`}>
         <div className="max-w-[1440px] mx-auto px-4 md:px-6 h-full flex items-center justify-between text-[12px] md:text-[14px] font-sans">
           <div className="flex items-center gap-4">
-            <a href="tel:+9714XXXXXXX" className="flex items-center gap-2 hover:opacity-80 transition-opacity">
+            <a href="tel:+971555867466" className="flex items-center gap-2 hover:opacity-80 transition-opacity">
               <Phone size={14} className="fill-current" />
-              <span>+971 4 XXX XXXX</span>
+              <span>+971 55 586 7466</span>
             </a>
             <span className="hidden lg:block opacity-90">
               DHA Licensed Polyclinic in Jumeirah Village Circle, Dubai
@@ -139,7 +154,48 @@ const Header = () => {
 
           {/* Desktop Nav Links */}
           <div className="hidden xl:flex items-center gap-8">
-            <Link href="/ayurveda-dubai" className="text-[14px] font-sans font-medium text-[#1A1A1A] hover:text-[#184C3A] transition-colors">Ayurveda</Link>
+                    <div
+            className="relative"
+            ref={ayurvedaDropdownRef}
+            onMouseEnter={() => setIsAyurvedaDropdownOpen(true)}
+            onMouseLeave={() => setIsAyurvedaDropdownOpen(false)}
+          >
+            <button
+              className="flex items-center gap-1 text-[14px] font-sans font-medium text-[#1A1A1A] hover:text-[#184C3A] transition-colors"
+              onClick={() => setIsAyurvedaDropdownOpen(!isAyurvedaDropdownOpen)}
+            >
+              <Link href="/ayurveda-dubai" className="hover:text-[#184C3A]">
+                Ayurveda
+              </Link>
+
+              <ChevronDown
+                size={14}
+                className={`transition-transform duration-200 ${
+                  isAyurvedaDropdownOpen ? "rotate-180" : ""
+                }`}
+              />
+            </button>
+
+            <div
+              className={`absolute top-full left-0 pt-2 transition-all duration-200 ${
+                isAyurvedaDropdownOpen
+                  ? "opacity-100 visible translate-y-0"
+                  : "opacity-0 invisible -translate-y-1"
+              }`}
+            >
+              <div className="bg-white rounded-lg shadow-lg border border-gray-100 py-2 min-w-[240px]">
+                {AYURVEDA_PAGES.map((page) => (
+                  <Link
+                    key={page.href}
+                    href={page.href}
+                    className="block px-4 py-2.5 text-[13px] font-sans text-[#4A4A4A] hover:text-[#184C3A] hover:bg-gray-50 transition-colors"
+                  >
+                    {page.label}
+                  </Link>
+                ))}
+              </div>
+            </div>
+          </div>
             
             {/* Physiotherapy Dropdown */}
             <div 
@@ -281,8 +337,8 @@ const Header = () => {
             >
               Book Appointment
             </Link>
-            <a 
-              href="https://wa.me/971555867466" 
+            <a
+              href="https://wa.me/971555867466?text=Hello%20Vedara%20Care,%20I%20would%20like%20to%20inquire%20about%20your%20treatments%20and%20book%20a%20consultation."
               className="hidden xl:flex w-10 h-10 items-center justify-center bg-[#4A7C59] text-white rounded-full hover:opacity-90 transition-all"
               target="_blank"
               rel="noopener noreferrer"
@@ -308,8 +364,49 @@ const Header = () => {
           }`}
         >
           <div className="flex flex-col py-6 px-6 pb-24 gap-6">
-            <Link href="/ayurveda-dubai" onClick={() => setIsMenuOpen(false)} className="text-[16px] font-medium text-[#1A1A1A] hover:text-[#184C3A]">Ayurveda</Link>
-            
+                        <div>
+              <div className="flex items-center justify-between">
+                <Link
+                  href="/ayurveda-dubai"
+                  onClick={() => setIsMenuOpen(false)}
+                  className="text-[16px] font-medium text-[#1A1A1A] hover:text-[#184C3A]"
+                >
+                  Ayurveda
+                </Link>
+
+                <button
+                  onClick={() => setIsMobileAyurvedaOpen(!isMobileAyurvedaOpen)}
+                  className="p-1 text-[#4A4A4A]"
+                >
+                  <ChevronDown
+                    size={16}
+                    className={`transition-transform duration-200 ${
+                      isMobileAyurvedaOpen ? "rotate-180" : ""
+                    }`}
+                  />
+                </button>
+              </div>
+
+              <div
+                className={`overflow-hidden transition-all duration-200 ${
+                  isMobileAyurvedaOpen ? "max-h-48 mt-2" : "max-h-0"
+                }`}
+              >
+                <div className="flex flex-col gap-3 pl-4 border-l-2 border-gray-100">
+                  {AYURVEDA_PAGES.map((page) => (
+                    <Link
+                      key={page.href}
+                      href={page.href}
+                      onClick={() => setIsMenuOpen(false)}
+                      className="text-[14px] text-[#4A4A4A] hover:text-[#184C3A]"
+                    >
+                      {page.label}
+                    </Link>
+                  ))}
+                </div>
+              </div>
+            </div>
+                        
             {/* Mobile Physiotherapy Accordion */}
             <div>
               <div className="flex items-center justify-between">
@@ -394,8 +491,8 @@ const Header = () => {
 
       {/* Persistent Mobile Bottom Navigation */}
       <div className="xl:hidden fixed bottom-0 left-0 right-0 z-50 bg-[#184C3A] border-t border-[#1F4538] shadow-2xl h-20 flex items-center">
-        <a 
-          href="https://wa.me/971555867466" 
+        <a
+          href="https://wa.me/971555867466?text=Hello%20Vedara%20Care,%20I%20would%20like%20to%20inquire%20about%20your%20treatments%20and%20book%20a%20consultation."
           className="flex-1 flex flex-col items-center justify-center gap-1 h-full text-white hover:bg-[#4A7C59]/10 transition-colors"
           target="_blank"
           rel="noopener noreferrer"
@@ -403,8 +500,8 @@ const Header = () => {
           <MessageCircle size={22} className="fill-current" />
           <span className="text-[12px] font-medium font-sans">WhatsApp</span>
         </a>
-        <a 
-          href="tel:+9714XXXXXXX" 
+        <a
+          href="tel:+971555867466"
           className="flex-1 flex flex-col items-center justify-center gap-1 h-full text-[#D4A373] bg-[#FDF8F1] hover:bg-[#EAE3D5] transition-colors"
         >
           <Phone size={22} />

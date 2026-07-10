@@ -10,11 +10,10 @@ import Conditions from '../components/home/Conditions';
 import Journal from '../components/home/Journal';
 import FAQ from '../components/home/FAQ';
 import Location from '../components/home/Location';
-import Insights from '../components/home/Insights';
+
 import CTA from '../components/home/CTA';
 import { 
   homeFaqs, 
-  homeArticles, 
   homeJournal, 
   homeLocation, 
   homeCTA,
@@ -26,7 +25,7 @@ import {
   homeWhyVedara,
   homeReviews,
   homeHealthcare,
-  homeInsights
+ 
 } from '../data/homeData';
 
 export default function Home() {
@@ -44,7 +43,6 @@ export default function Home() {
       <WhyVedara {...homeWhyVedara} />
       <Reviews {...homeReviews} />
       <HomeHealthcare {...homeHealthcare} />
-      <Insights {...homeInsights} />
       <Location {...homeLocation} />
       <Journal {...homeJournal} />
       <FAQ {...homeFaqs} />

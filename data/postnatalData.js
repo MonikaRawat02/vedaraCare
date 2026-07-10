@@ -10,7 +10,7 @@ export const postnatalHero = {
     "Home Services Across Dubai",
     "Walking Distance from Circle Mall, JVC"
   ],
-  image: "postnatal-ayurveda-dubai-hero.webp",
+  image: "/images/postnatal-ayurveda-dubai-hero.webp",
   alt: "Postpartum mother receiving Ayurvedic Abhyanga in home setting Vedara Care JVC Dubai",
   floatingCard: {
     title: "WE COME TO YOU.",
@@ -46,7 +46,7 @@ export const postnatalMechanism1 = {
     "• <strong>Mother-infant bonding optimisation</strong> — including support practices and family involvement guidance."
   ],
   quote: "Western postpartum care assumes mothers will recover spontaneously. Ayurveda assumes they will recover with proper care — and structures that care meticulously.",
-  image: "sutika-paricharya-consultation-vedara-jvc.webp",
+  image: "/images/postpartum-abhyanga-home-vedara-dubai.webp",
   alt: "Doctor explaining Sutika Paricharya programme to expectant mother at Vedara Care JVC",
   bgColor: "bg-[#F5F1EB]"
 };
@@ -61,7 +61,7 @@ export const postnatalMechanism2 = {
     "The consequences are clinically documented. Higher rates of postpartum depression and anxiety. Slower physical recovery. Increased breastfeeding difficulties. Greater long-term effects on body, mental health, relationship, and subsequent fertility."
   ],
   quote: "If you are an expat mother in Dubai, your postpartum experience is meaningfully different from what your mother or grandmother experienced. Our care recognises that difference.",
-  image: "postpartum-abhyanga-home-vedara-dubai.webp",
+  image: "/images/postnatal-belly-binding-vedara-dubai.webp",
   alt: "Restorative postpartum care imagery for Dubai expat mothers at Vedara Care",
   bgColor: "bg-white"
 };
@@ -178,7 +178,7 @@ export const postnatalPlanAhead = {
     "Reserved priority scheduling for our home services team"
   ],
   buttonText: "Book a Pregnancy Planning Consultation",
-  image: "postnatal-belly-binding-vedara-dubai.webp",
+  image: "/images/sutika-paricharya-consultation-vedara-jvc.webp",
   alt: "Third-trimester pregnancy postnatal planning consultation at Vedara Care JVC",
   bgColor: "bg-[#FAF8F5]",
   cardBg: "#FFFFFF"
@@ -347,7 +347,7 @@ export const postnatalPricing = {
     }
   ],
   footer: "Insurance direct billing available with some major insurers — coverage for Ayurvedic postnatal care varies by plan. Postpartum care is increasingly covered where there is medical justification.",
-  whatsappUrl: "https://wa.me/971555867466",
+  whatsappUrl: "https://wa.me/971555867466?text=Hello%20Vedara%20Care,%20I%20would%20like%20to%20inquire%20about%20postnatal%20care%20and%20book%20a%20consultation.",
   bgColor: "bg-white",
   cardBg: "white",
   buttonBg: "#357c63ff",
@@ -432,7 +432,7 @@ export const postnatalFinalCTA = {
   button1Text: "Book a Postnatal Consultation",
   button1Link: "/book",
   button2Text: "Chat on WhatsApp",
-  button2Link: "https://wa.me/971555867466",
+  button2Link: "https://wa.me/971555867466?text=Hello%20Vedara%20Care,%20I%20would%20like%20to%20inquire%20about%20postnatal%20care%20and%20book%20a%20consultation.",
   footer: "Initial consultations from AED 450 · Home services across Dubai · JVC clinic next to Circle Mall · Female doctors and therapists available · Insurance direct billing",
   bgColor: "bg-[#FAF8F3]"
 };

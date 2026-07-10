@@ -155,11 +155,13 @@ const ContentOnlySection = ({
           <div className="space-y-6">
             {contentSections.map((section, index) => (
               <div key={index}>
-                {section.subtitle && (
-                  <h3 className="text-lg font-serif mb-3" style={{ fontFamily: 'Fraunces, Georgia, serif', color: 'rgb(26,26,26)' }}>
-                    {section.subtitle}
-                  </h3>
-                )}
+                  {section.subtitle && (
+                    <h3
+                      className="text-lg font-serif mb-3"
+                      style={{ fontFamily: 'Fraunces, Georgia, serif', color: 'rgb(26,26,26)' }}
+                      dangerouslySetInnerHTML={{ __html: section.subtitle }}
+                    />
+                    )}
                 {section.description && (
                   <p className="text-base" style={{ color: 'rgb(107,107,107)', lineHeight: '1.7' }}>
                     {section.description}
@@ -338,6 +340,97 @@ const WorkupSection = ({
 };
 
 // ============================================
+// SECTION 2.75: PRP COMBINATION STYLE (Grouped Sidebar)
+// ============================================
+const PRPCombinationSection = ({
+  bgColor,
+  label,
+  title,
+  description,
+  contentSections,
+  sidebar,
+}) => {
+  return (
+    <section className={`${bgColor}`} style={{ padding: '96px 24px' }}>
+      <div className="max-w-7xl mx-auto">
+        <div className="text-center mb-12">
+          <div className="text-sm tracking-[0.2em] uppercase mb-4" style={{ color: '#C9A84C' }}>
+            {label}
+          </div>
+          <h2 className="text-3xl md:text-4xl" style={{ fontFamily: 'Fraunces, Georgia, serif', color: 'rgb(26,26,26)' }}>
+            {title}
+          </h2>
+          {description && (
+            <p className="text-base mt-4" style={{ color: 'rgb(107,107,107)', lineHeight: '1.7', maxWidth: '600px', margin: '16px auto 0 auto' }}>
+              {description}
+            </p>
+          )}
+        </div>
+        <div className="grid grid-cols-1 lg:grid-cols-[55fr_45fr] gap-12 items-start">
+          <div className="space-y-6">
+            {contentSections.map((section, index) => (
+              <div key={index}>
+                {section.subtitle && (
+                  <h3 className="text-lg font-serif mb-3" style={{ fontFamily: 'Fraunces, Georgia, serif', color: 'rgb(26,26,26)' }}>
+                    {section.subtitle}
+                  </h3>
+                )}
+                {section.description && (
+                  <p className="text-base" style={{ color: 'rgb(107,107,107)', lineHeight: '1.7' }}>
+                    {section.description}
+                  </p>
+                )}
+              </div>
+            ))}
+          </div>
+
+          <div className="md:sticky md:top-6 lg:top-8">
+            <div className="rounded-lg border-2 border-[#B8965A] bg-[#FAF7F2] p-7">
+              <h3 className="text-xs tracking-[0.2em] uppercase mb-4" style={{ color: '#C9A84C' }}>
+                {sidebar.label}
+              </h3>
+
+              {sidebar.groups && sidebar.groups.length > 0 && (
+                <div className="space-y-4 mb-6">
+                  {sidebar.groups.map((group, gIdx) => (
+                    <div key={gIdx} className={gIdx < sidebar.groups.length - 1 ? 'pb-4 border-b border-[#E5DFD3]' : ''}>
+                      {group.title && (
+                        <p className="text-sm font-semibold mb-3" style={{ color: 'rgb(26,26,26)' }}>
+                          {group.title}
+                        </p>
+                      )}
+                      <div className="space-y-2">
+                        {group.items.map((item, iIdx) => (
+                          <div key={iIdx} className="flex items-start gap-2 text-sm">
+                            <svg className="w-4 h-4 text-[#C9A84C] flex-shrink-0 mt-1" fill="currentColor" viewBox="0 0 24 24">
+                              <path d="M9 16.17L4.83 12l-1.42 1.41L9 19 21 7l-1.41-1.41L9 16.17z"></path>
+                            </svg>
+                            <span style={{ color: 'rgb(107,107,107)' }}>{item}</span>
+                          </div>
+                        ))}
+                      </div>
+                    </div>
+                  ))}
+                </div>
+              )}
+
+              {sidebar.buttonText && sidebar.buttonHref && (
+                <a
+                  href={sidebar.buttonHref}
+                  className="w-full font-semibold py-3 px-6 rounded flex items-center justify-center gap-2 transition-colors text-sm border-2 bg-[#C9A84C] text-[#1C1C14] border-[#C9A84C] hover:bg-opacity-90"
+                >
+                  {sidebar.buttonText}
+                </a>
+              )}
+            </div>
+          </div>
+        </div>
+      </div>
+    </section>
+  );
+};
+
+// ============================================
 // SECTION 3: TREATMENT TIMELINE COMPONENT
 // ============================================
 const TreatmentTimelineSection = ({
@@ -348,6 +441,7 @@ const TreatmentTimelineSection = ({
   intro,
   phases,
   footerNote,
+  bottomContent,
 }) => {
   return (
     <section className={`${bgColor}`} style={{ padding: '96px 24px' }}>
@@ -403,6 +497,39 @@ const TreatmentTimelineSection = ({
             </p>
           </div>
         )}
+
+        {bottomContent && (
+          <div className="mt-12 bg-[#F0EBE3] rounded-lg p-8">
+            <div className="grid grid-cols-1 lg:grid-cols-2 gap-8">
+              <div>
+                <h3 className="text-xs tracking-[0.15em] uppercase mb-4" style={{ color: '#C9A84C', fontWeight: 500 }}>
+                  {bottomContent.canAchieve.title}
+                </h3>
+                <ul className="space-y-2">
+                  {bottomContent.canAchieve.items.map((item, index) => (
+                    <li key={index} className="flex items-start gap-3 text-sm" style={{ color: 'rgb(74, 69, 64)' }}>
+                      <span className="text-[#C9A84C] mt-1 flex-shrink-0">✓</span>
+                      {item}
+                    </li>
+                  ))}
+                </ul>
+              </div>
+              <div>
+                <h3 className="text-xs tracking-[0.15em] uppercase mb-4" style={{ color: '#777777', fontWeight: 500 }}>
+                  {bottomContent.cannotAchieve.title}
+                </h3>
+                <ul className="space-y-2">
+                  {bottomContent.cannotAchieve.items.map((item, index) => (
+                    <li key={index} className="flex items-start gap-3 text-sm" style={{ color: 'rgb(74, 69, 64)' }}>
+                      <span className="text-[#C9A84C] mt-1 flex-shrink-0">—</span>
+                      {item}
+                    </li>
+                  ))}
+                </ul>
+              </div>
+            </div>
+          </div>
+        )}
       </div>
     </section>
   );
@@ -434,8 +561,8 @@ const PricingSection = ({
         <div className="bg-white rounded-lg border border-[#E5DFD3] overflow-hidden mb-12">
           {(services || []).map((service, index) => (
             <div key={index} className={`flex items-center justify-between px-8 py-5 ${index % 2 === 1 ? 'bg-[#FAF8F5]' : 'bg-white'}`}>
-              <p className="text-sm" style={{ color: 'rgb(26, 26, 26)' }}>
-                {service.name}
+              <p className="text-sm" style={{ color: 'rgb(26, 26, 26)' }}dangerouslySetInnerHTML={{ __html: service.name }}>
+            
               </p>
               <p style={{ fontFamily: 'Fraunces, Georgia, serif', color: 'rgb(201, 168, 76)' }}>
                 {service.price}
@@ -474,6 +601,9 @@ const ContentWithSidebar = (props) => {
   }
   if (props.ladderItems && props.ladderItems.length > 0) {
     return <TreatmentLadderSection {...props} />;
+  }
+  if (props.sidebar && props.sidebar.groups) {
+    return <PRPCombinationSection {...props} />;
   }
   if (props.sidebar && props.sidebar.additionalFeaturesTitle) {
     return <WorkupSection {...props} />;

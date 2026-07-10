@@ -1,5 +1,6 @@
 import React from 'react';
 import Link from 'next/link';
+import Image from 'next/image';
 
 const PhysiotherapyTwoImage = ({
   bgColor = "bg-white",
@@ -10,7 +11,8 @@ const PhysiotherapyTwoImage = ({
   within1520Minutes = [],
   within2030Minutes = [],
   description2 = "",
-  imageAlt = "Vedara Care JVC physiotherapy clinic Dubai serving all neighbourhoods",
+  imageAlt = "",
+  image = "",
  
 }) => {
   return (
@@ -52,9 +54,14 @@ const PhysiotherapyTwoImage = ({
             <p>{description2}</p>
             
           </div>
-          <div className="bg-gray-200 rounded-xl flex items-center justify-center aspect-square">
-            <p className="text-gray-500">{imageAlt}</p>
-          </div>
+         <div className="relative bg-gray-200 rounded-xl overflow-hidden aspect-square">
+  <Image
+    src={image}
+    alt={imageAlt}
+    fill
+    className="object-cover"
+  />
+</div>
         </div>
       </div>
     </section>

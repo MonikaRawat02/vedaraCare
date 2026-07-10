@@ -19,7 +19,7 @@ export const ayurvedicBackPainHero = {
     title: "ASSESSMENT FIRST",
     subtitle: "We do not prescribe back pain treatment without examination. The wrong protocol for the wrong condition is worse than no protocol at all."
   },
-  image: "https://images.unsplash.com/photo-1579684385127-1ef15d508118?q=80&w=2080&auto=format&fit=crop",
+  image: "/images/back-pain-ayurveda-dubai-hero.webp",
   alt: "Ayurvedic doctor examining patient's lower back during back pain consultation at Vedara Care JVC Dubai"
 };
 
@@ -115,7 +115,7 @@ export const ayurvedicBackPainMechanism = {
     "This four-pillar approach is what distinguishes authentic Ayurvedic back pain treatment from the spa-style 'Ayurvedic massage for back pain' common in Dubai. The therapies are similar; the clinical depth is not."
   ],
   quote: "Chronic pain is the body's way of saying something larger is out of balance. The pain is the symptom. The treatment addresses what is underneath.",
-  image: "https://images.unsplash.com/photo-1559839734-2b71f1536783?q=80&w=2070&auto=format&fit=crop",
+  image: "/images/ayurvedic-back-pain-assessment-vedara-jvc.webp",
   alt: "Ayurvedic physician performing pulse diagnosis on back pain patient at Vedara Care JVC",
   imageLeft: false
 };
@@ -261,7 +261,7 @@ export const ayurvedicBackPainIntegration = {
   button1Text: "Book Joint Consultation",
   button2Text: "Read about Physiotherapy in JVC",
   button2Link: "/physiotherapy-jvc/",
-  image: "https://images.unsplash.com/photo-1544161515-4ab6ce6db874?q=80&w=2070&auto=format&fit=crop",
+  image: "/images/kativasti-back-pain-treatment-vedara-jvc.webp",
   alt: "Ayurvedic doctor and physiotherapist reviewing back pain case notes together at Vedara Care JVC"
 };
 

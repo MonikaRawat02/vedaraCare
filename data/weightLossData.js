@@ -84,7 +84,7 @@ export const weightLossMechanism2 = {
   ],
   quote: "If your weight loss solution came in a box or a subscription, it's not treatment — it's marketing.",
   // image: "https://images.unsplash.com/photo-1545840716-c82e9eec6930?crop=entropy&cs=tinysrgb&fit=max&fm=jpg&ixid=M3w3Nzg4Nzd8MHwxfHNlYXJjaHwzfHxheXVydmVkaWMlMjBtZWRpY2luZSUyMGhlcmJzJTIwb2lsJTIwcHJlcGFyYXRpb258ZW58MXx8fHwxNzc5ODA0MzE3fDA&ixlib=rb-4.1.0&q=80&w=1080",
-  image: "/images/panchakarma-weight-loss-treatment-room-jvc.webp",
+  image: "/images/weight-loss-consultation-vedara-jvc.webp",
   alt: "Sustainable healthy lifestyle imagery — Ayurvedic weight loss approach in Dubai",
   
   imageLeft: false,

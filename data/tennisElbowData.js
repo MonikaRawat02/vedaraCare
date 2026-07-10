@@ -18,7 +18,7 @@ export const tennisElbowHero = {
   floatingCard: {
     title: "Most 'tennis elbow' patients have never played tennis.",
     subtitle: "The condition is actually lateral epicondylalgia — a tendinopathy at the outer elbow from any repetitive gripping or wrist extension activity. Office work, padel, gym training cause it. Specific evidence-based loading protocols resolve it." },
-  image: "/images/tenennis-elbow-dubai-hero.webp",
+  image: "/images/tennis-elbow-dubai-hero.webp",
   alt: "Tennis elbow eccentric loading exercise at Vedara Care JVC Dubai clinic",
   patientsTreated: {
     count: "220+",
@@ -85,7 +85,7 @@ export const tennisElbowSciaticaSection2 = {
     footer:"The treatments that produce the best long-term outcomes for tennis elbow are not the most aggressive — they are the most specific. Loading protocols matched to your tendon's current capacity produce sustainable recovery."
  },
   rightContent: {
-    image: "/images/tennis-elbow-anatomy-illustration.webp",
+    image: "/images/",
     alt: "Evidence-based tennis elbow treatment with eccentric loading Vedara Care JVC",
     label: "EVIDENCE-BASED PROTOCOLS",
     keyFact: [
@@ -205,7 +205,7 @@ export const tennisElbowMechanism2 = {
   label: "The Approach",
   title: "Evidence-based tennis elbow treatment — what works and what does not.",
   description: "Tennis elbow treatment has evolved substantially. Modern evidence-based protocols produce meaningfully better outcomes than older approaches.",
-  image: "/images/tennis-elbow-eccentric-loading-vedara-jvc.webp",
+  image: "/images/",
   alt: "Evidence-based tennis elbow treatment with eccentric loading Vedara Care JVC",
   imageLeft: true,
   showStats: false,
@@ -467,7 +467,7 @@ export const tennisElbowCTA = {
   button1Text: "Book Tennis Elbow Assessment",
   button1Href: "/book",
   button2Text: "WhatsApp Us",
-  button2Href: "https://wa.me/971555867466",
+  button2Href: "https://wa.me/971555867466?text=Hello%20Vedara%20Care,%20I%20would%20like%20to%20inquire%20about%20tennis%20elbow%20treatment%20and%20book%20a%20consultation.",
   bullets: [
     "Initial assessment from AED 450",
     "Walking distance from Circle Mall, JVC",
@@ -589,7 +589,7 @@ export const tennisElbowSciaticaSection3 = {
     ]
   },
   rightContent: {
-    image: "/images/tennis-elbow-anatomy-illustration.webp",
+    image: "/images/tennis-elbow-eccentric-loading-vedara-jvc.webp",
     alt: "Tendon structure remodelling illustration tennis elbow",
     label: "KEY FACT",
     keyFact: [

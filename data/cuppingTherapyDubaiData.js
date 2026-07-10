@@ -69,7 +69,7 @@ export const cuppingTherapyWhatIs = {
       footer: "Cupping has been practiced for millennia across many cultures and continues to be used widely. Modern clinical practice combines respect for traditional applications with honest assessment of current evidence."
     },
     rightContent: {
-      image: "/images/cupping-types-vedara-jvc.webp",
+      image: "/images/hijama-sunnah-practice-vedara.webp",
       alt: "Cupping types dry massage Hijama educational illustration",
       label: "COMMON CLINICAL APPLICATIONS",
       description: "Chronic muscle tension in back, shoulders, and neck. Sports recovery — trigger point treatment. Office worker shoulder tension. Office worker shoulder and upper back tension. Fibromyalgia-related muscle tension."
@@ -231,7 +231,7 @@ export const cuppingTherapyFinalCTA = {
   button1Text: "Book Cupping Assessment",
   button1Href: "/book",
   button2Text: "WhatsApp Us",
-  button2Href: "https://wa.me/971555867466",
+  button2Href: "https://wa.me/971555867466?text=Hello%20Vedara%20Care,%20I%20would%20like%20to%20inquire%20about%20cupping%20therapy%20and%20book%20a%20consultation.",
   footer: "Sessions from AED 250 · Walking distance from Circle Mall, JVC · 400+ cupping treatments delivered · DHA-licensed practitioners · Sterile single-use equipment · Cultural and religious respect"
 };
 
@@ -411,7 +411,7 @@ export const cuppingTherapyHijama = {
       }
     ],
     buttonText: "WhatsApp for Hijama Inquiry",
-    buttonHref: "https://wa.me/971555867466"
+    buttonHref: "https://wa.me/971555867466?text=Hello%20Vedara%20Care,%20I%20would%20like%20to%20inquire%20about%20Hijama%20cupping%20therapy."
   }
 };
 

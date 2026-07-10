@@ -1,4 +1,5 @@
 import React from 'react';
+import Link from 'next/link';
 import { User, Globe, Award, ShieldCheck } from 'lucide-react';
 
 const Experts = ({
@@ -11,23 +12,8 @@ const Experts = ({
       role: "Ayurvedic Physician",
       experience: "15+ years experience",
       languages: "English, Hindi, Arabic",
-      image: "https://images.unsplash.com/photo-1559839734-2b71f1e3c7e3?q=80&w=2070&auto=format&fit=crop"
-    },
-    {
-      name: "Dr. Ahmed Al-Mansoori",
-      qualification: "DPT, MSc",
-      role: "Physiotherapist",
-      experience: "12+ years experience",
-      languages: "English, Arabic, Urdu",
-      image: "https://images.unsplash.com/photo-1622253692010-333f2da6031d?q=80&w=2070&auto=format&fit=crop"
-    },
-    {
-      name: "Dr. Sarah Khan",
-      qualification: "MBBS, MD (Dermatology)",
-      role: "Dermatologist",
-      experience: "10+ years experience",
-      languages: "English, Arabic, Hindi",
-      image: "https://images.unsplash.com/photo-1594824476967-48c8b964273f?q=80&w=2070&auto=format&fit=crop"
+      image: "",
+      link: "/doctors"
     }
   ]
 }) => {
@@ -84,9 +70,9 @@ const Experts = ({
                   </div>
                 </div>
 
-                <button className="w-full py-2.5 rounded-md border border-[#184C3A]/20 bg-[#FCFCFA] text-[#184C3A] font-medium text-sm hover:bg-[#184C3A] hover:text-white transition-all duration-300 mt-auto">
+                <Link href={doc.link} className="w-full py-2.5 rounded-md border border-[#184C3A]/20 bg-[#FCFCFA] text-[#184C3A] font-medium text-sm hover:bg-[#184C3A] hover:text-white transition-all duration-300 mt-auto text-center">
                   View Doctor Profile
-                </button>
+                </Link>
               </div>
             </div>
           ))}

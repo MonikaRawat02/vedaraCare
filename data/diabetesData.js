@@ -109,7 +109,7 @@ export const diabetesMechanism2 = {
     "For type 1 diabetes, we offer only supportive care — no insulin replacement. For all patients, we coordinate with your existing medical team to ensure safe, effective care."
   ],
   quote: "We will never tell you to stop your diabetes medication without your endocrinologist's approval.",
-  image: "/images/ayurveda-endocrinology-integrated-diabetes-jvc.webp",
+  image: "/images/hba1c-review-diabetes-consultation-vedara-jvc.webp",
   alt: "Ayurvedic doctor coordinating diabetes care with endocrinologist team at Vedara Care JVC"
 };
 

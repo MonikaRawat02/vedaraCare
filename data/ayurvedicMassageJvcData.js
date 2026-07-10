@@ -19,7 +19,7 @@ export const ayurvedicMassageJVCHero = {
     title: "DOCTOR-PRESCRIBED, NOT WALK-IN.",
     subtitle: "Every Ayurvedic massage at Vedara Care begins with a consultation. We do not offer walk-in spa services."
   },
-  image: "",
+  image: "/images/ayurvedic-massage-jvc-hero.webp",
   alt: "Brass vessel with warm medicated Ayurvedic oil at Vedara Care Ayurvedic massage clinic in JVC Dubai"
 };
 

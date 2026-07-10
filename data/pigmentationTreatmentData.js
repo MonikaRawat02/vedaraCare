@@ -20,8 +20,8 @@ export const pigmentationTreatmentHero = {
     title: "DIFFERENT PIGMENTATION, DIFFERENT TREATMENT.",
     subtitle: "The most common reason for pigmentation treatment failure is treating different pigmentation types the same way. One size does not fit all — accurate identification first matters most."
   },
-  image: "https://coresg-normal.trae.ai/api/v1/text-to-image?prompt=professional%20dermatologist%20doctor%20in%20clinic%20consulting%20patient%20about%20skin%20pigmentation%20treatment%2C%20high%20quality%2C%20realistic&image_size=square_hd",
-  alt: "Pigmentation treatment consultation at Vedara Care JVC Dubai"
+  image: "/images/pigmentation-treatment-jvc-dubai-hero.webp",
+  alt: "Pigmentation treatment consultation at Vedara Care JVC Dubai with consultant dermatologist"
 };
 
 export const pigmentationHowItWorks = {
@@ -208,8 +208,8 @@ export const pigmentationConcernSelector = {
       description: "Diffuse uneven pigmentation from accumulated sun exposure. Often combined with other photoaging signs — fine lines, texture changes. Particularly relevant in Dubai given intense year-round UV exposure. Treatment combines pigmentation correction with broader skin rejuvenation.",
       howToRecognise: "Overall uneven skin tone, combined with other sun damage signs",
       commonIn: "Adults with substantial sun exposure history",
-      linkText: "Explore treatment options",
-      linkHref: "/dermatology-clinic-jvc/"
+      linkText: "Explore skin rejuvenation treatment options",
+      linkHref: "/treatments/skin-rejuvenation-jvc/"
     },
     {
       number: "05",
@@ -238,7 +238,7 @@ export const pigmentationConcernSelector = {
       icon: "shield",
       title: "Drug-Induced or Post-Procedural",
       subtitle: "Medication & Procedure-Related Pigmentation",
-      description: "Pigmentation caused by medications (some antibiotics, antimalarials, hormones, chemotherapy) or following procedures (laser treatments, chemical peels, injectables). Requires identification of cause and specific management. Sometimes resolves with cause removal; sometimes requires treatment.",
+      description: 'Pigmentation caused by medications (some antibiotics, antimalarials, hormones, chemotherapy) or following procedures (laser treatments, <a href="/treatments/chemical-peel-dubai/" class="text-[#C9A961] hover:text-[#B8924F] hover:underline transition-colors">chemical peels</a>, injectables). Requires identification of cause and specific management. Sometimes resolves with cause removal; sometimes requires treatment.',
       howToRecognise: "Pigmentation onset associated with specific medications or procedures",
       commonIn: "Patients on specific medications; patients with adverse procedural outcomes",
       linkText: "Book consultation for assessment →",

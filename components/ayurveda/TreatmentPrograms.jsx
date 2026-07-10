@@ -4,14 +4,14 @@ import { Check } from 'lucide-react';
 const TreatmentPrograms = ({
   bgColor = "bg-white",
   cardBg = "rgb(250, 248, 245)",
-  buttonBg = "rgba(53, 211, 185, 1)",
+  buttonBg = "rgba(79, 216, 102, 1)",
   buttonText = "Book Assessment",
   label = "",
   title = "",
   description = "",
   programs = [],
   footer = "",
-  whatsappUrl = "https://wa.me/971500000000" // Default WhatsApp URL
+  whatsappUrl = "https://wa.me/+971555867466" // Default WhatsApp URL
 }) => {
   return (
     <section className={`${bgColor} py-24`}>
@@ -75,7 +75,7 @@ const TreatmentPrograms = ({
                   />
                 </div>
               )}
-
+                                   
               {/* Dynamic Button or WhatsApp Button */}
       {!program.hideButton && (
         <a

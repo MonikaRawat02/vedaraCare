@@ -98,7 +98,7 @@ export const homeServices = {
       image: '/images/dermatology.webp',
       features: ['Acne Treatment', 'Hair Loss', 'PRP Therapy', 'Pigmentation', 'Skin Rejuvenation', 'Chemical Peel'],
       buttonText: 'Explore Dermatology',
-      link: '/dermatology-clinic-jvc/'
+      link: '/dermatology-clinic-jvc'
     },
     {
       id: 'home-healthcare',
@@ -107,7 +107,7 @@ export const homeServices = {
       image: '/images/Home Healthcare in Dubai.webp',
       features: ['Doctor on Call', 'Home Nursing', 'IV Drip', 'Lab Tests at Home', 'Elderly Care', 'Physiotherapy at Home'],
       buttonText: 'Explore Home Healthcare',
-      link: '/services/home-healthcare'
+      link: '/physiotherapy-at-home-dubai'
     },
     {
       id: 'wellness',
@@ -116,7 +116,7 @@ export const homeServices = {
       image: '/images/Wellness Treatments.webp',
       features: ['Detox Programs', 'Stress Management', 'Yoga Therapy', 'Nutrition Consultation', 'Weight Management'],
       buttonText: 'Explore Wellness',
-      link: '/services/wellness'
+      link: '/ayurveda-clinic-jvc'
     }
   ]
 };
@@ -142,10 +142,10 @@ export const homeConditions = {
     { title: "Chronic Back Pain", category: "Pain", description: "Integrated treatment combining manual therapy and Ayurvedic protocols", sub: "Ayurveda and Physio", link: "/conditions/back-pain-ayurveda-dubai/" },
     { title: "PCOS", category: "Womens Health", description: "Hormonal balance through traditional Ayurvedic medicine", sub: "Ayurveda", link: "/conditions/pcos-ayurveda-dubai/" },
     { title: "Hair Loss", category: "Skin and Hair", description: "Combined approach for hair restoration and scalp health", sub: "Dermatology and Ayurveda", link: "/conditions/hair-loss-ayurveda-dubai/" },
-    { title: "Neck and Shoulder Pain", category: "Pain", description: "Manual therapy and targeted rehabilitation", sub: "Physio" },
+    { title: "Neck and Shoulder Pain", category: "Pain", description: "Manual therapy and targeted rehabilitation", sub: "Physio", link: "/conditions/neck-pain-physiotherapy-jvc" },
     { title: "Sports Injuries", category: "Pain", description: "Evidence-based sports injury rehabilitation", sub: "Physio", link: "/physiotherapy/sports-injury-jvc" },
-    { title: "Acne and Scars", category: "Skin and Hair", description: "Medical-grade acne treatment and scar reduction", sub: "Dermatology" },
-    { title: "Frozen Shoulder", category: "Pain", description: "Combined manual therapy and Ayurvedic treatment", sub: "Physio and Ayurveda" },
+    { title: "Acne and Scars", category: "Skin and Hair", description: "Medical-grade acne treatment and scar reduction", sub: "Dermatology", link: "/conditions/acne-scars-dubai" },
+    { title: "Frozen Shoulder", category: "Pain", description: "Combined manual therapy and Ayurvedic treatment", sub: "Physio and Ayurveda", link: "/conditions/frozen-shoulder-dubai" },
     { title: "Stress and Anxiety", category: "Mental Wellness", description: "Holistic stress management programs", sub: "Ayurveda and Wellness", link: "/conditions/stress-anxiety-ayurveda-dubai/" },
     { title: "Migraine", category: "Pain", description: "Root cause treatment through Ayurvedic protocols", sub: "Ayurveda", link: "/conditions/migraine-ayurveda-dubai/" },
     { title: "Arthritis & Knee Pain", category: "Pain", description: "Integrated approach to joint health and ", sub: "Physio and Ayurveda", link: "/conditions/arthritis-ayurveda-dubai/" },
@@ -160,12 +160,13 @@ export const homeExperts = {
   subtitle: "Experienced healthcare professionals dedicated to your wellbeing",
   items: [
     {
-      name: "Dr. Priya Sharma",
+      name: "Dr. Priya Nair",
       qualification: "BAMS, MD (Ayurveda)",
       role: "Ayurvedic Physician",
       experience: "15+ years experience",
       languages: "English, Hindi, Arabic",
-      image: "https://images.unsplash.com/photo-1559839734-2b71f1e3c7e3?q=80&w=2070&auto=format&fit=crop"
+      image: "/images/dr-priya-nair-ayurvedic-physician-jvc-dubai.webp",
+      link: "/doctors/priya-nair"
     },
     {
       name: "Dr. Ahmed Al-Mansoori",
@@ -173,7 +174,8 @@ export const homeExperts = {
       role: "Physiotherapist",
       experience: "12+ years experience",
       languages: "English, Arabic, Urdu",
-      image: "https://images.unsplash.com/photo-1622253692010-333f2da6031d?q=80&w=2070&auto=format&fit=crop"
+      image: "https://images.unsplash.com/photo-1622253692010-333f2da6031d?q=80&w=2070&auto=format&fit=crop",
+      link: "/doctors"
     },
     {
       name: "Dr. Sarah Khan",
@@ -181,7 +183,8 @@ export const homeExperts = {
       role: "Dermatologist",
       experience: "10+ years experience",
       languages: "English, Arabic, Hindi",
-      image: "https://images.unsplash.com/photo-1594824476967-48c8b964273f?q=80&w=2070&auto=format&fit=crop"
+      image: "https://images.unsplash.com/photo-1594824476967-48c8b964273f?q=80&w=2070&auto=format&fit=crop",
+      link: "/doctors"
     }
   ]
 };
@@ -313,8 +316,8 @@ export const homeLocation = {
   },
   address: {
     label: "Address",
-    street: "",
-    area: "Jumeirah Village Circle",
+    street: "Al Barsha South Fourth, Binghatti Azure, Shop -4, ",
+    area: "Jumeraih Village Circle (JVC) Dubai",
     city: "Dubai, UAE"
   },
   contact: {
@@ -325,8 +328,8 @@ export const homeLocation = {
   },
   hours: {
     label: "Hours",
-    weekdays: "Mon - Sat: 9 AM to 9 PM",
-    sunday: "Sun: 10 AM to 7 PM"
+    weekdays: "Mon - Sun: 8:30 am to 11:30 pm",
+    sunday: ""
   },
   parkingText: "Free covered parking available for patients",
   tags: ["5 min from JSS School", "3 min from FIVE JVC", "Next to Circle Mall"],

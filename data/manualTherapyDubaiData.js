@@ -19,7 +19,7 @@ export const manualTherapyHero = {
     title: "MANUAL THERAPY IS NOT CHIROPRACTIC OR MASSAGE.",
     subtitle: "Manual therapy is the hands-on component of evidence-based physiotherapy. Joint mobilisation, soft tissue work, manipulation where appropriate, and specific exercise — delivered by DPT-qualified physiotherapists."
   },
-  image: "/images/manual-therapy-hero-dubai.webp",
+  image: "/images/manual-therapy-dubai-hero.webp",
   alt: "Manual therapy treatment at Vedara Care JVC Dubai clinic with certified specialist"
 };
 export const manualTherapyIntro = {
@@ -64,7 +64,7 @@ export const manualTherapyWhatIs = {
       footer: "Manual therapy is the hands-on craft of physiotherapy. Skilled application combined with appropriate exercise prescription and patient education produces sustainable outcomes that hands-on treatment alone rarely achieves."
     },
     rightContent: {
-      image: "manual-therapy-techniques-illustration.webp",
+      image: "/images/manual-therapy-techniques-illustration.webp",
       alt: "Manual therapy techniques joint mobilisation educational illustration",
       label: "TECHNIQUES IN OUR PRACTICE",
       tags: [
@@ -240,7 +240,7 @@ export const manualTherapyFinalCTA = {
   button1Text: "Book Manual Therapy Assessment",
   button1Href: "/book",
   button2Text: "WhatsApp Us",
-  button2Href: "https://wa.me/971555867466X",
+  button2Href: "https://wa.me/971555867466?text=Hello%20Vedara%20Care,%20I%20would%20like%20to%20inquire%20about%20manual%20therapy%20and%20book%20a%20consultation.",
   footer: "Initial assessment from AED 380 • Walking distance from Circle Mall, JVC • 500+ manual therapy patients treated • Certified specialists • Evidence-based techniques • Insurance direct-billing"
 };
 

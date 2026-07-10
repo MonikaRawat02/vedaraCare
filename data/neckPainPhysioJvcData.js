@@ -459,7 +459,7 @@ export const neckPainCTA = {
   button1Text: "Book Neck Pain Assessment",
   button1Href: "/book",
   button2Text: "WhatsApp Us",
-  button2Href: "https://wa.me/971555867466",
+  button2Href: "https://wa.me/971555867466?text=Hello%20Vedara%20Care,%20I%20would%20like%20to%20inquire%20about%20neck%20pain%20physiotherapy%20and%20book%20a%20consultation.",
   bullets: [
     "Initial assessment from AED 350",
     " JVC · DPT-qualified physiotherapists",

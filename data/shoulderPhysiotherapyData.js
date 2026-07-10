@@ -277,7 +277,7 @@ export const shoulderPhysioCTA = {
   button1Text: "Book Shoulder Pain Assessment",
   button1Href: "/book",
   button2Text: "WhatsApp Us",
-  button2Href: "https://wa.me/971555867466",
+  button2Href: "https://wa.me/971555867466?text=Hello%20Vedara%20Care,%20I%20would%20like%20to%20inquire%20about%20shoulder%20pain%20physiotherapy%20and%20book%20a%20consultation.",
   footer: "Initial assessment from AED 350 · Walking distance from Circle Mall, JVC · 380+ shoulder patients treated · Most patients avoid surgery with appropriate care · Insurance direct-billing"
 };
 

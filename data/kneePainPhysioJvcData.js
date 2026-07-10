@@ -443,7 +443,7 @@ export const kneePainCTA = {
   button1Text: "Book Knee Pain Assessment",
   button1Href: "/book",
   button2Text: "WhatsApp Us",
-  button2Href: "https://wa.me/971555867466",
+  button2Href: "https://wa.me/971555867466?text=Hello%20Vedara%20Care,%20I%20would%20like%20to%20inquire%20about%20knee%20pain%20physiotherapy%20and%20book%20a%20consultation.",
   bullets: [
     "Initial assessment from AED 350",
     "JVC · 350+ knee patients treated ",
@@ -644,8 +644,8 @@ export const kneePainTreatmentApproach = {
     }
   ],
   quote: "Generic knee exercises produce generic outcomes. Treatment matched to your specific condition produces meaningfully better results.",
-  image: "/images/knee-pain-treatment-approach.jpg",
-  alt: "Patient performing condition-specific knee rehabilitation exercise in physiotherapy clinic",
+  image: "/images/knee-pain-assessment-vedara-jvc.webp",
+  alt: "Evidence-based knee pain treatment at Vedara Care JVC Dubai",
   toolkitItems: [
     "Manual Therapy",
     "Exercise Prescription",

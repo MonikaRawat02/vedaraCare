@@ -121,7 +121,7 @@ export const eczemaTreatmentTypes = {
     {
       number: "06",
       title: "Nummular (Discoid) Eczema",
-      description: "Distinct coin-shaped patches of eczema, often multiple. Can occur at any age but common in older adults. Sometimes triggered by specific factors; often idiopathic. Sometimes confused with psoriasis or fungal infections. Treatment similar to other eczema types.",
+      description: "Distinct coin-shaped patches of eczema, often multiple. Can occur at any age but common in older adults. Sometimes triggered by specific factors; often idiopathic. Sometimes confused with <a href='/conditions/psoriasis-treatment-dubai' class='description-link'>psoriasis</a> or fungal infections. Treatment similar to other eczema types.",
       typicalSigns: ["Round coin-shaped patches of scaly inflamed skin, often on limbs"]
     },
     {

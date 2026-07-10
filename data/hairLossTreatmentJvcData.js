@@ -347,7 +347,7 @@ export const hairLossTreatmentPricing = {
     { name: "Photographic monitoring visit", price: "AED 150" },
     { name: "Hair transplant referral consultation", price: "AED 450" }
   ],
-  insuranceText: 'Medical hair loss workup including consultations and blood work is covered by most Dubai insurance plans with appropriate medical justification. PRP, mesotherapy, and procedural treatments are typically self-pay. We are direct-billing partners with Daman, AXA, Allianz, Oman Insurance, Now Health, Bupa, and MetLife. <a href="https://wa.me/971555867466" class="text-[#C9A84C] hover:underline">WhatsApp your insurance card</a> before booking for specific coverage confirmation.',
+  insuranceText: 'Medical hair loss workup including consultations and blood work is covered by most Dubai insurance plans with appropriate medical justification. PRP, mesotherapy, and procedural treatments are typically self-pay. We are direct-billing partners with Daman, AXA, Allianz, Oman Insurance, Now Health, Bupa, and MetLife. <a href="https://wa.me/971555867466?text=Hello%20Vedara%20Care,%20I%27d%20like%20to%20confirm%20my%20insurance%20coverage%20for%20hair%20loss%20treatment." class="text-[#C9A84C] hover:underline">WhatsApp your insurance card</a> before booking for specific coverage confirmation.',
   insurances: ["Daman", "AXA", "Allianz", "Oman Insurance", "Now Health", "Bupa", "MetLife"]
 };
 
@@ -444,7 +444,7 @@ export const hairLossTreatmentFaqs = {
   title: "What patients ask about hair loss treatment.",
   description: "For broader dermatology questions, see our dermatology clinic page",
   primaryCtaText: "Ask Our Team on WhatsApp",
-  primaryCtaHref: "https://wa.me/971555867466",
+  primaryCtaHref: "https://wa.me/971555867466?text=Hello%20Vedara%20Care,%20I%20would%20like%20to%20inquire%20about%20hair%20loss%20treatment%20and%20book%20a%20consultation.",
   secondaryCtaText: "Full dermatology clinic details →",
   secondaryCtaHref: "/dermatology-clinic-jvc/",
   faqs: [
@@ -558,7 +558,7 @@ export const hairLossTreatmentCTA = {
   button1BgColor: "rgb(184, 150, 90)",
   button1TextColor: "rgb(255, 255, 255)",
   button2Text: "WhatsApp Us",
-  button2Href: "https://wa.me/971555867466",
+  button2Href: "https://wa.me/971555867466?text=Hello%20Vedara%20Care,%20I%20would%20like%20to%20inquire%20about%20hair%20loss%20treatment%20and%20book%20a%20consultation.",
   button2BorderColor: "rgb(74, 222, 128)",
   button2TextColor: "rgb(74, 222, 128)",
   bullets: [

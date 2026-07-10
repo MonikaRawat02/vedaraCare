@@ -486,7 +486,7 @@ const DiabetesAyurvedaDubai = () => {
 
             <div>
               <img 
-                src="/images/padabhyanga-diabetic-foot-care-jvc.webp" 
+                src="/images/ayurveda-endocrinology-integrated-diabetes-jvc.webp" 
                 alt="Ayurvedic doctor performing diabetic foot examination at Vedara Care JVC Dubai" 
                 className="rounded-xl w-full h-auto object-cover shadow-lg" 
               />

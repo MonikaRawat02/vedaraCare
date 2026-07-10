@@ -71,7 +71,7 @@ const DoctorHero = ({ doctor }) => {
                 Book a Consultation
               </Link>
               <a
-                href="https://wa.me/971555867466"
+                href="https://wa.me/971555867466?text=Hello%20Vedara%20Care,%20I%20would%20like%20to%20inquire%20about%20your%20treatments%20and%20book%20a%20consultation."
                 className="inline-flex items-center justify-center gap-2 px-7 py-3.5 rounded text-[14px] font-medium transition-opacity hover:opacity-90 active:scale-[0.98]"
                 style={{ background: 'rgb(74, 124, 89) !important', color: 'rgb(255, 255, 255) !important' }}
                 target="_blank"

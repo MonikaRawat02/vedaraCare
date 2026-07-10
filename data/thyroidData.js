@@ -138,7 +138,7 @@ export const thyroidHashimoto = {
     "Realistic outcomes for Hashimoto's: 30-60% reduction in thyroid antibody levels over 9 months for many patients (documented on follow-up bloodwork), meaningful improvement in residual symptoms, slower disease progression, and quality of life improvement. What Ayurveda does not do: reverse existing thyroid damage, replace levothyroxine, or eliminate antibodies entirely in \"cure\" Hashimoto's."
   ],
   quote: "For Hashimoto's specifically, Ayurvedic adjunctive treatment is one of the most clinically valuable additions to conventional endocrinology care available — when it is honest about what it does and does not do.",
-  image: "hashimoto-antibody-monitoring-vedara-jvc.webp",
+  image: "/images/hashimoto-antibody-monitoring-vedara-jvc.webp",
   alt: "Ayurvedic doctor reviewing thyroid antibody reduction trends with Hashimoto's patient at Vedara Care JVC",
   imageLeft: false
 };

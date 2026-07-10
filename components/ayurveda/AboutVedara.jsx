@@ -11,7 +11,8 @@ const AboutVedara = ({
     { value: "5,000+", label: "Patients Treated" },
     { value: "20+", label: "Treatment Protocols" }
   ],
-  image = "https://images.unsplash.com/photo-1600334089648-b0d9d3028eb2?q=80&w=2070&auto=format&fit=crop",
+  image = "/images/vedara-care-ayurveda-clinic-jvc-dubai.webp",
+  alt = "Vedara Care Polyclinic interior, DHA-licensed Ayurveda clinic in JVC Dubai",
   primaryCTA = "Visit Our JVC Clinic",
   secondaryCTA = "Meet Our Doctors"
 }) => {
@@ -54,10 +55,11 @@ const AboutVedara = ({
           <div className="relative aspect-[4/5] rounded-[12px] overflow-hidden">
             <Image
               src={image}
-              alt="Vedara Care Polyclinic interior"
+              alt={alt}
               fill
               className="object-cover opacity-90"
             />
+            
           </div>
         </div>
       </div>
