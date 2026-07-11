@@ -37,35 +37,24 @@ const AyurvedaClinicJVC = () => {
       "name": "Vedara Care Polyclinic — Ayurveda Department",
       "url": "https://vedaracare.ae/ayurveda-clinic-jvc/",
       "image": "https://vedaracare.ae/images/ayurveda-clinic-jvc-hero.webp",
-      "telephone": "+971-XX-XXX-XXXX",
+      "telephone": "+971 55 586 7466",
       "email": "booking@vedaracare.ae",
       "priceRange": "AED",
       "medicalSpecialty": {"@type": "MedicalSpecialty", "name": "Ayurveda", "@id": "https://vedaracare.ae/ayurveda-clinic-jvc/#ayurveda"},
       "parentOrganization": {"@id": "https://vedaracare.ae/#organization"},
       "address": {
         "@type": "PostalAddress",
-        "streetAddress": "[Full street address, building, unit]",
-        "addressLocality": "Jumeirah Village Circle",
+        "streetAddress": "Al Barsha South Fourth, Binghatti Azure, Shop -4, Jumeirah Village Circle (JVC)",
+        "addressLocality": "Dubai",
         "addressRegion": "Dubai",
         "addressCountry": "AE"
-      },
-      "geo": {
-        "@type": "GeoCoordinates",
-        "latitude": "25.0XXX",
-        "longitude": "55.2XXX"
       },
       "openingHoursSpecification": [
         {
           "@type": "OpeningHoursSpecification",
-          "dayOfWeek": ["Monday","Tuesday","Wednesday","Thursday","Friday","Saturday"],
-          "opens": "09:00",
-          "closes": "21:00"
-        },
-        {
-          "@type": "OpeningHoursSpecification",
-          "dayOfWeek": ["Sunday"],
-          "opens": "10:00",
-          "closes": "19:00"
+          "dayOfWeek": ["Monday","Tuesday","Wednesday","Thursday","Friday","Saturday","Sunday"],
+          "opens": "08:30",
+          "closes": "23:30"
         }
       ],
       "availableService": [

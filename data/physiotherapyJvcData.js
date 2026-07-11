@@ -520,13 +520,13 @@ export const physiotherapyJvcLocation = {
   bgColor: "bg-white",
   label: "VISIT US",
   title: "Where physiotherapy happens at Vedara Care JVC.",
-  address: "Vedara Care Polyclinic<br />Building X, District 12<br />Jumeirah Village Circle (JVC)<br />Dubai, United Arab Emirates<br />Next to Circle Mall • 3 minutes from FIVE Jumeirah Village Hotel",
+  address: "Al Barsha South Fourth, Binghatti Azure, Shop -4, <br />Jumeraih Village Circle (JVC) Dubai",
   phone: "+971 55 586 7466",
   email: "booking@vedaracare.ae",
   hours: {
-    monday: "9:00 AM - 9:00 PM",
-    saturday: "9:00 AM - 8:00 PM",
-    sunday: "9:00 AM - 8:00 PM"
+    monday: " 8:30 AM to 11:30 PM",
+    saturday: "8:30 AM to 11:30 PM",
+    sunday: "8:30 AM to 11:30 PM"
   },
   landmarks: [
     "Circle Mall (5 min walking distance)",

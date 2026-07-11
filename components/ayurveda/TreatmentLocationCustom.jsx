@@ -7,7 +7,7 @@ const TreatmentLocationCustom = ({
   label = 'VISIT US',
   title = 'Where IBS treatment happens at Vedara Care.',
   address1 = 'Vedara Care Polyclinic',
-  address2 = '[Full Address], Jumeirah Village Circle (JVC)<br />Dubai, United Arab Emirates',
+  address2 = '',
   addressNote = '',
   clinicHours = [
     { label: 'Sunday - Thursday', time: '9:00 AM - 8:00 PM' },

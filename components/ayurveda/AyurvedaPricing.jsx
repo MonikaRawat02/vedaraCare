@@ -55,23 +55,16 @@ const AyurvedaPricing = () => {
     <section className="bg-[#F8F8F8] py-24">
       <div className="max-w-7xl mx-auto px-6">
         {/* Heading */}
-        <div className="text-center mb-16">
-          <p className="text-[11px] tracking-[3px] uppercase text-[#C6A05C] font-semibold">
+        <div className="text-center mb-14 space-y-0">
+          <p className="text-[13px] font-sans font-semibold tracking-[0.15em] text-[#C9A961] uppercase">
             Transparent Pricing
           </p>
-
-          <h2
-            className="mt-4 text-[#1D1D1D] font-normal"
-            style={{
-              fontFamily: "Fraunces, Georgia, serif",
-              fontSize: "48px",
-              lineHeight: "1.2",
-            }}
-          >
+          
+          <h2 className="mt-4 mb-4 text-[#1A1A1A] font-serif text-[clamp(1.7rem,2.8vw,2.5rem)] leading-[1.15] font-normal mx-auto">
             What Ayurveda actually costs in Dubai.
           </h2>
 
-          <p className="mt-5 max-w-2xl mx-auto text-[#666] text-[17px] leading-8">
+          <p className="text-[17px] text-[#6B6B6B] font-sans max-w-[640px] mx-auto leading-relaxed">
             We publish indicative pricing because patients deserve to know
             before they book. Final pricing depends on your treatment plan,
             which is decided after consultation.
@@ -85,26 +78,23 @@ const AyurvedaPricing = () => {
               key={index}
               className="bg-[#F2EEE8] rounded-lg p-10 flex flex-col"
             >
-              <p className="text-[11px] tracking-[3px] uppercase text-[#C6A05C] font-semibold">
+              <p className="text-[13px] font-sans font-semibold tracking-[0.15em] text-[#C9A961] uppercase">
                 {card.label}
               </p>
 
               <h3
-                className="mt-4 text-[34px] text-[#111]"
+                className="mt-4 text-[#1A1A1A] font-serif"
                 style={{
-                  fontFamily: "Fraunces, Georgia, serif",
-                  fontWeight: 400,
+                  fontSize: "clamp(1.3rem, 1.8vw, 1.7rem)",
                 }}
               >
                 {card.title}
               </h3>
 
               <h4
-                className="mt-3 mb-8 text-[#111]"
+                className="mt-3 mb-8 text-[#1A1A1A] font-serif"
                 style={{
-                  fontFamily: "Fraunces, Georgia, serif",
-                  fontSize: "28px",
-                  fontWeight: 400,
+                  fontSize: "clamp(1.1rem, 1.5vw, 1.4rem)",
                 }}
               >
                 {card.price}
@@ -114,28 +104,32 @@ const AyurvedaPricing = () => {
                 {card.points.map((item, i) => (
                   <li
                     key={i}
-                    className="flex items-start gap-3 text-[#6F6F6F] text-sm"
+                    className="flex items-start gap-3 text-[#6B6B6B] text-[14px] font-sans"
                   >
                     <Check
                       size={14}
-                      className="text-[#C6A05C] mt-1 flex-shrink-0"
+                      className="text-[#C9A961] mt-1 flex-shrink-0"
                     />
                     {item}
                   </li>
                 ))}
               </ul>
 
-              <button className="mt-10 border border-[#D8D1C7] rounded-full py-4 flex items-center justify-center gap-2 text-sm font-medium hover:bg-white transition">
+              <a 
+                href="https://wa.me/971555867466?text=Hello%20Vedara%20Care,%20I%20would%20like%20to%20enquire%20about%20Ayurveda%20pricing%20and%20book%20a%20consultation."
+                target="_blank"
+                rel="noopener noreferrer"
+                className="mt-10 border border-[#D8D1C7] rounded-full py-4 flex items-center justify-center gap-2 text-[14px] font-sans font-medium hover:bg-white transition">
                 <MessageCircle size={15} />
                 Enquire on WhatsApp
-              </button>
+              </a>
             </div>
           ))}
         </div>
 
         {/* Insurance */}
         <div className="text-center mt-16">
-          <p className="text-sm text-[#777] mb-6">
+          <p className="text-[14px] text-[#6B6B6B] font-sans mb-6">
             Direct billing available with:
           </p>
 
@@ -143,14 +137,14 @@ const AyurvedaPricing = () => {
             {insurances.map((item, index) => (
               <span
                 key={index}
-                className="px-4 py-2 rounded-full bg-[#EFE8DD] border border-[#DDD3C4] text-[#666] text-xs"
+                className="px-4 py-2 rounded-full bg-[#EFE8DD] border border-[#DDD3C4] text-[#6B6B6B] text-[13px] font-sans"
               >
                 {item}
               </span>
             ))}
           </div>
 
-          <p className="mt-6 text-xs text-[#777] max-w-md mx-auto">
+          <p className="mt-6 text-[13px] text-[#6B6B6B] font-sans max-w-md mx-auto">
             Ayurveda coverage varies by plan. WhatsApp us your card and we will
             confirm before booking.
           </p>

@@ -50,12 +50,13 @@ const PhysiotherapyInsurance = ({
               ))}
             </ul>
             {sidebarText.map((text, index) => (
-              <p key={index} className="text-sm text-gray-600 mb-6">
-                {text}
+              <p key={index} className="text-sm text-gray-600 mb-6" dangerouslySetInnerHTML={{ __html: text }}>
               </p>
             ))}
             <a
-              href={`https://wa.me/${whatsappNumber}`}
+              href={`https://wa.me/${whatsappNumber}?text=Hello%20Vedara%20Care,%20I%20would%20like%20to%20confirm%20my%20insurance%20coverage%20for%20physiotherapy.`}
+              target="_blank"
+              rel="noopener noreferrer"
               className="w-full text-white font-semibold py-3 px-6 rounded-lg flex items-center justify-center gap-2 transition-colors"
               style={{ backgroundColor: '#25d366' }}
               onMouseEnter={(e) => e.currentTarget.style.backgroundColor = '#128c7e'}

@@ -7,7 +7,9 @@ export const physiotherapyHero = {
   title: "Physiotherapy in Dubai. Choosing well matters more than choosing fast.",
   description: "Dubai has many physiotherapists. Quality varies enormously across qualifications, specialisations, evidence base, and clinical depth. This page is partly an introduction to physiotherapy in Dubai — what to look for, what specialisations exist, how insurance works — and partly a description of how Vedara Care, our DHA-licensed clinic in Jumeirah Village Circle (JVC), approaches physiotherapy across the city. Patients travel to us from every major Dubai neighbourhood.",
   primaryCTA: "Book a Physiotherapy Assessment",
+  primaryCTAHref: "/book",
   secondaryCTA: "WhatsApp Us",
+  secondaryCTAHref: "https://wa.me/971555867466?text=Hello%20Vedara%20Care,%20I%20would%20like%20to%20know%20more%20about%20your%20physiotherapy%20services%20in%20Dubai.",
   trustSignals: [
     "DPT-qualified physiotherapists",
     "7 specialised treatment areas",
@@ -264,11 +266,13 @@ export const physiotherapyConditions = {
     },
     {
       title: "Cervical Spondylosis & Neck Pain",
-      description: "Common in Dubai's desk-working population"
+      description: "Common in Dubai's desk-working population",
+      link: "/conditions/neck-pain-physiotherapy-jvc"
     },
     {
       title: "Frozen Shoulder",
-      description: "Often more common in diabetic patients (common in Dubai populations)"
+      description: "Often more common in diabetic patients (common in Dubai populations)",
+      link: "/conditions/frozen-shoulder-dubai"
     },
     {
       title: "Knee Osteoarthritis",
@@ -286,7 +290,8 @@ export const physiotherapyConditions = {
     },
     {
       title: "Ankle Sprains & Sports Injuries",
-      description: "Padel, football, basketball common"
+      description: "Padel, football, basketball common",
+      link: "/physiotherapy/sports-injury-jvc"
     },
     {
       title: "Running Injuries",
@@ -294,23 +299,28 @@ export const physiotherapyConditions = {
     },
     {
       title: "Gym Training Injuries",
-      description: "F45, HIIT, weightlifting patterns"
+      description: "F45, HIIT, weightlifting patterns",
+      link: "/physiotherapy/sports-injury-jvc"
     },
     {
       title: "Padel-Specific Injuries",
-      description: "Growing Dubai patient cohort"
+      description: "Growing Dubai patient cohort",
+      link: "/physiotherapy/sports-injury-jvc"
     },
     {
       title: "ACL Reconstruction Recovery",
-      description: "Often sports-related"
+      description: "Often sports-related",
+      link: "/physiotherapy/post-surgery-rehab-dubai"
     },
     {
       title: "Joint Replacement Rehabilitation",
-      description: "Older expat populations"
+      description: "Older expat populations",
+      link: "/physiotherapy/post-surgery-rehab-dubai"
     },
     {
       title: "Post-Stroke Rehabilitation",
-      description: "Coordinated with neurology"
+      description: "Coordinated with neurology",
+      link: "/conditions/stroke-rehab-dubai"
     },
     {
       title: "Vertigo & Vestibular Rehabilitation",
@@ -318,7 +328,8 @@ export const physiotherapyConditions = {
     },
     {
       title: "Pelvic Floor Dysfunction",
-      description: "Underserved specialty in Dubai"
+      description: "Underserved specialty in Dubai",
+      link: "/conditions/pelvic-floor-physiotherapy-dubai"
     },
     {
       title: "Postnatal Recovery",
@@ -327,7 +338,7 @@ export const physiotherapyConditions = {
     }
   ],
   footerText: "See all conditions we treat →",
-  footerLink: "/"
+  footerLink: "/conditions"
 };
 
 export const physiotherapyTwoImage = {
@@ -375,6 +386,7 @@ export const physiotherapyFaqs = {
   title: "What patients ask about physiotherapy in Dubai.",
   description: "For JVC-specific questions (parking, location, hours), see our JVC clinic page..",
   buttonText: "Ask Our Team on WhatsApp",
+  buttonHref: "https://wa.me/971555867466?text=Hello%20Vedara%20Care,%20I%20have%20a%20question%20about%20physiotherapy%20in%20Dubai.",
   faqs: [
     {
       question: "How do I find the best physiotherapy clinic in Dubai?",
@@ -385,7 +397,7 @@ export const physiotherapyFaqs = {
       answer: "At minimum: DHA-licensed (required by law), with verified physiotherapy degree (typically Bachelor's level minimum). The current international gold standard is DPT (Doctor of Physical Therapy), which requires more extensive clinical training and evidence-based practice emphasis. For specialised conditions, ask whether the therapist has specific postgraduate training (sports medicine, pelvic floor, neurological rehabilitation, paediatric). Continuing education matters — physiotherapy evidence evolves quickly."   },
     {
       question: "Does Dubai insurance cover physiotherapy?",
-      answer: "Most plans cover physiotherapy when there is medical justification. Coverage varies significantly: annual session limits, copay percentages, referral requirements, and pre-authorisation requirements all differ across plans. Direct-billing arrangements depend on clinic-insurer relationships. WhatsApp your insurance card to [number] for specific coverage confirmation before booking multi-session programmes."   },
+      answer: "Most plans cover physiotherapy when there is medical justification. Coverage varies significantly: annual session limits, copay percentages, referral requirements, and pre-authorisation requirements all differ across plans. Direct-billing arrangements depend on clinic-insurer relationships. WhatsApp your insurance card to <a href='https://wa.me/971555867466?text=Hello%20Vedara%20Care,%20I%20would%20like%20to%20confirm%20my%20insurance%20coverage%20for%20physiotherapy.'>+971 55 586 7466</a> for specific coverage confirmation before booking multi-session programmes."   },
     {
       question: "Do I need a referral to see a physiotherapist in Dubai?",
       answer: "Not legally — physiotherapy is direct-access in Dubai. However, your specific insurance plan may require referral for coverage. For complex conditions, GP evaluation before physiotherapy is often clinically appropriate. For acute injuries with potential fracture or serious pathology, A&E or GP evaluation first is standard practice."  },
@@ -437,10 +449,10 @@ question: "What about sports injuries from padel?",
 answer: "Padel has exploded in Dubai's expat community, and padel injuries are a growing patient cohort. Most common presentations: lateral epicondylitis (padel elbow), shoulder impingement, lower back strain, knee meniscus injuries, ankle sprains, wrist tendinopathies. Our sports physiotherapy team has developed specific protocols for padel-related injuries based on the sport's biomechanics."},
 {
   question: "How quickly can I get an appointment in Dubai?",
-  answer: "At Vedara Care, typically same-day or next-day for new patients, with priority booking for acute injuries within 24 hours when possible. Saturday and evening slots available. WhatsApp [number] for fastest response. Across Dubai's market, scheduling availability varies enormously — busy clinics may have 1-2 week waits, less busy clinics offer same-day."},
+  answer: "At Vedara Care, typically same-day or next-day for new patients, with priority booking for acute injuries within 24 hours when possible. Saturday and evening slots available. WhatsApp <a href='https://wa.me/971555867466?text=Hello%20Vedara%20Care,%20I%20would%20like%20to%20book%20a%20physiotherapy%20appointment.'>+971 55 586 7466</a> for fastest response. Across Dubai's market, scheduling availability varies enormously — busy clinics may have 1-2 week waits, less busy clinics offer same-day."},
   {
     question: "How do I book a physiotherapy assessment?",
-    answer: "Three ways at Vedara Care: WhatsApp [number] for fastest response (typically within 15 minutes business hours), call +971 55 586 7466 (9 AM to 9 PM seven days a week), or book online. For your first appointment, bring or send: any relevant imaging (X-rays, MRI), medical reports, current medication list, and insurance card if applicable."
+    answer: "Three ways at Vedara Care: WhatsApp <a href='https://wa.me/971555867466?text=Hello%20Vedara%20Care,%20I%20would%20like%20to%20book%20a%20physiotherapy%20assessment.'>+971 55 586 7466</a> for fastest response (typically within 15 minutes business hours), call +971 55 586 7466 (Monday to Sunday, 8:30 AM to 11:30 PM), or book online. For your first appointment, bring or send: any relevant imaging (X-rays, MRI), medical reports, current medication list, and insurance card if applicable."
    }
 
 
@@ -453,10 +465,10 @@ export const physiotherapyTreatmentLocation = {
   bgColor: "bg-[#F5F1E8]",
   label: "OUR CLINIC",
   title: "Vedara Care's physiotherapy clinic in Jumeirah Village Circle.",
-  address: "Vedara Care Polyclinic<br/>Building 7, Street 2, Jumeirah Village Circle<br/>Dubai, United Arab Emirates",
+  address: "Al Barsha South Fourth, Binghatti Azure, Shop -4, Jumeirah Village Circle (JVC), Dubai",
   phone: "+971 55 586 7466",
   email: "booking@vedaracare.ae",
-  hours: "Monday - Friday: 9:00 AM - 9:00 PM<br/>Saturday: 9:00 AM - 6:00 PM<br/>Sunday: 10:00 AM - 4:00 PM",
+  hours: "Monday - Sunday: 8:30 AM - 11:30 PM",
   landmarks: [
     "Next to Circle Mall",
     "3 minutes from FIVE Jumeirah Village Hotel",
@@ -465,6 +477,7 @@ export const physiotherapyTreatmentLocation = {
   ],
   description: "Dedicated physiotherapy treatment rooms, gym area for exercise prescription, private consultation rooms, and integrated team offices. Walkable from Circle Mall, with convenient access from Sheikh Mohammed Bin Zayed Road for patients from across Dubai.",
   buttonText: "Book a Physiotherapy Assessment",
+  buttonHref: "/book",
   mapAlt: "Vedara Care JVC physiotherapy clinic location",
   mapEmbed: "https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d3613.9894568193345!2d55.20722358578439!3d25.068346479666594!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x3e5f6dd72f3da587%3A0xe7ecca8687a75b72!2sVedara%20Care%20Polyclinic!5e0!3m2!1sen!2sus!4v1780727442216!5m2!1sen!2sus"
 };
@@ -492,13 +505,14 @@ export const physiotherapyInsurance = {
   content: [
     "Insurance coverage for physiotherapy in Dubai varies enormously by insurer and plan. Understanding what your specific plan covers — before you commit to a multi-session programme — prevents most billing surprises.",
     "The major Dubai insurers offering some level of physiotherapy coverage include Daman, AXA, Allianz, Oman Insurance, Now Health, Bupa, and MetLife. Coverage typically varies across these dimensions: annual session limits (some plans allow 6-10 sessions per year; comprehensive plans allow unlimited with medical justification), copay percentages (often 10-30% patient responsibility), referral requirements (some plans require GP referral; others allow direct access), pre-authorisation requirements (some clinics require pre-authorisation for treatment beyond initial sessions), and direct-billing arrangements (some clinics direct-bill insurers; others require you to pay and claim back).",
-    "At Vedara Care, we are direct-billing partners with Daman, AXA, Allianz, Oman Insurance, Now Health, Bupa, and MetLife. The most efficient process for new patients: WhatsApp your insurance card photo to [number] before booking, and our team confirms exactly what is covered, what pre-authorisation is needed, and what your out-of-pocket cost will be. This typically takes 24-48 hours but prevents the most common billing surprises. For a full cost breakdown, see our <a href=\"/blog/ayurveda-cost-dubai/\">cost guide</a>.",
+    "At Vedara Care, we are direct-billing partners with Daman, AXA, Allianz, Oman Insurance, Now Health, Bupa, and MetLife. The most efficient process for new patients: WhatsApp your insurance card photo to <a href='https://wa.me/971555867466?text=Hello%20Vedara%20Care,%20I%20would%20like%20to%20confirm%20my%20insurance%20coverage%20for%20physiotherapy.'>+971 55 586 7466</a> before booking, and our team confirms exactly what is covered, what pre-authorisation is needed, and what your out-of-pocket cost will be. This typically takes 24-48 hours but prevents the most common billing surprises. For a full cost breakdown, see our <a href=\"/blog/ayurveda-cost-dubai/\">cost guide</a>.",
     "Some realities worth knowing: most plans require medical justification (specific diagnosis, documented condition) rather than wellness physiotherapy. Most plans cover physiotherapy for diagnosed musculoskeletal conditions (like <a href=\"/conditions/back-pain-ayurveda-dubai/\">back pain</a> or <a href=\"/conditions/arthritis-ayurveda-dubai/\">knee OA</a>), post-surgical recovery, and neurological rehabilitation. Coverage for preventive sports performance work, wellness physiotherapy, or maintenance visits varies. <a href=\"/conditions/postnatal-ayurveda-dubai/\">Postnatal physiotherapy</a> coverage has improved substantially in recent years — most major plans now cover pelvic floor rehabilitation with appropriate clinical justification."
   ],
   insurers: ["Daman", "AXA", "Allianz", "Oman Insurance", "Now Health", "Bupa", "MetLife"],
   sidebarText: [
-    "WhatsApp your insurance card to [number] before booking to confirm specific coverage."
+    "WhatsApp your insurance card to <a href='https://wa.me/971555867466?text=Hello%20Vedara%20Care,%20I%20would%20like%20to%20confirm%20my%20insurance%20coverage%20for%20physiotherapy.'>+971 55 586 7466</a> before booking to confirm specific coverage."
   ],
+  whatsappNumber: "971555867466"
 };
 
 export const physiotherapyPricing = {
@@ -591,16 +605,16 @@ export const physiotherapyLocationCustom = {
   bgColor: "bg-[#FFFFFF]",
   label: "WHERE WE PRACTICE",
   title: "Our DHA-licensed clinic in Jumeirah Village Circle, Dubai.",
-  description1: "Vedara Care Polyclinic is located at Building 7, Street 2, Jumeirah Village Circle (JVC), Dubai. Walking distance from Circle Mall, three minutes from FIVE Jumeirah Village Hotel, and five minutes from JSS Private School. Free patient parking is available on-site.",
-  description2: "Operating hours: Monday through Saturday 9:00 AM to 9:00 PM; Sunday 9:00 AM to 6:00 PM. Open seven days a week including most public holidays. Easy access from Sheikh Mohammed Bin Zayed Road and Al Khail Road — typically 15-25 minutes from most Dubai neighbourhoods.",
-  addressLine: "Building 7, Street 2, Jumeirah Village Circle<br/>Dubai, United Arab Emirates",
+  address1: "Vedara Care Polyclinic",
+  address2: "Al Barsha South Fourth, Binghatti Azure, Shop -4, Jumeirah Village Circle (JVC), Dubai",
+  clinicHours: [
+    { label: "Monday - Sunday", time: "8:30 AM - 11:30 PM" }
+  ],
   contactPhone: "+971 55 586 7466",
-  whatsApp: "+971 55 586 7466",
-  clinicImageAlt: "Vedara Care Polyclinic JVC Dubai physiotherapy department",
-  primaryButtonText: "Book a Physiotherapy Assessment",
-  primaryButtonHref: "/book",
-  secondaryButtonText: "See full clinic details →",
-  secondaryButtonHref: "/physiotherapy-jvc/",
+  contactEmail: "booking@vedaracare.ae",
+  description: "Dedicated physiotherapy treatment rooms, gym area for exercise prescription, private consultation rooms, and integrated team offices. Walkable from Circle Mall, with convenient access from Sheikh Mohammed Bin Zayed Road for patients from across Dubai.",
+  buttonText: "Book a Physiotherapy Assessment",
+  buttonHref: "/book",
   mapEmbed: "https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d3613.9894568193345!2d55.20722358578439!3d25.068346479666594!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x3e5f6dd72f3da587%3A0xe7ecca8687a75b72!2sVedara%20Care%20Polyclinic!5e0!3m2!1sen!2sus!4v1780727442216!5m2!1sen!2sus"
 };
 
@@ -610,7 +624,9 @@ export const physiotherapyFinalCTA = {
   title: "Physiotherapy that travels with you — wherever in Dubai you are.",
   description: "Whether you live in JVC, Dubai Marina, Mirdif, Palm Jumeirah, or anywhere else across Dubai, the first useful step is a 60-minute physiotherapy assessment at our JVC clinic. We provide a specific physiotherapy diagnosis, a written treatment plan with realistic timeline, and your first treatment intervention typically the same session. Same-day and next-day appointments are usually available. For patients with mobility limitations, home physiotherapy is available across Dubai.",
   button1Text: "Book a Physiotherapy Assessment",
+  button1Href: "/book",
   button2Text: "WhatsApp Us",
+  button2Href: "https://wa.me/971555867466?text=Hello%20Vedara%20Care,%20I%20would%20like%20to%20know%20more%20about%20your%20physiotherapy%20services%20in%20Dubai.",
   button1BgColor: "#1A4D2E",
   button2BgColor: "#22C55E",
   button2TextColor: "#22C55E",

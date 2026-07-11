@@ -45,22 +45,11 @@ const TreatmentLocation = ({
           <div className="space-y-2">
             {hours.monday && (
               <div className="flex justify-between text-sm">
-                <span className="text-gray-700">Monday - Friday</span>
+                <span className="text-gray-700">Monday - Sunday</span>
                 <span className="text-gray-700">{hours.monday}</span>
               </div>
             )}
-            {hours.saturday && (
-              <div className="flex justify-between text-sm">
-                <span className="text-gray-700">Saturday</span>
-                <span className="text-gray-700">{hours.saturday}</span>
-              </div>
-            )}
-            {hours.sunday && (
-              <div className="flex justify-between text-sm">
-                <span className="text-gray-700">Sunday</span>
-                <span className="text-gray-700">{hours.sunday}</span>
-              </div>
-            )}
+           
           </div>
         </div>
       );
