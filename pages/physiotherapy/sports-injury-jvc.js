@@ -300,7 +300,7 @@ const SportsInjuryJvc = () => {
           "name": "Can I get a same-day appointment for an acute sports injury?",
           "acceptedAnswer": {
             "@type": "Answer",
-            "text": "Yes — same-day appointments are typically available for acute sports injuries at our JVC clinic. WhatsApp +971 50 123 4567 for fastest response, or call directly. Saturday and evening appointments also available. For very severe acute injuries with suspected fracture or neurological symptoms, A&E evaluation comes first, then physiotherapy follow-up."
+            "text": "Yes — same-day appointments are typically available for acute sports injuries at our JVC clinic. WhatsApp +971 55 586 7466 for fastest response, or call directly. Saturday and evening appointments also available. For very severe acute injuries with suspected fracture or neurological symptoms, A&E evaluation comes first, then physiotherapy follow-up."
           }
         },
         {

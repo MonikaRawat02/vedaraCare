@@ -210,13 +210,13 @@ export const sciaticaPhysioLocation = {
   bgColor: "bg-white",
   label: "VISIT US",
   title: "Where sciatica physiotherapy happens at Vedara Care JVC.",
-  address: "Circle Mall Area, Jumeirah Village Circle (JVC), Dubai, UAE",
+  address: "Al Barsha South Fourth, Binghatti Azure, Shop -4,<br/> Jumeraih Village Circle (JVC) Dubai",
   phone: "+971 55 586 7466",
   email: "booking@vedaracare.ae",
   hours: {
-    monday: "9:00 AM - 9:00 PM",
-    saturday: "9:00 AM - 8:00 PM",
-    sunday: "9:00 AM - 6:00 PM"
+    monday: "8:30 am to 11:30 pm",
+    saturday: "8:30 am to 11:30 pm",
+    sunday: "8:30 am to 11:30 pm"
   },
   landmarks: [
     "Walking distance from Circle Mall",

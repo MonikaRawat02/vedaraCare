@@ -8,7 +8,9 @@ export const sportsPhysiotherapyHero = {
   title: "Sports injury physiotherapy in JVC. Get back to your sport — properly",
   description: "DPT-qualified sports physiotherapists at our Jumeirah Village Circle (JVC) clinic, walking distance from Circle Mall. Specialised treatment for padel injuries, running injuries, gym training injuries, ACL rehabilitation, and acute sports trauma — with structured return-to-sport protocols that prevent re-injury. Same-day appointments for acute injuries. Insurance direct-billing with seven major insurers.",
   primaryCTA: "Book a Sports Assessment",
+  primaryCTAHref: "/book",
   secondaryCTA: "WhatsApp Us",
+  secondaryCTAHref: "https://wa.me/971555867466?text=Hello%20Vedara%20Care,%20I%20would%20like%20to%20inquire%20about%20sports%20physiotherapy%20and%20book%20a%20consultation.",
   trustSignals: [
     "DPT + sports medicine certified",
     "900+ sports injuries treated",
@@ -313,6 +315,8 @@ export const sportsPhysiotherapyReviews = {
   isDarkText: false,
   label: "PATIENT OUTCOMES",
   title: "Real return-to-sport outcomes.",
+  buttonText: "Read All Sports Reviews →",
+  buttonHref: "https://www.google.com/maps/search/?api=1&query=Vedara%20Care%20Polyclinic%20JVC%20Dubai",
   items: [
     {
       quote: "Tore my ACL in a Sports City football match. Vedara's team got me back to competitive football in 11 months — strength-tested, functionally cleared, properly rehabbed. Three years later, still playing, no re-injury.",
@@ -337,8 +341,7 @@ export const sportsPhysiotherapyReviews = {
     { value: "4.9", label: "stars on Google" },
     { value: "180+", label: " sports physiotherapy review" },
     { value: "97%", label: " of patients returned to their pre-injury sport level" }
-  ],
-  buttonText: "Read All Sports Reviews →"
+  ]
 };
 
 export const sportsPhysiotherapyFaqs = {
@@ -431,10 +434,10 @@ export const sportsPhysiotherapyLocation = {
   bgColor: "bg-[#FFFFFF]",
   label: "VISIT US",
   title: "Where sports physiotherapy happens at Vedara Care JVC.",
-  address: "Vedara Care Polyclinic<br/>Building X, Street 2<br/>Jumeirah Village Circle (JVC)<br/>Dubai, UAE",
+  address: "Al Barsha South Fourth, Binghatti Azure, Shop -4, <br/>Jumeraih Village Circle (JVC) Dubai",
   phone: "+971 55 586 7466",
   whatsapp: "+971 55 586 7466",
-  email: "sports@vedaracare.ae",
+  email: "booking@vedaracare.ae",
   hours: {
     monday: "9:00 AM - 9:00 PM",
     saturday: "9:00 AM - 7:00 PM",
@@ -451,7 +454,8 @@ export const sportsPhysiotherapyLocation = {
   image: "",
   alt: "Vedara Care sports physiotherapy clinic in JVC Dubai",
   description: "Our JVC clinic has dedicated sports physiotherapy treatment rooms, a full rehabilitation gym for sport-specific exercise progression, modern modality equipment including focused shockwave therapy, and an outdoor space for return-to-sport testing.",
-  buttonText: "Book a Sports Assessment"
+  buttonText: "Book a Sports Assessment",
+  buttonLink: "/book"
 };
 
 export const sportsPhysiotherapyFinalCTA = {
@@ -548,7 +552,7 @@ export const sportsPhysiotherapyInsurance = {
   ],
   insurers: ["Daman", "AXA", "Allianz", "Oman Insurance", "Now Health", "Bupa", "MetLife"],
   sidebarText: [],
-  whatsappNumber: "971501234567"
+  whatsappNumber: "971555867466"
 };
 
 export const sportsPhysiotherapyRelatedPages = {

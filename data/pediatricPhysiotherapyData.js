@@ -8,7 +8,9 @@ export const pediatricPhysiotherapyHero = {
   title: "Paediatric physiotherapy in Dubai. Specialised care for infants, children, and adolescents.",
   description: "Paediatric-trained physiotherapists at our Jumeirah Village Circle (JVC) clinic, walking distance from Circle Mall. Specialised treatment for developmental concerns, sports injuries in children and adolescents, scoliosis, torticollis, cerebral palsy, hypermobility, and other paediatric conditions. Age-appropriate approaches from infants through age 18. Family-involved care that respects your child's pace and personality.",
   primaryCTA: "Book a Paediatric Assessment",
+  primaryCTAHref: "/book",
   secondaryCTA: "WhatsApp Us",
+  secondaryCTAHref: "https://wa.me/971555867466?text=Hello%20Vedara%20Care,%20I%20would%20like%20to%20inquire%20about%20pediatric%20physiotherapy%20and%20book%20a%20consultation.",
   trustSignals: [
     "Paediatric-trained physiotherapists",
     "Infants through adolescents",
@@ -144,7 +146,6 @@ export const pediatricPhysiotherapyMechanism2 = {
   footer:""
 };
 
-
 export const pediatricPhysiotherapySportsInjuryTypes ={
   label: "Conditions We Treat",
   title: "Specific paediatric conditions at our JVC clinic.",
@@ -182,8 +183,6 @@ export const pediatricPhysiotherapySportsInjuryTypes ={
   ],
   footer: 'Did not find your child\'s condition? <a href="https://wa.me/" className="underline hover:opacity-70 transition-opacity" style={{ color: "rgb(27, 67, 50)" }}>Contact us — we treat the full range of paediatric physiotherapy conditions →</a>'
 };
-
-
 
 export const pediatricPhysiotherapyFaqs = {
   label: "COMMON QUESTIONS",
@@ -246,14 +245,14 @@ export const pediatricPhysiotherapyLocation = {
   bgColor: "bg-[#FFFFFF]",
   label: "VISIT US",
   title: "A welcoming clinic for children of all ages.",
-  address: "Jumeirah Village Circle (JVC)<br/>Dubai, United Arab Emirates<br/>Walking distance from Circle Mall",
+  address: "Al Barsha South Fourth, Binghatti Azure, Shop -4,<br/>Dubai, Jumeraih Village Circle (JVC) Dubai",
   mapEmbed: "https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d3613.9894568193345!2d55.20722358578439!3d25.068346479666594!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x3e5f6dd72f3da587%3A0xe7ecca8687a75b72!2sVedara%20Care%20Polyclinic!5e0!3m2!1sen!2sus!4v1780727442216!5m2!1sen!2sus",
   phone: "+971 55 586 7466",
   whatsapp: "+971 55 586 7466",
   hours: {
-    monday: "9:00 AM - 9:00 PM",
-    saturday: "9:00 AM - 6:00 PM",
-    sunday: "10:00 AM - 6:00 PM"
+    monday: " 8:30AM to 11:30PM",
+    saturday: "8:30AM to 11:30PM",
+    sunday: " 8:30AM to 11:30PM"
   },
  
   description: "Our JVC clinic has a dedicated paediatric area with age-appropriate equipment, sensory-friendly elements, and a small waiting area suitable for children and siblings. Free parking. Easy access from JVC, JVT, Al Barsha South, and across Dubai. Particularly convenient for JSS Private School families — schedule around school pickup. Convenient for Circle Mall family time.",
@@ -413,6 +412,8 @@ export const pediatricPhysiotherapyReviews = {
   label: "PARENT STORIES",
   title: "Real outcomes from our paediatric physiotherapy patients.",
   description: "Hear from parents whose children have been treated at our clinic — from torticollis in infants to adolescent sports injuries.",
+  buttonText: "Read All Google Reviews",
+  buttonHref: "https://www.google.com/maps/search/?api=1&query=Vedara%20Care%20Polyclinic%20JVC%20Dubai",
   items: [
     {
       quote:   "Our daughter was diagnosed with mild scoliosis at her school screening, age 11. Two years of structured physiotherapy at Vedara — same therapist throughout, monthly check-ins, careful progression — and her curve has stabilised. Her paediatric orthopaedic surgeon is impressed. She actually likes coming.",

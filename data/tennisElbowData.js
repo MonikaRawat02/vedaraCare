@@ -437,16 +437,16 @@ export const tennisElbowLocation = {
   bgColor: "bg-white",
   label: "VISIT US",
   title: "Where tennis elbow treatment happens at Vedara Care JVC.",
-  address: "Jumeirah Village Circle (JVC), Dubai<br/>Near Circle Mall · FIVE Jumeirah Village · JSS Private School",
+  address: "Al Barsha South Fourth, Binghatti Azure, Shop -4, <br/>Jumeraih Village Circle (JVC) Dubai",
   phone: "+971 55 586 7466",
   hours: {
-    monday: "9:00 AM – 9:00 PM",
+    monday: " 8:30 am to 11:30 pm",
     tuesday: "9:00 AM – 9:00 PM",
     wednesday: "9:00 AM – 9:00 PM",
     thursday: "9:00 AM – 9:00 PM",
     friday: "9:00 AM – 9:00 PM",
     saturday: "9:00 AM – 7:00 PM",
-    sunday: "10:00 AM – 6:00 PM"
+    sunday: " 8:30 am to 11:30 pm"
   },
   landmarks: [
     "Walking distance from Circle Mall",

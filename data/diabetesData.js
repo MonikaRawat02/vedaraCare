@@ -172,12 +172,11 @@ export const diabetesTreatmentLocationCustom = {
   label: "VISIT US",
   title: "Where diabetes treatment happens at Vedara Care.",
   address1: "Vedara Care Polyclinic",
-  address2: "Jumeirah Village Circle (JVC), Dubai <br /> Next to Circle Mall,JVC",
+  address2: "Al Barsha South Fourth, Binghatti Azure, Shop -4, Jumeraih Village Circle (JVC) Dubai",
   addressNote: "Walking distance from FIVE Jumeirah Village Hotel",
   clinicHours: [
-    { label: "Sunday - Thursday", time: "9:00 AM - 8:00 PM" },
-    { label: "Friday", time: "2:00 PM - 8:00 PM" },
-    { label: "Saturday", time: "10:00 AM - 6:00 PM" }
+    { label: "Sunday - Saturday", time: " 8:30 am to 11:30 pm" },
+    
   ],
   contactPhone: "+971 55 586 7466",
   contactEmail: "booking@vedaracare.ae",

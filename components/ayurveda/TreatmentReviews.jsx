@@ -1,5 +1,6 @@
 import React from 'react';
 import { Star } from 'lucide-react';
+import Link from 'next/link';
 
 const TreatmentReviews = ({
   bgColor = "bg-[#2A4340]",
@@ -8,6 +9,7 @@ const TreatmentReviews = ({
   buttonBgColor = "rgb(28, 25, 23)",
   buttonTextColor = "white",
   buttonBorderColor = "rgb(28, 25, 23)",
+  buttonHref = null,
   isDarkText = false,
   label = "PATIENT STORIES",
   title = "Kativasti outcomes from our JVC clinic.",
@@ -20,6 +22,7 @@ const TreatmentReviews = ({
   // Determine if cards are solid white or light, requiring dark text
   const isWhiteCard = cardBgColor === 'bg-white' || cardBgColor === 'white' || cardBgColor === '#FFFFFF' || cardBgColor === 'rgb(255, 255, 255)' || cardBgColor === 'rgb(248, 244, 238)';
   const isWhiteStatsBg = statsBgColor === 'bg-white' || statsBgColor === 'white' || statsBgColor === '#FFFFFF' || statsBgColor === 'rgb(255, 255, 255)' || statsBgColor === 'rgb(248, 244, 238)';
+  const isExternalLink = buttonHref && (buttonHref.startsWith('http://') || buttonHref.startsWith('https://') || buttonHref.startsWith('mailto:') || buttonHref.startsWith('tel:') || buttonHref.startsWith('whatsapp:'));
   
   if (useKneeStyle) {
     return (
@@ -91,17 +94,49 @@ const TreatmentReviews = ({
 
           {buttonText && (
             <div className="text-center">
-              <button 
-                className="inline-flex items-center px-0 py-3.5 font-sans font-bold text-sm hover:opacity-90 transition-all duration-300"
-                style={{
-                  backgroundColor: 'transparent',
-                  color: 'rgb(184, 150, 90)',
-                  border: 'none',
-                  fontFamily: 'DM Sans, sans-serif'
-                }}
-              >
-                {buttonText}
-              </button>
+              {buttonHref ? (
+                isExternalLink ? (
+                  <a 
+                    href={buttonHref}
+                    target="_blank"
+                    rel="noopener noreferrer"
+                    className="inline-flex items-center px-0 py-3.5 font-sans font-bold text-sm hover:opacity-90 transition-all duration-300"
+                    style={{
+                      backgroundColor: 'transparent',
+                      color: 'rgb(184, 150, 90)',
+                      border: 'none',
+                      fontFamily: 'DM Sans, sans-serif'
+                    }}
+                  >
+                    {buttonText}
+                  </a>
+                ) : (
+                  <Link 
+                    href={buttonHref}
+                    className="inline-flex items-center px-0 py-3.5 font-sans font-bold text-sm hover:opacity-90 transition-all duration-300"
+                    style={{
+                      backgroundColor: 'transparent',
+                      color: 'rgb(184, 150, 90)',
+                      border: 'none',
+                      fontFamily: 'DM Sans, sans-serif'
+                    }}
+                  >
+                    {buttonText}
+                  </Link>
+                )
+              ) : (
+                <button 
+                  className="inline-flex items-center px-0 py-3.5 font-sans font-bold text-sm hover:opacity-90 transition-all duration-300"
+                  style={{
+                    backgroundColor: 'transparent',
+                    color: 'rgb(184, 150, 90)',
+                    border: 'none',
+                    fontFamily: 'DM Sans, sans-serif'
+                  }}
+                >
+                  {buttonText}
+                </button>
+              )}
             </div>
           )}
         </div>
@@ -184,11 +219,31 @@ const TreatmentReviews = ({
 
         {buttonText && (
           <div className="text-center">
-            <button 
-              className="inline-flex items-center px-8 py-3.5 border border-[#C9A961] text-[#C9A961] font-sans font-bold text-[14px] rounded-md hover:bg-[#C9A961] hover:text-white transition-all duration-300"
-            >
-              {buttonText}
-            </button>
+            {buttonHref ? (
+              isExternalLink ? (
+                <a 
+                  href={buttonHref}
+                  target="_blank"
+                  rel="noopener noreferrer"
+                  className="inline-flex items-center px-8 py-3.5 border border-[#C9A961] text-[#C9A961] font-sans font-bold text-[14px] rounded-md hover:bg-[#C9A961] hover:text-white transition-all duration-300"
+                >
+                  {buttonText}
+                </a>
+              ) : (
+                <Link 
+                  href={buttonHref}
+                  className="inline-flex items-center px-8 py-3.5 border border-[#C9A961] text-[#C9A961] font-sans font-bold text-[14px] rounded-md hover:bg-[#C9A961] hover:text-white transition-all duration-300"
+                >
+                  {buttonText}
+                </Link>
+              )
+            ) : (
+              <button 
+                className="inline-flex items-center px-8 py-3.5 border border-[#C9A961] text-[#C9A961] font-sans font-bold text-[14px] rounded-md hover:bg-[#C9A961] hover:text-white transition-all duration-300"
+              >
+                {buttonText}
+              </button>
+            )}
           </div>
         )}
       </div>

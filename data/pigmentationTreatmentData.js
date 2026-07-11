@@ -402,7 +402,7 @@ export const pigmentationTreatmentLocation = {
   bgColor: "bg-[#F5F0E8]",
   label: "VISIT US",
   title: "Where pigmentation treatment happens at Vedara Care JVC.",
-  address: "Vedara Care Polyclinic<br/>Building 23, District 12<br/>Jumeirah Village Circle (JVC), Dubai, UAE",
+  address: "Al Barsha South Fourth, Binghatti Azure, Shop -4,<br/>Jumeraih Village Circle (JVC) Dubai",
   landmarks: [
     "Walking distance from Circle Mall",
     "3 minutes from FIVE Jumeirah Village Hotel",
@@ -414,9 +414,9 @@ export const pigmentationTreatmentLocation = {
   whatsapp: "+971 55 586 7466",
   email: "booking@vedaracare.ae",
   hours: {
-    monday: "9:00 AM - 9:00 PM",
-    saturday: "9:00 AM - 9:00 PM",
-    sunday: "9:00 AM - 6:00 PM"
+    monday: "8:30 am to 11:30 pm",
+    saturday: "8:30 am to 11:30 pm",
+    sunday: "8:30 am to 11:30 pm"
   },
   description: "Our JVC clinic has dedicated consultation rooms equipped for comprehensive pigmentation examination including Wood's lamp analysis and dermoscopy, specialised treatment rooms for chemical peels and laser procedures, and a discreet environment important for body pigmentation patients.",
   mapAlt: "Map showing Vedara Care clinic location in Jumeirah Village Circle, Dubai",

@@ -475,7 +475,7 @@ export const melasmaTreatmentLocation = {
   bgColor: "bg-[#F5F1E8]",
   label: "VISIT US",
   title: "Where melasma treatment happens at Vedara Care JVC.",
-  address: "Vedara Care Polyclinic<br/>Building 23, District 12<br/>Jumeirah Village Circle (JVC), Dubai, UAE",
+  address: "Al Barsha South Fourth, Binghatti Azure, Shop -4,<br/>Jumeraih Village Circle (JVC) Dubai",
   landmarks: [
     "Walking distance from Circle Mall",
     "3 minutes from FIVE Jumeirah Village Hotel",
@@ -487,7 +487,7 @@ export const melasmaTreatmentLocation = {
   phone: "+971 55 586 7466",
   whatsapp: "+971 55 586 7466",
   email: "booking@vedaracare.ae",
-  hours: "Monday - Saturday: 9:00 AM - 9:00 PM<br/>Sunday: 10:00 AM - 6:00 PM",
+  hours: "Monday - Sunday: 8:30 am to 11:30 pm",
   description: "Our JVC clinic has dedicated dermatology consultation rooms equipped for Wood's lamp examination and dermoscopy, specialised treatment rooms for chemical peels and laser procedures, comfortable patient experience, and a discreet environment important for patients sensitive about facial pigmentation. Walking distance from Circle Mall — easy access from JVC, JVT, Al Barsha South, Sports City, Motor City, Arjan, Dubai Hills, and across Dubai.",
   mapAlt: "Vedara Care JVC clinic melasma treatment Dubai",
 

@@ -482,7 +482,7 @@ export const eczemaTreatmentLocation = {
   bgColor: "bg-[#F0EBE3]",
   label: "VISIT US",
   title: "Where eczema treatment happens at Vedara Care JVC.",
-  address: "Vedara Care Polyclinic<br/>Building 23, District 12<br/>Jumeirah Village Circle (JVC), Dubai, UAE",
+  address: "Al Barsha South Fourth, Binghatti Azure, Shop -4, <br/>Jumeraih Village Circle (JVC) Dubai",
   landmarks: [
     "Walking distance from Circle Mall",
     "3 minutes from FIVE Jumeirah Village Hotel",
@@ -493,7 +493,7 @@ export const eczemaTreatmentLocation = {
   phone: "+971 55 586 7466",
   whatsapp: "+971 55 586 7466",
   email: "booking@vedaracare.ae",
-  hours: "Monday - Saturday: 9:00 AM - 9:00 PM<br/>Sunday: 10:00 AM - 6:00 PM",
+  hours: "Monday - Sunday: 8:30 am to 11:30 pm",
   description: "",
   mapAlt: "Vedara Care JVC clinic eczema treatment Dubai",
   buttonText: "Book Eczema Consultation",

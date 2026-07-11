@@ -1,4 +1,5 @@
 import React from 'react';
+import Link from 'next/link';
 
 const PediatricWhatToExpect = ({ label, title, description, sections, whatToBring, whoShouldCome, timingToAvoid }) => {
   return (
@@ -78,9 +79,12 @@ The initial consultation is 60-75 minutes — longer than typical adult physioth
               </div>
             </div>
 
-            <button className="w-full bg-[rgb(24,76,58)] hover:bg-[rgb(30,90,70)] text-white font-bold py-3 px-6 rounded transition-colors">
+            <Link 
+              href="/book" 
+              className="w-full bg-[rgb(24,76,58)] hover:bg-[rgb(30,90,70)] text-white font-bold py-3 px-6 rounded transition-colors flex items-center justify-center"
+            >
               Book a Paediatric Consultation
-            </button>
+            </Link>
           </div>
         </div>
       </div>

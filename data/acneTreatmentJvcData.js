@@ -8,6 +8,7 @@ export const acneTreatmentHero = {
   title: "Acne treatment in JVC. Specialist care for every type, every skin, every age.",
   description: "Specialist acne treatment at our Jumeirah Village Circle (JVC) clinic, walking distance from Circle Mall. DHA-licensed consultant dermatologists treating adolescent acne, adult acne, hormonal acne, cystic acne, comedonal acne, inflammatory acne, body acne, and acne scarring. Comprehensive evidence-based treatment combining topical therapies, oral medications, in-clinic procedures, and lifestyle modifications. Particular expertise across all Fitzpatrick skin types — managing post-inflammatory hyperpigmentation risk that is substantial in darker skin. Realistic 12-24 week timelines for substantial improvement.",
   primaryCTA: "Book Acne Consultation",
+  primaryCTAHref: "/book",
   secondaryCTA: "Understand Treatment Options",
   trustSignals: [
     "DHA-licensed consultant dermatologists",
@@ -398,7 +399,8 @@ export const acneTreatmentReviews = {
     { value: "400+", label: "acne patients treated" },
     { value: "85%", label: "reported significant improvement" }
   ],
-  buttonText: "Read All Acne Treatment Reviews →"
+  buttonText: "Read All Acne Treatment Reviews →",
+  buttonHref: "https://www.google.com/maps/search/?api=1&query=Vedara%20Care%20Polyclinic%20JVC%20Dubai"
 };
 
 export const acneTreatmentTeam = {
@@ -555,7 +557,7 @@ export const acneTreatmentLocation = {
   sections: [
     {
       label: "Address",
-      content: "Vedara Care Polyclinic<br/>Building 23, District 12<br/>Jumeirah Village Circle, Dubai<br/>United Arab Emirates"
+      content: "Al Barsha South Fourth, Binghatti Azure, Shop -4, <br/>Jumeraih Village Circle (JVC) Dubai<br/><br/>"
     },
     {
       label: "Phone",
@@ -563,7 +565,7 @@ export const acneTreatmentLocation = {
     },
     {
       label: "Clinic Hours",
-      content: "Monday – Saturday: 9:00 AM – 9:00 PM<br/>Sunday: 10:00 AM – 6:00 PM"
+      content: "Monday – Sunday :  8:30AM to 11:30PM "
     }
   ],
   mapEmbed: "https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d3613.9894568193345!2d55.20722358578439!3d25.068346479666594!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x3e5f6dd72f3da587%3A0xe7ecca8687a75b72!2sVedara%20Care%20Polyclinic!5e0!3m2!1sen!2sus!4v1780727442216!5m2!1sen!2sus",

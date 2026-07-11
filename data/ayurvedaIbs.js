@@ -335,12 +335,11 @@ export const ayurvedaIbsTreatmentLocationCustom = {
   label: 'VISIT US',
   title: 'Where IBS treatment happens at Vedara Care.',
   address1: 'Vedara Care Polyclinic',
-  address2: '[Full Address], Jumeirah Village Circle (JVC)<br />Dubai, United Arab Emirates',
+  address2: 'Al Barsha South Fourth, Binghatti Azure, Shop -4,<br /> Jumeraih Village Circle (JVC) Dubai',
   addressNote: 'Next to Circle Mall · 3 min from FIVE Jumeirah Village Hotel',
   clinicHours: [
-    { label: 'Sunday - Thursday', time: '9:00 AM - 8:00 PM' },
-    { label: 'Friday', time: '2:00 PM - 8:00 PM' },
-    { label: 'Saturday', time: '9:00 AM - 6:00 PM' }
+    { label: 'Sunday - Monday', time: '8:30 am to 11:30 pm' },
+   
   ],
   contactPhone: '+971 55 586 7466',
   contactEmail: 'booking@vedaracare.ae',

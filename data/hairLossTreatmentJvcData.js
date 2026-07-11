@@ -537,9 +537,9 @@ export const hairLossTreatmentFaqs = {
 
 export const hairLossTreatmentLocation = {
   sections: [
-    { label: "Address", content: "Jumeirah Village Circle (JVC), Dubai<br/>Walking distance from Circle Mall · 3 min from FIVE JV Hotel · 5 min from JSS School" },
+    { label: "Address", content: "Al Barsha South Fourth, Binghatti Azure, Shop -4,<br/>Jumeraih Village Circle (JVC) Dubai" },
     { label: "Phone", content: "+971 55 586 7466" },
-    { label: "Clinic Hours", content: "Monday – Thursday: 9:00 AM – 9:00 PM<br/>Friday – Saturday: 10:00 AM – 6:00 PM" }
+    { label: "Clinic Hours", content: "Sunday - Saturday: 8:30AM to 11:30PM" }
   ],
   mapEmbed: "https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d3613.9894568193345!2d55.20722358578439!3d25.068346479666594!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x3e5f6dd72f3da587%3A0xe7ecca8687a75b72!2sVedara%20Care%20Polyclinic!5e0!3m2!1sen!2sus!4v1782536985!5m2!1sen!2sus",
   description: "Our JVC clinic has dedicated dermatology consultation rooms equipped for trichoscopy and hair examination, treatment rooms for PRP and mesotherapy procedures, on-site blood collection for hair loss workup, and comfortable patient facilities throughout. Walking distance from Circle Mall, easy access for patients from JVC, JVT, Al Barsha South, Sports City, Motor City, Arjan, Dubai Hills, and across Dubai.",

@@ -476,13 +476,12 @@ export const stressAnxietyVisitSectionData = {
     area: "Jumeirah Village Circle, Dubai"
   },
   address: {
-    line1: "207 Circle Mall, JVC",
-    line2: "Jumeirah Village Circle, Dubai, UAE"
+    line1: "Al Barsha South Fourth, Binghatti Azure, Shop -4,",
+    line2: " Jumeraih Village Circle (JVC) Dubai"
   },
   phone: "+971 55 586 7466",
   hours: [
-    { label: "Mon - Sat", time: "9:00am - 8:00pm" },
-    { label: "Sun", time: "10:00am - 4:00pm" }
+    { label: "Sun - Sat", time: " 8:30 am to 11:30 pm" },
   ],
   description: "Our JVC clinic has private treatment rooms designed for nervous-system restoration — gentle lighting, sound insulation, temperature-controlled comfort. We allow extended time for consultations and never rush mental health appointments. Female doctors available on request. Walking distance from Circle Mall, easy access from JVC Districts 10, 11, 12, 13, JVT, and Al Barsha South.",
   button1Text: "Book an Anxiety & Stress Consultation",

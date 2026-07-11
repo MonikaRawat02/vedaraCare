@@ -119,10 +119,10 @@ export const panchakarmaJVCLocation = {
   bgColor: "bg-[#EDE8DC]",
   label: "VISIT US",
   title: "Our Panchakarma clinic in Jumeirah Village Circle.",
-  address: "Building 123, Street 45A<br/>Jumeirah Village Circle (JVC)<br/>Dubai, United Arab Emirates",
+  address: "Al Barsha South Fourth, Binghatti Azure, Shop -4, <br/>Jumeraih Village Circle (JVC) Dubai",
   phone: "+971 55 586 7466",
   email: "booking@vedaracare.ae",
-  hours: "Monday to Saturday: 9:00 AM to 9:00 PM<br/>Sunday: 10:00 AM to 7:00 PM",
+  hours: "Monday to Sunday: 8:30 am to 11:30 pm",
   landmarks: [
     "Next to Circle Mall (walking distance)",
     "5 min from JSS Private School",
@@ -617,10 +617,10 @@ export const kativastiFinalCTA = {
 
 export const kativastiLocation = {
   name: "Kativasti at Vedara Care",
-  address: "Building 7, Street 2, Jumeirah Village Circle, Dubai, UAE",
+  address: "Al Barsha South Fourth, Binghatti Azure, Shop -4, <br/> Jumeraih Village Circle (JVC) Dubai",
   phone: "+971 55 586 7466",
   whatsapp: "+971 55 586 7466",
-  hours: "Mon-Tue, Thu 10 AM-7 PM · Fri 10 AM-1 PM, 4-8 PM · Sat 10 AM-6 PM · Sun 12-5 PM",
+  hours: "Mon-Sun, 8:30 am to 11:30 pm",
   landmarks: [
     "Next to Circle Mall (2 min walk)",
     "3 min from FIVE Jumeirah Village Hotel",
@@ -633,10 +633,10 @@ export const kativastiTreatmentLocation = {
   bgColor: "bg-[#F5F1E8]",
   label: "VISIT US",
   title: "Where Kativasti happens at Vedara Care.",
-  address: "Vedara Care Polyclinic<br/>District 13, Jumeirah Village Circle<br/>Dubai, United Arab Emirates",
+  address: "Al Barsha South Fourth, Binghatti Azure, Shop -4,<br/> Jumeraih Village Circle (JVC) Dubai",
   phone: "+971 55 586 7466",
   email: "booking@vedaracare.ae",
-  hours: "Saturday - Thursday: 9:00 AM - 9:00 PM<br/>Friday: 2:00 PM - 9:00 PM",
+  hours: "Saturday - Sunday: 8:30 am to 11:30 pm",
   landmarks: [
     "Circle Mall (2 min walk)",
     "FIVE Jumeirah Village Hotel (3 min drive)",

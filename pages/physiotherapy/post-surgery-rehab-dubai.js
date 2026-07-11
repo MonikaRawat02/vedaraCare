@@ -44,7 +44,7 @@ const PostSurgeryRehabDubai = () => {
       "url": "https://vedaracare.ae/physiotherapy/post-surgery-rehab-dubai/",
       "parentOrganization": {"@id": "https://vedaracare.ae/#organization"},
       "description": "DHA-licensed post-surgery rehabilitation at Vedara Care Polyclinic, Jumeirah Village Circle, Dubai. DPT-qualified physiotherapists providing procedure-specific rehabilitation for knee replacement, hip replacement, ACL reconstruction, spinal surgery, rotator cuff repair, and other surgical procedures. Surgeon coordination with Dubai and international surgeons. Home physiotherapy available across Dubai.",
-      "telephone": "+971 4 XXX XXXX",
+      "telephone": "+971 55 586 7466",
       "priceRange": "AED 350 - AED 25,000",
       "address": {
         "@type": "PostalAddress",
@@ -61,15 +61,9 @@ const PostSurgeryRehabDubai = () => {
       "openingHoursSpecification": [
         {
           "@type": "OpeningHoursSpecification",
-          "dayOfWeek": ["Monday", "Tuesday", "Wednesday", "Thursday", "Friday", "Saturday"],
-          "opens": "09:00",
-          "closes": "21:00"
-        },
-        {
-          "@type": "OpeningHoursSpecification",
-          "dayOfWeek": "Sunday",
-          "opens": "09:00",
-          "closes": "18:00"
+          "dayOfWeek": ["Monday", "Tuesday", "Wednesday", "Thursday", "Friday", "Saturday", "Sunday"],
+          "opens": "08:30",
+          "closes": "23:30"
         }
       ],
       "areaServed": [

@@ -423,17 +423,15 @@ export const neckPainLocation = {
   bgColor: "bg-white",
   label: "VISIT US",
   title: "Where neck pain physiotherapy happens at Vedara Care JVC.",
-  address: "Vedara Care Polyclinic<br/>Building 23, District 12<br/>Jumeirah Village Circle (JVC), Dubai, UAE",
+  address: "Al Barsha South Fourth, Binghatti Azure, Shop -4,<br/>Jumeraih Village Circle (JVC) Dubai",
   phone: "+971 55 586 7466",
   whatsapp: "+971 55 586 7466",
   hours: {
-    monday: "9:00 AM – 9:00 PM",
+    monday: " 8:30 am to 11:30 pm",
     tuesday: "9:00 AM – 9:00 PM",
     wednesday: "9:00 AM – 9:00 PM",
     thursday: "9:00 AM – 9:00 PM",
     friday: "9:00 AM – 9:00 PM",
-    saturday: "10:00 AM – 7:00 PM",
-    sunday: "10:00 AM – 7:00 PM"
   },
   landmarks: [
     "Walking distance from Circle Mall",

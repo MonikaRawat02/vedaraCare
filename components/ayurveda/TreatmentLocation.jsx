@@ -5,7 +5,7 @@ import Link from 'next/link';
 const TreatmentLocation = ({
   bgColor = "bg-[#F5F1E8]",
   label = "VISIT US",
-  title = "Where Kativasti happens at Vedara Care.",
+  title = "",
   address = "",
   phone = "",
   email = "",

@@ -184,10 +184,10 @@ export const ayurvedicMassageJVCLocation = {
   bgColor: "bg-[#F0E9DD]",
   label: "VISIT US IN JVC",
   title: "Our Ayurvedic massage clinic in Jumeirah Village Circle.",
-  address: "Building 23, District 12, Jumeirah Village Circle, Dubai, AE",
+  address: "Al Barsha South Fourth, Binghatti Azure, Shop -4, <br/>Jumeraih Village Circle (JVC) Dubai",
   phone: "+971 55 586 7466",
   whatsapp: "+971 55 586 7466",
-  hours: "Sunday - Thursday: 8:00 AM - 9:00 PM<br/>Friday: 2:00 PM - 9:00 PM<br/>Saturday: 9:00 AM - 8:00 PM",
+  hours: "Sunday - Saturday: 8:30 am to 11:30 pm",
   landmarks: [
     "Next to Circle Mall (2 min walk)",
     "3 minutes from FIVE Jumeirah Village",

@@ -35,7 +35,7 @@ const PhysiotherapyMechanism = ({
               </blockquote>
             )}
           </div>
-          <div className="bg-gray-200 rounded-xl h-[600px] flex items-center justify-center">
+          <div className="bg-gray-200 rounded-xl sticky top-24 h-[600px] flex items-center justify-center shrink-0">
             {image ? (
               <img 
                 src={image} 

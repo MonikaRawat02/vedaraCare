@@ -374,13 +374,13 @@ export const abhyangaTreatmentLocation = {
   bgColor: "bg-[#F5F1E8]",
   label: "VISIT US",
   title: "Where Abhyanga happens at Vedara Care.",
-  address: "Vedara Care Polyclinic<br/>Jumeirah Village Circle (JVC), Dubai, UAE",
+  address: "Al Barsha South Fourth, Binghatti Azure, Shop -4, <br/> Jumeraih Village Circle (JVC) Dubai",
   landmarks: [
     "Next to Circle Mall · Near FIVE Hotel · 5 min from JSS School"
   ],
   phone: "+971 55 586 7466",
   whatsapp: "+971 55 586 7466",
-  hours: "Monday - Friday: 9:00 AM - 8:00 PM<br/>Saturday: 9:00 AM - 6:00 PM<br/>Sunday: 10:00 AM - 4:00 PM",
+  hours: "Monday - Sunday: 8:30 am to 11:30 pm",
   description: "Five private Abhyanga treatment rooms, each with traditional Kerala-style wooden droni table and brass oil-warming station. Heated rooms maintained at 26–28°C during sessions. Free patient parking available.",
   mapAlt: "Vedara Care Abhyanga clinic location in Jumeirah Village Circle Dubai near Circle Mall",
   buttonText: "Book Abhyanga Consultation",

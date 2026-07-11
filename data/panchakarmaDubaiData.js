@@ -393,10 +393,10 @@ export const panchakarmaDubaiLocation = {
   bgColor: "bg-[#F5F1E8]",
   label: "THE CLINIC",
   title: "Our Panchakarma clinic in Jumeirah Village Circle.",
-  address: "Building 123, Street 45A<br/>Jumeirah Village Circle (JVC)<br/>Dubai, United Arab Emirates",
+  address: "Al Barsha South Fourth, Binghatti Azure, Shop -4, <br/>Jumeraih Village Circle (JVC) Dubai",
   phone: "+971 55 586 7466",
   email: "booking@vedaracare.ae",
-  hours: "Sun-Thu: 8AM-9PM<br/>Sat: 9AM-8PM<br/>Fri: Closed",
+  hours: "Sunday - Saturday: 8:30 am to 11:30 pm",
   landmarks: [
     "Five private Panchakarma treatment rooms",
     "Wooden droni tables (traditional Kerala style)",

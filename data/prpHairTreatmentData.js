@@ -465,15 +465,15 @@ export const prpHairLocation = {
   title: "Where PRP hair treatment happens at Vedara Care JVC.",
   image: "/images/vedara-jvc-clinic-prp-hair.webp",
   alt: "Vedara Care JVC clinic PRP hair treatment Dubai",
-  address: "Circle Mall Area, Jumeirah Village Circle (JVC), Dubai, UAE",
+  address: "Al Barsha South Fourth, Binghatti Azure, Shop -4,<br/> Jumeraih Village Circle (JVC) Dubai",
   phone: "+971 55 586 7466",
   email: "booking@vedaracare.ae",
   whatsapp: "+971 55 586 7466",
   whatsappMessage: "Hi, I'm interested in PRP hair treatment and would like to book a consultation.",
   hours: {
-    monday: "9:00 AM – 9:00 PM",
-    saturday: "9:00 AM – 9:00 PM",
-    sunday: "9:00 AM – 6:00 PM"
+    monday: "8:30 am to 11:30 pm",
+    saturday: "8:30 am to 11:30 pm",
+    
   },
   landmarks: [
     "Walking distance from Circle Mall",

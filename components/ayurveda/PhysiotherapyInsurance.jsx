@@ -8,7 +8,7 @@ const PhysiotherapyInsurance = ({
   content = [], // For backward compatibility
   insurers = [],
   sidebarText = [],
-  whatsappNumber = "971501234567"
+  whatsappNumber = "971555867466"
 }) => {
   // Use paragraphs or content for backward compatibility
   const displayParagraphs = paragraphs.length > 0 ? paragraphs : content;

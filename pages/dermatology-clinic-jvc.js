@@ -493,8 +493,8 @@ const DermatologyClinicJVC = () => {
                   </svg>
                   <div>
                     <p className="text-sm font-semibold text-[#1A1A1A]">Address</p>
-                    <p className="text-sm text-[#6B6B6B]">Jumeirah Village Circle (JVC), Dubai, UAE</p>
-                    <p className="text-sm text-[#6B6B6B]">Walking distance from Circle Mall</p>
+                    <p className="text-sm text-[#6B6B6B]">Al Barsha South Fourth, Binghatti Azure, Shop -4, </p>
+                    <p className="text-sm text-[#6B6B6B]">Jumeraih Village Circle (JVC) Dubai</p>
                   </div>
                 </div>
 
@@ -504,7 +504,7 @@ const DermatologyClinicJVC = () => {
                   </svg>
                   <div>
                     <p className="text-sm font-semibold text-[#1A1A1A]">Telephone</p>
-                    <p className="text-sm text-[#6B6B6B]">+971 4 000 0000</p>
+                    <p className="text-sm text-[#6B6B6B]">+971 55 586 7466</p>
                   </div>
                 </div>
 
@@ -515,8 +515,7 @@ const DermatologyClinicJVC = () => {
                   </svg>
                   <div>
                     <p className="text-sm font-semibold text-[#1A1A1A]">Clinic Hours</p>
-                    <p className="text-sm text-[#6B6B6B]">Monday – Saturday: 9:00 AM – 9:00 PM</p>
-                    <p className="text-sm text-[#6B6B6B]">Sunday: 10:00 AM – 6:00 PM</p>
+                    <p className="text-sm text-[#6B6B6B]">Sunday – Saturday: 8:30 am to 11:30 pm</p>
                   </div>
                 </div>
               </div>

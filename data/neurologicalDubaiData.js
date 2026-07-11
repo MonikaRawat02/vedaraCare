@@ -9,7 +9,9 @@ export const neurologicalDubaiHero = {
   description:
     "Neurological physiotherapy at our Jumeirah Village Circle (JVC) clinic and at your home across Dubai. Specialised treatment for stroke recovery, Parkinson's disease, multiple sclerosis, traumatic brain injury, spinal cord injury, motor neurone disease, peripheral neuropathy, and other neurological conditions. Long-term care relationships, coordination with neurologists, family-involved approach. Home physiotherapy across Dubai for patients who cannot easily travel.",
   primaryCTA: "Book a Neurological Consultation",
+  primaryCTAHref: "/book",
   secondaryCTA: "WhatsApp Us",
+  secondaryCTAHref: "https://wa.me/971555867466?text=Hello%20Vedara%20Care,%20I%20would%20like%20to%20know%20more%20about%20your%20neurological%20physiotherapy%20services%20and%20book%20a%20consultation.%20Please%20assist%20me.",
   trustSignals: [
     "Neurological-specialist physiotherapists",
     "Home physiotherapy across Dubai",
@@ -59,7 +61,7 @@ export const neurologicalDubaiMechanism = {
   quote:
     "Modern neurological rehabilitation is grounded in neuroscience and evidence. The gains are real — but they require intensive, task-specific, sustained work. There are no shortcuts and no miracles. There is honest work that produces honest outcomes.",
 
-  image: "/images/neurological-rehabilitation-treatment.webp",
+  image: "/images/stroke-rehabilitation-vedara-jvc.webp",
   alt: "Specialised neurological rehabilitation at Vedara Care JVC Dubai"
 };
 
@@ -152,7 +154,7 @@ export const neurologicalPhasesData = {
         "Intensive task-specific practice within tolerance",
         "Coordination with hospital discharge team, neurologist, and other rehabilitation providers"
       ],
-      expected: "Expected by end of Phase 1: substantial early gains typical for acquired neurological conditions; honest assessment of recovery trajectory; family integrated into care plan"   },
+      expected: "Expected by end of Phase 1: substantial early gains typical for acquired neurological conditions; honest assessment of recovery trajectory; family integrated into care plan"},
     {
       week: "PHASE 2",
       title: "Active Recovery (Months 3-9)",
@@ -263,9 +265,6 @@ export const neurologicalPricingData = {
   footerText: "Insurance direct-billing with seven major insurers. Long-term neurological physiotherapy typically benefits from annual coverage planning — WhatsApp +971 55 586 7466 to discuss your coverage and out-of-pocket cost before committing to a programme."
 };
 
-
-
-
 export const neurologicalDubaiReviews = {
   bgColor: "bg-[#1A4D3E]",
   label: "PATIENT OUTCOMES",
@@ -295,7 +294,8 @@ export const neurologicalDubaiReviews = {
     { value: "75+", label: "neurological physiotherapy reviews" },
     { value: "97%", label: "of families would recommend to others facing neurological conditions" }
   ],
-  buttonText: "Read All Neurological Reviews"
+  buttonText: "Read All Neurological Reviews",
+  buttonHref: "https://www.google.com/maps/search/?api=1&query=Vedara+Care+Polyclinic+JVC+Dubai"
 };
 
 export const neurologicalTeamData = {
@@ -364,7 +364,8 @@ export const neurologicalInsuranceCoverageData = {
     label: "OUR DIRECT-BILLING INSURERS",
     insurers: ["Daman", "AXA", "Allianz", "Oman Insurance", "Now Health", "Bupa", "MetLife"],
     text: "For long-term neurological conditions, we help families navigate annual coverage planning, pre-authorisation, and appeals. WhatsApp +971 55 586 7466 for coverage assistance.",
-    buttonText: "WhatsApp Us for Coverage Help"
+    buttonText: "WhatsApp Us for Coverage Help",
+    buttonHref: "https://wa.me/971555867466?text=Hello%20Vedara%20Care,%20I%20would%20like%20to%20ask%20about%20insurance%20coverage%20for%20neurological%20physiotherapy.%20Please%20assist%20me."
   }
 };
 export const neurologicalDubaiLocationData = {
@@ -372,9 +373,9 @@ export const neurologicalDubaiLocationData = {
   label: "WHERE WE WORK",
   title: "At our JVC clinic, or at your home across Dubai.",
   description: "Neurological physiotherapy happens at two primary locations depending on patient need: at home across Dubai with our specialised neurological physiotherapists travelling to you (often essential for early recovery, advanced disease, or significant mobility limitations), and at our JVC clinic with specialised equipment including gait training equipment, functional electrical stimulation, and balance equipment (when transport is feasible). Many patients benefit from a combination of both.",
-  address: "Vedara Care Polyclinic, Jumeirah Village Circle (JVC), Dubai",
+  address: "Al Barsha South Fourth, Binghatti Azure, Shop -4, Jumeraih Village Circle (JVC) Dubai",
   phone: "+971 55 586 7466",
-  hours: "Sunday - Thursday: 9:00 AM - 9:00 PM<br/>Friday - Saturday: 10:00 AM - 8:00 PM",
+  hours: "Sunday - Saturday: 8:30AM to 11:30PM ",
   landmarks: [
     "Walking distance from Circle Mall",
     "3 minutes from FIVE Jumeirah Village",
@@ -447,8 +448,10 @@ export const neurologicalDubaiFinalCTA = {
   description:
     "Whether you (or a family member) are recovering from recent stroke, managing Parkinson's or MS, recovering from traumatic brain injury, or living with another neurological condition, the next useful step is a 60-75 minute initial assessment — at our JVC clinic or at your home across Dubai. We assess thoroughly, set honest expectations, design a treatment plan calibrated to your specific condition, and establish the long-term relationship that effective neurological rehabilitation requires. Same-week appointments typically available.",
   button1Text: "Book a Neurological Consultation",
+  button1Href: "/book",
   button2Text: "WhatsApp Us",
-  subtext:
+  button2Href: "https://wa.me/971555867466?text=Hello%20Vedara%20Care,%20I%20would%20like%20to%20ask%20about%20neurological%20physiotherapy%20and%20book%20a%20consultation.%20Please%20assist%20me.",
+  footer:
     "Initial assessment from AED 450 · Clinic in JVC + home physiotherapy across Dubai · Neurologist coordination · Long-term care relationships · Insurance direct-billing"
 };
 

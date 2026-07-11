@@ -9,6 +9,8 @@ export const postSurgeryRehabHero = {
   description: "Structured post-operative rehabilitation at our Jumeirah Village Circle (JVC) clinic and at your home across Dubai. DPT-qualified physiotherapists trained in procedure-specific protocols for knee replacement, hip replacement, ACL reconstruction, spinal surgery, rotator cuff repair, and other orthopaedic and surgical procedures. We coordinate with your operating surgeon — whether they practise in Dubai or internationally. Home physiotherapy available for the early recovery phase.",
   primaryCTA: "Book a Post-Surgery Consultation",
   secondaryCTA: "WhatsApp Us",
+  primaryCTAHref: "/book",
+  secondaryCTAHref: "https://wa.me/971555867466?text=Hello%20Vedara%20Care,%20I%20would%20like%20to%20know%20more%20about%20your%20post-surgery%20rehabilitation%20services.",
   trustSignals: [
     "DPT-qualified physiotherapists",
     "Surgeon coordination protocols",
@@ -53,6 +55,8 @@ export const postSurgeryRehabFinalCTA = {
   description: "The first useful step is a 60-minute post-surgery assessment at our JVC clinic or at your home across Dubai. We review your surgical report, examine your current status, contact your operating surgeon (with your consent) to confirm specific protocols, and provide a written rehabilitation plan with realistic timeline. For early-phase patients, the assessment can happen at your home. Insurance pre-authorisation can begin during your first session. Same-week appointments typically available.",
   button1Text: "Book a Post-Surgery Consultation",
   button2Text: "WhatsApp Us Your Surgical Report",
+  button1Href: "/book",
+  button2Href: "https://wa.me/971555867466?text=Hello%20Vedara%20Care,%20I%27d%20like%20to%20share%20my%20surgical%20report%20for%20post-surgery%20rehabilitation.",
   button1BgColor: "#1F4538",
   button1TextColor: "#FFFFFF",
   button2BorderColor: "#25D366",
@@ -244,7 +248,8 @@ export const insuranceCoverageData = {
     label: "OUR DIRECT-BILLING INSURERS",
     insurers: ["Daman", "AXA", "Allianz", "Oman Insurance", "Now Health", "Bupa", "MetLife"],
     text: "WhatsApp your insurance card and surgical report to +971 55 586 7466 before booking to confirm specific coverage and pre-authorisation needs.",
-    buttonText: "WhatsApp Us Your Surgical Report"
+    buttonText: "WhatsApp Us Your Surgical Report",
+    buttonHref: "https://wa.me/971555867466?text=Hello%20Vedara%20Care,%20I%27d%20like%20to%20share%20my%20insurance%20card%20and%20surgical%20report."
   }
 };
 
@@ -253,15 +258,17 @@ export const whereWeWorkData = {
   title: "At our JVC clinic, or at your home across Dubai.",
   description: "Post-surgical rehabilitation happens at two locations depending on your stage: the early phase (typically weeks 0-4) often at your home across Dubai with our DPT-qualified physiotherapists travelling to you. The active rehabilitation phase (typically weeks 4 onwards) at our JVC clinic with full rehabilitation equipment, treatment rooms, and gym access. Some patients prefer home-based throughout — we accommodate.",
   details: {
-    address: "Jumeirah Village Circle (JVC), Dubai.<br />Walking distance from Circle Mall.",
-    hours: "Sunday - Saturday: 9 AM - 9 PM",
+    address: "Al Barsha South Fourth, Binghatti Azure, Shop -4, <br/>Jumeraih Village Circle (JVC) Dubai",
+    hours: "Sunday - Saturday: 8:30AM to 11:30PM",
     phone: "+971 55 586 7466",
     email: "booking@vedaracare.ae"
   },
   footer: "Our JVC clinic has dedicated rehabilitation rooms with modern equipment, full strength and conditioning gym, specialised modalities including shockwave therapy, and accessibility features for post-surgical patients with limited mobility. Free patient parking on-site. Easy access from JVC, JVT, Al Barsha South, and across Dubai.",
   buttons: {
     primary: "Book a Post-Surgery Consultation",
-    secondary: "Book Home Physiotherapy"
+    secondary: "Book Home Physiotherapy",
+    primaryHref: "https://wa.me/971555867466?text=Hello%20Vedara%20Care,%20I%20would%20like%20to%20book%20a%20post-surgery%20consultation.%20Please%20assist%20me.",
+    secondaryHref: "/home-healthcare-jvc"
   }
 };
 

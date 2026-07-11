@@ -365,13 +365,12 @@ export const dermatologyLocation = {
   label: "VISIT US",
   title: "Where dermatology happens at Vedara Care JVC.",
   address1: "Vedara Care Polyclinic",
-  address2: "Jumeirah Village Circle (JVC), Dubai, UAE <br/>Walking distance from Circle Mall",
+  address2: "Al Barsha South Fourth, Binghatti Azure, Shop -4, <br/>Jumeraih Village Circle (JVC) Dubai ",
   addressNote: "",
   contactPhone: "+971 55 586 7466",
   contactEmail: "booking@vedaracare.ae",
   clinicHours: [
-    { label: "Monday - Saturday", time: "9:00 AM – 9:00 PM" },
-    { label: "Sunday", time: "10:00 AM – 6:00 PM" }
+    { label: "Sunday - Saturday", time: "8:30 am to 11:30 pm" },
   ],
   mapEmbed: "//www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d3613.9894568193345!2d55.20722358578439!3d25.068346479666594!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x3e5f6dd72f3da587%3A0xe7ecca8687a75b72!2sVedara%20Care%20Polyclinic!5e0!3m2!1sen!2sus!4v1780727442216!5m2!1sen!2sus",
   description: "Our JVC clinic has dedicated dermatology consultation rooms, specialised treatment rooms for laser procedures, surgical room for biopsies and minor procedures, premium clinical environment with patient comfort prioritised, full equipment for all procedures described, and discreet booking and treatment process. Easy access from JVC, JVT, Al Barsha South, Sports City, Motor City, Arjan, Dubai Hills, and across Dubai.",

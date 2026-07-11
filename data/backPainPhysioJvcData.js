@@ -318,13 +318,13 @@ export const backPainPhysioLocation = {
   bgColor: "bg-white",
   label: "VISIT US",
   title: "Where back pain physiotherapy happens at Vedara Care JVC.",
-  address: "Vedara Care Polyclinic<br/>Building 23, District 12<br/>Jumeirah Village Circle, Dubai<br/>United Arab Emirates",
+  address: "Al Barsha South Fourth, Binghatti Azure, Shop -4,<br/> Jumeraih Village Circle (JVC) Dubai",
   phone: "+971 55 586 7466",
   email: "booking@vedaracare.ae",
   hours: {
-    monday: "9:00 AM - 9:00 PM",
-    saturday: "9:00 AM - 8:00 PM",
-    sunday: "9:00 AM - 6:00 PM"
+    monday: " 8:30 am to 11:30 pm",
+    saturday: " 8:30 am to 11:30 pm",
+    sunday: " 8:30 am to 11:30 pm"
   },
   landmarks: [
     "Walking distance from Circle Mall",

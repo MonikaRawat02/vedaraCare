@@ -98,7 +98,7 @@ export const HomePhysiotherapy = ({ data }) => {
                 {data.sidebar.label}
               </span>
               
-              <div className="flex-1 flex flex-col justify-between py-2">
+              <div className="flex-1 flex flex-col justify-between py-4 space-y-4">
                 <div>
                   <h4 className="text-[13px] font-sans font-medium text-[#1A1A1A] mb-2">Coverage:</h4>
                   <p className="text-[12px] font-sans text-[#6B6B6B] leading-relaxed">{data.sidebar.coverage}</p>
@@ -106,7 +106,7 @@ export const HomePhysiotherapy = ({ data }) => {
 
                 <div>
                   <h4 className="text-[13px] font-sans font-medium text-[#1A1A1A] mb-2">Typical Use Cases:</h4>
-                  <ul className="space-y-0.5">
+                  <ul className="space-y-1">
                     {data.sidebar.useCases.map((useCase, idx) => (
                       <li key={idx} className="text-[12px] font-sans text-[#6B6B6B] flex items-start gap-2">
                         <span className="w-1.5 h-1.5 bg-[#C4A962] rounded-full mt-1 shrink-0" />
@@ -304,10 +304,10 @@ export const InsuranceCoverage = ({ data }) => {
               {data.sidebar.text}
             </p>
 
-            <button className="w-full bg-[#25D366] text-white py-4 rounded-md font-sans font-bold text-[15px] hover:bg-[#20bd5b] transition-colors flex items-center justify-center gap-2">
+            <a href={data.sidebar.buttonHref} target="_blank" rel="noopener noreferrer" className="w-full bg-[#25D366] text-white py-4 rounded-md font-sans font-bold text-[15px] hover:bg-[#20bd5b] transition-colors flex items-center justify-center gap-2">
               <MessageCircle size={20} fill="currentColor" />
               {data.sidebar.buttonText}
-            </button>
+            </a>
           </div>
         </div>
       </div>
@@ -368,12 +368,12 @@ export const WhereWeWork = ({ data }) => {
             </p>
 
             <div className="flex flex-col gap-3 pt-4">
-              <button className="w-full bg-[#1F4538] text-white py-4 rounded-md font-sans font-bold text-[15px] hover:bg-black transition-colors">
+              <a href={data.buttons.primaryHref} target="_blank" rel="noopener noreferrer" className="w-full bg-[#1F4538] text-white py-4 rounded-md font-sans font-bold text-[15px] hover:bg-black transition-colors text-center">
                 {data.buttons.primary}
-              </button>
-              <button className="w-full bg-[#C4A962] text-white py-4 rounded-md font-sans font-bold text-[15px] hover:bg-[#b89a56] transition-colors">
+              </a>
+              <a href={data.buttons.secondaryHref} className="w-full bg-[#C4A962] text-white py-4 rounded-md font-sans font-bold text-[15px] hover:bg-[#b89a56] transition-colors text-center">
                 {data.buttons.secondary}
-              </button>
+              </a>
             </div>
           </div>
 

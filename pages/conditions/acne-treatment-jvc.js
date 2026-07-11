@@ -41,7 +41,7 @@ const AcneTreatmentJvc = () => {
       "url": currentUrl,
       "parentOrganization": { "@id": "https://vedaracare.ae/#organization" },
       "description": "Specialist acne treatment at Vedara Care Polyclinic, Jumeirah Village Circle, Dubai. DHA-licensed consultant dermatologists treating adolescent acne, adult acne, hormonal acne, cystic acne, comedonal acne, inflammatory acne, body acne, acne scarring, and post-inflammatory hyperpigmentation. Comprehensive evidence-based treatment including topical therapies, oral medications, isotretinoin when appropriate, and procedural treatments. All Fitzpatrick skin types.",
-      "telephone": "+971 4 567 8900",
+      "telephone": "+971 55 586 7466",
       "priceRange": "AED 400 - AED 15,000",
       "address": {
         "@type": "PostalAddress",
