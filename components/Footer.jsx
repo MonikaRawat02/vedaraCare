@@ -24,8 +24,8 @@ const Footer = () => {
               DHA-licensed holistic healthcare in Jumeirah Village Circle, Dubai.
             </p>
             <div className="space-y-4 text-sm text-[#F8F9FA]/80">
-              <p>Jumeirah Village Circle<br />
-                Dubai, UAE
+              <p>Al Barsha South Fourth, Binghatti Azure,<br />
+                Jumeirah Village Circle Dubai, UAE
               </p>
               <div className="space-y-2">
                 <a href="tel:+971 55 586 7466" className="flex items-center gap-2 hover:text-white transition-colors">
@@ -55,7 +55,7 @@ const Footer = () => {
             <ul className={`space-y-4 text-[#F8F9FA]/80 text-sm ${openSection === 'services' ? 'block' : 'hidden md:block'}`}>
               <li><Link href="/ayurveda-clinic-jvc" className="hover:text-white transition-colors">Ayurveda in JVC</Link></li>
               <li><Link href="/physiotherapy-jvc" className="hover:text-white transition-colors">Physiotherapy in JVC</Link></li>
-              <li><Link href="/dermatology-jvc" className="hover:text-white transition-colors">Dermatology in JVC</Link></li>
+              <li><Link href="/dermatology-clinic-jvc" className="hover:text-white transition-colors">Dermatology in JVC</Link></li>
               <li><Link href="/home-healthcare-jvc" className="hover:text-white transition-colors">Home Healthcare in Dubai</Link></li>
               <li><Link href="/wellness-jvc" className="hover:text-white transition-colors">Wellness Treatments</Link></li>
             </ul>

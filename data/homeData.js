@@ -174,7 +174,7 @@ export const homeExperts = {
       role: "Physiotherapist",
       experience: "12+ years experience",
       languages: "English, Arabic, Urdu",
-      image: "https://images.unsplash.com/photo-1622253692010-333f2da6031d?q=80&w=2070&auto=format&fit=crop",
+      image: "",
       link: "/doctors"
     },
     {
@@ -183,7 +183,7 @@ export const homeExperts = {
       role: "Dermatologist",
       experience: "10+ years experience",
       languages: "English, Arabic, Hindi",
-      image: "https://images.unsplash.com/photo-1594824476967-48c8b964273f?q=80&w=2070&auto=format&fit=crop",
+      image: "",
       link: "/doctors"
     }
   ]
