@@ -1,4 +1,5 @@
 import React from 'react';
+import Link from 'next/link';
 
 export const SciaticaTypes = ({
   bgColor = "bg-white",
@@ -77,13 +78,15 @@ export const SciaticaTypes = ({
   );
 
   return type.href ? (
-    <a
-      key={index}
-      href={type.href}
-      className="block no-underline"
-    >
-      {Card}
-    </a>
+    type.href.startsWith('/') ? (
+      <Link key={index} href={type.href} className="block no-underline">
+        {Card}
+      </Link>
+    ) : (
+      <a key={index} href={type.href} className="block no-underline" target="_blank" rel="noopener noreferrer">
+        {Card}
+      </a>
+    )
   ) : (
     <div key={index}>
       {Card}
