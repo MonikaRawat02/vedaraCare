@@ -242,7 +242,7 @@ export const neurologicalDubaiMechanism2 = {
     "<strong>Social Workers and Care Coordinators</strong><br/>For complex situations involving home care needs, equipment provision, financial concerns, family support, or long-term care planning, social work and care coordination matter. We can connect families with appropriate support services across Dubai.",
     "<strong>Family and Caregivers</strong><br/>The family caregivers are often the most important members of the care team. Our family education involves teaching specific techniques for safe transfers, exercise facilitation, falls prevention, communication strategies, and emotional support. Caregiver burnout is a real risk — we monitor caregiver wellbeing and refer for caregiver support when needed."
   ],
-  image: "/images/neurological-care-coordination-dubai.webp",
+  image: "/images/home-neurological-physio-dubai.webp",
   alt: "Multi-disciplinary neurological care coordination Vedara Care JVC"
 };
 
