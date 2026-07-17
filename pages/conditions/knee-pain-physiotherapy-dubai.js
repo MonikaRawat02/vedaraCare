@@ -457,8 +457,9 @@ const KneePainPhysioDubai = () => {
       />
 
       <TreatmentReviews 
-        // bgColor="bg-[#1C3D2E]"
-        bgColor="bg-[#FFFFFFF]"
+        bgColor="bg-white"
+        cardBgColor="rgb(248, 244, 238)"
+        statsBgColor="rgb(24, 76, 58)"
         label="PATIENT STORIES"
         title="Real knee pain recoveries."
         {...kneePainReviews}
@@ -473,10 +474,10 @@ const KneePainPhysioDubai = () => {
       <div className={`bg-white py-24 px-6 ${kneePainPricing.bgColor}`}>
         <div className="max-w-5xl mx-auto">
           <div className="text-center mb-12">
-            <div className="text-sm tracking-widest uppercase mb-4" style={{ color: '#C9A84C' }}>
+            <div className="text-sm tracking-widest uppercase mb-4 text-[#C9A84C]">
               {kneePainPricing.label}
             </div>
-            <h2 className="text-4xl" style={{ fontFamily: 'Fraunces, Georgia, serif', color: 'rgb(26, 26, 26)' }}>
+            <h2 className="text-4xl font-serif text-[#1A1A1A]">
               {kneePainPricing.title}
             </h2>
           </div>
@@ -484,22 +485,22 @@ const KneePainPhysioDubai = () => {
           <div className="bg-white rounded-lg border border-[#E5DFD3] overflow-hidden mb-12">
             {kneePainPricing.services.map((service, index) => (
               <div key={index} className={`flex items-center justify-between px-8 py-5 ${index % 2 === 1 ? 'bg-[#FAF8F5]' : 'bg-white'}`}>
-                <p className="text-sm" style={{ color: 'rgb(26, 26, 26)' }}>
+                <p className="text-sm font-sans text-[#1A1A1A]">
                   {service.name}
                 </p>
-                <p style={{ fontFamily: 'Fraunces, Georgia, serif', color: 'rgb(201, 168, 76)' }}>
+                <p className="font-serif text-[#C9A84C]">
                   {service.price}
                 </p>
               </div>
             ))}
           </div>
 
-          <p className="text-center mb-8" style={{ color: 'rgb(107, 107, 107)', lineHeight: '1.7', fontSize: '14px' }}>
+          <p className="text-center mb-8 font-sans text-[#6B6B6B] leading-relaxed text-sm">
             {kneePainPricing.insuranceText}
           </p>
           <div className="flex flex-wrap justify-center gap-3">
             {kneePainPricing.insurances && kneePainPricing.insurances.map((insurer, index) => (
-              <span key={index} className="bg-[#FAF8F5] px-4 py-2 rounded-full text-xs border border-[#E5DFD3]" style={{ color: 'rgb(107, 107, 107)' }}>
+              <span key={index} className="bg-[#FAF8F5] px-4 py-2 rounded-full text-xs border border-[#E5DFD3] text-[#6B6B6B]">
                 {insurer}
               </span>
             ))}

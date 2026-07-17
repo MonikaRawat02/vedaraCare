@@ -23,7 +23,7 @@ const TreatmentMechanism = ({
   const isContentFormat = content.length > 0;
 
   return (
-    <section className={`${bgColor} py-24 px-6 relative overflow-hidden`}>
+    <section className={`${bgColor} py-24 px-6 relative`}>
       <div className="max-w-7xl mx-auto">
         
         {/* Text Header - Centered */}
@@ -82,12 +82,12 @@ const TreatmentMechanism = ({
             </div>
 
             {/* Image + Key Fact / Comparison */}
-            <div className={`lg:w-[45%] ${imageLeft ? 'lg:order-1' : 'lg:order-2'}`}>
+            <div className={`lg:w-[45%] sticky top-24 self-start ${imageLeft ? 'lg:order-1' : 'lg:order-2'}`}>
               {image && (
                 <img 
                   src={image} 
                   alt={alt} 
-                  className="w-full h-[400px] object-cover rounded-xl shadow-lg"/>
+                  className="w-full h-[600px] object-cover rounded-xl shadow-lg"/>
               )}
 
               {/* Comparison Section */}

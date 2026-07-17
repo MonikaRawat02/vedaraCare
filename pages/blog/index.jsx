@@ -541,13 +541,12 @@ export default function BlogListPage() {
                   <div className="space-y-2 text-[12px] text-[#6B6B6B] font-sans">
                     <div className="flex items-start gap-2">
                       <MapPin className="w-3.5 h-3.5 text-[#184C3A] shrink-0 mt-0.5" />
-                      <span>Jumeirah Village Circle, Dubai</span>
+                      <span>Al Barsha South Fourth, Binghatti Azure, Shop -4,Jumeraih Village Circle (JVC) Dubai</span>
                     </div>
                     <div className="flex items-start gap-2">
                       <ClockIcon className="w-3.5 h-3.5 text-[#184C3A] shrink-0 mt-0.5" />
                       <div>
-                        <p>Mon - Sat: 9 AM to 9 PM</p>
-                        <p>Sun: 10 AM to 7 PM</p>
+                        <p>Mon - Sun: 8:30AM to 11:30PM</p>
                       </div>
                     </div>
                     <div className="flex items-start gap-2">

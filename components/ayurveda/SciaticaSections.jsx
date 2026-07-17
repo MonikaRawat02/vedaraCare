@@ -13,6 +13,74 @@ export const SciaticaTypes = ({
   typicalSignsLabel = "TYPICAL SIGNS:",
   borderPosition = "top" // 'top' (default) or 'left'
 }) => {
+  const TypeItem = ({ type, index }) => {
+    const card = (
+      <div className={`${cardBg} p-6 rounded-lg ${borderPosition === 'left' ? 'border-l-3' : 'border-t-3'} border-[#C9A55A] shadow-sm transition-all duration-300 flex flex-col gap-4 h-full ${type.href ? 'cursor-pointer hover:shadow-xl hover:-translate-y-1 hover:border-[#B8963E]' : ''}`}>
+        <div className="text-4xl text-[#C9A55A] font-serif mb-6" style={{ fontFamily: 'Fraunces, Georgia, serif' }}>
+          {type.number}
+        </div>
+
+        <div className="space-y-4 flex-grow">
+          <div>
+            <h3
+              className="text-xl font-sans font-medium text-[#1A1A1A] mb-1 leading-tight"
+              dangerouslySetInnerHTML={{ __html: type.title }}
+            />
+          </div>
+
+          {type.subTitle && (
+            <p className="text-[#B8963E] text-sm tracking-wider" dangerouslySetInnerHTML={{ __html: type.subTitle }} />
+          )}
+
+          <div
+            className="text-[14px] text-sm text-[#4A4A4A] font-sans leading-relaxed description-link-container"
+            dangerouslySetInnerHTML={{ __html: type.description }}
+          />
+        </div>
+
+        {((type.typicalSigns && type.typicalSigns.length > 0) || (type.typicalImpairmentPatterns && type.typicalImpairmentPatterns.length > 0)) && (
+          <div className="pt-4 border-t border-gray-100 mt-4">
+            <p className="text-xs text-gray-600 mb-2" dangerouslySetInnerHTML={{ __html: `<strong class="text-[#C9A55A]">${typicalSignsLabel}</strong>` }} />
+            <ul className="space-y-2">
+              {(type.typicalSigns || type.typicalImpairmentPatterns).map((sign, idx) => (
+                <li key={idx} className="text-xs text-[#6B6B6B]">
+                  {sign.startsWith("Typical recovery:") ? (
+                    <div className="flex items-center gap-2">
+                      <span className="text-[#C9A55A] w-3 h-3 rounded-full border border-[#C9A55A] flex items-center justify-center text-[8px]">✓</span>
+                      <span dangerouslySetInnerHTML={{ __html: sign }} />
+                    </div>
+                  ) : (
+                    <span dangerouslySetInnerHTML={{ __html: sign }} />
+                  )}
+                </li>
+              ))}
+            </ul>
+          </div>
+        )}
+      </div>
+    );
+
+    if (type.href) {
+      if (type.href.startsWith('/')) {
+        return (
+          <Link key={index} href={type.href} className="block no-underline">
+            {card}
+          </Link>
+        );
+      }
+      return (
+        <a key={index} href={type.href} className="block no-underline" target="_blank" rel="noopener noreferrer">
+          {card}
+        </a>
+      );
+    }
+    return (
+      <div key={index}>
+        {card}
+      </div>
+    );
+  };
+
   return (
     <section className={`${bgColor} py-24 px-6`}>
       <div className="max-w-7xl mx-auto space-y-12">
@@ -29,70 +97,9 @@ export const SciaticaTypes = ({
         </div>
 
         <div className={gridCols}>
-         {types.map((type, index) => {
-         const Card = (
-   <div className={`${cardBg} p-6 rounded-lg ${borderPosition === 'left' ? 'border-l-3' : 'border-t-3'} border-[#C9A55A] shadow-sm transition-all duration-300 flex flex-col gap-4 h-full ${type.href ? 'cursor-pointer hover:shadow-xl hover:-translate-y-1 hover:border-[#B8963E]' : ''}`}>
-              <div className="text-4xl text-[#C9A55A] font-serif mb-6" style={{ fontFamily: 'Fraunces, Georgia, serif' }}>
-                {type.number}
-              </div>
-              
-              <div className="space-y-4 flex-grow">
-                <div>
-                 <h3
-  className="text-xl font-sans font-medium text-[#1A1A1A] mb-1 leading-tight"
-  dangerouslySetInnerHTML={{ __html: type.title }}
-/>
-                </div>
-
-                {/* Sub-label/subtitle if provided */}
-                {type.subTitle && (
-                  <p className="text-[#B8963E] text-sm  tracking-wider " dangerouslySetInnerHTML={{ __html: type.subTitle }} />
-                )}
-
-                <div 
-                  className="text-[14px] text-sm text-[#4A4A4A] font-sans leading-relaxed description-link-container"
-                  dangerouslySetInnerHTML={{ __html: type.description }}
-                />
-              </div>
-
-              {((type.typicalSigns && type.typicalSigns.length > 0) || (type.typicalImpairmentPatterns && type.typicalImpairmentPatterns.length > 0)) && (
-                <div className="pt-4 border-t border-gray-100 mt-4">
-                  <p className="text-xs text-gray-600 mb-2" dangerouslySetInnerHTML={{ __html: `<strong class="text-[#C9A55A]">${typicalSignsLabel}</strong>` }} />
-                  <ul className="space-y-2">
-                    {(type.typicalSigns || type.typicalImpairmentPatterns).map((sign, idx) => (
-                      <li key={idx} className="text-xs text-[#6B6B6B]">
-                        {sign.startsWith("Typical recovery:") ? (
-                          <div className="flex items-center gap-2">
-                            <span className="text-[#C9A55A] w-3 h-3 rounded-full border border-[#C9A55A] flex items-center justify-center text-[8px]">✓</span>
-                            <span dangerouslySetInnerHTML={{ __html: sign }} />
-                          </div>
-                        ) : (
-                          <span dangerouslySetInnerHTML={{ __html: sign }} />
-                        )}
-                      </li>
-                    ))}
-                  </ul>
-                </div>
-              )}
-              </div>
-  );
-
-  return type.href ? (
-    type.href.startsWith('/') ? (
-      <Link key={index} href={type.href} className="block no-underline">
-        {Card}
-      </Link>
-    ) : (
-      <a key={index} href={type.href} className="block no-underline" target="_blank" rel="noopener noreferrer">
-        {Card}
-      </a>
-    )
-  ) : (
-    <div key={index}>
-      {Card}
-    </div>
-  );
-})}
+          {types.map((type, index) => (
+            <TypeItem key={index} type={type} index={index} />
+          ))}
         </div>
 
         {footer && (
@@ -290,9 +297,7 @@ export const SciaticaPricing = ({
 
             return (
               <div key={index} className={`flex items-center justify-between px-8 py-5 ${bgClass} ${borderClass} border-b border-[#E5DFD3]`}>
-                <p className="text-sm" style={{ color: 'rgb(26, 26, 26)' }}>
-                  {service.name}
-                </p>
+                <p className="text-sm" style={{ color: 'rgb(26, 26, 26)' }} dangerouslySetInnerHTML={{ __html: service.name }} />
                 <p style={{ fontFamily: 'Fraunces, Georgia, serif', color: priceColor }}>
                   {service.price}
                 </p>

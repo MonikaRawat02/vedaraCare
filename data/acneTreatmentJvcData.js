@@ -243,7 +243,7 @@ export const acneTreatmentLadder = {
     note: "<div style='margin-top: 20px; margin-bottom: 20px; border-top: 1px solid rgba(229, 223, 211); border-bottom: 1px solid rgba(229, 223, 211); padding-top: 20px; padding-bottom: 20px;'>REALISTIC TIMELINES:<br/><div style='display: flex; justify-content: space-between; margin-top: 8px; font-size: 12px;'><div>Initial visible response</div><div style='font-weight: 600;'>4–6 weeks</div></div><div style='display: flex; justify-content: space-between; margin-top: 4px; font-size: 12px;'><div>Substantial improvement</div><div style='font-weight: 600;'>12–16 weeks</div></div><div style='display: flex; justify-content: space-between; margin-top: 4px; font-size: 12px;'><div>Maximum benefit</div><div style='font-weight: 600;'>6 months</div></div><div style='display: flex; justify-content: space-between; margin-top: 4px; font-size: 12px;'><div>Maintenance</div><div style='font-weight: 600;'>Ongoing</div></div></div>",
     footer: "",
     buttonText: "Book Acne Consultation →",
-    buttonHref: "#",
+    buttonHref: "/book",
     buttonBgColor: "bg-[#C9A84C]",
     buttonTextColor: "text-[#1C1C14]",
   },
@@ -302,7 +302,7 @@ export const acneTreatmentPricing = {
     { name: "Comprehensive acne treatment programme (3 months)", price: "From AED [X]" },
     { name: "Comprehensive acne treatment programme (6 months)", price: "From AED [X]" }
   ],
-  insuranceText: "Medical acne treatment is covered by most Dubai insurance plans with appropriate medical justification. We are direct-billing partners with Daman, AXA, Allianz, Oman Insurance, Now Health, Bupa, and MetLife. Isotretinoin treatment, hormonal medications, and most prescription treatments are typically insurance-covered. Cosmetic procedures (chemical peels purely for cosmetic enhancement, scarring treatment) typically self-pay. WhatsApp your insurance card to us before booking for specific coverage confirmation.",
+  insuranceText: "Medical acne treatment is covered by most Dubai insurance plans with appropriate medical justification. We are direct-billing partners with Daman, AXA, Allianz, Oman Insurance, Now Health, Bupa, and MetLife. Isotretinoin treatment, hormonal medications, and most prescription treatments are typically insurance-covered. Cosmetic procedures (chemical peels purely for cosmetic enhancement, scarring treatment) typically self-pay. <a href=\"https://wa.me/971555867466?text=Hi%2C%20I%27d%20like%20to%20verify%20my%20insurance%20coverage%20for%20acne%20treatment\" target=\"_blank\" rel=\"noopener noreferrer\" class=\"text-[#C9A84C] hover:underline transition-colors\">WhatsApp your insurance card</a> to us before booking for specific coverage confirmation.",
   insurances: ["Daman", "AXA", "Allianz", "Oman Insurance", "Now Health", "Bupa", "MetLife"]
 };
 
@@ -571,6 +571,8 @@ export const acneTreatmentLocation = {
   mapEmbed: "https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d3613.9894568193345!2d55.20722358578439!3d25.068346479666594!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x3e5f6dd72f3da587%3A0xe7ecca8687a75b72!2sVedara%20Care%20Polyclinic!5e0!3m2!1sen!2sus!4v1780727442216!5m2!1sen!2sus",
   image: "/images/vedara-care-clinic-jvc.webp",
   alt: "Vedara Care acne treatment clinic JVC Dubai",
+  whatsapp: "+971 55 586 7466",
+  whatsappMessage: "Hi, I'd like to inquire about acne treatment at your JVC clinic.",
   description: "Our JVC clinic has dedicated dermatology consultation rooms, specialised treatment rooms for laser procedures and chemical peels, a premium clinical environment with patient comfort prioritised, full equipment for all acne treatment procedures, and discreet booking and treatment process. Easy access from JVC, JVT, Al Barsha South, Sports City, Motor City, Arjan, Dubai Hills, and across Dubai for specialist acne care.",
   buttonText: "Book Acne Consultation",
   buttonHref: "/book",

@@ -65,10 +65,12 @@ const BackPainAcuteAndPricing = ({ data }) => {
                   ))}
                 </ul>
                 <a
-                  href="https://wa.me/97142000000"
+                  href="https://wa.me/971555867466?text=Hello%20Vedara%20Care,%20I%20would%20like%20to%20inquire%20about%20back%20pain%20physiotherapy%20and%20book%20a%20same-day%20appointment."
+                  target="_blank"
+                  rel="noopener noreferrer"
                   className="w-full text-white font-semibold py-3 px-6 rounded-lg flex items-center justify-center gap-2 transition-colors text-sm"
                   style={{ backgroundColor: '#25d366' }}
-                  onMouseEnter={(e) => e.currentTarget.style.backgroundColor = '#25d366'}
+                  onMouseEnter={(e) => e.currentTarget.style.backgroundColor = '#20b358'}
                   onMouseLeave={(e) => e.currentTarget.style.backgroundColor = '#25d366'}
                 >
                   <svg className="w-5 h-5" fill="currentColor" viewBox="0 0 24 24">
@@ -107,9 +109,8 @@ const BackPainAcuteAndPricing = ({ data }) => {
             ))}
           </div>
 
-          <p className="text-center mb-8" style={{ color: 'rgb(107, 107, 107)', lineHeight: '1.7', fontSize: '14px' }}>
-            {pricing.insuranceText}
-          </p>
+          <p className="text-center mb-8" style={{ color: 'rgb(107, 107, 107)', lineHeight: '1.7', fontSize: '14px' }} dangerouslySetInnerHTML={{ __html: pricing.insuranceText }} />
+
           <div className="flex flex-wrap justify-center gap-3">
             {(pricing.insurances || []).map((insurer, index) => (
               <span key={index} className="bg-[#FAF8F5] px-4 py-2 rounded-full text-xs border border-[#E5DFD3]" style={{ color: 'rgb(107, 107, 107)' }}>

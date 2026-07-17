@@ -151,7 +151,7 @@ export const NeckPainShouldYouSee = ({
               <a href="/book" className="w-full py-3 text-sm font-semibold mb-2.5 transition-all hover:opacity-90 flex items-center justify-center" style={{ background: '#F5F1E8', color: '#1C3D2E' }}>
                 Book Neck Pain Assessment
               </a>
-              <a href="https://wa.me/97142000000" className="w-full py-3 text-sm font-semibold border transition-all hover:opacity-70 flex items-center justify-center" style={{ borderColor: '#A5C2B0', color: '#A5C2B0', background: 'transparent' }}>
+              <a href="https://wa.me/971555867466?text=Hello%20Vedara%20Care,%20I%20would%20like%20to%20inquire%20about%20neck%20pain%20physiotherapy%20and%20book%20a%20consultation." target="_blank" rel="noopener noreferrer" className="w-full py-3 text-sm font-semibold border transition-all hover:opacity-90 flex items-center justify-center" style={{ borderColor: '#A5C2B0', color: '#A5C2B0', background: 'transparent' }}>
                 WhatsApp Us First
               </a>
             </div>

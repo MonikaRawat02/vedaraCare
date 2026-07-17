@@ -43,7 +43,7 @@ const ShoulderSurgicalConsiderations = ({ data }) => {
 
           <div className="space-y-6">
             {approachToSurgery && (
-              <div className="bg-[#1C1C14] p-8 rounded-lg">
+              <div className="bg-[#1F4538] p-8 rounded-lg">
                 <div className="flex items-center gap-3 mb-4">
                   <span className="text-[#C9A55A] text-xs font-medium tracking-wider uppercase">
                     {approachToSurgery.label}
@@ -51,10 +51,10 @@ const ShoulderSurgicalConsiderations = ({ data }) => {
                 </div>
                 
                 <div className="mb-6">
-                  <p className="text-gray-300 font-medium mb-3">We recommend surgery when:</p>
+                  <p className="text-white font-medium mb-3">We recommend surgery when:</p>
                   <ul className="space-y-2">
                     {(approachToSurgery.recommendWhen || []).map((item, idx) => (
-                      <li key={idx} className="flex items-center gap-2 text-sm text-gray-300">
+                      <li key={idx} className="flex items-center gap-2 text-sm text-white">
                         <svg className="w-4 h-4 text-green-500" fill="currentColor" viewBox="0 0 20 20">
                           <path fillRule="evenodd" d="M16.707 5.293a1 1 0 010 1.414l-8 8a1 1 0 01-1.414 0l-4-4a1 1 0 011.414-1.414L8 12.586l7.293-7.293a1 1 0 011.414 0z" clipRule="evenodd" />
                         </svg>
@@ -65,10 +65,10 @@ const ShoulderSurgicalConsiderations = ({ data }) => {
                 </div>
 
                 <div className="mb-6">
-                  <p className="text-gray-300 font-medium mb-3">We do NOT recommend:</p>
+                  <p className="text-white font-medium mb-3">We do NOT recommend:</p>
                   <ul className="space-y-2">
                     {(approachToSurgery.doNotRecommend || []).map((item, idx) => (
-                      <li key={idx} className="flex items-center gap-2 text-sm text-gray-300">
+                      <li key={idx} className="flex items-center gap-2 text-sm text-white">
                         <svg className="w-4 h-4 text-red-500" fill="currentColor" viewBox="0 0 20 20">
                           <path fillRule="evenodd" d="M4.293 4.293a1 1 0 011.414 0L10 8.586l4.293-4.293a1 1 0 111.414 1.414L11.414 10l4.293 4.293a1 1 0 01-1.414 1.414L10 11.414l-4.293 4.293a1 1 0 01-1.414-1.414L8.586 10 4.293 5.707a1 1 0 010-1.414z" clipRule="evenodd" />
                         </svg>
@@ -79,17 +79,17 @@ const ShoulderSurgicalConsiderations = ({ data }) => {
                 </div>
 
                 {approachToSurgery.surgicalCoordination && (
-                  <div className="border-t border-gray-600 pt-4 mb-6">
+                  <div className="border-t border-[#3B6B5A] pt-4 mb-6">
                     <p className="text-[#C9A55A] font-medium mb-2">
                       {approachToSurgery.surgicalCoordination.title}
                     </p>
-                    <p className="text-gray-300 text-sm leading-relaxed">
+                    <p className="text-white text-sm leading-relaxed">
                       {approachToSurgery.surgicalCoordination.description}
                     </p>
                   </div>
                 )}
 
-                <button className="w-full bg-[#C9A55A] text-[#1C1C14] font-semibold py-4 px-6 rounded hover:bg-[#b8944a] transition-colors text-sm">
+                <button className="w-full bg-[#C9A55A] text-[#1F4538] font-semibold py-4 px-6 rounded hover:bg-[#b8944a] transition-colors text-sm">
                   {approachToSurgery.buttonText}
                 </button>
               </div>
@@ -244,7 +244,7 @@ const ShoulderPricing = ({ data }) => {
             <div 
               className="flex items-center justify-between px-7 py-4"
               style={{ 
-                background: 'rgb(26, 26, 26)' 
+                background: 'rgb(31, 69, 56)' 
               }}
             >
               <span className="text-xs font-bold tracking-wider uppercase" style={{ color: 'rgb(250, 247, 242)' }}>

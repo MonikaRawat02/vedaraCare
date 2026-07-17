@@ -29,14 +29,14 @@ const TreatmentReviews = ({
       <section className={`${bgColor} py-24 px-6 relative overflow-hidden`}>
         <div className="max-w-[1170px] mx-auto">
           <div className="text-center mb-16">
-            <span className="text-[13px] font-sans tracking-[0.2em] uppercase block mb-4" style={{ color: 'rgb(184, 150, 90)' }}>
+            <span className="text-[13px] font-sans tracking-[0.2em] uppercase block mb-4 text-[#B8965A]">
               {label}
             </span>
-            <h2 className="text-[32px] md:text-[42px] font-serif font-medium leading-[1.2] mb-6" style={{ color: 'rgb(28, 25, 23)', fontFamily: 'Fraunces, serif' }}>
+            <h2 className="text-[32px] md:text-[42px] font-serif font-medium leading-[1.2] mb-6 text-[#1C1917]">
               {title}
             </h2>
             {description && (
-              <p className="text-[17px] font-sans max-w-2xl mx-auto leading-relaxed" style={{ color: 'rgb(90, 79, 71)' }} dangerouslySetInnerHTML={{ __html: description }} />
+              <p className="text-[17px] font-sans max-w-2xl mx-auto leading-relaxed text-[#5A4F47]" dangerouslySetInnerHTML={{ __html: description }} />
             )}
           </div>
 
@@ -55,25 +55,17 @@ const TreatmentReviews = ({
                     <Star 
                       key={i} 
                       size={16} 
-                      style={{ fill: 'rgb(184, 150, 90)', color: 'rgb(184, 150, 90)' }} 
+                      style={{ fill: '#B8965A', color: '#B8965A' }} 
                     />
                   ))}
                 </div>
                 
-                <h3 style={{ 
-                  fontFamily: 'Fraunces, Georgia, serif', 
-                  fontSize: '14px', 
-                  fontWeight: '400', 
-                  fontStyle: 'normal', 
-                  color: 'rgb(28, 25, 23)', 
-                  lineHeight: '1.5', 
-                  marginBottom: '16px' 
-                }} dangerouslySetInnerHTML={{ __html: review.quote }} />
+                <h3 className="font-serif text-[14px] font-normal text-[#1C1917] leading-relaxed mb-4" dangerouslySetInnerHTML={{ __html: review.quote }} />
                 
                 <div className="mt-auto pt-4" style={{ borderTop: '1px solid rgba(28, 25, 23, 0.1)' }}>
                   <div className="space-y-0.5">
-                    <p className="font-sans font-bold text-base" style={{ color: 'rgb(28, 25, 23)', fontFamily: 'DM Sans, sans-serif' }} dangerouslySetInnerHTML={{ __html: review.author }} />
-                    <p className="text-sm font-sans" style={{ color: 'rgb(184, 150, 90)', fontFamily: 'DM Sans, sans-serif' }} dangerouslySetInnerHTML={{ __html: review.details }} />
+                    <p className="font-sans font-bold text-base text-[#1C1917]" dangerouslySetInnerHTML={{ __html: review.author }} />
+                    <p className="text-sm font-sans text-[#B8965A]" dangerouslySetInnerHTML={{ __html: review.details }} />
                   </div>
                 </div>
               </div>
@@ -82,11 +74,11 @@ const TreatmentReviews = ({
 
           {/* Stats Row */}
           {stats && stats.length > 0 && (
-            <div className="flex flex-wrap justify-center items-center gap-12 md:gap-24 mb-16" style={{ backgroundColor: statsBgColor }}>
+            <div className="flex flex-wrap justify-center items-center gap-12 md:gap-24 mb-16">
               {stats.map((stat, index) => (
                 <div key={index} className="text-center">
-                  <h4 className="text-4xl font-serif font-medium leading-none mb-2" style={{ color: isWhiteStatsBg ? 'rgb(201, 153, 97)' : 'rgb(184, 150, 90)', fontFamily: 'Fraunces, serif' }}>{stat.value}</h4>
-                  <p className="text-xs font-sans tracking-wider" style={{ color: isWhiteStatsBg ? 'rgb(90, 79, 71)' : 'rgba(255, 255, 255, 0.8)', fontFamily: 'DM Sans, sans-serif' }}>{stat.label}</p>
+                  <h4 className="text-4xl font-serif font-medium leading-none mb-2 text-[#C9A961]">{stat.value}</h4>
+                  <p className="text-xs font-sans tracking-wider text-[#5A4F47]">{stat.label}</p>
                 </div>
               ))}
             </div>
@@ -100,39 +92,21 @@ const TreatmentReviews = ({
                     href={buttonHref}
                     target="_blank"
                     rel="noopener noreferrer"
-                    className="inline-flex items-center px-0 py-3.5 font-sans font-bold text-sm hover:opacity-90 transition-all duration-300"
-                    style={{
-                      backgroundColor: 'transparent',
-                      color: 'rgb(184, 150, 90)',
-                      border: 'none',
-                      fontFamily: 'DM Sans, sans-serif'
-                    }}
+                    className="inline-flex items-center px-0 py-3.5 font-sans font-bold text-sm hover:opacity-90 transition-all duration-300 text-[#B8965A]"
                   >
                     {buttonText}
                   </a>
                 ) : (
                   <Link 
                     href={buttonHref}
-                    className="inline-flex items-center px-0 py-3.5 font-sans font-bold text-sm hover:opacity-90 transition-all duration-300"
-                    style={{
-                      backgroundColor: 'transparent',
-                      color: 'rgb(184, 150, 90)',
-                      border: 'none',
-                      fontFamily: 'DM Sans, sans-serif'
-                    }}
+                    className="inline-flex items-center px-0 py-3.5 font-sans font-bold text-sm hover:opacity-90 transition-all duration-300 text-[#B8965A]"
                   >
                     {buttonText}
                   </Link>
                 )
               ) : (
                 <button 
-                  className="inline-flex items-center px-0 py-3.5 font-sans font-bold text-sm hover:opacity-90 transition-all duration-300"
-                  style={{
-                    backgroundColor: 'transparent',
-                    color: 'rgb(184, 150, 90)',
-                    border: 'none',
-                    fontFamily: 'DM Sans, sans-serif'
-                  }}
+                  className="inline-flex items-center px-0 py-3.5 font-sans font-bold text-sm hover:opacity-90 transition-all duration-300 text-[#B8965A]"
                 >
                   {buttonText}
                 </button>

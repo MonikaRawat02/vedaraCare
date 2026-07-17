@@ -82,9 +82,12 @@ const PhysiotherapyTeam = ({ label, title, description, team = [], members = [],
         </div>
         
         <div className="text-center">
-          <button className="text-[#C4A962] hover:text-[#030213] transition-colors font-medium">
-            Meet the full team →
-          </button>
+         <Link
+          href="/doctors"
+          className="text-[#C4A962] hover:text-[#030213] transition-colors font-medium"
+        >
+          Meet the full team →
+        </Link>
         </div>
       </div>
     </section>

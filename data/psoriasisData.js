@@ -32,6 +32,7 @@ export const psoriasisIntro = {
   blockquote: "Psoriasis treatment at Vedara Care Polyclinic in Jumeirah Village Circle (JVC), Dubai — walking distance from Circle Mall — is specialist evidence-based dermatology care delivered by DHA-licensed consultant dermatologists with substantial expertise across all psoriasis presentations. We treat: chronic plaque psoriasis (the most common form), scalp psoriasis, nail psoriasis, guttate psoriasis, inverse psoriasis, pustular psoriasis, palmoplantar psoriasis, and considerations for psoriatic arthritis. Our approach combines comprehensive assessment (skin, nails, joints, associated systemic conditions), evidence-based topical treatments, phototherapy where available, oral systemic treatments (methotrexate, cyclosporine, acitretin, apremilast), and modern biologic treatments — including TNF inhibitors (adalimumab, etanercept), IL-17 inhibitors (secukinumab, ixekizumab), IL-23 inhibitors (guselkumab, risankizumab, tildrakizumab), and IL-12/23 inhibitor (ustekinumab). Realistic framing: well-controlled psoriasis with clear or nearly clear skin is achievable for most patients with modern treatments. Sustained partnership approach with regular follow-up. Medical psoriasis treatment is covered by most insurance with appropriate justification. Patients travel to our JVC clinic from across Dubai for specialist psoriasis care.",
   footer:"Medically reviewed by Lead Consultant Dermatologist, MD, DHA-Licensed · Last updated July 2026"
 };
+
 export const psoriasisUnderstanding = {
   treatment: {
     label: "UNDERSTANDING PSORIASIS",
@@ -181,6 +182,7 @@ export const psoriasisPatientVoices = {
     }
   ]
 };
+
 export const psoriasisTypes = {
   bgColor: "bg-white",
   cardBg: "bg-[#F5F0E8]",
@@ -263,6 +265,7 @@ export const psoriasisTypes = {
   ],
   footer: 'Your specific psoriasis may combine features of multiple types — <a href="/book" class="text-[#C9A55A] hover:underline">comprehensive assessment identifies your situation</a>'
 };
+
 export const psoriasisExpectations = {
   bgColor: "bg-white",
   cardBg: "bg-[#F5F0E8]",
@@ -271,7 +274,6 @@ export const psoriasisExpectations = {
   title: "How psoriasis treatment progresses over time.",
   intro:
     "Modern treatment has transformed psoriasis outcomes. Understanding realistic timelines and sustained management guides commitment to effective treatment.",
-
   phases: [
     {
       phaseNumber: "01",
@@ -344,6 +346,7 @@ export const psoriasisTeam = {
     }
   ]
 };
+
 export const psoriasisPricing = {
   bgColor: "bg-[#F5F0E8]",
   label: "TRANSPARENT PRICING",
@@ -362,7 +365,7 @@ export const psoriasisPricing = {
     { name: "Comprehensive 6-month psoriasis management programme", price: "From AED [X]" },
     { name: "Comprehensive 12-month programme with systemic support", price: "From AED [X]" }
   ],
-  insuranceText: "Medical psoriasis treatment is covered by most Dubai insurance plans with appropriate medical justification. Biologic treatments often require prior authorisation. We are direct-billing partners with Daman, AXA, Allianz, Oman Insurance, Now Health, Bupa, and MetLife. WhatsApp your insurance card before booking for specific coverage discussion including biologic coverage.",
+  insuranceText: "Medical psoriasis treatment is covered by most Dubai insurance plans with appropriate medical justification. Biologic treatments often require prior authorisation. We are direct-billing partners with Daman, AXA, Allianz, Oman Insurance, Now Health, Bupa, and MetLife. <a href='https://wa.me/971555867466?text=Hello%20Vedara%20Care,%20I%20would%20like%20to%20confirm%20my%20insurance%20coverage%20for%20Psoriasis%20treatment.' target='_blank' rel='noopener noreferrer' class='text-[#C9A55A] hover:text-[#B8963E] font-medium transition-colors underline'> WhatsApp your insurance card </a>before booking for specific coverage discussion including biologic coverage.",
   insurances: ["Daman", "AXA", "Allianz", "Oman Insurance", "Now Health", "Bupa", "MetLife"]
 };
 export const psoriasisLocation = {
@@ -487,7 +490,7 @@ export const psoriasisFaqs = {
     },
     {
       question: "Will insurance cover my psoriasis treatment?",
-      answer: "Most Dubai insurance plans cover medical psoriasis treatment with appropriate justification. Biologic treatments — highly effective but substantial cost — often require prior authorisation. Coverage varies by insurance plan and specific biologic. We are direct-billing partners with seven major insurers and support patients through authorisation processes. WhatsApp your insurance card before booking for specific coverage discussion."
+      answer: "Most Dubai insurance plans cover medical psoriasis treatment with appropriate justification. Biologic treatments — highly effective but substantial cost — often require prior authorisation. Coverage varies by insurance plan and specific biologic. We are direct-billing partners with seven major insurers and support patients through authorisation processes. <a href='https://wa.me/971555867466?text=Hello%20Vedara%20Care,%20I%20would%20like%20to%20confirm%20my%20insurance%20coverage%20for%20Psoriasis%20treatment.' target='_blank' rel='noopener noreferrer' class='text-[#C9A55A] hover:text-[#B8963E] font-medium transition-colors underline'> WhatsApp your insurance card</a> before booking for specific coverage discussion."
     },
     {
       question: "Are topical steroids safe for long-term use in psoriasis?",

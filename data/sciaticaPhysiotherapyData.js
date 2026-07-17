@@ -8,6 +8,7 @@ export const sciaticaPhysioHero = {
   title: "Physiotherapy for sciatica in Dubai. Most sciatica resolves without surgery.",
   description: "Specialist sciatica physiotherapy at our Jumeirah Village Circle (JVC) clinic, walking distance from Circle Mall. DPT-qualified physiotherapists with specific McKenzie method expertise for sciatica from disc herniation, disc bulges, piriformis syndrome, and spinal stenosis. Most sciatica patients respond to evidence-based physiotherapy without requiring injections or surgery.",
   primaryCTA: "Book Sciatica Assessment",
+  primaryCTAHref: "/book",
   secondaryCTA: "Read About Sciatica",
   trustSignals: [
     "McKenzie method certified",
@@ -59,7 +60,8 @@ export const sciaticaPhysioReviews = {
     { value: "92%", label: "report significant improvement within 12 weeks" },
     { value: "<5%", label: "required eventual surgery" }
   ],
-  buttonText: "READ ALL SCIATICA REVIEWS"
+  buttonText: "READ ALL SCIATICA REVIEWS",
+  buttonHref: "https://www.google.com/maps/search/?api=1&query=Vedara+Care+Polyclinic+JVC+Dubai"
 };
 
 export const sciaticaPhysioTeam = {
@@ -212,6 +214,8 @@ export const sciaticaPhysioLocation = {
   title: "Where sciatica physiotherapy happens at Vedara Care JVC.",
   address: "Al Barsha South Fourth, Binghatti Azure, Shop -4,<br/> Jumeraih Village Circle (JVC) Dubai",
   phone: "+971 55 586 7466",
+  whatsapp: "+971 55 586 7466",
+  whatsappMessage: "Hello Vedara Care, I would like to inquire about sciatica physiotherapy and book a consultation.",
   email: "booking@vedaracare.ae",
   hours: {
     monday: "8:30 am to 11:30 pm",
@@ -376,7 +380,7 @@ export const sciaticaPhysioPricing = {
     { name: "Pregnancy sciatica programme (6 sessions)", price: "AED 1,350" },
     { name: "Home physiotherapy for severe acute sciatica", price: "AED 400/session" }
   ],
-  insuranceText: "Sciatica physiotherapy is well covered by most Dubai insurance plans with medical justification (often substantial coverage given the documented disability impact). WhatsApp your insurance card before booking for specific coverage confirmation.",
+  insuranceText: "Sciatica physiotherapy is well covered by most Dubai insurance plans with medical justification (often substantial coverage given the documented disability impact). <a href='https://wa.me/971555867466?text=Hello%20Vedara%20Care,%20I%20would%20like%20to%20confirm%20my%20insurance%20coverage%20for%20sciatica%20physiotherapy.' target='_blank' rel='noopener noreferrer' class='text-[#C9A84C] hover:text-[#B8860B] font-medium transition-colors underline'>WhatsApp your insurance card before booking for specific coverage confirmation</a>.",
   insurances: ["Daman", "AXA", "Allianz", "Oman Insurance", "Now Health", "Bupa", "MetLife"]
 };
 

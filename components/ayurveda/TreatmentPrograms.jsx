@@ -4,7 +4,7 @@ import { Check } from 'lucide-react';
 const TreatmentPrograms = ({
   bgColor = "bg-white",
   cardBg = "rgb(250, 248, 245)",
-  buttonBg = "rgba(79, 216, 102, 1)",
+  buttonBg = "#25D366",
   buttonText = "Book Assessment",
   label = "",
   title = "",

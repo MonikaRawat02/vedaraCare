@@ -8,7 +8,9 @@ export const backPainPhysioHero = {
   title: "Physiotherapy for back pain in JVC. Evidence-based protocols. DPT-qualified specialists.",
   description: "Specialised physiotherapy for back pain at our Jumeirah Village Circle (JVC) clinic, walking distance from Circle Mall. DPT-qualified physiotherapists using evidence-based protocols — manual therapy, McKenzie method, dry needling, motor control exercise, modern modalities. Acute back pain, chronic back pain, sciatica, mechanical patterns, post-imaging concerns. Same-week appointments. Same-day for severe acute pain. Insurance direct-billing.",
   primaryCTA: "Book Back Pain Assessment",
+  primaryCTAHref: "/book",
   secondaryCTA: "WhatsApp Us",
+  secondaryCTAHref: "https://wa.me/971555867466?text=Hello%20Vedara%20Care,%20I%20would%20like%20to%20inquire%20about%20back%20pain%20physiotherapy%20and%20book%20a%20consultation.",
   trustSignals: [
     "DPT-qualified physiotherapists",
     "Evidence-based protocols",
@@ -174,7 +176,8 @@ export const backPainPhysioReviews = {
     { value: "600+", label: "back pain patients" },
     { value: "87%", label: "reported significant improvement" }
   ],
-  buttonText: "Read All Back Pain Reviews"
+  buttonText: "Read All Back Pain Reviews",
+  buttonHref: "https://www.google.com/maps/search/?api=1&query=Vedara+Care+Polyclinic+JVC+Dubai"
 };
 
 export const backPainPhysioTeam = {
@@ -236,7 +239,7 @@ answer: 'This page is for patients who specifically want evidence-based physioth
 },
 {
 question: "Can I get a same-day appointment for severe back pain?",
-answer: "Yes — same-day appointments are typically available for severe acute back pain at our JVC clinic. WhatsApp +971 4 200 0000 for fastest response (typically within 15 minutes during business hours), or call +971 4 200 0001 directly. Note: if you have red flag symptoms (bladder/bowel changes, saddle numbness, progressive leg weakness, fever with back pain, severe night pain), A&E evaluation comes first, then physiotherapy follow-up."
+answer: "Yes — same-day appointments are typically available for severe acute back pain at our JVC clinic. WhatsApp +971 55 586 7466 for fastest response (typically within 15 minutes during business hours), or call +971 55 586 7466 directly. Note: if you have red flag symptoms (bladder/bowel changes, saddle numbness, progressive leg weakness, fever with back pain, severe night pain), A&E evaluation comes first, then physiotherapy follow-up."
 },
 {
 question: "Do I need imaging before physiotherapy for back pain?",
@@ -264,7 +267,7 @@ answer: "Our DHA-licensed clinic is in Jumeirah Village Circle (JVC), Dubai — 
 },
 {
 question: "Does insurance cover back pain physiotherapy?",
-answer: "Most Dubai insurance plans cover back pain physiotherapy with medical justification. Coverage typically includes initial sessions; extended programmes may require pre-authorisation. We are direct-billing partners with Daman, AXA, Allianz, Oman Insurance, Now Health, Bupa, and MetLife. WhatsApp your insurance card to +971 4 200 0000 before booking to confirm specific coverage and out-of-pocket cost."
+answer: "Most Dubai insurance plans cover back pain physiotherapy with medical justification. Coverage typically includes initial sessions; extended programmes may require pre-authorisation. We are direct-billing partners with Daman, AXA, Allianz, Oman Insurance, Now Health, Bupa, and MetLife. WhatsApp your insurance card to +971 55 586 7466 before booking to confirm specific coverage and out-of-pocket cost."
 },
 {
 question: "What about chronic back pain that has not responded to other treatment?",
@@ -308,7 +311,7 @@ answer: "Generally we do not recommend concurrent physiotherapy at multiple clin
 },
 {
 question: "How do I book a back pain physiotherapy assessment?",
-answer: "Three ways: (1) WhatsApp +971 4 200 0000 — fastest response, ideal for sending imaging, brief description of your pain, or asking specific questions. (2) Call +971 4 200 0001 — direct booking, available 9 AM to 9 PM seven days a week. (3) Book online through our website. For your first appointment, please bring: any imaging (MRI, X-rays, CT), medical reports, current medication list, insurance card, comfortable clothing for movement assessment, and brief description of your pain history."
+answer: "Three ways: (1) WhatsApp +971 55 586 7466 — fastest response, ideal for sending imaging, brief description of your pain, or asking specific questions. (2) Call +971 55 586 7466 — direct booking, available 9 AM to 9 PM seven days a week. (3) Book online through our website. For your first appointment, please bring: any imaging (MRI, X-rays, CT), medical reports, current medication list, insurance card, comfortable clothing for movement assessment, and brief description of your pain history."
 }
 
   ]
@@ -320,6 +323,8 @@ export const backPainPhysioLocation = {
   title: "Where back pain physiotherapy happens at Vedara Care JVC.",
   address: "Al Barsha South Fourth, Binghatti Azure, Shop -4,<br/> Jumeraih Village Circle (JVC) Dubai",
   phone: "+971 55 586 7466",
+  whatsapp: "+971 55 586 7466",
+  whatsappMessage: "Hello Vedara Care, I would like to inquire about back pain physiotherapy and book a consultation.",
   email: "booking@vedaracare.ae",
   hours: {
     monday: " 8:30 am to 11:30 pm",
@@ -459,7 +464,7 @@ export const backPainPhysioAcuteAndPricing = {
     label: "ACUTE BACK PAIN CARE",
     title: "Same-day appointments for severe acute back pain.",
     description1: "Severe acute back pain — the kind that arrives suddenly and makes normal activity impossible — is one of the most distressing experiences. Early appropriate treatment substantially improves recovery time.",
-    description2: "Same-day or next-day appointments are typically available for severe acute back pain at our JVC clinic. WhatsApp +971 4 200 0000 for fastest response — typically within 15 minutes during business hours. For very severe acute presentations, call +971 4 200 0001 for immediate triage.",
+    description2: "Same-day or next-day appointments are typically available for severe acute back pain at our JVC clinic. WhatsApp +971 55 586 7466 for fastest response — typically within 15 minutes during business hours. For very severe acute presentations, call +971 55 586 7466 for immediate triage.",
     description3: "What we provide for severe acute back pain: immediate assessment to identify pattern and rule out red flags, initial manual therapy for pain modulation, education about acute back pain recovery, activity modification guidance, pain management strategies, scheduling for the structured recovery programme.",
     redFlagsTitle: "RED FLAGS — A&E FIRST",
     redFlagsDescription: "Before booking physiotherapy, contact A&E if you have:",
@@ -474,9 +479,9 @@ export const backPainPhysioAcuteAndPricing = {
     ],
     nonRedFlagsTitle: "For severe acute pain without red flags:",
     nonRedFlagsPoints: [
-      "WhatsApp +971 4 200 0000",
+      "WhatsApp +971 55 586 7466",
       "Same-day appointments typical",
-      "Call +971 4 200 0001 for immediate triage"
+      "Call +971 55 586 7466 for immediate triage"
     ],
     buttonText: "WhatsApp for Same-Day"
   },
@@ -495,7 +500,7 @@ export const backPainPhysioAcuteAndPricing = {
       { name: "Home physiotherapy session (when clinic travel impractical)", price: "AED 400" },
       { name: "Workplace ergonomic assessment (optional)", price: "AED 550" }
     ],
-    insuranceText: "Insurance direct-billing with seven major insurers. Back pain physiotherapy is well-covered by most Dubai insurance plans with medical justification. WhatsApp your insurance card to +971 4 200 0000 before booking for specific coverage confirmation.",
+    insuranceText: "Insurance direct-billing with seven major insurers. Back pain physiotherapy is well-covered by most Dubai insurance plans with medical justification. <a href='https://wa.me/971555867466?text=Hello%20Vedara%20Care,%20I%20would%20like%20to%20confirm%20my%20insurance%20coverage%20for%20back%20pain%20physiotherapy.' target='_blank' rel='noopener noreferrer' class='text-[#C9A55A] hover:text-[#B8963E] font-medium transition-colors underline'>WhatsApp your insurance card before booking for specific coverage confirmation</a>.",
     insurances: ["Daman", "AXA", "Allianz", "Oman Insurance", "Now Health", "Bupa", "MetLife"]
   }
 };

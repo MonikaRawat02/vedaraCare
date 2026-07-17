@@ -4,67 +4,83 @@ import { Phone, MessageCircle, Globe, Menu, X, Calendar, ChevronDown } from 'luc
 
 
 const AYURVEDA_PAGES = [
-  { href: '/ayurveda-clinic-jvc/', label: 'Ayurveda Clinic in JVC' },
+  { href: '/ayurveda-dubai', label: 'Ayurveda in Dubai' },
+  { href: '/ayurveda-clinic-jvc', label: 'Ayurveda Clinic in JVC' },
+];
+const AYURVEDA_CONDITIONS = [
+  { href: '/conditions/arthritis-ayurveda-dubai', label: 'Arthritis (Ayurveda)' },
+  { href: '/conditions/back-pain-ayurveda-dubai', label: 'Back Pain (Ayurveda)' },
+  { href: '/conditions/diabetes-ayurveda-dubai', label: 'Diabetes (Ayurveda)' },
+  { href: '/conditions/hair-loss-ayurveda-dubai', label: 'Hair Loss (Ayurveda)' },
+  { href: '/conditions/ibs-ayurveda-dubai', label: 'IBS (Ayurveda)' },
+  { href: '/conditions/migraine-ayurveda-dubai', label: 'Migraine (Ayurveda)' },
+  { href: '/conditions/pcos-ayurveda-dubai', label: 'PCOS (Ayurveda)' },
+  { href: '/conditions/postnatal-ayurveda-dubai', label: 'Postnatal Care (Ayurveda)' },
+  { href: '/conditions/skin-ayurveda-dubai', label: 'Skin Conditions (Ayurveda)' },
+  { href: '/conditions/stress-anxiety-ayurveda-dubai', label: 'Stress & Anxiety (Ayurveda)' },
+  { href: '/conditions/thyroid-ayurveda-dubai', label: 'Thyroid (Ayurveda)' },
+  { href: '/conditions/weight-loss-ayurveda-dubai', label: 'Weight Loss (Ayurveda)' },
+];
+const AYURVEDA_TREATMENTS = [
+  { href: '/treatments/abhyanga-dubai', label: 'Abhyanga' },
+  { href: '/treatments/ayurvedic-massage-jvc', label: 'Ayurvedic Massage' },
+  { href: '/treatments/kativasti-dubai', label: 'Kativasti' },
+  { href: '/treatments/njavarakizhi-dubai', label: 'Njavarakizhi' },
+  { href: '/treatments/panchakarma-dubai', label: 'Panchakarma' },
+  { href: '/treatments/panchakarma-jvc', label: 'Panchakarma in JVC' },
+  { href: '/treatments/shirodhara-dubai', label: 'Shirodhara' },
 ];
 // Data for dropdown menus
 const PHYSIOTHERAPY_PAGES = [
+  { href: '/physiotherapy-dubai', label: 'Physiotherapy in Dubai' },
   { href: '/physiotherapy-jvc', label: 'Physiotherapy in JVC' },
-  { href: '/physiotherapy/post-surgery-rehab-dubai/', label: 'Post-Surgery Rehab' },
-  { href: '/physiotherapy/neurological-dubai', label: 'Neurological Rehab' },
-  { href: '/physiotherapy/pediatric-dubai', label: 'Pediatric' },
-  { href: '/physiotherapy/sports-injury-jvc', label: 'Sports Injury' },
 ];
-
-const TREATMENTS_PAGES = [
-  {href: '/treatments/prp-hair-dubai/', label: 'Hair-PRP' },
-  {href:'/treatments/chemical-peel-dubai/',label: 'Chemical-Peel'},
-  { href: '/treatments/manual-therapy-dubai/', label: 'Manual Therapy' },
-  {href: '/treatments/skin-rejuvenation-jvc/', label: 'Skin Rejuvenation'},
-  { href: '/treatments/cupping-therapy-dubai/', label: 'Cupping Therapy' },
-  { href: '/treatments/panchakarma-dubai/', label: 'Panchakarma' },
-  { href: '/treatments/ayurvedic-massage-jvc/', label: 'Ayurvedic Massage' },
-  { href: '/treatments/shirodhara-dubai/', label: 'Shirodhara' },
-  { href: '/treatments/njavarakizhi-dubai/', label: 'Njavarakizhi' },
-  { href: '/treatments/abhyanga-dubai/', label: 'Abhyanga' },
-  { href: '/treatments/kativasti-dubai/', label: 'Kativasti' },
-  { href: '/treatments/panchakarma-jvc/', label: 'Panchakarma in JVC' },
+const PHYSIOTHERAPY_SPECIALITIES = [
+  { href: '/physiotherapy/neurological-dubai', label: 'Neurological Physiotherapy' },
+  { href: '/physiotherapy/pediatric-dubai', label: 'Pediatric Physiotherapy' },
+  { href: '/physiotherapy/post-surgery-rehab-dubai', label: 'Post-Surgery Rehab' },
+  { href: '/physiotherapy/sports-injury-jvc', label: 'Sports Injury Physiotherapy' },
 ];
-
 const PHYSIOTHERAPY_CONDITIONS = [
   { href: '/conditions/back-pain-physiotherapy-jvc', label: 'Back Pain' },
-  { href: '/conditions/sciatica-physiotherapy-dubai', label: 'Sciatica' },
-  { href: '/conditions/neck-pain-physiotherapy-jvc', label: 'Neck Pain' },
-  { href: '/conditions/knee-pain-physiotherapy-dubai', label: 'Knee Pain' },
-  { href: '/conditions/shoulder-pain-physiotherapy-dubai', label: 'Shoulder Pain' },
   { href: '/conditions/frozen-shoulder-dubai', label: 'Frozen Shoulder' },
-  { href: '/conditions/stroke-rehab-dubai', label: 'Post-Stroke Rehabilitation' },
-  { href: '/conditions/tennis-elbow-dubai', label: 'Tennis Elbow' },  
+  { href: '/conditions/knee-pain-physiotherapy-dubai', label: 'Knee Pain' },
+  { href: '/conditions/neck-pain-physiotherapy-jvc', label: 'Neck Pain' },
   { href: '/conditions/pelvic-floor-physiotherapy-dubai', label: 'Pelvic Floor Physiotherapy' },
+  { href: '/conditions/sciatica-physiotherapy-dubai', label: 'Sciatica' },
+  { href: '/conditions/shoulder-pain-physiotherapy-dubai', label: 'Shoulder Pain' },
+  { href: '/conditions/stroke-rehab-dubai', label: 'Post-Stroke Rehab' },
+  { href: '/conditions/tennis-elbow-dubai', label: 'Tennis Elbow' },
+];
+const PHYSIOTHERAPY_TREATMENTS = [
+  { href: '/treatments/manual-therapy-dubai', label: 'Manual Therapy' },
 ];
 
+const WELLNESS_TREATMENTS = [
+  { href: '/treatments/cupping-therapy-dubai', label: 'Cupping Therapy' },
+];
+
+const DERMATOLOGY_PAGES = [
+  { href: '/dermatology-clinic-jvc', label: 'Dermatology Clinic in JVC' },
+  { href: '/skin-clinic-jvc', label: 'Skin Clinic in JVC' },
+];
 const DERMATOLOGY_CONDITIONS = [
+  { href: '/conditions/acne-scars-dubai', label: 'Acne Scars Treatment' },
   { href: '/conditions/acne-treatment-jvc', label: 'Acne Treatment' },
-  { href: '/conditions/acne-scars-dubai/', label: 'Acne-Scars Treatment' },
   { href: '/conditions/eczema-treatment-dubai', label: 'Eczema Treatment' },
   { href: '/conditions/hair-loss-treatment-jvc', label: 'Hair Loss Treatment' },
-  { href: '/conditions/pigmentation-treatment-dubai', label: 'Pigmentation Treatment' },
   { href: '/conditions/melasma-treatment-dubai', label: 'Melasma Treatment' },
+  { href: '/conditions/pigmentation-treatment-dubai', label: 'Pigmentation Treatment' },
   { href: '/conditions/psoriasis-treatment-dubai', label: 'Psoriasis Treatment' },
 ];
+const DERMATOLOGY_TREATMENTS = [
+  { href: '/treatments/chemical-peel-dubai', label: 'Chemical Peel' },
+  { href: '/treatments/prp-hair-dubai', label: 'PRP Hair Treatment' },
+  { href: '/treatments/skin-rejuvenation-jvc', label: 'Skin Rejuvenation' },
+];
 
-const AYURVEDA_CONDITIONS = [
-  { href: '/conditions/back-pain-ayurveda-dubai', label: 'Back Pain (Ayurveda)' },
-  { href: '/conditions/arthritis-ayurveda-dubai', label: 'Arthritis' },
-  { href: '/conditions/pcos-ayurveda-dubai', label: 'PCOS' },
-  { href: '/conditions/diabetes-ayurveda-dubai', label: 'Diabetes' },
-  { href: '/conditions/thyroid-ayurveda-dubai', label: 'Thyroid' },
-  { href: '/conditions/ibs-ayurveda-dubai', label: 'IBS' },
-  { href: '/conditions/migraine-ayurveda-dubai', label: 'Migraine' },
-  { href: '/conditions/stress-anxiety-ayurveda-dubai', label: 'Stress & Anxiety' },
-  { href: '/conditions/skin-ayurveda-dubai', label: 'Skin Conditions' },
-  { href: '/conditions/hair-loss-ayurveda-dubai', label: 'Hair Loss' },
-  { href: '/conditions/weight-loss-ayurveda-dubai', label: 'Weight Loss' },
-  { href: '/conditions/postnatal-ayurveda-dubai', label: 'Postnatal Care' },
+const HOME_HEALTHCARE_PAGES = [
+  { href: '/physiotherapy-at-home-dubai', label: 'Physiotherapy at Home' },
 ];
 
 // Custom scrollbar hide styles
@@ -76,15 +92,21 @@ const Header = () => {
   const [isAyurvedaDropdownOpen, setIsAyurvedaDropdownOpen] = useState(false);
   const [isPhysioDropdownOpen, setIsPhysioDropdownOpen] = useState(false);
   const [isConditionsDropdownOpen, setIsConditionsDropdownOpen] = useState(false);
-  const [isTreatmentsDropdownOpen, setIsTreatmentsDropdownOpen] = useState(false);
+  const [isWellnessDropdownOpen, setIsWellnessDropdownOpen] = useState(false);
+  const [isDermatologyDropdownOpen, setIsDermatologyDropdownOpen] = useState(false);
+  const [isHomeHealthcareDropdownOpen, setIsHomeHealthcareDropdownOpen] = useState(false);
   const [isMobileAyurvedaOpen, setIsMobileAyurvedaOpen] = useState(false);
   const [isMobilePhysioOpen, setIsMobilePhysioOpen] = useState(false);
   const [isMobileConditionsOpen, setIsMobileConditionsOpen] = useState(false);
-  const [isMobileTreatmentsOpen, setIsMobileTreatmentsOpen] = useState(false);
+  const [isMobileWellnessOpen, setIsMobileWellnessOpen] = useState(false);
+  const [isMobileDermatologyOpen, setIsMobileDermatologyOpen] = useState(false);
+  const [isMobileHomeHealthcareOpen, setIsMobileHomeHealthcareOpen] = useState(false);
   const ayurvedaDropdownRef = useRef(null);
   const physioDropdownRef = useRef(null);
   const conditionsDropdownRef = useRef(null);
-  const treatmentsDropdownRef = useRef(null);
+  const wellnessDropdownRef = useRef(null);
+  const dermatologyDropdownRef = useRef(null);
+  const homeHealthcareDropdownRef = useRef(null);
 
   useEffect(() => {
     const handleScroll = () => setShowTopBar(window.scrollY <= 50);
@@ -96,15 +118,21 @@ const Header = () => {
     const handleClickOutside = (event) => {
       if ( ayurvedaDropdownRef.current &&  !ayurvedaDropdownRef.current.contains(event.target)) {
          setIsAyurvedaDropdownOpen(false);
-        }
+      }
       if (physioDropdownRef.current && !physioDropdownRef.current.contains(event.target)) {
         setIsPhysioDropdownOpen(false);
       }
       if (conditionsDropdownRef.current && !conditionsDropdownRef.current.contains(event.target)) {
         setIsConditionsDropdownOpen(false);
       }
-      if (treatmentsDropdownRef.current && !treatmentsDropdownRef.current.contains(event.target)) {
-        setIsTreatmentsDropdownOpen(false);
+      if (wellnessDropdownRef.current && !wellnessDropdownRef.current.contains(event.target)) {
+        setIsWellnessDropdownOpen(false);
+      }
+      if (dermatologyDropdownRef.current && !dermatologyDropdownRef.current.contains(event.target)) {
+        setIsDermatologyDropdownOpen(false);
+      }
+      if (homeHealthcareDropdownRef.current && !homeHealthcareDropdownRef.current.contains(event.target)) {
+        setIsHomeHealthcareDropdownOpen(false);
       }
     };
     document.addEventListener('mousedown', handleClickOutside);
@@ -153,7 +181,7 @@ const Header = () => {
           </Link>
 
           {/* Desktop Nav Links */}
-          <div className="hidden xl:flex items-center gap-8">
+          <div className="hidden xl:flex items-center gap-5">
                     <div
             className="relative"
             ref={ayurvedaDropdownRef}
@@ -183,17 +211,41 @@ const Header = () => {
                   : "opacity-0 invisible -translate-y-1"
               }`}
             >
-              <div className="bg-white rounded-lg shadow-lg border border-gray-100 py-2 min-w-[240px]">
-                {AYURVEDA_PAGES.map((page) => (
-                  <Link
-                    key={page.href}
-                    href={page.href}
-                    className="block px-4 py-2.5 text-[13px] font-sans text-[#4A4A4A] hover:text-[#184C3A] hover:bg-gray-50 transition-colors"
-                  >
-                    {page.label}
-                  </Link>
-                ))}
-              </div>
+              <div className={`bg-white rounded-lg shadow-lg border border-gray-100 py-2 min-w-[240px] max-h-[400px] overflow-y-auto ${scrollbarHide}`}>
+                  {AYURVEDA_PAGES.map((page) => (
+                    <Link
+                      key={page.href}
+                      href={page.href}
+                      className="block px-4 py-2.5 text-[13px] font-sans text-[#4A4A4A] hover:text-[#184C3A] hover:bg-gray-50 transition-colors"
+                    >
+                      {page.label}
+                    </Link>
+                  ))}
+                  <div className="px-4 py-2 border-t border-gray-100 mt-1">
+                    <span className="text-[12px] font-semibold uppercase tracking-wider text-[#C9A84C]">Ayurveda Conditions</span>
+                  </div>
+                  {AYURVEDA_CONDITIONS.map((page) => (
+                    <Link
+                      key={page.href}
+                      href={page.href}
+                      className="block px-4 py-2.5 text-[13px] font-sans text-[#4A4A4A] hover:text-[#184C3A] hover:bg-gray-50 transition-colors"
+                    >
+                      {page.label}
+                    </Link>
+                  ))}
+                  <div className="px-4 py-2 border-t border-gray-100 mt-1">
+                    <span className="text-[12px] font-semibold uppercase tracking-wider text-[#C9A84C]">Ayurveda Treatments</span>
+                  </div>
+                  {AYURVEDA_TREATMENTS.map((page) => (
+                    <Link
+                      key={page.href}
+                      href={page.href}
+                      className="block px-4 py-2.5 text-[13px] font-sans text-[#4A4A4A] hover:text-[#184C3A] hover:bg-gray-50 transition-colors"
+                    >
+                      {page.label}
+                    </Link>
+                  ))}
+                </div>
             </div>
           </div>
             
@@ -214,7 +266,7 @@ const Header = () => {
               
               {/* Dropdown Menu */}
               <div className={`absolute top-full left-0 pt-2 transition-all duration-200 ${isPhysioDropdownOpen ? 'opacity-100 visible translate-y-0' : 'opacity-0 invisible -translate-y-1'}`}>
-                <div className="bg-white rounded-lg shadow-lg border border-gray-100 py-2 min-w-[240px]">
+                <div className={`bg-white rounded-lg shadow-lg border border-gray-100 py-2 min-w-[240px] max-h-[400px] overflow-y-auto ${scrollbarHide}`}>
                   {PHYSIOTHERAPY_PAGES.map((page) => (
                   <Link 
                     key={page.href} 
@@ -224,32 +276,10 @@ const Header = () => {
                     {page.label}
                   </Link>
                 ))}
-                </div>
-              </div>
-            </div>
-
-            {/* Conditions Dropdown */}
-            <div 
-              className="relative" 
-              ref={conditionsDropdownRef}
-              onMouseEnter={() => setIsConditionsDropdownOpen(true)}
-              onMouseLeave={() => setIsConditionsDropdownOpen(false)}
-            >
-              <button 
-                className="flex items-center gap-1 text-[14px] font-sans font-medium text-[#1A1A1A] hover:text-[#184C3A] transition-colors"
-                onClick={() => setIsConditionsDropdownOpen(!isConditionsDropdownOpen)}
-              >
-                <span className="hover:text-[#184C3A]">Conditions</span>
-                <ChevronDown size={14} className={`transition-transform duration-200 ${isConditionsDropdownOpen ? 'rotate-180' : ''}`} />
-              </button>
-              
-              {/* Dropdown Menu */}
-              <div className={`absolute top-full left-0 pt-2 transition-all duration-200 ${isConditionsDropdownOpen ? 'opacity-100 visible translate-y-0' : 'opacity-0 invisible -translate-y-1'}`}>
-                <div className={`bg-white rounded-lg shadow-lg border border-gray-100 py-2 min-w-[240px] max-h-[400px] overflow-y-auto ${scrollbarHide}`}>
-                  <div className="px-4 py-2 border-b border-gray-100">
-                    <span className="text-[12px] font-semibold uppercase tracking-wider text-[#C9A84C]">Dermatology Conditions</span>
+                  <div className="px-4 py-2 border-t border-gray-100 mt-1">
+                    <span className="text-[12px] font-semibold uppercase tracking-wider text-[#C9A84C]">Physiotherapy Specialities</span>
                   </div>
-                  {DERMATOLOGY_CONDITIONS.map((page) => (
+                  {PHYSIOTHERAPY_SPECIALITIES.map((page) => (
                     <Link 
                       key={page.href} 
                       href={page.href} 
@@ -258,8 +288,7 @@ const Header = () => {
                       {page.label}
                     </Link>
                   ))}
-                  
-                  <div className="px-4 py-2 border-t border-b border-gray-100 mt-1">
+                  <div className="px-4 py-2 border-t border-gray-100 mt-1">
                     <span className="text-[12px] font-semibold uppercase tracking-wider text-[#C9A84C]">Physiotherapy Conditions</span>
                   </div>
                   {PHYSIOTHERAPY_CONDITIONS.map((page) => (
@@ -271,11 +300,10 @@ const Header = () => {
                       {page.label}
                     </Link>
                   ))}
-                  
-                  <div className="px-4 py-2 border-t border-b border-gray-100 mt-1">
-                    <span className="text-[12px] font-semibold uppercase tracking-wider text-[#C9A84C]">Ayurveda Conditions</span>
+                  <div className="px-4 py-2 border-t border-gray-100 mt-1">
+                    <span className="text-[12px] font-semibold uppercase tracking-wider text-[#C9A84C]">Physiotherapy Treatments</span>
                   </div>
-                  {AYURVEDA_CONDITIONS.map((page) => (
+                  {PHYSIOTHERAPY_TREATMENTS.map((page) => (
                     <Link 
                       key={page.href} 
                       href={page.href} 
@@ -288,27 +316,80 @@ const Header = () => {
               </div>
             </div>
 
-            <Link href="/dermatology-clinic-jvc" className="text-[14px] font-sans font-medium text-[#1A1A1A] hover:text-[#184C3A] transition-colors">Dermatology</Link>
-
-            {/* Treatments Dropdown */}
+            {/* Dermatology Dropdown */}
             <div 
               className="relative" 
-              ref={treatmentsDropdownRef}
-              onMouseEnter={() => setIsTreatmentsDropdownOpen(true)}
-              onMouseLeave={() => setIsTreatmentsDropdownOpen(false)}
+              ref={dermatologyDropdownRef}
+              onMouseEnter={() => setIsDermatologyDropdownOpen(true)}
+              onMouseLeave={() => setIsDermatologyDropdownOpen(false)}
             >
               <button 
                 className="flex items-center gap-1 text-[14px] font-sans font-medium text-[#1A1A1A] hover:text-[#184C3A] transition-colors"
-                onClick={() => setIsTreatmentsDropdownOpen(!isTreatmentsDropdownOpen)}
+                onClick={() => setIsDermatologyDropdownOpen(!isDermatologyDropdownOpen)}
               >
-                <span className="hover:text-[#184C3A]">Treatments</span>
-                <ChevronDown size={14} className={`transition-transform duration-200 ${isTreatmentsDropdownOpen ? 'rotate-180' : ''}`} />
+                <Link href="/dermatology-clinic-jvc" className="hover:text-[#184C3A]">Dermatology</Link>
+                <ChevronDown size={14} className={`transition-transform duration-200 ${isDermatologyDropdownOpen ? 'rotate-180' : ''}`} />
               </button>
               
               {/* Dropdown Menu */}
-              <div className={`absolute top-full left-0 pt-2 transition-all duration-200 ${isTreatmentsDropdownOpen ? 'opacity-100 visible translate-y-0' : 'opacity-0 invisible -translate-y-1'}`}>
+              <div className={`absolute top-full left-0 pt-2 transition-all duration-200 ${isDermatologyDropdownOpen ? 'opacity-100 visible translate-y-0' : 'opacity-0 invisible -translate-y-1'}`}>
+                <div className={`bg-white rounded-lg shadow-lg border border-gray-100 py-2 min-w-[240px] max-h-[400px] overflow-y-auto ${scrollbarHide}`}>
+                  {DERMATOLOGY_PAGES.map((page) => (
+                  <Link 
+                    key={page.href} 
+                    href={page.href} 
+                    className="block px-4 py-2.5 text-[13px] font-sans text-[#4A4A4A] hover:text-[#184C3A] hover:bg-gray-50 transition-colors"
+                  >
+                    {page.label}
+                  </Link>
+                ))}
+                  <div className="px-4 py-2 border-t border-gray-100 mt-1">
+                    <span className="text-[12px] font-semibold uppercase tracking-wider text-[#C9A84C]">Dermatology Conditions</span>
+                  </div>
+                  {DERMATOLOGY_CONDITIONS.map((page) => (
+                    <Link 
+                      key={page.href} 
+                      href={page.href} 
+                      className="block px-4 py-2.5 text-[13px] font-sans text-[#4A4A4A] hover:text-[#184C3A] hover:bg-gray-50 transition-colors"
+                    >
+                      {page.label}
+                    </Link>
+                  ))}
+                  <div className="px-4 py-2 border-t border-gray-100 mt-1">
+                    <span className="text-[12px] font-semibold uppercase tracking-wider text-[#C9A84C]">Dermatology Treatments</span>
+                  </div>
+                  {DERMATOLOGY_TREATMENTS.map((page) => (
+                    <Link 
+                      key={page.href} 
+                      href={page.href} 
+                      className="block px-4 py-2.5 text-[13px] font-sans text-[#4A4A4A] hover:text-[#184C3A] hover:bg-gray-50 transition-colors"
+                    >
+                      {page.label}
+                    </Link>
+                  ))}
+                </div>
+              </div>
+            </div>
+
+            {/* Wellness Dropdown */}
+            <div 
+              className="relative" 
+              ref={wellnessDropdownRef}
+              onMouseEnter={() => setIsWellnessDropdownOpen(true)}
+              onMouseLeave={() => setIsWellnessDropdownOpen(false)}
+            >
+              <button 
+                className="flex items-center gap-1 text-[14px] font-sans font-medium text-[#1A1A1A] hover:text-[#184C3A] transition-colors"
+                onClick={() => setIsWellnessDropdownOpen(!isWellnessDropdownOpen)}
+              >
+                <span className="hover:text-[#184C3A]">Wellness</span>
+                <ChevronDown size={14} className={`transition-transform duration-200 ${isWellnessDropdownOpen ? 'rotate-180' : ''}`} />
+              </button>
+              
+              {/* Dropdown Menu */}
+              <div className={`absolute top-full left-0 pt-2 transition-all duration-200 ${isWellnessDropdownOpen ? 'opacity-100 visible translate-y-0' : 'opacity-0 invisible -translate-y-1'}`}>
                 <div className="bg-white rounded-lg shadow-lg border border-gray-100 py-2 min-w-[240px]">
-                  {TREATMENTS_PAGES.map((page) => (
+                  {WELLNESS_TREATMENTS.map((page) => (
                   <Link 
                     key={page.href} 
                     href={page.href} 
@@ -321,8 +402,36 @@ const Header = () => {
               </div>
             </div>
 
-          
-            <Link href="/services/wellness" className="text-[14px] font-sans font-medium text-[#1A1A1A] hover:text-[#184C3A] transition-colors">Wellness</Link>
+            {/* Home Healthcare Dropdown */}
+            <div 
+              className="relative" 
+              ref={homeHealthcareDropdownRef}
+              onMouseEnter={() => setIsHomeHealthcareDropdownOpen(true)}
+              onMouseLeave={() => setIsHomeHealthcareDropdownOpen(false)}
+            >
+              <button 
+                className="flex items-center gap-1 text-[14px] font-sans font-medium text-[#1A1A1A] hover:text-[#184C3A] transition-colors"
+                onClick={() => setIsHomeHealthcareDropdownOpen(!isHomeHealthcareDropdownOpen)}
+              >
+                <Link href="/physiotherapy-at-home-dubai" className="hover:text-[#184C3A]">Home Healthcare</Link>
+                <ChevronDown size={14} className={`transition-transform duration-200 ${isHomeHealthcareDropdownOpen ? 'rotate-180' : ''}`} />
+              </button>
+              
+              {/* Dropdown Menu */}
+              <div className={`absolute top-full left-0 pt-2 transition-all duration-200 ${isHomeHealthcareDropdownOpen ? 'opacity-100 visible translate-y-0' : 'opacity-0 invisible -translate-y-1'}`}>
+                <div className="bg-white rounded-lg shadow-lg border border-gray-100 py-2 min-w-[240px]">
+                  {HOME_HEALTHCARE_PAGES.map((page) => (
+                  <Link 
+                    key={page.href} 
+                    href={page.href} 
+                    className="block px-4 py-2.5 text-[13px] font-sans text-[#4A4A4A] hover:text-[#184C3A] hover:bg-gray-50 transition-colors"
+                  >
+                    {page.label}
+                  </Link>
+                ))}
+                </div>
+              </div>
+            </div>
             <Link href="/doctors" className="text-[14px] font-sans font-medium text-[#1A1A1A] hover:text-[#184C3A] transition-colors">Doctors</Link>
             <Link href="/about" className="text-[14px] font-sans font-medium text-[#1A1A1A] hover:text-[#184C3A] transition-colors">About</Link>
             <Link href="/blog" className="text-[14px] font-sans font-medium text-[#1A1A1A] hover:text-[#184C3A] transition-colors">Blog</Link>
@@ -389,11 +498,33 @@ const Header = () => {
 
               <div
                 className={`overflow-hidden transition-all duration-200 ${
-                  isMobileAyurvedaOpen ? "max-h-48 mt-2" : "max-h-0"
+                  isMobileAyurvedaOpen ? `max-h-[600px] overflow-y-auto mt-2 ${scrollbarHide}` : "max-h-0"
                 }`}
               >
                 <div className="flex flex-col gap-3 pl-4 border-l-2 border-gray-100">
                   {AYURVEDA_PAGES.map((page) => (
+                    <Link
+                      key={page.href}
+                      href={page.href}
+                      onClick={() => setIsMenuOpen(false)}
+                      className="text-[14px] text-[#4A4A4A] hover:text-[#184C3A]"
+                    >
+                      {page.label}
+                    </Link>
+                  ))}
+                  <span className="text-[12px] font-semibold uppercase tracking-wider text-[#C9A84C] mt-2">Ayurveda Conditions</span>
+                  {AYURVEDA_CONDITIONS.map((page) => (
+                    <Link
+                      key={page.href}
+                      href={page.href}
+                      onClick={() => setIsMenuOpen(false)}
+                      className="text-[14px] text-[#4A4A4A] hover:text-[#184C3A]"
+                    >
+                      {page.label}
+                    </Link>
+                  ))}
+                  <span className="text-[12px] font-semibold uppercase tracking-wider text-[#C9A84C] mt-2">Ayurveda Treatments</span>
+                  {AYURVEDA_TREATMENTS.map((page) => (
                     <Link
                       key={page.href}
                       href={page.href}
@@ -418,70 +549,96 @@ const Header = () => {
                   <ChevronDown size={16} className={`transition-transform duration-200 ${isMobilePhysioOpen ? 'rotate-180' : ''}`} />
                 </button>
               </div>
-              <div className={`overflow-hidden transition-all duration-200 ${isMobilePhysioOpen ? 'max-h-48 mt-2' : 'max-h-0'}`}>
+              <div className={`overflow-hidden transition-all duration-200 ${isMobilePhysioOpen ? `max-h-[600px] overflow-y-auto mt-2 ${scrollbarHide}` : 'max-h-0'}`}>
                 <div className="flex flex-col gap-3 pl-4 border-l-2 border-gray-100">
                   {PHYSIOTHERAPY_PAGES.map((page) => (
                     <Link key={page.href} onClick={() => setIsMenuOpen(false)} href={page.href} className="text-[14px] text-[#4A4A4A] hover:text-[#184C3A]">{page.label}</Link>
                   ))}
+                  <span className="text-[12px] font-semibold uppercase tracking-wider text-[#C9A84C] mt-2">Physiotherapy Specialities</span>
+                  {PHYSIOTHERAPY_SPECIALITIES.map((page) => (
+                    <Link key={page.href} onClick={() => setIsMenuOpen(false)} href={page.href} className="text-[14px] text-[#4A4A4A] hover:text-[#184C3A]">{page.label}</Link>
+                  ))}
+                  <span className="text-[12px] font-semibold uppercase tracking-wider text-[#C9A84C] mt-2">Physiotherapy Conditions</span>
+                  {PHYSIOTHERAPY_CONDITIONS.map((page) => (
+                    <Link key={page.href} onClick={() => setIsMenuOpen(false)} href={page.href} className="text-[14px] text-[#4A4A4A] hover:text-[#184C3A]">{page.label}</Link>
+                  ))}
+                  <span className="text-[12px] font-semibold uppercase tracking-wider text-[#C9A84C] mt-2">Physiotherapy Treatments</span>
+                  {PHYSIOTHERAPY_TREATMENTS.map((page) => (
+                    <Link key={page.href} onClick={() => setIsMenuOpen(false)} href={page.href} className="text-[14px] text-[#4A4A4A] hover:text-[#184C3A]">{page.label}</Link>
+                  ))}
                 </div>
               </div>
             </div>
 
-            {/* Mobile Conditions Accordion */}
+
+
+            {/* Mobile Dermatology Accordion */}
             <div>
               <div className="flex items-center justify-between">
-                <span className="text-[16px] font-medium text-[#1A1A1A]">Conditions</span>
+                <Link href="/dermatology-clinic-jvc" onClick={() => setIsMenuOpen(false)} className="text-[16px] font-medium text-[#1A1A1A] hover:text-[#184C3A]">Dermatology</Link>
                 <button 
-                  onClick={() => setIsMobileConditionsOpen(!isMobileConditionsOpen)}
+                  onClick={() => setIsMobileDermatologyOpen(!isMobileDermatologyOpen)}
                   className="p-1 text-[#4A4A4A]"
                 >
-                  <ChevronDown size={16} className={`transition-transform duration-200 ${isMobileConditionsOpen ? 'rotate-180' : ''}`} />
+                  <ChevronDown size={16} className={`transition-transform duration-200 ${isMobileDermatologyOpen ? 'rotate-180' : ''}`} />
                 </button>
               </div>
-              <div className={`overflow-hidden transition-all duration-200 ${isMobileConditionsOpen ? `max-h-[400px] overflow-y-auto mt-2 ${scrollbarHide}` : 'max-h-0'}`}>
+              <div className={`overflow-hidden transition-all duration-200 ${isMobileDermatologyOpen ? `max-h-[600px] overflow-y-auto mt-2 ${scrollbarHide}` : 'max-h-0'}`}>
                 <div className="flex flex-col gap-3 pl-4 border-l-2 border-gray-100">
+                  {DERMATOLOGY_PAGES.map((page) => (
+                    <Link key={page.href} onClick={() => setIsMenuOpen(false)} href={page.href} className="text-[14px] text-[#4A4A4A] hover:text-[#184C3A]">{page.label}</Link>
+                  ))}
                   <span className="text-[12px] font-semibold uppercase tracking-wider text-[#C9A84C] mt-2">Dermatology Conditions</span>
                   {DERMATOLOGY_CONDITIONS.map((page) => (
                     <Link key={page.href} onClick={() => setIsMenuOpen(false)} href={page.href} className="text-[14px] text-[#4A4A4A] hover:text-[#184C3A]">{page.label}</Link>
                   ))}
-                  
-                  <span className="text-[12px] font-semibold uppercase tracking-wider text-[#C9A84C] mt-4">Physiotherapy Conditions</span>
-                  {PHYSIOTHERAPY_CONDITIONS.map((page) => (
-                    <Link key={page.href} onClick={() => setIsMenuOpen(false)} href={page.href} className="text-[14px] text-[#4A4A4A] hover:text-[#184C3A]">{page.label}</Link>
-                  ))}
-                  
-                  <span className="text-[12px] font-semibold uppercase tracking-wider text-[#C9A84C] mt-4">Ayurveda Conditions</span>
-                  {AYURVEDA_CONDITIONS.map((page) => (
+                  <span className="text-[12px] font-semibold uppercase tracking-wider text-[#C9A84C] mt-2">Dermatology Treatments</span>
+                  {DERMATOLOGY_TREATMENTS.map((page) => (
                     <Link key={page.href} onClick={() => setIsMenuOpen(false)} href={page.href} className="text-[14px] text-[#4A4A4A] hover:text-[#184C3A]">{page.label}</Link>
                   ))}
                 </div>
               </div>
             </div>
 
-            <Link href="/dermatology-clinic-jvc" onClick={() => setIsMenuOpen(false)} className="text-[16px] font-medium text-[#1A1A1A] hover:text-[#184C3A]">Dermatology</Link>
-
-            {/* Mobile Treatments Accordion */}
+            {/* Mobile Wellness Accordion */}
             <div>
               <div className="flex items-center justify-between">
-                <span className="text-[16px] font-medium text-[#1A1A1A]">Treatments</span>
+                <span className="text-[16px] font-medium text-[#1A1A1A]">Wellness</span>
                 <button 
-                  onClick={() => setIsMobileTreatmentsOpen(!isMobileTreatmentsOpen)}
+                  onClick={() => setIsMobileWellnessOpen(!isMobileWellnessOpen)}
                   className="p-1 text-[#4A4A4A]"
                 >
-                  <ChevronDown size={16} className={`transition-transform duration-200 ${isMobileTreatmentsOpen ? 'rotate-180' : ''}`} />
+                  <ChevronDown size={16} className={`transition-transform duration-200 ${isMobileWellnessOpen ? 'rotate-180' : ''}`} />
                 </button>
               </div>
-              <div className={`overflow-hidden transition-all duration-200 ${isMobileTreatmentsOpen ? 'max-h-64 mt-2' : 'max-h-0'}`}>
+              <div className={`overflow-hidden transition-all duration-200 ${isMobileWellnessOpen ? 'max-h-64 mt-2' : 'max-h-0'}`}>
                 <div className="flex flex-col gap-3 pl-4 border-l-2 border-gray-100">
-                  {TREATMENTS_PAGES.map((page) => (
+                  {WELLNESS_TREATMENTS.map((page) => (
                     <Link key={page.href} onClick={() => setIsMenuOpen(false)} href={page.href} className="text-[14px] text-[#4A4A4A] hover:text-[#184C3A]">{page.label}</Link>
                   ))}
                 </div>
               </div>
             </div>
 
-           
-            <Link href="/services/wellness" onClick={() => setIsMenuOpen(false)} className="text-[16px] font-medium text-[#1A1A1A] hover:text-[#184C3A]">Wellness</Link>
+            {/* Mobile Home Healthcare Accordion */}
+            <div>
+              <div className="flex items-center justify-between">
+                <Link href="/physiotherapy-at-home-dubai" onClick={() => setIsMenuOpen(false)} className="text-[16px] font-medium text-[#1A1A1A] hover:text-[#184C3A]">Home Healthcare</Link>
+                <button 
+                  onClick={() => setIsMobileHomeHealthcareOpen(!isMobileHomeHealthcareOpen)}
+                  className="p-1 text-[#4A4A4A]"
+                >
+                  <ChevronDown size={16} className={`transition-transform duration-200 ${isMobileHomeHealthcareOpen ? 'rotate-180' : ''}`} />
+                </button>
+              </div>
+              <div className={`overflow-hidden transition-all duration-200 ${isMobileHomeHealthcareOpen ? 'max-h-64 mt-2' : 'max-h-0'}`}>
+                <div className="flex flex-col gap-3 pl-4 border-l-2 border-gray-100">
+                  {HOME_HEALTHCARE_PAGES.map((page) => (
+                    <Link key={page.href} onClick={() => setIsMenuOpen(false)} href={page.href} className="text-[14px] text-[#4A4A4A] hover:text-[#184C3A]">{page.label}</Link>
+                  ))}
+                </div>
+              </div>
+            </div>
             <Link href="/doctors" onClick={() => setIsMenuOpen(false)} className="text-[16px] font-medium text-[#1A1A1A] hover:text-[#184C3A]">Doctors</Link>
             <Link href="/about" onClick={() => setIsMenuOpen(false)} className="text-[16px] font-medium text-[#1A1A1A] hover:text-[#184C3A]">About</Link>
             <Link href="/blog" onClick={() => setIsMenuOpen(false)} className="text-[16px] font-medium text-[#1A1A1A] hover:text-[#184C3A]">Blog</Link>

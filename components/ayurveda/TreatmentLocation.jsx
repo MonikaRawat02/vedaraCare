@@ -60,10 +60,10 @@ const TreatmentLocation = ({
   return (
     <section className={`${bgColor} py-24 px-6 relative overflow-hidden`}>
       <div className="max-w-7xl mx-auto">
-        <div className="grid lg:grid-cols-12 gap-12">
+        <div className="grid lg:grid-cols-12 gap-12 items-start">
           {/* Map / Image */}
-          <div className="lg:col-span-5">
-            <div className="h-[400px] bg-gray-300 rounded-xl overflow-hidden shadow-lg">
+          <div className="lg:col-span-6">
+            <div className="h-[500px] bg-gray-300 rounded-xl overflow-hidden shadow-lg">
               {mapEmbed ? (
                 <iframe 
                   src={mapEmbed}
@@ -90,7 +90,7 @@ const TreatmentLocation = ({
           </div>
 
           {/* Location Info */}
-          <div className="lg:col-span-7">
+          <div className="lg:col-span-6">
             <div className="text-[#C8975F] text-sm font-semibold tracking-wider mb-3">
               {label}
             </div>

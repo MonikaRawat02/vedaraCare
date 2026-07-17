@@ -223,6 +223,7 @@ export const kneePainReviews = {
   bgColor: "bg-white",
   cardBgColor: "rgb(248, 244, 238)",
   isDarkText: true,
+  buttonHref: "https://www.google.com/maps/search/?api=1&query=Vedara+Care+Polyclinic+JVC+Dubai",
   items: [
     {
       quote: "Patellofemoral pain for two years. Tried multiple things including generic strengthening exercises. Vedara identified specific hip weakness pattern driving my knee issues. Twelve weeks of structured treatment combining manual therapy and specific exercises. Returned to running pain-free. Three years on, still running, no recurrence.",

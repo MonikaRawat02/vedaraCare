@@ -85,7 +85,7 @@ export const tennisElbowSciaticaSection2 = {
     footer:"The treatments that produce the best long-term outcomes for tennis elbow are not the most aggressive — they are the most specific. Loading protocols matched to your tendon's current capacity produce sustainable recovery."
  },
   rightContent: {
-    image: "/images/",
+    image: "/images/tennis-elbow-eccentric-loading-vedara-jvc.webp",
     alt: "Evidence-based tennis elbow treatment with eccentric loading Vedara Care JVC",
     label: "EVIDENCE-BASED PROTOCOLS",
     keyFact: [
@@ -205,7 +205,7 @@ export const tennisElbowMechanism2 = {
   label: "The Approach",
   title: "Evidence-based tennis elbow treatment — what works and what does not.",
   description: "Tennis elbow treatment has evolved substantially. Modern evidence-based protocols produce meaningfully better outcomes than older approaches.",
-  image: "/images/",
+  image: "/images/tennis-elbow-eccentric-loading-vedara-jvc.webp",
   alt: "Evidence-based tennis elbow treatment with eccentric loading Vedara Care JVC",
   imageLeft: true,
   showStats: false,

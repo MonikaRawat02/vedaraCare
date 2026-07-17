@@ -8,7 +8,9 @@ export const neckPainPhysioHero = {
   title: "Physiotherapy for neck pain in JVC. Understanding it, addressing it, preventing it.",
   description: "Most neck pain is mechanical, treatable, and meaningfully responsive to evidence-based physiotherapy. At our Jumeirah Village Circle clinic, our DPT-qualified physiotherapists treat acute and chronic neck pain, forward head posture, cervical spondylosis, whiplash, and cervicogenic headaches.",
   primaryCTA: "Book Neck Pain Assessment",
+  primaryCTAHref: "/book",
   secondaryCTA: "WhatsApp Us",
+  secondaryCTAHref: "https://wa.me/971555867466?text=Hello%20Vedara%20Care,%20I%20would%20like%20to%20inquire%20about%20neck%20pain%20physiotherapy%20and%20book%20a%20consultation.",
   trustSignals: [
     "DPT-qualified physiotherapists",
     "Same-week appointments",
@@ -275,7 +277,8 @@ export const neckPainReviews = {
     { value: "220+", label: "neck pain patients treated" },
     { value: "89%", label: "report significant improvement within 8 weeks" }
   ],
-  buttonText: "Read All Neck Pain Reviews"
+  buttonText: "Read All Neck Pain Reviews",
+  buttonHref: "https://www.google.com/maps/search/?api=1&query=Vedara+Care+Polyclinic+JVC+Dubai"
 };
 
 export const neckPainTeam = {
@@ -333,7 +336,7 @@ export const neckPainPricing = {
     { name: "Extended chronic care (20 sessions over 12-24 weeks)", price: "AED 4,200" },
     { name: "Home physiotherapy session (when clinic travel impractical)", price: "AED 400" }
   ],
-  insuranceText: "Insurance dire// ct-billing: Daman, AXA, Allianz, Oman Insurance, Now Health, Bupa, and MetLife. Most Dubai insurance plans cover neck pain physiotherapy. WhatsApp your insurance card to confirm coverage →",
+  insuranceText: "Insurance direct-billing: Daman, AXA, Allianz, Oman Insurance, Now Health, Bupa, and MetLife. Most Dubai insurance plans cover neck pain physiotherapy. <a href='https://wa.me/971555867466?text=Hello%20Vedara%20Care,%20I%20would%20like%20to%20confirm%20my%20insurance%20coverage%20for%20neck%20pain%20physiotherapy.' target='_blank' rel='noopener noreferrer' class='text-[#C9A84C] hover:text-[#B8860B] font-medium transition-colors underline'>WhatsApp your insurance card to confirm coverage →</a>",
   // insurances: ["Daman", "AXA", "Allianz", "Oman Insurance", "Now Health", "Bupa", "MetLife"]
 };
 

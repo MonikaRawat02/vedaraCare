@@ -9,16 +9,16 @@ export const StressAnxietyTimeline = ({
   footer = ""
 }) => {
   return (
-    <section className="bg-[#EAE3D5] py-24 px-8" style={{ fontFamily: "'DM Sans', sans-serif" }}>
+    <section className="bg-[#EAE3D5] py-24 px-8">
       <div className="max-w-7xl mx-auto">
         <div className="text-center mb-14">
-          <p className="text-xs tracking-[0.18em] uppercase font-medium mb-3 text-[#B8915A]">
+          <p className="text-xs tracking-[0.18em] uppercase font-medium mb-3 text-[#B8915A] font-sans">
             {label}
           </p>
-          <h2 className="text-3xl md:text-4xl leading-tight text-[#1C1814] mb-4" style={{ fontFamily: 'Fraunces, serif', fontWeight: 500 }}>
+          <h2 className="text-3xl md:text-4xl leading-tight text-[#1C1814] mb-4 font-serif font-medium">
             {title}
           </h2>
-          <p className="max-w-[720px] mx-auto leading-relaxed" style={{ color: '#686358', fontSize: '15px', fontWeight: 400 }}>
+          <p className="max-w-[720px] mx-auto leading-relaxed text-[#686358] text-base font-sans">
             {description}
           </p>
         </div>
@@ -27,13 +27,13 @@ export const StressAnxietyTimeline = ({
           {months.map((item, index) => (
             <div key={index} className="bg-white rounded-lg p-8 grid md:grid-cols-[200px_1fr] gap-8 items-start shadow-sm border border-[#E8E1D5]/50">
               <div className="flex flex-col items-start">
-                <span className="text-[11px] font-medium text-[#B8915A] uppercase tracking-widest">
+                <span className="text-[11px] font-medium text-[#B8915A] uppercase tracking-widest font-sans">
                   {item.month}
                 </span>
-                <h4 className="text-[#1C1814] text-base mt-1" style={{ fontFamily: 'Fraunces, serif', fontWeight: 500 }}>
+                <h4 className="text-[#1C1814] text-base mt-1 font-serif font-medium">
                   {item.title}
                 </h4>
-                <div className="w-8 h-8 rounded-full bg-[#B8915A] text-white flex items-center justify-center text-sm mt-4" style={{ fontWeight: 500 }}>
+                <div className="w-8 h-8 rounded-full bg-[#B8915A] text-white flex items-center justify-center text-sm mt-4 font-medium font-sans">
                   {item.id}
                 </div>
                 <div className="mt-6 w-16 h-[1px] bg-[#E8E1D5]"></div>
@@ -41,14 +41,14 @@ export const StressAnxietyTimeline = ({
               <div>
                 <ul className="space-y-1.5 mb-8">
                   {item.points.map((point, i) => (
-                    <li key={i} className="flex items-start gap-2 leading-relaxed" style={{ color: 'rgba(28, 24, 20, 0.8)', fontSize: '14px', fontWeight: 400 }}>
+                    <li key={i} className="flex items-start gap-2 leading-relaxed text-[rgba(28,24,20,0.8)] text-sm font-sans">
                       <Check size={14} className="text-[#B8915A] mt-1 shrink-0" />
                       <span>{point}</span>
                     </li>
                   ))}
                 </ul>
                 <div className="bg-[#FDFBF7] border-l-2 border-[#B8915A] p-4 mt-6">
-                  <p className=" leading-relaxed" style={{ color: '#686358', fontSize: '13px', fontWeight: 400 }}>
+                  <p className=" leading-relaxed text-[#686358] text-xs font-sans">
                     {item.outcome}
                   </p>
                 </div>
@@ -59,7 +59,7 @@ export const StressAnxietyTimeline = ({
 
         {footer && (
           <div className="text-center mt-8">
-            <p className="max-w-[720px] mx-auto leading-relaxed" style={{ color: '#686358', fontSize: '12px', fontWeight: 400 }}>
+            <p className="max-w-[720px] mx-auto leading-relaxed text-[#686358] text-xs font-sans">
               {footer}
             </p>
           </div>
@@ -81,13 +81,13 @@ export const StressAnxietySleepSection = ({
   alt = ""
 }) => {
   return (
-    <section className="bg-white py-24 px-8" style={{ fontFamily: "'DM Sans', sans-serif" }}>
+    <section className="bg-white py-24 px-8">
       <div className="max-w-7xl mx-auto">
         <div className="text-center mb-16">
-          <p className="text-xs tracking-[0.18em] uppercase font-medium mb-3 text-[#B8915A]">
+          <p className="text-xs tracking-[0.18em] uppercase font-medium mb-3 text-[#B8915A] font-sans">
             {label}
           </p>
-          <h2 className="text-3xl md:text-4xl leading-tight text-[#1C1814]" style={{ fontFamily: 'Fraunces, serif', fontWeight: 500 }}>
+          <h2 className="text-3xl md:text-4xl leading-tight text-[#1C1814] font-serif font-medium">
             {title}
           </h2>
         </div>
@@ -95,20 +95,20 @@ export const StressAnxietySleepSection = ({
         <div className="grid md:grid-cols-2 gap-16 items-start">
           <div className="space-y-6">
             {content.map((text, index) => (
-              <p key={index} className="leading-relaxed text-[#4A4A4A]" style={{ fontSize: '15px', fontWeight: 400 }}>
+              <p key={index} className="leading-relaxed text-[#4A4A4A] text-base font-sans">
                 {text}
               </p>
             ))}
             
             <div className="pt-4">
-              <h3 className="text-lg text-[#B8915A] mb-4" style={{ fontFamily: 'Fraunces, serif', fontWeight: 500 }}>{subheading}</h3>
-              <p className="leading-relaxed text-[#4A4A4A]" style={{ fontSize: '15px', fontWeight: 400 }}>
+              <h3 className="text-lg text-[#B8915A] mb-4 font-serif font-medium">{subheading}</h3>
+              <p className="leading-relaxed text-[#4A4A4A] text-base font-sans">
                 {subheadingContent}
               </p>
             </div>
 
             <div className="pt-4">
-              <a href={linkHref} className="font-bold text-[#B8915A] hover:opacity-80 flex items-center gap-1" style={{ fontSize: '14px' }}>
+              <a href={linkHref} className="font-bold text-[#B8915A] hover:opacity-80 flex items-center gap-1 text-sm font-sans">
                 {linkText} <span className="text-lg">→</span>
               </a>
             </div>
@@ -136,88 +136,101 @@ export const StressAnxietyVisitSection = ({
   description = "",
   button1Text = "Book an Anxiety & Stress Consultation",
   button2Text = "WhatsApp Us",
-  mapEmbed = "",
-  alt = ""
+  mapEmbed = "https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d3613.9894568193345!2d55.20722358578439!3d25.068346479666594!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x3e5f6dd72f3da587%3A0xe7ecca8687a75b72!2sVedara%20Care%20Polyclinic!5e0!3m2!1sen!2sus!4v1780727442216!5m2!1sen!2sus",
+  alt = "",
+  whatsapp = ""
 }) => {
   return (
-    <section className="bg-white py-24 px-8 border-t border-[#F5F0E8]" style={{ fontFamily: "'DM Sans', sans-serif" }}>
-      <div className="max-w-7xl mx-auto grid md:grid-cols-2 gap-16 items-center">
-        <div className="relative">
-          <div className="bg-[#F6F1E9] rounded-xl w-full aspect-[4/3] flex items-center justify-center overflow-hidden">
-             {mapEmbed ? (
-               <iframe 
-                 src={mapEmbed}
-                 width="100%"
-                 height="100%"
-                 style={{ border: 0 }}
-                 allowFullScreen=""
-                 loading="lazy"
-                 referrerPolicy="no-referrer-when-downgrade"
-                 title={alt}
-               ></iframe>
-             ) : (
-               <div className="text-center">
-                  <div className="w-12 h-12 rounded-full bg-white flex items-center justify-center mx-auto mb-4 shadow-sm">
-                    <div className="w-3 h-3 rounded-full bg-[#B8915A]"></div>
+    <section className="bg-[#F5F1E8] py-24 px-6 border-t border-[#F5F0E8]">
+      <div className="max-w-7xl mx-auto">
+        <div className="grid lg:grid-cols-12 gap-12 items-start">
+          {/* Map / Image */}
+          <div className="lg:col-span-6">
+            <div className="h-[500px] bg-gray-300 rounded-xl overflow-hidden shadow-lg">
+              {mapEmbed ? (
+                <iframe 
+                  src={mapEmbed}
+                  width="100%"
+                  height="100%"
+                  style={{ border: 0 }}
+                  allowFullScreen=""
+                  loading="lazy"
+                  referrerPolicy="no-referrer-when-downgrade"
+                  title={alt}
+                ></iframe>
+              ) : (
+                <div className="w-full h-full flex items-center justify-center text-gray-600">
+                  <div className="text-center">
+                    <div className="w-12 h-12 rounded-full bg-white flex items-center justify-center mx-auto mb-4 shadow-sm">
+                      <div className="w-3 h-3 rounded-full bg-[#B8915A]"></div>
+                    </div>
+                    <p className="text-base font-medium text-[#1A1A1A] font-serif">{location.name}</p>
+                    <p className="text-xs text-[#6B6359] font-sans">{location.area}</p>
                   </div>
-                  <p className="text-base font-medium text-[#1A1A1A]" style={{ fontFamily: 'Fraunces, serif' }}>{location.name}</p>
-                  <p className="text-xs text-[#6B6359]">{location.area}</p>
-               </div>
-             )}
+                </div>
+              )}
+            </div>
           </div>
-        </div>
-        <div>
-          <p className="tracking-[0.18em] uppercase font-medium mb-4 text-[#B8915A]" style={{ fontSize: '12px' }}>
-            {label}
-          </p>
-          <h2 className="text-3xl md:text-[2.1rem] leading-tight text-[#1C1814] mb-8" style={{ fontFamily: 'Fraunces, serif', fontWeight: 500 }}>
-            {title}
-          </h2>
 
-          <div className="space-y-6 mb-10">
-            <div className="flex items-start gap-3">
-              <div className="w-5 h-5 rounded-full bg-[#F5F0E8] flex items-center justify-center shrink-0 mt-1">
-                 <div className="w-1.5 h-1.5 rounded-full bg-[#B8915A]"></div>
+          {/* Location Info */}
+          <div className="lg:col-span-6">
+            <p className="tracking-[0.18em] uppercase font-medium mb-3 text-[#B8915A] text-xs font-sans">
+              {label}
+            </p>
+            <h2 className="text-4xl md:text-5xl text-[#1A1A1A] mb-8 font-serif">
+              {title}
+            </h2>
+
+            <div className="space-y-5 mb-6">
+              <div className="flex items-start gap-3">
+                <div className="w-5 h-5 rounded-full bg-[#F5F0E8] flex items-center justify-center shrink-0 mt-1">
+                   <div className="w-1.5 h-1.5 rounded-full bg-[#B8915A]"></div>
+                </div>
+                <div>
+                  <p className="text-gray-700 font-sans">{address.line1}</p>
+                  <p className="text-gray-700 font-sans">{address.line2}</p>
+                </div>
               </div>
-              <div>
-                <p className="text-[#4A4A4A]" style={{ fontSize: '14px', fontWeight: 400 }}>{address.line1}</p>
-                <p className="text-[#6B6359]" style={{ fontSize: '14px', fontWeight: 400 }}>{address.line2}</p>
+
+              <div className="flex items-start gap-3">
+                 <MessageCircle size={18} className="text-[#B8915A] mt-1 shrink-0" />
+                 <div className="text-gray-700">
+                   <div className="font-medium mb-0.5 font-sans">Phone</div>
+                   <a href={`tel:${phone}`} className="font-sans">{phone}</a>
+                 </div>
               </div>
+
+              {hours && hours.length > 0 && (
+                <div className="bg-[#F5F0E8] p-4 rounded-lg">
+                  <div className="text-xs font-semibold mb-3 font-sans">Operating Hours</div>
+                  <div className="space-y-2">
+                    {hours.map((hour, index) => (
+                      <div key={index} className="text-sm text-gray-700 font-sans">
+                        {hour.label}: {hour.time}
+                      </div>
+                    ))}
+                  </div>
+                </div>
+              )}
             </div>
 
-            <div className="flex items-start gap-3">
-               <MessageCircle size={18} className="text-[#B8915A] mt-1 shrink-0" />
-               <p className="text-[#4A4A4A]" style={{ fontSize: '14px', fontWeight: 400 }}>{phone}</p>
+            {description && (
+              <div className="bg-[#F6F1E9] border border-[#F5F0E8] rounded-lg p-6 mb-6">
+                 <p className="leading-relaxed text-gray-600 text-sm font-sans">
+                  {description}
+                 </p>
+              </div>
+            )}
+
+            <div className="flex flex-col sm:flex-row gap-4">
+              <button className="bg-[#1F4538] text-white px-6 py-4 rounded font-bold flex-1 hover:bg-[#163128] transition-colors text-sm font-sans">
+                {button1Text}
+              </button>
+              <button className="bg-[#25D366] text-white px-6 py-4 rounded font-bold flex items-center justify-center gap-2 hover:bg-[#1eb956] transition-colors text-sm font-sans">
+                <MessageCircle size={20} />
+                {button2Text}
+              </button>
             </div>
-
-            <div className="flex items-start gap-3">
-               <div className="w-5 h-5 flex items-center justify-center shrink-0 mt-1">
-                  <div className="w-3 h-3 border border-[#B8915A] rounded-full"></div>
-               </div>
-               <div>
-                {hours.map((hour, index) => (
-                  <p key={index} className="text-[#4A4A4A]" style={{ fontSize: '14px', fontWeight: 400 }}>
-                    {hour.label}: {hour.time}
-                  </p>
-                ))}
-               </div>
-            </div>
-          </div>
-
-          <div className="bg-[#F6F1E9] border border-[#F5F0E8] rounded-lg p-6 mb-10">
-             <p className="leading-relaxed text-[#4A4A4A]" style={{ fontSize: '14px', fontWeight: 400 }}>
-              {description}
-             </p>
-          </div>
-
-          <div className="flex flex-col sm:flex-row gap-4">
-            <button className="bg-[#1F4538] text-white px-6 py-4 rounded font-bold flex-1 hover:bg-[#163128] transition-colors" style={{ fontSize: '14px' }}>
-              {button1Text}
-            </button>
-            <button className="bg-[#25D366] text-white px-6 py-4 rounded font-bold flex items-center justify-center gap-2 hover:bg-[#1eb956] transition-colors" style={{ fontSize: '14px' }}>
-              <MessageCircle size={20} />
-              {button2Text}
-            </button>
           </div>
         </div>
       </div>

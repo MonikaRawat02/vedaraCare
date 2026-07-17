@@ -302,8 +302,6 @@ const AyurvedaStressAnxiety = () => {
         <meta property="article:author" content="Dr. [Lead Ayurvedic Physician Name]" />
         <meta name="twitter:card" content="summary_large_image" />
         <meta name="robots" content="index, follow, max-image-preview:large" />
-        {/* Force DM Sans only for this page */}
-        <link href="https://fonts.googleapis.com/css2?family=DM+Sans:ital,opsz,wght@0,9..40,100..1000;1,9..40,100..1000&display=swap" rel="stylesheet" />
         <script
           type="application/ld+json"
           dangerouslySetInnerHTML={{ __html: JSON.stringify(schemaMarkup) }}
