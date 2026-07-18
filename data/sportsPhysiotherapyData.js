@@ -9,7 +9,7 @@ export const sportsPhysiotherapyHero = {
   description: "DPT-qualified sports physiotherapists at our Jumeirah Village Circle (JVC) clinic, walking distance from Circle Mall. Specialised treatment for padel injuries, running injuries, gym training injuries, ACL rehabilitation, and acute sports trauma — with structured return-to-sport protocols that prevent re-injury. Same-day appointments for acute injuries. Insurance direct-billing with seven major insurers.",
   primaryCTA: "Book a Sports Assessment",
   primaryCTAHref: "/book",
-  secondaryCTA: "WhatsApp Us",
+  secondaryCTA: "WhatsApp us",
   secondaryCTAHref: "https://wa.me/971555867466?text=Hello%20Vedara%20Care,%20I%20would%20like%20to%20inquire%20about%20sports%20physiotherapy%20and%20book%20a%20consultation.",
   trustSignals: [
     "DPT + sports medicine certified",
@@ -356,7 +356,7 @@ export const sportsPhysiotherapyFaqs = {
   faqs: [
     {
       question: "Can I get a same-day appointment for an acute sports injury?",
-      answer: "Yes — same-day appointments are typically available for acute sports injuries at our JVC clinic. WhatsApp +971 55 586 7466 for fastest response (typically within 15 minutes during business hours), or call +971 55 586 7466 directly. Saturday and evening appointments are also available for working patients. For very severe acute injuries with suspected fracture, severe deformity, neurological symptoms, or inability to weight-bear, A&E evaluation comes first, then physiotherapy follow-up." },
+      answer: 'Yes — same-day appointments are typically available for acute sports injuries at our JVC clinic. <a href="https://wa.me/971555867466" target="_blank" rel="noopener noreferrer" class="hover:underline">WhatsApp +971 55 586 7466</a> for fastest response (typically within 15 minutes during business hours), or call +971 55 586 7466 directly. Saturday and evening appointments are also available for working patients. For very severe acute injuries with suspected fracture, severe deformity, neurological symptoms, or inability to weight-bear, A&E evaluation comes first, then physiotherapy follow-up.' },
     {
       question: "What is the difference between sports physiotherapy and general physiotherapy?",
       answer: "Sports physiotherapy is specialised for active patients — different examination techniques, sport-specific exercise prescription, biomechanical analysis, return-to-sport testing, and prevention programmes. General physiotherapy may treat sports injuries but typically lacks the sport-specific progression protocols and return-to-sport criteria that prevent re-injury. For competitive athletes, recreational sportspeople with significant training volume, or anyone returning to a specific sport after injury, sports physiotherapy is meaningfully different."  },
@@ -408,7 +408,7 @@ answer:"Yes — adolescent and youth athletes are a specific patient cohort. Com
 
 {
   question:"Does insurance cover sports physiotherapy?",
-  answer:"Sports injuries with medical justification are typically covered by Dubai insurance plans. Pure performance optimisation or preventive work may have limited coverage. We are direct-billing partners with Daman, AXA, Allianz, Oman Insurance, Now Health, Bupa, and MetLife. WhatsApp your insurance card to +971 55 586 7466 before booking to confirm specific coverage and out-of-pocket costs."
+  answer:'Sports injuries with medical justification are typically covered by Dubai insurance plans. Pure performance optimisation or preventive work may have limited coverage. We are direct-billing partners with Daman, AXA, Allianz, Oman Insurance, Now Health, Bupa, and MetLife. <a href="https://wa.me/971555867466?text=Hi,%20I%27d%20like%20to%20verify%20my%20insurance%20coverage" target="_blank" rel="noopener noreferrer" class="hover:underline">WhatsApp your insurance card</a> to +971 55 586 7466 before booking to confirm specific coverage and out-of-pocket costs.'
 },
  {
   question:"How is sports physiotherapy at Vedara different from general clinics?",
@@ -424,7 +424,7 @@ answer:"Yes — performance optimisation is offered for active patients without 
  
 {
   question:"How do  I book a sports physiotherapy appointment?",
-  answer:"Three ways: (1) WhatsApp +971 55 586 7466 — fastest response, ideal for sending injury photos, MRI images, or surgical reports. (2) Call +971 55 586 7466 — direct booking, available 9 AM to 9 PM seven days a week. (3) Book online via the button above. For your first appointment, please bring: any imaging (MRI, X-rays, ultrasound), surgical reports if applicable, current medication list, your sports schedule (competitive calendar if relevant), and insurance card."}
+  answer:'Three ways: (1) <a href="https://wa.me/971555867466" target="_blank" rel="noopener noreferrer" class="hover:underline">WhatsApp +971 55 586 7466</a> — fastest response, ideal for sending injury photos, MRI images, or surgical reports. (2) Call +971 55 586 7466 — direct booking, available 9 AM to 9 PM seven days a week. (3) Book online via the button above. For your first appointment, please bring: any imaging (MRI, X-rays, ultrasound), surgical reports if applicable, current medication list, your sports schedule (competitive calendar if relevant), and insurance card.'}
 
 
   ]
@@ -465,7 +465,7 @@ export const sportsPhysiotherapyFinalCTA = {
   description: "Whether you have an acute sports injury that needs same-day attention, a chronic pattern that has not responded to general physiotherapy, or you want to optimise performance and prevent the injuries common to your sport — the first useful step is a 60-minute sports physiotherapy assessment at our JVC clinic. We provide a specific sports physiotherapy diagnosis, sport-specific treatment plan with realistic timeline, and where appropriate, your first treatment intervention the same session. Same-day appointments often available for acute injuries.",
   button1Text: "Book a Sports Assessment",
   button1Href: "/book",
-  button2Text: "WhatsApp Us",
+  button2Text: "WhatsApp us",
   button2Href: "https://wa.me/971555867466?text=Hello%20Vedara%20Care,%20I%20would%20like%20to%20inquire%20about%20sports%20physiotherapy%20and%20book%20a%20consultation.",
   footer: "Initial assessment from AED 350 · DHA-licensed JVC clinic · Insurance direct-billing with 7 major insurers · Same-day appointments often available · Home services across Dubai"
 };
@@ -547,7 +547,7 @@ export const sportsPhysiotherapyInsurance = {
   paragraphs: [
     "Insurance coverage for physiotherapy in Dubai varies enormously by insurer and plan. Understanding what your specific plan covers — before you commit to a multi-session programme — prevents most billing surprises.",
     "The major Dubai insurers offering some level of physiotherapy coverage include Daman, AXA, Allianz, Oman Insurance, Now Health, Bupa, MetLife, and several others. Coverage typically varies across these dimensions: annual session limits (some plans allow 6-10 sessions per year; comprehensive plans allow unlimited with medical justification), copay percentages (often 10-30% patient responsibility), referral requirements (some plans require GP referral; others allow direct access), pre-authorisation requirements (some clinics require pre-authorisation for treatment beyond initial sessions), and direct-billing arrangements (some clinics direct-bill insurers; others require you to pay and claim back).",
-    "At Vedara Care, we are direct-billing partners with Daman, AXA, Allianz, Oman Insurance, Now Health, Bupa, and MetLife. The most efficient process for new patients: WhatsApp your insurance card photo to +971 55 586 7466 before booking, and our team confirms exactly what is covered, what pre-authorisation is needed, and what your out-of-pocket cost will be. This typically takes 24-48 hours but prevents the most common billing surprises. For a full cost breakdown, see our <a href=\"/blog/ayurveda-cost-dubai/\">cost guide</a>.",
+    'At Vedara Care, we are direct-billing partners with Daman, AXA, Allianz, Oman Insurance, Now Health, Bupa, and MetLife. The most efficient process for new patients: <a href="https://wa.me/971555867466?text=Hi,%20I%27d%20like%20to%20verify%20my%20insurance%20coverage" target="_blank" rel="noopener noreferrer" class="hover:underline">WhatsApp your insurance card</a> photo to +971 55 586 7466 before booking, and our team confirms exactly what is covered, what pre-authorisation is needed, and what your out-of-pocket cost will be. This typically takes 24-48 hours but prevents the most common billing surprises. For a full cost breakdown, see our <a href=\"/blog/ayurveda-cost-dubai/\">cost guide</a>.',
     "Some realities worth knowing: most plans require medical justification (specific diagnosis, documented condition) rather than wellness physiotherapy. Most plans cover physiotherapy for diagnosed musculoskeletal conditions (like <a href=\"/conditions/back-pain-ayurveda-dubai/\">back pain</a> or <a href=\"/conditions/arthritis-ayurveda-dubai/\">knee OA</a>), post-surgical recovery, and neurological rehabilitation. Coverage for preventive sports performance work, wellness physiotherapy, or maintenance visits varies. <a href=\"/conditions/postnatal-ayurveda-dubai/\">Postnatal physiotherapy</a> coverage has improved substantially in recent years — most major plans now cover pelvic floor rehabilitation with appropriate clinical justification."
   ],
   insurers: ["Daman", "AXA", "Allianz", "Oman Insurance", "Now Health", "Bupa", "MetLife"],

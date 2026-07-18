@@ -161,7 +161,7 @@ answer: "Patients with severe acute sciatica who cannot easily travel can have <
 },
 {
 question: "Does insurance cover sciatica physiotherapy?",
-answer: "Most Dubai insurance plans cover sciatica physiotherapy with documented medical justification. Coverage typically substantial given the documented disability impact. Extended programmes may require pre-authorisation. We are direct-billing partners with Daman, AXA, Allianz, Oman Insurance, Now Health, Bupa, and MetLife. WhatsApp your insurance card before booking to confirm specific coverage."
+answer: 'Most Dubai insurance plans cover sciatica physiotherapy with documented medical justification. Coverage typically substantial given the documented disability impact. Extended programmes may require pre-authorisation. We are direct-billing partners with Daman, AXA, Allianz, Oman Insurance, Now Health, Bupa, and MetLife. <a href="https://wa.me/971555867466?text=Hi,%20I%27d%20like%20to%20verify%20my%20insurance%20coverage" target="_blank" rel="noopener noreferrer" class="hover:underline">WhatsApp your insurance card</a> before booking to confirm specific coverage.'
 },
 {
 question: "Will lying down help my sciatica?",
@@ -201,7 +201,7 @@ answer: "Specific McKenzie method certification (Credentialed MDT or Diploma MDT
 },
 {
 question: "How do I book a sciatica physiotherapy assessment?",
-answer: "Three ways: (1) WhatsApp +971 55 586 7466 — fastest response, ideal for sending imaging, brief description of your symptoms, or asking specific questions about your case. (2) Call +971 55 586 7466 — direct booking, available 9 AM to 9 PM seven days a week. (3) Book online through our website. For your first appointment, please bring: any imaging (MRI, CT, X-rays), medical reports, current medication list, insurance card, comfortable clothing allowing movement assessment."
+answer: 'Three ways: (1) <a href="https://wa.me/971555867466" target="_blank" rel="noopener noreferrer" class="hover:underline">WhatsApp +971 55 586 7466</a> — fastest response, ideal for sending imaging, brief description of your symptoms, or asking specific questions about your case. (2) Call +971 55 586 7466 — direct booking, available 9 AM to 9 PM seven days a week. (3) Book online through our website. For your first appointment, please bring: any imaging (MRI, CT, X-rays), medical reports, current medication list, insurance card, comfortable clothing allowing movement assessment.'
 }
 
 
@@ -243,7 +243,7 @@ export const sciaticaPhysioCTA = {
   description: "If you have sciatica — acute or chronic, from disc herniation or piriformis syndrome or another cause — appropriate specialist physiotherapy substantially improves the likelihood of full resolution without surgery. The first step is a 60-minute sciatica assessment at our JVC clinic. We identify your specific pattern, explain what is happening, design a treatment plan with realistic timeline, and typically begin treatment the same session. Same-week appointments standard; same-day available for severe acute presentations.",
   button1Text: "Book Sciatica Assessment",
   button1Href: "/book",
-  button2Text: "WhatsApp Us",
+  button2Text: "WhatsApp us",
   button2Href: "https://wa.me/971555867466?text=Hello%20Vedara%20Care,%20I%20would%20like%20to%20inquire%20about%20sciatica%20physiotherapy%20and%20book%20a%20consultation.",
   footer: "Initial assessment from AED 350 · McKenzie certified specialists · Walking distance from Circle Mall, JVC · Patients across Dubai · Insurance direct-billing with seven major insurers"
 };
@@ -380,7 +380,7 @@ export const sciaticaPhysioPricing = {
     { name: "Pregnancy sciatica programme (6 sessions)", price: "AED 1,350" },
     { name: "Home physiotherapy for severe acute sciatica", price: "AED 400/session" }
   ],
-  insuranceText: "Sciatica physiotherapy is well covered by most Dubai insurance plans with medical justification (often substantial coverage given the documented disability impact). <a href='https://wa.me/971555867466?text=Hello%20Vedara%20Care,%20I%20would%20like%20to%20confirm%20my%20insurance%20coverage%20for%20sciatica%20physiotherapy.' target='_blank' rel='noopener noreferrer' class='text-[#C9A84C] hover:text-[#B8860B] font-medium transition-colors underline'>WhatsApp your insurance card before booking for specific coverage confirmation</a>.",
+  insuranceText: 'Sciatica physiotherapy is well covered by most Dubai insurance plans with medical justification (often substantial coverage given the documented disability impact). <a href=\'https://wa.me/971555867466?text=Hello%20Vedara%20Care,%20I%20would%20like%20to%20confirm%20my%20insurance%20coverage%20for%20sciatica%20physiotherapy.\' target=\'_blank\' rel=\'noopener noreferrer\' class=\'text-[#C9A84C] hover:text-[#B8860B] font-medium transition-colors underline\'><a href="https://wa.me/971555867466?text=Hi,%20I%27d%20like%20to%20verify%20my%20insurance%20coverage" target="_blank" rel="noopener noreferrer" class="hover:underline">WhatsApp your insurance card</a> before booking for specific coverage confirmation</a>.',
   insurances: ["Daman", "AXA", "Allianz", "Oman Insurance", "Now Health", "Bupa", "MetLife"]
 };
 

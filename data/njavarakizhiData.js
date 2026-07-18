@@ -382,7 +382,7 @@ export const njavarakizhiFaqs = {
     },
     {
       question: "How do I book Njavarakizhi at your clinic?",
-      answer: "Njavarakizhi requires advance booking — typically at least 24 hours notice, ideally 48 hours, because of the rice and milk preparation required. For first-time patients, booking begins with a consultation where the doctor confirms Njavarakizhi is the right therapy and selects the appropriate kashayam. Existing patients can rebook directly with the required advance notice. Tap 'Book a Njavarakizhi Consultation' on this page, WhatsApp us at +971 55 586 7466, or call +971 55 586 7466."
+      answer: 'Njavarakizhi requires advance booking — typically at least 24 hours notice, ideally 48 hours, because of the rice and milk preparation required. For first-time patients, booking begins with a consultation where the doctor confirms Njavarakizhi is the right therapy and selects the appropriate kashayam. Existing patients can rebook directly with the required advance notice. Tap \'Book a Njavarakizhi Consultation\' on this page, <a href="https://wa.me/971555867466" target="_blank" rel="noopener noreferrer" class="hover:underline">WhatsApp us</a> at +971 55 586 7466, or call +971 55 586 7466.'
     }
   ]
 };

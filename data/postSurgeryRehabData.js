@@ -8,7 +8,7 @@ export const postSurgeryRehabHero = {
   title: "Post-surgery\nrehabilitation in Dubai.\nSurgeon-coordinated.\nProcedure-specific.\nHome or clinic.",
   description: "Structured post-operative rehabilitation at our Jumeirah Village Circle (JVC) clinic and at your home across Dubai. DPT-qualified physiotherapists trained in procedure-specific protocols for knee replacement, hip replacement, ACL reconstruction, spinal surgery, rotator cuff repair, and other orthopaedic and surgical procedures. We coordinate with your operating surgeon — whether they practise in Dubai or internationally. Home physiotherapy available for the early recovery phase.",
   primaryCTA: "Book a Post-Surgery Consultation",
-  secondaryCTA: "WhatsApp Us",
+  secondaryCTA: "WhatsApp us",
   primaryCTAHref: "/book",
   secondaryCTAHref: "https://wa.me/971555867466?text=Hello%20Vedara%20Care,%20I%20would%20like%20to%20know%20more%20about%20your%20post-surgery%20rehabilitation%20services.",
   trustSignals: [
@@ -54,7 +54,7 @@ export const postSurgeryRehabFinalCTA = {
   title: "Whether your surgery was in Dubai or overseas — we will coordinate properly.",
   description: "The first useful step is a 60-minute post-surgery assessment at our JVC clinic or at your home across Dubai. We review your surgical report, examine your current status, contact your operating surgeon (with your consent) to confirm specific protocols, and provide a written rehabilitation plan with realistic timeline. For early-phase patients, the assessment can happen at your home. Insurance pre-authorisation can begin during your first session. Same-week appointments typically available.",
   button1Text: "Book a Post-Surgery Consultation",
-  button2Text: "WhatsApp Us Your Surgical Report",
+  button2Text: "WhatsApp us Your Surgical Report",
   button1Href: "/book",
   button2Href: "https://wa.me/971555867466?text=Hello%20Vedara%20Care,%20I%27d%20like%20to%20share%20my%20surgical%20report%20for%20post-surgery%20rehabilitation.",
   button1BgColor: "#1F4538",
@@ -202,7 +202,7 @@ export const transparentPricingData = {
       ]
     }
   ],
-  footer: "Insurance coverage for post-surgery rehabilitation is typically substantial — most plans cover physiotherapy with documented surgical procedure. Direct-billing with Daman, AXA, Allianz, Oman Insurance, Now Health, Bupa, and MetLife. WhatsApp your insurance card and surgical report to +971 55 586 7466 before booking for specific coverage confirmation."
+  footer: 'Insurance coverage for post-surgery rehabilitation is typically substantial — most plans cover physiotherapy with documented surgical procedure. Direct-billing with Daman, AXA, Allianz, Oman Insurance, Now Health, Bupa, and MetLife. <a href="https://wa.me/971555867466?text=Hi,%20I%27d%20like%20to%20verify%20my%20insurance%20coverage" target="_blank" rel="noopener noreferrer" class="hover:underline">WhatsApp your insurance card</a> and surgical report to +971 55 586 7466 before booking for specific coverage confirmation.'
 };
 
 export const postSurgeryTeamData = {
@@ -248,7 +248,7 @@ export const insuranceCoverageData = {
     label: "OUR DIRECT-BILLING INSURERS",
     insurers: ["Daman", "AXA", "Allianz", "Oman Insurance", "Now Health", "Bupa", "MetLife"],
     text: "WhatsApp your insurance card and surgical report to +971 55 586 7466 before booking to confirm specific coverage and pre-authorisation needs.",
-    buttonText: "WhatsApp Us Your Surgical Report",
+    buttonText: "WhatsApp us Your Surgical Report",
     buttonHref: "https://wa.me/971555867466?text=Hello%20Vedara%20Care,%20I%27d%20like%20to%20share%20my%20insurance%20card%20and%20surgical%20report."
   }
 };
@@ -489,7 +489,7 @@ export const postSurgeryFAQData = {
 },
 {
   question: "How do I book a post-surgery consultation?",
-  answer: "Three ways: (1) WhatsApp +971 55 586 7466 — fastest response, ideal for sending surgical reports, post-operative imaging, and surgeon contact details. (2) Call +971 55 586 7466 — direct booking, available 9 AM to 9 PM seven days a week. (3) Book online through our website. For your first appointment, please bring or send: complete surgical report, post-operative imaging (X-rays, MRI), any rehabilitation prescription from your surgeon, your surgeon's contact details if international, current medication list, and insurance card."
+  answer: 'Three ways: (1) <a href="https://wa.me/971555867466" target="_blank" rel="noopener noreferrer" class="hover:underline">WhatsApp +971 55 586 7466</a> — fastest response, ideal for sending surgical reports, post-operative imaging, and surgeon contact details. (2) Call +971 55 586 7466 — direct booking, available 9 AM to 9 PM seven days a week. (3) Book online through our website. For your first appointment, please bring or send: complete surgical report, post-operative imaging (X-rays, MRI), any rehabilitation prescription from your surgeon, your surgeon\'s contact details if international, current medication list, and insurance card.'
 }
   ]
 };

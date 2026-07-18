@@ -10,7 +10,7 @@ export const neurologicalDubaiHero = {
     "Neurological physiotherapy at our Jumeirah Village Circle (JVC) clinic and at your home across Dubai. Specialised treatment for stroke recovery, Parkinson's disease, multiple sclerosis, traumatic brain injury, spinal cord injury, motor neurone disease, peripheral neuropathy, and other neurological conditions. Long-term care relationships, coordination with neurologists, family-involved approach. Home physiotherapy across Dubai for patients who cannot easily travel.",
   primaryCTA: "Book a Neurological Consultation",
   primaryCTAHref: "/book",
-  secondaryCTA: "WhatsApp Us",
+  secondaryCTA: "WhatsApp us",
   secondaryCTAHref: "https://wa.me/971555867466?text=Hello%20Vedara%20Care,%20I%20would%20like%20to%20know%20more%20about%20your%20neurological%20physiotherapy%20services%20and%20book%20a%20consultation.%20Please%20assist%20me.",
   trustSignals: [
     "Neurological-specialist physiotherapists",
@@ -262,7 +262,7 @@ export const neurologicalPricingData = {
     { service: "Family caregiver training session", price: "AED 350" },
     { service: "Multi-disciplinary case coordination (per case, complex cases)", price: "AED 500" }
   ],
-  footerText: "Insurance direct-billing with seven major insurers. Long-term neurological physiotherapy typically benefits from annual coverage planning — WhatsApp +971 55 586 7466 to discuss your coverage and out-of-pocket cost before committing to a programme."
+  footerText: 'Insurance direct-billing with seven major insurers. Long-term neurological physiotherapy typically benefits from annual coverage planning — <a href="https://wa.me/971555867466" target="_blank" rel="noopener noreferrer" class="hover:underline">WhatsApp +971 55 586 7466</a> to discuss your coverage and out-of-pocket cost before committing to a programme.'
 };
 
 export const neurologicalDubaiReviews = {
@@ -358,13 +358,13 @@ export const neurologicalInsuranceCoverageData = {
     { title: "What is typically covered well:", text: "acute neurological rehabilitation following stroke, TBI, or other acquired conditions (especially in first 6-12 months); structured physiotherapy programmes for progressive conditions with documented need; home physiotherapy with appropriate medical justification (mobility limitations, post-discharge requirements); and long-term care for established conditions with ongoing functional need." },
     { title: "What may have limits:", text: "indefinite ongoing physiotherapy without documented goals or progress; physiotherapy for established stable conditions without acute change; certain newer or specialised techniques (some plans cover only standard physiotherapy modalities); and home physiotherapy beyond a certain duration may require periodic re-justification." },
     { title: "How insurance typically works for neurological care:", text: "most plans require pre-authorisation for extended rehabilitation programmes (typically beyond 10-15 initial sessions). For chronic conditions, annual coverage planning matters — we help patients and families understand annual session allocations, plan rehabilitation intensity accordingly, and submit appropriate documentation for renewed authorisation. For progressive conditions like MS or Parkinson's, we document functional status changes that support continued coverage." },
-    { title: "For patients with neurological conditions:", text: "we particularly help with: pre-authorisation documentation, annual renewal applications, appeals when coverage is initially denied, and connecting families with patient advocacy resources when needed. WhatsApp your insurance card, condition documentation, and any prior physiotherapy authorisations before booking for specific coverage planning." }
+    { title: 'For patients with neurological conditions:", text: "we particularly help with: pre-authorisation documentation, annual renewal applications, appeals when coverage is initially denied, and connecting families with patient advocacy resources when needed. <a href="https://wa.me/971555867466?text=Hi,%20I%27d%20like%20to%20verify%20my%20insurance%20coverage" target="_blank" rel="noopener noreferrer" class="hover:underline">WhatsApp your insurance card</a>, condition documentation, and any prior physiotherapy authorisations before booking for specific coverage planning.' }
   ],
   sidebar: {
     label: "OUR DIRECT-BILLING INSURERS",
     insurers: ["Daman", "AXA", "Allianz", "Oman Insurance", "Now Health", "Bupa", "MetLife"],
-    text: "For long-term neurological conditions, we help families navigate annual coverage planning, pre-authorisation, and appeals. WhatsApp +971 55 586 7466 for coverage assistance.",
-    buttonText: "WhatsApp Us for Coverage Help",
+    text: 'For long-term neurological conditions, we help families navigate annual coverage planning, pre-authorisation, and appeals. <a href="https://wa.me/971555867466" target="_blank" rel="noopener noreferrer" class="hover:underline">WhatsApp +971 55 586 7466</a> for coverage assistance.',
+    buttonText: '<a href="https://wa.me/971555867466" target="_blank" rel="noopener noreferrer" class="hover:underline">WhatsApp us</a> for Coverage Help',
     buttonHref: "https://wa.me/971555867466?text=Hello%20Vedara%20Care,%20I%20would%20like%20to%20ask%20about%20insurance%20coverage%20for%20neurological%20physiotherapy.%20Please%20assist%20me."
   }
 };
@@ -449,7 +449,7 @@ export const neurologicalDubaiFinalCTA = {
     "Whether you (or a family member) are recovering from recent stroke, managing Parkinson's or MS, recovering from traumatic brain injury, or living with another neurological condition, the next useful step is a 60-75 minute initial assessment — at our JVC clinic or at your home across Dubai. We assess thoroughly, set honest expectations, design a treatment plan calibrated to your specific condition, and establish the long-term relationship that effective neurological rehabilitation requires. Same-week appointments typically available.",
   button1Text: "Book a Neurological Consultation",
   button1Href: "/book",
-  button2Text: "WhatsApp Us",
+  button2Text: "WhatsApp us",
   button2Href: "https://wa.me/971555867466?text=Hello%20Vedara%20Care,%20I%20would%20like%20to%20ask%20about%20neurological%20physiotherapy%20and%20book%20a%20consultation.%20Please%20assist%20me.",
   footer:
     "Initial assessment from AED 450 · Clinic in JVC + home physiotherapy across Dubai · Neurologist coordination · Long-term care relationships · Insurance direct-billing"

@@ -8,7 +8,7 @@ export const physiotherapyHero = {
   description: "Dubai has many physiotherapists. Quality varies enormously across qualifications, specialisations, evidence base, and clinical depth. This page is partly an introduction to physiotherapy in Dubai — what to look for, what specialisations exist, how insurance works — and partly a description of how Vedara Care, our DHA-licensed clinic in Jumeirah Village Circle (JVC), approaches physiotherapy across the city. Patients travel to us from every major Dubai neighbourhood.",
   primaryCTA: "Book a Physiotherapy Assessment",
   primaryCTAHref: "/book",
-  secondaryCTA: "WhatsApp Us",
+  secondaryCTA: "WhatsApp us",
   secondaryCTAHref: "https://wa.me/971555867466?text=Hello%20Vedara%20Care,%20I%20would%20like%20to%20know%20more%20about%20your%20physiotherapy%20services%20in%20Dubai.",
   trustSignals: [
     "DPT-qualified physiotherapists",
@@ -397,7 +397,7 @@ export const physiotherapyFaqs = {
       answer: "At minimum: DHA-licensed (required by law), with verified physiotherapy degree (typically Bachelor's level minimum). The current international gold standard is DPT (Doctor of Physical Therapy), which requires more extensive clinical training and evidence-based practice emphasis. For specialised conditions, ask whether the therapist has specific postgraduate training (sports medicine, pelvic floor, neurological rehabilitation, paediatric). Continuing education matters — physiotherapy evidence evolves quickly."   },
     {
       question: "Does Dubai insurance cover physiotherapy?",
-      answer: "Most plans cover physiotherapy when there is medical justification. Coverage varies significantly: annual session limits, copay percentages, referral requirements, and pre-authorisation requirements all differ across plans. Direct-billing arrangements depend on clinic-insurer relationships. WhatsApp your insurance card to <a href='https://wa.me/971555867466?text=Hello%20Vedara%20Care,%20I%20would%20like%20to%20confirm%20my%20insurance%20coverage%20for%20physiotherapy.'>+971 55 586 7466</a> for specific coverage confirmation before booking multi-session programmes."   },
+      answer: 'Most plans cover physiotherapy when there is medical justification. Coverage varies significantly: annual session limits, copay percentages, referral requirements, and pre-authorisation requirements all differ across plans. Direct-billing arrangements depend on clinic-insurer relationships. <a href="https://wa.me/971555867466?text=Hi,%20I%27d%20like%20to%20verify%20my%20insurance%20coverage" target="_blank" rel="noopener noreferrer" class="hover:underline">WhatsApp your insurance card</a> to <a href="https://wa.me/971555867466?text=Hello%20Vedara%20Care,%20I%20would%20like%20to%20confirm%20my%20insurance%20coverage%20for%20physiotherapy.">+971 55 586 7466</a> for specific coverage confirmation before booking multi-session programmes.'   },
     {
       question: "Do I need a referral to see a physiotherapist in Dubai?",
       answer: "Not legally — physiotherapy is direct-access in Dubai. However, your specific insurance plan may require referral for coverage. For complex conditions, GP evaluation before physiotherapy is often clinically appropriate. For acute injuries with potential fracture or serious pathology, A&E or GP evaluation first is standard practice."  },
@@ -505,12 +505,12 @@ export const physiotherapyInsurance = {
   content: [
     "Insurance coverage for physiotherapy in Dubai varies enormously by insurer and plan. Understanding what your specific plan covers — before you commit to a multi-session programme — prevents most billing surprises.",
     "The major Dubai insurers offering some level of physiotherapy coverage include Daman, AXA, Allianz, Oman Insurance, Now Health, Bupa, and MetLife. Coverage typically varies across these dimensions: annual session limits (some plans allow 6-10 sessions per year; comprehensive plans allow unlimited with medical justification), copay percentages (often 10-30% patient responsibility), referral requirements (some plans require GP referral; others allow direct access), pre-authorisation requirements (some clinics require pre-authorisation for treatment beyond initial sessions), and direct-billing arrangements (some clinics direct-bill insurers; others require you to pay and claim back).",
-    "At Vedara Care, we are direct-billing partners with Daman, AXA, Allianz, Oman Insurance, Now Health, Bupa, and MetLife. The most efficient process for new patients: WhatsApp your insurance card photo to <a href='https://wa.me/971555867466?text=Hello%20Vedara%20Care,%20I%20would%20like%20to%20confirm%20my%20insurance%20coverage%20for%20physiotherapy.'>+971 55 586 7466</a> before booking, and our team confirms exactly what is covered, what pre-authorisation is needed, and what your out-of-pocket cost will be. This typically takes 24-48 hours but prevents the most common billing surprises. For a full cost breakdown, see our <a href=\"/blog/ayurveda-cost-dubai/\">cost guide</a>.",
+    "At Vedara Care, we are direct-billing partners with Daman, AXA, Allianz, Oman Insurance, Now Health, Bupa, and MetLife. The most efficient process for new patients: WhatsApp your insurance card photo to +971 55 586 7466</a> before booking, and our team confirms exactly what is covered, what pre-authorisation is needed, and what your out-of-pocket cost will be. This typically takes 24-48 hours but prevents the most common billing surprises. For a full cost breakdown, see our <a href=\"/blog/ayurveda-cost-dubai/\">cost guide</a>.",
     "Some realities worth knowing: most plans require medical justification (specific diagnosis, documented condition) rather than wellness physiotherapy. Most plans cover physiotherapy for diagnosed musculoskeletal conditions (like <a href=\"/conditions/back-pain-ayurveda-dubai/\">back pain</a> or <a href=\"/conditions/arthritis-ayurveda-dubai/\">knee OA</a>), post-surgical recovery, and neurological rehabilitation. Coverage for preventive sports performance work, wellness physiotherapy, or maintenance visits varies. <a href=\"/conditions/postnatal-ayurveda-dubai/\">Postnatal physiotherapy</a> coverage has improved substantially in recent years — most major plans now cover pelvic floor rehabilitation with appropriate clinical justification."
   ],
   insurers: ["Daman", "AXA", "Allianz", "Oman Insurance", "Now Health", "Bupa", "MetLife"],
   sidebarText: [
-    "WhatsApp your insurance card to <a href='https://wa.me/971555867466?text=Hello%20Vedara%20Care,%20I%20would%20like%20to%20confirm%20my%20insurance%20coverage%20for%20physiotherapy.'>+971 55 586 7466</a> before booking to confirm specific coverage."
+    '<a href="https://wa.me/971555867466?text=Hi,%20I%27d%20like%20to%20verify%20my%20insurance%20coverage" target="_blank" rel="noopener noreferrer" class="hover:underline">WhatsApp your insurance card</a> to <a href="https://wa.me/971555867466?text=Hello%20Vedara%20Care,%20I%20would%20like%20to%20confirm%20my%20insurance%20coverage%20for%20physiotherapy.">971 55 586 7466</a> before booking to confirm specific coverage.'
   ],
   whatsappNumber: "971555867466"
 };
@@ -625,7 +625,7 @@ export const physiotherapyFinalCTA = {
   description: "Whether you live in JVC, Dubai Marina, Mirdif, Palm Jumeirah, or anywhere else across Dubai, the first useful step is a 60-minute physiotherapy assessment at our JVC clinic. We provide a specific physiotherapy diagnosis, a written treatment plan with realistic timeline, and your first treatment intervention typically the same session. Same-day and next-day appointments are usually available. For patients with mobility limitations, home physiotherapy is available across Dubai.",
   button1Text: "Book a Physiotherapy Assessment",
   button1Href: "/book",
-  button2Text: "WhatsApp Us",
+  button2Text: "WhatsApp us",
   button2Href: "https://wa.me/971555867466?text=Hello%20Vedara%20Care,%20I%20would%20like%20to%20know%20more%20about%20your%20physiotherapy%20services%20in%20Dubai.",
   button1BgColor: "#1A4D2E",
   button2BgColor: "#22C55E",

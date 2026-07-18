@@ -513,6 +513,7 @@ const AyurvedaMigraine = () => {
         <TreatmentPrograms 
           {...migrainePrograms}
           bgColor="bg-white"
+          defaultWhatsappMessage={migrainePrograms.defaultWhatsappMessage}
         />
          <FAQ {...migraineFaqs} 
          bgColor="bg-[#F5F1EB]"/>

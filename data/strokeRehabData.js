@@ -8,7 +8,7 @@ export const strokeRehabHero = {
   title: "Post-stroke rehabilitation in Dubai. Evidence-based recovery. Honest about timelines. Family-centred.",
   description: "Specialist post-stroke physiotherapy at our Jumeirah Village Circle (JVC) clinic, and across Dubai through our home physiotherapy service. Delivered by DPT-qualified physiotherapists with specific neurorehabilitation training using evidence-based protocols — constraint-induced movement therapy, mirror therapy, functional electrical stimulation, task-specific training, gait training, spasticity management coordination with your treating neurologist, balance retraining for falls prevention. We help you recover what matters to you: honest expectations and sustained partnerships. We start where you are, at home or in our clinic.",
   primaryCTA: "Book Stroke Rehabilitation Assessment",
-  secondaryCTA: "WhatsApp Us",
+  secondaryCTA: "WhatsApp us",
   trustSignals: [
     "DPT-qualified neurorehabilitation specialists",
     "Hospital discharge coordination",
@@ -261,7 +261,7 @@ export const strokeRehabCTA = {
   description: "Whether your family member is being discharged from hospital this week, you are months post-stroke and seeking better intervention, or you are searching from abroad to plan care for a Dubai-based relative — the first step is a comprehensive stroke rehabilitation assessment. We provide thorough evaluation, evidence-based treatment plan, realistic timeline discussion, and coordination with your broader medical team. Home physiotherapy available throughout Dubai for patients who cannot easily travel. Same-week appointments standard; same-day available for hospital discharge transitions.",
   button1Text: "Book Stroke Rehabilitation Assessment",
   button1Href: "/book",
-  button2Text: "WhatsApp Us",
+  button2Text: "WhatsApp us",
   button2Href: "https://wa.me/971555867466?text=Hello%20Vedara%20Care,%20I%20would%20like%20to%20inquire%20about%20stroke%20rehabilitation%20and%20book%20a%20consultation.",
   footer: "Initial assessment from AED [X] · JVC clinic + home across Dubai · DPT-qualified neurorehabilitation specialists · Hospital discharge coordination · Insurance direct-billing · Cultural and language sensitivity"
 };
@@ -340,7 +340,7 @@ export const strokeRehabFaqs = {
     },
     {
       question: "Does insurance cover stroke rehabilitation?",
-      answer: "Most Dubai insurance plans cover stroke rehabilitation substantially given the well-documented medical need. Extended programmes typically require pre-authorisation, which we handle on your behalf. We are direct-billing partners with Daman, AXA, Allianz, Oman Insurance, Now Health, Bupa, and MetLife. WhatsApp your insurance card and brief patient information before booking — we can confirm specific coverage and discuss pre-authorisation requirements."
+      answer: 'Most Dubai insurance plans cover stroke rehabilitation substantially given the well-documented medical need. Extended programmes typically require pre-authorisation, which we handle on your behalf. We are direct-billing partners with Daman, AXA, Allianz, Oman Insurance, Now Health, Bupa, and MetLife. <a href="https://wa.me/971555867466?text=Hi,%20I%27d%20like%20to%20verify%20my%20insurance%20coverage" target="_blank" rel="noopener noreferrer" class="hover:underline">WhatsApp your insurance card</a> and brief patient information before booking — we can confirm specific coverage and discuss pre-authorisation requirements.'
     },
     {
       question: "What about patients with severe impairments — can they still benefit?",
@@ -380,7 +380,7 @@ export const strokeRehabFaqs = {
     },
     {
       question: "How do I book a stroke rehabilitation assessment?",
-      answer: "Three ways: (1) WhatsApp us — fastest response, ideal for hospital discharge planning, sending hospital documents, or asking specific questions about your situation. (2) Call us — direct booking, available 9 AM to 9 PM seven days a week. (3) Book online through our website. For initial consultation, please provide: hospital discharge summary, imaging reports (CT/MRI), current medications, insurance details, brief description of impairments, and preferred care setting (clinic or home). We typically respond within 15 minutes during business hours."
+      answer: 'Three ways: (1) <a href="https://wa.me/971555867466" target="_blank" rel="noopener noreferrer" class="hover:underline">WhatsApp us</a> — fastest response, ideal for hospital discharge planning, sending hospital documents, or asking specific questions about your situation. (2) Call us — direct booking, available 9 AM to 9 PM seven days a week. (3) Book online through our website. For initial consultation, please provide: hospital discharge summary, imaging reports (CT/MRI), current medications, insurance details, brief description of impairments, and preferred care setting (clinic or home). We typically respond within 15 minutes during business hours.'
     }
   ]
 };
@@ -603,7 +603,7 @@ export const strokeRehabPricing = {
     { name: "Chronic phase rehabilitation programme (ongoing)", price: "AED [X]" },
     { name: "Annual review and re-assessment", price: "AED [X]" }
   ],
-  insurance: "Insurance direct-billing with seven major insurers. Stroke rehabilitation is typically covered substantially by Dubai insurance plans given the documented need. Established programmes often require pre-authorisation — we handle this on your behalf and have experience with stroke rehabilitation insurance coverage. <a href=\"#\" style=\"color: #B8975A; text-decoration: underline; font-weight: normal;\">WhatsApp us for specific coverage discussion</a>."
+  insurance: 'Insurance direct-billing with seven major insurers. Stroke rehabilitation is typically covered substantially by Dubai insurance plans given the documented need. Established programmes often require pre-authorisation — we handle this on your behalf and have experience with stroke rehabilitation insurance coverage. <a href=\"#\" style=\"color: #B8975A; text-decoration: underline; font-weight: normal;\"><a href="https://wa.me/971555867466" target="_blank" rel="noopener noreferrer" class="hover:underline">WhatsApp us</a> for specific coverage discussion</a>.'
 };
 
 export const strokeRehabReviews = {

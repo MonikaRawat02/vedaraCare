@@ -269,7 +269,7 @@ export const ayurvedaIbsPrograms = {
       ],
       bestFor: 'IBS-M, post-infectious IBS, SIBO-related IBS, treatment-resistant IBS, severe IBS with significant anxiety-gut component'   }
   ],
-  footer: 'Insurance direct-billing available with seven major insurers — coverage for Ayurvedic IBS treatment varies. IBS is recognised as a medical condition for insurance purposes which often supports coverage. WhatsApp us your insurance card before booking.'};
+  footer: "Insurance direct-billing available with seven major insurers — coverage for Ayurvedic IBS treatment varies. IBS is recognised as a medical condition for insurance purposes which often supports coverage.<a href=\"https://wa.me/971555867466?text=Hi,%20I'd%20like%20to%20verify%20my%20insurance%20coverage%20for%20ayurvedic%20IBS%20%20treatment.\" target=\"_blank\" rel=\"noopener noreferrer\" class=\"text-[#C9A961] hover:underline transition-colors\">WhatsApp us your insurance card</a>  before booking."};
 
 export const ayurvedaIbsFaqs = {
   bgColor: 'bg-[#F5F3EE] ',

@@ -1,7 +1,7 @@
 export const homeFaqs = {
   label: "QUESTIONS, ANSWERED",
   title: "Everything patients ask before their first visit.",
-  description: "Short, honest answers from our clinical team. Cannot find what you are looking for? WhatsApp us, usually answered in under 15 minutes.",
+  description: 'Short, honest answers from our clinical team. Cannot find what you are looking for? <a href="https://wa.me/971555867466" target="_blank" rel="noopener noreferrer" class="hover:underline">WhatsApp us</a>, usually answered in under 15 minutes.',
   buttonText: "Ask Our Team",
   
   faqs: [

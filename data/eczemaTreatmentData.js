@@ -228,7 +228,7 @@ export const eczemaTreatmentCTA = {
   description: "Whether your child has severe atopic dermatitis affecting your family, you have adult eczema affecting your quality of life, you have hand eczema affecting your work, or you are considering newer treatment options — comprehensive specialist consultation is the right starting point. Same-week appointments typically available.",
   button1Text: "Book Eczema Consultation",
   button1Href: "/book",
-  button2Text: "WhatsApp Us",
+  button2Text: "WhatsApp us",
   button2Href: "https://wa.me/+971555867466",
   footer: "Initial consultation from AED 650 · Walking distance from Circle Mall, JVC · DHA-licensed consultant dermatologists · 500+ eczema patients treated · Pediatric and adult expertise · Access to biologic and newer treatments · Multiple languages · Insurance direct-billing"
 };
@@ -472,7 +472,7 @@ export const eczemaTreatmentFaqs = {
     },
     {
       question: "How do I book an eczema consultation?",
-      answer: "Three ways: WhatsApp +971 55 586 7466 for fastest response; call direct 9 AM to 9 PM seven days a week; or book online. For your first appointment please bring photos of eczema at its worst, list of all treatments tried, current medications and skincare products, insurance card, and specific questions. For pediatric consultations, both parents are welcome."
+      answer: 'Three ways: <a href="https://wa.me/971555867466" target="_blank" rel="noopener noreferrer" class="hover:underline">WhatsApp +971 55 586 7466</a> for fastest response; call direct 9 AM to 9 PM seven days a week; or book online. For your first appointment please bring photos of eczema at its worst, list of all treatments tried, current medications and skincare products, insurance card, and specific questions. For pediatric consultations, both parents are welcome.'
     },
 
   ]

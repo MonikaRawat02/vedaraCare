@@ -94,7 +94,7 @@ export const panchakarmaJVCFaqs = {
     },
     {
       question: "Do you accept insurance for Panchakarma at the JVC clinic?",
-      answer: "We are direct-billing partners with Daman, AXA, Allianz, Oman Insurance, Now Health, Bupa, and MetLife. Panchakarma coverage varies by plan — most often partially covered through Daman, AXA, and Now Health premium tiers. WhatsApp us a photo of your insurance card before booking and we will confirm your coverage in writing."
+      answer: "We are direct-billing partners with Daman, AXA, Allianz, Oman Insurance, Now Health, Bupa, and MetLife. Panchakarma coverage varies by plan — most often partially covered through Daman, AXA, and Now Health premium tiers. <a href=\"https://wa.me/971555867466\" target=\"_blank\" rel=\"noopener noreferrer\" class=\"hover:underline\">WhatsApp us</a> a photo of your insurance card before booking and we will confirm your coverage in writing."
     },
     {
       question: "Do you serve patients from JVT, Al Barsha South, Dubai Sports City, and Motor City?",
@@ -110,7 +110,7 @@ export const panchakarmaJVCFaqs = {
     },
     {
       question: "How do I book Panchakarma at your JVC clinic?",
-      answer: "Booking always begins with a consultation, not a direct package purchase. Tap \"Book a Panchakarma Consultation\" anywhere on this page for live calendar availability, WhatsApp us at +971 55 586 7466 for the fastest response (typically under 15 minutes during clinic hours), or call us at +971 55 586 7466. Walk-in consultation slots are sometimes available with prior WhatsApp coordination."
+      answer: 'Booking always begins with a consultation, not a direct package purchase. Tap \"Book a Panchakarma Consultation\" anywhere on this page for live calendar availability, <a href="https://wa.me/971555867466" target="_blank" rel="noopener noreferrer" class="hover:underline">WhatsApp us</a> at +971 55 586 7466 for the fastest response (typically under 15 minutes during clinic hours), or call us at +971 55 586 7466. Walk-in consultation slots are sometimes available with prior WhatsApp coordination.'
     }
   ]
 };
@@ -465,6 +465,7 @@ export const kativastiIntegration = {
     "Ayurvedic doctor adjusts oils based on physiotherapy progress"
   ],
   button1Text: "Book Joint Consultation",
+  button1Link: "/book",
   button2Text: "Read about Physiotherapy in JVC →",
   button2Link: "/physiotherapy-jvc/"
 };
@@ -522,7 +523,7 @@ export const kativastiPrograms = {
       buttonText: "Enquire on WhatsApp"
     }
   ],
-  footer: "Insurance direct-billing available with seven major insurers — coverage for Ayurvedic care varies by plan. WhatsApp us your card before booking to confirm."
+  footer: 'Insurance direct-billing available with seven major insurers — coverage for Ayurvedic care varies by plan. <a href="https://wa.me/971555867466" target="_blank" rel="noopener noreferrer" class="hover:underline">WhatsApp us</a> your card before booking to confirm.'
 };
 export const kativastiReviews = {
   bgColor: "bg-[#1A5D4D]",

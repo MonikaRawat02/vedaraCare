@@ -365,7 +365,7 @@ export const abhyangaFaqs = {
     
     {
       question: "How do I book Abhyanga at your clinic?",
-      answer: "For first-time patients, booking begins with a brief consultation (15–20 minutes, AED 150) where your doctor confirms Abhyanga is the right therapy and selects the right oils for your dosha. Existing patients can rebook directly. Tap \"Book Abhyanga Consultation\" anywhere on this page, WhatsApp us at +971 55 586 7466 for the fastest response, or call +971 55 586 7466."
+      answer: 'For first-time patients, booking begins with a brief consultation (15–20 minutes, AED 150) where your doctor confirms Abhyanga is the right therapy and selects the right oils for your dosha. Existing patients can rebook directly. Tap \"Book Abhyanga Consultation\" anywhere on this page, <a href="https://wa.me/971555867466" target="_blank" rel="noopener noreferrer" class="hover:underline">WhatsApp us</a> at +971 55 586 7466 for the fastest response, or call +971 55 586 7466.'
     }
   ]
 };

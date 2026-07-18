@@ -205,7 +205,7 @@ export const shoulderPhysioFaqs = {
     },
     {
       question: "Does insurance cover shoulder pain physiotherapy?",
-      answer: "Most Dubai insurance plans cover shoulder pain physiotherapy with medical justification. Coverage typically includes initial sessions; extended programmes may require pre-authorisation. We are direct-billing partners with Daman, AXA, Allianz, Oman Insurance, Now Health, Bupa, and MetLife. WhatsApp your insurance card before booking to confirm specific coverage."
+      answer: 'Most Dubai insurance plans cover shoulder pain physiotherapy with medical justification. Coverage typically includes initial sessions; extended programmes may require pre-authorisation. We are direct-billing partners with Daman, AXA, Allianz, Oman Insurance, Now Health, Bupa, and MetLife. <a href="https://wa.me/971555867466?text=Hi,%20I%27d%20like%20to%20verify%20my%20insurance%20coverage" target="_blank" rel="noopener noreferrer" class="hover:underline">WhatsApp your insurance card</a> before booking to confirm specific coverage.'
     },
     {
       question: "What is shoulder impingement?",
@@ -276,7 +276,7 @@ export const shoulderPhysioCTA = {
   description: "Whether you have acute shoulder injury, chronic ongoing pain, suspected rotator cuff issues, impingement, AC joint problems, or any other shoulder condition — the first useful step is a comprehensive shoulder assessment at our JVC clinic. We provide accurate condition-specific diagnosis, evidence-based treatment plan matched to your specific shoulder condition, realistic timeline expectations, and honest discussion about treatment options including when surgery is and is not appropriate. Same-week appointments typically available.",
   button1Text: "Book Shoulder Pain Assessment",
   button1Href: "/book",
-  button2Text: "WhatsApp Us",
+  button2Text: "WhatsApp us",
   button2Href: "https://wa.me/971555867466?text=Hello%20Vedara%20Care,%20I%20would%20like%20to%20inquire%20about%20shoulder%20pain%20physiotherapy%20and%20book%20a%20consultation.",
   footer: "Initial assessment from AED 350 · Walking distance from Circle Mall, JVC · 380+ shoulder patients treated · Most patients avoid surgery with appropriate care · Insurance direct-billing"
 };
@@ -577,7 +577,7 @@ export const shoulderPhysioPricing = {
     { name: "Shoulder instability rehabilitation programme", price: "AED 3,200" }
   ],
   insuranceSection: {
-    description: "Insurance direct-billing with seven major insurers. Shoulder pain physiotherapy is well-covered by Dubai insurance plans with medical justification. Extended programmes may require pre-authorisation, which we handle on your behalf. WhatsApp your insurance card to +971 00 000 0000 before booking for specific coverage confirmation.",
+    description: 'Insurance direct-billing with seven major insurers. Shoulder pain physiotherapy is well-covered by Dubai insurance plans with medical justification. Extended programmes may require pre-authorisation, which we handle on your behalf. <a href="https://wa.me/971555867466?text=Hi,%20I%27d%20like%20to%20verify%20my%20insurance%20coverage" target="_blank" rel="noopener noreferrer" class="hover:underline">WhatsApp your insurance card</a> to +971 00 000 0000 before booking for specific coverage confirmation.',
     insurers: ["Daman", "AXA", "Allianz", "Oman Insurance", "Now Health", "Bupa", "MetLife"],
     cta: "Book Shoulder Pain Assessment — AED 350"
   }

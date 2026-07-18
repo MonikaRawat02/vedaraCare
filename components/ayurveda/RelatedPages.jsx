@@ -19,27 +19,27 @@ const RelatedPages = ({
       <div className="max-w-7xl mx-auto px-6">
         <div className="flex items-end justify-between mb-10">
           <div>
-            <p 
+            <p
               className="text-xs font-semibold tracking-[0.18em] uppercase mb-4"
               style={{ color: 'rgb(184, 145, 90)', fontFamily: '"DM Sans", sans-serif' }}
             >
               {label}
             </p>
-            <h2 
+            <h2
               className=""
-              style={{ 
-                fontFamily: 'Fraunces, serif', 
-                fontWeight: '500', 
-                fontSize: 'clamp(1.5rem, 3vw, 2.1rem)', 
-                color: 'rgb(28, 28, 26)', 
-                lineHeight: '1.25' 
+              style={{
+                fontFamily: 'Fraunces, serif',
+                fontWeight: '500',
+                fontSize: 'clamp(1.5rem, 3vw, 2.1rem)',
+                color: 'rgb(28, 28, 26)',
+                lineHeight: '1.25'
               }}
             >
               {title}
             </h2>
           </div>
-          
-          <Link 
+
+          <Link
             href={linkHref}
             className="hidden sm:flex items-center gap-1 text-sm"
             style={{ color: 'rgb(184, 145, 90)' }}
@@ -55,34 +55,34 @@ const RelatedPages = ({
               key={index}
               href={page.href}
               className="rounded-xl p-6 flex flex-col gap-3 transition-transform hover:scale-[1.02] relative"
-              style={{ 
-                background: 'rgb(255, 255, 255)', 
+              style={{
+                background: 'rgb(255, 255, 255)',
                 border: page.highlight ? '1px solid rgb(184, 145, 90)' : '1px solid rgba(28, 28, 26, 0.1)',
                 boxShadow: page.highlight ? '0 10px 15px -3px rgba(0, 0, 0, 0.1), 0 4px 6px -2px rgba(0, 0, 0, 0.05)' : 'none'
               }}
             >
-              <h3 
+              <h3
                 className="text-sm font-medium"
-                style={{ 
-                  fontFamily: 'Fraunces, serif', 
-                  
+                style={{
+                  fontFamily: 'Fraunces, serif',
+
                 }}
                 dangerouslySetInnerHTML={{ __html: page.title }}
               />
-              <p 
+              <p
                 className="text-xs leading-relaxed flex-1"
                 style={{ color: 'rgb(107, 99, 89)' }}
                 dangerouslySetInnerHTML={{ __html: page.description }}
               />
               {showUrl ? (
-                <span 
+                <span
                   className="text-[11px] flex items-center gap-1 font-medium mt-2"
                   style={{ color: 'rgb(184, 145, 90)', opacity: 0.8 }}
                 >
                   {page.href}
                 </span>
               ) : (
-                <span 
+                <span
                   className="text-xs flex items-center gap-1 font-medium"
                   style={{ color: 'rgb(184, 145, 90)' }}
                 >

@@ -3,10 +3,8 @@ import AyurvedaHero from '../../components/ayurveda/AyurvedaHero';
 import AyurvedaIntro from '../../components/ayurveda/AyurvedaIntro';
 import TreatmentProtocol from '../../components/ayurveda/TreatmentProtocol';
 import TreatmentReviews from '../../components/ayurveda/TreatmentReviews';
-import TreatmentPrograms from '../../components/ayurveda/TreatmentPrograms';
 import FinalCTA from '../../components/ayurveda/FinalCTA';
 import RelatedPages from '../../components/ayurveda/RelatedPages';
-import ConditionBoundaries from '../../components/ayurveda/ConditionBoundaries';
 import ArthritisPillars from '../../components/ayurveda/ArthritisPillars';
 import TreatmentLocationCustom from '../../components/ayurveda/TreatmentLocationCustom';
 
@@ -15,15 +13,11 @@ import {
   diabetesIntro,
   diabetesMechanism1,
   diabetesMechanism2,
-  diabetesOils,
   diabetesProtocol,
-  diabetesSymptoms,
   diabetesGLP1,
-  diabetesBoundaries,
   diabetesReviews,
   diabetesPrograms,
   diabetesFaqs,
-  diabetesTreatmentLocation,
   diabetesFinalCTA,
   diabetesRelatedPages,
   diabetesArthritisPillars,
@@ -50,10 +44,8 @@ const DiabetesAyurvedaDubai = () => {
         <meta property="article:published_time" content="2026-05-01" />
         <meta property="article:modified_time" content={currentDate} />
         <meta property="article:author" content="Dr. [Lead Ayurvedic Physician]" />
-        
         {/* Twitter */}
         <meta name="twitter:card" content="summary_large_image" />
-        
         {/* Canonical & Language */}
         <link rel="canonical" href="https://vedaracare.ae/conditions/diabetes-ayurveda-dubai/" />
         <link rel="alternate" hrefLang="en-AE" href="https://vedaracare.ae/conditions/diabetes-ayurveda-dubai/" />
@@ -342,21 +334,19 @@ const DiabetesAyurvedaDubai = () => {
 
       {/* Section 1: Hero */}
       <AyurvedaHero {...diabetesHero} />
-
       {/* Section 2: Intro (Answer Capsule) */}
       <AyurvedaIntro {...diabetesIntro} />
-
       {/* Section 3: What Ayurveda can offer depends on what stage of diabetes you have */}
       <section className="px-6 md:px-24 py-24" style={{ backgroundColor: "rgb(247, 243, 236)" }}>
         <div className="max-w-7xl mx-auto">
           <div className="text-center mb-16">
-            <div className="uppercase tracking-wider text-sm mb-4" style={{ color: "rgb(201, 169, 97)" }}>
+            <div className="text-[13px] font-sans font-semibold tracking-[0.1em] text-[#C9A961] uppercase block mb-4">
               {diabetesMechanism1.label}
             </div>
-            <h2 className="text-4xl mb-4" style={{ fontFamily: "Georgia, serif", fontWeight: 500 }}>
+            <h2 className="text-[36px] md:text-[42px] font-serif font-medium text-[#1A1A1A] leading-[1.2] mb-4">
               {diabetesMechanism1.title}
             </h2>
-            <p className="text-lg max-w-3xl mx-auto" style={{ color: "rgb(107, 114, 128)" }} dangerouslySetInnerHTML={{ __html: diabetesMechanism1.description }} />
+            <p className="text-[16px] text-[#6B6B6B] font-sans leading-relaxed max-w-3xl mx-auto" dangerouslySetInnerHTML={{ __html: diabetesMechanism1.description }} />
           </div>
           
           <div className="grid md:grid-cols-3 gap-8">
@@ -364,22 +354,21 @@ const DiabetesAyurvedaDubai = () => {
               <div key={index} className="bg-white p-8 rounded-xl border flex flex-col gap-6 space-y-4"
                 style={{ 
                   borderColor: "rgb(201, 169, 97)" 
-                }}
-              >
-                <div className="text-6xl font-['Georgia']" style={{ color: "rgb(201, 169, 97)" }}>
+                }} >
+                <div className="text-4xl md:text-5xl font-serif text-[#C9A961]">
                   {phenotype.letter}
                 </div>
-                <h4 className="text-xl font-medium" style={{ fontFamily: "Georgia, serif" }} dangerouslySetInnerHTML={{ __html: phenotype.title }} />
-                <div className="text-sm italic" style={{ color: "rgb(201, 169, 97)" }} dangerouslySetInnerHTML={{ __html: phenotype.subtitle }} />
-                <p className="leading-relaxed" style={{ color: "rgb(107, 114, 128)" }} dangerouslySetInnerHTML={{ __html: phenotype.content }} />
-                <div className="pt-2 text-sm border-t border-gray-200">
-                  <span className="font-medium">What Ayurveda can realistically achieve:</span> <span dangerouslySetInnerHTML={{ __html: phenotype.ayurvedicEmphasis }} />
+                <h4 className="text-[18px] md:text-[20px] font-serif font-medium text-[#1A1A1A]" dangerouslySetInnerHTML={{ __html: phenotype.title }} />
+                <div className="text-[14px] italic font-sans text-[#C9A961]" dangerouslySetInnerHTML={{ __html: phenotype.subtitle }} />
+                <p className="text-[15px] text-[#6B6B6B] font-sans leading-relaxed" dangerouslySetInnerHTML={{ __html: phenotype.content }} />
+                <div className="pt-2 text-[14px] font-sans border-t border-gray-200 text-[#4A4A4A]">
+                  <span className="font-semibold text-[#1A1A1A]">What Ayurveda can realistically achieve:</span> <span dangerouslySetInnerHTML={{ __html: phenotype.ayurvedicEmphasis }} />
                 </div>
               </div>
             ))}
           </div>
           
-          <p className="text-center mt-12 max-w-3xl mx-auto" style={{ color: "rgb(107, 114, 128)" }} dangerouslySetInnerHTML={{ __html: diabetesMechanism1.footer }} />
+          <p className="text-center mt-12 max-w-3xl mx-auto text-[15px] text-[#6B6B6B] font-sans" dangerouslySetInnerHTML={{ __html: diabetesMechanism1.footer }} />
         </div>
       </section>
 
@@ -390,7 +379,7 @@ const DiabetesAyurvedaDubai = () => {
             <div className="text-sm tracking-wider uppercase font-medium" style={{ color: 'rgb(201, 169, 97)' }}>
               An Explicit Positioning Statement
             </div>
-            <h2 className="text-4xl" style={{ fontFamily: 'Georgia, serif', fontWeight: 500 }}>
+            <h2 className="text-3xl md:text-4xl" style={{ fontFamily: 'Georgia, serif', fontWeight: 500 }}>
               What Ayurvedic treatment is — and is not — in diabetes care.
             </h2>
           </div>
@@ -400,11 +389,9 @@ const DiabetesAyurvedaDubai = () => {
               <p>
                 <strong style={{ color: 'rgb(17, 24, 39)' }}>Ayurvedic treatment for diabetes is integrative, not alternative.</strong> At our JVC clinic, we work alongside endocrinologists — not in competition with them. The patients with the best outcomes have an endocrinologist managing their medications and conventional monitoring, an Ayurvedic physician addressing root metabolic patterns, and the two teams communicating regularly.
               </p>
-              
               <p>
                 What conventional endocrinology does well: precise blood sugar management through medication, monitoring HbA1c and complications, managing acute hyperglycaemic and hypoglycaemic events, coordinating ophthalmology and nephrology when complications develop. What 15-minute endocrinology appointments cannot do: address the insulin-resistance root patterns, prescribe individualised dietary regulation calibrated to your dosha and lifestyle, perform Panchakarma cleansing protocols, address inflammation systemically, and modify the lifestyle factors that perpetuate diabetes.
               </p>
-              
               <p>
                 <strong style={{ color: 'rgb(17, 24, 39)' }}>What we will never do at our JVC clinic:</strong> ask you to stop your prescribed diabetes medication without your endocrinologist's input; claim Ayurveda can "cure" diabetes; promise specific HbA1c reductions; replace insulin in any patient who requires it; treat diabetic emergencies.
               </p>
@@ -413,7 +400,7 @@ const DiabetesAyurvedaDubai = () => {
                 <strong style={{ color: 'rgb(17, 24, 39)' }}>What we will do:</strong> provide a structured 6-month programme that addresses what conventional care cannot, coordinate with your endocrinologist throughout, and produce sustained metabolic improvements that may — under your endocrinologist's supervision — allow medication adjustment.
               </p>
               
-              <blockquote className="text-2xl italic py-8" style={{ fontFamily: 'Georgia, serif', color: 'rgb(201, 169, 97)' }}>
+              <blockquote className="text-xl italic py-8" style={{ fontFamily: 'Georgia, serif', color: 'rgb(201, 169, 97)' }}>
                 "The clinic that promises to cure your diabetes is the clinic that will harm your diabetes. Run from it."
               </blockquote>
             </div>
@@ -431,10 +418,8 @@ const DiabetesAyurvedaDubai = () => {
 
       {/* Section 5: Ayurvedic diabetes treatment has four pillars */}
       <ArthritisPillars {...diabetesArthritisPillars} />
-
       {/* Section 6: What six months of Ayurvedic diabetes treatment at our JVC clinic looks like */}
       <TreatmentProtocol {...diabetesProtocol} />
-
       {/* Section 7: Honest outcomes based on stage and adherence */}
       {/* Section 8: For diabetes complications, Ayurvedic adjunctive care is often most valuable */}
       <section className="bg-white py-24 px-4">
@@ -443,42 +428,42 @@ const DiabetesAyurvedaDubai = () => {
             <div className="text-sm tracking-wider uppercase font-medium" style={{ color: 'rgb(201, 169, 97)' }}>
               Complication-Focused Care
             </div>
-            <h2 className="text-4xl" style={{ fontFamily: 'Georgia, serif', fontWeight: 500 }}>
+            <h2 className="text-3xl md:text-4xl" style={{ fontFamily: 'Georgia, serif', fontWeight: 500 }}>
               For diabetes complications, Ayurvedic adjunctive care is often most valuable.
             </h2>
           </div>
           
           <div className="grid lg:grid-cols-2 gap-12 items-start">
             <div className="space-y-8">
-              <p className="text-lg leading-relaxed" style={{ color: 'rgb(107, 114, 128)' }}>
+              <p className="text-base leading-relaxed" style={{ color: 'rgb(107, 114, 128)' }}>
                 While Ayurvedic treatment for primary diabetes management is most powerful in prediabetes and early type 2, the value shifts as the disease progresses. For long-standing diabetes, the largest clinical gains often come from addressing complications and preventing their progression.
               </p>
               
               <div className="h-px" style={{ backgroundColor: 'rgb(201, 169, 97)' }}></div>
               
               <div className="space-y-3">
-                <h4 className="text-2xl" style={{ fontFamily: 'Georgia, serif', color: 'rgb(201, 169, 97)' }}>
+                <h4 className="text-xl font-semibold" style={{ fontFamily: 'Georgia, serif', color: 'rgb(201, 169, 97)' }}>
                   Diabetic Neuropathy
                 </h4>
-                <p className="leading-relaxed" style={{ color: 'rgb(107, 114, 128)' }}>
+                <p className="text-base leading-relaxed" style={{ color: 'rgb(107, 114, 128)' }}>
                   Peripheral neuropathy is one of the most distressing diabetic complications and one where Ayurveda has its strongest adjunctive role. Specific protocols including <a href='/treatments/padabhyanga-dubai/' class='doctor-specialty-link'>Padabhyanga</a> (medicated foot massage), Snehapana, internal medicines including Brahmi and Ashwagandha-based formulations, and Vata-pacification often reduce burning, tingling, and pain meaningfully. Best results combine Ayurvedic treatment with conventional neuropathy medications.
                 </p>
               </div>
               
               <div className="space-y-3">
-                <h4 className="text-2xl" style={{ fontFamily: 'Georgia, serif', color: 'rgb(201, 169, 97)' }}>
+                <h4 className="text-xl font-semibold" style={{ fontFamily: 'Georgia, serif', color: 'rgb(201, 169, 97)' }}>
                   Diabetic Nephropathy (Early Stage)
                 </h4>
-                <p className="leading-relaxed" style={{ color: 'rgb(107, 114, 128)' }}>
+                <p className="text-base leading-relaxed" style={{ color: 'rgb(107, 114, 128)' }}>
                   For early-stage diabetic kidney disease (microalbuminuria, mildly elevated creatinine), Ayurvedic adjunctive care alongside nephrology can slow progression. Specific formulations including Punarnava and Gokshura-based protocols, dietary modifications, and lifestyle protocols. Always coordinated with your nephrologist — never as a replacement for blood pressure control and ACE inhibitor therapy.
                 </p>
               </div>
               
               <div className="space-y-3">
-                <h4 className="text-2xl" style={{ fontFamily: 'Georgia, serif', color: 'rgb(201, 169, 97)' }}>
+                <h4 className="text-xl font-semibold" style={{ fontFamily: 'Georgia, serif', color: 'rgb(201, 169, 97)' }}>
                   Diabetic Foot Care
                 </h4>
-                <p className="leading-relaxed" style={{ color: 'rgb(107, 114, 128)' }}>
+                <p className="text-base leading-relaxed" style={{ color: 'rgb(107, 114, 128)' }}>
                   Preventive foot care is one of Ayurveda's most clinically valuable diabetes services. Weekly <a href='/treatments/padabhyanga-dubai/' class='doctor-specialty-link'>Padabhyanga</a>, daily foot examination protocols, dietary support for circulation, and specific medications for vascular health. Particularly important for long-standing diabetic patients in Dubai's hot climate where foot issues escalate quickly.
                 </p>
               </div>
@@ -499,10 +484,10 @@ const DiabetesAyurvedaDubai = () => {
       <section className="px-4 py-24" style={{ backgroundColor: "rgb(250, 248, 243)" }}>
         <div className="max-w-7xl mx-auto">
           <div className="text-center mb-16 space-y-4">
-            <div className="text-sm tracking-wider uppercase font-medium" style={{ color: "rgb(201, 169, 97)" }}>
+            <div className="text-[13px] font-sans font-semibold tracking-[0.1em] text-[#C9A961] uppercase block">
               {diabetesGLP1.label}
             </div>
-            <h2 className="text-4xl" style={{ fontFamily: "Georgia, serif", fontWeight: 500 }}>
+            <h2 className="text-[36px] md:text-[42px] font-serif font-medium text-[#1A1A1A] leading-[1.2]">
               {diabetesGLP1.title}
             </h2>
           </div>
@@ -514,17 +499,17 @@ const DiabetesAyurvedaDubai = () => {
                 className="flex flex-col gap-6 rounded-xl border p-8 space-y-4 bg-white"
                 style={{ borderColor: "rgb(230, 230, 230)" }}
               >
-                <h4 className="text-xl font-medium" style={{ fontFamily: "Georgia, serif" }}>
+                <h4 className="text-[18px] md:text-[20px] font-serif font-medium text-[#1A1A1A]">
                   {card.title}
                 </h4>
-                <p className="leading-relaxed" style={{ color: "rgb(107, 114, 128)" }}>
+                <p className="text-[15px] text-[#6B6B6B] font-sans leading-relaxed">
                   {card.description}
                 </p>
               </div>
             ))}
           </div>
           
-          <p className="text-center mt-8 max-w-3xl mx-auto" style={{ color: "rgb(107, 114, 128)" }}>
+          <p className="text-[15px] text-[#6B6B6B] font-sans text-center mt-8 max-w-3xl mx-auto">
             {diabetesGLP1.footer}
           </p>
         </div>
@@ -537,10 +522,10 @@ const DiabetesAyurvedaDubai = () => {
             <div className="text-sm tracking-wider uppercase font-medium" style={{ color: 'rgb(201, 169, 97)' }}>
               Honest Clinical Boundaries
             </div>
-            <h2 className="text-4xl" style={{ fontFamily: 'Georgia, serif', fontWeight: 500 }}>
+            <h2 className="text-3xl md:text-4xl" style={{ fontFamily: 'Georgia, serif', fontWeight: 500 }}>
               When we refer you elsewhere first.
             </h2>
-            <p className="text-lg max-w-3xl mx-auto" style={{ color: 'rgb(107, 114, 128)' }}>
+            <p className="text-base md:text-lg max-w-3xl mx-auto" style={{ color: 'rgb(107, 114, 128)' }}>
               Ayurvedic diabetes treatment is powerful in specific contexts. It is dangerous in others.
             </p>
           </div>
@@ -550,7 +535,7 @@ const DiabetesAyurvedaDubai = () => {
               <div className="text-sm font-medium uppercase tracking-wider" style={{ color: '#dc2626' }}>
                 Urgent First
               </div>
-              <h3 className="text-2xl font-medium" style={{ fontFamily: 'Georgia, serif' }}>
+              <h3 className="text-xl font-medium" style={{ fontFamily: 'Georgia, serif' }}>
                 Urgent conventional care required:
               </h3>
               <ul className="space-y-4">
@@ -597,7 +582,7 @@ const DiabetesAyurvedaDubai = () => {
               <div className="text-sm font-medium uppercase tracking-wider" style={{ color: 'rgb(201, 169, 97)' }}>
                 Adjunctive Role Only
               </div>
-              <h3 className="text-2xl font-medium" style={{ fontFamily: 'Georgia, serif' }}>
+              <h3 className="text-xl font-medium" style={{ fontFamily: 'Georgia, serif' }}>
                 When Ayurveda is supportive but not primary:
               </h3>
               <ul className="space-y-4">
@@ -635,7 +620,7 @@ const DiabetesAyurvedaDubai = () => {
             </div>
           </div>
 
-          <p className="text-center mt-12 max-w-3xl mx-auto" style={{ color: 'rgb(107, 114, 128)' }}>
+          <p className="text-center mt-12 max-w-3xl mx-auto text-sm md:text-base" style={{ color: 'rgb(107, 114, 128)' }}>
             Real Ayurvedic doctors at our JVC clinic refer urgent cases to endocrinology, ophthalmology, nephrology, or A&amp;E as needed. We do not treat diabetic emergencies. We provide structured integrative care for stable diabetes management — alongside your conventional medical team, never instead of them.
           </p>
         </div>
@@ -646,20 +631,20 @@ const DiabetesAyurvedaDubai = () => {
         <div className="max-w-6xl mx-auto">
           <div className="grid lg:grid-cols-5 gap-12">
             <div className="lg:col-span-2 space-y-6 lg:sticky lg:top-24 lg:self-start">
-              <div className="text-sm tracking-wider uppercase font-medium" style={{ color: 'rgb(201, 169, 97)' }}>
+              <div className="text-[13px] font-sans font-semibold tracking-[0.1em] text-[#C9A961] uppercase block">
                 {diabetesFaqs.label}
               </div>
-              <h2 className="text-4xl" style={{ fontFamily: 'Georgia, serif', fontWeight: 500 }}>
+              <h2 className="text-[36px] md:text-[42px] font-serif font-medium text-[#1A1A1A] leading-[1.2]">
                 {diabetesFaqs.title}
               </h2>
-              <p style={{ color: 'rgb(107, 114, 128)' }} dangerouslySetInnerHTML={{ __html: diabetesFaqs.description }} />
+              <p className="text-[16px] text-[#6B6B6B] font-sans leading-relaxed" dangerouslySetInnerHTML={{ __html: diabetesFaqs.description }} />
 
-              <button className="inline-flex items-center justify-center gap-2 whitespace-nowrap rounded-md text-sm font-medium transition-all h-9 px-4 py-2" style={{ backgroundColor: 'rgb(45, 95, 79)', color: 'white' }} onMouseOver={(e) => e.currentTarget.style.backgroundColor = '#2d4538'} onMouseOut={(e) => e.currentTarget.style.backgroundColor = 'rgb(45, 95, 79)'}>
+              <a href="https://wa.me/971555867466?text=Hi,%20I%27m%20interested%20in%20your%20treatments%20and%20would%20like%20to%20book%20a%20consultation." target="_blank" rel="noopener noreferrer" className="inline-flex items-center justify-center gap-2 whitespace-nowrap rounded-md text-sm font-medium transition-all h-9 px-4 py-2" style={{ backgroundColor: 'rgb(45, 95, 79)', color: 'white' }} onMouseOver={(e) => e.currentTarget.style.backgroundColor = '#2d4538'} onMouseOut={(e) => e.currentTarget.style.backgroundColor = 'rgb(45, 95, 79)'}>
                 <svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" strokeWidth="2" strokeLinecap="round" strokeLinejoin="round" className="w-4 h-4 mr-2">
                   <path d="M7.9 20A9 9 0 1 0 4 16.1L2 22Z"></path>
                 </svg>
                 {diabetesFaqs.buttonText}
-              </button>
+              </a>
             </div>
 
             <div className="lg:col-span-3">
@@ -728,10 +713,10 @@ const DiabetesAyurvedaDubai = () => {
             <div className="text-sm tracking-wider uppercase font-medium" style={{ color: 'rgb(201, 169, 97)' }}>
               {diabetesPrograms.label}
             </div>
-            <h2 className="text-4xl" style={{ fontFamily: 'Georgia, serif', fontWeight: 500 }}>
+            <h2 className="text-3xl md:text-4xl" style={{ fontFamily: 'Georgia, serif', fontWeight: 500 }}>
               {diabetesPrograms.title}
             </h2>
-            <p className="text-lg max-w-3xl mx-auto" style={{ color: 'rgb(107, 114, 128)' }} dangerouslySetInnerHTML={{ __html: diabetesPrograms.description }} />
+            <p className="text-base md:text-lg max-w-3xl mx-auto" style={{ color: 'rgb(107, 114, 128)' }} dangerouslySetInnerHTML={{ __html: diabetesPrograms.description }} />
           </div>
           <div className="grid md:grid-cols-3 gap-8">
             {diabetesPrograms.programs.map((program, index) => (
@@ -752,13 +737,13 @@ const DiabetesAyurvedaDubai = () => {
                 )}
                 <div className="flex-1">
                   <div className="mb-6">
-                    <h3 className="text-2xl font-medium mb-2" style={{ fontFamily: 'Georgia, serif' }} dangerouslySetInnerHTML={{ __html: program.name }} />
-                    <div className="text-3xl mb-2" style={{ fontFamily: 'Georgia, serif', color: 'rgb(201, 169, 97)' }} dangerouslySetInnerHTML={{ __html: program.price }} />
+                    <h3 className="text-xl font-medium mb-2" style={{ fontFamily: 'Georgia, serif' }} dangerouslySetInnerHTML={{ __html: program.name }} />
+                    <div className="text-2xl mb-2" style={{ fontFamily: 'Georgia, serif', color: 'rgb(201, 169, 97)' }} dangerouslySetInnerHTML={{ __html: program.price }} />
                     <p className="text-sm" style={{ color: 'rgb(107, 114, 128)' }} dangerouslySetInnerHTML={{ __html: program.duration }} />
                   </div>
                   <ul className="space-y-3 mb-6" style={{ color: 'rgb(107, 114, 128)' }}>
                     {program.features.map((feature, i) => (
-                      <li key={i} className="flex items-start gap-2">
+                      <li key={i} className="flex items-start gap-2 text-sm">
                         <svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" strokeWidth="2" strokeLinecap="round" strokeLinejoin="round" className="w-5 h-5 mt-0.5 flex-shrink-0" style={{ color: 'rgb(201, 169, 97)' }}>
                           <path d="M21.801 10A10 10 0 1 1 17 3.335"></path>
                           <path d="m9 11 3 3L22 4"></path>
@@ -769,8 +754,11 @@ const DiabetesAyurvedaDubai = () => {
                   </ul>
                   <p className="text-sm font-medium mb-6" dangerouslySetInnerHTML={{ __html: program.bestFor }} />
                 </div>
-                <button
-                  className="inline-flex items-center justify-center gap-2 whitespace-nowrap rounded-md text-sm font-medium transition-all h-9 px-4 py-2 has-[>svg]:px-3 w-full"
+                <a
+                  href={`https://wa.me/971555867466?text=${encodeURIComponent(program.whatsappMessage || "Hi, I'd like to inquire about treatment programmes at your clinic.")}`}
+                  target="_blank"
+                  rel="noopener noreferrer"
+                  className="inline-flex items-center justify-center gap-2 whitespace-nowrap rounded-md text-sm font-medium transition-all h-9 px-4 py-2 has-[>svg]:px-3 w-full text-center"
                   style={{
                     backgroundColor: program.featured ? 'rgb(201, 169, 97)' : 'rgb(45, 95, 79)',
                     color: 'white',
@@ -783,7 +771,7 @@ const DiabetesAyurvedaDubai = () => {
                   }}
                 >
                   {program.buttonText}
-                </button>
+                </a>
               </div>
             ))}
           </div>

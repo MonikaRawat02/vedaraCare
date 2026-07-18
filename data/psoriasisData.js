@@ -401,7 +401,7 @@ export const psoriasisCTA = {
   button1Href: "/book",
   button1BgColor: "rgb(184, 150, 90)",
   button1TextColor: "rgb(255, 255, 255)",
-  button2Text: "WhatsApp Us",
+  button2Text: "WhatsApp us",
   button2Href: "https://wa.me/971555867466?text=Hi,%20I'm%20interested%20in%20Psoriasis%20treatment.%20Could%20you%20please%20provide%20more%20information?",
   button2BorderColor: "rgb(201, 165, 90)",
   button2TextColor: "rgb(201, 165, 90)",
@@ -530,7 +530,7 @@ export const psoriasisFaqs = {
     },
     {
       question: "How do I book a psoriasis consultation?",
-      answer: "Three ways: WhatsApp us for fastest response, call direct booking 9 AM to 9 PM seven days a week, or book online. For your first appointment please bring: photos of psoriasis at its worst if available, list of all treatments you have tried, list of current medications, insurance card, previous medical reports, and specific questions. Comprehensive first consultation supports informed treatment planning."
+      answer: 'Three ways: <a href="https://wa.me/971555867466" target="_blank" rel="noopener noreferrer" class="hover:underline">WhatsApp us</a> for fastest response, call direct booking 9 AM to 9 PM seven days a week, or book online. For your first appointment please bring: photos of psoriasis at its worst if available, list of all treatments you have tried, list of current medications, insurance card, previous medical reports, and specific questions. Comprehensive first consultation supports informed treatment planning.'
     }
   ]
 };

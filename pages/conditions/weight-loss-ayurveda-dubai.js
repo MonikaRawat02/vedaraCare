@@ -453,10 +453,10 @@ const WeightLossAyurvedaDubai = () => {
             <div className="uppercase tracking-wider text-sm mb-4" style={{ color: "rgb(201, 169, 97)" }}>
               {weightLossPhenotypes.label}
             </div>
-            <h2 className="text-4xl mb-4" style={{ fontFamily: "Georgia, serif", fontWeight: 500 }}>
+            <h2 className="text-4xl mb-4" style={{ fontFamily: "Fraunces, Georgia, serif", fontWeight: 500 }}>
               {weightLossPhenotypes.title}
             </h2>
-            <p className="text-lg max-w-3xl mx-auto" style={{ color: "rgb(107, 114, 128)" }}>
+            <p className="text-base max-w-3xl mx-auto" style={{ color: "rgb(107, 114, 128)" }}>
               {weightLossPhenotypes.description}
             </p>
           </div>
@@ -464,12 +464,12 @@ const WeightLossAyurvedaDubai = () => {
           <div className="grid md:grid-cols-3 gap-8">
             {weightLossPhenotypes.phenotypes.map((phenotype, index) => (
               <div key={index} className="bg-white p-8 rounded-xl">
-                <div className="text-6xl mb-4" style={{ fontFamily: "Georgia, serif", color: "rgb(201, 169, 97)" }}>
+                <div className="text-4xl mb-4" style={{ fontFamily: "Fraunces, Georgia, serif", color: "rgb(201, 169, 97)" }}>
                   {phenotype.letter}
                 </div>
-                 <h3 className="text-xl mb-2 [&_a]:text-[#1c1c1a] [&_a]:no-underline hover:[&_a]:text-[#C9A961] hover:[&_a]:underline [&_a]:transition-colors" style={{ fontFamily: "Georgia, serif", fontWeight: 500 }} dangerouslySetInnerHTML={{ __html: phenotype.title }} />
+                 <h3 className="text-xl mb-2 [&_a]:text-[#1c1c1a] [&_a]:no-underline hover:[&_a]:text-[#C9A961] hover:[&_a]:underline [&_a]:transition-colors" style={{ fontFamily: "Fraunces, Georgia, serif", fontWeight: 500 }} dangerouslySetInnerHTML={{ __html: phenotype.title }} />
                 <p className="text-sm italic mb-4" style={{ color: "rgb(201, 169, 97)" }} dangerouslySetInnerHTML={{ __html: phenotype.subtitle }} />
-                <p className="mb-4 leading-relaxed" style={{ color: "rgb(107, 114, 128)" }} dangerouslySetInnerHTML={{ __html: phenotype.content }} />
+                <p className="text-sm mb-4 leading-relaxed" style={{ color: "rgb(107, 114, 128)" }} dangerouslySetInnerHTML={{ __html: phenotype.content }} />
                 <div className="text-sm">
                   <span style={{ color: "rgb(201, 169, 97)" }}>Ayurvedic emphasis for this pattern:</span>
                   <span className="ml-2" style={{ color: "rgb(107, 114, 128)" }} dangerouslySetInnerHTML={{ __html: phenotype.ayurvedicEmphasis }}>
@@ -479,7 +479,7 @@ const WeightLossAyurvedaDubai = () => {
             ))}
           </div>
           
-          <p className="text-center mt-12 max-w-3xl mx-auto" style={{ color: "rgb(107, 114, 128)" }}>
+          <p className="text-center mt-12 max-w-3xl mx-auto text-sm" style={{ color: "rgb(107, 114, 128)" }}>
             {weightLossPhenotypes.footer}
           </p>
         </div>
@@ -492,7 +492,7 @@ const WeightLossAyurvedaDubai = () => {
             <div className="uppercase tracking-wider text-sm mb-4" style={{ color: "rgb(201, 169, 97)" }}>
               {weightLossMechanism1.label}
             </div>
-            <h2 className="text-4xl" style={{ fontFamily: "Georgia, serif", fontWeight: 500 }}>
+            <h2 className="text-4xl" style={{ fontFamily: "Fraunces, Georgia, serif", fontWeight: 500 }}>
               {weightLossMechanism1.title}
             </h2>
           </div>
@@ -515,15 +515,15 @@ const WeightLossAyurvedaDubai = () => {
                   }}
                 >
                   <div 
-                    className="text-4xl mb-4" 
-                    style={{ fontFamily: "Georgia, serif", color: "rgb(201, 169, 97)" }}
+                    className="text-3xl mb-4" 
+                    style={{ fontFamily: "Fraunces, Georgia, serif", color: "rgb(201, 169, 97)" }}
                   >
                     {pillar.number}
                   </div>
-                  <h3 className="text-xl mb-4" style={{ fontFamily: "Georgia, serif", fontWeight: 500 }}>
+                  <h3 className="text-xl mb-4" style={{ fontFamily: "Fraunces, Georgia, serif", fontWeight: 500 }}>
                     {pillar.title}
                   </h3>
-                  <p className="leading-relaxed" style={{ color: "rgb(107, 114, 128)" }} dangerouslySetInnerHTML={{ __html: processedDescription }}>
+                  <p className="text-sm leading-relaxed" style={{ color: "rgb(107, 114, 128)" }} dangerouslySetInnerHTML={{ __html: processedDescription }}>
                   </p>
                 </div>
               );
@@ -548,7 +548,7 @@ const WeightLossAyurvedaDubai = () => {
             })}
           </div>
           
-          <p className="text-center mt-12 max-w-3xl mx-auto" style={{ color: "rgb(107, 114, 128)" }}>
+          <p className="text-center mt-12 max-w-3xl mx-auto text-sm" style={{ color: "rgb(107, 114, 128)" }}>
             {weightLossMechanism1.footer}
           </p>
         </div>
@@ -562,51 +562,51 @@ const WeightLossAyurvedaDubai = () => {
         <div className="max-w-7xl mx-auto">
           <div className="text-center mb-16">
             <div className="uppercase tracking-wider text-sm mb-4" style={{ color: 'rgb(201, 169, 97)' }}>HONEST EXPECTATIONS</div>
-            <h2 className="text-4xl" style={{ fontFamily: 'Georgia, serif', fontWeight: 500 }}>
+            <h2 className="text-4xl" style={{ fontFamily: 'Fraunces, Georgia, serif', fontWeight: 500 }}>
               What weight loss is realistic — and why we resist promising specific numbers.
             </h2>
           </div>
           
           <div className="grid md:grid-cols-2 gap-12 items-center">
             <div className="space-y-8">
-              <p className="text-lg">
+              <p className="text-base">
                 We are reluctant to promise specific weight loss numbers, but patients reasonably want to know what to expect. Honest range based on our 500+ weight loss patients at the JVC clinic:
               </p>
               
               <div className="grid grid-cols-2 gap-6">
                 <div>
-                  <div className="text-4xl mb-2" style={{ fontFamily: 'Georgia, serif', color: 'rgb(45, 95, 79)' }}>6-10 kg</div>
+                  <div className="text-3xl mb-2" style={{ fontFamily: 'Fraunces, Georgia, serif', color: 'rgb(45, 95, 79)' }}>6-10 kg</div>
                   <p className="text-sm" style={{ color: 'rgb(107, 114, 128)' }}>
                     Typical for Kapha-predominant pattern over 6 months
                   </p>
                 </div>
                 
                 <div>
-                  <div className="text-4xl mb-2" style={{ fontFamily: 'Georgia, serif', color: 'rgb(45, 95, 79)' }}>8-15 kg</div>
+                  <div className="text-3xl mb-2" style={{ fontFamily: 'Fraunces, Georgia, serif', color: 'rgb(45, 95, 79)' }}>8-15 kg</div>
                   <p className="text-sm" style={{ color: 'rgb(107, 114, 128)' }}>
                     Typical for insulin-resistance pattern with Panchakarma over 6 months
                   </p>
                 </div>
                 
                 <div>
-                  <div className="text-4xl mb-2" style={{ fontFamily: 'Georgia, serif', color: 'rgb(45, 95, 79)' }}>3-7 kg</div>
+                  <div className="text-3xl mb-2" style={{ fontFamily: 'Fraunces, Georgia, serif', color: 'rgb(45, 95, 79)' }}>3-7 kg</div>
                   <p className="text-sm" style={{ color: 'rgb(107, 114, 128)' }}>
                     Typical for stress-pattern weight loss over 4 months
                   </p>
                 </div>
                 
                 <div>
-                  <div className="text-4xl mb-2" style={{ fontFamily: 'Georgia, serif', color: 'rgb(45, 95, 79)' }}>5-12 kg</div>
+                  <div className="text-3xl mb-2" style={{ fontFamily: 'Fraunces, Georgia, serif', color: 'rgb(45, 95, 79)' }}>5-12 kg</div>
                   <p className="text-sm" style={{ color: 'rgb(107, 114, 128)' }}>
                     Typical for PCOS-related weight loss over 6 months
                   </p>
                 </div>
               </div>
               
-              <p style={{ color: 'rgb(107, 114, 128)' }}>These are honest ranges. Some patients exceed the upper end (rare but happens). Some land at the lower end (often patients with shorter programmes or specific contraindications). The patients who lose the least are usually those who do not implement the dietary and lifestyle protocols — the herbs and Panchakarma alone produce limited results.</p>
+              <p className="text-base" style={{ color: 'rgb(107, 114, 128)' }}>These are honest ranges. Some patients exceed the upper end (rare but happens). Some land at the lower end (often patients with shorter programmes or specific contraindications). The patients who lose the least are usually those who do not implement the dietary and lifestyle protocols — the herbs and Panchakarma alone produce limited results.</p>
 
               
-              <p className="text-lg font-medium">
+              <p className="text-base font-medium">
                 What we measure beyond weight: body composition changes (often more striking than scale changes), insulin and HbA1c improvements, lipid panel changes, blood pressure normalisation, energy levels, sleep quality, food relationship changes, and sustained behaviour patterns. These are the markers that predict whether the weight stays off.
               </p>
             </div>

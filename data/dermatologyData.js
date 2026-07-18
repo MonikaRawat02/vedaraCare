@@ -279,7 +279,7 @@ export const dermatologyPricing = {
     { name: "Hyperhidrosis treatment (axillary, botulinum toxin)", price: "From AED 2,200" },
 
   ],
-  insuranceText: "Medical dermatology covered by most Dubai insurance plans with appropriate medical justification. Direct-billing partners with Daman, AXA, Allianz, Oman Insurance, Now Health, Bupa, and MetLife. Cosmetic and aesthetic treatments typically self-pay. WhatsApp your insurance card to +971 55 586 7466 before booking for specific coverage confirmation.",
+  insuranceText: 'Medical dermatology covered by most Dubai insurance plans with appropriate medical justification. Direct-billing partners with Daman, AXA, Allianz, Oman Insurance, Now Health, Bupa, and MetLife. Cosmetic and aesthetic treatments typically self-pay. <a href="https://wa.me/971555867466?text=Hi,%20I%27d%20like%20to%20verify%20my%20insurance%20coverage" target="_blank" rel="noopener noreferrer" class="hover:underline">WhatsApp your insurance card</a> to +971 55 586 7466 before booking for specific coverage confirmation.',
 };
 
 export const dermatologyFaqs = {
@@ -297,7 +297,7 @@ export const dermatologyFaqs = {
       answer: "No — patients can self-refer directly to our dermatology clinic. Some insurance plans require GP referral for specialist consultation; check with your insurance about specific requirements. Most patients book directly without referral. For complex cases, GP coordination can be helpful but is not required."  },
     {
       question: "How quickly can I get an appointment?",
-      answer: "Standard appointments typically available within 1–2 weeks. For urgent concerns (suspicious lesions, severe presentations, acute conditions), priority appointments often available within 2–3 days. For specific cosmetic appointments (pre-event preparation), scheduling depends on timeline. WhatsApp +971 55 586 7466 for fastest response on availability."  },
+      answer: 'Standard appointments typically available within 1–2 weeks. For urgent concerns (suspicious lesions, severe presentations, acute conditions), priority appointments often available within 2–3 days. For specific cosmetic appointments (pre-event preparation), scheduling depends on timeline. <a href="https://wa.me/971555867466" target="_blank" rel="noopener noreferrer" class="hover:underline">WhatsApp +971 55 586 7466</a> for fastest response on availability.'  },
     {
       question: "Where in Dubai is your dermatology clinic?",
       answer: "Our DHA-licensed clinic is in Jumeirah Village Circle (JVC), Dubai — walking distance from Circle Mall, three minutes from FIVE Jumeirah Village Hotel, and five minutes from JSS Private School. Free patient parking. Easy access from Sheikh Mohammed Bin Zayed Road and Al Khail Road. Patients travel to us from JVT, Al Barsha South, Sports City, Motor City, Arjan, Dubai Hills, Marina, Downtown, Palm Jumeirah, Mirdif, and across Dubai."  },
@@ -309,7 +309,7 @@ export const dermatologyFaqs = {
       answer: "Our team includes Arabic-speaking, English-speaking, Hindi-speaking, and Urdu-speaking dermatologists. Specific language capability per dermatologist varies — we match patients to appropriate language capability. For multi-language families, this is often important. Inquiry at booking confirms specific language matching." },
     {
       question: "Will insurance cover my dermatology consultation?",
-      answer: "Most Dubai insurance plans cover medical dermatology consultations with appropriate medical justification. We are direct-billing partners with Daman, AXA, Allianz, Oman Insurance, Now Health, Bupa, and MetLife. Cosmetic and aesthetic treatments are typically not covered by insurance. WhatsApp your insurance card to +971 55 586 7466 before booking for specific coverage confirmation." },
+      answer: 'Most Dubai insurance plans cover medical dermatology consultations with appropriate medical justification. We are direct-billing partners with Daman, AXA, Allianz, Oman Insurance, Now Health, Bupa, and MetLife. Cosmetic and aesthetic treatments are typically not covered by insurance. <a href="https://wa.me/971555867466?text=Hi,%20I%27d%20like%20to%20verify%20my%20insurance%20coverage" target="_blank" rel="noopener noreferrer" class="hover:underline">WhatsApp your insurance card</a> to +971 55 586 7466 before booking for specific coverage confirmation.' },
     {
       question: "Do you treat all skin types?",
       answer: "Yes — comprehensive expertise across all Fitzpatrick skin types (I–VI). Particular expertise with darker skin types where treatment selection differs significantly from lighter skin (laser settings, peel selection, treatment timing, post-inflammatory hyperpigmentation prevention). Dubai's diverse population requires this expertise — we provide it." },
@@ -356,7 +356,7 @@ answer: "Depends on product and area. Lip fillers typically 6–12 months. Cheek
     answer: "DHA-licensed consultant dermatologists (not nurses or aestheticians performing medical or aesthetic procedures), substantial international training, longer consultation times (45–60 minutes initial), expertise across all Fitzpatrick skin types, premium product selection only (no counterfeit risk), honest consultation approach (no pressure, no upselling), transparent published pricing, multiple languages (Arabic, English, Hindi, Urdu), female and male dermatologists available." },
     {
       question: "How do I book a dermatology consultation?",
-      answer: "Three ways: (1) WhatsApp +971 55 586 7466 — fastest response, ideal for inquiry about specific concerns or treatment availability. (2) Call +971 55 586 7466 — direct booking, available 9 AM to 9 PM seven days a week. (3) Book online through our website. For your first appointment, please bring: insurance card (if applicable), list of current medications and supplements, current skincare products, any previous treatment records, and your questions."}
+      answer: 'Three ways: (1) <a href="https://wa.me/971555867466" target="_blank" rel="noopener noreferrer" class="hover:underline">WhatsApp +971 55 586 7466</a> — fastest response, ideal for inquiry about specific concerns or treatment availability. (2) Call +971 55 586 7466 — direct booking, available 9 AM to 9 PM seven days a week. (3) Book online through our website. For your first appointment, please bring: insurance card (if applicable), list of current medications and supplements, current skincare products, any previous treatment records, and your questions.'}
  ]
 };
 
@@ -385,7 +385,7 @@ export const dermatologyCTA = {
   description: "Whether you have specific skin concerns requiring medical attention, persistent conditions affecting your quality of life, aesthetic goals you want to achieve naturally, or simply want expert assessment of your skin — comprehensive dermatology consultation is the right first step. Our consultant dermatologists provide thorough assessment, honest treatment options, realistic outcome expectations, and refined patient experience throughout.",
   button1Text: "Book Dermatology Consultation",
   button1Href: "/book",
-  button2Text: "WhatsApp Us",
+  button2Text: "Chat on WhatsApp",
   button2Href: "https://wa.me/971555867466?text=Hello%20Vedara%20Care,%20I%20would%20like%20to%20inquire%20about%20dermatology%20treatments%20and%20book%20a%20consultation.",
   footer: "Initial consultation from AED 500 · Walking distance from Circle Mall, JVC · Consultant dermatologists, DHA-licensed · Medical and aesthetic dermatology · All Fitzpatrick skin types · Multiple languages · Female and male dermatologists · Insurance direct-billing for medical dermatology"
 };

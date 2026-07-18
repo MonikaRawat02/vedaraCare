@@ -316,7 +316,7 @@ export const pigmentationPricing = {
   ],
   linkText: "Complete pricing for melasma treatment on our melasma page →",
   linkHref: "/conditions/melasma-treatment-dubai/#pricing",
-  insuranceText: "Most cosmetic pigmentation treatment is not covered by insurance. Medical aspects of pigmentation evaluation may be covered with appropriate justification. WhatsApp us for specific coverage questions."
+  insuranceText: 'Most cosmetic pigmentation treatment is not covered by insurance. Medical aspects of pigmentation evaluation may be covered with appropriate justification. <a href="https://wa.me/971555867466" target="_blank" rel="noopener noreferrer" class="hover:underline">WhatsApp us</a> for specific coverage questions.'
 };
 
 export const pigmentationFaqs = {
@@ -379,11 +379,11 @@ export const pigmentationFaqs = {
     },
     {
       question: "Will insurance cover pigmentation treatment?",
-      answer: "Most cosmetic pigmentation treatment is considered cosmetic by Dubai insurance plans and not covered. Some elements may be covered with appropriate medical justification: initial consultation, evaluation of concerning lesions, specific medical conditions affecting pigmentation. Treatment programmes for cosmetic improvement typically self-pay. WhatsApp your insurance card before booking for specific coverage discussion."
+      answer: 'Most cosmetic pigmentation treatment is considered cosmetic by Dubai insurance plans and not covered. Some elements may be covered with appropriate medical justification: initial consultation, evaluation of concerning lesions, specific medical conditions affecting pigmentation. Treatment programmes for cosmetic improvement typically self-pay. <a href="https://wa.me/971555867466?text=Hi,%20I%27d%20like%20to%20verify%20my%20insurance%20coverage" target="_blank" rel="noopener noreferrer" class="hover:underline">WhatsApp your insurance card</a> before booking for specific coverage discussion.'
     },
     {
       question: "How do I book a pigmentation consultation?",
-      answer: "Three ways: (1) WhatsApp us — fastest response, ideal for asking specific questions about your situation. (2) Call our number — direct booking, available 9 AM to 9 PM seven days a week. (3) Book online through our website. For your first appointment, please bring photos of your pigmentation if helpful, a list of treatments already tried, list of current medications, and any previous medical reports."
+      answer: 'Three ways: (1) <a href="https://wa.me/971555867466" target="_blank" rel="noopener noreferrer" class="hover:underline">WhatsApp us</a> — fastest response, ideal for asking specific questions about your situation. (2) Call our number — direct booking, available 9 AM to 9 PM seven days a week. (3) Book online through our website. For your first appointment, please bring photos of your pigmentation if helpful, a list of treatments already tried, list of current medications, and any previous medical reports.'
     }
   ],
   buttonText: "Ask Our Team on WhatsApp",

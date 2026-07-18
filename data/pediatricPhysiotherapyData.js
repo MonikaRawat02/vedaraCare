@@ -9,7 +9,7 @@ export const pediatricPhysiotherapyHero = {
   description: "Paediatric-trained physiotherapists at our Jumeirah Village Circle (JVC) clinic, walking distance from Circle Mall. Specialised treatment for developmental concerns, sports injuries in children and adolescents, scoliosis, torticollis, cerebral palsy, hypermobility, and other paediatric conditions. Age-appropriate approaches from infants through age 18. Family-involved care that respects your child's pace and personality.",
   primaryCTA: "Book a Paediatric Assessment",
   primaryCTAHref: "/book",
-  secondaryCTA: "WhatsApp Us",
+  secondaryCTA: "WhatsApp us",
   secondaryCTAHref: "https://wa.me/971555867466?text=Hello%20Vedara%20Care,%20I%20would%20like%20to%20inquire%20about%20pediatric%20physiotherapy%20and%20book%20a%20consultation.",
   trustSignals: [
     "Paediatric-trained physiotherapists",
@@ -98,7 +98,7 @@ export const pediatricPhysiotherapyInsurance = {
   insurers: ["Daman", "AXA", "Allianz", "Oman Insurance", "Now Health", "Bupa", "MetLife"],
   sidebarText: [
     "Some children's hospitals and paediatric specialists in Dubai also refer to us for outpatient physiotherapy. ",
-    " WhatsApp +971 55 586 7466 for coverage confirmation."
+    "WhatsApp +971 55 586 7466 for coverage confirmation."
 
 ,
     
@@ -270,7 +270,7 @@ export const pediatricPhysiotherapyFinalCTA = {
   description: "If your child has a developmental concern, a sports injury, a postural issue, or any other condition that may benefit from physiotherapy, the first step is a 60-75 minute initial consultation at our JVC clinic. We assess thoroughly, explain findings clearly, design an age-appropriate treatment plan if appropriate, and tell you honestly if we are not the right fit for your child's situation. Same-week appointments typically available.",
   button1Text: "Book a Paediatric Physiotherapy Consultation",
   button1Href: "/book",
-  button2Text: "WhatsApp Us",
+  button2Text: "WhatsApp us",
   button2Href: "https://wa.me/971555867466?text=Hello%20Vedara%20Care,%20I%20would%20like%20to%20inquire%20about%20pediatric%20physiotherapy%20and%20book%20a%20consultation.",
   bullets: [
     "DHA-licensed clinic",
@@ -497,5 +497,5 @@ export const pediatricPhysiotherapyPricing = {
     { service: "Cerebral palsy ongoing care (per session, structured programme)", price: "AED 370" },
     { service: "Multi-disciplinary case coordination (per case)", price: "AED 250" }
   ],
-  footerText: "Family pricing available for siblings receiving treatment. Insurance direct-billing with seven major insurers — coverage for paediatric physiotherapy is often substantial with paediatrician referral. WhatsApp your insurance card and referral letter to +971 55 586 7466 before booking."
+  footerText: 'Family pricing available for siblings receiving treatment. Insurance direct-billing with seven major insurers — coverage for paediatric physiotherapy is often substantial with paediatrician referral. <a href="https://wa.me/971555867466?text=Hi,%20I%27d%20like%20to%20verify%20my%20insurance%20coverage" target="_blank" rel="noopener noreferrer" class="hover:underline">WhatsApp your insurance card</a> and referral letter to +971 55 586 7466 before booking.'
 };

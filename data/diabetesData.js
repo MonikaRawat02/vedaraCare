@@ -424,7 +424,8 @@ export const diabetesReviews = {
     
   
   ],
-  buttonText: "Read All Diabetes Reviews →"
+  buttonText: "Read All Diabetes Reviews →",
+  buttonHref: "https://www.google.com/maps/search/?api=1&query=Vedara%20Care%20Polyclinic%20JVC%20Dubai"
 };
 
 export const diabetesPrograms = {

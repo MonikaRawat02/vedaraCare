@@ -9,6 +9,7 @@ export const migraineHero = {
   description: "Authentic Ayurvedic treatment for migraine in Dubai is a 4 to 6-month structured medical programme working alongside your neurologist — not instead of them. At our Jumeirah Village Circle (JVC) clinic, classical Shirodhara, Nasya, internal medicines, and trigger management address the underlying pattern most preventives only suppress. Realistic outcomes: 40-70% reduction in migraine days for most patients with episodic migraine over 6 months; meaningful but more variable results for chronic migraine.",
   primaryCTA: "Book a Migraine Consultation",
   secondaryCTA: "Chat on WhatsApp",
+  secondaryCTAHref: "https://wa.me/971555867466?text=Hi,%20I'd%20like%20to%20inquire%20about%20Ayurvedic%20migraine%20treatment%20at%20your%20JVC%20clinic%20in%20Dubai.",
   trustSignals: [
     "We Work With Your Neurologist",
     "280+ Migraine Patients Treated",
@@ -80,7 +81,7 @@ export const migraineBoundaries = {
     borderColor: "border-gray-100",
     labelColor: "text-[#E63946]",
     bulletColor: "bg-[#E63946]",
-    alertBox: "The 'worst headache of your life,' sudden severe headache, or headache with neurological symptoms (weakness, numbness, vision loss, speech changes, confusion) requires immediate emergency evaluation. Call 999.",
+    alertBox: "The 'worst headache of your life,' sudden severe headache, or headache with neurological symptoms (weakness, numbness, vision loss, speech changes, confusion) requires immediate emergency evaluation. Call <a href=\"tel:999-[#C9A961] hover:underline transition-colors\">999</a>.",
     alertBg: "bg-[#FEF2F2]",
     alertBorder: "border-[#E63946]",
     alertTextColor: "text-[#991B1B]",
@@ -119,6 +120,8 @@ export const migraineLocation = {
   description: "Our JVC clinic has dedicated Shirodhara treatment rooms with controlled lighting (important for migraine patients with light sensitivity), sound-insulated quiet environment, and Nasya treatment positions. Walking distance from Circle Mall, easy access from JVC Districts 10, 11, 12, 13, JVT, and Al Barsha South. Female doctors available on request.",
   address: "Al Barsha South Fourth, Binghatti Azure, Shop -4, <br/>Jumeraih Village Circle (JVC) Dubai",
   phone: "+971 55 586 7466",
+  whatsapp: "+971 55 586 7466",
+  whatsappMessage: "Hi, I'd like to inquire about Ayurvedic migraine treatment at your JVC clinic in Dubai.",
   email: "booking@vedaracare.ae",
   hours: "Saturday - Sunday: 8:30 am to 11:30 pm",
   landmarks: [
@@ -165,7 +168,8 @@ export const migraineReviews = {
     { value: "82%", label: "ACHIEVED 30%+ REDUCTION" },
     { value: "64%", label: "ACHIEVED 50%+ REDUCTION" }
   ],
-  buttonText: "Read All Migraine Reviews"
+  buttonText: "Read All Migraine Reviews",
+  buttonHref: "https://www.google.com/maps/search/?api=1&query=Vedara%20Care%20Polyclinic%20JVC%20Dubai"
 };
 
 export const migrainePrograms = {
@@ -227,7 +231,7 @@ export const migrainePrograms = {
       bestFor: "Chronic migraine, medication overuse headache, severe or treatment-resistant patterns, complex integrated care"
     }
   ],
-  footer: "Insurance direct-billing available with seven major insurers — coverage for Ayurvedic migraine treatment varies. Migraine is recognised as a medical condition for insurance purposes which often supports coverage. WhatsApp us your insurance card before booking to confirm."
+  footer: "Insurance direct-billing available with seven major insurers — coverage for Ayurvedic migraine treatment varies. Migraine is recognised as a medical condition for insurance purposes which often supports coverage. <a href=\"https://wa.me/971555867466?text=Hi,%20I'd%20like%20to%20verify%20my%20insurance%20coverage%20for%20migraine%20treatment.\" target=\"_blank\" rel=\"noopener noreferrer\" class=\"text-[#C9A961] hover:underline transition-colors\">WhatsApp us your card</a> before booking to confirm."
 };
 
 export const migraineFaqs = {
@@ -239,6 +243,7 @@ export const migraineFaqs = {
   ],
   description: "For Shirodhara specifically, see the treatment page. For stress-related headache without migraine pattern, see our stress and anxiety page.",
   buttonText: "Ask the Clinical Team",
+  buttonHref: "https://wa.me/971555867466?text=Hi,%20I%20have%20a%20question%20about%20Ayurvedic%20migraine%20treatment%20at%20your%20JVC%20clinic%20in%20Dubai.",
   faqs: [
     {
       question: "Does Ayurvedic treatment actually work for migraine?",
@@ -314,11 +319,11 @@ export const migraineFaqs = {
     },
     {
       question: "Does insurance cover Ayurvedic migraine treatment?",
-      answer: "Migraine is recognised as a medical condition for insurance purposes, which often supports coverage. Some plans cover Ayurvedic treatment for migraine, particularly when there is documented neurological diagnosis and previous medication trials. We are direct-billing partners with seven major insurers — Daman, AXA, Allianz, Oman Insurance, Now Health, Bupa, MetLife. WhatsApp us your insurance card photo before booking and we will confirm coverage."
+      answer: "Migraine is recognised as a medical condition for insurance purposes, which often supports coverage. Some plans cover Ayurvedic treatment for migraine, particularly when there is documented neurological diagnosis and previous medication trials. We are direct-billing partners with seven major insurers — Daman, AXA, Allianz, Oman Insurance, Now Health, Bupa, MetLife. <a href=\"https://wa.me/971555867466?text=Hi,%20I'd%20like%20to%20verify%20my%20insurance%20coverage%20for%20migraine%20treatment.\" target=\"_blank\" rel=\"noopener noreferrer\" class=\"text-[#C9A961] hover:underline transition-colors\">WhatsApp us your insurance card photo</a> before booking and we will confirm coverage."
     },
     {
       question: "How do I start?",
-      answer: "Always with a thorough assessment. Tap \"Book a Migraine Consultation\" on this page, WhatsApp us at [number], or call [number]. Please bring (or send before consultation): your migraine diary if you keep one, most recent neurologist notes, any MRI/imaging reports, current medication list (preventive and acute), and a list of treatments you have previously tried with response notes. The 60-minute consultation at our JVC clinic includes comprehensive history, subtype identification, and a written treatment plan with realistic expectations."
+      answer: "Always with a thorough assessment. Tap \"Book a Migraine Consultation\" on this page, <a href=\"https://wa.me/971555867466?text=Hi,%20I'd%20like%20to%20inquire%20about%20Ayurvedic%20migraine%20treatment%20at%20your%20JVC%20clinic%20in%20Dubai.\" target=\"_blank\" rel=\"noopener noreferrer\" class=\"text-[#C9A961] hover:underline transition-colors\">WhatsApp us +971 55 586 7466</a>, or call <a href=\"tel:+971555867466\" class=\"text-[#C9A961] hover:underline transition-colors\">+971 55 586 7466</a>. Please bring (or send before consultation): your migraine diary if you keep one, most recent neurologist notes, any MRI/imaging reports, current medication list (preventive and acute), and a list of treatments you have previously tried with response notes. The 60-minute consultation at our JVC clinic includes comprehensive history, subtype identification, and a written treatment plan with realistic expectations."
     }
   ]
 };
@@ -375,6 +380,7 @@ export const migraineCTA = {
   description: "If you have been managing migraine for years — with medications that partially work, triggers you cannot always avoid, and neurologist appointments that feel rushed — the first useful step is a 60-minute consultation that takes your migraine seriously. We identify your specific subtype, review what you have already tried, design a 6-month programme tailored to your pattern, and coordinate with your neurologist throughout. Migraine is a serious neurological condition. We treat it as one.",
   button1Text: "Book a Migraine Consultation",
   button2Text: "Chat on WhatsApp",
+  button2Href: "https://wa.me/971555867466?text=Hi,%20I'd%20like%20to%20inquire%20about%20Ayurvedic%20migraine%20treatment%20at%20your%20JVC%20clinic%20in%20Dubai.",
   bullets: [
     "Initial consultation from AED 350",
     "Walking distance from Circle Mall, JVC",

@@ -10,10 +10,13 @@ const TreatmentIntegration = ({
   image = "",
   features = [],
   button1Text = "",
+  button1Link = "",
   button2Text = "",
   button2Link = "",
   alt = "Integrated care consultation"
 }) => {
+  const isExternalLink1 = button1Link && (button1Link.startsWith('http://') || button1Link.startsWith('https://') || button1Link.startsWith('mailto:') || button1Link.startsWith('tel:') || button1Link.startsWith('whatsapp:'));
+  
   return (
     <section className={`${bgColor} py-24 px-6 relative overflow-hidden`}>
       <div className="max-w-7xl mx-auto">
@@ -45,9 +48,29 @@ const TreatmentIntegration = ({
             </div>
 
             <div className="flex gap-4">
-              <button className="inline-flex items-center justify-center gap-2 whitespace-nowrap rounded-md text-sm font-medium transition-all disabled:pointer-events-none disabled:opacity-50 h-9 px-4 py-2 bg-[#1A5D4D] hover:bg-[#154935] text-white">
-                {button1Text}
-              </button>
+              {button1Text && button1Link ? (
+                isExternalLink1 ? (
+                  <a
+                    href={button1Link}
+                    target="_blank"
+                    rel="noopener noreferrer"
+                    className="inline-flex items-center justify-center gap-2 whitespace-nowrap rounded-md text-sm font-medium transition-all disabled:pointer-events-none disabled:opacity-50 h-9 px-4 py-2 bg-[#1A5D4D] hover:bg-[#154935] text-white"
+                  >
+                    {button1Text}
+                  </a>
+                ) : (
+                  <Link
+                    href={button1Link}
+                    className="inline-flex items-center justify-center gap-2 whitespace-nowrap rounded-md text-sm font-medium transition-all disabled:pointer-events-none disabled:opacity-50 h-9 px-4 py-2 bg-[#1A5D4D] hover:bg-[#154935] text-white"
+                  >
+                    {button1Text}
+                  </Link>
+                )
+              ) : button1Text ? (
+                <button className="inline-flex items-center justify-center gap-2 whitespace-nowrap rounded-md text-sm font-medium transition-all disabled:pointer-events-none disabled:opacity-50 h-9 px-4 py-2 bg-[#1A5D4D] hover:bg-[#154935] text-white">
+                  {button1Text}
+                </button>
+              ) : null}
               {button2Link && button2Text && (
                 <Link 
                   href={button2Link}

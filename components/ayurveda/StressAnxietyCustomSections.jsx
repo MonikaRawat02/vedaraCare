@@ -135,7 +135,9 @@ export const StressAnxietyVisitSection = ({
   hours = [],
   description = "",
   button1Text = "Book an Anxiety & Stress Consultation",
+  button1Href = "/book",
   button2Text = "WhatsApp Us",
+  button2Href = "https://wa.me/971555867466?text=Hello%20Vedara%20Care,%20I%20would%20like%20to%20inquire%20about%20your%20treatments%20and%20book%20a%20consultation.%20Please%20assist%20me.",
   mapEmbed = "https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d3613.9894568193345!2d55.20722358578439!3d25.068346479666594!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x3e5f6dd72f3da587%3A0xe7ecca8687a75b72!2sVedara%20Care%20Polyclinic!5e0!3m2!1sen!2sus!4v1780727442216!5m2!1sen!2sus",
   alt = "",
   whatsapp = ""
@@ -223,13 +225,13 @@ export const StressAnxietyVisitSection = ({
             )}
 
             <div className="flex flex-col sm:flex-row gap-4">
-              <button className="bg-[#1F4538] text-white px-6 py-4 rounded font-bold flex-1 hover:bg-[#163128] transition-colors text-sm font-sans">
+              <a href={button1Href} className="bg-[#1F4538] text-white px-6 py-4 rounded font-bold flex-1 hover:bg-[#163128] transition-colors text-sm font-sans text-center">
                 {button1Text}
-              </button>
-              <button className="bg-[#25D366] text-white px-6 py-4 rounded font-bold flex items-center justify-center gap-2 hover:bg-[#1eb956] transition-colors text-sm font-sans">
+              </a>
+              <a href={button2Href} target="_blank" rel="noopener noreferrer" className="bg-[#25D366] text-white px-6 py-4 rounded font-bold flex items-center justify-center gap-2 hover:bg-[#1eb956] transition-colors text-sm font-sans text-center">
                 <MessageCircle size={20} />
                 {button2Text}
-              </button>
+              </a>
             </div>
           </div>
         </div>

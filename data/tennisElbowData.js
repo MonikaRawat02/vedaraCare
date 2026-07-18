@@ -352,7 +352,7 @@ export const tennisElbowPricing = {
     { name: "Padel-specific return-to-sport programme", price: "AED 3,600" },
     { name: "Ergonomic workplace assessment (office workers)", price: "AED 550" }
   ],
-  insuranceText: "Insurance direct-billing with Daman, AXA, Allianz, Oman Insurance, Now Health, Bupa, and MetLife. Tennis elbow physiotherapy is well-covered by Dubai insurance plans with medical justification. Extended programmes and shockwave therapy may require pre-authorisation, which we handle on your behalf. WhatsApp your insurance card before booking for specific coverage confirmation.",
+  insuranceText: 'Insurance direct-billing with Daman, AXA, Allianz, Oman Insurance, Now Health, Bupa, and MetLife. Tennis elbow physiotherapy is well-covered by Dubai insurance plans with medical justification. Extended programmes and shockwave therapy may require pre-authorisation, which we handle on your behalf. <a href="https://wa.me/971555867466?text=Hi,%20I%27d%20like%20to%20verify%20my%20insurance%20coverage" target="_blank" rel="noopener noreferrer" class="hover:underline">WhatsApp your insurance card</a> before booking for specific coverage confirmation.',
   // insurances: ["Daman", "AXA", "Allianz", "Oman Insurance", "Now Health", "Bupa", "MetLife"]
 };
 
@@ -389,13 +389,13 @@ export const tennisElbowFaqs = {
       answer: "Our DHA-licensed clinic is in Jumeirah Village Circle (JVC), Dubai — walking distance from Circle Mall, three minutes from FIVE Jumeirah Village Hotel, and five minutes from JSS Private School. Free patient parking. Easy access from Sheikh Mohammed Bin Zayed Road and Al Khail Road. Patients travel to us from JVT, Al Barsha South, Sports City, Motor City, Arjan, Dubai Hills, Marina, Downtown, Palm Jumeirah, Mirdif, and across Dubai for specialist tendinopathy care."    },
     {
       question: "How quickly can I get an appointment?",
-      answer: "Same-week appointments are typical for tennis elbow assessment. Tennis elbow is a chronic progressive condition rather than acute emergency, so same-day appointments are not usually required. WhatsApp us for fastest response — typically within 15 minutes during business hours."  },
+      answer: 'Same-week appointments are typical for tennis elbow assessment. Tennis elbow is a chronic progressive condition rather than acute emergency, so same-day appointments are not usually required. <a href="https://wa.me/971555867466" target="_blank" rel="noopener noreferrer" class="hover:underline">WhatsApp us</a> for fastest response — typically within 15 minutes during business hours.'  },
     {
       question: "Do I need imaging for tennis elbow?",
       answer: "Usually not. Tennis elbow diagnosis is clinical — based on history, specific examination tests, and clinical pattern. Imaging may be appropriate if diagnosis is unclear, if other conditions are suspected (radial tunnel syndrome, lateral collateral ligament issues, posterior interosseous nerve entrapment), or if response to treatment is slower than expected. Ultrasound can visualise the tendon directly. MRI is rarely needed."},
     {
       question: "Does insurance cover tennis elbow treatment?",
-      answer: "Most Dubai insurance plans cover tennis elbow physiotherapy with medical justification. Coverage typically includes initial sessions; extended programmes and shockwave therapy may require pre-authorisation. We are direct-billing partners with Daman, AXA, Allianz, Oman Insurance, Now Health, Bupa, and MetLife. WhatsApp your insurance card before booking to confirm specific coverage."    },
+      answer: 'Most Dubai insurance plans cover tennis elbow physiotherapy with medical justification. Coverage typically includes initial sessions; extended programmes and shockwave therapy may require pre-authorisation. We are direct-billing partners with Daman, AXA, Allianz, Oman Insurance, Now Health, Bupa, and MetLife. <a href="https://wa.me/971555867466?text=Hi,%20I%27d%20like%20to%20verify%20my%20insurance%20coverage" target="_blank" rel="noopener noreferrer" class="hover:underline">WhatsApp your insurance card</a> before booking to confirm specific coverage.'    },
     {
       question: "Can I continue padel during treatment?",
       answer: "Depends on severity. Severe cases may require complete padel break for the first 4–6 weeks. Moderate cases may continue with substantial modifications (reduced playing frequency, modified intensity, technique adjustments). Mild cases can often continue with monitoring. The goal is calibrated loading — not complete avoidance. We provide specific guidance based on your situation, including return-to-padel programmes once initial healing has begun."  },
@@ -429,7 +429,7 @@ export const tennisElbowFaqs = {
       answer: "Evidence-based eccentric and isometric loading protocols (often missed at non-specialist clinics that use generic 'strengthening'), longer sessions (60 minutes) allowing thorough treatment and patient education, shockwave therapy available for chronic cases, padel-specific expertise given Dubai's demographics, ergonomic assessment integrated into office worker treatment, honest discussion about cortisone evidence, transparent published pricing, and realistic timeline expectations."  },
     {
       question: "How do I book a tennis elbow assessment?",
-      answer: "Three ways: (1) WhatsApp +971 55 586 7466 — fastest response, ideal for sending brief description of your symptoms. (2) Call +971 55 586 7466 — direct booking, available 9AM to 9PM seven days a week. (3) Book online through our website. For your first appointment, please bring: any imaging if available, medical reports, current medication list, insurance card, comfortable clothing allowing elbow assessment, and information about your activities and triggers."}
+      answer: 'Three ways: (1) <a href="https://wa.me/971555867466" target="_blank" rel="noopener noreferrer" class="hover:underline">WhatsApp +971 55 586 7466</a> — fastest response, ideal for sending brief description of your symptoms. (2) Call +971 55 586 7466 — direct booking, available 9AM to 9PM seven days a week. (3) Book online through our website. For your first appointment, please bring: any imaging if available, medical reports, current medication list, insurance card, comfortable clothing allowing elbow assessment, and information about your activities and triggers.'}
     ]
 };
 
@@ -466,7 +466,7 @@ export const tennisElbowCTA = {
   description: "If you have tennis elbow — from padel, office work, gym training, tennis, or any other activity — appropriate evidence-based treatment substantially improves your recovery. The first step is a comprehensive tennis elbow assessment at our JVC clinic. We confirm the diagnosis, identify your specific contributing factors, design an evidence-based treatment plan with realistic timeline, and start treatment the same session. Same-week appointments typically available.",
   button1Text: "Book Tennis Elbow Assessment",
   button1Href: "/book",
-  button2Text: "WhatsApp Us",
+  button2Text: "WhatsApp us",
   button2Href: "https://wa.me/971555867466?text=Hello%20Vedara%20Care,%20I%20would%20like%20to%20inquire%20about%20tennis%20elbow%20treatment%20and%20book%20a%20consultation.",
   bullets: [
     "Initial assessment from AED 450",

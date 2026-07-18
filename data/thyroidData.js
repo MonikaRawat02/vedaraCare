@@ -8,7 +8,9 @@ export const thyroidHero = {
   title: "Ayurveda does not replace\nyour thyroid medication. It\naddresses what your\nmedication cannot.",
   description: "Authentic Ayurvedic treatment for thyroid in Dubai is supportive, integrative care — never a replacement for levothyroxine, carbimazole, or any prescribed thyroid medication. At our Jumeirah Village Circle (JVC) clinic, structured 6 to 9-month programmes address the autoimmune patterns in Hashimoto's, the metabolic and constitutional factors affecting how you feel on thyroid medication, residual symptoms despite \"normal\" bloodwork, and concurrent conditions. We work alongside your endocrinologist. We never replace them.",
   primaryCTA: "Book a Thyroid Consultation",
+  primaryCTAHref: "/book",
   secondaryCTA: "Chat on WhatsApp",
+  secondaryCTAHref: "https://wa.me/971555867466?text=Hi,%20I'd%20like%20to%20inquire%20about%20Ayurvedic%20thyroid%20treatment%20at%20your%20JVC%20clinic%20in%20Dubai.",
   trustSignals: [
     "We Work With Your Endocrinologist",
     "320+ Thyroid Patients Treated",
@@ -311,7 +313,7 @@ export const thyroidBoundaries = {
     titleClass: "text-2xl font-serif",
     useWarningIcon: true,
     iconColor: "text-[#E63946]",
-    alertBox: "Important: Symptoms of severe hypothyroidism (severe lethargy, hypothermia, confusion) or thyroid storm (severe tachycardia, fever, agitation) require emergency evaluation. Call 999 or go to A&E immediately.",
+    alertBox: "Important: Symptoms of severe hypothyroidism (severe lethargy, hypothermia, confusion) or thyroid storm (severe tachycardia, fever, agitation) require emergency evaluation. Call <a href=\"tel:999\" class=\"hover:underline\">999</a> or go to A&E immediately.",
     alertBg: "bg-[#FEF2F2]",
     alertBorder: "border-[#E63946]",
     alertTextColor: "text-[#991B1B]",
@@ -351,6 +353,7 @@ export const thyroidFaqs = {
   title: "Common questions about Ayurvedic thyroid treatment in Dubai.",
   description: `Short, honest answers from our clinical team. <br/><br/><strong>Further Reading:</strong><br/>• <a href="/treatments/panchakarma-dubai/" class="text-[#184C3A] hover:underline">Read about Panchakarma</a><br/>• <a href="/conditions/pcos-ayurveda-dubai/" class="text-[#184C3A] hover:underline">Read about Ayurveda for PCOS</a>`,
   buttonText: "Ask the Clinical Team",
+  buttonHref: "https://wa.me/971555867466?text=Hi,%20I'd%20like%20to%20ask%20a%20question%20about%20Ayurvedic%20thyroid%20treatment%20at%20your%20JVC%20clinic%20in%20Dubai.",
   faqs: [
     {
       question: "Can I stop my thyroid medication if I do Ayurvedic treatment?",
@@ -397,7 +400,9 @@ export const thyroidCTA = {
   title: "Ready to explore supportive Ayurvedic care for your thyroid condition?",
   description: "Book a comprehensive thyroid consultation at our JVC clinic. Bring your recent bloodwork.",
   button1Text: "Book Your Consultation",
+  button1Href: "/book",
   button2Text: "Chat on WhatsApp",
+  button2Href: "https://wa.me/971555867466?text=Hi,%20I'd%20like%20to%20inquire%20about%20Ayurvedic%20thyroid%20treatment%20at%20your%20JVC%20clinic%20in%20Dubai.",
   subtext: "Circle Mall, Jumeirah Village Circle (JVC), Dubai · DHA-Licensed · Open Sat-Thu 9am-8pm",
   button1Class: "bg-[#184C3A] text-white hover:bg-[#123a2c]",
   button2Class: "bg-[#4A7C59] text-white hover:bg-[#3d664a]"

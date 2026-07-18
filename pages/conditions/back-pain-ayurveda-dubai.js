@@ -444,6 +444,8 @@ const AyurvedicBackPain = () => {
           label={ayurvedicBackPainPricing.label}
           title={ayurvedicBackPainPricing.title}
           bgColor="bg-[#FAF8F3]"
+          whatsappNumber={ayurvedicBackPainLocation.whatsapp}
+          defaultWhatsappMessage={ayurvedicBackPainLocation.whatsappMessage}
           programs={ayurvedicBackPainPricing.items.map(item => ({
             name: item.name,
             price: `AED ${item.price}`,
@@ -452,7 +454,8 @@ const AyurvedicBackPain = () => {
             featured: item.isRecommended,
             featuredLabel: "Most Common for Chronic Back Pain",
             bestFor: item.footer,
-            buttonText: "Inquire on WhatsApp"
+            buttonText: "Inquire on WhatsApp",
+            whatsappMessage: item.whatsappMessage
           }))}
           footer={ayurvedicBackPainPricing.footerNote}
         />

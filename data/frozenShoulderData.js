@@ -379,7 +379,7 @@ export const frozenShoulderPricing = {
     {name: "Post-surgical frozen shoulder rehabilitation",price: "AED 3,500"}
   ],
   insurers: ["Daman", "AXA", "Allianz", "Oman Insurance", "Now Health", "Bupa", "MetLife"],
-  insuranceText: "Insurance direct-billing with seven major insurers. Frozen shoulder physiotherapy is well-covered by Dubai insurance plans given the documented disability impact and clear diagnostic criteria. WhatsApp your insurance card before booking for specific coverage confirmation. Pre-authorisation is sometimes needed for extended programmes — we handle this on your behalf."
+  insuranceText: 'Insurance direct-billing with seven major insurers. Frozen shoulder physiotherapy is well-covered by Dubai insurance plans given the documented disability impact and clear diagnostic criteria. <a href="https://wa.me/971555867466?text=Hi,%20I%27d%20like%20to%20verify%20my%20insurance%20coverage" target="_blank" rel="noopener noreferrer" class="hover:underline">WhatsApp your insurance card</a> before booking for specific coverage confirmation. Pre-authorisation is sometimes needed for extended programmes — we handle this on your behalf.'
 };
 
 
@@ -425,7 +425,7 @@ export const frozenShoulderFaqs = {
       answer: "Usually not required for frozen shoulder diagnosis. The diagnosis is primarily clinical — based on the characteristic pattern of restricted active and passive movement in all directions. MRI may be appropriate if there is concern about other contributing conditions (rotator cuff tears, labral pathology), or if response to treatment is slower than expected."},
        {
       question: "Does insurance cover frozen shoulder treatment?",
-      answer: "Yes — frozen shoulder is well-documented in insurance terms and typically covered substantially. Extended treatment programmes (which frozen shoulder often requires) may need pre-authorisation, which we handle on your behalf. Direct-billing with Daman, AXA, Allianz, Oman Insurance, Now Health, Bupa, and MetLife. WhatsApp your insurance card before booking to confirm specific coverage and out-of-pocket cost."    },
+      answer: 'Yes — frozen shoulder is well-documented in insurance terms and typically covered substantially. Extended treatment programmes (which frozen shoulder often requires) may need pre-authorisation, which we handle on your behalf. Direct-billing with Daman, AXA, Allianz, Oman Insurance, Now Health, Bupa, and MetLife. <a href="https://wa.me/971555867466?text=Hi,%20I%27d%20like%20to%20verify%20my%20insurance%20coverage" target="_blank" rel="noopener noreferrer" class="hover:underline">WhatsApp your insurance card</a> before booking to confirm specific coverage and out-of-pocket cost.'    },
     {
       question: "Will physiotherapy be painful?",
       answer: "Treatment intensity is calibrated to your phase. In the freezing phase, treatment is gentle and prioritises pain management — aggressive treatment in this phase typically worsens symptoms. In the frozen phase, more active treatment is appropriate and may produce some discomfort during stretching and mobilisation, but should not produce severe pain. The 'no pain no gain' approach is not appropriate for frozen shoulder — phase-specific treatment produces better outcomes with less suffering." },
@@ -460,7 +460,7 @@ answer:"Most activities can continue, though some modifications are needed. Move
   answer:"Phase-specific treatment (most clinics apply the same approach regardless of phase, which produces worse outcomes), DPT-qualified specialists with specific frozen shoulder training, longer sessions allowing thorough treatment, same therapist throughout the long treatment course, coordination with rheumatologists for hydrodilatation when appropriate, diabetic patient expertise given Dubai's population, transparent published pricing, honest realistic timeline expectations, and structured home programme that adapts as you progress through phases."},
   {
     question: "How do I book a frozen shoulder assessment?",
-    answer:"Three ways: (1) WhatsApp us — fastest response, ideal for sending brief description of your symptoms and how long they have been present. (2) Call us — direct booking, available 9 AM to 9 PM seven days a week. (3) Book online through our website. For your first appointment, please bring: any imaging if available (MRI, X-rays, ultrasound), medical reports, current medication list including diabetes medications if applicable, insurance card, and comfortable clothing allowing shoulder assessment."  }
+    answer:'Three ways: (1) <a href="https://wa.me/971555867466" target="_blank" rel="noopener noreferrer" class="hover:underline">WhatsApp us</a> — fastest response, ideal for sending brief description of your symptoms and how long they have been present. (2) Call us — direct booking, available 9 AM to 9 PM seven days a week. (3) Book online through our website. For your first appointment, please bring: any imaging if available (MRI, X-rays, ultrasound), medical reports, current medication list including diabetes medications if applicable, insurance card, and comfortable clothing allowing shoulder assessment.'  }
  
  
  

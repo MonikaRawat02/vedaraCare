@@ -8,7 +8,7 @@ export const homePhysioHero = {
   title: "Physiotherapy at home in Dubai. The same expertise. At your door.",
   description: "DPT-qualified physiotherapists from our Jumeirah Village Circle (JVC) clinic, travelling to your home across Dubai. Same specialised expertise as our clinic — post-surgical recovery, neurological rehabilitation, pelvic floor physiotherapy, sports injuries, paediatric care, geriatric mobility — delivered in your home environment. Often more therapeutically valuable than clinic-based care for patients who cannot easily travel.",
   primaryCTA: "Book a Home Physiotherapy ",
-  secondaryCTA: "WhatsApp Us",
+  secondaryCTA: "WhatsApp us",
   trustSignals: [
     "DPT-qualified specialised physiotherapists",
     "Across all major Dubai neighbourhoods",
@@ -145,7 +145,7 @@ export const homePhysioCoverage = {
     "Liwan",
     "The Lakes / Springs / Meadows"
   ],
-  note: "For neighbourhoods further from JVC (typically 40+ minutes travel each way), home physiotherapy is available but additional travel surcharge may apply. WhatsApp us with your address to confirm service availability and any travel surcharge before booking.",
+  note: 'For neighbourhoods further from JVC (typically 40+ minutes travel each way), home physiotherapy is available but additional travel surcharge may apply. <a href="https://wa.me/971555867466" target="_blank" rel="noopener noreferrer" class="hover:underline">WhatsApp us</a> with your address to confirm service availability and any travel surcharge before booking.',
     image: "/images/home-physiotherapy-coverage-dubai.webp",
   alt: "Vedara Care home physiotherapy coverage map Dubai 18 neighbourhoods from JVC"
 };
@@ -271,7 +271,7 @@ export const homePhysioBookingLogistics = {
   ],
   buttons: [
     { text: "Book Home Physiotherapy", variant: "primary" },
-    { text: "WhatsApp Us", variant: "whatsapp" }
+    { text: "WhatsApp us", variant: "whatsapp" }
   ]
 };
 
@@ -345,7 +345,7 @@ export const homePhysioPricing = {
       homePrice: "+ AED 130–140"
     }
   ],
-  note: "Insurance direct-billing with seven major insurers — home physiotherapy is covered by most plans with appropriate medical justification. WhatsApp your insurance card and brief condition description before booking for specific coverage confirmation."
+  note: 'Insurance direct-billing with seven major insurers — home physiotherapy is covered by most plans with appropriate medical justification. <a href="https://wa.me/971555867466?text=Hi,%20I%27d%20like%20to%20verify%20my%20insurance%20coverage" target="_blank" rel="noopener noreferrer" class="hover:underline">WhatsApp your insurance card</a> and brief condition description before booking for specific coverage confirmation.'
 };
 
 export const homePhysioOutcomes = {
@@ -413,7 +413,7 @@ export const homePhysioFaqs = {
       answer: "Standard home physiotherapy session: AED 450 (compared to AED 320 for the same session at our clinic). The home premium reflects therapist travel time and operational costs. Same-day urgent visits may have a small premium. Distant locations (40+ minutes travel each way) may have a travel surcharge. Multi-session packages provide discounted per-session rates."  },
     {
       question: "Does insurance cover home physiotherapy?",
-      answer: "Most Dubai insurance plans cover home physiotherapy with appropriate medical justification — post-surgical recovery, neurological conditions, documented mobility limitations, postnatal care, and other conditions. Some plans require pre-authorisation for home services specifically. We are direct-billing partners with Daman, AXA, Allianz, Oman Insurance, Now Health, Bupa, and MetLife. WhatsApp your insurance card and brief condition description before booking for specific coverage confirmation."    },
+      answer: 'Most Dubai insurance plans cover home physiotherapy with appropriate medical justification — post-surgical recovery, neurological conditions, documented mobility limitations, postnatal care, and other conditions. Some plans require pre-authorisation for home services specifically. We are direct-billing partners with Daman, AXA, Allianz, Oman Insurance, Now Health, Bupa, and MetLife. <a href="https://wa.me/971555867466?text=Hi,%20I%27d%20like%20to%20verify%20my%20insurance%20coverage" target="_blank" rel="noopener noreferrer" class="hover:underline">WhatsApp your insurance card</a> and brief condition description before booking for specific coverage confirmation.'   },
     {
       question: "What equipment will the physiotherapist bring?",
       answer: "Our home physiotherapists carry portable equipment in carry bags: assessment tools (goniometers, dynamometers for strength testing, standardised assessment kits for neurological conditions), treatment supplies (manual therapy tools, dry needling supplies if applicable, kinesio tape), exercise equipment (resistance bands, balance equipment, exercise tools), portable ultrasound and modalities for select cases, and any specific equipment relevant to your condition. We do not bring large equipment (parallel bars, gym machines) — for those, clinic visits are needed."  },
@@ -511,9 +511,9 @@ export const homePhysioFinalCTA = {
   bgColor: "bg-[#F7F2EA]",
   label: "READY TO START?",
   title: "Specialised physiotherapy — delivered to your door, across Dubai.",
-  description: "Whether you are recovering from recent surgery, managing a chronic condition, supporting an elderly parent, recovering postpartum, or experiencing acute pain that makes clinic travel impractical — home physiotherapy can begin within days. WhatsApp us for fastest response (typically within 15 minutes during business hours), call us, or book online.",
+  description: 'Whether you are recovering from recent surgery, managing a chronic condition, supporting an elderly parent, recovering postpartum, or experiencing acute pain that makes clinic travel impractical — home physiotherapy can begin within days. <a href="https://wa.me/971555867466" target="_blank" rel="noopener noreferrer" class="hover:underline">WhatsApp us</a> for fastest response (typically within 15 minutes during business hours), call us, or book online.',
   button1Text: "Book a Home Physiotherapy",
-  button2Text: "WhatsApp Us",
+  button2Text: "WhatsApp us",
   button1BgColor: "#1A4D2E",
   button2BgColor: "#22C55E",
   button2TextColor: "#22C55E",

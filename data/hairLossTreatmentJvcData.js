@@ -557,7 +557,7 @@ export const hairLossTreatmentCTA = {
   button1Href: "/book",
   button1BgColor: "rgb(184, 150, 90)",
   button1TextColor: "rgb(255, 255, 255)",
-  button2Text: "WhatsApp Us",
+  button2Text: "WhatsApp us",
   button2Href: "https://wa.me/971555867466?text=Hello%20Vedara%20Care,%20I%20would%20like%20to%20inquire%20about%20hair%20loss%20treatment%20and%20book%20a%20consultation.",
   button2BorderColor: "rgb(74, 222, 128)",
   button2TextColor: "rgb(74, 222, 128)",

@@ -8,7 +8,9 @@ export const skinHero = {
   title: "Skin reflects what is happening inside. Treating only the outside is why skin conditions return.",
   description: "Authentic Ayurvedic treatment for chronic skin conditions in Dubai addresses the systemic patterns — digestive function, hormonal balance, stress patterns, immune regulation, blood quality — that drive recurring skin issues. At our Jumeirah Village Circle (JVC) clinic, structured 4 to 9-month programmes work alongside dermatology (including our own dermatology department) for eczema, psoriasis, chronic acne, rosacea, melasma, urticaria, and other persistent skin conditions. We do not replace topical treatments. We address why they keep being needed.",
   primaryCTA: "Book a Skin Consultation",
+  primaryCTAHref: "/book",
   secondaryCTA: "Chat on WhatsApp",
+  secondaryCTAHref: "https://wa.me/971555867466?text=Hello%20Vedara%20Care,%20I%20would%20like%20to%20inquire%20about%20Ayurvedic%20treatment%20for%20skin%20conditions%20at%20your%20JVC%20clinic%20in%20Dubai.",
   trustSignals: [
     "We Work With Dermatology",
     "380+ Skin Patients Treated",
@@ -312,6 +314,7 @@ export const skinIntegration = {
     "Single point of contact for scheduling across both departments"
   ],
   button1Text: "Book a Skin Consultation",
+  button1Link: "/book",
   button2Text: "Read about Dermatology in JVC",
   button2Link: "/dermatology-clinic-jvc/",
   alt: "Ayurvedic doctor and dermatologist collaborating on patient case at Vedara Care JVC"
@@ -376,7 +379,8 @@ export const skinReviews = {
     { label: "Reduced Topical Needs", value: "62%" }
   ],
   
-  buttonText: "Read All Skin Reviews"
+  buttonText: "Read All Skin Reviews →",
+  buttonHref: "https://www.google.com/maps/search/?api=1&query=Vedara%20Care%20Polyclinic%20JVC%20Dubai"
 };
 
 export const skinPrograms = {
@@ -399,7 +403,8 @@ export const skinPrograms = {
         "Full programme pricing"
       ],
       buttonText: "Book Assessment",
-      bestFor: "First step for every new patient — required before any treatment programme"
+      bestFor: "First step for every new patient — required before any treatment programme",
+      whatsappMessage: "Hi, I'd like to book a Skin Initial Assessment (AED 450) at your JVC clinic in Dubai for Ayurvedic skin treatment."
     },
     {
       name: "Standard 6-Month Skin Programme",
@@ -418,7 +423,8 @@ export const skinPrograms = {
         "12-month follow-up"
       ],
       buttonText: "Book Assessment",
-      bestFor: "Eczema, hormonal acne, rosacea, chronic urticaria, melasma, dermatitis"
+      bestFor: "Eczema, hormonal acne, rosacea, chronic urticaria, melasma, dermatitis",
+      whatsappMessage: "Hi, I'd like to inquire about the Standard 6-Month Skin Programme (AED 12,500) at your JVC clinic in Dubai."
     },
     {
       name: "Comprehensive 9-Month Skin Programme",
@@ -434,10 +440,12 @@ export const skinPrograms = {
         "12-month follow-up programme"
       ],
       buttonText: "Book Assessment",
-      bestFor: "Psoriasis, vitiligo, severe chronic eczema, complex multi-condition presentations"
+      bestFor: "Psoriasis, vitiligo, severe chronic eczema, complex multi-condition presentations",
+      whatsappMessage: "Hi, I'd like to inquire about the Comprehensive 9-Month Skin Programme (AED 18,000) at your JVC clinic in Dubai."
     }
   ],
-  footer: "Insurance direct-billing available with some major insurers — coverage for Ayurvedic skin treatment varies by plan. Skin conditions are recognized medical conditions supporting coverage in many plans. WhatsApp us your insurance card before booking."
+  defaultWhatsappMessage: "Hi, I'd like to inquire about Ayurvedic skin treatment programmes at your JVC clinic.",
+  footer: "Insurance direct-billing available with some major insurers — coverage for Ayurvedic skin treatment varies by plan. Skin conditions are recognised medical conditions supporting coverage in many plans. <a href=\"https://wa.me/971555867466?text=Hi,%20I%27d%20like%20to%20verify%20my%20insurance%20coverage\" target=\"_blank\" rel=\"noopener noreferrer\" class=\"hover:underline\">WhatsApp your insurance card</a> before booking."
 };
 
 export const skinFaqs = {
@@ -517,15 +525,15 @@ answer: "Yes. We work with several Dubai dermatology practices for joint patient
 },
 {
   question: "Does insurance cover Ayurvedic skin treatment?",
-  answer: "Skin conditions are recognised medical conditions for insurance purposes, which often supports coverage. Some plans cover Ayurvedic treatment for skin conditions, particularly when there is documented dermatological diagnosis and previous treatment trials. We are direct-billing partners with seven major insurers — Daman, AXA, Allianz, Oman Insurance, Now Health, Bupa, MetLife. WhatsApp us your insurance card photo before booking."
-},
+  answer: "Skin conditions are recognised medical conditions for insurance purposes, which often supports coverage. Some plans cover Ayurvedic treatment for skin conditions, particularly when there is documented dermatological diagnosis and previous treatment trials. We are direct-billing partners with seven major insurers — Daman, AXA, Allianz, Oman Insurance, Now Health, Bupa, MetLife. <a href=\"https://wa.me/971555867466?text=Hi,%20I%27d%20like%20to%20verify%20my%20insurance%20coverage\" target=\"_blank\" rel=\"noopener noreferrer\" class=\"hover:underline\">WhatsApp your insurance card</a> photo before booking."
+},  
 {
   question: "How is this different from regular Ayurvedic facials I see at spas?",
   answer: "Substantially different. Spa 'Ayurvedic facials' are cosmetic treatments — pleasant but limited in clinical impact for chronic skin conditions. Authentic Ayurvedic skin treatment at our JVC clinic is a medical programme led by BAMS-qualified physicians, including systemic internal medicines, Panchakarma, dietary regulation, and external treatments selected for your specific medical condition. It is not a beauty service. It is medical treatment for skin disease."
 },
 {
   question: "How do I start?",
-  answer: "Always with a thorough assessment. Tap 'Book a Skin Consultation' on this page, WhatsApp us at +971 55 586 7466, or call +971 55 586 7466. Please bring (or send before consultation): recent dermatologist notes if available, any biopsy or pathology reports, current medication list (topical and systemic), and photos of affected areas (we will also take baseline photos with consent). The 60-minute consultation at our JVC clinic includes comprehensive history, examination, classification, and a written treatment plan with realistic expectations."
+  answer: "Always with a thorough assessment. Tap 'Book a Skin Consultation' on this page, <a href=\" https://wa.me/971555867466\" target=\"_blank\" rel=\"noopener noreferrer\" class=\"hover:underline\">WhatsApp us</a> at <a href=\"https://wa.me/971555867466\" class=\"text-[#C9A961] hover:underline\">+971 55 586 7466</a>, or call <a href=\"tel:+971555867466\" class=\"text-[#C9A961] hover:underline\">+971 55 586 7466</a>. Please bring (or send before consultation): recent dermatologist notes if available, any biopsy or pathology reports, current medication list (topical and systemic), and photos of affected areas (we will also take baseline photos with consent). The 60-minute consultation at our JVC clinic includes comprehensive history, examination, classification, and a written treatment plan with realistic expectations."
 },
 ]
 };
@@ -535,7 +543,9 @@ export const skinCTA = {
   title: "Treating your skin condition systemically — not just topically.",
   description: "If you have been managing a chronic skin condition with cycles of topical treatments and flares, the next useful step is different. A 60-minute consultation at our JVC clinic identifies the systemic patterns driving recurrence — digestive, hormonal, stress, dietary, constitutional — and designs a 4-9 month programme tailored to your specific condition. We work alongside your dermatologist (including our own dermatology team if you prefer). We do not replace topical treatment. We address why it keeps being needed.",
   button1Text: "Book a Skin Consultation",
+  button1Href: "/book",
   button2Text: "Chat on WhatsApp",
+  button2Href: "https://wa.me/971555867466?text=Hello%20Vedara%20Care,%20I%20would%20like%20to%20book%20a%20skin%20consultation%20at%20your%20JVC%20clinic%20in%20Dubai.",
   bullets: [
     "Initial consultation from AED 450",
     "Walking distance from Circle Mall, JVC",

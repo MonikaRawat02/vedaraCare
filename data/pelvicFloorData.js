@@ -236,7 +236,7 @@ export const pelvicFloorPricing = {
       name: "Men's pelvic floor programme",price: "AED 4,200"
     }
   ],
-  insuranceText: "Insurance direct-billing with seven major insurers. Pelvic floor physiotherapy is covered by most Dubai insurance plans with medical justification. Postnatal pelvic floor care often covered as part of maternity benefits — coverage varies by plan. WhatsApp us for specific coverage discussion. We handle pre-authorisation on your behalf when required."};
+  insuranceText: 'Insurance direct-billing with seven major insurers. Pelvic floor physiotherapy is covered by most Dubai insurance plans with medical justification. Postnatal pelvic floor care often covered as part of maternity benefits — coverage varies by plan. <a href="https://wa.me/971555867466" target="_blank" rel="noopener noreferrer" class="hover:underline">WhatsApp us</a> for specific coverage discussion. We handle pre-authorisation on your behalf when required.'};
 
 export const pelvicFloorFaqs = {
   bgColor: "bg-[#F2EAD8]",
@@ -319,7 +319,7 @@ answer:"You can book privately. WhatsApp is often the most discreet booking chan
         },
         {
 question:"How do I book a pelvic floor physiotherapy assessment?",
-answer:"Three ways: (1) WhatsApp us — the most discreet option for sensitive booking, fastest response. (2) Call us — direct booking, available 9 AM to 9 PM seven days a week. (3) Book online through our website. For your first appointment, please bring: any relevant medical reports, current medication list, insurance card, and comfortable clothing."
+answer:'Three ways: (1) <a href="https://wa.me/971555867466" target="_blank" rel="noopener noreferrer" class="hover:underline">WhatsApp us</a> — the most discreet option for sensitive booking, fastest response. (2) Call us — direct booking, available 9 AM to 9 PM seven days a week. (3) Book online through our website. For your first appointment, please bring: any relevant medical reports, current medication list, insurance card, and comfortable clothing.'
         }
   ]
 };

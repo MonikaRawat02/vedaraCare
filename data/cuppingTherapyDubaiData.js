@@ -131,7 +131,7 @@ export const cuppingTherapyFaqs = {
     },
     {
       question: "Do you offer Hijama?",
-      answer: "Yes — Hijama is available at our clinic, performed with sterile single-use equipment and complete respect for both clinical safety and religious significance. We can accommodate traditional Sunnah days for scheduling. WhatsApp +971 55 586 7466 for specific availability and scheduling."
+      answer: 'Yes — Hijama is available at our clinic, performed with sterile single-use equipment and complete respect for both clinical safety and religious significance. We can accommodate traditional Sunnah days for scheduling. <a href="https://wa.me/971555867466" target="_blank" rel="noopener noreferrer" class="hover:underline">WhatsApp +971 55 586 7466</a> for specific availability and scheduling.'
     },
     {
       question: "Does cupping hurt?",
@@ -199,7 +199,7 @@ export const cuppingTherapyFaqs = {
     },
      {
       question: "How do I book a cupping appointment?",
-      answer: "Three ways: (1) WhatsApp +971 55 586 7466 — fastest response, ideal for asking specific questions about which type of cupping would suit you. (2) Call +971 55 586 7466 — direct booking, available 9 AM to 9 PM seven days a week. (3) Book online through our website. For Hijama specifically, inquire about availability and Sunnah days scheduling. Please bring: any relevant medical reports, current medication list, insurance card if applicable, and comfortable clothing allowing access to treatment areas."
+      answer: 'Three ways: (1) <a href="https://wa.me/971555867466" target="_blank" rel="noopener noreferrer" class="hover:underline">WhatsApp +971 55 586 7466</a> — fastest response, ideal for asking specific questions about which type of cupping would suit you. (2) Call +971 55 586 7466 — direct booking, available 9 AM to 9 PM seven days a week. (3) Book online through our website. For Hijama specifically, inquire about availability and Sunnah days scheduling. Please bring: any relevant medical reports, current medication list, insurance card if applicable, and comfortable clothing allowing access to treatment areas.'
     },
     
   ]
@@ -230,7 +230,7 @@ export const cuppingTherapyFinalCTA = {
   description: "Whether you are interested in dry cupping for chronic back pain, sports cupping for athletic recovery, massage cupping for broader tension relief, or Hijama as Sunnah practice — appropriate cupping treatment in a clinical environment combines therapeutic benefit with safety standards. The first step is comprehensive assessment determining whether cupping is appropriate for your specific situation and which type would be most suitable. We are honest about evidence, respectful of religious and cultural significance, and integrated with broader physiotherapy when appropriate.",
   button1Text: "Book Cupping Assessment",
   button1Href: "/book",
-  button2Text: "WhatsApp Us",
+  button2Text: "Chat on WhatsApp",
   button2Href: "https://wa.me/971555867466?text=Hello%20Vedara%20Care,%20I%20would%20like%20to%20inquire%20about%20cupping%20therapy%20and%20book%20a%20consultation.",
   footer: "Sessions from AED 250 · Walking distance from Circle Mall, JVC · 400+ cupping treatments delivered · DHA-licensed practitioners · Sterile single-use equipment · Cultural and religious respect"
 };

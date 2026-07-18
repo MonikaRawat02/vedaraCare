@@ -178,7 +178,7 @@ export const skinRejuvenationPricing = {
     { name: "Comprehensive rejuvenation programme (6 months)", price: "From AED 12,000" },
     { name: "Medical-grade skincare products", price: "From AED 200" }
   ],
-  insuranceText: "Skin rejuvenation is cosmetic treatment not covered by insurance. Comprehensive treatment packages provide substantially better value than individual session pricing for committed patients. All treatments include appropriate aftercare products or recommendations. WhatsApp us for specific pricing discussion.",
+  insuranceText: 'Skin rejuvenation is cosmetic treatment not covered by insurance. Comprehensive treatment packages provide substantially better value than individual session pricing for committed patients. All treatments include appropriate aftercare products or recommendations. <a href="https://wa.me/971555867466" target="_blank" rel="noopener noreferrer" class="hover:underline">WhatsApp us</a> for specific pricing discussion.',
   insurances: ["Daman", "AXA", "Allianz", "Oman Insurance", "Now Health", "Bupa", "MetLife"]
 };
 
@@ -191,7 +191,7 @@ export const skinRejuvenationCTA = {
   button1Href: "/book",
   button1BgColor: "rgb(184, 150, 90)",
   button1TextColor: "rgb(255, 255, 255)",
-  button2Text: "WhatsApp Us",
+  button2Text: "WhatsApp us",
   button2Href: "https://wa.me/971555867466?text=Hi,%20I'm%20interested%20in%20Skin%20Rejuvenation%20treatment.%20Could%20you%20please%20provide%20more%20information?",
   button2BorderColor: "rgb(201, 165, 90)",
   button2TextColor: "rgb(201, 165, 90)",
@@ -541,7 +541,7 @@ export const skinRejuvenationFaqs = {
     },
     {
       question: "How do I book a skin rejuvenation consultation?",
-      answer: "Three ways: WhatsApp +971 55 586 7466 for fastest response; call +971 55 586 7466 direct booking 9 AM to 9 PM seven days a week; or book online via our website. For your first appointment please bring: photos showing your specific concerns; list of any skincare products you currently use; list of any previous aesthetic treatments and outcomes; list of current medications; specific event timing if relevant."
+      answer: 'Three ways: <a href="https://wa.me/971555867466" target="_blank" rel="noopener noreferrer" class="hover:underline">WhatsApp +971 55 586 7466</a> for fastest response; call +971 55 586 7466 direct booking 9 AM to 9 PM seven days a week; or book online via our website. For your first appointment please bring: photos showing your specific concerns; list of any skincare products you currently use; list of any previous aesthetic treatments and outcomes; list of current medications; specific event timing if relevant.'
     }
   ]
 };

@@ -8,7 +8,9 @@ export const ayurvedicBackPainHero = {
   title: "You have been managing back pain for too long. The question is no longer how to live with it.",
   description: "Chronic back pain in Dubai responds well to authentic Ayurvedic treatment when prescribed correctly — Kativasti for lumbar conditions, Abhyanga and Panchakarma for systemic involvement, integrated with physiotherapy where indicated. This page explains which Ayurvedic protocols fit which types of back pain, written by the DHA-licensed Ayurvedic team at Vedara Care Polyclinic, Jumeirah Village Circle.",
   primaryCTA: "Book a Back Pain Consultation",
+  primaryCTAHref: "/book",
   secondaryCTA: "Chat on WhatsApp",
+  secondaryCTAHref: "https://wa.me/971555867466?text=Hi,%20I'd%20like%20to%20inquire%20about%20ayurvedic%20back%20pain%20treatment%20at%20your%20JVC%20clinic.",
   trustSignals: [
     "600+ Back Pain Patients Treated",
     "Integrated Ayurveda + Physiotherapy",
@@ -259,6 +261,7 @@ export const ayurvedicBackPainIntegration = {
     "Single point of contact for scheduling and updates"
   ],
   button1Text: "Book Joint Consultation",
+  button1Link: "/book",
   button2Text: "Read about Physiotherapy in JVC",
   button2Link: "/physiotherapy-jvc/",
   image: "/images/kativasti-back-pain-treatment-vedara-jvc.webp",
@@ -294,7 +297,8 @@ export const ayurvedicBackPainOutcomes = {
     { value: "142", label: "back pain reviews" },
     { value: "89%", label: "reported pain reduction" }
   ],
-  buttonText: "Read All Back Pain Reviews"
+  buttonText: "Read All Back Pain Reviews →",
+  buttonHref: "https://www.google.com/maps/search/?api=1&query=Vedara%20Care%20Polyclinic%20JVC%20Dubai"
 };
 
 export const ayurvedicBackPainPricing = {
@@ -347,7 +351,7 @@ export const ayurvedicBackPainPricing = {
       footer: "Best for: Complex back pain, disc-related conditions, multiple-region involvement, patients who want maximum-outcome integrated care"
     }
   ],
-  footerNote: "Insurance direct-billing available with seven major insurers — coverage for Ayurvedic chronic pain care varies by plan. WhatsApp us your card before booking to confirm."
+  footerNote: "Insurance direct-billing available with seven major insurers — coverage for Ayurvedic chronic pain care varies by plan. <a href=\"https://wa.me/971555867466?text=Hi,%20I'd%20like%20to%20verify%20my%20insurance%20coverage%20for%20ayurvedic%20back%20pain%20treatment.\" target=\"_blank\" rel=\"noopener noreferrer\" class=\"text-[#C9A961] hover:underline transition-colors\">WhatsApp us your card</a> before booking to confirm."
 };
 
 export const ayurvedicBackPainFaqs = {
@@ -436,9 +440,10 @@ export const ayurvedicBackPainLocation = {
   bgColor: "bg-[#F5F3EE]",
   label: "VISIT OUR BACK PAIN CLINIC",
   title: "Expert back pain care in Jumeirah Village Circle.",
-  address: "Al Barsha South Fourth, Binghatti Azure, Shop -4,<br/> Jumeraih Village Circle (JVC) Dubai",
+  address: "Al Barsha South Fourth, Binghatti Azure, Shop -4,<br/>Jumeraih Village Circle (JVC) Dubai",
   phone: "+971 55 586 7466",
   whatsapp: "+971 55 586 7466",
+  whatsappMessage: "Hi, I'd like to inquire about ayurvedic back pain treatment at your JVC clinic.",
   email: "booking@vedaracare.ae",
   hours: "Saturday - Sunday: 8:30 am to 11:30 pm",
   landmarks: [
@@ -448,6 +453,8 @@ export const ayurvedicBackPainLocation = {
   ],
   description: "Integrated Ayurveda and Physiotherapy departments under one roof, sharing case notes for back pain patients. Dedicated Kativasti and Greeva Vasti treatment rooms. Free patient parking.",
   buttonText: "Book a Back Pain Consultation",
+  buttonHref: "/book",
+  mapEmbed: "https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d3613.9894568193345!2d55.20722358578439!3d25.068346479666594!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x3e5f6dd72f3da587%3A0xe7ecca8687a75b72!2sVedara%20Care%20Polyclinic!5e0!3m2!1sen!2sus!4v1780727442216!5m2!1sen!2sus",
   mapAlt: "Vedara Care JVC back pain clinic location"
 };
 
@@ -457,7 +464,9 @@ export const ayurvedicBackPainCTA = {
   title: "Begin with the right assessment.",
   description: "Chronic back pain deserves more than another generic treatment package. A 45-60 minute consultation at our JVC clinic includes physical examination, imaging review, dosha assessment, and a clear written treatment plan — including honest guidance on whether Ayurvedic treatment is appropriate for your specific condition, or whether you should see a conventional specialist first.",
   button1Text: "Book a Back Pain Consultation",
+  button1Href: "/book",
   button2Text: "Chat on WhatsApp",
+  button2Href: "https://wa.me/971555867466?text=Hi,%20I'd%20like%20to%20inquire%20about%20ayurvedic%20back%20pain%20treatment%20at%20your%20JVC%20clinic.",
   subtext: "Initial consultation from AED 350 · Joint Ayurveda + Physiotherapy assessment available · Insurance direct-billing · Free clinic parking"
 };
 

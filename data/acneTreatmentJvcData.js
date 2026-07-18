@@ -545,7 +545,7 @@ export const acneTreatmentFaqs = {
     },
     {
       question: "How do I book an acne consultation?",
-      answer: "Three ways: (1) WhatsApp us — fastest response, ideal for asking specific questions about your situation. (2) Call our clinic — direct booking, available 9 AM to 9 PM seven days a week. (3) Book online through our website. For your first appointment, please bring: over-the-counter products you have used; previous treatments and outcomes; current medications; insurance card; and any specific questions you want to address."
+      answer: 'Three ways: (1) <a href="https://wa.me/971555867466" target="_blank" rel="noopener noreferrer" class="hover:underline">WhatsApp us</a> — fastest response, ideal for asking specific questions about your situation. (2) Call our clinic — direct booking, available 9 AM to 9 PM seven days a week. (3) Book online through our website. For your first appointment, please bring: over-the-counter products you have used; previous treatments and outcomes; current medications; insurance card; and any specific questions you want to address.'
     }
   ]
 };
@@ -585,7 +585,7 @@ export const acneTreatmentCTA = {
   description: "Whether you have teenage acne, adult-onset acne, hormonal acne, severe cystic acne, or acne scarring — appropriate evidence-based treatment substantially improves outcomes. The first step is a comprehensive consultation that identifies your specific acne type, contributing factors, and most effective treatment approach. We provide honest realistic timelines, transparent pricing, and ongoing support throughout treatment. Same-week appointments typically available. Most patients achieve substantial improvement within 12–16 weeks of structured treatment.",
   button1Text: "Book Acne Consultation",
   button1Href: "/book",
-  button2Text: "WhatsApp Us",
+  button2Text: '<a href="https://wa.me/971555867466" target="_blank" rel="noopener noreferrer" class="hover:underline">WhatsApp us</a>',
   button2Href: "https://wa.me/971555867466?text=Hello%20Vedara%20Care,%20I%20would%20like%20to%20inquire%20about%20acne%20treatment%20and%20book%20a%20consultation.",
   footer: "Initial consultation from AED [X] · Walking distance from Circle Mall, JVC · DHA-licensed consultant dermatologists · 400+ acne patients treated · All acne types and skin types · Female and male dermatologists · Insurance direct-billing"
 };

@@ -228,7 +228,7 @@ export const melasmaTreatmentCTA = {
   description: "Whether you have pregnancy-induced melasma, perimenopausal melasma, sun-aggravated melasma, or melasma with unclear triggers — comprehensive specialist consultation is the right starting point. We provide thorough examination identifying your specific melasma type and depth, evidence-based treatment plan calibrated to your skin type, realistic timeline expectations, and ongoing support throughout treatment. Same-week appointments typically available at our JVC clinic.",
   button1Text: "Book Melasma Consultation",
   button1Href: "/book",
-  button2Text: "WhatsApp Us",
+  button2Text: "WhatsApp us",
   button2Href: "https://wa.me/+971555867466",
   footer: "Initial consultation from AED [X] · Walking distance from Circle Mall, JVC · DHA-licensed consultant dermatologists · 400+ melasma patients treated · All Fitzpatrick skin types · Female and male dermatologists · Multiple languages"
 };
@@ -370,7 +370,7 @@ export const melasmaTreatmentPricing = {
     { name: "Maintenance treatment (6 months)", price: "From AED 3,500" },
     { name: "Premium broad-spectrum sunscreen SPF 50+ (patient product)", price: "From AED 180" }
   ],
-  insuranceText: 'Most melasma treatment is considered cosmetic by Dubai insurance plans and not covered. Some elements (medical consultations, hormonal workup, specific medications) may be covered with appropriate justification. WhatsApp us for specific coverage discussion. Comprehensive treatment programmes provide better value than individual session pricing for committed patients.',
+  insuranceText: 'Most melasma treatment is considered cosmetic by Dubai insurance plans and not covered. Some elements (medical consultations, hormonal workup, specific medications) may be covered with appropriate justification. <a href="https://wa.me/971555867466" target="_blank" rel="noopener noreferrer" class="hover:underline">WhatsApp us</a> for specific coverage discussion. Comprehensive treatment programmes provide better value than individual session pricing for committed patients.',
   insurances: ["Daman", "AXA", "Allianz", "Oman Insurance", "Now Health", "Bupa", "MetLife"]
 };
 

@@ -325,7 +325,8 @@ export const hairLossReviews = {
     { value: '86%', label: ' reported visible improvement at 6 months' },
     { value: '78%', label: ' Hair loss reviews' }
   ],
-  buttonText: 'Read All Hair Loss Reviews →'
+  buttonText: 'Read All Hair Loss Reviews →',
+  buttonHref: "https://www.google.com/maps/search/?api=1&query=Vedara%20Care%20Polyclinic%20JVC%20Dubai"
 };
 
 export const hairLossPrograms = {
@@ -364,7 +365,7 @@ export const hairLossPrograms = {
         '6 months of internal Ayurvedic medicines',
         'Home scalp oil protocol with medicated oils',
         'Monthly doctor reviews',
-'3-month and 6-month follow-up after programme'
+        '3-month and 6-month follow-up after programme'
       ],
       bestFor: 'Standard treatment for telogen effluvium, moderate androgenetic alopecia, and most hair loss patterns'
     },
@@ -383,7 +384,7 @@ export const hairLossPrograms = {
       bestFor: 'Severe androgenetic alopecia, complex alopecia areata, scalp-condition-driven hair loss, patients wanting maximum integrated outcomes'
     }
   ],
-  footer: 'Insurance direct-billing available with seven major insurers — coverage for Ayurvedic dermatological care varies by plan. WhatsApp us your card before booking to confirm coverage.'
+  footer: "Insurance direct-billing available with seven major insurers — coverage for Ayurvedic dermatological care varies by plan. <a href=\"https://wa.me/971555867466?text=Hi,%20I'd%20like%20to%20verify%20my%20insurance%20coverage%20for%20hair%20loss%20treatment.\" target=\"_blank\" rel=\"noopener noreferrer\" class=\"text-[#C9A961] hover:underline transition-colors\">WhatsApp us your card</a> before booking to confirm coverage.",
 };
 
 export const hairLossFaqs = {
