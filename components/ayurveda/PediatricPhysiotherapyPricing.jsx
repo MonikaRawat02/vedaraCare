@@ -27,7 +27,7 @@ const PediatricPhysiotherapyPricing = ({ data }) => {
           </table>
         </div>
         {data.footerText && (
-          <p className="text-center text-sm text-gray-600 mt-8 max-w-3xl mx-auto">{data.footerText}</p>
+          <p className="text-center text-sm text-gray-600 mt-8 max-w-3xl mx-auto" dangerouslySetInnerHTML={{ __html: data.footerText }} />
         )}
       </div>
     </section>

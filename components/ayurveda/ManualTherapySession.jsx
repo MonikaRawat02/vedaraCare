@@ -231,9 +231,7 @@ const ManualTherapyTechniques = ({
 
         {footerNote && (
           <div className="text-center max-w-3xl mx-auto">
-            <p className="text-[14px] text-[#6B6B6B] font-sans leading-relaxed">
-              {footerNote}
-            </p>
+            <p className="text-[14px] text-[#6B6B6B] font-sans leading-relaxed" dangerouslySetInnerHTML={{ __html: footerNote }} />
           </div>
         )}
       </div>

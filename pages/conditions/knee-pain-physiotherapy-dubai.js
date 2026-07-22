@@ -495,9 +495,7 @@ const KneePainPhysioDubai = () => {
             ))}
           </div>
 
-          <p className="text-center mb-8 font-sans text-[#6B6B6B] leading-relaxed text-sm">
-            {kneePainPricing.insuranceText}
-          </p>
+          <p className="text-center mb-8 font-sans text-[#6B6B6B] leading-relaxed text-sm" dangerouslySetInnerHTML={{ __html: kneePainPricing.insuranceText }} />
           <div className="flex flex-wrap justify-center gap-3">
             {kneePainPricing.insurances && kneePainPricing.insurances.map((insurer, index) => (
               <span key={index} className="bg-[#FAF8F5] px-4 py-2 rounded-full text-xs border border-[#E5DFD3] text-[#6B6B6B]">

@@ -40,11 +40,11 @@ const CuppingTherapyDubai = () => {
       "url": "https://vedaracare.ae/treatments/cupping-therapy-dubai/",
       "parentOrganization": {"@id": "https://vedaracare.ae/#organization"},
       "description": "Specialist cupping therapy at Vedara Care Polyclinic, Jumeirah Village Circle, Dubai. Dry cupping, massage cupping, and Hijama (wet cupping) delivered by DHA-licensed practitioners. Sterile single-use equipment for Hijama. Integrated with physiotherapy for musculoskeletal applications. Cultural and religious respect for Hijama as Islamic Sunnah practice.",
-      "telephone": "+971 4 XXX XXXX",
+      "telephone": "+971 55 586 7466",
       "priceRange": "AED 200 - AED 5,000",
       "address": {
         "@type": "PostalAddress",
-        "streetAddress": "Cluster X, Jumeirah Village Circle",
+        "streetAddress": "Al Barsha South Fourth, Binghatti Azure, Shop -4, Jumeirah Village Circle (JVC)",
         "addressLocality": "Jumeirah Village Circle",
         "addressRegion": "Dubai",
         "addressCountry": "AE"

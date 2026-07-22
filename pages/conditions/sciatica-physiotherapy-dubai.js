@@ -47,15 +47,15 @@ const SciaticaPhysiotherapyDubai = () => {
       "priceRange": "AED 350 - AED 15,000",
       "address": {
         "@type": "PostalAddress",
-        "streetAddress": "[Street address]",
+        "streetAddress": "Al Barsha South Fourth, Binghatti Azure, Shop -4, Jumeirah Village Circle (JVC)",
         "addressLocality": "Jumeirah Village Circle",
         "addressRegion": "Dubai",
         "addressCountry": "AE"
       },
       "geo": {
         "@type": "GeoCoordinates",
-        "latitude": "[Latitude]",
-        "longitude": "[Longitude]"
+        "latitude": "25.068346",
+        "longitude": "55.2072235"
       },
       "openingHoursSpecification": [
         {

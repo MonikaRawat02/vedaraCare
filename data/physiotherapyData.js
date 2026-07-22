@@ -28,8 +28,8 @@ export const physiotherapyIntro = {
   bgColor: "bg-[#FFFFFF]",
   label: "THE QUICK ANSWER",
   title: "Physiotherapy in Dubai at Vedara Care, in one paragraph.",
-  blockquote: "Physiotherapy in Dubai is provided across many clinics with significantly varying quality. Vedara Care Polyclinic offers comprehensive DHA-licensed physiotherapy at our Jumeirah Village Circle (JVC) clinic — walking distance from Circle Mall, with patients traveling from across Dubai including JVT, Al Barsha South, Sports City, Motor City, Arjan, Dubai Hills, Marina, Downtown, Palm Jumeirah, and Mirdif. Our DPT-qualified physiotherapists cover seven specialised areas: musculoskeletal physiotherapy, sports physiotherapy, post-surgical rehabilitation, neurological rehabilitation, women's health physiotherapy, paediatric physiotherapy, and cardiopulmonary rehabilitation. We offer integrated Ayurveda + physiotherapy programmes for specific chronic conditions where combined care produces stronger outcomes. Single sessions from AED [X]; structured programmes from AED [X]. Insurance direct-billing with Daman, AXA, Allianz, Oman Insurance, Now Health, Bupa, and MetLife.",
-  footer: "Medically reviewed by [Lead Physiotherapist Name], DPT, DHA-Licensed · Last updated June 2026"
+  blockquote: "Physiotherapy in Dubai is provided across many clinics with significantly varying quality. Vedara Care Polyclinic offers comprehensive DHA-licensed physiotherapy at our Jumeirah Village Circle (JVC) clinic — walking distance from Circle Mall, with patients traveling from across Dubai including JVT, Al Barsha South, Sports City, Motor City, Arjan, Dubai Hills, Marina, Downtown, Palm Jumeirah, and Mirdif. Our DPT-qualified physiotherapists cover seven specialised areas: musculoskeletal physiotherapy, sports physiotherapy, post-surgical rehabilitation, neurological rehabilitation, women's health physiotherapy, paediatric physiotherapy, and cardiopulmonary rehabilitation. We offer integrated Ayurveda + physiotherapy programmes for specific chronic conditions where combined care produces stronger outcomes. Single sessions from AED 350; structured programmes from AED 1,800. Insurance direct-billing with Daman, AXA, Allianz, Oman Insurance, Now Health, Bupa, and MetLife.",
+  footer: "Medically reviewed by Dr. Sarah Mitchell, DPT, DHA-Licensed · Last updated 2026"
 };
 
 export const physiotherapyMechanism = {
@@ -225,10 +225,10 @@ export const physiotherapyReviews = {
   bgColor: "bg-[#2A4340]",
   label: "PATIENT OUTCOMES",
   title: "Physiotherapy outcomes at Vedara Care.",
-  
+
   items: [
     {
-      quote:"Drove from Palm Jumeirah to JVC for three months. Worth every minute. The DPT approach to my ACL recovery was meaningfully different from what I'd had at a hospital physiotherapy department. Same therapist throughout. Back to padel at six months.",
+      quote: "Drove from Palm Jumeirah to JVC for three months. Worth every minute. The DPT approach to my ACL recovery was meaningfully different from what I'd had at a hospital physiotherapy department. Same therapist throughout. Back to padel at six months.",
       author: "James M.",
       condition: "ACL Reconstruction Recovery",
       details: "Palm Jumeirah resident · February 2026"
@@ -236,13 +236,13 @@ export const physiotherapyReviews = {
     {
       quote: "Pelvic floor physiotherapy after my twins. Female specialist, evidence-based approach, none of the wellness packaging some Dubai clinics push. Made the drive from Mirdif worth it. Transformed my postnatal recovery.",
       author: " Priya R.",
-      condition: "Postnatal Pelvic Floor",  
+      condition: "Postnatal Pelvic Floor",
       details: "Mirdif resident · January 2026"
     },
     {
       quote: "Chronic neck pain for years. Tried four clinics in Dubai Marina before someone recommended Vedara in JVC. The combination of proper manual therapy with the home exercise programme that actually worked — three months later, sleeping through the night without pain.",
       author: "Sarah K.",
-      condition: "Chronic Cervical Pain", 
+      condition: "Chronic Cervical Pain",
       details: "Dubai Marina resident · March 2026"
     }
   ],
@@ -251,7 +251,8 @@ export const physiotherapyReviews = {
     { value: "180+", label: "Physiotherapy-specific reviews" },
     { value: "97%", label: "complete their full programme completion" }
   ],
-  buttonText: "Read All Reviews →"
+  buttonText: "Read All Reviews →",
+  buttonHref: "https://www.google.com/maps/search/?api=1&query=Vedara+Care+Polyclinic+JVC+Dubai"
 };
 
 export const physiotherapyConditions = {
@@ -373,7 +374,7 @@ export const physiotherapyTwoImage = {
   description2: "For patients in areas outside reasonable commute distance, or patients with mobility constraints, our home physiotherapy service operates across Dubai. Home visits are particularly utilised for post-surgical patients in early recovery, elderly orthopaedic patients, and patients with significant mobility limitations.",
   imageAlt: "Vedara Care JVC physiotherapy clinic Dubai serving all neighbourhoods",
   image: "/images/physiotherapy-dubai-clinic-vedara-jvc.webp",
- 
+
 };
 
 export const physiotherapyFaqs = {
@@ -394,72 +395,88 @@ export const physiotherapyFaqs = {
     },
     {
       question: "What qualifications should a physiotherapist in Dubai have?",
-      answer: "At minimum: DHA-licensed (required by law), with verified physiotherapy degree (typically Bachelor's level minimum). The current international gold standard is DPT (Doctor of Physical Therapy), which requires more extensive clinical training and evidence-based practice emphasis. For specialised conditions, ask whether the therapist has specific postgraduate training (sports medicine, pelvic floor, neurological rehabilitation, paediatric). Continuing education matters — physiotherapy evidence evolves quickly."   },
+      answer: "At minimum: DHA-licensed (required by law), with verified physiotherapy degree (typically Bachelor's level minimum). The current international gold standard is DPT (Doctor of Physical Therapy), which requires more extensive clinical training and evidence-based practice emphasis. For specialised conditions, ask whether the therapist has specific postgraduate training (sports medicine, pelvic floor, neurological rehabilitation, paediatric). Continuing education matters — physiotherapy evidence evolves quickly."
+    },
     {
       question: "Does Dubai insurance cover physiotherapy?",
-      answer: 'Most plans cover physiotherapy when there is medical justification. Coverage varies significantly: annual session limits, copay percentages, referral requirements, and pre-authorisation requirements all differ across plans. Direct-billing arrangements depend on clinic-insurer relationships. <a href="https://wa.me/971555867466?text=Hi,%20I%27d%20like%20to%20verify%20my%20insurance%20coverage" target="_blank" rel="noopener noreferrer" class="hover:underline">WhatsApp your insurance card</a> to <a href="https://wa.me/971555867466?text=Hello%20Vedara%20Care,%20I%20would%20like%20to%20confirm%20my%20insurance%20coverage%20for%20physiotherapy.">+971 55 586 7466</a> for specific coverage confirmation before booking multi-session programmes.'   },
+      answer: 'Most plans cover physiotherapy when there is medical justification. Coverage varies significantly: annual session limits, copay percentages, referral requirements, and pre-authorisation requirements all differ across plans. Direct-billing arrangements depend on clinic-insurer relationships. <a href="https://wa.me/971555867466?text=Hi,%20I%27d%20like%20to%20verify%20my%20insurance%20coverage" target="_blank" rel="noopener noreferrer" class="hover:underline">WhatsApp your insurance card</a> to <a href="https://wa.me/971555867466?text=Hello%20Vedara%20Care,%20I%20would%20like%20to%20confirm%20my%20insurance%20coverage%20for%20physiotherapy.">+971 55 586 7466</a> for specific coverage confirmation before booking multi-session programmes.'
+    },
     {
       question: "Do I need a referral to see a physiotherapist in Dubai?",
-      answer: "Not legally — physiotherapy is direct-access in Dubai. However, your specific insurance plan may require referral for coverage. For complex conditions, GP evaluation before physiotherapy is often clinically appropriate. For acute injuries with potential fracture or serious pathology, A&E or GP evaluation first is standard practice."  },
+      answer: "Not legally — physiotherapy is direct-access in Dubai. However, your specific insurance plan may require referral for coverage. For complex conditions, GP evaluation before physiotherapy is often clinically appropriate. For acute injuries with potential fracture or serious pathology, A&E or GP evaluation first is standard practice."
+    },
     {
       question: "How much does physiotherapy cost in Dubai?",
-      answer: "Single sessions range from approximately AED 200 to AED 800 across Dubai depending on clinic quality. At Vedara Care, our standard physiotherapy session is AED [X], with packages reducing the per-session rate. Specialised modalities (dry needling, shockwave therapy) may add additional cost. Detailed pricing is published on our cost guide and on our physiotherapy pricing section." },
+      answer: "Single sessions range from approximately AED 200 to AED 800 across Dubai depending on clinic quality. At Vedara Care, our standard physiotherapy session is AED [X], with packages reducing the per-session rate. Specialised modalities (dry needling, shockwave therapy) may add additional cost. Detailed pricing is published on our cost guide and on our physiotherapy pricing section."
+    },
     {
       question: "What is the difference between hospital physiotherapy and clinic physiotherapy in Dubai?",
-      answer: "Hospital physiotherapy is typically associated with inpatient or specific specialist referrals, often shorter session times (20-30 minutes), and rotating therapists based on availability. Standalone clinics typically offer 45-60 minute sessions, continuity with the same therapist, faster scheduling, and broader scope. Both have appropriate uses — acute hospital-based care versus outpatient rehabilitation typically differ" }
-  ,
-{
-  question: "What is sports physiotherapy and do I need it?",
-  answer: "Sports physiotherapy is specialised treatment for active patients — acute sports injury management, performance optimisation, biomechanical assessment, and return-to-sport protocols. It differs from general musculoskeletal physiotherapy in approach, expectations, and progression. If you are returning to specific sports after injury, want to optimise performance, or have recurring sports-related injuries, sports physiotherapy is meaningfully different and often more effective."},
-{
-  question: "Where in Dubai is your physiotherapy clinic located?",
-  answer: "Our DHA-licensed clinic is in Jumeirah Village Circle (JVC), Dubai — walking distance from Circle Mall, three minutes from FIVE Jumeirah Village Hotel, and five minutes from JSS Private School. Free patient parking on-site. Easy access from Sheikh Mohammed Bin Zayed Road and Al Khail Road. Patients travel to us from across Dubai — typically 15-25 minutes from most neighbourhoods. Full clinic page at <a href= '/physiotherapy-jvc/'> Physiotherapy clinic.</a> "
+      answer: "Hospital physiotherapy is typically associated with inpatient or specific specialist referrals, often shorter session times (20-30 minutes), and rotating therapists based on availability. Standalone clinics typically offer 45-60 minute sessions, continuity with the same therapist, faster scheduling, and broader scope. Both have appropriate uses — acute hospital-based care versus outpatient rehabilitation typically differ"
+    }
+    ,
+    {
+      question: "What is sports physiotherapy and do I need it?",
+      answer: "Sports physiotherapy is specialised treatment for active patients — acute sports injury management, performance optimisation, biomechanical assessment, and return-to-sport protocols. It differs from general musculoskeletal physiotherapy in approach, expectations, and progression. If you are returning to specific sports after injury, want to optimise performance, or have recurring sports-related injuries, sports physiotherapy is meaningfully different and often more effective."
+    },
+    {
+      question: "Where in Dubai is your physiotherapy clinic located?",
+      answer: "Our DHA-licensed clinic is in Jumeirah Village Circle (JVC), Dubai — walking distance from Circle Mall, three minutes from FIVE Jumeirah Village Hotel, and five minutes from JSS Private School. Free patient parking on-site. Easy access from Sheikh Mohammed Bin Zayed Road and Al Khail Road. Patients travel to us from across Dubai — typically 15-25 minutes from most neighbourhoods. Full clinic page at <a href= '/physiotherapy-jvc/'> Physiotherapy clinic.</a> "
 
-},
-{
-  question: "Do you offer home physiotherapy in Dubai?",
-  answer: "Yes — home physiotherapy is available across Dubai for patients with mobility limitations, post-surgical recovery in early stages, elderly patients, or other situations where clinic visits are difficult. Home visits typically cost AED [X] above standard session rates. Particularly utilised for post-stroke rehabilitation, post-joint-replacement recovery, and post-spinal surgery early recovery."
-},
-{
-  question: "What conditions does physiotherapy treat?",
-  answer: "Physiotherapy treats a wide range of conditions including: musculoskeletal conditions (back pain, neck pain, joint dysfunction, frozen shoulder), sports injuries, post-surgical recovery (ACL, joint replacement, spinal surgery), neurological conditions (post-stroke, MS, Parkinson's), women's health (pelvic floor, postnatal), paediatric conditions, cardiopulmonary conditions, and post-COVID symptoms. Not every condition responds to physiotherapy alone — accurate assessment determines whether physiotherapy is appropriate."},
-{
-  question: "How many physiotherapy sessions will I need?",
-  answer: "Varies enormously: acute injuries often resolve in 4-8 sessions. Chronic conditions typically need 10-16 sessions. Post-surgical rehabilitation usually 20-30+ sessions over 3-6 months. Neurological rehabilitation can be ongoing. At initial assessment, you receive a specific estimated session count for your condition with realistic expectations."},
-{
-question: "Is dry needling available in Dubai?",
-answer: "Yes — dry needling is offered at qualified physiotherapy clinics including Vedara Care. The technique requires specific certification beyond standard physiotherapy qualification. Particularly effective for chronic muscle tension patterns, trigger points, and certain headache types. Distinct from acupuncture in mechanism and training."},
-{
-  question: "What about <a href= '/conditions/pelvic-floor-physiotherapy-dubai/'> pelvic floor physiotherapy specifically? </a>",
-  answer: "Pelvic floor physiotherapy is an underserved specialty in Dubai — available at limited clinics. At Vedara Care, female specialists trained in pelvic floor assessment provide care for incontinence, prolapse, painful intercourse, and postnatal pelvic floor restoration. Always provided by female therapists for female patients."},
-  {
-    question: "Do you treat post-COVID symptoms?",
-    answer: "Yes — post-COVID rehabilitation has been a developed area since 2021. We treat persistent fatigue (with structured graded activity protocols), post-COVID breathlessness (respiratory rehabilitation), brain fog (with cognitive rehabilitation strategies), and persistent musculoskeletal symptoms. Approach is individualised to your specific symptom pattern."},
-,{
-  question: "Can children have physiotherapy in Dubai?",
-  answer: "Yes — paediatric physiotherapy is available at clinics with appropriate specialists. At Vedara Care, paediatric physiotherapy is provided by therapists with specific paediatric training. Children are treated for developmental concerns, sports injuries in adolescents, post-fracture recovery, scoliosis screening and management, and neurological conditions."},
-  {
-    question: "What is integrated Ayurveda and physiotherapy?",
-    answer: "For specific chronic conditions — chronic back pain, arthritis, frozen shoulder, post-stroke recovery, postnatal recovery — coordinated treatment combining physiotherapy with Ayurvedic medicine often produces stronger outcomes than either alone. At Vedara Care, both teams share clinical notes for joint patients. This integration is offered when clinically appropriate, never as default upsell. Most physiotherapy patients receive standalone physiotherapy only."  },
+    },
+    {
+      question: "Do you offer home physiotherapy in Dubai?",
+      answer: "Yes — home physiotherapy is available across Dubai for patients with mobility limitations, post-surgical recovery in early stages, elderly patients, or other situations where clinic visits are difficult. Home visits typically cost AED [X] above standard session rates. Particularly utilised for post-stroke rehabilitation, post-joint-replacement recovery, and post-spinal surgery early recovery."
+    },
+    {
+      question: "What conditions does physiotherapy treat?",
+      answer: "Physiotherapy treats a wide range of conditions including: musculoskeletal conditions (back pain, neck pain, joint dysfunction, frozen shoulder), sports injuries, post-surgical recovery (ACL, joint replacement, spinal surgery), neurological conditions (post-stroke, MS, Parkinson's), women's health (pelvic floor, postnatal), paediatric conditions, cardiopulmonary conditions, and post-COVID symptoms. Not every condition responds to physiotherapy alone — accurate assessment determines whether physiotherapy is appropriate."
+    },
+    {
+      question: "How many physiotherapy sessions will I need?",
+      answer: "Varies enormously: acute injuries often resolve in 4-8 sessions. Chronic conditions typically need 10-16 sessions. Post-surgical rehabilitation usually 20-30+ sessions over 3-6 months. Neurological rehabilitation can be ongoing. At initial assessment, you receive a specific estimated session count for your condition with realistic expectations."
+    },
+    {
+      question: "Is dry needling available in Dubai?",
+      answer: "Yes — dry needling is offered at qualified physiotherapy clinics including Vedara Care. The technique requires specific certification beyond standard physiotherapy qualification. Particularly effective for chronic muscle tension patterns, trigger points, and certain headache types. Distinct from acupuncture in mechanism and training."
+    },
+    {
+      question: "What about <a href= '/conditions/pelvic-floor-physiotherapy-dubai/'> pelvic floor physiotherapy specifically? </a>",
+      answer: "Pelvic floor physiotherapy is an underserved specialty in Dubai — available at limited clinics. At Vedara Care, female specialists trained in pelvic floor assessment provide care for incontinence, prolapse, painful intercourse, and postnatal pelvic floor restoration. Always provided by female therapists for female patients."
+    },
+    {
+      question: "Do you treat post-COVID symptoms?",
+      answer: "Yes — post-COVID rehabilitation has been a developed area since 2021. We treat persistent fatigue (with structured graded activity protocols), post-COVID breathlessness (respiratory rehabilitation), brain fog (with cognitive rehabilitation strategies), and persistent musculoskeletal symptoms. Approach is individualised to your specific symptom pattern."
+    },
+    , {
+      question: "Can children have physiotherapy in Dubai?",
+      answer: "Yes — paediatric physiotherapy is available at clinics with appropriate specialists. At Vedara Care, paediatric physiotherapy is provided by therapists with specific paediatric training. Children are treated for developmental concerns, sports injuries in adolescents, post-fracture recovery, scoliosis screening and management, and neurological conditions."
+    },
+    {
+      question: "What is integrated Ayurveda and physiotherapy?",
+      answer: "For specific chronic conditions — chronic back pain, arthritis, frozen shoulder, post-stroke recovery, postnatal recovery — coordinated treatment combining physiotherapy with Ayurvedic medicine often produces stronger outcomes than either alone. At Vedara Care, both teams share clinical notes for joint patients. This integration is offered when clinically appropriate, never as default upsell. Most physiotherapy patients receive standalone physiotherapy only."
+    },
     {
       question: "Are there female physiotherapists in Dubai?",
-      answer: "Yes — many Dubai clinics including Vedara Care have female physiotherapists. Female patients with specific preferences (particularly for treatments involving body exposure like pelvic floor work) can request female therapists. All pelvic floor physiotherapy at Vedara Care is provided by female specialists for female patients." }
-,{
-question: "What about sports injuries from padel?",
-answer: "Padel has exploded in Dubai's expat community, and padel injuries are a growing patient cohort. Most common presentations: lateral epicondylitis (padel elbow), shoulder impingement, lower back strain, knee meniscus injuries, ankle sprains, wrist tendinopathies. Our sports physiotherapy team has developed specific protocols for padel-related injuries based on the sport's biomechanics."},
-{
-  question: "How quickly can I get an appointment in Dubai?",
-  answer: "At Vedara Care, typically same-day or next-day for new patients, with priority booking for acute injuries within 24 hours when possible. Saturday and evening slots available. WhatsApp <a href='https://wa.me/971555867466?text=Hello%20Vedara%20Care,%20I%20would%20like%20to%20book%20a%20physiotherapy%20appointment.'>+971 55 586 7466</a> for fastest response. Across Dubai's market, scheduling availability varies enormously — busy clinics may have 1-2 week waits, less busy clinics offer same-day."},
-  {
-    question: "How do I book a physiotherapy assessment?",
-    answer: "Three ways at Vedara Care: WhatsApp <a href='https://wa.me/971555867466?text=Hello%20Vedara%20Care,%20I%20would%20like%20to%20book%20a%20physiotherapy%20assessment.'>+971 55 586 7466</a> for fastest response (typically within 15 minutes business hours), call +971 55 586 7466 (Monday to Sunday, 8:30 AM to 11:30 PM), or book online. For your first appointment, bring or send: any relevant imaging (X-rays, MRI), medical reports, current medication list, and insurance card if applicable."
-   }
+      answer: "Yes — many Dubai clinics including Vedara Care have female physiotherapists. Female patients with specific preferences (particularly for treatments involving body exposure like pelvic floor work) can request female therapists. All pelvic floor physiotherapy at Vedara Care is provided by female specialists for female patients."
+    }
+    , {
+      question: "What about sports injuries from padel?",
+      answer: "Padel has exploded in Dubai's expat community, and padel injuries are a growing patient cohort. Most common presentations: lateral epicondylitis (padel elbow), shoulder impingement, lower back strain, knee meniscus injuries, ankle sprains, wrist tendinopathies. Our sports physiotherapy team has developed specific protocols for padel-related injuries based on the sport's biomechanics."
+    },
+    {
+      question: "How quickly can I get an appointment in Dubai?",
+      answer: "At Vedara Care, typically same-day or next-day for new patients, with priority booking for acute injuries within 24 hours when possible. Saturday and evening slots available. WhatsApp <a href='https://wa.me/971555867466?text=Hello%20Vedara%20Care,%20I%20would%20like%20to%20book%20a%20physiotherapy%20appointment.'>+971 55 586 7466</a> for fastest response. Across Dubai's market, scheduling availability varies enormously — busy clinics may have 1-2 week waits, less busy clinics offer same-day."
+    },
+    {
+      question: "How do I book a physiotherapy assessment?",
+      answer: "Three ways at Vedara Care: WhatsApp <a href='https://wa.me/971555867466?text=Hello%20Vedara%20Care,%20I%20would%20like%20to%20book%20a%20physiotherapy%20assessment.'>+971 55 586 7466</a> for fastest response (typically within 15 minutes business hours), call +971 55 586 7466 (Monday to Sunday, 8:30 AM to 11:30 PM), or book online. For your first appointment, bring or send: any relevant imaging (X-rays, MRI), medical reports, current medication list, and insurance card if applicable."
+    }
 
 
-]
+  ]
 }
 
-;
+  ;
 
 export const physiotherapyTreatmentLocation = {
   bgColor: "bg-[#F5F1E8]",
@@ -505,7 +522,7 @@ export const physiotherapyInsurance = {
   content: [
     "Insurance coverage for physiotherapy in Dubai varies enormously by insurer and plan. Understanding what your specific plan covers — before you commit to a multi-session programme — prevents most billing surprises.",
     "The major Dubai insurers offering some level of physiotherapy coverage include Daman, AXA, Allianz, Oman Insurance, Now Health, Bupa, and MetLife. Coverage typically varies across these dimensions: annual session limits (some plans allow 6-10 sessions per year; comprehensive plans allow unlimited with medical justification), copay percentages (often 10-30% patient responsibility), referral requirements (some plans require GP referral; others allow direct access), pre-authorisation requirements (some clinics require pre-authorisation for treatment beyond initial sessions), and direct-billing arrangements (some clinics direct-bill insurers; others require you to pay and claim back).",
-    "At Vedara Care, we are direct-billing partners with Daman, AXA, Allianz, Oman Insurance, Now Health, Bupa, and MetLife. The most efficient process for new patients: WhatsApp your insurance card photo to +971 55 586 7466</a> before booking, and our team confirms exactly what is covered, what pre-authorisation is needed, and what your out-of-pocket cost will be. This typically takes 24-48 hours but prevents the most common billing surprises. For a full cost breakdown, see our <a href=\"/blog/ayurveda-cost-dubai/\">cost guide</a>.",
+    "At Vedara Care, we are direct-billing partners with Daman, AXA, Allianz, Oman Insurance, Now Health, Bupa, and MetLife. The most efficient process for new patients: WhatsApp your insurance card photo to +971 55 586 7466</a> before booking, and our team confirms exactly what is covered, what pre-authorisation is needed, and what your out-of-pocket cost will be. This typically takes 24-48 hours but prevents the most common billing surprises.",
     "Some realities worth knowing: most plans require medical justification (specific diagnosis, documented condition) rather than wellness physiotherapy. Most plans cover physiotherapy for diagnosed musculoskeletal conditions (like <a href=\"/conditions/back-pain-ayurveda-dubai/\">back pain</a> or <a href=\"/conditions/arthritis-ayurveda-dubai/\">knee OA</a>), post-surgical recovery, and neurological rehabilitation. Coverage for preventive sports performance work, wellness physiotherapy, or maintenance visits varies. <a href=\"/conditions/postnatal-ayurveda-dubai/\">Postnatal physiotherapy</a> coverage has improved substantially in recent years — most major plans now cover pelvic floor rehabilitation with appropriate clinical justification."
   ],
   insurers: ["Daman", "AXA", "Allianz", "Oman Insurance", "Now Health", "Bupa", "MetLife"],
@@ -665,6 +682,7 @@ export const physiotherapyRelatedPages = {
     {
       title: "Cost of Treatment Guide",
       href: "/blog/ayurveda-cost-dubai/",
-      description: "Complete transparent pricing across all our services — physiotherapy, Ayurveda, integrated programmes, with Dubai market context."    }
+      description: "Complete transparent pricing across all our services — physiotherapy, Ayurveda, integrated programmes, with Dubai market context."
+    }
   ]
 };

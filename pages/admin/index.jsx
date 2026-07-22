@@ -9,7 +9,8 @@ import {
   FileText, Calendar, Layers, Share2, MoreVertical, Copy, Star, Zap, ArrowUpRight,
   LayoutGrid, List as ListIcon, Filter, ArrowDownToLine, CheckCircle2, AlertTriangle,
   CalendarDays, Calendar as CalendarIcon, PenLine, Clock as ClockIcon, Image as ImageIcon, Video as VideoIcon, Maximize2,
-  Compass, Target, Trophy, Users, Lightbulb, Rocket, Cloud, Grid, Box, GripHorizontal
+  Compass, Target, Trophy, Users, Lightbulb, Rocket, Cloud, Grid, Box, GripHorizontal,
+  Phone, Mail, PhoneCall, Inbox, Check, AlertCircle, ShieldCheck, Tag
 } from 'lucide-react';
 
 const cleanBlogContent = (html) => {
@@ -41,6 +42,10 @@ const AdminBlogPost = () => {
   const [editDraftId, setEditDraftId] = useState(null);
   const [posts, setPosts] = useState([]);
   const [drafts, setDrafts] = useState([]);
+  const [appointments, setAppointments] = useState([]);
+  const [appointmentStats, setAppointmentStats] = useState({ total: 0, new: 0, contacted: 0, scheduled: 0, completed: 0, cancelled: 0 });
+  const [appointmentFilter, setAppointmentFilter] = useState('all');
+  const [appointmentSearch, setAppointmentSearch] = useState('');
   const [isLoading, setIsLoading] = useState(true);
   const [searchQuery, setSearchQuery] = useState('');
   const [activeContentTab, setActiveContentTab] = useState('published');
@@ -55,7 +60,51 @@ const AdminBlogPost = () => {
     }
     fetchPosts();
     fetchDrafts();
+    fetchAppointments();
   }, []);
+
+  const fetchAppointments = async (status = appointmentFilter, search = appointmentSearch) => {
+    try {
+      const url = `/api/admin/appointments?status=${status}&search=${encodeURIComponent(search)}`;
+      const res = await axios.get(url, getAuthHeaders());
+      if (res.data.success) {
+        setAppointments(res.data.appointments || []);
+        if (res.data.stats) {
+          setAppointmentStats(res.data.stats);
+        }
+      }
+    } catch (error) {
+      if (handleAuthError(error)) return;
+      console.error("Error fetching appointments:", error);
+    }
+  };
+
+  const handleUpdateAppointmentStatus = async (id, newStatus) => {
+    try {
+      const res = await axios.patch('/api/admin/appointments', { id, status: newStatus }, getAuthHeaders());
+      if (res.data.success) {
+        showToast(`Status updated to "${newStatus}"`, "success");
+        fetchAppointments(appointmentFilter, appointmentSearch);
+      }
+    } catch (error) {
+      console.error("Error updating appointment status:", error);
+      showToast("Failed to update status", "error");
+    }
+  };
+
+  const handleDeleteAppointment = async (id) => {
+    if (!confirm("Are you sure you want to delete this inquiry record?")) return;
+    try {
+      const res = await axios.delete(`/api/admin/appointments?id=${id}`, getAuthHeaders());
+      if (res.data.success) {
+        showToast("Inquiry deleted successfully", "success");
+        fetchAppointments(appointmentFilter, appointmentSearch);
+      }
+    } catch (error) {
+      console.error("Error deleting appointment:", error);
+      showToast("Failed to delete record", "error");
+    }
+  };
 
   const getAuthHeaders = () => {
     const token = localStorage.getItem(tokenKey);
@@ -266,39 +315,56 @@ const AdminBlogPost = () => {
 
           <div className="flex flex-wrap items-center gap-4">
             {/* View Switcher */}
-            <div className="flex items-center gap-2 p-1.5 bg-white backdrop-blur-xl rounded-2xl border border-[#E5E5E5] shadow-sm">
+            <div className="w-full sm:w-auto overflow-x-auto max-w-full flex items-center gap-1.5 p-1.5 bg-white backdrop-blur-xl rounded-2xl border border-[#E5E5E5] shadow-sm scrollbar-none">
               <button
                 onClick={() => setActiveView('dashboard')}
-                className={`flex items-center gap-2 px-5 py-2.5 rounded-xl text-sm font-semibold transition-all ${
+                className={`flex items-center gap-1.5 px-3.5 sm:px-5 py-2 sm:py-2.5 rounded-xl text-xs sm:text-sm font-semibold transition-all shrink-0 ${
                   activeView === 'dashboard'
                     ? 'bg-[#184C3A] text-white shadow-lg shadow-[#184C3A]/20'
                     : 'text-gray-600 hover:text-[#184C3A] hover:bg-[#FAF8EF]'
                 }`}
               >
-                <Grid className="w-4.5 h-4.5" />
+                <Grid className="w-4 h-4" />
                 Dashboard
               </button>
               <button
                 onClick={() => setActiveView('timeline')}
-                className={`flex items-center gap-2 px-5 py-2.5 rounded-xl text-sm font-semibold transition-all ${
+                className={`flex items-center gap-1.5 px-3.5 sm:px-5 py-2 sm:py-2.5 rounded-xl text-xs sm:text-sm font-semibold transition-all shrink-0 ${
                   activeView === 'timeline'
                     ? 'bg-[#184C3A] text-white shadow-lg shadow-[#184C3A]/20'
                     : 'text-gray-600 hover:text-[#184C3A] hover:bg-[#FAF8EF]'
                 }`}
               >
-                <CalendarDays className="w-4.5 h-4.5" />
+                <CalendarDays className="w-4 h-4" />
                 Timeline
               </button>
               <button
                 onClick={() => setActiveView('grid')}
-                className={`flex items-center gap-2 px-5 py-2.5 rounded-xl text-sm font-semibold transition-all ${
+                className={`flex items-center gap-1.5 px-3.5 sm:px-5 py-2 sm:py-2.5 rounded-xl text-xs sm:text-sm font-semibold transition-all shrink-0 ${
                   activeView === 'grid'
                     ? 'bg-[#184C3A] text-white shadow-lg shadow-[#184C3A]/20'
                     : 'text-gray-600 hover:text-[#184C3A] hover:bg-[#FAF8EF]'
                 }`}
               >
-                <Box className="w-4.5 h-4.5" />
+                <Box className="w-4 h-4" />
                 Collection
+              </button>
+              <button
+                onClick={() => setActiveView('appointments')}
+                className={`flex items-center gap-1.5 px-3.5 sm:px-5 py-2 sm:py-2.5 rounded-xl text-xs sm:text-sm font-semibold transition-all shrink-0 ${
+                  activeView === 'appointments'
+                    ? 'bg-[#184C3A] text-white shadow-lg shadow-[#184C3A]/20'
+                    : 'text-gray-600 hover:text-[#184C3A] hover:bg-[#FAF8EF]'
+                }`}
+              >
+                <Inbox className="w-4 h-4 text-[#C9A961]" />
+                <span className="hidden sm:inline">Inquiries & Bookings</span>
+                <span className="sm:hidden">Inquiries</span>
+                {appointmentStats.new > 0 && (
+                  <span className="bg-[#C9A961] text-white text-[10px] font-bold px-1.5 py-0.5 rounded-full animate-pulse">
+                    {appointmentStats.new}
+                  </span>
+                )}
               </button>
             </div>
 
@@ -318,7 +384,23 @@ const AdminBlogPost = () => {
         {activeView === 'dashboard' && (
           <div className="space-y-8">
             {/* Stat KPI Cards */}
-            <div className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-4 gap-5">
+            <div className="grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-5 gap-4">
+              <div className="group relative overflow-hidden bg-white backdrop-blur-2xl border border-[#E5E5E5] rounded-3xl p-6 hover:border-[#C9A961] transition-all duration-500 hover:-translate-y-1.5 hover:shadow-xl hover:shadow-[#C9A961]/10">
+                <div className="absolute top-0 right-0 p-8 opacity-5">
+                  <Inbox className="w-24 h-24 text-[#184C3A]" />
+                </div>
+                <div className="flex items-start justify-between mb-4">
+                  <div className="w-12 h-12 rounded-2xl bg-gradient-to-br from-[#FAF8EF] to-[#FAF8EF] flex items-center justify-center">
+                    <Inbox className="w-6 h-6 text-[#184C3A]" />
+                  </div>
+                  <span className="text-xs font-semibold text-[#184C3A] bg-[#FAF8EF] px-3 py-1 rounded-full border border-[#C9A961]/30">
+                    {appointmentStats.new > 0 ? `${appointmentStats.new} New` : 'All Caught Up'}
+                  </span>
+                </div>
+                <p className="text-4xl font-black text-gray-900 mb-1.5">{appointmentStats.total || appointments.length}</p>
+                <p className="text-gray-500 text-sm font-medium">Inquiries & Bookings</p>
+              </div>
+
               <div className="group relative overflow-hidden bg-white backdrop-blur-2xl border border-[#E5E5E5] rounded-3xl p-6 hover:border-[#C9A961] transition-all duration-500 hover:-translate-y-1.5 hover:shadow-xl hover:shadow-[#C9A961]/10">
                 <div className="absolute top-0 right-0 p-8 opacity-5">
                   <Trophy className="w-24 h-24 text-[#184C3A]" />
@@ -796,6 +878,204 @@ const AdminBlogPost = () => {
                 )}
               </div>
             )}
+          </div>
+        )}
+
+        {/* Appointments & Inquiries View */}
+        {activeView === 'appointments' && (
+          <div className="space-y-6">
+            {/* Header & Filter Bar */}
+            <div className="bg-white backdrop-blur-2xl border border-[#E5E5E5] rounded-3xl p-4 sm:p-6 shadow-sm flex flex-col md:flex-row md:items-center justify-between gap-4">
+              <div>
+                <h2 className="text-2xl font-bold text-gray-900 flex items-center gap-2">
+                  <Inbox className="w-6 h-6 text-[#184C3A]" />
+                  Inquiries & Contact Submissions
+                </h2>
+                <p className="text-[#6B7280] text-sm mt-1">
+                  Manage patient bookings, contact forms, source tracking & status responses.
+                </p>
+              </div>
+
+              {/* Status Filter Badges */}
+              <div className="flex flex-wrap items-center gap-2">
+                {[
+                  { key: 'all', label: `All (${appointmentStats.total || 0})` },
+                  { key: 'new', label: `New (${appointmentStats.new || 0})` },
+                  { key: 'contacted', label: `Contacted (${appointmentStats.contacted || 0})` },
+                  { key: 'scheduled', label: `Scheduled (${appointmentStats.scheduled || 0})` },
+                  { key: 'completed', label: `Completed (${appointmentStats.completed || 0})` },
+                  { key: 'cancelled', label: `Cancelled (${appointmentStats.cancelled || 0})` }
+                ].map(filterTab => (
+                  <button
+                    key={filterTab.key}
+                    onClick={() => {
+                      setAppointmentFilter(filterTab.key);
+                      fetchAppointments(filterTab.key, appointmentSearch);
+                    }}
+                    className={`px-4 py-2 rounded-xl text-xs font-bold transition-all ${
+                      appointmentFilter === filterTab.key
+                        ? 'bg-[#184C3A] text-white shadow-md'
+                        : 'bg-[#FAF8EF] text-gray-600 hover:bg-gray-200/70 border border-[#E5E5E5]'
+                    }`}
+                  >
+                    {filterTab.label}
+                  </button>
+                ))}
+              </div>
+            </div>
+
+            {/* Search Input Bar */}
+            <div className="relative max-w-2xl">
+              <Search className="absolute left-5 top-1/2 -translate-y-1/2 text-gray-400 w-5 h-5" />
+              <input
+                type="text"
+                placeholder="Search by patient name, phone, email, department, message, or source..."
+                value={appointmentSearch}
+                onChange={(e) => {
+                  setAppointmentSearch(e.target.value);
+                  fetchAppointments(appointmentFilter, e.target.value);
+                }}
+                className="w-full pl-14 pr-6 py-4 bg-white border border-[#E5E5E5] rounded-2xl focus:outline-none focus:ring-2 focus:ring-[#184C3A]/30 text-gray-900 text-sm shadow-sm"
+              />
+            </div>
+
+            {/* Inquiries Cards Grid */}
+            <div className="grid grid-cols-1 md:grid-cols-2 gap-6">
+              {appointments.map((apt) => {
+                const waCleanPhone = (apt.phone || '').replace(/[^0-9]/g, '');
+                const waText = encodeURIComponent(`Hello ${apt.fullName || 'Patient'}, following up from Vedara Care regarding your inquiry for ${apt.concern || 'treatment'}.`);
+                const waUrl = `https://wa.me/${waCleanPhone}?text=${waText}`;
+
+                return (
+                  <div
+                    key={apt._id}
+                    className="bg-white border border-[#E5E5E5] rounded-3xl p-6 shadow-sm hover:shadow-md transition-all space-y-4 flex flex-col justify-between"
+                  >
+                    <div className="space-y-3">
+                      {/* Top Bar: Source & Status Selector */}
+                      <div className="flex flex-wrap items-center justify-between gap-2 border-b border-gray-100 pb-3">
+                        <span className="inline-flex items-center gap-1.5 bg-[#FAF8EF] text-[#C9A961] border border-[#C9A961]/30 px-3 py-1 rounded-full text-xs font-semibold">
+                          <Tag className="w-3.5 h-3.5" />
+                          Source: {apt.source || 'Contact Form'}
+                        </span>
+
+                        <div className="flex items-center gap-2">
+                          <span className="text-xs font-medium text-gray-500">Status:</span>
+                          <select
+                            value={apt.status || 'new'}
+                            onChange={(e) => handleUpdateAppointmentStatus(apt._id, e.target.value)}
+                            className={`px-3 py-1 rounded-xl text-xs font-bold focus:outline-none border cursor-pointer ${
+                              apt.status === 'new' ? 'bg-amber-100 text-amber-800 border-amber-300' :
+                              apt.status === 'contacted' ? 'bg-blue-100 text-blue-800 border-blue-300' :
+                              apt.status === 'scheduled' ? 'bg-purple-100 text-purple-800 border-purple-300' :
+                              apt.status === 'completed' ? 'bg-emerald-100 text-emerald-800 border-emerald-300' :
+                              'bg-rose-100 text-rose-800 border-rose-300'
+                            }`}
+                          >
+                            <option value="new">New</option>
+                            <option value="contacted">Contacted</option>
+                            <option value="scheduled">Scheduled</option>
+                            <option value="completed">Completed</option>
+                            <option value="cancelled">Cancelled</option>
+                          </select>
+                        </div>
+                      </div>
+
+                      {/* Patient Info */}
+                      <div>
+                        <h3 className="text-xl font-bold text-gray-900 mb-1">{apt.fullName || 'Anonymous Patient'}</h3>
+                        <p className="text-sm font-semibold text-[#184C3A]">Department / Concern: {apt.concern || 'General Inquiry'}</p>
+                      </div>
+
+                      {/* Contact & Date Info */}
+                      <div className="grid grid-cols-1 sm:grid-cols-2 gap-2 text-xs text-gray-600 bg-[#FAF8EF] p-3 rounded-2xl">
+                        <div className="flex items-center gap-2">
+                          <Phone className="w-3.5 h-3.5 text-[#184C3A]" />
+                          <span>{apt.phone || 'No phone'}</span>
+                        </div>
+                        {apt.email && (
+                          <div className="flex items-center gap-2 truncate">
+                            <Mail className="w-3.5 h-3.5 text-[#184C3A]" />
+                            <span className="truncate">{apt.email}</span>
+                          </div>
+                        )}
+                        {apt.preferredDate && (
+                          <div className="flex items-center gap-2">
+                            <CalendarDays className="w-3.5 h-3.5 text-[#C9A961]" />
+                            <span>Pref Date: {formatDate(apt.preferredDate)}</span>
+                          </div>
+                        )}
+                        <div className="flex items-center gap-2">
+                          <Clock className="w-3.5 h-3.5 text-[#C9A961]" />
+                          <span>Submitted: {getRelativeDate(apt.createdAt)}</span>
+                        </div>
+                      </div>
+
+                      {/* Details / Message */}
+                      {apt.additionalInfo && (
+                        <div className="bg-gray-50 border border-gray-100 p-3 rounded-xl text-xs text-gray-700 leading-relaxed space-y-1">
+                          <strong className="text-gray-900 block font-semibold">Patient Note / Details:</strong>
+                          <p className="whitespace-pre-line">{apt.additionalInfo}</p>
+                        </div>
+                      )}
+                    </div>
+
+                    {/* Quick Response Actions */}
+                    <div className="pt-3 border-t border-gray-100 flex flex-wrap items-center justify-between gap-2">
+                      <div className="flex items-center gap-2">
+                        {apt.phone && (
+                          <>
+                            <a
+                              href={waUrl}
+                              target="_blank"
+                              rel="noopener noreferrer"
+                              className="px-3.5 py-2 bg-[#25D366] hover:bg-[#20bd5b] text-white rounded-xl text-xs font-bold flex items-center gap-1.5 shadow-sm transition-all"
+                            >
+                              <MessageCircle className="w-3.5 h-3.5 fill-current" />
+                              WhatsApp
+                            </a>
+                            <a
+                              href={`tel:${apt.phone}`}
+                              className="px-3.5 py-2 bg-[#184C3A] hover:bg-[#123B2D] text-white rounded-xl text-xs font-bold flex items-center gap-1.5 shadow-sm transition-all"
+                            >
+                              <Phone className="w-3.5 h-3.5" />
+                              Call
+                            </a>
+                          </>
+                        )}
+                        {apt.email && (
+                          <a
+                            href={`mailto:${apt.email}`}
+                            className="px-3.5 py-2 bg-gray-100 hover:bg-gray-200 text-gray-700 rounded-xl text-xs font-semibold flex items-center gap-1.5 transition-colors"
+                          >
+                            <Mail className="w-3.5 h-3.5" />
+                            Email
+                          </a>
+                        )}
+                      </div>
+
+                      <button
+                        onClick={() => handleDeleteAppointment(apt._id)}
+                        className="p-2 text-gray-400 hover:text-rose-600 hover:bg-rose-50 rounded-xl transition-colors"
+                        title="Delete record"
+                      >
+                        <Trash2 className="w-4 h-4" />
+                      </button>
+                    </div>
+                  </div>
+                );
+              })}
+
+              {appointments.length === 0 && (
+                <div className="col-span-full text-center py-20 bg-white border border-[#E5E5E5] rounded-3xl">
+                  <Inbox className="w-12 h-12 text-gray-300 mx-auto mb-3" />
+                  <h3 className="text-lg font-bold text-gray-900 mb-1">No Inquiries Found</h3>
+                  <p className="text-gray-500 text-sm">
+                    {appointmentSearch ? 'Try clearing your search query' : 'Patient contact submissions and booking inquiries will appear here.'}
+                  </p>
+                </div>
+              )}
+            </div>
           </div>
         )}
       </div>

@@ -1,4 +1,5 @@
 import React from 'react'
+import Link from 'next/link'
 
 const ShoulderSurgicalConsiderations = ({ data }) => {
   const {
@@ -89,9 +90,9 @@ const ShoulderSurgicalConsiderations = ({ data }) => {
                   </div>
                 )}
 
-                <button className="w-full bg-[#C9A55A] text-[#1F4538] font-semibold py-4 px-6 rounded hover:bg-[#b8944a] transition-colors text-sm">
+                <Link href="/book" className="block text-center w-full bg-[#C9A55A] text-[#1F4538] font-semibold py-4 px-6 rounded hover:bg-[#b8944a] transition-colors text-sm">
                   {approachToSurgery.buttonText}
-                </button>
+                </Link>
               </div>
             )}
 
@@ -205,9 +206,8 @@ const ShoulderActivityPatterns = ({ data }) => {
           <p
             className="text-center text-sm mt-10 max-w-3xl mx-auto"
             style={{ color: '#C49A3C', lineHeight: 1.7 }}
-          >
-            {footer}
-          </p>
+            dangerouslySetInnerHTML={{ __html: footer }}
+          />
         )}
       </div>
     </section>
@@ -275,9 +275,7 @@ const ShoulderPricing = ({ data }) => {
         )}
         {insuranceSection && (
           <div className="mt-8 rounded-xl p-7" style={{ background: '#FDFAF4', border: '1px solid rgba(0, 0, 0, 0.05)' }}>
-            <p className="text-sm mb-5 leading-relaxed" style={{ lineHeight: 1.7, color: '#6B6150' }}>
-              {insuranceSection.description}
-            </p>
+            <p className="text-sm mb-5 leading-relaxed" style={{ lineHeight: 1.7, color: '#6B6150' }} dangerouslySetInnerHTML={{ __html: insuranceSection.description }} />
             {insuranceSection.insurers && (
               <div className="flex flex-wrap gap-2 mb-5">
                 {insuranceSection.insurers.map((insurer, index) => (
@@ -288,18 +286,10 @@ const ShoulderPricing = ({ data }) => {
               </div>
             )}
             {insuranceSection.cta && (
-              <div className="flex justify-center">
-                <button style={{ 
-                  background: 'rgb(201, 168, 76)', 
-                  color: 'white', 
-                  padding: '14px 32px', 
-                  borderRadius: '4px', 
-                  border: 'none', 
-                  fontWeight: 600, 
-                  cursor: 'pointer' 
-                }}>
+              <div className="flex justify-center w-full">
+                <Link href="/book" className="block text-center bg-[rgb(201,168,76)] text-white py-3.5 px-8 rounded font-semibold cursor-pointer hover:bg-[rgb(180,150,65)] transition-colors">
                   {insuranceSection.cta}
-                </button>
+                </Link>
               </div>
             )}
           </div>

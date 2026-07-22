@@ -169,9 +169,7 @@ const PatientPreferencesSection = ({
             </div>
             {footerNote && (
               <div className="px-6 pb-6 pt-4 border-t border-[#E5DFD3]">
-                <p className="text-sm text-[#6B6B6B] font-sans">
-                  {footerNote}
-                </p>
+                <p className="text-sm text-[#6B6B6B] font-sans" dangerouslySetInnerHTML={{ __html: footerNote }} />
               </div>
             )}
           </div>

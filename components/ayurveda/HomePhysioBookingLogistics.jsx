@@ -51,16 +51,32 @@ const HomePhysioBookingLogistics = ({
 
         <div className="flex justify-center gap-4 mt-12 flex-wrap">
           {buttons.map((button, index) => (
-            <button 
-              key={index}
-              className={`px-8 py-3 rounded-full font-medium transition-all ${
-                button.variant === "primary" 
-                  ? "bg-[#1E4D3A] text-white hover:bg-[#153a2d]" 
-                  : "bg-[#25d366] text-white hover:bg-[#20bd5a]"
-              }`}
-            >
-              {button.text}
-            </button>
+            button.link || button.href ? (
+              <a 
+                key={index}
+                href={button.link || button.href}
+                target={button.link?.startsWith('http') || button.href?.startsWith('http') ? '_blank' : undefined}
+                rel={button.link?.startsWith('http') || button.href?.startsWith('http') ? 'noopener noreferrer' : undefined}
+                className={`px-8 py-3 rounded-full font-medium transition-all text-center block ${
+                  button.variant === "primary" 
+                    ? "bg-[#1E4D3A] text-white hover:bg-[#153a2d]" 
+                    : "bg-[#25d366] text-white hover:bg-[#20bd5a]"
+                }`}
+              >
+                {button.text}
+              </a>
+            ) : (
+              <button 
+                key={index}
+                className={`px-8 py-3 rounded-full font-medium transition-all ${
+                  button.variant === "primary" 
+                    ? "bg-[#1E4D3A] text-white hover:bg-[#153a2d]" 
+                    : "bg-[#25d366] text-white hover:bg-[#20bd5a]"
+                }`}
+              >
+                {button.text}
+              </button>
+            )
           ))}
         </div>
       </div>

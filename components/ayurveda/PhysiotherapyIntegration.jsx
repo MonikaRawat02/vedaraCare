@@ -26,12 +26,12 @@ const PhysiotherapyIntegration = () => {
               Common acute presentations we handle same-day include: ankle sprains and inversion injuries, acute hamstring strains, knee injuries with effusion or instability, shoulder dislocations and subluxations, acute muscle tears, sports-related back injuries, and acute neck injuries from contact sports or falls. For injuries with red flag features — significant trauma, suspected fracture, neurological symptoms, severe deformity — A&E evaluation comes first, then physiotherapy follow-up.
             </p>
             <p className="text-base leading-relaxed" style={{ color: 'rgb(107, 107, 107)', lineHeight: 1.7 }}>
-              <strong style={{ color: 'rgb(26, 26, 26)' }}>How to access same-day:</strong> WhatsApp <a href="https://wa.me/971555867466" style={{ color: 'rgb(27, 67, 50)', textDecoration: 'underline' }}>+971 55 586 7466</a> is the fastest route — our team typically confirms availability within 15 minutes during business hours. Saturdays and evenings are also available for working patients with acute injuries.
+              <strong style={{ color: 'rgb(26, 26, 26)' }}>How to access same-day:</strong> WhatsApp <a href="https://wa.me/971555867466?text=Hello%20Vedara%20Care,%20I%20have%20an%20acute%20sports%20injury%20and%20would%20like%20to%20request%20a%20same-day%20appointment." style={{ color: 'rgb(27, 67, 50)', textDecoration: 'underline' }}>+971 55 586 7466</a> is the fastest route — our team typically confirms availability within 15 minutes during business hours. Saturdays and evenings are also available for working patients with acute injuries.
             </p>
           </div>
           <div className="space-y-6">
             <div className="rounded-xl p-7" style={{ border: '2px solid rgb(201, 168, 76)', background: 'rgb(255, 255, 255)' }}>
-              <p className="text-xs font-bold tracking-widest uppercase mb-5" style={{ color: 'rgb(201, 168, 76)' }}>
+              <p className="text-xs font-bold tracking-widest uppercase mb-5" style={{ color: 'rgba(61, 56, 40, 1)' }}>
                 Acute Injury Checklist
               </p>
               <p className="text-sm font-semibold mb-3" style={{ color: 'rgb(26, 26, 26)' }}>
@@ -108,7 +108,7 @@ const PhysiotherapyIntegration = () => {
               </div>
             </div>
             <div className="flex flex-col gap-3">
-              <a href="https://wa.me/971555867466" className="flex items-center justify-center gap-2 px-6 py-4 rounded-lg text-sm font-semibold text-white transition-all hover:opacity-90" style={{ background: 'rgb(37, 211, 102)' }}>
+              <a href="https://wa.me/971555867466?text=Hello%20Vedara%20Care,%20I%20have%20an%20acute%20sports%20injury%20and%20would%20like%20to%20request%20a%20same-day%20appointment." className="flex items-center justify-center gap-2 px-6 py-4 rounded-lg text-sm font-semibold text-white transition-all hover:opacity-90" style={{ background: 'rgb(37, 211, 102)' }}>
                 <svg xmlns="http://www.w3.org/2000/svg" width="16" height="16" viewBox="0 0 24 24" fill="none" stroke="currentColor" strokeWidth="2" strokeLinecap="round" strokeLinejoin="round">
                   <path d="M7.9 20A9 9 0 1 0 4 16.1L2 22Z"></path>
                 </svg>

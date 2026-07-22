@@ -8,7 +8,9 @@ export const panchakarmaDubaiHero = {
   title: "Classical\nPanchakarma in\nDubai, the way it\nwas meant to be\npractised.",
   description: "Authentic 7-day, 14-day, and 21-day Panchakarma programmes at our <a href=\"/ayurveda-clinic-jvc/\" class=\"text-[#C9A961] hover:underline transition-colors\">Jumeirah Village Circle clinic</a>, doctor-supervised by BAMS-qualified physicians. The five-action classical detoxification — properly assessed, properly executed, properly followed up.",
   primaryCTA: "Book a Panchakarma Consultation",
+  primaryCTAHref: "/book",
   secondaryCTA: "Chat on WhatsApp",
+  secondaryCTAHref: "https://wa.me/971555867466?text=Hi,%20I'd%20like%20to%20inquire%20about%20Panchakarma%20treatment%20at%20your%20JVC%20clinic.",
   trustSignals: [
     "DHA-Licensed Practitioners",
     "Programmes from 7 to 21 days",
@@ -59,6 +61,7 @@ export const panchakarmaDubaiPhysician = {
   ],
   languages: "Languages: English · Hindi · Malayalam · Arabic (basic)",
   button1Text: "Book with Dr. Nair",
+  button1Href: "/book",
   button2Text: "View Full Profile",
   profileLink: "/doctors/dr-priya-nair-ayurveda"
 };
@@ -268,6 +271,8 @@ export const panchakarmaDubaiPrograms = {
   label: "PROGRAMMES",
   title: "Three Panchakarma programmes, calibrated to what you actually need.",
   description: "Your doctor will recommend the right programme length at consultation based on your condition, constitution, and what you can individually commit to.",
+  whatsappNumber: "+971555867466",
+  defaultWhatsappMessage: "Hi, I'd like to inquire about Panchakarma treatment programmes at your clinic.",
   programs: [
     {
       name: "Panchakarma Reset",
@@ -282,7 +287,8 @@ export const panchakarmaDubaiPrograms = {
         "4 weeks follow-up support"
       ],
       bestFor: "First-time Panchakarma, mild Kapha-Pitta imbalance, general detoxification, stress reset",
-      buttonText: "Enquire on WhatsApp"
+      buttonText: "Enquire on WhatsApp",
+      whatsappMessage: "Hi, I'd like to inquire about the Panchakarma Reset (7-day) programme at your clinic."
     },
     {
       name: "Classical Panchakarma",
@@ -299,7 +305,8 @@ export const panchakarmaDubaiPrograms = {
         "8 weeks follow-up support including home protocol"
       ],
       bestFor: "<a href=\"/conditions/pcos-ayurveda-dubai/\" class=\"text-[#C9A961]  transition-colors\">PCOS</a>, <a href=\"/conditions/back-pain-ayurveda-dubai/\" class=\"text-[#C9A961] hover:underline transition-colors\">chronic back pain</a>, <a href=\"/conditions/weight-loss-ayurveda-dubai/\" class=\"text-[#C9A961] hover:underline transition-colors\">weight management</a>, acid reflux/<a href=\"/conditions/ibs-ayurveda-dubai/\" class=\"text-[#C9A961]  transition-colors\">IBS</a>, hormonal balance",
-      buttonText: "Enquire on WhatsApp"
+      buttonText: "Enquire on WhatsApp",
+      whatsappMessage: "Hi, I'd like to inquire about the Classical Panchakarma (14-day) programme at your clinic."
     },
     {
       name: "Deep Panchakarma",
@@ -314,7 +321,8 @@ export const panchakarmaDubaiPrograms = {
         "3-month follow-up support"
       ],
       bestFor: "Chronic conditions resistant to other care, deep constitutional reset, severe metabolic imbalance, post-illness recovery",
-      buttonText: "Enquire on WhatsApp"
+      buttonText: "Enquire on WhatsApp",
+      whatsappMessage: "Hi, I'd like to inquire about the Deep Panchakarma (21-day) programme at your clinic."
     }
   ],
   footer: "Daily duration: 2-3 hours at clinic. Programmes can be partially home-delivered for select patients — discuss at consultation."
@@ -348,11 +356,13 @@ export const panchakarmaDubaiReviews = {
     { value: "38", label: "Panchakarma reviews" },
     { value: "97%", label: "would recommend" }
   ],
-  buttonText: "Read All Reviews"
+  buttonText: "Read All Reviews",
+  buttonHref: "https://www.google.com/maps/search/?api=1&query=Vedara%20Care%20Polyclinic%20JVC%20Dubai"
 };
 
 export const panchakarmaDubaiFaqs = {
   doctor: { firstName: "the Team" }, // Hack to make DoctorFAQ work for general team
+  buttonHref: "https://wa.me/971555867466?text=Hi,%20I%20have%20a%20question%20about%20Panchakarma%20treatment%20at%20your%20clinic.",
   faqs: [
     {
       question: "What is Panchakarma, in simple terms?",
@@ -395,6 +405,8 @@ export const panchakarmaDubaiLocation = {
   title: "Our Panchakarma clinic in Jumeirah Village Circle.",
   address: "Al Barsha South Fourth, Binghatti Azure, Shop -4, <br/>Jumeraih Village Circle (JVC) Dubai",
   phone: "+971 55 586 7466",
+  whatsapp: "+971 55 586 7466",
+  whatsappMessage: "Hi, I'd like to inquire about Panchakarma treatment at your JVC clinic.",
   email: "booking@vedaracare.ae",
   hours: "Sunday - Saturday: 8:30 am to 11:30 pm",
   landmarks: [
@@ -404,6 +416,7 @@ export const panchakarmaDubaiLocation = {
     "Free covered parking"
   ],
   buttonText: "Get Directions",
+  buttonHref: "https://www.google.com/maps/search/?api=1&query=Vedara%20Care%20Polyclinic%20JVC%20Dubai",
   mapEmbed: "https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d3613.9894568193345!2d55.20722358578439!3d25.068346479666594!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x3e5f6dd72f3da587%3A0xe7ecca8687a75b72!2sVedara%20Care%20Polyclinic!5e0!3m2!1sen!2sus!4v1780727442216!5m2!1sen!2sus"
 };
 
@@ -411,8 +424,10 @@ export const panchakarmaDubaiCTA = {
   bgColor: "bg-white",
   label: "READY TO START?",
   title: "Panchakarma starts with a consultation, not a booking.",
-  description: "We do not sell Panchakarma packages over WhatsApp. Every programme begins with a 45-60 minute consultation where your doctor assesses whether Panchakarma is the right protocol for you, and what specific actions and length your case calls for.",
+  description: "We do not sell Panchakarma packages over WhatsApp. Every programme starts with a 45-60 minute consultation where your doctor assesses whether Panchakarma is the right protocol for you, and what specific actions and length your case calls for.",
   button1Text: "Book a Panchakarma Consultation",
+  button1Href: "/book",
   button2Text: "Chat on WhatsApp",
+  button2Href: "https://wa.me/971555867466?text=Hi,%20I'd%20like%20to%20inquire%20about%20Panchakarma%20treatment%20at%20your%20JVC%20clinic.",
   bullets: ["First consultation from AED 350", "Insurance direct-billing available"]
 };

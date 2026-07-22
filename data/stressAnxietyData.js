@@ -492,7 +492,7 @@ export const stressAnxietyVisitSectionData = {
   description: "Our JVC clinic has private treatment rooms designed for nervous-system restoration — gentle lighting, sound insulation, temperature-controlled comfort. We allow extended time for consultations and never rush mental health appointments. Female doctors available on request. Walking distance from Circle Mall, easy access from JVC Districts 10, 11, 12, 13, JVT, and Al Barsha South.",
   button1Text: "Book an Anxiety & Stress Consultation",
   button1Href: "/book",
-  button2Text: "<a href=\"https://wa.me/971555867466\" target=\"_blank\" rel=\"noopener noreferrer\" class=\"hover:underline\">WhatsApp us</a>",
+  button2Text: "WhatsApp us",
   button2Href: "https://wa.me/971555867466?text=Hi,%20I'd%20like%20to%20inquire%20about%20Ayurvedic%20stress%20and%20anxiety%20treatment%20at%20your%20JVC%20clinic%20in%20Dubai.",
   alt: "Vedara Care stress and anxiety clinic location in Jumeirah Village Circle Dubai near Circle Mall",
   image: "/images/restorative-environment-vedara-jvc.webp",

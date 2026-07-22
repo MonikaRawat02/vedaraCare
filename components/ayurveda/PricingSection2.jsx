@@ -92,10 +92,9 @@ const PricingSection2 = () => {
             </div>
           </div>
         </div>
-      
+
         <p className="text-sm text-gray-600 text-center mt-6">
           Insurance direct-billing reduces out-of-pocket significantly for most patients. WhatsApp your card to confirm.
-          <a href="/blog/cost-guide" className="text-[#d4af37] hover:underline ml-1">Read the full Ayurveda + Physiotherapy cost guide →</a>
         </p>
       </div>
     </section>

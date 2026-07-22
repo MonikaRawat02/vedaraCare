@@ -73,9 +73,7 @@ const PanchakarmaTimeline = ({
 
         {footerNote && (
           <div className="max-w-3xl mx-auto text-center">
-            <p className="text-gray-500 text-sm leading-relaxed font-sans">
-              {footerNote}
-            </p>
+            <p className="text-gray-500 text-sm leading-relaxed font-sans" dangerouslySetInnerHTML={{ __html: footerNote }} />
           </div>
         )}
       </div>

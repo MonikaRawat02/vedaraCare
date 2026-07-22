@@ -40,11 +40,11 @@ const ManualTherapyDubai = () => {
       "url": "https://vedaracare.ae/treatments/manual-therapy-dubai/",
       "parentOrganization": {"@id": "https://vedaracare.ae/#organization"},
       "description": "Specialist manual therapy at Vedara Care Polyclinic, Jumeirah Village Circle, Dubai. Delivered by DPT-qualified physiotherapists with specific manual therapy training including Maitland mobilisation, Mulligan mobilisation with movement, Kaltenborn technique, McKenzie method, myofascial release, soft tissue mobilisation, neural mobilisation, and selectively-applied spinal manipulation. Different from chiropractic and massage therapy — physiotherapist-delivered with evidence-based clinical reasoning.",
-      "telephone": "+971 4 XXX XXXX",
+      "telephone": "+971 55 586 7466",
       "priceRange": "AED 300 - AED 10,000",
       "address": {
         "@type": "PostalAddress",
-        "streetAddress": "Cluster X, Jumeirah Village Circle",
+        "streetAddress": "Al Barsha South Fourth, Binghatti Azure, Shop -4, Jumeirah Village Circle",
         "addressLocality": "Jumeirah Village Circle",
         "addressRegion": "Dubai",
         "addressCountry": "AE"

@@ -8,7 +8,9 @@ export const pelvicFloorHero = {
   title: "Pelvic floor physiotherapy in Dubai. Female specialists. Discreet care. Cultural respect.",
   description: "Specialist pelvic floor physiotherapy at our Jumeirah Village Circle (JVC) clinic, walking distance from Circle Mall. Delivered exclusively by female DPT-qualified physiotherapists with specific pelvic floor training. We treat postnatal recovery, urinary incontinence, pelvic organ prolapse, sexual function concerns, pregnancy support, and chronic pelvic pain. Cultural and modesty considerations respected throughout — external and internal assessment options available based on your preference.",
   primaryCTA: "Book Specialist Assessment",
+  primaryCTAHref: "/book",
   secondaryCTA: "Learn About Our Approach",
+  secondaryCTAHref: "https://wa.me/971555867466?text=Hello%20Vedara%20Care,%20I%20would%20like%20to%20inquire%20about%20pelvic%20floor%20physiotherapy%20and%20book%20a%20consultation.",
   trustSignals: [
     "Female DPT-qualified specialists only",
     "Cultural and modesty sensitive",
@@ -17,10 +19,11 @@ export const pelvicFloorHero = {
   ],
   floatingCard: {
     title: "Entirely Female Team for This Service",
-    subtitle: "Our pelvic floor service is delivered exclusively by female physiotherapists. Internal assessment is available but never required — external-only assessment produces excellent outcomes for many conditions." },
+    subtitle: "Our pelvic floor service is delivered exclusively by female physiotherapists. Internal assessment is available but never required — external-only assessment produces excellent outcomes for many conditions."
+  },
   image: "/images/pelvic-floor-physiotherapy-dubai-hero.webp",
   alt: "Female pelvic floor physiotherapist at Vedara Care JVC Dubai clinic",
- 
+
 };
 
 export const pelvicFloorIntro = {
@@ -37,7 +40,8 @@ export const pelvicFloorSciaticaSection1 = {
     intro: "Most patients have never had basic pelvic floor function properly explained. Understanding what is happening removes confusion and shame, and helps you engage effectively with treatment.",
     steps: [
       {
-        description: "The pelvic floor is a group of muscles, ligaments, and connective tissues that form the base of your pelvis. These structures support the pelvic organs (bladder, uterus, bowel), control continence, contribute to sexual function, and play a role in core stability and breathing." },
+        description: "The pelvic floor is a group of muscles, ligaments, and connective tissues that form the base of your pelvis. These structures support the pelvic organs (bladder, uterus, bowel), control continence, contribute to sexual function, and play a role in core stability and breathing."
+      },
       {
         title: "What the pelvic floor does every day",
         description: "The pelvic floor muscles work continuously throughout the day. They contract automatically when you cough, sneeze, lift, or laugh — preventing leakage. They relax appropriately during urination and bowel movements. They contribute to sexual sensation and function. When functioning properly, you should be unaware of them — they simply do their job."
@@ -56,9 +60,11 @@ export const pelvicFloorSciaticaSection1 = {
       },
       {
         title: "The good news",
-        description: "Most pelvic floor conditions respond excellently to appropriate physiotherapy. Stress incontinence often resolves completely with structured pelvic floor muscle training. Many prolapse symptoms substantially improve with conservative management. Postnatal recovery is typically excellent with appropriate intervention."     }
+        description: "Most pelvic floor conditions respond excellently to appropriate physiotherapy. Stress incontinence often resolves completely with structured pelvic floor muscle training. Many prolapse symptoms substantially improve with conservative management. Postnatal recovery is typically excellent with appropriate intervention."
+      }
     ],
-    footer: "Many of the most distressing pelvic floor symptoms — stress incontinence, prolapse symptoms, painful intercourse, postnatal recovery — respond excellently to physiotherapy. The shame and silence are often more limiting than the conditions themselves."  },
+    footer: "Many of the most distressing pelvic floor symptoms — stress incontinence, prolapse symptoms, painful intercourse, postnatal recovery — respond excellently to physiotherapy. The shame and silence are often more limiting than the conditions themselves."
+  },
   rightContent: {
     image: "/images/postnatal-pelvic-floor-recovery-vedara-jvc.webp",
     alt: "Pelvic floor function modesty-appropriate educational illustration",
@@ -69,7 +75,7 @@ export const pelvicFloorSciaticaSection1 = {
       "Average delay before seeking help: 6.5 years",
       "Stress incontinence: often resolves in 8-12 weeks"
     ],
-   
+
   }
 };
 
@@ -79,7 +85,7 @@ export const pelvicFloorTypes = {
   label: "Common Conditions",
   title: "The pelvic floor conditions we treat at our JVC clinic.",
   description: "Most pelvic floor conditions are highly treatable with appropriate physiotherapy. These are the most common conditions we see at our clinic.",
-    items: [
+  items: [
     {
       number: "01",
       title: 'Postnatal Pelvic Floor Recovery',
@@ -102,7 +108,7 @@ export const pelvicFloorTypes = {
       number: "04",
       title: 'Pelvic Organ Prolapse (Conservative)',
       description: 'Cystocele (bladder prolapse), rectocele (rectum prolapse), uterine prolapse — descent of pelvic organs creating heaviness, bulging, or pressure. Mild to moderate prolapse often responds excellently to physiotherapy combined with pessary fitting. Severe prolapse may need surgical consideration but conservative trial first is appropriate.',
-        typicalPatient: 'Adult woman, often postnatal years after birth, sometimes perimenopausal'
+      typicalPatient: 'Adult woman, often postnatal years after birth, sometimes perimenopausal'
     },
     {
       number: "05",
@@ -149,7 +155,7 @@ export const pelvicFloorReviews = {
       details: "Stress Incontinence · 12-Week Programme · Dubai Marina · February 2026"
     },
     {
-      quote:"Pelvic organ prolapse diagnosed by gynaecologist who recommended surgery. Wanted to try conservative care first. Vedara's pelvic floor physiotherapist provided structured 6-month programme combining pelvic floor strengthening, biofeedback, and lifestyle modifications. Surgery deferred indefinitely. The honest discussion about realistic expectations was excellent.",
+      quote: "Pelvic organ prolapse diagnosed by gynaecologist who recommended surgery. Wanted to try conservative care first. Vedara's pelvic floor physiotherapist provided structured 6-month programme combining pelvic floor strengthening, biofeedback, and lifestyle modifications. Surgery deferred indefinitely. The honest discussion about realistic expectations was excellent.",
       author: "Sara K.",
       details: "Cystocele Prolapse · 6-Month Conservative Programme · JVT · January 2026"
     },
@@ -162,10 +168,11 @@ export const pelvicFloorReviews = {
   stats: [
     { value: "4.9 ★", label: "stars on Google" },
     { value: "240+", label: "pelvic floor patients treated" },
-      { value: "86%", label: "Substantial improvement within 16 weeks" },
+    { value: "86%", label: "Substantial improvement within 16 weeks" },
     // { value: "88%", label: "Substantial improvement within 16 weeks" },
   ],
-  buttonText: "Read All Pelvic Floor Reviews"
+  buttonText: "Read All Pelvic Floor Reviews",
+  buttonHref: "https://www.google.com/maps/search/?api=1&query=Vedara+Care+Polyclinic+JVC+Dubai"
 };
 
 export const pelvicFloorTeam = {
@@ -187,7 +194,7 @@ export const pelvicFloorTeam = {
     },
     {
       name: "Dr. Priya Sharma",
-      credentials: "DPT, DHA-Licensed · Female Pelvic Floor Specialist",  
+      credentials: "DPT, DHA-Licensed · Female Pelvic Floor Specialist",
       languages: "English, Hindi, Urdu",
       tags: ["Incontinence", "Pregnancy", "Postnatal"],
       description: "Women's health physiotherapy specialist with advanced pelvic floor rehabilitation training. Postnatal care focus.",
@@ -201,7 +208,7 @@ export const pelvicFloorTeam = {
       languages: "English, Arabic",
       tags: ["Pelvic Pain", "Prolapse", "Postnatal"],
       description: "Specialist in chronic pelvic pain and pelvic organ prolapse conservative management. UAE National specialist.",
-      link: "/physiotherapists/dr-fatima-al-Zaabi", 
+      link: "/physiotherapists/dr-fatima-al-Zaabi",
       image: "/images/dr-fatima-al-Zaabi-home-physiotherapy-dubai.webp",
       alt: "Dr. Fatima Al-Zaabi female pelvic floor specialist Vedara Care JVC Dubai"
     },
@@ -213,7 +220,7 @@ export const pelvicFloorTeam = {
       description: "Specialised in sexual function concerns, vaginismus, and dyspareunia treatment with compassionate, evidence-based care.",
       link: "/physiotherapists/dr-sana-mirza",
       image: "/images/dr-sana-mirza-home-physiotherapy-dubai.webp",
-      alt: "Dr. Sana Mirza female pelvic floor specialist Vedara Care JVC Dubai" 
+      alt: "Dr. Sana Mirza female pelvic floor specialist Vedara Care JVC Dubai"
     }
   ]
 };
@@ -233,10 +240,11 @@ export const pelvicFloorPricing = {
     { name: "Antenatal preparation programme (6 sessions)", price: "AED 2,400" },
     { name: "Postnatal home physiotherapy (60 min including travel)", price: "AED 600" },
     {
-      name: "Men's pelvic floor programme",price: "AED 4,200"
+      name: "Men's pelvic floor programme", price: "AED 4,200"
     }
   ],
-  insuranceText: 'Insurance direct-billing with seven major insurers. Pelvic floor physiotherapy is covered by most Dubai insurance plans with medical justification. Postnatal pelvic floor care often covered as part of maternity benefits — coverage varies by plan. <a href="https://wa.me/971555867466" target="_blank" rel="noopener noreferrer" class="hover:underline">WhatsApp us</a> for specific coverage discussion. We handle pre-authorisation on your behalf when required.'};
+  insuranceText: 'Insurance direct-billing with seven major insurers. Pelvic floor physiotherapy is covered by most Dubai insurance plans with medical justification. Postnatal pelvic floor care often covered as part of maternity benefits — coverage varies by plan. <a href="https://wa.me/971555867466" target="_blank" rel="noopener noreferrer" class="hover:underline">WhatsApp us</a> for specific coverage discussion. We handle pre-authorisation on your behalf when required.'
+};
 
 export const pelvicFloorFaqs = {
   bgColor: "bg-[#F2EAD8]",
@@ -250,77 +258,86 @@ export const pelvicFloorFaqs = {
   faqs: [
     {
       question: "Will I see a female physiotherapist?",
-      answer: "Yes — our pelvic floor service is delivered exclusively by female DPT-qualified physiotherapists. This is mandatory for our pelvic floor service. You can specifically request a particular female physiotherapist if you have a preference, and we maintain the same therapist throughout your treatment for continuity."    },
+      answer: "Yes — our pelvic floor service is delivered exclusively by female DPT-qualified physiotherapists. This is mandatory for our pelvic floor service. You can specifically request a particular female physiotherapist if you have a preference, and we maintain the same therapist throughout your treatment for continuity."
+    },
     {
       question: "Do I have to have an internal assessment?",
-      answer: "No — internal assessment is never required. Many patients receive excellent outcomes with external-only assessment. Internal assessment is offered as an option for conditions where it adds diagnostic value, but is performed only with your explicit informed consent. You can ask for a chaperone, stop the assessment at any point, or take time between visits to decide."    },
+      answer: "No — internal assessment is never required. Many patients receive excellent outcomes with external-only assessment. Internal assessment is offered as an option for conditions where it adds diagnostic value, but is performed only with your explicit informed consent. You can ask for a chaperone, stop the assessment at any point, or take time between visits to decide."
+    },
     {
       question: "What if I have cultural or modesty preferences?",
-      answer: "Cultural and modesty preferences are welcomed and respected throughout our pelvic floor service. You can remain partly clothed during much of the assessment, have a chaperone present (family member or female staff member), discuss your care in your preferred language (Arabic, English, Hindi, Urdu), and discuss specific cultural preferences during initial consultation."   },
+      answer: "Cultural and modesty preferences are welcomed and respected throughout our pelvic floor service. You can remain partly clothed during much of the assessment, have a chaperone present (family member or female staff member), discuss your care in your preferred language (Arabic, English, Hindi, Urdu), and discuss specific cultural preferences during initial consultation."
+    },
     {
       question: "I have been struggling with this for years — is it too late?",
-      answer: "No — it is rarely too late. Many of our patients have suffered with pelvic floor symptoms for years (sometimes decades) before seeking help. Most conditions remain very treatable regardless of how long you have had them. The delay does not eliminate the recovery potential — please do not let it stop you from seeking help now."  },
+      answer: "No — it is rarely too late. Many of our patients have suffered with pelvic floor symptoms for years (sometimes decades) before seeking help. Most conditions remain very treatable regardless of how long you have had them. The delay does not eliminate the recovery potential — please do not let it stop you from seeking help now."
+    },
     {
       question: "When after birth can I start pelvic floor physiotherapy?",
-      answer: "Typically from 6 weeks postpartum with medical clearance from your obstetrician or maternity care provider. Some patients with specific concerns may benefit from earlier consultation (without internal assessment) — we can discuss this on a case-by-case basis. Earlier intervention typically produces better outcomes."    },
+      answer: "Typically from 6 weeks postpartum with medical clearance from your obstetrician or maternity care provider. Some patients with specific concerns may benefit from earlier consultation (without internal assessment) — we can discuss this on a case-by-case basis. Earlier intervention typically produces better outcomes."
+    },
     {
       question: "How long does pelvic floor recovery take?",
-      answer: "Variable by condition. Stress incontinence often resolves substantially in 8-12 weeks. Postnatal recovery typically 12-16 weeks for substantial improvement. Prolapse conservative management is longer — typically 16-24 weeks for meaningful symptom improvement. Chronic pelvic pain often takes longer. At initial assessment, you receive a realistic timeline estimate for your specific situation."  },
+      answer: "Variable by condition. Stress incontinence often resolves substantially in 8-12 weeks. Postnatal recovery typically 12-16 weeks for substantial improvement. Prolapse conservative management is longer — typically 16-24 weeks for meaningful symptom improvement. Chronic pelvic pain often takes longer. At initial assessment, you receive a realistic timeline estimate for your specific situation."
+    },
     {
       question: "Where in Dubai is your pelvic floor clinic?",
-      answer: "Our DHA-licensed clinic is in Jumeirah Village Circle (JVC), Dubai — walking distance from Circle Mall, three minutes from FIVE Jumeirah Village Hotel, and five minutes from JSS Private School. Free patient parking. Easy access from Sheikh Mohammed Bin Zayed Road and Al Khail Road. Patients travel from JVT, Al Barsha South, Sports City, Motor City, Arjan, Dubai Hills, Marina, Downtown, Palm Jumeirah, Mirdif, and across Dubai."  },
+      answer: "Our DHA-licensed clinic is in Jumeirah Village Circle (JVC), Dubai — walking distance from Circle Mall, three minutes from FIVE Jumeirah Village Hotel, and five minutes from JSS Private School. Free patient parking. Easy access from Sheikh Mohammed Bin Zayed Road and Al Khail Road. Patients travel from JVT, Al Barsha South, Sports City, Motor City, Arjan, Dubai Hills, Marina, Downtown, Palm Jumeirah, Mirdif, and across Dubai."
+    },
     {
       question: "Do you offer home pelvic floor physiotherapy?",
-      answer: "Yes — particularly for postnatal patients in the early postpartum period. Home pelvic floor physiotherapy is delivered by the same female specialists who work at our JVC clinic. Particularly common in the first 6-12 weeks postpartum when leaving home with a newborn is impractical."    },
+      answer: "Yes — particularly for postnatal patients in the early postpartum period. Home pelvic floor physiotherapy is delivered by the same female specialists who work at our JVC clinic. Particularly common in the first 6-12 weeks postpartum when leaving home with a newborn is impractical."
+    },
     {
       question: "Do you do Kegel exercises?",
-      answer: "We do specific pelvic floor muscle training, which is more sophisticated than generic Kegel exercises. Specific training is calibrated to your specific dysfunction pattern (strengthening for weak pelvic floors, relaxation for tight pelvic floors), performed with verified technique using biofeedback, and progressed systematically."  
-      },
-      {
-        question: "What is biofeedback?",
-        answer: "Biofeedback uses sensors that detect pelvic floor muscle activity, providing visual feedback during training. Particularly useful for patients who cannot reliably identify pelvic floor contractions. External biofeedback (sensors on external surface) is standard. Internal biofeedback is available for patients who consent."   
-      },
-      {
-        question: "Will my insurance cover pelvic floor physiotherapy?",
-        answer: "Most Dubai insurance plans cover pelvic floor physiotherapy with medical justification. Postnatal pelvic floor care often covered as part of maternity benefits. Specific coverage varies — we recommend WhatsApp-ing your insurance card to us before booking for specific confirmation. We handle pre-authorisation on your behalf when required." 
-       },
-       {
-        question: "Can I avoid surgery for my prolapse?",
-        answer: "For mild to moderate prolapse, conservative physiotherapy often substantially improves symptoms and many patients defer or avoid surgery. Severe prolapse may need surgical consideration, but a conservative trial first is usually appropriate. We provide honest assessment of whether conservative care is realistic for your specific situation."
-        
-       },
-       {
-         question: "What about prolapse pessary fitting?",
-        answer:"Pessary fitting is performed by gynaecologists, not physiotherapists. We coordinate with your treating gynaecologist for pessary fitting and provide complementary physiotherapy work alongside pessary use. The combination of pessary and physiotherapy often produces excellent symptom improvement."
-        
-       },
-       {
-        question: "Can my husband attend the appointments?",
-        answer:"You may bring a chaperone if you wish — family member, friend, or female staff member. Some patients prefer their husband or partner attends; some prefer to attend alone; some prefer a female chaperone from our staff. The choice is yours. The chaperone can be present throughout the assessment and treatment, or only for specific parts you choose."
-       },
-       {
-        question: "What about sexual function concerns?",
-        answer:"Sexual function concerns including painful intercourse (dyspareunia), vaginismus, decreased sensation, and postnatal sexual recovery are common pelvic floor presentations. Many patients have suffered silently with these concerns for years. Treatment is calibrated, respectful, and often very effective."     }
-     ,{
+      answer: "We do specific pelvic floor muscle training, which is more sophisticated than generic Kegel exercises. Specific training is calibrated to your specific dysfunction pattern (strengthening for weak pelvic floors, relaxation for tight pelvic floors), performed with verified technique using biofeedback, and progressed systematically."
+    },
+    {
+      question: "What is biofeedback?",
+      answer: "Biofeedback uses sensors that detect pelvic floor muscle activity, providing visual feedback during training. Particularly useful for patients who cannot reliably identify pelvic floor contractions. External biofeedback (sensors on external surface) is standard. Internal biofeedback is available for patients who consent."
+    },
+    {
+      question: "Will my insurance cover pelvic floor physiotherapy?",
+      answer: "Most Dubai insurance plans cover pelvic floor physiotherapy with medical justification. Postnatal pelvic floor care often covered as part of maternity benefits. Specific coverage varies — we recommend WhatsApp-ing your insurance card to us before booking for specific confirmation. We handle pre-authorisation on your behalf when required."
+    },
+    {
+      question: "Can I avoid surgery for my prolapse?",
+      answer: "For mild to moderate prolapse, conservative physiotherapy often substantially improves symptoms and many patients defer or avoid surgery. Severe prolapse may need surgical consideration, but a conservative trial first is usually appropriate. We provide honest assessment of whether conservative care is realistic for your specific situation."
+
+    },
+    {
+      question: "What about prolapse pessary fitting?",
+      answer: "Pessary fitting is performed by gynaecologists, not physiotherapists. We coordinate with your treating gynaecologist for pessary fitting and provide complementary physiotherapy work alongside pessary use. The combination of pessary and physiotherapy often produces excellent symptom improvement."
+
+    },
+    {
+      question: "Can my husband attend the appointments?",
+      answer: "You may bring a chaperone if you wish — family member, friend, or female staff member. Some patients prefer their husband or partner attends; some prefer to attend alone; some prefer a female chaperone from our staff. The choice is yours. The chaperone can be present throughout the assessment and treatment, or only for specific parts you choose."
+    },
+    {
+      question: "What about sexual function concerns?",
+      answer: "Sexual function concerns including painful intercourse (dyspareunia), vaginismus, decreased sensation, and postnatal sexual recovery are common pelvic floor presentations. Many patients have suffered silently with these concerns for years. Treatment is calibrated, respectful, and often very effective."
+    }
+    , {
       question: "Do you treat male patients?",
-      answer:"Yes — men's pelvic floor conditions are real and underaddressed. Common male presentations include post-prostatectomy incontinence, chronic pelvic pain syndromes, and pelvic floor coordination disorders. Male patients should request a male physiotherapist if preferred, though our female pelvic floor specialists also treat male patients."
-     } ,
-     {
-question:"What about chronic pelvic pain that has been undiagnosed?",
-answer:"Chronic pelvic pain without clear diagnosis is unfortunately common. Patients have often seen multiple specialists without clear answers. Pelvic floor physiotherapy is often part of the comprehensive approach to chronic pelvic pain. We work alongside other specialists and identify pelvic floor contributions to the pain."
-     },
-     {
-       question: "How is pelvic floor physiotherapy at Vedara different?",
-       answer:"Female DPT-qualified specialists exclusively, longer sessions allowing comprehensive care, dedicated private treatment rooms, cultural and modesty sensitivity throughout, external assessment options available (internal never required), multiple languages including Arabic, Hindi, Urdu, biofeedback technology, home physiotherapy available for postnatal patients, transparent published pricing." 
-        },
-        {
-question:"How do I book without my husband or family knowing?",
-answer:"You can book privately. WhatsApp is often the most discreet booking channel — direct contact with our team without needing to discuss with family. We can schedule appointments at times you can attend privately, conduct all communication through your preferred channel, and respect confidentiality throughout."
-        },
-        {
-question:"How do I book a pelvic floor physiotherapy assessment?",
-answer:'Three ways: (1) <a href="https://wa.me/971555867466" target="_blank" rel="noopener noreferrer" class="hover:underline">WhatsApp us</a> — the most discreet option for sensitive booking, fastest response. (2) Call us — direct booking, available 9 AM to 9 PM seven days a week. (3) Book online through our website. For your first appointment, please bring: any relevant medical reports, current medication list, insurance card, and comfortable clothing.'
-        }
+      answer: "Yes — men's pelvic floor conditions are real and underaddressed. Common male presentations include post-prostatectomy incontinence, chronic pelvic pain syndromes, and pelvic floor coordination disorders. Male patients should request a male physiotherapist if preferred, though our female pelvic floor specialists also treat male patients."
+    },
+    {
+      question: "What about chronic pelvic pain that has been undiagnosed?",
+      answer: "Chronic pelvic pain without clear diagnosis is unfortunately common. Patients have often seen multiple specialists without clear answers. Pelvic floor physiotherapy is often part of the comprehensive approach to chronic pelvic pain. We work alongside other specialists and identify pelvic floor contributions to the pain."
+    },
+    {
+      question: "How is pelvic floor physiotherapy at Vedara different?",
+      answer: "Female DPT-qualified specialists exclusively, longer sessions allowing comprehensive care, dedicated private treatment rooms, cultural and modesty sensitivity throughout, external assessment options available (internal never required), multiple languages including Arabic, Hindi, Urdu, biofeedback technology, home physiotherapy available for postnatal patients, transparent published pricing."
+    },
+    {
+      question: "How do I book without my husband or family knowing?",
+      answer: "You can book privately. WhatsApp is often the most discreet booking channel — direct contact with our team without needing to discuss with family. We can schedule appointments at times you can attend privately, conduct all communication through your preferred channel, and respect confidentiality throughout."
+    },
+    {
+      question: "How do I book a pelvic floor physiotherapy assessment?",
+      answer: 'Three ways: (1) <a href="https://wa.me/971555867466" target="_blank" rel="noopener noreferrer" class="hover:underline">WhatsApp us</a> — the most discreet option for sensitive booking, fastest response. (2) Call us — direct booking, available 9 AM to 9 PM seven days a week. (3) Book online through our website. For your first appointment, please bring: any relevant medical reports, current medication list, insurance card, and comfortable clothing.'
+    }
   ]
 };
 
@@ -349,7 +366,9 @@ export const pelvicFloorCTA = {
   title: "Female specialists. Discreet care. Excellent outcomes.",
   description: "Whether you have struggled with pelvic floor symptoms for weeks, months, or years — appropriate specialist care substantially improves outcomes. The first useful step is a comprehensive pelvic floor assessment at our JVC clinic, delivered by a female DPT-qualified physiotherapist. Cultural and modesty preferences respected throughout. Internal assessment is never required. Same-week appointments typically available.",
   button1Text: "Book Female Specialist Assessment",
+  button1Href: "/book",
   button2Text: "Chat on WhatsApp",
+  button2Href: "https://wa.me/971555867466?text=Hello%20Vedara%20Care,%20I%20would%20like%20to%20inquire%20about%20pelvic%20floor%20physiotherapy%20and%20book%20a%20consultation.",
   bullets: [
     "Initial assessment from AED 650",
     "Walking distance from Circle Mall, JVC",
@@ -385,7 +404,8 @@ export const pelvicFloorAssessment = {
     },
     {
       title: "When internal assessment particularly adds value",
-      description: "For certain conditions, internal assessment substantially improves diagnostic accuracy: complex prolapse assessment, evaluating specific muscle layer strength, assessing pelvic floor coordination problems, evaluating muscle tension causing pain, and evaluating scar tissue from childbirth or surgery. We will explain this honestly so you can make an informed choice."  },
+      description: "For certain conditions, internal assessment substantially improves diagnostic accuracy: complex prolapse assessment, evaluating specific muscle layer strength, assessing pelvic floor coordination problems, evaluating muscle tension causing pain, and evaluating scar tissue from childbirth or surgery. We will explain this honestly so you can make an informed choice."
+    },
     // {
     //   title: "When external-only assessment is sufficient",
     //   description: "Many conditions can be effectively assessed and treated with external-only techniques. These include postnatal recovery planning, basic pelvic floor strengthening, bladder retraining, postural retraining, and many cases of chronic pelvic pain. We will always prioritise your comfort and discuss what's right for you."
@@ -497,7 +517,7 @@ export const pelvicFloorPostnatalSection = {
 export const pelvicFloorRelatedPages = {
   bgColor: "bg-[#F2EAD8]",
   label: "EXPLORE FURTHER",
-    linkText: "Browse all physiotherapy services →",
+  linkText: "Browse all physiotherapy services →",
   linkHref: "/physiotherapy-jvc/",
   title: "Related services and resources",
   pages: [
@@ -526,7 +546,7 @@ export const pelvicFloorRelatedPages = {
       href: "/conditions/back-pain-physiotherapy-jvc/"
     }
   ],
-  
+
 };
 
 // Placeholder for sections waiting for screenshot details
@@ -552,21 +572,21 @@ export const pelvicFloorSciaticaSection2 = {
         title: "Biofeedback technology",
         description: "External biofeedback using sensors that detect muscle activity provides visual feedback during pelvic floor training. Particularly useful for patients who struggle to identify pelvic floor contractions. Biofeedback substantially improves training accuracy and patient understanding."
       },
-     {
-       title: "Manual therapy where appropriate",
-       description: "For patients with muscle tension, scar tissue restrictions, or specific dysfunction patterns, manual therapy may be appropriate. This may include external soft tissue work on relevant muscle groups, scar tissue work for postnatal patients, and where consent is given, internal techniques for specific conditions." 
-     },
+      {
+        title: "Manual therapy where appropriate",
+        description: "For patients with muscle tension, scar tissue restrictions, or specific dysfunction patterns, manual therapy may be appropriate. This may include external soft tissue work on relevant muscle groups, scar tissue work for postnatal patients, and where consent is given, internal techniques for specific conditions."
+      },
 
       {
         title: "Postural and breathing retraining",
         description: "The pelvic floor works with the diaphragm, deep abdominals, and postural muscles as a coordinated system. Many pelvic floor problems involve dysfunction in this broader system. Addressing the broader system is often essential for pelvic floor recovery."
-            },
+      },
 
-            {
-              title: "Bladder and bowel retraining",
-              description: "For incontinence and urgency conditions, behavioural training programmes substantially improve outcomes. May include bladder diaries, scheduled voiding, urge suppression techniques, fluid management guidance, and bowel coordination training."
-            },
-           
+      {
+        title: "Bladder and bowel retraining",
+        description: "For incontinence and urgency conditions, behavioural training programmes substantially improve outcomes. May include bladder diaries, scheduled voiding, urge suppression techniques, fluid management guidance, and bowel coordination training."
+      },
+
     ],
     footer: "Most pelvic floor conditions are highly treatable. The combination of accurate assessment, specific exercise, biofeedback, manual therapy, and patient education produces excellent outcomes for most patients."
   },
@@ -574,7 +594,7 @@ export const pelvicFloorSciaticaSection2 = {
     image: "/images/female-pelvic-floor-physiotherapist-vedara-jvc.webp",
     alt: "Female pelvic floor physiotherapy treatment at Vedara Care JVC Dubai",
     label: "FOR MODESTY PATIENTS",
-     treatmentModalities: [
+    treatmentModalities: [
       "Pelvic floor muscle training",
       "External & internal biofeedback",
       "Manual therapy",
@@ -660,7 +680,7 @@ export const pelvicFloorMechanism3 = {
     "<strong>Your urogynecologist</strong><br/>For complex pelvic floor and urinary conditions, urogynaecologists provide specialist medical and surgical care. We coordinate particularly for complex incontinence, complex prolapse, and post-surgical recovery. Physiotherapy often substantially improves outcomes when integrated with urogynaecological care.",
     "<strong>Your obstetrician and maternity team</strong><br/>For pregnant and postnatal patients, your obstetrician and maternity care providers manage pregnancy, delivery, and immediate postnatal care. We coordinate with your maternity team for antenatal pelvic floor work (with obstetric clearance) and postnatal recovery (typically beginning from 6 weeks postpartum).",
     "<strong>Your urologist (for male patients)</strong><br/>For men's pelvic floor patients, urologists typically manage medical aspects including post-prostatectomy care, chronic pelvic pain workups, and other urological conditions. We coordinate with your treating urologist on shared care plans for men's pelvic floor work.",
-  
+
     "<strong>Your GP and family physician</strong><br/>Your GP often coordinates overall care. We can communicate with your GP about findings, progress, and ongoing recommendations. Some patients prefer that we keep their pelvic floor care private from their GP; we respect this preference."
   ],
   coordinationApproach: {

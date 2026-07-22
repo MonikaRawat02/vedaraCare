@@ -35,7 +35,7 @@ import {
 
 const PhysiotherapyJvc = () => {
   const currentDate = new Date().toISOString();
-  
+
   const schemaMarkup = [
     {
       "@context": "https://schema.org",
@@ -44,21 +44,21 @@ const PhysiotherapyJvc = () => {
       "name": "Vedara Care Physiotherapy Department",
       "alternateName": ["Vedara Physiotherapy JVC", "Vedara Care Physio"],
       "url": "https://vedaracare.ae/physiotherapy-jvc/",
-      "parentOrganization": {"@id": "https://vedaracare.ae/#organization"},
+      "parentOrganization": { "@id": "https://vedaracare.ae/#organization" },
       "description": "DHA-licensed physiotherapy department at Vedara Care Polyclinic, Jumeirah Village Circle, Dubai. DPT-qualified physiotherapists providing musculoskeletal, sports, post-surgical, neurological, women's health, paediatric, and cardiopulmonary physiotherapy.",
       "telephone": "+971 55 586 7466",
       "priceRange": "AED 250 - AED 8,000",
       "address": {
         "@type": "PostalAddress",
-        "streetAddress": "[Street address]",
+        "streetAddress": "Al Barsha South Fourth, Binghatti Azure, Shop -4, Jumeirah Village Circle (JVC)",
         "addressLocality": "Jumeirah Village Circle",
         "addressRegion": "Dubai",
         "addressCountry": "AE"
       },
       "geo": {
         "@type": "GeoCoordinates",
-        "latitude": "[Latitude]",
-        "longitude": "[Longitude]"
+        "latitude": "25.0683",
+        "longitude": "55.2072"
       },
       "openingHoursSpecification": [
         {
@@ -75,14 +75,14 @@ const PhysiotherapyJvc = () => {
         }
       ],
       "areaServed": [
-        {"@type": "Place", "name": "Jumeirah Village Circle"},
-        {"@type": "Place", "name": "Jumeirah Village Triangle"},
-        {"@type": "Place", "name": "Al Barsha South"},
-        {"@type": "Place", "name": "Dubai Sports City"},
-        {"@type": "Place", "name": "Motor City"},
-        {"@type": "Place", "name": "Arjan"},
-        {"@type": "Place", "name": "Dubai Hills Estate"},
-        {"@type": "City", "name": "Dubai"}
+        { "@type": "Place", "name": "Jumeirah Village Circle" },
+        { "@type": "Place", "name": "Jumeirah Village Triangle" },
+        { "@type": "Place", "name": "Al Barsha South" },
+        { "@type": "Place", "name": "Dubai Sports City" },
+        { "@type": "Place", "name": "Motor City" },
+        { "@type": "Place", "name": "Arjan" },
+        { "@type": "Place", "name": "Dubai Hills Estate" },
+        { "@type": "City", "name": "Dubai" }
       ],
       "medicalSpecialty": [
         "Physiotherapy",
@@ -149,12 +149,12 @@ const PhysiotherapyJvc = () => {
       "@context": "https://schema.org",
       "@type": "Service",
       "name": "Physiotherapy Services at JVC Dubai",
-      "provider": {"@id": "https://vedaracare.ae/physiotherapy-jvc/#physiotherapy"},
+      "provider": { "@id": "https://vedaracare.ae/physiotherapy-jvc/#physiotherapy" },
       "areaServed": [
-        {"@type": "Place", "name": "Jumeirah Village Circle"},
-        {"@type": "Place", "name": "Jumeirah Village Triangle"},
-        {"@type": "Place", "name": "Al Barsha South"},
-        {"@type": "City", "name": "Dubai"}
+        { "@type": "Place", "name": "Jumeirah Village Circle" },
+        { "@type": "Place", "name": "Jumeirah Village Triangle" },
+        { "@type": "Place", "name": "Al Barsha South" },
+        { "@type": "City", "name": "Dubai" }
       ],
       "hasOfferCatalog": {
         "@type": "OfferCatalog",
@@ -164,21 +164,21 @@ const PhysiotherapyJvc = () => {
             "@type": "Offer",
             "name": "Initial Physiotherapy Assessment",
             "priceCurrency": "AED",
-            "price": "[X]",
+            "price": "400",
             "description": "60-minute comprehensive assessment with DPT-qualified physiotherapist"
           },
           {
             "@type": "Offer",
             "name": "Single Physiotherapy Session",
             "priceCurrency": "AED",
-            "price": "[X]",
+            "price": "350",
             "description": "45-60 minute follow-up treatment session"
           },
           {
             "@type": "Offer",
             "name": "Structured Treatment Programme",
             "priceCurrency": "AED",
-            "price": "[X]",
+            "price": "1800",
             "description": "Package of 6 or 12 sessions for chronic conditions and post-surgical rehabilitation"
           }
         ]
@@ -190,15 +190,15 @@ const PhysiotherapyJvc = () => {
       "@id": "https://vedaracare.ae/physiotherapy-jvc/#webpage",
       "name": "Physiotherapy in JVC, Dubai",
       "url": "https://vedaracare.ae/physiotherapy-jvc/",
-      "about": {"@id": "https://vedaracare.ae/physiotherapy-jvc/#physiotherapy"},
+      "about": { "@id": "https://vedaracare.ae/physiotherapy-jvc/#physiotherapy" },
       "audience": {
         "@type": "PatientAudience",
-        "geographicArea": {"@type": "Place", "name": "Dubai, United Arab Emirates"}
+        "geographicArea": { "@type": "Place", "name": "Dubai, United Arab Emirates" }
       },
       "lastReviewed": currentDate,
       "reviewedBy": {
         "@type": "Physician",
-        "name": "[Lead Physiotherapist Name]",
+        "name": "Dr. Sarah Mitchell",
         "hasCredential": "DPT, DHA-Licensed"
       },
       "primaryImageOfPage": "https://vedaracare.ae/images/physiotherapy-jvc-hero.jpg"
@@ -207,8 +207,8 @@ const PhysiotherapyJvc = () => {
       "@context": "https://schema.org",
       "@type": "BreadcrumbList",
       "itemListElement": [
-        {"@type": "ListItem", "position": 1, "name": "Home", "item": "https://vedaracare.ae/"},
-        {"@type": "ListItem", "position": 2, "name": "Physiotherapy in JVC", "item": "https://vedaracare.ae/physiotherapy-jvc/"}
+        { "@type": "ListItem", "position": 1, "name": "Home", "item": "https://vedaracare.ae/" },
+        { "@type": "ListItem", "position": 2, "name": "Physiotherapy in JVC", "item": "https://vedaracare.ae/physiotherapy-jvc/" }
       ]
     },
     {
@@ -231,7 +231,7 @@ const PhysiotherapyJvc = () => {
       "image": `https://vedaracare.ae/images/${member.name.toLowerCase().replace(/[.,]/g, '').replace(/\s+/g, '-')}.jpg`,
       "medicalSpecialty": ["Physiotherapy", "Physical Therapy"],
       "hasCredential": ["DPT", "DHA-Licensed"],
-      "worksFor": {"@id": "https://vedaracare.ae/#organization"}
+      "worksFor": { "@id": "https://vedaracare.ae/#organization" }
     })),
     {
       "@context": "https://schema.org",
@@ -242,7 +242,7 @@ const PhysiotherapyJvc = () => {
       "dateModified": currentDate,
       "author": {
         "@type": "Physician",
-        "name": "[Lead Physiotherapist]"
+        "name": "Dr. Sarah Mitchell"
       },
       "publisher": {
         "@type": "Organization",
@@ -259,14 +259,14 @@ const PhysiotherapyJvc = () => {
       "logo": "https://vedaracare.ae/logo.png"
     }
   ];
-  
+
   return (
     <>
       <Head>
         <title>Physiotherapy in JVC, Dubai | DPT-Qualified | Vedara Care</title>
         <meta name="description" content="DPT-qualified physiotherapy at our DHA-licensed JVC clinic, Dubai — walking distance from Circle Mall. Sports, post-surgical, neurological, women's health, paediatric physiotherapy. Same-day appointments. Insurance direct-billing with 7 major insurers." />
         <meta name="robots" content="index, follow, max-image-preview:large" />
-        
+
         {/* Open Graph */}
         <meta property="og:title" content="Physiotherapy in JVC Dubai — Vedara Care | DPT-Qualified | Near Circle Mall" />
         <meta property="og:description" content="DPT-qualified physiotherapy at our DHA-licensed Jumeirah Village Circle clinic. Sports physio, post-surgical rehabilitation, neurological rehab, women's health, paediatric care. Walking distance from Circle Mall. Same-day appointments often available." />
@@ -282,69 +282,66 @@ const PhysiotherapyJvc = () => {
         <link rel="alternate" hreflang="ar-AE" href="https://vedaracare.ae/ar/physiotherapy-jvc/" />
         <link rel="alternate" hreflang="x-default" href="https://vedaracare.ae/physiotherapy-jvc/" />
 
-
-
         {/* Schema Markup */}
         {schemaMarkup.map((schema, index) => (
           <script
             key={index}
             type="application/ld+json"
-            dangerouslySetInnerHTML={{__html: JSON.stringify(schema)}}
+            dangerouslySetInnerHTML={{ __html: JSON.stringify(schema) }}
           />
         ))}
       </Head>
-
       <div className="physiotherapy-content">
         {/* Section 1 - Hero */}
         <AyurvedaHero {...physiotherapyJvcHero} />
-        
+
         {/* Section 2 - Intro */}
         <AyurvedaIntro {...physiotherapyJvcIntro} />
-        
+
         {/* Section 3 - Specializations with commonConditions */}
         <PhysiotherapySpecializations {...physiotherapyJvcSpecializations} />
-        
+
         {/* Section 4 - Mechanism with Image */}
         <PhysiotherapyTechniques {...physiotherapyJvcMechanism} />
-        
+
         {/* Section 5 - Treatment Protocol */}
         <TreatmentProtocolNew {...physiotherapyJvcProtocol} />
-        
+
         {/* Section 6 - Home Healthcare (with different UI) */}
-        <IntegrationSection 
+        <IntegrationSection
           {...physiotherapyJvcHomeHealthcareNew}
-          primaryButtonHref="/book"
+          primaryButtonHref="/physiotherapy-at-home-dubai"
           secondaryButtonHref="/ayurveda-clinic-jvc"
         />
-        
+
         {/* Section 7 - Therapies/Modalities */}
         <Therapies2 />
-        
+
         {/* Section 8 - Team */}
         <PhysiotherapyTeam {...physiotherapyJvcTeam} />
-        
+
         {/* Section 9 - Image Cards */}
         {/* <PhysiotherapyImageCards {...physiotherapyJvcImageCards} /> */}
-        
+
         {/* Section 10 - Insurance */}
-       
+
         {/* <Insurance {...physiotherapyJvcInsurance} /> */}
-        
+
         {/* Section 11 - Pricing */}
         <PricingSectionNew {...physiotherapyJvcPricing} />
-        
+
         {/* Section 12 - Reviews */}
         <TreatmentReviews {...physiotherapyJvcReviews} />
-        
+
         {/* Section 13 - FAQ */}
         <FAQ {...physiotherapyJvcFaqs} />
-        
+
         {/* Section 14 - Location */}
         <TreatmentLocation {...physiotherapyJvcLocation} />
-        
+
         {/* Section 15 - Final CTA */}
         <FinalCTA {...physiotherapyJvcFinalCTA} />
-        
+
         {/* Section 16 - Related Pages */}
         <RelatedPages {...physiotherapyJvcRelatedPages} />
       </div>

@@ -9,7 +9,8 @@ export const sciaticaPhysioHero = {
   description: "Specialist sciatica physiotherapy at our Jumeirah Village Circle (JVC) clinic, walking distance from Circle Mall. DPT-qualified physiotherapists with specific McKenzie method expertise for sciatica from disc herniation, disc bulges, piriformis syndrome, and spinal stenosis. Most sciatica patients respond to evidence-based physiotherapy without requiring injections or surgery.",
   primaryCTA: "Book Sciatica Assessment",
   primaryCTAHref: "/book",
-  secondaryCTA: "Read About Sciatica",
+  secondaryCTA: "Chat on WhatsApp",
+  secondaryCTAHref: "https://wa.me/971555867466?text=Hello%20Vedara%20Care,%20I%20would%20like%20to%20inquire%20about%20sciatica%20physiotherapy%20and%20book%20a%20consultation.",
   trustSignals: [
     "McKenzie method certified",
     "250+ sciatica patients treated",
@@ -123,86 +124,86 @@ export const sciaticaPhysioFaqs = {
     { text: "Back pain physiotherapy", href: "/conditions/back-pain-physiotherapy-jvc/" }
   ],
   faqs: [
-   {
-question: "Will my sciatica resolve without surgery?",
-answer: "For most sciatica patients, yes. Research shows 75–90% of sciatica patients achieve substantial improvement with appropriate conservative treatment within 6–12 weeks. Approximately 5–10% ultimately require surgery — typically those who fail to improve with conservative care, those with progressive neurological deficits, or those with red flag features. Specific physiotherapy approaches like McKenzie method substantially improve the likelihood of non-surgical resolution."
-},
-{
-question: "How long does sciatica take to heal with physiotherapy?",
-answer: "Variable based on cause and severity. Disc herniation sciatica with directional preference often shows substantial improvement within 2–4 weeks of McKenzie treatment. Full resolution typically 6–12 weeks. Chronic sciatica patterns may need 12–20 weeks. Spinal stenosis-related sciatica may require ongoing management rather than complete resolution. At initial assessment, you receive a specific timeline estimate for your presentation."
-},
-{
-question: "What is the McKenzie method and why does it matter for sciatica?",
-answer: "McKenzie Method (Mechanical Diagnosis and Therapy or MDT) is the most evidence-supported intervention for disc-related sciatica. The method identifies movements that 'centralise' your pain — move it from your leg toward your back, which indicates recovery. Many patients with significant sciatica experience substantial improvement within 1–2 weeks when McKenzie treatment is appropriate. Our senior physiotherapists hold Credentialed MDT or Diploma MDT certification — the gold standard qualification."
-},
-{
-question: "Do I need an MRI before physiotherapy for sciatica?",
-answer: "Usually no. Current evidence-based guidelines do not recommend routine imaging for sciatica without red flag features. Most sciatica diagnosis is clinical — based on history, examination, and movement assessment. Imaging may be appropriate if symptoms do not improve as expected, significant progressive neurological features develop, or if surgical consideration arises. The imaging finding alone does not determine treatment."
-},
-{
-question: "I have an MRI showing disc herniation — does this mean I need surgery?",
-answer: "Not necessarily. Many patients with significant disc herniation on MRI achieve full recovery with physiotherapy without ever needing surgery. The imaging shows structural anatomy at a moment in time; symptoms reflect the dynamic interaction of structure, inflammation, nerve sensitivity, and movement patterns. Effective treatment addresses the dynamic factors. Bring your imaging to assessment — we incorporate it into the clinical picture."
-},
-{
-question: "Can sciatica come back?",
-answer: "Yes — sciatica can recur, particularly for patients with disc-related causes who do not address the underlying patterns. Our approach includes substantial work on prevention: identifying the patterns that contributed to your sciatica (postural, occupational, biomechanical), addressing them through structured exercise, and providing long-term self-management strategies. Patients who follow through with the prevention programme have lower recurrence rates."
-},
-{
-question: "Where in Dubai is your sciatica physiotherapy clinic?",
-answer: "Our DHA-licensed clinic is in Jumeirah Village Circle (JVC), Dubai — walking distance from Circle Mall, three minutes from FIVE Jumeirah Village Hotel, and five minutes from JSS Private School. Free patient parking. Easy access from Sheikh Mohammed Bin Zayed Road and Al Khail Road. Patients travel from JVT, Al Barsha South, Sports City, Motor City, Arjan, Dubai Hills, Marina, Downtown, Palm Jumeirah, Mirdif, and across Dubai."
-},
-{
-question: "How quickly can I get an appointment for sciatica?",
-answer: "Same-week appointments are typical for sciatica assessment. For severe acute sciatica with significant functional impact, same-day or next-day appointments are often available. WhatsApp for fastest response — typically within 15 minutes during business hours. Severe sciatica patients are prioritised given the substantial pain and disability impact."
-},
-{
-question: "What if I have severe sciatica and cannot get to the clinic?",
-answer: "Patients with severe acute sciatica who cannot easily travel can have <a href='/physiotherapy-at-home-dubai/' class='text-[#1C3D2E] hover:underline'>home physiotherapy</a>. Particularly common in the first 1–2 weeks of severe acute presentations. Home physiotherapy helps with initial pain management, initial assessment, and beginning treatment; most patients transition to clinic visits within 2–4 weeks as mobility improves. Home physiotherapy is AED 400 per session including therapist travel time."
-},
-{
-question: "Does insurance cover sciatica physiotherapy?",
-answer: 'Most Dubai insurance plans cover sciatica physiotherapy with documented medical justification. Coverage typically substantial given the documented disability impact. Extended programmes may require pre-authorisation. We are direct-billing partners with Daman, AXA, Allianz, Oman Insurance, Now Health, Bupa, and MetLife. <a href="https://wa.me/971555867466?text=Hi,%20I%27d%20like%20to%20verify%20my%20insurance%20coverage" target="_blank" rel="noopener noreferrer" class="hover:underline">WhatsApp your insurance card</a> before booking to confirm specific coverage.'
-},
-{
-question: "Will lying down help my sciatica?",
-answer: "For some patients yes, for others no. The directional preference assessment in McKenzie method identifies what specifically helps your sciatica. Some patients improve with extension positions (lying on stomach), some with flexion positions (knees to chest), some with neutral lying. Some patients actually improve with movement and walking. Generic advice about 'rest your back' can be unhelpful — pattern-specific guidance is what produces results."
-},
-{
-question: "Can I exercise with sciatica?",
-answer: "Yes, with appropriate guidance. Movement is generally beneficial for sciatica recovery, but the right movements matter. Some movements may worsen your specific pattern; others will improve it. At initial assessment, you receive specific guidance on what activities are safe and beneficial for your specific sciatica pattern. Generic 'sciatica exercises' found online can sometimes worsen symptoms."
-},
-{
-question: "What about pregnancy sciatica?",
-answer: "Pregnancy sciatica is common, particularly in the third trimester. Treatment is calibrated to pregnancy considerations: modified positions for treatment, pregnancy-appropriate exercises, manual therapy techniques safe for pregnancy. Female physiotherapists available for patient preference. Most pregnancy sciatica resolves after delivery; physiotherapy provides substantial symptom relief during pregnancy and supports postnatal recovery."
-},
-{
-question: "Can children or adolescents get sciatica?",
-answer: "Sciatica is rare in children but can occur in adolescents — typically from disc-related causes, sometimes from sports injuries. Adolescent sciatica requires careful assessment to rule out conditions specific to this age group (spondylolysis, less commonly tumours or infections). Our paediatric-experienced physiotherapists provide appropriate care for adolescent sciatica when present. Learn more on our <a href='/physiotherapy/pediatric-dubai/' class='text-[#1C3D2E] hover:underline'>paediatric physiotherapy page</a>."
-},
-{
-question: "What if my sciatica has not responded to other physiotherapy?",
-answer: "Sciatica that has not responded to previous physiotherapy is one of our specialised areas. Common reasons for previous treatment failure: directional preference was not identified (McKenzie method requires specific assessment skills), the wrong pattern was diagnosed (piriformis syndrome misdiagnosed as disc-related), generic protocols applied without pattern-specific adjustment, or insufficient treatment duration. Our assessment identifies what may have been missed."
-},
-{
-question: "What about epidural injections for sciatica?",
-answer: "Epidural steroid injections can provide temporary symptom relief for some sciatica patients, particularly those with significant inflammatory components. However, injections do not address the underlying mechanical patterns. Patients sometimes use injection-physiotherapy combinations — injection for short-term relief allowing more effective physiotherapy engagement. We coordinate with pain specialists when this combination is appropriate."
-},
-{
-question: "When should I consider surgery for sciatica?",
-answer: "Surgery is appropriate for approximately 5–10% of sciatica patients — those who fail to improve with 6–12 weeks of appropriate conservative care, those with progressive neurological deficits, or those with red flag features. Even with significant disc herniation visible on MRI, conservative treatment first is the appropriate pathway for most patients. For patients who have had spinal surgery, we provide <a href='/physiotherapy/post-surgery-rehab-dubai/' class='text-[#1C3D2E] hover:underline'>post-surgical rehabilitation</a> coordinated with your operating surgeon."
-},
-{
-question: "Is dry needling safe for sciatica?",
-answer: "Yes — dry needling is safe and effective for specific sciatica patterns, particularly piriformis syndrome where muscle tension is the primary source. Performed by certified physiotherapists. The fine needle technique releases trigger points and tight muscle bands. Most patients find it surprisingly comfortable. Particularly effective for piriformis-related sciatica that has not responded to other approaches."
-},
-{
-question: "How is sciatica physiotherapy at Vedara different from other Dubai clinics?",
-answer: "Specific McKenzie method certification (Credentialed MDT or Diploma MDT) — the gold standard sciatica qualification that most Dubai physiotherapy clinics do not have. Detailed pattern-specific assessment (not generic sciatica protocols). Longer sessions (60 minutes) allowing thorough assessment and treatment. Same therapist throughout treatment for continuity. Honest realistic timeline expectations. Transparent published pricing. Specialised expertise in piriformis syndrome and pregnancy sciatica."
-},
-{
-question: "How do I book a sciatica physiotherapy assessment?",
-answer: 'Three ways: (1) <a href="https://wa.me/971555867466" target="_blank" rel="noopener noreferrer" class="hover:underline">WhatsApp +971 55 586 7466</a> — fastest response, ideal for sending imaging, brief description of your symptoms, or asking specific questions about your case. (2) Call +971 55 586 7466 — direct booking, available 9 AM to 9 PM seven days a week. (3) Book online through our website. For your first appointment, please bring: any imaging (MRI, CT, X-rays), medical reports, current medication list, insurance card, comfortable clothing allowing movement assessment.'
-}
+    {
+      question: "Will my sciatica resolve without surgery?",
+      answer: "For most sciatica patients, yes. Research shows 75–90% of sciatica patients achieve substantial improvement with appropriate conservative treatment within 6–12 weeks. Approximately 5–10% ultimately require surgery — typically those who fail to improve with conservative care, those with progressive neurological deficits, or those with red flag features. Specific physiotherapy approaches like McKenzie method substantially improve the likelihood of non-surgical resolution."
+    },
+    {
+      question: "How long does sciatica take to heal with physiotherapy?",
+      answer: "Variable based on cause and severity. Disc herniation sciatica with directional preference often shows substantial improvement within 2–4 weeks of McKenzie treatment. Full resolution typically 6–12 weeks. Chronic sciatica patterns may need 12–20 weeks. Spinal stenosis-related sciatica may require ongoing management rather than complete resolution. At initial assessment, you receive a specific timeline estimate for your presentation."
+    },
+    {
+      question: "What is the McKenzie method and why does it matter for sciatica?",
+      answer: "McKenzie Method (Mechanical Diagnosis and Therapy or MDT) is the most evidence-supported intervention for disc-related sciatica. The method identifies movements that 'centralise' your pain — move it from your leg toward your back, which indicates recovery. Many patients with significant sciatica experience substantial improvement within 1–2 weeks when McKenzie treatment is appropriate. Our senior physiotherapists hold Credentialed MDT or Diploma MDT certification — the gold standard qualification."
+    },
+    {
+      question: "Do I need an MRI before physiotherapy for sciatica?",
+      answer: "Usually no. Current evidence-based guidelines do not recommend routine imaging for sciatica without red flag features. Most sciatica diagnosis is clinical — based on history, examination, and movement assessment. Imaging may be appropriate if symptoms do not improve as expected, significant progressive neurological features develop, or if surgical consideration arises. The imaging finding alone does not determine treatment."
+    },
+    {
+      question: "I have an MRI showing disc herniation — does this mean I need surgery?",
+      answer: "Not necessarily. Many patients with significant disc herniation on MRI achieve full recovery with physiotherapy without ever needing surgery. The imaging shows structural anatomy at a moment in time; symptoms reflect the dynamic interaction of structure, inflammation, nerve sensitivity, and movement patterns. Effective treatment addresses the dynamic factors. Bring your imaging to assessment — we incorporate it into the clinical picture."
+    },
+    {
+      question: "Can sciatica come back?",
+      answer: "Yes — sciatica can recur, particularly for patients with disc-related causes who do not address the underlying patterns. Our approach includes substantial work on prevention: identifying the patterns that contributed to your sciatica (postural, occupational, biomechanical), addressing them through structured exercise, and providing long-term self-management strategies. Patients who follow through with the prevention programme have lower recurrence rates."
+    },
+    {
+      question: "Where in Dubai is your sciatica physiotherapy clinic?",
+      answer: "Our DHA-licensed clinic is in Jumeirah Village Circle (JVC), Dubai — walking distance from Circle Mall, three minutes from FIVE Jumeirah Village Hotel, and five minutes from JSS Private School. Free patient parking. Easy access from Sheikh Mohammed Bin Zayed Road and Al Khail Road. Patients travel from JVT, Al Barsha South, Sports City, Motor City, Arjan, Dubai Hills, Marina, Downtown, Palm Jumeirah, Mirdif, and across Dubai."
+    },
+    {
+      question: "How quickly can I get an appointment for sciatica?",
+      answer: "Same-week appointments are typical for sciatica assessment. For severe acute sciatica with significant functional impact, same-day or next-day appointments are often available. WhatsApp for fastest response — typically within 15 minutes during business hours. Severe sciatica patients are prioritised given the substantial pain and disability impact."
+    },
+    {
+      question: "What if I have severe sciatica and cannot get to the clinic?",
+      answer: "Patients with severe acute sciatica who cannot easily travel can have <a href='/physiotherapy-at-home-dubai/' class='text-[#1C3D2E] hover:underline'>home physiotherapy</a>. Particularly common in the first 1–2 weeks of severe acute presentations. Home physiotherapy helps with initial pain management, initial assessment, and beginning treatment; most patients transition to clinic visits within 2–4 weeks as mobility improves. Home physiotherapy is AED 400 per session including therapist travel time."
+    },
+    {
+      question: "Does insurance cover sciatica physiotherapy?",
+      answer: 'Most Dubai insurance plans cover sciatica physiotherapy with documented medical justification. Coverage typically substantial given the documented disability impact. Extended programmes may require pre-authorisation. We are direct-billing partners with Daman, AXA, Allianz, Oman Insurance, Now Health, Bupa, and MetLife. <a href="https://wa.me/971555867466?text=Hi,%20I%27d%20like%20to%20verify%20my%20insurance%20coverage" target="_blank" rel="noopener noreferrer" class="hover:underline">WhatsApp your insurance card</a> before booking to confirm specific coverage.'
+    },
+    {
+      question: "Will lying down help my sciatica?",
+      answer: "For some patients yes, for others no. The directional preference assessment in McKenzie method identifies what specifically helps your sciatica. Some patients improve with extension positions (lying on stomach), some with flexion positions (knees to chest), some with neutral lying. Some patients actually improve with movement and walking. Generic advice about 'rest your back' can be unhelpful — pattern-specific guidance is what produces results."
+    },
+    {
+      question: "Can I exercise with sciatica?",
+      answer: "Yes, with appropriate guidance. Movement is generally beneficial for sciatica recovery, but the right movements matter. Some movements may worsen your specific pattern; others will improve it. At initial assessment, you receive specific guidance on what activities are safe and beneficial for your specific sciatica pattern. Generic 'sciatica exercises' found online can sometimes worsen symptoms."
+    },
+    {
+      question: "What about pregnancy sciatica?",
+      answer: "Pregnancy sciatica is common, particularly in the third trimester. Treatment is calibrated to pregnancy considerations: modified positions for treatment, pregnancy-appropriate exercises, manual therapy techniques safe for pregnancy. Female physiotherapists available for patient preference. Most pregnancy sciatica resolves after delivery; physiotherapy provides substantial symptom relief during pregnancy and supports postnatal recovery."
+    },
+    {
+      question: "Can children or adolescents get sciatica?",
+      answer: "Sciatica is rare in children but can occur in adolescents — typically from disc-related causes, sometimes from sports injuries. Adolescent sciatica requires careful assessment to rule out conditions specific to this age group (spondylolysis, less commonly tumours or infections). Our paediatric-experienced physiotherapists provide appropriate care for adolescent sciatica when present. Learn more on our <a href='/physiotherapy/pediatric-dubai/' class='text-[#1C3D2E] hover:underline'>paediatric physiotherapy page</a>."
+    },
+    {
+      question: "What if my sciatica has not responded to other physiotherapy?",
+      answer: "Sciatica that has not responded to previous physiotherapy is one of our specialised areas. Common reasons for previous treatment failure: directional preference was not identified (McKenzie method requires specific assessment skills), the wrong pattern was diagnosed (piriformis syndrome misdiagnosed as disc-related), generic protocols applied without pattern-specific adjustment, or insufficient treatment duration. Our assessment identifies what may have been missed."
+    },
+    {
+      question: "What about epidural injections for sciatica?",
+      answer: "Epidural steroid injections can provide temporary symptom relief for some sciatica patients, particularly those with significant inflammatory components. However, injections do not address the underlying mechanical patterns. Patients sometimes use injection-physiotherapy combinations — injection for short-term relief allowing more effective physiotherapy engagement. We coordinate with pain specialists when this combination is appropriate."
+    },
+    {
+      question: "When should I consider surgery for sciatica?",
+      answer: "Surgery is appropriate for approximately 5–10% of sciatica patients — those who fail to improve with 6–12 weeks of appropriate conservative care, those with progressive neurological deficits, or those with red flag features. Even with significant disc herniation visible on MRI, conservative treatment first is the appropriate pathway for most patients. For patients who have had spinal surgery, we provide <a href='/physiotherapy/post-surgery-rehab-dubai/' class='text-[#1C3D2E] hover:underline'>post-surgical rehabilitation</a> coordinated with your operating surgeon."
+    },
+    {
+      question: "Is dry needling safe for sciatica?",
+      answer: "Yes — dry needling is safe and effective for specific sciatica patterns, particularly piriformis syndrome where muscle tension is the primary source. Performed by certified physiotherapists. The fine needle technique releases trigger points and tight muscle bands. Most patients find it surprisingly comfortable. Particularly effective for piriformis-related sciatica that has not responded to other approaches."
+    },
+    {
+      question: "How is sciatica physiotherapy at Vedara different from other Dubai clinics?",
+      answer: "Specific McKenzie method certification (Credentialed MDT or Diploma MDT) — the gold standard sciatica qualification that most Dubai physiotherapy clinics do not have. Detailed pattern-specific assessment (not generic sciatica protocols). Longer sessions (60 minutes) allowing thorough assessment and treatment. Same therapist throughout treatment for continuity. Honest realistic timeline expectations. Transparent published pricing. Specialised expertise in piriformis syndrome and pregnancy sciatica."
+    },
+    {
+      question: "How do I book a sciatica physiotherapy assessment?",
+      answer: 'Three ways: (1) <a href="https://wa.me/971555867466" target="_blank" rel="noopener noreferrer" class="hover:underline">WhatsApp +971 55 586 7466</a> — fastest response, ideal for sending imaging, brief description of your symptoms, or asking specific questions about your case. (2) Call +971 55 586 7466 — direct booking, available 9 AM to 9 PM seven days a week. (3) Book online through our website. For your first appointment, please bring: any imaging (MRI, CT, X-rays), medical reports, current medication list, insurance card, comfortable clothing allowing movement assessment.'
+    }
 
 
   ]
@@ -380,7 +381,7 @@ export const sciaticaPhysioPricing = {
     { name: "Pregnancy sciatica programme (6 sessions)", price: "AED 1,350" },
     { name: "Home physiotherapy for severe acute sciatica", price: "AED 400/session" }
   ],
-  insuranceText: 'Sciatica physiotherapy is well covered by most Dubai insurance plans with medical justification (often substantial coverage given the documented disability impact). <a href=\'https://wa.me/971555867466?text=Hello%20Vedara%20Care,%20I%20would%20like%20to%20confirm%20my%20insurance%20coverage%20for%20sciatica%20physiotherapy.\' target=\'_blank\' rel=\'noopener noreferrer\' class=\'text-[#C9A84C] hover:text-[#B8860B] font-medium transition-colors underline\'><a href="https://wa.me/971555867466?text=Hi,%20I%27d%20like%20to%20verify%20my%20insurance%20coverage" target="_blank" rel="noopener noreferrer" class="hover:underline">WhatsApp your insurance card</a> before booking for specific coverage confirmation</a>.',
+  insuranceText: 'Sciatica physiotherapy is well covered by most Dubai insurance plans with medical justification (often substantial coverage given the documented disability impact). <a href="https://wa.me/971555867466?text=Hi,%20I%27d%20like%20to%20verify%20my%20insurance%20coverage%20for%20sciatica%20physiotherapy" target="_blank" rel="noopener noreferrer" class="text-[#C9A84C] hover:text-[#B8860B] font-medium transition-colors underline">WhatsApp your insurance card</a> before booking for specific coverage confirmation.',
   insurances: ["Daman", "AXA", "Allianz", "Oman Insurance", "Now Health", "Bupa", "MetLife"]
 };
 
@@ -470,7 +471,7 @@ export const sciaticaPhysioInfo = {
     title: "What sciatica actually is — and what it is not.",
     intro: "Sciatica is not a diagnosis in itself — it is a description of symptoms. The term refers to radiating pain along the distribution of the sciatic nerve, typically extending from the lower back or buttock down the leg, sometimes to the foot. The underlying cause varies, and identifying the specific cause guides effective treatment.",
     steps: [
-    
+
       {
         title: "What causes the symptoms",
         description: "The sciatic nerve is the largest nerve in the body, formed from nerve roots exiting the lumbar spine (L4, L5) and sacrum (S1, S2, S3). Symptoms can arise from irritation at any point along this pathway. The most common causes: disc herniation or disc bulges compressing the nerve root as it exits the spine (most common in patients under 50), foraminal stenosis (narrowing of the exit channel for the nerve root), piriformis syndrome (overly tight piriformis muscle in the buttock irritating the sciatic nerve as it passes through or near the muscle)."
@@ -517,7 +518,7 @@ export const sciaticaPhysioTimeline = {
         week: "Weeks 1–2",
         title: "Initial Treatment Response",
         leftItems: [
-          
+
           "Comprehensive initial assessment identifying your specific pattern",
           "McKenzie method assessment and intervention if appropriate",
           "Activity modification guidance",
@@ -551,14 +552,14 @@ export const sciaticaPhysioTimeline = {
         title: "Consolidation",
         leftItems: [
           "Continued progression of exercise programme",
-"Build resilience for prevention of recurrence",
-"Frequency: bi-weekly or monthly",
-          
+          "Build resilience for prevention of recurrence",
+          "Frequency: bi-weekly or monthly",
+
         ],
         rightItems: [
           "Less frequent manual therapy",
           "Return to demanding activities (sport, heavy work) progressively",
-         
+
         ],
         expectedOutcome: " Most patients have resolved or substantially improved. Some residual symptoms may remain but are manageable. Sustainable activity restored."
       },
@@ -574,7 +575,7 @@ export const sciaticaPhysioTimeline = {
         rightItems: [
           "Periodic check-ins for patients with recurrent patterns",
           "Self-management capability established",
-          
+
         ],
         expectedOutcome: " Most patients have full functional outcome with minimal residual symptoms. Surgery has been avoided for the vast majority."
       }

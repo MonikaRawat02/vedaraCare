@@ -101,9 +101,7 @@ const HomePhysioPricing = ({
             </div>
           </div>
 
-          <p className="text-sm text-[#6B635A] text-center max-w-3xl mx-auto leading-relaxed mt-12">
-            {note}
-          </p>
+          <p className="text-sm text-[#6B635A] text-center max-w-3xl mx-auto leading-relaxed mt-12" dangerouslySetInnerHTML={{ __html: note }} />
         </div>
       </div>
     </section>

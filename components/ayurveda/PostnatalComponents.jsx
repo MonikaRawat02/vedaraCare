@@ -53,9 +53,7 @@ const PostnatalComponents = ({
 
         {footerNote && (
           <div className="mt-16 text-center max-w-[800px] mx-auto">
-            <p className="text-[13px] text-[#6B6B6B] font-sans leading-relaxed ">
-              {footerNote}
-            </p>
+            <p className="text-[13px] text-[#6B6B6B] font-sans leading-relaxed" dangerouslySetInnerHTML={{ __html: footerNote }} />
           </div>
         )}
       </div>

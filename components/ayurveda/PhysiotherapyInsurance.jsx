@@ -54,7 +54,7 @@ const PhysiotherapyInsurance = ({
               </p>
             ))}
             <a
-              href={`https://wa.me/${whatsappNumber}?text=Hello%20Vedara%20Care,%20I%20would%20like%20to%20confirm%20my%20insurance%20coverage%20for%20physiotherapy.`}
+              href={`https://wa.me/${whatsappNumber.toString().replace(/[^0-9]/g, '')}?text=Hello%20Vedara%20Care,%20I%20would%20like%20to%20confirm%20my%20insurance%20coverage%20for%20physiotherapy.`}
               target="_blank"
               rel="noopener noreferrer"
               className="w-full text-white font-semibold py-3 px-6 rounded-lg flex items-center justify-center gap-2 transition-colors"

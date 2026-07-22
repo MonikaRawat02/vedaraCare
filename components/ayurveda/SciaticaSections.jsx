@@ -246,11 +246,11 @@ export const SciaticaEmergency = ({ data }) => {
                 <p className="text-xs mb-8" style={{ color: 'rgb(107,107,107)' }}>
                   {rightCard.footer}
                 </p>
-                <a
+                <Link
                   href={rightCard.buttonHref}
                   className="w-full text-white font-semibold py-4 px-6 rounded flex items-center justify-center gap-2 transition-colors text-sm border-2 border-[#1C1C14] bg-[#1C1C14] hover:bg-[#C9A84C] hover:text-[#1C1C14] hover:border-[#C9A84C]">
                   {rightCard.buttonText}
-                </a>
+                </Link>
               </div>
             </div>
           </div>

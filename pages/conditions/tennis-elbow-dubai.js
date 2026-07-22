@@ -45,13 +45,13 @@ const TennisElbowDubai = () => {
       "name": "Vedara Care Tennis Elbow Treatment",
       "alternateName": ["Vedara Tennis Elbow Treatment Dubai", "Vedara Lateral Epicondylalgia JVC"],
       "url": currentUrl,
-      "parentOrganization": {"@id": "https://vedaracare.ae/#organization"},
+      "parentOrganization": { "@id": "https://vedaracare.ae/#organization" },
       "description": "Specialist tennis elbow (lateral epicondylalgia) treatment at Vedara Care Polyclinic, Jumeirah Village Circle, Dubai. Evidence-based eccentric and isometric loading protocols, shockwave therapy for chronic cases. Particular expertise in padel-related elbow injuries and office worker patterns. Most tennis elbow patients have never played tennis.",
-      "telephone": "+971 4 567 8900",
+      "telephone": "+971 55 586 7466",
       "priceRange": "AED 350 - AED 12,000",
       "address": {
         "@type": "PostalAddress",
-        "streetAddress": "Building 23, District 12",
+        "streetAddress": "Al Barsha South Fourth, Binghatti Azure, Shop -4, Jumeirah Village Circle",
         "addressLocality": "Jumeirah Village Circle",
         "addressRegion": "Dubai",
         "addressCountry": "AE"
@@ -76,21 +76,21 @@ const TennisElbowDubai = () => {
         }
       ],
       "areaServed": [
-        {"@type": "City", "name": "Dubai"},
-        {"@type": "Place", "name": "Jumeirah Village Circle"},
-        {"@type": "Place", "name": "Jumeirah Village Triangle"},
-        {"@type": "Place", "name": "Al Barsha South"},
-        {"@type": "Place", "name": "Dubai Sports City"},
-        {"@type": "Place", "name": "Motor City"},
-        {"@type": "Place", "name": "Arjan"},
-        {"@type": "Place", "name": "Dubai Hills Estate"},
-        {"@type": "Place", "name": "Dubai Marina"},
-        {"@type": "Place", "name": "Downtown Dubai"},
-        {"@type": "Place", "name": "Palm Jumeirah"},
-        {"@type": "Place", "name": "Mirdif"},
-        {"@type": "Place", "name": "Circle Mall"},
-        {"@type": "Place", "name": "FIVE Jumeirah Village"},
-        {"@type": "Place", "name": "JSS Private School"}
+        { "@type": "City", "name": "Dubai" },
+        { "@type": "Place", "name": "Jumeirah Village Circle" },
+        { "@type": "Place", "name": "Jumeirah Village Triangle" },
+        { "@type": "Place", "name": "Al Barsha South" },
+        { "@type": "Place", "name": "Dubai Sports City" },
+        { "@type": "Place", "name": "Motor City" },
+        { "@type": "Place", "name": "Arjan" },
+        { "@type": "Place", "name": "Dubai Hills Estate" },
+        { "@type": "Place", "name": "Dubai Marina" },
+        { "@type": "Place", "name": "Downtown Dubai" },
+        { "@type": "Place", "name": "Palm Jumeirah" },
+        { "@type": "Place", "name": "Mirdif" },
+        { "@type": "Place", "name": "Circle Mall" },
+        { "@type": "Place", "name": "FIVE Jumeirah Village" },
+        { "@type": "Place", "name": "JSS Private School" }
       ],
       "medicalSpecialty": [
         "Tennis Elbow Treatment",
@@ -101,17 +101,17 @@ const TennisElbowDubai = () => {
       ],
       "isAcceptingNewPatients": true,
       "availableService": [
-        {"@type": "MedicalProcedure", "name": "Tennis Elbow Physiotherapy"},
-        {"@type": "MedicalProcedure", "name": "Lateral Epicondylalgia Treatment"},
-        {"@type": "MedicalProcedure", "name": "Eccentric Loading Protocols"},
-        {"@type": "MedicalProcedure", "name": "Isometric Loading Exercises"},
-        {"@type": "MedicalProcedure", "name": "Shockwave Therapy"},
-        {"@type": "MedicalProcedure", "name": "Manual Therapy"},
-        {"@type": "MedicalProcedure", "name": "Dry Needling"},
-        {"@type": "MedicalProcedure", "name": "Mulligan Mobilisation With Movement"},
-        {"@type": "MedicalProcedure", "name": "Ergonomic Assessment"},
-        {"@type": "MedicalProcedure", "name": "Tyler Twist"},
-        {"@type": "MedicalProcedure", "name": "Stanish Protocol"}
+        { "@type": "MedicalProcedure", "name": "Tennis Elbow Physiotherapy" },
+        { "@type": "MedicalProcedure", "name": "Lateral Epicondylalgia Treatment" },
+        { "@type": "MedicalProcedure", "name": "Eccentric Loading Protocols" },
+        { "@type": "MedicalProcedure", "name": "Isometric Loading Exercises" },
+        { "@type": "MedicalProcedure", "name": "Shockwave Therapy" },
+        { "@type": "MedicalProcedure", "name": "Manual Therapy" },
+        { "@type": "MedicalProcedure", "name": "Dry Needling" },
+        { "@type": "MedicalProcedure", "name": "Mulligan Mobilisation With Movement" },
+        { "@type": "MedicalProcedure", "name": "Ergonomic Assessment" },
+        { "@type": "MedicalProcedure", "name": "Tyler Twist" },
+        { "@type": "MedicalProcedure", "name": "Stanish Protocol" }
       ],
       "memberOf": {
         "@type": "GovernmentOrganization",
@@ -125,12 +125,12 @@ const TennisElbowDubai = () => {
         "worstRating": "1"
       },
       "knowsAbout": [
-        {"@type": "AnatomicalStructure", "name": "Common Extensor Tendon"},
-        {"@type": "AnatomicalStructure", "name": "Lateral Epicondyle"},
-        {"@type": "AnatomicalStructure", "name": "Extensor Carpi Radialis Brevis"},
-        {"@type": "Sport", "name": "Padel"},
-        {"@type": "Sport", "name": "Tennis"},
-        {"@type": "Sport", "name": "Gym Training"}
+        { "@type": "AnatomicalStructure", "name": "Common Extensor Tendon" },
+        { "@type": "AnatomicalStructure", "name": "Lateral Epicondyle" },
+        { "@type": "AnatomicalStructure", "name": "Extensor Carpi Radialis Brevis" },
+        { "@type": "Sport", "name": "Padel" },
+        { "@type": "Sport", "name": "Tennis" },
+        { "@type": "Sport", "name": "Gym Training" }
       ]
     },
     [
@@ -139,19 +139,19 @@ const TennisElbowDubai = () => {
         "@type": "MedicalCondition",
         "name": "Lateral Epicondylalgia",
         "alternateName": ["Tennis Elbow", "Lateral Epicondylitis", "Common Extensor Tendinopathy"],
-        "code": {"@type": "MedicalCode", "code": "M77.1", "codingSystem": "ICD-10"},
+        "code": { "@type": "MedicalCode", "code": "M77.1", "codingSystem": "ICD-10" },
         "possibleTreatment": [
-          {"@type": "MedicalProcedure", "name": "Eccentric Loading Protocols"},
-          {"@type": "MedicalProcedure", "name": "Isometric Loading"},
-          {"@type": "MedicalProcedure", "name": "Shockwave Therapy"},
-          {"@type": "MedicalProcedure", "name": "Manual Therapy"},
-          {"@type": "MedicalProcedure", "name": "Tyler Twist"},
-          {"@type": "MedicalProcedure", "name": "Stanish Protocol"}
+          { "@type": "MedicalProcedure", "name": "Eccentric Loading Protocols" },
+          { "@type": "MedicalProcedure", "name": "Isometric Loading" },
+          { "@type": "MedicalProcedure", "name": "Shockwave Therapy" },
+          { "@type": "MedicalProcedure", "name": "Manual Therapy" },
+          { "@type": "MedicalProcedure", "name": "Tyler Twist" },
+          { "@type": "MedicalProcedure", "name": "Stanish Protocol" }
         ],
         "associatedAnatomy": [
-          {"@type": "AnatomicalStructure", "name": "Common Extensor Tendon"},
-          {"@type": "AnatomicalStructure", "name": "Lateral Epicondyle"},
-          {"@type": "AnatomicalStructure", "name": "Extensor Carpi Radialis Brevis"}
+          { "@type": "AnatomicalStructure", "name": "Common Extensor Tendon" },
+          { "@type": "AnatomicalStructure", "name": "Lateral Epicondyle" },
+          { "@type": "AnatomicalStructure", "name": "Extensor Carpi Radialis Brevis" }
         ]
       },
       {
@@ -174,10 +174,10 @@ const TennisElbowDubai = () => {
       "@context": "https://schema.org",
       "@type": "Service",
       "name": "Tennis Elbow Treatment Services in Dubai",
-      "provider": {"@id": `${currentUrl}#tennis-elbow`},
+      "provider": { "@id": `${currentUrl}#tennis-elbow` },
       "areaServed": [
-        {"@type": "City", "name": "Dubai"},
-        {"@type": "Place", "name": "United Arab Emirates"}
+        { "@type": "City", "name": "Dubai" },
+        { "@type": "Place", "name": "United Arab Emirates" }
       ],
       "serviceType": "Tennis Elbow Physiotherapy and Lateral Epicondylalgia Treatment",
       "hasOfferCatalog": {
@@ -226,9 +226,9 @@ const TennisElbowDubai = () => {
       "@context": "https://schema.org",
       "@type": "BreadcrumbList",
       "itemListElement": [
-        {"@type": "ListItem", "position": 1, "name": "Home", "item": "https://vedaracare.ae/"},
-        {"@type": "ListItem", "position": 2, "name": "Conditions", "item": "https://vedaracare.ae/conditions/"},
-        {"@type": "ListItem", "position": 3, "name": "Tennis Elbow Treatment in Dubai", "item": currentUrl}
+        { "@type": "ListItem", "position": 1, "name": "Home", "item": "https://vedaracare.ae/" },
+        { "@type": "ListItem", "position": 2, "name": "Conditions", "item": "https://vedaracare.ae/conditions/" },
+        { "@type": "ListItem", "position": 3, "name": "Tennis Elbow Treatment in Dubai", "item": currentUrl }
       ]
     },
     {
@@ -277,8 +277,8 @@ const TennisElbowDubai = () => {
         "name": "Vedara Care Polyclinic"
       },
       "about": [
-        {"@type": "MedicalCondition", "name": "Lateral Epicondylalgia"},
-        {"@type": "MedicalCondition", "name": "Tennis Elbow"}
+        { "@type": "MedicalCondition", "name": "Lateral Epicondylalgia" },
+        { "@type": "MedicalCondition", "name": "Tennis Elbow" }
       ],
       "mainEntityOfPage": currentUrl
     },
@@ -290,12 +290,12 @@ const TennisElbowDubai = () => {
       "image": "https://vedaracare.ae/images/dr-priya-sharma-home-physiotherapy-dubai.webp",
       "medicalSpecialty": ["Physiotherapy", "Tendinopathy Treatment", "Sports Medicine"],
       "hasCredential": [
-        {"@type": "EducationalCredential", "name": "Doctor of Physical Therapy", "alternateName": "DPT"},
-        {"@type": "EducationalCredential", "name": "Shockwave Therapy Certified"},
-        {"@type": "EducationalCredential", "name": "Dry Needling Certified"},
-        {"@type": "EducationalCredential", "name": "DHA-Licensed"}
+        { "@type": "EducationalCredential", "name": "Doctor of Physical Therapy", "alternateName": "DPT" },
+        { "@type": "EducationalCredential", "name": "Shockwave Therapy Certified" },
+        { "@type": "EducationalCredential", "name": "Dry Needling Certified" },
+        { "@type": "EducationalCredential", "name": "DHA-Licensed" }
       ],
-      "worksFor": {"@id": "https://vedaracare.ae/#organization"}
+      "worksFor": { "@id": "https://vedaracare.ae/#organization" }
     },
     {
       "@context": "https://schema.org",
@@ -305,13 +305,13 @@ const TennisElbowDubai = () => {
       "image": "https://vedaracare.ae/images/dr-ahmed-al-rashid-home-physiotherapy-dubai.webp",
       "medicalSpecialty": ["Physiotherapy", "Tendinopathy Treatment", "Sports Medicine"],
       "hasCredential": [
-        {"@type": "EducationalCredential", "name": "Doctor of Physical Therapy", "alternateName": "DPT"},
-        {"@type": "EducationalCredential", "name": "MSc"},
-        {"@type": "EducationalCredential", "name": "Shockwave Therapy Certified"},
-        {"@type": "EducationalCredential", "name": "Dry Needling Certified"},
-        {"@type": "EducationalCredential", "name": "DHA-Licensed"}
+        { "@type": "EducationalCredential", "name": "Doctor of Physical Therapy", "alternateName": "DPT" },
+        { "@type": "EducationalCredential", "name": "MSc" },
+        { "@type": "EducationalCredential", "name": "Shockwave Therapy Certified" },
+        { "@type": "EducationalCredential", "name": "Dry Needling Certified" },
+        { "@type": "EducationalCredential", "name": "DHA-Licensed" }
       ],
-      "worksFor": {"@id": "https://vedaracare.ae/#organization"}
+      "worksFor": { "@id": "https://vedaracare.ae/#organization" }
     },
     {
       "@context": "https://schema.org",
@@ -321,12 +321,12 @@ const TennisElbowDubai = () => {
       "image": "https://vedaracare.ae/images/dr-sarah-mitchell-home-physiotherapy-dubai.webp",
       "medicalSpecialty": ["Physiotherapy", "Tendinopathy Treatment", "Ergonomics"],
       "hasCredential": [
-        {"@type": "EducationalCredential", "name": "Doctor of Physical Therapy", "alternateName": "DPT"},
-        {"@type": "EducationalCredential", "name": "Shockwave Therapy Certified"},
-        {"@type": "EducationalCredential", "name": "Dry Needling Certified"},
-        {"@type": "EducationalCredential", "name": "DHA-Licensed"}
+        { "@type": "EducationalCredential", "name": "Doctor of Physical Therapy", "alternateName": "DPT" },
+        { "@type": "EducationalCredential", "name": "Shockwave Therapy Certified" },
+        { "@type": "EducationalCredential", "name": "Dry Needling Certified" },
+        { "@type": "EducationalCredential", "name": "DHA-Licensed" }
       ],
-      "worksFor": {"@id": "https://vedaracare.ae/#organization"}
+      "worksFor": { "@id": "https://vedaracare.ae/#organization" }
     },
     {
       "@context": "https://schema.org",
@@ -336,22 +336,22 @@ const TennisElbowDubai = () => {
       "image": "https://vedaracare.ae/images/dr-rahul-mehta-home-physiotherapy-dubai.webp",
       "medicalSpecialty": ["Physiotherapy", "Tendinopathy Treatment", "Strength & Conditioning"],
       "hasCredential": [
-        {"@type": "EducationalCredential", "name": "Doctor of Physical Therapy", "alternateName": "DPT"},
-        {"@type": "EducationalCredential", "name": "CSCS"},
-        {"@type": "EducationalCredential", "name": "Shockwave Therapy Certified"},
-        {"@type": "EducationalCredential", "name": "Dry Needling Certified"},
-        {"@type": "EducationalCredential", "name": "DHA-Licensed"}
+        { "@type": "EducationalCredential", "name": "Doctor of Physical Therapy", "alternateName": "DPT" },
+        { "@type": "EducationalCredential", "name": "CSCS" },
+        { "@type": "EducationalCredential", "name": "Shockwave Therapy Certified" },
+        { "@type": "EducationalCredential", "name": "Dry Needling Certified" },
+        { "@type": "EducationalCredential", "name": "DHA-Licensed" }
       ],
-      "worksFor": {"@id": "https://vedaracare.ae/#organization"}
+      "worksFor": { "@id": "https://vedaracare.ae/#organization" }
     },
     // Insurance partners
-    {"@context": "https://schema.org", "@type": "Organization", "name": "Daman"},
-    {"@context": "https://schema.org", "@type": "Organization", "name": "AXA"},
-    {"@context": "https://schema.org", "@type": "Organization", "name": "Allianz"},
-    {"@context": "https://schema.org", "@type": "Organization", "name": "Oman Insurance"},
-    {"@context": "https://schema.org", "@type": "Organization", "name": "Now Health"},
-    {"@context": "https://schema.org", "@type": "Organization", "name": "Bupa"},
-    {"@context": "https://schema.org", "@type": "Organization", "name": "MetLife"}
+    { "@context": "https://schema.org", "@type": "Organization", "name": "Daman" },
+    { "@context": "https://schema.org", "@type": "Organization", "name": "AXA" },
+    { "@context": "https://schema.org", "@type": "Organization", "name": "Allianz" },
+    { "@context": "https://schema.org", "@type": "Organization", "name": "Oman Insurance" },
+    { "@context": "https://schema.org", "@type": "Organization", "name": "Now Health" },
+    { "@context": "https://schema.org", "@type": "Organization", "name": "Bupa" },
+    { "@context": "https://schema.org", "@type": "Organization", "name": "MetLife" }
   ];
 
   return (
@@ -380,15 +380,15 @@ const TennisElbowDubai = () => {
         ))}
       </Head>
 
-      <AyurvedaHero 
+      <AyurvedaHero
         {...tennisElbowHero}
         patientsTreated={tennisElbowHero.patientsTreated}
       />
-      
-      <AyurvedaIntro 
+
+      <AyurvedaIntro
         {...tennisElbowIntro}
       />
-      
+
       <SciaticaTreatment
         data={tennisElbowSciaticaSection1}
         showBorderLeft={false}
@@ -397,7 +397,7 @@ const TennisElbowDubai = () => {
         showStepNumbers={false}
       />
 
-      <SportsInjuryTypes 
+      <SportsInjuryTypes
         {...tennisElbowTypes}
         bgColor="rgb(255, 255, 255)"
         description={tennisElbowTypes.description}
@@ -413,9 +413,9 @@ const TennisElbowDubai = () => {
         showStepNumbers={false}
       />
 
-      
 
-      <TennisElbowRecoveryTimeline 
+
+      <TennisElbowRecoveryTimeline
         {...tennisElbowRecoveryTimeline}
       />
 
@@ -427,7 +427,7 @@ const TennisElbowDubai = () => {
         showComparison={true}
       />
 
-      <TreatmentReviews 
+      <TreatmentReviews
         bgColor="bg-white"
         label={tennisElbowReviews.label}
         title={tennisElbowReviews.title}
@@ -436,7 +436,7 @@ const TennisElbowDubai = () => {
         useKneeStyleBgColor="bg-white"
       />
 
-      <PhysiotherapyTeam 
+      <PhysiotherapyTeam
         bgColor="bg-[#F8F4EE]"
         cardColor="bg-white"
         {...tennisElbowTeam}
@@ -466,9 +466,7 @@ const TennisElbowDubai = () => {
             ))}
           </div>
 
-          <p className="text-center mb-8" style={{ color: 'rgb(107, 107, 107)', lineHeight: '1.7', fontSize: '14px' }}>
-            {tennisElbowPricing.insuranceText}
-          </p>
+          <p className="text-center mb-8" style={{ color: 'rgb(107, 107, 107)', lineHeight: '1.7', fontSize: '14px' }} dangerouslySetInnerHTML={{ __html: tennisElbowPricing.insuranceText }} />
           <div className="flex flex-wrap justify-center gap-3">
             {tennisElbowPricing.insurances && tennisElbowPricing.insurances.map((insurer, index) => (
               <span key={index} className="bg-[#FAF8F5] px-4 py-2 rounded-full text-xs border border-[#E5DFD3]" style={{ color: 'rgb(107, 107, 107)' }}>
@@ -481,11 +479,11 @@ const TennisElbowDubai = () => {
 
       <FAQ {...tennisElbowFaqs} />
 
-      <TreatmentLocation 
+      <TreatmentLocation
         {...tennisElbowLocation}
       />
 
-      <FinalCTA 
+      <FinalCTA
         {...tennisElbowCTA}
         title="Most tennis elbow resolves with evidence-based loading protocols."
       />
@@ -494,7 +492,6 @@ const TennisElbowDubai = () => {
     </>
   );
 };
-  
 
 
 export default TennisElbowDubai;

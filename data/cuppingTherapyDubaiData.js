@@ -8,7 +8,8 @@ export const cuppingTherapyHero = {
   title: "Cupping therapy in Dubai. Dry cupping, massage cupping, and Hijama. Evidence-balanced clinical care.",
   description: "Specialist cupping therapy at our Jumeirah Village Circle (JVC) clinic, walking distance from Circle Mall. We offer dry cupping (static and dynamic), massage cupping, and where applicable Hijama (wet cupping) — each with distinct applications and traditions. DHA-licensed practitioners, sterile single-use equipment, transparent about evidence and limitations, with deep cultural respect for Hijama's significance in Islamic tradition.",
   primaryCTA: "Book Cupping Assessment",
-  secondaryCTA: "Understand Cupping Types",
+  secondaryCTA: "Chat on WhatsApp",
+  secondaryCTAHref: "https://wa.me/971555867466?text=Hello%20Vedara%20Care,%20I%20would%20like%20to%20inquire%20about%20cupping%20therapy%20and%20book%20a%20consultation.",
   trustSignals: [
     "DHA-licensed practitioners",
     "Sterile single-use equipment",
@@ -60,10 +61,6 @@ export const cuppingTherapyWhatIs = {
         {
           title: "The evidence base — honest positioning",
           description: "Cupping has moderate research evidence for certain musculoskeletal applications: chronic neck pain, chronic lower back pain, and certain sports recovery contexts. Evidence is less clear for systemic claims. We use cupping where evidence supports application, and we are honest about limitations. Cupping is not appropriate for all patients; comprehensive assessment guides appropriate use."
-        },
-        {
-          title: "",
-          description: ""
         }
       ],
       footer: "Cupping has been practiced for millennia across many cultures and continues to be used widely. Modern clinical practice combines respect for traditional applications with honest assessment of current evidence."
@@ -72,7 +69,7 @@ export const cuppingTherapyWhatIs = {
       image: "/images/hijama-sunnah-practice-vedara.webp",
       alt: "Cupping types dry massage Hijama educational illustration",
       label: "COMMON CLINICAL APPLICATIONS",
-      description: "Chronic muscle tension in back, shoulders, and neck. Sports recovery — trigger point treatment. Office worker shoulder tension. Office worker shoulder and upper back tension. Fibromyalgia-related muscle tension."
+      description: "Chronic muscle tension in back, shoulders, and neck. Sports recovery and trigger point treatment. Office worker shoulder and upper back tension. Fibromyalgia-related muscle tension."
     }
   },
   bgColor: "bg-[#EDE5D8]"
@@ -106,7 +103,8 @@ export const cuppingTherapyReviews = {
     { value: "DHA", label: "licensed practitioners" },
     { value: "100%", label: "sterile single-use equipment" }
   ],
-  buttonText: "Read All Cupping Therapy Reviews"
+  buttonText: "Read All Cupping Therapy Reviews",
+  buttonHref: "https://www.google.com/maps/search/?api=1&query=Vedara%20Care%20Polyclinic%20JVC%20Dubai"
 };
 
 export const cuppingTherapyFaqs = {
@@ -131,7 +129,7 @@ export const cuppingTherapyFaqs = {
     },
     {
       question: "Do you offer Hijama?",
-      answer: 'Yes — Hijama is available at our clinic, performed with sterile single-use equipment and complete respect for both clinical safety and religious significance. We can accommodate traditional Sunnah days for scheduling. <a href="https://wa.me/971555867466" target="_blank" rel="noopener noreferrer" class="hover:underline">WhatsApp +971 55 586 7466</a> for specific availability and scheduling.'
+      answer: 'Yes — Hijama is available at our clinic, performed with sterile single-use equipment and complete respect for both clinical safety and religious significance. We can accommodate traditional Sunnah days for scheduling. <a href="https://wa.me/971555867466?text=Hello%20Vedara%20Care,%20I%20would%20like%20to%20inquire%20about%20Hijama%20scheduling." target="_blank" rel="noopener noreferrer" class="hover:underline">WhatsApp +971 55 586 7466</a> for specific availability and scheduling.'
     },
     {
       question: "Does cupping hurt?",
@@ -199,7 +197,7 @@ export const cuppingTherapyFaqs = {
     },
      {
       question: "How do I book a cupping appointment?",
-      answer: 'Three ways: (1) <a href="https://wa.me/971555867466" target="_blank" rel="noopener noreferrer" class="hover:underline">WhatsApp +971 55 586 7466</a> — fastest response, ideal for asking specific questions about which type of cupping would suit you. (2) Call +971 55 586 7466 — direct booking, available 9 AM to 9 PM seven days a week. (3) Book online through our website. For Hijama specifically, inquire about availability and Sunnah days scheduling. Please bring: any relevant medical reports, current medication list, insurance card if applicable, and comfortable clothing allowing access to treatment areas.'
+      answer: 'Three ways: (1) <a href="https://wa.me/971555867466?text=Hello%20Vedara%20Care,%20I%20would%20like%20to%20book%20a%20cupping%20appointment." target="_blank" rel="noopener noreferrer" class="hover:underline">WhatsApp +971 55 586 7466</a> — fastest response, ideal for asking specific questions about which type of cupping would suit you. (2) Call <a href="tel:+971555867466" class="hover:underline">+971 55 586 7466</a> — direct booking, available 9 AM to 9 PM seven days a week. (3) Book online through our website. For Hijama specifically, inquire about availability and Sunnah days scheduling. Please bring: any relevant medical reports, current medication list, insurance card if applicable, and comfortable clothing allowing access to treatment areas.'
     },
     
   ]
@@ -214,7 +212,10 @@ export const cuppingTherapyLocation = {
   whatsapp: "+971 55 586 7466",
   hours: "Saturday – Sunday: 8:30 am to 11:30 pm",
   landmarks: [
-    
+    "Walking distance from Circle Mall",
+    "3 min from FIVE Jumeirah Village",
+    "5 min from JSS Private School",
+    "Free patient parking"
   ],
   description: "Our JVC clinic has dedicated treatment rooms suitable for cupping, sterile environments meeting DHA standards, separate facilities for Hijama where offered (with sterile single-use equipment protocols), and the broader physiotherapy facilities for integrated treatment. Modesty and privacy preferences accommodated throughout.",
   buttonText: "Book Cupping Assessment",
@@ -279,7 +280,7 @@ export const cuppingTherapyConditions = {
       techniques: "Hijama (wet cupping)"
     }
   ],
-  footerNote: "Cupping may help your specific condition — comprehensive assessment determines whether it is appropriate and which type is most suitable. Book an assessment →"
+  footerNote: "Cupping may help your specific condition — comprehensive assessment determines whether it is appropriate and which type is most suitable. <a href=\"/book\" class=\"text-[#C9A55A] hover:underline\">Book an assessment →</a>"
 };
 
 export const cuppingTherapySession = {
@@ -294,15 +295,15 @@ export const cuppingTherapySession = {
     },
     {
       title: "The initial assessment",
-      content: "Before cupping treatment, comprehensive assessment determines which cupping is appropriate for your specific situation, which types would be most suitable, and how it integrates with broader treatment. This includes history-taking, identification of treatment areas, contraindication screening, discussion of what to expect including stating, validation of treatment consent."
+      content: "Before cupping treatment, comprehensive assessment determines which cupping is appropriate for your specific situation, which types would be most suitable, and how it integrates with broader treatment. This includes history-taking, identification of treatment areas, contraindication screening, discussion of what to expect, and obtaining informed consent."
     },
     {
       title: "The cupping treatment itself",
-      content: "For dry cupping treatment, cups are applied to specific areas, suction is created, cups are in place for 2-10 minutes. For massage cupping, cups are applied to oiled areas, suction with reduced intensity, cups are moved across treatment areas. For Hijama, a clean area, single-use equipment, cups reapplied, suction and discard of straws."
+      content: "For dry cupping treatment, cups are applied to specific areas, suction is created, cups are in place for 2-10 minutes. For massage cupping, cups are applied to oiled areas, suction with reduced intensity, cups are moved across treatment areas. For Hijama, a clean area is prepared, sterile single-use equipment is used, cups are applied, small incisions are made, and suction is applied. All clinical materials are then safely disposed of."
     },
     {
       title: "What it feels like",
-      content: "Most patients describe cupping as pulling or drawing sensation as suction is applied, sometimes brief intensity with stronger cupping, generally comfortable during treatment, sometimes increasing tolerance with repeated cupping sessions. Some find it quite relaxing, many use it specifically for relaxation purposes. Hijama involves the additional brief sharp sensation of small incisions — typically much less uncomfortable than patients expect."
+      content: "Most patients describe cupping as pulling or drawing sensation as suction is applied, sometimes brief intensity with stronger cupping, generally comfortable during treatment, sometimes increasing tolerance with repeated cupping sessions. Some find it quite relaxing, many use it specifically for relaxation purposes. Hijama involves the brief sharp sensation of small incisions — typically much less uncomfortable than patients expect."
     },
     {
       title: "The visible marks — important to know",
@@ -310,7 +311,7 @@ export const cuppingTherapySession = {
     },
     {
       title: "After the session",
-      content: "Common post-treatment experiences: mild soreness in treated areas for 24-48 hours (normal), visible marks as discussed, for some patients, mild fatigue or relaxation, brief lightheadedness. Hijama patients would avoid heavy activity for 24 hours, keep incision sites clean and dry for first day. Cupping marks can wait anywhere from a few hours to several days, avoiding heavy activity for 24 hours."
+      content: "Common post-treatment experiences: mild soreness in treated areas for 24-48 hours (normal), visible marks as discussed, and for some patients, mild fatigue or deep relaxation. After Hijama: avoid heavy exercise/activity for 24 hours, keep incision sites clean and dry, and avoid swimming or hot tubs until fully healed."
     },
     {
       title: "How many sessions are needed",
@@ -557,6 +558,6 @@ export const cuppingTherapyPricing = {
     { name: "Chronic pain cupping programme (6 sessions)", price: "AED 1,200", bg: "#FAF7F2" },
     { name: "Cupping integrated into physiotherapy programme (variable)", price: "From AED 1,500", bg: "#FFFFFF" }
   ],
-  insuranceNote: "Insurance coverage for cupping varies by plan and condition — many insurance plans do not cover cupping as standalone treatment but may cover it when integrated with physiotherapy treatment for specific conditions. Hijama is typically not covered by insurance plans. We are direct-billing partners with Daman, AXA, Allianz, Oman Insurance, Now Health, Bupa, and MetLife for physiotherapy services. <a href=\"https://wa.me/971500000000\" style=\"color: #C9A84C; text-decoration: underline; font-weight: 600;\">WhatsApp for coverage discussion</a>.",
+  insuranceNote: "Insurance coverage for cupping varies by plan and condition — many insurance plans do not cover cupping as standalone treatment but may cover it when integrated with physiotherapy treatment for specific conditions. Hijama is typically not covered by insurance plans. We are direct-billing partners with Daman, AXA, Allianz, Oman Insurance, Now Health, Bupa, and MetLife for physiotherapy services. <a href=\"https://wa.me/971555867466\" style=\"color: #C9A84C; text-decoration: underline; font-weight: 600;\">WhatsApp for coverage discussion</a>.",
   insurers: []
 };

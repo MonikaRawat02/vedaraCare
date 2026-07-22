@@ -128,7 +128,7 @@ export const HomePhysiotherapy = ({ data }) => {
 
                 <div>
                   <h4 className="text-[13px] font-sans font-medium text-[#1A1A1A] mb-2">Booking:</h4>
-                  <p className="text-[12px] font-sans text-[#6B6B6B]">{data.sidebar.booking}</p>
+                  <p className="text-[12px] font-sans text-[#6B6B6B]" dangerouslySetInnerHTML={{ __html: data.sidebar.booking }} />
                 </div>
               </div>
 
@@ -192,9 +192,7 @@ export const TransparentPricing = ({ data }) => {
           ))}
         </div>
 
-        <p className="mt-12 text-[13px] font-sans text-[#6B6B6B] text-center leading-relaxed max-w-3xl mx-auto">
-          {data.footer}
-        </p>
+        <p className="mt-12 text-[13px] font-sans text-[#6B6B6B] text-center leading-relaxed max-w-3xl mx-auto" dangerouslySetInnerHTML={{ __html: data.footer }} />
       </div>
     </section>
   );
@@ -276,12 +274,10 @@ export const InsuranceCoverage = ({ data }) => {
               <div key={idx}>
                 {item.title ? (
                   <p className="text-[16px] font-sans leading-[1.8] text-[#717182]">
-                    <strong className="text-[#1A1A1A] font-semibold">{item.title}</strong> {item.text}
+                    <strong className="text-[#1A1A1A] font-semibold">{item.title}</strong> <span dangerouslySetInnerHTML={{ __html: item.text }} />
                   </p>
                 ) : (
-                  <p className="text-[16px] font-sans leading-[1.8] text-[#717182]">
-                    {item.text}
-                  </p>
+                  <p className="text-[16px] font-sans leading-[1.8] text-[#717182]" dangerouslySetInnerHTML={{ __html: item.text }} />
                 )}
               </div>
             ))}
@@ -300,9 +296,7 @@ export const InsuranceCoverage = ({ data }) => {
               ))}
             </div>
 
-            <p className="text-[13px] font-sans text-[#6B6B6B] leading-relaxed mb-8">
-              {data.sidebar.text}
-            </p>
+            <p className="text-[13px] font-sans text-[#6B6B6B] leading-relaxed mb-8" dangerouslySetInnerHTML={{ __html: data.sidebar.text }} />
 
             <a href={data.sidebar.buttonHref} target="_blank" rel="noopener noreferrer" className="w-full bg-[#25D366] text-white py-4 rounded-md font-sans font-bold text-[15px] hover:bg-[#20bd5b] transition-colors flex items-center justify-center gap-2">
               <MessageCircle size={20} fill="currentColor" />
@@ -356,8 +350,16 @@ export const WhereWeWork = ({ data }) => {
                 <div>
                   <h4 className="text-[15px] font-sans font-medium text-[#1A1A1A] mb-1">Contact</h4>
                   <div className="space-y-0.5">
-                    <p className="text-[14px] font-sans text-[#6B6B6B]">{data.details.phone}</p>
-                    <p className="text-[14px] font-sans text-[#6B6B6B]">{data.details.email}</p>
+                    <p className="text-[14px] font-sans text-[#6B6B6B]">
+                      <a href={`tel:${data.details.phone.replace(/\s+/g, '')}`} className="hover:underline">
+                        {data.details.phone}
+                      </a>
+                    </p>
+                    <p className="text-[14px] font-sans text-[#6B6B6B]">
+                      <a href={`mailto:${data.details.email}`} className="hover:underline">
+                        {data.details.email}
+                      </a>
+                    </p>
                   </div>
                 </div>
               </div>

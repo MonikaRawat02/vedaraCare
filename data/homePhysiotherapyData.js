@@ -8,7 +8,9 @@ export const homePhysioHero = {
   title: "Physiotherapy at home in Dubai. The same expertise. At your door.",
   description: "DPT-qualified physiotherapists from our Jumeirah Village Circle (JVC) clinic, travelling to your home across Dubai. Same specialised expertise as our clinic — post-surgical recovery, neurological rehabilitation, pelvic floor physiotherapy, sports injuries, paediatric care, geriatric mobility — delivered in your home environment. Often more therapeutically valuable than clinic-based care for patients who cannot easily travel.",
   primaryCTA: "Book a Home Physiotherapy ",
+  primaryCTAHref: "/book",
   secondaryCTA: "WhatsApp us",
+  secondaryCTAHref: "https://wa.me/971555867466?text=Hello%20Vedara%20Care,%20I%20would%20like%20to%20inquire%20about%20Home%20Physiotherapy%20services.",
   trustSignals: [
     "DPT-qualified specialised physiotherapists",
     "Across all major Dubai neighbourhoods",
@@ -240,8 +242,8 @@ export const homePhysioBookingLogistics = {
     {
       title: "Initial Contact and Information",
       items: [
-        "Contact via WhatsApp +971 4 XXX XXX — fastest, typically 15-minute response during business hours",
-        "Phone +971 4 XXX XXX — direct booking, available 9 AM to 9 PM seven days a week",
+        "Contact via WhatsApp +971 55 586 7466 — fastest, typically 15-minute response during business hours",
+        "Phone +971 55 586 7466 — direct booking, available 9 AM to 9 PM seven days a week",
         "Provide: your full address, brief description of your condition, insurance information, preferred timing",
         "We respond with appropriate therapist match, available appointment times, pricing confirmation, and pre-session guidance",
         "Initial appointment scheduling typically takes 30 minutes to a few hours"
@@ -270,8 +272,8 @@ export const homePhysioBookingLogistics = {
     }
   ],
   buttons: [
-    { text: "Book Home Physiotherapy", variant: "primary" },
-    { text: "WhatsApp us", variant: "whatsapp" }
+    { text: "Book Home Physiotherapy", variant: "primary", link: "/book" },
+    { text: "WhatsApp us", variant: "whatsapp", link: "https://wa.me/971555867466?text=Hi,%20I%27d%20like%20to%20book%20a%20home%20physiotherapy%20session." }
   ]
 };
 
@@ -378,7 +380,8 @@ export const homePhysioOutcomes = {
     { value: "92%", label: "complete their full home programme" },
     { value: "160+", label: "home physiotherapy reviews" }
   ],
-  buttonText: "Read All Home Physiotherapy Reviews →"
+  buttonText: "Read All Home Physiotherapy Reviews →",
+  buttonHref: "https://www.google.com/maps/search/?api=1&query=Vedara+Care+Polyclinic+JVC+Dubai"
 };
 
  
@@ -392,6 +395,7 @@ export const homePhysioFaqs = {
   title: "What patients ask about home physiotherapy in Dubai.",
   description: "For specialisation-specific questions, see our individual physiotherapy pages.",
   buttonText: "Ask Our Home Physio Team on WhatsApp",
+  buttonHref: "https://wa.me/971555867466?text=Hi,%20I%20have%20a%20question%20about%20Home%20Physiotherapy%20services.",
   faqs: [
     {
       question: "Is home physiotherapy the same quality as clinic-based care?",
@@ -404,10 +408,10 @@ export const homePhysioFaqs = {
       answer: "Yes — post-surgical home physiotherapy is one of our most-utilised services. Particularly common in the first 2–4 weeks after total knee replacement, total hip replacement, ACL reconstruction, spinal surgery, or other procedures when travel is impractical. We typically begin within 24–72 hours of surgical discharge. Coordination with your operating surgeon throughout. Many patients transition from home to clinic visits around weeks 3–6 as mobility improves." },
     {
       question: "Do you do home physiotherapy across all of Dubai?",
-      answer: "We cover all major Dubai neighbourhoods. Standard service area: JVC, JVT, Al Barsha South, Sports City, Motor City, Arjan, Dubai Hills, Marina, Downtown, Palm Jumeirah, Mirdif, Al Furjan, Discovery Gardens, Damac Hills, Mudon, Town Square, JBR, Business Bay. For more distant locations (Silicon Oasis, Al Warqa, International City, Academic City), service is available but with additional travel surcharge. WhatsApp +971 4 300 0000 with your address to confirm service availability."  },
+      answer: "We cover all major Dubai neighbourhoods. Standard service area: JVC, JVT, Al Barsha South, Sports City, Motor City, Arjan, Dubai Hills, Marina, Downtown, Palm Jumeirah, Mirdif, Al Furjan, Discovery Gardens, Damac Hills, Mudon, Town Square, JBR, Business Bay. For more distant locations (Silicon Oasis, Al Warqa, International City, Academic City), service is available but with additional travel surcharge. WhatsApp +971 55 586 7466 with your address to confirm service availability."  },
     {
       question: "How quickly can I get a home physiotherapy appointment?",
-      answer: "Same-week appointments are typical for most home physiotherapy bookings. For urgent post-hospital-discharge situations or acute injuries, same-day or next-day appointments are often available. WhatsApp +971 4 300 0000 for fastest response — typically within 15 minutes during business hours. For routine elective home physiotherapy, 2–5 day lead time is typical."   },
+      answer: "Same-week appointments are typical for most home physiotherapy bookings. For urgent post-hospital-discharge situations or acute injuries, same-day or next-day appointments are often available. WhatsApp +971 55 586 7466 for fastest response — typically within 15 minutes during business hours. For routine elective home physiotherapy, 2–5 day lead time is typical."   },
     {
       question: "What does home physiotherapy cost?",
       answer: "Standard home physiotherapy session: AED 450 (compared to AED 320 for the same session at our clinic). The home premium reflects therapist travel time and operational costs. Same-day urgent visits may have a small premium. Distant locations (40+ minutes travel each way) may have a travel surcharge. Multi-session packages provide discounted per-session rates."  },
@@ -457,7 +461,7 @@ answer:"We understand that home physiotherapy patients (particularly elderly, po
 },
 {
   question: "How do I book home physiotherapy?",
-  answer:"Three ways: (1) WhatsApp +971 4 300 0000 — fastest response, ideal for sending medical records, hospital discharge summaries, or insurance card details. (2) Call +971 4 300 0001 — direct booking, available 9 AM to 9 PM seven days a week. (3) Book online through our website. For your first appointment, please provide: your full address, brief description of your condition, any recent medical reports or hospital discharge summaries, current medication list, insurance card details if applicable, and preferred appointment times."
+  answer:"Three ways: (1) WhatsApp +971 55 586 7466 — fastest response, ideal for sending medical records, hospital discharge summaries, or insurance card details. (2) Call +971 55 586 7466 — direct booking, available 9 AM to 9 PM seven days a week. (3) Book online through our website. For your first appointment, please provide: your full address, brief description of your condition, any recent medical reports or hospital discharge summaries, current medication list, insurance card details if applicable, and preferred appointment times."
 }
     ]
 };
@@ -503,7 +507,7 @@ export const homePhysioClinicTransition = {
     { text: "Visit Our JVC Clinic", variant: "primary", link: "/physiotherapy-jvc/" },
     { text: "Read about our JVC physiotherapy clinic →", variant: "link", link: "/physiotherapy-jvc/" }
   ],
-  image: "/images/home-physiotherapy-to-clinic-dubai.webp",
+  image: "/images/physiotherapy-dubai-clinic-vedara-jvc.webp",
   alt: "Vedara Care JVC clinic location Jumeirah Village Circle Dubai"
 };
 
@@ -513,7 +517,9 @@ export const homePhysioFinalCTA = {
   title: "Specialised physiotherapy — delivered to your door, across Dubai.",
   description: 'Whether you are recovering from recent surgery, managing a chronic condition, supporting an elderly parent, recovering postpartum, or experiencing acute pain that makes clinic travel impractical — home physiotherapy can begin within days. <a href="https://wa.me/971555867466" target="_blank" rel="noopener noreferrer" class="hover:underline">WhatsApp us</a> for fastest response (typically within 15 minutes during business hours), call us, or book online.',
   button1Text: "Book a Home Physiotherapy",
+  button1Href: "/book",
   button2Text: "WhatsApp us",
+  button2Href: "https://wa.me/971555867466?text=Hi,%20I%27d%20like%20to%20book%20a%20home%20physiotherapy%20session.",
   button1BgColor: "#1A4D2E",
   button2BgColor: "#22C55E",
   button2TextColor: "#22C55E",

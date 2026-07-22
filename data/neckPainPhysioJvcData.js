@@ -105,7 +105,7 @@ export const neckPainConditions = {
       typicalSigns: "Worse at end of working day, related to work patterns, may improve over weekends"
     }
   ],
-  footer: "Not sure which pattern matches your neck pain? Book an assessment for accurate diagnosis →"
+  footer: "Not sure which pattern matches your neck pain? <a href=\"/book\" class=\"text-[#C9A55A] hover:underline\">Book an assessment for accurate diagnosis →</a>"
 };
 
 export const neckPainShouldYouSee = {

@@ -356,7 +356,7 @@ export const sportsPhysiotherapyFaqs = {
   faqs: [
     {
       question: "Can I get a same-day appointment for an acute sports injury?",
-      answer: 'Yes — same-day appointments are typically available for acute sports injuries at our JVC clinic. <a href="https://wa.me/971555867466" target="_blank" rel="noopener noreferrer" class="hover:underline">WhatsApp +971 55 586 7466</a> for fastest response (typically within 15 minutes during business hours), or call +971 55 586 7466 directly. Saturday and evening appointments are also available for working patients. For very severe acute injuries with suspected fracture, severe deformity, neurological symptoms, or inability to weight-bear, A&E evaluation comes first, then physiotherapy follow-up.' },
+      answer: 'Yes — same-day appointments are typically available for acute sports injuries at our JVC clinic. <a href="https://wa.me/971555867466?text=Hello%20Vedara%20Care,%20I%20have%20an%20acute%20sports%20injury%20and%20would%20like%20to%20request%20a%20same-day%20appointment." target="_blank" rel="noopener noreferrer" class="hover:underline">WhatsApp +971 55 586 7466</a> for fastest response (typically within 15 minutes during business hours), or call +971 55 586 7466 directly. Saturday and evening appointments are also available for working patients. For very severe acute injuries with suspected fracture, severe deformity, neurological symptoms, or inability to weight-bear, A&E evaluation comes first, then physiotherapy follow-up.' },
     {
       question: "What is the difference between sports physiotherapy and general physiotherapy?",
       answer: "Sports physiotherapy is specialised for active patients — different examination techniques, sport-specific exercise prescription, biomechanical analysis, return-to-sport testing, and prevention programmes. General physiotherapy may treat sports injuries but typically lacks the sport-specific progression protocols and return-to-sport criteria that prevent re-injury. For competitive athletes, recreational sportspeople with significant training volume, or anyone returning to a specific sport after injury, sports physiotherapy is meaningfully different."  },
@@ -424,7 +424,7 @@ answer:"Yes — performance optimisation is offered for active patients without 
  
 {
   question:"How do  I book a sports physiotherapy appointment?",
-  answer:'Three ways: (1) <a href="https://wa.me/971555867466" target="_blank" rel="noopener noreferrer" class="hover:underline">WhatsApp +971 55 586 7466</a> — fastest response, ideal for sending injury photos, MRI images, or surgical reports. (2) Call +971 55 586 7466 — direct booking, available 9 AM to 9 PM seven days a week. (3) Book online via the button above. For your first appointment, please bring: any imaging (MRI, X-rays, ultrasound), surgical reports if applicable, current medication list, your sports schedule (competitive calendar if relevant), and insurance card.'}
+  answer:'Three ways: (1) <a href="https://wa.me/971555867466?text=Hello%20Vedara%20Care,%20I%27d%20like%20to%20book%20a%20sports%20physiotherapy%20appointment." target="_blank" rel="noopener noreferrer" class="hover:underline">WhatsApp +971 55 586 7466</a> — fastest response, ideal for sending injury photos, MRI images, or surgical reports. (2) Call +971 55 586 7466 — direct booking, available 9 AM to 9 PM seven days a week. (3) Book online via the button above. For your first appointment, please bring: any imaging (MRI, X-rays, ultrasound), surgical reports if applicable, current medication list, your sports schedule (competitive calendar if relevant), and insurance card.'}
 
 
   ]
@@ -479,17 +479,23 @@ export const sportsPhysiotherapyInjuryTypes = {
     {
       title: 'Padel Elbow / Tennis Elbow',
       subtitle: 'Lateral epicondylitis',
-      description: 'Pain on the outer elbow, often from racquet sports. Manual therapy, dry needling, eccentric loading protocols.'
+      description: 'Pain on the outer elbow, often from racquet sports. Manual therapy, dry needling, eccentric loading protocols.',
+      linkHref: "/conditions/tennis-elbow-dubai/",
+      linkText: "Learn more about tennis elbow →"
     },
     {
       title: "Golfer's Elbow",
       subtitle: 'Medial epicondylitis',
-      description: 'Pain on the inner elbow. Similar treatment approach to lateral epicondylitis with sport-specific modifications.'
+      description: 'Pain on the inner elbow. Similar treatment approach to lateral epicondylitis with sport-specific modifications.',
+      linkHref: "/conditions/tennis-elbow-dubai/",
+      linkText: "Learn more about elbow recovery →"
     },
     {
       title: 'Rotator Cuff Injuries',
       subtitle: 'Supraspinatus tendinopathy, partial tears, impingement',
-      description: 'Shoulder pain particularly with overhead movement. Sport-specific in padel, tennis, swimming, gym training.'
+      description: 'Shoulder pain particularly with overhead movement. Sport-specific in padel, tennis, swimming, gym training.',
+      linkHref: "/conditions/shoulder-pain-physiotherapy-dubai/",
+      linkText: "Learn more about shoulder physiotherapy →"
     },
     {
       title: 'ACL Injuries & Reconstruction Recovery',
@@ -514,7 +520,9 @@ export const sportsPhysiotherapyInjuryTypes = {
     {
       title: "Runner's Knee",
       subtitle: 'Patellofemoral pain syndrome',
-      description: 'Anterior knee pain in runners. Often biomechanical — addressed through specific exercise prescription and gait analysis.'
+      description: 'Anterior knee pain in runners. Often biomechanical — addressed through specific exercise prescription and gait analysis.',
+      linkHref: "/conditions/knee-pain-physiotherapy-dubai/",
+      linkText: "Learn more about knee physiotherapy →"
     },
     {
       title: 'IT Band Syndrome',
@@ -534,10 +542,12 @@ export const sportsPhysiotherapyInjuryTypes = {
     {
       title: 'Lower Back Strains',
       subtitle: 'Acute and chronic mechanical low back pain',
-      description: 'Common across nearly all sports. Specific protocols depending on sport-specific demands and injury mechanism.'
+      description: 'Common across nearly all sports. Specific protocols depending on sport-specific demands and injury mechanism.',
+      linkHref: "/conditions/back-pain-physiotherapy-jvc/",
+      linkText: "Learn more about back physiotherapy →"
     }
   ],
-  footer: 'Did not find your injury? <a href="https://wa.me/971555867466?text=Hello%20Vedara%20Care,%20I%27d%20like%20to%20inquire%20about%20treatment%20for%20my%20sports%20injury." className="underline hover:opacity-70 transition-opacity" style={{ color: "rgb(27, 67, 50)" }}>Contact us — we treat the full range of sports injuries →</a>'
+  footer: 'Did not find your injury? <a href="https://wa.me/971555867466?text=Hello%20Vedara%20Care,%20I%27d%20like%20to%20inquire%20about%20treatment%20for%20my%20sports%20injury." class="underline hover:opacity-70 transition-opacity" style="color: rgb(27, 67, 50);">Contact us — we treat the full range of sports injuries →</a>'
 };
 
 export const sportsPhysiotherapyInsurance = {

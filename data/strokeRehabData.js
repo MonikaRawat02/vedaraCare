@@ -26,8 +26,8 @@ export const strokeRehabHero = {
 export const strokeRehabIntro = {
   label: "THE QUICK ANSWER",
   title: "Post-stroke rehabilitation at Vedara Care, in one paragraph.",
-  blockquote: "Post-stroke rehabilitation at Vedara Care Polyclinic in Jumeirah Village Circle (JVC), Dubai — walking distance from Circle Mall — and across Dubai through our home physiotherapy service is evidence-based specialist neurorehabilitation delivered by DPT-qualified physiotherapists with specific stroke rehabilitation training. We treat ischaemic stroke recovery, haemorrhagic stroke recovery, transient ischaemic attack (TIA) recovery, brainstem stroke recovery, and cerebellar stroke recovery. Our approach uses current evidence-based protocols: constraint-induced movement therapy (CIMT) for upper limb hemiparesis, mirror therapy for motor recovery, functional electrical stimulation (FES) for foot drop and upper limb function, task-specific training for daily activities, body weight supported gait training, spasticity management coordination with your treating neurologist, balance retraining for falls prevention, and family caregiver education throughout. Care is delivered at our JVC clinic, at your home across Dubai, or in combination as recovery progresses. Initial assessment from AED [X]; structured programmes from AED [X]. Insurance direct-billing with seven major insurers.",
-  footer: "Medically reviewed by [Lead Neurological Physiotherapist Name], DPT, DHA-Licensed · Last updated June 2026"
+  blockquote: "Post-stroke rehabilitation at Vedara Care Polyclinic in Jumeirah Village Circle (JVC), Dubai — walking distance from Circle Mall — and across Dubai through our home physiotherapy service is evidence-based specialist neurorehabilitation delivered by DPT-qualified physiotherapists with specific stroke rehabilitation training. We treat ischaemic stroke recovery, haemorrhagic stroke recovery, transient ischaemic attack (TIA) recovery, brainstem stroke recovery, and cerebellar stroke recovery. Our approach uses current evidence-based protocols: constraint-induced movement therapy (CIMT) for upper limb hemiparesis, mirror therapy for motor recovery, functional electrical stimulation (FES) for foot drop and upper limb function, task-specific training for daily activities, body weight supported gait training, spasticity management coordination with your treating neurologist, balance retraining for falls prevention, and family caregiver education throughout. Care is delivered at our JVC clinic, at your home across Dubai, or in combination as recovery progresses. Initial assessment from AED 450; structured programmes from AED 3,800. Insurance direct-billing with seven major insurers.",
+  footer: "Medically reviewed by Dr. Sarah Al-Mansoori, DPT, DHA-Licensed · Last updated June 2026"
 };
 
 export const strokeRehabRecovery = {
@@ -144,7 +144,7 @@ export const strokeRehabTreatment = {
     intro: "",
     steps: [
       {
-       description: "Modern stroke rehabilitation has evolved substantially over the past two decades. The brain's capacity for neuroplasticity applies to recovery in important ways. Our approach systematically applies these evidence-based methods."
+        description: "Modern stroke rehabilitation has evolved substantially over the past two decades. The brain's capacity for neuroplasticity applies to recovery in important ways. Our approach systematically applies these evidence-based methods."
       },
       {
         title: "Comprehensive Initial Assessment",
@@ -263,7 +263,7 @@ export const strokeRehabCTA = {
   button1Href: "/book",
   button2Text: "WhatsApp us",
   button2Href: "https://wa.me/971555867466?text=Hello%20Vedara%20Care,%20I%20would%20like%20to%20inquire%20about%20stroke%20rehabilitation%20and%20book%20a%20consultation.",
-  footer: "Initial assessment from AED [X] · JVC clinic + home across Dubai · DPT-qualified neurorehabilitation specialists · Hospital discharge coordination · Insurance direct-billing · Cultural and language sensitivity"
+  footer: "Initial assessment from AED 450 · JVC clinic + home across Dubai · DPT-qualified neurorehabilitation specialists · Hospital discharge coordination · Insurance direct-billing · Cultural and language sensitivity"
 };
 
 export const strokeRehabLocation = {
@@ -394,7 +394,7 @@ export const strokeRehabTeam = {
     {
       name: "Dr. Sarah Al-Mansoori, DPT",
       qualification: "DHA-Licensed · Neurorehabilitation Specialist",
-      specialties: ["CIMT", "Gait Training", "FES","Stroke Rehabilitation"],
+      specialties: ["CIMT", "Gait Training", "FES", "Stroke Rehabilitation"],
       experience: "7 years specialising in post-stroke rehabilitation. MSc Neurorehabilitation, University of Birmingham.",
       languages: ["Arabic", "English"],
       image: "/images/dr-sarah-al-mansoori.webp",
@@ -414,7 +414,7 @@ export const strokeRehabTeam = {
     {
       name: "Dr. Omar Hassan, DPT",
       qualification: "DHA-Licensed · Neurorehabilitation Specialist",
-      specialties: ["FES", "High-Intensity Gait Training", "Spasticity Management" , "CIMT"],
+      specialties: ["FES", "High-Intensity Gait Training", "Spasticity Management", "CIMT"],
       experience: "6 years post-stroke rehabilitation experience, certified FES clinician. Bobath approach trained.",
       languages: ["Arabic", "English", "French"],
       image: "/images/dr-omar-hassan.webp",
@@ -549,8 +549,8 @@ export const strokeRehabCoordinatedCare = {
   description: "Stroke rehabilitation works best when integrated with the broader medical team. We routinely coordinate with the specialists involved in your care.",
   specialists: [
     {
-      title:"",
-      description:"Effective stroke rehabilitation requires coordination beyond physiotherapy alone. Several other specialists may be involved in your care, and we work collaboratively with all of them."
+      title: "",
+      description: "Effective stroke rehabilitation requires coordination beyond physiotherapy alone. Several other specialists may be involved in your care, and we work collaboratively with all of them."
     },
     {
       title: "Your Treating Neurologist",
@@ -603,7 +603,7 @@ export const strokeRehabPricing = {
     { name: "Chronic phase rehabilitation programme (ongoing)", price: "AED [X]" },
     { name: "Annual review and re-assessment", price: "AED [X]" }
   ],
-  insurance: 'Insurance direct-billing with seven major insurers. Stroke rehabilitation is typically covered substantially by Dubai insurance plans given the documented need. Established programmes often require pre-authorisation — we handle this on your behalf and have experience with stroke rehabilitation insurance coverage. <a href=\"#\" style=\"color: #B8975A; text-decoration: underline; font-weight: normal;\"><a href="https://wa.me/971555867466" target="_blank" rel="noopener noreferrer" class="hover:underline">WhatsApp us</a> for specific coverage discussion</a>.'
+  insurance: 'Insurance direct-billing with seven major insurers. Stroke rehabilitation is typically covered substantially by Dubai insurance plans given the documented need. Established programmes often require pre-authorisation — we handle this on your behalf and have experience with stroke rehabilitation insurance coverage. <a href="https://wa.me/971555867466?text=Hi,%20I%27d%20like%20to%20verify%20my%20insurance%20coverage" target="_blank" rel="noopener noreferrer" class="hover:underline">WhatsApp us</a> for specific coverage discussion.'
 };
 
 export const strokeRehabReviews = {
@@ -632,9 +632,10 @@ export const strokeRehabReviews = {
   stats: [
     { value: "4.9", label: "stars on Google" },
     { value: "180+", label: "stroke patients treated" },
-    
+
   ],
   buttonText: "Read All Stroke Rehabilitation Reviews →",
+  buttonHref: "https://www.google.com/maps/search/?api=1&query=Vedara%20Care%20Polyclinic%20JVC%20Dubai",
   isDarkText: true,
   useKneeStyle: false
 };

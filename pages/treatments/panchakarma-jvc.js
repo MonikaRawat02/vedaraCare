@@ -9,7 +9,7 @@ import PanchakarmaTimeline from '../../components/ayurveda/PanchakarmaTimeline';
 import PanchakarmaBenefits from '../../components/ayurveda/PanchakarmaBenefits';
 import FAQ from '../../components/home/FAQ';
 import CTA from '../../components/home/CTA';
-import {  panchakarmaJVCHero, panchakarmaJVCIntro,panchakarmaJVCPrograms,panchakarmaJVCReviews,panchakarmaJVCFaqs,panchakarmaJVCLocation,panchakarmaJVCCTA,panchakarmaJVCRelatedPages, panchakarmaJVCTimeline,panchakarmaJVCBenefits} from '../../data/treatmentData';
+import { panchakarmaJVCHero, panchakarmaJVCIntro, panchakarmaJVCPrograms, panchakarmaJVCReviews, panchakarmaJVCFaqs, panchakarmaJVCLocation, panchakarmaJVCCTA, panchakarmaJVCRelatedPages, panchakarmaJVCTimeline, panchakarmaJVCBenefits } from '../../data/treatmentData';
 
 const PanchakarmaJVC = () => {
   const schemaMarkup = [
@@ -26,14 +26,14 @@ const PanchakarmaJVC = () => {
       "preparation": "Snehapana, Abhyanga, and Swedana for 3-7 days before main therapies.",
       "followup": "Samsarjana Krama graduated dietary protocol and Rasayana rejuvenation.",
       "indication": [
-        {"@type": "MedicalIndication", "name": "Chronic back pain"},
-        {"@type": "MedicalIndication", "name": "PCOS"},
-        {"@type": "MedicalIndication", "name": "Chronic stress"},
-        {"@type": "MedicalIndication", "name": "Migraine"},
-        {"@type": "MedicalIndication", "name": "Weight management"}
+        { "@type": "MedicalIndication", "name": "Chronic back pain" },
+        { "@type": "MedicalIndication", "name": "PCOS" },
+        { "@type": "MedicalIndication", "name": "Chronic stress" },
+        { "@type": "MedicalIndication", "name": "Migraine" },
+        { "@type": "MedicalIndication", "name": "Weight management" }
       ],
       "sameAs": "https://en.wikipedia.org/wiki/Panchakarma",
-      "performer": {"@id": "https://vedaracare.ae/treatments/panchakarma-jvc/#clinic"}
+      "performer": { "@id": "https://vedaracare.ae/treatments/panchakarma-jvc/#clinic" }
     },
     {
       "@context": "https://schema.org",
@@ -60,7 +60,7 @@ const PanchakarmaJVC = () => {
       "openingHoursSpecification": [
         {
           "@type": "OpeningHoursSpecification",
-          "dayOfWeek": ["Monday","Tuesday","Wednesday","Thursday","Friday","Saturday"],
+          "dayOfWeek": ["Monday", "Tuesday", "Wednesday", "Thursday", "Friday", "Saturday"],
           "opens": "09:00",
           "closes": "21:00"
         },
@@ -72,13 +72,13 @@ const PanchakarmaJVC = () => {
         }
       ],
       "areaServed": [
-        {"@type": "Place", "name": "Jumeirah Village Circle"},
-        {"@type": "Place", "name": "Jumeirah Village Triangle"},
-        {"@type": "Place", "name": "Al Barsha South"},
-        {"@type": "Place", "name": "Dubai Sports City"},
-        {"@type": "Place", "name": "Motor City"},
-        {"@type": "Place", "name": "Arjan"},
-        {"@type": "Place", "name": "Dubai Hills Estate"}
+        { "@type": "Place", "name": "Jumeirah Village Circle" },
+        { "@type": "Place", "name": "Jumeirah Village Triangle" },
+        { "@type": "Place", "name": "Al Barsha South" },
+        { "@type": "Place", "name": "Dubai Sports City" },
+        { "@type": "Place", "name": "Motor City" },
+        { "@type": "Place", "name": "Arjan" },
+        { "@type": "Place", "name": "Dubai Hills Estate" }
       ],
       "hasCredential": {
         "@type": "EducationalOccupationalCredential",
@@ -91,8 +91,8 @@ const PanchakarmaJVC = () => {
       "@context": "https://schema.org",
       "@type": "Service",
       "name": "Panchakarma Programmes at Vedara Care JVC",
-      "provider": {"@id": "https://vedaracare.ae/#organization"},
-      "areaServed": {"@type": "Place", "name": "Jumeirah Village Circle, Dubai"},
+      "provider": { "@id": "https://vedaracare.ae/#organization" },
+      "areaServed": { "@type": "Place", "name": "Jumeirah Village Circle, Dubai" },
       "hasOfferCatalog": {
         "@type": "OfferCatalog",
         "name": "Panchakarma Programmes",
@@ -123,8 +123,8 @@ const PanchakarmaJVC = () => {
       "@type": "MedicalWebPage",
       "name": "Panchakarma in JVC, Dubai",
       "url": "https://vedaracare.ae/treatments/panchakarma-jvc/",
-      "about": {"@id": "https://vedaracare.ae/treatments/panchakarma-jvc/#procedure"},
-      "audience": {"@type": "PatientAudience"},
+      "about": { "@id": "https://vedaracare.ae/treatments/panchakarma-jvc/#procedure" },
+      "audience": { "@type": "PatientAudience" },
       "lastReviewed": "2026-05-25",
       "reviewedBy": {
         "@type": "Physician",
@@ -137,9 +137,9 @@ const PanchakarmaJVC = () => {
       "@context": "https://schema.org",
       "@type": "BreadcrumbList",
       "itemListElement": [
-        {"@type": "ListItem", "position": 1, "name": "Home", "item": "https://vedaracare.ae/"},
-        {"@type": "ListItem", "position": 2, "name": "Ayurveda Clinic in JVC", "item": "https://vedaracare.ae/ayurveda-clinic-jvc/"},
-        {"@type": "ListItem", "position": 3, "name": "Panchakarma in JVC", "item": "https://vedaracare.ae/treatments/panchakarma-jvc/"}
+        { "@type": "ListItem", "position": 1, "name": "Home", "item": "https://vedaracare.ae/" },
+        { "@type": "ListItem", "position": 2, "name": "Ayurveda Clinic in JVC", "item": "https://vedaracare.ae/ayurveda-clinic-jvc/" },
+        { "@type": "ListItem", "position": 3, "name": "Panchakarma in JVC", "item": "https://vedaracare.ae/treatments/panchakarma-jvc/" }
       ]
     },
     {
@@ -161,7 +161,7 @@ const PanchakarmaJVC = () => {
       <Head>
         <title>Panchakarma in JVC, Dubai | DHA-Licensed Clinic | Vedara Care</title>
         <meta name="description" content="DHA-licensed Panchakarma at our Jumeirah Village Circle clinic — next to Circle Mall. 7, 14 & 21-day classical programmes. Free patient parking. Book today." />
-        
+
         {/* Open Graph Tags */}
         <meta property="og:title" content="Panchakarma in JVC, Dubai — Classical Programmes at Vedara Care" />
         <meta property="og:description" content="DHA-licensed Panchakarma in Jumeirah Village Circle. Next to Circle Mall. Free parking. From AED 4,500." />
@@ -169,21 +169,21 @@ const PanchakarmaJVC = () => {
         <meta property="og:url" content="https://vedaracare.ae/treatments/panchakarma-jvc/" />
         <meta property="og:type" content="article" />
         <meta property="og:locale" content="en_AE" />
-        
+
         {/* Twitter Tags */}
         <meta name="twitter:card" content="summary_large_image" />
         <meta name="twitter:title" content="Panchakarma in JVC, Dubai — Classical Programmes at Vedara Care" />
         <meta name="twitter:description" content="DHA-licensed Panchakarma in Jumeirah Village Circle. Next to Circle Mall. Free parking." />
         <meta name="twitter:image" content="https://vedaracare.ae/og-images/panchakarma-jvc.jpg" />
-        
+
         {/* Canonical & Language Tags */}
         <link rel="canonical" href="https://vedaracare.ae/treatments/panchakarma-jvc/" />
         <link rel="alternate" hreflang="en-AE" href="https://vedaracare.ae/treatments/panchakarma-jvc/" />
         <link rel="alternate" hreflang="ar-AE" href="https://vedaracare.ae/ar/treatments/panchakarma-jvc/" />
         <link rel="alternate" hreflang="x-default" href="https://vedaracare.ae/treatments/panchakarma-jvc/" />
-        
+
         <meta name="robots" content="index, follow, max-image-preview:large" />
-        
+
         {/* Schema Markup */}
         {schemaMarkup.map((schema, index) => (
           <script
@@ -203,7 +203,7 @@ const PanchakarmaJVC = () => {
       <FAQ {...panchakarmaJVCFaqs} />
       <TreatmentLocation {...panchakarmaJVCLocation} />
       <CTA {...panchakarmaJVCCTA} />
-       <RelatedPages {...panchakarmaJVCRelatedPages} />
+      <RelatedPages {...panchakarmaJVCRelatedPages} />
     </>
   );
 };

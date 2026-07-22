@@ -1,4 +1,5 @@
 import React from 'react';
+import Link from 'next/link';
 
 const PhysiotherapySpecializations = ({
   bgColor = "bg-[#F5F1E8]",
@@ -88,9 +89,10 @@ const PhysiotherapySpecializations = ({
         </div>
 
         {footer && (
-          <div className="mt-5 text-center max-w-[900px] mx-auto pt-8 hover:text-[#C9A55A] transition-colors">
-            <p className="text-[#888888] text-sm font-sans leading-relaxed" dangerouslySetInnerHTML={{ __html: footer }} />
-          </div>
+          <div 
+            className="mt-5 text-center max-w-[900px] mx-auto pt-8 text-[#888888] text-sm font-sans leading-relaxed [&_a]:text-[#C9A55A] [&_a]:underline hover:[&_a]:text-[#184C3A]"
+            dangerouslySetInnerHTML={{ __html: footer }} 
+          />
         )}
       </div>
     </section>

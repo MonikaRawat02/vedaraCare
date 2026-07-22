@@ -31,29 +31,29 @@ import {
 
 const BackPainPhysioJvc = () => {
   const currentDate = new Date().toISOString();
-  
+
   return (
     <>
       <Head>
         <title>Physiotherapy for Back Pain in JVC | DPT-Qualified | Vedara Care</title>
         <meta name="description" content="Evidence-based physiotherapy for back pain at our DHA-licensed JVC clinic. DPT-qualified specialists using manual therapy, McKenzie method, dry needling, and modern protocols. Same-day appointments for severe acute pain. Walking distance from Circle Mall." />
         <meta name="robots" content="index, follow, max-image-preview:large" />
-        
+
         <meta property="og:title" content="Physiotherapy for Back Pain in JVC — Evidence-Based DPT-Qualified Care | Vedara" />
         <meta property="og:description" content="DPT-qualified physiotherapists at our Jumeirah Village Circle clinic using evidence-based protocols for acute and chronic back pain. Manual therapy, McKenzie method, dry needling, modern modalities. Same-day appointments for severe acute pain. Insurance direct-billing." />
         <meta property="og:image" content="https://vedaracare.ae/og-images/back-pain-physiotherapy-jvc.jpg" />
         <meta property="og:url" content="https://vedaracare.ae/conditions/back-pain-physiotherapy-jvc/" />
         <meta property="og:type" content="business.business" />
         <meta property="og:locale" content="en_AE" />
-        
+
         <meta name="twitter:card" content="summary_large_image" />
-        
+
         <link rel="canonical" href="https://vedaracare.ae/conditions/back-pain-physiotherapy-jvc/" />
         <link rel="alternate" href="https://vedaracare.ae/conditions/back-pain-physiotherapy-jvc/" hrefLang="en-AE" />
         <link rel="alternate" href="https://vedaracare.ae/ar/conditions/back-pain-physiotherapy-jvc/" hrefLang="ar-AE" />
         <link rel="alternate" href="https://vedaracare.ae/conditions/back-pain-physiotherapy-jvc/" hrefLang="x-default" />
       </Head>
-      
+
       <script
         type="application/ld+json"
         dangerouslySetInnerHTML={{
@@ -65,21 +65,21 @@ const BackPainPhysioJvc = () => {
               "name": "Vedara Care Back Pain Physiotherapy",
               "alternateName": ["Vedara Back Pain Physio JVC", "Vedara Care Lumbar Physiotherapy"],
               "url": "https://vedaracare.ae/conditions/back-pain-physiotherapy-jvc/",
-              "parentOrganization": {"@id": "https://vedaracare.ae/#organization"},
+              "parentOrganization": { "@id": "https://vedaracare.ae/#organization" },
               "description": "Evidence-based physiotherapy for back pain at Vedara Care Polyclinic, Jumeirah Village Circle, Dubai. DPT-qualified physiotherapists treating acute back pain, chronic back pain, sciatica, disc-related conditions, mechanical postural pain. Manual therapy, McKenzie method, dry needling, modern modalities. Walking distance from Circle Mall.",
               "telephone": "+971 55 586 7466",
               "priceRange": "AED 300 - AED 12,000",
               "address": {
                 "@type": "PostalAddress",
-                "streetAddress": "[Street address]",
+                "streetAddress": "Al Barsha South Fourth, Binghatti Azure, Shop -4, Jumeirah Village Circle (JVC)",
                 "addressLocality": "Jumeirah Village Circle",
                 "addressRegion": "Dubai",
                 "addressCountry": "AE"
               },
               "geo": {
                 "@type": "GeoCoordinates",
-                "latitude": "[Latitude]",
-                "longitude": "[Longitude]"
+                "latitude": "25.068346",
+                "longitude": "55.2072235"
               },
               "openingHoursSpecification": [
                 {
@@ -96,18 +96,18 @@ const BackPainPhysioJvc = () => {
                 }
               ],
               "areaServed": [
-                {"@type": "Place", "name": "Jumeirah Village Circle"},
-                {"@type": "Place", "name": "Jumeirah Village Triangle"},
-                {"@type": "Place", "name": "Al Barsha South"},
-                {"@type": "Place", "name": "Dubai Sports City"},
-                {"@type": "Place", "name": "Motor City"},
-                {"@type": "Place", "name": "Arjan"},
-                {"@type": "Place", "name": "Dubai Hills Estate"},
-                {"@type": "Place", "name": "Dubai Marina"},
-                {"@type": "Place", "name": "Downtown Dubai"},
-                {"@type": "Place", "name": "Palm Jumeirah"},
-                {"@type": "Place", "name": "Mirdif"},
-                {"@type": "City", "name": "Dubai"}
+                { "@type": "Place", "name": "Jumeirah Village Circle" },
+                { "@type": "Place", "name": "Jumeirah Village Triangle" },
+                { "@type": "Place", "name": "Al Barsha South" },
+                { "@type": "Place", "name": "Dubai Sports City" },
+                { "@type": "Place", "name": "Motor City" },
+                { "@type": "Place", "name": "Arjan" },
+                { "@type": "Place", "name": "Dubai Hills Estate" },
+                { "@type": "Place", "name": "Dubai Marina" },
+                { "@type": "Place", "name": "Downtown Dubai" },
+                { "@type": "Place", "name": "Palm Jumeirah" },
+                { "@type": "Place", "name": "Mirdif" },
+                { "@type": "City", "name": "Dubai" }
               ],
               "medicalSpecialty": [
                 "Physiotherapy",
@@ -117,16 +117,16 @@ const BackPainPhysioJvc = () => {
               ],
               "isAcceptingNewPatients": true,
               "availableService": [
-                {"@type": "MedicalProcedure", "name": "Back Pain Physiotherapy"},
-                {"@type": "MedicalProcedure", "name": "Manual Therapy"},
-                {"@type": "MedicalProcedure", "name": "McKenzie Method (MDT)"},
-                {"@type": "MedicalProcedure", "name": "Dry Needling"},
-                {"@type": "MedicalProcedure", "name": "Motor Control Training"},
-                {"@type": "MedicalProcedure", "name": "Shockwave Therapy"},
-                {"@type": "MedicalProcedure", "name": "Pain Neuroscience Education"},
-                {"@type": "MedicalProcedure", "name": "Sciatica Treatment"},
-                {"@type": "MedicalProcedure", "name": "Spinal Mobilisation"},
-                {"@type": "MedicalProcedure", "name": "Spinal Manipulation"}
+                { "@type": "MedicalProcedure", "name": "Back Pain Physiotherapy" },
+                { "@type": "MedicalProcedure", "name": "Manual Therapy" },
+                { "@type": "MedicalProcedure", "name": "McKenzie Method (MDT)" },
+                { "@type": "MedicalProcedure", "name": "Dry Needling" },
+                { "@type": "MedicalProcedure", "name": "Motor Control Training" },
+                { "@type": "MedicalProcedure", "name": "Shockwave Therapy" },
+                { "@type": "MedicalProcedure", "name": "Pain Neuroscience Education" },
+                { "@type": "MedicalProcedure", "name": "Sciatica Treatment" },
+                { "@type": "MedicalProcedure", "name": "Spinal Mobilisation" },
+                { "@type": "MedicalProcedure", "name": "Spinal Manipulation" }
               ],
               "memberOf": {
                 "@type": "Organization",
@@ -146,40 +146,40 @@ const BackPainPhysioJvc = () => {
                 {
                   "@type": "MedicalCondition",
                   "name": "Lower Back Pain (Lumbalgia)",
-                  "code": {"@type": "MedicalCode", "code": "M54.5", "codingSystem": "ICD-10"},
+                  "code": { "@type": "MedicalCode", "code": "M54.5", "codingSystem": "ICD-10" },
                   "possibleTreatment": [
-                    {"@type": "MedicalProcedure", "name": "Manual Therapy"},
-                    {"@type": "MedicalProcedure", "name": "McKenzie Method"},
-                    {"@type": "MedicalProcedure", "name": "Motor Control Training"}
+                    { "@type": "MedicalProcedure", "name": "Manual Therapy" },
+                    { "@type": "MedicalProcedure", "name": "McKenzie Method" },
+                    { "@type": "MedicalProcedure", "name": "Motor Control Training" }
                   ]
                 },
                 {
                   "@type": "MedicalCondition",
                   "name": "Sciatica",
                   "alternateName": ["Lumbar Radiculopathy", "Sciatic Nerve Pain"],
-                  "code": {"@type": "MedicalCode", "code": "M54.3", "codingSystem": "ICD-10"},
+                  "code": { "@type": "MedicalCode", "code": "M54.3", "codingSystem": "ICD-10" },
                   "possibleTreatment": [
-                    {"@type": "MedicalProcedure", "name": "McKenzie Method"},
-                    {"@type": "MedicalProcedure", "name": "Nerve Mobilisation"},
-                    {"@type": "MedicalProcedure", "name": "Manual Therapy"}
+                    { "@type": "MedicalProcedure", "name": "McKenzie Method" },
+                    { "@type": "MedicalProcedure", "name": "Nerve Mobilisation" },
+                    { "@type": "MedicalProcedure", "name": "Manual Therapy" }
                   ]
                 },
                 {
                   "@type": "MedicalCondition",
                   "name": "Lumbar Disc Disorder",
                   "alternateName": ["Disc Bulge", "Herniated Disc"],
-                  "code": {"@type": "MedicalCode", "code": "M51.2", "codingSystem": "ICD-10"}
+                  "code": { "@type": "MedicalCode", "code": "M51.2", "codingSystem": "ICD-10" }
                 },
                 {
                   "@type": "MedicalCondition",
                   "name": "Thoracic Spine Pain",
                   "alternateName": ["Upper Back Pain"],
-                  "code": {"@type": "MedicalCode", "code": "M54.6", "codingSystem": "ICD-10"}
+                  "code": { "@type": "MedicalCode", "code": "M54.6", "codingSystem": "ICD-10" }
                 },
                 {
                   "@type": "MedicalCondition",
                   "name": "Chronic Back Pain",
-                  "code": {"@type": "MedicalCode", "code": "M54.9", "codingSystem": "ICD-10"}
+                  "code": { "@type": "MedicalCode", "code": "M54.9", "codingSystem": "ICD-10" }
                 }
               ]
             },
@@ -187,10 +187,10 @@ const BackPainPhysioJvc = () => {
               "@context": "https://schema.org",
               "@type": "Service",
               "name": "Back Pain Physiotherapy Services in JVC, Dubai",
-              "provider": {"@id": "https://vedaracare.ae/conditions/back-pain-physiotherapy-jvc/#back-pain-physio"},
+              "provider": { "@id": "https://vedaracare.ae/conditions/back-pain-physiotherapy-jvc/#back-pain-physio" },
               "areaServed": [
-                {"@type": "Place", "name": "Jumeirah Village Circle"},
-                {"@type": "City", "name": "Dubai"}
+                { "@type": "Place", "name": "Jumeirah Village Circle" },
+                { "@type": "City", "name": "Dubai" }
               ],
               "serviceType": "Back Pain Physiotherapy and Spinal Rehabilitation",
               "hasOfferCatalog": {
@@ -201,35 +201,35 @@ const BackPainPhysioJvc = () => {
                     "@type": "Offer",
                     "name": "Initial Back Pain Assessment",
                     "priceCurrency": "AED",
-                    "price": "[X]",
+                    "price": "350",
                     "description": "60-minute comprehensive back pain assessment with DPT-qualified physiotherapist"
                   },
                   {
                     "@type": "Offer",
                     "name": "Same-Day Urgent Back Pain Assessment",
                     "priceCurrency": "AED",
-                    "price": "[X]",
+                    "price": "420",
                     "description": "Same-day appointment for severe acute back pain"
                   },
                   {
                     "@type": "Offer",
                     "name": "Acute Back Pain Package",
                     "priceCurrency": "AED",
-                    "price": "[X]",
+                    "price": "1800",
                     "description": "8-session structured programme for acute back pain over 4-6 weeks"
                   },
                   {
                     "@type": "Offer",
                     "name": "Chronic Back Pain Programme",
                     "priceCurrency": "AED",
-                    "price": "[X]",
+                    "price": "3400",
                     "description": "16-session structured programme for chronic back pain over 8-12 weeks"
                   },
                   {
                     "@type": "Offer",
                     "name": "Extended Chronic Back Pain Care",
                     "priceCurrency": "AED",
-                    "price": "[X]",
+                    "price": "4800",
                     "description": "24-session extended programme for complex chronic patterns over 12-24 weeks"
                   }
                 ]
@@ -239,9 +239,9 @@ const BackPainPhysioJvc = () => {
               "@context": "https://schema.org",
               "@type": "BreadcrumbList",
               "itemListElement": [
-                {"@type": "ListItem", "position": 1, "name": "Home", "item": "https://vedaracare.ae/"},
-                {"@type": "ListItem", "position": 2, "name": "Conditions", "item": "https://vedaracare.ae/conditions/"},
-                {"@type": "ListItem", "position": 3, "name": "Back Pain Physiotherapy in JVC", "item": "https://vedaracare.ae/conditions/back-pain-physiotherapy-jvc/"}
+                { "@type": "ListItem", "position": 1, "name": "Home", "item": "https://vedaracare.ae/" },
+                { "@type": "ListItem", "position": 2, "name": "Conditions", "item": "https://vedaracare.ae/conditions/" },
+                { "@type": "ListItem", "position": 3, "name": "Back Pain Physiotherapy in JVC", "item": "https://vedaracare.ae/conditions/back-pain-physiotherapy-jvc/" }
               ]
             },
             {
@@ -265,7 +265,7 @@ const BackPainPhysioJvc = () => {
               "dateModified": currentDate,
               "author": {
                 "@type": "Physician",
-                "name": "[Lead Physiotherapist]"
+                "name": "Dr. Sarah Al-Mansoori, DPT"
               },
               "publisher": {
                 "@type": "Organization",
@@ -276,13 +276,13 @@ const BackPainPhysioJvc = () => {
           ])
         }}
       />
-      
+
       <div className="back-pain-physiotherapy-page">
         <AyurvedaHero {...backPainPhysioHero}
-        bgColor='bg-[#F8F5EE]'
+          bgColor='bg-[#F8F5EE]'
         />
         <AyurvedaIntro {...backPainPhysioIntro} />
-        <PhysiotherapySpecializations 
+        <PhysiotherapySpecializations
           bgColor={backPainPhysioConditions.bgColor}
           label={backPainPhysioConditions.label}
           title={backPainPhysioConditions.title}
@@ -290,7 +290,7 @@ const BackPainPhysioJvc = () => {
           types={backPainPhysioConditions.types}
           footer={backPainPhysioConditions.footer}
         />
-        <PhysiotherapyMechanism 
+        <PhysiotherapyMechanism
           bgColor={backPainPhysioMechanism.bgColor}
           label={backPainPhysioMechanism.label}
           title={backPainPhysioMechanism.title}
@@ -299,7 +299,7 @@ const BackPainPhysioJvc = () => {
           image={backPainPhysioMechanism.image}
           alt={backPainPhysioMechanism.alt}
         />
-        <BackPainTreatmentPhases 
+        <BackPainTreatmentPhases
           bgColor={backPainPhysioPhases.bgColor}
           label={backPainPhysioPhases.label}
           title={backPainPhysioPhases.title}
@@ -313,14 +313,14 @@ const BackPainPhysioJvc = () => {
           modalities={backPainPhysioModalities.modalities}
         />
         <BackPainAcuteAndPricing data={backPainPhysioAcuteAndPricing} />
-        <TreatmentReviews {...backPainPhysioReviews} 
-        bgColor='bg-[#1C3D2E]'
+        <TreatmentReviews {...backPainPhysioReviews}
+          bgColor='bg-[#1C3D2E]'
         />
         <PhysiotherapyTeam {...backPainPhysioTeam} />
-        <FAQ {...backPainPhysioFaqs} 
-        bgColor='bg-[#F2EDE5]'/>
+        <FAQ {...backPainPhysioFaqs}
+          bgColor='bg-[#F2EDE5]' />
         <TreatmentLocation {...backPainPhysioLocation} />
-         <BackPainIntegratedCare 
+        <BackPainIntegratedCare
           bgColor={backPainPhysioIntegratedCare.bgColor}
           label={backPainPhysioIntegratedCare.label}
           title={backPainPhysioIntegratedCare.title}

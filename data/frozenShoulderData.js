@@ -323,7 +323,9 @@ export const frozenShoulderReviews = {
       value: "8-10",
       label: "Average 8–10 months to functional recovery"
     }
-  ]
+  ],
+  buttonText: "Read All Frozen Shoulder Reviews",
+  buttonHref: "https://www.google.com/maps/search/?api=1&query=Vedara+Care+Polyclinic+JVC+Dubai"
 };
 
 export const frozenShoulderTeam = {
@@ -509,7 +511,9 @@ export const frozenShoulderCTA = {
     'Diabetic patient expertise',
     'Insurance direct-billing',
    
-  ]
+  ],
+  button1Href: '/book',
+  button2Href: 'https://wa.me/971555867466?text=Hello%20Vedara%20Care,%20I%20would%20like%20to%20inquire%20about%20frozen%20shoulder%20physiotherapy%20and%20book%20a%20consultation.'
 };
 
 export const frozenShoulderRelatedPages = {

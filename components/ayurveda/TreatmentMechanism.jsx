@@ -126,7 +126,7 @@ const TreatmentMechanism = ({
               {/* Key Fact / Key Anatomy */}
               {!comparisonSection && (keyAnatomy.length > 0 ? (
                 <div className="mt-6 bg-white p-6 rounded-xl" style={{ border: "1px solid rgba(28, 21, 10, 0.08)" }}>
-                  <p className="text-xs font-semibold tracking-widest uppercase mb-4" style={{ fontFamily: '"DM Sans", system-ui, sans-serif', color: "rgb(201, 168, 76)" }}>
+                  <p className="text-xs font-semibold tracking-widest uppercase mb-4" style={{ fontFamily: 'var(--font-sans), sans-serif', color: "rgb(201, 168, 76)" }}>
                     Key anatomy
                   </p>
                   <div className="space-y-3">
@@ -136,10 +136,10 @@ const TreatmentMechanism = ({
                         className="pb-3 last:pb-0"
                         style={{ borderBottom: index < keyAnatomy.length - 1 ? "1px solid rgba(28, 21, 10, 0.06)" : "none" }}
                       >
-                        <div className="text-sm font-medium mb-0.5" style={{ fontFamily: '"DM Sans", system-ui, sans-serif', color: "rgb(28, 21, 10)" }}>
+                        <div className="text-sm font-medium mb-0.5" style={{ fontFamily: 'var(--font-sans), sans-serif', color: "rgb(28, 21, 10)" }}>
                           {item.title}
                         </div>
-                        <div className="text-xs leading-relaxed" style={{ fontFamily: '"DM Sans", system-ui, sans-serif', color: "rgb(122, 110, 97)" }}>
+                        <div className="text-xs leading-relaxed" style={{ fontFamily: 'var(--font-sans), sans-serif', color: "rgb(122, 110, 97)" }}>
                           {item.description}
                         </div>
                       </div>
@@ -177,7 +177,7 @@ const TreatmentMechanism = ({
 
               {/* Our Coordination Approach */}
               {coordinationApproach && (
-                <div className="p-7 sticky top-24 mt-6" style={{border: "1.5px solid rgb(184, 151, 90)", borderRadius: "8px", background: "rgb(250, 246, 238)", fontFamily: "DM Sans, sans-serif"}}>
+                <div className="p-7 sticky top-24 mt-6" style={{border: "1.5px solid rgb(184, 151, 90)", borderRadius: "8px", background: "rgb(250, 246, 238)", fontFamily: "var(--font-sans), sans-serif"}}>
                   <p className="text-[10px] font-medium tracking-widest uppercase mb-5" style={{color: "rgb(184, 151, 90)"}}>
                     {coordinationApproach.label}
                   </p>

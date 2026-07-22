@@ -1,4 +1,5 @@
 import React from 'react';
+import Link from 'next/link';
 
 const PelvicFloorAssessment = ({ data }) => {
   const isAssessment = data.steps && data.rightCards;
@@ -18,7 +19,7 @@ const PelvicFloorAssessment = ({ data }) => {
         <div className={`text-center ${isAssessment ? 'mb-14' : 'mb-12'}`}>
           <p 
             className="text-xs font-medium tracking-widest uppercase mb-4"
-            style={{ color: "rgb(184, 151, 90)", fontFamily: "DM Sans, sans-serif" }}
+            style={{ color: "rgb(184, 151, 90)", fontFamily: "var(--font-sans), sans-serif" }}
           >
             {data.label}
           </p>
@@ -30,7 +31,7 @@ const PelvicFloorAssessment = ({ data }) => {
           </h2>
           <p 
             className={`${isAssessment ? 'text-lg' : 'text-base'} leading-relaxed max-w-2xl mx-auto`}
-            style={{ color: "rgb(107, 100, 86)", fontFamily: "DM Sans, sans-serif" }}
+            style={{ color: "rgb(107, 100, 86)", fontFamily: "var(--font-sans), sans-serif" }}
           >
             {data.description}
           </p>
@@ -43,7 +44,7 @@ const PelvicFloorAssessment = ({ data }) => {
           {/* Left Content */}
           <div 
             className="space-y-8"
-            style={{ fontFamily: "DM Sans, sans-serif" }}
+            style={{ fontFamily: "var(--font-sans), sans-serif" }}
           >
             {isAssessment && (
               <p 
@@ -94,7 +95,7 @@ const PelvicFloorAssessment = ({ data }) => {
                   border: "1.5px solid rgb(184, 151, 90)", 
                   borderRadius: "8px", 
                   background: "rgb(255, 255, 255)", 
-                  fontFamily: "DM Sans, sans-serif" 
+                  fontFamily: "var(--font-sans), sans-serif" 
                 }}
               >
                 <p 
@@ -139,35 +140,37 @@ const PelvicFloorAssessment = ({ data }) => {
             ))}
             
             {isAssessment && (
-              <button 
-                className="inline-flex items-center gap-2 px-7 py-3.5 text-sm font-medium tracking-wide transition-all duration-200 hover:opacity-90 active:scale-[0.98] w-full justify-center"
-                style={{ 
-                  background: "rgb(184, 151, 90)", 
-                  color: "rgb(255, 255, 255)", 
-                  fontFamily: "DM Sans, sans-serif", 
-                  borderRadius: "4px" 
-                }}
-              >
-                <svg 
-                  xmlns="http://www.w3.org/2000/svg" 
-                  width="16" 
-                  height="16" 
-                  viewBox="0 0 24 24" 
-                  fill="none" 
-                  stroke="currentColor" 
-                  strokeWidth="2" 
-                  strokeLinecap="round" 
-                  strokeLinejoin="round" 
-                  className="lucide lucide-calendar"
-                  style={{ flexShrink: 0 }}
+              <Link href="/book" className="w-full block">
+                <button 
+                  className="inline-flex items-center gap-2 px-7 py-3.5 text-sm font-medium tracking-wide transition-all duration-200 hover:opacity-90 active:scale-[0.98] w-full justify-center"
+                  style={{ 
+                    background: "rgb(184, 151, 90)", 
+                    color: "rgb(255, 255, 255)", 
+                    fontFamily: "var(--font-sans), sans-serif", 
+                    borderRadius: "4px" 
+                  }}
                 >
-                  <path d="M8 2v4" />
-                  <path d="M16 2v4" />
-                  <rect width="18" height="18" x="3" y="4" rx="2" />
-                  <path d="M3 10h18" />
-                </svg>
-                {data.buttonText}
-              </button>
+                  <svg 
+                    xmlns="http://www.w3.org/2000/svg" 
+                    width="16" 
+                    height="16" 
+                    viewBox="0 0 24 24" 
+                    fill="none" 
+                    stroke="currentColor" 
+                    strokeWidth="2" 
+                    strokeLinecap="round" 
+                    strokeLinejoin="round" 
+                    className="lucide lucide-calendar"
+                    style={{ flexShrink: 0 }}
+                  >
+                    <path d="M8 2v4" />
+                    <path d="M16 2v4" />
+                    <rect width="18" height="18" x="3" y="4" rx="2" />
+                    <path d="M3 10h18" />
+                  </svg>
+                  {data.buttonText}
+                </button>
+              </Link>
             )}
             
             {isPostnatal && (
@@ -191,7 +194,7 @@ const PelvicFloorAssessment = ({ data }) => {
                         style={{ 
                           background: 'rgb(255, 255, 255)', 
                           borderColor: 'rgba(184, 151, 90, 0.3)',
-                          fontFamily: 'DM Sans, sans-serif' 
+                          fontFamily: 'var(--font-sans), sans-serif' 
                         }}
                       >
                         <p className="text-xs font-medium tracking-widest uppercase mb-3" style={{ color: 'rgb(184, 151, 90)' }}>
@@ -231,7 +234,7 @@ const PelvicFloorAssessment = ({ data }) => {
                       className="inline-flex items-center gap-1 text-xs font-medium tracking-wide transition-all duration-200 hover:opacity-80"
                       style={{ 
                         color: 'rgb(184, 151, 90)', 
-                        fontFamily: 'DM Sans, sans-serif' 
+                        fontFamily: 'var(--font-sans), sans-serif' 
                       }}
                     >
                       {data.readMoreText}

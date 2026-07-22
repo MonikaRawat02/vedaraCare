@@ -492,9 +492,7 @@ const TreatmentTimelineSection = ({
 
         {footerNote && (
           <div className="text-center max-w-3xl mx-auto">
-            <p className="text-base" style={{ color: 'rgb(107,107,107)', lineHeight: '1.7' }}>
-              {footerNote}
-            </p>
+            <p className="text-base" style={{ color: 'rgb(107,107,107)', lineHeight: '1.7' }} dangerouslySetInnerHTML={{ __html: footerNote }} />
           </div>
         )}
 

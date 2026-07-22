@@ -1,6 +1,6 @@
 import React from 'react';
 
-const Physician = ({ label, name, qualification, description, image, alt, stats, languages, button1Text, button2Text, profileLink }) => {
+const Physician = ({ label, name, qualification, description, image, alt, stats, languages, button1Text, button1Href, button2Text, profileLink }) => {
   return (
     <section className="bg-[#184C3A] py-24 px-6 text-white overflow-hidden">
       <div className="max-w-[1280px] mx-auto">
@@ -40,9 +40,15 @@ const Physician = ({ label, name, qualification, description, image, alt, stats,
             <p className="text-[13px] text-white/55 font-sans" dangerouslySetInnerHTML={{ __html: languages }} />
 
             <div className="flex flex-wrap gap-3 pt-1">
-              <button className="px-8 py-3 bg-[#C9A961] text-[#1A1A1A] rounded-full font-sans font-medium text-[15px] hover:bg-[#B89850] transition-all">
-                <span dangerouslySetInnerHTML={{ __html: button1Text }} />
-              </button>
+              {button1Href ? (
+                <a href={button1Href} className="px-8 py-3 bg-[#C9A961] text-[#1A1A1A] rounded-full font-sans font-medium text-[15px] hover:bg-[#B89850] transition-all">
+                  <span dangerouslySetInnerHTML={{ __html: button1Text }} />
+                </a>
+              ) : (
+                <button className="px-8 py-3 bg-[#C9A961] text-[#1A1A1A] rounded-full font-sans font-medium text-[15px] hover:bg-[#B89850] transition-all">
+                  <span dangerouslySetInnerHTML={{ __html: button1Text }} />
+                </button>
+              )}
               {profileLink ? (
                 <a href={profileLink} className="px-8 py-3 bg-transparent border border-white/30 text-white rounded-full font-sans font-medium text-[15px] hover:bg-white/10 transition-all">
                   <span dangerouslySetInnerHTML={{ __html: button2Text }} />

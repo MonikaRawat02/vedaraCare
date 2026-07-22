@@ -94,7 +94,7 @@ export const postSurgeryRehabRelatedPages = {
     {
       title: "Home Healthcare in JVC",
       description: "Our home physiotherapy and broader home healthcare services across Dubai for patients who cannot easily travel.",
-      href: "/home-healthcare-jvc/"
+      href: "/physiotherapy-at-home-dubai/"
     },
     {
       title: "Arthritis Treatment",
@@ -133,7 +133,8 @@ export const postSurgeryRehabReviews = {
     { value: "140+", label: "POST-SURGICAL REVIEWS" },
     { value: "97%", label: "ACHIEVED GOALS" }
   ],
-  buttonText: "Read All Post-Surgical Reviews"
+  buttonHref: "https://www.google.com/maps/search/?api=1&query=Vedara%20Care%20Polyclinic%20JVC%20Dubai",
+  buttonText: "Read All Post-Surgical Reviews",
 };
 
 export const homePhysiotherapyData = {
@@ -157,9 +158,9 @@ export const homePhysiotherapyData = {
     ],
     duration: "60 minutes including travel time consideration",
     pricing: "From AED 450 per home session (includes therapist travel time)",
-    booking: "WhatsApp +971 55 586 7466 for fastest response",
+    booking: 'WhatsApp <a href="https://wa.me/971555867466?text=Hello%20Vedara%20Care,%20I%27d%20like%20to%20book%20a%20home%20physiotherapy%20session%20for%20post-surgery%20rehab." target="_blank" rel="noopener noreferrer" class="underline hover:opacity-85">+971 55 586 7466</a> for fastest response',
     buttonText: "Book Home Physiotherapy",
-    buttonLink: "/home-healthcare-jvc/"
+    buttonLink: "/physiotherapy-at-home-dubai/"
   }
 };
 
@@ -202,7 +203,7 @@ export const transparentPricingData = {
       ]
     }
   ],
-  footer: 'Insurance coverage for post-surgery rehabilitation is typically substantial — most plans cover physiotherapy with documented surgical procedure. Direct-billing with Daman, AXA, Allianz, Oman Insurance, Now Health, Bupa, and MetLife. <a href="https://wa.me/971555867466?text=Hi,%20I%27d%20like%20to%20verify%20my%20insurance%20coverage" target="_blank" rel="noopener noreferrer" class="hover:underline">WhatsApp your insurance card</a> and surgical report to +971 55 586 7466 before booking for specific coverage confirmation.'
+  footer: 'Insurance coverage for post-surgery rehabilitation is typically substantial — most plans cover physiotherapy with documented surgical procedure. Direct-billing with Daman, AXA, Allianz, Oman Insurance, Now Health, Bupa, and MetLife. <a href="https://wa.me/971555867466?text=Hi,%20I%27d%20like%20to%20verify%20my%20insurance%20coverage%20and%20share%20my%20surgical%20report%20for%20post-surgery%20rehab." target="_blank" rel="noopener noreferrer" class="hover:underline">WhatsApp your insurance card and surgical report to +971 55 586 7466</a> before booking for specific coverage confirmation.'
 };
 
 export const postSurgeryTeamData = {
@@ -242,12 +243,12 @@ export const insuranceCoverageData = {
     { title: "What may have limits:", text: "prolonged rehabilitation beyond expected timelines, multiple modality sessions per visit, certain specialised techniques." },
     { title: "What is rarely covered:", text: "maintenance physiotherapy after the surgical recovery is complete, performance optimisation beyond functional recovery." },
     { title: "How insurance typically works:", text: "most plans require pre-authorisation for extended rehabilitation programmes (typically beyond 10-15 initial sessions). Our team handles this on your behalf. You typically submit your initial sessions while pre-authorisation is being processed (covered by initial entitlement), then pre-authorisation is granted for the extended programme. Annual session limits may apply but are typically generous for documented post-surgical cases." },
-    { title: "For international surgery patients:", text: "insurance coverage in Dubai often extends to rehabilitation regardless of where surgery occurred, provided the surgery itself was medically necessary and properly documented. Bring or send: full surgical report, post-operative imaging, surgeon's rehabilitation prescription, insurance card. WhatsApp these to +971 55 586 7466 before booking and we will confirm exact coverage." }
+    { title: "For international surgery patients:", text: 'insurance coverage in Dubai often extends to rehabilitation regardless of where surgery occurred, provided the surgery itself was medically necessary and properly documented. Bring or send: full surgical report, post-operative imaging, surgeon\'s rehabilitation prescription, insurance card. <a href="https://wa.me/971555867466?text=Hello%20Vedara%20Care,%20I%20have%20had%20surgery%20abroad%20and%20would%20like%20to%20confirm%20my%20rehab%20insurance%20coverage." target="_blank" rel="noopener noreferrer" class="underline hover:opacity-80">WhatsApp these to +971 55 586 7466</a> before booking and we will confirm exact coverage.' }
   ],
   sidebar: {
     label: "OUR DIRECT-BILLING INSURERS",
     insurers: ["Daman", "AXA", "Allianz", "Oman Insurance", "Now Health", "Bupa", "MetLife"],
-    text: "WhatsApp your insurance card and surgical report to +971 55 586 7466 before booking to confirm specific coverage and pre-authorisation needs.",
+    text: 'WhatsApp your insurance card and surgical report to <a href="https://wa.me/971555867466?text=Hello%20Vedara%20Care,%20I%27d%20like%20to%20share%20my%20insurance%20card%20and%20surgical%20report%20to%20confirm%20my%20post-surgery%20rehab%20coverage." target="_blank" rel="noopener noreferrer" class="underline hover:opacity-85">+971 55 586 7466</a> before booking to confirm specific coverage and pre-authorisation needs.',
     buttonText: "WhatsApp us Your Surgical Report",
     buttonHref: "https://wa.me/971555867466?text=Hello%20Vedara%20Care,%20I%27d%20like%20to%20share%20my%20insurance%20card%20and%20surgical%20report."
   }
@@ -413,83 +414,83 @@ export const postSurgeryFAQData = {
   faqs: [
     {
       question: "When should I start physiotherapy after surgery?",
-      answer: "Typically within 24–72 hours of discharge for most orthopaedic procedures. Early initiation produces meaningfully better outcomes than waiting. Your operating surgeon's specific protocol determines the exact timing — some procedures have early restrictions, others encourage immediate early-phase work. WhatsApp your surgical report to +971 55 586 7466 and we will confirm the appropriate timing for your specific procedure."
+      answer: "Typically within 24–72 hours of discharge for most orthopaedic procedures. Early initiation produces meaningfully better outcomes than waiting. Your operating surgeon's specific protocol determines the exact timing — some procedures have early restrictions, others encourage immediate early-phase work. <a href='https://wa.me/971555867466?text=Hello%20Vedara%20Care,%20I%27d%20like%20to%20share%20my%20surgical%20report%20to%20confirm%20my%20post-surgery%20rehab%20timing.' target='_blank' rel='noopener noreferrer' class='text-[#C4A962] underline hover:text-[#b89a56]'>WhatsApp your surgical report to +971 55 586 7466</a> and we will confirm the appropriate timing for your specific procedure."
     },
     {
-  question: "Can you coordinate with my surgeon who operated overseas?",
-  answer: "Yes — approximately 40% of our post-surgical patients had surgery internationally. We coordinate directly with surgeons in the UK, India, Germany, USA, Lebanon, Egypt, and other countries. The process: we obtain your post-operative report, contact your surgeon with your written consent, share our planned approach, and maintain ongoing communication throughout your rehabilitation. Most international surgeons respond well — they want their surgical work to succeed."
-},
-{
-  question: "Do you offer home physiotherapy after surgery?",
-  answer: "Yes — home physiotherapy is one of our most-utilised post-surgical services. Particularly common in the first 2-4 weeks when travel is difficult. Our DPT-qualified physiotherapists travel to your home <a href='/home-healthcare-jvc/' class='text-[#C4A962] underline hover:text-[#b89a56]'>across Dubai</a> including JVC, JVT, Al Barsha South, Sports City, Motor City, Arjan, Dubai Hills, Marina, Downtown, Palm Jumeirah, Mirdif, and surrounding areas. Home sessions are AED 450 including therapist travel time. Many patients transition from home sessions to clinic visits around week 3-6 as their mobility improves."
-},
-{
-  question: "How long will I need physiotherapy after knee replacement?",
-  answer: "Typically 4-6 months for total knee replacement with 30-40 sessions across the programme. Phase 1 (weeks 0-2) often home-based. Phases 2-3 (weeks 2-16) typically clinic-based with 2-3 sessions weekly initially, reducing to weekly. Phase 4-5 (months 4-6) typically weekly or bi-weekly. Some patients with bilateral knee replacement or complex revisions need extended programmes."
-},
-{
-  question: "How long for hip replacement rehabilitation?",
-  answer: "Typically 3-4 months for total hip replacement with 24-30 sessions. Slightly faster than knee replacement on average. Different protocols for posterior, anterolateral, and anterior surgical approaches — your surgeon's approach determines specific precautions. Home physiotherapy typically for the first 2-3 weeks, then transition to clinic."
-},
-{
-  question: "What about ACL reconstruction rehabilitation timeline?",
-  answer: "Typical timeline is 9-12 months from surgery to full return to cutting sports. This is genuinely the time needed — early return is the leading cause of re-injury. Our ACL programme follows evidence-based phases: early protection (0-6 weeks), strengthening (6-12 weeks), neuromuscular control (3-6 months), return-to-sport phase (6-12 months) with objective testing before clearance."
-},
-{
-  question: "Can I do post-surgical rehabilitation alongside conventional physiotherapy elsewhere?",
-  answer: "We do not recommend split-clinic rehabilitation for post-surgical patients. Effective post-surgical care requires consistent protocol application, same-therapist continuity, integrated progress documentation, and surgeon coordination through one channel. Patients who split rehabilitation across multiple clinics consistently have worse outcomes. We can review your rehabilitation if you are considering switching from another provider."
-},
-{
-  question: "What if my surgery was complicated by infection or other complications?",
-  answer: "We work with patients across the complexity spectrum. Patients with surgical complications (infection, hardware issues, delayed healing, revision surgery) often have longer rehabilitation timelines and require more careful protocol application. Coordination with your surgeon is even more important in these cases. We are honest about realistic timelines — patients with complications often need 50-100% longer rehabilitation than uncomplicated cases."
-},
-{
-  question: "How does insurance typically cover post-surgical physiotherapy?",
-  answer: "Generally well — better than most physiotherapy categories. Pre-authorisation is often required for programmes beyond 10-15 initial sessions. Our team handles pre-authorisation on your behalf. Direct-billing with seven major insurers. Bring your surgical report and insurance card to your initial consultation; WhatsApp the same to +971 55 586 7466 before booking to confirm exact coverage."
-},
-{
-  question: "Can elderly patients have safe post-surgical rehabilitation at home?",
-  answer: "Yes — elderly post-surgical rehabilitation is one of our specialised areas. Home physiotherapy is particularly valuable for elderly patients who find clinic travel exhausting or unsafe. Our therapists are experienced in working with elderly post-surgical patients (joint replacements being the most common). Family involvement is welcomed throughout."
-},
-{
-  question: "Where is your post-surgical rehabilitation clinic in Dubai?",
-  answer: "Our clinic is at Jumeirah Village Circle (JVC), Dubai — walking distance from Circle Mall, three minutes from FIVE Jumeirah Village Hotel, and five minutes from JSS Private School. Free patient parking. Easy access from Sheikh Mohammed Bin Zayed Road and Al Khail Road. Patients travel to us from across Dubai. Home physiotherapy available across Dubai for early-phase recovery."
-},
-{
-  question: "What about post-mastectomy or other oncology surgery rehabilitation?",
-  answer: "We provide post-mastectomy and oncology surgery rehabilitation with sensitivity to the specific clinical needs. This includes lymphedema management, shoulder mobility restoration, scar management, and broader functional rehabilitation. Coordination with your oncology team is essential. Particularly important for breast cancer patients in their early post-treatment phase."
-},
-{
-  question: "Do you offer post-bariatric surgery rehabilitation?",
-  answer: "Yes — post-bariatric surgery patients often benefit from structured rehabilitation including mobility restoration, functional capacity building, exercise prescription appropriate to changing body composition, and long-term activity programmes. We coordinate with your bariatric surgery team for specific protocols."
-},
-{
-  question: "What if I need to delay my rehabilitation due to travel or work commitments?",
-  answer: "Some flexibility is possible but post-surgical rehabilitation has time-sensitive windows. Major delays (more than 2-3 weeks at critical phases) can compromise outcomes. We work with patients who have temporary travel or work commitments to maintain programme momentum through home exercise compliance, modified scheduling, or temporary intensity reduction. Discuss any planned absences at initial consultation so we can plan appropriately."
-},
-{
-  question: "Can you recommend specific surgeons in Dubai for second opinions?",
-  answer: "We can suggest surgeons we have worked with extensively if you need second opinions or are considering surgical revision. We do not have referral arrangements — our suggestions are based on clinical reputation and our experience coordinating with their teams. The decision about your surgeon is always yours."
-},
-{
-  question: "What if I had surgery decades ago and am now having problems?",
-  answer: "Common situation — patients with decades-old surgical procedures (old knee replacements, old spinal surgeries, old joint procedures) often develop new symptoms or movement patterns related to the old surgery. We can assess your specific situation, identify whether rehabilitation can address your current symptoms, and coordinate with appropriate specialists if your situation requires further surgical or medical input."
-},
-{
-  question: "Do you work with cosmetic surgery rehabilitation?",
-  answer: "For surgical procedures with documented functional impact — breast reduction, major abdominal procedures, post-liposuction lymphatic drainage, post-cosmetic-surgery scar management — we provide appropriate rehabilitation. Pure cosmetic recovery without functional impact may not require formal physiotherapy."
-},
-{
-  question: "What about integrated Ayurveda and physiotherapy for post-surgical recovery?",
-  answer: "For specific procedures and patient situations, integrated care can be valuable. Post-surgical patients sometimes benefit from <a href='/ayurveda-clinic-jvc/' class='text-[#C4A962] underline hover:text-[#b89a56]'>Integrated Ayurveda</a> support for: chronic pain that persists after surgical recovery, systemic recovery support (energy, sleep, mood during recovery), addressing patterns that may have contributed to the need for surgery, and post-cardiac surgery recovery support. Integration is offered when clinically appropriate. Most post-surgical patients receive standalone physiotherapy only."
-},
-{
-  question: "Can I do home physiotherapy through my entire post-surgical recovery?",
-  answer: "Yes for some patients. Most patients transition from home to clinic sessions around weeks 3-6 as mobility improves — the clinic environment provides better equipment access for later-phase strengthening and rehabilitation. However, some patients (elderly, those with limited transportation, patient preference) continue home physiotherapy throughout. The trade-off: clinic-based later-phase rehab typically has better equipment access; home-based is more convenient. We discuss the trade-offs at consultation."
-},
-{
-  question: "How do I book a post-surgery consultation?",
-  answer: 'Three ways: (1) <a href="https://wa.me/971555867466" target="_blank" rel="noopener noreferrer" class="hover:underline">WhatsApp +971 55 586 7466</a> — fastest response, ideal for sending surgical reports, post-operative imaging, and surgeon contact details. (2) Call +971 55 586 7466 — direct booking, available 9 AM to 9 PM seven days a week. (3) Book online through our website. For your first appointment, please bring or send: complete surgical report, post-operative imaging (X-rays, MRI), any rehabilitation prescription from your surgeon, your surgeon\'s contact details if international, current medication list, and insurance card.'
-}
+      question: "Can you coordinate with my surgeon who operated overseas?",
+      answer: "Yes — approximately 40% of our post-surgical patients had surgery internationally. We coordinate directly with surgeons in the UK, India, Germany, USA, Lebanon, Egypt, and other countries. The process: we obtain your post-operative report, contact your surgeon with your written consent, share our planned approach, and maintain ongoing communication throughout your rehabilitation. Most international surgeons respond well — they want their surgical work to succeed."
+    },
+    {
+      question: "Do you offer home physiotherapy after surgery?",
+      answer: "Yes — home physiotherapy is one of our most-utilised post-surgical services. Particularly common in the first 2-4 weeks when travel is difficult. Our DPT-qualified physiotherapists travel to your home <a href='/physiotherapy-at-home-dubai/' class='text-[#C4A962] underline hover:text-[#b89a56]'>across Dubai</a> including JVC, JVT, Al Barsha South, Sports City, Motor City, Arjan, Dubai Hills, Marina, Downtown, Palm Jumeirah, Mirdif, and surrounding areas. Home sessions are AED 450 including therapist travel time. Many patients transition from home sessions to clinic visits around week 3-6 as their mobility improves."
+    },
+    {
+      question: "How long will I need physiotherapy after knee replacement?",
+      answer: "Typically 4-6 months for total knee replacement with 30-40 sessions across the programme. Phase 1 (weeks 0-2) often home-based. Phases 2-3 (weeks 2-16) typically clinic-based with 2-3 sessions weekly initially, reducing to weekly. Phase 4-5 (months 4-6) typically weekly or bi-weekly. Some patients with bilateral knee replacement or complex revisions need extended programmes."
+    },
+    {
+      question: "How long for hip replacement rehabilitation?",
+      answer: "Typically 3-4 months for total hip replacement with 24-30 sessions. Slightly faster than knee replacement on average. Different protocols for posterior, anterolateral, and anterior surgical approaches — your surgeon's approach determines specific precautions. Home physiotherapy typically for the first 2-3 weeks, then transition to clinic."
+    },
+    {
+      question: "What about ACL reconstruction rehabilitation timeline?",
+      answer: "Typical timeline is 9-12 months from surgery to full return to cutting sports. This is genuinely the time needed — early return is the leading cause of re-injury. Our ACL programme follows evidence-based phases: early protection (0-6 weeks), strengthening (6-12 weeks), neuromuscular control (3-6 months), return-to-sport phase (6-12 months) with objective testing before clearance."
+    },
+    {
+      question: "Can I do post-surgical rehabilitation alongside conventional physiotherapy elsewhere?",
+      answer: "We do not recommend split-clinic rehabilitation for post-surgical patients. Effective post-surgical care requires consistent protocol application, same-therapist continuity, integrated progress documentation, and surgeon coordination through one channel. Patients who split rehabilitation across multiple clinics consistently have worse outcomes. We can review your rehabilitation if you are considering switching from another provider."
+    },
+    {
+      question: "What if my surgery was complicated by infection or other complications?",
+      answer: "We work with patients across the complexity spectrum. Patients with surgical complications (infection, hardware issues, delayed healing, revision surgery) often have longer rehabilitation timelines and require more careful protocol application. Coordination with your surgeon is even more important in these cases. We are honest about realistic timelines — patients with complications often need 50-100% longer rehabilitation than uncomplicated cases."
+    },
+    {
+      question: "How does insurance typically cover post-surgical physiotherapy?",
+      answer: "Generally well — better than most physiotherapy categories. Pre-authorisation is often required for programmes beyond 10-15 initial sessions. Our team handles pre-authorisation on your behalf. Direct-billing with seven major insurers. Bring your surgical report and insurance card to your initial consultation; <a href='https://wa.me/971555867466?text=Hi,%20I%27d%20like%20to%20verify%20my%20insurance%20coverage%20for%20post-surgery%20rehab.' target='_blank' rel='noopener noreferrer' class='text-[#C4A962] underline hover:text-[#b89a56]'>WhatsApp the same to +971 55 586 7466</a> before booking to confirm exact coverage."
+    },
+    {
+      question: "Can elderly patients have safe post-surgical rehabilitation at home?",
+      answer: "Yes — elderly post-surgical rehabilitation is one of our specialised areas. Home physiotherapy is particularly valuable for elderly patients who find clinic travel exhausting or unsafe. Our therapists are experienced in working with elderly post-surgical patients (joint replacements being the most common). Family involvement is welcomed throughout."
+    },
+    {
+      question: "Where is your post-surgical rehabilitation clinic in Dubai?",
+      answer: "Our clinic is at Jumeirah Village Circle (JVC), Dubai — walking distance from Circle Mall, three minutes from FIVE Jumeirah Village Hotel, and five minutes from JSS Private School. Free patient parking. Easy access from Sheikh Mohammed Bin Zayed Road and Al Khail Road. Patients travel to us from across Dubai. Home physiotherapy available across Dubai for early-phase recovery."
+    },
+    {
+      question: "What about post-mastectomy or other oncology surgery rehabilitation?",
+      answer: "We provide post-mastectomy and oncology surgery rehabilitation with sensitivity to the specific clinical needs. This includes lymphedema management, shoulder mobility restoration, scar management, and broader functional rehabilitation. Coordination with your oncology team is essential. Particularly important for breast cancer patients in their early post-treatment phase."
+    },
+    {
+      question: "Do you offer post-bariatric surgery rehabilitation?",
+      answer: "Yes — post-bariatric surgery patients often benefit from structured rehabilitation including mobility restoration, functional capacity building, exercise prescription appropriate to changing body composition, and long-term activity programmes. We coordinate with your bariatric surgery team for specific protocols."
+    },
+    {
+      question: "What if I need to delay my rehabilitation due to travel or work commitments?",
+      answer: "Some flexibility is possible but post-surgical rehabilitation has time-sensitive windows. Major delays (more than 2-3 weeks at critical phases) can compromise outcomes. We work with patients who have temporary travel or work commitments to maintain programme momentum through home exercise compliance, modified scheduling, or temporary intensity reduction. Discuss any planned absences at initial consultation so we can plan appropriately."
+    },
+    {
+      question: "Can you recommend specific surgeons in Dubai for second opinions?",
+      answer: "We can suggest surgeons we have worked with extensively if you need second opinions or are considering surgical revision. We do not have referral arrangements — our suggestions are based on clinical reputation and our experience coordinating with their teams. The decision about your surgeon is always yours."
+    },
+    {
+      question: "What if I had surgery decades ago and am now having problems?",
+      answer: "Common situation — patients with decades-old surgical procedures (old knee replacements, old spinal surgeries, old joint procedures) often develop new symptoms or movement patterns related to the old surgery. We can assess your specific situation, identify whether rehabilitation can address your current symptoms, and coordinate with appropriate specialists if your situation requires further surgical or medical input."
+    },
+    {
+      question: "Do you work with cosmetic surgery rehabilitation?",
+      answer: "For surgical procedures with documented functional impact — breast reduction, major abdominal procedures, post-liposuction lymphatic drainage, post-cosmetic-surgery scar management — we provide appropriate rehabilitation. Pure cosmetic recovery without functional impact may not require formal physiotherapy."
+    },
+    {
+      question: "What about integrated Ayurveda and physiotherapy for post-surgical recovery?",
+      answer: "For specific procedures and patient situations, integrated care can be valuable. Post-surgical patients sometimes benefit from <a href='/ayurveda-clinic-jvc/' class='text-[#C4A962] underline hover:text-[#b89a56]'>Integrated Ayurveda</a> support for: chronic pain that persists after surgical recovery, systemic recovery support (energy, sleep, mood during recovery), addressing patterns that may have contributed to the need for surgery, and post-cardiac surgery recovery support. Integration is offered when clinically appropriate. Most post-surgical patients receive standalone physiotherapy only."
+    },
+    {
+      question: "Can I do home physiotherapy through my entire post-surgical recovery?",
+      answer: "Yes for some patients. Most patients transition from home to clinic sessions around weeks 3-6 as mobility improves — the clinic environment provides better equipment access for later-phase strengthening and rehabilitation. However, some patients (elderly, those with limited transportation, patient preference) continue home physiotherapy throughout. The trade-off: clinic-based later-phase rehab typically has better equipment access; home-based is more convenient. We discuss the trade-offs at consultation."
+    },
+    {
+      question: "How do I book a post-surgery consultation?",
+      answer: 'Three ways: (1) <a href="https://wa.me/971555867466?text=Hello%20Vedara%20Care,%20I%27d%20like%20to%20book%20a%20post-surgery%20consultation." target="_blank" rel="noopener noreferrer" class="hover:underline">WhatsApp +971 55 586 7466</a> — fastest response, ideal for sending surgical reports, post-operative imaging, and surgeon contact details. (2) Call +971 55 586 7466 — direct booking, available 9 AM to 9 PM seven days a week. (3) Book online through our website. For your first appointment, please bring or send: complete surgical report, post-operative imaging (X-rays, MRI), any rehabilitation prescription from your surgeon, your surgeon\'s contact details if international, current medication list, and insurance card.'
+    }
   ]
 };

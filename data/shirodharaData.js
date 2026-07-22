@@ -8,7 +8,9 @@ export const shirodharaHero = {
   title: "Warm oil. A copper vessel. Forty-five minutes of stillness on the forehead.",
   description: "Classical Shirodhara — the continuous warm medicated oil stream poured rhythmically across the forehead. Doctor-prescribed at our DHA-licensed clinic in JVC, Dubai, for <a href='/conditions/stress-anxiety-ayurveda-dubai/' class=' hover:underline transition-colors'>chronic stress</a>, <a href='/conditions/insomnia-ayurveda-dubai/' class=' hover:underline transition-colors'>insomnia</a>, <a href='/conditions/stress-anxiety-ayurveda-dubai/' class=' hover:underline transition-colors'>anxiety</a>, and <a href='/conditions/migraine-ayurveda-dubai/' class='hover:underline transition-colors'>migraine</a>.",
   primaryCTA: "Book a Shirodhara Consultation",
+  primaryCTAHref: "/book",
   secondaryCTA: "Chat on WhatsApp",
+  secondaryCTAHref: "https://wa.me/971555867466?text=Hello%20Vedara%20Care,%20I%20would%20like%20to%20inquire%20about%20Shirodhara%20treatments%20at%20your%20JVC%20clinic.",
   trustSignals: ["Traditional Copper Dhara Vessel", "Doctor-Prescribed Medicated Oils", "Same-Gender Therapists Always", "From AED 450 per session"],
   floatingCard: {
     title: "BEYOND RELAXATION",
@@ -200,7 +202,8 @@ export const shirodharaPrograms = {
         "Aftercare guidance provided"
       ],
       bestFor: "First-time experience, occasional therapy, <a href='/conditions/stress-anxiety-ayurveda-dubai/' class='text-[#C9A961] hover:underline transition-colors'>mild stress</a> reset",
-      buttonText: "Enquire on WhatsApp"
+      buttonText: "Enquire on WhatsApp",
+      whatsappMessage: "Hello Vedara Care, I would like to inquire about the Single-Session Shirodhara program at your JVC clinic."
     },
     {
       name: "7-Session Course",
@@ -216,7 +219,8 @@ export const shirodharaPrograms = {
       ],
       bestFor: "<a href='/conditions/stress-anxiety-ayurveda-dubai/' class='text-[#C9A961] hover:underline transition-colors'>Chronic stress, mild insomnia, anxiety</a>, general nervous system reset",
       buttonText: "Enquire on WhatsApp",
-      featured: true
+      featured: true,
+      whatsappMessage: "Hello Vedara Care, I would like to inquire about the 7-Session Shirodhara course at your JVC clinic."
     },
     {
       name: "14-Session Therapeutic Course",
@@ -231,7 +235,8 @@ export const shirodharaPrograms = {
         "8-week integrated home and dietary protocol"
       ],
       bestFor: "<a href='/conditions/migraine-ayurveda-dubai/' class='text-[#C9A961] hover:underline transition-colors'>Chronic migraine</a>, <a href='/conditions/stress-anxiety-ayurveda-dubai/' class='text-[#C9A961] hover:underline transition-colors'>severe insomnia, chronic anxiety</a>, <a href='/conditions/hair-loss-ayurveda-dubai/' class='text-[#C9A961] hover:underline transition-colors'>hair loss</a>, integrated treatment",
-      buttonText: "Enquire on WhatsApp"
+      buttonText: "Enquire on WhatsApp",
+      whatsappMessage: "Hello Vedara Care, I would like to inquire about the 14-Session Shirodhara Therapeutic Course at your JVC clinic."
     }
   ],
   footer: "Most Shirodhara courses are most effective when sessions are 2-3 days apart, not consecutive days. Your doctor will schedule the course rhythm based on your condition."
@@ -263,7 +268,8 @@ export const shirodharaReviews = {
     { value: "41", label: "Shirodhara-specific reviews" },
     { value: "97%", label: "would recommend" }
   ],
-  buttonText: "Read All Reviews"
+  buttonText: "Read All Reviews",
+  buttonHref: "https://www.google.com/maps/search/?api=1&query=Vedara+Care+Polyclinic+JVC+Dubai"
 };
 
 export const shirodharaFaqs = {
@@ -276,6 +282,7 @@ export const shirodharaFaqs = {
   title: "What patients ask before their first Shirodhara.",
   description: "For comparison with other Ayurvedic therapies, see our category guide. For Abhyanga (often combined with Shirodhara), see the Abhyanga page.",
   buttonText: "Ask the Team",
+  buttonHref: "https://wa.me/971555867466?text=Hi,%20I%20have%20a%20question%20about%20Shirodhara%20treatments%20at%20your%20clinic.",
   faqs: [
     {
       question: "What is Shirodhara in simple terms?",
@@ -318,6 +325,8 @@ export const shirodharaTreatmentLocation = {
   title: "Where Shirodhara happens at Vedara Care.",
   address: "Al Barsha South Fourth, Binghatti Azure, Shop -4,<br/> Jumeraih Village Circle (JVC) Dubai",
   phone: "+971 55 586 7466",
+  whatsapp: "+971 55 586 7466",
+  whatsappMessage: "Hi, I'd like to inquire about Shirodhara treatments at your JVC clinic.",
   email: "booking@vedaracare.ae",
   hours: "Saturday - Sunday: 8:30 am to 11:30 pm",
   landmarks: [
@@ -327,6 +336,7 @@ export const shirodharaTreatmentLocation = {
   ],
   description: "Two dedicated Shirodhara rooms with traditional copper dhara vessels and authentic Kerala-style wooden droni tables. Rooms maintained at 26-28°C with soft amber lighting for the therapy.",
   buttonText: "Book Shirodhara Consultation",
+  buttonHref: "/book",
   mapEmbed: "https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d3613.9894568193345!2d55.20722358578439!3d25.068346479666594!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x3e5f6dd72f3da587%3A0xe7ecca8687a75b72!2sVedara%20Care%20Polyclinic!5e0!3m2!1sen!2sus!4v1780727442216!5m2!1sen!2sus",
   mapAlt: "Vedara Care Shirodhara clinic location in Jumeirah Village Circle Dubai near Circle Mall"
 };
@@ -337,7 +347,9 @@ export const shirodharaFinalCTA = {
   title: "Begin with a brief consultation. The right oil will follow.",
   description: "First-time Shirodhara always begins with a brief consultation — we cannot select the right medicated oil for your body and your condition without it. Returning patients book directly. The consultation takes 15 to 20 minutes and costs AED 200",
   button1Text: "Book Shirodhara Consultation",
+  button1Href: "/book",
   button2Text: "Chat on WhatsApp",
+  button2Href: "https://wa.me/971555867466?text=Hello%20Vedara%20Care,%20I%20would%20like%20to%20inquire%20about%20Shirodhara%20treatments%20at%20your%20JVC%20clinic.",
   bullets: [
     "From AED 450 per session",
     "Same-gender therapists",
@@ -354,6 +366,8 @@ export const shirodharaRelatedPages = {
   bgColor: "bg-[#FAF7F2]",
   label: "EXPLORE FURTHER",
   title: "Related pages.",
+  linkText: "Browse all Ayurvedic treatments",
+  linkHref: "/ayurveda-dubai/",
   pages: [
     {
       title: "Abhyanga Massage in Dubai",
@@ -379,9 +393,5 @@ export const shirodharaRelatedPages = {
       image: "/images/shirodhara-treatment-room-droni-jvc.webp",
       href: "/treatments/ayurvedic-massage-jvc/"
     }
-  ],
-  cta: {
-    text: "Browse all Ayurvedic treatments",
-    href: "/ayurveda-dubai/"
-  }
+  ]
 };

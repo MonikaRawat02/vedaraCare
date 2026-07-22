@@ -109,7 +109,8 @@ export const manualTherapyReviews = {
     { value: "500+", label: "manual therapy patients treated" },
     { value: "Certified", label: "Maitland, Mulligan, McKenzie practitioners" },
   ],
-  buttonText: "Read All Manual Therapy Reviews"
+  buttonText: "Read All Manual Therapy Reviews",
+  buttonHref: "https://www.google.com/maps/search/?api=1&query=Vedara%20Care%20Polyclinic%20JVC%20Dubai"
 };
 
 export const manualTherapyFaqs = {
@@ -206,7 +207,7 @@ export const manualTherapyFaqs = {
     },
     {
       question: "How do I book a manual therapy assessment?",
-      answer: "Three ways: (1) <a href=\"https://wa.me/971555867466\" target=\"_blank\" rel=\"noopener noreferrer\" class=\"hover:underline\">WhatsApp +971 55 586 7466</a> — fastest response, ideal for asking specific questions about whether manual therapy would help your situation. (2) Call +971 4 200 0000 — direct booking, available 9 AM to 9 PM seven days a week. (3) Book online through our website. For your first appointment, please bring: any relevant medical reports, imaging if available, current medication list, insurance card, and comfortable clothing allowing assessment of the affected area."
+      answer: "Three ways: (1) <a href=\"https://wa.me/971555867466\" target=\"_blank\" rel=\"noopener noreferrer\" class=\"hover:underline\">WhatsApp +971 55 586 7466</a> — fastest response, ideal for asking specific questions about whether manual therapy would help your situation. (2) Call +971 55 586 7466 — direct booking, available 9 AM to 9 PM seven days a week. (3) Book online through our website. For your first appointment, please bring: any relevant medical reports, imaging if available, current medication list, insurance card, and comfortable clothing allowing assessment of the affected area."
     }
   ]
 };

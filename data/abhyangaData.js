@@ -298,7 +298,8 @@ export const abhyangaReviews = {
     { value: "52", label: "Abhyanga-specific reviews" },
     { value: "97%", label: "would recommend" }
   ],
-  buttonText: "Read All Reviews →"
+  buttonText: "Read All Reviews →",
+  buttonHref: "https://www.google.com/maps/search/?api=1&query=Vedara%20Care%20Polyclinic%20JVC%20Dubai",
 };
 
 export const abhyangaFaqs = {

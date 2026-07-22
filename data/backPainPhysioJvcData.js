@@ -500,7 +500,7 @@ export const backPainPhysioAcuteAndPricing = {
       { name: "Home physiotherapy session (when clinic travel impractical)", price: "AED 400" },
       { name: "Workplace ergonomic assessment (optional)", price: "AED 550" }
     ],
-    insuranceText: 'Insurance direct-billing with seven major insurers. Back pain physiotherapy is well-covered by most Dubai insurance plans with medical justification. <a href="https://wa.me/971555867466?text=Hello%20Vedara%20Care,%20I%20would%20like%20to%20confirm%20my%20insurance%20coverage%20for%20back%20pain%20physiotherapy." target="_blank" rel="noopener noreferrer" class="text-[#C9A55A] hover:text-[#B8963E] font-medium transition-colors underline"><a href="https://wa.me/971555867466?text=Hi,%20I%27d%20like%20to%20verify%20my%20insurance%20coverage" target="_blank" rel="noopener noreferrer" class="hover:underline">WhatsApp your insurance card</a> before booking for specific coverage confirmation</a>.',
+    insuranceText: 'Insurance direct-billing with seven major insurers. Back pain physiotherapy is well-covered by most Dubai insurance plans with medical justification. <a href="https://wa.me/971555867466?text=Hi,%20I%27d%20like%20to%20verify%20my%20insurance%20coverage%20for%20back%20pain%20physiotherapy" target="_blank" rel="noopener noreferrer" class="text-[#C9A55A] hover:text-[#B8963E] font-medium transition-colors underline">WhatsApp your insurance card</a> before booking for specific coverage confirmation.',
     insurances: ["Daman", "AXA", "Allianz", "Oman Insurance", "Now Health", "Bupa", "MetLife"]
   }
 };

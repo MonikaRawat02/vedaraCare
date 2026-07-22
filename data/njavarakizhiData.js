@@ -8,7 +8,9 @@ export const njavarakizhiHero = {
   title: "Massage with warm rice. The classical Ayurvedic therapy for what other treatments cannot reach.",
   description: "Njavarakizhi — also written Navarakizhi, and called Shashtika Shali Pinda Sweda in Sanskrit — is performed using small cloth boluses filled with a special variety of rice cooked in herbal medicated milk. At our DHA-licensed Ayurveda clinic in Jumeirah Village Circle, Dubai, it is doctor-prescribed for muscle wasting, post-illness recovery, neurological rehabilitation, and chronic inflammatory conditions.",
   primaryCTA: "Book a Njavarakizhi Consultation",
+  primaryCTAHref: "/book",
   secondaryCTA: "Chat on WhatsApp",
+  secondaryCTAHref: "https://wa.me/971555867466?text=Hi,%20I'd%20like%20to%20inquire%20about%20njavarakizhi%20treatment%20at%20your%20JVC%20clinic.",
   trustSignals: [
     "Authentic Shashtika Rice from Kerala",
     "BAMS-Qualified Doctors",
@@ -236,6 +238,8 @@ export const njavarakizhiPrograms = {
   bgColor: "bg-white",
   label: "PROGRAMMES",
   title: "Three Njavarakizhi protocols, calibrated to clinical need.",
+  whatsappNumber: "+971555867466",
+  defaultWhatsappMessage: "Hi, I'd like to inquire about njavarakizhi treatment programmes at your clinic.",
   programs: [
     {
       name: "Trial Course",
@@ -249,7 +253,8 @@ export const njavarakizhiPrograms = {
         "4-week follow-up to assess response"
       ],
       bestFor: "First-time Njavarakizhi, mild convalescence, assessing therapy response before a longer course",
-      buttonText: "Enquire on WhatsApp"
+      buttonText: "Enquire on WhatsApp",
+      whatsappMessage: "Hi, I'd like to inquire about the Njavarakizhi Trial Course (7 sessions) at your clinic."
     },
     {
       name: "Clinical Restorative Course",
@@ -265,7 +270,8 @@ export const njavarakizhiPrograms = {
         "8-week follow-up programme"
       ],
       bestFor: "Post-illness recovery, sarcopenia, <a href=\"/conditions/arthritis-ayurveda-dubai/\">rheumatoid conditions</a>, post-immobilisation rehabilitation",
-      buttonText: "Enquire on WhatsApp"
+      buttonText: "Enquire on WhatsApp",
+      whatsappMessage: "Hi, I'd like to inquire about the Njavarakizhi Clinical Restorative Course (14 sessions) at your clinic."
     },
     {
       name: "Intensive Restorative Programme",
@@ -281,7 +287,8 @@ export const njavarakizhiPrograms = {
         "12-week follow-up support"
       ],
       bestFor: "<a href=\"/conditions/stroke-recovery-ayurveda-dubai/\">Post-stroke rehabilitation</a>, severe muscle wasting, complex neurological recovery, integrated long-term care",
-      buttonText: "Enquire on WhatsApp"
+      buttonText: "Enquire on WhatsApp",
+      whatsappMessage: "Hi, I'd like to inquire about the Njavarakizhi Intensive Restorative Programme (21-30 sessions) at your clinic."
     }
   ],
   footer: "All programmes can be combined with <a href=\"/home-healthcare-dubai/\">home healthcare services</a> for patients who cannot easily travel to the clinic. Pricing adjusted for home delivery. Insurance direct-billing available with seven major insurers — coverage for specialised restorative care varies by plan.",
@@ -314,7 +321,8 @@ export const njavarakizhiReviews = {
     { value: "23", label: "Njavarakizhi-specific reviews" },
     { value: "88%", label: "reported meaningful clinical improvement" }
   ],
-  buttonText: "Read All Reviews →"
+  buttonText: "Read All Reviews →",
+  buttonHref: "https://www.google.com/maps/search/?api=1&query=Vedara%20Care%20Polyclinic%20JVC%20Dubai"
 };
 
 export const njavarakizhiFaqs = {
@@ -327,6 +335,7 @@ export const njavarakizhiFaqs = {
   title: "What patients ask before considering Njavarakizhi.",
   description: "For comparison with other Ayurvedic massages, see our category guide. For Abhyanga or general Ayurvedic care, see the broader treatment pages.",
   buttonText: "Ask the Team",
+  buttonHref: "https://wa.me/971555867466?text=Hi,%20I%20have%20a%20question%20about%20njavarakizhi%20treatment%20at%20your%20clinic.",
   faqs: [
     {
       question: "What is Njavarakizhi in simple terms?",
@@ -393,6 +402,8 @@ export const njavarakizhiTreatmentLocation = {
   title: "Where Njavarakizhi happens at Vedara Care.",
   address: "Al Barsha South Fourth, Binghatti Azure, Shop -4, <br/>Jumeraih Village Circle (JVC) Dubai",
   phone: "+971 55 586 7466",
+  whatsapp: "+971 55 586 7466",
+  whatsappMessage: "Hi, I'd like to inquire about njavarakizhi treatment at your JVC clinic.",
   email: "booking@vedaracare.ae",
   hours: "Saturday - Sunday: 8:30 am to 11:30 pm",
   landmarks: [
@@ -403,6 +414,7 @@ export const njavarakizhiTreatmentLocation = {
   ],
   description: "Two dedicated Njavarakizhi treatment rooms with traditional Kerala-style wooden droni tables, insulated brass vessels, and rice-preparation stations. Our kitchen prepares Njavara rice and herbal kashayams fresh for every session — which is why advance booking is required.",
   buttonText: "Book Njavarakizhi Consultation",
+  buttonHref: "/book",
   mapAlt: "Vedara Care Njavarakizhi specialised therapy clinic in Jumeirah Village Circle Dubai",
    mapEmbed: "https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d3613.9894568193345!2d55.20722358578439!3d25.068346479666594!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x3e5f6dd72f3da587%3A0xe7ecca8687a75b72!2sVedara%20Care%20Polyclinic!5e0!3m2!1sen!2sus!4v1780727442216!5m2!1sen!2sus"
 };
@@ -413,7 +425,9 @@ export const njavarakizhiFinalCTA = {
   title: "Begin with a clinical assessment.",
   description: "Njavarakizhi is not the right therapy for most patients — but for the right patient, it is unmatched. A 45-60 minute consultation at our JVC clinic includes clinical assessment and a clear recommendation on whether Njavarakizhi will deliver the outcomes you are looking for. If it is not the right therapy, we will say so and recommend what is.",
   button1Text: "Book Njavarakizhi Consultation",
+  button1Href: "/book",
   button2Text: "Chat on WhatsApp",
+  button2Href: "https://wa.me/971555867466?text=Hi,%20I'd%20like%20to%20inquire%20about%20njavarakizhi%20treatment%20at%20your%20JVC%20clinic.",
   bullets: [
     "First consultation from AED 150",
     "Sessions require 24-48 hour advance booking",

@@ -5,6 +5,7 @@ import { useState } from 'react';
 const Footer = () => {
   const currentYear = new Date().getFullYear();
   const [openSection, setOpenSection] = useState(null);
+  const [showAllTreatments, setShowAllTreatments] = useState(false);
 
   const toggleSection = (section) => {
     setOpenSection(openSection === section ? null : section);
@@ -79,12 +80,26 @@ const Footer = () => {
               <li><Link href="/treatments/panchakarma-dubai/" className="hover:text-white transition-colors">Panchakarma in Dubai</Link></li>
               <li><Link href="/treatments/abhyanga-dubai/" className="hover:text-white transition-colors">Abhyanga Massage</Link></li>
               <li><Link href="/treatments/shirodhara-dubai/" className="hover:text-white transition-colors">Shirodhara</Link></li>
-              <li><Link href="/treatments/skin-rejuvenation-jvc/" className="hover:text-white transition-colors">Skin Rejuvenation</Link></li>
-              <li><Link href="/conditions/psoriasis-treatment-dubai" className="hover:text-white transition-colors">Psoriasis Treatment</Link></li>
-              <li><Link href="/services/physiotherapy" className="hover:text-white transition-colors">Sports Injury Rehab</Link></li>
-              <li><Link href="/physiotherapy/post-surgery-rehab-dubai/" className="hover:text-white transition-colors">Post-Surgery Rehab</Link></li>
-              <li><Link href="/services/dermatology" className="hover:text-white transition-colors">PRP Hair</Link></li>
-              <li><Link href="/services/home-healthcare" className="hover:text-white transition-colors">IV Drip at Home</Link></li>
+              
+              {showAllTreatments && (
+                <>
+                  <li><Link href="/treatments/skin-rejuvenation-jvc/" className="hover:text-white transition-colors">Skin Rejuvenation</Link></li>
+                  <li><Link href="/conditions/psoriasis-treatment-dubai" className="hover:text-white transition-colors">Psoriasis Treatment</Link></li>
+                  <li><Link href="/services/physiotherapy" className="hover:text-white transition-colors">Sports Injury Rehab</Link></li>
+                  <li><Link href="/physiotherapy/post-surgery-rehab-dubai/" className="hover:text-white transition-colors">Post-Surgery Rehab</Link></li>
+                  <li><Link href="/services/dermatology" className="hover:text-white transition-colors">PRP Hair</Link></li>
+                  <li><Link href="/services/home-healthcare" className="hover:text-white transition-colors">IV Drip at Home</Link></li>
+                </>
+              )}
+
+              <li>
+                <button 
+                  onClick={() => setShowAllTreatments(!showAllTreatments)} 
+                  className="text-[#D4A373] hover:text-white transition-colors text-xs font-semibold pt-1 flex items-center gap-1"
+                >
+                  <span>{showAllTreatments ? '− Show less' : '+ View 6 more treatments'}</span>
+                </button>
+              </li>
             </ul>
           </div>
 

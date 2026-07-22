@@ -103,7 +103,7 @@ export const kneePainConditions = {
       typicalSigns: "Pain with muscle contraction, stiffness after rest, focal tenderness"
     }
   ],
-  footer: "Not sure which pattern matches your knee pain? Book an assessment for accurate diagnosis →"
+  footer: "Not sure which pattern matches your knee pain? <a href=\"/book\" class=\"text-[#C9A55A] hover:underline\">Book an assessment for accurate diagnosis →</a>"
 };
 
 export const kneePainMechanism2 = {
@@ -522,7 +522,7 @@ export const kneePainInjuryTypes = {
     {
       number: "11",
       title: 'Post-Surgical Knee Conditions',
-      description: 'Rehabilitation after knee surgery — meniscectomy, meniscus repair, ACL reconstruction, knee replacement, arthroscopic procedures. Coordinated with operating surgeon. Specific protocols depending on procedure. Learn more on our <a href="/physiotherapy/post-surgery-rehab-dubai/"; text-decoration: underline;">post-surgical rehabilitation page</a>.',
+      description: 'Rehabilitation after knee surgery — meniscectomy, meniscus repair, ACL reconstruction, knee replacement, arthroscopic procedures. Coordinated with operating surgeon. Specific protocols depending on procedure. Learn more on our <a href="/physiotherapy/post-surgery-rehab-dubai/" class="underline text-[#C9A55A] hover:opacity-85">post-surgical rehabilitation page</a>.',
       typicalPatient: ' Post-surgical patient, often coordinated with international surgeons'
     },
     {
@@ -532,7 +532,7 @@ export const kneePainInjuryTypes = {
       typicalPatient: 'specific assessment required'
     }
   ],
-  footer: 'Not sure which condition applies? Book an assessment for accurate diagnosis →'
+  footer: 'Not sure which condition applies? <a href="/book" class="text-[#C9A55A] hover:underline">Book an assessment for accurate diagnosis →</a>'
 };
 
 export const kneePainActivityTypes = {

@@ -46,7 +46,7 @@ const FrozenShoulderDubai = () => {
       "url": currentUrl,
       "parentOrganization": {"@id": "https://vedaracare.ae/#organization"},
       "description": "Specialist frozen shoulder treatment at Vedara Care Polyclinic, Jumeirah Village Circle, Dubai. Phase-specific physiotherapy for adhesive capsulitis delivered by DPT-qualified specialists. Particular expertise in diabetic frozen shoulder. Coordination with rheumatologists for hydrodilatation when appropriate.",
-      "telephone": "+971 4 567 8900",
+      "telephone": "+971 55 586 7466",
       "priceRange": "AED 350 - AED 18,000",
       "address": {
         "@type": "PostalAddress",
@@ -506,9 +506,12 @@ const FrozenShoulderDubai = () => {
                 Most patients only need step 1.
               </p>
             </div>
-            <button className="w-full mt-6 px-6 py-3.5 border border-[#1C1612] text-[#1C1612] rounded-sm hover:bg-[#1C1612] hover:text-white transition-colors font-sans font-medium">
+            <a 
+              href="/book"
+              className="inline-block text-center w-full mt-6 px-6 py-3.5 border border-[#1C1612] text-[#1C1612] rounded-sm hover:bg-[#1C1612] hover:text-white transition-colors font-sans font-medium"
+            >
               Book Assessment to Discuss Options
-            </button>
+            </a>
           </div>
         </div>
       </div>
@@ -714,6 +717,8 @@ const FrozenShoulderDubai = () => {
         items={frozenShoulderReviews.items}
         stats={frozenShoulderReviews.stats}
         useKneeStyle={false}
+        buttonText={frozenShoulderReviews.buttonText}
+        buttonHref={frozenShoulderReviews.buttonHref}
       />
       
       <PostSurgeryTeam
@@ -755,9 +760,7 @@ const FrozenShoulderDubai = () => {
           </div>
 
           <div className="text-center">
-            <p className="mb-6 text-center font-sans text-sm leading-relaxed" style={{ color: 'rgb(107, 107, 107)' }}>
-              {frozenShoulderPricing.insuranceText}
-            </p>
+            <p className="mb-6 text-center font-sans text-sm leading-relaxed" style={{ color: 'rgb(107, 107, 107)' }} dangerouslySetInnerHTML={{ __html: frozenShoulderPricing.insuranceText }} />
            
             <div className="flex flex-wrap justify-center gap-3">
               {frozenShoulderPricing.insurers.map((insurer, index) => (
@@ -812,15 +815,27 @@ const FrozenShoulderDubai = () => {
                 </div>
                 <div className="flex gap-4">
                   <span className="text-sm font-medium font-sans text-[#6B6B6B] min-w-[80px]">Phone</span>
-                  <span className="text-sm font-sans text-[#262626]">{frozenShoulderLocation.phone}</span>
+                  <span className="text-sm font-sans text-[#262626]">
+                    <a href={`tel:${frozenShoulderLocation.phone.replace(/\s+/g, '')}`} className="hover:underline hover:text-[#C9A84C] transition-colors">
+                      {frozenShoulderLocation.phone}
+                    </a>
+                  </span>
                 </div>
                 <div className="flex gap-4">
                   <span className="text-sm font-medium font-sans text-[#6B6B6B] min-w-[80px]">WhatsApp</span>
-                  <span className="text-sm font-sans text-[#262626]">{frozenShoulderLocation.whatsapp}</span>
+                  <span className="text-sm font-sans text-[#262626]">
+                    <a href={`https://wa.me/${frozenShoulderLocation.whatsapp.replace(/[^0-9]/g, '')}?text=Hello%20Vedara%20Care,%20I%20would%20like%20to%20inquire%20about%20frozen%20shoulder%20treatment.`} target="_blank" rel="noopener noreferrer" className="hover:underline hover:text-[#C9A84C] transition-colors font-medium">
+                      {frozenShoulderLocation.whatsapp}
+                    </a>
+                  </span>
                 </div>
                 <div className="flex gap-4">
                   <span className="text-sm font-medium font-sans text-[#6B6B6B] min-w-[80px]">Email</span>
-                  <span className="text-sm font-sans text-[#262626]">{frozenShoulderLocation.email}</span>
+                  <span className="text-sm font-sans text-[#262626]">
+                    <a href={`mailto:${frozenShoulderLocation.email}`} className="hover:underline hover:text-[#C9A84C] transition-colors">
+                      {frozenShoulderLocation.email}
+                    </a>
+                  </span>
                 </div>
               </div>
 

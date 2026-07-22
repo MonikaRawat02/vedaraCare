@@ -622,9 +622,7 @@ const PelvicFloorDubai = () => {
             ))}
           </div>
 
-          <p className="text-center mb-8" style={{ color: 'rgb(107, 107, 107)', lineHeight: '1.7', fontSize: '14px' }}>
-            {pelvicFloorPricing.insuranceText}
-          </p>
+          <p className="text-center mb-8" style={{ color: 'rgb(107, 107, 107)', lineHeight: '1.7', fontSize: '14px' }} dangerouslySetInnerHTML={{ __html: pelvicFloorPricing.insuranceText }} />
         </div>
       </div>
 

@@ -181,7 +181,7 @@ export const pediatricPhysiotherapySportsInjuryTypes ={
       age: 'Typical age range: 0-12 months primarily'
     }
   ],
-  footer: 'Did not find your child\'s condition? <a href="https://wa.me/" className="underline hover:opacity-70 transition-opacity" style={{ color: "rgb(27, 67, 50)" }}>Contact us — we treat the full range of paediatric physiotherapy conditions →</a>'
+  footer: 'Did not find your child\'s condition? <a href="https://wa.me/971555867466?text=Hi%20I%20need%20more%20information%20about%20paediatric%20physiotherapy" className="underline hover:opacity-70 transition-opacity" style={{ color: "rgb(27, 67, 50)" }}>Contact us — we treat the full range of paediatric physiotherapy conditions →</a>',
 };
 
 export const pediatricPhysiotherapyFaqs = {

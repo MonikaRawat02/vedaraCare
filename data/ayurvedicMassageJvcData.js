@@ -8,7 +8,9 @@ export const ayurvedicMassageJVCHero = {
   title: "Authentic Ayurvedic massage in JVC — not the spa version, the medical one.",
   description: "Classical Ayurvedic body therapies — Abhyanga, Shirodhara, Kativasti, Njavarakizhi, and Udvartana — performed by trained therapists and prescribed by BAMS-qualified doctors at our DHA-licensed clinic in Jumeirah Village Circle, Dubai.",
   primaryCTA: "Book a Consultation",
+  primaryCTAHref: "/book",
   secondaryCTA: "Chat on WhatsApp",
+  secondaryCTAHref: "https://wa.me/971555867466?text=Hi,%20I'd%20like%20to%20inquire%20about%20Ayurvedic%20massage%20at%20your%20JVC%20clinic%20in%20Dubai.",
   trustSignals: [
     "DHA-Licensed Practitioners",
     "Trained Kerala-Style Therapists",
@@ -92,6 +94,7 @@ export const ayurvedicMassageJVCReviews = {
   title: "Ayurvedic massage outcomes at Vedara Care.",
   description: "",
   buttonText: "Read All Reviews",
+  buttonHref: "https://www.google.com/maps/search/?api=1&query=Vedara%20Care%20Polyclinic%20JVC%20Dubai",
   items: [
     {
       quote: "The Abhyanga changed how I sleep. Eight weeks in and I have stopped using sleep aids.",
@@ -128,6 +131,7 @@ export const ayurvedicMassageJVCFaqs = {
   title: "What patients ask before booking.",
   description: "Honest answers from our clinical team. For the deep version on any specific massage, follow the treatment-page link.",
   buttonText: "Ask the Team",
+  buttonHref: "https://wa.me/971555867466?text=Hi,%20I'd%20like%20to%20ask%20a%20question%20about%20Ayurvedic%20massage%20at%20your%20JVC%20clinic%20in%20Dubai.",
   faqs: [
     {
       question: "What is the most common type of Ayurvedic massage at your JVC clinic?",
@@ -175,7 +179,7 @@ export const ayurvedicMassageJVCFaqs = {
     },
     {
       question: "How do I book an Ayurvedic massage at your JVC clinic?",
-      answer: "You can book by tapping the 'Book a Consultation' button, via WhatsApp, or by calling our clinic directly."
+      answer: "You can book by tapping the 'Book a Consultation' button, via <a href=\"https://wa.me/971555867466?text=Hi,%20I'd%20like%20to%20book%20a%20consultation%20for%20Ayurvedic%20massage%20at%20your%20JVC%20clinic%20in%20Dubai.\" target=\"_blank\" rel=\"noopener noreferrer\" class=\"hover:underline\">WhatsApp</a>, or by calling <a href=\"tel:+971555867466\" class=\"hover:underline\">our clinic directly</a>."
     }
   ]
 };
@@ -196,12 +200,10 @@ export const ayurvedicMassageJVCLocation = {
   ],
   description: "All Ayurvedic massage sessions are in private treatment rooms with traditional Kerala-style wooden droni tables. Same-gender therapists guaranteed.",
   buttonText: "Book a Consultation",
+  buttonHref: "/book",
   mapAlt: "Vedara Care Ayurvedic massage clinic in Jumeirah Village Circle near Circle Mall",
   mapEmbed: "https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d3613.9894568193345!2d55.20722358578439!3d25.068346479666594!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x3e5f6dd72f3da587%3A0xe7ecca8687a75b72!2sVedara%20Care%20Polyclinic!5e0!3m2!1sen!2sus!4v1780727442216!5m2!1sen!2sus"
 };
-
-
-
 
 export const ayurvedicMassageJVCCTA = {
   bgColor: "bg-white",
@@ -209,7 +211,9 @@ export const ayurvedicMassageJVCCTA = {
   title: "Begin with a consultation. The right massage will follow.",
   description: "We do not take direct massage bookings without a consultation first — because the wrong Ayurvedic massage is at best ineffective and at worst counterproductive. A 45-60 minute consultation costs AED 250 and ensures you get the right protocol from the first session.",
   button1Text: "Book a Consultation",
+  button1Href: "/book",
   button2Text: "Chat on WhatsApp",
+  button2Href: "https://wa.me/971555867466?text=Hi,%20I'd%20like%20to%20inquire%20about%20Ayurvedic%20massage%20at%20your%20JVC%20clinic%20in%20Dubai.",
   subtext: "First consultation from AED 250 · Free patient parking · Walking distance from Circle Mall"
 };
 

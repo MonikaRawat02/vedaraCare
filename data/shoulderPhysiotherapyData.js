@@ -9,7 +9,9 @@ export const shoulderPhysioHero = {
   titleAccent: "Comprehensive care",
   description: "Specialist shoulder physiotherapy at our Jumeirah Village Circle (JVC) clinic, walking distance from Circle Mall. DPT-qualified physiotherapists treating the full range of shoulder conditions — rotator cuff problems, shoulder impingement, AC joint pain, biceps tendinopathy, shoulder instability, post-surgical shoulder recovery, and more. Most shoulder pain responds excellently to evidence-based physiotherapy without requiring surgery.",
   primaryCTA: "Book Shoulder Pain Assessment",
-  secondaryCTA: "Read About Shoulder Conditions",
+  primaryCTAHref: "/book",
+  secondaryCTA: "Chat on WhatsApp",
+  secondaryCTAHref: "https://wa.me/971555867466?text=Hello%20Vedara%20Care,%20I%20would%20like%20to%20inquire%20about%20shoulder%20pain%20physiotherapy%20and%20book%20a%20consultation.",
   trustSignals: [
     "DPT-qualified shoulder specialists",
     "380+ shoulder patients treated",
@@ -75,6 +77,7 @@ export const shoulderPhysioReviews = {
   bgColor: "bg-white",
   cardBgColor: "bg-[#F8F5F0]",
   isDarkText: true,
+  buttonHref: "https://www.google.com/maps/search/?api=1&query=Vedara+Care+Polyclinic+JVC+Dubai",
   items: [
     {
       quote: "Rotator cuff tear identified on MRI after months of pain. Orthopaedic surgeon recommended surgery. Vedara's assessment suggested conservative trial first. We saw the tear pattern and size. Sixteen weeks of structured rehabilitation combining manual therapy and progressive loading. Successfully returned to gym training without pain. The honest discussion about when surgery is and is not needed was invaluable.",
@@ -197,7 +200,7 @@ export const shoulderPhysioFaqs = {
     },
     {
       question: "How quickly can I get an appointment for shoulder pain?",
-      answer: "Same-week appointments are typical for shoulder pain assessment. For acute shoulder injuries (recent fall, dislocation, sudden severe onset), same-day or next-day appointments are often available. WhatsApp +971 00 000 0000 for fastest response — typically within 15 minutes during business hours."
+      answer: "Same-week appointments are typical for shoulder pain assessment. For acute shoulder injuries (recent fall, dislocation, sudden severe onset), same-day or next-day appointments are often available. WhatsApp +971 55 586 7466 for fastest response — typically within 15 minutes during business hours."
     },
     {
       question: "Do I need imaging before shoulder physiotherapy?",
@@ -241,7 +244,7 @@ export const shoulderPhysioFaqs = {
     },
     {
       question: "How do I book a shoulder pain physiotherapy assessment?",
-      answer: "Three ways: (1) WhatsApp +971 00 000 0000 — fastest response, ideal for sending imaging if you have it. (2) Call +971 00 000 0000 — direct booking, available 9 AM to 9 PM seven days a week. (3) Book online through our website. For your first appointment, please bring: any imaging (MRI, X-rays, ultrasound), medical reports, current medication list, insurance card, and comfortable clothing allowing shoulder assessment."
+      answer: "Three ways: (1) WhatsApp +971 55 586 7466 — fastest response, ideal for sending imaging if you have it. (2) Call +971 55 586 7466 — direct booking, available 9 AM to 9 PM seven days a week. (3) Book online through our website. For your first appointment, please bring: any imaging (MRI, X-rays, ultrasound), medical reports, current medication list, insurance card, and comfortable clothing allowing shoulder assessment."
     },
   ]
 };
@@ -368,7 +371,7 @@ export const shoulderPhysioConditions = {
       href: "/conditions/frozen-shoulder-dubai/"
     }
   ],
-  footer: "Not sure which condition applies? Book an assessment for accurate diagnosis →"
+  footer: "Not sure which condition applies? <a href=\"/book\" class=\"text-[#C9A55A] hover:underline\">Book an assessment for accurate diagnosis →</a>"
 };
 
 export const shoulderPhysioRelatedPages = {
@@ -558,7 +561,7 @@ export const shoulderPhysioActivityPatterns = {
       recoveryText: "Varies by activity and injury pattern"
     }
   ],
-  footer: "For comprehensive sports injury treatment, see our sports physiotherapy page →"
+  footer: "For comprehensive sports injury treatment, see our <a href='/physiotherapy/sports-injury-jvc/' class='underline hover:text-[#B8963E] transition-colors'>sports physiotherapy page</a> →"
 };
 
 export const shoulderPhysioPricing = {
@@ -577,7 +580,7 @@ export const shoulderPhysioPricing = {
     { name: "Shoulder instability rehabilitation programme", price: "AED 3,200" }
   ],
   insuranceSection: {
-    description: 'Insurance direct-billing with seven major insurers. Shoulder pain physiotherapy is well-covered by Dubai insurance plans with medical justification. Extended programmes may require pre-authorisation, which we handle on your behalf. <a href="https://wa.me/971555867466?text=Hi,%20I%27d%20like%20to%20verify%20my%20insurance%20coverage" target="_blank" rel="noopener noreferrer" class="hover:underline">WhatsApp your insurance card</a> to +971 00 000 0000 before booking for specific coverage confirmation.',
+    description: 'Insurance direct-billing with seven major insurers. Shoulder pain physiotherapy is well-covered by Dubai insurance plans with medical justification. Extended programmes may require pre-authorisation, which we handle on your behalf. <a href="https://wa.me/971555867466?text=Hi,%20I%27d%20like%20to%20verify%20my%20insurance%20coverage" target="_blank" rel="noopener noreferrer" class="hover:underline">WhatsApp your insurance card</a> to +971 55 586 7466 before booking for specific coverage confirmation.',
     insurers: ["Daman", "AXA", "Allianz", "Oman Insurance", "Now Health", "Bupa", "MetLife"],
     cta: "Book Shoulder Pain Assessment — AED 350"
   }

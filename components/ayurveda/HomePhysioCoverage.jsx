@@ -109,7 +109,7 @@ const HomePhysioCoverage = ({
 
             {note && (
               <div className="mt-6 p-4 bg-white border-l-4 border-[#d4af37] rounded-r-lg">
-                <p className="text-gray-700 text-sm">{note}</p>
+                <p className="text-gray-700 text-sm" dangerouslySetInnerHTML={{ __html: note }} />
               </div>
             )}
           </div>
